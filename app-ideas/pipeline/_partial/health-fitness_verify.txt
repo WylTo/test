@@ -48,3 +48,28 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results. No Apple API 
     - Nordic Walking Park - SINW (Italy)          https://apps.apple.com/it/app/nordic-walking-park-sinw/id6444206157
     - Nordic Walking Lite (ch)                    https://apps.apple.com/ch/app/nordic-walking-lite/id896186299
     - Nordic Walking Lite (pl)                    https://apps.apple.com/pl/app/nordic-walking-lite/id896186299?l=pl
+
+[5] query: site:apps.apple.com first pull up progression  (idea health-fitness-16)  date: 2026-09-30
+    saturation (dedicated pull-up progression apps, "pull up/pullups" in title): 8 -> SATURATED (author assumed 2-3). Several explicitly cover "from 0 / first pull-up" (Pull Ups 0 to 20, 100 Pull-Ups Challenge from assisted moves). Mix of 2013-2016 veterans and 2024-2025 entrants.
+    - 100 Pull-Ups Challenge (assisted -> first pull-up)   https://apps.apple.com/us/app/100-pull-ups-challenge/id6755483206
+    - GOLDEN Bars - Pull ups & Dips                         https://apps.apple.com/in/app/golden-pull-ups-pullup-tracker/id6738278657
+    - Pull ups: 20 pull-ups trainer (0-8 in 8 weeks)        https://apps.apple.com/us/app/pull-ups-20-pull-ups-trainer/id612904272
+    - GOLDEN Push Up Pushup Tracker                         https://apps.apple.com/us/app/golden-push-up-pushup-tracker/id6657950305
+    - Daily Pullups                                         https://apps.apple.com/us/app/daily-pullups/id6670338409
+    - Pull Ups - 0 to 20 pull up challenge workout coach    https://apps.apple.com/us/app/pull-ups-0-to-20-pull-up-challenge-workout-coach/id1125022644
+    - PullUps 20: Pull-Up Challenge                         https://apps.apple.com/us/app/pullups-20-pull-up-challenge/id6478711483
+    - 20 Pull Ups Trainer Challenge                         https://apps.apple.com/us/app/20-pull-ups-trainer-challenge/id848897098
+    - 100 Pull Ups Workout                                  https://apps.apple.com/us/app/100-pull-ups-workout/id1537775518
+
+[6] query: site:apps.apple.com police fitness test training  (idea health-fitness-06)  date: 2026-09-30
+    saturation (dedicated police fitness-test apps, "police" in title): 5 (Police Fitness Trainer UK, Victoria Police POLICE FIT (official, free), Bleep Test UK Police, Beep Test Police & Military, Beep Test TOP Police Military) + generic bleep test apps. English/UK/AU standards covered; no DE/ES/FR/CZ national-standard app seen in results (EU non-English still unverified). Official police forces publish free apps -> price pressure.
+    - Police Fitness Trainer (UK, bleep + Chester)     https://apps.apple.com/gb/app/police-fitness-trainer/id590734349
+    - Team Beep Test Pro                               https://apps.apple.com/us/app/team-beep-test-pro/id600092486
+    - Victoria Police - POLICE FIT (official)          https://apps.apple.com/us/app/victoria-police-police-fit/id1316312988
+    - Bleep Test UK Police                             https://apps.apple.com/sa/app/bleep-test-uk-police/id1595260189
+    - Bleep Tests (2026)                               https://apps.apple.com/us/app/bleep-tests/id6758024069
+    - Beep Test Police & Military                      https://apps.apple.com/bb/app/beep-test-police-military/id1614277917
+    - Beep Test TOP Police Military (pl)               https://apps.apple.com/gb/app/beep-test-top-police-military/id1019441281?l=pl
+    - Team Bleep Test Pro (se)                         https://apps.apple.com/se/app/team-bleep-test-pro/id600092486?l=en-GB
+    - Team Bleep Test Pro (gb)                         https://apps.apple.com/gb/app/bleep-test-pro-15m-20m-beep-test-shuttle-run/id600092486
+Search budget used: 6/6. Everything else from knowledge + _partial/health-fitness_evidence.txt.

@@ -1,0 +1,718 @@
+{
+ "category_slug": "graphics-design",
+ "summary": "Kategorie stojí na jednom opakovaném vzorci 'foto → řemeslný vzor', a právě ten je v roce 2026 přeplněný: ze 6 ověřených knowledge nápadů byly 3 saturované (peyote 7 aplikací, lash mapy 7, needlepoint 4 nové z 2026) a u dalších se objevil přímý konkurent (Box-o-matic, Stitch Fiddle na iOS, PC Color Mixer). Nejlepší sázky jsou Stained Glass Pattern Maker (0 designérů), Lithophane Maker (sloučit s vykrajovátky) a Balloon Garland (B2B, metrický US-gap — ale jen jednou v portfoliu s business-02). Společná vada: mikro-publika s jednorázovou platbou 5–8 USD, u nichž je 10 000 CZK ideál fikce, a vysoké riziko Guideline 4.3 — doporučuji sloučit stencil nápady (-05, -15, -28) a 3D tisk (-02, -23) do jednotlivých aplikací.",
+ "reviews": [
+  {
+   "id": "graphics-design-01",
+   "verdict": "GO",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 8,
+    "monetization": 6,
+    "build_ease": 3,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Build je podhodnocený: vektorizace s omezením řezatelnosti (žádné vnitřní úhly pod ~30°, min. šířka dílu, eliminace ostrůvků) je výzkumný problém, reálně 10–14 týdnů, ne 7.",
+    "Generativní AI (ChatGPT/Gemini image) už dnes vyrobí 'stained glass line art' zdarma — soutěžíme s 'dost dobrým' obrysem, naše hodnota musí být v číslování, 1:1 tisku a spotřebě materiálu.",
+    "Publikum je starší a malé; klíčové slovo 'stained glass' v App Store přitahuje hlavně puzzle hry a filtry, takže konverze z vyhledávání bude nízká.",
+    "Dvě nové kalkulačky z 2026 ukazují, že niku objevují i další indie vývojáři — okno se zavírá."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 6500,
+   "reviewer_note": "Nejlépe podložený nápad kategorie: 0 dedikovaných designérů vzorů a platící hobby publikum. Postavit nejdřív ruční editor (obkreslení fotky + číslování + tisk ve 100 % + spotřeba), automatickou vektorizaci až jako v2; 23 400 CZK je strop, medián kolem 6–7 tisíc."
+  },
+  {
+   "id": "graphics-design-02",
+   "verdict": "GO",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 6,
+    "monetization": 5,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Duplicita v portfoliu: stejný nápad je i v photo-video (photo-video-02 Litho Studio) — postavit smí jen jeden a jen v jedné kategorii.",
+    "MakerWorld (Bambu) nabízí v MakerLab webový generátor litofánií zdarma a přímo napojený na tisk — 'Sherlock' od lídra trhu tiskáren.",
+    "Workflow končí na desktopovém sliceru; STL z iPhonu se musí dostat do Bambu Studio/Orca/PrusaSlicer, což je tření, které web nástroje nemají.",
+    "LithoCam (Masaharu Tsukamoto) už na iOS existuje — autor ho zmiňuje bez URL, blue ocean tedy není 8."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 5000,
+   "reviewer_note": "Solidní malý nástroj s jasnou poptávkou (3dp.rocks, ItsLitho), ale ne modrý oceán. Vyhrát rychlostí a tvary (válcová lampa, srdce, barevná CMYW litofánie) a sloučit s nápadem -23 (vykrajovátka) do jedné 'photo → 3D print' aplikace, aby se neřešila 4.3."
+  },
+  {
+   "id": "graphics-design-03",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 5,
+    "monetization": 5,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Majitelé laserů pracují v aplikaci výrobce (xTool Creative Space, LaserPecker, Falcon), která dithering dělá zdarma; mezikrok 'upravit → exportovat PNG → importovat' většina nepodstoupí.",
+    "Seriózní uživatelé mají LightBurn na desktopu; mobilní publikum jsou hlavně začátečníci s LaserPeckerem, kteří nepotřebují víc.",
+    "Kvalita gravírování závisí na materiálu a výkonu stroje — presety pro 'břidlici/dřevo' nelze ověřit bez fyzických testů na více strojích.",
+    "V portfoliu je i business-22 Laser Quote — hrozí rozmělnění stejného publika."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Laserbox for xTool",
+     "url": "https://apps.apple.com/us/app/laserbox-for-xtool/id1586243500",
+     "note": "Mobilní nástroj navázaný na xTool — ukazuje, že lasery obsluhují i aplikace třetích stran kolem značek."
+    }
+   ],
+   "revenue_czk_realistic": 3500,
+   "reviewer_note": "Hodnota existuje jen tehdy, když výsledek je viditelně lepší než dithering výrobce (Jarvis/Stucki + gamma + local contrast + náhled na materiálu). Zúžit na 'photo engraving for Etsy sellers' a dávkové zpracování; jinak je to pěkná utilita s příjmem kolem 3–4 tisíc."
+  },
+  {
+   "id": "graphics-design-04",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 7,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Keyword 'photo mosaic' vlastní koláže — pro čistý mozaikový záměr neexistuje žádný doložený objem hledání (hint neověřen).",
+    "Jádro (foto → mapa dílů + počty po barvách) je téměř totožné s -01 a -06; další samostatný konvertor zvyšuje riziko Guideline 4.3 pro celé portfolio.",
+    "Mozaikáři pracují s nepravidelnými tesserami (andamento), mřížkový výstup působí amatérsky a profíci ho odmítnou."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Samostatně nevydělá. Smysl má jen jako režim 'Mosaic' uvnitř Stained Glass Pattern Maker (-01) — sdílené publikum skleněné/keramické mozaiky, stejný engine, jeden produkt."
+  },
+  {
+   "id": "graphics-design-05",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 5,
+    "monetization": 2,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Příjem ~90 % v 5 týdnech v roce; roční průměr pod 10 000 CZK je téměř jistý, a v zimě aplikace klesne v rankingu a v září začíná od nuly.",
+    "Pumpkin Masters (značka) a InstaGourd dávají šablony zdarma; ChatGPT vygeneruje 'pumpkin carving stencil' z fotky zdarma.",
+    "Halloween dýně jsou kulturně US/CA/UK; lokalizace do 50 jazyků prodá málo — v DE/CZ/JP je vyřezávání okrajové, US-gap je tedy slabý."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1200,
+   "reviewer_note": "Jako samostatná aplikace KILL, ale engine 'můstky pro ostrůvky' je sdílený s -15 a -28. Udělat jednu aplikaci 'Stencil Bridges' se sezónním dýňovým režimem, který v říjnu přinese boost, ne celoroční příjem."
+  },
+  {
+   "id": "graphics-design-06",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 4,
+    "monetization": 3,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Fatální: uživatelky potřebují fyzické plátno s lepidlem a kamínky; vlastní kit si objednají u výrobce (custom diamond painting za 20–40 USD včetně vlastního chartu zdarma).",
+    "GemsFlow už nabízí náhled pixelizace a zásobu kamínků; Drillalog, Diamood, Dotterly obsazují deníkovou část.",
+    "Tisk chartu na papír nepomůže — bez potištěného plátna nelze vyrábět, takže segment 'DIY z vlastní zásoby' je mikroskopický."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Řeší problém, který dodavatelé kitů už vyřešili zdarma v ceně objednávky. Nestavět."
+  },
+  {
+   "id": "graphics-design-07",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 4,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Box-o-matic (od 2017) je přesně tento produkt na iOS a za 8 let nijak nevyrostl — silný signál, že App Store poptávka je malá.",
+    "MakerCase, boxes.py a festi.info jsou zdarma a lidé je používají na počítači, kde stejně připravují soubory pro laser.",
+    "Software výrobců (xTool Creative Space, Glowforge) přidává šablony krabic a spojů zdarma."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Box-o-matic",
+     "url": "https://apps.apple.com/us/app/box-o-matic/id1291032873",
+     "note": "Přesně stejný produkt (rozměry, tloušťka, typ spoje, export SVG/PDF) — autor ho nenašel."
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Ne blue ocean (Box-o-matic existuje) a poptávka se přesouvá na web/desktop. Dává smysl jen jako širší 'laser joinery toolkit' (living hinge, kerf test, zásuvky, krabičky s víkem) a ideálně jako modul k -03 pro stejné publikum.",
+   "web_checked": true
+  },
+  {
+   "id": "graphics-design-08",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 2,
+    "monetization": 6,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Nika už obsazena: Stitch Belle, StitchALot Studio, Needlepoint Pattern Maker AI a Stitchpoint — čtyři dedikované needlepoint designéry z roku 2026.",
+    "Tři cross-stitch makery (Stitch Creator, Cross Stitch Pattern Maker, Stitchly) výslovně inzerují needlepoint režim — přesně ten killer risk, který autor jmenoval, už nastal.",
+    "Další foto → mřížka konvertor v portfoliu = riziko Guideline 4.3."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Stitch Belle",
+     "url": "https://apps.apple.com/us/app/stitch-belle/id6759628528",
+     "note": "iPad, virtuální malované needlepoint plátno, mesh count — přímý konkurent."
+    },
+    {
+     "name": "StitchALot Studio",
+     "url": "https://apps.apple.com/us/app/stitchalot-studio/id6759666733?platform=mac",
+     "note": "Profesionální designér needlepoint/cross-stitch, foto → plátno."
+    },
+    {
+     "name": "Needlepoint Pattern Maker AI",
+     "url": "https://apps.apple.com/sr/app/needlepoint-pattern-maker-ai/id6758918904",
+     "note": "Titulem cílí přesně na klíčové slovo."
+    },
+    {
+     "name": "Stitchpoint",
+     "url": "https://apps.apple.com/us/app/stitchpoint/id6759072297",
+     "note": "Další nový needlepoint nástroj 2026."
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Poptávka je reálná (US needlepoint boom), ale v roce 2026 ji objevilo nejméně 7 aplikací. Blue ocean skóre 7 bylo odhadem, realita je 2. Nestavět.",
+   "web_checked": true
+  },
+  {
+   "id": "graphics-design-09",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 8,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Nulová konkurence je i signál nulové poptávky: vyhledávání vrátilo jen obecné mixéry a dětské hry, žádný důkaz, že cukrářky tuto frázi píšou do App Store.",
+    "Výrobci (Americolor, Wilton, Chefmaster) zveřejňují barevné tabulky receptů zdarma a na Pinterestu jich jsou tisíce — to je konkurence, ne App Store.",
+    "Recepty se liší podle barviva (gel vs. prášek), dávky a doby 'dozrávání' barvy — bez vlastního fyzického testování budou nepřesné a přinesou 1★ recenze.",
+    "Názvy značek barviv v metadatech (Americolor, Wilton) jsou ochranné známky — riziko 2.3.7/5.2."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Jediný modrý oceán ověřený vyhledáváním, ale bez doložené poptávky. Postavit jen jako levný týdenní test (tabulky + HEX → nejbližší recept) a rozšířit na cookie decorating; počítat s příjmem v řádu nízkých tisíců.",
+   "web_checked": true
+  },
+  {
+   "id": "graphics-design-10",
+   "verdict": "GO",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 6,
+    "monetization": 6,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Duplicita: tentýž nápad je v business-02 Balloon Decor Pro — v portfoliu smí být jen jednou (a Business kategorie je pro B2B nabídky přirozenější).",
+    "Hlavní trhy lokalizace (MX, BR, CO, TR, MENA) mají nízkou ochotu platit předplatné 5,99 USD/měs; regionální ceny sníží tržby na polovinu.",
+    "Balloon Brain (2026) už kreslí oblouky a organické girlandy; kdo přidá metrické jednotky, zavře US-gap za týden.",
+    "Dekoratérky hledají spíš 'balloon garland' inspiraci než kalkulačku — konverze z instalace na platbu bude nízká."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 4500,
+   "reviewer_note": "Ověřeně řídká konkurence, B2B ochota platit a jasný US-gap (imperiální jednotky, jen angličtina). GO, ale jen jednou v portfoliu: sloučit s business-02 a vydat pod Business; jádro = metrická kalkulačka + PDF nabídka ve španělštině/portugalštině."
+  },
+  {
+   "id": "graphics-design-11",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 1,
+    "monetization": 5,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Saturováno: Loomerly, Threadologie, Beadium, Beadly, BeadPatternCreator, BeadsDesign a BeadPainter — 7 dedikovaných peyote/brick/loom designérů.",
+    "Autorův odhad 'brick stitch pattern: saturace 1' je vyvrácen; nejméně 5 aplikací má peyote/brick přímo v titulu nebo popisu.",
+    "Palety Miyuki Delica jsou značkové údaje; konkurence je už má."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Loomerly: Loom, peyote & brick",
+     "url": "https://apps.apple.com/ky/app/loomerly-loom-peyote-brick/id1631555997",
+     "note": "Přesně tento produkt, od 2022."
+    },
+    {
+     "name": "Threadologie: Bead Pattern",
+     "url": "https://apps.apple.com/us/app/threadologie-bead-pattern/id6755602806",
+     "note": "Prémiový peyote/brick/loom designér, obrázek → vzor."
+    },
+    {
+     "name": "Beadium: Beading Patterns",
+     "url": "https://apps.apple.com/pk/app/beadium-beading-patterns/id6780272641",
+     "note": "Peyote, brick, loom, triangle, foto → chart."
+    },
+    {
+     "name": "BeadPatternCreator",
+     "url": "https://apps.apple.com/us/app/beadpatterncreator/id6448072309",
+     "note": "Square, brick, peyote, 2-drop, RAW."
+    }
+   ],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Nejvíc přeceněný nápad kategorie: údajná díra je rudý oceán se 7 hráči. Nestavět.",
+   "web_checked": true
+  },
+  {
+   "id": "graphics-design-12",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 3,
+    "monetization": 4,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Stitch Fiddle — lídr pro navrhování háčkovaných/pletených chartů, který na webu podporuje mozaikové háčkování (overlay/inset) s psaným postupem — má nyní nativní iOS aplikaci; autorův killer risk nastal.",
+    "Mosaic Overlay Crochet už drží titul s klíčovým slovem 'mosaic crochet' (knihovna 70+ vzorů, řádkový checklist).",
+    "Hráčky mozaiky chtějí hotové vzory od designérek, ne editor; tvůrčí designérky používají Stitch Fiddle nebo Excel."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Mosaic Overlay Crochet",
+     "url": "https://apps.apple.com/us/app/mosaic-overlay-crochet/id6774931873",
+     "note": "Obsazuje hlavní klíčové slovo, knihovna vzorů + tracker."
+    },
+    {
+     "name": "Stitch Fiddle Pattern Maker",
+     "url": "https://apps.apple.com/nz/app/stitch-fiddle-pattern-maker/id6759521479?see-all=customers-also-bought-apps&platform=iphone",
+     "note": "Nativní iOS aplikace lídra chart designu."
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Validace pravidel mozaiky je hezký detail, ale proti Stitch Fiddle (značka, web + iOS) a titulově obsazenému klíči nemá indie šanci na top 3.",
+   "web_checked": true
+  },
+  {
+   "id": "graphics-design-13",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 6,
+    "monetization": 2,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Hitomezashi generátory jsou triviální a zdarma na webu (a jako Numberphile/matematické hračky); sashiko vzory jsou v tištěných knihách a u Olympus zdarma.",
+    "Placená hodnota 5,99 USD jednorázově × mikroskopický objem = strop hluboko pod 10 000 CZK i v ideálu.",
+    "Japonský trh (刺し子) má vlastní zavedené zdroje a o západní aplikaci nestojí — reverzní gap je iluze."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 700,
+   "reviewer_note": "Krásný, ale nevýdělečný projekt. Nestavět jako produkt."
+  },
+  {
+   "id": "graphics-design-14",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 5,
+    "monetization": 3,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Trend tuftingu kulminoval 2021–22; zbylé publikum už má zavedený workflow Procreate/Canva + projektor.",
+    "Spotřeba příze v gramech závisí na výšce vlasu, hustotě a typu pistole — výpočet bude hrubý odhad a snadno vyvolá 1★ recenze.",
+    "Punch needle je malý a sezónní; kombinace dvou malých nik nevytvoří velkou."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Samostatně slabé. Přežije jen jako levný nástroj 'photo → flat color zones + mirror + projection mode' a klíčové slovo 'punch needle pattern' by bylo nutné nejdřív ověřit; jinak nestavět."
+  },
+  {
+   "id": "graphics-design-15",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 4,
+    "build_ease": 4,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Hlavní klíč 'stencil maker' je obsazený tattoo aplikacemi (saturace 6) a long-tail 'multi layer stencil' nemá doložený objem.",
+    "Street artisté a airbrusháři pracují ve Photoshopu/Illustratoru; mobilní výstup musí jít na plotter/laser (SVG), jinak je k ničemu.",
+    "Automatické můstky a registrační značky, které fungují na reálných fotkách, jsou těžké — build 5 týdnů je optimistický."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 2500,
+   "reviewer_note": "Nejlepší jako jádro jedné 'Stencil Bridges' aplikace, která spojí -15 (vrstvy), -28 (scroll saw) a -05 (sezónní dýně) — jeden engine, tři klíčové shluky, žádná 4.3. Samostatně by skončil pod 3 tisíci."
+  },
+  {
+   "id": "graphics-design-16",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 6,
+    "monetization": 2,
+    "build_ease": 4,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Primární publikum (studenti, učitelé, muslimské komunity v MENA/SEA) má nízkou ochotu platit a v regionálních cenách je 7,99 USD v praxi 2–3 USD.",
+    "Kvalitní konstrukce girih/zellige vyžaduje odbornost (geometrie, kulturní správnost); chyby odhalí přesně ti, kteří platí.",
+    "Existují bezplatné vzdělávací zdroje (Mosaic TileMaker od Qatar Foundation, YouTube kurzy) — vzdělávací záměr = nechce platit.",
+    "Náboženský/kulturní kontext v metadatech může být citlivý v některých zemích."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Kulturně zajímavé, ale bez peněz. Nestavět."
+  },
+  {
+   "id": "graphics-design-17",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 4,
+    "monetization": 5,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Nekontrolováno vyhledáváním, ale sublimace je 2025–26 zaplavena AI 'sublimation design' aplikacemi; titulová saturace 'tumbler wrap' bude spíš 5+ než 3.",
+    "Etsy prodává kónické šablony za 1–3 USD pro každý populární tumbler (Stanley, Skinny 20 oz) a Cricut/Canva komunita sdílí šablony zdarma.",
+    "Výstup 300 DPI PNG se dál tiskne z desktopu (sublimační tiskárna Epson/Sawgrass) — mobil je pro prodejce jen mezikrok.",
+    "Názvy značek tumblerů (Stanley, Owala) v metadatech jsou ochranné známky."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 3500,
+   "reviewer_note": "Reálný bolavý problém (warping kónických obalů) a platící prodejci na Etsy, ale konkurence je neověřená. Před buildem ověřit 'tumbler wrap' a 'sublimation template'; pokud saturace ≤ 3, jde o nejlepší knowledge nápad kategorie."
+  },
+  {
+   "id": "graphics-design-18",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 4,
+    "monetization": 3,
+    "build_ease": 3,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Hotové vrstvené shadow box SVG stojí na Etsy 2–5 USD a jsou ručně vyladěné; automatický výstup z fotky bude vizuálně horší a kupující to uvidí na první náhled.",
+    "Build je reálně 8–12 týdnů (hloubková segmentace, propojení vrstev, můstky, test na Cricutu) — nejdražší nápad s nejistým výsledkem.",
+    "Cricut Design Space a AI generátory (např. SVG z promptu) se do této oblasti rychle rozšiřují."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Poměr náročnost/kvalita/cena je špatný. Nestavět."
+  },
+  {
+   "id": "graphics-design-19",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 2,
+    "blue_ocean": 7,
+    "monetization": 2,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Kumihimo je mikro-hobby; objem hledání v App Store je pravděpodobně pod prahem (autor nemá hint ani počet výsledků).",
+    "Vzory kumihimo jsou zdarma na desktopových simulátorech a v tištěných kartičkách ke každému disku.",
+    "4,99 USD jednorázově nemůže ani v ideálu dosáhnout 10 000 CZK měsíčně."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Bez doložené poptávky a bez peněz. Nestavět."
+  },
+  {
+   "id": "graphics-design-20",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 2,
+    "blue_ocean": 6,
+    "monetization": 3,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "GTT (Guntram's Tabletweaving Thingy) a online generátory jsou zdarma a komunita je léta používá; tkadlec má u stavu i počítač.",
+    "Publikum tablet weaving je v řádu tisíců lidí globálně; placený objem na iOS nevydá ani na zlomek cíle.",
+    "Simulace otáčení destiček a navlékání je netriviální a chyby odhalí okamžitě zkušení uživatelé."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Příliš malé publikum proti bezplatnému zavedenému nástroji. Nestavět."
+  },
+  {
+   "id": "graphics-design-21",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 5,
+    "monetization": 2,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Jednorázová potřeba (jedna koupelna jednou za 10 let) — žádná retence, žádný důvod platit po návrhu.",
+    "Výrobci a e-shopy (Mosaico, Bert & May, Popham) mají vlastní vizualizéry zdarma a zákazník chce vidět jejich skutečné dlaždice, ne neutrální motivy.",
+    "AR a AI vizualizace interiéru (Houzz, IKEA, AI room designers) přebírají záměr 'jak to bude vypadat'."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Neutralita je zde nevýhoda, ne výhoda — zákazník potřebuje reálný produkt. Nestavět."
+  },
+  {
+   "id": "graphics-design-22",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 2,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "PC Color Mixer už existuje a dělá přesně toto (hmotnost základních barev hmoty pro zvolený odstín).",
+    "Receptury hmot se liší šarží a výrobci mění sortiment (Sculpey/Fimo přejmenování odstínů) — data vyžadují průběžnou údržbu.",
+    "Komunita polymerové hmoty sdílí recepty zdarma na YouTube/Pinterestu a čte je jako 'díly', ne hmotnost — aplikace přidává málo."
+   ],
+   "missed_competitors": [
+    {
+     "name": "PC Color Mixer",
+     "url": "https://apps.apple.com/us/app/pc-color-mixer/id6528674966",
+     "note": "Polymer clay mixer: vypočítá hmotnost základních barev hmoty pro zvolený odstín — přímý konkurent."
+    }
+   ],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Autor předpokládal nulovou konkurenci; existuje přímý konkurent a trh je mikro. Nestavět."
+  },
+  {
+   "id": "graphics-design-23",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 3,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Webové nástroje (CookieCAD, generátory na Printables/Thingiverse) a MakerWorld MakerLab pokrývají záměr zdarma a přímo u tiskárny.",
+    "STL z telefonu musí dál do desktopového sliceru — stejné tření jako u -02.",
+    "Potravinová bezpečnost PLA vykrajovátek (bakterie ve vrstvách) — nutné opatrné formulace kvůli recenzím a 1.4.1-like stížnostem."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Samostatně slabé, ale jako druhý režim v aplikaci litofánií (-02) přidá klíčové slovo 'cookie cutter maker' za cenu týdne práce. Nestavět jako samostatnou aplikaci."
+  },
+  {
+   "id": "graphics-design-24",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 5,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Electric Quilt (EQ8) a jeho mobilní/iPad nástroje umí hexagony a EPP; Quiltography a Quilters DesignWall mohou přidat hexie mřížku rychle.",
+    "EPP komunita (UK/AU/NL/JP) si vzory předává jako tištěné šablony od prodejců papírků (Paper Pieces) — často zdarma k nákupu.",
+    "Výpočet látky pro nepravidelné rozvržení s přídavkem na šev je náchylný na chyby a chyba stojí zákaznici drahou látku."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 2500,
+   "reviewer_note": "Quilterky platí upfront, to je plus. Nika je malá a neověřená; vyplatí se jen jako placená aplikace 6,99 USD s precizní kalkulací a exportem šablon ke tisku. Před buildem ověřit 'english paper piecing' v App Store."
+  },
+  {
+   "id": "graphics-design-25",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 2,
+    "blue_ocean": 6,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Strojové pletení s punchcardy je vymírající hobby převážně 60+ uživatelů s bazarovými stroji; objem hledání na iOS je minimální.",
+    "Komunita používá desktopové nástroje a tištěné knihy karet; AYAB/img2track řeší elektronické stroje zdarma.",
+    "Knitting Chart a Stitch Fiddle umí mřížku s opakováním 24 ok — rozdíl je jen v tisku karty."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Příliš malé a stárnoucí publikum. Nestavět."
+  },
+  {
+   "id": "graphics-design-26",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 3,
+    "monetization": 4,
+    "build_ease": 5,
+    "offline_fit": 9,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Profesionální barevná analýza stojí na fyzickém draping pod standardizovaným světlem; kamera a displej iPhonu zkreslují podtón pleti — profesionálky to vědí a nástroji nebudou věřit.",
+    "Poradkyně jsou vázané na školicí systémy (House of Colour, Colour Me Beautiful) s vlastními pomůckami a licencovanými paletami.",
+    "Spotřebitelské AI aplikace (8+ titulů) zaplavily klíčová slova; 'image consultant' jako vyhledávací fráze v App Store nemá doloženou poptávku.",
+    "27 000 CZK ideál předpokládá desítky platících profesionálek měsíčně z ASO — nereálné."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Profesní segment je malý, skeptický k digitální barvě a zavřený ve značkových systémech. Nestavět."
+  },
+  {
+   "id": "graphics-design-27",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 1,
+    "monetization": 5,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Saturováno: Lash Maps, LashMap, Lash Atlas, Lash Create, The Lash Look, Lash Tech Pro a AP Map — 7 dedikovaných lash mapping aplikací, několik s AI analýzou oka.",
+    "Duplicita s business-29 Lash Map v portfoliu.",
+    "Salonní booking platformy (Fresha, Vagaro, GlossGenius) přidávají lash mapy do karty klientky zdarma."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Lash Maps",
+     "url": "https://apps.apple.com/us/app/lash-maps/id6741912184",
+     "note": "Analýza tvaru oka → doporučení délek a ohybů + CRM."
+    },
+    {
+     "name": "Lash Atlas",
+     "url": "https://apps.apple.com/us/app/lash-atlas/id6772648358",
+     "note": "Eye analysis, lash mapping, booking, try-on."
+    },
+    {
+     "name": "LashMap",
+     "url": "https://apps.apple.com/us/app/lashmap/id6744845417",
+     "note": "Titulem obsazuje hlavní klíčové slovo."
+    },
+    {
+     "name": "Lash Create - Virtual Lashes",
+     "url": "https://apps.apple.com/vn/app/lash-create-virtual-lashes/id6758023090",
+     "note": "Návrh a náhled lash mapy na fotce."
+    }
+   ],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Autor sám tušil 'neověřenou a možná vyšší konkurenci' — ověření ukázalo rudý oceán. Nestavět.",
+   "web_checked": true
+  },
+  {
+   "id": "graphics-design-28",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 5,
+    "monetization": 3,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Scroll saw komunita dostává tisíce vzorů zdarma (Steve Good, Scroll Saw Village) a portréty na zakázku kupuje od designérů za pár dolarů.",
+    "Automaticky propojený portrét s vrtacími body je kvalitativně těžký; špatný vzor = zničené dřevo a 1★.",
+    "Starší publikum tiskne a pracuje z papíru; mobilní aplikace je pro ně spíš bariéra."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Samostatně KILL; smysl má pouze jako režim 'Wood / scroll saw' ve sdíleném stencil enginu (viz -15), protože vyžaduje stejné můstky a ostrůvky."
+  },
+  {
+   "id": "graphics-design-29",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 2,
+    "blue_ocean": 5,
+    "monetization": 1,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Stitch Fiddle (nyní i nativně na iOS) podporuje filet crochet charty; binární mřížku zvládne i obecný chart editor zdarma.",
+    "Hlavní trhy filetu (BR, LatAm, východní Evropa) mají nízkou kupní sílu; 3,99 USD v regionálních cenách je ~1–2 USD.",
+    "Autorova vlastní čísla (demand 3, monetizace 3) už předem říkají, že 10 000 CZK je fikce."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Stitch Fiddle Pattern Maker",
+     "url": "https://apps.apple.com/nz/app/stitch-fiddle-pattern-maker/id6759521479?see-all=customers-also-bought-apps&platform=iphone",
+     "note": "Chart designer s podporou filetu, nyní na iOS."
+    }
+   ],
+   "revenue_czk_realistic": 400,
+   "reviewer_note": "Bez peněz a s bezplatnou alternativou. Nestavět."
+  },
+  {
+   "id": "graphics-design-30",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 2,
+    "blue_ocean": 6,
+    "monetization": 2,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Ručních barvířek příze je globálně několik tisíc; většina vede recepty v Excelu nebo papírovém sešitu a nové nástroje neadoptuje.",
+    "Předplatné 4,99 USD/měs pro kalkulačku % DOS je neobhajitelné — výpočet je jednoduchý vzorec, který najdou zdarma u dodavatelů barviv (Dharma, Jacquard).",
+    "Práce s kyselými barvivy a ohřevem nese bezpečnostní rizika; chybné dávkování v aplikaci = reklamace a špatné recenze."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 400,
+   "reviewer_note": "Mikro-B2B trh bez ochoty platit předplatné. Nestavět."
+  }
+ ]
+}

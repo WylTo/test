@@ -1,0 +1,28 @@
+BUSINESS — REVIEWER VERIFY LOG (devil's advocate run)
+Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
+
+[1] query: site:apps.apple.com laser engraving pricing calculator  (idea business-22 Laser Quote)
+    saturation (dedicated laser pricing/quote in title): 0-1 (LaserSlate: Engraving Log is a laser job log, maybe with costs); rest are machine-brand control apps + 3D print cost calculators (adjacent model proven)
+    - Interflex Laser Engravers           https://apps.apple.com/us/app/interflex-laser-engravers/id865605024?l=zh-Hans-CN
+    - MKSLaser                            https://apps.apple.com/us/app/mkslaser/id1542756280
+    - PHECDA                              https://apps.apple.com/us/app/phecda/id6449028786
+    - AlgoLaser (brand)                   https://apps.apple.com/us/app/algolaser/id6450949534
+    - LaserSlate: Engraving Log (new, niche-adjacent) https://apps.apple.com/il/app/laserslate-engraving-log/id6799136358
+    - 3D Printer Cost Calculator (adjacent model) https://apps.apple.com/us/app/3d-printer-cost-calculator/id6444106268
+    - 3DPCC: 3D Printing Calculator (adjacent, new) https://apps.apple.com/us/app/3dpcc-3d-printing-calculator/id6762140057
+    - AtomStack Studio (brand)            https://apps.apple.com/us/app/atomstack-studio/id6470430049
+    - Craft Pricing Calculator            https://apps.apple.com/us/app/craft-pricing-calculator/id725600238
+    - CutLabX (GRBL control)              https://apps.apple.com/ua/app/cutlabx/id6468648065
+
+[2] query: site:apps.apple.com hair color formula stylist  (idea business-28 Color Formula Book)
+    saturation (dedicated formula-record apps for stylists): 5 (Gloss, Charm, COLORER, Color Coach, Redken Style Station) -> CONTESTED/SATURATED; Gloss/Charm are exactly the proposed product ("Save Formulas & Clients")
+    - COLORER (formula + color inventory, new) https://apps.apple.com/us/app/colorer/id6758462954
+    - Gloss: Save Formulas & Clients      https://apps.apple.com/us/app/gloss-save-formulas-clients/id1212498579
+    - Color Calculator BES USA (brand)    https://apps.apple.com/lt/app/color-calculator-bes-usa/id1465993560
+    - Color Coach Hair Formulation        https://apps.apple.com/us/app/color-coach-hair-formulation/id6463155438
+    - s.h.e. colorist (brand mixer)       https://apps.apple.com/us/app/s-h-e-colorist/id1621950604
+    - Hair Dye Selection (AI, consumer)   https://apps.apple.com/sg/app/hair-dye-selection/id6760969114
+    - Charm: Save Formulas & Clients      https://apps.apple.com/us/app/charm-save-formulas-clients/id1467161766
+    - Redken Style Station (brand, free)  https://apps.apple.com/us/app/redken-style-station/id1456235983
+    - (noise) MyColor AI - Color Analysis https://apps.apple.com/us/app/mycolor-ai-color-analysis/id6746819572
+

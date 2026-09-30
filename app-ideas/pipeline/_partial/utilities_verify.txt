@@ -1,0 +1,37 @@
+# Utilities — reviewer verification searches (devil's advocate run, 2026-09-30)
+
+## 1) query: site:apps.apple.com neighbor noise log recorder complaint  (2026-09-30) — idea utilities-02
+saturation (dedicated neighbour-noise evidence/log apps): 5 (Noise Log: Neighbor Complaint, Noise Log dB Meter, Ruhestörer Lärmprotokoll [DE!], QuietCase [UK], dB Logger) + The Noise App (UK) + video dB meter pitching neighbour proof -> CROWDED, incl. German "Lärmprotokoll" title
+https://apps.apple.com/us/app/noise-log-neighbor-complaint/id6789116754   (PDF + complaint letters, new)
+https://apps.apple.com/us/app/noise-log-db-meter/id6751512116
+https://apps.apple.com/us/app/ruhest%C3%B6rer-l%C3%A4rmprotokoll/id6763788979   (DE Lärmprotokoll)
+https://apps.apple.com/us/app/decibel-meter-video-db-meter/id6779128095
+https://apps.apple.com/gb/app/the-noise-app/id6443559552
+https://apps.apple.com/us/app/sound-meter-noise-detector/id1435079026
+https://apps.apple.com/gb/app/quietcase/id6759844730   (UK, "evidence accepted by councils")
+https://apps.apple.com/us/app/db-logger-sound-level-meter/id6778236281   (timestamped CSV+PDF for complaints)
+
+## 2) query: site:apps.apple.com power station runtime calculator  (2026-09-30) — idea utilities-03
+saturation (dedicated "power station runtime" title apps): 0-1; generic battery/UPS runtime calcs 3 (UPS Runtime Calc, Battery Calculator & Converter, Wire Gauge Calculator w/ load+solar runtime model). No brand-neutral "power station" planner surfaced -> CONTESTABLE / OPEN-ish, but demand unproven (search index shows nothing dedicated)
+https://apps.apple.com/il/app/ups-runtime-calc/id6761905234
+https://apps.apple.com/in/app/battery-calculator-converter/id6755130177   (runtime/capacity across chemistries)
+https://apps.apple.com/us/app/wire-gauge-calculator-cable/id6752443870   (models loads+chargers+batteries+solar, runtime predictions)
+https://apps.apple.com/us/app/power-calculator/id454548791
+https://apps.apple.com/ao/app/power-grid-calculator/id1567786064
+https://apps.apple.com/us/app/linkpower-companion/id6762404390   (brand power station app)
+https://apps.apple.com/us/app/brians-power-calculator/id6746960665
+https://apps.apple.com/us/app/energy-cost-calculator/id531132387
+https://apps.apple.com/us/app/power-cost/id430317572
+
+## 3) query: site:apps.apple.com circuit breaker panel directory label  (2026-09-30) — idea utilities-12
+saturation (dedicated breaker-panel directory apps): 6+ (Breaker Box, Panel Tracker, Panelweave, SwiftPanel, Circuit Navigator, Breaker Meister) — several new in 2025-26, PDF legend export already standard -> SATURATED (EN)
+https://apps.apple.com/us/app/breaker-box-panel-directory/id1459288663   (label circuits, PDF legend sized to panel)
+https://apps.apple.com/us/app/panel-tracker/id6692633713
+https://apps.apple.com/pk/app/panelweave-home-panel-map/id6792172170   (photos, verified circuits, export)
+https://apps.apple.com/us/app/swiftpanel/id6761280748   (print-ready PDF)
+https://apps.apple.com/us/app/circuit-navigator/id6461048331
+https://apps.apple.com/us/app/cu-to-al-to-cu-conversion-calc/id6744463524
+https://apps.apple.com/us/app/my-breaker-box/id1459288663
+https://apps.apple.com/xk/app/wiresketch-electric-planner/id6761186464
+https://apps.apple.com/cl/app/electrical-panel-designer/id6755904617?l=en-GB&platform=ipad
+https://apps.apple.com/us/app/breaker-meister-panel-manager/id1612667329

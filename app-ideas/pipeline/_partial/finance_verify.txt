@@ -12,3 +12,41 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results. "sat" = disti
     - Debt Payoff Planner & Tracker       https://apps.apple.com/us/app/debt-payoff-planner-tracker/id1009323715
     - (dup) https://apps.apple.com/app/debts/id363447040
     - (dup) https://apps.apple.com/app/id363447040
+
+[2] query: site:apps.apple.com irregular income budget  (idea finance-16)
+    sat("irregular/inconsistent income" in title): 1 (Able: Inconsistent Income) but 6+ budget apps explicitly market irregular income in description; 2 new 2026 entrants (Yearn, Able) -> CONTESTED, positioning not open
+    - Yearn: Paycheck Budget Planner (variable income, envelopes, gig/tipped) https://apps.apple.com/us/app/yearn-paycheck-budget-planner/id6797014022
+    - SpendLists: Income Tracker (freelancers, irregular income) https://apps.apple.com/tt/app/spendlists-income-tracker/id1495276397
+    - Smart Budget App (irregular income)  https://apps.apple.com/us/app/smart-budget-app/id6752881171
+    - Able: Inconsistent Income            https://apps.apple.com/us/app/able-inconsistent-income/id6769551407
+    - Smart Spend: Cost Analyzer           https://apps.apple.com/us/app/smart-spend-cost-analyzer/id1464471112
+    - BudgetBear - Bill Organizer (freelancers, irregular income) https://apps.apple.com/us/app/budgetbear-bill-organizer/id6738929063
+    - Budget Tracker - AI Expense          https://apps.apple.com/us/app/budget-tracker-ai-expense/id6740073896
+    - My Monthly Budget                    https://apps.apple.com/ie/app/my-monthly-budget/id6761712787
+    - EveryDollar (parent)                 https://apps.apple.com/us/app/everydollar-budget-management/id942571931
+    - Weekly: Budget Planner App           https://apps.apple.com/us/app/weekly-budget-app-planner/id1460038809
+
+[3] query: site:apps.apple.com art commission tracker  (idea finance-21)
+    sat("commission" in title): 1 (Controlla: Commission Tracker — generic sales commission, not art queue); artist business apps: ArtManager (commissions+invoices), Artwork Tracker, Art Show Tracker, MyArt -> CONTESTED, no dedicated "commission queue" title seen
+    - Controlla: Commission Tracker        https://apps.apple.com/us/app/controlla-commission-tracker/id6477843072
+    - ArtManager (inventory, clients, invoices, commissions) https://apps.apple.com/us/app/artmanager/id6504045401
+    - ArtManager (uo)                      https://apps.apple.com/us/app/artmanager/id6504045401?uo=2
+    - Artwork Tracker ($7.99)              https://apps.apple.com/us/app/artwork-tracker/id408819940
+    - Art Show Tracker by Lignia.art       https://apps.apple.com/us/app/art-show-tracker-by-lignia-art/id6752357310
+    - Artwork Tracker (Mac)                https://apps.apple.com/us/app/artwork-tracker/id675456200?mt=12
+    - iArtView (noise)                     https://apps.apple.com/ai/app/iartview-art-to-scale-gallery/id922553017
+    - MyArt                                https://apps.apple.com/us/app/myart/id585369779
+    - Artfol (community, noise)            https://apps.apple.com/ua/app/artfol-ai-free-art-community/id1522710478?platform=mac
+
+[4] query: site:apps.apple.com booth rent stylist income tracker  (idea finance-12)
+    sat("booth" in title, relevant): 1 dedicated (Booth Ledger — booth renters: income, tips, expenses, booth rent; one-time Pro) + Recordly (beauty pros earnings) -> niche already has a direct clone; EXACT positioning taken
+    - Landlord Studio (parent for finance-18) https://apps.apple.com/us/app/landlord-studio/id1109898840
+    - Booth Ledger (booth renters, tips, rent) https://apps.apple.com/in/app/booth-ledger/id6765623047?l=hi
+    - Seller Profit Tracker - Booth (in)   https://apps.apple.com/in/app/seller-profit-tracker-booth/id6760418067?l=hi
+    - Rent Easy Ledger                     https://apps.apple.com/us/app/rent-easy-ledger/id6747598989
+    - StyleSeat - Salon Appointments       https://apps.apple.com/us/app/styleseat-salon-appointments/id414313281
+    - Seller Profit Tracker - Booth (br)   https://apps.apple.com/br/app/seller-profit-tracker-booth/id6760418067?l=en-GB&platform=watch
+    - Recordly: Gig Income Tracker (hair stylists, nail techs) https://apps.apple.com/us/app/recordly-gig-income-tracker/id6749276198
+    - Recordly (se)                        https://apps.apple.com/se/app/recordly-earnings-tracker/id6749276198?l=en-GB
+    - Boomie Rent (noise)                  https://apps.apple.com/us/app/boomie-rent/id6476128095
+    - Pickle (noise)                       https://apps.apple.com/us/app/pickle-rent-lend-fashion/id1551736097

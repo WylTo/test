@@ -1,0 +1,884 @@
+{
+ "category_slug": "photo-video",
+ "summary": "Kategorie Photo & Video je nejslabší z těch, které autor označil jako „blue ocean“: všech 6 ověřovacích vyhledávání (dětské kresby, model release, scoreboard kamera, blur tváří, focus stacking, taneční zrcadlo) skončilo SATUROVANĚ, často s 5–9 přesnými klony a vlnou nových appek z let 2025–26. Nejlepší sázky jsou jen dvě web-ověřené niky: Wiggle 3D (#01) a litofánie (#02); obě jsou levné na stavbu, ale reálně pod 10 000 Kč měsíčně. Společná chyba: odhady saturace z hlavy u nápadů s evidencí „knowledge“ a přehlížení Sherlocku (Photos text search, Lightroom Assisted Culling, noční režim, subject lift, iMovie).",
+ "reviews": [
+  {
+   "id": "photo-video-01",
+   "verdict": "GO",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 7,
+    "monetization": 4,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "iOS 26 „prostorové scény“ (Spatial Scenes) dělají 3D paralaxu z libovolné fotky zdarma v Photos a na zamykací obrazovce – část „wow efektu“ je Sherlocknutá.",
+    "Klíčové slovo „nishika“ je název značky/fotoaparátu – v titulku či keywords hrozí 2.3.7 a spor o ochrannou známku.",
+    "Základna mezi objektivy iPhonu je ~1–2 cm, takže wiggle z jednoho záběru je slabý; kvalitní výsledek vyžaduje sekvenci s posunem telefonu = horší UX.",
+    "Virální trend (TikTok) – poptávka kolísá; hobby publikum chce jednorázový nákup, ne předplatné."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 5000,
+   "reviewer_note": "Jediná web-ověřená otevřená nika (2 dedikované appky), 2 týdny práce – stojí za to postavit jako levnou sázku. Ideální 16 000 Kč je ale optimistické; počítej s jednorázovým nákupem 4–5 USD a 3–6 tis. Kč měsíčně."
+  },
+  {
+   "id": "photo-video-02",
+   "verdict": "GO",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 7,
+    "monetization": 5,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Zdarma webové generátory (ItsLitho, 3dp.rocks, MakerWorld/MakerLab od Bambu) jsou pro tiskaře standard – platit v appce se jim nechce.",
+    "Workflow telefon → STL → slicer na PC je neohrabané; přínos appky roste až s přímým exportem do Bambu Handy/Orca, který není pod naší kontrolou.",
+    "Stejný nápad je top pick i v kategorii Graphics & Design – hrozí duplicitní vývoj a 4.3 riziko, pokud vzniknou dvě podobné appky."
+   ],
+   "missed_competitors": [
+    {
+     "name": "LithoCam",
+     "url": "",
+     "note": "STL generátor litofánií (Masaharu Tsukamoto) zmíněný v evidenci Graphics & Design – přímý konkurent, URL nenalezena."
+    }
+   ],
+   "revenue_czk_realistic": 6000,
+   "reviewer_note": "Web-ověřená nika (saturace 1, Lit Pic je tisková služba), plně offline a technicky odlišitelné. Postavit jen jednou v portfoliu (sloučit s Graphics & Design) a prodávat jako jednorázový Pro za 7–10 USD."
+  },
+  {
+   "id": "photo-video-03",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Web ověřeno: min. 7 dedikovaných appek (Arti, KidArt, Keepbox, LittlePicasso, Twinkle Art, Keepy, Artkive) – nika je obsazená, navíc 3 z nich jsou z let 2025–26.",
+    "Keepy je dostupné ve švédském App Store – tvrzení o US gapu neplatí.",
+    "Apple Photos (album + skenování v Poznámkách, vyhledávání podle osob) pokryje většinu potřeby zdarma."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Keepbox - Save Your Kids Art",
+     "url": "https://apps.apple.com/us/app/keepbox-save-your-kids-art/id6742782490",
+     "note": "2025, auto-crop, odstranění pozadí, fotoknihy."
+    },
+    {
+     "name": "KidArt - Save Your Kids' Art",
+     "url": "https://apps.apple.com/us/app/kidart-save-your-kids-art/id1575315019",
+     "note": "třídění podle dítěte a věku – přesně naše MVP."
+    },
+    {
+     "name": "Kids Art & Memory Saver - Arti",
+     "url": "https://apps.apple.com/us/app/kids-art-memory-saver-arti/id6753904837",
+     "note": "2025, profil pro každé dítě, tagy."
+    },
+    {
+     "name": "Keepy - Artwork & Schoolwork",
+     "url": "https://apps.apple.com/se/app/keepy-artwork-schoolwork/id647088205?l=en-GB",
+     "note": "dostupné i mimo USA – vyvrací US gap."
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Saturovaná nika s přesnými klony našeho MVP a falešným US gapem. Zahodit.",
+   "web_checked": true
+  },
+  {
+   "id": "photo-video-04",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 2,
+    "monetization": 5,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 3
+   },
+   "extra_risks": [
+    "Web ověřeno: 5 dedikovaných appek na model release; SnapSign nabízí šablony v 9 jazycích zdarma, Snap & Release je vícejazyčné – „US appky neřeší jazyky“ je nepravda.",
+    "Právně závazné GDPR/podobizna šablony pro 50 jazyků a jurisdikcí = odpovědnost za chybný text; bez právníka nelze prodávat „podle GDPR“.",
+    "Fotobanky (Getty, Shutterstock) akceptují jen své schválené formuláře – náš generický formulář profesionálům nestačí."
+   ],
+   "missed_competitors": [
+    {
+     "name": "SnapSign: Model Release Forms",
+     "url": "https://apps.apple.com/us/app/snapsign-model-release-forms/id6479212302",
+     "note": "zdarma, 9 jazyků, standard Getty."
+    },
+    {
+     "name": "Snap & Release",
+     "url": "https://apps.apple.com/us/app/snap-release/id1504299486",
+     "note": "vícejazyčné model/property release."
+    },
+    {
+     "name": "Model Release Form",
+     "url": "https://apps.apple.com/us/app/model-release-form/id6744301174?uo=2",
+     "note": "2025, včetně souhlasu pro nezletilé."
+    },
+    {
+     "name": "Releases by Snapwire",
+     "url": "https://apps.apple.com/au/app/releases-model-property-release/id968090910",
+     "note": "šablony ASMP/Getty/Shutterstock."
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Obsazeno 5 appkami, lokalizace už existuje a právní riziko je vysoké. Zahodit.",
+   "web_checked": true
+  },
+  {
+   "id": "photo-video-05",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Web ověřeno: 8 dedikovaných on-device blur appek; Blur Face in Photo a FaceStamp cílí přímo na školy a dětské fotky.",
+    "Školky/spolky jsou B2B s nulovým rozpočtem na appky – učitelka to udělá v Markup/Instagram editoru zdarma.",
+    "„Rozmaž všechny kromě jednoho dítěte“ vyžaduje rozpoznání obličeje = biometrická data dětí (5.1.1, GDPR čl. 9) – marketingový argument „GDPR bezpečné“ je sám o sobě riziko."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Blur Face in Photo",
+     "url": "https://apps.apple.com/dz/app/blur-face-in-photo/id6749568897",
+     "note": "explicitně dětské fotky ze školy a sportu, on-device."
+    },
+    {
+     "name": "Auto Hide Face - FaceStamp",
+     "url": "https://apps.apple.com/us/app/auto-hide-face-facestamp/id6499460919",
+     "note": "marketing na školy a pedagogy."
+    },
+    {
+     "name": "PrivacyBlur",
+     "url": "",
+     "note": "auto detekce tváří offline, „hide kids“."
+    },
+    {
+     "name": "Privacy Blur - hide faces",
+     "url": "https://apps.apple.com/us/app/privacy-blur-hide-faces/id6745965117",
+     "note": "use case skrytí dětských tváří."
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Přesně náš úhel už existuje několikrát a platící zákazník chybí. Zahodit.",
+   "web_checked": true
+  },
+  {
+   "id": "photo-video-06",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 4,
+    "build_ease": 4,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Web ověřeno: 6 dedikovaných scoreboard-camera appek (Scoreboard Pro, Scorify, ScoreFrame, Scorebug, ScoreCam, Ping Pong…), 4 nové z let 2025–26.",
+    "ScoreCam je dostupná celosvětově (i v np store) – US-gap tvrzení neplatí; multi-sport appky přidají florbal/házenou za den.",
+    "Záznam videa s živým overlayem a stabilním exportem (AVFoundation, přehřívání při 90 min) je technicky náročnější než 5 týdnů."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Scorify - Scoreboard Camera",
+     "url": "https://apps.apple.com/us/app/scorify-scoreboard-camera/id6749523905",
+     "note": "2025, skóre vpálené do videa za živa."
+    },
+    {
+     "name": "ScoreFrame / OverScore - Sport Scoreboard",
+     "url": "https://apps.apple.com/au/app/scoreframe-sport-scoreboard/id6760339051",
+     "note": "overlay na hotové video, export MP4."
+    },
+    {
+     "name": "Scoreboard Pro: Score & Record",
+     "url": "https://apps.apple.com/us/app/scoreboard-pro-score-record/id496758984",
+     "note": "zavedená appka, záznam se skóre."
+    },
+    {
+     "name": "Scorebug",
+     "url": "https://apps.apple.com/us/app/scorebug/id6764149376",
+     "note": "2026, broadcast overlay."
+    }
+   ],
+   "revenue_czk_realistic": 2500,
+   "reviewer_note": "Nika zaplavená novými appkami; floorball/házená jako klíčová slova neunesou 10 000 Kč. Zahodit.",
+   "web_checked": true
+  },
+  {
+   "id": "photo-video-07",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 1,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Web ověřeno: 9 dedikovaných tanečních přehrávačů se zrcadlem, 0,25× a A–B smyčkou (Dance Drill, DanSync, iNSYNC, Mirrored Perfect, FYP Dance…), 7 z nich z let 2025–26.",
+    "iNSYNC už dělá i vedle sebe s vlastní kamerou – naše jediná „odlišnost“ je obsazená.",
+    "Tanečníci používají zrcadlení a zpomalení přímo v TikToku/YouTube zdarma."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Dance Drill",
+     "url": "https://apps.apple.com/gh/app/dance-drill/id6759819098",
+     "note": "zrcadlo, 0,25–2×, IN/OUT smyčka."
+    },
+    {
+     "name": "iNSYNC - Dance to Any Video",
+     "url": "https://apps.apple.com/us/app/insync-dance-to-any-video/id1599957566",
+     "note": "zpomalení, zrcadlo, porovnání vedle sebe."
+    },
+    {
+     "name": "DanSync",
+     "url": "https://apps.apple.com/us/app/dansync/id6760836499",
+     "note": "2026, zrcadlo, 0,25×, smyčka, mřížka."
+    },
+    {
+     "name": "FYP Dance: Cover Practice Tool",
+     "url": "https://apps.apple.com/us/app/fyp-dance-cover-practice-tool/id6759196501",
+     "note": "K-pop cover úhel už obsazen."
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Nejpřeceňovanější nápad kategorie – demand 7 u niky, kde je 9 přesných klonů. Zahodit.",
+   "web_checked": true
+  },
+  {
+   "id": "photo-video-08",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 4,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 4
+   },
+   "extra_risks": [
+    "„Tooth fairy“ má saturaci 6 i podle autora a generické „catch Santa/fairy“ prank-camera appky jsou častým terčem 4.3 (spam/šablony).",
+    "Appka cílí na děti → rodičovská brána, žádné analytiky třetích stran, přísnější review (1.3 Kids).",
+    "Grafika postav pro 5+ kulturních variant (Ratoncito Pérez, Petite Souris, Zahnfee…) je práce pro ilustrátora, ne pro vývojáře.",
+    "Použití 1× za zub, jednorázový nákup – bez opakovaných příjmů."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Tooth Fairy Camera (a podobné prank appky)",
+     "url": "",
+     "note": "Více US appek s vílou ve fotce – neověřeno vyhledáváním, entertainment evidence zmiňuje stejný nápad."
+    }
+   ],
+   "revenue_czk_realistic": 3500,
+   "reviewer_note": "Jediná šance je lokální postava (Ratoncito Pérez pro ES/LatAm, Petite Souris pro FR) s vlastními klíčovými slovy v místním jazyce a jednorázová cena 2,99 USD. Pozor na překryv s kategorií Entertainment."
+  },
+  {
+   "id": "photo-video-09",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 3,
+    "monetization": 6,
+    "build_ease": 2,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Lightroom (vč. mobilu/iPadu) má od 2025 „Assisted Culling“ – ostrost, zavřené oči, duplicity; profesionál ho už má v předplatném → Sherlock od Adobe.",
+    "Svatební fotografové cullují na desktopu (Photo Mechanic, Aftershoot, Narrative Select); iPad workflow s RAW z SD karty je okrajový.",
+    "Rychlé dekódování tisíců RAW (různé formáty) a ML skórování na iPadu = měsíce práce, ne 8 týdnů; build_ease 3 byl ještě optimistický."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Adobe Lightroom (Assisted Culling)",
+     "url": "",
+     "note": "Vestavěný AI culling v Lightroomu, který profíci už platí."
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Náročné na stavbu, malá cílovka na iPadu a přímý konflikt s Lightroomem. Zahodit."
+  },
+  {
+   "id": "photo-video-10",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 3,
+    "build_ease": 9,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Domácích temných komor s f-stop tiskem je celosvětově řádově desítky tisíc; App Store hledání „f stop timer“ bude mít minimální objem.",
+    "Existují zavedené darkroom/f-stop časovače a komunita používá Massive Dev Chart nebo fyzické časovače (RH Designs) – nerada platí za další appku.",
+    "Displej telefonu i v červeném režimu může osvítit papír (OLED zbytkové spektrum, jas) – hrozí špatné recenze."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Massive Dev Chart Timer",
+     "url": "",
+     "note": "Dominantní appka analogové komunity, zahrnuje časovače procesů."
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Příliš malé publikum na samostatnou appku. Pokud vůbec, přidat jako funkci do analogového balíku (viz #11)."
+  },
+  {
+   "id": "photo-video-11",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 3,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Film logbooků je v App Store víc (Lightme Logbook, různé „film log/exif notes“ appky); autorovo „film photography 6“ ukazuje, že obecné termy jsou obsazené.",
+    "Analogoví fotografové očekávají appky zdarma nebo za 1–3 USD jednorázově – předplatné neprojde.",
+    "Zápis EXIF do skenů předpokládá, že uživatel skenuje do telefonu; kdo skenuje v labu, dostane soubory na PC."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Lightme – Logbook",
+     "url": "",
+     "note": "Zavedený logbook od autora populárního světloměru – autor ho uvádí, ale podceňuje."
+    }
+   ],
+   "revenue_czk_realistic": 2500,
+   "reviewer_note": "Samostatně slabé. Smysl dává jen jako „analogový balík“: log filmu + EXIF zápis + darkroom timer (#10) v jedné appce s jednorázovým Pro za 5–8 USD."
+  },
+  {
+   "id": "photo-video-12",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "iOS 26 a iPhone 15 Pro+ nativně točí prostorové fotky a Photos dělá „spatial scenes“ – Apple tlačí vlastní 3D formát, anaglyf je retro kuriozita.",
+    "Téměř duplicitní engine s #01 Wiggle 3D – dvě podobné stereo appky v portfoliu zvyšují 4.3 riziko.",
+    "Publikum anaglyfu/cross-view je mikroskopické a neplatí."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Spatial Media Toolkit / Spatialify a podobné",
+     "url": "",
+     "note": "Převodníky prostorových fotek existují a rostou s Vision Pro."
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Malé, neplatící publikum a kanibalizace s #01. Zahodit; případně přidat anaglyf export jako funkci do Wiggle 3D."
+  },
+  {
+   "id": "photo-video-13",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 4,
+    "monetization": 6,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Nezávisle neověřeno: v letech 2025–26 vznikla vlna AI „hair loss tracker/hairline“ appek (často s AI skóre hustoty) – saturace je pravděpodobně vyšší než autorovy 3–4.",
+    "Jakékoli měření hustoty nebo „pokroku léčby“ = zdravotní tvrzení (1.4.1); fotky skalpu jsou zdravotní data (5.1.1).",
+    "Kliniky dávají pacientům vlastní appky/WhatsApp follow-up zdarma; retence po 12 měsících končí."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Hims & Hers / appky klinik",
+     "url": "",
+     "note": "Telehealth appky a kliniky mají vestavěné progress fotky pro své pacienty."
+    }
+   ],
+   "revenue_czk_realistic": 4000,
+   "reviewer_note": "Platící publikum (utrácí tisíce za transplantaci a léky) a jednoduchý MVP, ale nutné ověřit apple_fetch check na „hair loss tracker“. Úhel: čistě fotodeník s ghost overlayem a bez zdravotních tvrzení, jednorázově 9,99 USD."
+  },
+  {
+   "id": "photo-video-14",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 5,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Reefaři řeší modré světlo hlavně fyzickými filtry na objektiv (clip-on oranžové filtry za 20–30 USD) – software musí být výrazně lepší než filtr + ruční WB.",
+    "Klíčová slova „reef camera“/„coral photo“ nejsou ověřená hinty; mnoho reefařů hledá v komunitě (Reef2Reef), ne v App Store.",
+    "Korekce z LED spektra (Radion, AI Prime…) vyžaduje kalibrační profily pro konkrétní světla – průběžná údržba dat."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Reef clip-on lens filtry (Coral Lens apod.)",
+     "url": "",
+     "note": "Fyzický substitut, který nika už používá."
+    }
+   ],
+   "revenue_czk_realistic": 3500,
+   "reviewer_note": "Bohaté publikum, skutečná bolest, ale neověřená poptávka v App Store. Stavět jen po checku klíčových slov; úhel = presety pro konkrétní reef LED + živý náhled kamery."
+  },
+  {
+   "id": "photo-video-15",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 4,
+    "monetization": 4,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Sherlock: Apple Photos (Memories/Vzpomínky s hudbou), iMovie (zdarma, lokalizováno) a CapCut šablony udělají důstojné video zdarma.",
+    "Jednorázové použití v emočně vypjaté chvíli – žádná retence, předplatné nemožné, recenze minimum.",
+    "Hledání „funeral slideshow“ probíhá na Googlu; pohřební služby prezentaci často dodají v ceně."
+   ],
+   "missed_competitors": [
+    {
+     "name": "iMovie / Apple Photos Memories",
+     "url": "",
+     "note": "Vestavěné, zdarma, v 50 jazycích."
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Poptávka existuje, ale ne v App Store a ne za předplatné. Zahodit."
+  },
+  {
+   "id": "photo-video-16",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 2,
+    "monetization": 4,
+    "build_ease": 4,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Web ověřeno: 5 dedikovaných iPhone focus-stacking appek (Zeus, Focus Stack Camera, Bloom, iFocus Stacking, FocusStacker) – autorova saturace 2 byla omyl.",
+    "Bloom (2026) nabízí přesně naše USP: 100 % on-device, offline stacking.",
+    "Ovládání ostření na iPhonu (makro přepíná objektivy, minimální krok ostření) omezuje kvalitu – výsledky pod úrovní desktopového Helicon Focus."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Zeus Focus Stacking",
+     "url": "https://apps.apple.com/us/app/zeus-focus-stacking/id6471365204",
+     "note": "snímání + blend na iPhonu, freemium Pro."
+    },
+    {
+     "name": "Bloom - Macro photography",
+     "url": "https://apps.apple.com/nz/app/bloom-macro-photography/id6781364940?platform=watch",
+     "note": "2026, offline on-device stacking."
+    },
+    {
+     "name": "Focus Stack Camera",
+     "url": "https://apps.apple.com/ca/app/focus-stack-camera/id6740208889",
+     "note": "10 snímků a spojení."
+    },
+    {
+     "name": "iFocus Stacking",
+     "url": "https://apps.apple.com/us/app/ifocus-stacking/id6752693470",
+     "note": "2025, pro-grade stacking."
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Nika je obsazená 5 appkami, z toho 3 nové. Zahodit.",
+   "web_checked": true
+  },
+  {
+   "id": "photo-video-17",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 3,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 8,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Sherlock: noční režim iPhonu (od iPhone 11) fotí polární záři výborně – během bouří 2024–25 to masivně ukázaly sociální sítě.",
+    "Sluneční maximum proběhlo 2024–25; v letech 2026–28 aktivita klesá → poptávka se bude snižovat.",
+    "NightCap má aurora režim a existují dedikované „northern lights photo“ appky; silná sezónnost (jen zima, jen severní šířky)."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Northern Lights Photo Taker",
+     "url": "",
+     "note": "Dedikovaná placená aurora kamera – známá z trhu, URL neověřena."
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Sherlocknuto nativní kamerou a trh po slunečním maximu slábne. Zahodit."
+  },
+  {
+   "id": "photo-video-18",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 2,
+    "blue_ocean": 6,
+    "monetization": 3,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "„Digiscoping“ je termín pro pár desítek tisíc nadšenců; objem v App Store je zanedbatelný.",
+    "Hlavní problém je hardware (adaptér, zarovnání) – software kamery přidá málo; nativní kamera + zoom stačí.",
+    "Birdeři utrácejí za optiku, ne za kamerovou appku; Merlin je zdarma a pokrývá jejich appkový rozpočet pozornosti."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Phone Skope",
+     "url": "",
+     "note": "Výrobce adaptérů s vlastní appkou – nika patří hardwaru."
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Otevřené, ale protože o to nikdo nestojí. Zahodit."
+  },
+  {
+   "id": "photo-video-19",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Sherlock: iOS „zvednout objekt“ (subject lift) udělá bílé pozadí zdarma; Photoroom/Pixelcut mají šablony pro šperky.",
+    "Realistická jiskra a odlesky kovů/kamenů se obtížně dělají věrohodně – prodejci pak dostávají reklamace „nevypadá jako na fotce“.",
+    "Etsy/Vinted prodejci šperků jsou citliví na cenu a už platí Photoroom."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Photoroom",
+     "url": "",
+     "note": "Lídr produktových fotek, šablony i pro šperky."
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Parent market je dominovaný a funkce je Sherlocknutá. Zahodit."
+  },
+  {
+   "id": "photo-video-20",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 4,
+    "monetization": 4,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Sherlock-light: nativní kamera už ukládá čas a GPS do EXIF a většina lidí prostě natočí video – přidaná hodnota musí být report/checklist.",
+    "Nezávisle neověřeno: po kauze AI skenerů škod u Hertz (2025) pravděpodobně vzniklo několik „rental car damage“ appek.",
+    "Použití 1–2× ročně → jen jednorázový nákup; půjčovny (Sixt, Hertz) mají vlastní inspekci v appce."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Appky půjčoven (Sixt, Hertz)",
+     "url": "",
+     "note": "Vlastní fotoinspekce při převzetí v oficiálních appkách."
+    }
+   ],
+   "revenue_czk_realistic": 3000,
+   "reviewer_note": "Reálná bolest s „why now“ (AI skenery škod), ale nutné ověřit konkurenci. Úhel: průvodce obchůzkou vozu + PDF protokol s hashi a časy v jazyce půjčovny, jednorázově 3,99 USD."
+  },
+  {
+   "id": "photo-video-21",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 4,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Web ověřeno: BlurQ a Auto Blur Faces už automaticky rozmazávají tváře ve videu na zařízení; celkem 8 blur appek.",
+    "Detekce SPZ on-device napříč evropskými formáty má chyby → uživatel stejně musí ručně kontrolovat.",
+    "YouTube Studio nabízí automatické rozmazání tváří zdarma; CapCut má blur efekt."
+   ],
+   "missed_competitors": [
+    {
+     "name": "BlurQ: Face Blur Photo & Video",
+     "url": "https://apps.apple.com/us/app/blurq-face-blur-photo-video/id6754220004",
+     "note": "2025, foto i video."
+    },
+    {
+     "name": "Auto Blur Faces: Photo & Video",
+     "url": "https://apps.apple.com/us/app/blur-faces-hide-unwanted-info/id1534663171",
+     "note": "automatický blur tváří ve videu."
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Obsazeno a částečně Sherlocknuto (YouTube Studio). Zahodit; nanejvýš úzký úhel „dashcam SPZ“ s nejistou poptávkou.",
+   "web_checked": true
+  },
+  {
+   "id": "photo-video-22",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 2,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "„Rephotography“ je akademický termín, v App Store ho téměř nikdo nehledá; „then and now“ je vágní fráze.",
+    "Historici a nadšenci do starých fotek neplatí; appky jako Timera zůstaly malé.",
+    "Engine ghost overlay je téměř totožný s #24 GrowLapse a #13 HairLine → riziko 4.3 v portfoliu."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Timera",
+     "url": "",
+     "note": "Existující then-and-now appka, uvádí sám autor – nika je malá, ne prázdná."
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Nízká poptávka a nulová ochota platit. Zahodit, ghost overlay použít v #24/#13."
+  },
+  {
+   "id": "photo-video-23",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 3,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Photoroom, Pixelcut a Vinted/Depop vestavěné nástroje už řeší pozadí pro resellery; „flat lay“ appek je hodně.",
+    "Prodejci second-handu prodávají kusy za 5–15 EUR – ochota platit předplatné je minimální.",
+    "Míry v obrázku vyžadují ruční měření – appka nic neautomatizuje, jen šablona."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Photoroom (reseller šablony)",
+     "url": "",
+     "note": "Přímo cílí na Vinted/Poshmark prodejce."
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Chudé publikum, silní incumbenti. Zahodit."
+  },
+  {
+   "id": "photo-video-24",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 4,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Zahradníci platí málo a jen sezónně (duben–září).",
+    "Existuje řada „daily photo / progress timelapse“ appek (Everyday, selfie-a-day), které stačí i pro rostliny.",
+    "Téměř stejný engine jako #22 a #13 – vydávat tři podobné appky je 4.3 riziko."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Everyday / Lapse It",
+     "url": "",
+     "note": "Obecné daily-photo a time-lapse appky pokrývají použití."
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Samostatně slabé. Smysl dává jen jako jedna „same-spot progress camera“ (rostliny, rekonstrukce, then&now) místo tří appek; jinak zahodit."
+  },
+  {
+   "id": "photo-video-25",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 5,
+    "build_ease": 4,
+    "offline_fit": 10,
+    "safety": 3
+   },
+   "extra_risks": [
+    "Marketing na „odvážné rodiče“ je nebezpečný: pózy jako froggy/hanging vyžadují kompozit a asistenta – zranění dítěte = mediální i právní problém.",
+    "Obsah (ilustrace/fotky pro desítky póz, bezpečnostní texty) je hlavní náklad a vyžaduje odborníka; build 5 týdnů je podhodnocený.",
+    "Newborn fotografky se učí na workshopech a z placených kurzů; appka s pózami je pro ně nízká hodnota."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Posing App",
+     "url": "",
+     "note": "Obecná posing appka s placeným obsahem – může přidat newborn balík."
+    }
+   ],
+   "revenue_czk_realistic": 2500,
+   "reviewer_note": "Jen pro profi fotografky a bez rodičů v cílovce; obsah licencovat od zkušené newborn fotografky. Jinak zahodit kvůli bezpečnosti."
+  },
+  {
+   "id": "photo-video-26",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 4,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Svatební fotografové používají shot listy v HoneyBook/Studio Ninja, Notes nebo PDF od kolegů – bolest je malá.",
+    "Objem hledání „wedding shot list“ v App Store je minimální; sezónní (květen–září).",
+    "Existují shot list appky (Shot Lister a další) a checklist lze udělat v Připomínkách."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Shot Lister",
+     "url": "",
+     "note": "Zavedená appka na shot listy (film), použitelná i pro focení."
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Malá poptávka a vestavěná náhrada. Zahodit."
+  },
+  {
+   "id": "photo-video-27",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 5,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Sherlock: Apple Photos od iOS 15 indexuje text na fotkách (Live Text) – hledání „17“ najde fotky s číslem dresu zdarma.",
+    "OCR čísel na dresech (záhyby, natočení, zákryt) má nízkou přesnost; profi race fotografové používají cloud služby s bib rozpoznáním.",
+    "Fotky nezletilých sportovců a třídění podle identity = citlivé téma (5.1.1)."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Apple Photos (vyhledávání textu)",
+     "url": "",
+     "note": "Vestavěné hledání textu ve fotkách."
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Sherlocknuto vestavěným vyhledáváním textu ve Fotkách. Zahodit."
+  },
+  {
+   "id": "photo-video-28",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 3,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Sherlock: foťáky Sony/Canon/Nikon/Fuji zapisují GPS přes Bluetooth ze svých appek (Imaging Edge, Camera Connect, SnapBridge) zdarma.",
+    "Geotagging z GPX řeší Lightroom Classic a zavedené appky (Geotag Photos Pro) – nika je malá a obsazená.",
+    "Import RAW z foťáku do telefonu kvůli geotaggingu je u většiny fotografů netypický workflow."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Geotag Photos Pro",
+     "url": "",
+     "note": "Zavedený GPX logger + geotagging, dostupný na iOS."
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Výrobci foťáků to už vyřešili zdarma. Zahodit."
+  },
+  {
+   "id": "photo-video-29",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 4,
+    "monetization": 3,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Odlesky na laku/olejomalbě nejde spolehlivě odstranit softwarem – profíci používají polarizační filtry a světla; appka slibuje nemožné.",
+    "Adobe Scan, skener v Poznámkách a Lightroom perspektiva pokryjí narovnání a ořez zdarma.",
+    "Umělci mají nízký rozpočet a často foťí jednou za měsíc – slabá retence."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Adobe Scan / Lightroom mobile",
+     "url": "",
+     "note": "Zdarma perspektivní korekce a ořez."
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Slib „bez odlesků“ je fyzikálně nesplnitelný a zbytek je zdarma jinde. Zahodit."
+  },
+  {
+   "id": "photo-video-30",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 3,
+    "monetization": 3,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 3
+   },
+   "extra_risks": [
+    "Jednorázová událost (2. 8. 2027): příjmy v jednom měsíci, pak nula – není to byznys s ≥ 10 000 Kč měsíčně.",
+    "Solar Eclipse Timer a další eclipse appky obsadí klíčová slova; recenze a pořadí se nestihnou nasbírat za pár týdnů před akcí.",
+    "Míření telefonem do Slunce: riziko poškození senzoru a zraku uživatele → odpovědnost a přísnější review."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Solar Eclipse Timer",
+     "url": "",
+     "note": "Dominantní appka pro zatmění (hlasový odpočet), autor ji uvádí."
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Jednorázová špička bez trvalých příjmů. Zahodit, max. jako funkci jiné astro appky."
+  }
+ ]
+}

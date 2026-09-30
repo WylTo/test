@@ -1,0 +1,46 @@
+BOOKS — REVIEWER VERIFY LOG (devil's advocate run)
+Date: 2026-09-30. All URLs copied verbatim from WebSearch results. None constructed.
+
+[1] query: site:apps.apple.com čtenářský deník  (idea books-05)
+    saturation (apps with "čtenářský deník" in CZ title): 2 — both are generic adult book trackers localized as "čtenářský deník", not school-diary tools; no school-structured diary seen -> keyword CONTESTABLE (title slot taken twice)
+    - Leto - Čtenářský deník (generic book tracker, barcode scan)  https://apps.apple.com/cz/app/leto-%C4%8Dten%C3%A1%C5%99sk%C3%BD-den%C3%ADk/id1561653139?l=cs
+    - Čtenářský deník / Reading Diary - Book Tracker (Zdenek Skrobak, personal library) https://apps.apple.com/cz/app/%C4%8Dten%C3%A1%C5%99sk%C3%BD-den%C3%ADk/id1551851756?l=cs
+    - same app EN listing: Reading Diary - Book Tracker https://apps.apple.com/cz/app/reading-diary-book-tracker/id1551851756
+    - (noise) Deník N https://apps.apple.com/cz/app/den%C3%ADk-n/id1436714471?l=cs
+    - (noise) Deník https://apps.apple.com/cz/app/den%C3%ADk/id6447391597?l=cs
+    - (noise) Diář - Můj Denik a Poznamky https://apps.apple.com/cz/app/di%C3%A1%C5%99-m%C5%AFj-denik-a-poznamky/id1605113008?l=cs&platform=watch
+    - (noise) Tvůj Deník - psaní každý den https://apps.apple.com/cz/app/tv%C5%AFj-den%C3%ADk-psan%C3%AD-ka%C5%BEd%C3%BD-den/id6749888350?l=cs
+    - (noise) DAILY NOTE - Dnešní poznámka https://apps.apple.com/cz/app/daily-note-dne%C5%A1n%C3%AD-pozn%C3%A1mka/id1176935129?l=cs
+
+[2] query: site:apps.apple.com book quotes scanner highlights paper books  (idea books-09)
+    saturation (dedicated paper-book quote/highlight scanners): 6 -> SATURATED; Highlighted was Apple "App of the Day" (does exactly camera -> select sentence -> save with book/page/notes)
+    - Book Tracker: Highlighted (Highlighted: Book Highlights, App of the Day) https://apps.apple.com/gb/app/highlighted-book-highlighter/id1480216009
+    - QuoteMark: AI Scan Book Quotes https://apps.apple.com/us/app/quotemark-ai-scan-book-quotes/id6471570608
+    - Excerpt - The Book Highlighter https://apps.apple.com/us/app/excerpt-the-book-highlighter/id1447907126
+    - Book Quote Saver https://apps.apple.com/us/app/book-quote-saver-key-notes/id6743495889
+    - Book Scanner - Scan to Text https://apps.apple.com/us/app/book-scanner-scan-to-text/id6814825020
+    - Quote Depository https://apps.apple.com/us/app/quote-depository/id6467808212
+    - BooJi - Book Notes & Scanner https://apps.apple.com/app/id6743477532
+    - (story) App of the Day: Highlighted https://apps.apple.com/ec/story/id1524275365?l=en-GB
+
+[3] query: site:apps.apple.com book bingo reading challenge  (idea books-11)
+    saturation (apps with "book bingo" in title): 0; but 2 bookish apps ship bingo cards as a feature (Uncover: Romance Trope Bingo + templates; BookSlayer: randomized Book Bingo) + Goodreads Reading Challenge -> keyword open, feature already copied; rest of results are casino bingo noise
+    - Uncover - Bookish App https://apps.apple.com/us/app/uncover-bookish-app/id6479319484
+    - BookSlayer https://apps.apple.com/us/app/bookslayer/id6751204622
+    - Goodreads (Reading Challenge) https://apps.apple.com/us/app/goodreads-book-tracker-more/id355833469?eventid=6775446025
+    - (noise) Bingo Story Live Bingo Games https://apps.apple.com/us/app/bingo-story-live-bingo-games/id1179108009
+    - (noise) Bingo Showdown https://apps.apple.com/gb/app/bingo-showdown-bingo-games/id915469477
+    - (noise) Early reading kids books https://apps.apple.com/us/app/early-reading-kids-books-reading-toddler-games/id675554527
+    - (noise) Word BINGO https://apps.apple.com/gb/app/word-bingo/id406264088
+
+[4] query: site:apps.apple.com mystery plot planner clues suspects writers  (idea books-10)
+    saturation (dedicated mystery-WRITING planners): 0 -> keyword space for writers empty; results dominated by detective GAMES (keyword collision: "mystery/clue/suspects" = games intent). Storyfolk Novel Planner already has crime & mystery templates.
+    - Storyfolk Novel Planner (crime & mystery prompts) https://apps.apple.com/ca/app/storyfolk-novel-planner-app/id6744127272
+    - Whodunit Now? - Mystery Solver (clue/suspect tracker for solving, not writing) https://apps.apple.com/us/app/whodunit-now-mystery-solver/id6751511946
+    - (games) Suspects: Mobile Detective https://apps.apple.com/gb/app/suspects-mobile-detective/id1388882748
+    - (games) Small Town Murders: Match 3 https://apps.apple.com/us/app/small-town-murders-match-3/id1479036032
+    - (games) Crime Mysteries: Hidden Murder https://apps.apple.com/us/app/crime-mysteries-hidden-murder/id1483062561
+    - (games) Solve:Crime & Murder Detective https://apps.apple.com/us/app/solve-crime-murder-detective/id6741021007
+    - (games) Whodunit?: Detective Archives https://apps.apple.com/us/app/whodunit-mystery-games/id6605932965
+    - (games) Mini Murder Mysteries https://apps.apple.com/us/app/mini-murder-mysteries/id6772545874
+    - (games) Murder Mystery Detective Story https://apps.apple.com/us/app/murder-mystery-detective-story/id1452970820

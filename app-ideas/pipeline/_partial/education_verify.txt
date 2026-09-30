@@ -1,0 +1,40 @@
+EDUCATION — REVIEWER VERIFY LOG (devil's advocate run)
+Date: 2026-09-30. All URLs copied verbatim from WebSearch results. No Apple API calls.
+
+[1] query: site:apps.apple.com czech citizenship test  (idea education-04)  date: 2026-09-30
+    saturation (dedicated České reálie / Czech citizenship test apps): 2 (České reálie cvičný test; Českých Reálií Czech Realities, all 300 questions). Author assumed "malé testové appky" without URLs — niche is NOT empty, but thin. Parent: DE/US citizenship tests plentiful.
+    - České reálie cvičný test              https://apps.apple.com/id/app/%C4%8Desk%C3%A9-re%C3%A1lie-cvi%C4%8Dn%C3%BD-test/id1568458568
+    - Českých Reálií Czech Realities         https://apps.apple.com/us/app/-/id6737776553
+    - Greek Citizen (analogue, GR)           https://apps.apple.com/gr/app/greek-citizen/id6738965306
+    - Citizenship Test Germany 2026 (parent) https://apps.apple.com/us/app/citizenship-test-germany-2026/id6761067896
+    - Citizenship Test Prep - 2026 (US)      https://apps.apple.com/us/app/citizenship-test-prep-2026/id6770942754
+    - Examen de Ciudadanía de EE UU          https://apps.apple.com/us/app/examen-de-ciudadan%C3%ADa-de-ee-uu/id6744540266
+    - Scio - testy na VŠ (by-catch)          https://apps.apple.com/us/app/scio-testy-na-v%C5%A1/id1565734350
+    - Driving school tests - Czechia (by-catch) https://apps.apple.com/cz/app/driving-school-tests-czechia/id1401498212
+    - testlid (by-catch)                     https://apps.apple.com/cd/app/testlid/id6745471275
+    - (unknown title)                        https://apps.apple.com/us/app/id1458665674
+
+[2] query: site:apps.apple.com CELPIP speaking practice  (idea education-17)  date: 2026-09-30
+    saturation (dedicated CELPIP apps, most with speaking + recording/AI scoring): 8 -> SATURATED (author assumed "celpip speaking" sat 2). Many are 2025–26 (id67xx) with AI speech feedback.
+    - CELPIP Prep Practice - CELPIX           https://apps.apple.com/us/app/celpip-prep-practice-celpix/id6752662613
+    - IELTS & CELPIP Speaking Prep (eg)       https://apps.apple.com/eg/app/ielts-celpip-speaking-prep/id6448933453
+    - IELTS & CELPIP Speaking Prep (ca)       https://apps.apple.com/ca/app/ielts-celpip-speaking-prep/id6448933453
+    - CELPIP Prep : Practice Test             https://apps.apple.com/us/app/celpip-prep-practice-test/id6747511818
+    - CELPIP Prep Practice Test 2026          https://apps.apple.com/th/app/celpip-prep-practice-test-2026/id6755596682
+    - CELPIP Simulator - Mock Exams           https://apps.apple.com/in/app/celpip-simulator-mock-exams/id6773822666
+    - celpip-tip                              https://apps.apple.com/in/app/celpip-tip/id1214575044
+    - CELPIP 2026 Mock Exam                   https://apps.apple.com/ml/app/celpip-2026-mock-exam/id6779704754
+    - Celpip Sample Tests                     https://apps.apple.com/in/app/celpip-sample-tests/id6472698290
+
+[3] query: site:apps.apple.com japanese pitch accent  (idea education-14)  date: 2026-09-30
+    saturation (dedicated pitch-accent trainers/dictionaries): 3 (Japanese Pitch Accent Trainer 2026 — exact-match title; Aomi Japanese: Speaking — pitch recognition & visualization; JAccent accent dictionary) + 3 learning apps listing pitch accent as a feature. CONTESTABLE, exact-match title already taken.
+    - Japanese Pitch Accent Trainer            https://apps.apple.com/be/app/japanese-pitch-accent-trainer/id6760803133
+    - Aomi Japanese: Speaking                  https://apps.apple.com/us/app/aomi-japanese-speaking/id1559690620
+    - Aomi Japanese: Speaking (rw)             https://apps.apple.com/rw/app/aomi-japanese-speaking/id1559690620
+    - GraspJPN                                 https://apps.apple.com/us/app/graspjpn/id1491588858
+    - JAccent: Japanese dict with AI           https://apps.apple.com/us/app/jaccent-japanese-dict-with-ai/id1252200087
+    - Minna: Japanese for Beginners            https://apps.apple.com/kn/app/minna-japanese-for-beginners/id1637843824
+    - Tsugi - Japanese Vocab Mining            https://apps.apple.com/ly/app/tsugi-japanese-vocab-mining/id1546470961?platform=watch
+    - Jengo: Learn Japanese                    https://apps.apple.com/us/app/jengo-learn-japanese/id6765958942
+    - Yomoyo: Japanese Reader                  https://apps.apple.com/us/app/yomoyo-japanese-reader/id6744860737
+

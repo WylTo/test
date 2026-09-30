@@ -13,3 +13,53 @@
 - WorkBC https://apps.apple.com/ca/app/workbc/id1581502913
 Saturation: 1 dedicated BCBA fieldwork tracker in results (ABA Mastery, bundled with exam prep, new 2026); rest generic hour trackers. Niche thin but not empty; a funded exam-prep app already bundles the exact feature.
 
+2) query: "site:apps.apple.com cpd tracker log revalidation"  date: 2026-09-30  (idea productivity-06 CPD Log)
+- Revalidation Copilot (CPD log, NMC revalidation) https://apps.apple.com/vn/app/revalidation-copilot/id6760566022
+- Revalidate App (UK healthcare revalidation) https://apps.apple.com/dz/app/revalidate-app/id6479925492
+- Actuarial CPD Tracker (photo of certificate) https://apps.apple.com/us/app/actuarial-cpd-tracker/id6763814995
+- iatroX https://apps.apple.com/us/app/iatrox/id6744710677
+- Logitbox: Medical Logbook https://apps.apple.com/in/app/logitbox-medical-logbook/id1413535606
+- myCPD https://apps.apple.com/us/app/mycpd/id1632140770
+- CPDTracks (SAICA audit-ready declaration) https://apps.apple.com/us/app/cpdtracks/id6760044004
+- CII CPD https://apps.apple.com/us/app/cii-cpd/id815079105
+- myCPD (gb) https://apps.apple.com/gb/app/mycpd/id1632140770
+- Physicians' CPD https://apps.apple.com/us/app/physicians-cpd/id1360322896
+Saturation: 8+ dedicated CPD trackers, many new 2026 profession-specific (NMC, actuarial, SAICA, CII, physicians). CROWDED -> generic "cpd tracker" not blue ocean.
+
+3) query: "site:apps.apple.com custody calendar co-parenting schedule"  date: 2026-09-30  (idea productivity-24 Custody Calendar)
+- Child Custody Calendar (2-2-3, week on/off, swaps, holidays) https://apps.apple.com/us/app/child-custody-calendar/id6757625632
+- KidCal: Co-Parent Calendar App https://apps.apple.com/us/app/kidcal-co-parent-calendar-app/id1450930204
+- KidCal: Custody Calendar (af) https://apps.apple.com/af/app/kidcal-custody-calendar/id1450930204
+- SplitDay: Custody Calendar (custody scoreboard) https://apps.apple.com/us/app/splitday-custody-calendar/id6758915123
+- Fayr: Co-Parenting & Custody https://apps.apple.com/us/app/fayr-co-parenting-custody/id1170670072
+- OurFamilyWizard Co-Parent App https://apps.apple.com/us/app/ourfamilywizard-co-parent-app/id497405393
+- Kidtime Coparent Calendar Chat https://apps.apple.com/us/app/kidtime-coparent-calendar-chat/id6471020127
+- Family Bridge: Co-Parenting https://apps.apple.com/us/app/family-bridge-co-parenting/id6751374426
+- Kidtime Coparenting Calendar https://apps.apple.com/us/app/kidtime-coparenting-calendar/id6471020127
+Saturation: 7 dedicated custody-calendar apps (4 with "custody calendar" in title), several new 2025-26 indie. SATURATED in EN; only localized-term angle (Wechselmodell etc.) remains unverified.
+
+4) query: "site:apps.apple.com iep data collection goal tracking teacher"  date: 2026-09-30  (idea productivity-23 IEP Goal Data Collector)
+- AbleSpace - IEP Goal Tracking (jo) https://apps.apple.com/jo/app/ablespace-iep-goal-tracking/id1662372988
+- SPED Goals: IEP Tracker https://apps.apple.com/us/app/sped-goals-iep-tracker/id6447784065
+- SPED Goals: IEP Tracker App (jm) https://apps.apple.com/jm/app/sped-goals-iep-tracker/id6447784065
+- AbleSpace - IEP Goal Tracking https://apps.apple.com/us/app/ablespace-iep-goal-tracking/id1662372988
+- TrackBinder: IEP Goal Tracker https://apps.apple.com/us/app/trackbinder-iep-goal-tracker/id6756043768
+- SPED Goals https://apps.apple.com/us/app/sped-goals/id6447784065
+- IEP Report https://apps.apple.com/us/app/iep-report/id6761060896
+- IEPTracker https://apps.apple.com/us/app/ieptracker/id6739363352
+- IEP HERO https://apps.apple.com/us/app/iep-hero/id6756327694
+Saturation: 6 dedicated IEP apps with "IEP" in title (AbleSpace = funded leader, 10+ data types, one-click). SATURATED.
+
+5) query: "site:apps.apple.com document expiry reminder passport id expiration"  date: 2026-09-30  (idea productivity-07 Expiry Vault)
+- Document Expiry Reminder (on-device, AES-256, no cloud) https://apps.apple.com/us/app/document-expiry-reminder/id6756968613
+- RemindMe Document Expiry Dates https://apps.apple.com/us/app/remindme-document-expiry-dates/id6478255369
+- Document Expiration RemindMe https://apps.apple.com/us/app/document-expiration-remindme/id6478255369
+- ID's Expiry Reminder Manager https://apps.apple.com/us/app/ids-expiry-reminder-manager/id1439319617
+- Expiration Reminder RenewalKit (OCR + passport NFC) https://apps.apple.com/us/app/expiration-reminder-renewalkit/id6758590671
+- Remindoc https://apps.apple.com/us/app/remindoc/id6752609502
+- Deadlinr - Expiry Tracker https://apps.apple.com/us/app/deadlinr-expiry-tracker/id6757941172
+- Remind Me with OCR: RenewalKit https://apps.apple.com/us/app/remind-me-with-ocr-renewalkit/id6758590671
+- DocReminder https://apps.apple.com/us/app/docreminder/id6755967762
+- ID Vault: Travel Document Safe https://apps.apple.com/us/app/id-vault-travel-document-safe/id6744865269
+Saturation: 8 dedicated document-expiry apps, most launched 2025-26, one already offline/encrypted, one with OCR+NFC. SATURATED.
+
