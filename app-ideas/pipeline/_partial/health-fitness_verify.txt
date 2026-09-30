@@ -24,3 +24,15 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results. No Apple API 
     - Padel Keeper                                       https://apps.apple.com/kg/app/padel-keeper/id1599929559
     - WorkPadel (bodyweight workouts for padel)          https://apps.apple.com/in/app/workpadel/id6443625445
     - Deuce - Padel Scorekeeper                          https://apps.apple.com/do/app/deuce-padel-scorekeeper/id1554095897?l=en-GB
+
+[3] query: site:apps.apple.com pilates bar workout  (idea health-fitness-10)  date: 2026-09-30
+    saturation (apps dedicated to the portable pilates-bar/stick-with-bands kit): 0. BUT the phrase collides with "barre" (ballet barre) and studio booking apps named "... Bar Pilates" -> 7 results with barre/bar in title, none about the kit. Blue ocean for the device, noisy keyword space; big pilates/barre video apps rank for "pilates bar".
+    - BODYBAR Pilates (studio chain)                  https://apps.apple.com/us/app/bodybar-pilates/id6466218437?see-all=reviews&platform=iphone
+    - Pilates Barre Ondemand (Tracey Mallett, 250+)   https://apps.apple.com/us/app/pilates-barre-ondemand/id1465990317
+    - Fittbe Daily Pilates Workouts                   https://apps.apple.com/us/app/fittbe-daily-pilates-workouts/id566829078
+    - Sway Bar Pilates (studio booking)               https://apps.apple.com/us/app/sway-bar-pilates/id1521803720
+    - Fittbe: Barre Home Workouts                     https://apps.apple.com/us/app/fittbe-barre-pilates-fitness/id539386047
+    - Barre Sculpt Pilates                            https://apps.apple.com/us/app/barre-sculpt-pilates/id6742112972
+    - The Pilates Class                               https://apps.apple.com/us/app/the-pilates-class/id1530081615
+    - Pilatelise                                      https://apps.apple.com/ml/app/pilatelise/id6463171504
+    - (untitled result)                               https://apps.apple.com/us/app/id6741896689
