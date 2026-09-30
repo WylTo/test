@@ -1,0 +1,151 @@
+MEDICAL (category_slug: medical) — partial evidence
+Date: 2026-09-30. Only 9 WebSearch calls succeeded before the session-wide budget (200/200) ran out.
+Every URL below is copied verbatim from those WebSearch results. None was constructed.
+"Saturation" = the number of returned apps.apple.com results whose TITLE targets the niche phrase.
+
+=====================================================================
+MAIN FINDING
+The hinted niches (gout, long-COVID pacing, POTS, vertigo, bladder diary, eye drops, scoliosis brace)
+are crowded in 2025–26 with new indie apps, many of them AI-generated. Their IDs are mostly 67xxxxxxxx–68xxxxxxxx.
+Several are A/B-testing different titles under the same ID (GoutSnap, Bladder Journal).
+Most have few ratings, but they occupy the exact-match title keywords.
+The open space is: (a) localization, since almost all of these apps have EN-only listings even in PL/NL/IL/SA/BA stores;
+(b) narrower sub-niches that none of the results targeted (listed below).
+=====================================================================
+
+--- QUERY 1: site:apps.apple.com bladder diary  -> saturation "bladder diary" = 5 (crowded)
+Bladderly: Smart Bladder Diary  https://apps.apple.com/us/app/bladderly-smart-bladder-diary/id1523268654  (AI measures voiding volume by sound)
+Bladder Diary Tracker           https://apps.apple.com/us/app/bladder-diary-tracker/id1487355489  (volume and time)
+Bladder Diary: Vesi             https://apps.apple.com/us/app/bladder-diary-vesi/id6739755941  (leaks, urgency, hydration, PDF for doctor)
+Bladder Journal                 https://apps.apple.com/us/app/bladder-journal/id6743176692  (same id also seen as "Bladder Journal: Diary Tracker")
+FemPulse Bladder Diary          https://apps.apple.com/us/app/fempulse-bladder-diary/id6462870195  (women)
+OPEN sub-niches (no result targeted them): post-prostatectomy continence / pad-count / pad-weight test for men;
+  bladder training / timed-voiding coach (OAB); pediatric bedwetting dry-night chart; kidney-stone hydration + oxalate list.
+
+--- QUERY 2: site:apps.apple.com gout tracker  -> saturation "gout tracker" = 6 (crowded in EN; drop unless localized)
+Gout Log                         https://apps.apple.com/us/app/gout-log/id6759033822
+Gout Guru: Flare Tracker         https://apps.apple.com/us/app/gout-guru-flare-tracker/id6756127987
+GoutSnap AI: Stop Gout Flares    https://apps.apple.com/us/app/goutsnap-ai-stop-gout-flares/id6746496269  (same id also titled "Gout Snap AI: Purine tracker" / "GoutSnap AI: Uric Acid Tracker")
+Gout-Cha!                        https://apps.apple.com/sa/app/gout-cha/id6753363854?platform=ipad
+Urica: Gout Flare Diet Tracker   https://apps.apple.com/il/app/gout-flare-diet-tracker-urica/id6757678060  (also https://apps.apple.com/fr/app/gout-tracker-app-urica/id6757678060?l=en-GB, EN listing in FR store)
+Gout +                           https://apps.apple.com/us/app/gout/id6670218175
+Note: all are EN-only. A localized gout/uric-acid diary (JP 痛風/尿酸値, DE Gicht, KR 통풍) with local-food purine tables = US-gap angle (the local stores were not checked).
+
+--- QUERY 3: site:apps.apple.com tinnitus diary  -> "tinnitus diary/tracker" = 2 (open-ish); "tinnitus relief" = 7+ (crowded)
+Tinnilog - Tinnitus Tracker      https://apps.apple.com/us/app/tinnilog-tinnitus-tracker/id6450949021  (diary, Watch app, trigger classification — strongest diary competitor)
+Track Your Tinnitus              https://apps.apple.com/us/app/track-your-tinnitus/id787178122  (academic)
+TinnitusHelp.me                  https://apps.apple.com/us/app/tinnitushelp-me/id6741688965
+Tinnitus Relief Sound            https://apps.apple.com/us/app/tinnitus-relief-sound/id1557727236  (has journal)
+Tinnitus Relief: MyPattern       https://apps.apple.com/us/app/tinnitus-relief-mypattern/id6757972866
+Oto: Tinnitus Sounds & Support   https://apps.apple.com/us/app/oto-tinnitus-program-skills/id1528362618  (UK CBT program, subscription, EN -> US-gap for localized CBT-style education course; 1.4.1/MDR risk)
+Tinnitus Relief, Aid & Help      https://apps.apple.com/us/app/tinnitus-relief-aid-help/id6742564706
+ReSound Tinnitus Relief          https://apps.apple.com/gb/app/resound-tinnitus-relief/id928432517  (parent leader)
+Quieten : Tinnitus Relief        https://apps.apple.com/us/app/quieten-tinnitus-relief/id1480018706
+Tinnitus Aid: ringing relief     https://apps.apple.com/us/app/tinnitus-aid-help-ear-ringing/id891630056
+
+--- QUERY 4: site:apps.apple.com vertigo diary dizziness tracker  -> "vertigo tracker" = 4; "epley/bppv" = 2 (medium)
+Track Vertigo Attacks - Verti    https://apps.apple.com/us/app/track-vertigo-attacks-verti/id6752280069  (triggers, weather/pressure tracking, med reminders)
+Vertige                          https://apps.apple.com/us/app/vertige/id1623476042
+Vertigo BPPV Vestibular Coach    https://apps.apple.com/us/app/vertigo-bppv-vestibular-coach/id6764793454  (Epley/Brandt-Daroff guidance + diary)
+Epley Assist: Dizziness Relief   https://apps.apple.com/us/app/epley-assist-dizziness-relief/id6448395635
+Dizztinct                        https://apps.apple.com/us/app/dizztinct/id1169501597
+Vertigenius                      https://apps.apple.com/at/app/vertigenius/id1530506594?l=en-GB  (clinical VRT with sensor)
+Balance Vestibular Diary         https://apps.apple.com/us/app/balance-vestibular-diary/id6761732163  (explicitly targets Meniere's + vestibular migraine)
+Dizzy Exam Guide                 https://apps.apple.com/us/app/dizzy-exam-guide/id1629117640  (clinician exam guide)
+Open-ish: "meniere's" in the title (only Balance Vestibular Diary mentions it); home vestibular-rehab (gaze stabilization) log for patients.
+Epley self-guidance = high 1.4.1 risk.
+
+--- QUERY 5: site:apps.apple.com POTS tracker  -> "pots tracker" = 4 (medium)
+POTS Tracker - Tachycardia       https://apps.apple.com/us/app/pots-tracker-tachycardia/id6743040831
+POTSie: POTS Symptom Tracker     https://apps.apple.com/us/app/potsie-pots-symptom-tracker/id6474701900  (water/salt/exercise correlation)
+Autonomic: HRV & POTS Tracker    https://apps.apple.com/us/app/autonomic-hrv-pots-tracker/id6789786971  ("POTS testing on your wrist" = partial overlap with a lean-test idea)
+POTS Buddy                       https://apps.apple.com/us/app/pots-buddy/id6758968233  (Watch app)
+Open-ish: a guided "NASA lean test" / orthostatic stand-test protocol with Apple Watch HR + PDF (raw numbers only, no interpretation, to stay out of SaMD).
+
+--- QUERY 6: site:apps.apple.com pacing long covid energy  -> "pacing" = 7 (crowded; DROP in EN)
+PaceTank: Long Covid Pacing      https://apps.apple.com/nl/app/pacetank-long-covid-pacing/id6755208393  (EN title in NL store)
+Long COVID Pacer                 https://apps.apple.com/ng/app/long-covid-pacer/id6780022526
+PaceME: Pacing & Energy          https://apps.apple.com/us/app/paceme-pacing-energy/id6760505520  (has "Weather Load", HRV, PDF)
+Trackuility - ME/CFS Pacing      https://apps.apple.com/us/app/trackuility-me-cfs-pacing/id1632804790
+Long COVID Diary                 https://apps.apple.com/us/app/long-covid-diary/id6760281000
+Visible: Pacing for illness      https://apps.apple.com/gb/app/visible-long-covid-me-cfs/id1624474919  (parent leader; snippet: "250,000+ people")
+Pacing                           https://apps.apple.com/us/app/pacing/id6448513970
+Only angle left: localized DE/FR/ES/JA pacing (weak; Visible can localize).
+
+--- QUERY 7: site:apps.apple.com urticaria hives tracker UAS7  -> "hives/urticaria" = 1, "uas7" = 0 (OPEN — best finding)
+CRUSE Control Urticaria          https://apps.apple.com/us/app/cruse-control-urticaria/id1609430940  (academic, by dermatologists/allergologists, no ASO)
+Ninoa - Skin Tracker             https://apps.apple.com/us/app/ninoa-skin-tracker/id6755364999  (generic: 10 conditions incl. urticaria, psoriasis, eczema, rosacea)
+MCAS Tracker                     https://apps.apple.com/is/app/mcas-tracker/id6754931863
+Allergy Diary: Symptom Tracker   https://apps.apple.com/ca/app/allergy-diary-symptom-tracker/id6780486739  (food intolerance, rashes, hives)
+Allergy Tracker & Pollen Count   https://apps.apple.com/us/app/allergy-tracker-pollen-count/id6670556073
+(The rest of the results were beekeeping "hive" apps, so "hives" as a keyword is effectively unclaimed in Medical.)
+Open: a chronic-urticaria weekly activity-score diary (2×/day wheals+itch, 7-day sum, photos, PDF). Check the UAS7/UCT naming licence first.
+Open-ish: histamine intolerance / MCAS diary + low-histamine food list (DACH reverse-gap, "Histaminintoleranz"); the SIGHI list is copyrighted, so we would have to author our own.
+Also open-ish: HS (hidradenitis), rosacea — only generic Ninoa seen.
+
+--- QUERY 8: site:apps.apple.com eye drop schedule cataract surgery  -> "eye drop reminder" ≈ 5 (medium-crowded, all EN)
+Eyeday: Eye Drop Reminder        https://apps.apple.com/pl/app/eyeday-eye-drop-reminder/id6759497954  (post-op, LASIK, glaucoma, dry eye; EN listing in PL store)
+eyeRx                            https://apps.apple.com/tr/app/eyerx/id1521167251
+dropAdrop                        https://apps.apple.com/gb/app/dropadrop/id1456597128  (OCL Vision clinic)
+Cataract Surgery Guide           https://apps.apple.com/nl/app/cataract-surgery-guide/id6789217921?l=en-GB
+DropMinder: Eye Drop Reminder    https://apps.apple.com/za/app/dropminder-eye-drop-reminder/id6795706144
+EyeDropAlarm                     https://apps.apple.com/in/app/eyedropalarm/id1226103644
+EyeInsight                       https://apps.apple.com/gb/app/eyeinsight/id6767925491  (built by a cataract surgeon)
+EyeMantra                        https://apps.apple.com/us/app/eyemantra/id1622595903
+Eye Pro                          https://apps.apple.com/us/app/eye-pro/id1071049078
+Cataract Logbook                 https://apps.apple.com/ye/app/cataract-logbook/id6748470940  (clinician case logbook -> evidence that clinical logbooks exist as a format)
+Angles: localized post-op drop scheduler for seniors (US-gap, EN-only competitors); glaucoma long-term drops + IOP log; dry-eye routine diary.
+
+--- QUERY 9: site:apps.apple.com scoliosis brace wear time tracker  -> "scoliosis tracker/brace" ≈ 6 (crowded in EN)
+BraceTrack for Scoliosis         https://apps.apple.com/ba/app/bracetrack-for-scoliosis/id1465443256  (banked hours)
+Tina - For Life With Scoliosis   https://apps.apple.com/us/app/tina-for-life-with-scoliosis/id6760977686
+Scoliosis Tracker                https://apps.apple.com/us/app/scoliosis-tracker/id1464868041
+ScolioLog: Scoliosis Tracker     https://apps.apple.com/ca/app/scoliolog-scoliosis-tracker/id6752347344?platform=watch
+Whisper Brace Connect            https://apps.apple.com/us/app/whisper-brace-connect/id1447300576  (hardware brace)
+Brace Rite Scoliosis             https://apps.apple.com/us/app/brace-rite-scoliosis/id1435096862  (Texas Scottish Rite Hospital for Children)
+ReAlign Scoliosis                https://apps.apple.com/us/app/realign-scoliosis/id6755268437
+BraceTime: Aligner Tracker       https://apps.apple.com/gb/app/bracetime-aligner-tracker/id6762070275  (aligner wear-timer parent market)
+Open sub-niches (none seen): infant cranial helmet (plagiocephaly) wear-time + head photo template; clubfoot Ponseti
+  boots-and-bar tracker; localized scoliosis brace + Schroth log (DE/FR/PL/ES — Chêneau/Schroth are European).
+  Beware 4.3: these three share one wear-timer code base.
+
+=====================================================================
+DRAFT SHORTLIST (my preliminary ranking; not validated JSON). "odhad" = saturation not searched.
+ 1 Hives/urticaria weekly-score diary + PDF — sat 0–1 (verified). Competitors: CRUSE, Ninoa.
+ 2 Post-prostatectomy continence/pad log for men — sub-niche of a verified crowded bladder-diary market; sat odhad 0–1.
+ 3 Barometric "pressure headache" forecast (reverse gap from JP Zutool/頭痛ーる) — needs WeatherKit (partial offline); only weather features in Verti/PaceME seen.
+ 4 Baby cranial-helmet wear tracker — sat odhad 1; parent: brace/aligner timers (verified).
+ 5 Histamine intolerance/MCAS diary + own low-histamine list — sat 1 (MCAS Tracker); DACH reverse gap.
+ 6 Allergy "chef card" in 50 languages for dining abroad — NOT searched (odhad); only Allergy Diary as an adjacent URL.
+ 7 Ménière's attack diary — vertigo market verified (4); "meniere" in the title only once.
+ 8 NASA lean test / orthostatic stand test with Watch — POTS verified (4); Autonomic partly overlaps.
+ 9 Kidney-stone hydration + oxalate table — NOT searched.
+10 Tinnitus diary + audiologist PDF — sat 2 (Tinnilog strong).
+11 HS flare log; 12 bladder-training timer; 13 glaucoma drops + IOP log; 14 localized scoliosis+Schroth;
+15 localized post-op eye drops; 16 localized tinnitus CBT-style course (MDR risk); 17 EU midwifery-student birth log
+(EU Directive 2005/36 requires 40 deliveries); 18 clubfoot brace; 19 bedwetting chart; 20 rosacea diary;
+21 allergy immunotherapy (SLIT/shots) adherence log; 22 surgical case logbook for residents; 23 localized gout;
+24 Epley guide (high 1.4.1 risk); 25 dry-eye routine; 26 localized pacing (EN crowded); 27 offline hay-fever diary;
+28 POTS salt & fluid counter (4.2 minimum-functionality risk); 29 vestibular rehab log; 30 misophonia diary.
+
+US-gap / localization candidates: 3, 5, 6, 14, 15, 16, 17, 23, 26.
+
+=====================================================================
+CROWDED — drop or only take with a localization angle
+gout tracker (6), pacing/long covid (7), scoliosis brace tracker (6), bladder diary (5), eye drop reminder (5),
+tinnitus relief (7+), POTS tracker (4), vertigo tracker (4).
+
+UNCHECKED CANDIDATES (no search done; need verification before use)
+ostomy output/supply log; dialysis/heart-failure fluid restriction + daily weight; injection-site rotation
+(biologics, IVF, TRT); IVF injection schedule; Parkinson's ON/OFF diary; seizure diary; cluster-headache
++ oxygen log; asthma peak-flow log; Bristol stool / IBD log; endometriosis pain diary; lupus / MS / fibromyalgia /
+EDS / sickle-cell flare logs; Tourette tic counter; restless legs; TMJ/bruxism; hyperhidrosis; lymphedema
+circumference log; wound photo log for caregivers; dementia caregiver log; doctor-visit prep PDF; medication
+passport for travel (generic names); family health history / genogram; lab-results trend tracker; home medicine
+cabinet expiry scanner; pediatric fever & dose-given log (no dosing calculator); plasma donation tracker;
+INR/warfarin log (log only); transplant med log; allergy OIT dose log (dosing risk);
+study aids with self-authored content: VTNE vet tech, NBDHE dental hygiene, PTCB Top-200 drugs flashcards,
+phlebotomy order of draw, ARRT/radiography, respiratory therapy TMC, surgical tech CST, MBLEx, medical terminology,
+ECG rhythm flashcards, tooth-numbering (Universal/FDI/Palmer) trainer, muscle origin/insertion flashcards;
+clinician tools: CE/CME credits tracker, nursing-student clinical hours log, code/CPR timer.
+Regulatory note for all of the above: tracker/log/report = OK; any interpretation, diagnosis or dose calculation = 1.4.1/SaMD risk.

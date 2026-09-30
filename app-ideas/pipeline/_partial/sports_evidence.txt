@@ -1,0 +1,225 @@
+SPORTS (category_slug: sports) — partial evidence, 2026-09-30
+=============================================================
+Status: 16 WebSearch queries completed before the session-wide 200-search cap was hit.
+The 17th–20th queries (shot timer, racquet stringing log, referee earnings log, spray wall) were refused.
+ideas/sports.json NOT written (per coordinator STOP).
+Every URL below was copied verbatim from WebSearch results. None were constructed.
+"sat" = rough count of apps.apple.com results whose TITLE literally targets the phrase (0–10).
+
+GENERAL FINDING
+---------------
+Sports scorekeeper/tracker niches are crowded by mid-2026. Almost every query returned 6–10 title-matching
+apps, many of them 2025–26 releases (id67xxxxxxx), probably quick indie/AI builds with few ratings.
+Blue ocean now means sub-niches of those niches, or locale/reverse gaps (EU/Asia sports absent in US).
+
+=====================================================================
+QUERY RESULTS (verbatim URLs)
+=====================================================================
+
+1) "site:apps.apple.com padel americano tournament"  — CROWDED, sat ~7 (mostly new, weak)
+- Padel Americano Tournament (iPhone+Watch, QR live share) https://apps.apple.com/no/app/padel-americano-tournament/id6759302756
+- Padel Americano - Round Robin / Tournaments (oldest, 2022) https://apps.apple.com/us/app/padel-americano-tournaments/id1626101352
+    (same id also at https://apps.apple.com/dk/app/padel-americano-round-robin/id1626101352)
+- Americano Padel - Tournament https://apps.apple.com/na/app/americano-padel-tournament/id6755078974
+- Padel Americano Generator (Americano, Mexicano, Team Americano) https://apps.apple.com/us/app/padel-americano-generator/id6670318216
+- Padel Americano https://apps.apple.com/us/app/padel-americano-tournaments/id6752018527
+- Padel Americano-Match https://apps.apple.com/us/app/padel-americano-match/id6753073260
+Takeaway: the Americano/Mexicano organizer model is proven but saturated in padel. Moving the same model to
+another sport is open: pétanque "concours à la mêlée", badminton club-night peg board, pickleball open-play
+rotation (the pickleball one is unverified and probably crowded).
+
+2) "site:apps.apple.com volleyball rotation" — CROWDED, sat ~6
+- Volleyball Rotations (stats + rotations, 2018) https://apps.apple.com/ua/app/volleyball-rotations/id1440107449
+- Volleyball rotation &customize https://apps.apple.com/us/app/volleyball-rotation-customize/id6503193598
+- Practice Pro Rotations (Watch, serve-receive) https://apps.apple.com/us/app/volleyball-rotations-tracker/id6754829302
+- Rotations Coach for Volleyball (illegal alignment check) https://apps.apple.com/us/app/rotations-coach-for-volleyball/id6787196002
+- Volleyball - Lineup Generator (coed leagues) https://apps.apple.com/us/app/volleyball-lineup-generator/id6450906832
+- Simple Volleyball Tactic Board https://apps.apple.com/us/app/simple-volleyball-tactic-board/id1576486607
+    (note: "Simple X Tactic Board / Simple X Scoreboard" looks like one developer's multi-sport series; also seen
+     Simple Curling Scoreboard and Simple Mölkky Scoreboard. It probably covers floorball and handball boards too.)
+Open sub-niches (unverified): substitution/libero-limit tracker, beach volleyball side-switch scorer.
+
+3) "site:apps.apple.com soccer substitution playing time youth" — CROWDED, sat ~8
+- Soccer Playing Time Tracker https://apps.apple.com/us/app/soccer-playing-time-tracker/id6758028778
+- InTimer: Youth Sports Timer (soccer, futsal, basketball, flag football, lacrosse) https://apps.apple.com/ie/app/intimer-youth-sports-timer/id6553995199
+- Soccer Time! Soccer Subs App https://apps.apple.com/us/app/soccer-time-soccer-subs-app/id6450653830
+- Pitch Time: Fair Lineups https://apps.apple.com/us/app/pitch-time-fair-lineups/id6758683417
+- Playing Time: Easy Rotations https://apps.apple.com/gb/app/playing-time-easy-rotations/id6465690976
+- Soccer Subs https://apps.apple.com/us/app/soccer-subs/id6758869521
+- SubNow https://apps.apple.com/us/app/subnow-ultimate-sub-timer/id1147153746
+- SubTime - Sub Timer & Rotation https://apps.apple.com/us/app/subtime-play-time-tracking/id1248650528
+- Youth Soccer Lineup Rotation https://apps.apple.com/us/app/youth-soccer-lineup-rotation/id6760979250
+Takeaway: youth soccer "fair playing time" is saturated. The fair-rotation model could move to NETBALL
+(positions per quarter; UK/AU/NZ/ZA, a reverse gap), ice hockey shift/line-change timing, or basketball
+bench fouls/timeouts. All unverified.
+
+4) "site:apps.apple.com golf betting games wolf nassau skins" — CROWDED, sat ~8 (Skins App and Press look strongest)
+- Press Golf: Golf Betting App https://apps.apple.com/us/app/press-golf-golf-betting-app/id1574038188
+- Skins App https://apps.apple.com/us/app/skins-app/id6447497626
+- ParPlay Golf Games (FR store, 18 modes incl. Stableford) https://apps.apple.com/fr/app/parplay-golf-games/id6756529343?l=en-GB
+- Golf Skins Payout Calculator (old) https://apps.apple.com/us/app/golf-skins-payout-calculator/id925996201
+- GolfBet: Bet Tracker https://apps.apple.com/us/app/golfbet-bet-tracker/id6759944794
+- square18 https://apps.apple.com/us/app/square18/id6760139559
+- PRESS: Golf Side Games https://apps.apple.com/us/app/press-golf-side-games/id6764447907
+- SidePot Golf (GB) https://apps.apple.com/gb/app/sidepot-golf/id6777241651
+- Bad Golf: Betting & GPS https://apps.apple.com/us/app/bad-golf-betting-gps/id6779399027
+Open sub-niches (unverified): UK/EU "golf society day" organizer (Stableford, twos sweep, nearest-pin,
+WHS allowances), reverse gap; buddies-trip team match-play points board.
+
+5) "site:apps.apple.com curling scorekeeper stats" — CROWDED for a tiny sport, sat ~8
+- Curling Scoreboard https://apps.apple.com/ca/app/curling-scoreboard/id1471090980
+- Curling Stats (iCloud; Watch) https://apps.apple.com/il/app/curling-stats/id1584186929
+- Curling Metrics https://apps.apple.com/us/app/curling-metrics/id6456195923
+- Ailsa: Curling Statistics https://apps.apple.com/us/app/ailsa-curling-statistics/id6502238848
+- Simple Curling Scoreboard https://apps.apple.com/us/app/simple-curling-scoreboard/id1609393284
+- Curling Scoring https://apps.apple.com/us/app/curling-scoring/id1538597614
+- Curl IQ (AI, clubs/bonspiels) https://apps.apple.com/us/app/curl-iq/id6764712055
+- ROG Curling Stats Calculator https://apps.apple.com/us/app/rog-curling-stats-calculator/id1075321103
+Open (unverified): curling strategy/tactic board (sheet diagram, end planning). Small demand.
+
+6) "site:apps.apple.com mölkky score" — SATURATED, sat ~9
+- Mölkky Score - Compteur points https://apps.apple.com/fr/app/m%C3%B6lkky-score-compteur-points/id6751758486
+- Mölkky Score Tracker (iPad, $1.99) https://apps.apple.com/us/app/m%C3%B6lkky-score-tracker/id6752600168?l=fr-FR
+- Mölkky https://apps.apple.com/dk/app/m%C3%B6lkky/id1554340918
+- Mölkky Scoreboard https://apps.apple.com/au/app/m%C3%B6lkky-scoreboard/id1586456482
+- MölkkyApp: Easy Scoreboard https://apps.apple.com/jp/app/m%C3%B6lkkyapp-easy-scoreboard/id1613978862?l=en-US&platform=ipad
+- Möl Log https://apps.apple.com/cm/app/m%C3%B6lkky-score-app-m%C3%B6l-log/id6787833254
+- Simple Mölkky Scoreboard https://apps.apple.com/us/app/simple-m%C3%B6lkky-scoreboard/id1610914156
+- Mölkky® Game Tracker https://apps.apple.com/us/app/m%C3%B6lkky-game-tracker/id945337832
+Takeaway: drop Mölkky. Kubb and pétanque scorers are unverified; expect similar density.
+
+7) "site:apps.apple.com clay shooting scorecard trap skeet sporting clays" — CROWDED, sat ~7 (HotClays strongest)
+- Trap Shooting Scorecard https://apps.apple.com/us/app/trap-shooting-scorecard/id1450821405
+- HotClays Trap Skeet & Sporting https://apps.apple.com/gb/app/hotclays-trap-skeet-sporting/id1493008999
+- Clay Score Card https://apps.apple.com/us/app/clay-score-card/id6758519638
+- Breakpoint: Sporting Clays (5-Stand analytics) https://apps.apple.com/us/app/breakpoint-sporting-clays/id6787490438
+- ClayPal https://apps.apple.com/gb/app/claypal/id1072226242
+- Clays Buddy Score Tracker (32 disciplines) https://apps.apple.com/us/app/clays-buddy-score-tracker/id1644063857
+- Clay Scores https://apps.apple.com/us/app/clay-scores/id6766730451
+Takeaway: low blue ocean. At most an ISSF Olympic Trap / UK DTL training log, and even that is weak.
+
+8) "site:apps.apple.com darts checkout trainer" — CROWDED, sat ~6
+- Darts Checkout Trainer https://apps.apple.com/ca/app/darts-checkout-trainer/id6504090669
+- Darts Checkout Training ($1.99) https://apps.apple.com/gb/app/darts-checkout-training/id1567278870
+- Darts Checkout Pro (Watch) https://apps.apple.com/us/app/darts-checkout-pro/id1035160515
+- Darts Checkout Scorer https://apps.apple.com/us/app/darts-checkout-scorer/id1160504503
+- MyDartCoach https://apps.apple.com/us/app/mydartcoach/id1525120073
+- DartCohol Darts Trainer https://apps.apple.com/us/app/dartcohol-darts-trainer/id1450861497
+Takeaway: darts training is saturated, and DartCounter (not in results) dominates the parent.
+
+9) "site:apps.apple.com pitch count tracker baseball" — CROWDED, sat ~6
+- Pitch Counter & Stat Tracker https://apps.apple.com/us/app/pitch-counter-stat-tracker/id1610927822
+- Better Pitch Baseball Tracker https://apps.apple.com/us/app/better-pitch-baseball-tracker/id6746173591
+- Pitch Count Pro Tracker https://apps.apple.com/us/app/pitch-count-pro-tracker/id1609978238
+- Pitch Tracker Pro (Watch) https://apps.apple.com/us/app/pitch-tracker-pro/id6450057490
+- Track-A-Pitch: Pitch Counter https://apps.apple.com/us/app/track-a-pitch-pitch-counter/id1632819693
+- Pitching Stats Tracker & Radar https://apps.apple.com/bm/app/pitching-stats-tracker-radar/id635706781
+Open angle (unverified): roster-wide REST-DAY eligibility calendar (Little League / Pitch Smart), localized
+for Japan (weekly pitch limit in HS baseball), KR, TW, MX, DO. All current apps are English-only; a US gap.
+
+10) "site:apps.apple.com bass tournament cull weight" — OPEN, sat ~1 for "cull"
+- Bass Log (Tournament Mode, Pro Livewell, Smart Culling; new 2026) https://apps.apple.com/us/app/bass-log/id6757423237?l=ru
+- BassForce: Bass Fishing Guide https://apps.apple.com/us/app/bassforce-bass-fishing-guide/id1467317466
+- SmartFish US (relative weight for largemouth) https://apps.apple.com/us/app/smartfish-us/id1451605163
+- Bass University: Fishing App https://apps.apple.com/us/app/bass-university-fishing-app/id1507812871
+- BUBBA Fishing (cull tags, smart scale) https://apps.apple.com/us/app/bubba-fishing/id1607037466
+- Weighfish (tournament manager for organizers) https://apps.apple.com/us/app/weighfish/id1355191001
+- Fish Track: Personal Logbook https://apps.apple.com/ga/app/fish-track-personal-logbook/id6774517223?l=en-GB&platform=watch
+- Bass Tourney Challenger https://apps.apple.com/us/app/bass-tourney-challenger/id1594938508
+Takeaway: this was the BEST niche found. No app titles itself around "cull" or "livewell". Culling is only a
+feature inside Bass Log. US gap: bass tournaments are huge in Japan, MX, ZA and ES/IT, while the apps are English-only.
+Adjacent open niche: a UK/EU club MATCH-FISHING weigh-in organizer (peg draw, sections, weights, results sheet),
+a reverse gap. Weighfish is the only organizer tool seen.
+
+11) "site:apps.apple.com carp fishing log" — MOSTLY OPEN, sat ~2
+- CarpMarks: Carp Fishing Spots (new 2026, "only carp logbook that learns your waters") https://apps.apple.com/gb/app/carpmarks-carp-fishing-spots/id6763633214
+- MyFishSpace: Fishing Log https://apps.apple.com/us/app/myfishspace-fishing-log/id6761440166
+- Carpy: peg mapper & catch log (2016) https://apps.apple.com/us/app/carpy-peg-mapper-catch-log/id1082676339
+- FishCatch: Fishing Log & Catch https://apps.apple.com/pk/app/fishcatch-fishing-log-catch/id6763913350
+- Fishing Log & Journal - LogIT https://apps.apple.com/us/app/fishing-log-journal-logit/id6667102943
+- finScribe: Fishing Logbook https://apps.apple.com/sa/app/finscribe-fishing-logbook/id1614459075
+Takeaway: this was the second-best niche. Carp fishing is a reverse gap: big in UK, FR, NL, DE, CZ and PL, small in the US.
+It is the Czech studio's home turf. Feature ideas: a swim/peg mapper, a wrap-count distance log (rod lengths), bait/rig/boilie stats, and a session timeline.
+
+12) "site:apps.apple.com sailing race start timer regatta" — CROWDED, sat ~6 (older apps)
+- tack X Sailing Regatta Timer (wind shifts, Watch) https://apps.apple.com/us/app/tack-x-sailing-regatta-timer/id1041587444
+- CrewTimer Regatta Timing (crew/kayak/canoe/track event timing) https://apps.apple.com/us/app/crewtimer-regatta-timing/id1450216565
+- Regatta Timer Watch https://apps.apple.com/gb/app/regatta-timer-watch/id981918821
+- Regatta Countdown Timer https://apps.apple.com/us/app/regatta-countdown-timer/id1475401013
+- Yacht Timer https://apps.apple.com/us/app/yacht-timer/id866745260
+- Yet Another Sailing App https://apps.apple.com/us/app/yet-another-sailing-app/id1673595853
+Open angles (unverified): dinghy club results with Portsmouth Yardstick corrected times (UK/AU/NZ/EU);
+dragon-boat seating/weight-balance planner (HK, SG, CN, CA, DE, CZ); an offline finish-line timer for school XC meets.
+
+13) "site:apps.apple.com video analysis coach slow motion drawing" — SATURATED generic, sat ~8
+- CoachView Slowmo Video Player https://apps.apple.com/us/app/coachview-slowmo-video-player/id1662383024
+- SlowMo - Video Analysis https://apps.apple.com/us/app/slowmo-video-analysis/id843274461
+- VisualEyes: Video Coaching App https://apps.apple.com/us/app/visualeyes-video-coaching-app/id1643006248
+- Coach Video Analyzer https://apps.apple.com/us/app/coach-video-analyzer/id1163518690
+- Coach Video Analysis https://apps.apple.com/us/app/coach-video-analysis/id6456571603
+- CMV: CoachMyVideo https://apps.apple.com/us/app/cmv-slow-frame-frame-video-analysis-coachmyvideo/id499915119
+- CoachCam: Video Analysis https://apps.apple.com/us/app/coachcam-video-analysis/id6764468152
+- Video Analysis: Coach's friend https://apps.apple.com/us/app/video-analysis-coachs-friend/id1047623315
+- KineVision - Video Coaching https://apps.apple.com/us/app/kinevision-video-coaching/id6752237075
+Takeaway: only sport-specific angles might work (e.g. a swim stroke-rate video coach). All unverified.
+
+14) "site:apps.apple.com karate kata syllabus belt" — MEDIUM, sat ~5 (style-specific apps exist)
+- Tiska Beginner (official association syllabus) https://apps.apple.com/gb/app/tiska-beginner/id1213769813
+- KARATE SHITO-RYU1 https://apps.apple.com/us/app/karate-shito-ryu1/id1530607041
+- Beginner to Black Belt (Shotokan) https://apps.apple.com/us/app/beginner-to-black-belt/id981462169
+- Martial Arts Tracker - Dojo (all belt arts incl. TKD WT/ITF, judo) https://apps.apple.com/us/app/martial-arts-tracker-dojo/id6774305771
+- Karate AI: Dojo Coach https://apps.apple.com/us/app/karate-ai-dojo-coach/id6759972525
+- Kenzen Karate https://apps.apple.com/ca/app/kenzen-karate/id1510853615
+- Shotokan Karate Theory https://apps.apple.com/us/app/shotokan-karate-theory/id6761344570
+Open angles (unverified): Goju/Wado/Kyokushin kata trainers; taekwondo poomsae/ITF patterns trainer. These are content-heavy.
+
+15) "site:apps.apple.com bjj journal technique log" — SATURATED, sat ~7
+- Post Black Belt: BJJ Journal (6,000+ users) https://apps.apple.com/us/app/post-black-belt-bjj-journal/id1673061463
+- Grapla — BJJ Jiu-Jitsu Journal https://apps.apple.com/no/app/grapla-bjj-jiu-jitsu-journal/id6746930462
+- BJJNote: BJJ Training Journal https://apps.apple.com/us/app/bjjnote-bjj-training-journal/id6746068256
+- MatTime - BJJ Training Journal https://apps.apple.com/us/app/mattime-bjj/id6746372577
+- Rollbook: BJJ & NoGi Training https://apps.apple.com/us/app/rollbook-bjj-nogi-training/id6757962404
+- Porrada BJJ Journal https://apps.apple.com/ca/app/porrada-bjj-journal/id6745385440
+- BJJBuddy - BJJ Tracker Journal https://apps.apple.com/us/app/bjjbuddy-bjj-tracker-journal/id1063025257
+Takeaway: drop the BJJ journal. Possible open angle (unverified): a BJJ/grappling comp scoreboard with IBJJF points, advantages and penalties, for gym in-house comps.
+
+16) "site:apps.apple.com hangboard timer" — SATURATED, sat ~6
+- hang! - hangboard timer https://apps.apple.com/us/app/hang-hangboard-timer/id6476608721
+- HangClimb Timer https://apps.apple.com/us/app/hangclimb-timer/id1424450509
+- Hangboard timer https://apps.apple.com/us/app/hangboard-timer/id1317108549
+- HangTime - Hangboard Training https://apps.apple.com/qa/app/hangtime-hangboard-training/id1631706818
+- Dangle Hangboard https://apps.apple.com/ca/app/dangle-hangboard/id6759879849
+- Hangboard Timer - Hangster (CZ store) https://apps.apple.com/cz/app/hangboard-timer-hangster/id6752956533
+Takeaway: drop it.
+
+=====================================================================
+SUMMARY: OPEN vs CROWDED
+=====================================================================
+OPEN (verified): bass tournament culling/livewell (sat ~1); carp fishing log (sat ~2, reverse gap).
+PROMISING, ADJACENT to verified data but keyword not searched: club match-fishing weigh-in; netball quarter/position
+planner; golf society day (UK); dragon-boat seating balance; badminton club-night rotation; pétanque mêlée
+organizer; dinghy Portsmouth Yardstick results; floorball tactic board (CZ/SE/FI/CH); pitch-count REST-day
+calendar localized to JP/KR/LatAm; ice-hockey shift timer; volleyball sub/libero limit tracker; BJJ comp scoreboard;
+swim stroke video coach; finish-line timer for XC meets; taekwondo patterns trainer.
+CROWDED (verified): padel Americano, volleyball rotations, youth soccer subs, golf betting games, curling scoring,
+Mölkky, clay shooting scorecards, darts checkout training, pitch counters, sailing start timers, coach video
+analysis (generic), BJJ journals, hangboard timers.
+
+=====================================================================
+UNCHECKED CANDIDATES (no search done; need 1–2 searches each)
+=====================================================================
+Referee/umpire: referee game-fee & mileage log (tax), baseball umpire indicator, futsal/handball/rugby referee timer,
+  fencing referee scoring, wrestling match scoreboard, boxing/MMA fan scorecard (10-point must).
+Shooting/hunting: shot timer (microphone par timer), long-range dope card, archery sight tape / bow sight marks,
+  field/3D archery scorecard, deer/shed-hunting log, waterfowl log, predator/turkey call sounds (check legality).
+Racket: racquet stringing job log (stringers), squash ghosting trainer, badminton footwork trainer, pickleball open-play
+  rotation, padel Apple Watch scorer, tennis match charting for parents, table tennis scorer.
+Climbing: spray wall / home wall setter (photo + hold marking), offline bouldering logbook, grade converter.
+Fishing: fly-fishing journal, fish weight-from-length estimator, ice-fishing log, spearfishing log.
+Team/coach: basketball bench fouls/timeouts tracker, hockey line-change timer, lacrosse/field hockey stats,
+  ultimate frisbee stats, Gaelic football/hurling scorer, AFL stats, water polo/handball/floorball tactic boards,
+  youth practice-plan builder, softball rec-league position rotation.
+Other: kubb tournament scorer, pétanque scorer, cornhole scoreboard, roundnet scorer, bowling (tenpin/candlepin) tracker,
+  disc golf putting practice (JYLY), rowing stroke-rate via accelerometer, vertical jump by video (My Jump is strong),
+  powerlifting meet attempt planner, triathlon transition checklist, surf session log, skate trick tracker,
+  freediving CO2/O2 tables, karting GPS lap timer.

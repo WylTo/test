@@ -1,0 +1,169 @@
+HEALTH & FITNESS (health-fitness) — PARTIAL EVIDENCE
+Date: 2026-09-30. 16 WebSearch calls made before the session-wide 200-search cap was hit.
+All URLs below are copied verbatim from WebSearch results. No Apple APIs used.
+"sat" = number of returned apps.apple.com results with the niche phrase in the TITLE.
+General observation: in 2025-2026 many niches filled up with fresh indie apps (id67xxxxxxxx).
+A niche that was empty in 2024 now often has 5-9 new, weak-looking English apps.
+So the realistic edge is 50-language localization + Apple Watch/HealthKit polish, not being first.
+
+======================================================================
+A) SEARCHED NICHES — OPEN (few or no dedicated apps)
+======================================================================
+
+1. VIBRATION PLATE WORKOUTS — query "site:apps.apple.com vibration plate workouts"
+   sat("vibration plate workout") = 0. Only manufacturer apps tied to their own hardware or studio,
+   plus unrelated "vibrator massager" apps. No brand-agnostic app. VERDICT: best open niche found.
+   - Power Plate Training (brand; 1,300 videos; categories like anti-cellulite and pelvic floor)
+     https://apps.apple.com/us/app/power-plate-training/id1446549384?ls=1
+   - Power Plate (brand; 300+ OnDemand videos)  https://apps.apple.com/us/app/power-plate/id1476430010
+   - Hypervibe - VIBE On Demand (brand)  https://apps.apple.com/us/app/hypervibe-vibe-on-demand/id1584067111
+   - HyperVibe - Vibration Machine (brand; 38 programs)  https://apps.apple.com/us/app/hypervibe-vibration-machine/id1033481217
+   - PLATEFIT STUDIO (studio booking)  https://apps.apple.com/us/app/platefit-studio/id1525452988
+   - Strong Vibration App: VibroMax (massager, irrelevant)  https://apps.apple.com/us/app/strong-vibration-app-vibromax/id6756312925
+   - Core+: Pilates & Home Workout (appeared; home workout parent)  https://apps.apple.com/us/app/core-pilates-home-workout/id6752533436
+   - Exercise Workout Timer (generic interval timer)  https://apps.apple.com/us/app/exercise-workout-timer/id1643699163
+
+2. TRUCK DRIVER WORKOUT — query "site:apps.apple.com truck driver workout"
+   sat = 2. The other results were truck-driving simulator games. Both apps look US-only and English. US-gap candidate (EU/PL/RO/BR drivers).
+   - Trucker's Routine (2025; 7-45 min small-space sessions)  https://apps.apple.com/us/app/truckers-routine/id6753665205
+   - Iron Trucker (made by a trucker)  https://apps.apple.com/us/app/iron-trucker/id1449696182
+
+3. WEIGHTED VEST (women 40+ angle) — query "site:apps.apple.com weighted vest workout"
+   sat("weighted vest") = 1 (German app only). The other results were ruck/army or generic gym apps.
+   - Heavy Stride (ruck tracker, pack weight)  https://apps.apple.com/us/app/heavy-stride/id6762533957
+   - Rucking & Gewichtsweste-App (DE)  https://apps.apple.com/de/app/rucking-gewichtsweste/id6758959619
+   - Military Fitness: Army Workout (picks workouts by available equipment)  https://apps.apple.com/in/app/military-fitness-army-workout/id6758405884
+   - King Of Weighted App  https://apps.apple.com/us/app/king-of-weighted-app/id6764844463
+   - Parent/generic apps seen in the same results:
+     Fitbod: Gym & Fitness Planner  https://apps.apple.com/us/app/fitbod-gym-fitness-planner/id1041517543
+     Gymverse: Gym Workout Planner  https://apps.apple.com/us/app/gymverse-gym-workout-planner/id1048454034
+     HeavySet - Gym Workout Log  https://apps.apple.com/gb/app/heavyset-gym-workout-log/id1171500310
+     Calisteniapp: Fit & Strong (has a 13-week weighted calisthenics program)  https://apps.apple.com/us/app/calisteniapp-fit-strong/id1265489771?platform=tv
+     Body weight workouts  https://apps.apple.com/us/app/body-weight-workouts/id395058532?at=10lwqF&uo=4
+     Weightlifting App  https://apps.apple.com/us/app/weightlifting-app/id1266077653
+
+4. WALKING PAD / UNDER-DESK TREADMILL — query "site:apps.apple.com walking pad under desk treadmill tracker"
+   sat("walking pad") = 3 (2 indie + 1 brand). Pain point quoted in the listings: Apple Watch misses steps while walking at a desk.
+   - DeskWalker - Walking Pad Log (indie)  https://apps.apple.com/gb/app/deskwalker-walking-pad-log/id6762282048
+   - WalkPadLog (indie; logs to Apple Health)  https://apps.apple.com/us/app/walkpadlog/id6760960621
+   - WalkingPad+ (brand)  https://apps.apple.com/us/app/walkingpad/id6505090388
+   - Unsit Treadmill by InMovement (brand)  https://apps.apple.com/gb/app/unsit-treadmill-by-inmovement/id6529536032
+   - UREVO (brand)  https://apps.apple.com/us/app/urevo/id1658714520
+   - FitShow: Treadmill Run Tracker (treadmill parent)  https://apps.apple.com/ca/app/fitshow-treadmill-run-tracker/id1387360716
+   - Virtual Treadmill (Apple Watch treadmill connection)  https://apps.apple.com/us/app/virtual-treadmill/id6744367820
+
+5. WHEELCHAIR FITNESS — query "site:apps.apple.com wheelchair workout"
+   sat = 3. The two fitness apps look English-only (not verified). Small but open market; US-gap candidate.
+   - Wheel Fit - Wheelchair Fitness (subscription plans)  https://apps.apple.com/us/app/wheel-fit-wheelchair-fitness/id6464079536
+   - Push Zones: Wheelchair Fitness (same id also listed as "Wheelchair Fitness Strong Arms"; tracks HR zones and pushes)
+     https://apps.apple.com/us/app/push-zones-wheelchair-fitness/id1515857732
+   - Wheelchair Exercises (for pediatric OT/PT; 43 exercises)  https://apps.apple.com/us/app/wheelchair-exercises/id1046975860
+
+======================================================================
+B) SEARCHED NICHES — MEDIUM (demand proven, English title space getting crowded)
+======================================================================
+
+6. REBOUNDER / MINI TRAMPOLINE — sat("rebounder workout") ~4, sat("mini trampoline") ~2.
+   Mostly studio video subscriptions. Opening: an offline, non-video, timer-based app, with DE localization.
+   - Bounce N' Burn  https://apps.apple.com/ca/app/bounce-n-burn/id6474211313
+   - Carve It® Fitness (600+ classes, NYC studio)  https://apps.apple.com/us/app/carve-it-fitness/id6612038023
+   - Boogie Bounce (UK)  https://apps.apple.com/gb/app/boogie-bounce/id1298980780
+   - Mr. Rebounder  https://apps.apple.com/us/app/mr-rebounder/id1300713793
+   - Jump&Jacked. (2026; 200+ workouts)  https://apps.apple.com/us/app/jump-jacked/id6759123272
+   - Rebounder Total Body Workouts  https://apps.apple.com/am/app/rebounder-total-body-workouts/id1084221986
+
+7. SAUNA TRACKER — sat("sauna tracker") = 5, all English and biohacking-oriented.
+   Opening (reverse US-gap): a European sauna-ritual app (Aufguss, rounds) localized for DE/FI/AT/CZ/PL/NL.
+   Adjacent ideas not searched: heat acclimation for endurance athletes; winter/cold-water swimming log (CZ "otužování", UK wild swimming).
+   - Sauna Tracker: Sauna Log (leader; "100,000+ sessions tracked"; also tracks cold plunge, HBOT, red light;
+     the same id also appears as "Sauna & Cold Plunge Tracker" / "Session Timer")
+     https://apps.apple.com/us/app/sauna-tracker-sauna-log/id6739606616
+   - Sauna & Steam Tracker  https://apps.apple.com/us/app/sauna-steam-tracker/id6751407927
+   - Sauner - Sauna Tracker & Log (heat/cold/rest rounds)  https://apps.apple.com/us/app/sauner-sauna-tracker-log/id6755998688
+   - SUNA - Sauna Tracker (heat/cooling/rest ritual)  https://apps.apple.com/us/app/suna-sauna-tracker/id6758952338
+   - Sauni: Sauna Tracker & Coach (AI insights)  https://apps.apple.com/us/app/sauni-sauna-tracker-coach/id6753734602
+
+======================================================================
+C) SEARCHED NICHES — CROWDED IN ENGLISH (only a localization or sub-niche play; otherwise drop)
+======================================================================
+
+8. SHIFT-WORK SLEEP — sat("shift" + "sleep") = 7+. Almost all are new (2025-26), English-only, built around US 12h shifts.
+   Only viable angle: localization plus EU/Asian shift-rotation templates (US-gap).
+   - SleepShift (light exposure, caffeine cutoff, naps)  https://apps.apple.com/gb/app/sleepshift/id6760953945
+   - Shift Worker Sleep Management  https://apps.apple.com/us/app/shift-worker-sleep-management/id6757702542
+   - Riseo: Shift Sleep Planner  https://apps.apple.com/us/app/riseo-shift-sleep-planner/id6758026412
+   - Shift Sleep Planner  https://apps.apple.com/au/app/shift-sleep-planner/id6759203055
+   - ShiftSleep  https://apps.apple.com/ie/app/shiftsleep/id6759355366
+   - Night Shift Sleep Planner  https://apps.apple.com/uy/app/night-shift-sleep-planner/id6760475957
+   - Sleep Aid: For Shift Workers  https://apps.apple.com/us/app/sleep-aid-for-shift-workers/id6504048232
+   - SleepBytes (2022)  https://apps.apple.com/us/app/sleepbytes/id1660749766
+   - Clairoe: Life in Rhythm (2021, formerly "Shift - the app for shift work")  https://apps.apple.com/mw/app/shift-the-app-for-shift-work/id1589005077
+
+9. JET LAG — sat("jet lag") = 8-9. All target adults (light, caffeine, melatonin). NONE targets kids or babies.
+   Open sub-niche: jet lag for kids plus the twice-yearly daylight-saving shift for families. Timeshifter (leader) had no URL in the results.
+   - Aviato: Jet Lag Coach  https://apps.apple.com/us/app/aviato-jet-lag-coach/id6755438884
+   - FlyWell - beat jet lag  https://apps.apple.com/us/app/flywell-beat-jet-lag-travel/id6738649590
+   - Jet Lag Bye: Travel Sleep Plan  https://apps.apple.com/pl/app/jet-lag-bye-travel-sleep-plan/id6747702706
+   - Jet Lag Time Zone Shifter (chronotype)  https://apps.apple.com/us/app/jet-lag-time-zone-shifter/id6670561167
+   - Adjust - Beat Jet Lag  https://apps.apple.com/no/app/adjust-beat-jet-lag/id6753684421
+   - Jet Lag Fix (acupressure)  https://apps.apple.com/us/app/jet-lag-fix/id1327541446
+   - Jetlag - Wake up times  https://apps.apple.com/us/app/jetlag-wake-up-times/id6627344724
+   - Jetlag Sync  https://apps.apple.com/us/app/jetlag-sync/id6670729520
+   - Jetlag - Travel & Timezone  https://apps.apple.com/us/app/jetlag-time-zone/id6444663705
+
+10. JAPANESE (INTERVAL) WALKING — sat = 9, all created in 2025 (viral trend). Demand is strongly proven, but the English title space is saturated and 4.3 clone risk is high.
+    Only possible play: localized phrases ("japanisches Gehen", "caminata japonesa") plus a seniors angle. One app is already in the PL store.
+    - Japanese Interval Walking  https://apps.apple.com/us/app/japanese-interval-walking/id6752210985
+    - Paceriva - Japanese Walking (same id appears as "Japanese Interval Walking" in the KZ store)  https://apps.apple.com/us/app/paceriva-japanese-walking/id6747282230
+    - Japanese Walking: Interval Fit (PL store)  https://apps.apple.com/pl/app/japanese-walking-interval-fit/id6754985035
+    - Japanese Walking App  https://apps.apple.com/us/app/japanese-walking-app/id6748023683
+    - Japanese Walking: Step Counter  https://apps.apple.com/us/app/japanese-walking-step-counter/id6748924793
+    - Japanese Walking - Brisk  https://apps.apple.com/us/app/japanese-walking-brisk/id6751199512
+    - Japanese Walking (VE store)  https://apps.apple.com/ve/app/japanese-walking/id6747941773?l=en-GB
+
+11. RUCKING — sat = 8+. DROP (crowded; several apps are load-aware and use the Pandolf equation).
+    - Rucker, the rucking app  https://apps.apple.com/us/app/rucker-the-rucking-app/id6742251218?platform=watch
+    - Ruckly: Rucking Tracker  https://apps.apple.com/ar/app/ruckly-rucking-tracker/id6762052570?l=en-GB&platform=vision
+    - Ruck Work Tracker  https://apps.apple.com/us/app/ruck-work-tracker/id6759026883
+    - RuckWell: Rucking Tracker  https://apps.apple.com/us/app/ruckwell-rucking-tracker/id6503015969
+    - RUCKR  https://apps.apple.com/us/app/ruckr/id6760586070
+    - Rucking Tracker Workout - Ruck App  https://apps.apple.com/nz/app/rucking-tracker-workout-ruck/id6760733245
+    - Enduruc - Ruck Tracker  https://apps.apple.com/us/app/enduruc-ruck-tracker/id6642668269
+    - MARCH: Ruck Club & Tracker (clubs and plans)  https://apps.apple.com/gb/app/march-ruck-workouts/id6752545287
+    These are still usable as parent/adjacent competitors for a "Camino / trek prep" idea.
+
+12. FREEDIVING / APNEA CO2 TABLES — sat = 8+. DROP.
+    - Apnea Tables Trainer / Freediving Coach  https://apps.apple.com/us/app/apnea-tables-trainer/id1116159086
+    - Apnea Training for Freediving  https://apps.apple.com/us/app/apnea-training-for-freediving/id6474778415
+    - Apnea Assistant: Freediving  https://apps.apple.com/us/app/apnea-assistant-freediving/id6520388700
+    - Freediving Apnea Trainer  https://apps.apple.com/us/app/freediving-apnea-trainer/id1216253186
+    - Apnea Trainer Freedive Stamina  https://apps.apple.com/us/app/apnea-trainer-freedive-stamina/id6477821385
+    - Apnea Trainer Freedive (TT store)  https://apps.apple.com/tt/app/apnea-trainer-freedive/id6608983212
+    - Kokyu: Apnea Training (also covers "surf survival")  https://apps.apple.com/us/app/kokyu-apnea-training/id6749611776
+    - Apnea Trainer: Nea  https://apps.apple.com/us/app/apnea-trainer-freediving-nea/id6461216531
+
+======================================================================
+D) CANDIDATES NOT CHECKED (search budget ran out) — need about 2 searches each
+======================================================================
+Home equipment:  pilates bar workouts (the "vibration plate" pattern: cheap Amazon gear with no guidance); kettlebell swing counter on Apple Watch / "10000 swings" challenge
+Walking/steps:   virtual famous-trail walks (HealthKit steps, offline); stair-climb "Everest" challenge (flightsClimbed) — near-duplicate of the trail walks, pick one
+Circadian:       daylight tracker (HealthKit timeInDaylight, iOS 17+); jet lag kids / DST for families (partly checked: 0 of 9 jet lag apps target kids)
+Heat/cold:       European sauna ritual localized (Aufguss); heat acclimation for endurance athletes; winter/cold-water swimming log (Apple Watch Ultra water temperature)
+Audiences:       stroller workouts (postpartum); hotel-room quiet workouts; strength training log for 60+; seated/chair workouts for seniors (likely crowded); menopause strength
+Sport-specific:  padel fitness (reverse US-gap: ES/IT/SE/NL); golf fitness/mobility; ski preseason / "Skigymnastik" (DACH; launch in October)
+Tests/goals:     EU police/army/firefighter entry fitness tests per country (reverse US-gap; US has ACFT apps); first pull-up progression; handstand progression; grip strength + dead hang
+Analytics:       "fitness age" home tests plus HealthKit VO2max (high 1.4.1 risk); exercise snacks / VILPA detection from HealthKit HR (Sherlock risk)
+Breath:          rhythmic breathing for runners (cadence-synced cues); box breathing for first responders
+Other:           couples workouts, equestrian rider fitness, cycling/climbing mobility, tai chi/qigong for seniors, jump rope counter (likely crowded), HYROX (likely crowded)
+
+Suggested priority order for verification: pilates bar, kettlebell swing counter, EU fitness test prep, padel, golf fitness,
+jet lag kids ("jet lag baby/toddler"), cold-water swimming, heat acclimation, first pull-up, strength after 60, daylight tracker.
+
+======================================================================
+E) DRAFT RANKING OF THE VERIFIED IDEAS (for the next pass)
+======================================================================
+1 Vibration Plate Coach (sat 0; trend-dependent)   2 Weighted Vest Walk for women 40+ (sat 1)
+3 Desk walking-pad log (2 indie competitors)        4 Jet Lag Kids + DST (0 kid-focused apps among 9)
+5 European Sauna Ritual, localized (reverse US-gap)  6 Trucker fitness for EU/BR (US-gap; 2 US apps)
+7 Shift-sleep planner, localized (demand proven, English crowded)   8 Offline rebounder timer   9 Wheelchair fitness, localized
+Revenue note: at 1-3k downloads/month, 3-4% conversion and $20-30/yr, net is roughly 15-45k CZK/month in ideal conditions.

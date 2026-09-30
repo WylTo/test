@@ -1,0 +1,175 @@
+KIDS (category_slug: kids) — PARTIAL EVIDENCE (search budget exhausted after 14 of my WebSearch calls)
+Date: 2026-09-30. ideas/kids.json was NOT written (per coordinator STOP).
+All URLs below are copied verbatim from WebSearch results. "sat" = number of returned apps.apple.com results whose TITLE literally targets the phrase.
+
+======================================================================
+A. QUERIES RUN + FINDINGS
+======================================================================
+1) site:apps.apple.com dyslexia phonics kids  -> CROWDED (sat ~6 for "dyslexia"; many 2024-26 AI read-aloud tutors)
+   Lexy: Dyslexia Reading Tutor | https://apps.apple.com/us/app/smart-phonics-by-dyslexia-ai/id1564885095 | AI tutor listens to reading, 50+ phonics lessons, IEP/504
+   GoLexic for Dyslexia & Reading | https://apps.apple.com/mt/app/golexic-for-dyslexia-reading/id1511002428 | ages 7-14
+   Bookbot Phonics Books for Kids | https://apps.apple.com/us/app/bookbot-phonics-books-for-kids/id1325919626 | AI phonics coach, listens aloud, mentions ESL kids
+   Poppins Dyslexia Read Rhythm | https://apps.apple.com/us/app/poppins-dyslexia-read-rhythm/id6480063759 | ages 7-11, clinical trial, rhythm games
+   DyslexiaBuddy | https://apps.apple.com/us/app/dyslexiabuddy/id1565832172 | AI reading coach
+   Phonics Blaster | https://apps.apple.com/us/app/phonics-blaster/id1102944994 | (no snippet)
+   Dyslexia Reading Practice | https://apps.apple.com/us/app/dyslexia-reading-practice/id6499507698
+   Reversals for Dyslexia | https://apps.apple.com/us/app/reversals-for-dyslexia/id1123467459 | OLD (2016-era id) -> b/d letter-reversal niche looks OPEN (only this one title)
+
+2) site:apps.apple.com baby sign language -> ASL CROWDED (sat ~7), all US/ASL
+   Baby Sign and Sing | https://apps.apple.com/us/app/baby-sign-and-sing/id528964648 | 3.9 rating
+   ASL Baby Sign language (Kwebl) | https://apps.apple.com/gb/app/asl-baby-sign-language/id1161092101 | 350+ ASL signs
+   Baby Sign Dictionary ASL | https://apps.apple.com/us/app/baby-sign-dictionary-asl/id527817092 | 340 signs
+   Baby Sign and Learn | https://apps.apple.com/au/app/baby-sign-and-learn/id414830310
+   Baby Sign Dictionary - Lite | https://apps.apple.com/us/app/baby-sign-dictionary-lite/id528232149
+   Baby Sign and Learn ASL Pro | https://apps.apple.com/us/app/baby-sign-and-learn-american-sign-language-pro-edition/id525724090 | $2.99
+
+3) site:apps.apple.com Babyzeichensprache -> DE has 3 apps (sat 3) and proven WTP; other national sign languages look unverified/likely open
+   Babyzeichen Zwergensprache | https://apps.apple.com/de/app/babyzeichen-zwergensprache/id1104925876 | USD 8.99 paid, DGS-based, 423 MB video
+   Babyzeichen (Katrin Hagemann) | https://apps.apple.com/de/app/babyzeichen/id501312029 | ~400 signs, freemium
+   MiniSigns Babygebärden | https://apps.apple.com/us/app/minisigns-babygeb%C3%A4rden/id1564402672
+   Babytegn - Forstå din baby (NO) | https://apps.apple.com/no/app/babytegn-forst%C3%A5-din-baby/id1544654055
+   NOTE: "Baby Signs" is a registered trademark (Baby Signs Inc.) -> avoid in the name.
+
+4) site:apps.apple.com phonics screening check -> OPEN (sat ~1; no title literally targets UK Y1 Phonics Screening Check)
+   Your Phonics | https://apps.apple.com/gb/app/your-phonics/id1088567129 | 160 real + alien words, Y1/Y2 -> only dedicated niche app
+   Jolly Phonics - Learn to Read | https://apps.apple.com/is/app/jolly-phonics-learn-to-read/id1149029299 | parent leader, has PSC assessment
+   Jolly Classroom: Teach Phonics | https://apps.apple.com/lc/app/jolly-classroom-teach-phonics/id1549452023 | school tool
+   Phonics Reading Program | https://apps.apple.com/us/app/phonics-reading-program/id1451879999
+   Phonics Flashcards | https://apps.apple.com/us/app/phonics-flashcards/id6472101128 | mentions phonics screening / reception
+   The Phonics App | https://apps.apple.com/us/app/the-phonics-app/id6742649576
+   Phonics Inventory | https://apps.apple.com/us/app/phonics-inventory/id899200953
+   Phonics Sense | https://apps.apple.com/us/app/phonics-sense/id6759855492
+   Top Phonics | https://apps.apple.com/us/app/top-phonics/id1444502374
+
+5) Demand check: "phonics screening check practice app parents year 1 alien words" -> STRONG DEMAND
+   Evidence (non-Apple): Tes paid "Year 1 Phonics Screening Practice – real and alien words mock test"; Twinkl PSC resource pack with past papers;
+   phonicscheck.co.uk (web practice app "2026"); Monster Phonics free online check; school parent pages (Hareclive E-ACT Academy, John Burns Primary);
+   YouTube practice videos; HelpKidzLearn SEND alien-word activities. Mandatory for every Year 1 child in England each June (pass mark 32/40).
+
+6) site:apps.apple.com Schreibschrift lernen Kinder -> CROWDED (sat ~5) — dropped German cursive
+   Cursive: Schreibschrift lernen | https://apps.apple.com/de/app/cursive-schreibschrift-lernen/id1643464145 | 4.2*, 69 ratings
+   Schreibschrift lernen für Kinder | https://apps.apple.com/at/app/schreibschrift-lernen-fur/id791173215 | Ausgangsschrift
+   LetraKid Schreibschrift lernen | https://apps.apple.com/de/app/letrakid-schreibschrift-lernen/id1476964917 | 16 languages, 8 cursive styles
+   Schreiben Lernen für Kinder (LetterSchool) | https://apps.apple.com/de/app/schreiben-lernen-f%C3%BCr-kinder/id481067676 | parent leader
+   Buchstaben Schreiben Lernen | https://apps.apple.com/de/app/buchstaben-schreiben-lernen/id6472044970
+   Vorschule Buchstaben Lernen | https://apps.apple.com/de/app/vorschule-buchstaben-lernen/id6757946399
+   Kinder Rechtschreibung Schule | https://apps.apple.com/de/app/kinder-rechtschreibung-schule/id1123262799 | German spelling
+   Wort-Zauberer - Lesen Lernen | https://apps.apple.com/at/app/wort-zauberer-lesen-lernen/id496574443 | German reading
+   Schreibschrift und Handschrift (Writey) | https://apps.apple.com/de/app/schreibschrift-und-handschrift/id1512640380 | "1M+ users", many languages
+
+7) site:apps.apple.com articulation R sound practice -> ENGLISH R CROWDED (sat ~6-7) — English R dropped; trilled-R (ES/CZ/PL/IT/RU "rotacismus") looks like a US-gap
+   Articulate R | https://apps.apple.com/us/app/articulate-r/id1439692133 | 150 talking flashcards
+   R Articulation | https://apps.apple.com/us/app/r-articulation/id962351160 | 800 words
+   Articulation R & R Blends | https://apps.apple.com/us/app/articulation-r-r-blends/id907512652
+   Listen Close Articulation | https://apps.apple.com/us/app/listen-close-articulation/id759333910 | auditory discrimination
+   Fun With R | https://apps.apple.com/us/app/fun-with-r/id695133638
+   Articulation IV | https://apps.apple.com/us/app/articulation-iv/id515128379 | R, S, L, Th
+   Speak R Clearly | https://apps.apple.com/us/app/speak-r-clearly/id6751442522 | new 2025, voice recording
+   Game Show Articulation | https://apps.apple.com/us/app/game-show-articulation/id964686726
+
+8) site:apps.apple.com visual schedule autism kids -> VERY CROWDED (10 titles, most launched 2025-26) — dropped as a standalone idea
+   Lil Planner: Visual Schedule | https://apps.apple.com/us/app/lil-planner-visual-schedule/id6448482826 | claims "#1 visual schedule app"
+   Vigdís: Kids Visual Schedule | https://apps.apple.com/is/app/vigd%C3%ADs-kids-visual-schedule/id6760764940
+   Kids Visual Schedule Planner (KidCue) | https://apps.apple.com/us/app/kids-visual-schedule-planner/id6756910510 | time blindness
+   Visual Schedule Daily Routine | https://apps.apple.com/us/app/visual-schedule-daily-routine/id1508150689
+   First and Then Visual Schedule | https://apps.apple.com/us/app/first-and-then-visual-schedule/id6747053750 | ABA
+   Visual Schedule Pro for ABA | https://apps.apple.com/hu/app/visual-schedule-pro-for-aba/id6749564691
+   MyVisualRoutine: Autism & ADHD | https://apps.apple.com/us/app/myvisualroutine-autism-adhd/id6757563805
+   VizyPlan: Visual Routines | https://apps.apple.com/us/app/vizyplan-visual-routines/id6756069118
+   Pictalk Buddy: Autism Routine | https://apps.apple.com/us/app/pictalk-buddy-autism-routine/id6502835578
+   Visual Schedule & Social Story | https://apps.apple.com/gb/app/visual-schedule-social-story/id1329629861
+
+9) site:apps.apple.com social stories creator -> MODERATE (sat ~3-4; leader is an old 2013 app)
+   Social Story Creator & Library (Touch Autism) | https://apps.apple.com/us/app/social-story-creator-library/id588180598 | freemium, print PDF
+   Social Story Creator Educators | https://apps.apple.com/us/app/social-story-creator-educators/id998334331 | paid pro version
+   Socially - Social stories | https://apps.apple.com/us/app/socially-social-stories/id6749651197 | new 2025
+   Make Your Story-Story Creator | https://apps.apple.com/us/app/make-your-story-story-creator/id1565183603 | (no snippet)
+   Shffl: Social Story Maker | https://apps.apple.com/us/app/shffl-social-story-maker/id1564783713 | social-media stories, not autism
+   NOTE: "Social Stories" is Carol Gray's trademark -> naming risk.
+   IDEA: on-device Apple Foundation Models drafting of social stories = no cloud AI competitor seen.
+
+10) site:apps.apple.com euro coins counting kids -> EURO OPEN (only 1 dedicated app); USD crowded
+   Euro und Cent | https://apps.apple.com/hu/app/euro-und-cent/id6757074344?platform=ipad | new, 18 chapters, shopping + counting
+   Financial Education Kids | https://apps.apple.com/us/app/financial-education-kids/id6450845934
+   Amazing Coin (USD) Learning | https://apps.apple.com/us/app/amazing-coin-usd-learning/id495887877 | USD only
+   Count Money and Coins - Photo Touch Game | https://apps.apple.com/us/app/count-money-and-coins-photo-touch-game/id1244887733
+   Coin Monsters - Math Games | https://apps.apple.com/us/app/coin-monsters-math-games/id1093966452
+   Euro Coin Collection | https://apps.apple.com/it/app/euro-coin-collection/id6760192792?l=en-GB | adult collector app, new 2026
+   Visual Currency Calculator | https://apps.apple.com/us/app/visual-currency-calculator/id514602873 | (not relevant)
+
+11) site:apps.apple.com counting money kids coins -> USD CROWDED (sat ~7)
+   Kids Count: Coins | https://apps.apple.com/us/app/kids-count-coins/id834143919 | $0.99, pocket money
+   Count Money - Game | https://apps.apple.com/us/app/count-money-game/id1186217093
+   Counting Money and Coins - Games for Kids | https://apps.apple.com/us/app/counting-money-and-coins-games-for-kids/id1096227593 | $1.99
+   Amazing Coin (USD) Dollar | https://apps.apple.com/us/app/id495105315
+   Counting Bills & Coins | https://apps.apple.com/us/app/counting-bills-coins/id374976971
+   => US-GAP: localized coin/banknote counting (EUR, GBP, PLN, CZK, INR, BRL, MXN, JPY...) — only "Euro und Cent" seen outside USD.
+
+12) site:apps.apple.com telling time kids clock -> ENGLISH CROWDED (sat ~9-10) — English dropped
+   Kids Clock | https://apps.apple.com/us/app/kids-clock/id1539538905 | free
+   Clock Telling Time For Kids | https://apps.apple.com/us/app/clock-telling-time-for-kids/id1465867000 | $2.99
+   Telling Time For Kids + Clock | https://apps.apple.com/us/app/telling-time-for-kids-clock/id1292175911
+   Clock For Kids: Discover Time | https://apps.apple.com/us/app/clock-for-kids-discover-time/id6444631561 | $5.99 (WTP proof)
+   Math Telling Time Clock Game | https://apps.apple.com/us/app/math-telling-time-clock-game/id1450626454
+   Interactive Telling Time | https://apps.apple.com/us/app/interactive-telling-time/id482452233
+   Learning to tell Time | https://apps.apple.com/us/app/learning-to-tell-time/id1500903761
+   Telling Time For Kids - Clock (reviews URL) | https://apps.apple.com/us/app/telling-time-for-kids-clock/id1005958411?see-all=reviews&platform=iphone
+   => US-GAP (untested): language-specific time phrasing ("halb drei", "čtvrt na tři", "vijf voor half drie", "wpół do trzeciej").
+
+13-14) FAILED (budget): "Uhr lernen Kinder", "Cantonese for kids", "Tagalog for kids".
+
+======================================================================
+B. CROWDED vs OPEN (summary)
+======================================================================
+CROWDED (drop as head niche): dyslexia AI reading tutors; ASL baby sign; German Schreibschrift; English R articulation;
+  autism visual schedules (10 new apps 2025-26); USD money counting; English telling time.
+OPEN / THIN (verified): UK Phonics Screening Check (1 app: Your Phonics); b/d letter reversals (1 old app);
+  euro money counting (1 app); baby signs outside ASL/DGS (only DE x3, NO x1 seen); social-story creation (old leader, no on-device AI).
+LIKELY OPEN but UNVERIFIED: trilled-R practice for ES/CZ/PL/IT/RU kids; localized clock phrasing; sight-word equivalents
+  (mots outils / Grundwortschatz); syllabic reading (ES "sílabas", BR "família silábica", CZ "slabikář", DE "Silbenmethode").
+
+======================================================================
+C. CANDIDATE LIST (ranked draft; * = has verified evidence; others unverified saturation)
+======================================================================
+ 1* Phonics Check Prep (UK Y1 PSC real+alien words) — parent Jolly Phonics; niche Your Phonics; strong seasonal demand (Mar–Jun). ~$4.99 one-time. build 3 wk.
+ 2* b-or-d Letter Flip Trainer (letter reversals b/d/p/q, 6/9) — niche Reversals for Dyslexia (old). $3.99. build 3 wk.
+ 3* Money Kids: My Currency (localized coins/notes, 30+ currencies) — US-GAP; niche Euro und Cent; us-only Amazing Coin USD. Risk: central-bank image rules.
+ 4* Baby signs in national sign languages (LSF, LSE, LIS, NGT, PJM, ČZJ, Libras, BSL) — US-GAP; WTP proven by Zwergensprache $8.99. Heavy content (signer videos).
+ 5  Rolling R Coach (trilled R, rotacismus; on-device trill detection ~25 Hz modulation) — US-GAP vs English R apps (verified crowded). 1.4.1 medical-claim wording risk.
+ 6  Clock in Your Language (local time phrasing) — US-GAP; English crowded (verified).
+ 7  Speech Homework (SLP/logoped custom word lists, OCR of worksheet, parent voice, trial counter) — US-GAP (any language); parent Articulation IV.
+ 8* Social story drafter with on-device Apple Foundation Models + photos + TTS + PDF — niche Social Story Creator & Library. Trademark "Social Stories".
+ 9  Token Board (ABA token economy) — near First and Then / VS Pro for ABA. Probably Education category.
+10  Lefty Writer (left-handed handwriting; mirrored model, paper-tilt via gyro) — parent LetterSchool/LetraKid/Writey.
+11  Spelling List / Diktat coach (parent-entered weekly list, OCR, parent voice) — US-GAP (SpellingCity model); niche Kinder Rechtschreibung Schule.
+12  Local sight words (mots outils, Grundwortschatz, palabras frecuentes) — US-GAP (Dolch model); niche Wort-Zauberer.
+13  Minimal Pairs Match (phonological processes; SLP-priced $9.99) — niche Listen Close Articulation, Game Show Articulation.
+14  Pre-Writing Paths (OT pre-writing strokes, DE "Schwungübungen") — near Vorschule Buchstaben Lernen, LetterSchool.
+15  Sleeps Until (toddler countdown to birthday/Christmas; widget) — near KidCue. Seasonal.
+16  Syllable Reader (syllabic reading method ES/BR/IT/CZ/PL/DE) — US-GAP reverse of phonics model; low WTP in LATAM/BR.
+17  Circle Time Calendar (days/months/seasons/weather) — near Learning to tell Time. Risk: near-duplicate of #15.
+18  Pure Sounds (teach parents correct phoneme pronunciation + child flashcards) — parent Jolly Phonics; avoid RWI/Jolly trademarks.
+19  Savings Jar Kids (offline pocket money / goals; Greenlight-type model is US banking) — US-GAP; better in Finance/Lifestyle.
+20  ESL phonics with parent-language coaching (JP/KR/CN/BR) — US-GAP; local players in KR/JP likely strong.
+21  Two Homes (kid-facing custody calendar + packing list; CloudKit share) — Lifestyle fit; sensitive.
+22  Potty Steps (visual toilet sequence for autistic/speech-delayed kids) — near Pictalk Buddy/MyVisualRoutine; "potty training" head term crowded.
+23  Price Tag Detective (on-device OCR of real shop price tags -> math challenges, 8-11) — near Coin Monsters.
+24  Read to Rex (kid reads to a dog; on-device speech -> WCPM for parent) — parent Bookbot/Lexy (cloud subs); kid-voice ASR accuracy risk.
+25  LRS/Legasthenie/dysleksja trainer (DE/PL/CZ) — US-GAP reverse; parent Poppins/GoLexic; 1.4.1 risk, heavy build.
+26  Reading Ruler Cam (OCR -> dyslexia font, overlay, TTS) — Sherlock risk (Live Text, Speak Screen, Immersive Reader).
+27  Brave Visit (doctor/dentist/blood test/MRI prep stories) — parent Social Story Creator.
+28  Fingerspelling Fun (ASL/BSL/LSF/DGS manual alphabets; Vision hand-pose check) — US-GAP; parent Baby Sign and Learn ASL Pro.
+29  Coin Hunt Kids (euro commemoratives / US 250th quarters / UK 50p) — niche Euro Coin Collection; parent Change Checker/CoinSnap (no URL).
+30  Heritage Cyrillic "propysy" (Ukrainian diaspora cursive) — parent Writey/LetraKid; low WTP.
+UNCHECKED extra candidates (no evidence): Cantonese/Tagalog/Farsi/Punjabi heritage-language kids apps; typing for kids (iPad);
+  on-device personalized bedtime stories (Foundation Models); toothbrush timer; emotions/feelings check-in; high-contrast newborn cards;
+  baby sensory; dyscalculia number sense; abacus/soroban; kids chess; tooth fairy; chore chart & screen-time tokens (-> Lifestyle).
+
+======================================================================
+D. KIDS-CATEGORY RISKS TO CARRY INTO ANY FINAL JSON
+======================================================================
+- Guideline 1.3 Kids: no third-party analytics/ads, parental gate before IAP and external links, pick age band (5&under / 6-8 / 9-11).
+- Parent-operated tools (social stories, token board, speech homework, savings jar, two homes) may fit Education/Lifestyle/Medical better.
+- 1.4.1 medical-claim wording for speech/dyslexia/autism ideas; trademarks: "Baby Signs", "Social Stories", "Jolly Phonics", "Read Write Inc".
+- 4.3 spam risk if multiple language-variant apps share a template -> ship one multilingual app per idea, not per-language clones.
+- Revenue funnel template used: downloads x conv x price x 0.85 x 23 CZK; most one-time $3.99-5.99 ideas need 2.5-3.5k dl/mo to clear 10k CZK.

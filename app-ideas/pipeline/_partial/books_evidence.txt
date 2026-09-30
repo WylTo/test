@@ -1,0 +1,169 @@
+BOOKS (category_slug: books) — PARTIAL EVIDENCE
+Date: 2026-09-30. 16 WebSearch calls ran before the shared session budget (200/200) was used up; 5 more attempts were refused.
+All URLs below are copied verbatim from WebSearch results. None were constructed.
+Saturation = number of returned apps.apple.com results that literally target the niche phrase in their title (0-10).
+
+=====================================================================
+A. SEARCHED NICHES — FINDINGS + URLS
+=====================================================================
+
+1) "reading log for kids"  -> CROWDED (sat ~6, but mostly new or weak 2025-26 indies)
+   - RIF Reading Log (nonprofit, free) https://apps.apple.com/us/app/rif-reading-log/id1365076654?l=fr
+   - Reading Log: Parents & School (StoryKeeper; bedtime, school minutes, homeschool records) https://apps.apple.com/us/app/reading-log-parents-school/id6757205089
+   - ReadSteps (family tracker, new) https://apps.apple.com/us/app/readsteps/id6760748484?uo=2
+   - ParentsPick Kids Book Scanner (parents scan kids' books) https://apps.apple.com/us/app/parentspick-kids-book-scanner/id6743800562
+   - ReadingTime - Family Tracker https://apps.apple.com/us/app/readingtime-family-tracker/id1448609572
+   - Little Reading For Kids (line guide, tracks reading speed) https://apps.apple.com/us/app/little-reading-for-kids/id6756633105
+   - Read Along Books For Kids: RR https://apps.apple.com/us/app/read-along-books-for-kids-rr/id6478014301
+   - Kids Read Now https://apps.apple.com/us/app/kids-read-now/id1403195954
+   - YOMU - Family Reading Habits (new) https://apps.apple.com/us/app/yomu-family-reading-habits/id6751194733
+   Verdict: avoid a generic kids reading log. The only openings are sub-angles such as the school reading diary (see C).
+
+2) "1000 books before kindergarten"  -> OPEN (sat 2), US-GAP candidate
+   - 1000 Books Before Kindergarten (official foundation app, 2013, iPad-focused, free) https://apps.apple.com/us/app/1000-books-before-kindergarten/id779280401
+     (also listed in the jp/nz/au storefronts)
+   - 1k Books Before Kindergarten (new indie, no ads, no login) https://apps.apple.com/us/app/1k-books-before-kindergarten/id6749195393
+   - Foundation companion apps (not trackers): https://apps.apple.com/us/app/1000-books-abc-writing/id1439917453 , https://apps.apple.com/us/app/1000-books-names-words/id1455778610
+   Verdict: best idea found. The model is a US/CA/AU library program with English-only apps, so it can be localized (for example CZ "Celé Česko čte dětem", Bookstart UK/JP). Risk: possible trademark on the program name, so do not put it in the app title.
+
+3) "classroom library checkout"  -> MODERATE (sat 3), US-GAP candidate
+   - ReadOtter: Classroom Library (new 2025; catalog, checkouts, student logs) https://apps.apple.com/us/app/readotter-classroom-library/id6745129261
+   - Classroom Library Manager (Follett, big brand, ecosystem-bound) https://apps.apple.com/us/app/classroom-library-manager/id1479701901
+   - Bookshelf Scanner (teacher barcode checkout) https://apps.apple.com/us/app/bookshelf-scanner/id1435647681
+   - Library CheckOut (generic, ISBN, due-date push) https://apps.apple.com/in/app/library-checkout/id1185776203
+   - BookBuddy (parent leader; teachers use it) https://apps.apple.com/us/app/bookbuddy-my-library-manager/id395150347
+   Verdict: viable. The competitors are English-only, and localizing is the angle. ISBN lookup at runtime makes it "partial". Demand is seasonal (Aug-Sep).
+
+4) "oral reading fluency / WCPM"  -> OPEN (sat 2), US-GAP (reverse: CZ/SK/PL "rychlost čtení")
+   - Reader Meter (indie 2025, ORF with any passage, auto WCPM) https://apps.apple.com/us/app/reader-meter/id6745434060
+   - TARA: Reading Assessment App (India, AI assessment) https://apps.apple.com/in/app/tara-reading-assessment-app/id6737688769
+   - MAP Reading Fluency Testing (NWEA, institutional) https://apps.apple.com/us/app/map-reading-fluency-testing/id1326709796
+   - First Steps to Reading Fluency https://apps.apple.com/us/app/first-steps-to-reading-fluency/id1356214665
+   - Reading Speed/Fluency Builder (also useful as a speed-reading competitor) https://apps.apple.com/us/app/reading-speed-fluency-builder/id1080258925
+   - Readability - Learn to Read (AI tutor) https://apps.apple.com/us/app/readability-learn-to-read/id1477213383?see-all=reviews
+   Verdict: viable teacher/tutor tool. Risks: district-mandated DIBELS/MAP, copyright on norm tables, and child data privacy.
+
+5) "manga collection tracker"  -> SATURATED (sat 9+, almost all launched 2025-26). DROP.
+   - MyMangaLibrary https://apps.apple.com/us/app/mymangalibrary/id6751350955
+   - Manga Collector https://apps.apple.com/us/app/manga-collector/id6761459577
+   - MangaTrack https://apps.apple.com/us/app/mangatrack-manga-collection/id6762125245
+   - Manga Vault https://apps.apple.com/us/app/manga-vault-manga-collection/id6762581807
+   - Mangahub https://apps.apple.com/mn/app/mangahub-your-manga-tracker/id6760665911
+   - MangaTime https://apps.apple.com/gb/app/mangatime-manga-tracker/id6740176167
+   - Manga Shelf Ledger2026 (offline) https://apps.apple.com/il/app/manga-shelf-ledger2026/id6780225298
+   - Shiori - Manga Volume Tracker https://apps.apple.com/us/app/shiori-manga-volume-tracker/id6790822656
+   - ReManga https://apps.apple.com/az/app/remanga/id6747689672
+
+6) "audiobook tracker" (2 searches)  -> OPEN (sat 0-1: no app has "audiobook tracker/log" in its title; general trackers cover audiobooks as a feature)
+   - Bookly (parent leader) https://apps.apple.com/us/app/bookly-book-tracker-manager/id1085047737
+   - Goodreads (parent) https://apps.apple.com/us/app/goodreads-book-reviews/id355833469
+   - Audible (parent, listening stats) https://apps.apple.com/in/app/audible-audiobooks-podcasts/id379693831
+   - Book Progress: Reading Tracker (logs audiobooks by hours) https://apps.apple.com/tr/app/book-progress-reading-tracker/id6504213962
+   - Bookshelf: Reading Tracker (chapter/minute listening sessions, lending, return reminders) https://apps.apple.com/us/app/bookshelf-reading-tracker/id6654913138
+   - Book Tracker: Bookshelf & TBR (pages/minutes, borrowed section) https://apps.apple.com/us/app/book-tracker-tbr/id1491660771
+   - Book Tracker & Reading Log (timer) https://apps.apple.com/us/app/book-tracker-reading-log/id1621520850
+   - Reading Tracker - ReadTracker (audiobook-hours stats) https://apps.apple.com/us/app/bookshelf-readtracker/id6692608551
+   - Book Tracker: Reading List https://apps.apple.com/om/app/book-tracker-reading-list/id6760042667
+   - TBR Book Jar: Reading Tracker (jar picker + photo pages to audio) https://apps.apple.com/us/app/tbr-book-jar-reading-tracker/id6761447804
+   - ListenBook: audiobook player (listening stats) https://apps.apple.com/us/app/listenbook-audiobook-player/id1621926254
+   - AudioBookIt: Audiobook Player https://apps.apple.com/us/app/audiobookit-audiobook-player/id6751476148
+   - MP3 Audiobook Player https://apps.apple.com/us/app/mp3-audiobook-player-free-listen-any-audiobooks/id891797540
+   - Audio Books Library Ereader https://apps.apple.com/us/app/audio-books-library-ereader/id1549655528
+   Verdict: an audiobook-only log (narrators, speed-adjusted time) is open, but the big trackers could copy it in a week.
+
+7) "book lending tracker"  -> WEAK NICHE (a feature inside catalog apps; generic item-lending apps exist)
+   - Lending & Borrowing Tracker https://apps.apple.com/us/app/lending-borrowing-tracker/id6739120164
+   - BookBuddy: Digital Library https://apps.apple.com/us/app/bookbuddy-digital-library/id6479371172
+   - Keepfully https://apps.apple.com/us/app/keepfully-loan-tracker/id1273375959
+   - Lending - Track money & items https://apps.apple.com/ng/app/lending-track-money-items/id1580806549
+   - Borrowed - Track your stuff https://apps.apple.com/us/app/borrowed-track-your-stuff/id1538284368
+   - MyLibrary - Book Manager (lending tracker, overdue alerts) https://apps.apple.com/us/app/mylibrary-book-manager/id6755722070
+   - Lender https://apps.apple.com/nz/app/lender/id6746531826
+   Verdict: build it only as a module of the library-loans idea (8), not as a standalone app.
+
+8) "library card wallet" + "library due date reminder"  -> OPEN for a multi-library family app (sat 1 dedicated)
+   - Library Loan Reminder2026 (new indie, offline local loan log) https://apps.apple.com/ro/app/library-loan-reminder2026/id6780073076
+   - CloudLibrary (parent; multiple cards, ebook lending) https://apps.apple.com/us/app/cloudlibrary/id466446054
+   - Library-branded apps cover only their own library: SCLD https://apps.apple.com/us/app/scld-libraries/id6474624114 ; Lake Villa https://apps.apple.com/us/app/lake-villa-library/id1475813956 ; MORE Libraries https://apps.apple.com/us/app/more-libraries/id1579930048 ; Darien https://apps.apple.com/us/app/darien-library/id6447994728
+   - Generic barcode wallets that mention library cards: Barcode Wallet https://apps.apple.com/us/app/barcode-wallet/id6746732896 ; Barcodes Wallet: Barc https://apps.apple.com/us/app/barcodes-wallet-barc/id6642707689 ; Barcodes: Loyalty Card Wallet https://apps.apple.com/us/app/reward-card-wallet-barcodes/id1610894014 ; Anycode Wallet https://apps.apple.com/us/app/anycode-wallet/id1538232377 ; Wallet Creator https://apps.apple.com/us/app/wallet-creator/id1486573384 ; Libraries Online https://apps.apple.com/us/app/libraries-online/id6739070221
+   Verdict: viable. Idea: all the family's cards, physical loans from several libraries, and on-device OCR of checkout receipts. Risk: fine-free US libraries reduce the pain, while fines persist in CZ/DE.
+
+9) "writing sprint / word count tracker"  -> MODERATE-CROWDED (sat 4-5)
+   - Word Keeper (since 2014, 70+ stats) https://apps.apple.com/us/app/word-keeper-writing-tracker/id928955389
+   - Write/Sprint https://apps.apple.com/us/app/write-sprint/id1558353979
+   - Writing Tracker - Word Count (new) https://apps.apple.com/us/app/writing-tracker-word-count/id6763339544
+   - Prolific: Track Your Writing https://apps.apple.com/us/app/prolific-track-your-writing/id6476241657
+   - Word Tracker https://apps.apple.com/us/app/word-tracker/id1541495523
+   - PlotWords (planner + word count) https://apps.apple.com/cz/app/writing-app-plotwords/id6761336769
+   Verdict: only a SharePlay group-sprint / November-challenge angle is left (NaNoWriMo org closed 2025; "NaNoWriMo" is a trademark).
+
+10) "novel planner / plot outline"  -> SATURATED for generic (sat 6)
+   - Story Planner for Writers (parent) https://apps.apple.com/us/app/story-planner-for-writers/id860024390
+   - Storyfolk Novel Planner https://apps.apple.com/ca/app/storyfolk-novel-planner-app/id6744127272
+   - Plot Flow https://apps.apple.com/ca/app/plot-flow/id6746090993
+   - Novel Writing - Writer Studio (AI) https://apps.apple.com/us/app/novel-writing-writer-studio/id6761032212
+   - Story Plotter https://apps.apple.com/us/app/story-plotter-idea-to-plot/id1491980862
+   - MyStory.today https://apps.apple.com/gb/app/mystory-today-write-a-book/id1361725141
+   Verdict: generic is dead. None of the results are genre-specific (mystery/clue planner, timeline), so those angles may be open.
+
+11) "writing submission tracker"  -> OPEN (sat 2, both competitors very old), US-GAP candidate
+   - Story Tracker (2009-era, id326115341) https://apps.apple.com/in/app/story-tracker/id326115341
+   - WriteTrack - Track Submissions (2014) https://apps.apple.com/us/app/writetrack-track-submissions/id914818552
+   - Literary Agent Toolkit (new 2026, manuscript analysis + submission tracking) https://apps.apple.com/no/app/literary-agent-toolkit/id6759154606
+   - LitConnect Talent Finder (writer-agent matching, server) https://apps.apple.com/us/app/litconnect-talent-finder/id6743944644
+   - Poets & Writers Magazine https://apps.apple.com/us/app/poets-writers-magazine/id566507932
+   Verdict: second-best idea. It is fully offline (the user enters markets), and Duotrope ($50/yr, web) proves willingness to pay. It can be localized for ES/DE/FR/BR literary contests.
+
+12) "worldbuilding"  -> MODERATE (sat 5, several AI/server)
+   - TomeWorlds https://apps.apple.com/us/app/tomeworlds-world-building/id6756503629
+   - Craft World Builder https://apps.apple.com/us/app/craft-world-builder/id6469102709
+   - DunMax: World Builder (DM prep AI) https://apps.apple.com/sa/app/dunmax-world-builder/id6758175525
+   - Summon Worlds: Worldbuilder (AI) https://apps.apple.com/us/app/summon-worlds-worldbuilder/id1667442517
+   - Worldo: Living AI Worlds https://apps.apple.com/hr/app/worldo-living-ai-worlds/id6781946729
+   - Genesis - World Building (old) https://apps.apple.com/us/app/genesis-world-building/id997559721
+   Verdict: generic is crowded. Sub-niches (story timeline with custom calendars, conlang builder) were not seen in the results.
+
+13) "picture book dummy / storyboard"  -> OPEN (sat 0 for a picture-book dummy planner), niche is tiny
+   - PicaBook https://apps.apple.com/us/app/picabook-picture-book-creator/id1643338958
+   - Storybird https://apps.apple.com/us/app/storybird/id1461691231?ls=1
+   - Scene Creator https://apps.apple.com/us/app/scene-creator-storyboard-app/id1507901763
+   - SmartBoard Storyboard Creator (AI) https://apps.apple.com/us/app/smartboard-storyboard-creator/id6751539806
+   - Storyboard Creator AI https://apps.apple.com/us/app/storyboard-creator-ai/id6739221133
+   - AI Storyteller: Book Creator https://apps.apple.com/us/app/ai-storyteller-book-creator/id6749068221
+   - Write a Book: New Writer Guide https://apps.apple.com/us/app/write-a-book-new-writer-guide/id1511381305
+   - Little Stories: Bedtime Books (content) https://apps.apple.com/us/app/little-stories-bedtime-books/id977016099
+
+14) "dyslexia reader epub pdf"  -> MODERATE (sat 2-3)
+   - Dyslexia Font: OpenDyslexic (one dev, many localized titles, PDF import) https://apps.apple.com/us/app/dyslexia-font-opendyslexic/id1510565499
+   - ClearRead - Dyslexia Reader (new 2026; ePub/PDF import, Lexend/OpenDyslexic) https://apps.apple.com/gb/app/clearread-dyslexia-reader/id6760895785
+   - Dyslexia fonts (font installer) https://apps.apple.com/us/app/dyslexia-fonts/id1513035642
+   Verdict: viable, but iOS 26 "Accessibility Reader" is a Sherlock risk. Per-language syllable coloring and kid profiles would set it apart.
+
+=====================================================================
+B. DRAFT RANKING (from the evidence above; scores were not finalized)
+=====================================================================
+ 1 Read-Aloud 1000 (1000-books tracker, localized)       us_gap
+ 2 SubTrack (writing submission tracker, offline)         us_gap
+ 3 ClassShelf (classroom library checkout)                us_gap, partial (ISBN API)
+ 4 Fluency Check (ORF/WCPM timer, CZ/PL/DE reverse)       us_gap
+ 5 Library Bag (family library cards + loans + receipt OCR)
+ 6 Audiobook-only listening log (narrators, speed-adjusted time)
+ 7 Dyslexia reader for imported ePub/PDF
+Weaker (lower evidence): story timeline with custom calendars, SharePlay writing sprints, lending as a module of #5.
+
+=====================================================================
+C. UNCHECKED CANDIDATES (no niche search done; only parent URLs above)
+=====================================================================
+- School reading diary (CZ "čtenářský deník", DE "Lesetagebuch", PL "dzienniczek lektur"); reverse US-gap
+- Page Check: photo of a page -> readability level + on-device Foundation Models comprehension questions
+- Book bingo / reading-challenge card maker (r/Fantasy Bingo, library summer bingo)
+- RSVP speed reader for DRM-free ePub (competitor seen: Reading Speed/Fluency Builder)
+- Quote scanner / commonplace book (Live Text); Kindle "My Clippings" organizer (import friction via MTP)
+- Kids audiobook tile player (Yoto-like; bundle LibriVox public domain)
+- Bedtime story recorder for grandparents (page photo + narration; copyright 5.2 risk)
+- Book club host planner (CloudKit share); homeschool reading portfolio (us_gap)
+- Rare/first-edition book collector catalog; Montessori kids' book rotation
+- Mystery plot/clue planner; conlang builder; TTRPG player campaign journal
+- Audiobook A-B loop / shadowing player for language learners; word collector from paper books
+- Reading focus timer using FamilyControls app blocking; TBR jar (TBR Book Jar already exists)
+- Not searched and likely rejected: Quran khatam tracker, public-domain classics bundles (4.3 risk), CBZ comic reader

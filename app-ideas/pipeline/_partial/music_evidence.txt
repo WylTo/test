@@ -1,0 +1,179 @@
+MUSIC (category_slug: music) — PARTIAL EVIDENCE (session WebSearch budget ran out after 12 queries by this agent)
+Date: 2026-09-30. All URLs below were copied verbatim from WebSearch results (none constructed).
+"sat" = number of returned apps.apple.com results whose TITLE targets the niche phrase.
+
+=====================================================================
+A. QUERIES RUN (12) + FINDINGS
+=====================================================================
+
+1) site:apps.apple.com handpan tuner  -> OPEN for "handpan tuner" (sat 0 in titles)
+   7 handpan apps came back, all simulators or learning apps, none with "tuner" in the title. Only linotune (a generic strobe tuner) is described as "perfect for handpan tuning".
+   Handpan (sim, "closest sounding Hang simulator")  https://apps.apple.com/il/app/handpan/id1181177442
+   Handpaner - Virtual Handpan (scales & chords)       https://apps.apple.com/sr/app/handpaner-virtual-handpan/id1606912680
+   Handpan Sim (2025)                                  https://apps.apple.com/de/app/handpan-sim/id6740429440
+   Handpan Rhythms (rhythm notation)                   https://apps.apple.com/de/app/handpan-rhythms/id6453123336
+   linotune (generic strobe tuner)                     https://apps.apple.com/us/app/linotune/id762838884
+   The Handpan App (NovaPans, scales, learn)           https://apps.apple.com/us/app/the-handpan-app/id6742439720
+   PANet - Handpan App (notation, game mode)           https://apps.apple.com/us/app/panet-handpan-app/id6746509570
+   Notes: three new entrants around 2025 (id674...) point to a growing audience. "Hang" is a PANArt trademark, so keep it out of metadata.
+   Handpan notation/learning is getting crowded (sat ~3: Handpan Rhythms, PANet, The Handpan App).
+
+2) site:apps.apple.com oud tuner maqam  -> CONTESTED (oud tuner sat ~3, maqam sat ~3)
+   Maqamat Al-Arabiya (55 maqams / 9 families)   https://apps.apple.com/gb/app/maqamat-al-arabiya/id1330333850
+   Oud Pro                                       https://apps.apple.com/us/app/oud-pro/id452612201
+   Maqamat                                       https://apps.apple.com/gb/app/maqamat/id766256433
+   Oud Sim                                       https://apps.apple.com/us/app/oud-sim/id6738432468
+   Altarab (2026; 12 tools, 24-TET microtonal tuner, oud sim) https://apps.apple.com/dz/app/altarab-%D8%A7%D9%84%D8%B7%D8%B1%D8%A8/id6759546870
+   Oud Master                                    https://apps.apple.com/us/app/oud-master/id855957891
+   Oud Tuner - Tuner for Oud (Hsing-Fu Hsueh, 15 modes) https://apps.apple.com/us/app/oud-tuner-tuner-for-oud/id1377611648
+   Oud Tuner: Cümbüş & Tanbur (Arabic+Turkish presets) https://apps.apple.com/us/app/oud-tuner-c%C3%BCmb%C3%BC%C5%9F-tanbur/id1128962288
+   Notes: no dedicated maqam EAR-TRAINING app appeared (possible gap). Altarab is a strong new all-in-one threat.
+
+3) site:apps.apple.com bouzouki tuner  -> WEAK competition, small demand (tuner sat 2, chords sat 1)
+   Bouzouki Tuner (Hsueh; 3.9 stars from 7 reviews) https://apps.apple.com/us/app/bouzouki-tuner/id1440678008
+   Bouzouki Tuner - XTuner PRO (~2025)          https://apps.apple.com/gb/app/bouzouki-tuner-xtuner-pro/id6744967948
+   Bouzo Tunes                                  https://apps.apple.com/bj/app/bouzo-tunes/id6478856447
+   Bouzouki (sim)                               https://apps.apple.com/us/app/bouzouki/id1497421975
+   GuQin Tuner - Pitch (Hsueh)                  https://apps.apple.com/gr/app/guqin-tuner-pitch/id1268477087
+   Chordfinder for Bouzouki (id507... ~2012, probably stale) https://apps.apple.com/us/app/chordfinder-for-bouzouki/id507236609
+   UniTuner - Chromatic Tuner (200+ tunings incl. trichordo/tetrachordo) https://apps.apple.com/is/app/unituner-chromatic-tuner/id1546441866
+   Note: Hsing-Fu Hsueh publishes one-instrument reskin tuners across many instruments, so instrument-specific tuners are a template field (4.3 risk for us if we ship many).
+
+4) site:apps.apple.com bagpipe chanter tuner  -> CROWDED for tuners (sat 4), but pipers pay
+   Bagpipe Tuner ($11.99 paid upfront)           https://apps.apple.com/us/app/bagpipe-tuner/id480445177
+   SparrowTone Bagpipe Tuner (~2024, free)        https://apps.apple.com/us/app/sparrowtone-bagpipe-tuner/id6621245725
+   Braw Bagpipe Tuner (free + Pro IAP)           https://apps.apple.com/us/app/braw-bagpipe-tuner/id1223026937
+   Balance Pipe Band Tuner (pipes + tenor/bass drums) https://apps.apple.com/us/app/balance-bagpipe-tuner-pro/id1383389540
+   Gap: none of them teaches embellishments or practice chanter. Candidate: embellishment trainer with note/grace-note detection (hard ML).
+
+5) site:apps.apple.com harmonica bending trainer  -> MODERATE (bending sat 2 from one developer; learning apps exist)
+   Harmonica Bending Trainer (Blowbend.jp, free)  https://apps.apple.com/us/app/harmonica-bending-trainer/id1479803169
+   Harmonica Bending Trainer+ ($4.99)             https://apps.apple.com/us/app/harmonica-bending-trainer/id6742537721
+   Harmonica Tuner Pro                            https://apps.apple.com/us/app/harmonica-tuner-pro/id1200231226
+   Harmonica                                      https://apps.apple.com/bb/app/harmonica/id290205952
+   Harmonica University (Bendr)                   https://apps.apple.com/uy/app/bendr-harmonica/id6450061589
+   Note: people pay for play-recognition apps; a tab trainer is limited to public-domain songs (copyright).
+
+6) site:apps.apple.com hammered dulcimer tuner  -> OPEN for hammered dulcimer (sat 0); the mountain dulcimer tuners are abandoned
+   Trapezoid - Hammered Dulcimer (iPad sim)       https://apps.apple.com/us/app/trapezoid-hammered-dulcimer/id1062108541
+   Dulcimer Tuner Simple (~2010, mountain dulcimer) https://apps.apple.com/gb/app/dulcimer-tuner-simple/id371502968
+   Dusty Strings D550 Dulcimer (maker-branded sim) https://apps.apple.com/lr/app/dusty-strings-d550-dulcimer/id1068609699
+   Trapezoid - Pocket Dulcimer                     https://apps.apple.com/us/app/trapezoid-hammered-dulcimer-for-the-iphone/id1069508662
+   Pano Tuner (parent chromatic tuner, used for HD) https://apps.apple.com/us/app/pano-tuner-chromatic-tuner/id348094874
+   Dulcimer Tuner Simple Mixolydian (~2010)        https://apps.apple.com/gb/app/dulcimer-tuner-simple-mixolydian/id373048721
+   Multi Tuner (lists hammered dulcimer)           https://apps.apple.com/us/app/multi-tuner/id1286543090
+   Dulcimer Tuner Simple Ionian (~2010)            https://apps.apple.com/us/app/dulcimer-tuner-simple-ionian/id373052255
+   (Not usable: "Tuner Pro: Guitar Tuner & Tab" URL has uppercase /US/ plus no slug: https://apps.apple.com/US/app/id1438248122?l=en — fails validator regex)
+   Gap: a string-by-string guided tuner for multi-string instruments (hammered dulcimer, cimbalom, santur, lyre harp, zither, autoharp, kantele), and a modern mountain-dulcimer chords/tabs/tuner app (US gap; European relatives épinette, Scheitholt, langeleik).
+
+7) site:apps.apple.com steel pan tuner  -> SMALL niche, moderately served (steelpan title sat ~5)
+   Steel Pan Tutor Lite                            https://apps.apple.com/us/app/steel-pan-tutor-lite/id1275258875
+   Steelband (~2024)                               https://apps.apple.com/vc/app/steelband/id6475240216
+   Digital Pan (metronome+tuner+tracker; endorsed by Pan Trinbago) https://apps.apple.com/us/app/digital-pan/id453125793
+   Steelpan App PRO V2 (learning + concert tuner, "for builders") https://apps.apple.com/us/app/steelpan-app-pro-v2/id1606226740
+   Steelpan 3D                                     https://apps.apple.com/us/app/steelpan-3d/id1440761106
+   Note: steel pan tuning could be merged into a handpan harmonics tuner (same partial-analysis tech).
+
+8) site:apps.apple.com choir part practice app  -> CROWDED for "choir practice" (sat 3-5)
+   Choir Practice (downloadable songs, part slider, synced score) https://apps.apple.com/us/app/choir-practice/id1008660044
+   Choir App / Choir - The Choir Practice App (groups, server) https://apps.apple.com/us/app/choir-app/id1481118680
+   Choir Player - Learn Practice (4 SATB + backing, record own part) https://apps.apple.com/us/app/choir-player-learn-practice/id1139783014
+   cori - The App for Choirs (~2024, mixes choir's own recordings) https://apps.apple.com/us/app/cori-the-app-for-choirs/id6670766994
+   ChoirFlow (2026; piano, scales, metronome)     https://apps.apple.com/us/app/choirflow/id6759294680
+   Possible gaps (NOT verified): offline player that splits a user's own MIDI/MusicXML into SATB parts; a single-user choir DIRECTOR toolkit (attendance, seating chart, voice roster; no accounts); a choir warm-up player.
+
+9) site:apps.apple.com pitch pipe choir  -> SATURATED for pitch pipe (7 apps)
+   Pitch Pipe+                                     https://apps.apple.com/us/app/pitch-pipe/id317211808
+   The Pitch Pipe                                  https://apps.apple.com/ie/app/the-pitch-pipe/id1244972865
+   Choir Genius (~2023)                            https://apps.apple.com/us/app/choir-genius/id6450846555
+   Pocket Pitch - The Singer App (barbershop, a cappella) https://apps.apple.com/us/app/pocket-pitch-the-singer-app/id1005725401
+   Christian Church Choir App (~2023)              https://apps.apple.com/us/app/christian-church-choir-app/id6449414837
+   Perfect Pitch Pipe SWIFTSCALES (barbershop)     https://apps.apple.com/us/app/perfect-pitch-pipe-swiftscales/id1163973615
+   Pitch Pipe by Congregate (pitch pipe + metronome + song list) https://apps.apple.com/us/app/pitch-pipe-by-congregate/id6448314024
+   Possible gap (NOT verified): an a cappella "pitch drift" meter / chord-lock (just intonation) trainer. No snippet mentions drift measurement.
+
+10) site:apps.apple.com carnatic tala shruti  -> CROWDED (tala/shruti sat 3+; strong new all-in-one)
+   Tala Shruti (2025: shruti box, 7 Suladi talas, tabla+mridangam loops, raga training with pitch detection, tuner) https://apps.apple.com/us/app/tala-shruti/id6740571964
+   iSruthi-Tampura Sruthi box                      https://apps.apple.com/in/app/isruthi-tampura-sruthi-box/id669394303
+   Carnatic Thaalam Robot                          https://apps.apple.com/in/app/carnatic-thaalam-robot/id1438376299
+   Talanome - Carnatic Metronome                   https://apps.apple.com/us/app/talanome-carnatic-metronome/id418862562?uo=4
+   Shruti Box (~2009)                              https://apps.apple.com/au/app/shruti-box/id301042349
+   Abhyas for Carnatic Music (Shaale)              https://apps.apple.com/us/app/shaale-abhyas-carnatic-music/id1243073966
+   Shruthi Box (2026)                              https://apps.apple.com/il/app/shruthi-box/id6757926641
+   Shruti - Musical Tuner (2026)                   https://apps.apple.com/us/app/shruti-musical-tuner/id6772645275
+   Possible sub-gaps (NOT verified): a konnakol/solkattu trainer aimed at Western drummers; a tabla/mridangam-specific tuner; a Sarali varisai homework coach.
+
+11) site:apps.apple.com flamenco compas metronome  -> CONTESTED for its size (compás sat 3)
+   Compás, a flamenco metronome (palmas + cajón patterns) https://apps.apple.com/es/app/comp%C3%A1s-a-flamenco-metronome/id1509662092
+   Another Flamenco Compás App                     https://apps.apple.com/us/app/another-flamenco-comp%C3%A1s-app/id1462058409
+   Flamenco Compás (didactic)                      https://apps.apple.com/us/app/flamenco-comp%C3%A1s/id1236595563?l=es-MX
+   Possible gap: all three are players; none scores the user's own clapping/timing.
+
+12) site:apps.apple.com setlist maker gigging musicians  -> SATURATED (7 setlist apps; two new in 2026)
+   Set List Maker (lyrics, backing tracks, MIDI)   https://apps.apple.com/ca/app/set-list-maker/id410496349
+   Setlister (2026; setlists, rehearsals, finances) https://apps.apple.com/gb/app/setlister/id6757764995
+   SetBook: Gig & Setlist Manager (2026; payment info) https://apps.apple.com/us/app/setbook-gig-setlist-manager/id6760658343
+   GigBag Song Setlist Manager                     https://apps.apple.com/us/app/gigbag-song-setlist-manager/id1639664588
+   EasySetlist - Setlist Manager                   https://apps.apple.com/gb/app/easysetlist-setlist-manager/id1350127983
+   Set List Maker (Mac)                            https://apps.apple.com/us/app/set-list-maker/id1501218437?mt=12
+   GigNotes Music Setlist Manager                  https://apps.apple.com/us/app/gignotes-music-setlist-manager/id1536908681
+   Setlist Supervisor                              https://apps.apple.com/us/app/setlist-supervisor/id1501863687
+   Adjacent gaps (NOT verified): stage plot + input list maker; gig income/mileage ledger; wedding-ceremony musician planner (cue sheet).
+
+These searches were attempted but returned no results because the budget was exhausted: stage plot input list, band merch sales tracker, drum tuner, nashville number system.
+
+=====================================================================
+B. CROWDED vs OPEN (summary)
+=====================================================================
+CROWDED / AVOID as head terms: pitch pipe (7), setlist (7+), choir practice (3-5), carnatic tala/shruti (8 apps incl. all-in-one Tala Shruti), bagpipe tuner (4), steelpan (5), handpan sims (4+), oud tuner (3 + Altarab), flamenco compás (3).
+OPEN / WEAK (verified): handpan tuner (0 titles; only generic linotune), hammered dulcimer tuner (0; old mountain-dulcimer tuners from ~2010), bouzouki chords (1 stale app from ~2012), bouzouki tuner (2 weak; 7 reviews).
+FUNCTIONAL GAPS INSIDE CROWDED MARKETS (verified that the snippets don't mention them): bagpipe embellishment trainer, maqam ear training, a cappella pitch-drift meter, flamenco palmas timing scoring, offline MIDI/MusicXML SATB part player, choir-director-only toolkit.
+
+=====================================================================
+C. DRAFTED IDEA SHORTLIST (my preliminary rank; * = saturation NOT verified)
+=====================================================================
+ 1 PanTune: Handpan & Steelpan Harmonic Tuner (fundamental/octave/compound-fifth per note, scale ID) — verified gap; Pro $14.99; ~14k CZK ideal
+ 2 StringWalk: string-by-string tuner for lyre harp / zither / autoharp / hammered dulcimer / cimbalom / santur / kantele — HD gap verified, lyre* ; $7.99; ~11.7k CZK
+ 3 Stage Plot & Input List Maker* (US gap; adjacent to saturated setlist apps) — $14.99; ~14.6k CZK
+ 4 Hymn Board / song-number display on iPad+TV* (US hymn board; DE Liedanzeiger; CZ Kancionál numbers) — $19.99; ~15.6k CZK
+ 5 Mountain Dulcimer Chords, Tabs & Tuner (verified stale competitors; US gap) — $7.99; ~10.9k CZK (borderline)
+ 6 Gig Ledger (fees, band splits, mileage, expenses)* — $19.99/yr; ~17.5k CZK
+ 7 Choir Warm-Ups player + voice-type test* — $9.99; ~11.7k CZK
+ 8 Wedding Ceremony Musician Planner (cue sheet, repertoire PDF)* — $24.99/yr; seasonal
+ 9 Bagpipe Embellishment Trainer (practice chanter) — pipers pay $11.99 for tuners; hard ML; $14.99
+10 Darbuka & Aksak Rhythm Trainer* — $6.99
+11 Choir Director Toolkit (offline, no accounts)* — $19.99
+12 Tongue Drum Songbook (public domain, numbered notation) + tuner* — $4.99; copyright risk
+13 A Cappella Pitch-Drift / Chord-Lock Coach (verified pitch pipe saturation; drift feature unverified) — $12.99
+14 Bouzouki Chords & Tuner (Greek + Irish; dromoi) — verified weak; $7.99; borderline revenue
+15 Kirtan Harmonium & mantra chords (traditional melodies only)* — $9.99
+16 Konnakol Trainer for Western drummers* — $9.99
+17 Harmonica Tab Trainer (public-domain songs, hole/bend detection) — moderate competition; $19.99/yr
+18 SATB Part Player from the user's own MIDI/MusicXML — verified crowd, but the import-own-file gap is unverified
+19 Open Tuning Chord Finder (DADGAD, Open G/D)* — likely a feature inside big chord apps
+20 Handpan Scales & Notation — crowded-ish (Handpan Rhythms, PANet)
+21 Intonation Drone for strings/winds* — TonalEnergy threat
+22 Tabla & Mridangam Tuner* — low ARPU
+23 Psalm Tone Cantor* — texts are copyrighted
+24 Overtone Singing Trainer (spectrogram)* — tiny niche
+25 Palmas & Cajón Timing Trainer — compás sat 3
+26 Maqam Ear Trainer (quarter tones) — Altarab threat
+27 Byzantine Chant Ison & Echos* — tiny niche
+28 Sarali Varisai Coach — overlaps Tala Shruti
+29 Lehra & Taal Player* — likely existing iTabla-type apps
+30 Steelpan Note Layout Trainer — small niche plus a dominant PRO app
+
+=====================================================================
+D. UNCHECKED CANDIDATES (brainstormed, no search done)
+=====================================================================
+drum tuner (drum heads by frequency; iDrumTune exists?), Nashville Number System charts, Bb/Eb transposition helper, capo calculator,
+music practice log for students/teachers, Suzuki practice chart (review-piece rotation), recorder fingering for kids, tin whistle,
+anglo concertina fingering, lever harp tuner, guzheng/erhu/pipa tuner (reverse gap: China), polyrhythm trainer, samba/batucada trainer,
+djembe rhythms, conductor beat patterns, alto/tenor clef reading trainer, vocal range finder, guitar string-change/gear log,
+pedal/amp settings log, feedback-frequency finder for sound techs, Camelot wheel/harmonic mixing chart, band merch sales tracker,
+busking log, Music Memos replacement (Apple discontinued it), kalimba tabs, didgeridoo circular breathing, ocarina, pedal steel copedent,
+bugle calls (public domain), Sacred Harp/shape note (copyright on the 1991 edition), organ registration notebook, rehearsal recorder for bands,
+Irish trad session tunes (ABC), Balkan aksak (merged into darbuka), Turkish bağlama/saz fret chart (reverse gap TR), kantele, qanun sim.
+
+Suggested verification queries once budget is restored (about 2 per idea): site:apps.apple.com "stage plot" | "hymn board" | "lyre harp tuner" |
+"tongue drum songs" | "konnakol" | "darbuka rhythms" | "choir warm up" | "gig tracker musician" | "wedding musician" | "open tuning chords" | "tabla tuner" | "lehra".

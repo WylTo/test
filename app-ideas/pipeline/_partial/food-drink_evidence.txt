@@ -1,0 +1,184 @@
+FOOD & DRINK (food-drink) — PARTIAL EVIDENCE
+Date: 2026-09-30. WebSearch budget ran out after 12 successful queries (the session-wide limit of 200 is shared).
+ideas/food-drink.json was NOT written, as the coordinator instructed.
+Every URL below was copied verbatim from WebSearch results. None were constructed.
+"sat" = how many returned results literally target the niche phrase in their title (0-10).
+
+GENERAL FINDING: in 2025-26 a flood of new indie apps (ids 67xxxxxxxx-68xxxxxxxx) filled almost every obvious
+hobby-tracker niche in the English US store. Most have few ratings, but the title count is high.
+Angle worth pursuing: these apps show no sign of localization, so a "localized in 50 languages" play (us_gap) on
+crowded English niches looks more promising than looking for an untouched English niche.
+
+======================================================================
+QUERIES RUN + RESULTS
+======================================================================
+
+1) "site:apps.apple.com baker's percentage calculator" -> sat 7 (CROWDED, all weak/new indie)
+- Baker's Percentage ($1.99) https://apps.apple.com/us/app/bakers-percentage/id6753281246
+- Baker Percentage (iPad) https://apps.apple.com/us/app/baker-percentage/id1343381132
+- Leaven: Baker's Percentage https://apps.apple.com/us/app/leaven-bakers-percentage/id6742335028
+- BakersScale https://apps.apple.com/qa/app/bakersscale/id1571735214
+- Baker Buddy https://apps.apple.com/lv/app/baker-buddy/id1542671601
+- Bake Master: Baking Calculator ($0.99, pan conversions, ingredient cost) https://apps.apple.com/us/app/bake-master-baking-calculator/id6757283848
+- Baker Math https://apps.apple.com/us/app/baker-math/id6742730811
+None mention pizza, gluten-free, or localization in their snippets.
+
+2) "site:apps.apple.com sourdough starter tracker" -> sat 9-10 (VERY CROWDED in EN, all 2025-26)
+- Sourdough Starter Tracker https://apps.apple.com/us/app/sourdough-starter-tracker/id6755709217
+- The Sourdough (community) https://apps.apple.com/us/app/the-sourdough/id6759112264
+- Crumbly: Sourdough Starter https://apps.apple.com/us/app/crumbly-sourdough-starter/id6760153512
+- Loaflo: Sourdough Starter (AI) https://apps.apple.com/us/app/loaflo-sourdough-starter/id6736766728
+- Sourflow: Sourdough Tracker https://apps.apple.com/us/app/sourflow-sourdough-tracker/id6758458552
+- The Daily Crumb: Sourdough https://apps.apple.com/us/app/the-daily-crumb-sourdough/id6759510215
+- Sordo - Sourdough Tracker https://apps.apple.com/us/app/sordo-sourdough-tracker/id6756534831
+- Sourdough Journal https://apps.apple.com/us/app/sourdough-journal/id6760917691
+- Kneadly - Sourdough Companion https://apps.apple.com/us/app/kneadly-sourdough-companion/id6760272748
+-> Strong evidence of demand. Only viable as a localized play (Sauerteig / kvásek / zakwas / levain / lievito madre).
+
+3) "site:apps.apple.com kombucha brewing" -> "kombucha" sat 1 (only KombuchApp, old); generic fermentation trackers ~4
+- KombuchApp (2019, F1/F2 reminders) https://apps.apple.com/us/app/kombuchapp-kombucha-tracker/id1449532435
+- Fermento - Brewing & Culturing (kombucha, kimchi, tepache presets) https://apps.apple.com/sg/app/fermento-brewing-culturing/id6757434490
+- FermentMe - Recipes & tracker https://apps.apple.com/rs/app/fermentme-recipes-tracker/id6761524491
+- Fermy https://apps.apple.com/us/app/fermy/id6757861750
+- Brew Meister: Measure & Manage (beer/kombucha/seltzer) https://apps.apple.com/at/app/brew-meister-measure-manage/id1521627812?l=en-GB
+- iBru https://apps.apple.com/us/app/ibru/id1550959672
+- BrewCraft Home Brewing https://apps.apple.com/us/app/brewcraft-home-brewing/id6765493647
+- Brewfather (homebrew parent leader) https://apps.apple.com/us/app/brewfather/id1488585822
+- Brewer's Friend (homebrew parent) https://apps.apple.com/us/app/brewers-friend/id1580297037
+
+4) "site:apps.apple.com brine calculator fermentation salt" -> generic fermentation + salt calc sat 5; "hot sauce" 0 seen
+- Ferment: Fermentation Tracker (salt calculator) https://apps.apple.com/us/app/ferment-fermentation-tracker/id6761690636
+- Fermentation Journal: Fermento (pickles, sourdough, CHEESES, kombucha, CHARCUTERIE) https://apps.apple.com/us/app/fermentation-journal-fermento/id6470132496
+- Fermenty (brine calculator) https://apps.apple.com/us/app/fermenty/id6759230036
+- Ferment Tracker - Crock https://apps.apple.com/dk/app/ferment-tracker-crock/id6765965148
+- Brine! (brining calculator, since ~2020) https://apps.apple.com/il/app/brine/id1519784056
+- Cure Calculator (meat curing, only dedicated one seen) https://apps.apple.com/us/app/cure-calculator/id1594377749
+- Fermolog: Home Brewing App https://apps.apple.com/us/app/fermolog-home-brewing-app/id6745624694
+
+5) "site:apps.apple.com canning timer altitude" -> sat 2 (OPEN)
+- Canning & Pantry Log - Jarred (altitude-adjusted times, 2026) https://apps.apple.com/us/app/canning-pantry-log-jarred/id6760012445
+- Canning timer & checklist (40 foods, elevation, ~2017) https://apps.apple.com/us/app/canning-timer-checklist/id1204971136
+- (by-catch) Steep: Tea Timer & Brew Guide https://apps.apple.com/us/app/steep-tea-timer-brew-guide/id6751850664
+-> Both apps are English-only and USDA-centric. Localizing for Einkochen (DE/AT), zavarovani (CZ) and przetwory (PL) = us_gap.
+
+6) "site:apps.apple.com mead calculator" -> sat 2 (OPEN)
+- Mead Maker: Honey Wine Tracker (TOSNA-ish nutrients, gravity) https://apps.apple.com/us/app/mead-maker-honey-wine-tracker/id6757456516
+- Mead Corner https://apps.apple.com/us/app/mead-corner/id6747457886
+- ABV Calculator - Minimalistic (beer/cider/mead) https://apps.apple.com/us/app/abv-calculator-minimalistic/id6754205227
+-> Localization angle: PL miod pitny, CZ medovina, DE Met.
+
+7) "site:apps.apple.com smoker cook log bbq" -> BBQ log sat 6 (CROWDED); "cook planner / backward timeline" sat 1 (Smokeplan only)
+- PitMaster Log: BBQ Journal ($1.25/mo) https://apps.apple.com/gb/app/pitmaster-log-bbq-journal/id6772543671
+- myBBQRecipe https://apps.apple.com/us/app/mybbqrecipe/id6746422102
+- PitLog: BBQ Log & Recipe Book https://apps.apple.com/us/app/pitlog-bbq-log-recipe-book/id6502717712
+- Smokeplan - BBQ Cook Planner (backward timeline from serve time) https://apps.apple.com/in/app/smokeplan-bbq-cook-planner/id6789017609
+- MyBBQ https://apps.apple.com/us/app/mybbq/id6763458018
+- PelletSmoker Pro https://apps.apple.com/us/app/pelletsmoker-pro/id6746727522
+- TempPro BBQ (ThermoPro hardware app) https://apps.apple.com/us/app/temppro-bbq/id1490517668
+- BBQ AI https://apps.apple.com/us/app/bbq-ai/id6798499549
+
+8) "site:apps.apple.com espresso dial in log" -> sat 7+ (VERY CROWDED in EN, all 2025-26)
+- Dial In Coffee: Espresso (AI coach) https://apps.apple.com/us/app/dial-in-coffee-espresso/id6746680844
+- Espresso.log (also shown as "EspressoLog - Shot tracker", same id) https://apps.apple.com/us/app/espresso-log/id6753608360
+- Dial In Espresso https://apps.apple.com/us/app/dial-in-espresso/id6752831404
+- Dialed-In https://apps.apple.com/us/app/dialed-in/id6753701921
+- Dialed In - Espresso Tracker https://apps.apple.com/us/app/dialed-in-espresso-tracker/id6759168523
+- Espresso Shot Log https://apps.apple.com/us/app/espresso-shot-log/id6758272348
+- Espresso Shot Tracker - Dial https://apps.apple.com/me/app/espresso-shot-tracker-dial/id6771821197
+-> Only viable as a localized play (DE/JA/KO/IT), and Beanconqueror (free, localized) is a threat. No URL for Beanconqueror.
+
+9) "site:apps.apple.com home coffee roasting log" -> sat 7+ (CROWDED)
+- Roastit - Coffee Roasting https://apps.apple.com/us/app/roastit-coffee-roasting/id6785604427
+- Chaff — Home Coffee Roast Log https://apps.apple.com/ca/app/chaff-home-coffee-roast-log/id6761847486
+- Coffee Roast Tracker https://apps.apple.com/us/app/coffee-roast-tracker/id6760438622
+- Roastguide https://apps.apple.com/us/app/roastguide/id1454418262
+- Roaster (Mac) https://apps.apple.com/us/app/roaster/id836714521?mt=12
+- CafeConnections: Coffee Diary https://apps.apple.com/us/app/cafeconnections-coffee-diary/id6756827606
+- Bean Tracker https://apps.apple.com/us/app/bean-tracker/id1503960955
+- Coffee Bean Tracker - Vault https://apps.apple.com/us/app/coffee-bean-tracker-vault/id6476065390
+- Roast Manager https://apps.apple.com/tr/app/roast-manager/id6475163343
+- Roastmaster (veteran, since ~2010) https://apps.apple.com/rw/app/roastmaster/id375526217
+-> Bean inventory / freezer vault sits in the same space. About 3 apps, so it is moderately open.
+
+10) "site:apps.apple.com batch cocktail calculator" -> "batch" sat 5 (CROWDED-ish); pour cost / party bar planning not seen
+- Cocktail Calculator Pro (batch, one-time purchase) https://apps.apple.com/us/app/cocktail-calculator-pro/id6751190590
+- Batchr: Cocktail Batching (250+ recipes, dilution) https://apps.apple.com/us/app/batchr-cocktail-batching/id6744668021
+- Jarra: Batch Cocktails & ABV https://apps.apple.com/ca/app/jarra-batch-cocktails-abv/id6746388349?platform=ipad
+- MixMath - Cocktail Calculator https://apps.apple.com/us/app/mixmath-cocktail-calculator/id6751429902
+- Bevnap: Cocktail Recipes https://apps.apple.com/il/app/bevnap-cocktail-recipes/id6744274650
+- OZ Price Calculator (unclear: pour cost or price-per-ounce shopping) https://apps.apple.com/us/app/oz-price-calculator/id6449945515
+- Recipe Sync - Cocktail Prep (pro bar prep) https://apps.apple.com/ie/app/recipe-sync-cocktail-prep/id6759985124
+- Topa! Cocktails & Home Bar https://apps.apple.com/us/app/topa-cocktails-home-bar/id6761927635
+
+11) "site:apps.apple.com low oxalate food list" -> sat 3-4 (MODERATE, growing: 2 new apps in 2025)
+- Oxalator - Low Oxalate diet (since 2015, 1,500 foods) https://apps.apple.com/us/app/oxalator-low-oxalate-diet-its-easy/id1035176284
+- Low Ox Life (Harvard list free, paid import) https://apps.apple.com/us/app/low-ox-life/id6748654148?see-all=reviews&platform=iphone
+- OxiPur: Gout & Kidney Stones (purines + oxalate, ~1,000 foods) https://apps.apple.com/us/app/oxipur-gout-kidney-stones/id1136215457
+- Oxal AI https://apps.apple.com/ie/app/oxal-ai/id6755481914
+- Low FODMAP diet A to Z https://apps.apple.com/fi/app/low-fodmap-diet-a-to-z/id1356683228
+- Food Intolerances (profiles incl. histamine, oxalate; since 2011) https://apps.apple.com/us/app/food-intolerances/id419098758?platform=ipad
+
+12) "site:apps.apple.com cake pricing calculator home baker" -> sat 7-8 (CROWDED in EN)
+- Cake Pricing: Home Bakery ("cottage food sellers"; shown via JP store with l=en-US, so no JA localization) https://apps.apple.com/jp/app/cake-pricing-home-bakery/id1578785708?l=en-US
+- Bakers Pricing Calculator https://apps.apple.com/jo/app/bakers-pricing-calculator/id1588565115
+- CakeCost https://apps.apple.com/us/app/cakecost/id1555897547
+- BakersPro: Cake & Pastry Biz (orders, invoices) https://apps.apple.com/us/app/bakerspro-cake-pastry-biz/id6761960519
+- Bake Local for Bakers https://apps.apple.com/us/app/bake-local-for-bakers/id6759575937
+- Cookara Recipe Cost Calculator https://apps.apple.com/us/app/cookara-recipe-cost-calculator/id6756547169
+- Recipe Cost Calculator App https://apps.apple.com/us/app/recipe-cost-calculator-app/id6747908579
+- My Cake Calculator (since 2018) https://apps.apple.com/us/app/my-cake-calculator/id1439685088
+-> No snippet mentions labels or allergens, which leaves a cottage-food label maker open. A localized pricing app (BR precificacao de bolos) is untested.
+
+Failed (budget exhausted): freeze dryer log, high altitude baking, gelato/ice cream calculator.
+
+======================================================================
+CROWDED vs OPEN (from the evidence above)
+======================================================================
+CROWDED in EN (>=6 titled apps, mostly weak new indies): sourdough tracker (9), espresso dial-in (7), coffee roasting log (7), baker's percentage (7), cake pricing (7-8), BBQ cook log (6).
+MODERATE: batch cocktail (5), generic fermentation tracker + salt calc (5), oxalate (3-4), coffee bean inventory (3).
+OPEN (0-2): canning timer + altitude (2), mead calculator (2), kombucha-specific (1), meat cure calculator (1), BBQ backward cook planner (1), brining (1: Brine!), tea steep timer (1 seen: Steep), histamine-specific (only the old multi-intolerance Food Intolerances app).
+
+======================================================================
+DRAFT SHORTLIST (30, ranked; had planned these before the stop) — competitor URLs map to the lists above
+======================================================================
+01 Jar Timer: canning/Einkochen timer with altitude, localized (us_gap; Canning timer & checklist, Jarred) — sat 2, food-safety risk, seasonal
+02 Mead Calc: honey, TOSNA nutrient, backsweetening (us_gap PL/CZ/DE; Mead Maker, Mead Corner, Brewfather) — sat 2
+03 Pour Cost: bar margin calculator for small or event bars (OZ Price Calculator?, Recipe Sync, Cookara) — pour cost not searched directly
+04 Cottage Label: cottage-food ingredient + allergen labels from recipe (CakeCost, Bake Local, BakersPro) — label niche unseen
+05 Gongfu tea multi-infusion timer + tea journal (Steep) — unverified saturation
+06 Sourdough tracker + bake scheduler LOCALIZED (us_gap; 9 EN apps prove demand)
+07 Histamine food guide + on-device OCR label scan (Food Intolerances, Low FODMAP A-Z) — guideline 1.4.1 risk
+08 Espresso dial-in LOCALIZED + grinder conversion chart (us_gap; 7 EN apps; Beanconqueror threat)
+09 Kombucha F1/F2/continuous brew log (KombuchApp, Fermy, Fermento)
+10 Party/Wedding bar planner: how many bottles (Batchr, MixMath, Jarra)
+11 Cure Lab: equilibrium cure + weight-loss tracker for salumi/biltong (Cure Calculator, Fermentation Journal: Fermento)
+12 Smoke Day: BBQ backward planner + meat-per-guest, localized DE/NL/Nordics (us_gap; Smokeplan, PitMaster Log, TempPro BBQ)
+13 Cake pricing LOCALIZED BR/MX/PL/TR (us_gap; Cake Pricing: Home Bakery, CakeCost, Bakers Pricing Calculator) — BR local competition unverified
+14 Low Oxalate guide (Oxalator, Low Ox Life, Oxal AI, OxiPur) — moderate saturation, growing
+15 Cider & fruit wine calculator (ABV Calculator - Minimalistic, Brewer's Friend, Fermolog) — seasonal
+16 Hot Sauce Lab: fermented hot sauce salt/pH/Scoville (Ferment, Fermenty, Crock)
+17 Jam/pectin/sugar calculator (Canning timer & checklist, Jarred) — maybe better as a module of #01
+18 Pizza dough calc: yeast by temperature/time, poolish/biga (Baker's Percentage, Leaven, Baker Math) — pizza saturation UNVERIFIED, likely higher
+19 Wild Soda: ginger bug/tepache (FermentMe, Fermento) — trend risk, overlaps #09
+20 Cake pan converter + tiered servings (My Cake Calculator, Bake Master)
+21 Home cheesemaking make-sheet + aging calendar (Fermentation Journal: Fermento, FermentMe)
+22 Turkey/holiday roast: thaw + brine + roast timeline (Brine!, Smokeplan) — extreme seasonality
+23 Bean Vault: coffee freezer/rest-days inventory (Coffee Bean Tracker - Vault, Bean Tracker, CafeConnections)
+24 Gout/purine food guide (OxiPur, Food Intolerances) — saturation unverified
+25 Brewing water chemistry calculator (Brewfather, Brewer's Friend, BrewCraft, Brew Meister)
+26 Gluten-free flour blend calculator (Bake Master, BakersScale, Baker Buddy)
+27 Zero-proof mocktail bar with bundled recipes (Topa!, Bevnap) — "mocktail" saturation unverified
+28 Food storage / prepper pantry rotation (Jarred) — unverified
+29 Cups-to-grams US recipe converter (Bake Master, Baker Math) — likely saturated + Sherlock risk
+30 Home coffee roasting log LOCALIZED (us_gap; Roastmaster, Chaff, Roastit, Roast Manager)
+
+======================================================================
+UNCHECKED CANDIDATES (no searches spent)
+======================================================================
+freeze-dryer (Harvest Right) batch log; high-altitude baking adjuster; gelato/Ninja Creami base balancer (PAC/POD);
+sous vide time-temp guide; sake journal; WSET tasting-notes trainer; whisky journal; baby first-foods (100 foods) tracker;
+halal/E-number offline checker; vegan ingredient OCR scanner; air-fryer oven conversion; pressure-cooker time chart;
+backpacking meal planner (cal/oz); bartender spec flashcards; bread machine recipes; wild game processing/recipes;
+yerba mate guide (BR/AR reverse gap); bento ideas (JP); Ramadan/iftar planner; freezer/leftover tracker; renal-diet
+(potassium/phosphorus) guide; GLP-1 protein-first meal ideas; family heirloom recipe book with on-device OCR of handwritten cards.
+Top priorities to verify if budget returns: freeze dryer log, gelato/Creami calculator, sous vide guide, pizza dough calculator saturation, "mocktail" saturation, gout/purine saturation, pour cost, histamine.

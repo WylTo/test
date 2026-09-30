@@ -1,0 +1,191 @@
+FINANCE (category_slug: finance) — PARTIAL EVIDENCE
+Date: 2026-09-30. 15 WebSearch calls ran, then the 16th was refused because the session-wide 200-search budget was used up.
+All URLs below are copied exactly from WebSearch results. None were constructed.
+"sat" = number of apps.apple.com results that put the niche phrase in the app TITLE (0-10).
+
+GENERAL FINDING
+In 2025-2026 the store was flooded with new micro-apps (ids 67xxxxxxxx) in every trendy English finance niche.
+Crowded in English: HSA receipts, free-trial trackers, cash stuffing, kakeibo, 100-envelope challenge,
+allowance trackers, server tip trackers, money counters. Most are weak new apps with few ratings.
+What is still open: localized versions, the organizer/manager side of a task, and process tools.
+
+=== SEARCH 1: "site:apps.apple.com tanda savings circle" ===  sat(tanda)=3
+TANDA App (employer group saving, not ROSCA)  https://apps.apple.com/us/app/tanda-app/id6670189773
+Tandapp (titles seen: "Group Savings Tracker" / "Tandas Organizer", same id)  https://apps.apple.com/us/app/tandapp-tandas-organizer/id6763742265
+Saving Circles  https://apps.apple.com/us/app/saving-circles/id6477909902
+TANDA (mx)  https://apps.apple.com/mx/app/tanda/id6448814068?l=en-GB
+Circlepay - Savings and Ajo  https://apps.apple.com/us/app/circlepay-savings-and-ajo/id6751502864
+SaveCircle  https://apps.apple.com/us/app/savecircle/id6733220049
+
+=== SEARCH 2: "site:apps.apple.com paluwagan" ===  sat(paluwagan)=1 (a new app "Paluwagan" id6777503065 appeared, but its URL is malformed)
+Golak (multi-name ROSCA)  https://apps.apple.com/us/app/golak/id1486036524
+CitizenWealth (stokvel/chama/tanda/esusu/tontine)  https://apps.apple.com/in/app/citizenwealth/id6759051012
+Fundaloop (PH paluwagan)  https://apps.apple.com/ph/app/fundaloop/id6766065364
+SUSU Circles  https://apps.apple.com/sa/app/susu-circles/id6757117294
+Njangy  https://apps.apple.com/us/app/njangy/id1644504872
+Pallawan  https://apps.apple.com/us/app/pallawan/id6471816862
+Njangi  https://apps.apple.com/jp/app/njangi/id6473000883?l=en-US
+
+=== SEARCH 3: "site:apps.apple.com arisan" ===  sat(arisan)=3, all small
+Arisan Ceria (Utilities, shake-to-draw)  https://apps.apple.com/us/app/arisan-ceria/id6742703765
+WalletHub: Keuangan & Arisan  https://apps.apple.com/id/app/wallethub-keuangan-arisan/id6756213250?l=id
+AKM - Arisan Keluarga Mandiri  https://apps.apple.com/id/app/akm-arisan-keluarga-mandiri/id6447309284
+
+=== SEARCH 4: "site:apps.apple.com stokvel" ===  sat(stokvel)=3 in title; 5-6 apps total
+MyStokvel  https://apps.apple.com/us/app/mystokvel/id6502165144
+Tlhakiso Stokvel (stokvels + burial societies, loans, payouts)  https://apps.apple.com/za/app/tlhakiso-stokvel/id6788787237
+Stoki (contributions, loans, payouts)  https://apps.apple.com/au/app/stoki/id6757810060
+Moneyclub: Savings & Stokvel (fintech)  https://apps.apple.com/us/app/moneyclub-savings-stokvel/id1488315695
+StokFella (since ~2016)  https://apps.apple.com/za/app/stokfella/id1058855642
+
+=== SEARCH 5: "site:apps.apple.com committee kameti bc" ===  sat(committee/kameti)=4 (PK is the most crowded, fintech included)
+Kameti - Digital Guru  https://apps.apple.com/pk/app/kameti/id1553677575
+Oraan - Digital Committee App (fintech)  https://apps.apple.com/ae/app/oraan-digital-committee-app/id1479970322
+iKameti–Committee Management  https://apps.apple.com/au/app/ikameti-committee-management/id1588047525
+Committee  https://apps.apple.com/sa/app/committee/id6744170519
+Commo  https://apps.apple.com/us/app/commo/id6449429900
+BC Appa  https://apps.apple.com/mx/app/bc-appa/id6670754440
+ROSCA CONCLUSION: more than 20 apps across at least 8 storefronts. Every app covers a single term or market.
+An open play: one offline organizer app whose title is localized per market
+(tanda/arisan/paluwagan/stokvel/committee/tontine/susu/njangi/equb). Weakness: low ARPU and Android-heavy markets.
+
+=== SEARCH 6: "site:apps.apple.com cash counter money counting denominations" ===  sat(money/cash counter)=7 -> CROWDED head term
+Money Counter (old, 34 currencies)  https://apps.apple.com/us/app/money-counter/id522348381
+Cash Counter: Count Money  https://apps.apple.com/us/app/cash-counter-count-money/id6472790146
+Money Counter: Cash & Coins (USD)  https://apps.apple.com/ca/app/money-counter-cash-coins/id6757389042
+Money Counter - Coin Organizer (mentions "closing out a cash register", "counting donations")  https://apps.apple.com/us/app/money-counter-coin-organizer/id6744825993
+Cash Count : Currency Counter  https://apps.apple.com/ca/app/cash-count-currency-counter/id6608977534
+Cash Counter Totals Calculator  https://apps.apple.com/us/app/cash-counter-totals-calculator/id6758898081
+Cash Calculator: Money Counter App  https://apps.apple.com/us/app/cash-calculator-money-counter/id6448805785
+OPEN (not searched): till count / cash-drawer float + over/short, church offering count sheet, petty cash book.
+
+=== SEARCH 7: "site:apps.apple.com craft fair sales tracker vendor" ===  sat(craft fair/vendor sales)=3-4, all released in 2026 and weak
+VendStats: Sales Tracker (mentions garage sale flippers, flea market, booth owners)  https://apps.apple.com/us/app/vendstats-sales-tracker/id6759027702
+QuiVend: Vendor Companion (artist alley, conventions)  https://apps.apple.com/us/app/quivend-vendor-companion/id6773267361
+myBooth: Inventory & Events  https://apps.apple.com/us/app/mybooth-inventory-events/id6763803666
+Craft Pricing Calculator (from 2013; the only dedicated one in its niche)  https://apps.apple.com/us/app/craft-pricing-calculator/id725600238
+VendorPOS (mentions card shows)  https://apps.apple.com/tt/app/vendorpos/id6760127529
+CraftTok - Craft Cost Tracker  https://apps.apple.com/us/app/crafttok-craft-cost-tracker/id6761536181
+Craftory: Handmade Business App  https://apps.apple.com/us/app/craftory-craft-business-tool/id6760630587
+Quail for Vendors  https://apps.apple.com/us/app/quail-for-vendors/id1494924515
+Work Order & Sales Tracker  https://apps.apple.com/us/app/work-order-sales-tracker/id6758559928
+Faire for Brands  https://apps.apple.com/us/app/faire-for-brands/id1544186836
+OPEN: handmade pricing calculator (sat about 1-3, competitors are an old app plus 2 weak new ones).
+Also open, not searched: multi-family garage-sale split, antique-mall booth/consignment tracker, card-show dealer buy/sell/trade log.
+
+=== SEARCH 8: "site:apps.apple.com allowance tracker kids chores" ===  sat(allowance tracker)=6 -> CROWDED in EN
+Chores Tracker: Daily Tasks  https://apps.apple.com/us/app/chores-tracker-daily-tasks/id6740830793
+Chores and Allowance SavvyKids (the same id appears under 3 titles)  https://apps.apple.com/us/app/chores-and-allowance-savvykids/id6739614238
+Kiddos Cash: Allowance Tracker  https://apps.apple.com/us/app/kiddos-cash-allowance-tracker/id6756292945
+Chore Boss: Allowance Tracker  https://apps.apple.com/us/app/chore-boss-allowance-tracker/id6475013233
+Chorsee: Chores Tracker  https://apps.apple.com/us/app/chorsee-chores-tracker/id1611068600
+Allowance Tracker for Kids  https://apps.apple.com/us/app/allowance-tracker-for-kids/id6754896227
+OPEN (US-gap, not verified): localized pocket-money book (Taschengeld / argent de poche / okozukai-cho / kieszonkowe).
+
+=== SEARCH 9: "site:apps.apple.com kakeibo" ===  sat(kakeibo)=6 -> CROWDED (weak apps)
+Kakeibo: Mindful Spending  https://apps.apple.com/us/app/kakeibo-mindful-spending/id6760362042
+Kakeibo!  https://apps.apple.com/us/app/kakeibo/id1397144593
+Kakeibo - Budget Tracker  https://apps.apple.com/us/app/kakeibo-budget-tracker/id6754932311
+KaBuddy: Budget & Kakeibo  https://apps.apple.com/us/app/kabuddy-budget-kakeibo/id6740611606
+Kakeibo: Goal & Budget Planner  https://apps.apple.com/jp/app/kakeibo-goal-budget-planner/id6756763478?l=en-US
+Budget Planner - Kakeibo  https://apps.apple.com/kh/app/budget-planner-kakeibo/id6759975949
+
+=== SEARCH 10: "site:apps.apple.com cash stuffing sinking funds" ===  sat(cash stuffing)=3 in title with 5+ envelope apps -> CROWDED EN; sat(sinking funds)=3
+Tuckle: Envelope Cash Stuffing  https://apps.apple.com/us/app/tuckle-envelope-cash-stuffing/id6782596313
+SetAside: Sinking Funds App  https://apps.apple.com/us/app/setaside-sinking-funds-app/id6754886161
+Tuck - Sinking Funds  https://apps.apple.com/au/app/tuck-sinking-funds/id6787911273
+SinkFund  https://apps.apple.com/kn/app/sinkfund/id6760363742
+Cash Stuffing  https://apps.apple.com/gb/app/cash-stuffing/id6742150780?uo=2
+Oportun: Savings & Loans  https://apps.apple.com/us/app/oportun-savings-loans/id1011935076
+Budget Bestie  https://apps.apple.com/us/app/budget-bestie/id6460258044
+Money Tracker: Savely Budget  https://apps.apple.com/ie/app/savely-cash-stuffing-budget/id6760823221
+CashBinder: Budget & Envelopes (the Chile storefront offers only en-GB, a sign of a localization gap)  https://apps.apple.com/cl/app/cashbinder-budget-envelopes/id6773762609?l=en-GB
+OPEN: localized envelope method (Umschlagmethode / método de sobres / obálková metoda), which is a US-gap.
+Sinking funds has 3 weak apps from 2025-26, so it is still enterable.
+
+=== SEARCH 11: "site:apps.apple.com 100 envelope challenge" ===  sat=4 (EN, USD-based)
+100 Envelope Savings Challenge  https://apps.apple.com/us/app/100-envelope-savings-challenge/id6761617286
+100 Envelope Challenge  https://apps.apple.com/il/app/100-envelope-challenge/id6779838041
+Stash: Savings Challenge  https://apps.apple.com/ye/app/stash-savings-challenge/id6780523233
+Saving Money Challenge (id1578843165, also titled "Envelope Savings Challenge"; appears in many storefronts)  https://apps.apple.com/us/app/saving-money-challenge/id1578843165
+OPEN (US-gap): currency-aware, localized savings challenges (500-yen savings, desafio 52 semanas).
+
+=== SEARCH 12: "site:apps.apple.com free trial tracker cancel reminder" ===  sat=8+ -> CROWDED
+Cancel Alerts  https://apps.apple.com/us/app/cancel-alerts/id6760212109
+Cancel Subscriptions & Find  https://apps.apple.com/ua/app/cancel-subscriptions-find/id6772289193
+SubTrackr: Track Subscriptions  https://apps.apple.com/ca/app/subtrackr-track-subscriptions/id6761462228
+SubTracker: Subscriptions  https://apps.apple.com/pk/app/subtracker-subscriptions/id6759149326
+TrialGuard  https://apps.apple.com/us/app/trialguard/id6756027142
+Trial Alert: Avoid Auto Bills  https://apps.apple.com/id/app/trial-alert-avoid-auto-bills/id6739868277
+DueCue: Subscription Tracker  https://apps.apple.com/us/app/duecue-subscription-tracker/id6757810563
+Free Trial Killer  https://apps.apple.com/us/app/free-trial-killer/id6756620728
+Cancel.  https://apps.apple.com/us/app/cancel/id6755317336
+Trial & Subscription Tracker  https://apps.apple.com/ng/app/trial-subscription-tracker/id6773048262
+OPEN (reverse gap from DE, not verified): contract notice-period tracker (Kündigungsfrist). None of the 10 apps above tracks notice periods.
+Also open: a family-plan share collector.
+
+=== SEARCH 13: "site:apps.apple.com buy now pay later tracker" ===  sat(tracker)=0 -> the top 10 are ALL providers, with no independent tracker
+Afterpay: Pay over time  https://apps.apple.com/us/app/afterpay-pay-over-time/id1401019110
+Sezzle: Buy Now, Pay Later  https://apps.apple.com/us/app/sezzle-buy-now-pay-later/id1434922495
+Zip - Buy Now, Pay Later  https://apps.apple.com/us/app/zip-buy-now-pay-later/id1425045070
+Four  https://apps.apple.com/us/app/four-buy-now-pay-later/id1527063669
+Suave: Buy now, pay later.  https://apps.apple.com/us/app/suave-buy-now-pay-later/id1605798113
+Tamara  https://apps.apple.com/us/app/tamara-shop-now-pay-later/id1533512531
+PayLater - Split in 4 payments  https://apps.apple.com/us/app/paylater-split-in-4-payments/id6738985290
+Odiopay - Buy now pay later  https://apps.apple.com/us/app/odiopay-buy-now-pay-later/id6446221333
+OPEN: an offline cross-provider BNPL/installments tracker, localized for BR "parcelas" and MX "meses sin intereses".
+Risks: trademarks, and possibly low search volume.
+
+=== SEARCH 14: "site:apps.apple.com HSA receipt tracker" ===  sat=8 -> CROWDED (all 2025-26)
+ReceiptKeeper — HSA Tracker  https://apps.apple.com/us/app/receiptkeeper-hsa-tracker/id6757621794
+Prosaver: HSA Receipt Tracking  https://apps.apple.com/us/app/prosaver-hsa-receipt-tracking/id6743459631
+HSA Receipt Tracker: Tripl  https://apps.apple.com/us/app/hsa-receipt-tracker-tripl/id6761968218
+HSA Tracker Pro  https://apps.apple.com/us/app/hsa-tracker-pro/id6759116912
+ReceiptCam: AI Receipt Tracker  https://apps.apple.com/us/app/receiptcam-ai-receipt-tracker/id6746401835
+Receipt Savior - Save Receipts  https://apps.apple.com/us/app/trackhsa/id6761667994
+SnapHSA: Tracker & Eligibility  https://apps.apple.com/us/app/snaphsa-tracker-eligibility/id6762067177
+HSA Smart  https://apps.apple.com/us/app/hsa-smart/id6756983480
+Silver: Automate your FSA/HSA  https://apps.apple.com/us/app/silver-automate-your-fsa-hsa/id6590604600
+OPEN (not verified): medical bill vs EOB matcher, warranty/return-deadline vault, non-cash donation log
+(my own recollection, not checked this session: ItsDeductible was discontinued in 2025).
+
+=== SEARCH 15: "site:apps.apple.com tip tracker servers bartenders" ===  sat(server tip tracker)=7 -> CROWDED
+Checkout - Server Tip Tracker  https://apps.apple.com/us/app/checkout-server-tip-tracker/id6759942669
+TipIsServed: Tip Tracker (also supports commission-based income)  https://apps.apple.com/us/app/tipisserved-tip-tracker/id6751820188
+TipKeepr - Server Tip Tracker (tip-outs)  https://apps.apple.com/us/app/tipkeepr-server-tip-tracker/id6745801270
+TipOut: Server Tip Tracker  https://apps.apple.com/us/app/tipout-server-tip-tracker/id6756600088
+TipSee Tip Tracker App (old)  https://apps.apple.com/us/app/tipsee-tip-tracker-app/id664659826
+Tippy Tracker  https://apps.apple.com/us/app/tippy-tracker/id6761717487
+Server44 - Tip Tracker (mentions delivery drivers)  https://apps.apple.com/us/app/server44-tip-tracker/id6758269550
+OPEN: the manager side, i.e. a tip-pool / UK "tronc" distribution calculator
+(UK Allocation of Tips Act, effective Oct 2024, from my own knowledge).
+Also open: an income tracker for stylists, nail techs and tattoo artists (commission + booth rent + tips).
+
+=== DRAFT SHORTLIST (ranked; parent-market cap of 3 respected; US-gap flagged) ===
+01 Handmade pricing calculator (verified weak: Craft Pricing Calculator 2013 + CraftTok + Craftory)
+02 Multi-locale ROSCA organizer, title localized per market [US-gap/reverse] (strongest verified demand)
+03 Tip pool / tronc calculator for managers [US-gap]
+04 Sinking funds planner (sat 3, verified)
+05 BNPL + parcelas/MSI tracker [US-gap] (verified that no tracker exists; trademark risk)
+06 Contract notice-period tracker (Kündigungsfrist) [reverse gap, niche not verified]
+07 Localized cash-envelope budget [US-gap]
+08 Craft fair / market booth sales tracker [US-gap] (sat 4, all new in 2026)
+09 Localized currency-aware savings challenges [US-gap]
+10 Church offering count sheet   11 Antique-mall booth tracker   12 Till count/float/over-short
+13 Beauty-pro income tracker   14 Wedding/red-envelope cash gift ledger [reverse gap, WEAKEST evidence]
+15 Localized pocket-money book [US-gap]   16 Artist commission queue   17 Warranty/return-deadline vault
+18 Medical bill vs EOB tracker   19 Irregular-income budget   20 No-spend challenge
+21 Card-show dealer buy/sell/trade log   22 Multi-family garage-sale split   23 Family-plan share collector
+24 Impulse-buy cooling-off wishlist   25 Non-cash donation log   26 Petty cash book
+27 Family bank with parent-paid interest   28 Chama/VSLA/stokvel treasurer ledger
+29 Christmas/hamper savings club treasurer   30 Gig-driver profit-per-mile (localized) [US-gap]
+
+=== UNCHECKED CANDIDATES (need searches) ===
+till count; church offering count; petty cash; kündigungsfrist / contract tracker; bnpl tracker (volume);
+family plan split; warranty tracker; medical bill tracker; EOB; donation value guide; no spend challenge;
+irregular income budget; stylist income / booth rent; art commission tracker; antique booth / consignment;
+card show tracker; yard sale split; christmas club / hamper club; profit per mile; chama / VSLA;
+wedding gift ledger (plus KR/JP storefronts); Taschengeld / okozukai; Umschlagmethode;
+tipping guide by country; zakat calculator; tithe tracker; FIRE / coast FIRE; debt snowball; net worth manual;
+couples budget; travel budget offline; rent split by room; IOU tracker; vending route tracker;
+poker bankroll; precious metals stack; Fahrtenbuch; wedding budget; renovation budget.

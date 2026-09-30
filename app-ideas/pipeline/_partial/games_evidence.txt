@@ -1,0 +1,176 @@
+GAMES (category_slug: games) — PARTIAL EVIDENCE
+Date: 2026-09-30. Searches done by this agent: 15 (all site:apps.apple.com). Session budget (200) exhausted at search #16.
+All URLs below were copied verbatim from WebSearch results. Ratings/prices are from the result snippets only.
+No ideas/games.json was written (per coordinator STOP).
+
+=====================================================================
+A. SEARCHED KEYWORDS — SATURATION + COMPETITORS
+   (saturation = distinct apps in results with the phrase in the TITLE)
+=====================================================================
+
+1) "mariáš" / "marias"  -> saturation 2 (+1 multiplayer app, probably a different variant)  -> OPEN
+   - Marias — $2.99, 3-player trick-taking, older app (2012-era id)
+     https://apps.apple.com/sl/app/marias/id541394050
+   - Lizany Marias — NEW (2026) Lízaný mariáš vs AI, no visible reviews
+     https://apps.apple.com/us/app/lizany-marias/id6762545320
+   - Mariass — online multiplayer "Billet & Tournike" (appears to be a different regional variant)
+     https://apps.apple.com/us/app/mariass/id6742963942
+   Other results were noise (apps named Maria). "mariáš offline": 0 titles among these results.
+
+2) "schafkopf offline" -> saturation 3 offline titles (2 from one developer) + 1 online + 1 score calculator -> MODERATE
+   - Schafkopf (offline, adjustable AI)            https://apps.apple.com/de/app/schafkopf/id1076624638
+   - Schafkopf LITE (same developer)               https://apps.apple.com/de/app/schafkopf-lite/id1076626842
+   - Schafkopf Offline Lernen (tutorial, no IAP/ads) https://apps.apple.com/de/app/schafkopf-offline-lernen/id1534737294
+   - Schafkopf-Rechner (score calculator; the ONLY one seen) https://apps.apple.com/de/app/schafkopf-rechner/id1581835652
+   - Schafkopf (Mac)                               https://apps.apple.com/us/app/schafkopf/id1441520720?mt=12
+   - "schafkopf lernen": 1 title. "schafkopf rechner": 1 title.
+
+3) "sheepshead card game" -> saturation 5 -> MODERATE (mostly weak ratings)
+   - Sheepshead (Derek Hoffmeister, free, 3.3★)    https://apps.apple.com/us/app/sheepshead/id878817235
+   - Sheepshead, the App (Ryan Lardinois, 4.5★ — strongest) https://apps.apple.com/us/app/sheepshead-the-app/id1339318972
+   - Sheepshead Gold (5-handed vs 4 AI, 3.0★)       https://apps.apple.com/us/app/sheepshead-gold/id926113105
+   - Sheepshead Pro ($1.99, 3- & 5-handed, 3.5★)    https://apps.apple.com/us/app/sheepshead-pro/id859700350
+   - Sheepshead (Schafkopf)                         https://apps.apple.com/us/app/sheepshead-schafkopf/id834683690
+   - Schafkopf Sheepshead Online (Spiele-Palast GmbH, online, 4.6★) = parent/publisher
+     https://apps.apple.com/us/app/schafkopf-sheepshead-online/id853048043
+
+4) "kaiser card game" -> saturation 1 -> VERY OPEN but TINY market (Saskatchewan/Manitoba)
+   - Kaiser (Kevin Currie; "official single player" Saskatchewan Kaiser; free + IAP; iPad)
+     https://apps.apple.com/us/app/kaiser/id6474581253
+   Incidental parent/other card URLs from the same results:
+   - CardGames.io (multi-game collection)          https://apps.apple.com/ag/app/cardgames-io/id1496007149
+   - Card ▻ Games (collection)                     https://apps.apple.com/us/app/card-games/id626565093
+   - Card Fever: Solitaire & Hearts (new 2026)     https://apps.apple.com/us/app/card-fever-solitaire-hearts/id6786366094
+   - Cassino! (the classic Cassino fishing card game) https://apps.apple.com/us/app/cassino/id527702079
+   - Crazy Kings - Cards Game                      https://apps.apple.com/us/app/crazy-kings-cards-game/id6757301463
+   - Party Games: Imposter & Cards (pass-and-play party) https://apps.apple.com/us/app/party-games-imposter-cards/id6766637109
+
+5) "texas 42 dominoes" -> saturation 3, but the LEADER IS STRONG -> CROWDED AT THE TOP
+   - 42 Dominoes (Sergey Skosyrev, 11K+ ratings, 4.5★) https://apps.apple.com/us/app/42-dominoes/id1080108922
+   - Domino Texas 42 (Web2mil, 69 ratings, 4.5★, online tournaments) https://apps.apple.com/us/app/domino-texas-42/id6463031123
+   - Texas 42 (MaroonEntertainment)                https://apps.apple.com/us/app/texas-42/id537029259
+   Demand is proven (11K ratings); the only opening is long-tail (seniors / Moon / Nello variants).
+
+6) "nurikabe" -> saturation 5 (2 new entrants in 2025–26) -> MODERATE, filling up
+   - Nurikabe: Islands & Walls (Conceptis, 90 free + weekly bonus) https://apps.apple.com/us/app/nurikabe-islands-walls/id581912445
+   - Nurikabe - Logic Puzzle (Grantalope LLC)       https://apps.apple.com/us/app/nurikabe-logic-puzzle/id6755807678
+   - Nurikabe Islands (Lena Trnovec)                https://apps.apple.com/us/app/nurikabe-islands/id6757597395
+   - Nurikabe puzzle (Yuki Fujimoto)                https://apps.apple.com/us/app/nurikabe-puzzle/id1073531290
+   - Nurikabe Vault (Rogers George)                 https://apps.apple.com/dk/app/nurikabe-vault/id344653774
+
+7) "hashi bridges puzzle" -> saturation 5 -> MODERATE (all English-only names; the localized-name angle is unverified)
+   - Hashi: Bridges (Conceptis, 200 free)           https://apps.apple.com/us/app/hashi-bridges/id567583852
+   - Hashi Puzzle                                   https://apps.apple.com/us/app/hashi-puzzle/id6478944513
+   - Hashi: Bridge Building Puzzle!                 https://apps.apple.com/uy/app/hashi-bridge-building-puzzle/id6447013027
+   - Hashi Bridges - Puzzle Islands                 https://apps.apple.com/hu/app/hashi-bridges-puzzle-islands/id6759544698
+   - #Bridges (aka Hashiwokakero)                   https://apps.apple.com/us/app/bridges/id1330779480
+
+8) "slitherlink" -> saturation 7+ -> CROWDED (drop)
+   - Slitherlink: Loop the Snake (Conceptis)        https://apps.apple.com/us/app/slitherlink-loop-the-snake/id605918324
+   - SlitherLink: Loop logic puzzle                 https://apps.apple.com/us/app/slitherlink-loop-linkdoku/id1645673398
+   - Slitherlink - Daily Challenge                  https://apps.apple.com/us/app/slitherlink-daily-challenge/id6742373591
+   - Slitherlink - Classic                          https://apps.apple.com/us/app/slitherlink-classic/id1553493828
+   - Slitherlink Puzzle (3000 levels, no IAP)       https://apps.apple.com/ca/app/slitherlink-puzzle/id6785139993
+   - Slitherlink: Fences and Loop                   https://apps.apple.com/is/app/slitherlink-fences-and-loop/id6759961545
+   - Slitherlink: Loop Puzzle (DAN URBANEK)         https://apps.apple.com/jp/app/slitherlink-loop-puzzle/id6765857599?l=en-US&platform=mac
+
+9) "star battle puzzle" -> saturation 6+ -> CROWDED (drop)
+   - Star Battle Puzzles (Egghead Games)            https://apps.apple.com/us/app/star-battle-puzzles/id6739070759
+   - Star Battle Puzzle - Hoshi (daily, "Two Not Touch") https://apps.apple.com/us/app/star-battle-puzzle-hoshi/id1663477610
+   - Star Battle: Grid Logic Puzzle                 https://apps.apple.com/us/app/star-battle-grid-logic-puzzle/id6751416837
+   - Star Battle Go - Logic Puzzles (KrazyDad)      https://apps.apple.com/us/app/star-battle-go-logic-puzzles/id1494377962
+   - Eureka! Star Battle                            https://apps.apple.com/us/app/eureka-star-battle/id6762087938
+
+10) "kakuro" -> saturation 8+ -> CROWDED (drop)
+   - Kakuro: Number Crossword (Conceptis, 4.8★)     https://apps.apple.com/us/app/kakuro-number-crossword/id1197071375
+   - Kakuro u                                       https://apps.apple.com/us/app/kakuro-u/id306200861
+   - Kakuro - Classic (4.8★)                        https://apps.apple.com/us/app/kakuro-classic/id6455461477
+   - Pencil Puzzle - Kakuro                         https://apps.apple.com/us/app/pencil-puzzle-kakuro/id1124347452
+   - Real Kakuro                                    https://apps.apple.com/us/app/real-kakuro/id459669325
+   - Kakuro Infinite                                https://apps.apple.com/us/app/kakuro-infinite/id1153763167
+   - Kakuro - Cross sums                            https://apps.apple.com/us/app/kakuro-cross-sums/id898546561
+   - Kakura - Kakuro                                https://apps.apple.com/us/app/kakura-kakuro/id6794158434
+
+11) "hnefatafl / tafl / viking chess" -> "hnefatafl" 4, "viking chess" 3, "tafl" 1 -> MODERATE
+   - Hnefatafl - Viking Chess Game (Dawid Wrzesinski, 9 variants, offline, NEW 2025 — strong) https://apps.apple.com/us/app/hnefatafl-viking-chess-game/id6754068223
+   - Viking Chess: Hnefatafl Online (iDiOSLAB)      https://apps.apple.com/us/app/viking-chess-hnefatafl-online/id1526949864
+   - Viking Chess: Hnefatafl ($0.99)                https://apps.apple.com/us/app/viking-chess-hnefatafl/id1609618190
+   - Hnefatafl (Philippe Schober)                   https://apps.apple.com/ug/app/hnefatafl/id1498725934
+   - Game of Vikings                                https://apps.apple.com/us/app/game-of-vikings/id1499261219
+   - Caution: in German, "Wikingerschach" means Kubb (lawn game), so it is a bad localized keyword.
+
+12) "nine men's morris" -> saturation 8+ -> CROWDED in English
+   - The Mill - Nine Men's Morris (OutOfTheBit)     https://apps.apple.com/us/app/the-mill-nine-mens-morris/id1009357006
+   - Navkukri : Nine men's morris (Indian localized name; also mentions Morabaraba) https://apps.apple.com/us/app/navkukri-nine-mens-morris/id1563567058
+   - 9Kukri : Nine Men's Morris (online + voice chat) https://apps.apple.com/us/app/9kukri-nine-mens-morris/id6760107407
+   - Nine Men's Morris Multiplayer                  https://apps.apple.com/us/app/nine-mens-morris-multiplayer/id671636796
+   - Nine Men's Morris Game                         https://apps.apple.com/gb/app/nine-mens-morris-game/id690194008
+   - 9 Men's Morris                                 https://apps.apple.com/nz/app/9-mens-morris/id424610463
+   - Nine Men's Morris Board Game                   https://apps.apple.com/nz/app/nine-mens-morris-board-game/id1393443791
+   The only possible angle is localized names (Mühle / Mlýn / Młynek / Molenspel / Morabaraba) — UNVERIFIED.
+
+13) "oware abapa" -> saturation ~4–5 -> MODERATE; low-monetizing audience
+   - Oware Master                                   https://apps.apple.com/us/app/oware-master/id936240379
+   - Awele/Oware - Mancala HD (SOLILAB, 2008-era)    https://apps.apple.com/us/app/awele-oware-mancala-hd/id289217958
+   - Awale Online (ABAPA rules)                     https://apps.apple.com/ng/app/awale-online/id914277051?see-all=reviews&platform=iphone
+   - Oware Lite (customizable cultural rule variants) https://apps.apple.com/py/app/oware-lite/id6443623137
+   - "warri" (Caribbean name): no title seen.
+
+14) "janggi korean chess" -> saturation 4 -> MODERATE (the Korean keyword 장기 was not checked)
+   - ™ Janggi (VM Mobile, IAP)                      https://apps.apple.com/us/app/janggi/id6444231248
+   - Dr. Janggi                                     https://apps.apple.com/us/app/dr-janggi/id1517283645
+   - JokGosu Janggi - Korean Chess (NEW 2026, 3D, online+AI, subscription, 6 languages) https://apps.apple.com/ar/app/jokgosu-janggi-korean-chess/id6779250888?l=en-GB
+   - JangKi+ (Korean Chess), 5 AI levels            https://apps.apple.com/kr/app/jangki-korean-chess/id607471581?l=en-GB
+   - Engine caution: Fairy-Stockfish is GPLv3, which conflicts with App Store distribution, so we would need our own AI.
+
+15) "hanafuda koi-koi" -> saturation 7+ -> CROWDED (drop)
+   - Hanafuda Koi-Koi Card Game                     https://apps.apple.com/sa/app/hanafuda-koi-koi-card-game/id6762614062
+   - Hanafuda koi-koi for beginner (Cross Field)    https://apps.apple.com/us/app/hanafuda-koi-koi-for-beginner/id1225803490
+   - Hanafuda Koi-koi Collection                    https://apps.apple.com/us/app/hanafuda-koi-koi-collection/id1563705256
+   - Hanafuda Koikoi (HAREPPO)                      https://apps.apple.com/us/app/hanafuda-koikoi/id1224949743
+   - Hanafuda･Koi Koi                               https://apps.apple.com/us/app/hanafuda-koi-koi/id1339558217
+   - Koikoi Lite                                    https://apps.apple.com/us/app/koikoi-lite/id619551174
+   - hanafuda2                                      https://apps.apple.com/us/app/hanafuda2/id874776003
+
+=====================================================================
+B. SUMMARY — CROWDED vs OPEN
+=====================================================================
+CROWDED (drop):  Kakuro (8+), Slitherlink (7+), Hanafuda Koi-Koi (7+), Star Battle (6+),
+                 Nine Men's Morris EN (8+), Texas 42 (only 3 apps, but the leader has 11K ratings).
+MODERATE (4–5):  Sheepshead (weak ratings: 3.0–3.5★ except one 4.5★), Nurikabe, Hashi, Hnefatafl,
+                 Oware/Awalé, Janggi, Schafkopf (3 offline titles).
+OPEN (0–2):      Mariáš (2 small apps; CZ home advantage), Schafkopf-Rechner / score pad (1 app),
+                 "schafkopf lernen" (1), Kaiser (1, tiny market), Cassino (1 seen, not searched directly).
+
+My preliminary top picks from verified data:
+  1. Mariáš Offline — CZ/SK. Only an old $2.99 app and a brand-new Lízaný Mariáš exist; we have native rules knowledge. ~12–13k CZK/month in ideal conditions (1.5k downloads/month × 6% × 149 CZK + ads).
+  2. Schafkopf Coach (learn + offline) — Bavarian market, German users pay; "lernen" has 1 competitor.
+     Shares an engine with Sheepshead (US: 5 apps, mostly 3–3.5★) and Doppelkopf.
+  3. Kartenblock (score pad for Schafkopf/Doppelkopf/Skat) — 1 competitor (Schafkopf-Rechner); 3-week build.
+  Also viable: Hashi/Nurikabe with localized names (US-gap, low monetization);
+  Canadian Card Classics (Kaiser + Forty-Fives + 120s in one app).
+
+=====================================================================
+C. UNCHECKED CANDIDATES (need ~2 searches each once the budget is raised)
+=====================================================================
+Regional card games: Doppelkopf offline (DE), Jass/Differenzler (CH), Schnapsen/66 (AT/HU/CZ),
+  Tarock Königrufen (AT) / Tarok (SI) / Taroky (CZ), Klaverjassen & Boerenbridge (NL), Wiezen (BE),
+  Ulti (HU), Tysiąc (PL), Prší (CZ) / Makao (PL), Sedma (CZ), Forty-Fives / Auction 45 / 120s (Canadian Maritimes),
+  Bourré (Louisiana), Smear / Pitch / Setback (US Midwest), Oh Hell / Up and Down the River /
+  Rikiki / Judgement-Kachuful (multi-name localization = US-gap), Hand and Foot (US seniors),
+  Cassino / Kasino (Finland & Scandinavia; US-gap; the word "casino" brings gambling-review risk), Kings in the Corner, Golf card game.
+Solitaire: large-print / senior solitaire localized to 50 languages (US-gap), Yukon / Scorpion / Forty Thieves.
+Accessibility: VoiceOver-first card games localized for non-English blind users (US-gap; known EN competitor:
+  Blindfold Games, URL not captured).
+Dominoes: Chicken Foot, Moon (3-player Texas 42 variant), Mexican Train (probably crowded).
+Board games: Mühle/Mlýn/Molenspel/Morabaraba (localized Morris), Congkak / Congklak / Sungka (SE-Asian mancala),
+  Makruk (Thai chess), Game of the Amazons, Hex, Acey-deucey, Tavli (Plakoto/Fevga), Wahoo/Tock (marble games).
+Pencil puzzles: Masyu, Heyawake, Yajilin, Tapa (rare Nikoli types; free competitor: Simon Tatham's Puzzles),
+  Futoshiki, Hitori.
+Party (pass-and-play): Fishbowl / Salad Bowl / Hat game (US-gap), Stop / Stadt Land Fluss / Petit Bac / Tutti Frutti
+  (reverse gap; "Scattergories" is a Hasbro trademark), Werewolf/Mafia voice narrator (Asmodee/Bezier trademark risk).
+Score pads: Doppelkopf Abrechnung, Skat Liste, Hand and Foot score.
+
+Notes: Apple APIs are blocked, so search volumes are unknown; all download figures are "ideal" estimates.
+Build-ease guide: trick-taking AI with bidding ≈ 5–8 weeks; puzzle generator with uniqueness solver ≈ 3–4 weeks;
+  minimax board games ≈ 2–3 weeks; party / score pad ≈ 2–3 weeks.
