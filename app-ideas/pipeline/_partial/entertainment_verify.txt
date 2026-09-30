@@ -10,3 +10,14 @@
     - Guestbook Go (bt)   https://apps.apple.com/bt/app/guestbook-go/id1450808655
     - (irrelevant) Kobo Books   https://apps.apple.com/ca/app/kobo-books-audiobooks/id301259483
     - (irrelevant) Audiobook Combiner   https://apps.apple.com/us/app/audiobook-combiner/id6748471991
+[2] query: site:apps.apple.com learn lines script rehearsal actors  (idea entertainment-03)  date: 2026-09-30
+    saturation (learn lines / rehearsal / memorize lines in title): 9 of 9 results -> SATURATED; 6+ apps from 2025-2026 incl. offline AI voice (Run Lines) and multilingual (Linus)
+    - Action! Script Rehearsal   https://apps.apple.com/us/app/action-script-rehearsal/id6759596370
+    - Scriptly: AI Acting Rehearsal   https://apps.apple.com/us/app/scriptly-ai-acting-rehearsal/id6754227999
+    - Run Lines: Script Rehearsal (offline AI voice)   https://apps.apple.com/us/app/run-lines-script-rehearsal/id6755323192
+    - Rehearsal Pro   https://apps.apple.com/us/app/rehearsal-pro/id1116896197
+    - Line Reader for Actors   https://apps.apple.com/ca/app/line-reader-for-actors/id6749001366
+    - MyLine - Memorize your lines   https://apps.apple.com/us/app/myline-memorize-your-lines/id6463235632
+    - LearnMyLines: Memorise Scripts   https://apps.apple.com/tw/app/learnmylines-memorise-scripts/id6751444669?l=en-GB
+    - Linus: Learn Lines & Self Tape (auto-detects script language, multilingual)   https://apps.apple.com/us/app/linus-learn-lines-self-tape/id6742599484
+    - The Actor's Lines   https://apps.apple.com/us/app/the-actors-lines/id1211450919

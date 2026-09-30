@@ -1,2 +1,15 @@
 GRAPHICS & DESIGN (graphics-design) — REVIEWER VERIFY LOG (devil's advocate run, 2026-09-30). URLs copied verbatim from WebSearch results.
 
+1) query: "site:apps.apple.com laser cut box generator finger joint"  date: 2026-09-30  (idea graphics-design-07 Laser Box Maker)
+- Laser Cut 3D Game (game, by-catch) https://apps.apple.com/us/app/laser-cut-3d-game/id1528138279
+- Box-o-matic (custom laser-cut boxes: dimensions, material thickness, joint style, SVG/PDF export) https://apps.apple.com/us/app/box-o-matic/id1291032873
+- Laser Cutting (unclear/game) https://apps.apple.com/us/app/laser-cutting/id1494706291
+- Laser Finger: Magic Hand 3D (game) https://apps.apple.com/eg/app/laser-finger-magic-hand-3d/id6476665205
+- Laser Cutter 3D (game) https://apps.apple.com/us/app/laser-cutter-3d/id1493042467
+- Laserbox for xTool (brand-adjacent machine app) https://apps.apple.com/us/app/laserbox-for-xtool/id1586243500
+- Simulator Cut Laser Joke (by-catch) https://apps.apple.com/ph/app/simulator-cut-laser-joke/id1097454123
+- CutLabX https://apps.apple.com/qa/app/cutlabx/id6468648065
+- toolKaiser https://apps.apple.com/us/app/toolkaiser/id1528414619
+- CutOut Superimpose Lasso (by-catch) https://apps.apple.com/us/app/cutout-superimpose-lasso/id730188679
+Saturation: 1 dedicated box generator (Box-o-matic, exactly the pitched product, since 2017) + brand apps; rest is games/by-catch. Niche not empty but thin; demand in App Store (vs. web MakerCase/boxes.py) unproven.
+
