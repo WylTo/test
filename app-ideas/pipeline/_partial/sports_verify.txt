@@ -1,0 +1,29 @@
+SPORTS — REVIEWER VERIFY LOG (devil's advocate run)
+Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
+
+[1] query: site:apps.apple.com netball positions coach  (idea sports-03)
+    saturation (dedicated netball coach/positions apps): 6 (CoachMe Netball - positions & rotations; Great Coach Netball - interchange planning, player time; Netball Game Planner - who plays where each quarter (no URL in results); Netball Team Manager; Squad: Netball Coach; NetHub) -> NOT blue ocean
+    - CoachMe Netball                     https://apps.apple.com/au/app/coachme-netball/id6759787060
+    - The Netball Coach                   https://apps.apple.com/us/app/the-netball-coach/id1625024321
+    - Great Coach Netball                 https://apps.apple.com/sa/app/great-coach-netball/id1394526615
+    - Great Coach Netball (au)            https://apps.apple.com/au/app/great-coach-netball/id1394526615
+    - Netball App                         https://apps.apple.com/au/app/netball/id6741760949
+    - Squad: Netball Coach                https://apps.apple.com/gw/app/squad-netball-coach/id1608854494
+    - NetHub App                          https://apps.apple.com/us/app/nethub-app/id6749087140
+    - Netball - Team Manager              https://apps.apple.com/us/app/netball-team-manager/id6446082567
+    - SubTime - Sub Timer & Rotation      https://apps.apple.com/us/app/subtime-sub-timer-rotation/id1248650528
+    - CoachAny                            https://apps.apple.com/us/app/coachany/id987231566
+
+[2] query: site:apps.apple.com golf society stableford  (idea sports-06)
+    saturation (dedicated golf-society / tournament organizer apps): 7 (MyGolfSociety, Golf Society, MyGS, Wgaf, Golfify, Squabbit, ParUp) + UK Stableford Calculator -> SATURATED
+    - UK Stableford Calculator            https://apps.apple.com/ke/app/uk-stableford-calculator/id447335652?see-all=customers-also-bought-apps&platform=iphone
+    - Golfify - Golf Tournament App       https://apps.apple.com/us/app/golfify-golf-tournament-app/id1525555279
+    - MyGolfSociety                       https://apps.apple.com/eg/app/mygolfsociety/id1333512977
+    - MyGolfSociety (gb)                  https://apps.apple.com/gb/app/mygolfsociety/id1333512977
+    - Golf Handicapp: Leaderboards        https://apps.apple.com/ca/app/golf-handicapp-leaderboards/id1459228624
+    - ParUp Golf                          https://apps.apple.com/gb/app/parup-golf/id1546776968
+    - Golf Society                        https://apps.apple.com/us/app/golf-society/id6449663141
+    - Squabbit - Golf Tournament App      https://apps.apple.com/us/app/squabbit-golf-tournament-app/id1556538444
+    - MyGS                                https://apps.apple.com/gb/app/mygs/id6744665376
+    - Wgaf                                https://apps.apple.com/gb/app/wgaf/id6757706252
+

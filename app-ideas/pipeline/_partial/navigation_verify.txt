@@ -11,3 +11,50 @@ https://apps.apple.com/us/app/k9-tracks-dog-scent-tracking/id6753019946   (GPS s
 https://apps.apple.com/us/app/canlyo/id6747003915
 https://apps.apple.com/us/app/tracking-dog-2026/id6476980182
 https://apps.apple.com/us/app/heimathund/id1671137670
+
+## 2) query: site:apps.apple.com regularity rally  (2026-09-30) → CROWDED, sat ~7 dedicated TSD/regularity apps (author estimated 1)
+https://apps.apple.com/us/app/regularity-mate-tsd-rally/id6759557753   (Regularity Mate, new 2026)
+https://apps.apple.com/us/app/3prally-tsd-rally/id1010871673   (3pRally, "most complete tool for TSD regularity rally")
+https://apps.apple.com/us/app/master-of-regularity/id1369749472   (Master-Of-Regularity, classic/sport classic)
+https://apps.apple.com/us/app/3prally-pro-tsd-rally/id997786330   (3pRally Pro, subscription)
+https://apps.apple.com/us/app/tsd-rally/id348150412   (TSD Rally, average-speed keeping)
+https://apps.apple.com/us/app/3prally-pro-tsd-rally-roadbook/id997786330?at=10lvhm&ct=site
+https://apps.apple.com/us/app/rabbit-rally-2-0/id1262789127   (Rabbit Rally 2.0, GPS odometer + car sensor)
+https://apps.apple.com/us/app/rally-timer/id495670686
+https://apps.apple.com/us/app/tsd-rally-clock/id979445821
+https://apps.apple.com/us/app/id1369749472
+
+## 3) query: site:apps.apple.com mushroom spots  (2026-09-30) → CROWDED, sat ~7 titles with "mushroom spot(s)/map" (author estimated 3)
+https://apps.apple.com/us/app/mushroom-spot-mushroom-map/id1660126297   (Mushroom Spot: 1M+ spots, 800 species, AI ID)
+https://apps.apple.com/nz/app/mushroom-finder-mushroom-spots/id6744310463
+https://apps.apple.com/am/app/mushroom-spot-mushroom-map/id1660126297
+https://apps.apple.com/us/app/mushroom-map-spots-near-you/id6746188596   (user-generated live map)
+https://apps.apple.com/us/app/mushroom-finder-mushroom-spots/id6744310463
+https://apps.apple.com/us/app/sporecast-mushroom-map/id6745700034
+https://apps.apple.com/us/app/mushroom-finder-map-picking/id6751984240
+https://apps.apple.com/us/app/mush-mushroom-hunter/id930379621   (Mush: keep track of favourite mushroom places = private spot diary)
+https://apps.apple.com/us/app/shroomify-mushroom-id-usa/id1490594715
+
+## 4) query: site:apps.apple.com soundscape audio beacon blind navigation  (2026-09-30) → CONTESTED, sat ~4 free Soundscape successors with audio beacon (VoiceVista, Soundscape (id6459021379), Soundscape Community, EchoScape)
+https://apps.apple.com/ro/app/voicevista-blind-navigation/id6450388413   (VoiceVista, free, MIT fork of Soundscape, beacons)
+https://apps.apple.com/us/app/soundscape/id6459021379   (Soundscape relaunch, 3D audio, markers)
+https://apps.apple.com/us/app/soundscape-community/id6449701760   (Soundscape Community, free, Audio Beacon)
+https://apps.apple.com/gb/app/soundscape-community/id6449701760
+https://apps.apple.com/be/app/soundscape-community/id6449701760
+https://apps.apple.com/us/app/nature-soundscapes/id971949061   (irrelevant)
+https://apps.apple.com/gb/app/microsoft-soundscape/id1240320677?l=ru   (original, discontinued)
+https://apps.apple.com/ru/app/echoscape-spatial-audio-guide/id6754217576?l=en-GB   (EchoScape spatial audio guide, 2025)
+https://apps.apple.com/jp/app/microsoft-soundscape/id1240320677?l=en
+https://apps.apple.com/us/app/wizigo/id1063762864
+
+## 5) query: site:apps.apple.com drückjagd  (2026-09-30) → CROWDED in DE, sat ~5 apps explicitly offering Drückjagd organisation (diwima Ansteller, HuntersMapp, Revierwelt, HNTR, WeHunt); several free with live GPS of participants
+https://apps.apple.com/de/app/diwima-ansteller/id1538397766   (diwima Ansteller: digital Drückjagd coordinator lists)
+https://apps.apple.com/at/app/huntersmapp/id1236152421   (HuntersMapp: full Drückjagd organisation + messenger)
+https://apps.apple.com/ch/app/huntersmapp/id1236152421
+https://apps.apple.com/de/app/diwima-wildkammer/id1527288825
+https://apps.apple.com/de/app/huntersmapp-2-0/id1236152421   (live GPS of all participants during Drückjagd)
+https://apps.apple.com/de/app/wehunt-hunting-maps-dogs/id1156096326   (WeHunt, Nordic, hunt teams + dogs)
+https://apps.apple.com/de/app/hunting-sniper-3d-jagd-spiele/id1501749754   (irrelevant game)
+https://apps.apple.com/lu/app/wild-hunt-j%C3%A4ger-simulator/id1164890160?l=de-DE   (irrelevant game)
+https://apps.apple.com/us/app/revierwelt/id1565506300   (REVIERWELT: Drückjagd planning)
+https://apps.apple.com/de/app/hntr-1-j%C3%A4gergemeinschaft/id1619932034   (HNTR: organise stalking to Drückjagd)

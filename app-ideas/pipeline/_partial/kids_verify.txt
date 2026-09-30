@@ -1,0 +1,28 @@
+KIDS — REVIEWER VERIFY LOG (devil's advocate run)
+Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
+
+[1] query: site:apps.apple.com Uhr lernen Kinder  (idea kids-06)
+    saturation ("Uhr" learning in title, dedicated DE apps): 9-10 -> SATURATED in DE; German time phrasing already covered (incl. licensed Conni brand, Flik Flak/Swatch)
+    - Uhr Lernen Einfach                  https://apps.apple.com/de/app/uhr-lernen-einfach/id6757368125
+    - Lernen Uhr Mathe Kinder Spiele      https://apps.apple.com/de/app/lernen-uhr-mathe-kinder-spiele/id1465867000  (2,99 EUR; same id as author's "Clock Telling Time For Kids")
+    - Alphabet der Zeit: Uhr lernen       https://apps.apple.com/de/app/alphabet-der-zeit-uhr-lernen/id6755596771
+    - KinderUhr                           https://apps.apple.com/de/app/kinderuhr/id504198608
+    - Uhr Lesen Lernen - macht Spaß       https://apps.apple.com/de/app/interaktiv-die-uhr-lesen-lernen-macht-spa%C3%9F/id477389150 (2,99 EUR)
+    - Conni Uhrzeit                       https://apps.apple.com/de/app/id1116692318 (3,49 EUR)
+    - Stell die Uhr                       https://apps.apple.com/ch/app/stell-die-uhr/id531809006
+    - Flik & Flak                         https://apps.apple.com/ch/app/flik-flak/id1139197323
+    - ClockWise, lesen Sie die Uhr!       https://apps.apple.com/de/app/clockwise-lesen-sie-die-uhr/id1383339035
+    - Lern die Uhr - Spaβuhr              https://apps.apple.com/de/app/lern-die-uhr-spa%CE%B2uhr/id592075414
+
+[2] query: site:apps.apple.com spelling test practice word list kids  (idea kids-07)
+    saturation (dedicated "enter your weekly list / photo of list -> test"): 5+ -> SATURATED in English; photo-OCR of list already shipped by Spelling Bee Games & Tests
+    - Spelling Stream: Practice Test      https://apps.apple.com/us/app/spelling-stream-practice-test/id6762540929 (enter week's teacher list -> 8 games + test, no tracking)
+    - Spelling Words - Games & Test       https://apps.apple.com/us/app/spelling-words-games-test/id1080283215
+    - Spelling Bee - Games & Tests        https://apps.apple.com/us/app/spelling-bee-games-tests/id1080283215 (photo of list -> test)
+    - Word Wizard for Kids                https://apps.apple.com/us/app/word-wizard-for-kids/id1466660110 (custom lists)
+    - Homework Help (same id)             https://apps.apple.com/om/app/homework-help/id1080283215
+    - The Spelling Bee                    https://apps.apple.com/us/app/the-spelling-bee/id625029839 (record own lists)
+    - Spelling: Spelling Games            https://apps.apple.com/us/app/spelling-spelling-games/id1495793465
+    - Spelling Bee Lists 1000+ Spelling Tests Grade 1-12 https://apps.apple.com/us/app/spelling-bee-lists-1000-spelling-tests-grade-1-12/id885695499
+    - Spelling Teacher                    https://apps.apple.com/us/app/spelling-teacher/id543373793
+

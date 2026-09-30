@@ -1,0 +1,27 @@
+MEDICAL — REVIEWER VERIFY LOG (devil's advocate run)
+Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
+
+[1] query: site:apps.apple.com injection site rotation tracker  (idea medical-16)
+    saturation (dedicated injection/shot tracker with site rotation as feature): 9 of 9 results -> SATURATED
+    - Medication & Injection Tracker   https://apps.apple.com/us/app/medication-injection-tracker/id1297105025  (body maps, lipohypertrophy)
+    - Injection Tracker & Reminder     https://apps.apple.com/us/app/injection-tracker-reminder/id6762521861  (body rotation tracker)
+    - Drop: Injection Tracker          https://apps.apple.com/eg/app/drop-injection-tracker/id6748859148  (diabetes + GLP-1, rotation)
+    - JabBuddy GLP1 Injection Track    https://apps.apple.com/us/app/jabbuddy-glp1-injection-track/id6754968831  (smart rotation suggestion)
+    - Protocol Peptide Tracker App     https://apps.apple.com/us/app/protocol-peptide-tracker-app/id6761315875  (3D body map rotation)
+    - Injection Tracker - GLP1         https://apps.apple.com/de/app/injection-tracker-glp1/id6743040801?l=en-GB&platform=vision
+    - Steadii - GLP-1 Shot Tracker     https://apps.apple.com/us/app/steadii-glp-1-shot-tracker/id6761677401
+    - ShotTrackr: Peptide Tracker      https://apps.apple.com/us/app/shottrackr-peptide-tracker/id6754299363
+    - Injectly                         https://apps.apple.com/us/app/injectly/id6745237189
+
+[2] query: site:apps.apple.com plasma donation tracker  (idea medical-23)
+    saturation (independent cross-center tracker): 1 (Donor Track) ; center/operator apps with history+earnings: 6 -> CONTESTABLE, low-price niche
+    - Donor Track                      https://apps.apple.com/us/app/donor-track/id1667108011  (independent: time, protein level, cycle, notes; free + IAP)
+    - ADMA Plasma                      https://apps.apple.com/us/app/adma-plasma/id6751269541  (history + earnings)
+    - BioLife Plasma Services          https://apps.apple.com/us/app/biolife-plasma-services/id1356589861
+    - Haemalogic - Plasma Donation     https://apps.apple.com/cz/app/haemalogic-plasma-donation/id6499265063  (CZ operator)
+    - LFB Plasma                       https://apps.apple.com/us/app/lfb-plasma/id6758314237  (history, volumes, compensation)
+    - Vitalant                         https://apps.apple.com/us/app/vitalant/id1613384960
+    - Blood Buddy                      https://apps.apple.com/us/app/blood-buddy/id589942432
+    - Grifols Plasma Donor Hub         https://apps.apple.com/us/app/grifols-plasma-donor-hub/id1591378876  (donation + compensation history)
+    - Parachute: Get Paid for Plasma   https://apps.apple.com/us/app/parachute-plasma-donation/id1519284283  (multi-center booking + tracking)
+    - FMOLHS Blood Donor Services      https://apps.apple.com/us/app/fmolhs-blood-donor-services/id6698895155

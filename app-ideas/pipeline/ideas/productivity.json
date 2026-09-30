@@ -1,0 +1,2491 @@
+{
+  "category": "Productivity",
+  "category_slug": "productivity",
+  "search_notes": "Offline běh: žádná volání Apple ani WebSearch. Web evidence (productivity_evidence.txt) pokrývala jen 4 niky: whiteboard scanner (OPEN), punch list a rental inspection (SATURATED v EN, použity jen jako rodičovský důkaz pro lokalizované varianty) a scan to Excel (CROWDED). Ostatních 26 nápadů je z vlastní znalosti trhu (evidence: knowledge); saturace klíčových slov jsou odhady a blue_ocean je u nich max. 7. Odkazy na konkurenty jsou pouze z _partial evidence (productivity, business, books); ostatní mají prázdnou URL. Před stavbou doporučuji u top 10 ověřit klíčová slova přes apple_fetch.py check (zejména lokální výrazy Übergabeprotokoll, Mängelliste, Ausweiskopie, Wechselmodell).",
+  "ideas": [
+    {
+      "id": "productivity-01",
+      "name": "Supervised Hours Log",
+      "tagline": "Tvoje hodiny pod supervizí k licenci BCBA, LPC nebo LCSW – přehledně, offline a připravené k podpisu.",
+      "pitch": "Budoucí behaviorální analytici (BCBA), terapeuti (LPC, LMFT) a sociální pracovníci (LCSW) musí posbírat 2 000–4 000 hodin praxe pod supervizí a každý měsíc je doložit na formuláři. Dnes to řeší Excelem, papírem nebo drahými webovými systémy určenými pro instituce. Nabídneme osobní offline deník: typy hodin podle konkrétní licence (restricted/unrestricted, direct/indirect), měsíční limity, průběžný stav a PDF podklad pro supervizora. Platí se ochotně, protože jde o kariéru za desítky tisíc dolarů.",
+      "niche": "Osobní evidence supervizovaných hodin ke státní licenci. Velké systémy (Time2Track) cílí na školy a instituce se servery a účty; obecné trackery času neznají pravidla licencí.",
+      "parent_market": "Time tracking (Toggl Track, Hours Tracker, Timing) a vzdělávací/licenční nástroje pro zdravotnické profese.",
+      "target_user": "Studenti a absolventi ABA, poradenství, rodinné terapie a sociální práce v USA během praxe (1–3 roky).",
+      "features": [
+        "Šablony pravidel pro BCBA, BCaBA, LPC, LMFT, LCSW (typy hodin, poměry, měsíční minimum/maximum)",
+        "Rychlý zápis sezení s časovačem a kategorií",
+        "Ukazatel pokroku k cíli a upozornění na porušení poměrů",
+        "Měsíční PDF souhrn k podpisu supervizora (podpis prstem na iPadu)",
+        "Export CSV a záloha přes iCloud"
+      ],
+      "offline": "full",
+      "offline_note": "Data lokálně v SwiftData, záloha iCloud. Pravidla licencí jsou přibalená statická data, aktualizovaná s verzemi aplikace.",
+      "monetization": "Předplatné 24,99 USD (≈ 575 Kč) ročně nebo 49,99 USD (≈ 1 150 Kč) doživotně; zdarma 1 měsíc záznamů.",
+      "revenue_math": "Ideál: 800 stažení/měsíc z „bcba hours tracker / fieldwork hours / supervision hours“ × 8 % konverze = 64 předplatných × 24,99 USD × 0,85 × 23 Kč ≈ 31 200 Kč netto měsíčně (plus obnovy ve 2. roce).",
+      "revenue_czk_ideal": 30000,
+      "keywords": [
+        {
+          "kw": "bcba hours tracker",
+          "saturation": 3,
+          "competitor": "několik malých indie trackerů (odhad)",
+          "note": "Odhad; vím o několika malých aplikacích, žádná dominantní."
+        },
+        {
+          "kw": "fieldwork hours",
+          "saturation": 3,
+          "competitor": "obecné hour trackery (odhad)",
+          "note": "Odhad; výraz používají studenti ABA i OT."
+        },
+        {
+          "kw": "supervision hours",
+          "saturation": 2,
+          "competitor": "Time2Track (institucionální) – odhad",
+          "note": "Odhad; LPC/LCSW komunita."
+        },
+        {
+          "kw": "clinical hours log",
+          "saturation": 3,
+          "competitor": "trackery pro studenty ošetřovatelství (odhad)",
+          "note": "Odhad; širší výraz, přesah do nursing."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: BACB vyžaduje 2 000 hodin fieldwork a měsíční verifikační formulář; profesní fóra (r/ABA, r/counseling) se opakovaně ptají na aplikaci pro evidenci hodin. Objem vyhledávání a počet konkurentů jsou odhad.",
+      "competitors": [
+        {
+          "name": "Time2Track",
+          "url": "",
+          "role": "parent",
+          "note": "Webový systém pro psychologické a poradenské programy, účty a server."
+        },
+        {
+          "name": "Hours Tracker: Time Tracking",
+          "url": "",
+          "role": "parent",
+          "note": "Obecný tracker hodin, nezná pravidla licencí."
+        },
+        {
+          "name": "Toggl Track",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr time trackingu, pro freelancery."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Pravidla BACB se mění (např. změna fieldwork standardů 2022, další revize) – chybná šablona znamená, že uživateli neuznají hodiny.",
+        "Mnoho programů a firem (ABA kliniky) poskytuje vlastní systém zdarma, student si pak nic nekupuje.",
+        "Trh je jen americký a konečný; horní hranice je nízká, 4.3 riziko, pokud uděláme varianty pro každou profesi zvlášť.",
+        "Supervizor může vyžadovat konkrétní oficiální formulář a náš PDF nepřijme."
+      ],
+      "killer_risk": "Nepřesná nebo zastaralá pravidla licencí → ztráta důvěry a špatné recenze v malé, propojené komunitě.",
+      "mitigation": "Pravidla jako upravitelná šablona s odkazem na zdroj a datem, vlastní pravidla pro uživatele; výstup kompatibilní s oficiálními formuláři (vyplnění polí, ne vlastní design). Jedna aplikace pro všechny profese místo klonů.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 8,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-02",
+      "name": "BoardSnap: Whiteboard Scanner",
+      "tagline": "Vyfoť tabuli z porady nebo přednášky a dostaneš čistý, ostrý obrázek bez odlesků – offline.",
+      "pitch": "Po každé poradě, workshopu nebo přednášce zůstane na tabuli to nejcennější a lidé to fotí šikmo, s odlesky a šedým pozadím. Microsoft Lens, který tuhle potřebu roky pokrýval zdarma, skončil, a obecné skenery (CamScanner, Adobe Scan) jsou stavěné na papír, ne na lesklou bílou tabuli. Nabídneme jedno tlačítko: narovnání, odstranění odlesků, vybělení pozadí a zesílení fixů. Z více snímků složíme celou tabuli, text převedeme přes Vision OCR a export pošleme do Notes, PDF nebo Markdownu. Je to úzká, ale opakovaná potřeba (každý týden) a v evidenci je jen pár slabých dedikovaných aplikací.",
+      "niche": "Skenování bílé tabule a flipchartu. Velké skenery řeší dokumenty a účtenky, tabuli berou jako vedlejší režim. Microsoft Lens byl stažen, a tak po něm zůstala díra, kterou zatím vyplňují jen malé nové aplikace a hardwarové companion appky.",
+      "parent_market": "Skenery dokumentů – jeden z nejvýdělečnějších segmentů Productivity (CamScanner, Adobe Scan, Genius Scan, Scanner Pro), kde se předplatné platí běžně.",
+      "target_user": "Manažeři, konzultanti, facilitátoři workshopů, učitelé a studenti, kteří fotí tabuli a flipchart po každém sezení.",
+      "features": [
+        "Detekce tabule a narovnání perspektivy (Vision rectangle detection)",
+        "Odstranění odlesků a vybělení pozadí, zesílení barev fixů",
+        "Složení více snímků do panoramatu celé tabule",
+        "OCR textu on-device a export do PDF / Markdown / Notes",
+        "Historie po projektech a schůzkách s datem"
+      ],
+      "offline": "full",
+      "offline_note": "Všechno běží na zařízení: Vision (detekce obdélníku, OCR), Core Image filtry. Volitelná synchronizace přes iCloud.",
+      "monetization": "Freemium: 3 skeny týdně zdarma; Pro 2,99 USD (≈ 69 Kč) měsíčně, 14,99 USD (≈ 345 Kč) ročně nebo 29,99 USD (≈ 690 Kč) doživotně.",
+      "revenue_math": "Ideál: 3 000 stažení/měsíc z clusteru „whiteboard scanner / scan whiteboard / flipchart“ × 3,5 % konverze = 105 platících měsíčně. Průměrná hodnota prvního roku ≈ 15 USD → 105 × 15 USD × 0,85 × 23 Kč ≈ 30 800 Kč netto měsíčně.",
+      "revenue_czk_ideal": 30000,
+      "keywords": [
+        {
+          "kw": "whiteboard scanner",
+          "saturation": 3,
+          "competitor": "SlatCam: Whiteboard Scanner (nová indie appka)",
+          "note": "Evidence (web): ≈ 3 slabé dedikované aplikace, Microsoft Lens stažen. Verdikt v evidenci PROMISING. Autocomplete neověřen."
+        },
+        {
+          "kw": "scan whiteboard",
+          "saturation": 3,
+          "competitor": "SnapBoard",
+          "note": "Evidence (web): stejné výsledky jako výše, CaptureBoard je stará. Saturace převzata z evidence."
+        },
+        {
+          "kw": "flipchart scanner",
+          "saturation": 1,
+          "competitor": "žádný dedikovaný (odhad)",
+          "note": "Odhad bez ověření; evropský výraz, vhodný pro lokalizace DE/CZ."
+        },
+        {
+          "kw": "board photo cleaner",
+          "saturation": 1,
+          "competitor": "žádný dedikovaný (odhad)",
+          "note": "Odhad; long-tail do klíčových slov."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): v App Store je jen ≈ 3 slabých dedikovaných skenerů tabule (SlatCam, SnapBoard, MEMO jako companion hardwaru) a jeden starý (CaptureBoard); Microsoft Lens byl stažen. Předpoklad: poptávka po „whiteboard scanner“ je reálná díky rodičovskému trhu skenerů, ale objem vyhledávání jsme neměřili (autocomplete neověřen).",
+      "competitors": [
+        {
+          "name": "CamScanner - PDF Scanner App",
+          "url": "https://apps.apple.com/om/app/camscanner-pdf-scanner-app/id388627783",
+          "role": "parent",
+          "note": "Lídr skenerů; tabuli umí jen jako obecný dokument."
+        },
+        {
+          "name": "SlatCam: Whiteboard Scanner",
+          "url": "https://apps.apple.com/us/app/slatcam-whiteboard-scanner/id6759267167",
+          "role": "niche",
+          "note": "Nová indie appka, přímý konkurent."
+        },
+        {
+          "name": "SnapBoard",
+          "url": "https://apps.apple.com/us/app/snapboard/id6444752706",
+          "role": "niche",
+          "note": "Menší dedikovaná appka."
+        },
+        {
+          "name": "CaptureBoard",
+          "url": "https://apps.apple.com/us/app/captureboard-scan-whiteboard-business-cards-receipts/id542229387",
+          "role": "niche",
+          "note": "Stará appka (whiteboard + vizitky + účtenky), zjevně neudržovaná."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Sherlock: skener v aplikaci Poznámky a Live Text už umí dokument narovnat; stačí, aby Apple přidal režim „tabule“, a důvod ke stažení zmizí.",
+        "Lidé tabuli fotí vestavěným fotoaparátem a málokdy si pro to hledají aplikaci – objem vyhledávání může být malý.",
+        "Firemní uživatelé mají Teams/OneNote se skenováním zdarma a za samostatnou appku platit nechtějí.",
+        "Kvalita odstranění odlesků je těžká; pokud výsledek nebude viditelně lepší než Notes, recenze to potopí."
+      ],
+      "killer_risk": "Apple přidá režim tabule do skeneru v Poznámkách (Sherlock) nebo je objem vyhledávání příliš malý.",
+      "mitigation": "Stavět na tom, co Notes nemá: panorama z více snímků, oddělení barev fixů, OCR do Markdownu a projekty po schůzkách. Lokalizovat „flipchart“ výrazy v DE/CZ/PL, kde je konkurence nulová.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "productivity-03",
+      "name": "PlannerForge: PDF Planner Maker",
+      "tagline": "Vygeneruj si prolinkovaný digitální plánovač pro GoodNotes ve svém jazyce, se svými svátky a pondělím jako prvním dnem.",
+      "pitch": "Digitální plánovače (hyperlinkové PDF pro GoodNotes/Notability) jsou obří trh na Etsy, ale skoro všechny jsou anglické, s americkými svátky a nedělí jako prvním dnem týdne. Aplikace vygeneruje plánovač přímo v iPadu: jazyk, první den týdne, státní svátky, rozvržení, barvy a sekce – a PDF s funkčními odkazy hned otevře v GoodNotes. Evropan nebo Brazilec dnes nic takového nekoupí. Generujeme vše lokálně, obsah (kalendáře, svátky) je statický.",
+      "niche": "Lokalizované hyperlinkové PDF plánovače. Prodejci na Etsy dělají anglické šablony, lokalizace do 50 jazyků se jim nevyplatí; plánovací appky (Zinnia, Penly) mají vlastní formát, ne PDF pro GoodNotes.",
+      "parent_market": "Digitální plánovače a note-taking na iPadu (GoodNotes, Notability, Penly, Zinnia) + Etsy trh s šablonami v řádu desítek milionů USD.",
+      "target_user": "Uživatelé iPadu s Apple Pencil (převážně ženy 18–40), studenti, kteří plánují ručně v GoodNotes; mimo anglicky mluvící země.",
+      "features": [
+        "Generátor roční/měsíční/týdenní/denní struktury s hyperlinky (PDF)",
+        "Jazyk, první den týdne, státní svátky pro 50+ zemí (přibalená data)",
+        "Témata, barvy, typy stránek (habit tracker, cíle, poznámky)",
+        "Náhled a export přímo do GoodNotes/Notability",
+        "Každý rok nový plánovač jedním klepnutím"
+      ],
+      "offline": "full",
+      "offline_note": "PDFKit/Core Graphics generování na zařízení; svátky jako přibalená data (vypočítatelná pravidla: Velikonoce, pevná data).",
+      "monetization": "Jednorázově 7,99 USD (≈ 185 Kč) za plánovač/rok nebo 14,99 USD (≈ 345 Kč) ročně za neomezené generování a nová témata.",
+      "revenue_math": "Ideál: 4 000 stažení/měsíc (sezónně vyšší v prosinci–lednu a září) × 3 % konverze = 120 × ≈ 7,99 USD × 0,85 × 23 Kč ≈ 18 700 Kč netto měsíčně.",
+      "revenue_czk_ideal": 18000,
+      "keywords": [
+        {
+          "kw": "digital planner",
+          "saturation": 7,
+          "competitor": "Zinnia, Penly, Planner Pro (odhad)",
+          "note": "Odhad; head term je přeplněný – jen rodičovský důkaz."
+        },
+        {
+          "kw": "goodnotes planner",
+          "saturation": 4,
+          "competitor": "šablonové appky (odhad)",
+          "note": "Odhad; pozor na ochrannou známku GoodNotes v názvu (2.3.7/5.2)."
+        },
+        {
+          "kw": "planner pdf",
+          "saturation": 3,
+          "competitor": "málo generátorů (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "hyperlinked planner",
+          "saturation": 2,
+          "competitor": "převážně Etsy, málo appek (odhad)",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: digitální plánovače patří mezi nejprodávanější digitální produkty na Etsy a GoodNotes je dlouhodobě v top grossing Productivity. Poptávka po lokalizované verzi je předpoklad (Etsy nabídka v DE/FR/ES/PT existuje, ale je tenká).",
+      "competitors": [
+        {
+          "name": "GoodNotes 6",
+          "url": "",
+          "role": "parent",
+          "note": "Platforma, ve které se plánovače používají; má vlastní obchod šablon."
+        },
+        {
+          "name": "Zinnia: Digital Planner",
+          "url": "",
+          "role": "niche",
+          "note": "Plánovací appka s vlastním formátem, silná v EN."
+        },
+        {
+          "name": "Penly: Digital Planner",
+          "url": "",
+          "role": "niche",
+          "note": "Předplatné, šablony, EN-first."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Model hyperlinkových plánovačů je US/EN (Etsy, americké svátky, neděle na začátku týdne). Lokalizovaná generovaná verze pro 50 jazyků a národní svátky chybí.",
+      "devils_advocate": [
+        "GoodNotes a Notability mají vlastní obchody se šablonami a mohou přidat generátor.",
+        "Kvalita designu rozhoduje – Etsy prodejci mají krásné šablony, generované PDF může působit „levně“.",
+        "Sezónnost: většina prodejů v prosinci a lednu, zbytek roku slabý.",
+        "Použití slov GoodNotes/Notability v metadatech = riziko odmítnutí za trademark."
+      ],
+      "killer_risk": "Designová kvalita pod úrovní Etsy šablon → nízká konverze.",
+      "mitigation": "Investovat do 5–8 opravdu pěkných témat od designéra, generovat jen strukturu a lokalizaci. Klíčová slova bez ochranných známek („planner for pencil“, „ipad planner pdf“).",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-04",
+      "name": "SafeCopy: ID Copy Watermark",
+      "tagline": "Kopie občanky, která se nedá zneužít: obě strany na jednu stránku, začerněná citlivá čísla a vodoznak „jen pro…“.",
+      "pitch": "Pronajímatel, autopůjčovna nebo hotel chce „kopii občanky“ a lidé posílají fotku, která stačí na krádež identity. Nizozemská vláda proto vydala aplikaci KopieID a Francie web FiligraneFacile, které přidají vodoznak a začerní rodné číslo – jenže jen lokálně a jen v jednom jazyce. Postavíme to celosvětově v 50 jazycích: sken obou stran na jednu A4, automatické rozpoznání a začernění čísel přes Vision, vodoznak s účelem a datem. Kompletně offline, takže fotka dokladu nikdy neopustí telefon – a to je i hlavní marketingové sdělení.",
+      "niche": "Bezpečná kopie osobního dokladu. Skenery řeší kvalitu obrazu, ne ochranu před zneužitím; vládní appky (KopieID) existují jen v jedné zemi a jazyce.",
+      "parent_market": "Skenery dokumentů (CamScanner, Adobe Scan, Genius Scan) a obecně ochrana soukromí/identity (placené služby proti krádeži identity).",
+      "target_user": "Nájemníci, cestující, lidé žádající o práci nebo půjčku, kteří musí posílat kopii dokladu; zvlášť v EU (GDPR citlivost).",
+      "features": [
+        "Sken přední a zadní strany na jednu stránku A4/Letter (PDF/JPG)",
+        "Automatické rozpoznání a začernění čísel (rodné číslo, číslo dokladu, MRZ) + ruční štětec",
+        "Vodoznak „Kopie pro [příjemce], [datum], [účel]“ přes celý doklad",
+        "Historie odeslaných kopií (komu a kdy)",
+        "Nulový přístup k síti – deklarováno v App Privacy"
+      ],
+      "offline": "full",
+      "offline_note": "Vision (detekce dokladu, OCR, rozpoznání MRZ), Core Graphics pro vodoznak a PDF. Aplikace nepotřebuje síťové oprávnění vůbec.",
+      "monetization": "Jednorázově 4,99 USD (≈ 115 Kč) za odemčení vodoznaku bez limitu; zdarma 1 kopie měsíčně.",
+      "revenue_math": "Ideál: 2 500 stažení/měsíc (EN + DE/FR/NL/ES „copy ID card / Ausweiskopie / copie pièce d'identité“) × 5 % konverze = 125 nákupů × 4,99 USD × 0,85 × 23 Kč ≈ 12 200 Kč netto měsíčně.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "id copy watermark",
+          "saturation": 1,
+          "competitor": "KopieID (jen NL, vládní) – odhad",
+          "note": "Odhad; v EN téměř nikdo nemá v názvu."
+        },
+        {
+          "kw": "watermark id card",
+          "saturation": 2,
+          "competitor": "obecné watermark appky (odhad)",
+          "note": "Odhad; obecné vodoznakové aplikace nejsou na doklady."
+        },
+        {
+          "kw": "scan id both sides",
+          "saturation": 3,
+          "competitor": "ID scanner appky (odhad)",
+          "note": "Odhad; několik skenerů „ID card scanner“ existuje, bez vodoznaku a redakce."
+        },
+        {
+          "kw": "ausweiskopie",
+          "saturation": 1,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad; DE výraz, v Německu je kopírování Personalausweis regulováno (povinnost začernit)."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store (běh bez dat). Z vlastní znalosti: NL vláda provozuje appku KopieID a FR službu FiligraneFacile – to dokazuje veřejnou potřebu a osvětu. Německý zákon o průkazech výslovně dovoluje kopii jen se začerněním. Objem vyhledávání je předpoklad.",
+      "competitors": [
+        {
+          "name": "CamScanner - PDF Scanner App",
+          "url": "https://apps.apple.com/om/app/camscanner-pdf-scanner-app/id388627783",
+          "role": "parent",
+          "note": "Lídr skenerů, ID režim umí, ale bez vodoznaku a redakce."
+        },
+        {
+          "name": "KopieID",
+          "url": "",
+          "role": "niche",
+          "note": "Vládní appka Nizozemska, jen NL; vzor modelu (reverse gap)."
+        },
+        {
+          "name": "Adobe Scan",
+          "url": "",
+          "role": "parent",
+          "note": "Zdarma, silný, ale bez ochrany dokladu."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Reverse gap: model „bezpečné kopie dokladu“ je zavedený v NL (KopieID) a FR (FiligraneFacile), ale ve zbytku světa a v 50 jazycích chybí. V USA je potřeba menší, ale v EU, LatAm a Asii velká.",
+      "devils_advocate": [
+        "Vládní appky jsou zdarma; kde existují (NL), nemáme šanci a jinde může vláda vydat vlastní.",
+        "Lidé si o riziku zneužití kopie často neuvědomují – musíme potřebu vytvořit, ne jen zachytit.",
+        "Automatické začernění musí fungovat na stovkách typů dokladů; chyba (nezačerněné číslo) = reputační katastrofa.",
+        "Guideline 5.1.1/2.5: práce s doklady totožnosti vyžaduje velmi čisté prohlášení o soukromí; jakýkoli síťový kód vzbudí podezření."
+      ],
+      "killer_risk": "Nízké povědomí o problému → málo lidí hledá; placení za „vodoznak“ je pro běžného člověka těžko obhajitelné.",
+      "mitigation": "Názvy a klíčová slova postavit na tom, co lidé skutečně hledají („kopie občanky“, „scan ID both sides“), vodoznak a redakci prodávat jako bonus. Automatiku kombinovat s ručním štětcem a výslovným varováním.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-05",
+      "name": "Service Hours: Volunteer Log",
+      "tagline": "Dobrovolnické hodiny pro školu, skauty nebo soud – zapiš, nech podepsat koordinátorem a vytiskni.",
+      "pitch": "Americké střední školy, National Honor Society, stipendia, skauti i soudy vyžadují doložit desítky hodin dobrovolnictví s podpisem koordinátora. Studenti to dnes vedou na papírových formulářích, které ztrácejí. Serverové platformy (x2VOL, Track It Forward) si musí pořídit škola. Postavíme osobní offline log: akce, hodiny, kategorie, podpis koordinátora přímo na displeji a PDF výkaz. Levné, rychlé, jasná potřeba.",
+      "niche": "Osobní evidence servisních hodin pro jednotlivce. Existující řešení jsou institucionální (škola musí platit a zakládat účty); jednotlivec nemá jednoduchý nástroj.",
+      "parent_market": "Time tracking (Toggl, Hours Tracker) a dobrovolnické platformy (Galaxy Digital, x2VOL, Track It Forward).",
+      "target_user": "Středoškoláci v USA (graduation requirements, NHS), žadatelé o stipendia, skauti, lidé s nařízenou veřejně prospěšnou prací.",
+      "features": [
+        "Zápis akce, organizace, hodin a kategorie",
+        "Podpis koordinátora prstem + jméno a kontakt",
+        "Cíle (např. 40 h do maturity) s ukazatelem",
+        "PDF výkaz podle běžných školních formulářů",
+        "Fotky jako doklad a iCloud záloha"
+      ],
+      "offline": "full",
+      "offline_note": "Lokální data, PencilKit podpis, PDF na zařízení.",
+      "monetization": "Jednorázově 5,99 USD (≈ 138 Kč) za neomezené záznamy a PDF export.",
+      "revenue_math": "Ideál: 4 000 stažení/měsíc (sezónně jaro a konec školního roku) × 3,5 % konverze = 140 × 5,99 USD × 0,85 × 23 Kč ≈ 16 400 Kč netto měsíčně.",
+      "revenue_czk_ideal": 16000,
+      "keywords": [
+        {
+          "kw": "volunteer hours",
+          "saturation": 5,
+          "competitor": "několik trackerů + institucionální appky (odhad)",
+          "note": "Odhad; očekávám několik titulů."
+        },
+        {
+          "kw": "community service hours",
+          "saturation": 4,
+          "competitor": "malé appky (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "service hours tracker",
+          "saturation": 3,
+          "competitor": "malé appky (odhad)",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: požadavky na servisní hodiny jsou běžné v US středních školách a NHS; platformy x2VOL a Track It Forward existují, což dokazuje trh. Saturace výrazů je odhad (spíš středně obsazené).",
+      "competitors": [
+        {
+          "name": "Track It Forward",
+          "url": "",
+          "role": "parent",
+          "note": "Platforma pro organizace, server, účty."
+        },
+        {
+          "name": "x2VOL",
+          "url": "",
+          "role": "parent",
+          "note": "Školní platforma servisních hodin, server."
+        },
+        {
+          "name": "Hours Tracker: Time Tracking",
+          "url": "",
+          "role": "parent",
+          "note": "Obecný tracker hodin bez podpisů."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Škola může vyžadovat konkrétní platformu (x2VOL) a osobní log neuzná.",
+        "Studenti neplatí; jednorázová cena 5,99 USD je pro teenagery bariéra.",
+        "Trh je hlavně US; lokalizace pomůže málo, jinde servisní hodiny nejsou povinné.",
+        "Výraz „volunteer hours“ může být obsazený více appkami, než odhadujeme."
+      ],
+      "killer_risk": "Školy vyžadují vlastní platformu → osobní appka je zbytečná.",
+      "mitigation": "Export odpovídající papírovým formulářům, které většina škol stále přijímá; rodiče jako plátci (Family Sharing).",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-06",
+      "name": "CPD Log: License Renewal",
+      "tagline": "Hodiny celoživotního vzdělávání a certifikáty k obnově licence – přehled, připomínky a výkaz pro komoru.",
+      "pitch": "Sestry, lékárníci, fyzioterapeuti, účetní i inženýři musí sbírat body nebo hodiny CPD/CE a při obnově licence je doložit. V USA dominuje CE Broker (propojený se státními radami), ale ve Velké Británii (revalidace NMC), Austrálii (AHPRA CPD), Kanadě, Irsku a v Evropě chybí jednoduchý osobní nástroj. Aplikace uloží certifikáty (sken, OCR hodin), hlídá cíle podle profese a země a vytvoří výkaz. Profesionálové platí bez problémů.",
+      "niche": "Osobní CPD portfolio mimo americký CE Broker ekosystém. Komory mají vlastní webové portály, ale ty neumí uložit certifikát z telefonu ani připomenout termín.",
+      "parent_market": "Licenční a vzdělávací nástroje pro zdravotníky a profese (CE Broker, NetCE, Medscape CME).",
+      "target_user": "Sestry a zdravotníci v UK, AU, NZ, IE, CA; účetní (ACCA, CIMA), inženýři, psychologové.",
+      "features": [
+        "Sken certifikátu a OCR počtu hodin/kreditů",
+        "Šablony požadavků podle profese a země (NMC, AHPRA, ACCA…)",
+        "Cyklus obnovy s ukazatelem a připomínkami",
+        "Reflexe k aktivitám (NMC vyžaduje reflective accounts)",
+        "Export PDF portfolia a CSV"
+      ],
+      "offline": "full",
+      "offline_note": "OCR on-device, lokální úložiště, iCloud záloha. Pravidla jako přibalená data.",
+      "monetization": "Předplatné 14,99 USD (≈ 345 Kč) ročně nebo 29,99 USD (≈ 690 Kč) doživotně.",
+      "revenue_math": "Ideál: 2 000 stažení/měsíc (EN mimo US + lokalizace) × 5 % konverze = 100 × 14,99 USD × 0,85 × 23 Kč ≈ 29 300 Kč netto měsíčně.",
+      "revenue_czk_ideal": 29000,
+      "keywords": [
+        {
+          "kw": "cpd tracker",
+          "saturation": 3,
+          "competitor": "několik malých UK appek (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "ceu tracker",
+          "saturation": 4,
+          "competitor": "CE Broker a trackery (odhad)",
+          "note": "Odhad; US výraz, obsazenější."
+        },
+        {
+          "kw": "nmc revalidation",
+          "saturation": 2,
+          "competitor": "málo (odhad)",
+          "note": "Odhad; úzký UK výraz, pozor na značku NMC v názvu."
+        },
+        {
+          "kw": "cpd log",
+          "saturation": 2,
+          "competitor": "málo (odhad)",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: revalidace NMC (UK, každé 3 roky, 35 hodin CPD + 5 reflexí) a CPD AHPRA jsou povinné pro statisíce lidí; CE Broker dokazuje ochotu platit v US. Saturace výrazů je odhad.",
+      "competitors": [
+        {
+          "name": "CE Broker",
+          "url": "",
+          "role": "parent",
+          "note": "US lídr, napojený na státní rady, server."
+        },
+        {
+          "name": "NetCE",
+          "url": "",
+          "role": "parent",
+          "note": "Kurzy CE, tracking jako doplněk."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Model „CE tracker“ je silný v US (CE Broker), ale mimo US ekosystém státních rad chybí osobní lokalizovaný CPD log pro různé komory a země.",
+      "devils_advocate": [
+        "Komory a zaměstnavatelé (NHS) mají vlastní e-portfolia zdarma.",
+        "Pravidla CPD se liší a mění – údržba šablon pro desítky profesí je práce.",
+        "Obnova licence je jednou za 1–3 roky; mezi tím lidé appku nepoužívají a předplatné ruší.",
+        "Použití názvů komor (NMC, AHPRA) v metadatech může vést k trademark stížnosti."
+      ],
+      "killer_risk": "Bezplatná e-portfolia od zaměstnavatelů/komor → nízká ochota platit.",
+      "mitigation": "Zaměřit se na rychlé ukládání z telefonu (to portály neumí) a na lidi s více zaměstnavateli/agenturní sestry; doživotní licence místo předplatného.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-07",
+      "name": "Expiry Vault: Document Reminders",
+      "tagline": "Pas, občanka, řidičák, STK, pojistka i dětské pasy celé rodiny – aplikace ti připomene, dřív než je pozdě.",
+      "pitch": "Propadlý pas se zjistí týden před dovolenou, propadlá STK při kontrole. V USA na to existuje Docket, ale ten je americký (státní doklady USA) a v Evropě ho nikdo nezná. Uděláme rodinný trezor dokladů: vyfotíš doklad, Vision přečte datum platnosti, aplikace nastaví připomínky podle toho, jak dlouho v dané zemi trvá vyřízení (pas 1–2 měsíce). Vše lokálně, sdílení s partnerem přes iCloud.",
+      "niche": "Hlídání platnosti osobních a rodinných dokladů. Obecné připomínky neznají typ dokladu ani lhůty, trezory hesel doklady ukládají, ale nehlídají platnost; americký Docket je US-centrický.",
+      "parent_market": "Osobní organizace a trezory dokumentů (1Password, Evernote, Docket, obecné reminder appky) – lidé platí za klid a jistotu.",
+      "target_user": "Rodiny s dětmi (dětské pasy platí 5 let), expati s vízy a povoleními, majitelé aut.",
+      "features": [
+        "Sken dokladu a automatické přečtení data platnosti (Vision OCR/MRZ)",
+        "Předvolené typy dokladů podle země + lhůty vyřízení",
+        "Chytré připomínky (6/3/1 měsíc) a widget „co vyprší brzy“",
+        "Sdílení rodinného trezoru přes iCloud (CloudKit sharing)",
+        "Face ID zámek, nulová síť kromě iCloud"
+      ],
+      "offline": "full",
+      "offline_note": "OCR on-device, lokální notifikace, iCloud/CloudKit pro sdílení v rodině (Apple infrastruktura, ne naše).",
+      "monetization": "Zdarma 3 doklady; Pro 9,99 USD (≈ 230 Kč) doživotně nebo 4,99 USD (≈ 115 Kč) ročně s rodinným sdílením.",
+      "revenue_math": "Ideál: 3 000 stažení/měsíc (EN + lokální výrazy „passport expiry reminder“, „Ablaufdatum Ausweis“) × 3 % konverze = 90 × 9,99 USD × 0,85 × 23 Kč ≈ 17 600 Kč netto měsíčně.",
+      "revenue_czk_ideal": 17000,
+      "keywords": [
+        {
+          "kw": "document expiry reminder",
+          "saturation": 3,
+          "competitor": "několik malých reminder appek (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "passport expiry",
+          "saturation": 2,
+          "competitor": "Docket (US) – odhad",
+          "note": "Odhad; výraz často hledaný před cestou."
+        },
+        {
+          "kw": "id expiration tracker",
+          "saturation": 3,
+          "competitor": "Docket, obecné trackery (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "expiry date tracker",
+          "saturation": 6,
+          "competitor": "food expiry trackery (odhad)",
+          "note": "Odhad; výraz je obsazený potravinovými appkami – jen doplňkový."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: Docket (US) existuje a má uživatele, finance evidence uvádí „warranty/return-deadline vault“ jako otevřený, neověřený úhel v sousední kategorii. Objem vyhledávání je odhad.",
+      "competitors": [
+        {
+          "name": "Docket",
+          "url": "",
+          "role": "us-only",
+          "note": "US doklady a US lhůty, EN."
+        },
+        {
+          "name": "1Password",
+          "url": "",
+          "role": "parent",
+          "note": "Ukládá doklady, ale nehlídá platnost aktivně."
+        },
+        {
+          "name": "Due - Reminders & Timers",
+          "url": "",
+          "role": "parent",
+          "note": "Obecné připomínky bez znalosti dokladů."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Docket ověřuje model v USA, ale je postavený na US dokladech; lokalizovaná verze s národními lhůtami (pas, občanka, STK/TÜV/ITV) pro 50 jazyků chybí (odhad).",
+      "devils_advocate": [
+        "Sherlock: Apple Wallet už ukazuje digitální doklady a může přidat připomínky platnosti; iOS umí rozpoznat data z fotek.",
+        "Lidé to vyřeší jednorázovou připomínkou v kalendáři zdarma – ochota platit je nízká.",
+        "Lhůty vyřízení se liší po zemích a mění se; udržování dat pro 50 zemí je práce navíc.",
+        "Citlivá data (fotky pasů) – jakýkoli bezpečnostní incident nebo nejasná privacy politika zabije důvěru."
+      ],
+      "killer_risk": "Nízká ochota platit za něco, co lze udělat kalendářem zdarma, a riziko Sherlocku přes Apple Wallet.",
+      "mitigation": "Hodnotu stavět na rodině (dětské pasy, sdílení s partnerem) a OCR automatice; lhůty jen jako editovatelné výchozí hodnoty.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-08",
+      "name": "Mistake Notebook: Exam Review",
+      "tagline": "Vyfoť chybu z testu, aplikace smaže tvoje řešení a za pár dní ti příklad dá znovu.",
+      "pitch": "V Číně je „错题本“ (sešit chyb) standardní studijní metoda a aplikace, které z fotky testu odstraní ručně psané odpovědi a příklad zařadí k opakování, mají miliony uživatelů. Na Západě tahle kategorie prakticky neexistuje – studenti mají Photomath na řešení, ale nic na systematické opakování vlastních chyb. Postavíme offline verzi: sken, odstranění barvy pera (modrá/červená), štítky podle předmětu a opakování v intervalech. Je to reverse gap s jasně ověřeným modelem.",
+      "niche": "Osobní sbírka chyb z písemek s opakováním. Západní homework appky řeší „dej mi výsledek“, ne „nauč se z vlastních chyb“; flashcard appky neumí pracovat s fotkou příkladu.",
+      "parent_market": "Studijní a homework aplikace (Photomath, Gauth, Quizlet, Anki) – vysoce ziskový segment s předplatným.",
+      "target_user": "Středoškoláci a studenti připravující se na maturitu, přijímačky, SAT/ACT, A-levels; rodiče, kteří s dětmi procvičují.",
+      "features": [
+        "Sken příkladu s oříznutím a odstraněním ručního písma podle barvy inkoustu",
+        "Štítky: předmět, téma, typ chyby, zdroj (test/kapitola)",
+        "Opakování v intervalech (1–3–7–14 dní) s odkrytím správného řešení",
+        "Tisk/PDF „cvičného testu“ ze zvolených chyb",
+        "Statistika: v čem chybuji nejčastěji"
+      ],
+      "offline": "full",
+      "offline_note": "Core Image segmentace podle barvy inkoustu, Vision OCR pro vyhledávání, lokální databáze. Bez serveru a bez AI v cloudu.",
+      "monetization": "Předplatné 19,99 USD (≈ 460 Kč) ročně nebo 2,99 USD (≈ 69 Kč) měsíčně; zdarma 20 příkladů.",
+      "revenue_math": "Ideál: 2 000 stažení/měsíc („mistake notebook / error log / wrong answer notebook“ + lokalizace) × 3 % konverze = 60 × 19,99 USD × 0,85 × 23 Kč ≈ 23 400 Kč netto měsíčně.",
+      "revenue_czk_ideal": 23000,
+      "keywords": [
+        {
+          "kw": "mistake notebook",
+          "saturation": 2,
+          "competitor": "čínské 错题本 appky v EN verzi (odhad)",
+          "note": "Odhad; v EN obchodě jen málo aplikací, výraz se používá v komunitách přípravy na zkoušky."
+        },
+        {
+          "kw": "error log study",
+          "saturation": 2,
+          "competitor": "SAT/GMAT error log šablony (odhad)",
+          "note": "Odhad; „error log“ je známý pojem v přípravě na GMAT/SAT."
+        },
+        {
+          "kw": "erase handwriting",
+          "saturation": 3,
+          "competitor": "několik čínských utilit (odhad)",
+          "note": "Odhad; utility na mazání písma existují, bez opakování."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: aplikace typu 错题本 jsou v čínském App Store velmi rozšířené a metoda „error log“ je doporučovaná v přípravě na GMAT/SAT. Poptávka na Západě je předpoklad – může být nutné ji vytvořit.",
+      "competitors": [
+        {
+          "name": "Photomath",
+          "url": "",
+          "role": "parent",
+          "note": "Řešení příkladů z fotky, ne opakování chyb."
+        },
+        {
+          "name": "Anki",
+          "url": "",
+          "role": "parent",
+          "note": "Opakování v intervalech, práce s fotkou chyb je těžkopádná."
+        },
+        {
+          "name": "Chinese mistake-notebook apps (错题本)",
+          "url": "",
+          "role": "niche",
+          "note": "Vzor modelu v CN; v EN a EU storefrontech slabě zastoupené."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Reverse gap: metoda a kategorie aplikací je masová v Číně, v US/EU storefrontech chybí lokalizovaný offline nástroj.",
+      "devils_advocate": [
+        "Západní studenti metodu neznají – „mistake notebook“ skoro nikdo nehledá, musíme vzdělávat trh.",
+        "Odstranění ručního písma podle barvy selže u tužky nebo černého pera; bez ML segmentace bude výsledek nedokonalý.",
+        "Studenti mají nízkou ochotu platit a vysoký churn mimo zkouškové období.",
+        "Photomath/Gauth mohou funkci „uložit chybu k opakování“ přidat během týdne."
+      ],
+      "killer_risk": "Nulová povědomost o metodě mimo Asii → nízký objem vyhledávání.",
+      "mitigation": "Cílit na výrazy, které už existují („GMAT error log“, „SAT mistake log“, „Fehlerheft“), lokalizovat i do asijských jazyků (KR/JP/TW), kde metoda funguje, a nabídnout mazání tužky ručním štětcem.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-09",
+      "name": "Billable: Lawyer Time Log",
+      "tagline": "Časové záznamy po 6 minutách (0,1 h) pro advokáty a konzultanty – z telefonu, offline, s popisem úkonu.",
+      "pitch": "Samostatní advokáti, překladatelé, daňoví poradci a konzultanti účtují po 0,1 hodiny a ztrácejí 10–20 % fakturovatelného času, protože si ho nezapíšou hned. Velké systémy (Clio) jsou drahé a serverové, obecné trackery neumí zaokrouhlení po 6 minutách, kódy úkonů (UTBMS) ani důvěrnost klientských dat. Offline záznamník s odpočtem, zaokrouhlením a exportem pro fakturaci řeší přesně tohle – a důvěrnost je silný argument.",
+      "niche": "Fakturovatelný čas pro solo advokáty a poradce. Legal practice management je drahý a cloudový; obecné time trackery nejsou „legal-aware“.",
+      "parent_market": "Time tracking a legal software (Toggl Track, Harvest, Clio, MyCase) – vysoká ochota platit.",
+      "target_user": "Samostatní advokáti a koncipienti, daňoví poradci, soudní tlumočníci, nezávislí konzultanti.",
+      "features": [
+        "Časovač s pravidly zaokrouhlení (0,1 h / 0,25 h)",
+        "Klient, věc, kód úkonu a popis (diktát on-device)",
+        "Rychlý zápis zpětně z kalendáře a hovorů",
+        "Export CSV/PDF pro fakturaci a LEDES-like formát",
+        "Face ID zámek, data jen v zařízení"
+      ],
+      "offline": "full",
+      "offline_note": "Lokální databáze, Speech on-device; iCloud volitelný.",
+      "monetization": "Předplatné 39,99 USD (≈ 920 Kč) ročně; zdarma 1 klient.",
+      "revenue_math": "Ideál: 600 stažení/měsíc („billable hours“, „lawyer time tracker“, „timesheet attorney“) × 6 % = 36 × 39,99 USD × 0,85 × 23 Kč ≈ 28 100 Kč netto měsíčně.",
+      "revenue_czk_ideal": 28000,
+      "keywords": [
+        {
+          "kw": "billable hours",
+          "saturation": 5,
+          "competitor": "několik trackerů (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "lawyer time tracker",
+          "saturation": 3,
+          "competitor": "málo (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "legal timekeeping",
+          "saturation": 2,
+          "competitor": "Clio a podobné (odhad)",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: Clio a MyCase mají miliardové ocenění, 6minutové účtování je standard v US/UK a běžné i v EU; existují starší appky typu „Time Master + Billing“. Saturace je odhad.",
+      "competitors": [
+        {
+          "name": "Clio",
+          "url": "",
+          "role": "parent",
+          "note": "Legal practice management, server, drahý."
+        },
+        {
+          "name": "Toggl Track",
+          "url": "",
+          "role": "parent",
+          "note": "Obecný tracker."
+        },
+        {
+          "name": "Time Master + Billing",
+          "url": "",
+          "role": "niche",
+          "note": "Starší time/billing appka s 6min zaokrouhlením."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Advokáti už mají practice management (Clio), kde je time tracking zahrnutý.",
+        "Objem vyhledávání v App Store je malý; B2B nákupy probíhají přes web.",
+        "Očekávají integraci s fakturací a účetnictvím – bez serveru jen export.",
+        "Kódy UTBMS a pravidla se liší po jurisdikcích; lokalizace je netriviální."
+      ],
+      "killer_risk": "Cílovka už platí za systém se zahrnutým time trackingem.",
+      "mitigation": "Cílit na solo praxe bez Clia a na tlumočníky/poradce; nabízet export přímo kompatibilní s Clio/fakturačními nástroji.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 7,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-10",
+      "name": "Homeschool Hours & Days Log",
+      "tagline": "Docházka, hodiny a portfolio domácí školy podle požadavků tvého státu – jedním klepnutím denně.",
+      "pitch": "Americké rodiny v domácím vzdělávání musí v mnoha státech dokládat počet dnů (např. 180) nebo hodin (Missouri 1 000 hodin, z toho 600 v základních předmětech) a vést portfolio. Existující homeschool plánovače jsou těžké, serverové a zaměřené na osnovy. My nabídneme jednoduchý log: dnešní den, předměty, minuty, fotky prací, průběžný stav vůči požadavku státu a PDF výkaz. Homeschool rodiny jsou ochotné platit.",
+      "niche": "Evidence docházky a hodin pro homeschool (compliance). Plánovače (Homeschool Panda, Homeschool Planet) řeší plánování lekcí, ne rychlé zaznamenání a výkaz pro stát.",
+      "parent_market": "Homeschool plánovače a vzdělávací software (Homeschool Planet, Homeschool Panda, Time4Learning) – předplatné rodin.",
+      "target_user": "Homeschool rodiny v USA (≈ 3+ mil. dětí), zejména ve státech s požadavkem na hodiny/dny; také UK/AU home ed.",
+      "features": [
+        "Denní záznam: předměty, minuty, místo (doma/mimo)",
+        "Požadavky státu jako šablony (dny, hodiny, core předměty)",
+        "Více dětí, rodinný přehled",
+        "Fotky prací do portfolia",
+        "PDF výkaz a přehled roku"
+      ],
+      "offline": "full",
+      "offline_note": "Lokální data, iCloud sdílení mezi rodiči; státní pravidla jako přibalená data.",
+      "monetization": "Předplatné 19,99 USD (≈ 460 Kč) ročně pro rodinu.",
+      "revenue_math": "Ideál: 1 000 stažení/měsíc („homeschool attendance“, „homeschool hours log“) × 6 % = 60 × 19,99 USD × 0,85 × 23 Kč ≈ 23 400 Kč netto měsíčně.",
+      "revenue_czk_ideal": 23000,
+      "keywords": [
+        {
+          "kw": "homeschool attendance",
+          "saturation": 3,
+          "competitor": "malé appky (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "homeschool hours",
+          "saturation": 3,
+          "competitor": "malé appky (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "homeschool planner",
+          "saturation": 6,
+          "competitor": "Homeschool Planet, Panda (odhad)",
+          "note": "Odhad; obsazený rodičovský výraz."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: domácí vzdělávání v USA silně rostlo po roce 2020, několik států vyžaduje evidenci hodin/dnů. Books evidence obsahuje „Reading Log: Parents & School“ s homeschool záznamy – náznak, že kategorie žije. Saturace odhad.",
+      "competitors": [
+        {
+          "name": "Homeschool Planet",
+          "url": "",
+          "role": "parent",
+          "note": "Webový plánovač s předplatným."
+        },
+        {
+          "name": "Homeschool Panda",
+          "url": "",
+          "role": "parent",
+          "note": "Plánovač a komunita, server."
+        },
+        {
+          "name": "Reading Log: Parents & School",
+          "url": "https://apps.apple.com/us/app/reading-log-parents-school/id6757205089",
+          "role": "niche",
+          "note": "Čtenářský log s homeschool záznamy (z books evidence)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Požadavky se liší stát od státu a mění se – chybná informace = právní riziko pro rodinu.",
+        "Homeschool rodiny mají zažitou komunitu a nástroje (tištěné plánovače, Google Sheets).",
+        "Trh je převážně US, lokalizace přinese málo.",
+        "Silní hráči mohou jednoduchý log přidat."
+      ],
+      "killer_risk": "Nepřesné státní požadavky a zavedené návyky rodin.",
+      "mitigation": "Požadavky jako editovatelné šablony s odkazem na HSLDA-like zdroje, důraz na jednoduchost „jedno klepnutí denně“.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-11",
+      "name": "Speech Timer: Green Yellow Red",
+      "tagline": "Časomíra pro řečníky: barvy zelená–oranžová–červená na iPadu a jemné poklepání na Apple Watch.",
+      "pitch": "Řečnické kluby, soutěže, obhajoby, konference a svatební proslovy potřebují časoměřiče se signály zelená/oranžová/červená. Existující aplikace jsou často staré, anglické a bez Apple Watch. My dáme řečníkovi haptické signály na zápěstí (nikdo nevidí, že kouká na hodinky), časoměřiči velký barevný displej na iPadu a zápis časů všech řečníků. Levné, rychlé na stavbu, lokalizovatelné.",
+      "niche": "Časomíra pro veřejné vystoupení s barevnými signály a haptikou. Obecné stopky neumí prahy a barvy, teleprompterové appky řeší text.",
+      "parent_market": "Nástroje pro prezentace a řečníky (PromptSmart, BIGVU Teleprompter, Speeko) – placené předplatné.",
+      "target_user": "Členové řečnických klubů, studenti před obhajobou, řečníci na konferencích, moderátoři debatních soutěží.",
+      "features": [
+        "Nastavitelné prahy zelená/oranžová/červená pro typ projevu",
+        "Apple Watch haptika v prazích (bez displeje)",
+        "Celoobrazovkový barevný režim pro časoměřiče na iPadu",
+        "Záznam časů řečníků a export zprávy",
+        "Dynamic Island / Live Activity"
+      ],
+      "offline": "full",
+      "offline_note": "Plně lokální, WatchConnectivity mezi iPhonem a hodinkami.",
+      "monetization": "Jednorázově 4,99 USD (≈ 115 Kč) za Pro (Watch, historie, export).",
+      "revenue_math": "Ideál: 3 000 stažení/měsíc („speech timer“, „speaker timer“, „presentation timer“) × 4 % konverze = 120 × 4,99 USD × 0,85 × 23 Kč ≈ 11 700 Kč netto měsíčně.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "speech timer",
+          "saturation": 5,
+          "competitor": "několik starších timer appek (odhad)",
+          "note": "Odhad; očekávám středně obsazené."
+        },
+        {
+          "kw": "presentation timer",
+          "saturation": 5,
+          "competitor": "několik appek (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "speaker timer watch",
+          "saturation": 2,
+          "competitor": "málo s Watch haptikou (odhad)",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: v App Store existuje řada jednoduchých „speech/Toastmasters timer“ aplikací, což dokazuje poptávku, ale také konkurenci. Saturace je odhad.",
+      "competitors": [
+        {
+          "name": "PromptSmart Pro",
+          "url": "",
+          "role": "parent",
+          "note": "Teleprompter s předplatným, ne časomíra."
+        },
+        {
+          "name": "Toastmasters timer apps (various)",
+          "url": "",
+          "role": "niche",
+          "note": "Několik jednoduchých timer appek, často staré, EN."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Nízká cena, nízká ochota platit – stopky jsou zdarma v každém telefonu.",
+        "Ochranná známka Toastmasters – nesmíme ji použít v názvu ani klíčových slovech (2.3.7/5.2).",
+        "Středně obsazený výraz, rozdíl v kvalitě je těžko vidět ze screenshotů.",
+        "Apple může přidat haptické intervaly do vestavěných Hodin."
+      ],
+      "killer_risk": "Komoditní utilita s nízkou cenou – nedosáhneme potřebného objemu.",
+      "mitigation": "Watch haptika jako hlavní odlišení, lokalizace do 50 jazyků (debatní soutěže, obhajoby), bez použití cizích značek.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-12",
+      "name": "Club Minutes: Motions & Votes",
+      "tagline": "Zápis ze schůze spolku, SVJ nebo výboru – návrhy, hlasování, úkoly a hotový zápis v PDF během schůze.",
+      "pitch": "Jednatelé spolků, výborů SVJ, rodičovských sdružení a církevních rad píšou zápisy ručně a pak je doma přepisují. AI přepisovače (Otter) dělají přepis, ne formální zápis s usnesením a výsledky hlasování. Nabídneme strukturovaný zápis podle schůze: prezence, usnášeníschopnost, body programu, návrh–kdo navrhl–kdo podpořil–výsledek hlasování, úkoly s termínem. Volitelně on-device diktát a shrnutí přes Apple Foundation Models. Po schůzi je PDF hotové.",
+      "niche": "Formální zápisy pro dobrovolnické organizace a výbory. Enterprise nástroje pro správní rady (BoardEffect, Diligent) jsou drahé a serverové; AI přepisovače neznají strukturu usnesení.",
+      "parent_market": "Poznámky ze schůzek a AI přepisovače (Otter, Notta, Fireflies) – velký předplatitelský trh; board portály pro firmy.",
+      "target_user": "Zapisovatelé a předsedové spolků, SVJ/HOA, školních rad, sportovních klubů, sborů a Toastmasters klubů.",
+      "features": [
+        "Šablona schůze: prezence, kvórum, program",
+        "Záznam návrhu, podpory a výsledku hlasování (pro/proti/zdržel se)",
+        "Úkoly z usnesení s odpovědnou osobou a termínem",
+        "Volitelný on-device diktát (Speech) a shrnutí (Foundation Models)",
+        "Export PDF/DOCX zápisu a seznam otevřených úkolů z minula"
+      ],
+      "offline": "full",
+      "offline_note": "Speech framework on-device, Apple Foundation Models on-device (iOS 26+), PDF generování lokálně.",
+      "monetization": "Předplatné 19,99 USD (≈ 460 Kč) ročně; zdarma 2 schůze.",
+      "revenue_math": "Ideál: 800 stažení/měsíc („meeting minutes“, „HOA minutes“, „board minutes“, „Protokoll Vereinssitzung“) × 6 % konverze = 48 × 19,99 USD × 0,85 × 23 Kč ≈ 18 800 Kč netto měsíčně.",
+      "revenue_czk_ideal": 18000,
+      "keywords": [
+        {
+          "kw": "meeting minutes",
+          "saturation": 6,
+          "competitor": "AI meeting note takery (odhad)",
+          "note": "Odhad; obecný výraz obsazený AI přepisovači – jen rodič."
+        },
+        {
+          "kw": "board meeting minutes",
+          "saturation": 2,
+          "competitor": "málo (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "hoa minutes",
+          "saturation": 1,
+          "competitor": "žádný dedikovaný (odhad)",
+          "note": "Odhad; úzké, US."
+        },
+        {
+          "kw": "robert's rules",
+          "saturation": 3,
+          "competitor": "referenční appky Robert's Rules (odhad)",
+          "note": "Odhad; referenční, ne nástroj na zápis."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: miliony dobrovolnických organizací mají povinnost vést zápisy; AI meeting nástroje prokazují ochotu platit za zápisy. Poptávka po formálním zápisu v aplikaci je předpoklad.",
+      "competitors": [
+        {
+          "name": "Otter: Transcribe Voice Notes",
+          "url": "",
+          "role": "parent",
+          "note": "AI přepis, server, bez struktury usnesení."
+        },
+        {
+          "name": "Robert's Rules of Order",
+          "url": "",
+          "role": "niche",
+          "note": "Referenční appka o proceduře, ne nástroj zápisu."
+        },
+        {
+          "name": "BoardEffect",
+          "url": "",
+          "role": "parent",
+          "note": "Enterprise board portál, server, drahý."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Dobrovolníci neplatí – spolky mají nulový rozpočet a zapisovatel se každý rok mění.",
+        "Word/Google Docs šablona je zdarma a „stačí“.",
+        "AI přepisovače přidají režim „formal minutes“ během týdne.",
+        "Formální pravidla se liší po zemích a typech organizací – jedna šablona nesedí všem."
+      ],
+      "killer_risk": "Nízká ochota platit u dobrovolníků a malý objem vyhledávání.",
+      "mitigation": "Prodávat jako úsporu času jednomu člověku, ne organizaci; nízká cena, lokalizované šablony (SVJ, Verein, association loi 1901).",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-13",
+      "name": "Brag Book: Work Wins Log",
+      "tagline": "Zapisuj si pracovní úspěchy průběžně – a před hodnocením nebo pohovorem máš hotový přehled za rok.",
+      "pitch": "Při ročním hodnocení si většina lidí nevzpomene, co dokázala v březnu. Kariérní kouči doporučují „brag document“, ale lidé ho vedou v Notes a zapomínají. Aplikace připomene každý pátek 30 sekund zápisu (co jsem dodal, koho jsem pochválil, jaké číslo se pohnulo) a před hodnocením z toho Apple Foundation Models na zařízení vytvoří shrnutí ve formátu STAR. Data o práci nikdy neodcházejí na server – to je pro zaměstnance zásadní.",
+      "niche": "Osobní log pracovních úspěchů. Deníky (Day One) jsou pro soukromí, HR systémy patří firmě; tahle mezera nemá silného hráče (odhad).",
+      "parent_market": "Deníky a kariérní nástroje (Day One, Notion, LinkedIn Premium) – ověřená ochota platit za kariéru a za deníky.",
+      "target_user": "Znalostní pracovníci, vývojáři, manažeři a konzultanti před hodnocením, povýšením nebo změnou práce.",
+      "features": [
+        "Týdenní připomínka a 30sekundový zápis (text/diktát)",
+        "Kategorie: dopad, čísla, pochvaly, dovednosti, projekty",
+        "On-device shrnutí za období ve STAR formátu (Foundation Models)",
+        "Export pro hodnocení, CV a LinkedIn",
+        "Widget a zkratka pro rychlý zápis"
+      ],
+      "offline": "full",
+      "offline_note": "Lokální databáze, Apple Foundation Models on-device (iOS 26+), bez serveru; iCloud jen volitelně.",
+      "monetization": "Předplatné 19,99 USD (≈ 460 Kč) ročně, zdarma zápisy bez AI shrnutí.",
+      "revenue_math": "Ideál: 1 200 stažení/měsíc („brag document“, „work journal“, „accomplishment tracker“) × 4 % konverze = 48 × 19,99 USD × 0,85 × 23 Kč ≈ 18 800 Kč netto měsíčně.",
+      "revenue_czk_ideal": 18000,
+      "keywords": [
+        {
+          "kw": "brag document",
+          "saturation": 1,
+          "competitor": "žádný silný (odhad)",
+          "note": "Odhad; pojem známý z tech komunity."
+        },
+        {
+          "kw": "work journal",
+          "saturation": 5,
+          "competitor": "deníkové appky (odhad)",
+          "note": "Odhad; obecnější, obsazenější."
+        },
+        {
+          "kw": "accomplishment tracker",
+          "saturation": 2,
+          "competitor": "malé indie appky (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "performance review notes",
+          "saturation": 2,
+          "competitor": "málo (odhad)",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: koncept „brag document“ je rozšířený díky článkům (Julia Evans) a kariérním koučům; vyhledávací objem v App Store je neznámý a pravděpodobně malý.",
+      "competitors": [
+        {
+          "name": "Day One Journal",
+          "url": "",
+          "role": "parent",
+          "note": "Silný deník s předplatným, ne pracovně strukturovaný."
+        },
+        {
+          "name": "Notion",
+          "url": "",
+          "role": "parent",
+          "note": "Šablony brag doc existují, ale bez připomínek a AI shrnutí offline."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Retence: lidé přestanou zapisovat po 3 týdnech a přijdou zpět jen před hodnocením.",
+        "Objem vyhledávání „brag document“ v App Store může být mizivý.",
+        "Microsoft Copilot/Workday přidají „shrnutí tvého roku“ z firemních dat automaticky.",
+        "Foundation Models jsou jen na novějších iPhonech – na starších bez hlavní funkce."
+      ],
+      "killer_risk": "Nízký vyhledávací objem a špatná retence – aplikace, kterou lidé zapomenou.",
+      "mitigation": "Silná páteční notifikace + widget; cílit i na „promotion“ a „job interview prep“ klíčová slova; fallback shrnutí bez AI.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 9,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-14",
+      "name": "Run of Show: Stage Timer",
+      "tagline": "Scénář akce a odpočet na pódiu – režie na iPhonu, řečník vidí čas na iPadu, bez internetu a bez účtů.",
+      "pitch": "Produkce konferencí, svateb, firemních akcí a bohoslužeb pracuje s „run of show“ – minutovým scénářem – a s časomírou pro řečníka. Profesionální řešení (Stagetimer, Rundown Studio) běží v prohlížeči přes internet, který v sálech často selže. Postavíme offline scénář s automatickým přepočtem časů při zpoždění a pódiovým odpočtem na druhém zařízení přes lokální síť (MultipeerConnectivity). Profesionálové platí vyšší ceny.",
+      "niche": "Offline režijní scénář a pódiová časomíra pro menší akce. Profesionální nástroje jsou webové, cloudové a drahé; freelance koordinátor potřebuje něco spolehlivého bez Wi-Fi.",
+      "parent_market": "Event management a prezentační nástroje (Stagetimer, Rundown Studio, Shoflo, ProPresenter) – B2B předplatné.",
+      "target_user": "Svatební koordinátoři, produkční menších konferencí, moderátoři, technici v kostelech a školách.",
+      "features": [
+        "Scénář s bloky, trváním, odpovědnou osobou a poznámkami",
+        "Automatický přepočet času při zpoždění/zrychlení",
+        "Pódiová obrazovka s odpočtem a zprávami řečníkovi (Multipeer, bez internetu)",
+        "Watch haptika pro moderátora",
+        "PDF/CSV export scénáře"
+      ],
+      "offline": "full",
+      "offline_note": "MultipeerConnectivity (Bluetooth/peer-to-peer Wi-Fi), žádný server; data lokálně.",
+      "monetization": "Předplatné 49,99 USD (≈ 1 150 Kč) ročně nebo 7,99 USD (≈ 184 Kč) za jednu akci (7 dní).",
+      "revenue_math": "Ideál: 500 stažení/měsíc („run of show“, „stage timer“, „event timeline“) × 6 % konverze = 30 × 49,99 USD × 0,85 × 23 Kč ≈ 29 300 Kč netto měsíčně.",
+      "revenue_czk_ideal": 29000,
+      "keywords": [
+        {
+          "kw": "run of show",
+          "saturation": 2,
+          "competitor": "málo nativních appek (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "stage timer",
+          "saturation": 3,
+          "competitor": "několik timer appek (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "event timeline",
+          "saturation": 4,
+          "competitor": "wedding planner appky (odhad)",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: Stagetimer.io a Rundown Studio mají platící zákazníky (B2B), takže trh existuje; objem vyhledávání v App Store je pravděpodobně malý.",
+      "competitors": [
+        {
+          "name": "Stagetimer",
+          "url": "",
+          "role": "parent",
+          "note": "Webový pódiový timer, internet nutný, předplatné."
+        },
+        {
+          "name": "Rundown Studio",
+          "url": "",
+          "role": "parent",
+          "note": "Webový run of show, týmový, server."
+        },
+        {
+          "name": "ProPresenter",
+          "url": "",
+          "role": "parent",
+          "note": "Profesionální software pro kostely a akce, má pódiový displej."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Malý objem vyhledávání v App Store – profesionálové hledají na webu.",
+        "Týmy chtějí spolupráci v reálném čase přes cloud, kterou nemáme.",
+        "MultipeerConnectivity je v přeplněném sále nespolehlivé; jedno selhání = ztráta profesionálního zákazníka.",
+        "Stagetimer může vydat nativní appku s offline režimem."
+      ],
+      "killer_risk": "Nízký objem vyhledávání v App Store u profesionální B2B niky.",
+      "mitigation": "Cílit na svatební koordinátory a kostely (větší objem), jednoakční nákup pro amatéry; kvalitní testy peer-to-peer spojení.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 7,
+        "build_ease": 5,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-15",
+      "name": "Handover Protocol: Move-Out",
+      "tagline": "Předávací protokol bytu podle místních zvyklostí – fotky, stavy měřidel, klíče a podpisy obou stran, offline.",
+      "pitch": "V angličtině je trh „move-in inspection“ přeplněný (8+ aplikací). Jenže Němci hledají „Wohnungsübergabeprotokoll“, Francouzi „état des lieux“, Češi „předávací protokol“ – a ty americké aplikace neznají místní strukturu (měřidla, počet klíčů, kauce, podpisy obou stran). Postavíme lokalizovaný protokol s místními šablonami: místnost po místnosti, fotky s časem, stavy energií, klíče, závady a podpis na displeji, výstup PDF. Pro nájemníka jednorázový nákup, pro malé pronajímatele roční předplatné.",
+      "niche": "Lokalizované předávací protokoly nájmu mimo anglicky mluvící země. Americké appky (RentCheck, Keyturn) jsou EN a postavené na US procesech; místní verze pod místním názvem skoro nikdo necílí (neověřeno).",
+      "parent_market": "Inspekce nemovitostí a nájmu (RentCheck, Keyturn, Tenant Inspect, SafetyCulture) – v EN obchodě ověřeně přeplněné, tedy prokázaná poptávka.",
+      "target_user": "Nájemníci a malí pronajímatelé (1–10 bytů) v DE, AT, CH, FR, BE, CZ, PL, ES, IT, NL.",
+      "features": [
+        "Místní šablony protokolu (DE Übergabeprotokoll, FR état des lieux, CZ předávací protokol…)",
+        "Místnosti, prvky, stav, fotky s časovým razítkem",
+        "Stavy měřidel (elektřina, plyn, voda) s fotkou",
+        "Předané klíče a čipy, podpisy obou stran prstem",
+        "PDF protokol k odeslání e-mailem"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně: formuláře, fotky, podpis (PencilKit), generování PDF. Sdílení přes systémové share sheet.",
+      "monetization": "Nájemník: 4,99 USD (≈ 115 Kč) jednorázově za protokol; pronajímatel: 19,99 USD (≈ 460 Kč) ročně neomezeně.",
+      "revenue_math": "Ideál: 2 000 stažení/měsíc (součet DE/FR/CZ/PL/ES lokálních výrazů) × 5 % konverze = 100 plateb × průměr ≈ 6,99 USD × 0,85 × 23 Kč ≈ 13 700 Kč netto měsíčně.",
+      "revenue_czk_ideal": 13000,
+      "keywords": [
+        {
+          "kw": "move in inspection",
+          "saturation": 8,
+          "competitor": "RentCheck, Keyturn, Tenant Inspect",
+          "note": "Evidence (web): SATURATED v EN (7–8 titulů) – jen rodičovský důkaz poptávky."
+        },
+        {
+          "kw": "übergabeprotokoll",
+          "saturation": 2,
+          "competitor": "neověřeno",
+          "note": "Odhad; evidence uvádí DE úhel jako neověřený. Nejdůležitější slovo – prověřit před stavbou."
+        },
+        {
+          "kw": "état des lieux",
+          "saturation": 3,
+          "competitor": "neověřeno",
+          "note": "Odhad; ve FR je état des lieux zákonná povinnost, očekávám několik místních appek."
+        },
+        {
+          "kw": "předávací protokol",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "Odhad; malý CZ trh, testovací trh pro nás."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): anglický trh move-in/rental inspection je přeplněný (8 dedikovaných aplikací, RentCheck jako lídr) – potřeba je reálná a placená. Neověřeno: saturace lokálních výrazů v DE/FR/CZ; evidence to výslovně uvádí jako jediný možný úhel.",
+      "competitors": [
+        {
+          "name": "RentCheck",
+          "url": "https://apps.apple.com/us/app/rentcheck/id1134017691",
+          "role": "parent",
+          "note": "Lídr v US, inspekce vedené nájemníkem, server a účty."
+        },
+        {
+          "name": "Keyturn - Rental inspection",
+          "url": "https://apps.apple.com/us/app/keyturn-rental-inspection/id6451185509",
+          "role": "us-only",
+          "note": "EN, US proces."
+        },
+        {
+          "name": "Tenant Inspect",
+          "url": "https://apps.apple.com/us/app/tenant-inspect-rental-report/id6450515110",
+          "role": "us-only",
+          "note": "Pohled nájemníka, fotky s časem, EN."
+        },
+        {
+          "name": "MoveSnap",
+          "url": "https://apps.apple.com/gb/app/movesnap/id6788945488",
+          "role": "niche",
+          "note": "UK, nový; ukazuje, že lokální verze vznikají."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Model je ověřený v US/UK (8+ aplikací), ale lokální verze pod místními právními názvy (Übergabeprotokoll, état des lieux, předávací protokol) nejsou ověřeně obsazené.",
+      "devils_advocate": [
+        "Ve FR a DE mohou existovat silné lokální appky i realitní portály (ImmoScout24) s vlastním protokolem zdarma – neověřeno.",
+        "Nájemník protokol potřebuje jednou za několik let – nulová retence, jen jednorázové platby.",
+        "Právní obsah šablon: pokud protokol neodpovídá místní praxi, pronajímatel ho odmítne; odpovědnost za „právní“ dokument.",
+        "Rodičovský EN trh je přeplněný, takže velcí hráči (RentCheck) mohou lokalizovat, jakmile uvidí trakci."
+      ],
+      "killer_risk": "Lokální trhy mají vlastní zavedené appky nebo portálové nástroje zdarma, které jsme bez dat nemohli ověřit.",
+      "mitigation": "Před stavbou ověřit 5 lokálních výrazů přes apple_fetch (DE, FR, ES, PL, CZ). Začít DE+CZ, šablony jako „doporučení“, ne právní vzor.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "productivity-16",
+      "name": "ShotList: Wedding Photographer",
+      "tagline": "Seznam povinných záběrů na svatbě s rozpisem skupinových fotek – odškrtávej za pochodu, nic nevynech.",
+      "pitch": "Svatební fotograf nesmí vynechat fotku s babičkou nebo prsteny – a skupinové fotky jsou logistický chaos. Aplikace připraví shot list z dotazníku páru, skupinové fotky s pořadím a jmény, časový harmonogram dne a během svatby se odškrtává (i na Apple Watch). Mezi fotografy je silná komunita a ochota platit za nástroje; CRM platformy (HoneyBook) řeší fakturace, ne den svatby.",
+      "niche": "Operativa svatebního dne pro fotografy a videografy. CRM systémy jsou serverové a zaměřené na obchod, obecné checklisty neumí skupinové fotky a harmonogram.",
+      "parent_market": "Nástroje pro fotografy (HoneyBook, Studio Ninja, Lightroom) a svatební plánovače.",
+      "target_user": "Svatební a eventoví fotografové a videografové, druzí fotografové.",
+      "features": [
+        "Šablony shot listu (obřad, přípravy, skupiny, detaily)",
+        "Skupinové fotky s pořadím, jmény a poznámkami",
+        "Harmonogram dne s časy a připomínkami",
+        "Odškrtávání na Watch",
+        "PDF pro pár a druhého fotografa"
+      ],
+      "offline": "full",
+      "offline_note": "Plně lokální; sdílení PDF. Svatby často bez signálu – offline je výhoda.",
+      "monetization": "Předplatné 14,99 USD (≈ 345 Kč) ročně nebo 29,99 USD (≈ 690 Kč) doživotně.",
+      "revenue_math": "Ideál: 1 000 stažení/měsíc („wedding shot list“, „photography shot list“) × 6 % = 60 × 14,99 USD × 0,85 × 23 Kč ≈ 17 600 Kč netto měsíčně.",
+      "revenue_czk_ideal": 17000,
+      "keywords": [
+        {
+          "kw": "shot list",
+          "saturation": 4,
+          "competitor": "Shot Lister (film) – odhad",
+          "note": "Odhad; výraz sdílí filmová produkce."
+        },
+        {
+          "kw": "wedding shot list",
+          "saturation": 2,
+          "competitor": "málo (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "photography checklist",
+          "saturation": 3,
+          "competitor": "malé appky (odhad)",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: shot listy jsou standard svatební fotografie a sdílí se jako PDF šablony na blozích; Shot Lister existuje pro film. Objem je předpoklad.",
+      "competitors": [
+        {
+          "name": "HoneyBook",
+          "url": "",
+          "role": "parent",
+          "note": "CRM pro kreativce, server."
+        },
+        {
+          "name": "Shot Lister",
+          "url": "",
+          "role": "niche",
+          "note": "Shot list pro filmovou produkci."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Fotografové používají PDF šablony a Notes zdarma.",
+        "Malý trh a sezónnost (květen–září).",
+        "CRM platformy mohou přidat shot list modul.",
+        "Každý fotograf má vlastní workflow – šablony nemusí sednout."
+      ],
+      "killer_risk": "Zvyk používat zdarma PDF šablony.",
+      "mitigation": "Hodnota v logistice skupinových fotek a Watch odškrtávání; lokalizace pro EU a LatAm fotografy.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-17",
+      "name": "Exam Hours: CPA & Bar Study Log",
+      "tagline": "Počítej hodiny přípravy na CPA, bar exam nebo CFA a sleduj, jestli stíháš plán do dne zkoušky.",
+      "pitch": "Uchazeči o CPA, CFA, bar exam nebo lékařské zkoušky (USMLE) mají doporučený počet studijních hodin (CFA ≈ 300 na level) a potřebují vědět, zda stíhají. Obecné focus appky (Forest) neznají strukturu zkoušky, prep kurzy (Becker) sledují jen svůj obsah. Aplikace: odpočet do zkoušky, cílové hodiny podle sekce, časovač, týdenní plán a varování při skluzu. Zkouškoví uchazeči jsou motivovaní a platí.",
+      "niche": "Tracker studijních hodin pro profesní zkoušky. Focus a study appky jsou obecné; prep kurzy neřeší osobní plán napříč zdroji.",
+      "parent_market": "Study timery a focus (Forest, Study Bunny, Flora) a přípravné kurzy (Becker, UWorld, Kaplan).",
+      "target_user": "Uchazeči o CPA, CFA, ACCA, bar exam, USMLE, Steuerberater.",
+      "features": [
+        "Šablony zkoušek (sekce, doporučené hodiny)",
+        "Časovač studia s Live Activity",
+        "Plán a týdenní cíle s varováním při skluzu",
+        "Odpočet do zkoušky a historie pokusů",
+        "Widgety a export"
+      ],
+      "offline": "full",
+      "offline_note": "Plně lokální, šablony zkoušek jako přibalená data.",
+      "monetization": "Jednorázově 9,99 USD (≈ 230 Kč).",
+      "revenue_math": "Ideál: 2 500 stažení/měsíc („cpa study tracker“, „cfa study hours“, „bar exam study“) × 3 % = 75 × 9,99 USD × 0,85 × 23 Kč ≈ 14 600 Kč netto měsíčně.",
+      "revenue_czk_ideal": 14000,
+      "keywords": [
+        {
+          "kw": "study hours tracker",
+          "saturation": 6,
+          "competitor": "focus/study appky (odhad)",
+          "note": "Odhad; obsazený obecný výraz."
+        },
+        {
+          "kw": "cfa study planner",
+          "saturation": 2,
+          "competitor": "málo (odhad)",
+          "note": "Odhad; pozor na ochrannou známku CFA."
+        },
+        {
+          "kw": "cpa study tracker",
+          "saturation": 2,
+          "competitor": "málo (odhad)",
+          "note": "Odhad; pozor na značku CPA v názvu."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: CFA Institute doporučuje ≈ 300 hodin na level a komunita (r/CFA) sdílí tabulky hodin; tracker je častý požadavek. Objem je předpoklad.",
+      "competitors": [
+        {
+          "name": "Forest",
+          "url": "",
+          "role": "parent",
+          "note": "Focus timer, obecný."
+        },
+        {
+          "name": "Study Bunny",
+          "url": "",
+          "role": "parent",
+          "note": "Study timer, obecný."
+        },
+        {
+          "name": "UWorld",
+          "url": "",
+          "role": "parent",
+          "note": "Přípravný kurz s vlastním trackingem."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Prep kurzy (Becker, Kaplan) mají vlastní plány a přidají tracking hodin.",
+        "Ochranné známky CFA/CPA v názvu = riziko odmítnutí (5.2).",
+        "Uchazeči jsou krátkodobí uživatelé (3–12 měsíců).",
+        "Obecné study timery pokrývají 80 % potřeby zdarma."
+      ],
+      "killer_risk": "Zabudovaný tracking v přípravných kurzech a obecné study timery zdarma.",
+      "mitigation": "Neutrální název bez značek, šablony pro desítky zkoušek (včetně neanglických), rychlá hodnota v plánu vs. skluzu.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-18",
+      "name": "Class Names: Learn Your Students",
+      "tagline": "Nauč se jména 150 nových studentů za týden – kartičky z fotky zasedacího pořádku, jen v tvém telefonu.",
+      "pitch": "Učitel na druhém stupni nebo středoškolský profesor má každý září 100–200 nových jmen a zapamatovat si je rychle je základ autority i vztahu. Existují jen webové nástroje a obecné kartičky (Anki), kde je příprava pracná. Aplikace: vyfotíš třídu nebo importuješ fotky ze školního systému, Vision najde obličeje, přiřadíš jména a aplikace tě zkouší podle zasedacího pořádku a v intervalech. Všechno lokálně – fotky dětí nikdy neopustí iPhone.",
+      "niche": "Učení jmen studentů. Třídní systémy (ClassDojo) řeší komunikaci a chování, flashcard appky nejsou na obličeje; nikdo se tomu úzce nevěnuje (odhad).",
+      "parent_market": "Flashcards a nástroje pro učitele (Anki, Quizlet, ClassDojo, iDoceo) – učitelé za nástroje z vlastní kapsy platí.",
+      "target_user": "Učitelé 2. stupně a SŠ, vysokoškolští vyučující, trenéři, vedoucí táborů, noví manažeři velkých týmů.",
+      "features": [
+        "Import fotek/třídní fotka a detekce obličejů (Vision)",
+        "Zasedací pořádek jako mřížka",
+        "Kvíz: obličej → jméno, jméno → místo, opakování v intervalech",
+        "Více tříd/skupin, poznámky k výslovnosti jména",
+        "Automatické smazání dat na konci školního roku"
+      ],
+      "offline": "full",
+      "offline_note": "Vision face detection on-device, lokální úložiště bez iCloudu (volitelně), žádná síť.",
+      "monetization": "Jednorázově 6,99 USD (≈ 161 Kč); zdarma jedna třída do 25 jmen.",
+      "revenue_math": "Ideál (průměr roku, špička srpen–září): 1 600 stažení/měsíc × 5 % = 80 × 6,99 USD × 0,85 × 23 Kč ≈ 10 900 Kč netto měsíčně.",
+      "revenue_czk_ideal": 11000,
+      "keywords": [
+        {
+          "kw": "learn student names",
+          "saturation": 1,
+          "competitor": "žádný dedikovaný (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "name memory",
+          "saturation": 3,
+          "competitor": "memory/name appky (odhad)",
+          "note": "Odhad; obecnější."
+        },
+        {
+          "kw": "remember names",
+          "saturation": 4,
+          "competitor": "obecné appky na jména (odhad)",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: učitelské fórum a blogy tip „jak se naučit jména“ opakují každý rok; existuje webový nástroj Name Shark. Objem vyhledávání je odhad a silně sezónní.",
+      "competitors": [
+        {
+          "name": "Anki",
+          "url": "",
+          "role": "parent",
+          "note": "Flashcards s opakováním, ruční příprava karet."
+        },
+        {
+          "name": "Name Shark",
+          "url": "",
+          "role": "niche",
+          "note": "Webový nástroj pro učení jmen z třídních fotek."
+        },
+        {
+          "name": "ClassDojo",
+          "url": "",
+          "role": "parent",
+          "note": "Třídní komunikace, ne učení jmen."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Soukromí dětí: školy a GDPR mohou zakazovat focení žáků do osobního telefonu učitele.",
+        "Silná sezónnost (srpen–září), zbytek roku skoro nulové prodeje.",
+        "Malý trh a malý objem vyhledávání „learn student names“.",
+        "Guideline 5.1.1 a biometrie: detekce obličejů dětí může vyvolat přísné review."
+      ],
+      "killer_risk": "Školní pravidla ochrany osobních údajů zakážou fotky žáků na osobním zařízení.",
+      "mitigation": "Režim bez fotek (jen jméno + místo v lavici + poznámka), výslovně bez rozpoznávání identity, jen detekce obličeje pro ořez; automatické mazání.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-19",
+      "name": "Redline: Compare Two Versions",
+      "tagline": "Vyfoť nebo načti dvě verze smlouvy a uvidíš každou změnu zvýrazněnou – offline, bez nahrávání na server.",
+      "pitch": "Nájemní smlouva, nabídka od klienta, smlouva s dodavatelem – druhá verze přijde „jen s drobnými úpravami“ a nikdo nemá čas je porovnávat větu po větě. Webové nástroje (Draftable) vyžadují nahrát důvěrný dokument na cizí server. Aplikace načte dvě PDF nebo fotky, přes Vision OCR získá text a deterministicky zvýrazní přidané, smazané a změněné pasáže. Hodí se pro freelancery, malé firmy i nájemníky.",
+      "niche": "Porovnání dvou verzí dokumentu na iPhonu offline. Desktop nástroje (Word Compare, Draftable) nejsou mobilní; PDF appky porovnání obvykle nemají.",
+      "parent_market": "PDF aplikace a legal tech (PDF Expert, Adobe Acrobat, Draftable, Litera Compare).",
+      "target_user": "Freelanceři, malí podnikatelé, nájemníci, advokátní koncipienti na cestách.",
+      "features": [
+        "Import PDF/DOCX/fotky dvou verzí",
+        "OCR on-device a zarovnání textu",
+        "Zvýraznění přidaného/smazaného/změněného",
+        "Souhrn změn a export PDF s redline",
+        "Vše offline, bez nahrávání"
+      ],
+      "offline": "full",
+      "offline_note": "Vision OCR, PDFKit, diff algoritmus lokálně.",
+      "monetization": "Předplatné 14,99 USD (≈ 345 Kč) ročně nebo 2,99 USD (≈ 69 Kč) jednorázově za porovnání.",
+      "revenue_math": "Ideál: 1 000 stažení/měsíc („compare documents“, „compare pdf“, „redline“) × 5 % = 50 × 14,99 USD × 0,85 × 23 Kč ≈ 14 700 Kč netto měsíčně.",
+      "revenue_czk_ideal": 14000,
+      "keywords": [
+        {
+          "kw": "compare pdf",
+          "saturation": 3,
+          "competitor": "málo mobilních (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "compare documents",
+          "saturation": 3,
+          "competitor": "málo (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "redline",
+          "saturation": 2,
+          "competitor": "málo (odhad)",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: Draftable a Litera mají placené zákazníky; na iOS je nabídka tenká. Objem mobilního vyhledávání je předpoklad.",
+      "competitors": [
+        {
+          "name": "PDF Expert",
+          "url": "",
+          "role": "parent",
+          "note": "Silná PDF appka, porovnání verzí není hlavní funkcí."
+        },
+        {
+          "name": "Draftable",
+          "url": "",
+          "role": "parent",
+          "note": "Webové/desktop porovnání, nahrává na server."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Porovnání se dělá hlavně na počítači – mobilní poptávka je malá.",
+        "OCR chyby vytvoří falešné „změny“ a zničí důvěru.",
+        "Adobe/PDF Expert mohou přidat funkci compare.",
+        "Právní použití: pokud appka změnu přehlédne, uživatel utrpí škodu – odpovědnost."
+      ],
+      "killer_risk": "Malá mobilní poptávka po porovnání dokumentů.",
+      "mitigation": "Nabídnout i iPad a Mac (Catalyst) verzi, přesnost na PDF s textovou vrstvou, OCR jen jako záloha s varováním.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-20",
+      "name": "JobTrack: Application Tracker",
+      "tagline": "Každá žádost o práci na jednom místě – stav, kontakty, pohovory a připomínka follow-upu, ve tvém jazyce.",
+      "pitch": "Hledání práce = desítky přihlášek a Excel. V USA na to vznikly Huntr a Teal (web, anglicky, předplatné), ve zbytku světa lidé nemají lokalizovaný nástroj. Aplikace nabídne kanban stavů, sdílení odkazu na inzerát z prohlížeče (Share Extension), připomínky follow-upu a přípravu na pohovor. Foundation Models na zařízení pomohou shrnout inzerát. Lokalizace do 50 jazyků je náš hlavní trumf.",
+      "niche": "Osobní tracker žádostí o práci mimo anglosaský trh. US nástroje jsou webové a EN, pracovní portály mají vlastní historii, ale jen pro své inzeráty.",
+      "parent_market": "Kariérní nástroje (LinkedIn Premium, Huntr, Teal, Indeed) – ověřená ochota platit při hledání práce.",
+      "target_user": "Uchazeči o práci, absolventi, lidé měnící obor – zejména v DE, FR, ES, IT, PL, BR, JP.",
+      "features": [
+        "Kanban stavů (uloženo, odesláno, pohovor, nabídka, zamítnuto)",
+        "Share Extension: uložení inzerátu z prohlížeče",
+        "Kontakty, poznámky z pohovorů, připomínky follow-upu",
+        "On-device shrnutí inzerátu a klíčových požadavků",
+        "Statistika a export CSV"
+      ],
+      "offline": "full",
+      "offline_note": "Lokální data, Foundation Models on-device, Share Extension bez serveru.",
+      "monetization": "Jednorázově 9,99 USD (≈ 230 Kč) nebo 3,99 USD (≈ 92 Kč) měsíčně po dobu hledání.",
+      "revenue_math": "Ideál: 5 000 stažení/měsíc (EN + lokální výrazy „Bewerbungen verwalten“, „suivi candidatures“) × 2 % = 100 × 9,99 USD × 0,85 × 23 Kč ≈ 19 500 Kč netto měsíčně.",
+      "revenue_czk_ideal": 19000,
+      "keywords": [
+        {
+          "kw": "job application tracker",
+          "saturation": 6,
+          "competitor": "Huntr, Teal a indie appky (odhad)",
+          "note": "Odhad; EN je obsazené."
+        },
+        {
+          "kw": "job tracker",
+          "saturation": 7,
+          "competitor": "mnoho appek (odhad)",
+          "note": "Odhad; přeplněný head term."
+        },
+        {
+          "kw": "bewerbung tracker",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "Odhad; DE lokální výraz."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: Huntr a Teal mají statisíce uživatelů, v EN App Store je řada malých trackerů. Lokální poptávka je předpoklad.",
+      "competitors": [
+        {
+          "name": "Huntr",
+          "url": "",
+          "role": "us-only",
+          "note": "Webový job tracker, EN."
+        },
+        {
+          "name": "Teal",
+          "url": "",
+          "role": "us-only",
+          "note": "Kariérní platforma, EN, předplatné."
+        },
+        {
+          "name": "LinkedIn",
+          "url": "",
+          "role": "parent",
+          "note": "Ukládá žádosti jen v rámci LinkedIn."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Model „job application tracker“ je ověřený v US (Huntr, Teal), ale lokalizovaná offline verze pro DE/FR/ES/PL/BR/JP pravděpodobně chybí (neověřeno).",
+      "devils_advocate": [
+        "EN výraz je přeplněný – bez lokálních trhů nemáme šanci.",
+        "Krátký životní cyklus: po nalezení práce uživatel appku smaže.",
+        "Pracovní portály (LinkedIn, Indeed) rozšiřují vlastní tracking.",
+        "Nízká konverze – nezaměstnaní šetří."
+      ],
+      "killer_risk": "Přeplněný EN trh a krátký životní cyklus uživatele.",
+      "mitigation": "Zaměřit ASO výhradně na lokální výrazy, jednorázová cena, rychlá hodnota během prvních 5 minut.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 3,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-21",
+      "name": "Decision Journal: Think Better",
+      "tagline": "Zapiš si důležité rozhodnutí, očekávání a jistotu – za půl roku uvidíš, jak dobře odhaduješ.",
+      "pitch": "Investoři, manažeři a zakladatelé firem používají „decision journal“ (doporučovaný Annie Duke a Farnam Street): zapíšeš rozhodnutí, alternativy, očekávaný výsledek a pravděpodobnost, a appka ti ho po čase připomene k vyhodnocení. Tím se oddělí štěstí od kvality rozhodnutí. V App Store je jen pár malých appek. Offline je důležité – rozhodnutí bývají důvěrná.",
+      "niche": "Strukturovaný deník rozhodnutí s kalibrací odhadů. Deníkové appky jsou volné, nemají připomínku k vyhodnocení ani kalibraci.",
+      "parent_market": "Deníky a nástroje osobního rozvoje (Day One, Notion, Stoic) – předplatné.",
+      "target_user": "Investoři, zakladatelé, manažeři, poker hráči, lidé zajímající se o racionalitu.",
+      "features": [
+        "Šablona rozhodnutí (kontext, alternativy, očekávání, pravděpodobnost, emoce)",
+        "Připomínka k vyhodnocení po zvoleném čase",
+        "Kalibrační graf (Brier skóre)",
+        "Štítky a vyhledávání",
+        "Face ID a export"
+      ],
+      "offline": "full",
+      "offline_note": "Plně lokální, iCloud volitelně.",
+      "monetization": "Předplatné 14,99 USD (≈ 345 Kč) ročně.",
+      "revenue_math": "Ideál: 1 500 stažení/měsíc („decision journal“, „decision making“) × 3 % = 45 × 14,99 USD × 0,85 × 23 Kč ≈ 13 200 Kč netto měsíčně.",
+      "revenue_czk_ideal": 13000,
+      "keywords": [
+        {
+          "kw": "decision journal",
+          "saturation": 2,
+          "competitor": "pár malých appek (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "decision making",
+          "saturation": 5,
+          "competitor": "rozhodovací kola a náhodné výběry (odhad)",
+          "note": "Odhad; výraz je obsazen jinými typy appek."
+        },
+        {
+          "kw": "prediction tracker",
+          "saturation": 2,
+          "competitor": "málo (odhad)",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: koncept je populární v investiční a rationalist komunitě (Farnam Street, Annie Duke „Thinking in Bets“); objem vyhledávání je pravděpodobně malý.",
+      "competitors": [
+        {
+          "name": "Day One Journal",
+          "url": "",
+          "role": "parent",
+          "note": "Obecný deník."
+        },
+        {
+          "name": "Notion",
+          "url": "",
+          "role": "parent",
+          "note": "Šablony decision journal, bez připomínek."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Velmi malá cílovka; většina lidí pojem nezná.",
+        "Retence: rozhodnutí se zapisují zřídka.",
+        "Šablona v Notion/Notes je zdarma.",
+        "Výraz „decision making“ vede na rozhodovací kola – nesprávné publikum."
+      ],
+      "killer_risk": "Příliš malý objem vyhledávání.",
+      "mitigation": "Stavět jen jako rychlý 2týdenní projekt; cílit i na „prediction“/„forecast“ komunitu.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-22",
+      "name": "Did I Lock It? Leave-Home Check",
+      "tagline": "Zamkla jsem? Vypnul jsem sporák? Vyfoť to při odchodu a v tramvaji máš jistotu.",
+      "pitch": "Milióny lidí se vracejí domů zkontrolovat zámek, sporák nebo žehličku – z nejistoty, ADHD „autopilota“ nebo úzkosti. Aplikace nabídne rychlý odchodový checklist: jedním klepnutím vyfotíš zámek/sporák, fotka dostane časové razítko a v tramvaji ji vidíš ve widgetu. Doplníme automatické spuštění podle polohy (opouštíš domov) a Watch komplikaci. Je to malá, jednoduchá appka s jasným „aha“ momentem.",
+      "niche": "Odchodová kontrola s fotodůkazem. Checklist a úkolovníky neřeší „důkaz“ a úzkostné opakované kontroly; existuje jen pár malých appek (odhad).",
+      "parent_market": "Checklisty a úkolovníky (Things, Todoist, Streaks) a ADHD/wellbeing aplikace (Tiimo, Structured).",
+      "target_user": "Lidé s ADHD, lidé s nutkavými kontrolami, zapomnětliví, rodiče.",
+      "features": [
+        "Odchodový checklist s fotkou a časovým razítkem",
+        "Widget/Lock Screen „poslední kontrola“",
+        "Spuštění při opuštění domova (geofence)",
+        "Apple Watch rychlé potvrzení",
+        "Automatické mazání starých fotek"
+      ],
+      "offline": "full",
+      "offline_note": "Lokální fotky a notifikace, Core Location geofence na zařízení.",
+      "monetization": "Jednorázově 6,99 USD (≈ 161 Kč); zdarma 1 položka.",
+      "revenue_math": "Ideál: 3 000 stažení/měsíc („did i lock the door“, „leave home checklist“, „stove check“) × 3 % = 90 × 6,99 USD × 0,85 × 23 Kč ≈ 12 300 Kč netto měsíčně.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "did i lock the door",
+          "saturation": 3,
+          "competitor": "několik malých appek (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "leaving home checklist",
+          "saturation": 3,
+          "competitor": "checklist appky (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "ocd checking",
+          "saturation": 2,
+          "competitor": "wellbeing appky (odhad)",
+          "note": "Odhad; opatrně – zdravotní konotace (1.4.1)."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: téma „did I lock the door“ je častý dotaz na fórech a sociálních sítích (ADHD komunita), v App Store existují malé appky. Objem je předpoklad.",
+      "competitors": [
+        {
+          "name": "Things 3",
+          "url": "",
+          "role": "parent",
+          "note": "Úkolovník, bez fotodůkazu."
+        },
+        {
+          "name": "Tiimo",
+          "url": "",
+          "role": "parent",
+          "note": "ADHD plánovač s předplatným."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Lidé to řeší fotkou ve vestavěném Fotoaparátu zdarma.",
+        "Terapeuti u OCD doporučují kontroly omezovat – aplikace může být kritizovaná jako posilování kompulzí; 1.4.1 riziko při zdravotních tvrzeních.",
+        "Nízká cena, malý trh.",
+        "Chytré zámky a spotřebiče (HomeKit) řeší problém lépe."
+      ],
+      "killer_risk": "Uživatelé to vyřeší vestavěným fotoaparátem – nízká ochota platit.",
+      "mitigation": "Hodnota v automatice (geofence, widget, mazání) a v pozitivním rámování (ADHD, zapomnětlivost) bez zdravotních tvrzení.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-23",
+      "name": "IEP Goal Data Collector",
+      "tagline": "Sběr dat k cílům IEP ve třídě – čárky, procenta, trvání a výzvy jedním palcem, graf pro poradu.",
+      "pitch": "Speciální pedagogové a asistenti v USA musí u každého žáka s IEP měřit pokrok k cílům (frekvence, procento správných pokusů, úroveň výzvy) a na poradách ukázat graf. Dnes to dělají na papíře a pak přepisují do Excelu. Serverové ABA systémy jsou drahé a pro kliniky. Aplikace: cíle žáka, rychlé zaznamenání během hodiny, automatické grafy a PDF pro IEP meeting – vše lokálně, bez jmen na serveru.",
+      "niche": "Sběr dat k IEP cílům pro učitele. ABA platformy (Catalyst) jsou klinické a serverové; školní IEP systémy řeší dokumenty, ne sběr dat ve třídě.",
+      "parent_market": "ABA a speciálněpedagogický software (Catalyst, CentralReach, Rethink) – drahé B2B předplatné.",
+      "target_user": "Učitelé speciální pedagogiky, asistenti, logopedi a ergoterapeuti ve školách (USA).",
+      "features": [
+        "Žáci a cíle (frekvence, % správně, trvání, úroveň výzvy)",
+        "Rychlý sběr během hodiny (velká tlačítka)",
+        "Automatické grafy s trendovou linií",
+        "PDF zpráva pro IEP meeting",
+        "Pseudonymizace žáků a Face ID"
+      ],
+      "offline": "full",
+      "offline_note": "Plně lokální, žádná data žáků mimo zařízení (FERPA ohled), iCloud volitelně vypnutý.",
+      "monetization": "Předplatné 24,99 USD (≈ 575 Kč) ročně.",
+      "revenue_math": "Ideál: 800 stažení/měsíc („iep data collection“, „iep goal tracker“) × 8 % = 64 × 24,99 USD × 0,85 × 23 Kč ≈ 31 200 Kč netto měsíčně.",
+      "revenue_czk_ideal": 30000,
+      "keywords": [
+        {
+          "kw": "iep data collection",
+          "saturation": 3,
+          "competitor": "několik malých appek (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "iep goal tracker",
+          "saturation": 3,
+          "competitor": "malé appky (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "special education data",
+          "saturation": 2,
+          "competitor": "málo (odhad)",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: IDEA vyžaduje sledování pokroku k IEP cílům u ≈ 7,5 mil. amerických žáků a učitelé si na sběr dat stěžují; kids evidence ukazuje, že IEP je v popisech appek zmiňované. Saturace odhad.",
+      "competitors": [
+        {
+          "name": "Catalyst (DataFinch)",
+          "url": "",
+          "role": "parent",
+          "note": "ABA sběr dat, klinický, server."
+        },
+        {
+          "name": "CentralReach",
+          "url": "",
+          "role": "parent",
+          "note": "Enterprise ABA platforma."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "FERPA a školní pravidla mohou zakázat data žáků v osobní appce učitele.",
+        "Škola může nakoupit enterprise systém a osobní appka ztratí smysl.",
+        "Učitelé často platí z vlastní kapsy, ale nízké částky.",
+        "Trh je hlavně US; mimo US systém IEP neexistuje ve stejné formě."
+      ],
+      "killer_risk": "Školní pravidla ochrany dat žáků.",
+      "mitigation": "Pseudonymizace (iniciály/kódy), žádná síť, jasné prohlášení o datech; cílit i na terapeuty v soukromé praxi.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-24",
+      "name": "Custody Calendar: Co-Parent Plan",
+      "tagline": "Střídavá péče přehledně: rozpis 2-2-3 nebo 5-2-2-5, prázdniny, výměny a sdílení s druhým rodičem přes iCloud.",
+      "pitch": "Rozvedení rodiče řeší, kdo má děti který víkend, o prázdninách a svátcích. Americké co-parenting appky (OurFamilyWizard, AppClose) jsou serverové, anglické a často soudně nařízené. V Evropě se střídavá péče rychle rozšiřuje (DE „Wechselmodell“, CZ „střídavá péče“), ale lokalizovaný jednoduchý nástroj chybí. Aplikace vygeneruje rozpis podle vzoru, přidá výjimky a prázdniny a sdílí kalendář přes iCloud – bez účtů a bez serveru.",
+      "niche": "Plánování střídavé péče mimo US soudní ekosystém. OFW/AppClose jsou komunikační platformy se serverem; evropský rodič potřebuje hlavně kalendář ve svém jazyce.",
+      "parent_market": "Co-parenting aplikace (OurFamilyWizard, AppClose, 2houses, TalkingParents) – předplatné desítky USD ročně.",
+      "target_user": "Rozvedení/odloučení rodiče se střídavou péčí v EU, LatAm a Asii.",
+      "features": [
+        "Vzory rozpisu (týden/týden, 2-2-3, 2-2-5-5, víkendy) a generování na rok",
+        "Prázdniny a svátky podle země, výjimky a výměny",
+        "Sdílení přes iCloud (CloudKit sharing) s druhým rodičem",
+        "Export do Kalendáře a PDF pro dohodu",
+        "Statistika poměru dní"
+      ],
+      "offline": "full",
+      "offline_note": "Lokální generování, CloudKit sharing (Apple), EventKit export; žádný náš server.",
+      "monetization": "Předplatné 29,99 USD (≈ 690 Kč) ročně, nebo 49,99 USD (≈ 1 150 Kč) doživotně.",
+      "revenue_math": "Ideál: 1 500 stažení/měsíc (EN „custody calendar“ + DE/FR/ES/CZ lokální výrazy) × 3 % = 45 × 29,99 USD × 0,85 × 23 Kč ≈ 26 400 Kč netto měsíčně.",
+      "revenue_czk_ideal": 26000,
+      "keywords": [
+        {
+          "kw": "custody calendar",
+          "saturation": 5,
+          "competitor": "několik custody appek (odhad)",
+          "note": "Odhad; EN je obsazenější."
+        },
+        {
+          "kw": "co parenting",
+          "saturation": 7,
+          "competitor": "OurFamilyWizard, AppClose (odhad)",
+          "note": "Odhad; rodičovský head term, přeplněný."
+        },
+        {
+          "kw": "wechselmodell",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "Odhad; DE lokální výraz."
+        },
+        {
+          "kw": "střídavá péče",
+          "saturation": 0,
+          "competitor": "neověřeno",
+          "note": "Odhad; malý CZ trh."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: OurFamilyWizard a AppClose mají statisíce uživatelů a OFW je soudy nařizován; střídavá péče v EU roste. Lokální poptávka je předpoklad.",
+      "competitors": [
+        {
+          "name": "OurFamilyWizard",
+          "url": "",
+          "role": "us-only",
+          "note": "US lídr, soudně nařizovaný, server, EN."
+        },
+        {
+          "name": "AppClose",
+          "url": "",
+          "role": "us-only",
+          "note": "Zdarma, server, EN."
+        },
+        {
+          "name": "2houses",
+          "url": "",
+          "role": "parent",
+          "note": "Evropský (BE) co-parenting nástroj, server, lokalizovaný."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "US model co-parentingu (OFW, AppClose) je anglický a serverový; lokalizovaný offline kalendář střídavé péče pro 50 jazyků chybí, i když 2houses pokrývá část EU.",
+      "devils_advocate": [
+        "Emočně vypjaté prostředí: spory rodičů se promítnou do recenzí a požadavků na podporu.",
+        "Soudy a advokáti vyžadují auditovatelnou komunikaci (OFW) – kalendář nestačí.",
+        "Druhý rodič musí mít iPhone pro sdílení přes iCloud – Android rodič = problém.",
+        "2houses už je lokalizovaný v EU a může dominovat lokálním výrazům."
+      ],
+      "killer_risk": "Nutnost sdílení s druhým rodičem, který může mít Android, a konkurence 2houses.",
+      "mitigation": "Export ICS a PDF, který funguje na jakémkoli zařízení; cílit na generátor rozpisu (unikátní) místo komunikace.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 8,
+        "safety": 4
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-25",
+      "name": "BoxLabel: Moving Inventory",
+      "tagline": "Každá stěhovací krabice s QR štítkem – naskenuj a víš, co v ní je a do které místnosti patří.",
+      "pitch": "Při stěhování nikdo neví, ve které z 60 krabic jsou nabíječky. Aplikace vytiskne QR štítky, ke krabici nafotíš obsah (Vision rozpozná objekty pro vyhledávání) a po stěhování naskenuješ krabici a víš vše. Funguje i pro sklep, garáž a sklad. Rodičovský trh inventářů (Sortly) je velký, ale stěhovací nika je jednoduchá a lokalizovatelná.",
+      "niche": "Inventář krabic při stěhování a skladování. Sortly je pro firmy (předplatné, server); jednoduché offline stěhovací appky jsou spíš malé a EN.",
+      "parent_market": "Inventární aplikace (Sortly, Encircle, Nest Egg) a stěhovací služby.",
+      "target_user": "Lidé před stěhováním, rodiny, studenti, lidé se sklepem/skladem.",
+      "features": [
+        "QR štítky k tisku (AirPrint, A4 archy)",
+        "Fotky obsahu a automatické štítky objektů (Vision)",
+        "Místnost a priorita rozbalení",
+        "Vyhledávání „kde je…“",
+        "Sdílení s partnerem přes iCloud"
+      ],
+      "offline": "full",
+      "offline_note": "Vision klasifikace, generování QR, AirPrint; vše lokálně.",
+      "monetization": "Jednorázově 6,99 USD (≈ 161 Kč), zdarma 10 krabic.",
+      "revenue_math": "Ideál: 3 000 stažení/měsíc („moving boxes“, „box inventory“, „moving label“) × 3 % = 90 × 6,99 USD × 0,85 × 23 Kč ≈ 12 300 Kč netto měsíčně.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "moving box inventory",
+          "saturation": 5,
+          "competitor": "několik QR box appek (odhad)",
+          "note": "Odhad; očekávám středně obsazené."
+        },
+        {
+          "kw": "box labels qr",
+          "saturation": 5,
+          "competitor": "několik appek (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "moving checklist",
+          "saturation": 6,
+          "competitor": "moving planner appky (odhad)",
+          "note": "Odhad; obsazený head term."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: v App Store existuje řada QR krabicových appek (střední konkurence) a Sortly dokazuje trh. Nika je spíš obsazená – nízké blue ocean skóre je úmyslné.",
+      "competitors": [
+        {
+          "name": "Sortly",
+          "url": "",
+          "role": "parent",
+          "note": "Inventář pro firmy, předplatné, server."
+        },
+        {
+          "name": "Nest Egg - Inventory",
+          "url": "",
+          "role": "parent",
+          "note": "Domácí inventář."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Konkurence malých QR box appek je pravděpodobně vysoká (odhad).",
+        "Stěhování je jednorázové – žádná retence.",
+        "Lidé to vyřeší fixou na krabici zdarma.",
+        "Snadno kopírovatelné – 4.3 riziko tváří v tvář desítkám podobných appek."
+      ],
+      "killer_risk": "Přeplněná a komoditní nika.",
+      "mitigation": "Lokalizace (výrazy „Umzugskartons“, „stěhovací krabice“) a Vision vyhledávání obsahu jako odlišení; jinak idea nízko v pořadí.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 3,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-26",
+      "name": "Cycle Timetable: A/B Day Schedule",
+      "tagline": "Rozvrh, který umí sudé/liché týdny, A/B dny i šestidenní cykly – a vždycky ví, co je dnes.",
+      "pitch": "Mnoho škol ve Velké Británii, Kanadě, Austrálii, Hongkongu i v Česku (sudý/lichý týden) má rozvrhy, které se neopakují po týdnech, ale v cyklech. Obecné rozvrhové appky to umí špatně nebo vůbec. Aplikace zvládne libovolný cyklus s výjimkami (svátky posunou den cyklu), widget „teď/příště“ a Live Activity během vyučování. Levná utilita s masovým publikem studentů.",
+      "niche": "Rozvrh s rotačními cykly. Obecné timetable appky předpokládají týdenní opakování; cyklické rozvrhy jsou okrajový případ, kterému se nikdo nevěnuje pořádně (odhad).",
+      "parent_market": "Studentské plánovače a rozvrhy (My Study Life, Class Timetable, iStudiez).",
+      "target_user": "Studenti a učitelé škol s rotačním rozvrhem.",
+      "features": [
+        "Cykly N dní / A-B týdny s posunem přes svátky",
+        "Widget a Live Activity „teď/příště“",
+        "Místnost, učitel, barva předmětu",
+        "Import z CSV/foto rozvrhu (OCR)",
+        "Sdílení rozvrhu se spolužákem (soubor)"
+      ],
+      "offline": "full",
+      "offline_note": "Plně lokální.",
+      "monetization": "Jednorázově 4,99 USD (≈ 115 Kč) za widgety a neomezené cykly.",
+      "revenue_math": "Ideál (průměr, špička září): 8 000 stažení/měsíc × 1,5 % = 120 × 4,99 USD × 0,85 × 23 Kč ≈ 11 700 Kč netto měsíčně.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "school timetable",
+          "saturation": 7,
+          "competitor": "mnoho appek (odhad)",
+          "note": "Odhad; přeplněné."
+        },
+        {
+          "kw": "rotating schedule",
+          "saturation": 3,
+          "competitor": "málo (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "day 1 day 2 schedule",
+          "saturation": 2,
+          "competitor": "málo (odhad)",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: rotační rozvrhy jsou běžné (UK two-week timetable, kanadské Day 1–4, US A/B block scheduling); obecné appky mají v recenzích stížnosti. Objem niky je odhad.",
+      "competitors": [
+        {
+          "name": "My Study Life",
+          "url": "",
+          "role": "parent",
+          "note": "Studentský plánovač s rotacemi, server a účty."
+        },
+        {
+          "name": "Class Timetable",
+          "url": "",
+          "role": "parent",
+          "note": "Oblíbený rozvrh, A/B týdny."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "My Study Life rotace umí zdarma – odlišení je slabé.",
+        "Studenti neplatí; nízká konverze.",
+        "Školní systémy (Bakaláři, Edookit, SchoolBase) mají rozvrh v appce zdarma.",
+        "Silná sezónnost (září)."
+      ],
+      "killer_risk": "Existující zdarma alternativy s rotacemi a školní systémy.",
+      "mitigation": "Nejlepší widgety/Live Activity na trhu a bezchybná logika cyklů; nízká cena.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 3,
+        "monetization": 3,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-27",
+      "name": "Turnover Checklist for Cleaners",
+      "tagline": "Úklid krátkodobého pronájmu podle checklistu hostitele – fotky jako důkaz, hlášení poškození a doplnění zásob.",
+      "pitch": "Uklízečky krátkodobých pronájmů (Airbnb, Booking) musí mezi hosty projít desítky bodů a hostitel chce fotky jako důkaz. Turno a Breezeway jsou platformy pro hostitele se serverem a předplatným; samostatná uklízečka nebo malý hostitel s 1–3 byty potřebuje jednoduchý checklist po místnostech s fotkami a PDF reportem. Offline je výhoda – v bytě často není Wi-Fi heslo.",
+      "niche": "Checklist úklidu mezi hosty pro malé hostitele a nezávislé uklízečky. Platformy cílí na profesionální správce s mnoha jednotkami.",
+      "parent_market": "Správa krátkodobých pronájmů (Turno, Breezeway, Properly, Hospitable) – B2B předplatné.",
+      "target_user": "Nezávislé uklízečky, malí hostitelé (1–5 jednotek), co-hosti.",
+      "features": [
+        "Šablony checklistů po místnostech a jednotkách",
+        "Povinné fotky „hotovo“ s časovým razítkem",
+        "Hlášení poškození a chybějících zásob",
+        "PDF report pro hostitele",
+        "Seznam zásob k doplnění"
+      ],
+      "offline": "full",
+      "offline_note": "Plně lokální, fotky a PDF na zařízení, sdílení share sheetem.",
+      "monetization": "Předplatné 19,99 USD (≈ 460 Kč) ročně; zdarma 1 jednotka.",
+      "revenue_math": "Ideál: 1 000 stažení/měsíc („airbnb cleaning checklist“, „turnover checklist“) × 6 % = 60 × 19,99 USD × 0,85 × 23 Kč ≈ 23 400 Kč netto měsíčně.",
+      "revenue_czk_ideal": 23000,
+      "keywords": [
+        {
+          "kw": "airbnb cleaning checklist",
+          "saturation": 4,
+          "competitor": "několik appek (odhad)",
+          "note": "Odhad; pozor na značku Airbnb v názvu/klíčových slovech (2.3.7/5.2)."
+        },
+        {
+          "kw": "turnover checklist",
+          "saturation": 3,
+          "competitor": "málo (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "vacation rental cleaning",
+          "saturation": 4,
+          "competitor": "Turno a další (odhad)",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: Turno (dříve TurnoverBnB) má velkou uživatelskou základnu, což dokazuje trh; business evidence zmiňuje tento úhel jako netestovaný. Saturace odhad.",
+      "competitors": [
+        {
+          "name": "Turno",
+          "url": "",
+          "role": "parent",
+          "note": "Marketplace uklízeček + checklisty, server."
+        },
+        {
+          "name": "Breezeway",
+          "url": "",
+          "role": "parent",
+          "note": "Operativa pro správce, B2B."
+        },
+        {
+          "name": "Properly",
+          "url": "",
+          "role": "parent",
+          "note": "Checklisty s fotkami pro hostitele, server."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Hostitel a uklízečka potřebují sdílení v reálném čase – bez serveru jen přes soubory.",
+        "Turno je zdarma pro hostitele a pokrývá checklisty.",
+        "Značka Airbnb nesmí být v názvu ani v klíčových slovech bez rizika.",
+        "Regulace krátkodobých pronájmů (NYC, Barcelona) zmenšuje trh."
+      ],
+      "killer_risk": "Chybějící real-time sdílení mezi hostitelem a uklízečkou.",
+      "mitigation": "CloudKit sharing mezi hostitelem a uklízečkou (Apple infra), PDF report přes WhatsApp; cílit na uklízečky jako na plátce.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 8,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "productivity-28",
+      "name": "Defect List: Home Handover",
+      "tagline": "Seznam vad při přejímce novostavby nebo rekonstrukce – fotka, místo na plánu, termín opravy, PDF pro stavbyvedoucího.",
+      "pitch": "Anglický „punch list“ je přeplněný (8+ nových indie aplikací), ale ty cílí na stavební firmy v USA. Soukromý stavebník v Německu hledá „Mängelliste Bauabnahme“, v Česku „přejímka bytu vady“, ve Francii „réserves livraison“ – a dostane nic nebo firemní software. Postavíme aplikaci pro kupující novostaveb a investory rekonstrukcí: vada s fotkou, značka na půdorysu, termín a stav opravy, PDF k předání developerovi. Lokalizace do jazyků, kde je přejímka novostavby běžná.",
+      "niche": "Přejímka novostavby nebo rekonstrukce ze strany kupujícího. Punch list appky jsou pro dodavatele a v angličtině; kupující v EU nemá lokalizovaný nástroj (neověřeno).",
+      "parent_market": "Stavební punch list a inspekce (Fieldwire, PlanRadar, Procore) + v evidenci 7–8 nových indie punch list aplikací v EN.",
+      "target_user": "Kupující novostaveb bytů a domů v DE, AT, CZ, PL, FR, NL; majitelé při rekonstrukci; malí investoři.",
+      "features": [
+        "Vada: fotka, popis, místnost, závažnost",
+        "Značka na fotce půdorysu (import PDF/obrázku)",
+        "Termín a stav opravy, opakovaná kontrola",
+        "PDF protokol vad k podpisu",
+        "Místní šablony častých vad (okna, obklady, omítky)"
+      ],
+      "offline": "full",
+      "offline_note": "Plně lokální, PDFKit, PencilKit; sdílení přes share sheet.",
+      "monetization": "Jednorázově 9,99 USD (≈ 230 Kč) za projekt; pro investory 29,99 USD (≈ 690 Kč) ročně.",
+      "revenue_math": "Ideál: 1 200 stažení/měsíc (DE/CZ/PL/FR výrazy) × 5 % = 60 × 9,99 USD × 0,85 × 23 Kč ≈ 11 700 Kč netto měsíčně.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "punch list",
+          "saturation": 8,
+          "competitor": "Punchly, PunchPad, BuildReport Pro",
+          "note": "Evidence (web): SATURATED v EN (8+ titulů) – jen rodičovský důkaz."
+        },
+        {
+          "kw": "mängelliste",
+          "saturation": 2,
+          "competitor": "PlanRadar (B2B) – odhad",
+          "note": "Odhad; neověřeno."
+        },
+        {
+          "kw": "bauabnahme",
+          "saturation": 2,
+          "competitor": "neověřeno",
+          "note": "Odhad; DE soukromí stavebníci."
+        },
+        {
+          "kw": "snagging list",
+          "saturation": 3,
+          "competitor": "UK snagging appky (odhad)",
+          "note": "Odhad; UK „snagging“ je běžný výraz kupujících novostaveb."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): EN punch list trh je přeplněný (8+ aplikací, většina nové 2025–26) – poptávka a snadnost vstupu ověřeny, ale i konkurence. Neověřeno: lokální výrazy v DE/CZ/PL/FR.",
+      "competitors": [
+        {
+          "name": "Punchly - Punch List App",
+          "url": "https://apps.apple.com/us/app/punchly-punch-list-app/id6746079705",
+          "role": "niche",
+          "note": "EN, pro dodavatele."
+        },
+        {
+          "name": "Site Report Pro- Punchlist App",
+          "url": "https://apps.apple.com/us/app/site-report-pro-punchlist-app/id1246734455",
+          "role": "niche",
+          "note": "Starší, pro profesionály."
+        },
+        {
+          "name": "PunchList-Construction Manager",
+          "url": "https://apps.apple.com/us/app/punchlist-construction-manager/id6503963996",
+          "role": "us-only",
+          "note": "EN, US stavební proces."
+        },
+        {
+          "name": "PlanRadar",
+          "url": "",
+          "role": "parent",
+          "note": "Evropský B2B lídr, server, drahý pro soukromé osoby."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "EN punch list je přeplněný, ale lokalizovaná verze pro soukromé kupující novostaveb (Mängelliste, snagging, přejímka) pod místními výrazy pravděpodobně chybí – neověřeno.",
+      "devils_advocate": [
+        "Kupující novostavby použije appku jednou v životě – žádná retence.",
+        "Developeři a inspektoři (placení „stavební dozor“) dodávají vlastní protokoly.",
+        "PlanRadar a indie punch list appky mohou lokalizovat rychle.",
+        "Blízkost k handover protokolu nájmu – riziko 4.3, pokud budou appky podobné."
+      ],
+      "killer_risk": "Jednorázové použití a malý objem lokálních vyhledávání.",
+      "mitigation": "Odlišit od nájemního protokolu (půdorys, vady, termíny), cílit i na UK „snagging“, kde je poptávka velká a konkurence odhadem menší.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "productivity-29",
+      "name": "FormBatch: Paper Log to CSV",
+      "tagline": "Nafoť 30 stejných papírových formulářů a dostaneš jednu tabulku – pole po poli, offline.",
+      "pitch": "Obecné „scan to Excel“ je v evidenci přeplněné (6+ aplikací), ale všechny převádějí jednu tabulku z jedné fotky. Terénní výzkumníci, dobrovolnické organizace, sklady a laboratoře ale mají stohy stejných papírových formulářů (docházka, měření, sčítání). Aplikace si jednou nadefinuje šablonu (kde je které pole) a pak dávkově převádí desítky listů do jednoho CSV s kontrolou nejistých hodnot. To nikdo z konkurentů nedělá (předpoklad).",
+      "niche": "Dávkové zpracování opakovaného papírového formuláře podle šablony. Konkurence řeší jednorázový převod tabulky, ne šablonové formuláře.",
+      "parent_market": "Skenery a OCR (CamScanner, Adobe Scan) a „image to Excel“ aplikace – přeplněné, tedy ověřená poptávka.",
+      "target_user": "Terénní výzkumníci, laboratoře, malé sklady, neziskovky, učitelé s papírovými testy.",
+      "features": [
+        "Definice šablony: označení polí na vzorovém listu",
+        "Dávkový sken desítek listů (VisionKit)",
+        "OCR tisku i ručně psaných číslic, kontrola nejistých hodnot",
+        "Export jednoho CSV/XLSX",
+        "Uložené šablony pro opakované použití"
+      ],
+      "offline": "full",
+      "offline_note": "VisionKit, Vision OCR on-device, zápis XLSX lokálně.",
+      "monetization": "Předplatné 19,99 USD (≈ 460 Kč) ročně; zdarma 5 listů.",
+      "revenue_math": "Ideál: 1 000 stažení/měsíc („form to excel“, „batch scan to spreadsheet“) × 4 % = 40 × 19,99 USD × 0,85 × 23 Kč ≈ 15 600 Kč netto měsíčně.",
+      "revenue_czk_ideal": 15000,
+      "keywords": [
+        {
+          "kw": "scan to excel",
+          "saturation": 6,
+          "competitor": "Scan to Excel, QuickScan, Image to Table Scanner",
+          "note": "Evidence (web): CROWDED (6+ titulů, několik on-device) – jen rodičovský důkaz."
+        },
+        {
+          "kw": "image to excel",
+          "saturation": 6,
+          "competitor": "Image to Excel Converter－XLSX",
+          "note": "Evidence (web): CROWDED."
+        },
+        {
+          "kw": "form to spreadsheet",
+          "saturation": 2,
+          "competitor": "neověřeno (odhad)",
+          "note": "Odhad; nika šablonových formulářů."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): „scan to Excel / image to Excel“ má 6+ dedikovaných aplikací, takže poptávka je reálná, ale nika je přeplněná. Neověřeno: zda někdo dělá dávkové šablonové formuláře; to je náš jediný úhel.",
+      "competitors": [
+        {
+          "name": "Scan to Excel",
+          "url": "https://apps.apple.com/us/app/scan-to-excel/id1605484591",
+          "role": "niche",
+          "note": "Přímý konkurent pro jednorázové tabulky."
+        },
+        {
+          "name": "QuickScan: Image to Excel OCR",
+          "url": "https://apps.apple.com/us/app/quickscan-image-to-excel-ocr/id6757146630",
+          "role": "niche",
+          "note": "On-device, přímý rival."
+        },
+        {
+          "name": "Image to Table Scanner",
+          "url": "https://apps.apple.com/us/app/image-to-table-scanner/id6759829974",
+          "role": "niche",
+          "note": "Nový konkurent."
+        },
+        {
+          "name": "CamScanner - PDF Scanner App",
+          "url": "https://apps.apple.com/om/app/camscanner-pdf-scanner-app/id388627783",
+          "role": "parent",
+          "note": "Lídr skenerů."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Přeplněný rodičovský výraz – naši šablonovou výhodu uživatel ve výsledcích hledání nepozná.",
+        "Ručně psané číslice mají vysokou chybovost; kontrola nejistých hodnot může zabrat víc času než přepis.",
+        "Konkurenti mohou přidat dávkový režim během týdne.",
+        "Profesionálové (výzkum) mají institucionální nástroje (ODK, KoboToolbox) a formuláře rovnou digitalizují."
+      ],
+      "killer_risk": "Přeplněný trh zakryje naši nikovou výhodu.",
+      "mitigation": "ASO na „batch“ a „form“ výrazy, silné screenshoty dávkového převodu; lokalizovat.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 2,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "productivity-30",
+      "name": "Bench Notes: Lab Notebook",
+      "tagline": "Laboratorní deník v iPadu: protokoly, fotky gelů, výpočty ředění a časovače u pracovního stolu.",
+      "pitch": "Studenti biologie a chemie a malé laboratoře píší do papírového deníku a fotky gelů mají v telefonu zvlášť. Enterprise ELN (Benchling, LabArchives) jsou serverové a pro instituce. Aplikace nabídne záznam experimentu podle šablony, fotky s popisem, kalkulačky (ředění, molarita), vícenásobné časovače a PDF export s datem. Úzký, ale platící segment.",
+      "niche": "Osobní elektronický laboratorní deník pro studenty a malé laby. ELN jsou institucionální a drahé; poznámkové appky neznají lab workflow.",
+      "parent_market": "Elektronické laboratorní deníky (Benchling, LabArchives, SciNote) a poznámky (Notability, GoodNotes).",
+      "target_user": "Studenti PhD a magisterského studia, technici v malých labech, hobby chemici a kvasíři.",
+      "features": [
+        "Šablony experimentu (cíl, materiál, postup, výsledky)",
+        "Fotky s anotací (gely, destičky)",
+        "Kalkulačky ředění a molarity",
+        "Vícenásobné pojmenované časovače",
+        "PDF export s datem a podpisem"
+      ],
+      "offline": "full",
+      "offline_note": "Plně lokální; iCloud volitelný.",
+      "monetization": "Předplatné 14,99 USD (≈ 345 Kč) ročně.",
+      "revenue_math": "Ideál: 1 000 stažení/měsíc („lab notebook“, „lab timer“, „molarity calculator“) × 4 % = 40 × 14,99 USD × 0,85 × 23 Kč ≈ 11 700 Kč netto měsíčně.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "lab notebook",
+          "saturation": 3,
+          "competitor": "LabArchives a malé appky (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "lab timer",
+          "saturation": 4,
+          "competitor": "několik timer appek (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "molarity calculator",
+          "saturation": 5,
+          "competitor": "kalkulačky (odhad)",
+          "note": "Odhad; obsazeno kalkulačkami, jen vstupní kanál."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Z vlastní znalosti: ELN trh je reálný (Benchling), ale instituce většinou předepisují vlastní systém. Osobní poptávka je předpoklad.",
+      "competitors": [
+        {
+          "name": "LabArchives",
+          "url": "",
+          "role": "parent",
+          "note": "Institucionální ELN, server."
+        },
+        {
+          "name": "Benchling",
+          "url": "",
+          "role": "parent",
+          "note": "Enterprise ELN pro biotech."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Instituce předepisují ELN kvůli compliance a IP – osobní deník nemusí být přípustný.",
+        "Malý objem vyhledávání, studenti neplatí.",
+        "Laboratoř = rukavice a kontaminace, telefon se u stolu nepoužívá.",
+        "GoodNotes/Notability s šablonou pokryjí většinu potřeby."
+      ],
+      "killer_risk": "Institucionální pravidla a malá ochota studentů platit.",
+      "mitigation": "Cílit na hobby segmenty (homebrew, mýdlaři, hobby chemie) a iPad s hlasovým zápisem; nízká cena.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 5,
+        "monetization": 3,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    }
+  ]
+}

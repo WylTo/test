@@ -1,0 +1,2629 @@
+{
+  "category": "Utilities",
+  "category_slug": "utilities",
+  "search_notes": "Offline běh: žádná volání Apple API ani WebSearch. Utilities evidence obsahuje jen 4 web searche: timegrapher (KEEP, ~4 aplikace), controller stick-drift tester (DROP, 7+), video compressor pro Discord (DROP, 8+) a calendar spam cleaner (WEAK). URL konkurentů jsou pouze z _partial evidence (utilities, productivity — whiteboard scanner, reference — laundry symbols a car warning lights, lifestyle — watch collection). 27 z 30 nápadů je 'knowledge' — saturace klíčovek je můj odhad a blue_ocean je u nich ≤ 7; před stavbou je nutné ověřit každou klíčovku přes apple_fetch.py check. Záměrně vynechány nasycené niky: ring sizer, PD meter, stud/metal/EMF detektory, Wake-on-LAN, HVAC superheat, conduit bending, hidden camera detector, Bluetooth finder, film light meter.",
+  "ideas": [
+    {
+      "id": "utilities-01",
+      "name": "TickTrue: Watch Timegrapher",
+      "tagline": "Timegrapher v kapse: přesnost, amplituda a beat error mechanických hodinek jen přes mikrofon iPhonu — v 50 jazycích.",
+      "pitch": "Majitelé mechanických hodinek chtějí vědět, kolik jejich stroj za den předbíhá nebo zpožďuje, a skutečný timegrapher stojí 3–10 tisíc Kč. Aplikace poslouchá tikání přes mikrofon (ideálně s levným kontaktním mikrofonem) a ukáže odchylku s/den, beat error a odhad amplitudy, plus měření v šesti polohách. Evidence ukazuje jen ~4 malé aplikace a jejich recenze si stěžují na nestabilní měření — tedy trh, kde vyhrává kvalita DSP, ne marketing. Watch komunita je globální a platí za hobby tisíce eur, přitom stávající nástroje jsou anglické; lokalizace do 50 jazyků (DE, JP, IT, CZ mají silné hodinářské komunity) je náš klín.",
+      "niche": "Hodinářští nadšenci a amatérští hodináři, kteří chtějí levně diagnostikovat stroj; velcí hráči (sběratelské aplikace) řeší kolekce a cost-per-wear, ne akustické měření, protože DSP je těžké a trh malý.",
+      "parent_market": "Watch collection / watch enthusiast aplikace (lifestyle evidence: 9 aplikací na collection tracker = nasycený, prokázaný trh) a hardwarové timegraphery (Weishi 1000 apod.) za stovky USD.",
+      "target_user": "Sběratelé mechanických hodinek, hodinářští amatéři, prodejci vintage hodinek na Chrono24/eBay, kteří potřebují doložit stav stroje.",
+      "features": [
+        "Měření odchylky s/den, beat error a amplitudy z mikrofonu (on-device FFT/autokorelace)",
+        "Automatická detekce BPH (18 000–36 000) a ruční lift angle",
+        "Protokol 6 poloh (DU, DD, 3H, 6H, 9H, 12H) s exportem PDF pro prodej hodinek",
+        "Historie měření per hodinky + připomínka servisu",
+        "Režim pro kontaktní mikrofon (Lightning/USB-C) s filtrem šumu"
+      ],
+      "offline": "full",
+      "offline_note": "Veškerá analýza zvuku běží lokálně (AVAudioEngine + Accelerate/vDSP). Historie v zařízení, volitelně iCloud sync. Žádná síť.",
+      "monetization": "Freemium: zdarma odchylka s/den, Pro lifetime $7.99 (≈ 185 Kč) za amplitudu, beat error, 6 poloh a PDF protokol.",
+      "revenue_math": "Ideál: ~3 000 stažení/měs celosvětově (klíčovky timegrapher, watch accuracy, uhrwerk messen apod. v 50 lokalizacích) × 5 % konverze = 150 × $7.99 = $1 199 gross → po 15 % Apple $1 019 ≈ 23 400 Kč netto/měs.",
+      "revenue_czk_ideal": 23400,
+      "keywords": [
+        {
+          "kw": "timegrapher",
+          "saturation": 4,
+          "competitor": "Timegrapher - Watch Accuracy",
+          "note": "web evidence: ~4 dedikované aplikace, recenze kritizují nestabilní čtení; demand = existence 4 aplikací + prodej HW timegrapherů"
+        },
+        {
+          "kw": "watch accuracy",
+          "saturation": 4,
+          "competitor": "Chronolog Watch Accuracy",
+          "note": "web evidence: stejné 4 aplikace; fráze v názvech 2 z nich"
+        },
+        {
+          "kw": "watch beat error",
+          "saturation": 1,
+          "competitor": "Watch Accuracy Checker",
+          "note": "odhad — fráze pro pokročilé; nikdo ji necílí v názvu"
+        },
+        {
+          "kw": "uhr genauigkeit messen",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad — německá lokalizace, v evidenci žádná DE aplikace"
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): existují ~4 dedikované aplikace (2 z nich nové 2023–24, jedna i v MX storu), recenze si stěžují na nestabilní výsledky → uživatelé za to platí, ale nejsou spokojení. Sběratelské watch aplikace (9 kusů v lifestyle evidenci) dokazují platící komunitu. Předpoklad: objem hledání v jiných jazycích neověřen.",
+      "competitors": [
+        {
+          "name": "Timegrapher - Watch Accuracy",
+          "url": "https://apps.apple.com/us/app/timegrapher-watch-accuracy/id6450460771",
+          "role": "niche",
+          "note": "přímý konkurent; recenze: nestabilní měření"
+        },
+        {
+          "name": "Chronolog - Watch Accuracy",
+          "url": "https://apps.apple.com/us/app/chronolog-watch-accuracy/id6452083510",
+          "role": "niche",
+          "note": "log přesnosti, spíše ruční porovnání s časem"
+        },
+        {
+          "name": "Watch Accuracy Checker",
+          "url": "https://apps.apple.com/us/app/watch-accuracy-checker/id6478476307",
+          "role": "niche",
+          "note": "novější indie aplikace"
+        },
+        {
+          "name": "Vellore - Watch Collection",
+          "url": "https://apps.apple.com/us/app/vellore-watch-collection/id6760221205",
+          "role": "parent",
+          "note": "rodičovský trh watch collection (cost-per-wear, servisní připomínky)"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Všechny nalezené aplikace cílí anglický trh (US store); hodinářské komunity v DE, CH, JP, IT a CZ jsou velké a v nativním jazyce nemají žádný nástroj. Lokalizace do 50 jazyků + lokalizované klíčovky (Uhr Genauigkeit, 時計 精度) je hlavní výhoda. Dostupnost konkurentů v jiných storech neověřena (offline běh).",
+      "devils_advocate": [
+        "Mikrofon iPhonu bez kontaktního snímače dává v hlučném prostředí nestabilní data — přesně to, za co konkurenti dostávají 1★; amplitudu z pouhého zvuku lze jen odhadnout.",
+        "Trh je malý: vážní hodináři si koupí HW timegrapher za $150 a aplikaci nepotřebují, laici neví, co je beat error.",
+        "Do měsíce po úspěchu může jeden ze 4 konkurentů zlepšit algoritmus a přidat lokalizaci — bariéra je jen know-how DSP.",
+        "Recenzenti i uživatelé budou srovnávat s HW timegrapherem; každá odchylka = špatné hodnocení."
+      ],
+      "killer_risk": "Nedostatečná přesnost měření na běžném iPhonu → 1★ recenze jako u konkurence.",
+      "mitigation": "Týden R&D prototypu DSP před stavbou UI; ověřit proti HW timegrapheru; v onboardingu vyžadovat tiché prostředí a doporučit kontaktní mikrofon za ~200 Kč; zobrazovat míru spolehlivosti měření.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 7,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "utilities-02",
+      "name": "Noise Diary: Neighbor Log",
+      "tagline": "Hlučný soused? Sbírej důkazy: decibely, časová razítka a krátké nahrávky v PDF deníku pro pronajímatele, SVJ nebo úřad.",
+      "pitch": "Stížnost na hluk sousedů bez důkazů končí slovem proti slovu; úřady i správci chtějí deník se záznamy času, hlasitosti a délky rušení. Aplikace běží v noci, zaznamená události nad nastaveným prahem (dB + krátký audio klip), a vytvoří přehledný PDF report s grafem. Ve Velké Británii existuje podobná služba napojená na úřady, ale v EU, LatAm a Asii nic lokálního — a rušení nočním klidem je univerzální problém. Obecné decibelmetry měří, ale nevedou deník ani nevytvoří report, a právě to je hodnota, za kterou lidé v krizi rádi zaplatí.",
+      "niche": "Lidé v konfliktu se sousedem, kteří potřebují doklad; decibelmetry (Decibel X apod.) cílí na hudebníky a zvědavce, UK Noise App je vázaná na britské úřady a server.",
+      "parent_market": "Decibel/sound meter aplikace (Decibel X, NIOSH SLM, Sound Meter) — velký, prokázaný trh s předplatným; v UK The Noise App (serverová, pro úřady).",
+      "target_user": "Nájemníci a vlastníci bytů v panelácích a činžácích, rodiče malých dětí, lidé pracující na směny.",
+      "features": [
+        "Noční hlídač: zaznamená jen události nad prahem (dB, délka, 10–30 s klip)",
+        "Kalendářní deník s poznámkami (štěkot, hudba, vrtání) a fotkou",
+        "PDF report s grafem hladin a seznamem událostí pro správce/úřad",
+        "Lokalizované informace o nočním klidu (22–6 h) a šablona stížnosti",
+        "Kalibrace offsetu mikrofonu a upozornění na limity měření"
+      ],
+      "offline": "full",
+      "offline_note": "Měření, detekce událostí a PDF vznikají v zařízení; nahrávky zůstávají lokálně (volitelně iCloud). Běh na pozadí přes audio session.",
+      "monetization": "Zdarma 3 noci; Pro $9.99 lifetime (≈ 230 Kč) nebo $2.99/měsíc — lidé v konfliktu platí jednorázově a rychle.",
+      "revenue_math": "Ideál: ~2 500 stažení/měs (noise complaint, neighbor noise, noise log, Lärmprotokoll… v 50 jazycích) × 4 % = 100 × $9.99 = $999 gross → $849 netto ≈ 19 500 Kč/měs.",
+      "revenue_czk_ideal": 19500,
+      "keywords": [
+        {
+          "kw": "neighbor noise",
+          "saturation": 3,
+          "competitor": "The Noise App (UK)",
+          "note": "odhad — UK aplikace + obecné decibelmetry; bez web ověření"
+        },
+        {
+          "kw": "noise complaint",
+          "saturation": 2,
+          "competitor": "The Noise App",
+          "note": "odhad — fráze přirozená, dedikovaných aplikací málo"
+        },
+        {
+          "kw": "noise log",
+          "saturation": 3,
+          "competitor": "Decibel X",
+          "note": "odhad — decibelmetry mají historii, ne deník pro úřad"
+        },
+        {
+          "kw": "lärmprotokoll",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad — DE fráze z nájemního práva (Lärmprotokoll je doporučovaný dokument), aplikaci neznám"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem (offline běh). Z vlastní znalosti: v UK existuje The Noise App používaná stovkami úřadů (prokazuje potřebu evidence); německé nájemní poradny doporučují vést Lärmprotokoll; decibelmetry patří k nejstahovanějším utilitám. Objem hledání konkrétních frází je předpoklad.",
+      "competitors": [
+        {
+          "name": "Decibel X",
+          "url": "",
+          "role": "parent",
+          "note": "leader decibelmetrů s předplatným; nevede deník stížností"
+        },
+        {
+          "name": "The Noise App",
+          "url": "",
+          "role": "niche",
+          "note": "UK, napojená na úřady (server), mimo UK nepoužitelná"
+        },
+        {
+          "name": "NIOSH Sound Level Meter",
+          "url": "",
+          "role": "parent",
+          "note": "zdarma, profesionální měření, bez reportu"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap: model ověřený v UK (The Noise App pro britské úřady) chybí v EU/LatAm/Asii; my ho spustíme lokálně v 50 jazycích bez závislosti na úřadech.",
+      "devils_advocate": [
+        "Nahrávání zvuku ze sousedního bytu může v některých zemích narazit na ochranu soukromí — nahrávka nemusí být u soudu přípustná a App Review může chtít jasné vysvětlení.",
+        "Mikrofon iPhonu není kalibrovaný měřák; úřady mohou report odmítnout jako neprůkazný.",
+        "Uživatel potřebuje aplikaci jen po dobu konfliktu (týdny) → nízká retence, předplatné se zruší.",
+        "Apple Watch/iOS mají vlastní měření hluku (Noise app) — Sherlock pro základní funkci."
+      ],
+      "killer_risk": "Report nemá právní váhu → uživatelé pocítí, že aplikace nepomohla, a píšou špatné recenze.",
+      "mitigation": "Komunikovat jako ‚deník pro vlastní evidenci‘, ne jako soudní důkaz; export s metadaty a hashem; lokalizované texty o nočním klidu; lifetime cena místo předplatného.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-03",
+      "name": "Runtime: Power Station Calc",
+      "tagline": "Jak dlouho mi poběží lednice, CPAP nebo notebook na powerstanici? Odpověď za 10 sekund, offline, pro jakoukoli značku.",
+      "pitch": "Přenosné powerstanice (EcoFlow, Jackery, Anker, Bluetti) jsou masový trh pro kempování, vanlife i výpadky proudu, ale výrobci nabízejí jen aplikace pro vlastní zařízení s přihlášením. Lidé potřebují jednoduše spočítat výdrž a dimenzovat solární panel: kolik Wh, jaká účinnost invertoru, kolik hodin fungování. Naše aplikace má knihovnu spotřebičů s typickými příkony, kalkulačku výdrže, dobíjení ze solárů podle ročního období a porovnání velikostí stanic. Je to univerzální a značkově neutrální — proto ji výrobci nikdy neudělají.",
+      "niche": "Majitelé a kupující powerstanic, kteří plánují výdrž; značkové aplikace řeší ovládání vlastního HW, ne neutrální plánování.",
+      "parent_market": "Portable power station a off-grid/solar kalkulačky (brand aplikace EcoFlow, Jackery; Victron Toolkit; webové kalkulačky výrobců) — trh s miliardovými tržbami HW.",
+      "target_user": "Kempaři, vanlifeři, prepperi, majitelé chat, rodiny s CPAP nebo lednicí na inzulín při výpadku proudu.",
+      "features": [
+        "Knihovna 150+ spotřebičů s typickým příkonem a startovacím proudem",
+        "Výdrž baterie (Wh, DoD, účinnost invertoru) pro sestavu spotřebičů",
+        "Doba dobíjení ze solárů podle lokality a měsíce (vestavěná data slunečního svitu)",
+        "Průvodce výběrem velikosti stanice + porovnání kapacit",
+        "Uložené ‚scénáře‘ (kemp, výpadek, chata) a sdílení jako obrázek"
+      ],
+      "offline": "full",
+      "offline_note": "Vše jsou výpočty nad vestavěnými tabulkami (spotřebiče, průměrná insolace po měsících v mřížce světa). Žádná síť.",
+      "monetization": "Zdarma základní kalkulačka; Pro $6.99 lifetime (≈ 160 Kč) za scénáře, solární dobíjení a knihovnu.",
+      "revenue_math": "Ideál: ~3 000 stažení/měs (power station calculator, solar generator runtime, battery runtime… 50 jazyků) × 3 % = 90 × $6.99 = $629 gross → $535 netto ≈ 12 300 Kč/měs.",
+      "revenue_czk_ideal": 12300,
+      "keywords": [
+        {
+          "kw": "power station calculator",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad — značkové aplikace necílí obecnou frázi"
+        },
+        {
+          "kw": "battery runtime calculator",
+          "saturation": 3,
+          "competitor": "Battery calculator apps",
+          "note": "odhad — několik obecných kalkulaček baterií"
+        },
+        {
+          "kw": "solar generator",
+          "saturation": 5,
+          "competitor": "EcoFlow / Jackery",
+          "note": "odhad — brand aplikace dominují, jen jako parent důkaz"
+        },
+        {
+          "kw": "off grid solar calculator",
+          "saturation": 3,
+          "competitor": "Victron Toolkit",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem. Předpoklady z vlastní znalosti: prodej powerstanic masivně roste (Amazon bestsellery), fóra (r/SolarDIY, r/vandwellers) řeší výpočet výdrže denně; výrobci mají webové kalkulačky → poptávka po výpočtu existuje. Hledanost v App Store neověřena.",
+      "competitors": [
+        {
+          "name": "EcoFlow",
+          "url": "",
+          "role": "parent",
+          "note": "brand aplikace, ovládání HW, vyžaduje účet"
+        },
+        {
+          "name": "Jackery",
+          "url": "",
+          "role": "parent",
+          "note": "brand aplikace"
+        },
+        {
+          "name": "Victron Toolkit",
+          "url": "",
+          "role": "niche",
+          "note": "zdarma, pro Victron instalace, ne pro laiky"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Trh powerstanic je nejsilnější v US a obsah (kalkulačky, YouTube) je anglický; v DE, JP, CZ, BR roste prodej (výpadky, kempink), ale neutrální kalkulačka v místním jazyce chybí.",
+      "devils_advocate": [
+        "Nízká ochota platit — webové kalkulačky výrobců jsou zdarma a stačí jednou.",
+        "Použití je jednorázové (před nákupem) → malá retence a málo recenzí.",
+        "Výrobce může do své aplikace přidat plánovač výdrže (EcoFlow už ukazuje odhad zbývajícího času přímo z HW).",
+        "Chybná data o příkonu spotřebiče → uživatel zůstane bez proudu a obviní aplikaci."
+      ],
+      "killer_risk": "Uživatelé to spočítají jednou zdarma na webu a nezaplatí.",
+      "mitigation": "Paywall až po vytvoření prvního scénáře; nabídnout ‚blackout plán‘ pro CPAP/lednici s kontrolním seznamem; lokalizované klíčovky v zemích s výpadky (JP, BR, ZA).",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-04",
+      "name": "Balcony Solar Planner",
+      "tagline": "Balkonová elektrárna: správný úhel, orientace a odhad výroby i návratnosti — přímo telefonem na zábradlí.",
+      "pitch": "V Německu jsou ‚Balkonkraftwerke‘ fenomén s miliony instalací a šíří se do Rakouska, Česka, Polska i Nizozemska. Každý majitel řeší stejné otázky: jaký úhel sklonu na zábradlí, jak moc vadí orientace na západ a stín, kolik ušetřím a kdy se to vrátí. Aplikace změří sklon a azimut senzory telefonu (přiložením k panelu), spočítá výrobu z vestavěných dat slunečního záření a zobrazí návratnost v lokální měně. Obecné solární aplikace jsou pro instalatéry střech, balkonový segment nikdo necílí.",
+      "niche": "Balkonové / plug-in solární mini elektrárny (600–800 W); velké solární aplikace řeší střešní FVE a projektanty, ne laika se dvěma panely.",
+      "parent_market": "Solární kalkulačky a sun-path aplikace (Sun Seeker, PVWatts web, brand aplikace mikroinvertorů) + boom HW balkonových elektráren v DE.",
+      "target_user": "Nájemníci a vlastníci bytů v DE/AT/CZ/PL/NL, kteří mají nebo plánují balkonovou elektrárnu.",
+      "features": [
+        "Měření sklonu a azimutu panelu (inklinometr + kompas) přiložením telefonu",
+        "Odhad roční a měsíční výroby z vestavěné mřížky záření (PVGIS-like data zabudovaná)",
+        "Návratnost investice s cenou elektřiny a limitem 800 W",
+        "Simulace stínu podle hodin a měsíců (AR pohled na dráhu slunce)",
+        "Deník výroby (ruční zápisy z mikroinvertoru)"
+      ],
+      "offline": "full",
+      "offline_note": "Data záření předpočítaná a zabudovaná do aplikace (hrubá mřížka Evropy/světa), výpočty lokálně; poloha přes GPS bez sítě.",
+      "monetization": "Zdarma měření úhlu; Pro $5.99 lifetime (≈ 140 Kč) za výnos, návratnost, stínování a deník.",
+      "revenue_math": "Ideál: ~2 000 stažení/měs (balkonkraftwerk, balcony solar, solar panel angle, balkonová elektrárna…) × 5 % = 100 × $5.99 = $599 gross → $509 netto ≈ 11 700 Kč/měs (sezónně jaro–léto).",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "balkonkraftwerk",
+          "saturation": 3,
+          "competitor": "brand aplikace mikroinvertorů",
+          "note": "odhad — DE fráze velmi hledaná na webu; v App Store hlavně monitorovací aplikace výrobců"
+        },
+        {
+          "kw": "solar panel angle",
+          "saturation": 4,
+          "competitor": "Solar panel tilt apps",
+          "note": "odhad — několik obecných kalkulaček úhlu"
+        },
+        {
+          "kw": "balcony solar",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "solar tilt",
+          "saturation": 4,
+          "competitor": "PV Aligner",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem (offline). Z vlastní znalosti: v DE je registrováno přes milion balkonových elektráren (Marktstammdatenregister), limit zvýšen na 800 W v 2024; navigační evidence tuto niku uvádí jako neprověřenou. Hledanost v App Store předpoklad.",
+      "competitors": [
+        {
+          "name": "Sun Seeker",
+          "url": "",
+          "role": "parent",
+          "note": "silná placená sun-path aplikace, ne pro výnos balkonu"
+        },
+        {
+          "name": "Hoymiles S-Miles / Anker Solix",
+          "url": "",
+          "role": "parent",
+          "note": "brand aplikace mikroinvertorů, jen monitoring"
+        },
+        {
+          "name": "PV Aligner",
+          "url": "",
+          "role": "niche",
+          "note": "měření úhlu panelů, bez výnosu a návratnosti"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap: model je silný v DE/AT (Balkonkraftwerk), v US se plug-in solar teprve legalizuje (Utah 2025) — aplikace v DE/EU jazycích a později i EN pro US.",
+      "devils_advocate": [
+        "Silná sezónnost: stahování na jaře, v zimě téměř nula.",
+        "Výrobci mikroinvertorů mohou přidat kalkulačku výnosu do svých aplikací zdarma.",
+        "Senzory telefonu (kompas u kovového zábradlí!) dávají chybný azimut.",
+        "Pravidla (limit W, registrace) se liší po zemích a mění — obsah stárne."
+      ],
+      "killer_risk": "Magnetometr u ocelového zábradlí měří špatně → nesmyslné odhady a špatné recenze.",
+      "mitigation": "Kalibrace azimutu podle slunce (kamera) místo kompasu; upozornění u kovu; legislativní texty jen obecně s datem aktualizace.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-05",
+      "name": "BoardSnap: Whiteboard Scanner",
+      "tagline": "Vyfoť tabuli po poradě a dostaneš čistý, ostrý obraz bez odlesků — a série tabulí z jednoho projektu v PDF.",
+      "pitch": "Po odchodu Microsoft Lens zůstala díra: skenery dokumentů (CamScanner, Adobe Scan) jsou stavěné na papír a s lesklou tabulí a barevnými fixami si neporadí. Evidence ukazuje jen ~3 slabé dedikované aplikace na ‚whiteboard scanner‘. Aplikace na zařízení odstraní odlesky, vyrovná perspektivu, vybělí pozadí a zvýrazní fixy, složí více snímků do jednoho obrazu a uloží série podle projektu. Učitelé, týmy, studenti a doučovatelé to potřebují denně — tedy dobrá retence.",
+      "niche": "Skenování tabulí (whiteboard/flipchart/tabule s křídou); velké skenery optimalizují papírové dokumenty a monetizují OCR a cloud.",
+      "parent_market": "Document scanner aplikace (CamScanner, Adobe Scan, Genius Scan) — jeden z nejvýdělečnějších utilitních trhů s předplatným.",
+      "target_user": "Učitelé, lektoři, projektové týmy, studenti, agile coachové, doučovatelé.",
+      "features": [
+        "Detekce tabule, perspektiva a odstranění odlesků (Vision + Core Image)",
+        "Režim ‚čistá tabule‘ — bílé pozadí, sytější fixy, i pro tabuli s křídou",
+        "Spojení 2–4 snímků velké tabule do jednoho obrazu",
+        "Projekty a série (před/po poradě), export PDF/PNG",
+        "OCR textu z tabule on-device (Live Text API)"
+      ],
+      "offline": "full",
+      "offline_note": "Zpracování obrazu přes Vision a Core Image, OCR on-device; ukládání lokálně/iCloud.",
+      "monetization": "Freemium: 5 skenů zdarma týdně; Pro $2.99/měs nebo $14.99/rok (≈ 345 Kč).",
+      "revenue_math": "Ideál: ~2 500 stažení/měs (whiteboard scanner, scan whiteboard, flipchart scan, Tafelbild scannen…) × 3 % = 75 × $14.99 roční = $1 124 gross → $955 netto ≈ 22 000 Kč/měs.",
+      "revenue_czk_ideal": 22000,
+      "keywords": [
+        {
+          "kw": "whiteboard scanner",
+          "saturation": 3,
+          "competitor": "SlatCam: Whiteboard Scanner",
+          "note": "web evidence: ≈3 slabé dedikované aplikace, Microsoft Lens ukončen"
+        },
+        {
+          "kw": "scan whiteboard",
+          "saturation": 3,
+          "competitor": "SnapBoard",
+          "note": "web evidence (stejné výsledky); odhad saturace"
+        },
+        {
+          "kw": "flipchart scanner",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad — nikdo necílí"
+        },
+        {
+          "kw": "blackboard scanner",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad — křídové tabule (školy v EU, Asii)"
+        }
+      ],
+      "demand_evidence": "Ověřeno (web, productivity evidence): ‚whiteboard scanner‘ PROMISING — ≈3 slabé dedikované aplikace (jedna nová indie, jedna HW companion, jedna stará), Microsoft Lens byl stažen. Parent CamScanner prokazuje obří platící trh. Objem hledání přesně neověřen.",
+      "competitors": [
+        {
+          "name": "CamScanner - PDF Scanner App",
+          "url": "https://apps.apple.com/om/app/camscanner-pdf-scanner-app/id388627783",
+          "role": "parent",
+          "note": "leader skenerů, tabule nezvládá specializovaně"
+        },
+        {
+          "name": "SlatCam: Whiteboard Scanner",
+          "url": "https://apps.apple.com/us/app/slatcam-whiteboard-scanner/id6759267167",
+          "role": "niche",
+          "note": "nová indie aplikace, přímý konkurent"
+        },
+        {
+          "name": "SnapBoard",
+          "url": "https://apps.apple.com/us/app/snapboard/id6444752706",
+          "role": "niche",
+          "note": "dedikovaný whiteboard skener"
+        },
+        {
+          "name": "CaptureBoard",
+          "url": "https://apps.apple.com/us/app/captureboard-scan-whiteboard-business-cards-receipts/id542229387",
+          "role": "niche",
+          "note": "starý, neaktualizovaný"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Sherlock: iOS Notes/Files skener dokumentů je zdarma a pro většinu lidí ‚stačí‘.",
+        "Firmy přecházejí na digitální tabule (Miro, FigJam) — fyzických tabulí ubývá.",
+        "Kvalita odstranění odlesků je těžká; pokud nebude výrazně lepší než Notes, nikdo nezaplatí.",
+        "Guideline 4.3: další skener v přeplněné kategorii může dostat ‚spam‘ zamítnutí bez jasné diferenciace."
+      ],
+      "killer_risk": "Uživatelé nevidí dost velký rozdíl oproti zdarma skeneru v Poznámkách.",
+      "mitigation": "V App Store screenshotech ukázat před/po na lesklé tabuli; stitching velkých tabulí a křída jako unikátní funkce; zaměřit klíčovky na učitele a EU jazyky.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "utilities-06",
+      "name": "Woodpile: Firewood Volume",
+      "tagline": "Změř hráň dřeva telefonem (LiDAR/AR) a hned víš, kolik je to prostorových metrů, sterů nebo cordů — a jestli tě prodejce neošidil.",
+      "pitch": "Palivové dřevo se kupuje v jednotkách, kterým nikdo nerozumí: prostorový metr, sypaný metr, ster, Raummeter, Schüttraummeter, cord, face cord. Kupující chtějí ověřit dodávku, prodejci chtějí rychle změřit. Aplikace změří hráň (šířka × výška × délka polen) přes AR/LiDAR, přepočítá mezi jednotkami a spočítá cenu a výhřevnost podle druhu dřeva a vlhkosti. V US existují jednoduché cord kalkulačky, ale evropské jednotky a lokalizace chybí — přitom v CZ/DE/AT/PL topí dřevem miliony domácností.",
+      "niche": "Kupující a drobní prodejci palivového dřeva v EU; obecné AR měřítka neumí přepočty rovnaných/sypaných jednotek a US cord aplikace neznají evropské míry.",
+      "parent_market": "AR měření (Apple Measure, Moasure, CamToPlan) a US firewood/cord kalkulačky; parent trh vytápění dřevem.",
+      "target_user": "Majitelé kamen a krbů, chalupáři, drobní prodejci dřeva, lesníci-samovýrobci.",
+      "features": [
+        "AR/LiDAR měření hráně (výška, šířka, hloubka) s více body",
+        "Převody prm/prms/ster/Rm/SRm/Fm/cord/face cord s koeficienty",
+        "Cena za jednotku a porovnání nabídek",
+        "Výhřevnost podle druhu dřeva a vlhkosti (kWh, ekvivalent plynu)",
+        "Evidence zásob a spotřeby za sezónu"
+      ],
+      "offline": "full",
+      "offline_note": "ARKit/LiDAR měření lokálně, převodní tabulky zabudované.",
+      "monetization": "Zdarma převodník; Pro $4.99 lifetime (≈ 115 Kč) za AR měření, výhřevnost a evidenci.",
+      "revenue_math": "Ideál: ~2 500 stažení/měs (firewood calculator, cord of wood, Brennholz Rechner, palivové dřevo…) × 5 % = 125 × $4.99 = $624 gross → $530 netto ≈ 12 200 Kč/měs (sezóna září–únor).",
+      "revenue_czk_ideal": 12200,
+      "keywords": [
+        {
+          "kw": "firewood calculator",
+          "saturation": 3,
+          "competitor": "Firewood cord calculator apps",
+          "note": "odhad — několik malých US kalkulaček"
+        },
+        {
+          "kw": "cord of wood",
+          "saturation": 3,
+          "competitor": "Cord Calculator",
+          "note": "odhad"
+        },
+        {
+          "kw": "brennholz rechner",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad — DE fráze, aplikaci neznám"
+        },
+        {
+          "kw": "raummeter",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem; utilities evidence uvádí ‚LiDAR firewood volume (cords + ster/Raummeter DE/CZ)‘ jako neprověřený kandidát. Z vlastní znalosti: v DE/AT/CZ je vytápění dřevem běžné a nejasnost jednotek je častý dotaz na fórech; v US existují cord kalkulačky → model funguje.",
+      "competitors": [
+        {
+          "name": "Measure (Apple)",
+          "url": "",
+          "role": "parent",
+          "note": "vestavěné AR měření, bez převodů"
+        },
+        {
+          "name": "Firewood Cord Calculator",
+          "url": "",
+          "role": "us-only",
+          "note": "US imperiální kalkulačky cordů"
+        },
+        {
+          "name": "Moasure",
+          "url": "",
+          "role": "parent",
+          "note": "profi měření (HW), mimo cenovou hladinu"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obousměrně: US cord kalkulačky nejsou lokalizované a neznají evropské jednotky; my spojíme cord + ster/Raummeter/prm do jedné aplikace v 50 jazycích.",
+      "devils_advocate": [
+        "Silná sezónnost (podzim), v létě téměř nula stažení.",
+        "Přesnost AR na nerovné hráni je ±10 % — prodejci budou výsledky zpochybňovat.",
+        "Cílovka (starší venkovští uživatelé) je méně ochotná platit za aplikace.",
+        "Apple Measure + převodník na webu zdarma je ‚dost dobré‘."
+      ],
+      "killer_risk": "Niche je příliš malá a sezónní na stabilních 10 000 Kč měsíčně.",
+      "mitigation": "Rozšířit na výhřevnost a evidenci spotřeby (celoroční důvod otevření); lokalizace do všech zemí s vytápěním dřevem (Nordics, PL, CZ, AT, US).",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-07",
+      "name": "iCheck: Used iPhone Tester",
+      "tagline": "Kupuješ bazarový iPhone? 5minutový test mikrofonu, reproduktorů, kamer, displeje, senzorů a baterie přímo na místě.",
+      "pitch": "Trh s použitými a repasovanými iPhony roste (Back Market, Vinted, bazary), ale kupující na místě neví, co otestovat. Aplikace ho provede kontrolou: dotykový displej (mrtvé zóny), mikrofony, reproduktory, kamery, Face ID/Touch ID navigace, senzory, vibrační motor, nabíjení a návod, kde v Nastavení najít kondici baterie a historii dílů. Výsledkem je protokol, který může prodávající ukázat v inzerátu. Existující diagnostické aplikace jsou staré a anglické; lokalizace do 50 jazyků míří na obrovské bazarové trhy EU, LatAm a Indie.",
+      "niche": "Kupující a prodávající použitých iPhonů na bazarech; velké aplikace se soustředí na čištění úložiště nebo servis, ne na rychlý předprodejní test.",
+      "parent_market": "Diagnostika telefonů (Phone Doctor Plus, TestM) a trh repasovaných telefonů (Back Market, Swappie).",
+      "target_user": "Kupující z bazarů, prodejci na Vinted/Bazoši, malí překupníci a servisy.",
+      "features": [
+        "Průvodce testem: dotyk, pixely, 3D test mikrofonů a reproduktorů, kamery, blesk, vibrace",
+        "Senzory: gyroskop, akcelerometr, kompas, přiblížení, GPS fix",
+        "Návod ke kontrole Battery Health a Parts & Service History",
+        "Protokol s QR kódem pro inzerát (sdílení obrázku)",
+        "Checklist před koupí (iCloud zámek, IMEI na krabici)"
+      ],
+      "offline": "full",
+      "offline_note": "Všechny testy používají lokální hardware; protokol se generuje v zařízení.",
+      "monetization": "Zdarma základní test; Pro $2.99 (≈ 70 Kč) jednorázově za plný protokol a pro prodejce $4.99/měs neomezené protokoly.",
+      "revenue_math": "Ideál: ~5 000 stažení/měs (phone test, used iphone check, iphone diagnostic… 50 jazyků) × 4 % = 200 × $2.99 = $598 gross → $508 netto ≈ 11 700 Kč/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "iphone diagnostic",
+          "saturation": 6,
+          "competitor": "Phone Doctor Plus",
+          "note": "odhad — řada diagnostických aplikací, některé staré"
+        },
+        {
+          "kw": "used phone check",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad — nika kupujícího nikdo explicitně necílí"
+        },
+        {
+          "kw": "phone test",
+          "saturation": 5,
+          "competitor": "TestM",
+          "note": "odhad"
+        },
+        {
+          "kw": "buy used iphone",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem. Utilities evidence uvádí ‚used-iPhone check‘ jako neprověřený kandidát. Z vlastní znalosti: repasované iPhony jsou miliardový trh, fóra řeší ‚co zkontrolovat při koupi‘; Phone Doctor Plus prokázal, že lidé diagnostiku stahují.",
+      "competitors": [
+        {
+          "name": "Phone Doctor Plus",
+          "url": "",
+          "role": "parent",
+          "note": "dlouholetý leader diagnostiky, anglický, zastaralé UI"
+        },
+        {
+          "name": "TestM",
+          "url": "",
+          "role": "niche",
+          "note": "diagnostika pro prodej telefonu (převážně Android/US)"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Diagnostické aplikace jsou anglické/US; bazarové trhy v PL, CZ, BR, IN, TR, ID jsou obrovské a nemají lokalizovaný průvodce koupí.",
+      "devils_advocate": [
+        "Sherlock: iOS už ukazuje Battery Health a historii dílů v Nastavení; Apple může přidat diagnostiku (má ji pro servis).",
+        "Aplikaci si musí nainstalovat prodávající na prodávaný telefon — kupující na cizím telefonu nemá Apple ID k instalaci.",
+        "App Review (2.5.x/4.2): ‚testovací‘ aplikace s minimální funkcionalitou může být zamítnuta; bez privátních API nelze číst detailní stav HW.",
+        "Jednorázové použití → nízké LTV."
+      ],
+      "killer_risk": "Praktická bariéra: aplikaci je nutné nainstalovat na cizí (prodávaný) telefon.",
+      "mitigation": "Hlavní persona = prodávající, který protokolem zvýší důvěru inzerátu; App Clip pro rychlý test bez instalace; checklist kupujícího ve vlastním telefonu.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-08",
+      "name": "LabelMate: Thermal Label Printer",
+      "tagline": "Univerzální aplikace pro levné Bluetooth tiskárny štítků — bez účtu, bez reklam, offline, s šablonami pro spíž, kabely i dílnu.",
+      "pitch": "Levné termotiskárny štítků (Niimbot, Phomemo, Marklife) se prodávají po milionech, ale jejich oficiální aplikace vyžadují účet, jsou pomalé, plné reklam a špatně přeložené — recenze jsou plné stížností. Aplikace bude kompatibilní s nejčastějšími modely přes Bluetooth LE, nabídne čisté šablony (spíž, mrazák s datem, kabely, dílna, školní potřeby), čárové/QR kódy a hromadný tisk z CSV. Uživatel si koupí aplikaci jednou a má klid. Poptávka je obrovská, protože každá prodaná tiskárna je potenciální zákazník.",
+      "niche": "Majitelé levných BLE termotiskáren štítků, frustrovaní oficiálními aplikacemi; výrobci řeší prodej HW a štítků, ne kvalitu software.",
+      "parent_market": "Label maker aplikace (brand aplikace Niimbot, Phomemo, Brother P-touch Design&Print) — masový HW trh.",
+      "target_user": "Organizátoři domácnosti, maminky s mrazákem, kutilové, malé e-shopy, učitelé.",
+      "features": [
+        "Připojení k vybraným modelům přes BLE (bez účtu)",
+        "Šablony: spíž, mrazák s datem, kabely (vlajka), zásuvky, školní štítky",
+        "Čárové kódy a QR, hromadný tisk z CSV/seznamu",
+        "Ikony a písma pro 50 jazyků (i CJK, arabština)",
+        "Historie a opakovaný tisk"
+      ],
+      "offline": "full",
+      "offline_note": "Tisk probíhá přímo přes Bluetooth LE, šablony a fonty jsou v aplikaci. Žádný server ani účet.",
+      "monetization": "Zdarma tisk textu; Pro lifetime $9.99 (≈ 230 Kč) za šablony, kódy, CSV a více tiskáren.",
+      "revenue_math": "Ideál: ~4 000 stažení/měs (label printer, label maker, thermal printer app… 50 jazyků) × 4 % = 160 × $9.99 = $1 598 gross → $1 358 netto ≈ 31 200 Kč/měs.",
+      "revenue_czk_ideal": 31200,
+      "keywords": [
+        {
+          "kw": "label maker",
+          "saturation": 7,
+          "competitor": "Brother P-touch / brand apps",
+          "note": "odhad — hlavní fráze silně obsazená, jen jako parent"
+        },
+        {
+          "kw": "label printer",
+          "saturation": 5,
+          "competitor": "Niimbot",
+          "note": "odhad"
+        },
+        {
+          "kw": "thermal label printer",
+          "saturation": 3,
+          "competitor": "Phomemo",
+          "note": "odhad — brand aplikace, slabé recenze"
+        },
+        {
+          "kw": "freezer labels",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad — use-case fráze"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem. Z vlastní znalosti: tiskárny Niimbot/Phomemo patří k bestsellerům Amazonu a TikTok Shopu, jejich aplikace mají mnoho stížností na povinný účet a reklamy; open-source projekty (niimprint aj.) dokládají, že protokoly lze použít. Hledanost v App Store předpoklad.",
+      "competitors": [
+        {
+          "name": "NIIMBOT",
+          "url": "",
+          "role": "parent",
+          "note": "oficiální aplikace, vyžaduje účet, časté stížnosti"
+        },
+        {
+          "name": "Phomemo",
+          "url": "",
+          "role": "parent",
+          "note": "oficiální aplikace, reklamy a cloud šablony"
+        },
+        {
+          "name": "Brother P-touch Design&Print 2",
+          "url": "",
+          "role": "parent",
+          "note": "jen Brother tiskárny"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Protokoly tiskáren jsou proprietární; výrobce je může změnit firmwarem a aplikace přestane tisknout přes noc.",
+        "Riziko ochranných známek — nesmíme používat názvy značek v názvu/klíčovkách (2.3.7, 5.2).",
+        "Podpora desítek modelů = testování na HW, který musíme nakoupit; stavba trvá dlouho.",
+        "Výrobce může vylepšit vlastní aplikaci (zdarma), a důvod pro nás zmizí."
+      ],
+      "killer_risk": "Změna firmware/protokolu výrobcem rozbije kompatibilitu a přinese vlnu 1★.",
+      "mitigation": "Začít 2–3 nejprodávanějšími modely, verzovat protokoly, rychlé aktualizace; v metadatech jen ‚compatible with many BLE thermal label printers‘; nakoupit testovací HW (~2 000 Kč).",
+      "build_weeks": 10,
+      "scores": {
+        "demand": 8,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 3,
+        "offline_fit": 9,
+        "safety": 3
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-09",
+      "name": "ResinCalc: Epoxy Calculator",
+      "tagline": "Kolik epoxidu na river table, podložky nebo šperky? Objem, poměr A:B, čas zpracování a cena — v cm i palcích.",
+      "pitch": "Epoxidová pryskyřice je obrovský hobby trh (river tables, šperky, tácky, formy) a každý projekt začíná stejnou otázkou: kolik pryskyřice namíchat, v jakém poměru a za kolik. Vzácné US kalkulačky počítají v palcích a uncích, webové kalkulačky výrobců jsou vázané na jejich značku. Aplikace spočítá objem pro obdélník, válec, nepravidelnou řeku (z fotky s měřítkem), přepočítá poměr podle hmotnosti/objemu a vede časovač vrstev. Hobbyisté utrácejí za materiál tisíce — $4.99 za přesnou kalkulačku je pro ně drobné.",
+      "niche": "Resin art a woodworking s epoxidem; výrobci mají webové kalkulačky jen pro své produkty, obecné kalkulačky objemu nerozumí poměru A:B a vrstvám.",
+      "parent_market": "Maker/craft kalkulačky a resin art trh (ArtResin, Epodex, TotalBoat — webové kalkulačky).",
+      "target_user": "Hobby tvůrci s pryskyřicí, truhláři (river tables), výrobci šperků, prodejci na Etsy.",
+      "features": [
+        "Objem tvaru: obdélník, kruh, válec, forma, ‚řeka‘ s ručně obkresleným tvarem",
+        "Poměr A:B objemově i hmotnostně s hustotou, rezerva na ztráty",
+        "Plánovač vrstev (max. tloušťka lití, časovač mezi vrstvami)",
+        "Kalkulace nákladů a ceny výrobku pro prodej",
+        "Deník projektů s fotkami"
+      ],
+      "offline": "full",
+      "offline_note": "Výpočty a databáze obvyklých hustot lokálně; žádná síť.",
+      "monetization": "Zdarma základní objem; Pro $4.99 lifetime (≈ 115 Kč).",
+      "revenue_math": "Ideál: ~3 000 stažení/měs (resin calculator, epoxy calculator, river table calculator, Epoxidharz Rechner…) × 4 % = 120 × $4.99 = $599 gross → $509 netto ≈ 11 700 Kč/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "epoxy calculator",
+          "saturation": 3,
+          "competitor": "Epoxy Resin Calculator apps",
+          "note": "odhad — pár malých kalkulaček"
+        },
+        {
+          "kw": "resin calculator",
+          "saturation": 3,
+          "competitor": "Resin Calculator",
+          "note": "odhad"
+        },
+        {
+          "kw": "river table",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad — spíš tutoriály"
+        },
+        {
+          "kw": "epoxidharz rechner",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad — DE"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem; utilities evidence uvádí ‚epoxy resin‘ jako neprověřený kandidát. Z vlastní znalosti: výrobci pryskyřic (ArtResin, TotalBoat) mají webové kalkulačky → potřeba výpočtu existuje; resin art má velké komunity na TikToku/Instagramu.",
+      "competitors": [
+        {
+          "name": "ArtResin (web calculator)",
+          "url": "",
+          "role": "parent",
+          "note": "webová kalkulačka výrobce, vázaná na značku"
+        },
+        {
+          "name": "Epoxy Resin Calculator",
+          "url": "",
+          "role": "niche",
+          "note": "malé US kalkulačky v palcích"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "US kalkulačky pracují v palcích/uncích a jsou anglické; metrická a lokalizovaná verze pro EU/LatAm/Asii (silné resin komunity v DE, PL, BR) chybí.",
+      "devils_advocate": [
+        "Výpočet objemu umí každá obecná kalkulačka a Google — nízká ochota platit.",
+        "Hustoty a poměry se liší podle produktu; chyba = zkažený drahý materiál a naštvaný uživatel.",
+        "Apple může nabídnout podobné výpočty přes Math Notes / Apple Intelligence.",
+        "Trend resin art může odeznít."
+      ],
+      "killer_risk": "Nízká ochota platit za ‚obyčejnou kalkulačku‘.",
+      "mitigation": "Diferenciace plánovačem vrstev a kalkulací prodejní ceny pro Etsy tvůrce; free tier štědrý pro dobré recenze.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-10",
+      "name": "TankLevel: Heating Oil Dipstick",
+      "tagline": "Změř tyčí hladinu v nádrži na topný olej nebo naftu a hned víš, kolik litrů (galonů) zbývá a kdy objednat.",
+      "pitch": "Miliony domácností v Německu, Rakousku, Irsku, UK a na severovýchodě USA topí olejem z vlastní nádrže, a hladinu měří tyčí nebo ukazatelem v centimetrech. Převod na litry je u ležatých válcových či oválných nádrží nelineární a tabulky se ztrácejí. Aplikace zná tvary nádrží (ležatý válec, stojatý, kvádr, ovál, US 275 gal), přepočítá cm/palce na objem, sleduje spotřebu a upozorní, kdy objednat. Jednoduchá, poctivá utilita s velkou věrnou cílovkou, kterou nikdo necílí lokalizovaně.",
+      "niche": "Majitelé nádrží na topný olej / naftu / dešťovou vodu bez chytrého senzoru; cenové aplikace (HeizOel24 apod.) řeší nákup, ne měření.",
+      "parent_market": "Heating oil price / delivery aplikace (DE Heizöl portály, US oil delivery apps) a smart tank senzory (Smart Oil Gauge, HW).",
+      "target_user": "Domácnosti s olejovým topením v DE/AT/IE/UK/US-NE, farmáři s naftou, majitelé nádrží na dešťovou vodu.",
+      "features": [
+        "Tvary nádrží včetně standardních (ležatý válec, ovál, US 275/330 gal) a vlastních rozměrů",
+        "Převod výšky hladiny (cm/in) na litry/galony s grafem",
+        "Deník měření a průměrná denní spotřeba",
+        "Upozornění ‚objednej za X dní‘ podle spotřeby a zimy",
+        "Náklady na vytápění za sezónu"
+      ],
+      "offline": "full",
+      "offline_note": "Geometrické výpočty a deník lokálně; bez cenových dat z internetu.",
+      "monetization": "Zdarma převod; Pro $4.99 lifetime (≈ 115 Kč) za deník, predikci a více nádrží.",
+      "revenue_math": "Ideál: ~1 500 stažení/měs (Heizöl Tank Rechner, oil tank chart, tank volume calculator…) × 7 % = 105 × $4.99 = $524 gross → $445 netto ≈ 10 200 Kč/měs (sezóna).",
+      "revenue_czk_ideal": 10200,
+      "keywords": [
+        {
+          "kw": "oil tank chart",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad — US majitelé hledají tank chart pro 275 gal"
+        },
+        {
+          "kw": "tank volume calculator",
+          "saturation": 4,
+          "competitor": "Tank Volume Calculator apps",
+          "note": "odhad — obecné inženýrské kalkulačky"
+        },
+        {
+          "kw": "heizöl tank",
+          "saturation": 2,
+          "competitor": "HeizOel24",
+          "note": "odhad — DE cenové portály, ne měření"
+        },
+        {
+          "kw": "tankinhalt berechnen",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem. Z vlastní znalosti: v DE topí olejem ~5 mil. domácností, v US-NE a Irsku je olej běžný; ‚oil tank chart 275 gallon‘ je častý Google dotaz. Hledanost v App Store neověřená, pravděpodobně nízká.",
+      "competitors": [
+        {
+          "name": "HeizOel24",
+          "url": "",
+          "role": "parent",
+          "note": "DE portál s cenami oleje, ne měření"
+        },
+        {
+          "name": "Smart Oil Gauge",
+          "url": "",
+          "role": "parent",
+          "note": "US HW senzor + aplikace (server)"
+        },
+        {
+          "name": "Tank Volume Calculator",
+          "url": "",
+          "role": "niche",
+          "note": "obecné kalkulačky objemu nádrží"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obousměrně: US tank chart kalkulačky jsou anglické a jen pro US tvary; DE/AT/IE trh má jiné nádrže (Kunststofftank, Batterietank) — jedna lokalizovaná aplikace pokryje oba.",
+      "devils_advocate": [
+        "Trh ubývá — EU tlačí na odchod od olejového topení (výměna kotlů).",
+        "Nízká hledanost v App Store: lidé hledají tabulku na Googlu, ne aplikaci.",
+        "Rozměry nádrží jsou různé; nesprávná geometrie = špatná čísla.",
+        "Sezónní použití, starší cílovka."
+      ],
+      "killer_risk": "Příliš malý objem vyhledávání v App Store.",
+      "mitigation": "Rozšířit na dešťové nádrže a naftu (celoroční); lokalizované klíčovky DE/EN/IE; minimální stavba (2 týdny) pro nízké riziko.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-11",
+      "name": "SpinRight: Turntable Tuner",
+      "tagline": "Zkontroluj rychlost gramofonu, wow & flutter, vyvážení a nastavení přenosky — iPhonem položeným na talíř.",
+      "pitch": "Vinyl zažívá dlouhodobý návrat a každý nový majitel gramofonu řeší, zda hraje správně rychle, je vodorovně a má správně nastavenou přenosku. Aplikace změří otáčky gyroskopem (telefon na talíři), wow & flutter z testovacího tónu přes mikrofon, vodováhou zkontroluje rovinu talíře a nabídne tisknutelnou šablonu pro seřízení přenosky. Existující specializované aplikace jsou jednotky a dražší; audiofilové platí rádi za přesné nástroje.",
+      "niche": "Majitelé gramofonů a audiofilové; hudební aplikace řeší streamování, katalogizace vinylů (Discogs) řeší sbírku, ne technické seřízení.",
+      "parent_market": "Vinyl/audiofil aplikace (Discogs, sbírkové aplikace) a specializované měřicí aplikace (RPM, Adjust+).",
+      "target_user": "Noví i pokročilí majitelé gramofonů, prodejci a opraváři vintage gramofonů.",
+      "features": [
+        "Měření 33⅓/45/78 ot./min gyroskopem s odchylkou v %",
+        "Wow & flutter z testovacího tónu (3 150 Hz) přes mikrofon",
+        "Vodováha talíře a ramene",
+        "Tisknutelná šablona pro seřízení přenosky (Baerwald/Löfgren) + návod",
+        "Historie měření per gramofon"
+      ],
+      "offline": "full",
+      "offline_note": "Senzory a zvuková analýza on-device; šablony jako PDF v aplikaci.",
+      "monetization": "Zdarma měření otáček; Pro $5.99 lifetime (≈ 140 Kč).",
+      "revenue_math": "Ideál: ~1 500 stažení/měs (turntable speed, rpm, turntable setup, Plattenspieler…) × 8 % = 120 × $5.99 = $719 gross → $611 netto ≈ 14 000 Kč/měs.",
+      "revenue_czk_ideal": 14000,
+      "keywords": [
+        {
+          "kw": "turntable speed",
+          "saturation": 3,
+          "competitor": "RPM - Turntable Speed",
+          "note": "odhad — pár dedikovaných aplikací"
+        },
+        {
+          "kw": "turntable",
+          "saturation": 5,
+          "competitor": "Discogs",
+          "note": "odhad — obecná fráze, mix sbírkových aplikací"
+        },
+        {
+          "kw": "wow and flutter",
+          "saturation": 2,
+          "competitor": "Platterspeed",
+          "note": "odhad"
+        },
+        {
+          "kw": "cartridge alignment",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem. Z vlastní znalosti: v App Store existuje několik aplikací na rychlost gramofonu (RPM, Platterspeed, Adjust+) — důkaz poptávky; prodej vinylu roste ~17 let po sobě. Počet stažení konkurentů neznám.",
+      "competitors": [
+        {
+          "name": "Discogs",
+          "url": "",
+          "role": "parent",
+          "note": "katalog vinylů, obří vinylová komunita"
+        },
+        {
+          "name": "RPM - Turntable Speed",
+          "url": "",
+          "role": "niche",
+          "note": "měření otáček"
+        },
+        {
+          "name": "Adjust+ (Dr. Feickert)",
+          "url": "",
+          "role": "niche",
+          "note": "profi nastavení, dražší"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Malý trh s několika zavedenými konkurenty — ne úplně modrý oceán.",
+        "Přesnost gyroskopu na talíři s telefonem nahoře (hmotnost ovlivní rychlost levných gramofonů).",
+        "Audiofilové věří HW (stroboskop, testovací deska) víc než telefonu.",
+        "Jednorázové použití po nákupu gramofonu → malé LTV."
+      ],
+      "killer_risk": "Nika je malá a částečně obsazená, růst nad 10 000 Kč nejistý.",
+      "mitigation": "Balík funkcí (rychlost + flutter + vodováha + šablona) v jedné aplikaci, lokalizace (JP a DE mají silné vinylové trhy).",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-12",
+      "name": "Panel Map: Breaker Directory",
+      "tagline": "Zmapuj pojistkovou skříň: který jistič vypíná kterou místnost, s fotkami a tisknutelným štítkem na dvířka.",
+      "pitch": "Když vypadne proud nebo se má vyměnit zásuvka, nikdo neví, který jistič co vypíná — popisky na dvířkách jsou vybledlé nebo chybí. Aplikace provede majitele mapováním (vypni jistič, projdi místnosti, označ), uloží půdorys místností s ikonami zásuvek a světel a vytiskne úhledný štítek do rozvaděče. Elektrikáři mohou předat mapu klientovi jako PDF. Jednoduchá, trvale užitečná věc bez konkurence s jasnou hodnotou pro majitele domů i bytů.",
+      "niche": "Dokumentace domácího rozvaděče; aplikace pro elektrikáře jsou výpočetní (Ugly's), home inventory aplikace rozvaděč neřeší.",
+      "parent_market": "Home maintenance / home inventory aplikace (HomeZada, Centriq) a elektrikářské aplikace (Ugly's Electrical References).",
+      "target_user": "Majitelé domů a bytů, pronajímatelé, elektrikáři a správci budov.",
+      "features": [
+        "Průvodce mapováním jistič → místnosti/okruhy",
+        "Jednoduchý půdorys s ikonami zásuvek, světel, spotřebičů",
+        "Tisk štítku pro dvířka (A4/štítkovač) a PDF pro předání",
+        "Fotky rozvaděče a poznámky (proudový chránič, datum revize)",
+        "Hledání: ‚co vypíná jistič 7‘ / ‚který jistič pro kuchyni‘"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně; volitelně iCloud sync mezi členy domácnosti.",
+      "monetization": "Zdarma 1 rozvaděč do 12 jističů; Pro $5.99 lifetime (≈ 140 Kč).",
+      "revenue_math": "Ideál: ~2 000 stažení/měs (breaker panel, circuit breaker label, Sicherungskasten…) × 5 % = 100 × $5.99 = $599 gross → $509 netto ≈ 11 700 Kč/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "breaker panel",
+          "saturation": 3,
+          "competitor": "Circuit breaker directory apps",
+          "note": "odhad — pár malých aplikací"
+        },
+        {
+          "kw": "circuit breaker label",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "fuse box",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad — UK fráze"
+        },
+        {
+          "kw": "sicherungskasten beschriftung",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad — DE"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem. Z vlastní znalosti: na Amazonu se prodávají předtištěné štítky na rozvaděče (poptávka), Reddit r/HomeImprovement má časté dotazy na mapování jističů; dedikovaných aplikací je velmi málo. Hledanost v App Store neověřena a spíše nízká.",
+      "competitors": [
+        {
+          "name": "HomeZada",
+          "url": "",
+          "role": "parent",
+          "note": "home management, rozvaděč neřeší"
+        },
+        {
+          "name": "Ugly's Electrical References",
+          "url": "",
+          "role": "parent",
+          "note": "elektrikářské reference"
+        },
+        {
+          "name": "Circuit Breaker Panel directory apps",
+          "url": "",
+          "role": "niche",
+          "note": "malé indie aplikace, anglické"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Malé existující aplikace jsou anglické (US panely); EU má jiné rozvaděče (DIN lišta, FI/RCD) a jazyky — lokalizace pokrývá nepokrytý trh.",
+      "devils_advocate": [
+        "Nízká frekvence použití — jednou zmapuji a hotovo, žádná retence.",
+        "Lidé to nehledají v App Store, dokud nenastane problém.",
+        "Nesmí to vypadat jako rada k práci s elektřinou (bezpečnost/odpovědnost).",
+        "Konkurence ‚papír a fixa‘ je zdarma."
+      ],
+      "killer_risk": "Objem hledání je příliš nízký pro 10 000 Kč měsíčně.",
+      "mitigation": "Doplnit o sledování revizí a výměny baterií v detektorech (celoroční důvod otevřít), balíček pro pronajímatele (více nemovitostí).",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-13",
+      "name": "SpaChem: Hot Tub Water Log",
+      "tagline": "Vířivka bez chemie naslepo: přečti testovací proužek kamerou a dostaneš přesnou dávku chloru/bromu pro tvůj objem.",
+      "pitch": "Nafukovací a přenosné vířivky (Lay-Z-Spa, Intex) se po covidu rozšířily do statisíců domácností v UK, DE a CZ a jejich majitelé tápou v chemii. Aplikace přečte barvy testovacího proužku kamerou (s kalibrační kartou), vypočítá dávky podle objemu vířivky a zvolených produktů a připomene výměnu vody a filtru. Bazénové aplikace (Pool Math) jsou pro bazény a anglické, značkové aplikace čtou jen vlastní proužky. Pravidelné používání (2× týdně) dává dobrou retenci pro předplatné.",
+      "niche": "Majitelé vířivek (hlavně nafukovacích); bazénové aplikace míří na bazény a USA.",
+      "parent_market": "Pool care aplikace (Pool Math od Trouble Free Pool, AquaChek, Clorox Pool&Spa) — velký US trh.",
+      "target_user": "Majitelé nafukovacích a přenosných vířivek v UK/DE/NL/CZ/SE.",
+      "features": [
+        "Čtení testovacího proužku kamerou (Core ML/Vision + barevná kalibrace)",
+        "Dávkovací kalkulačka pro chlór/brom/pH+/pH− podle objemu a produktu",
+        "Deník měření a graf",
+        "Připomínky: šok, výměna vody, čištění filtru",
+        "Průvodce problémy (zakalená voda, pěna)"
+      ],
+      "offline": "full",
+      "offline_note": "Rozpoznání barev on-device, tabulky dávkování zabudované.",
+      "monetization": "Zdarma deník; Pro $12.99/rok (≈ 300 Kč) nebo $1.99/měs za čtení proužků a dávkování.",
+      "revenue_math": "Ideál: ~2 500 stažení/měs (hot tub chemicals, spa water test, lay z spa…) × 3 % = 75 × $12.99 roční = $974 gross → $828 netto ≈ 19 000 Kč/měs.",
+      "revenue_czk_ideal": 19000,
+      "keywords": [
+        {
+          "kw": "hot tub",
+          "saturation": 5,
+          "competitor": "Hot tub brand apps",
+          "note": "odhad — mix značkových aplikací (ovládání)"
+        },
+        {
+          "kw": "hot tub chemicals",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "spa water test",
+          "saturation": 3,
+          "competitor": "AquaChek",
+          "note": "odhad — brand aplikace na proužky"
+        },
+        {
+          "kw": "test strip reader",
+          "saturation": 3,
+          "competitor": "Clorox Pool&Spa",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem; utilities evidence uvádí ‚pool test strip reader‘ jako neprověřený kandidát. Z vlastní znalosti: Pool Math a brand aplikace dokazují trh; nafukovací vířivky patří k bestsellerům v UK/DE. Specifická hledanost pro vířivky předpoklad.",
+      "competitors": [
+        {
+          "name": "Pool Math by Trouble Free Pool",
+          "url": "",
+          "role": "parent",
+          "note": "silná bazénová kalkulačka zdarma/levně"
+        },
+        {
+          "name": "AquaChek",
+          "url": "",
+          "role": "parent",
+          "note": "čtení vlastních proužků"
+        },
+        {
+          "name": "Clorox Pool&Spa",
+          "url": "",
+          "role": "parent",
+          "note": "US brand aplikace se skenem proužků"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Čtení barev proužku kamerou je nespolehlivé při různém osvětlení a u různých značek proužků.",
+        "Chemické doporučení = odpovědnost (podráždění kůže); App Review může chtít upozornění.",
+        "Brand aplikace jsou zdarma; Pool Math je levný a oblíbený.",
+        "Sezónnost v Evropě (léto)."
+      ],
+      "killer_risk": "Nespolehlivé čtení proužků → špatné dávkování → 1★ recenze.",
+      "mitigation": "Kalibrační karta k tisku, ruční výběr barvy jako záloha, dávkovací kalkulačka funguje i bez kamery; konzervativní doporučení.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 9,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-14",
+      "name": "PrintCost: 3D Print Calculator",
+      "tagline": "Kolik stojí tvůj 3D tisk? Filament, elektřina, opotřebení a marže — plus evidence cívek s NFC štítky.",
+      "pitch": "Miliony vlastníků Bambu Lab, Prusa a Creality tiskáren prodávají výtisky na Etsy, Vinted nebo přátelům a nevědí, kolik jim stojí. Aplikace spočítá cenu z hmotnosti a času tisku (import z 3MF/G-code metadat), přidá elektřinu, opotřebení a marži a vystaví nabídku. Druhá polovina je evidence filamentu: cívky, zbývající gramy, NFC štítek na cívce. Existující kalkulačky jsou jednoduché nebo webové; spojení ceny a skladu filamentu offline nikdo nedělá dobře.",
+      "niche": "Hobby 3D tiskaři, kteří prodávají výtisky; slicery ukazují jen gramy, ne cenu a marži, a skladové aplikace (Spoolman) vyžadují server.",
+      "parent_market": "3D printing aplikace (Bambu Handy, Prusa App, Printables) — velký, rychle rostoucí trh hobby tisku.",
+      "target_user": "Vlastníci 3D tiskáren prodávající výtisky, makerspace, malé tiskové farmy.",
+      "features": [
+        "Kalkulace ceny: filament (g × Kč/kg), elektřina (W × h), opotřebení, práce, marže",
+        "Import metadat z 3MF/G-code (čas, gramy) přes Share Sheet",
+        "Evidence cívek filamentu, zbývající gramy, NFC štítky",
+        "Nabídka pro zákazníka jako PDF",
+        "Statistiky tisku a zisku"
+      ],
+      "offline": "full",
+      "offline_note": "Parsování souborů, výpočty a sklad lokálně; NFC přes Core NFC.",
+      "monetization": "Zdarma kalkulačka; Pro $6.99 lifetime (≈ 160 Kč) za sklad, NFC, import a nabídky.",
+      "revenue_math": "Ideál: ~3 000 stažení/měs (3d print cost, filament tracker, 3d printing calculator…) × 4 % = 120 × $6.99 = $839 gross → $713 netto ≈ 16 400 Kč/měs.",
+      "revenue_czk_ideal": 16400,
+      "keywords": [
+        {
+          "kw": "3d print cost",
+          "saturation": 4,
+          "competitor": "3D Print Cost Calculator apps",
+          "note": "odhad — několik kalkulaček"
+        },
+        {
+          "kw": "filament tracker",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad — Spoolman je server/web"
+        },
+        {
+          "kw": "3d printing calculator",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "filament inventory",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem; utilities evidence uvádí ‚3D print cost‘ jako neprověřený kandidát. Z vlastní znalosti: Bambu Lab prodává stovky tisíc tiskáren ročně, r/3Dprinting se často ptá na cenotvorbu; kalkulačky v App Store existují (střední konkurence).",
+      "competitors": [
+        {
+          "name": "Bambu Handy",
+          "url": "",
+          "role": "parent",
+          "note": "oficiální aplikace tiskárny, bez kalkulace ceny"
+        },
+        {
+          "name": "3D Print Cost Calculator",
+          "url": "",
+          "role": "niche",
+          "note": "jednoduché kalkulačky"
+        },
+        {
+          "name": "Spoolman",
+          "url": "",
+          "role": "niche",
+          "note": "self-hosted skladová evidence, vyžaduje server"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Bambu Lab může přidat kalkulaci ceny a sklad filamentu (AMS už sleduje filament) do Bambu Handy — Sherlock od výrobce.",
+        "Konkurence kalkulaček narůstá; čistě kalkulační aplikace jsou snadno kopírovatelné.",
+        "Většina hobbyistů nic neprodává → nepotřebují marži.",
+        "Parsování formátů slicerů se mění s verzemi."
+      ],
+      "killer_risk": "Výrobce tiskárny integruje evidenci filamentu a ceny přímo do své aplikace.",
+      "mitigation": "Neutralita napříč značkami (Prusa, Creality, Bambu, Elegoo) a NFC sklad jako diferenciace; zaměřit se na prodejce (nabídka/PDF).",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-15",
+      "name": "Lumber Calc: Board Feet & m³",
+      "tagline": "Nakupuješ řezivo? Board feet, kubíky, cena za kus i odpad — v palcích i metrech, se seznamem pro pilu.",
+      "pitch": "Truhláři a kutilové nakupují řezivo v jednotkách, které se liší po zemích: board feet v USA, m³ v Evropě, a na pile se počítá z tloušťky, šířky a délky každé fošny. Aplikace umožní rychle zapsat fošny (i hlasem), spočítá objem a cenu, odpad a přepočet mezi soustavami a vytvoří nákupní/řezný seznam. Existující board foot kalkulačky jsou anglické a imperiální; metrická, lokalizovaná verze pro EU nechybí jen hobbystům, ale i malým pilám.",
+      "niche": "Hobby i profi truhláři kupující řezivo; stavební kalkulačky (konstrukce) neřeší nákup fošen po kusech a metrické jednotky.",
+      "parent_market": "Woodworking/construction kalkulačky (Construction Master, woodworking apps, cut list optimizery).",
+      "target_user": "Truhláři, kutilové, řezbáři, malé pily a prodejci řeziva.",
+      "features": [
+        "Rychlý zápis fošen (T × Š × D × ks) hlasem i klávesnicí",
+        "Board feet ↔ m³ ↔ lineární metry, cena za jednotku",
+        "Odpad a přídavek na opracování",
+        "Seznam k nákupu a export PDF/CSV",
+        "Jednoduchý optimalizátor řezu 1D"
+      ],
+      "offline": "full",
+      "offline_note": "Vše on-device, hlasový vstup přes Speech on-device.",
+      "monetization": "Zdarma výpočet; Pro $5.99 lifetime (≈ 140 Kč) za seznamy, export a optimalizátor.",
+      "revenue_math": "Ideál: ~2 500 stažení/měs (board foot calculator, lumber calculator, Holz m3 Rechner…) × 4 % = 100 × $5.99 = $599 gross → $509 netto ≈ 11 700 Kč/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "board foot calculator",
+          "saturation": 5,
+          "competitor": "Board Foot Calculator apps",
+          "note": "odhad — několik anglických kalkulaček"
+        },
+        {
+          "kw": "lumber calculator",
+          "saturation": 5,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "cut list",
+          "saturation": 4,
+          "competitor": "CutList Optimizer",
+          "note": "odhad"
+        },
+        {
+          "kw": "holz kubikmeter rechner",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad — DE"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem; utilities evidence uvádí ‚board feet (+ metric timber volume)‘ jako neprověřený kandidát. Z vlastní znalosti: v US existuje řada board-foot kalkulaček (trh ověřený), metrická lokalizovaná verze mi známá není.",
+      "competitors": [
+        {
+          "name": "Construction Master Pro",
+          "url": "",
+          "role": "parent",
+          "note": "placená stavební kalkulačka"
+        },
+        {
+          "name": "Board Foot Calculator",
+          "url": "",
+          "role": "us-only",
+          "note": "anglické imperiální kalkulačky"
+        },
+        {
+          "name": "CutList Optimizer",
+          "url": "",
+          "role": "niche",
+          "note": "optimalizace řezů"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "US board-foot kalkulačky jsou jen imperiální a anglické; EU/LatAm trh s metrickým řezivem v místních jazycích nemá ekvivalent.",
+      "devils_advocate": [
+        "V Evropě se běžně nekupuje po board feet a výpočet m³ zvládne kalkulačka v hlavě.",
+        "Kategorie ‚kalkulačka‘ je snadno kopírovatelná a Apple ji může zamítnout jako minimální funkcionalitu (4.2).",
+        "Nízká ochota platit u hobbystů.",
+        "Anglická hlavní fráze má 5+ konkurentů."
+      ],
+      "killer_risk": "Minimální diferenciace oproti bezplatným kalkulačkám.",
+      "mitigation": "Hlasový zápis fošen a řezný seznam jako ‚wow‘ funkce; lokalizace klíčovek do DE/PL/CZ/FR.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-16",
+      "name": "FlickerCheck: LED Flicker Meter",
+      "tagline": "Bliká ti LED žárovka? Kamera iPhonu odhalí neviditelný flicker, který způsobuje únavu očí, migrény a pruhy ve videu.",
+      "pitch": "Levné LED žárovky a stmívače často blikají frekvencí, kterou oko nevidí, ale mozek ano — lidé s migrénou, epilepsií nebo citliví na světlo to řeší na fórech. Tvůrci videa zase bojují s pruhy v záběru. Aplikace využije rolling shutter a vysokou snímkovou frekvenci kamery ke změření frekvence a hloubky blikání (flicker %), vyhodnotí to podle doporučení (IEEE 1789) a vede databázi měřených žárovek doma. Dedikované aplikace jsou vzácné, HW měřiče stojí tisíce.",
+      "niche": "Lidé citliví na flicker a videotvůrci; lux metry měří intenzitu, ne modulaci, a HW flicker metry jsou drahé.",
+      "parent_market": "Light meter / lux meter aplikace (myLightMeter, Lux Light Meter Pro) a HW měřiče flickeru.",
+      "target_user": "Lidé s migrénou/citlivostí na světlo, videotvůrci a streameři, elektrikáři a osvětlovači, kupující LED.",
+      "features": [
+        "Měření frekvence a hloubky flickeru kamerou (rolling shutter analýza)",
+        "Hodnocení podle IEEE 1789 (nízké/střední/vysoké riziko)",
+        "Test stmívače v krocích",
+        "Databáze vlastních žárovek s fotkami",
+        "Režim pro video: doporučená rychlost závěrky proti pruhům"
+      ],
+      "offline": "full",
+      "offline_note": "Analýza obrazu z kamery on-device (AVFoundation + Accelerate).",
+      "monetization": "Zdarma rychlý test; Pro $7.99 lifetime (≈ 185 Kč).",
+      "revenue_math": "Ideál: ~1 500 stažení/měs (flicker meter, led flicker, flicker test…) × 6 % = 90 × $7.99 = $719 gross → $611 netto ≈ 14 000 Kč/měs.",
+      "revenue_czk_ideal": 14000,
+      "keywords": [
+        {
+          "kw": "flicker meter",
+          "saturation": 2,
+          "competitor": "Flicker Tester apps",
+          "note": "odhad — velmi málo dedikovaných aplikací"
+        },
+        {
+          "kw": "led flicker",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "flicker test",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad — mísí se s testy displejů"
+        },
+        {
+          "kw": "light flicker",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem; utilities evidence uvádí ‚LED flicker meter‘ jako neprověřený kandidát. Z vlastní znalosti: fóra citlivých na PWM/flicker a videotvůrci řeší tento problém; existence HW měřičů (Opple, Viso) dokazuje ochotu platit. Hledanost v App Store malá.",
+      "competitors": [
+        {
+          "name": "myLightMeter PRO",
+          "url": "",
+          "role": "parent",
+          "note": "expozimetr, flicker neměří"
+        },
+        {
+          "name": "Lux Light Meter Pro",
+          "url": "",
+          "role": "parent",
+          "note": "lux metr s předplatným"
+        },
+        {
+          "name": "Opple Light Master",
+          "url": "",
+          "role": "niche",
+          "note": "HW měřič + aplikace"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Technická proveditelnost: přesnost měření hloubky flickeru kamerou je omezená a závisí na modelu iPhonu.",
+        "Malá niche; běžný člověk o flickeru neví.",
+        "Zdravotní tvrzení (migréna, epilepsie) = riziko Guideline 1.4.1 — nesmíme slibovat zdravotní diagnostiku.",
+        "Jednorázové použití (otestuji žárovky a hotovo)."
+      ],
+      "killer_risk": "Měření není dost přesné a konzistentní napříč iPhony.",
+      "mitigation": "Prototyp algoritmu na 3 modelech iPhonu před stavbou; výsledek jako kategorie (nízký/střední/vysoký) místo přesného %, bez zdravotních tvrzení.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-17",
+      "name": "HangIt: Gallery Wall Planner",
+      "tagline": "Pověs obrazy napoprvé: rozvržení galerie na zdi, přesné body pro hřebíky podle háčku a AR náhled.",
+      "pitch": "Věšení skupiny obrazů je klasická domácí frustrace — díry navíc, křivé řady, nerovné mezery. Aplikace umožní zadat rozměry rámů a pozici háčku/drátu, zvolit rozložení (mřížka, salon, nad pohovkou), a vypočítá přesnou výšku hřebíku od podlahy i vzdálenosti mezi nimi. AR náhled ukáže galerii na zdi a vodováha pomůže při věšení. Interiérové aplikace řeší nábytek, nikdo neřeší hřebíky.",
+      "niche": "Věšení obrazů a galerijních stěn; interiérové AR aplikace (IKEA, Houzz) řeší nábytek, ne umístění hřebíků.",
+      "parent_market": "Home decor / interior design aplikace (Houzz, IKEA Place, Planner 5D) a AR měření (Apple Measure).",
+      "target_user": "Nájemníci a majitelé bytů, lidé po stěhování, milovníci interiérového designu, rámařství.",
+      "features": [
+        "Zadání rámů (rozměr, háček/drát, napnutí drátu)",
+        "Šablony rozložení a automatické zarovnání mezer",
+        "Výpočet pozic hřebíků od podlahy a od rohu",
+        "AR náhled rozvržení na zdi",
+        "Vodováha a laserová čára na kameře pro věšení"
+      ],
+      "offline": "full",
+      "offline_note": "ARKit a výpočty lokálně.",
+      "monetization": "Zdarma 3 rámy; Pro $4.99 lifetime (≈ 115 Kč).",
+      "revenue_math": "Ideál: ~4 000 stažení/měs (picture hanging, gallery wall, hang pictures…) × 3 % = 120 × $4.99 = $599 gross → $509 netto ≈ 11 700 Kč/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "gallery wall",
+          "saturation": 3,
+          "competitor": "Gallery wall planner apps",
+          "note": "odhad — několik malých aplikací"
+        },
+        {
+          "kw": "picture hanging",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "hang pictures",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "bilder aufhängen",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad — DE"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem. Z vlastní znalosti: ‚gallery wall‘ je populární trend na Pinterestu, prodávají se šablony z papíru pro věšení; v App Store existuje jen pár malých aplikací. Hledanost v App Store předpoklad.",
+      "competitors": [
+        {
+          "name": "Measure (Apple)",
+          "url": "",
+          "role": "parent",
+          "note": "vestavěná vodováha a měření"
+        },
+        {
+          "name": "Houzz",
+          "url": "",
+          "role": "parent",
+          "note": "interiérový design, bez věšení"
+        },
+        {
+          "name": "Gallery wall planner apps",
+          "url": "",
+          "role": "niche",
+          "note": "malé indie aplikace"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Jednorázová potřeba (po stěhování) → malá retence.",
+        "Apple Measure má vodováhu zdarma; AR přesnost na hladké zdi je slabá.",
+        "Nízká ochota platit za ‚věšení obrázků‘.",
+        "Pinterest/YouTube návody jsou zdarma."
+      ],
+      "killer_risk": "Uživatelé nevidí důvod platit za jednorázovou věc.",
+      "mitigation": "Free tier pro 3 rámy, placené galerie; spolupráce s rámařstvími (affiliate bez serveru nelze — jen ASO); lokalizace.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-18",
+      "name": "LyeCalc: Soap Recipe Calculator",
+      "tagline": "Bezpečný výpočet louhu pro domácí mýdlo: SAP hodnoty olejů, přemaštění, vlastnosti mýdla — offline a v češtině.",
+      "pitch": "Výroba mýdla studenou cestou je populární hobby i malý byznys (trhy, Etsy), ale každý recept musí projít přes lye kalkulačku — jinak hrozí žíravé mýdlo. Referenční nástroj SoapCalc je stará anglická webová stránka, která na mobilu nefunguje dobře. Aplikace nabídne databázi olejů se SAP hodnotami, výpočet NaOH/KOH, přemaštění, koncentraci louhu, vlastnosti mýdla (tvrdost, pěna) a knihovnu receptů s šaržemi. Lokalizace do 50 jazyků otevírá trhy, kde mýdlaři používají anglický web s překladačem.",
+      "niche": "Domácí mýdlaři a malé manufaktury; webové kalkulačky jsou anglické a nemobilní, v App Store je jen několik aplikací.",
+      "parent_market": "DIY cosmetics/soapmaking (SoapCalc web, Soapee, Soapmaking Friend) a craft business aplikace.",
+      "target_user": "Hobby mýdlaři, malé manufaktury, prodejci na trzích a Etsy.",
+      "features": [
+        "Databáze olejů a tuků se SAP hodnotami (NaOH/KOH)",
+        "Výpočet louhu, vody, přemaštění, koncentrace",
+        "Vlastnosti mýdla (tvrdost, čistící schopnost, pěna, jódové číslo)",
+        "Recepty, škálování šarže a náklady",
+        "Štítky se složením (INCI) pro prodej"
+      ],
+      "offline": "full",
+      "offline_note": "Databáze olejů zabudovaná, výpočty on-device.",
+      "monetization": "Zdarma 3 recepty; Pro $6.99 lifetime (≈ 160 Kč).",
+      "revenue_math": "Ideál: ~2 000 stažení/měs (soap calculator, lye calculator, Seifenrechner…) × 5 % = 100 × $6.99 = $699 gross → $594 netto ≈ 13 600 Kč/měs.",
+      "revenue_czk_ideal": 13600,
+      "keywords": [
+        {
+          "kw": "soap calculator",
+          "saturation": 4,
+          "competitor": "Soapmaking apps",
+          "note": "odhad — několik aplikací"
+        },
+        {
+          "kw": "lye calculator",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "soap making",
+          "saturation": 5,
+          "competitor": "—",
+          "note": "odhad — mix receptových aplikací"
+        },
+        {
+          "kw": "seifenrechner",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad — DE"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem; utilities evidence uvádí ‚soap lye‘ jako neprověřený kandidát. Z vlastní znalosti: SoapCalc je dlouhodobě nejpoužívanější nástroj mýdlařů (poptávka jistá), v App Store existuje několik kalkulaček (střední konkurence).",
+      "competitors": [
+        {
+          "name": "SoapCalc (web)",
+          "url": "",
+          "role": "parent",
+          "note": "referenční webová kalkulačka, anglická"
+        },
+        {
+          "name": "Soapee",
+          "url": "",
+          "role": "niche",
+          "note": "webová/mobilní kalkulačka"
+        },
+        {
+          "name": "Soap calculator apps",
+          "url": "",
+          "role": "niche",
+          "note": "několik malých iOS aplikací"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Referenční nástroje (SoapCalc) jsou US anglické weby; lokalizovaná mobilní verze s INCI štítky v jazycích EU/LatAm chybí.",
+      "devils_advocate": [
+        "Chyba v SAP datech = chemické popálení zákazníka → odpovědnost a špatná publicita.",
+        "Kosmetické štítky podléhají regulaci (EU CPNP) — nesmíme slibovat soulad.",
+        "Konkurenční aplikace existují a web je zdarma.",
+        "Malá niche, hobby cílovka."
+      ],
+      "killer_risk": "Chyba ve výpočtu louhu s reálnými zraněními.",
+      "mitigation": "Ověřit data proti více zdrojům, výrazné varování, testy výpočtů; štítky jen jako pomůcka bez tvrzení souladu.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-19",
+      "name": "TireAge: DOT Code Reader",
+      "tagline": "Jak staré jsou tvoje pneumatiky? Vyfoť DOT kód a hned víš datum výroby, stáří a kdy je vyměnit — i při koupi ojetiny.",
+      "pitch": "Pneumatiky stárnou i bez najetých kilometrů a po 6–10 letech jsou nebezpečné, přesto většina řidičů neví, jak přečíst čtyřmístný DOT kód na boku. Aplikace kód vyfotí (on-device OCR), určí týden a rok výroby, zkontroluje všechna 4 kola a rezervu, uloží hloubku dezertu z ručního měření a připomene sezónní přezutí podle zemí. Hodí se při koupi ojetého auta nebo ‚nových‘ pneumatik z e-shopu. Dedikovaných aplikací je minimum.",
+      "niche": "Řidiči kontrolující stáří pneumatik a kupující ojetých aut; autoaplikace řeší servis a palivo, ne DOT.",
+      "parent_market": "Car maintenance aplikace (Drivvo, Fuelly, Simply Auto) a car reference aplikace (varovné kontrolky — nasycený trh).",
+      "target_user": "Řidiči, kupující ojetin, majitelé karavanů a přívěsů (pneumatiky stárnou dřív, než se sjedou).",
+      "features": [
+        "OCR čtení DOT kódu kamerou (Vision) s ručním potvrzením",
+        "Stáří a doporučení (6/10 let) pro 4 kola + rezervu",
+        "Záznam hloubky dezénu a tlaku",
+        "Připomínky přezutí zima/léto podle země",
+        "Kontrolní protokol při koupi auta"
+      ],
+      "offline": "full",
+      "offline_note": "OCR on-device, pravidla přezutí zabudovaná.",
+      "monetization": "Zdarma čtení kódu; Pro $3.99 lifetime (≈ 90 Kč) pro více vozidel, připomínky a protokol.",
+      "revenue_math": "Ideál: ~5 000 stažení/měs (tire age, dot code, tire date, Reifenalter…) × 3 % = 150 × $3.99 = $599 gross → $509 netto ≈ 11 700 Kč/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "tire age",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad — málo dedikovaných aplikací"
+        },
+        {
+          "kw": "tire dot code",
+          "saturation": 2,
+          "competitor": "Tire Date Code apps",
+          "note": "odhad"
+        },
+        {
+          "kw": "tire date",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "reifenalter",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad — DE"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem; utilities evidence uvádí ‚tire age from DOT code‘ jako neprověřený kandidát. Z vlastní znalosti: ‚how to read tire date code‘ je častý Google dotaz; v App Store je dedikovaných aplikací velmi málo. Hledanost v App Store neověřena.",
+      "competitors": [
+        {
+          "name": "Drivvo",
+          "url": "",
+          "role": "parent",
+          "note": "car maintenance tracker"
+        },
+        {
+          "name": "Car Warning Lights Explained",
+          "url": "https://apps.apple.com/us/app/car-indicators-car-warning/id893411270",
+          "role": "parent",
+          "note": "car reference utilita — nasycený sousední trh (reference evidence)"
+        },
+        {
+          "name": "Tire date code apps",
+          "url": "",
+          "role": "niche",
+          "note": "malé jednoduché dekodéry"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "OCR na černé gumě s reliéfním textem je obtížné (nízký kontrast) — ruční zadání bude častější.",
+        "Výpočet stáří z 4 číslic je triviální, lidé nechtějí platit.",
+        "Nízká frekvence použití (1–2× ročně).",
+        "Bezpečnostní doporučení = riziko odpovědnosti, pokud aplikace označí starou pneu jako OK."
+      ],
+      "killer_risk": "Triviální funkce, nízká ochota platit.",
+      "mitigation": "Přidat hodnotu: připomínky přezutí dle zákonů EU, protokol při koupi auta, více vozidel; cena nízká.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 3,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-20",
+      "name": "RoomTone: Acoustic Meter",
+      "tagline": "Změř dozvuk (RT60) a problémové rezonance své místnosti a zjisti, kolik akustických panelů opravdu potřebuješ.",
+      "pitch": "Domácí studia, podcasteři a home-cinema nadšenci utrácejí tisíce za akustické panely naslepo. Aplikace změří dobu dozvuku (RT60) tlesknutím nebo sweepem, zobrazí problémové frekvence, porovná s cíli pro studio/obývák a spočítá orientační plochu absorpce. Doplňkově testuje polaritu reproduktorů. Profesionální nástroje (AudioTools) jsou drahé a složité; laik potřebuje jasný výsledek ‚přidej 6 panelů‘.",
+      "niche": "Domácí akustika pro laiky; pro audio profíky existují drahé sady, pro laiky nic srozumitelného.",
+      "parent_market": "Audio měřicí aplikace (AudioTools, Decibel X, Room EQ Wizard na desktopu) a home studio vybavení.",
+      "target_user": "Podcasteři, youtubeři, hudebníci s domácím studiem, home-cinema nadšenci.",
+      "features": [
+        "Měření RT60 (tlesknutí/sweep) po oktávových pásmech",
+        "Graf problémových frekvencí a módů místnosti z rozměrů",
+        "Kalkulace potřebné absorpční plochy (Sabine)",
+        "Test polarity reproduktorů",
+        "Porovnání před/po úpravě"
+      ],
+      "offline": "full",
+      "offline_note": "Záznam a analýza zvuku on-device (vDSP).",
+      "monetization": "Zdarma jednoduché RT60; Pro $9.99 lifetime (≈ 230 Kč).",
+      "revenue_math": "Ideál: ~1 200 stažení/měs (rt60, room acoustics, reverb meter…) × 8 % = 96 × $9.99 = $959 gross → $815 netto ≈ 18 700 Kč/měs.",
+      "revenue_czk_ideal": 18700,
+      "keywords": [
+        {
+          "kw": "rt60",
+          "saturation": 2,
+          "competitor": "AudioTools",
+          "note": "odhad — málo aplikací, profi"
+        },
+        {
+          "kw": "room acoustics",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "reverb meter",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "acoustic panels calculator",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem; utilities evidence uvádí ‚RT60 reverb meter‘ a ‚speaker polarity‘ jako neprověřené. Z vlastní znalosti: AudioTools (profi) má placené moduly na akustiku, r/audioengineering se ptá na akustiku místnosti; hledanost v App Store malá.",
+      "competitors": [
+        {
+          "name": "AudioTools",
+          "url": "",
+          "role": "parent",
+          "note": "profi sada audio měření s placenými moduly"
+        },
+        {
+          "name": "Decibel X",
+          "url": "",
+          "role": "parent",
+          "note": "decibelmetr"
+        },
+        {
+          "name": "Room EQ Wizard",
+          "url": "",
+          "role": "niche",
+          "note": "desktopový standard (ne iOS)"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Mikrofon iPhonu má omezenou frekvenční charakteristiku a AGC; měření basů je nepřesné.",
+        "Velmi malá niche s pár technickými uživateli.",
+        "Uživatelé raději použijí zdarma REW na PC.",
+        "Jednorázové použití."
+      ],
+      "killer_risk": "Nepřesnost měření na iPhonu diskredituje výsledek u technické cílovky.",
+      "mitigation": "Kalibrace pro modely iPhone, podpora USB měřicího mikrofonu, výsledky jako doporučení s tolerancí.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-21",
+      "name": "LevelUp: Camper Leveling Blocks",
+      "tagline": "Vyrovnej karavan nebo obytňák napoprvé: aplikace řekne, kolik podložek dát pod které kolo.",
+      "pitch": "Každý kempař s obytným autem nebo karavanem řeší vyrovnání na kempu; bubliny na nápravě jsou nepřesné a hardwarové senzory stojí stovky dolarů. Aplikace s telefonem položeným v autě změří náklon, podle rozchodu a rozvoru spočítá výšku podložek pod každé kolo a přeloží ji na počet klínů/bloků. Uloží ‚nulu‘ pro vozidlo a nabídne velké čitelné zobrazení z venku. Trh je velký (RV v US, karavany a obytňáky v DE/NL/UK/FR), konkurence existuje, ale je roztříštěná.",
+      "niche": "Vyrovnání bez HW senzoru s výpočtem podložek; HW řešení (LevelMate) jsou drahá, obecné vodováhy nepočítají bloky.",
+      "parent_market": "RV/camping aplikace (RV LIFE, Campendium, park4night) a HW leveling (LevelMatePRO).",
+      "target_user": "Majitelé obytných aut, karavanů a přívěsů, vanlifeři.",
+      "features": [
+        "Kalibrace nuly pro vozidlo",
+        "Výpočet výšky pod každé kolo z rozchodu/rozvoru",
+        "Přepočet na klíny/bloky uživatelových podložek",
+        "Velký čitelný displej, režim Apple Watch",
+        "Profily pro více vozidel"
+      ],
+      "offline": "full",
+      "offline_note": "Pouze akcelerometr/gyroskop a výpočty; žádná síť.",
+      "monetization": "Zdarma vodováha; Pro $4.99 lifetime (≈ 115 Kč) za výpočet podložek a profily.",
+      "revenue_math": "Ideál: ~3 000 stažení/měs (rv level, caravan level, camper leveling…) × 4 % = 120 × $4.99 = $599 gross → $509 netto ≈ 11 700 Kč/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "rv level",
+          "saturation": 6,
+          "competitor": "RV Level apps",
+          "note": "odhad — více aplikací, US"
+        },
+        {
+          "kw": "caravan level",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad — UK/EU"
+        },
+        {
+          "kw": "camper leveling",
+          "saturation": 4,
+          "competitor": "LevelMatePRO",
+          "note": "odhad"
+        },
+        {
+          "kw": "wohnmobil ausrichten",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad — DE"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem; utilities evidence uvádí ‚RV/trailer leveling‘ jako neprověřený kandidát. Z vlastní znalosti: existuje několik RV level aplikací a úspěšný HW LevelMatePRO — trh prokázaný, ale obsazený v angličtině.",
+      "competitors": [
+        {
+          "name": "LevelMatePRO",
+          "url": "",
+          "role": "parent",
+          "note": "HW senzor + aplikace"
+        },
+        {
+          "name": "RV Level",
+          "url": "",
+          "role": "niche",
+          "note": "iOS vodováhy pro RV"
+        },
+        {
+          "name": "park4night",
+          "url": "",
+          "role": "parent",
+          "note": "obří camping komunita (EU)"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Anglické klíčovky mají 5+ konkurentů — modrý oceán jen v DE/NL/FR lokalizacích.",
+        "Telefon se v autě hýbe; přesnost závisí na položení.",
+        "Jednou nastaveno, pak málo důvodů platit.",
+        "Guideline 4.2 — ‚vodováha‘ může být považována za minimální funkcionalitu."
+      ],
+      "killer_risk": "Anglický trh je obsazený, evropské fráze mají malou hledanost.",
+      "mitigation": "Soustředit ASO na DE/FR/NL/IT (Wohnmobil, camping-car) a UK caravan; výpočet podložek jako hlavní odlišení.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-22",
+      "name": "HeaterAge: Appliance Serial Decoder",
+      "tagline": "Kolik let je bojleru, klimatizaci či kotli? Vyfoť výrobní štítek a dekodér sériového čísla určí rok výroby.",
+      "pitch": "Domácí inspektoři, realitní makléři a kupující domů v USA potřebují zjistit stáří ohřívače vody, klimatizace a kotle — výrobci ho kódují v sériovém čísle a každý jinak. Existují webové služby pro profíky (placené), ale mobilní offline dekodér s OCR štítku je vzácný. Aplikace přečte štítek kamerou, podle pravidel ~40 značek určí měsíc a rok výroby a vytvoří záznam pro inspekční zprávu. Inspektoři platí za nástroje, které šetří minuty na každé zakázce.",
+      "niche": "US home inspection a údržba; home inspection aplikace řeší reporty, ne dekódování sériových čísel.",
+      "parent_market": "Home inspection software (Spectora, HomeGauge) a referenční služby dekódování (Building Intelligence Center — web).",
+      "target_user": "Domácí inspektoři, HVAC technici, realitní makléři a kupující domů v USA a Kanadě.",
+      "features": [
+        "OCR výrobního štítku (Vision) a detekce značky",
+        "Pravidla dekódování ~40 značek (rok/měsíc výroby)",
+        "Odhad zbývající životnosti a poznámky",
+        "Export záznamu do inspekční zprávy (PDF/text)",
+        "Historie domů/zakázek"
+      ],
+      "offline": "full",
+      "offline_note": "Pravidla dekódování zabudovaná, OCR on-device.",
+      "monetization": "Pro $9.99 lifetime (≈ 230 Kč) nebo $2.99/měs pro inspektory; zdarma 3 dekódování.",
+      "revenue_math": "Ideál: ~1 500 stažení/měs (water heater age, hvac age, serial number decoder…) × 6 % = 90 × $9.99 = $899 gross → $764 netto ≈ 17 500 Kč/měs.",
+      "revenue_czk_ideal": 17500,
+      "keywords": [
+        {
+          "kw": "water heater age",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad — velmi málo aplikací"
+        },
+        {
+          "kw": "hvac age",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "serial number decoder",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad — mix jiných dekodérů"
+        },
+        {
+          "kw": "home inspector",
+          "saturation": 5,
+          "competitor": "Spectora",
+          "note": "odhad — parent, inspekční software"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem; utilities evidence uvádí ‚water-heater age from serial‘ jako neprověřený kandidát. Z vlastní znalosti: US inspektoři běžně platí za přístup k Building Intelligence Center (dekódování sériových čísel) — ochota platit prokázaná; mobilní offline alternativa je vzácná.",
+      "competitors": [
+        {
+          "name": "Spectora",
+          "url": "",
+          "role": "parent",
+          "note": "leader US home inspection softwaru (server)"
+        },
+        {
+          "name": "Building Intelligence Center",
+          "url": "",
+          "role": "niche",
+          "note": "placená webová databáze dekódování"
+        },
+        {
+          "name": "HomeGauge",
+          "url": "",
+          "role": "parent",
+          "note": "inspekční reporty"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Sestavit pravidla pro desítky značek je pracné a část informací je v licencovaných databázích (autorské právo na kompilaci).",
+        "Pravidla se mění s novými výrobními řadami — nutnost aktualizací.",
+        "Trh je jen US/CA; lokalizace nepomůže.",
+        "Chybné stáří v inspekční zprávě = odpovědnost inspektora → nedůvěra."
+      ],
+      "killer_risk": "Nedostatečná a nepřesná data dekódování bez licencované databáze.",
+      "mitigation": "Pravidla sestavit z veřejných dokumentů výrobců; zobrazovat zdroj a míru jistoty; začít 15 nejčastějšími značkami ohřívačů vody.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-23",
+      "name": "MeterLog: Utility Readings",
+      "tagline": "Vyfoť elektroměr, plynoměr nebo vodoměr — aplikace přečte stav, spočítá spotřebu a odhalí, jestli ti neuteče voda.",
+      "pitch": "Domácnosti v EU pravidelně odečítají měřidla kvůli vyúčtování a hlídání spotřeby — zvlášť od energetické krize. Aplikace přečte číslice z fotky (on-device OCR), uloží stav s datem, spočítá spotřebu a náklady podle tarifu a upozorní na neobvyklou spotřebu; nabídne i test úniku vody (odečet před/po 2 hodinách bez odběru). V DE existuje několik ‚Zählerstand‘ aplikací, ale OCR a lokalizace pro menší země jsou slabé.",
+      "niche": "Ruční odečty měřidel v domácnostech bez chytrých měřičů; energetické aplikace dodavatelů vyžadují účet a jsou jen pro jejich zákazníky.",
+      "parent_market": "Energy/utility tracking aplikace (DE Zählerstand aplikace, aplikace dodavatelů energií).",
+      "target_user": "Domácnosti a pronajímatelé v EU (DE, AT, CZ, PL, NL), majitelé chat.",
+      "features": [
+        "OCR stavu měřidla z fotky (Vision) s ruční opravou",
+        "Více měřidel (elektřina VT/NT, plyn, voda, teplo)",
+        "Spotřeba a náklady podle tarifu, graf a predikce vyúčtování",
+        "Test úniku vody",
+        "Export pro dodavatele/pronajímatele"
+      ],
+      "offline": "full",
+      "offline_note": "OCR a výpočty lokálně; bez napojení na dodavatele.",
+      "monetization": "Zdarma 2 měřidla; Pro $4.99 lifetime (≈ 115 Kč).",
+      "revenue_math": "Ideál: ~4 000 stažení/měs (meter reading, zählerstand, energy tracker…) × 3 % = 120 × $4.99 = $599 gross → $509 netto ≈ 11 700 Kč/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "meter reading",
+          "saturation": 5,
+          "competitor": "Meter reading apps",
+          "note": "odhad — více aplikací"
+        },
+        {
+          "kw": "zählerstand",
+          "saturation": 5,
+          "competitor": "DE Zählerstand apps",
+          "note": "odhad — v DE obsazené"
+        },
+        {
+          "kw": "odečet energií",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad — CZ"
+        },
+        {
+          "kw": "water leak test",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem. Z vlastní znalosti: v DE existuje řada aplikací na odečty (důkaz poptávky, ale i konkurence); v menších jazycích EU mnohem méně. Hledanost předpoklad.",
+      "competitors": [
+        {
+          "name": "Zählerstand / meter reading apps (DE)",
+          "url": "",
+          "role": "parent",
+          "note": "několik zavedených DE aplikací"
+        },
+        {
+          "name": "Energy supplier apps",
+          "url": "",
+          "role": "parent",
+          "note": "aplikace dodavatelů (účet, server)"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Chytré měřiče se rozšiřují a ruční odečet zmizí.",
+        "V DE je trh obsazený, v menších zemích malý objem hledání.",
+        "OCR na starých bubnových měřičích a za sklem s odlesky selhává.",
+        "Dodavatelé mají vlastní aplikace pro zadání odečtu zdarma."
+      ],
+      "killer_risk": "Postupný nástup smart meterů zmenšuje trh.",
+      "mitigation": "Cílit na nájemníky a chalupáře (kde smart metery nebudou brzy), test úniku a predikci vyúčtování jako diferenciaci.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-24",
+      "name": "PileScan: Stockpile Volume",
+      "tagline": "Objem hromady štěrku, písku, mulče nebo kompostu za minutu — obejdi ji s iPhonem s LiDARem.",
+      "pitch": "Zahradníci, stavbyvedoucí, zemědělci a prodejci sypkých materiálů odhadují objem hromad od oka — a chyba stojí peníze. Enterprise řešení (drony, Stockpile Reports) jsou drahá a serverová. Aplikace využije LiDAR iPhonu Pro: obejdi hromadu, vytvoří 3D síť, spočítá objem v m³/yd³ a tunáž podle hustoty materiálu a vytvoří PDF zprávu. Pro malé firmy, které si dron nekoupí, je to cenově dostupné řešení.",
+      "niche": "Malé firmy a farmy s hromadami sypkých materiálů; enterprise volumetrie (drony, SaaS) cílí na lomy a velké firmy.",
+      "parent_market": "Stockpile measurement / drone survey (Stockpile Reports, DroneDeploy, Pix4D) — drahý B2B trh.",
+      "target_user": "Zahradní a stavební firmy, prodejci štěrku/mulče, zemědělci (siláž, hnůj), obce.",
+      "features": [
+        "LiDAR sken hromady a výpočet objemu",
+        "Hustoty materiálů (štěrk, písek, mulč, kompost, siláž) → tuny",
+        "PDF zpráva s 3D náhledem a fotkou",
+        "Historie skenů podle lokality",
+        "Režim pro hromadu u zdi / v boxu"
+      ],
+      "offline": "full",
+      "offline_note": "ARKit Scene Reconstruction + výpočet objemu on-device.",
+      "monetization": "Předplatné pro firmy $24.99/měs (≈ 575 Kč) nebo $199/rok; zdarma 3 skeny.",
+      "revenue_math": "Ideál (ustálený stav): ~600 stažení/měs (stockpile volume, pile volume, gravel calculator…) × ~7 % → po půl roce ~40 aktivních předplatitelů × $24.99 = $1 000 gross → $850 netto ≈ 19 500 Kč/měs.",
+      "revenue_czk_ideal": 19500,
+      "keywords": [
+        {
+          "kw": "stockpile volume",
+          "saturation": 3,
+          "competitor": "Stockpile Reports",
+          "note": "odhad — enterprise aplikace"
+        },
+        {
+          "kw": "pile volume",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "gravel calculator",
+          "saturation": 5,
+          "competitor": "—",
+          "note": "odhad — kalkulačky podle rozměrů"
+        },
+        {
+          "kw": "lidar volume",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem; utilities evidence uvádí ‚stockpile volume‘ jako neprověřený kandidát. Z vlastní znalosti: existence enterprise řešení (Stockpile Reports, drony) prokazuje, že firmy za měření objemu platí; LiDAR aplikace pro malé firmy jsou vzácné.",
+      "competitors": [
+        {
+          "name": "Stockpile Reports",
+          "url": "",
+          "role": "parent",
+          "note": "enterprise volumetrie (server, drahé)"
+        },
+        {
+          "name": "DroneDeploy",
+          "url": "",
+          "role": "parent",
+          "note": "dronová měření"
+        },
+        {
+          "name": "Polycam",
+          "url": "",
+          "role": "niche",
+          "note": "obecné 3D skenování s LiDARem"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Jen iPhone Pro s LiDARem (dosah ~5 m) — velké hromady nelze naskenovat.",
+        "Přesnost ±10–15 % nestačí pro fakturaci; firmy budou reklamovat.",
+        "B2B zákazníci nehledají v App Store, ASO přivede málo uživatelů.",
+        "Polycam/3D skenery mohou přidat výpočet objemu."
+      ],
+      "killer_risk": "Omezený dosah LiDARu a přesnost znemožní reálné profesionální použití.",
+      "mitigation": "Cílit na malé hromady (mulč, kompost, písek do ~5 m), jasně deklarovat přesnost; prototyp a validace před investicí.",
+      "build_weeks": 8,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 7,
+        "build_ease": 3,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-25",
+      "name": "TowCheck: Caravan Towing Weight",
+      "tagline": "Utáhne tvoje auto tenhle karavan legálně a bezpečně? Poměr hmotností, řidičák B/BE/B96 a zatížení koule.",
+      "pitch": "Kupující karavanů a přívěsů v EU a UK se ztrácejí v číslech z technického průkazu: maximální hmotnost přívěsu, 85% doporučení, oprávnění B vs. BE vs. B96, zatížení koule. Chyba znamená pokutu, neplatné pojištění nebo nehodu. Aplikace vezme údaje z TP (ruční zadání nebo foto s OCR), spočítá poměry, řekne, jaké řidičské oprávnění je třeba, a pomůže rozložit náklad. V UK existují weby kempařských klubů, ale mobilní lokalizovaná aplikace pro celou EU chybí.",
+      "niche": "Tažení karavanů a přívěsů v EU/UK (licence B/BE/B96); US towing kalkulačky neznají evropské řidičské skupiny.",
+      "parent_market": "Caravan/camping aplikace (park4night, Caravan and Motorhome Club) a US towing kalkulačky.",
+      "target_user": "Kupující a majitelé karavanů, přívěsů na koně/lodě, půjčovny přívěsů.",
+      "features": [
+        "Zadání hmotností z TP (OCR) auta a přívěsu",
+        "Poměr hmotností, 85% doporučení, zatížení koule",
+        "Kontrola řidičského oprávnění B/BE/B96 podle země",
+        "Kalkulačka nákladu (voda, plyn, vybavení)",
+        "Kontrolní seznam před jízdou"
+      ],
+      "offline": "full",
+      "offline_note": "Pravidla a výpočty zabudované, OCR on-device.",
+      "monetization": "Zdarma výpočet; Pro $5.99 lifetime (≈ 140 Kč).",
+      "revenue_math": "Ideál: ~2 000 stažení/měs (towing calculator, caravan weight, Anhängelast…) × 5 % = 100 × $5.99 = $599 gross → $509 netto ≈ 11 700 Kč/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "towing calculator",
+          "saturation": 4,
+          "competitor": "US towing calculators",
+          "note": "odhad — US zaměření"
+        },
+        {
+          "kw": "caravan weight",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad — UK"
+        },
+        {
+          "kw": "anhängelast",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad — DE"
+        },
+        {
+          "kw": "b96",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad — DE/EU licence"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem; travel evidence uvádí ‚caravan towing-weight calc‘ jako neprověřený kandidát. Z vlastní znalosti: kempařské kluby v UK mají webové ‚towing calculators‘ (poptávka), DE fóra řeší B96/BE často. Hledanost v App Store předpoklad.",
+      "competitors": [
+        {
+          "name": "Caravan and Motorhome Club",
+          "url": "",
+          "role": "parent",
+          "note": "UK klub s webovou towing kalkulačkou"
+        },
+        {
+          "name": "park4night",
+          "url": "",
+          "role": "parent",
+          "note": "EU camping komunita"
+        },
+        {
+          "name": "Towing calculator apps",
+          "url": "",
+          "role": "us-only",
+          "note": "US kalkulačky v librách"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Právní pravidla se liší po zemích a mění se (EU směrnice o řidičských průkazech 2025/26) — riziko zastaralých informací.",
+        "Odpovědnost: chybná rada → pokuta/nehoda, uživatel viní aplikaci.",
+        "Malá frekvence použití (nákup karavanu).",
+        "Sezónní trh."
+      ],
+      "killer_risk": "Zastaralé nebo chybné právní informace s reálnými důsledky.",
+      "mitigation": "Uvádět zdroj a datum pravidel, disclaimer, výpočty fyzikální (poměry) oddělit od právních informací; roční aktualizace.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-26",
+      "name": "Offroad Tilt: 4x4 Inclinometer",
+      "tagline": "Palubní náklonoměr pro off-road: náklon, stoupání, výstraha před převrácením podle tvého auta — na palubní desce.",
+      "pitch": "Off-roadoví nadšenci (Jeep, Land Cruiser, Defender, Suzuki Jimny) chtějí vidět náklon a stoupání v reálném čase a vědět, kdy se blíží k limitu převrácení. Vodováhy a inklinometry v App Store existují, ale nejsou stavěné pro palubní desku: chybí profil auta, kalibrace držáku, výstraha a záznam trasy s maximy. Aplikace přidá velký kokpitový displej, varování a sdílení ‚max náklonu‘ z výletu — přesně to, co off-road komunita ráda sdílí.",
+      "niche": "Off-road řidiči; obecné inklinometry nejsou pro auto a HW inklinometry stojí stovky dolarů.",
+      "parent_market": "Inklinometry/vodováhy (Clinometer by plaincode) a off-road navigace (Gaia GPS, onX Offroad).",
+      "target_user": "Majitelé 4x4, overlanderi, off-road kluby, ATV/UTV jezdci.",
+      "features": [
+        "Kokpitový displej náklonu a stoupání s kalibrací držáku",
+        "Profil auta a výstražné limity (zvuk/vibrace)",
+        "Záznam trasy s maximy náklonu (bez mapových dat)",
+        "Sdílení ‚max tilt‘ karty",
+        "CarPlay-friendly velké zobrazení (pokud povoleno), noční režim"
+      ],
+      "offline": "full",
+      "offline_note": "Pouze senzory pohybu a GPS; bez mapových podkladů a sítě.",
+      "monetization": "Zdarma základní náklon; Pro $4.99 lifetime (≈ 115 Kč).",
+      "revenue_math": "Ideál: ~3 000 stažení/měs (inclinometer, offroad inclinometer, 4x4 tilt…) × 4 % = 120 × $4.99 = $599 gross → $509 netto ≈ 11 700 Kč/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "inclinometer",
+          "saturation": 7,
+          "competitor": "Clinometer + bubble level",
+          "note": "odhad — obecná fráze silně obsazená"
+        },
+        {
+          "kw": "offroad inclinometer",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "4x4 inclinometer",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "jeep tilt",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad — značka v klíčovce riziko 2.3.7, jen pro výzkum"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem; utilities evidence uvádí ‚4x4 inclinometer‘ jako neprověřený kandidát. Z vlastní znalosti: v App Store existuje více off-road inklinometrů (poptávka prokázaná, konkurence střední), HW inklinometry se prodávají na Amazonu.",
+      "competitors": [
+        {
+          "name": "Clinometer + bubble level",
+          "url": "",
+          "role": "parent",
+          "note": "silný obecný inklinometr"
+        },
+        {
+          "name": "onX Offroad",
+          "url": "",
+          "role": "parent",
+          "note": "off-road navigace (server, předplatné)"
+        },
+        {
+          "name": "Offroad inclinometer apps",
+          "url": "",
+          "role": "niche",
+          "note": "několik menších aplikací"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Konkurence v anglických frázích existuje; odlišení je jen UX.",
+        "Riziko odpovědnosti — uživatel se spolehne na výstrahu a převrátí auto.",
+        "Náklonoměry jsou vestavěné v nových off-roadech (Jeep, Ford Bronco displeje).",
+        "Malá ochota platit za ‚vodováhu‘."
+      ],
+      "killer_risk": "Nedostatečná diferenciace od existujících inklinometrů.",
+      "mitigation": "Profily aut a záznam maxim jako ‚sociální‘ funkce; lokalizace pro EU off-road komunity; jasné disclaimery.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-27",
+      "name": "HamCalc: Antenna Toolkit",
+      "tagline": "Kapesní nástroje radioamatéra: délka dipólu a vertikálu, útlum koaxu, SWR, Maidenhead lokátor — vše offline.",
+      "pitch": "Radioamatéři (miliony licencí po světě) staví antény a počítají délky, útlumy a impedance — a často jsou v terénu (SOTA, POTA) bez signálu. Existující iOS nástroje jsou buď roztříštěné jednoúčelové aplikace, nebo zastaralé. Aplikace spojí nejpoužívanější výpočty antén a vedení, převod lokátoru a pásmový plán v místním jazyce. Radioamatéři jsou starší, technicky zdatní a za kvalitní nástroj ochotně zaplatí.",
+      "niche": "Radioamatéři v terénu (POTA/SOTA) a stavitelé antén; velké ham aplikace řeší logování a síťové služby.",
+      "parent_market": "Amateur radio aplikace (QRZ, HamLog, logovací aplikace) a antenna kalkulačky.",
+      "target_user": "Radioamatéři, POTA/SOTA aktivátoři, začínající držitelé licence.",
+      "features": [
+        "Délka dipólu, vertikálu, J-pole, EFHW s velocity factor",
+        "Útlum koaxu podle typu a frekvence, SWR ztráty",
+        "Maidenhead lokátor z GPS, vzdálenost a azimut",
+        "Pásmové plány IARU regionů 1–3 (zabudované)",
+        "Oblíbené výpočty a poznámky"
+      ],
+      "offline": "full",
+      "offline_note": "Všechny výpočty a tabulky lokálně, GPS bez sítě.",
+      "monetization": "Pro $7.99 lifetime (≈ 185 Kč), zdarma dipól a lokátor.",
+      "revenue_math": "Ideál: ~1 000 stažení/měs (ham radio, antenna calculator, maidenhead…) × 8 % = 80 × $7.99 = $639 gross → $543 netto ≈ 12 500 Kč/měs.",
+      "revenue_czk_ideal": 12500,
+      "keywords": [
+        {
+          "kw": "antenna calculator",
+          "saturation": 4,
+          "competitor": "Antenna calculator apps",
+          "note": "odhad"
+        },
+        {
+          "kw": "ham radio",
+          "saturation": 7,
+          "competitor": "HamLog / QRZ",
+          "note": "odhad — obecná fráze obsazená"
+        },
+        {
+          "kw": "maidenhead",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "dipole calculator",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem; utilities a navigation evidence uvádí ‚ham radio Maidenhead locator‘ jako neprověřený. Z vlastní znalosti: ham aplikace (HamLog, QRZ) mají stabilní platící uživatele, POTA roste; kalkulačky antén existují, ale roztříštěně.",
+      "competitors": [
+        {
+          "name": "QRZ.com",
+          "url": "",
+          "role": "parent",
+          "note": "největší ham komunita"
+        },
+        {
+          "name": "HamLog",
+          "url": "",
+          "role": "parent",
+          "note": "placený logger s nástroji"
+        },
+        {
+          "name": "Antenna calculator apps",
+          "url": "",
+          "role": "niche",
+          "note": "jednoúčelové kalkulačky"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Velmi malý trh s nízkou hledaností v App Store.",
+        "HamLog a další už obsahují podobné kalkulačky.",
+        "Radioamatéři preferují desktopové nástroje a PDF tabulky.",
+        "Obtížné dosáhnout 10 000 Kč i v ideálu."
+      ],
+      "killer_risk": "Příliš malé publikum.",
+      "mitigation": "Minimální stavba (3 týdny), lokalizace do jazyků silných ham komunit (JP, DE, IT, PL, CZ); POTA/SOTA zaměření.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-28",
+      "name": "BagFit: Carry-On Size Checker",
+      "tagline": "Vejde se tvůj kufr do kabiny? AR změří zavazadlo a porovná ho s limity leteckých společností — offline na letišti.",
+      "pitch": "Nízkonákladové aerolinky vydělávají miliardy na poplatcích za zavazadla a cestující se bojí, že jejich kufr nebo batoh nesplní rozměry. Aplikace změří zavazadlo přes AR/LiDAR a porovná ho s vestavěnou tabulkou limitů (kabina, osobní věc, podpalubí) pro stovky aerolinek; funguje i offline na letišti. Doplňkově váha odhadem a checklist. Hledání typu ‚Ryanair bag size‘ je obrovské, dedikované aplikace jsou slabé.",
+      "niche": "Cestující s nízkonákladovými aerolinkami; cestovní aplikace řeší lety a ubytování, ne rozměry zavazadla.",
+      "parent_market": "Travel utility aplikace (TripIt, packing listy) a AR měření.",
+      "target_user": "Cestující low-cost aerolinkami, studenti, backpackeři.",
+      "features": [
+        "AR/LiDAR měření zavazadla (3 rozměry)",
+        "Tabulka limitů 200+ aerolinek (kabina/osobní věc), offline",
+        "Výsledek ‚vejde/nevejde‘ pro vybranou aerolinku a tarif",
+        "Seznam věcí k zabalení",
+        "Aktualizace tabulky s novou verzí aplikace"
+      ],
+      "offline": "mostly",
+      "offline_note": "Měření a tabulka offline; tabulka limitů se aktualizuje s aktualizací aplikace (bez serveru), riziko zastarání.",
+      "monetization": "Zdarma 3 měření; Pro $4.99 lifetime (≈ 115 Kč).",
+      "revenue_math": "Ideál: ~6 000 stažení/měs (carry on size, cabin bag size, hand luggage…) × 2 % = 120 × $4.99 = $599 gross → $509 netto ≈ 11 700 Kč/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "carry on size",
+          "saturation": 3,
+          "competitor": "Carry-on checker apps",
+          "note": "odhad"
+        },
+        {
+          "kw": "cabin bag",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "hand luggage size",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "luggage measure",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem; travel evidence uvádí ‚AR carry-on size checker‘ jako neprověřený. Z vlastní znalosti: dotazy na rozměry kabinových zavazadel mají obrovský objem na Googlu; v App Store jsou jen malé aplikace.",
+      "competitors": [
+        {
+          "name": "TripIt",
+          "url": "",
+          "role": "parent",
+          "note": "cestovní organizér"
+        },
+        {
+          "name": "Measure (Apple)",
+          "url": "",
+          "role": "parent",
+          "note": "AR měření zdarma"
+        },
+        {
+          "name": "Carry-on size checker apps",
+          "url": "",
+          "role": "niche",
+          "note": "malé aplikace"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Limity aerolinek se mění často; bez serveru rychle zastarají → chybné rady a 1★.",
+        "Názvy aerolinek jsou ochranné známky — nelze je dát do názvu/klíčovek (2.3.7).",
+        "AR měření měkkého batohu je nepřesné.",
+        "Google odpověď ‚Ryanair cabin bag size‘ je zdarma a okamžitá."
+      ],
+      "killer_risk": "Zastaralá data limitů bez serveru.",
+      "mitigation": "Měsíční aktualizace aplikace s tabulkou; jen top 50 aerolinek; datum poslední kontroly u každé.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 3,
+        "build_ease": 5,
+        "offline_fit": 7,
+        "safety": 4
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-29",
+      "name": "ButtonLingo: Appliance Translator",
+      "tagline": "Pračka v japonštině, trouba v němčině? Namiř kameru na ovladač a uvidíš, co který program a symbol znamená.",
+      "pitch": "Expati, studenti v zahraničí a hosté Airbnb denně stojí před pračkou, sušičkou, troubou nebo klimatizací s nápisy v cizím jazyce. Obecné překladače překládají slova doslova (‚Pflegeleicht‘ → ‚snadná péče‘) a nevysvětlí, co program dělá. Aplikace kombinuje on-device OCR s kurátorovaným slovníkem programů a symbolů spotřebičů (JP, DE, FR, KO, CN…) a vysvětlí je v 50 jazycích. Laundry symbol aplikace dokazují zájem o ‚vysvětli mi symboly‘, ale ovládací panely nikdo neřeší.",
+      "niche": "Expati a cestovatelé se spotřebiči v cizím jazyce; laundry-symbol aplikace řeší štítky na oblečení, překladače jsou obecné.",
+      "parent_market": "Laundry symbols / label reader aplikace (reference evidence: MEDIUM, 4+ aplikací) a překladače (Google Translate, Apple Translate).",
+      "target_user": "Expati v JP/DE/KR/FR, zahraniční studenti, hosté Airbnb, au-pair.",
+      "features": [
+        "OCR ovládacího panelu a zvýraznění rozpoznaných programů",
+        "Kurátorovaný slovník programů spotřebičů (praní, sušení, trouba, AC, rýžovar, WC)",
+        "Vysvětlení v 50 jazycích (co program dělá, teplota)",
+        "Symboly na ovladačích (ikony)",
+        "Oblíbené spotřebiče (můj byt)"
+      ],
+      "offline": "full",
+      "offline_note": "OCR on-device, slovník zabudovaný; bez cloudového překladu.",
+      "monetization": "Zdarma pračka; Pro $5.99 lifetime (≈ 140 Kč) pro všechny spotřebiče a jazyky.",
+      "revenue_math": "Ideál: ~2 500 stažení/měs (washing machine translator, japanese appliance, laundry symbols…) × 4 % = 100 × $5.99 = $599 gross → $509 netto ≈ 11 700 Kč/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "laundry symbols",
+          "saturation": 5,
+          "competitor": "Wash - Laundry Symbols",
+          "note": "web evidence (reference): MEDIUM, 4 aplikace, již lokalizované — jen parent"
+        },
+        {
+          "kw": "washing machine translator",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "japanese washing machine",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "appliance symbols",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Parent ověřen webem (reference evidence: laundry symbols = MEDIUM, 4+ aplikací, lokalizované). Nika ovládacích panelů neověřena; z vlastní znalosti expat fóra (r/japanlife, Toytown Germany) mají časté dotazy na pračky/trouby.",
+      "competitors": [
+        {
+          "name": "Wash - Laundry Symbols",
+          "url": "https://apps.apple.com/us/app/wash-laundry-symbols/id434699707",
+          "role": "parent",
+          "note": "symboly na štítcích oblečení"
+        },
+        {
+          "name": "Laundry Symbols: AI Scanner",
+          "url": "https://apps.apple.com/it/app/laundry-symbols-scanner-ai/id6443902166",
+          "role": "parent",
+          "note": "AI skener štítků, lokalizovaný"
+        },
+        {
+          "name": "Google Translate",
+          "url": "",
+          "role": "parent",
+          "note": "obecný kamerový překlad zdarma"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Sherlock: Apple Translate a Google Lens překládají kamerou zdarma a Apple Intelligence může vysvětlit kontext.",
+        "Kurátorování slovníků spotřebičů je obrovská práce a nikdy nebude úplné.",
+        "Expati potřebují aplikaci jen první týdny → nízké LTV.",
+        "OCR japonských/korejských znaků na lesklých panelech je nespolehlivé."
+      ],
+      "killer_risk": "Obecné překladače s AI ‚stačí‘ a zdarma.",
+      "mitigation": "Kvalita vysvětlení (co program dělá) místo doslovného překladu; začít s pračkou/sušičkou v JP/DE/KR, rozšiřovat podle recenzí.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 4,
+        "offline_fit": 9,
+        "safety": 4
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "utilities-30",
+      "name": "CalClean: Calendar Spam Remover",
+      "tagline": "Kalendář plný falešných událostí ‚Vyhrál jsi iPhone‘? Najdi a odstraň spamové odběry kalendářů jedním klepnutím.",
+      "pitch": "Spamové kalendářové odběry se uživatelům (hlavně starším) přihlásí přes podvodné weby a zaplní kalendář falešnými upozorněními. Aplikace pomocí EventKit najde podezřelé kalendáře a události (odkazy, výherní fráze, emotikony), vysvětlí, jak odebrat odběr, a pomůže ho odstranit. Evidence ukazuje 2 existující aplikace, ale nejasnou poptávku — jde o nízko nákladovou sázku.",
+      "niche": "Uživatelé s kalendářovým spamem; bezpečnostní aplikace řeší web/Wi-Fi, ne kalendář.",
+      "parent_market": "Cleaner / security utility aplikace (Cleaner apps, ad blockery) — velký utilitní trh.",
+      "target_user": "Starší uživatelé iPhonu a jejich děti/vnuci, kteří jim pomáhají.",
+      "features": [
+        "Sken kalendářů přes EventKit a skóre podezřelosti",
+        "Průvodce odebráním odběru (screenshoty pro každou verzi iOS)",
+        "Hromadné smazání spamových událostí",
+        "Ochranné tipy a upozornění při novém podezřelém kalendáři",
+        "Režim ‚pomoc babičce‘ (velké písmo)"
+      ],
+      "offline": "full",
+      "offline_note": "Analýza lokálně přes EventKit, bez odesílání dat.",
+      "monetization": "Zdarma sken; Pro $3.99 (≈ 90 Kč) za hromadné čištění a hlídání.",
+      "revenue_math": "Ideál: ~5 000 stažení/měs (calendar spam, calendar virus, remove calendar spam…) × 3 % = 150 × $3.99 = $599 gross → $509 netto ≈ 11 700 Kč/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "calendar spam",
+          "saturation": 2,
+          "competitor": "Calendar Spam Cleaner",
+          "note": "web evidence: 2 aplikace (Calendar AdBlocker, Calendar Spam Cleaner), poptávka nejasná"
+        },
+        {
+          "kw": "calendar virus",
+          "saturation": 2,
+          "competitor": "Calendar AdBlocker",
+          "note": "odhad — laická fráze"
+        },
+        {
+          "kw": "calendar cleaner",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Web evidence: WEAK — 2 dedikované aplikace (Calendar AdBlocker id1575471324, Calendar Spam Cleaner id6787564566), poptávka nejasná. Z vlastní znalosti: Apple od iOS 14.6 zjednodušil odebrání spamových kalendářů, problém je menší než dříve.",
+      "competitors": [
+        {
+          "name": "Calendar AdBlocker",
+          "url": "",
+          "role": "niche",
+          "note": "dedikovaná aplikace (ID v evidenci, bez plné URL)"
+        },
+        {
+          "name": "Calendar Spam Cleaner",
+          "url": "",
+          "role": "niche",
+          "note": "nová dedikovaná aplikace"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Sherlock: iOS umožňuje nahlásit a odebrat spamový kalendář přímo v aplikaci Kalendář.",
+        "Poptávka nejasná a klesající (Safari blokuje podvodné stránky lépe).",
+        "Uživatel potřebuje aplikaci jednou → žádná retence, a platit po vyřešení problému nebude.",
+        "Guideline 4.2 — příliš úzká funkcionalita může být zamítnuta."
+      ],
+      "killer_risk": "Problém už z velké části řeší samotný iOS.",
+      "mitigation": "Stavět jen jako 1týdenní experiment; rozšířit na obecnou ‚kontrolu soukromí iPhonu pro seniory‘, pokud metriky ukážou zájem.",
+      "build_weeks": 1,
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 5,
+        "monetization": 3,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "web"
+    }
+  ]
+}

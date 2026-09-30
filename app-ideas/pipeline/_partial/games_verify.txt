@@ -25,3 +25,51 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
     - Doppelkopf HD (offline vs AI)       https://apps.apple.com/de/app/doppelkopf-hd/id992787438
     - Doppelkopf LITE (se)                https://apps.apple.com/se/app/doppelkopf-lite/id992924790?l=en-GB
     - Schafkopf LITE                      https://apps.apple.com/de/app/schafkopf-lite/id1076626842
+
+[3] query: site:apps.apple.com fishbowl salad bowl game  (idea games-15)
+    saturation (fishbowl/salad bowl in title, distinct apps): 5 + 1 clone-mechanic (Sardines) -> CONTESTED; 2 new entrants 2025-26; Spanish "Papelitos" already localized
+    - Salad Bowl - Papelitos (new, ES name) https://apps.apple.com/us/app/salad-bowl-papelitos/id6758815542
+    - Fishbowl: The Guessing Game (new, offline, no IAP) https://apps.apple.com/us/app/fishbowl-the-guessing-game/id6760678538
+    - Fish Bowl - Group Game             https://apps.apple.com/us/app/fish-bowl-group-game/id1317655075?l=ko
+    - Fishbowl - The Party Game (fr)     https://apps.apple.com/fr/app/fishbowl-the-party-game/id1519039998
+    - Sardines: Party Game               https://apps.apple.com/us/app/sardines-party-game/id6657948802
+    - Fishbowl: A Party Game             https://apps.apple.com/tz/app/fishbowl-a-party-game/id1537307745
+    - Fishbowl - The Party Game (au)     https://apps.apple.com/au/app/fishbowl-the-party-game/id1519039998
+    - Papelitos - Salad bowl (es-MX)     https://apps.apple.com/us/app/papelitos-salad-bowl/id6758815542?l=es-MX
+    - (noise) Merge Fruits               https://apps.apple.com/us/app/merge-fruits/id6746488440
+    - (noise) Carnival Fish Bowl Game    https://apps.apple.com/us/app/id1489727945
+
+[4] query: site:apps.apple.com oh hell score keeper  (idea games-09)
+    saturation ("oh hell" in title, distinct apps): 5 dedicated (Oh Hell Scoreboard, Oh Pshaw/Hell Scorecard, Oh Hell Card Game Scoring, Oh Hell & Whist Score Tracker (2026, 7 variants), Oh Hell! Scorekeeper) + Tally Ho! (2026, Oh Hell-first) + GameScore -> SATURATED; author's estimate 3 was low
+    - GameScore - Scorekeeper            https://apps.apple.com/us/app/gamescore-scorekeeper/id1164683696
+    - Tally Ho! Score Keeper (new, Oh Hell first) https://apps.apple.com/us/app/tally-ho-score-keeper/id6760871828
+    - GameScore - Scorekeeper (au)       https://apps.apple.com/au/app/gamescore-scorekeeper/id1164683696
+    - OH HELL Scoreboard (lists 15+ alias names incl. German Bridge, Up and Down the River) https://apps.apple.com/us/app/oh-hell-scoreboard/id1370111473
+    - Oh Pshaw/Hell Scorecard            https://apps.apple.com/jo/app/oh-pshaw-hell-scorecard/id6448914654
+    - Oh Hell Card Game Scoring (vn)     https://apps.apple.com/vn/app/oh-hell-card-game-scoring/id1110805574
+    - Oh Hell Card Game Scoring          https://apps.apple.com/us/app/oh-hell-card-game-scoring/id1110805574
+    - OH HELL Scoreboard (xk)            https://apps.apple.com/xk/app/oh-hell-scoreboard/id1370111473
+    - Oh Hell & Whist Score Tracker      https://apps.apple.com/gb/app/oh-hell-whist-score-tracker/id6758681474
+    - Oh Hell! Scorekeeper               https://apps.apple.com/us/app/oh-hell-scorekeeper/id6480419852
+
+[5] query: site:apps.apple.com schnapsen 66  (idea games-06)
+    saturation ("schnapsen/66" in title, distinct apps): 5 (Schnapsen (66) Favorite Games, 20+ langs; Schnopsn DonkeyCat 4.7★/137; Schnapsen - 66 Online Cherrytap (offline AI + online); Schnapse; Schnapsen App Vollversion) -> HARD; already localized incl. CZ storefront
+    - Schnapsen (66) (Favorite Games, 20+ languages) https://apps.apple.com/in/app/schnapsen-66/id1620959730
+    - Schnopsn - 66 Card Game (DonkeyCat)  https://apps.apple.com/us/app/schnapsen-66-sixty-six/id438673649
+    - Schnapsen - 66 Online (Cherrytap)    https://apps.apple.com/us/app/schnapsen-66-online/id6670622859
+    - Schnapsen - 66 Online (ch)           https://apps.apple.com/ch/app/schnapsen-66-online/id6670622859
+    - Schnapsen, 66, Sixty Six (in)        https://apps.apple.com/in/app/schnapsen-66-sixty-six/id438673649
+    - Schnapse                             https://apps.apple.com/us/app/schnapse/id629988038
+    - Schnapsen, 66, Sixty Six (cz, cs)    https://apps.apple.com/cz/app/schnapsen-online-card-game-66/id438673649?l=cs
+    - Schnapsen App Vollversion            https://apps.apple.com/us/app/schnapsen-app-vollversion/id657362226
+    - Schnopsn - Online Schnapsen (de)     https://apps.apple.com/de/app/schnopsn-online-schnapsen/id438673649
+
+[6] query: site:apps.apple.com chicken foot dominoes  (idea games-24)
+    saturation ("chicken foot" in title, distinct apps): 1 (Chickenfoot Dominoes, Scott Slocum, $2.99, old iOS 11 app, 1 human vs 3 AI) + 2 domino scoreboards -> OPEN; noise from Domino's Pizza shows the query is not crowded
+    - Chickenfoot Dominoes (dz)          https://apps.apple.com/dz/app/chickenfoot-dominoes/id1197884823
+    - Chickenfoot Dominoes               https://apps.apple.com/us/app/chickenfoot-dominoes/id1197884823
+    - Chickenfoot Dominoes (lr)          https://apps.apple.com/lr/app/chickenfoot-dominoes/id1197884823
+    - Dommy (domino leaderboards)        https://apps.apple.com/ca/app/dommy/id6746079429
+    - DomiNotes: Domino Scoreboard       https://apps.apple.com/us/app/dominotes-domino-scoreboard/id6753987115
+    - (noise) Domino's / Domino's MENA / Domino's Pizza USA / Caribbean / Coupons -- pizza apps, not games
+Search budget: 6/6 used. No further searches.
