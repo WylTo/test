@@ -63,3 +63,16 @@ Saturation: 6-7 dedicated sous vide time/temp calculators + 2 hardware apps. SAT
 - Energy Cost Calculator (by-catch) https://apps.apple.com/us/app/energy-cost-calculator/id531132387
 Saturation: 1-2 ("Pour Cost" owns the exact head phrase with 223 ratings; AICostBar on Mac). Not empty as the author claimed (sat 1 assumed no one) — the exact-match incumbent is well-rated.
 
+6) query: "site:apps.apple.com mocktail recipes non alcoholic"  date: 2026-09-30  (idea food-drink-27 Zero Proof)
+- Mocktail Recipes App https://apps.apple.com/us/app/mocktail-recipes-app/id1618980650
+- Mocktail Recipes - Easy Non Alcoholic Mixed Drinks https://apps.apple.com/ie/app/mocktail-recipes-easy-non-alcoholic-mixed-drinks/id1052567420
+- Mocktail (step-by-step, nutrition, NA spirits ingredient library) https://apps.apple.com/in/app/mocktail/id6763183127
+- Mocktail (MV store, same id) https://apps.apple.com/mv/app/mocktail/id6763183127
+- Cocktails And Mixed Drinks https://apps.apple.com/tz/app/cocktails-and-mixed-drinks/id1598061422
+- Simply Mocktails (190+ recipes) https://apps.apple.com/us/app/simply-mocktails/id6446698638
+- Drinktionary: cocktail recipes https://apps.apple.com/us/app/drinktionary-cocktail-recipes/id1509807081
+- Cocktail Recipes - Drink Mixer https://apps.apple.com/mv/app/cocktail-recipes-drink-mixer/id1487419067
+- M00dBar https://apps.apple.com/us/app/m00dbar/id6756678474
+- Cocktail Recipes: Siplore (750+ incl. 80+ alcohol-free) https://apps.apple.com/br/app/cocktail-recipes-siplore/id6790069758?l=en-GB&platform=watch
+Saturation: 4 dedicated "Mocktail" titles (Mocktail Recipes App, Mocktail Recipes - Easy..., Mocktail, Simply Mocktails) + generic cocktail apps with NA sections. Recipe content = 4.2/4.3 low-value risk.
+WebSearch budget for this reviewer: 6/6 used.

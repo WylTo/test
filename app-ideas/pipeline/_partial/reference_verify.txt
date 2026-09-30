@@ -58,3 +58,17 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
     - Banknote scanner: DollarScan (gr)   https://apps.apple.com/gr/app/banknote-scanner-dollarscan/id6502190178
     - NoteSnap: Banknote Identifier (parent) https://apps.apple.com/us/app/notesnap-banknote-identifier/id6448227169
     - (noise) Night Sky Star Finder       https://apps.apple.com/us/app/night-sky-star-finder/id1627298548
+
+[6] query: site:apps.apple.com karate terminology japanese belt test  (idea reference-19)
+    saturation (style-specific terminology/grading apps incl. judo): 6+ (Shotokan Karate Theory 2026, Martial Arts Tracker, Shito-ryu, Kenzen, Judo Gokyo x2, Dojo Kun) -> CONTESTED; fragmented by style, all small
+    - Shotokan Karate Theory (terminology, pronunciation, quizzes) https://apps.apple.com/us/app/shotokan-karate-theory/id6761344570
+    - Karate AI: Dojo Coach               https://apps.apple.com/us/app/karate-ai-dojo-coach/id6759972525
+    - Martial Arts Tracker - Dojo (belt reqs incl. terminology) https://apps.apple.com/us/app/martial-arts-tracker-dojo/id6774305771
+    - KARATE SHITO-RYU1                   https://apps.apple.com/us/app/karate-shito-ryu1/id1530607041
+    - Dojo Kun                            https://apps.apple.com/us/app/dojo-kun/id1085666288
+    - Kenzen Karate                       https://apps.apple.com/ca/app/kenzen-karate/id1510853615
+    - Judo Gokyo Lite                     https://apps.apple.com/lu/app/judo-gokyo-lite/id961064363
+    - Judo Gokyo (au)                     https://apps.apple.com/au/app/judo-gokyo/id340070427
+    - Judo Gokyo                          https://apps.apple.com/us/app/judo-gokyo/id340070427
+    - (noise) Stickman Karate             https://apps.apple.com/us/app/stickman-karate/id1242948982
+Search budget exhausted (6/6).

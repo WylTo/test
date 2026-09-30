@@ -48,3 +48,29 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results (none construc
     - (noise) Ring Sizer by Jason Withers https://apps.apple.com/us/app/ring-sizer-by-jason-withers/id795721582
     - (noise) Jewelry Identifier: Jewelio https://apps.apple.com/us/app/jewelry-identifier-jewelio/id6740074022
     - (noise) Feedback.sa                https://apps.apple.com/us/app/-/id1594004785
+
+[5] query: site:apps.apple.com piano technician client service records  (idea music-21)
+    saturation (dedicated piano-tech business apps): 2 (Gazelle = established SaaS used by PTG techs; PianoOps = new 2025) + PianoMeter tuner now stores per-piano tuning history -> CONTESTED; the pro audience already pays for Gazelle (cloud SaaS) and would not switch to an offline log.
+    - PianoOps (2025, piano tech business mgmt) https://apps.apple.com/us/app/pianoops/id6748567563
+    - Gazelle: Piano Tech Software       https://apps.apple.com/us/app/gazelle-piano-tech-software/id1470969467
+    - Cloud CRM - Client Records App     https://apps.apple.com/us/app/cloud-crm-client-records-app/id1586208647
+    - PianoMeter (tuner + per-piano tuning records) https://apps.apple.com/us/app/pianometer-piano-tuner/id1515529208
+    - Client Records: My clients CRM     https://apps.apple.com/gh/app/client-records-my-clients-crm/id6743644835
+    - Online Piano Atlas (serial numbers) https://apps.apple.com/us/app/online-piano-atlas/id732080356
+    - Virtual Technician                 https://apps.apple.com/nz/app/virtual-technician/id948579667
+    - Client Note Tracker - Easy CRM     https://apps.apple.com/us/app/client-note-tracker-easy-crm/id6475484569
+    - ServiceM8 - Field Service App      https://apps.apple.com/us/app/servicem8-field-service-app/id378062736
+
+[6] query: site:apps.apple.com gig tracker musician income mileage  (idea music-06)
+    saturation (musician-specific gig/income trackers): 3 (GigLog, Giggy, Gig Boss) + SetBook/Setlister from log [12] of evidence -> CROWDED; 2 of the 3 are new 2025-26. The name "GigLedger" is already used (GigLedger Mileage Tax Tracker) -> name collision with author's working title "Gig Ledger". "gig tracker" keyword also flooded by rideshare/delivery driver apps.
+    - GigLog (musicians: pay, tips, mileage, deductions) https://apps.apple.com/us/app/giglog/id6756760478
+    - GigBalance: Gig Income Tracker     https://apps.apple.com/us/app/gigbalance-gig-income-tracker/id6758405653
+    - Giggy - Musician gig tracker        https://apps.apple.com/us/app/giggy-musician-gig-tracker/id6755165992
+    - Gig Boss (gigs, paid status, mileage) https://apps.apple.com/us/app/gig-boss/id1462105904
+    - Gig Driver: Income Tracker         https://apps.apple.com/us/app/gig-driver-income-tracker/id6747325420
+    - Gig Income Tracker - Hustle        https://apps.apple.com/my/app/gig-income-tracker-hustle/id6760669888?uo=2
+    - Gig Mileage Tracker: Drive Log     https://apps.apple.com/ng/app/gig-mileage-tracker-drive-log/id6755701196
+    - GigLedger Mileage Tax Tracker      https://apps.apple.com/us/app/gigledger-mileage-tax-tracker/id6759967979
+    - Gridwise: Gig Driver Assistant     https://apps.apple.com/us/app/gridwise-gig-driver-assistant/id1215991382
+
+Search budget used: 6/6. All other ideas reviewed from knowledge + _partial/music_evidence.txt.

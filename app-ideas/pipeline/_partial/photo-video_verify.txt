@@ -12,3 +12,37 @@
    - Keepy - Artwork & Schoolwork https://apps.apple.com/se/app/keepy-artwork-schoolwork/id647088205?l=en-GB (available in SE store -> not US-only)
    saturation: 7 dedicated kids-art keeper apps (Arti, KidArt, Keepbox, LittlePicasso, Twinkle Art, Keepy, + Artkive known) -> SATURATED; Keepy is in SE store, so the US-gap claim is weak.
 
+2) query: "site:apps.apple.com model release form photographer" (2026-09-30) — idea photo-video-04 PhotoConsent
+   - Model Release Form https://apps.apple.com/us/app/model-release-form/id6744301174?uo=2 (incl. minor consent forms)
+   - Model Release Forms App / SnapSign https://apps.apple.com/us/app/model-release-forms-app/id6479212302
+   - SnapSign: Model Release Forms https://apps.apple.com/us/app/snapsign-model-release-forms/id6479212302 (templates in 9 languages, free)
+   - Easy Release - Model Releases https://apps.apple.com/us/app/easy-release-model-releases/id360835268?at=1000lmAu&mt=8&uo=4
+   - Snap & Release https://apps.apple.com/us/app/snap-release/id1504299486 (multi-language releases)
+   - Releases by Snapwire https://apps.apple.com/au/app/releases-model-property-release/id968090910
+   - PMU Forms https://apps.apple.com/us/app/pmu-forms/id1497270923 (adjacent)
+   saturation: 5 dedicated release apps, at least 2 already multi-language (SnapSign 9 langs, Snap & Release) -> SATURATED; the "US apps ignore EU languages" gap is false.
+
+3) query: "site:apps.apple.com record video with scoreboard overlay" (2026-09-30) — idea photo-video-06 ScoreCam
+   - Scoreboard Pro: Score & Record https://apps.apple.com/us/app/scoreboard-pro-score-record/id496758984
+   - OverScore / ScoreFrame - Sport Scoreboard https://apps.apple.com/bn/app/overscore-sport-scoreboard/id6760339051
+   - ScoreFrame - Sport Scoreboard https://apps.apple.com/au/app/scoreframe-sport-scoreboard/id6760339051
+   - Scorify - Scoreboard Camera https://apps.apple.com/us/app/scorify-scoreboard-camera/id6749523905
+   - Scorify - Sports Scoreboard https://apps.apple.com/us/app/scorify-sports-scoreboard/id6749523905
+   - ScoreCam - Embedded Scoreboard https://apps.apple.com/us/app/scorecam-embedded-scoreboard/id862175401 (also in np store -> worldwide)
+   - ScoreCam https://apps.apple.com/np/app/scorecam-embedded-scoreboard/id862175401
+   - Scorebug https://apps.apple.com/us/app/scorebug/id6764149376
+   - Ping Pong Scoreboard Camera https://apps.apple.com/it/app/ping-pong-scoreboard-camera/id6756588911?l=en-GB&platform=ipad
+   saturation: 6 dedicated scoreboard-camera apps, 4 of them new in 2025-26 (id67xx) -> SATURATED; ScoreCam is worldwide, not US-only.
+
+4) query: "site:apps.apple.com blur faces photo children school privacy" (2026-09-30) — ideas photo-video-05 SafeShare, photo-video-21 BlurTrack
+   - Privacy blur - hide faces https://apps.apple.com/rs/app/privacy-blur-hide-faces/id6745965117
+   - Privacy Blur - hide faces https://apps.apple.com/us/app/privacy-blur-hide-faces/id6745965117 (children use case explicit)
+   - Blur Face in Photo https://apps.apple.com/dz/app/blur-face-in-photo/id6749568897 (explicitly school/sports kids photos, on-device)
+   - PrivacyBlur https://apps.apple.com/app/privacyblur/id1536274106 (auto face detect, on-device, "hide kids")
+   - BlurQ: Face Blur Photo & Video https://apps.apple.com/us/app/blurq-face-blur-photo-video/id6754220004 (video too)
+   - Auto Blur Faces: Photo & Video https://apps.apple.com/us/app/blur-faces-hide-unwanted-info/id1534663171 (video too)
+   - AI Photo Privacy: Blur & EXIF https://apps.apple.com/us/app/ai-photo-privacy-blur-exif/id6775527790
+   - Auto Hide Face - FaceStamp https://apps.apple.com/us/app/auto-hide-face-facestamp/id6499460919 (markets to schools/educators)
+   - Redact Photo: Censor & Blur https://apps.apple.com/us/app/redact-photo-censor-blur/id6749859478
+   saturation: 8 dedicated on-device face-blur apps, 2+ explicitly for kids/schools, 2 do video -> SATURATED for both #05 and #21.
+

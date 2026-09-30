@@ -1,0 +1,2628 @@
+{
+  "category": "Education",
+  "category_slug": "education",
+  "search_notes": "Offline běh: bez Apple API a bez WebSearch. Jádro stojí na _partial/education_evidence.txt (Teeline, braille pro vidící v národních kódech, kanji radikály, soroban) a na sousedních evidence souborech (kids: Phonics Screening Check, anglické R, ASL; books: měření plynulosti čtení; music: maqam). Přeplněné niky z evidence (Morse Koch, COLREGs, dávkování pro sestry, mental math pro tradery, cyrilice/řečtina/gruzínština) vědomě vynechány. U nápadů s evidence 'knowledge' jsou saturace odhady a blue_ocean max 7 – před stavbou nutno ověřit apple_fetch.py check. Nápady 02 a 26 se překrývají s kategorií Kids – rozhodnout, kde je vydat.",
+  "ideas": [
+    {
+      "id": "education-01",
+      "name": "Radical Path: Kanji by Components",
+      "tagline": "Kanji se nenaučíš jako 2 000 obrázků – nauč se 214 stavebních dílů a zbytek si poskládáš.",
+      "pitch": "Studenti japonštiny narážejí po prvních 300 znacích na zeď: flashcardy celých kanji přestanou fungovat. Metoda 'nejdřív radikály, pak mnemotechnika z dílů' (proslavená WaniKani) je prokazatelně placená, ale na iOS ji jako hlavní princip nabízejí jen dvě aplikace. Postavíme offline trenér radikálů: rozpoznání dílu, jeho význam, skládání znaku z dílů Apple Pencilem a spaced repetition. Bez účtu, bez serveru, s lokalizovanými mnemotechnikami v 50 jazycích – WaniKani je jen anglicky.",
+      "niche": "Radikálový (komponentový) přístup ke kanji. Velké aplikace (Duolingo, Kanji Study, Renshuu) učí celé znaky nebo slovíčka; radikály mají jen jako vedlejší informaci. WaniKani je web + předplatné, jen v angličtině a bez oficiální iOS appky.",
+      "parent_market": "Výuka japonštiny – vysoce výnosný trh (WaniKani ~9 USD/měs., Kanji Study, Renshuu, Bunpro, Migaku). Kanji jsou nejbolestivější část učení a lidé za ně prokazatelně platí.",
+      "target_user": "Samouci japonštiny úrovně N5–N3 (anime/manga generace, 16–35 let), studenti japanologie, lidé, kteří vzdali WaniKani kvůli ceně nebo angličtině.",
+      "features": [
+        "214 Kangxi radikálů + ~80 běžných komponent s obrázkovou mnemotechnikou",
+        "Rozklad 2 136 jōyō kanji na díly a 'poskládej znak' drag & drop / Apple Pencil",
+        "SRS opakování (FSRS) zcela na zařízení, iCloud sync",
+        "Lokalizované mnemotechniky (ne jen anglické)",
+        "Widget 'radikál dne'"
+      ],
+      "offline": "full",
+      "offline_note": "Data KANJIDIC2/KRADFILE (EDRDG, licence CC BY-SA s atribucí) přibalená v appce; SRS i sync přes CloudKit, žádný vlastní server.",
+      "monetization": "Freemium: prvních 60 radikálů zdarma, odemčení 9,99 USD (~230 Kč) jednorázově, nebo 2,99 USD/měs. (~69 Kč).",
+      "revenue_math": "Ideál: 2 000 staženo/měs. z klíčů 'kanji radicals', 'learn kanji', 'kanji' v lokalizacích × 5 % konverze = 100 × 9,99 USD = 999 USD × 0,85 = 849 USD ≈ 19 500 Kč čistého/měs.",
+      "revenue_czk_ideal": 19000,
+      "keywords": [
+        {
+          "kw": "kanji radicals",
+          "saturation": 2,
+          "competitor": "Radical: Kanji Dictionary (nový 2026)",
+          "note": "Evidence: jen 2 aplikace stavějí na radikálech (Radical, Kanji Maker). Apple hint neověřen (offline běh)."
+        },
+        {
+          "kw": "kanji components",
+          "saturation": 1,
+          "competitor": "Kanji Maker (starý)",
+          "note": "odhad; fráze běžně používaná v komunitě r/LearnJapanese"
+        },
+        {
+          "kw": "radicals japanese",
+          "saturation": 2,
+          "competitor": "Radical: Kanji Dictionary",
+          "note": "odhad podle evidence"
+        },
+        {
+          "kw": "learn kanji",
+          "saturation": 9,
+          "competitor": "Kanji Study / Ringotan",
+          "note": "odhad – head term, jen důkaz parent trhu, necílit v názvu"
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): na iOS existují jen 2 radikálově orientované aplikace (Radical: Kanji Dictionary z 2026, Kanji Maker – starší). Úspěch WaniKani (placené předplatné) dokládá ochotu platit za radikálovou metodu – to je znalost trhu, ne měření. Objem hledání 'kanji radicals' neověřen.",
+      "competitors": [
+        {
+          "name": "Radical: Kanji Dictionary",
+          "url": "https://apps.apple.com/us/app/radical-kanji-dictionary/id6760137001",
+          "role": "niche",
+          "note": "Nový 2026 – slovník podle radikálů, ne trenér se SRS."
+        },
+        {
+          "name": "Kanji Maker - Make Kanji from Radicals",
+          "url": "https://apps.apple.com/us/app/kanji-maker-make-kanji-from-radicals/id1000441353",
+          "role": "niche",
+          "note": "Starší hra na skládání, bez SRS a mnemotechnik."
+        },
+        {
+          "name": "WaniKani",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr radikálové metody, web + předplatné, jen EN, oficiální iOS app chybí."
+        },
+        {
+          "name": "Kanji Study",
+          "url": "",
+          "role": "parent",
+          "note": "Velký lídr kanji na mobilu, radikály jen jako doplněk."
+        }
+      ],
+      "evidence": "web",
+      "us_gap": true,
+      "us_gap_note": "Model WaniKani (US/EN, jen angličtina) nemá lokalizovanou obdobu – Brazílie, Francie, Německo, Polsko a Indonésie mají velké anime komunity, které se učí japonsky přes angličtinu. Lokalizované mnemotechniky jsou skutečná výhoda.",
+      "devils_advocate": [
+        "Radical: Kanji Dictionary je z roku 2026 a může během měsíců přidat SRS – okno je krátké.",
+        "Mnemotechniky v 50 jazycích nejde strojově přeložit (slovní hříčky nefungují) – reálně jen 5–8 jazyků kvalitně, zbytek slabý.",
+        "Pokročilí uživatelé mají Anki s komunitními balíčky zdarma; platí jen začátečníci, kteří ale rychle odpadají (retence).",
+        "WaniKani může kdykoli vydat oficiální iOS appku a vzít brand-search."
+      ],
+      "killer_risk": "Nízká retence: začátečníci japonštiny do 3 měsíců masově odpadají, takže předplatné nevydrží a jednorázový nákup je malý.",
+      "mitigation": "Jednorázový nákup jako hlavní model, rychlé 'aha' v prvních 5 minutách (poskládej první znak), widget a streak; kvalitní mnemotechniky nejdřív v EN/ES/PT/FR/DE/PL.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "education-02",
+      "name": "Phonics Check Prep: Real & Alien Words",
+      "tagline": "Každé dítě v Anglii v 1. třídě píše phonics test – my z něj uděláme hru, kterou rodič spustí za 10 vteřin.",
+      "pitch": "V Anglii skládá každé dítě v Year 1 povinný Phonics Screening Check (40 slov, z toho polovina nesmyslných 'alien words', hranice 32/40). Rodiče i učitelé hledají cvičení – Twinkl a Tes prodávají papírové sady, weby nabízejí online testy, ale na iOS test cíleně napodobuje jen jedna aplikace. Postavíme věrnou simulaci: 40 slov ve dvou sekcích, rodičovské hodnocení, rozbor slabých fonémů a denní 5minutovka. Sezónní špička březen–červen je předvídatelná a ASO ji umí využít.",
+      "niche": "Konkrétní povinný test (Year 1 Phonics Screening Check). Velcí hráči (Jolly Phonics, Teach Your Monster) učí fonetiku obecně, nesimulují formát testu s 'alien words'.",
+      "parent_market": "Phonics / výuka čtení pro děti – Jolly Phonics, Teach Your Monster to Read, Hooked on Phonics; ověřeně placený trh.",
+      "target_user": "Rodiče dětí v Reception/Year 1/Year 2 v Anglii (~600 tis. dětí ročně), učitelé a tutoři, SEND asistenti.",
+      "features": [
+        "Generátor zkušebních testů 40 slov (20 skutečných + 20 alien) dle fází fonetiky 2–5",
+        "Rodičovský režim: tap správně/špatně, výsledek vůči hranici 32/40",
+        "Analýza chyb podle grafém-fonémových korespondencí + cílené drily",
+        "Výslovnost 'pure sounds' nahraná rodilým mluvčím (bez značek RWI/Jolly)",
+        "Režim pro učitele: více dětí lokálně, export PDF"
+      ],
+      "offline": "full",
+      "offline_note": "Seznamy slov a audio přibalené; profily dětí lokálně / iCloud; žádná analytika třetích stran (Guideline 1.3).",
+      "monetization": "Jednorázově 4,99 GBP / 5,99 USD (~138 Kč), učitelská verze 9,99 USD (~230 Kč) přes IAP.",
+      "revenue_math": "Ideál (průměr roku, špička březen–červen): 2 500 staženo/měs. × 7 % × 5,99 USD = 1 048 USD × 0,85 = 891 USD ≈ 20 500 Kč; mimo sezónu méně, roční průměr ~14 000 Kč/měs.",
+      "revenue_czk_ideal": 14000,
+      "keywords": [
+        {
+          "kw": "phonics screening check",
+          "saturation": 1,
+          "competitor": "Your Phonics",
+          "note": "Evidence: jediná dedikovaná appka (Your Phonics); silná poptávka mimo App Store (Tes, Twinkl, phonicscheck.co.uk)."
+        },
+        {
+          "kw": "alien words",
+          "saturation": 1,
+          "competitor": "Your Phonics",
+          "note": "odhad; termín z testu, rodiče ho googlí"
+        },
+        {
+          "kw": "phonics check",
+          "saturation": 1,
+          "competitor": "Phonics Flashcards",
+          "note": "Evidence: Phonics Flashcards zmiňuje screening jen v popisu"
+        },
+        {
+          "kw": "year 1 phonics",
+          "saturation": 2,
+          "competitor": "Jolly Phonics - Learn to Read",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Ověřeno (web, evidence kids): test je povinný pro všechny děti Y1 v Anglii (hranice 32/40), placené sady na Tes/Twinkl, webové aplikace phonicscheck.co.uk a Monster Phonics, školní stránky pro rodiče. Na iOS jen 'Your Phonics' cílí přímo. Objem vyhledávání na App Store neověřen.",
+      "competitors": [
+        {
+          "name": "Your Phonics",
+          "url": "https://apps.apple.com/gb/app/your-phonics/id1088567129",
+          "role": "niche",
+          "note": "Jediná dedikovaná app (160 skutečných + alien slov), starší."
+        },
+        {
+          "name": "Jolly Phonics - Learn to Read",
+          "url": "https://apps.apple.com/is/app/jolly-phonics-learn-to-read/id1149029299",
+          "role": "parent",
+          "note": "Lídr fonetiky, PSC hodnocení jen jako součást."
+        },
+        {
+          "name": "Phonics Flashcards",
+          "url": "https://apps.apple.com/us/app/phonics-flashcards/id6472101128",
+          "role": "niche",
+          "note": "Obecné kartičky, screening jen v popisu."
+        }
+      ],
+      "evidence": "web",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Silná sezónnost: 70 % tržeb v březnu–červnu, zbytek roku téměř nula.",
+        "Jen jeden trh (Anglie) – lokalizace do 50 jazyků nedává smysl, ASO strop je nízký.",
+        "Twinkl nebo Jolly může vydat vlastní appku a vzít rodiče přes školy během jedné sezóny.",
+        "Dětský obsah: Guideline 1.3 (žádná analytika, parental gate) a riziko ochranných známek RWI/Jolly v metadatech.",
+        "Vláda může formát testu změnit nebo zrušit (diskutuje se o tom)."
+      ],
+      "killer_risk": "Sezónnost a jediný trh – v ideálu splníme 10 000 Kč jen v průměru, mimo sezónu příjmy padají.",
+      "mitigation": "Rozšířit o Year 2 re-check a obecný 'decoding' pro Y2–Y3 (celoroční použití); ASO kampaň od února; učitelská verze s licencí pro celou třídu.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 8,
+        "monetization": 6,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "education-03",
+      "name": "Teeline & Gregg Shorthand Coach",
+      "tagline": "Těsnopis pro novináře 21. století – Apple Pencil pozná tvoje značky a řekne, kde chybuješ.",
+      "pitch": "Teeline je povinná dovednost britských NCTJ kurzů žurnalistiky (cíl 100 slov/min) a na App Store pro ni neexistuje ani jedna aplikace. Studenti se učí z knihy 'Teeline Gold Standard' a CD s diktáty. Nabídneme lekce abecedy a zkratek, psaní Apple Pencilem s rozpoznáním tvaru, diktáty s nastavitelnou rychlostí a měření slov za minutu. Gregg (US hobby komunita r/shorthand) přidáme jako druhý systém ve stejné appce.",
+      "niche": "Těsnopis – Teeline (UK žurnalistika) a Gregg (US nadšenci). Velcí hráči v poznámkách (Notability, GoodNotes) řeší přepis, ne učení těsnopisu; nikdo tento segment necílí.",
+      "parent_market": "Placená příprava na profesní zkoušky a dovednosti; konkrétně NCTJ Diploma (studenti platí kurzy za tisíce liber) + trh 'handwriting/pencil skill' appek (Calligraphy, Cursive).",
+      "target_user": "Studenti NCTJ žurnalistiky ve Velké Británii a Irsku, mladí reportéři, soudní zpravodajové, hobby komunita těsnopisu (Gregg, US).",
+      "features": [
+        "Lekce Teeline abecedy, spojování, vynechávání samohlásek, běžné zkratky",
+        "Psaní Apple Pencilem s rozpoznáním tvaru (PencilKit + vlastní Core ML model)",
+        "Diktáty 40–120 wpm (na zařízení TTS + nahrané pasáže), měření přesnosti",
+        "Gregg Simplified/Anniversary jako druhý modul",
+        "Tréninkový log a cíl 100 wpm"
+      ],
+      "offline": "full",
+      "offline_note": "Rozpoznávání tahů Core ML na zařízení, diktáty přibalené nebo přes AVSpeechSynthesizer, žádný server.",
+      "monetization": "Zdarma úvodní lekce, plná verze 7,99 USD (~184 Kč) jednorázově; modul Gregg 3,99 USD (~92 Kč).",
+      "revenue_math": "Ideál: 1 500 staženo/měs. ('shorthand', 'teeline', 'gregg shorthand', 'learn shorthand') × 6 % × 7,99 USD = 719 USD × 0,85 = 611 USD ≈ 14 000 Kč/měs.",
+      "revenue_czk_ideal": 14000,
+      "keywords": [
+        {
+          "kw": "teeline",
+          "saturation": 0,
+          "competitor": "žádná aplikace",
+          "note": "Evidence: na App Store žádná app necílí Teeline; NCTJ vlastní Teeline a učí ho v akreditovaných kurzech."
+        },
+        {
+          "kw": "teeline shorthand",
+          "saturation": 0,
+          "competitor": "žádná aplikace",
+          "note": "Evidence (web): 0 aplikací"
+        },
+        {
+          "kw": "gregg shorthand",
+          "saturation": 3,
+          "competitor": "malé Gregg slovníky",
+          "note": "odhad"
+        },
+        {
+          "kw": "learn shorthand",
+          "saturation": 3,
+          "competitor": "obecné těsnopisné appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "shorthand",
+          "saturation": 4,
+          "competitor": "text-expander appky (jiný význam)",
+          "note": "odhad; slovo koliduje s 'text shortcuts' – nutno cílit dlouhé fráze"
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): žádná iOS aplikace pro Teeline; NCTJ akreditované kurzy Teeline vyučují a prodávají 'Teeline Gold Standard' (kniha + CD). Předpoklad: počet studentů NCTJ (~ několik tisíc ročně) + globální hobby komunita Gregg; objem App Store hledání neověřen.",
+      "competitors": [
+        {
+          "name": "Teeline Gold Standard (kniha + CD)",
+          "url": "",
+          "role": "parent",
+          "note": "Oficiální učebnice, důkaz, že studenti platí; není to aplikace."
+        },
+        {
+          "name": "Gregg Shorthand (malé slovníkové appky)",
+          "url": "",
+          "role": "niche",
+          "note": "Odhad – drobné slovníky bez tréninku psaní."
+        }
+      ],
+      "evidence": "web",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Trh Teeline je malý (UK žurnalistika) – pár tisíc studentů ročně, strop tržeb nízký.",
+        "Teeline je ochranná známka/obsah NCTJ – licenční spor nebo nutnost licence k oficiálním zkratkám.",
+        "Rozpoznávání těsnopisných tahů je těžké ML (varianty rukopisu) – špatná přesnost = 1hvězdičkové recenze.",
+        "Diktovací AI (Whisper, Apple přepis) zpochybňuje smysl těsnopisu; mladí reportéři nahrávají telefonem (kromě soudů)."
+      ],
+      "killer_risk": "Malý trh: i když ovládneme 100 % Teeline, strop je blízko 10 000 Kč – rozhodne, zda se chytí Gregg/hobby komunita.",
+      "mitigation": "Obsah psát vlastními slovy (systém ne-lze chránit, knihy ano), Gregg modul pro US, MVP nejdřív jen s rozpoznáním jednotlivých značek (jednodušší ML), spolupráce s NCTJ lektory.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 9,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "education-04",
+      "name": "Czech Test Prep: Residency & Citizenship",
+      "tagline": "Test z českých reálií a A2 zkouška – procvič si je ve svém jazyce, offline, za cenu jednoho oběda.",
+      "pitch": "Cizinci v Česku potřebují A2 zkoušku z češtiny pro trvalý pobyt a test z českých reálií pro občanství. Oficiální modelové testy existují jen jako PDF a weby, na iOS je minimum aplikací a žádná v ukrajinštině či vietnamštině. Jsme česká firma – známe kontext a češtinu líp než kdokoli jiný. Model 'US Citizenship Test' patří v USA k nejstahovanějším vzdělávacím appkám; tady ho přeneseme na trh, kde nikdo nesoutěží.",
+      "niche": "Přípravu na české imigrační zkoušky velké jazykové appky ignorují, protože trh je lokální (~1 mil. cizinců v ČR) a obsah vyžaduje českou expertízu.",
+      "parent_market": "Přípravy na občanský test (US Citizenship Test – desítky appek, Einbürgerungstest DE, Life in the UK) – ověřeně výnosná kategorie.",
+      "target_user": "Cizinci v ČR žádající o trvalý pobyt nebo občanství – Ukrajinci, Vietnamci, Slováci, Rusové, Mongolové, expati z EU/US.",
+      "features": [
+        "Test z českých reálií: celá veřejná banka otázek, režim zkoušky 30 otázek",
+        "A2 čeština: poslech, čtení, psaní podle vzoru modelových testů (vlastní obsah)",
+        "Překlad vysvětlení do UA/RU/VI/EN/MN",
+        "Statistika slabých okruhů, režim 'jen chyby'",
+        "Checklist dokumentů k žádosti (bez právních rad)"
+      ],
+      "offline": "full",
+      "offline_note": "Otázky, audio a překlady přibalené; aktualizace obsahu přes update appky.",
+      "monetization": "Freemium: 50 otázek zdarma, plná verze 7,99 USD (~184 Kč) jednorázově.",
+      "revenue_math": "Ideál: 1 500 staženo/měs. ('czech citizenship test', 'trvalý pobyt', 'české reálie', 'czech a2') × 8 % × 7,99 USD = 959 USD × 0,85 = 815 USD ≈ 18 700 Kč; konzervativně 16 000 Kč.",
+      "revenue_czk_ideal": 16000,
+      "keywords": [
+        {
+          "kw": "czech citizenship test",
+          "saturation": 2,
+          "competitor": "malé testové appky",
+          "note": "odhad – znalost trhu, neověřeno"
+        },
+        {
+          "kw": "české reálie",
+          "saturation": 1,
+          "competitor": "žádná silná",
+          "note": "odhad"
+        },
+        {
+          "kw": "trvalý pobyt",
+          "saturation": 2,
+          "competitor": "informační appky MV",
+          "note": "odhad"
+        },
+        {
+          "kw": "czech a2 exam",
+          "saturation": 2,
+          "competitor": "obecné učebnice češtiny",
+          "note": "odhad"
+        },
+        {
+          "kw": "learn czech",
+          "saturation": 7,
+          "competitor": "Duolingo, Ling",
+          "note": "odhad – parent keyword, necílit"
+        }
+      ],
+      "demand_evidence": "Předpoklad (znalost trhu): tisíce žádostí o občanství a desítky tisíc o trvalý pobyt ročně; A2 zkouška povinná pro trvalý pobyt, test reálií pro občanství; oficiální modelové testy jen v PDF. App Store saturace neověřena (offline běh).",
+      "competitors": [
+        {
+          "name": "US Citizenship Test (různé)",
+          "url": "",
+          "role": "us-only",
+          "note": "Důkaz modelu – v USA desítky placených appek."
+        },
+        {
+          "name": "Einbürgerungstest / Leben in Deutschland",
+          "url": "",
+          "role": "parent",
+          "note": "Německý ekvivalent, přeplněný – dokládá poptávku."
+        },
+        {
+          "name": "Duolingo (čeština)",
+          "url": "",
+          "role": "parent",
+          "note": "Učí češtinu obecně, ne formát zkoušky."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": true,
+      "us_gap_note": "Model 'citizenship test prep' je v USA ověřený a přeplněný; pro ČR chybí, a to v jazycích imigrantů (UA/VI/RU/MN). Pozor: jde o lokální trh, ne o 50 jazyků pro celý svět.",
+      "devils_advocate": [
+        "Banka otázek a formát zkoušek se mění (novela zákona o pobytu cizinců) – bez rychlé aktualizace appka škodí.",
+        "Ministerstvo/NPI může vydat vlastní bezplatnou aplikaci a ukončit trh přes noc.",
+        "Uživatelé zkoušku udělají a appku smažou – žádná retence, jen jednorázový příjem.",
+        "Nesmíme vypadat jako oficiální aplikace (Guideline 5.2 / 2.3) – přísné formulace v názvu."
+      ],
+      "killer_risk": "Malý strop trhu – realisticky jen ČR; když zákon změní formát, obsah je zastaralý.",
+      "mitigation": "Hlídat NPI/ÚJOP zveřejnění, obsah modulární (JSON), stejné jádro později pro SK/AT/HR jako samostatné lokální produkty s odlišným obsahem (ne klony).",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "education-05",
+      "name": "Braille Buddy: Learn Braille in Your Language",
+      "tagline": "Braillovo písmo pro vidící – ale v tvém jazyce a s tvou diakritikou, ne jen v angličtině.",
+      "pitch": "Rodiče nevidomých dětí, asistenti pedagoga a studenti speciální pedagogiky se potřebují naučit Braillovo písmo – a všech ~8 aplikací učí jen anglický UEB. Německé, francouzské, české, španělské nebo polské bodové písmo má jiné znaky pro diakritiku a jiné zkratky. Nabídneme hmatové i vizuální lekce, převodník textu do národního braillu a haptický režim na iPhonu. Jsme první, kdo to udělá lokálně.",
+      "niche": "Braillovo písmo pro vidící v neanglických národních kódech. Incumbenti jsou americké/anglické produkty, pro které lokalizace kódu znamená novou práci s každou tabulkou.",
+      "parent_market": "Výuka písma/abeced a asistivní vzdělávání (Braille Academy, Bonocle); dále drahé braillské pomůcky a kurzy pro rodiče.",
+      "target_user": "Rodiče a sourozenci nevidomých dětí, asistenti pedagoga, studenti speciální pedagogiky, lidé s progresivní ztrátou zraku, dobrovolníci.",
+      "features": [
+        "Lekce 6bodové abecedy + národní diakritika (DE, FR, CZ, ES, PL, IT, PT, NL, JP tenji…)",
+        "Převodník text → braille (grade 1) a braille → text pro učení",
+        "Haptické 'čtení' – vibrace pro jednotlivé body",
+        "Kvízy rozpoznání i zápisu (šest kláves podle Perkins)",
+        "Tisknutelné procvičovací listy PDF"
+      ],
+      "offline": "full",
+      "offline_note": "Převodní tabulky přibalené (vlastní nebo liblouis – pozor na LGPL), vše na zařízení.",
+      "monetization": "Základ zdarma, plná verze 5,99 USD (~138 Kč) jednorázově; školní verze 14,99 USD (~345 Kč).",
+      "revenue_math": "Ideál: 2 500 staženo/měs. ve 20+ jazycích × 4 % × 5,99 USD = 599 USD × 0,85 = 509 USD ≈ 11 700 Kč/měs.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "learn braille",
+          "saturation": 5,
+          "competitor": "Braille Academy",
+          "note": "Evidence: ~8 aplikací, všechny jen anglický UEB"
+        },
+        {
+          "kw": "braille alphabet",
+          "saturation": 5,
+          "competitor": "Bonocle Alphabet",
+          "note": "odhad podle evidence"
+        },
+        {
+          "kw": "braille lernen",
+          "saturation": 0,
+          "competitor": "žádná",
+          "note": "odhad – německý dotaz, žádná dedikovaná app nenalezena"
+        },
+        {
+          "kw": "braille translator",
+          "saturation": 4,
+          "competitor": "obecné převodníky",
+          "note": "odhad"
+        },
+        {
+          "kw": "alphabet braille",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad – francouzská lokalizace"
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): ~8 aplikací pro vidící, všechny učí jen anglický UEB (Braille Academy, Bonocle Alphabet). Předpoklad: poptávka v jiných jazycích existuje (rodiče, speciální pedagogika), ale objemy nejsou změřeny – trh je malý.",
+      "competitors": [
+        {
+          "name": "Braille Academy - Play & Learn",
+          "url": "https://apps.apple.com/us/app/braille-academy-play-learn/id1561530189",
+          "role": "niche",
+          "note": "Hra na učení braillu, jen UEB/anglicky."
+        },
+        {
+          "name": "Bonocle Alphabet",
+          "url": "https://apps.apple.com/fi/app/bonocle-alphabet/id1590436026",
+          "role": "niche",
+          "note": "Doprovod k hardwaru Bonocle, jen EN."
+        }
+      ],
+      "evidence": "web",
+      "us_gap": true,
+      "us_gap_note": "Všechny existující appky učí americký/anglický UEB. Národní bodová písma (DE, FR, CZ, PL, ES, JP) nemají nic – lokalizace je zde podstatou produktu, ne jen překladem UI.",
+      "devils_advocate": [
+        "Malá cílová skupina: rodičů nevidomých dětí je málo a ochota platit za 'pomůcku' se očekává zdarma (NGO, stát).",
+        "Chyba v národní tabulce (např. česká diakritika) poškodí reputaci v komunitě, která je malá a propojená.",
+        "Apple má VoiceOver braillské zadávání zdarma – uživatelé si mohou myslet, že appku nepotřebují.",
+        "liblouis je LGPL – statické linkování na iOS je licenčně problematické, vlastní tabulky = práce."
+      ],
+      "killer_risk": "Trh je v každé zemi zvlášť příliš malý a součet 20 zemí nemusí dát 2 500 stažení měsíčně.",
+      "mitigation": "Ověřit tabulky se svazy nevidomých (SONS, DBSV), nabídnout školní licenci, cílit i na 'braille' jako kuriozitu pro děti (únikovky, skauti).",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "education-06",
+      "name": "Reading Speed Check for Teachers",
+      "tagline": "Minutové čtení nahlas: appka počítá slova za minutu a chyby – pro učitele a logopedy v jejich jazyce.",
+      "pitch": "V USA je měření plynulosti čtení (WCPM) standard a existuje pro něj několik aplikací, ale jen v angličtině. Čeští, slovenští a polští učitelé i logopedi měří rychlost čtení stopkami a papírem. Nabídneme: vlož nebo vyfoť text, dítě čte minutu, on-device rozpoznávání řeči spočítá slova a označí chyby, učitel potvrdí a výsledek se uloží do grafu pokroku. Žádný cloud – dětský hlas nikdy neopustí iPad.",
+      "niche": "Měření rychlosti a přesnosti čtení (ORF/WCPM) v jiných jazycích než angličtině. US lídři (NWEA MAP, DIBELS) jsou institucionální a anglické.",
+      "parent_market": "Hodnocení čtení a čtenářské nástroje (NWEA MAP Reading Fluency, DIBELS/Amplify, Reader Meter) – v USA placené školami ve velkém.",
+      "target_user": "Učitelé 1.–5. třídy, speciální pedagogové, logopedi, doučovatelé, rodiče dětí s dyslexií v CZ/SK/PL/DE/ES/IT.",
+      "features": [
+        "Import textu (OCR z fotky učebnice přes Vision) nebo vlastní text",
+        "Minutové čtení s on-device přepisem a zvýrazněním chyb",
+        "Ruční korekce učitelem, výpočet WCPM a přesnosti",
+        "Graf pokroku po žácích, export PDF pro rodiče",
+        "Bez účtů, data lokálně / iCloud"
+      ],
+      "offline": "mostly",
+      "offline_note": "SFSpeechRecognizer umí on-device přepis pro řadu jazyků (ne všechny); OCR přes Vision; žádný vlastní server.",
+      "monetization": "Předplatné pro učitele 29,99 USD/rok (~690 Kč) nebo 4,99 USD/měs. (~115 Kč); rodičovská verze 9,99 USD (~230 Kč) jednorázově.",
+      "revenue_math": "Ideál: 1 800 staženo/měs. × 3 % = ~54 nových předplatitelů/měs.; ustálený stav ~240 ročních předplatných × 29,99 / 12 = 600 USD × 0,85 = 510 USD ≈ 11 700 Kč; s rodičovskou verzí ~12 000 Kč.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "reading fluency",
+          "saturation": 2,
+          "competitor": "Reader Meter",
+          "note": "Evidence: sat ~2, trh OPEN"
+        },
+        {
+          "kw": "oral reading fluency",
+          "saturation": 2,
+          "competitor": "MAP Reading Fluency Testing",
+          "note": "Evidence: institucionální NWEA"
+        },
+        {
+          "kw": "wcpm",
+          "saturation": 1,
+          "competitor": "Reader Meter",
+          "note": "odhad"
+        },
+        {
+          "kw": "reading speed test",
+          "saturation": 5,
+          "competitor": "Reading Speed/Fluency Builder",
+          "note": "odhad – koliduje se speed-reading appkami"
+        },
+        {
+          "kw": "rychlost čtení",
+          "saturation": 0,
+          "competitor": "žádná",
+          "note": "odhad – česká lokalizace"
+        }
+      ],
+      "demand_evidence": "Ověřeno (web, evidence books): niche OPEN (sat 2) – Reader Meter (indie 2025), MAP Reading Fluency (institucionální), TARA (Indie). Předpoklad: učitelé v CZ/PL měří rychlost čtení ručně; ochota učitelů platit ze svého je nejistá.",
+      "competitors": [
+        {
+          "name": "Reader Meter",
+          "url": "https://apps.apple.com/us/app/reader-meter/id6745434060",
+          "role": "niche",
+          "note": "Indie 2025, auto WCPM, jen angličtina."
+        },
+        {
+          "name": "MAP Reading Fluency Testing",
+          "url": "https://apps.apple.com/us/app/map-reading-fluency-testing/id1326709796",
+          "role": "parent",
+          "note": "NWEA, institucionální, vyžaduje školní účet."
+        },
+        {
+          "name": "Reading Speed/Fluency Builder",
+          "url": "https://apps.apple.com/us/app/reading-speed-fluency-builder/id1080258925",
+          "role": "niche",
+          "note": "Trénink rychlosti, ne měření s učitelem."
+        }
+      ],
+      "evidence": "web",
+      "us_gap": true,
+      "us_gap_note": "US model (ORF/WCPM měření na tabletu) existuje jen anglicky; ve střední Evropě se měří stopkami. Reverse lokalizace do CZ/SK/PL/DE/IT/ES.",
+      "devils_advocate": [
+        "Rozpoznávání řeči dětí (7–9 let) je výrazně méně přesné – falešné chyby rozladí učitele.",
+        "Učitelé v CZ/PL zřídka platí za appky ze svého; školy nakupují pomalu a přes tendry.",
+        "Normy WCPM (Hasbrouck-Tindal) jsou chráněné a pro češtinu neexistují – bez norem je výsledek méně užitečný.",
+        "Nahrávky dětského hlasu = citlivá data (GDPR, rodičovský souhlas)."
+      ],
+      "killer_risk": "Nepřesnost on-device přepisu dětské řeči v menších jazycích – appka musí fungovat i jako ruční 'klikací' počítadlo, jinak selže.",
+      "mitigation": "Hybridní režim: učitel tapá chyby, ASR jen navrhuje; žádné ukládání audia defaultně; vlastní orientační normy z dobrovolně sdílených dat (anonymně, lokálně exportem).",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 8,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 8,
+        "safety": 5
+      }
+    },
+    {
+      "id": "education-07",
+      "name": "Rolling R Coach",
+      "tagline": "Naučíš se vrčet 'R' jako Španěl – appka pozná, jestli ti jazyk opravdu kmitá.",
+      "pitch": "Miliony lidí se učí španělsky, italsky nebo česky a 'rolling R' je nejčastější frustrace – na Redditu i YouTube stovky návodů. Existující appky pro 'R' jsou americké logopedické drily na anglické R, žádná neměří skutečný vibrant. Postavíme trenér s on-device detekcí kmitů (kmitání jazyka ~25–30 Hz se dá rozpoznat v signálu), postupnými cviky (tt-dd, 'butter'), zpětnou vazbou a denní rutinou. Druhá cílovka: rodiče dětí s rotacismem v CZ/PL/SK.",
+      "niche": "Alveolární vibrant (rolled/trilled R) pro dospělé studenty jazyků a děti s rotacismem. Velké appky na výslovnost (ELSA, BoldVoice) řeší angličtinu, logopedické appky anglické R.",
+      "parent_market": "Výslovnost a jazyky (ELSA Speak, BoldVoice, Duolingo – španělština je 2. nejstudovanější jazyk) + logopedické appky pro R (Articulate R, R Articulation).",
+      "target_user": "Dospělí studenti španělštiny/italštiny/češtiny/ruštiny (hlavně US, UK, DE), rodiče dětí 5–8 let s vadou R v CZ/PL/SK, zpěváci (italská dikce).",
+      "features": [
+        "Detekce vibrantu v reálném čase (DSP: amplitudová modulace, počet kontaktů)",
+        "Postupný 14denní program (od 'tt/dd' k plnému trylku)",
+        "Slova a věty ve španělštině, italštině, češtině, polštině",
+        "Nahrávka a porovnání s rodilým mluvčím",
+        "Dětský režim s hrou (motorka, 'vrrr')"
+      ],
+      "offline": "full",
+      "offline_note": "Analýza zvuku lokálně (AVAudioEngine + vlastní DSP / malý Core ML model), žádné nahrávky se neodesílají.",
+      "monetization": "Zdarma první 3 dny programu, odemčení 6,99 USD (~161 Kč) jednorázově.",
+      "revenue_math": "Ideál: 2 500 staženo/měs. ('rolling r', 'roll your r', 'spanish pronunciation', 'trilled r') × 5 % × 6,99 USD = 874 USD × 0,85 = 743 USD ≈ 17 000 Kč; konzervativně 15 000 Kč.",
+      "revenue_czk_ideal": 15000,
+      "keywords": [
+        {
+          "kw": "rolling r",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad – anglické R appky ověřeně přeplněné (evidence kids), vibrant neověřen"
+        },
+        {
+          "kw": "roll your r",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "trilled r",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "spanish pronunciation",
+          "saturation": 5,
+          "competitor": "obecné výslovnostní appky",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Ověřeno (web, evidence kids): anglické R je přeplněné (sat 6–7, Articulate R, Speak R Clearly…), vibrant (rotacismus, trilled R) označen jako pravděpodobně otevřený, ale neověřený. Předpoklad: silná organická poptávka po návodech na rolling R (YouTube/Reddit) – neměřeno.",
+      "competitors": [
+        {
+          "name": "Speak R Clearly",
+          "url": "https://apps.apple.com/us/app/speak-r-clearly/id6751442522",
+          "role": "niche",
+          "note": "Nová 2025 appka na anglické R s nahráváním – sousední, ne vibrant."
+        },
+        {
+          "name": "R Articulation",
+          "url": "https://apps.apple.com/us/app/r-articulation/id962351160",
+          "role": "parent",
+          "note": "Logopedický dril anglického R, 800 slov."
+        },
+        {
+          "name": "ELSA Speak",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr výslovnosti, jen angličtina."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Někteří lidé vibrant anatomicky/neurologicky nezvládnou (krátká uzdička) – negativní recenze 'nefunguje'.",
+        "Detekce trylku v hlučném prostředí nemusí být spolehlivá; falešné 'úspěchy' zničí důvěru.",
+        "Guideline 1.4.1: dětský režim nesmí slibovat terapii vady řeči – jen 'procvičování'.",
+        "Jednorázový problém: kdo se naučí, appku smaže – žádná retence ani předplatné."
+      ],
+      "killer_risk": "Přesnost detekce vibrantu – pokud neumíme spolehlivě poznat trylek, produkt nemá jádro.",
+      "mitigation": "Prototyp DSP detektoru za 1 týden na nahrávkách 30 lidí před stavbou appky; komunikovat 'trénink', ne 'terapie'; jednorázová cena místo předplatného.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "education-08",
+      "name": "Tone Coach: Vietnamese, Cantonese & Thai",
+      "tagline": "Vidíš svůj tón jako křivku vedle rodilého mluvčího – konečně pochopíš, proč tě babička nerozumí.",
+      "pitch": "Tóny jsou největší bariéra tónových jazyků a většina trenérů tónů je pro mandarínštinu. Vietnamština (6 tónů), kantonština (6–9) a thajština (5) mají miliony studentů – hlavně heritage learners v USA, Kanadě, Austrálii a Francii – a skoro žádný specializovaný nástroj. Nahrajeme rodilé mluvčí, on-device zobrazíme tvou výškovou křivku přes jejich a doplníme poslechové minimální páry. Plně offline.",
+      "niche": "Tónový trénink pro ne-mandarínské tónové jazyky. Duolingo/Ling učí slovíčka, tóny jen okrajově; tónové trenéry cílí na mandarínštinu (větší trh).",
+      "parent_market": "Výuka asijských jazyků (Duolingo, Ling, Pimsleur, HelloChinese) a výslovnostní appky.",
+      "target_user": "Heritage learners (Vietnamci a Číňané z Hongkongu v USA/CA/AU/FR/CZ – v ČR velká vietnamská komunita), partneři, expati v Bangkoku/HCMC/HK.",
+      "features": [
+        "Vizualizace výšky tónu v reálném čase (YIN/pYIN) vs. rodilý mluvčí",
+        "Poslechové minimální páry (ma/má/mà/mả/mã/mạ)",
+        "Tónové kombinace ve dvojslovech, sandhi kde relevantní",
+        "3 jazykové balíčky v jedné appce (ne klony)",
+        "Denní 5min dril + statistika záměn"
+      ],
+      "offline": "full",
+      "offline_note": "Audio nahrávek přibalené, analýza výšky lokálně.",
+      "monetization": "Jeden jazyk 7,99 USD (~184 Kč), všechny tři 12,99 USD (~299 Kč).",
+      "revenue_math": "Ideál: 2 000 staženo/měs. ('vietnamese tones', 'cantonese tones', 'thai tones' + lokalizace) × 5 % × 7,99 USD = 799 USD × 0,85 = 679 USD ≈ 15 600 Kč; konzervativně 14 000 Kč.",
+      "revenue_czk_ideal": 14000,
+      "keywords": [
+        {
+          "kw": "vietnamese tones",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "cantonese tones",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "thai tones",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "tone trainer",
+          "saturation": 3,
+          "competitor": "mandarínské tone trainery",
+          "note": "odhad"
+        },
+        {
+          "kw": "learn vietnamese",
+          "saturation": 7,
+          "competitor": "Ling, Duolingo",
+          "note": "odhad – parent keyword"
+        }
+      ],
+      "demand_evidence": "Předpoklad (znalost trhu, neověřeno): velké diaspory (2+ mil. vietnamských Američanů), Duolingo nabízí vietnamštinu, kantonštinu nemá. Saturace jen odhadem – offline běh bez Apple dat.",
+      "competitors": [
+        {
+          "name": "Ling - Learn Languages",
+          "url": "",
+          "role": "parent",
+          "note": "Učí vietnamštinu/thajštinu obecně, tóny slabě."
+        },
+        {
+          "name": "Duolingo",
+          "url": "",
+          "role": "parent",
+          "note": "Vietnamština ano, kantonština ne; tóny bez zpětné vazby."
+        },
+        {
+          "name": "Tone trainers pro mandarínštinu",
+          "url": "",
+          "role": "niche",
+          "note": "Existující technologie, jiný jazyk."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Nahrávky rodilých mluvčích = náklady a kvalita; špatný mluvčí (dialekt Sever/Jih ve vietnamštině) = kritika komunity.",
+        "Vietnamské tóny nejsou jen výška (hlasivková kvalita, ráz) – pitch-only vizualizace může být zavádějící.",
+        "Heritage learners často nechtějí 'učebnici', ale konverzaci – retence nízká.",
+        "Tři jazyky = trojnásobek obsahu pro jednoho vývojáře."
+      ],
+      "killer_risk": "Kvalita a autenticita audio obsahu – levně udělaný obsah komunita okamžitě odhalí.",
+      "mitigation": "Začít jen vietnamštinou (česká vietnamská komunita = rychlé testování, mluvčí Sever i Jih), přidat kantonštinu podle tržeb; zobrazovat i kvalitu hlasu (creaky) jednoduchým ukazatelem.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "education-09",
+      "name": "Hear the Difference: English Sound Trainer",
+      "tagline": "Nejdřív slyšet, pak mluvit – vědecky ověřený poslechový trénink anglických hlásek podle tvé mateřštiny.",
+      "pitch": "High Variability Phonetic Training (HVPT) je výzkumně ověřená metoda: když posloucháš minimální páry (ship/sheep, light/right) od mnoha různých hlasů, zlepší se vnímání i výslovnost. Existuje hlavně jako akademický web (English Accent Coach). My ji dáme do iPhonu: díky desítkám vestavěných anglických hlasů iOS (US, UK, AU, IE, IN, ZA) získáme vysokou variabilitu zdarma a offline. Drily se nastaví podle mateřského jazyka – Španěl, Japonec a Čech mají jiné problémy.",
+      "niche": "Poslechová (percepční) příprava výslovnosti podle L1. ELSA a BoldVoice hodnotí mluvení přes cloud AI a předplatné; percepci a L1-specifické páry zanedbávají.",
+      "parent_market": "Výslovnost angličtiny – ELSA Speak, BoldVoice, Speechling (vysoké předplatné, miliony uživatelů).",
+      "target_user": "Středně pokročilí studenti angličtiny (B1–C1) z JP, KR, ES, BR, CZ, PL, DE, CN; učitelé ESL.",
+      "features": [
+        "Profily podle mateřštiny (30 jazyků) s typickými záměnami",
+        "Minimální páry s 20+ různými hlasy iOS (vysoká variabilita)",
+        "Adaptivní obtížnost a měření pokroku",
+        "Volitelně nahrávka a porovnání (bez AI skóre)",
+        "5min denní rutina, widget"
+      ],
+      "offline": "full",
+      "offline_note": "AVSpeechSynthesizer s lokálně staženými Enhanced/Premium hlasy + přibalené nahrávky; nic v cloudu.",
+      "monetization": "Předplatné 2,99 USD/měs. (~69 Kč) nebo 19,99 USD/rok (~460 Kč); lifetime 39,99 USD.",
+      "revenue_math": "Ideál: 3 000 staženo/měs. × 3 % = 90 nových předplatitelů/měs.; ustálený stav ~350 aktivních × ~2 USD/měs. průměr = 700 USD × 0,85 = 595 USD ≈ 13 700 Kč; zaokrouhleno 14 000 Kč.",
+      "revenue_czk_ideal": 14000,
+      "keywords": [
+        {
+          "kw": "minimal pairs",
+          "saturation": 5,
+          "competitor": "logopedické appky pro děti",
+          "note": "odhad – pro děti SLP, ne pro ESL"
+        },
+        {
+          "kw": "english pronunciation",
+          "saturation": 9,
+          "competitor": "ELSA Speak",
+          "note": "odhad – saturované, jen parent důkaz"
+        },
+        {
+          "kw": "accent training",
+          "saturation": 6,
+          "competitor": "BoldVoice",
+          "note": "odhad"
+        },
+        {
+          "kw": "english listening sounds",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad: úspěch ELSA/BoldVoice dokazuje ochotu platit za výslovnost; HVPT je publikovaná metoda (Thomson, Logan) s webovou verzí. Konkrétní saturace 'minimal pairs' pro dospělé neověřena.",
+      "competitors": [
+        {
+          "name": "ELSA Speak",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr, cloud AI, předplatné."
+        },
+        {
+          "name": "BoldVoice",
+          "url": "",
+          "role": "parent",
+          "note": "US přízvuk, video lekce, předplatné."
+        },
+        {
+          "name": "English Accent Coach (web)",
+          "url": "",
+          "role": "niche",
+          "note": "Akademický HVPT web, žádná iOS appka (neověřeno)."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Head termy ('english pronunciation') jsou saturované; dlouhé fráze mají malý objem – ASO nemusí přivést 3 000 stažení.",
+        "Poslechový trénink je nudný; uživatelé chtějí 'mluvit' – retence předplatného slabá.",
+        "TTS hlasy mohou mít nepřirozené minimální páry (koarticulace) – vědecky slabší než nahrávky.",
+        "ELSA může přidat 'listening drills' za týden."
+      ],
+      "killer_risk": "Nízká retence poslechového tréninku → předplatné se nezaplatí.",
+      "mitigation": "Gamifikace (série, skóre), lifetime nákup jako hlavní volba, doplnit nahrávky 10 reálných mluvčích pro nejčastější páry.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "education-10",
+      "name": "ATC Radio Trainer: ICAO & EASA Phraseology",
+      "tagline": "Mluv s věží dřív, než sedneš do letadla – rádiová frazeologie podle ICAO a EASA, offline.",
+      "pitch": "Student pilot v Evropě potřebuje rádiový průkaz a zvládnout frazeologii v angličtině (často jako cizím jazyce) – a to je stres číslo jedna. V USA je na to populární placená aplikace (PlaneEnglish ARSim), ale trénuje FAA frazeologii, která se od ICAO/EASA a britské CAP 413 liší. Postavíme simulátor okruhu a odletu s on-device rozpoznáním řeči, kontrolou readbacku a scénáři pro evropská letiště. Studenti platí za výcvik tisíce eur, 50 € za appku je pro ně nic.",
+      "niche": "ICAO/EASA/UK rádiová frazeologie pro studenty PPL a nerodilé mluvčí. US lídr řeší FAA; evropské letecké školy učí z PDF a nahrávek.",
+      "parent_market": "Pilotní výcvik a letecké appky (ForeFlight, SkyDemon, Sporty's, PlaneEnglish) – vysoká ARPU, prokazatelně placené.",
+      "target_user": "Studenti PPL/LAPL v EU a UK (FRTOL, rádiová zkouška), piloti ultralightů, nerodilí mluvčí angličtiny (DE, FR, CZ, PL, ES, IT).",
+      "features": [
+        "Scénáře: start, okruh, příletový bod, informace FIS, nouze (MAYDAY/PAN)",
+        "On-device rozpoznání řeči s kontextovým slovníkem (volací znaky, QNH)",
+        "Kontrola povinných readbacků a pořadí",
+        "Volitelná UK CAP 413 vs. EASA varianta",
+        "Vlastní letiště a volací znak uživatele"
+      ],
+      "offline": "full",
+      "offline_note": "SFSpeechRecognizer on-device + contextualStrings, syntéza věže přes TTS; žádná data o letu z internetu.",
+      "monetization": "Předplatné 7,99 USD/měs. (~184 Kč) nebo 49,99 USD/rok (~1 150 Kč).",
+      "revenue_math": "Ideál: 800 staženo/měs. × 5 % = 40 nových/měs.; ustálený stav ~150 ročních předplatných × 49,99 / 12 = 625 USD × 0,85 = 531 USD ≈ 12 200 Kč/měs.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "atc phraseology",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "aviation radio",
+          "saturation": 3,
+          "competitor": "PlaneEnglish ARSim",
+          "note": "odhad"
+        },
+        {
+          "kw": "atc communication",
+          "saturation": 3,
+          "competitor": "PlaneEnglish ARSim",
+          "note": "odhad"
+        },
+        {
+          "kw": "pilot radio practice",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "frtol",
+          "saturation": 0,
+          "competitor": "žádná",
+          "note": "odhad – UK zkratka zkoušky"
+        }
+      ],
+      "demand_evidence": "Předpoklad (znalost trhu): PlaneEnglish ARSim je placený a úspěšný v USA; v EU tisíce studentů PPL ročně a rádiová komunikace je častý strach (fóra PPRuNe, FLYER). Saturace neověřena.",
+      "competitors": [
+        {
+          "name": "PlaneEnglish ARSim",
+          "url": "",
+          "role": "us-only",
+          "note": "Placený simulátor FAA frazeologie, US-centrický."
+        },
+        {
+          "name": "ForeFlight",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr leteckých appek (navigace), ne výcvik rádia."
+        },
+        {
+          "name": "SkyDemon",
+          "url": "",
+          "role": "parent",
+          "note": "Evropský VFR lídr – dokládá ochotu platit v EU."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": true,
+      "us_gap_note": "US lídr (ARSim) trénuje FAA frazeologii; ICAO/EASA/UK CAP 413 verze s lokalizovaným vysvětlením pro nerodilé mluvčí chybí.",
+      "devils_advocate": [
+        "Rozpoznání řeči s leteckými čísly a volacími znaky při šumu je těžké – chybné hodnocení správné odpovědi frustruje.",
+        "Malý trh: v EU jen desítky tisíc aktivních studentů PPL; retence končí zkouškou.",
+        "Chyba ve frazeologii = bezpečnostní riziko a ztráta důvěry instruktorů (odpovědnost).",
+        "ARSim může přidat ICAO režim a vzít evropský trh."
+      ],
+      "killer_risk": "Přesnost rozpoznání řeči u nerodilých mluvčích – bez ní je simulátor k ničemu.",
+      "mitigation": "Tolerance hodnocení (klíčová slova místo doslovného přepisu), revize obsahu instruktorem FI(A), jasné 'není náhrada výcviku', roční předplatné s cenou pro školy.",
+      "build_weeks": 8,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 8,
+        "build_ease": 4,
+        "offline_fit": 9,
+        "safety": 7
+      }
+    },
+    {
+      "id": "education-11",
+      "name": "Kurrent Reader: Old German Handwriting",
+      "tagline": "Přečti matriky svých předků – naučíme tě kurent a švabach krok za krokem.",
+      "pitch": "Kdo pátrá po předcích v Česku, Německu, Rakousku nebo Polsku, narazí na matriky psané kurentem – a zasekne se. V USA má přes 40 milionů lidí německé kořeny, genealogie je obrovský placený trh (Ancestry, MyHeritage), ale naučit se kurent je možné jen z PDF, kurzů a webových cvičení. Postavíme trenér: písmena v různých rukopisech, typická slova z matrik, psaní Apple Pencilem a čtení 'reálně vypadajících' zápisů generovaných z kurentových fontů.",
+      "niche": "Čtení kurentu/Sütterlinu pro genealogy. Genealogické platformy se soustředí na databáze a AI přepis, ne na výuku čtení.",
+      "parent_market": "Genealogie – Ancestry, MyHeritage, FamilySearch (miliardové tržby); vzdělávací kurzy paleografie (placené webináře).",
+      "target_user": "Genealogové-amatéři v US/CA/AU s německými/českými kořeny, rodinní badatelé v DE/AT/CZ/PL, studenti historie, archiváři-dobrovolníci.",
+      "features": [
+        "Abeceda kurentu a Sütterlinu s variantami rukopisu (malá/velká, ligatury)",
+        "Slovník typických slov z matrik (DE/Latin/CZ): geboren, getauft, ehelich…",
+        "Kvíz čtení slov a vět s postupnou obtížností",
+        "Psaní Apple Pencilem s porovnáním tvaru",
+        "Transkripční cvičení s kontrolou"
+      ],
+      "offline": "full",
+      "offline_note": "Písma a cvičení přibalené, rozpoznání tahů lokálně.",
+      "monetization": "Zdarma 1. lekce, plná verze 9,99 USD (~230 Kč) jednorázově.",
+      "revenue_math": "Ideál: 1 000 staženo/měs. ('sütterlin', 'kurrent', 'german script', 'old handwriting') × 7 % × 9,99 USD = 699 USD × 0,85 = 594 USD ≈ 13 700 Kč; konzervativně 13 000 Kč.",
+      "revenue_czk_ideal": 13000,
+      "keywords": [
+        {
+          "kw": "sütterlin",
+          "saturation": 2,
+          "competitor": "převodníky textu do Sütterlin fontu",
+          "note": "odhad"
+        },
+        {
+          "kw": "kurrent",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "german handwriting",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "old german script",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "genealogy",
+          "saturation": 8,
+          "competitor": "Ancestry, MyHeritage",
+          "note": "odhad – parent"
+        }
+      ],
+      "demand_evidence": "Předpoklad: genealogie je velký placený trh, FamilySearch i univerzity nabízejí kurzy čtení německého písma (poptávka existuje). Saturace na App Store neověřena – předpoklad, že existují jen převodníky fontů.",
+      "competitors": [
+        {
+          "name": "MyHeritage",
+          "url": "",
+          "role": "parent",
+          "note": "Genealogický lídr, přidává AI přepis rukopisů."
+        },
+        {
+          "name": "Ancestry",
+          "url": "",
+          "role": "parent",
+          "note": "Genealogický lídr USA."
+        },
+        {
+          "name": "Sütterlin converter apps",
+          "url": "",
+          "role": "niche",
+          "note": "Převádějí text do fontu, neučí číst."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "AI přepis rukopisů (Transkribus, MyHeritage Scribe AI) snižuje potřebu učit se číst sám – Sherlock od genealogických platforem.",
+        "Generované 'matriky' z fontů nevypadají jako skutečné rukopisy – realistická cvičení vyžadují licencované skeny.",
+        "Úzká skupina starších uživatelů – nižší ochota nakupovat v appkách, preference desktopu.",
+        "Skeny z archivů mají autorská/licenční omezení."
+      ],
+      "killer_risk": "AI přepisy se zlepšují tak rychle, že 'naučit se číst' ztratí smysl pro většinu genealogů.",
+      "mitigation": "Pozicovat jako 'ověř si AI přepis' – dovednost kontroly; použít volná díla (public domain skeny starší 100+ let z otevřených archivů s licencí CC0), cílit na iPad.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "education-12",
+      "name": "Tooth Numbering Trainer: FDI, Universal, Palmer",
+      "tagline": "Zub 36, #19 nebo L6? Nauč se všechny tři systémy za týden.",
+      "pitch": "Každý student zubního lékařství, zubní sestra a asistentka se musí naučit číslování zubů – a v USA je to Universal, ve zbytku světa FDI, v Británii Palmer. Existující vzdělávací obsah je většinou americký. Nabídneme interaktivní chrup (stálý i mléčný), tap-kvízy, převodník systémů, plochy zubů a zkratky pro zápis. Jednoduchá appka, velká a stálá cílová skupina každý rok.",
+      "niche": "Číslování zubů a zubní zápis pro začátečníky. Dentální appky cílí na kliniky (software pro praxe) nebo na komplexní anatomii; drill základní notace je opomíjený.",
+      "parent_market": "Příprava na zdravotnické zkoušky a zubní vzdělávání (DANB přípravy, dental anatomy appky, Pocket Prep).",
+      "target_user": "Studenti zubního lékařství (1.–2. ročník), studenti dentální hygieny, zubní asistentky/sestry, recepční zubních praxí, přecházející zubaři (US ↔ EU).",
+      "features": [
+        "Interaktivní 2D/3D chrup stálý i mléčný",
+        "Kvíz: tapni zub podle čísla ve FDI/Universal/Palmer",
+        "Převodník systémů a plochy zubů (M, O, D, B/V, L/P)",
+        "Zápis symbolů kazů/výplní (základní charting)",
+        "Režim rychlost + statistika chyb"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokální, žádná data pacientů.",
+      "monetization": "Jednorázově 4,99 USD (~115 Kč); zdarma verze jen FDI stálé zuby.",
+      "revenue_math": "Ideál: 2 000 staženo/měs. ('tooth numbering', 'dental charting', 'fdi', 'dental assistant') × 6 % × 4,99 USD = 599 USD × 0,85 = 509 USD ≈ 11 700 Kč; konzervativně 11 000 Kč.",
+      "revenue_czk_ideal": 11000,
+      "keywords": [
+        {
+          "kw": "tooth numbering",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "dental charting",
+          "saturation": 3,
+          "competitor": "software pro kliniky",
+          "note": "odhad"
+        },
+        {
+          "kw": "fdi tooth",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "dental assistant",
+          "saturation": 5,
+          "competitor": "DANB exam prep",
+          "note": "odhad"
+        },
+        {
+          "kw": "dental anatomy",
+          "saturation": 4,
+          "competitor": "3D anatomy appky",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad: stálý přísun studentů (desítky tisíc ročně globálně), systémy notace jsou povinná látka. Kandidát byl v evidence medical jen jako neověřený nápad; saturace je odhad.",
+      "competitors": [
+        {
+          "name": "DANB exam prep apps",
+          "url": "",
+          "role": "parent",
+          "note": "US přípravy, Universal systém."
+        },
+        {
+          "name": "Dental anatomy 3D apps",
+          "url": "",
+          "role": "parent",
+          "note": "Komplexní anatomie, ne drill notace."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": true,
+      "us_gap_note": "US materiály učí Universal systém; většina světa používá FDI (ISO 3950) a UK Palmer – lokalizovaný trenér s FDI jako výchozím chybí.",
+      "devils_advocate": [
+        "Látka se dá naučit za 2–3 dny z tabulky zdarma – ochota platit je malá.",
+        "Malé dentální appky od univerzit mohou být zdarma a stačit.",
+        "Nízká cena × malý objem = hranice 10 000 Kč jen v ideálu."
+      ],
+      "killer_risk": "Nízká ochota platit za látku, kterou lze zvládnout z obrázku v učebnici.",
+      "mitigation": "Rozšířit na 'dental charting' a zkratky (vyšší hodnota), prodávat balíček pro školy, nízká cena s velkým objemem lokalizací.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 8
+      }
+    },
+    {
+      "id": "education-13",
+      "name": "Journal Entry Trainer: Debits & Credits",
+      "tagline": "Předkontace a Buchungssätze bez nudy – účetní případy jako rychlá hra, podle tvé účtové osnovy.",
+      "pitch": "Účetnictví se učí statisíce lidí – učni v Německu (Industriekaufmann, Bürokaufleute), studenti obchodních akademií v Česku, studenti Accounting 101 v USA – a všichni bojují s tím samým: kam dát MD a D. Aplikace pro účetnictví jsou buď software pro firmy, nebo anglické kartičky s US GAAP. Postavíme generátor nekonečných účetních případů podle národní osnovy (SKR03/04, česká směrná osnova, francouzský PCG), s okamžitou zpětnou vazbou a vysvětlením.",
+      "niche": "Procvičování účetních zápisů v lokálních účtových osnovách. Velcí hráči neřeší národní osnovy a učební plány (IHK, maturita OA).",
+      "parent_market": "Účetní vzdělávání a příprava na zkoušky (Becker, Wiley CPA, DATEV Schulungen, učebnice) – placený trh.",
+      "target_user": "Učni v DE/AT (kaufmännische Ausbildung, IHK-Prüfung), studenti OA a VŠE v ČR/SK, studenti účetnictví v PL/FR/US, začínající OSVČ.",
+      "features": [
+        "Generátor účetních případů podle osnovy (SKR03, SKR04, CZ, SK, PCG, US)",
+        "Drag & drop účtů na MD/D, T-účty",
+        "Vysvětlení každé chyby + typické případy (DPH, odpisy, mzdy)",
+        "Režim zkoušky s časem",
+        "Statistika slabých okruhů"
+      ],
+      "offline": "full",
+      "offline_note": "Pravidla a osnovy přibalené; generátor na zařízení.",
+      "monetization": "Zdarma 20 případů/den, plná verze 5,99 USD (~138 Kč) jednorázově nebo 1,99 USD/měs.",
+      "revenue_math": "Ideál: 2 000 staženo/měs. ('buchungssätze', 'buchführung lernen', 'debits and credits', 'účetnictví') × 6 % × 5,99 USD = 719 USD × 0,85 = 611 USD ≈ 14 000 Kč; konzervativně 13 000 Kč.",
+      "revenue_czk_ideal": 13000,
+      "keywords": [
+        {
+          "kw": "buchungssätze",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "buchführung lernen",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "debits and credits",
+          "saturation": 3,
+          "competitor": "accounting flashcards",
+          "note": "odhad"
+        },
+        {
+          "kw": "accounting practice",
+          "saturation": 4,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "účetnictví",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad: v Německu desítky tisíc kaufmännische Azubis ročně s povinným účetnictvím, v ČR obchodní akademie; saturace neověřena (offline běh).",
+      "competitors": [
+        {
+          "name": "Accounting flashcards apps (US)",
+          "url": "",
+          "role": "parent",
+          "note": "Anglické kartičky, US GAAP."
+        },
+        {
+          "name": "DATEV / lexoffice",
+          "url": "",
+          "role": "parent",
+          "note": "Účetní software, ne výuka."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Chyba v národních pravidlech (DPH, předkontace) = učitelé appku odmítnou a recenze to zničí.",
+        "Každá osnova je samostatný obsah – 6 osnov je hodně práce pro jednoho vývojáře.",
+        "ChatGPT vysvětlí účetní případ zdarma – hodnota je jen v drilu a hře.",
+        "Studenti platí neradi; sezónnost kolem zkoušek."
+      ],
+      "killer_risk": "Věcné chyby v lokálních pravidlech – obor s nulovou tolerancí.",
+      "mitigation": "Začít CZ + SKR03/04, revize obsahu učitelem účetnictví (placená), pak přidat další osnovy podle tržeb.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "education-14",
+      "name": "Pitch Accent Trainer for Japanese",
+      "tagline": "Hashi = most, nebo hůlky? Uslyš a zazpívej japonský přízvuk správně.",
+      "pitch": "Japonský výškový přízvuk (pitch accent) je poslední krok k přirozené výslovnosti a posledních pár let o něm mluví celá komunita studentů – placené kurzy na YouTube/Patreonu, weby OJAD. Na iOS chybí dobrý trenér s vizualizací. Postavíme: slovo, jeho vzorec (heiban, atamadaka, nakadaka, odaka), poslech, nahrání a on-device porovnání výškové křivky. Druhý produkt do portfolia japonštiny vedle radikálů – sdílí publikum, ne kód.",
+      "niche": "Výškový přízvuk japonštiny. Velké appky na japonštinu (Duolingo, Renshuu, Bunpro) ho ignorují; existuje hlavně v placených video kurzech a na webu.",
+      "parent_market": "Výuka japonštiny (WaniKani, Bunpro, Migaku, Renshuu) a výslovnostní appky.",
+      "target_user": "Středně pokročilí studenti japonštiny (N4–N2), shadowing nadšenci, lidé žijící v Japonsku, anime fanoušci.",
+      "features": [
+        "Vzorce přízvuku 2 000 běžných slov s poslechem",
+        "Poslechové minimální páry (hashi/hashi/hashi)",
+        "Nahrání a vizualizace vlastní výšky vs. vzor",
+        "Pravidla přízvuku u sloves/přídavných jmen (konjugace)",
+        "Shadowing krátkých vět"
+      ],
+      "offline": "full",
+      "offline_note": "Data a audio přibalené; analýza lokálně. Pozor: NHK slovník je licencovaný – nutno vlastní/volně licencovaná data (např. Kanjium CC BY-SA) + vlastní nahrávky.",
+      "monetization": "Freemium, plná verze 9,99 USD (~230 Kč) jednorázově.",
+      "revenue_math": "Ideál: 2 000 staženo/měs. ('pitch accent', 'japanese pronunciation', 'shadowing japanese') × 5 % × 9,99 USD = 999 USD × 0,85 = 849 USD ≈ 19 500 Kč; konzervativně 16 000 Kč.",
+      "revenue_czk_ideal": 16000,
+      "keywords": [
+        {
+          "kw": "pitch accent",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "japanese pitch accent",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "japanese pronunciation",
+          "saturation": 4,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "shadowing japanese",
+          "saturation": 3,
+          "competitor": "shadowing appky",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad: placené kurzy pitch accentu (Dogen na Patreonu), web OJAD, časté vlákna na r/LearnJapanese. Saturace na App Store neověřena – offline běh.",
+      "competitors": [
+        {
+          "name": "Migaku",
+          "url": "",
+          "role": "parent",
+          "note": "Nástroj pro japonštinu s pitch accent daty, předplatné, desktop."
+        },
+        {
+          "name": "Dogen – Japanese Phonetics (kurz, Patreon)",
+          "url": "",
+          "role": "parent",
+          "note": "Placený video kurz – důkaz ochoty platit, není appka."
+        },
+        {
+          "name": "Renshuu",
+          "url": "",
+          "role": "parent",
+          "note": "Velká appka japonštiny, pitch accent okrajově."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Licence dat přízvuku (NHK, Shin Meikai) – bez vlastních dat hrozí spor; vlastní data = drahé.",
+        "Nahrávky rodilých mluvčích (standardní Tokio dialekt) – náklad a kvalita.",
+        "Menšina studentů pitch accent řeší; začátečníci ho ignorují – menší trh než kanji.",
+        "Migaku/Renshuu mohou pitch accent trenér přidat."
+      ],
+      "killer_risk": "Licence a kvalita dat – bez spolehlivých dat přízvuku nemá appka jádro.",
+      "mitigation": "Použít otevřená data s atribucí + vlastní nahrávky od 2 mluvčích (Tokio), začít 1 000 nejčastějšími slovy, ověřit licence před stavbou.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 5
+      }
+    },
+    {
+      "id": "education-15",
+      "name": "Typing Tutor for Your Keyboard Layout",
+      "tagline": "Psaní všemi deseti na iPadu – s háčky, čárkami, přehláskami a tvým rozložením klávesnice.",
+      "pitch": "Školy ve střední Evropě přecházejí na iPady s klávesnicí a děti i dospělí potřebují psát všemi deseti. Známé výukové nástroje (TypingClub, Typing.com, Keybr) jsou anglické, na QWERTY, a na iPadu slabé. Český, německý, polský nebo francouzský uživatel potřebuje QWERTZ/AZERTY a diakritiku (ě, š, ř, ä, ß, é, ą). Nabídneme kurz pro hardwarovou klávesnici iPadu i Macu (univerzální nákup) v 30+ rozloženích.",
+      "niche": "Výuka psaní všemi deseti pro neanglická rozložení na iPadu/Macu. Velcí hráči jsou webové, anglické a pro Chromebooky.",
+      "parent_market": "Typing tutors – TypingClub, Typing.com, Keybr, Ratatype (miliony uživatelů, školní licence).",
+      "target_user": "Žáci 3.–9. třídy s iPadem a klávesnicí, rodiče, dospělí přecházející z telefonu na počítač, administrativní pracovníci.",
+      "features": [
+        "Kurz ve 30+ rozloženích (CZ QWERTZ, DE, CH, FR AZERTY, PL programátorské, Nordic…)",
+        "Lekce diakritiky a mrtvých kláves",
+        "Měření WPM a přesnosti, heatmapa chyb",
+        "Rodinné profily, iCloud sync",
+        "Univerzální nákup iPad + Mac"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, texty přibalené.",
+      "monetization": "Jednorázově 6,99 USD (~161 Kč), rodinné sdílení.",
+      "revenue_math": "Ideál: 2 500 staženo/měs. ('psaní všemi deseti', 'zehnfingersystem', 'touch typing', 'clavier azerty') × 4 % × 6,99 USD = 699 USD × 0,85 = 594 USD ≈ 13 700 Kč; konzervativně 13 000 Kč.",
+      "revenue_czk_ideal": 13000,
+      "keywords": [
+        {
+          "kw": "touch typing",
+          "saturation": 6,
+          "competitor": "Typing tutor apps",
+          "note": "odhad"
+        },
+        {
+          "kw": "psaní všemi deseti",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad – CZ"
+        },
+        {
+          "kw": "zehnfingersystem",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad – DE"
+        },
+        {
+          "kw": "typing tutor",
+          "saturation": 7,
+          "competitor": "Typing tutor apps",
+          "note": "odhad – saturováno v EN"
+        },
+        {
+          "kw": "dactylographie",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad – FR"
+        }
+      ],
+      "demand_evidence": "Předpoklad: velké webové typing tutory prokazují trh; iPady s klávesnicí ve školách rostou. Lokální saturace je jen odhad.",
+      "competitors": [
+        {
+          "name": "TypingClub",
+          "url": "",
+          "role": "parent",
+          "note": "Webový lídr, anglicky, školní licence."
+        },
+        {
+          "name": "Typing.com",
+          "url": "",
+          "role": "parent",
+          "note": "Webový, US."
+        },
+        {
+          "name": "Ratatype",
+          "url": "",
+          "role": "niche",
+          "note": "Web, několik jazyků, bez nativní iPad appky (odhad)."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": true,
+      "us_gap_note": "US typing tutory jsou anglické QWERTY; lokální rozložení (QWERTZ, AZERTY, CZ/PL diakritika) a iPad hardware klávesnice jsou nepokryté.",
+      "devils_advocate": [
+        "Na Macu jsou typing tutory přeplněné; na iPadu je trh menší, než se zdá (děti píšou dotykem).",
+        "Školy chtějí webové řešení s učitelským dashboardem – to bez serveru nenabídneme.",
+        "Lokální webové tutory (psani-vsemi-deseti.cz, 10fastfingers) jsou zdarma.",
+        "Guideline 4.3 – pokud udělat varianty po jazycích, spam riziko; musí to být jedna appka."
+      ],
+      "killer_risk": "Bezplatné lokální weby uspokojí většinu poptávky.",
+      "mitigation": "Kvalitní nativní zážitek (hra, děti), jednorázová cena, univerzální iPad+Mac nákup, jedna appka se všemi rozloženími.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "education-16",
+      "name": "Hair Color Theory Trainer",
+      "tagline": "Úroveň 7, podtón oranžový – jaký toner? Barvířská teorie jako hra pro učně kadeřníky.",
+      "pitch": "Teorie barvení vlasů (úrovně, podtóny, neutralizace, oxidanty) je pro studenty kosmetologie a kadeřnické učně nejtěžší část zkoušky a pro začínající kadeřnice nejdražší chyba v praxi. Appky pro salony řeší zápis receptur klientů, ne výuku. Nabídneme interaktivní barevné kolo, kvízy neutralizace, simulaci zesvětlení a značkově neutrální trénink míchání – v 50 jazycích (DE Friseur-Azubis, CZ kadeřnice, US cosmetology).",
+      "niche": "Výuka teorie barvení pro studenty. Značky (Wella, L'Oréal) mají vlastní vzdělávání vázané na své produkty; nezávislý trenér chybí.",
+      "parent_market": "Příprava na zkoušky kosmetologie (US state board apps) a salonní software (Vagaro, Fresha – receptury); barevná teorie jako placené kurzy.",
+      "target_user": "Studenti kosmetologie v USA, kadeřničtí učni v DE/AT/CZ/PL, začínající kadeřnice, barvířky.",
+      "features": [
+        "Barevné kolo úrovní 1–10 a podtónů podle úrovně",
+        "Kvíz: jaký toner/neutralizaci pro daný výchozí stav",
+        "Simulace zesvětlení s oxidantem 3/6/9/12 %",
+        "Poměry míchání a výpočty gramů",
+        "Režim zkoušky (state board / Gesellenprüfung – vlastní otázky)"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokální.",
+      "monetization": "Jednorázově 6,99 USD (~161 Kč).",
+      "revenue_math": "Ideál: 1 500 staženo/měs. ('hair color theory', 'cosmetology', 'friseur', 'toner') × 6 % × 6,99 USD = 629 USD × 0,85 = 535 USD ≈ 12 300 Kč; konzervativně 12 000 Kč.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "hair color theory",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad – v evidence graphics-design jen jako neověřený nápad"
+        },
+        {
+          "kw": "hair color formula",
+          "saturation": 4,
+          "competitor": "salonní receptury",
+          "note": "odhad"
+        },
+        {
+          "kw": "cosmetology exam",
+          "saturation": 6,
+          "competitor": "state board prep",
+          "note": "odhad"
+        },
+        {
+          "kw": "friseur",
+          "saturation": 3,
+          "competitor": "salonní appky",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad: v USA ~100+ tis. studentů kosmetologie, v DE tisíce učňů ročně; evidence graphics-design zmiňuje jen jako neověřený sub-niche. Saturace odhadem.",
+      "competitors": [
+        {
+          "name": "Cosmetology state board prep apps",
+          "url": "",
+          "role": "parent",
+          "note": "Obecné otázky, ne interaktivní barva."
+        },
+        {
+          "name": "Salon formula apps",
+          "url": "",
+          "role": "niche",
+          "note": "Zápis receptur, ne výuka."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Barvy na displeji neodpovídají reálnému výsledku – odborníci kritizují 'simulaci'.",
+        "Značky nabízí vzdělávání zdarma přes školy a akademie.",
+        "Studenti kosmetologie mají nízké příjmy a ochota platit za appky je nízká.",
+        "Zkoušky se liší stát od státu / země od země – obecný obsah nepokryje konkrétní test."
+      ],
+      "killer_risk": "Nízká ochota platit + bezplatné vzdělávání od značek.",
+      "mitigation": "Nízká jednorázová cena, spolupráce s kadeřnickými školami, pozicovat na 'praxe v salonu' (neutralizace, výpočty) místo zkoušky.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "education-17",
+      "name": "Speaking Test Timer for Canada Immigration",
+      "tagline": "Mluvní část CELPIP a TEF/TCF přesně podle času – nahraj se, přečti přepis, zlepši se. Offline a soukromě.",
+      "pitch": "Kanada v Express Entry výrazně boduje jazykové testy a francouzštinu – statisíce uchazečů ročně skládají CELPIP, IELTS, TEF nebo TCF Canada. Mluvní část je nejstresovější: přísné časy na přípravu a odpověď. Nabídneme realistické formáty úloh (vlastní zadání), přesné časovače, nahrávání, on-device přepis a strukturální zpětnou vazbu přes Apple Foundation Models. Uchazeči utrácí stovky dolarů za kurzy; 15 USD za appku je snadné.",
+      "niche": "Mluvní část kanadských imigračních testů (CELPIP, TEF/TCF Canada). IELTS je přeplněný, kanadské testy mají málo nástrojů a mluvní trénink bez cloudu nemá nikdo.",
+      "parent_market": "Příprava na jazykové zkoušky – IELTS (Magoosh, British Council apps), TOEFL; velký placený trh.",
+      "target_user": "Uchazeči o Express Entry a provinční programy (Indie, Filipíny, Nigérie, Brazílie, Írán, Maroko), pracovníci v Kanadě na dočasných vízech.",
+      "features": [
+        "8 typů mluvních úloh v duchu CELPIP + TEF/TCF (vlastní zadání)",
+        "Přesné časovače přípravy a odpovědi",
+        "Nahrávání + on-device přepis, počet slov, pauzy",
+        "Zpětná vazba struktury přes Foundation Models (na podporovaných zařízeních)",
+        "Banka 300+ vlastních zadání"
+      ],
+      "offline": "mostly",
+      "offline_note": "Přepis SFSpeechRecognizer on-device (EN, FR), Foundation Models jen na zařízeních s Apple Intelligence; jinak funguje bez AI zpětné vazby.",
+      "monetization": "3měsíční přístup 14,99 USD (~345 Kč) nebo 7,99 USD/měs. (~184 Kč).",
+      "revenue_math": "Ideál: 3 000 staženo/měs. ('celpip', 'tef canada', 'tcf canada', 'celpip speaking') × 3 % × 14,99 USD = 1 349 USD × 0,85 = 1 147 USD ≈ 26 000 Kč; konzervativně 20 000 Kč.",
+      "revenue_czk_ideal": 20000,
+      "keywords": [
+        {
+          "kw": "celpip",
+          "saturation": 4,
+          "competitor": "CELPIP prep apps",
+          "note": "odhad"
+        },
+        {
+          "kw": "celpip speaking",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "tef canada",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "tcf canada",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "ielts speaking",
+          "saturation": 8,
+          "competitor": "IELTS prep apps",
+          "note": "odhad – saturované, parent"
+        }
+      ],
+      "demand_evidence": "Předpoklad (znalost trhu): Express Entry a kategorie pro francouzštinu od 2023 zvýšily poptávku po TEF/TCF; CELPIP je dominantní v Kanadě. Saturace na App Store jen odhad.",
+      "competitors": [
+        {
+          "name": "CELPIP prep apps (různé)",
+          "url": "",
+          "role": "niche",
+          "note": "Obecné testy, mluvení bez zpětné vazby (odhad)."
+        },
+        {
+          "name": "IELTS prep (British Council, Magoosh)",
+          "url": "",
+          "role": "parent",
+          "note": "Velký trh, IELTS formát."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Ochranné známky CELPIP (Paragon), TEF (CCI Paris), TCF (FEI) – název nesmí budit dojem oficiální appky; Apple může odmítnout za 2.3.7/5.2.",
+        "Foundation Models jen na novějších zařízeních – cílová skupina (Indie, Filipíny) má často starší iPhony, většina má Android.",
+        "Kanadská imigrační politika se mění (škrty v počtu imigrantů 2025–26) – poptávka může klesnout.",
+        "Konkurence placených kurzů s lidským hodnocením."
+      ],
+      "killer_risk": "Trademark/metadata odmítnutí a změny kanadské imigrační politiky.",
+      "mitigation": "Generický název ('Speaking Test Timer'), názvy testů jen v popisu s disclaimerem; appka funguje i bez AI; rozšířit o IELTS/PTE formát jako doplněk.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 8,
+        "blue_ocean": 4,
+        "monetization": 7,
+        "build_ease": 6,
+        "offline_fit": 8,
+        "safety": 4
+      }
+    },
+    {
+      "id": "education-18",
+      "name": "METAR & TAF Trainer",
+      "tagline": "Rozlušti letecké počasí za 10 vteřin – nekonečné procvičování METAR, TAF a NOTAM zkratek.",
+      "pitch": "Každý student pilot, dispečer, pilot dronu v kategorii A2 i paraglidista se musí naučit číst METAR a TAF. Na App Store je spousta dekodérů, které zprávu přeloží – ale žádný tě nenaučí je číst sám, což je přesně to, co u zkoušky potřebuješ. Generátor vytvoří realistické zprávy (i americké a evropské varianty), ty je dekóduješ a appka tě opraví. Volitelně stáhne živé METARy z veřejného API pro trénink na skutečném počasí.",
+      "niche": "Trénink čtení (ne dekódování) leteckých meteo zpráv. Dekodéry dělají práci za uživatele; výukový dril chybí.",
+      "parent_market": "Pilotní výcvik a letecké appky (ForeFlight, Sporty's, Aviation weather apps).",
+      "target_user": "Studenti PPL/ATPL teorie, piloti ultralightů, dronaři (A2 CofC, Part 107), paraglidisté, meteorologičtí nadšenci.",
+      "features": [
+        "Generátor realistických METAR/TAF (ICAO + US varianty)",
+        "Interaktivní rozklad po skupinách s nápovědou",
+        "Režim rychlost a zkouška",
+        "Kartičky zkratek (TEMPO, BECMG, PROB30, CAVOK)",
+        "Volitelně živé METARy (veřejné API) pro vybrané letiště"
+      ],
+      "offline": "mostly",
+      "offline_note": "Generátor i výuka offline; živé zprávy volitelně z veřejného NOAA aviationweather.gov API.",
+      "monetization": "Jednorázově 6,99 USD (~161 Kč).",
+      "revenue_math": "Ideál: 1 500 staženo/měs. ('metar', 'taf', 'aviation weather', 'metar quiz') × 6 % × 6,99 USD = 629 USD × 0,85 = 535 USD ≈ 12 300 Kč; konzervativně 12 000 Kč.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "metar",
+          "saturation": 6,
+          "competitor": "METAR dekodéry",
+          "note": "odhad – dekodéry, ne trenéry"
+        },
+        {
+          "kw": "metar decoder",
+          "saturation": 5,
+          "competitor": "METAR dekodéry",
+          "note": "odhad"
+        },
+        {
+          "kw": "taf decoder",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "metar quiz",
+          "saturation": 0,
+          "competitor": "žádná",
+          "note": "odhad"
+        },
+        {
+          "kw": "aviation weather",
+          "saturation": 7,
+          "competitor": "Aviation weather apps",
+          "note": "odhad – parent"
+        }
+      ],
+      "demand_evidence": "Předpoklad: meteorologie je povinná část teorie PPL/A2/Part 107; existence mnoha dekodérů ukazuje poptávku. Saturace trenérů neověřena.",
+      "competitors": [
+        {
+          "name": "METAR decoder apps (různé)",
+          "url": "",
+          "role": "niche",
+          "note": "Dekódují, neučí."
+        },
+        {
+          "name": "ForeFlight",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr, meteo dekódované automaticky."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Uživatelé raději použijí dekodér zdarma – 'proč se to učit'.",
+        "Klíčové slovo 'metar' je obsazené dekodéry; trenér může ASO přehlušit.",
+        "Úzké publikum a jednorázový nákup – strop tržeb blízko 10 000 Kč."
+      ],
+      "killer_risk": "Malá ochota platit za výuku, když dekódování je zdarma.",
+      "mitigation": "Balit s přípravou meteo části zkoušky (oblačnost, fronty – vlastní otázky), cílit na dronaře (rostoucí trh), nízká cena.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 9,
+        "safety": 7
+      }
+    },
+    {
+      "id": "education-19",
+      "name": "Marine VHF Radio Trainer (SRC)",
+      "tagline": "MAYDAY, MAYDAY, MAYDAY – procvič si nouzové volání a DSC dřív, než na moři jde o život.",
+      "pitch": "Jachtaři v Evropě potřebují SRC (Short Range Certificate) na obsluhu námořní VHF stanice – zkouška má teoretickou i praktickou část s DSC rádiem a hlasovými procedurami. Aplikace na testové otázky existují, ale nikdo nesimuluje samotné rádio a volání. Postavíme simulátor VHF/DSC stanice (menu, distress tlačítko, kanály), hlasový trénink MAYDAY/PAN PAN/SÉCURITÉ s rozpoznáním řeči a frazeologii SMCP.",
+      "niche": "Praktická část SRC – obsluha DSC a hlasové procedury. COLREGs a teoretické otázky jsou přeplněné (evidence: COLREGs saturováno), simulace rádia chybí.",
+      "parent_market": "Jachtařské licence a vzdělávání (Sportbootführerschein appky, RYA e-learning, Navionics jako parent trh vodáků).",
+      "target_user": "Kandidáti SRC v DE/AT/CH/UK/NL/CZ (charterové licence), charteroví skippeři, majitelé lodí.",
+      "features": [
+        "Simulátor VHF/DSC rádia (distress alert, individual call, kanály 16/70)",
+        "Hlasový trénink nouzových zpráv s kontrolou struktury",
+        "SMCP fráze a hláskovací abeceda",
+        "Testové otázky (vlastní formulace)",
+        "Checklist zkoušky podle země"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, rozpoznání řeči on-device.",
+      "monetization": "Jednorázově 9,99 USD (~230 Kč).",
+      "revenue_math": "Ideál: 1 000 staženo/měs. ('src funkzeugnis', 'marine vhf radio', 'vhf radio course', 'mayday') × 7 % × 9,99 USD = 699 USD × 0,85 = 594 USD ≈ 13 700 Kč; konzervativně 12 000 Kč.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "src funkzeugnis",
+          "saturation": 3,
+          "competitor": "SRC testové appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "marine vhf radio",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "vhf radio course",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "mayday call",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad: SRC je v mnoha zemích EU povinný pro charter; německé SBF/SRC appky jsou úspěšné. Evidence education ověřila jen, že COLREGs kvízy jsou přeplněné – rádiový simulátor neověřen.",
+      "competitors": [
+        {
+          "name": "SRC / SBF Trainer apps (DE)",
+          "url": "",
+          "role": "parent",
+          "note": "Testové otázky, bez simulace rádia (odhad)."
+        },
+        {
+          "name": "RYA SRC e-learning",
+          "url": "",
+          "role": "parent",
+          "note": "Oficiální kurz UK, web."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Menu DSC se liší výrobce od výrobce – obecný simulátor nemusí odpovídat zkouškovému rádiu.",
+        "Sezónnost (jaro) a malý trh.",
+        "Oficiální otázky jsou v DE přidělovány autoritou – přesnost vs. vlastní formulace.",
+        "Chyba v nouzové proceduře = odpovědnost a reputační riziko."
+      ],
+      "killer_risk": "Malý, sezónní trh s konkurencí levných testových appek.",
+      "mitigation": "Kombinace testu a simulátoru v jedné appce, lokalizace DE/NL/UK/CZ, revize instruktorem.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "education-20",
+      "name": "Flash Anzan: Soroban Mental Math",
+      "tagline": "Japonská metoda počítání v hlavě – bleskové sčítání čísel, která ti proletí před očima.",
+      "pitch": "Soroban a flash anzan (sčítání čísel blikajících na obrazovce představou počítadla) jsou v Japonsku, Indii a Malajsii masivní byznys kroužků pro děti. V Evropě a Latinské Americe kroužky rostou, ale appky jsou anglické nebo japonské. Nabídneme virtuální soroban, řízený kurz, flash anzan s nastavitelnou rychlostí a rodičovský přehled – v 50 jazycích. Konkurence je střední, takže vyhrát musíme lokalizací a kvalitou.",
+      "niche": "Soroban/flash anzan pro rodiče a děti mimo Asii. Konkurence v angličtině existuje (~6 appek), lokalizované verze chybí.",
+      "parent_market": "Mentální aritmetika a matematika pro děti (UCMAS/Aloha kroužky, Prodigy, Math apps) – ověřeně placený trh.",
+      "target_user": "Rodiče dětí 6–12 let, děti z abakus kroužků, dospělí fanoušci mentální aritmetiky.",
+      "features": [
+        "Virtuální soroban s realistickými kuličkami",
+        "Řízený kurz od 1 do 4 číslic",
+        "Flash anzan 0,2–2 s na číslo, hlasový režim",
+        "Rodičovský přehled pokroku",
+        "Režim soutěže s rodinou (lokální)"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně; bez reklam, bez analytiky (dětská publika).",
+      "monetization": "Předplatné 3,99 USD/měs. (~92 Kč) nebo 24,99 USD/rok (~575 Kč); lifetime 39,99 USD.",
+      "revenue_math": "Ideál: 1 500 staženo/měs. × 4 % = 60 nových/měs.; ustálený stav ~150 předplatitelů × ~3,99 USD = 599 USD × 0,85 = 509 USD ≈ 11 700 Kč/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "soroban",
+          "saturation": 6,
+          "competitor": "Anzan Flash Soroban Math",
+          "note": "Evidence: střední konkurence ~6 appek"
+        },
+        {
+          "kw": "flash anzan",
+          "saturation": 4,
+          "competitor": "Anzan Flash Soroban Math",
+          "note": "Evidence: nejsilnější Anzan Flash"
+        },
+        {
+          "kw": "abacus math",
+          "saturation": 6,
+          "competitor": "abakus appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "mental abacus",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): střední konkurence (~6 appek), nejsilnější Anzan Flash Soroban Math. Předpoklad: kroužky mentální aritmetiky rostou v Evropě/LatAm – neměřeno.",
+      "competitors": [
+        {
+          "name": "Anzan Flash Soroban Math",
+          "url": "https://apps.apple.com/us/app/anzan-flash-soroban-math/id1627090066",
+          "role": "niche",
+          "note": "Nejsilnější flash anzan appka (evidence)."
+        },
+        {
+          "name": "UCMAS / Aloha kroužky",
+          "url": "",
+          "role": "parent",
+          "note": "Kamenné kroužky, dokazují ochotu rodičů platit."
+        }
+      ],
+      "evidence": "web",
+      "us_gap": true,
+      "us_gap_note": "Reverse gap: model velký v Japonsku/Asii, ale pro Evropu a Latinskou Ameriku chybí lokalizované appky – lokalizace do 50 jazyků.",
+      "devils_advocate": [
+        "Konkurence ~6 appek – ne blue ocean, jen lokalizační výhoda.",
+        "Kroužky mají vlastní appky pro své žáky a doporučují je.",
+        "Dětská publika: Guideline 1.3, parental gate, a rodiče rychle ruší předplatné.",
+        "Kopírovatelné – konkurent přidá lokalizaci za týden."
+      ],
+      "killer_risk": "Střední konkurence + snadné kopírování lokalizace.",
+      "mitigation": "Kvalitní onboarding pro rodiče bez znalosti sorobanu, spolupráce s evropskými kroužky, lifetime nákup.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "education-21",
+      "name": "Subnet Sprint: IP Subnetting Trainer",
+      "tagline": "Subnetting jako sprint: nekonečné příklady, stopky a vysvětlení – pro CCNA i školu.",
+      "pitch": "Subnetting je nejobávanější část CCNA a síťových předmětů na průmyslovkách a VŠ – a jediná cesta je procvičovat stovky příkladů. Webové generátory existují, appky také, ale většinou jako kalkulačky, ne trenéry. Postavíme nekonečný generátor (IPv4, VLSM, IPv6, wildcard masky) s časovými sprinty, vysvětlením krok za krokem a Apple Watch denním příkladem.",
+      "niche": "Dril subnettingu jako samostatná dovednost. Velké CCNA přípravy (Boson, Pocket Prep) mají otázky, ne nekonečný dril.",
+      "parent_market": "IT certifikace – CCNA, CompTIA Network+ (Pocket Prep, Boson, Udemy) – placený trh.",
+      "target_user": "Studenti CCNA/Network+, studenti IT průmyslovek a VŠ, junior síťaři.",
+      "features": [
+        "Nekonečný generátor příkladů (síť, broadcast, rozsah, počet hostů)",
+        "VLSM a IPv6 moduly",
+        "Časové sprinty a statistiky",
+        "Vysvětlení krok za krokem (binárně i 'magic number')",
+        "Widget / Watch denní příklad"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně.",
+      "monetization": "Jednorázově 6,99 USD (~161 Kč).",
+      "revenue_math": "Ideál: 2 000 staženo/měs. ('subnetting', 'subnet practice', 'ccna subnetting') × 5 % × 6,99 USD = 699 USD × 0,85 = 594 USD ≈ 13 700 Kč; konzervativně 12 000 Kč.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "subnetting",
+          "saturation": 5,
+          "competitor": "subnet kalkulačky a trenéry",
+          "note": "odhad – střední konkurence"
+        },
+        {
+          "kw": "subnet practice",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "ccna",
+          "saturation": 7,
+          "competitor": "Pocket Prep, Boson",
+          "note": "odhad – parent"
+        },
+        {
+          "kw": "ipv6 subnetting",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad: subnetting je notoricky obtížná část CCNA (časté vlákna r/ccna); existují subnet kalkulačky i několik trenérů. Konkurence odhadem střední.",
+      "competitors": [
+        {
+          "name": "Pocket Prep (CCNA)",
+          "url": "",
+          "role": "parent",
+          "note": "Otázky na certifikace, předplatné."
+        },
+        {
+          "name": "Subnet calculators / practice apps",
+          "url": "",
+          "role": "niche",
+          "note": "Kalkulačky a jednoduché trenéry, odhad ~5."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Konkurence středně silná – ne blue ocean.",
+        "Webové generátory (subnettingpractice.com) zdarma.",
+        "LLM chat vysvětlí subnetting zdarma; appka je snadno kopírovatelná (4.3 šablony)."
+      ],
+      "killer_risk": "Bezplatné webové alternativy a snadné kopírování.",
+      "mitigation": "Nejlepší UX sprintů a Watch integrace, lokalizace (CZ/DE/PL/ES/PT-BR, kde je méně konkurence), nízká cena.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "education-22",
+      "name": "Blueprint Symbols Trainer: Weld, GD&T, Electrical",
+      "tagline": "Svarové značky, geometrické tolerance, elektrické schémata – přečti výkres jako mistr.",
+      "pitch": "Učni svářeči, strojaři a elektrikáři se učí číst technické výkresy z tlustých norem, které stojí stovky eur. Appky pro tyto symboly jsou vzácné a americké (AWS, ASME). V Evropě se používá ISO 2553 a IEC symboly – jiné zobrazení. Nabídneme trenér symbolů: svarové značky (ISO i AWS), GD&T rámečky, elektrotechnické schematické značky (IEC i ANSI), kvízy a 'přečti výkres' úlohy.",
+      "niche": "Čtení symbolů na výkresech pro učně a techniky. Velcí hráči jsou normalizační organizace (PDF) a CAD software, ne výuka.",
+      "parent_market": "Odborné vzdělávání a zkoušky řemesel (welding certification prep, electrician exam prep – US appky s předplatným).",
+      "target_user": "Učni a studenti SOU/SPŠ (svářeči, strojníci, elektrikáři), kontroloři kvality, technici v DE/CZ/PL/US.",
+      "features": [
+        "Svarové značky ISO 2553 i AWS A2.4 (vlastní vysvětlení)",
+        "GD&T značky, rámečky tolerancí, základny",
+        "Elektrotechnické značky IEC 60617 vs. ANSI",
+        "Kvízy a úlohy 'přečti výřez výkresu'",
+        "Porovnávací tabulky ISO vs. US"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně.",
+      "monetization": "Jednorázově 7,99 USD (~184 Kč); moduly zdarma ukázkově.",
+      "revenue_math": "Ideál: 1 500 staženo/měs. ('welding symbols', 'gd&t', 'blueprint reading', 'electrical symbols') × 5 % × 7,99 USD = 599 USD × 0,85 = 509 USD ≈ 11 700 Kč; konzervativně 11 500 Kč.",
+      "revenue_czk_ideal": 11500,
+      "keywords": [
+        {
+          "kw": "welding symbols",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "gd&t",
+          "saturation": 3,
+          "competitor": "GD&T reference apps",
+          "note": "odhad"
+        },
+        {
+          "kw": "blueprint reading",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "electrical symbols",
+          "saturation": 4,
+          "competitor": "reference apps",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad: čtení výkresů je povinná látka řemesel; evidence reference zmiňuje 'welding symbols' jen jako neověřený kandidát. Saturace odhadem.",
+      "competitors": [
+        {
+          "name": "GD&T reference apps",
+          "url": "",
+          "role": "niche",
+          "note": "Referenční tabulky, ne trénink."
+        },
+        {
+          "name": "Welding certification prep apps (US)",
+          "url": "",
+          "role": "parent",
+          "note": "AWS zaměření, US."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": true,
+      "us_gap_note": "US appky učí AWS A2.4 a ANSI; evropský trh používá ISO 2553 a IEC – lokalizovaný trenér s ISO jako výchozím chybí.",
+      "devils_advocate": [
+        "Normy (ISO, AWS, ASME) jsou chráněné – nesmíme kopírovat obrázky ani text, jen vlastní vysvětlení.",
+        "Učni často nemají iPhone (Android dominance ve skupině) – menší iOS trh.",
+        "Tři různé obory = tři obsahy; hrozí nedotažení."
+      ],
+      "killer_risk": "Nízká penetrace iOS u cílové skupiny a malá ochota platit.",
+      "mitigation": "Začít svarovými značkami (nejjasnější poptávka), vlastní grafika, školní licence (iPady ve školách).",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "education-23",
+      "name": "Organic Naming Trainer (IUPAC)",
+      "tagline": "Pojmenuj molekulu, nakresli molekulu – organické názvosloví v tvém jazyce.",
+      "pitch": "Organické názvosloví je noční můra studentů chemie na gymnáziu i VŠ – a pravidla i koncovky se liší jazyk od jazyka (ethanol, Ethanol, etanol, éthanol). Existující appky jsou anglické a obecné. Postavíme generátor molekul s on-device pojmenováním (od alkanů po estery), kreslení struktury Apple Pencilem a kvízy v lokalizovaném názvosloví – první pro české, německé, polské nebo španělské studenty.",
+      "niche": "Lokalizované organické názvosloví. Velké chemické appky (Chemistry by Quizlet, periodické tabulky) jsou anglické a obecné.",
+      "parent_market": "Chemické vzdělávání a studijní pomůcky (Chegg, Quizlet, periodické tabulky, Organic Chemistry apps).",
+      "target_user": "Středoškoláci s maturitou z chemie, studenti medicíny a farmacie (přijímačky), vysokoškoláci 1. ročníku.",
+      "features": [
+        "Generátor molekul (alkany, alkeny, alkoholy, ketony, kyseliny, estery, aminy)",
+        "Název → struktura (kreslení Pencilem) a struktura → název",
+        "Lokalizované názvosloví (EN, CZ, DE, PL, ES, FR, IT…)",
+        "Postupné nápovědy podle pravidel",
+        "Režim přijímaček (medicína)"
+      ],
+      "offline": "full",
+      "offline_note": "Vlastní naming engine lokálně (omezený rozsah), žádná cloudová API.",
+      "monetization": "Freemium, plná verze 5,99 USD (~138 Kč) jednorázově.",
+      "revenue_math": "Ideál: 3 000 staženo/měs. ('organic chemistry', 'iupac naming', 'nomenclature' + lokalizace) × 4 % × 5,99 USD = 719 USD × 0,85 = 611 USD ≈ 14 000 Kč; konzervativně 13 000 Kč.",
+      "revenue_czk_ideal": 13000,
+      "keywords": [
+        {
+          "kw": "iupac naming",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "nomenclature",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "organic chemistry",
+          "saturation": 7,
+          "competitor": "organic chemistry apps",
+          "note": "odhad – parent"
+        },
+        {
+          "kw": "functional groups",
+          "saturation": 4,
+          "competitor": "flashcards",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad: organické názvosloví je povinná látka (maturita, přijímačky na medicínu); saturace lokalizovaných verzí neověřena.",
+      "competitors": [
+        {
+          "name": "Organic chemistry flashcard apps",
+          "url": "",
+          "role": "parent",
+          "note": "Anglické kartičky."
+        },
+        {
+          "name": "Chemistry by Quizlet / Chegg",
+          "url": "",
+          "role": "parent",
+          "note": "Obecné studijní platformy."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": true,
+      "us_gap_note": "Anglické appky jsou pro studenty jiných jazyků nepoužitelné (názvosloví je jazykově specifické) – lokalizované názvosloví je skutečná mezera.",
+      "devils_advocate": [
+        "Vlastní naming engine je technicky náročný (OPSIN je Java) – chyby v názvech zničí důvěru.",
+        "Každý jazyk má vlastní pravidla – nutná revize chemikem pro každý jazyk.",
+        "Sezónnost (maturita, přijímačky) a studentská nízká ochota platit.",
+        "ChatGPT pojmenuje molekulu zdarma."
+      ],
+      "killer_risk": "Chyby v generovaných názvech – bez 100% přesnosti produkt nefunguje.",
+      "mitigation": "Omezený, ručně ověřený rozsah (přes 5 000 předpočítaných molekul místo plného enginu), revize učiteli chemie, rozšiřovat postupně.",
+      "build_weeks": 8,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "education-24",
+      "name": "Solfa Signs: Kodály Hand-Sign Trainer",
+      "tagline": "Ukaž rukou 'sol' a zazpívej – kamera pozná znak, mikrofon pozná tón.",
+      "pitch": "Kodályova metoda s ručními znaky (Curwen) se učí na školách v Maďarsku, USA, UK, Austrálii i Česku (relativní solmizace). Učitelé hudební výchovy potřebují nástroj, děti i dospělí sborovou praxi. Nikdo na iOS nekombinuje rozpoznání ručního znaku (Vision hand pose) s rozpoznáním zpívaného tónu. Postavíme hru pro děti a trenér pro sboristy – vše offline.",
+      "niche": "Ruční znaky solmizace + zpěv. Sight-singing appky používají noty, ne ruční znaky; Kodály učitelé používají papírové karty.",
+      "parent_market": "Hudební vzdělávání a ear training (Tenuto, Perfect Ear, Sight Singing Pro, Yousician).",
+      "target_user": "Učitelé hudební výchovy (Kodály, Orff), sboristé, děti 6–12 let, studenti hudební pedagogiky.",
+      "features": [
+        "Rozpoznání 7 Curwenových znaků kamerou (Vision hand pose)",
+        "Detekce zpívaného tónu a porovnání se znakem",
+        "Učitelský režim – ukazuj znaky, appka hraje tóny (pro třídu přes AirPlay)",
+        "Postupné melodie (pentatonika → diatonika)",
+        "Lokalizace do/re/mi i C-D-E"
+      ],
+      "offline": "full",
+      "offline_note": "Vision + pitch detection lokálně.",
+      "monetization": "Jednorázově 4,99 USD (~115 Kč), učitelský balíček 9,99 USD (~230 Kč).",
+      "revenue_math": "Ideál: 1 500 staženo/měs. ('solfege', 'kodaly', 'curwen hand signs', 'sight singing') × 7 % × 6,99 USD průměr = 734 USD × 0,85 = 624 USD ≈ 14 300 Kč; konzervativně 12 000 Kč.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "solfege",
+          "saturation": 5,
+          "competitor": "solfege appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "kodaly",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "curwen hand signs",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "solfege hand signs",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "sight singing",
+          "saturation": 5,
+          "competitor": "Sight Singing Pro",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad: Kodály metoda je standard v HU a rozšířená v US/UK/AU školách (OAKE, BKA). Objem hledání pravděpodobně malý – neověřeno.",
+      "competitors": [
+        {
+          "name": "Sight Singing Pro",
+          "url": "",
+          "role": "parent",
+          "note": "Sight-singing s notami, bez ručních znaků."
+        },
+        {
+          "name": "Tenuto",
+          "url": "",
+          "role": "parent",
+          "note": "Ear training lídr."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Malý objem vyhledávání – 'kodaly' hledá hlavně pár tisíc učitelů.",
+        "Vision hand pose může mít problém rozlišit podobné znaky (fa vs. ti) a funguje špatně při slabém světle.",
+        "Učitelé hudby mají nízké rozpočty a chtějí zdarma.",
+        "Dětské použití = Guideline 1.3 a kamera u dětí (soukromí)."
+      ],
+      "killer_risk": "Malá poptávka – může zůstat pod 1 000 stažení měsíčně.",
+      "mitigation": "Učitelský režim pro celou třídu (1 nákup = 30 dětí), cílit na klíčová slova sboristů a sight-singing, spolupráce s Kodály asociacemi.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "education-25",
+      "name": "Maqam Ear Trainer",
+      "tagline": "Rozpoznej Rast, Bayati a Hijaz podle ucha – ear training pro arabskou a tureckou hudbu se čtvrttóny.",
+      "pitch": "Západní ear-training appky (Tenuto, Perfect Ear) učí dur, moll a intervaly v temperovaném ladění. Hudebníci arabské, turecké a perské tradice potřebují rozpoznat maqamy a čtvrttónové intervaly – a žádná aplikace to neučí jako trénink sluchu. Existující appky jsou referenční tabulky a simulátory oudu. Postavíme kvízy maqamů, jins a intervalů se čtvrttóny, přehrávané zvukem oudu/nay.",
+      "niche": "Ear training maqamů. Maqam appky jsou referenční (Maqamat, Maqamat Al-Arabiya) nebo simulátory; trénink sluchu nikdo nedělá.",
+      "parent_market": "Ear training (Tenuto, Perfect Ear, Functional Ear Trainer) + blízkovýchodní hudební nástroje (Oud Pro, Altarab).",
+      "target_user": "Studenti oudu, qanunu, nay, darbuky v MENA, Turecku a diaspoře; západní hudebníci world music; studenti etnomuzikologie.",
+      "features": [
+        "Kvízy rozpoznání maqamu podle melodie (Rast, Bayati, Hijaz, Saba, Nahawand, Kurd…)",
+        "Jins (tetrachordy) a čtvrttónové intervaly",
+        "Arabské i turecké (makam, 53-TET) ladění",
+        "Zpívej a kontroluj intonaci (pitch detection)",
+        "Lokalizace AR/TR/FA/EN/FR"
+      ],
+      "offline": "full",
+      "offline_note": "Syntéza/samply lokálně, pitch detection lokálně.",
+      "monetization": "Jednorázově 7,99 USD (~184 Kč); zdarma 3 maqamy.",
+      "revenue_math": "Ideál: 1 500 staženo/měs. ('maqam', 'arabic music', 'makam', 'quarter tone') × 5 % × 7,99 USD = 599 USD × 0,85 = 509 USD ≈ 11 700 Kč; konzervativně 11 000 Kč.",
+      "revenue_czk_ideal": 11000,
+      "keywords": [
+        {
+          "kw": "maqam",
+          "saturation": 3,
+          "competitor": "Maqamat Al-Arabiya",
+          "note": "Evidence: sat ~3, referenční appky, žádný ear trainer"
+        },
+        {
+          "kw": "maqam ear training",
+          "saturation": 0,
+          "competitor": "žádná",
+          "note": "Evidence: žádný dedikovaný maqam ear trainer nenalezen"
+        },
+        {
+          "kw": "makam",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad – turecká varianta"
+        },
+        {
+          "kw": "quarter tone",
+          "saturation": 2,
+          "competitor": "Altarab (tuner)",
+          "note": "odhad"
+        },
+        {
+          "kw": "ear training",
+          "saturation": 8,
+          "competitor": "Tenuto, Perfect Ear",
+          "note": "odhad – parent, saturované"
+        }
+      ],
+      "demand_evidence": "Ověřeno (web, evidence music): maqam appky existují (sat ~3) jako reference a simulátory, žádný dedikovaný maqam ear-training; Altarab (2026) je silný all-in-one. Objem poptávky neověřen.",
+      "competitors": [
+        {
+          "name": "Maqamat Al-Arabiya",
+          "url": "https://apps.apple.com/gb/app/maqamat-al-arabiya/id1330333850",
+          "role": "niche",
+          "note": "55 maqamů, referenční, ne trénink sluchu."
+        },
+        {
+          "name": "Altarab",
+          "url": "https://apps.apple.com/dz/app/altarab-%D8%A7%D9%84%D8%B7%D8%B1%D8%A8/id6759546870",
+          "role": "niche",
+          "note": "2026 all-in-one (tuner 24-TET, oud sim) – hlavní hrozba."
+        },
+        {
+          "name": "Maqamat",
+          "url": "https://apps.apple.com/gb/app/maqamat/id766256433",
+          "role": "niche",
+          "note": "Starší referenční appka."
+        }
+      ],
+      "evidence": "web",
+      "us_gap": true,
+      "us_gap_note": "Reverse gap: západní model ear-training appek (US/EU) nemá ekvivalent pro maqamovou tradici – lokalizace do AR/TR/FA.",
+      "devils_advocate": [
+        "Altarab (2026) může přidat ear-training modul a pokrýt vše.",
+        "Maqam není jen stupnice (sayr, ornamentika) – kvíz podle stupnice odborníci zkritizují.",
+        "Nižší ochota platit v MENA regionu a menší podíl iOS.",
+        "Regionální rozdíly (egyptské vs. syrské vs. turecké intonace) – těžko uspokojit všechny."
+      ],
+      "killer_risk": "Altarab nebo jiný all-in-one přidá ear training a náš jediný rozdíl zmizí.",
+      "mitigation": "Zaměřit se výhradně na trénink sluchu a kvalitu (reálné nahrávky melodií, sayr), spolupráce s učiteli oudu, rychlé vydání.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "education-26",
+      "name": "Fingerspell: BSL, Auslan, LSF & More",
+      "tagline": "Prstová abeceda národních znakových jazyků – kamera zkontroluje tvůj tvar ruky.",
+      "pitch": "Prstových abeced pro americký znakový jazyk (ASL) je na App Store hodně, ale britská BSL a australský Auslan používají dvouruční abecedu a francouzská, německá, brazilská či česká mají vlastní tvary. Rodiny neslyšících, učitelé a studenti tlumočnictví se učí z videí a plakátů. Nabídneme receptivní trénink (rozpoznej hláskované slovo v rostoucí rychlosti) a expresivní trénink s kontrolou tvaru ruky přes Vision hand pose.",
+      "niche": "Prstové abecedy mimo ASL. Evidence kids ověřila, že ASL baby sign je přeplněný; národní znakové jazyky jsou pokryté minimálně.",
+      "parent_market": "Výuka znakového jazyka (Lingvano, ASL Bloom, Baby Sign and Learn ASL Pro) – placené předplatné.",
+      "target_user": "Rodiče a sourozenci neslyšících dětí, studenti tlumočnictví a speciální pedagogiky, zdravotníci, sociální pracovníci, fanoušci znakového jazyka v UK/AU/FR/DE/BR/CZ.",
+      "features": [
+        "Prstové abecedy BSL, Auslan, NZSL (dvouruční), LSF, DGS, Libras, ČZJ",
+        "Receptivní trénink – animovaná ruka hláskuje slova v nastavitelné rychlosti",
+        "Expresivní trénink s Vision hand pose kontrolou",
+        "Denní slova a jména",
+        "Obsah konzultovaný s neslyšícími lektory"
+      ],
+      "offline": "full",
+      "offline_note": "Animace a Vision model lokálně.",
+      "monetization": "Jednorázově 5,99 USD (~138 Kč) za všechny abecedy.",
+      "revenue_math": "Ideál: 2 500 staženo/měs. ('bsl fingerspelling', 'auslan', 'libras alfabeto', 'fingerspelling') × 4 % × 5,99 USD = 599 USD × 0,85 = 509 USD ≈ 11 700 Kč; konzervativně 11 000 Kč.",
+      "revenue_czk_ideal": 11000,
+      "keywords": [
+        {
+          "kw": "bsl fingerspelling",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "fingerspelling",
+          "saturation": 5,
+          "competitor": "ASL fingerspelling apps",
+          "note": "odhad – ASL přeplněné"
+        },
+        {
+          "kw": "auslan",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "libras alfabeto",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "fingeralphabet",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad – DGS"
+        }
+      ],
+      "demand_evidence": "Ověřeno (web, evidence kids): ASL baby sign přeplněný (sat ~7), německé Babyzeichen jen 3 appky s ochotou platit (8,99 USD). Prstová abeceda mimo ASL neověřena – odhad.",
+      "competitors": [
+        {
+          "name": "Baby Sign and Learn ASL Pro",
+          "url": "https://apps.apple.com/us/app/baby-sign-and-learn-american-sign-language-pro-edition/id525724090",
+          "role": "parent",
+          "note": "ASL, placená 2,99 USD – důkaz US modelu."
+        },
+        {
+          "name": "Lingvano",
+          "url": "",
+          "role": "parent",
+          "note": "Znakové jazyky (ASL, BSL, ÖGS), předplatné."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": true,
+      "us_gap_note": "ASL (US) je přeplněný; BSL/Auslan/NZSL dvouruční abecedy a LSF/DGS/Libras/ČZJ mají minimum nástrojů.",
+      "devils_advocate": [
+        "Vision hand pose zvládá dvouruční BSL abecedu špatně (překryv rukou) – expresivní trénink může být nepřesný.",
+        "Komunita neslyšících citlivě reaguje na produkty slyšících bez spolupráce (kulturní přivlastnění).",
+        "Prstová abeceda je malá část znakového jazyka – uživatelé chtějí slovní zásobu (video obsah = drahé).",
+        "Lingvano může přidat abecedy pro další jazyky."
+      ],
+      "killer_risk": "Technická nepřesnost rozpoznání dvouručních tvarů + odmítnutí komunitou.",
+      "mitigation": "MVP jen receptivní trénink (spolehlivý), expresivní jako beta; placená spolupráce s neslyšícími lektory a jejich uvedení v appce.",
+      "build_weeks": 7,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "education-27",
+      "name": "Blindfold Chess Trainer",
+      "tagline": "Hraj šachy bez šachovnice – trénuj vizualizaci, souřadnice a počítání variant.",
+      "pitch": "Vizualizace je dovednost, která odděluje hráče 1400 a 1800 Elo, a trenéři doporučují blindfold cvičení. Velké šachové appky (Chess.com, Lichess) mají jen souřadnicový trénink; specializovaných appek je pár. Postavíme strukturovaný kurz: barvy polí, souřadnice, jezdcovy skoky, hlasové zadávání tahů, puzzle naslepo z volně licencované databáze Lichess (CC0) – vše offline.",
+      "niche": "Šachová vizualizace a hra naslepo. Chess.com a Lichess nabízí jen souřadnice; kurz vizualizace je opomenutý.",
+      "parent_market": "Šachy – Chess.com (stovky milionů USD), Chessable, Lichess; šachový boom po 2020.",
+      "target_user": "Kluboví hráči 1000–2000 Elo, dospělí 'improvers', trenéři mládeže.",
+      "features": [
+        "Postupný kurz: barvy polí → úhlopříčky → jezdec → partie naslepo",
+        "Hlasové zadávání tahů (on-device) a TTS",
+        "Puzzle naslepo z Lichess databáze (CC0)",
+        "Hra naslepo proti Stockfish (GPL – pozor na licenci) nebo vlastnímu enginu",
+        "Statistiky a denní výzva"
+      ],
+      "offline": "full",
+      "offline_note": "Puzzle databáze přibalená (CC0), engine lokálně.",
+      "monetization": "Freemium, plná verze 5,99 USD (~138 Kč) jednorázově nebo 1,99 USD/měs.",
+      "revenue_math": "Ideál: 2 500 staženo/měs. ('blindfold chess', 'chess visualization', 'chess coordinates') × 4 % × 5,99 USD = 599 USD × 0,85 = 509 USD ≈ 11 700 Kč; konzervativně 11 000 Kč.",
+      "revenue_czk_ideal": 11000,
+      "keywords": [
+        {
+          "kw": "blindfold chess",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "chess visualization",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "chess coordinates",
+          "saturation": 4,
+          "competitor": "coordinates trainers",
+          "note": "odhad"
+        },
+        {
+          "kw": "board vision",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad: šachový boom a časté dotazy na vizualizaci (r/chess, Chessable kurzy vizualizace). Saturace neověřena.",
+      "competitors": [
+        {
+          "name": "Chess.com",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr, má jen souřadnicový trénink."
+        },
+        {
+          "name": "Chessable",
+          "url": "",
+          "role": "parent",
+          "note": "Placené kurzy, včetně vizualizace."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Chess.com/Lichess přidají vizualizační mód za týden – Sherlock od platforem.",
+        "Stockfish je GPL – integrace do placené iOS appky je licenčně problematická.",
+        "Šachisti jsou zvyklí na Lichess zdarma – nízká konverze."
+      ],
+      "killer_risk": "Velká platforma přidá stejnou funkci zdarma.",
+      "mitigation": "Zaměřit se na strukturovaný kurz (ne jen nástroj), vlastní jednoduchý engine nebo engine s kompatibilní licencí, lokalizace.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "education-28",
+      "name": "Exam Room Clock",
+      "tagline": "Velké hodiny pro zkouškovou místnost: více zkoušek, prodloužený čas, varování – bez internetu.",
+      "pitch": "Při písemných zkouškách musí být v místnosti viditelný čas, začátek a konec – a často běží zároveň zkoušky s různou délkou a studenti s prodlouženým časem (+25 %). Zkouškoví koordinátoři ve školách to řeší tabulí nebo webem. Nabídneme appku pro iPad/Apple TV přes AirPlay: více zkoušek najednou, prodloužení, číslo centra, varování 30/5 minut, žádné reklamy a žádná síť.",
+      "niche": "Zkouškové hodiny pro školy (JCQ v UK, maturity, Abitur, univerzity). Obecné časovače neumí více zkoušek a prodloužení.",
+      "parent_market": "Učitelské nástroje a časovače do třídy (Classroom Timer, ClassDojo, Big Timer) – široce používané.",
+      "target_user": "Zkouškoví koordinátoři a dozorující učitelé, univerzity, jazykové školy, organizátoři certifikací.",
+      "features": [
+        "Více zkoušek na jedné obrazovce s různými časy",
+        "Prodloužený čas pro jednotlivé kandidáty",
+        "Varování 30/5 minut, začátek/konec čtecí doby",
+        "Zobrazení čísla centra, názvu předmětu",
+        "AirPlay/HDMI na projektor, zámek proti ukončení"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně.",
+      "monetization": "Jednorázově 9,99 USD (~230 Kč).",
+      "revenue_math": "Ideál: 600 staženo/měs. ('exam clock', 'exam timer', 'invigilator') × 10 % × 9,99 USD = 599 USD × 0,85 = 509 USD ≈ 11 700 Kč; konzervativně 12 000 Kč ve špičkových měsících.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "exam clock",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "exam timer",
+          "saturation": 4,
+          "competitor": "obecné časovače",
+          "note": "odhad"
+        },
+        {
+          "kw": "classroom timer",
+          "saturation": 7,
+          "competitor": "Classroom Timer apps",
+          "note": "odhad – saturované"
+        },
+        {
+          "kw": "invigilator",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad: JCQ pravidla v UK vyžadují viditelné hodiny a údaje; webové exam clock nástroje existují. Saturace a objem neověřeny.",
+      "competitors": [
+        {
+          "name": "Classroom Timer apps",
+          "url": "",
+          "role": "parent",
+          "note": "Obecné časovače."
+        },
+        {
+          "name": "Web exam clocks",
+          "url": "",
+          "role": "niche",
+          "note": "Webové nástroje zdarma."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Malý trh (školy) a sezónnost (květen–červen, leden).",
+        "Webové verze zdarma stačí většině škol.",
+        "Školy nakupují přes Apple School Manager/Volume Purchase – složitější prodej."
+      ],
+      "killer_risk": "Webové nástroje zdarma a malý objem stažení.",
+      "mitigation": "Apple TV/iPad zážitek, který web neumí (zámek, AirPlay, žádný prohlížeč), balíček pro Volume Purchase, lokalizace pro maturity/Abitur.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "education-29",
+      "name": "Clef Reader: Alto, Tenor & Bass Clef",
+      "tagline": "Violistka, violoncellista nebo trombonista? Nauč se číst alt a tenorový klíč – hraj na nástroj a appka tě slyší.",
+      "pitch": "Čtení not v houslovém klíči je trh přeplněný (Note Rush, Tenuto), ale altový a tenorový klíč jsou bolestí violistů, violoncellistů, fagotistů a trombonistů. Obecné appky je mají jako vedlejší volbu, žádná se nezaměřuje na přechod mezi klíči ani na hru na skutečný nástroj. Postavíme trenér s pitch detekcí: noty ve vybraném klíči, hraješ na nástroj, appka kontroluje.",
+      "niche": "C-klíče (alt, tenor) a přechody mezi klíči. Velké note-reading appky se soustředí na houslový/basový klíč a děti.",
+      "parent_market": "Čtení not a hudební výchova (Note Rush, Tenuto, Flashnote Derby) – ověřeně placené.",
+      "target_user": "Violisté, violoncellisté, fagotisté, trombonisté, studenti konzervatoří, dirigenti čtoucí partitury.",
+      "features": [
+        "Kvízy v altovém, tenorovém, basovém a houslovém klíči",
+        "Hra na nástroj s pitch detection (viola, cello, trombone)",
+        "Režim přechodu mezi klíči (cello: bas ↔ tenor)",
+        "Rozsahy podle nástroje",
+        "Statistika slabých not"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně.",
+      "monetization": "Jednorázově 5,99 USD (~138 Kč).",
+      "revenue_math": "Ideál: 1 500 staženo/měs. ('alto clef', 'tenor clef', 'viola notes', 'note reading') × 6 % × 5,99 USD = 539 USD × 0,85 = 458 USD ≈ 10 500 Kč/měs.",
+      "revenue_czk_ideal": 10500,
+      "keywords": [
+        {
+          "kw": "alto clef",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "tenor clef",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "note reading",
+          "saturation": 7,
+          "competitor": "Note Rush",
+          "note": "odhad – parent"
+        },
+        {
+          "kw": "viola notes",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad: studenti violy a violoncella mají s klíči problém (časté dotazy na fórech); Note Rush podporuje více klíčů. Objem neověřen.",
+      "competitors": [
+        {
+          "name": "Note Rush",
+          "url": "",
+          "role": "parent",
+          "note": "Silná appka čtení not, podporuje i C klíče."
+        },
+        {
+          "name": "Tenuto",
+          "url": "",
+          "role": "parent",
+          "note": "Teorie a ear training, klíče jako volba."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Note Rush už alt klíč podporuje a hraje s mikrofonem – rozdíl je jen ve specializaci.",
+        "Malý trh (violisté) – strop tržeb těsně nad 10 000 Kč.",
+        "Pitch detection violy/cella se silnými alikvotami může chybovat v oktávě."
+      ],
+      "killer_risk": "Note Rush a podobné už funkci mají – specializace nemusí stačit.",
+      "mitigation": "ASO na 'alto clef'/'viola' v 50 jazycích, obsah pro orchestrální výňatky (public domain), spolupráce s učiteli.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "education-30",
+      "name": "Major System: Number Memory Trainer",
+      "tagline": "Zapamatuj si PIN, telefon i π – mnemotechnika Major system s lokálními slovníky.",
+      "pitch": "Major system (převod číslic na souhlásky a slova) je základ paměťového sportu a technik zapamatování čísel. Existující nástroje jsou anglické – a slovníky Major systému musí být pro každý jazyk jiné, protože závisí na výslovnosti. Postavíme generátor slov pro 00–99 v češtině, němčině, polštině, španělštině atd., trénink převodu, paměťový palác a denní výzvy.",
+      "niche": "Major system a PAO v neanglických jazycích. Mozkové tréninky (Elevate, Peak) mnemotechniky neučí; Major system appky jsou anglické.",
+      "parent_market": "Brain training a paměť (Elevate, Peak, Lumosity) – velký placený trh.",
+      "target_user": "Studenti, paměťoví nadšenci, lidé připravující se na zkoušky s čísly (data, vzorce), senioři trénující paměť.",
+      "features": [
+        "Lokalizované slovníky Major systému 00–99 (a 000–999)",
+        "Trénink převodu číslo ↔ slovo s časem",
+        "Paměťový palác s vlastními místy (fotky)",
+        "Denní výzva: zapamatuj si 20 číslic",
+        "Statistiky a Watch komplikace"
+      ],
+      "offline": "full",
+      "offline_note": "Slovníky přibalené, vše lokálně.",
+      "monetization": "Jednorázově 4,99 USD (~115 Kč).",
+      "revenue_math": "Ideál: 2 500 staženo/měs. ('major system', 'memory palace', 'mnemonic', 'memorize numbers') × 5 % × 4,99 USD = 624 USD × 0,85 = 530 USD ≈ 12 200 Kč; konzervativně 11 000 Kč.",
+      "revenue_czk_ideal": 11000,
+      "keywords": [
+        {
+          "kw": "major system",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "memory palace",
+          "saturation": 4,
+          "competitor": "memory palace apps",
+          "note": "odhad"
+        },
+        {
+          "kw": "mnemonic",
+          "saturation": 4,
+          "competitor": "neznámý",
+          "note": "odhad"
+        },
+        {
+          "kw": "memorize numbers",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad: popularita knih o paměti (Moonwalking with Einstein), komunita paměťového sportu; objem hledání neověřen – pravděpodobně malý.",
+      "competitors": [
+        {
+          "name": "Elevate",
+          "url": "",
+          "role": "parent",
+          "note": "Brain training lídr."
+        },
+        {
+          "name": "Major system apps (EN)",
+          "url": "",
+          "role": "niche",
+          "note": "Anglické, odhad ~3."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": true,
+      "us_gap_note": "Anglické Major system appky nefungují v jiných jazycích (slovník závisí na výslovnosti) – lokalizované slovníky jsou skutečná mezera.",
+      "devils_advocate": [
+        "Malá poptávka – mnemotechnika je koníček úzké skupiny.",
+        "Jednorázová nízká cena → těžko 10 000 Kč.",
+        "Generování kvalitních slovníků pro 20+ jazyků vyžaduje rodilé mluvčí (strojově chyby)."
+      ],
+      "killer_risk": "Malá poptávka – realisticky pod 2 500 stažení měsíčně.",
+      "mitigation": "Pozicovat jako 'zapamatuj si čísla' (PIN, telefon, data do zkoušky) místo 'Major system'; začít 8 jazyky s ručně ověřenými slovníky.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    }
+  ]
+}

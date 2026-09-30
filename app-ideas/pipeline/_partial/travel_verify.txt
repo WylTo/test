@@ -12,3 +12,41 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
     - UK Visa Day Tracker                 https://apps.apple.com/us/app/uk-visa-day-tracker/id6776378288
     - Leave UK Calculator                 https://apps.apple.com/us/app/leave-uk-calculator/id6743054593
     - Citizenship Tracker US, Canada      https://apps.apple.com/us/app/citizenship-tracker-us-canada/id6444369099
+
+[2] query: site:apps.apple.com Wohnmobil Zuladung Gewicht 3,5t Rechner  (idea travel-02)
+    saturation (dedicated motorhome payload/axle-load apps): 2 (Cleared for Camping — axle load calc + 3.5t + packing weight, new 2025/26; CamperManager — payload calc + checklists, new) -> CONTESTABLE, niche already entered by 2 new apps
+    - Cleared for Camping                 https://apps.apple.com/de/app/cleared-for-camping/id6756673573
+    - CamperManager                       https://apps.apple.com/us/app/campermanager/id6759843707
+    - Sygic LKW Wohnmobil Navigation      https://apps.apple.com/de/app/sygic-lkw-wohnmobil-navigation/id992127700
+    - CampPilot Camper Navi               https://apps.apple.com/de/app/flygge-dein-wohnmobil-navi/id1563420044
+    - NaviTruck GPS für LKW & WoMo        https://apps.apple.com/de/app/navitruck-gps-f%C3%BCr-lkw-womo/id1629899453
+    - m3-Rechner                          https://apps.apple.com/at/app/m3-rechner/id1481168781
+    - Tankvolumen Rechner                 https://apps.apple.com/de/app/tankvolumen-rechner/id6727014725
+    - TruckScout24                        https://apps.apple.com/de/app/truckscout24/id6739244457
+    - Einheitenumrechner                  https://apps.apple.com/de/app/einheitenrechner-umrechnen/id417794697
+    - Kübaj+: Kubikmeter & PDF            https://apps.apple.com/de/app/k%C3%BCbaj-kubikmeter-pdf/id6767344637
+
+[3] query: site:apps.apple.com ultralight gear list base weight backpacking  (idea travel-07)
+    saturation (dedicated base-weight gear list apps): 8 (PackList, Packstack, Hikt, GramPack, Backpacking List, Gearfolio, MetaGear w/ LighterPack import, trailscale — nearly all 2025–26) -> SATURATED, gold rush of new apps
+    - PackList: Backpacking Planner       https://apps.apple.com/de/app/packlist-backpacking-planner/id6753640568
+    - Packstack App                       https://apps.apple.com/hu/app/packstack-app/id6760873801
+    - Hikt - Backpacking Gear List        https://apps.apple.com/us/app/hikt-hiking-gear-lists/id6744449974
+    - GramPack - Ultralight Planner       https://apps.apple.com/us/app/grampack-ultralight-planner/id6762997060
+    - GramPack (es, watch)                https://apps.apple.com/es/app/grampack-ultralight-planner/id6762997060?l=ca&platform=watch
+    - Backpacking List: Checklist         https://apps.apple.com/us/app/backpacking-list-checklist/id6744121777
+    - Gearfolio - Outdoor Gear List       https://apps.apple.com/cz/app/gearfolio-outdoor-gear-list/id6757333526
+    - MetaGear: Outdoor Gear Tracker      https://apps.apple.com/pl/app/metagear-outdoor-gear-tracker/id6759169487
+    - trailscale                          https://apps.apple.com/ca/app/trailscale/id6761669404
+
+[4] query: site:apps.apple.com allergy translation card gluten free restaurant card languages  (idea travel-09)
+    saturation (dedicated allergy/celiac translation-card apps): 7+ (Gluten Free Restaurant Cards, Food Allergy Travel Card, Equal Eats, Food Allergy Card, Allergy Translate 68 langs, Allerly, AllerGuide, Food Allergy Options, Forkiee AI menu scanner) -> SATURATED
+    - Gluten Free Restaurant Cards        https://apps.apple.com/us/app/gluten-free-restaurant-cards/id294997385
+    - Food Allergy Travel Card            https://apps.apple.com/fi/app/food-allergy-travel-card/id6738883232
+    - Equal Eats                          https://apps.apple.com/us/app/equal-eats/id1574293110
+    - Food Allergy Card (au)              https://apps.apple.com/au/app/food-allergy-card/id6448350429
+    - Food Allergy Card (us)              https://apps.apple.com/us/app/food-allergy-card/id6448350429
+    - Forkiee: AI Menu Scanner            https://apps.apple.com/us/app/forkiee-ai-menu-scanner/id6759723335
+    - Allergy Translate                   https://apps.apple.com/us/app/allergy-translate/id1366620257
+    - Allerly                             https://apps.apple.com/us/app/allerly/id6746579529
+    - Food Allergy Options                https://apps.apple.com/us/app/food-allergy-options/id6762036188
+    - AllerGuide Food Allergy Travel      https://apps.apple.com/us/app/allerguide-food-allergy-travel/id6759512120

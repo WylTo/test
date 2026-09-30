@@ -1,0 +1,12 @@
+# entertainment verify (review run, 2026-09-30)
+[1] query: site:apps.apple.com audio guest book  (idea entertainment-02)  date: 2026-09-30
+    saturation ("audio guestbook"/"guestbook" in title, distinct apps): 5 (Audio Guestbook/Wedding Audio id6748583010, Audio Guestbook - Wedding app, Dial Moments, AudioAmber, Guestbook Go) -> CONTESTED, several 2024-2026 entrants
+    - Audio Guestbook (Edouard Meunier, QR, free+IAP)   https://apps.apple.com/ie/app/audio-guestbook/id6748583010
+    - Audio Guestbook - Wedding app (Jake Maidment, iPad kiosk, $1.99)   https://apps.apple.com/us/app/audio-guestbook-wedding-app/id6717612763
+    - Dial Moments: Audio Guestbook (QR/link, free+IAP)   https://apps.apple.com/us/app/dial-moments-audio-guestbook/id6760517005
+    - Wedding Audio (same id as Audio Guestbook)   https://apps.apple.com/us/app/wedding-audio/id6748583010
+    - AudioAmber   https://apps.apple.com/us/app/audioamber/id6764409576
+    - Guestbook Go: wedding fun   https://apps.apple.com/us/app/guestbook-go/id1450808655
+    - Guestbook Go (bt)   https://apps.apple.com/bt/app/guestbook-go/id1450808655
+    - (irrelevant) Kobo Books   https://apps.apple.com/ca/app/kobo-books-audiobooks/id301259483
+    - (irrelevant) Audiobook Combiner   https://apps.apple.com/us/app/audiobook-combiner/id6748471991
