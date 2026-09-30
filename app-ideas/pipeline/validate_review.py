@@ -1,9 +1,13 @@
 #!/usr/bin/env python3
 """Validate review/<slug>.json against the ideas file. Prints OK or ERROR/WARN lines."""
 import json
+import glob
+import os
 import re
 import sys
 from statistics import mean
+
+HERE = os.path.dirname(os.path.abspath(__file__))
 
 URL_RE = re.compile(r"^https://apps\.apple\.com/[a-z]{2}/app/([^/?#]+/)?id\d{6,12}(\?.*)?$")
 SCORE_KEYS = ["demand", "blue_ocean", "monetization", "build_ease", "offline_fit", "safety"]
@@ -54,6 +58,13 @@ def main(ideas_path, review_path):
             for c in mc:
                 if c.get("url") and not URL_RE.match(str(c.get("url", ""))):
                     errors.append(f"{tag}: missed competitor '{c.get('name')}' bad url '{c.get('url')}'")
+                m = re.search(r"id(\d+)", str(c.get("url") or ""))
+                if m:
+                    ev = set()
+                    for f in glob.glob(os.path.join(HERE, "_partial", "*.txt")):
+                        ev |= set(re.findall(r"\bid(\d{6,12})\b", open(f, encoding="utf-8").read()))
+                    if m.group(1) not in ev:
+                        errors.append(f"{tag}: missed competitor url id {m.group(1)} not found in _partial/*.txt — save the search result there first or leave url empty")
         rr = r.get("revenue_czk_realistic")
         if not isinstance(rr, int) or rr < 0:
             errors.append(f"{tag}: revenue_czk_realistic must be a non-negative int")

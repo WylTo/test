@@ -80,6 +80,8 @@ def main():
             verdict = r["verdict"] if r else None
             kwd = [apple[k["kw"].lower()] for k in idea["keywords"] if k["kw"].lower() in apple]
             aadj, ainfo = apple_adjust(kwd)
+            if r and r.get("web_checked"):
+                idea = dict(idea, evidence="web")
             ev_adj = 0.0 if idea.get("evidence") == "web" else -3.0
             score = round(max(0.0, min(100.0, base + VERDICT_ADJ[verdict] + aadj + ev_adj)), 1)
             idea = dict(idea)

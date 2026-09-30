@@ -66,10 +66,17 @@ Exactly one review per idea id (all 30). Then run
 until it prints `OK`. Final message ≤ 5 lines: GO/MAYBE/KILL counts, the single best idea,
 the most overrated idea.
 
-## OFFLINE RUN override
-In this run no live data is available: do NOT call WebSearch, WebFetch, curl or apple_fetch.py.
-Attack the ideas with your own market knowledge plus the `_partial/*.txt` evidence files
-(they contain real saturation findings and real App Store URLs). A `missed_competitors`
-entry may carry a `url` only if it is copied from a `_partial/*.txt` file; otherwise set
-`"url": ""` (the page generates a search link). Be especially skeptical of ideas marked
-`"evidence": "knowledge"`. Run the validator from the pipeline dir.
+## THIS RUN — data rules (override the "Data source" section above)
+- Apple is blocked: do NOT call curl, WebFetch or apple_fetch.py.
+- WebSearch works but the session-wide cap is small and shared by many agents: you get
+  **at most 6 WebSearch calls**. Spend them on the highest-scored ideas marked
+  `"evidence": "knowledge"` (query shape: `site:apps.apple.com <main niche keyword>`).
+  If a search errors with a budget message, stop searching and continue from knowledge.
+- Immediately after each search, append the result to `_partial/<category_slug>_verify.txt`
+  (query, date, every apps.apple.com URL verbatim, and your saturation count). Only after that
+  may those URLs appear in `missed_competitors`; any other `missed_competitors` URL must be
+  copied from a `_partial/*.txt` file, otherwise set `"url": ""`.
+- For each idea you actually checked with a search, add `"web_checked": true` to its review.
+- Everything else: use your market knowledge plus the `_partial/*.txt` evidence files. Be
+  especially skeptical of ideas marked `"evidence": "knowledge"`.
+Run the validator from the pipeline dir.

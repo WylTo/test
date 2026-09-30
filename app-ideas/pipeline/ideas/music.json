@@ -1,0 +1,2689 @@
+{
+  "category": "Music",
+  "category_slug": "music",
+  "search_notes": "Offline běh: žádná volání Apple ani WebSearch. Základem je _partial/music_evidence.txt (12 webových dotazů site:apps.apple.com z dřívějška) – z něj pochází saturace a URL pro handpan, dulcimer, buzuki, dudy, harmoniku, sbory/pitch pipe, karnatiku, flamenco, oud/maqam a setlisty. Ostatní nápady (evidence: knowledge) stojí na vlastní znalosti trhu 2025–26; jejich saturace klíčových slov je odhad a blue_ocean je omezen na max. 7. Apple autocomplete (hint_found) nebyl v tomto běhu ověřen u žádného slova – před stavbou je nutné spustit apple_fetch.py check na top 10 nápadů. Poznámka k 4.3: tři nápady sdílejí ladičkový engine a tři akordový engine – vydávat jako odlišné produkty, ne reskiny.",
+  "ideas": [
+    {
+      "id": "music-01",
+      "name": "PanTune: Handpan & Steelpan Tuner",
+      "tagline": "Jediná ladička, která u handpanu změří základní tón, oktávu i kvintu každého tónového pole.",
+      "pitch": "Majitelé handpanů (nástroje za 1 500–4 000 USD) potřebují vědět, jestli jim nástroj po roce hraní, převozu nebo teplotních změnách „neodjel“. Obecné ladičky ukážou jen základní tón, ale handpan se ladí na tři harmonické složky zároveň – fundament, oktávu a složenou kvintu. PanTune je změří najednou pro každé pole, rozpozná stupnici (D Kurd, Celtic, Hijaz…) a uloží historii, takže majitel ví, kdy nástroj poslat k přeladění. V App Store dnes žádná aplikace nemá „handpan tuner“ v názvu – nika je čistá a publikum rychle roste.",
+      "niche": "Ladění handpanu a steelpanu podle harmonických složek. Velcí hráči (GuitarTuna, Pano Tuner) cílí na kytaristy a zobrazují jen jednu frekvenci; handpanové aplikace jsou simulátory nebo výuka notace. Nika je pro ně malá a vyžaduje specifickou FFT analýzu parciálních tónů.",
+      "parent_market": "Chromatické ladičky a nástrojové utility – GuitarTuna (Yousician), Pano Tuner, Cleartune; spolehlivě vydělávající kategorie s předplatným i jednorázovými Pro verzemi.",
+      "target_user": "Majitelé handpanů a steelpanů, výrobci/ladiči menších dílen, hráči na tongue drum ve vyšší třídě; celosvětově, silně v DE, FR, ES, CZ, IL, AU.",
+      "features": [
+        "Současné měření fundamentu, oktávy a kvinty pro každé pole (odchylka v centech)",
+        "Automatické rozpoznání stupnice a ladění (432/440 Hz)",
+        "Historie měření per nástroj + graf driftu v čase",
+        "Režim steelpan (tenor/double seconds) se stejnou technologií",
+        "Export protokolu v PDF pro výrobce při reklamaci"
+      ],
+      "offline": "full",
+      "offline_note": "Vše běží na zařízení: mikrofon + FFT/harmonická analýza (Accelerate/vDSP), data v Core Data s volitelnou synchronizací přes iCloud.",
+      "monetization": "Freemium: zdarma měření fundamentu; Pro jednorázově 14,99 USD (≈ 345 CZK) – harmonické složky, historie, PDF.",
+      "revenue_math": "Ideál: klíčová slova handpan tuner / handpan / steelpan tuner ≈ 2 000 stažení/měs. × 2,5 % konverze = 50 prodejů × 14,99 USD × 0,85 = 637 USD ≈ 14 600 CZK čistého.",
+      "revenue_czk_ideal": 14600,
+      "keywords": [
+        {
+          "kw": "handpan tuner",
+          "saturation": 0,
+          "competitor": "linotune (obecná strobo ladička)",
+          "note": "Evidence: 7 handpan aplikací ve výsledcích, 0 s „tuner“ v názvu; jen linotune se zmiňuje o ladění handpanu. Verdikt z webu: OPEN."
+        },
+        {
+          "kw": "handpan",
+          "saturation": 4,
+          "competitor": "Handpan (simulátor)",
+          "note": "Evidence: simulátory a výukové aplikace (Handpan, Handpaner, Handpan Sim, The Handpan App) – parent poptávka potvrzena, 3 nové aplikace kolem 2025."
+        },
+        {
+          "kw": "steelpan tuner",
+          "saturation": 3,
+          "competitor": "Steelpan App PRO V2",
+          "note": "Evidence: steelpan sat ~5 celkově; Digital Pan má ladičku, PRO V2 ladí pro výrobce. Částečně obsazeno."
+        },
+        {
+          "kw": "hang drum tuner",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "Odhad; „Hang“ je ochranná známka PANArt – nepoužívat v metadatech, jen jako poznámka k chování uživatelů."
+        }
+      ],
+      "demand_evidence": "Ověřeno z webového vyhledávání: 7 handpanových aplikací včetně tří nových z roku 2025 (rostoucí publikum), 0 dedikovaných ladiček v názvech. Předpoklad (neověřeno): počet vyhledávání „handpan tuner“ – Apple autocomplete nebyl v tomto běhu dostupný.",
+      "competitors": [
+        {
+          "name": "linotune",
+          "url": "https://apps.apple.com/us/app/linotune/id762838884",
+          "role": "niche",
+          "note": "Obecná strobo ladička, v popisu doporučená pro handpan – jediný přímý konkurent, ale bez harmonických složek."
+        },
+        {
+          "name": "The Handpan App",
+          "url": "https://apps.apple.com/us/app/the-handpan-app/id6742439720",
+          "role": "niche",
+          "note": "NovaPans – stupnice a výuka; hrozba, pokud přidá ladičku."
+        },
+        {
+          "name": "Steelpan App PRO V2",
+          "url": "https://apps.apple.com/us/app/steelpan-app-pro-v2/id1606226740",
+          "role": "niche",
+          "note": "Výuka + koncertní ladička pro steelpan, ‚pro výrobce‘."
+        },
+        {
+          "name": "Pano Tuner",
+          "url": "https://apps.apple.com/us/app/pano-tuner-chromatic-tuner/id348094874",
+          "role": "parent",
+          "note": "Zavedená chromatická ladička – parent trh."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Harmonická analýza na kovovém nástroji s dlouhým dozvukem a přeslechy sousedních polí je technicky těžká – pokud měření nebude přesné, recenze aplikaci pohřbí.",
+        "Majitel handpanu ladí jednou za rok či méně – nízká frekvence používání, takže platba za Pro je impulsní a jednorázová; žádné předplatné.",
+        "Výrobci (Ayasa, NovaPans) mohou přidat ladičku do vlastních aplikací zdarma jako marketing.",
+        "Uživatelé si nemohou nástroj sami přeladit – zjištění ‚je rozladěný‘ nemá okamžitou akci, což snižuje vnímanou hodnotu."
+      ],
+      "killer_risk": "Nepřesné měření parciálních tónů na reálných nástrojích → 1hvězdičkové recenze od komunity, která se zná.",
+      "mitigation": "Před launchem kalibrovat na 10+ reálných nástrojích (spolupráce s ladičem/dílnou v CZ), zobrazovat jistotu měření a ‚režim jednoho pole‘ s tlumením ostatních.",
+      "build_weeks": 5,
+      "evidence": "web",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 9,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "music-02",
+      "name": "StringWalk: Harp, Zither & Dulcimer Tuner",
+      "tagline": "Ladička, která vás provede strunu po struně – u harfy, citery, cimbálu i kantele.",
+      "pitch": "Ladit 30–100 strun hammered dulcimeru, cimbálu, lyrové harfy nebo citery s běžnou ladičkou je utrpení: musíte vědět, která struna má mít jaký tón. StringWalk má přednastavené mapy strun pro desítky lidových a keltských nástrojů, sám po naladění posune na další strunu a ukáže, kde na nástroji je. Konkurence v názvech je prakticky nulová a staré dulcimerové ladičky jsou z roku 2010. Lokalizace do 50 jazyků otevírá trhy, kde tyto nástroje žijí (CZ/HU cimbál, FI kantele, CN guzheng, IR santur).",
+      "niche": "Průvodce laděním vícestrunných nástrojů. Hlavní ladičky nabízejí chromatický režim a pár presetů; správu desítek strun v konkrétním ladění nikdo neřeší, protože každý nástroj je malý trh – dohromady ale tvoří solidní klastr klíčových slov.",
+      "parent_market": "Chromatické ladičky (Pano Tuner, GuitarTuna, Cleartune, Multi Tuner) – ověřený trh jednorázových i předplatných ladiček.",
+      "target_user": "Hráči na lyrovou a pákovou harfu, hammered dulcimer, cimbál, citeru, kantele, santur, guzheng; učitelé lidové hudby.",
+      "features": [
+        "Knihovna map strun pro 25+ nástrojů (lyre harp 7–21 strun, lever harp, hammered dulcimer 12/11, cimbál, kantele, guzheng, santur)",
+        "Automatický posun na další strunu po naladění + vizualizace pozice",
+        "Vlastní ladění a stupnice (páky/klapky, alternativní ladění)",
+        "Kontrola celého nástroje – přehled, které struny ujely",
+        "Hlasový pokyn/haptika pro ladění s klíčem v ruce"
+      ],
+      "offline": "full",
+      "offline_note": "Detekce výšky tónu na zařízení (YIN/FFT), statické mapy strun v aplikaci, žádná síť.",
+      "monetization": "Zdarma 1 nástroj; Pro jednorázově 7,99 USD (≈ 185 CZK) – všechny nástroje, vlastní ladění, kontrola celého nástroje.",
+      "revenue_math": "Ideál: klastr lyre harp tuner / dulcimer tuner / zither tuner / kantele / cimbalom ≈ 3 000 stažení/měs. × 2,5 % = 75 × 7,99 × 0,85 = 509 USD ≈ 11 700 CZK.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "hammered dulcimer tuner",
+          "saturation": 0,
+          "competitor": "Trapezoid - Hammered Dulcimer (simulátor)",
+          "note": "Evidence: 0 ladiček v názvu; výsledky jen simulátory a obecné ladičky (Pano, Multi Tuner). OPEN."
+        },
+        {
+          "kw": "dulcimer tuner",
+          "saturation": 3,
+          "competitor": "Dulcimer Tuner Simple (~2010)",
+          "note": "Evidence: 3 staré ladičky pro mountain dulcimer z roku 2010 – opuštěné."
+        },
+        {
+          "kw": "lyre harp tuner",
+          "saturation": 2,
+          "competitor": "odhad – drobné utility",
+          "note": "Odhad (neověřeno): lyrová harfa je trend 2024–26 na sociálních sítích, ladiček s názvem je málo."
+        },
+        {
+          "kw": "zither tuner",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "Odhad; citera silná v DE/AT/CZ."
+        },
+        {
+          "kw": "kantele tuner",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad; malý, ale lokálně (FI) věrný trh."
+        }
+      ],
+      "demand_evidence": "Ověřeno: hammered dulcimer ladička v názvu neexistuje, mountain dulcimer ladičky jsou z ~2010, Multi Tuner a UniTuner řeší více nástrojů jen presety. Předpoklad: poptávka po lyrové harfě (trend na TikToku/Amazonu) – neověřeno v App Store.",
+      "competitors": [
+        {
+          "name": "Multi Tuner",
+          "url": "https://apps.apple.com/us/app/multi-tuner/id1286543090",
+          "role": "niche",
+          "note": "Seznam nástrojů včetně hammered dulcimer, ale bez průvodce strunami."
+        },
+        {
+          "name": "UniTuner - Chromatic Tuner",
+          "url": "https://apps.apple.com/is/app/unituner-chromatic-tuner/id1546441866",
+          "role": "niche",
+          "note": "200+ ladění – nejbližší konkurent šíří katalogu."
+        },
+        {
+          "name": "Dulcimer Tuner Simple",
+          "url": "https://apps.apple.com/gb/app/dulcimer-tuner-simple/id371502968",
+          "role": "niche",
+          "note": "~2010, opuštěná."
+        },
+        {
+          "name": "Pano Tuner",
+          "url": "https://apps.apple.com/us/app/pano-tuner-chromatic-tuner/id348094874",
+          "role": "parent",
+          "note": "Parent – chromatická ladička používaná i na HD."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap: existující ladičky jsou anglické a americko-keltské; cimbál (CZ/SK/HU/RO), kantele (FI), guzheng (CN), santur (IR) mají lokální komunity bez lokalizované ladičky. Launch v 50 jazycích s lokálními názvy nástrojů.",
+      "devils_advocate": [
+        "Každý nástroj zvlášť je mikrotrh – pokud se klastr klíčových slov nesečte, stáhne to pár stovek lidí měsíčně.",
+        "Multi Tuner/UniTuner mohou přidat ‚průvodce strunami‘ za týden.",
+        "Mapy strun se liší výrobce od výrobce (počty strun, ladění kobylek) – chybná mapa = negativní recenze.",
+        "Riziko 4.3, pokud bychom později vydali per-nástroj reskiny (jako Hsing-Fu Hsueh) – musí to zůstat jedna aplikace."
+      ],
+      "killer_risk": "Součet mikrotrhů nedosáhne potřebného objemu stažení.",
+      "mitigation": "Jedna aplikace, lokalizované názvy nástrojů v klíčových slovech každé lokalizace; vlastní editor map, aby uživatel opravil chybu sám.",
+      "build_weeks": 4,
+      "evidence": "web",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 8,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "music-03",
+      "name": "Stage Plot & Input List",
+      "tagline": "Technický rider kapely za 10 minut – stage plot, input list a PDF pro zvukaře.",
+      "pitch": "Každá kapela, která hraje v klubech a na festivalech, musí posílat technický rider: plánek pódia a seznam vstupů. Dnes ho lepí ve Wordu nebo v online nástrojích, které vyžadují účet. Stage Plot & Input List to udělá na iPadu/iPhonu přetažením ikon nástrojů, automaticky vygeneruje input list, monitorové mixy a PDF do e-mailu. Setlistových aplikací je nasyceno, ale rider je sousední, opomíjený job-to-be-done.",
+      "niche": "Tvorba technického rideru (stage plot + input list) offline. Setlist aplikace řeší repertoár, ne technické požadavky; webové nástroje (Stage Plot Pro apod.) jsou anglické a stolní.",
+      "parent_market": "Aplikace pro gigující muzikanty – Set List Maker, BandHelper, GigBag, nově Setlister a SetBook (2026); trh je aktivní a platí.",
+      "target_user": "Kapelníci, zvukaři kapel, tour manažeři menších kapel, solo muzikanti s technikou.",
+      "features": [
+        "Drag&drop plánek pódia s knihovnou ikon (bicí, komba, DI, monitory, napájení)",
+        "Automatický input list z plánku (kanál, mikrofon, stojan, phantom)",
+        "Monitorové mixy a poznámky pro zvukaře",
+        "Export PDF/PNG a sdílení přes Share Sheet",
+        "Šablony pro více sestav (akustická/elektrická)"
+      ],
+      "offline": "full",
+      "offline_note": "Editor a PDF export na zařízení (PDFKit); ukládání do souborů/iCloud Drive.",
+      "monetization": "Zdarma 1 rider s vodoznakem; Pro 14,99 USD jednorázově (≈ 345 CZK) nebo 9,99 USD/rok.",
+      "revenue_math": "Ideál: stage plot / input list / tech rider ≈ 1 500 stažení/měs. × 3 % = 45 × 14,99 × 0,85 = 573 USD ≈ 13 200 CZK.",
+      "revenue_czk_ideal": 13200,
+      "keywords": [
+        {
+          "kw": "stage plot",
+          "saturation": 2,
+          "competitor": "odhad – Stage Plot Pro a podobné",
+          "note": "Odhad (hledání v tomto běhu selhalo – budget vyčerpán); 1–2 aplikace s názvem."
+        },
+        {
+          "kw": "input list",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad; fráze typická pro zvukaře."
+        },
+        {
+          "kw": "tech rider",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad; slabá konkurence v App Store, web nástroje převládají."
+        },
+        {
+          "kw": "setlist",
+          "saturation": 8,
+          "competitor": "Set List Maker",
+          "note": "Evidence: setlist je SATURATED (7+ aplikací, 2 nové 2026) – jen parent důkaz."
+        }
+      ],
+      "demand_evidence": "Ověřeno: parent trh setlistových aplikací je velký a stále přitahuje nové vstupy (Setlister, SetBook 2026). Předpoklad: vyhledávání ‚stage plot‘ v App Store – dotaz byl naplánován, ale rozpočet došel.",
+      "competitors": [
+        {
+          "name": "Set List Maker",
+          "url": "https://apps.apple.com/ca/app/set-list-maker/id410496349",
+          "role": "parent",
+          "note": "Lídr setlistů; rider neřeší."
+        },
+        {
+          "name": "Setlister",
+          "url": "https://apps.apple.com/gb/app/setlister/id6757764995",
+          "role": "niche",
+          "note": "2026 – setlisty, zkoušky, finance; může rider přidat."
+        },
+        {
+          "name": "Stage Plot Pro",
+          "url": "",
+          "role": "us-only",
+          "note": "Odhad z vlastní znalosti; anglický nástroj bez lokalizace."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Nástroje na rider jsou anglické a US/UK orientované; evropské kapely (DE, CZ, PL, FR, ES) píšou ridery v lokálním jazyce – lokalizované ikony a terminologie jsou výhoda.",
+      "devils_advocate": [
+        "Rider se dělá jednou a pak jen upravuje – nízká retence, prodej jen jednorázový.",
+        "Zvukaři si často dělají vlastní input list a rider kapely ignorují – vnímaná hodnota je nižší.",
+        "BandHelper/Setlister může přidat modul rideru a jejich uživatelé nebudou nic dalšího kupovat.",
+        "Kvalita drag&drop editoru na iPhonu je náročná (velikost displeje) – bez iPadu slabý zážitek."
+      ],
+      "killer_risk": "Malá četnost použití → nízká ochota platit 14,99 USD.",
+      "mitigation": "Ceník nízký (7,99) s bohatým free tierem pro ASO hodnocení; přidat ‚festival pack‘ – více verzí rideru, a funkce pro zvukaře (přijímání rideru).",
+      "build_weeks": 6,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "music-04",
+      "name": "Pipe Embellishment Trainer",
+      "tagline": "Trénink zdobení na cvičné chanter – aplikace pozná, jestli jste zahráli doubling čistě.",
+      "pitch": "Dudáci platí za ladičky i 11,99 USD předem, ale všechny čtyři bagpipe ladičky jen ladí. Nejtěžší část výuky – zdobení (doublings, grips, taorluath, birl) na cvičné chanter – se dnes učí jen s učitelem. Pipe Embellishment Trainer přehraje vzor, poslouchá hráče, rozpozná sekvenci grace notes a ohodnotí čistotu a timing. Je to nová funkce v trhu, kde lidé prokazatelně platí.",
+      "niche": "Výuka ozdob skotských dud na cvičné chanter. Ladičky pro pipe bandy (Braw, Balance, SparrowTone) jsou hotové produkty, ale nikdo neřeší cvičení techniky.",
+      "parent_market": "Bagpipe ladičky a výukové aplikace – Bagpipe Tuner (11,99 USD), Braw Bagpipe Tuner Pro, Balance Pipe Band Tuner; pipe band komunita v UK, CA, US, AU, NZ.",
+      "target_user": "Začínající a pokročilí dudáci, učitelé pipe bandů, žáci s cvičnou chanter.",
+      "features": [
+        "Knihovna ozdob (doublings, grips, throws, taorluath, birl, crunluath) s animovanou prstokladovou tabulkou",
+        "Rozpoznání grace notes z mikrofonu (on-device model) a hodnocení",
+        "Metronom a postupné zrychlování",
+        "Denní plán cvičení a sledování pokroku",
+        "Stupnice a tradiční ladění chanteru (Bb/A)"
+      ],
+      "offline": "full",
+      "offline_note": "Detekce not/ozdob na zařízení (Core ML model trénovaný na nahrávkách chanteru), metronom lokálně.",
+      "monetization": "Jednorázově 14,99 USD (≈ 345 CZK), nebo 2,99 USD/měs.",
+      "revenue_math": "Ideál: bagpipe / practice chanter / bagpipe lessons ≈ 1 500 stažení/měs. × 3 % = 45 × 14,99 × 0,85 = 573 USD ≈ 13 200 CZK.",
+      "revenue_czk_ideal": 13200,
+      "keywords": [
+        {
+          "kw": "bagpipe tuner",
+          "saturation": 4,
+          "competitor": "Bagpipe Tuner ($11,99)",
+          "note": "Evidence: CROWDED (4) – parent důkaz ochoty platit."
+        },
+        {
+          "kw": "practice chanter",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad; v úryvcích žádná aplikace s ‚chanter‘ výukou."
+        },
+        {
+          "kw": "bagpipe embellishments",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "Evidence: žádná z nalezených aplikací ozdoby neučí; slovo samo neověřeno."
+        },
+        {
+          "kw": "bagpipe lessons",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Ověřeno: 4 placené/freemium bagpipe ladičky (vč. 11,99 USD předem) – komunita platí. Ověřeno, že žádná neučí ozdoby. Předpoklad: objem vyhledávání výukových frází.",
+      "competitors": [
+        {
+          "name": "Bagpipe Tuner",
+          "url": "https://apps.apple.com/us/app/bagpipe-tuner/id480445177",
+          "role": "parent",
+          "note": "11,99 USD předem – důkaz ochoty platit."
+        },
+        {
+          "name": "Braw Bagpipe Tuner",
+          "url": "https://apps.apple.com/us/app/braw-bagpipe-tuner/id1223026937",
+          "role": "niche",
+          "note": "Free + Pro IAP."
+        },
+        {
+          "name": "SparrowTone Bagpipe Tuner",
+          "url": "https://apps.apple.com/us/app/sparrowtone-bagpipe-tuner/id6621245725",
+          "role": "niche",
+          "note": "~2024, zdarma."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Rozpoznání rychlých grace notes (desítky ms) je obtížný ML problém – potřebujeme dataset, který nemáme.",
+        "Malá globální komunita dudáků; lokalizace do 50 jazyků pomůže málo.",
+        "Učitelé v pipe bandech mohou aplikaci odmítnout jako náhradu za výuku.",
+        "Rozdíly v notaci/stylu mezi učiteli (Kilberry vs moderní) → spory v recenzích."
+      ],
+      "killer_risk": "Nepřesná detekce ozdob – jádro produktu nefunguje.",
+      "mitigation": "MVP bez ML: poslech vzoru + metronom + samonahrávání a vizuální spektrogram; ML hodnocení až po nasbírání dat (opt-in, lokálně).",
+      "build_weeks": 10,
+      "evidence": "web",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 8,
+        "monetization": 7,
+        "build_ease": 3,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "music-05",
+      "name": "Mountain Dulcimer Chords & Tabs",
+      "tagline": "Moderní akordy, taby a ladička pro appalačský dulcimer – místo aplikací z roku 2010.",
+      "pitch": "Mountain (appalačský) dulcimer má v USA silnou komunitu festivalů a klubů, ale jeho aplikace jsou ladičky z roku 2010 bez aktualizací. Hráči potřebují akordové diagramy pro DAD, DAA i DGD, převod tabulatur a ladičku v jednom. Stačí jednoduchá, hezká aplikace s veřejnými lidovými melodiemi. Evropští příbuzní – épinette des Vosges, Scheitholt, langeleik – přinášejí lokalizační bonus.",
+      "niche": "Akordy/taby pro diatonický fretovaný dulcimer. Velké akordové aplikace (Ultimate Guitar, Smart Chords) dulcimer nepodporují nebo jen okrajově; specializované aplikace jsou mrtvé.",
+      "parent_market": "Akordové a tabové aplikace – Ultimate Guitar, Smart Chords, Chordify; velký trh předplatného.",
+      "target_user": "Hráči na mountain dulcimer (USA – převážně 45+, festivaly, kluby), hráči épinette/Scheitholt v Evropě.",
+      "features": [
+        "Akordová knihovna pro DAD/DAA/DGD/CGC ladění vč. 6½ pražce",
+        "Ladička s presety ladění",
+        "Taby veřejně volných lidových melodií (Appalachian, Shaker, britské balady)",
+        "Transpozice a převod mezi laděními",
+        "Režim noter-drone pro začátečníky"
+      ],
+      "offline": "full",
+      "offline_note": "Statická data akordů a tabů v aplikaci, ladička na zařízení.",
+      "monetization": "Freemium: akordy základní zdarma; Pro 7,99 USD (≈ 185 CZK) jednorázově – taby, všechna ladění.",
+      "revenue_math": "Ideál: dulcimer / dulcimer chords / dulcimer tuner ≈ 1 500 stažení/měs. × 4 % = 60 × 7,99 × 0,85 = 407 USD ≈ 9 400 CZK; s lokalizovanými trhy (épinette, Scheitholt) ideálně ~80 prodejů ≈ 12 500 CZK.",
+      "revenue_czk_ideal": 12500,
+      "keywords": [
+        {
+          "kw": "mountain dulcimer",
+          "saturation": 2,
+          "competitor": "Dulcimer Tuner Simple (~2010)",
+          "note": "Evidence: jen staré ladičky Dulcimer Tuner Simple (Mixolydian/Ionian) z ~2010. Slabé."
+        },
+        {
+          "kw": "dulcimer chords",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad; akordová aplikace pro dulcimer v evidenci nebyla nalezena."
+        },
+        {
+          "kw": "dulcimer tabs",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "epinette",
+          "saturation": 0,
+          "competitor": "odhad",
+          "note": "Odhad; francouzský příbuzný, pravděpodobně prázdné."
+        }
+      ],
+      "demand_evidence": "Ověřeno: konkurenční ladičky pro mountain dulcimer jsou 3 a všechny z ~2010 (opuštěné). Předpoklad: velikost americké komunity (festivaly, kluby) z vlastní znalosti; počet vyhledávání neověřen.",
+      "competitors": [
+        {
+          "name": "Dulcimer Tuner Simple Mixolydian",
+          "url": "https://apps.apple.com/gb/app/dulcimer-tuner-simple-mixolydian/id373048721",
+          "role": "niche",
+          "note": "~2010, jediný typ konkurence."
+        },
+        {
+          "name": "Dulcimer Tuner Simple Ionian",
+          "url": "https://apps.apple.com/us/app/dulcimer-tuner-simple-ionian/id373052255",
+          "role": "niche",
+          "note": "~2010, opuštěná."
+        },
+        {
+          "name": "Ultimate Guitar",
+          "url": "",
+          "role": "parent",
+          "note": "Parent trh akordových aplikací (URL není v evidenci)."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Model funguje v USA (appalačská tradice), mimo USA prakticky neexistuje lokalizovaná aplikace; evropské příbuzné nástroje (épinette FR, Scheitholt DE, langeleik NO) mají vlastní komunity.",
+      "devils_advocate": [
+        "Starší publikum a malý trh – ideální výnos je těsně nad hranicí 10 000 CZK.",
+        "Autorská práva: moderní písně nelze nabízet, jen public domain – obsah může působit ‚muzeálně‘.",
+        "Komunita spoléhá na tištěné knihy a YouTube; aplikace musí být výrazně lepší než PDF.",
+        "Evropské příbuzné nástroje mají jiné ladění i menzuru – ‚bonus‘ nemusí fungovat bez obsahu na míru."
+      ],
+      "killer_risk": "Nízký objem stažení – výnos pod 10 000 CZK.",
+      "mitigation": "Spojit s ladičkou (hledané slovo) a dobře lokalizovat pro FR/DE/NO; přidat import vlastních tabů (tablature editor) jako Pro funkci.",
+      "build_weeks": 4,
+      "evidence": "web",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 9,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "music-06",
+      "name": "Gig Ledger: Musician Income & Mileage",
+      "tagline": "Honoráře, rozdělení peněz v kapele a najeté kilometry – přehledně, offline, pro daňové přiznání.",
+      "pitch": "Muzikanti na volné noze hrají desítky akcí ročně, ale honoráře, zálohy, podíly spoluhráčů a cestovné mají v poznámkách. Gig Ledger je jednoduchá kniha příjmů pro hudebníky: zaznamená gig, honorář, rozdělení mezi členy, najeté kilometry (z Map na zařízení) a výdaje, a na konci roku vyexportuje CSV pro účetní. Obecné účetní aplikace neznají ‚band split‘ ani svatební zálohy.",
+      "niche": "Finanční deník gigujícího muzikanta. Setlistové aplikace začínají přidávat finance (Setlister, SetBook 2026), ale jako vedlejší funkci; účetní aplikace muzikanty nerozumí.",
+      "parent_market": "Aplikace pro freelance příjmy a kilometry (MileIQ, QuickBooks Self-Employed) + gig aplikace pro muzikanty (Set List Maker, BandHelper).",
+      "target_user": "Svatební a eventové kapely, DJové, učitelé hudby s koncerty, freelance muzikanti (DE/UK/US/CZ OSVČ).",
+      "features": [
+        "Evidence gigu: klient, datum, honorář, záloha, stav platby",
+        "Rozdělení honoráře mezi členy (procenta/fixně) a přehled kdo komu dluží",
+        "Kilometry a cestovné (CoreLocation/MapKit na zařízení)",
+        "Výdaje (struny, doprava, technika) s fotkou účtenky",
+        "Roční přehled + CSV/PDF export pro daně"
+      ],
+      "offline": "full",
+      "offline_note": "Data lokálně/iCloud (CloudKit), MapKit pro výpočet vzdálenosti; žádné účty.",
+      "monetization": "Předplatné 19,99 USD/rok (≈ 460 CZK) nebo 29,99 USD lifetime.",
+      "revenue_math": "Ideál: gig tracker / musician income / band payment ≈ 2 000 stažení/měs. × 3 % = 60 × ~19,99 × 0,85 = 1 020 USD ≈ 23 400 CZK v zralém stavu (obnovy předplatného); rok 1 ideálně ~17 500 CZK.",
+      "revenue_czk_ideal": 17500,
+      "keywords": [
+        {
+          "kw": "gig tracker",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "Odhad – nebylo ověřeno (budget došel)."
+        },
+        {
+          "kw": "musician income",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "band payment split",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad; long-tail."
+        },
+        {
+          "kw": "setlist",
+          "saturation": 8,
+          "competitor": "Set List Maker",
+          "note": "Evidence: SATURATED – ale Setlister a SetBook (2026) přidávají finance → signál poptávky i hrozby."
+        }
+      ],
+      "demand_evidence": "Ověřeno: dvě nové setlistové aplikace z roku 2026 inzerují finance/platby (Setlister, SetBook) – trh tuto potřebu vnímá. Předpoklad: samostatné vyhledávání ‚gig tracker‘ nebylo ověřeno.",
+      "competitors": [
+        {
+          "name": "SetBook: Gig & Setlist Manager",
+          "url": "https://apps.apple.com/us/app/setbook-gig-setlist-manager/id6760658343",
+          "role": "niche",
+          "note": "2026, obsahuje platební údaje – přímá hrozba."
+        },
+        {
+          "name": "Setlister",
+          "url": "https://apps.apple.com/gb/app/setlister/id6757764995",
+          "role": "niche",
+          "note": "2026 – setlisty, zkoušky, finance."
+        },
+        {
+          "name": "GigBag Song Setlist Manager",
+          "url": "https://apps.apple.com/us/app/gigbag-song-setlist-manager/id1639664588",
+          "role": "parent",
+          "note": "Parent gig manažer."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Setlister/SetBook už finance mají a mohou je rozvinout – náš rozdíl je jen hloubka.",
+        "Muzikanti jsou notoricky neochotní platit za ‚účetnictví‘; mnozí používají tabulku.",
+        "Daňová pravidla (km sazby, DPH) se liší po zemích – lokalizace je víc než překlad.",
+        "Retence: záznamy se zadávají ručně, lidé to po měsíci vzdají."
+      ],
+      "killer_risk": "Konkurenti z gig segmentu přidají stejnou funkci a my nemáme diferenciaci.",
+      "mitigation": "Zaměřit se úzce na ‚band split‘ a daně, rychlé zadání přes widget/Shortcuts, per-country sazby cestovného v lokalizaci.",
+      "build_weeks": 5,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 7,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "music-07",
+      "name": "Chord Lock: A Cappella Pitch-Drift Coach",
+      "tagline": "Uslyšte, o kolik váš sbor během písně klesl – a naučte se ladit čisté akordy.",
+      "pitch": "Každý a cappella soubor (barbershop, vokální skupiny, chrámové sbory) zná problém: po třech minutách zpěvu jste o čtvrt tónu níž. Pitch pipe aplikací je v App Store sedm, ale žádná neměří drift. Chord Lock nahraje zkoušku, ukáže křivku posunu ladění v čase a v tréninkovém režimu hraje čistě laděné (just intonation) akordy, do kterých se zpěváci učí ‚zamknout‘. Je to přirozený upgrade pro skupinu, která už za pitch pipe platí.",
+      "niche": "Měření driftu ladění a trénink čisté intonace pro a cappella. Pitch pipe aplikace jen dají startovní tón; ladičky měří jeden hlas, ne ansámbl v čase.",
+      "parent_market": "Pitch pipe a pěvecké ladičky – Pitch Pipe+, Pocket Pitch, SWIFTSCALES; barbershop komunita (BHS, Sweet Adelines) platí za nástroje.",
+      "target_user": "Barbershop kvartety a chorusy, vokální skupiny, chrámové sbory, sbormistři.",
+      "features": [
+        "Záznam zkoušky a graf driftu vůči startovnímu tónu",
+        "Čistě laděné (just) vs temperované akordy – poslechové srovnání",
+        "Trénink ‚zamknutí‘ akordu: drony a zpětná vazba v centech per hlas (ideálně 1 mikrofon/1 hlas)",
+        "Pitch pipe v ceně (startovní tón)",
+        "Historie zkoušek a zlepšení"
+      ],
+      "offline": "full",
+      "offline_note": "Polyfonní/monofonní analýza výšky a syntéza na zařízení; záznamy lokálně.",
+      "monetization": "Jednorázově 12,99 USD (≈ 300 CZK) nebo 19,99 USD/rok pro sbormistry s historií.",
+      "revenue_math": "Ideál: pitch drift / barbershop / a cappella tuner / choir tuner ≈ 1 500 stažení/měs. × 3,5 % = 52 × 12,99 × 0,85 = 574 USD ≈ 13 200 CZK.",
+      "revenue_czk_ideal": 13200,
+      "keywords": [
+        {
+          "kw": "pitch pipe",
+          "saturation": 7,
+          "competitor": "Pitch Pipe+",
+          "note": "Evidence: SATURATED (7 aplikací) – parent důkaz, ne cílové slovo."
+        },
+        {
+          "kw": "barbershop",
+          "saturation": 3,
+          "competitor": "Pocket Pitch / SWIFTSCALES",
+          "note": "Evidence: 2 barbershop pitch pipe aplikace; drift nezmiňují."
+        },
+        {
+          "kw": "choir tuner",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "just intonation",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "Odhad; úzký, ale nadšený segment."
+        }
+      ],
+      "demand_evidence": "Ověřeno: 7 pitch pipe aplikací (trh platí za pomůcky), barbershop specializované aplikace existují; v žádném úryvku se neobjevilo měření driftu. Předpoklad: že lidé drift aktivně hledají – neověřeno.",
+      "competitors": [
+        {
+          "name": "Pitch Pipe+",
+          "url": "https://apps.apple.com/us/app/pitch-pipe/id317211808",
+          "role": "parent",
+          "note": "Lídr pitch pipe."
+        },
+        {
+          "name": "Pocket Pitch - The Singer App",
+          "url": "https://apps.apple.com/us/app/pocket-pitch-the-singer-app/id1005725401",
+          "role": "niche",
+          "note": "Barbershop/a cappella – může drift přidat."
+        },
+        {
+          "name": "Perfect Pitch Pipe SWIFTSCALES",
+          "url": "https://apps.apple.com/us/app/perfect-pitch-pipe-swiftscales/id1163973615",
+          "role": "niche",
+          "note": "Barbershop pitch pipe."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Měřit výšku celého sboru jedním mikrofonem je technicky nejisté – polyfonní detekce na telefonu není spolehlivá.",
+        "Uživatelé hledají ‚pitch pipe‘, ne ‚pitch drift‘ – obtížná ASO dohledatelnost nové kategorie.",
+        "Pocket Pitch může funkci přidat a má zavedenou komunitu.",
+        "Barbershop je silný v US/UK, ale jinde marginální – lokalizace přinese málo."
+      ],
+      "killer_risk": "Nespolehlivé měření driftu ansámblu → funkce, na které stojí hodnota, nefunguje.",
+      "mitigation": "Měřit drift z basové linky/ nejsilnější frekvence a tonálního centra (robustnější), jasně komunikovat ‚odhad‘; prodávat hlavně trénink čistých akordů.",
+      "build_weeks": 7,
+      "evidence": "web",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "music-08",
+      "name": "Hymn Board: Song Number Display",
+      "tagline": "Digitální tabule s čísly písní na iPad a televizi – bez účtu, bez serveru.",
+      "pitch": "Tisíce malých kostelů a sborů stále zasouvají plastová čísla do dřevěné tabule písní (hymn board / Liedanzeiger / tabule s čísly písní v kancionálu). Digitální tabule stojí stovky dolarů. Hymn Board udělá z iPadu nebo Apple TV přes AirPlay čitelný displej s čísly písní, žalmů a slok, ovladatelný z iPhonu varhaníka. Jednoduché, vizuální, a v Evropě prakticky bez konkurence.",
+      "niche": "Zobrazování čísel písní při bohoslužbě. Church aplikace (Tithe.ly, Planning Center) řeší dárcovství a plánování, ne jednoduchý displej; hardware tabule jsou drahé.",
+      "parent_market": "Aplikace pro církve a worship – Planning Center, Tithe.ly, ProPresenter (stovky USD/rok); církve pravidelně platí za software.",
+      "target_user": "Kostelníci, varhaníci, správci farností a sborů (katolíci, luteráni, evangelíci, adventisté) v DE, CZ, PL, NL, SK, US.",
+      "features": [
+        "Velký čitelný displej čísel písní/slok na iPadu nebo TV (AirPlay)",
+        "Ovládání z iPhonu přes lokální síť/Multipeer (bez serveru)",
+        "Předpřipravené pořady bohoslužby a liturgický kalendář (statický)",
+        "Motivy (dřevo, tmavý, vysoký kontrast)",
+        "Podpora více zpěvníků (kancionál, Gotteslob, EG – jen čísla, bez textů)"
+      ],
+      "offline": "full",
+      "offline_note": "Multipeer Connectivity mezi zařízeními v kostele, žádný server; texty písní se nezobrazují (autorská práva).",
+      "monetization": "Jednorázově 19,99 USD (≈ 460 CZK) za farnost; volitelně 9,99 USD/rok za rozšířené motivy.",
+      "revenue_math": "Ideál: hymn board / song number display / Liedanzeiger / church display ≈ 1 000 stažení/měs. × 5 % = 50 × 19,99 × 0,85 = 850 USD ≈ 19 500 CZK; počítáme střed 40 prodejů × 19,99 × 0,85 = 680 USD ≈ 15 600 CZK.",
+      "revenue_czk_ideal": 15600,
+      "keywords": [
+        {
+          "kw": "hymn board",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad (dotaz nebyl proveden – budget došel)."
+        },
+        {
+          "kw": "liedanzeiger",
+          "saturation": 0,
+          "competitor": "odhad",
+          "note": "Odhad; německý termín, pravděpodobně prázdný."
+        },
+        {
+          "kw": "hymn number",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "church choir app",
+          "saturation": 3,
+          "competitor": "Christian Church Choir App",
+          "note": "Evidence z dotazu pitch pipe: církevní hudební aplikace existují (Christian Church Choir App, Pitch Pipe by Congregate) – důkaz parent poptávky."
+        }
+      ],
+      "demand_evidence": "Ověřeno: církevní hudební utility existují a jsou nové (2023). Předpoklad: poptávka po digitální tabuli písní – z trhu hardwarových tabulí (vlastní znalost), vyhledávání v App Store neověřeno.",
+      "competitors": [
+        {
+          "name": "Pitch Pipe by Congregate",
+          "url": "https://apps.apple.com/us/app/pitch-pipe-by-congregate/id6448314024",
+          "role": "niche",
+          "note": "Pitch pipe + seznam písní pro sborový zpěv – sousední segment."
+        },
+        {
+          "name": "Christian Church Choir App",
+          "url": "https://apps.apple.com/us/app/christian-church-choir-app/id6449414837",
+          "role": "niche",
+          "note": "Církevní sborová aplikace (~2023)."
+        },
+        {
+          "name": "Planning Center Services",
+          "url": "",
+          "role": "parent",
+          "note": "Parent – plánování bohoslužeb (URL mimo evidenci)."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Americké církevní aplikace jsou anglické a zaměřené na megachurch; tradiční evropské farnosti (DE/AT/CZ/PL) s čísly písní (Gotteslob, Kancionál, EG) nemají lokalizované řešení.",
+      "devils_advocate": [
+        "Starší kostelníci nemusí mít iPad ani TV v kostele – hardware bariéra.",
+        "Nízká frekvence vyhledávání: lidé nehledají ‚hymn board app‘, protože nevědí, že existuje.",
+        "Zobrazení textů písní by bylo porušením autorských práv – jen čísla mohou působit chudě.",
+        "Multipeer/AirPlay v kamenném kostele může být nespolehlivé."
+      ],
+      "killer_risk": "Uživatelé tento produkt v App Store nehledají – poptávka nemusí existovat ve vyhledávání.",
+      "mitigation": "Klíčová slova v lokálních termínech (Liedanzeiger, tabule písní) + App Store screenshoty s reálným kostelem; offline režim jen jednoho iPadu jako displeje.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 7,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "music-09",
+      "name": "Maqam Ear Trainer",
+      "tagline": "Naučte se slyšet makamy a čtvrttóny – ušní trénink, který západní aplikace neumí.",
+      "pitch": "Ušní tréninky (Functional Ear Trainer, Tenuto, EarMaster) znají jen 12 temperovaných půltónů. Studenti arabské a turecké hudby – oud, qanun, ney, zpěv – se musí naučit rozlišit Bayati od Kurdu nebo slyšet čtvrttónovou sikah. Maqam Ear Trainer generuje cvičení z 50+ makamů přímo na zařízení, s postupnou obtížností. Maqamatových referencí je několik, ušní trénink ani jeden.",
+      "niche": "Ušní trénink mikrotonální hudby. Referenční aplikace makamů (Maqamat, Maqamat Al-Arabiya) ukazují stupnice, ale nezkoušejí; ušní tréninky ignorují mimoevropskou hudbu.",
+      "parent_market": "Aplikace ušního tréninku (Functional Ear Trainer, Tenuto, EarMaster, Perfect Ear) + ekosystém oud/maqam aplikací.",
+      "target_user": "Studenti oudu, qanunu, ney a arabského/tureckého zpěvu; konzervatoře na Blízkém východě, diaspora v EU a US, world-music nadšenci.",
+      "features": [
+        "Rozpoznávání makamu z krátké fráze (Rast, Bayati, Hijaz, Saba, Nahawand…)",
+        "Rozpoznávání intervalů včetně čtvrttónů",
+        "Rozpoznání jins (tetrachordů)",
+        "Postupné úrovně + statistiky",
+        "Arabská a turecká notace/terminologie"
+      ],
+      "offline": "full",
+      "offline_note": "Syntéza mikrotonálních tónů na zařízení (sampl oudu + pitch-shift), žádná síť.",
+      "monetization": "Freemium, Pro 9,99 USD (≈ 230 CZK) jednorázově nebo 2,99 USD/měs.",
+      "revenue_math": "Ideál: maqam / maqam ear training / arabic music theory ≈ 2 000 stažení/měs. × 3 % = 60 × 9,99 × 0,85 = 509 USD ≈ 11 700 CZK.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "maqam",
+          "saturation": 3,
+          "competitor": "Maqamat Al-Arabiya",
+          "note": "Evidence: sat ~3 (reference); žádný ušní trénink se neobjevil."
+        },
+        {
+          "kw": "maqam ear training",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "Evidence: v úryvcích žádná aplikace; slovo neověřeno autocomplete."
+        },
+        {
+          "kw": "quarter tone",
+          "saturation": 1,
+          "competitor": "Altarab (24-TET ladička)",
+          "note": "Odhad s oporou – Altarab má mikrotonální ladičku."
+        },
+        {
+          "kw": "oud tuner",
+          "saturation": 3,
+          "competitor": "Oud Tuner - Tuner for Oud",
+          "note": "Evidence: CONTESTED – jen parent důkaz."
+        }
+      ],
+      "demand_evidence": "Ověřeno: min. 3 maqam reference + 5 oud aplikací + Altarab (2026) → aktivní publikum. Ověřeno, že v úryvcích není ušní trénink. Předpoklad: vyhledávání v arabských storefrontech.",
+      "competitors": [
+        {
+          "name": "Maqamat Al-Arabiya",
+          "url": "https://apps.apple.com/gb/app/maqamat-al-arabiya/id1330333850",
+          "role": "niche",
+          "note": "55 makamů – reference, ne trénink."
+        },
+        {
+          "name": "Altarab",
+          "url": "https://apps.apple.com/dz/app/altarab-%D8%A7%D9%84%D8%B7%D8%B1%D8%A8/id6759546870",
+          "role": "niche",
+          "note": "2026, 12 nástrojů – největší hrozba all-in-one."
+        },
+        {
+          "name": "Maqamat",
+          "url": "https://apps.apple.com/gb/app/maqamat/id766256433",
+          "role": "niche",
+          "note": "Starší reference."
+        },
+        {
+          "name": "Functional Ear Trainer",
+          "url": "",
+          "role": "parent",
+          "note": "Parent ušního tréninku (URL mimo evidenci)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Altarab (2026) je silný all-in-one a ušní trénink může přidat jako 13. nástroj.",
+        "Teorie makamů se liší region od regionu (arabská vs turecká), puristé budou kritizovat.",
+        "Arabské storefronty mají nižší konverzi na placené aplikace.",
+        "Syntetický zvuk mikrotonů může znít nepřirozeně a trénink bude ‚necitlivý‘."
+      ],
+      "killer_risk": "Altarab přidá ušní trénink a pohltí niku.",
+      "mitigation": "Jít hlouběji (jins, sayr – melodický vývoj) a prodávat i v turečtině/perštině; kvalitní samply oudu.",
+      "build_weeks": 5,
+      "evidence": "web",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "music-10",
+      "name": "Bouzouki Chords & Dromoi",
+      "tagline": "Akordy, dromoi a ladička pro řecké i irské buzuki na jednom místě.",
+      "pitch": "Buzuki hraje řecká diaspora (US, AU, DE) i irská folková scéna, ale jediná akordová aplikace je z roku 2012 a ladičky mají pár recenzí. Bouzouki Chords & Dromoi pokrývá trichordo i tetrachordo, irské GDAD, řecké dromoi (stupnice rebetika) a má ladičku. Konkurence je slabá a publikum ochotně platí za nástroje pro svou kulturní hudbu.",
+      "niche": "Akordová a stupnicová reference pro buzuki. Velké akordové aplikace buzuki většinou nemají a specializované jsou zastaralé.",
+      "parent_market": "Akordové reference a ladičky (Ultimate Guitar, Smart Chords, UniTuner s trichordo/tetrachordo).",
+      "target_user": "Hráči řeckého (trichordo/tetrachordo) a irského buzuki, rebetiko nadšenci, řecká diaspora.",
+      "features": [
+        "Akordy pro trichordo (CFAD), tetrachordo (CFAD), irské GDAD/ADAD",
+        "Dromoi (Hijaz, Ousak, Rast, Sabah…) na hmatníku",
+        "Ladička s presety",
+        "Transpozice a kapodastr",
+        "Oblíbené + vlastní diagramy"
+      ],
+      "offline": "full",
+      "offline_note": "Statická data a ladička na zařízení.",
+      "monetization": "Freemium, Pro 7,99 USD (≈ 185 CZK) jednorázově.",
+      "revenue_math": "Ideál: bouzouki / bouzouki chords / bouzouki tuner ≈ 1 800 stažení/měs. × 4 % = 72 × 7,99 × 0,85 = 489 USD ≈ 11 200 CZK.",
+      "revenue_czk_ideal": 11200,
+      "keywords": [
+        {
+          "kw": "bouzouki chords",
+          "saturation": 1,
+          "competitor": "Chordfinder for Bouzouki (~2012)",
+          "note": "Evidence: sat 1, aplikace pravděpodobně opuštěná."
+        },
+        {
+          "kw": "bouzouki tuner",
+          "saturation": 2,
+          "competitor": "Bouzouki Tuner (3,9★ ze 7 recenzí)",
+          "note": "Evidence: sat 2, slabé."
+        },
+        {
+          "kw": "bouzouki",
+          "saturation": 4,
+          "competitor": "Bouzouki (simulátor)",
+          "note": "Evidence: simulátor + Bouzo Tunes + ladičky – parent zájem."
+        },
+        {
+          "kw": "dromoi",
+          "saturation": 0,
+          "competitor": "odhad",
+          "note": "Odhad; řecký termín, velmi úzký."
+        }
+      ],
+      "demand_evidence": "Ověřeno: 2 slabé ladičky (7 recenzí), 1 stará akordová aplikace, nové vstupy 2024–25 (XTuner PRO, Bouzo Tunes) → publikum existuje. Předpoklad: objem vyhledávání je malý; řecký trh nezjištěn.",
+      "competitors": [
+        {
+          "name": "Chordfinder for Bouzouki",
+          "url": "https://apps.apple.com/us/app/chordfinder-for-bouzouki/id507236609",
+          "role": "niche",
+          "note": "~2012, zastaralá."
+        },
+        {
+          "name": "Bouzouki Tuner",
+          "url": "https://apps.apple.com/us/app/bouzouki-tuner/id1440678008",
+          "role": "niche",
+          "note": "Hsueh; 3,9★ ze 7 recenzí."
+        },
+        {
+          "name": "Bouzouki Tuner - XTuner PRO",
+          "url": "https://apps.apple.com/gb/app/bouzouki-tuner-xtuner-pro/id6744967948",
+          "role": "niche",
+          "note": "~2025, nový vstup."
+        },
+        {
+          "name": "UniTuner - Chromatic Tuner",
+          "url": "https://apps.apple.com/is/app/unituner-chromatic-tuner/id1546441866",
+          "role": "parent",
+          "note": "Umí trichordo/tetrachordo presety."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap: model řecké hudební reference je doma v GR/CY a diaspoře; anglické aplikace neznají dromoi. Lokalizace do řečtiny + angličtiny (irské buzuki) + DE/AU diaspory.",
+      "devils_advocate": [
+        "Trh je malý – ideální výnos jen těsně nad limitem.",
+        "Řecký App Store je malý a ochota platit nižší.",
+        "Mnoho hráčů hraje podle ucha/YouTube a akordy nepotřebuje.",
+        "Terminologie dromoi se liší (turecké makamy vs řecké názvy) – odborníci budou kritizovat nepřesnosti."
+      ],
+      "killer_risk": "Příliš malý objem stažení.",
+      "mitigation": "Spojit akordy + ladičku + dromoi do jediné ‚all-in-one‘ aplikace, aby zachytila všechna tři slova; recenze od hráčů rebetika před launchem.",
+      "build_weeks": 3,
+      "evidence": "web",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 8,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "music-11",
+      "name": "Song Idea Vault",
+      "tagline": "Náhrada za zrušené Music Memos: nahrajte nápad, aplikace pozná tempo, tóninu a akordy.",
+      "pitch": "Apple v roce 2023 ukončil Music Memos – oblíbený zápisník hudebních nápadů, který uměl rozpoznat akordy a tempo. Hlasové poznámky nápady nekategorizují a songwriteři mají stovky souborů ‚New Recording 47‘. Song Idea Vault nahrává riffy a melodie, na zařízení rozpozná tempo, tóninu a přibližné akordy, přidá štítky a umožní rychlé vyhledání. Je to jasná díra po odchodu Apple.",
+      "niche": "Hudební zápisník nápadů se strojovou analýzou. Velcí hráči (BandLab, GarageBand) jsou DAW a sociální sítě, ne rychlý zápisník; Voice Memos neumí hudební metadata.",
+      "parent_market": "Hudební záznam a songwriting – BandLab, GarageBand, Voice Memos, Hookpad; songwritingové aplikace s předplatným.",
+      "target_user": "Kytaristé, klavíristé a songwriteři, kteří nahrávají nápady na telefon; učitelé hudby.",
+      "features": [
+        "Nahrávání jedním klepnutím (widget, Action Button, Lock Screen)",
+        "Automatická detekce tempa, tóniny a akordů na zařízení",
+        "Štítky, hodnocení, složky podle písně",
+        "Vyhledávání podle tóniny/tempa/akordu",
+        "Export do GarageBand/Logic (AIFF + tempo)"
+      ],
+      "offline": "full",
+      "offline_note": "Záznam a analýza (chroma/beat tracking, Core ML) na zařízení; iCloud synchronizace.",
+      "monetization": "Freemium, Pro 2,99 USD/měs. nebo 19,99 USD/rok (≈ 460 CZK).",
+      "revenue_math": "Ideál: music memos / song ideas / riff recorder / songwriting ≈ 4 000 stažení/měs. × 2 % = 80 předplatitelů/měs. × 19,99 × 0,85 → po 12 měsících ~960 aktivních ≈ 1 360 USD/měs.; konzervativní ideál 700 USD ≈ 16 000 CZK.",
+      "revenue_czk_ideal": 16000,
+      "keywords": [
+        {
+          "kw": "music memos",
+          "saturation": 3,
+          "competitor": "odhad – náhrady po Apple",
+          "note": "Odhad; po zrušení Apple aplikace vzniklo několik náhrad."
+        },
+        {
+          "kw": "song ideas",
+          "saturation": 4,
+          "competitor": "odhad",
+          "note": "Odhad; songwritingové aplikace (lyrics notebooky) konkurují."
+        },
+        {
+          "kw": "riff recorder",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "chord detection",
+          "saturation": 5,
+          "competitor": "odhad – Chordify apod.",
+          "note": "Odhad; obsazené chord-recognition aplikacemi."
+        }
+      ],
+      "demand_evidence": "Neověřeno z webu v tomto běhu. Vlastní znalost: Apple Music Memos zmizel z App Store (2023) a komunita songwriterů si stěžovala; rozpoznání akordů je dnes dostupné on-device. Objem vyhledávání ‚music memos‘ předpokládán.",
+      "competitors": [
+        {
+          "name": "BandLab",
+          "url": "",
+          "role": "parent",
+          "note": "Parent – sociální DAW (URL mimo evidenci)."
+        },
+        {
+          "name": "GarageBand",
+          "url": "",
+          "role": "parent",
+          "note": "Apple – riziko Sherlocku."
+        },
+        {
+          "name": "Chordify",
+          "url": "",
+          "role": "niche",
+          "note": "Rozpoznávání akordů ze skladeb."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Apple může Voice Memos rozšířit o hudební analýzu (Voice Memos už v iOS 18 umí vrstvení nahrávek) – Sherlock.",
+        "Rozpoznání akordů z jedné kytary a zpěvu je nepřesné; uživatelé to budou vytýkat.",
+        "Songwriteři mají GarageBand zdarma a jsou zvyklí na Voice Memos – změna návyku je těžká.",
+        "Více indie náhrad Music Memos už možná existuje (neověřeno)."
+      ],
+      "killer_risk": "Apple přidá hudební funkce do Voice Memos/GarageBand.",
+      "mitigation": "Rychlost a organizace (štítky, vyhledávání dle tóniny) jako jádro, analýza jako bonus; integrace s Shortcuts.",
+      "build_weeks": 7,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 5
+      }
+    },
+    {
+      "id": "music-12",
+      "name": "Harmonica Tab & Bend Trainer",
+      "tagline": "Hrajte lidovky podle tabů a aplikace poslouchá každou dírku i bending.",
+      "pitch": "Harmonika je nejlevnější nástroj na světě a každý rok ji někdo dostane k Vánocům. Trenažéry bendingu existují (Blowbend.jp), ale spojení ‚taby veřejně volných písní + poslech, jestli hrajete správnou dírku‘ je vzácné. Aplikace posune tabulaturu až zahrajete správný tón, pozná bend a ukáže, o kolik je nízko. Na rozdíl od Yousicianu je jen pro harmoniku a bez nutnosti připojení.",
+      "niche": "Rozpoznávání hry na diatonickou foukací harmoniku v reálném čase na public domain písních. Velké výukové platformy harmoniku ignorují nebo jen okrajově.",
+      "parent_market": "Výuka nástrojů s poslechem hry – Yousician, Simply Piano, Simply Guitar (stovky milionů USD ročně); harmonikové aplikace Harmonica University/Bendr.",
+      "target_user": "Začínající hráči na diatonickou harmoniku (často 40+), rodiče dětí, bluesoví samouci.",
+      "features": [
+        "Taby 100+ public domain písní (lidovky, spirituály, koledy)",
+        "Poslech dírky a bendingu v reálném čase, posun tabu",
+        "Trenažér bendingu s vizualizací centů",
+        "Podpora ladění C, A, G, D harmonik (transpozice)",
+        "Denní cvičení a streaky"
+      ],
+      "offline": "full",
+      "offline_note": "Detekce výšky a bendů na zařízení; obsah v aplikaci.",
+      "monetization": "Předplatné 19,99 USD/rok (≈ 460 CZK) nebo 29,99 lifetime; první 10 písní zdarma.",
+      "revenue_math": "Ideál: harmonica / harmonica tabs / harmonica lessons ≈ 3 000 stažení/měs. × 2,5 % = 75 × 19,99 × 0,85 = 1 274 USD ročních tržeb/měs.; ustálený stav ≈ 700 USD/měs. ≈ 16 000 CZK.",
+      "revenue_czk_ideal": 16000,
+      "keywords": [
+        {
+          "kw": "harmonica tabs",
+          "saturation": 3,
+          "competitor": "odhad – tabové aplikace",
+          "note": "Odhad; tabové aplikace existují."
+        },
+        {
+          "kw": "harmonica bending trainer",
+          "saturation": 2,
+          "competitor": "Harmonica Bending Trainer (Blowbend.jp)",
+          "note": "Evidence: sat 2 od jednoho vývojáře – MODERATE."
+        },
+        {
+          "kw": "harmonica lessons",
+          "saturation": 4,
+          "competitor": "Harmonica University (Bendr)",
+          "note": "Evidence: výukové aplikace existují."
+        },
+        {
+          "kw": "harmonica tuner",
+          "saturation": 3,
+          "competitor": "Harmonica Tuner Pro",
+          "note": "Evidence: ladička existuje."
+        }
+      ],
+      "demand_evidence": "Ověřeno: 5 harmonikových aplikací, placená verze Bending Trainer+ za 4,99 USD (lidé platí za rozpoznávání hry). Předpoklad: poptávka po tabech + poslechu; copyright omezuje obsah na public domain.",
+      "competitors": [
+        {
+          "name": "Harmonica Bending Trainer",
+          "url": "https://apps.apple.com/us/app/harmonica-bending-trainer/id1479803169",
+          "role": "niche",
+          "note": "Blowbend.jp, zdarma."
+        },
+        {
+          "name": "Harmonica Bending Trainer+",
+          "url": "https://apps.apple.com/us/app/harmonica-bending-trainer/id6742537721",
+          "role": "niche",
+          "note": "4,99 USD – důkaz platby."
+        },
+        {
+          "name": "Harmonica University (Bendr)",
+          "url": "https://apps.apple.com/uy/app/bendr-harmonica/id6450061589",
+          "role": "niche",
+          "note": "Výuka s rozpoznáváním – přímý konkurent."
+        },
+        {
+          "name": "Yousician",
+          "url": "",
+          "role": "parent",
+          "note": "Parent (URL mimo evidenci)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Bendr/Harmonica University už rozpoznávání hry nabízí – nika není prázdná.",
+        "Public domain repertoár (lidovky) nemusí motivovat mladé hráče, kteří chtějí pop.",
+        "Rozpoznání sousedních dírek (chordy při hraní dvou dírek) je u začátečníků chaotické – falešné chyby frustrují.",
+        "Harmonika se často kupuje impulsivně a opouští – retence předplatného nízká."
+      ],
+      "killer_risk": "Bendr a podobné aplikace mají náskok v obsahu i rozpoznávání.",
+      "mitigation": "Lokalizovat repertoár (lidové písně každé země jsou často public domain) – to anglické aplikace nemají; lifetime cena.",
+      "build_weeks": 7,
+      "evidence": "web",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 6,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "music-13",
+      "name": "Choir Warm-Ups & Voice Type Test",
+      "tagline": "Rozezpívání pro sbor i sólisty podle hlasu – a test, jestli jste soprán, alt, tenor nebo bas.",
+      "pitch": "Sborový zpěvák nebo amatérský zpěvák nemá doma sbormistra, který ho rozezpívá. Choir Warm-Ups nabízí vedené rozcvičky (lip trills, sirény, stupnice) generované přesně do rozsahu uživatele a na začátku změří hlasový rozsah a určí hlasový obor. Na rozdíl od sborových přehrávačů, které potřebují stahovat písně, je vše generované na zařízení a funguje offline. Sbormistr může rozcvičku promítnout celému sboru.",
+      "niche": "Rozezpívání a hlasová hygiena pro amatérské sbory. Sborové aplikace (Choir Practice, Choir Player) se soustředí na nácvik partů; pěvecké aplikace (Smule, Vocal Pitch Monitor) na karaoke nebo analýzu, ne na krátkou denní rozcvičku.",
+      "parent_market": "Pěvecké tréninkové aplikace – Singing Carrots, Vocal Pitch Monitor, Yousician Singing, Simply Sing; silné předplatné.",
+      "target_user": "Členové amatérských a církevních sborů, sbormistři, začínající zpěváci 30–65 let.",
+      "features": [
+        "Test hlasového rozsahu a určení oboru (SATB) přes detekci výšky",
+        "Generované rozcvičky transponované do rozsahu uživatele (klavír/syntéza)",
+        "Denní 5/10/15min rutiny + série (streak)",
+        "Režim sbormistra – rozcvička pro celý sbor přes AirPlay",
+        "Zpětná vazba intonace v reálném čase"
+      ],
+      "offline": "full",
+      "offline_note": "Syntéza zvuku (AVAudioEngine) a detekce výšky na zařízení, žádné stahování obsahu.",
+      "monetization": "Předplatné 3,99 USD/měs. nebo 24,99 USD/rok (≈ 575 CZK); lifetime 49,99 USD.",
+      "revenue_math": "Ideál: choir warm up / vocal warm up / voice type test ≈ 3 000 stažení/měs. × 2 % = 60 předplatných × ~20 USD čistého/rok ≈ 1 200 USD ročně nových/měs. → ustálený stav ≈ 510 USD/měs. ≈ 11 700 CZK.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "choir warm up",
+          "saturation": 2,
+          "competitor": "ChoirFlow (piano, stupnice, metronom)",
+          "note": "Odhad s oporou v evidenci: ChoirFlow (2026) nabízí stupnice; dedikovaná rozcvička v titulu neověřena."
+        },
+        {
+          "kw": "vocal warm up",
+          "saturation": 5,
+          "competitor": "odhad – několik pěveckých aplikací",
+          "note": "Odhad; obecnější a obsazenější fráze."
+        },
+        {
+          "kw": "voice type test",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "Odhad; testy rozsahu existují (Vocal Range Test apod.)."
+        },
+        {
+          "kw": "choir practice",
+          "saturation": 4,
+          "competitor": "Choir Practice",
+          "note": "Evidence: CROWDED (3–5) – jen parent důkaz."
+        }
+      ],
+      "demand_evidence": "Ověřeno: sborová kategorie je aktivní (Choir Practice, Choir Player, cori 2024, ChoirFlow 2026). Předpoklad: poptávka po rozezpívání – z vlastní znalosti, vyhledávání neověřeno.",
+      "competitors": [
+        {
+          "name": "ChoirFlow",
+          "url": "https://apps.apple.com/us/app/choirflow/id6759294680",
+          "role": "niche",
+          "note": "2026; piano, stupnice, metronom – nejbližší."
+        },
+        {
+          "name": "Choir Genius",
+          "url": "https://apps.apple.com/us/app/choir-genius/id6450846555",
+          "role": "niche",
+          "note": "~2023, sborové utility."
+        },
+        {
+          "name": "Choir Player - Learn Practice",
+          "url": "https://apps.apple.com/us/app/choir-player-learn-practice/id1139783014",
+          "role": "parent",
+          "note": "Parent sborový nácvik partů."
+        },
+        {
+          "name": "Vocal Pitch Monitor",
+          "url": "",
+          "role": "parent",
+          "note": "Parent pěvecké analýzy (URL mimo evidenci)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "‚Vocal warm up‘ je obsazené silnými pěveckými aplikacemi s velkým marketingem.",
+        "Amatérští sboristé jsou staršího věku a předplatné odmítají.",
+        "YouTube má tisíce zdarma rozcviček – náhradní produkt je všudypřítomný.",
+        "Test hlasového oboru může být nepřesný a uživatele urazit/zmást (soprán vs mezzo)."
+      ],
+      "killer_risk": "YouTube zdarma + neochota amatérů platit předplatné.",
+      "mitigation": "Nabízet i lifetime, zdůraznit personalizaci do rozsahu (YouTube neumí) a režim sbormistra jako B2B argument.",
+      "build_weeks": 5,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "music-14",
+      "name": "Ring-Out: Feedback Finder for Sound Techs",
+      "tagline": "Najděte frekvenci, která píská, dřív než publikum – RTA a ring-out asistent v kapse.",
+      "pitch": "Zvukaři v kostelích, školách, malých klubech a na firemních akcích ‚ringují‘ monitory: zvyšují gain, dokud to nezapíská, a hledají frekvenci pro EQ. Ring-Out ukáže přesnou frekvenci zpětné vazby, nejbližší pásmo 31pásmového grafického EQ a pásma parametrického EQ, a uloží profil místa. Dobrovolní zvukaři v kostelech, kteří nemají zkušenosti, jsou ideální zákazníci.",
+      "niche": "Průvodce ‚ring-out‘ pro dobrovolníky a malé zvukaře. Profesionální nástroje (Smaart, AudioTools) jsou drahé a složité; SPL/RTA aplikace ukazují spektrum, ale neradí.",
+      "parent_market": "Audio měřicí nástroje – AudioTools, Decibel X, SPL Meter, Smaart (placené profesní nástroje).",
+      "target_user": "Dobrovolní zvukaři v kostelích, školní technici, DJové, kapely bez zvukaře, event technici.",
+      "features": [
+        "RTA v reálném čase s detekcí píku zpětné vazby",
+        "Převod frekvence na pásmo 31-band GEQ a notu",
+        "Režim ‚ring-out‘ – krok za krokem, seznam nalezených frekvencí",
+        "Profily místností/monitorů",
+        "Tónový generátor a pink noise"
+      ],
+      "offline": "full",
+      "offline_note": "FFT na zařízení, žádná síť.",
+      "monetization": "Jednorázově 9,99 USD (≈ 230 CZK), Pro profily 4,99 USD IAP.",
+      "revenue_math": "Ideál: feedback finder / ring out / rta / sound engineer ≈ 2 000 stažení/měs. × 3 % = 60 × 11 USD průměr × 0,85 = 561 USD ≈ 12 900 CZK.",
+      "revenue_czk_ideal": 12900,
+      "keywords": [
+        {
+          "kw": "feedback finder",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "ring out",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad; profesní slang."
+        },
+        {
+          "kw": "rta",
+          "saturation": 5,
+          "competitor": "odhad – AudioTools, analyzátory",
+          "note": "Odhad; obsazené."
+        },
+        {
+          "kw": "church sound",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Pouze vlastní znalost trhu: placené audio měřicí aplikace existují dlouhodobě a jsou oblíbené u zvukařů. Vyhledávání fráze ‚feedback finder‘ neověřeno.",
+      "competitors": [
+        {
+          "name": "AudioTools",
+          "url": "",
+          "role": "parent",
+          "note": "Profesní sada (URL mimo evidenci)."
+        },
+        {
+          "name": "Decibel X",
+          "url": "",
+          "role": "parent",
+          "note": "Populární SPL/RTA."
+        },
+        {
+          "name": "Church Metrics",
+          "url": "https://apps.apple.com/us/app/church-metrics/id792901164",
+          "role": "niche",
+          "note": "Nepřímý – ukazuje, že církve používají utility; jen kontext cílové skupiny."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Mikrofon iPhonu má AGC a omezený frekvenční rozsah – přesnost pro vysoké frekvence je sporná.",
+        "Digitální mixážní pulty (Behringer X32, Allen&Heath) mají vestavěné RTA a feedback detekci – Sherlock ze strany hardwaru.",
+        "Profesionálové už mají Smaart; dobrovolníci aplikaci nemusí najít, protože neznají slovo ‚ring out‘.",
+        "Nízká frekvence používání (jednou za akci)."
+      ],
+      "killer_risk": "Moderní digitální pulty dělají totéž zdarma.",
+      "mitigation": "Cílit na analogové/malé pulty a na jednoduchost (kroky, nápověda); zmínit v popisu kompatibilitu s konkrétními EQ; nízká cena.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "music-15",
+      "name": "Merch Table: Band Sales Tracker",
+      "tagline": "Prodej triček a desek na koncertech – sklad podle velikostí, hotovost, karta a vyúčtování s klubem.",
+      "pitch": "Kapely na turné prodávají merch z krabice pod pódiem a počítají na ubrousku, kolik triček velikosti M zbývá. Square je platební terminál, ne sklad podle velikostí a nočního vyúčtování s klubem (merch cut). Merch Table eviduje zásoby per velikost/barvu, zapisuje prodeje rychlými tlačítky, spočítá tržby po metodě platby a podíl pro venue. Offline – v klubu často není signál.",
+      "niche": "Offline prodejní deník pro merch stánek kapel. POS systémy jsou obecné a online; setlist aplikace merch neřeší.",
+      "parent_market": "POS a prodejní aplikace (Square POS, SumUp, Shopify POS) + gig aplikace pro kapely.",
+      "target_user": "Nezávislé kapely na turné, merch manažeři, solo umělci, řemeslné stánky na festivalech.",
+      "features": [
+        "Sklad podle produktu × velikost × barva",
+        "Rychlý prodej tlačítky, hotovost/karta/jiné",
+        "Noční vyúčtování (tržba, merch cut venue, přehled po městech)",
+        "Upozornění na docházející velikosti",
+        "Export CSV za turné"
+      ],
+      "offline": "full",
+      "offline_note": "Lokální databáze; platby kartou se neřeší (externí terminál), jen se zaznamenají.",
+      "monetization": "Jednorázově 9,99 USD (≈ 230 CZK) + Pro turné 19,99 USD/rok.",
+      "revenue_math": "Ideál: merch tracker / band merch / merch inventory ≈ 1 500 stažení/měs. × 3,5 % = 53 × ~13 USD průměr × 0,85 = 585 USD ≈ 13 500 CZK.",
+      "revenue_czk_ideal": 13500,
+      "keywords": [
+        {
+          "kw": "band merch",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "Odhad; dotaz byl naplánován, budget došel."
+        },
+        {
+          "kw": "merch tracker",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "merch inventory",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "craft fair sales",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "Odhad; business evidence uvádí ‚craft-fair sales tracker‘ jako neověřený nápad – sekundární segment."
+        }
+      ],
+      "demand_evidence": "Neověřeno – dotaz ‚band merch sales tracker‘ v evidenci je uveden jako nevyhledaný kvůli vyčerpání rozpočtu. Vlastní znalost: existují 1–3 malé aplikace (AtVenu je B2B platforma se serverem).",
+      "competitors": [
+        {
+          "name": "AtVenu",
+          "url": "",
+          "role": "parent",
+          "note": "Profesionální merch platforma (server, B2B) – URL mimo evidenci."
+        },
+        {
+          "name": "Square Point of Sale",
+          "url": "",
+          "role": "parent",
+          "note": "Obecný POS."
+        },
+        {
+          "name": "SetBook: Gig & Setlist Manager",
+          "url": "https://apps.apple.com/us/app/setbook-gig-setlist-manager/id6760658343",
+          "role": "niche",
+          "note": "Gig manager s platbami – může rozšířit o merch."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Square/SumUp mají zdarma katalog s variantami – mnoho kapel to použije místo další aplikace.",
+        "Malé kapely prodají pár kusů za večer – pro ně ‚ubrousek‘ stačí.",
+        "Velké kapely používají AtVenu přes manažera – mezera jen ve středním segmentu.",
+        "Kategorie Music vs Business – ASO rozhodnutí ovlivní dohledatelnost."
+      ],
+      "killer_risk": "Square/SumUp zdarma pokryje potřebu.",
+      "mitigation": "Zdůraznit offline a vyúčtování s venue (merch cut) – to POS neumí; cílit i na řemeslné stánky (druhé ASO slovo).",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "music-16",
+      "name": "Darbuka Rhythms: Aksak & Maqsum Trainer",
+      "tagline": "Blízkovýchodní a balkánské rytmy – maqsum, saidi, 9/8 karşılama – s notací dum-tek-ka.",
+      "pitch": "Darbuka a bendir jsou populární v bubnových kroužcích, tanečních (orientální tanec) i world-music scéně po celé Evropě. Hráči potřebují přehled rytmů v notaci dum-tek-ka, doprovod v tempu a trénink nepravidelných aksak metrů (7/8, 9/8, 10/8). Aplikace poslouží bubeníkům i tanečnicím orientálního tance, které se rytmy učí.",
+      "niche": "Rytmický trenažér pro darbuku a balkánské nepravidelné metry. Obecné metronomy neumí dum/tek zvuky a strukturu rytmů; orientální simulátory bubnů neučí.",
+      "parent_market": "Metronomy a rytmické aplikace (Pro Metronome, Soundbrenner) + simulátory perkusí.",
+      "target_user": "Hráči na darbuku, bendir, riq; tanečnice orientálního tance; balkánské folklorní soubory.",
+      "features": [
+        "Knihovna 60+ rytmů (maqsum, baladi, saidi, malfuf, ayoub, karşılama, 7/8 kalamatianos)",
+        "Notace dum-tek-ka + animace",
+        "Doprovod s nastavitelným tempem, zdobení",
+        "Trénink hraní s detekcí úderů",
+        "Setlist rytmů pro taneční vystoupení"
+      ],
+      "offline": "full",
+      "offline_note": "Samply a sekvencer na zařízení.",
+      "monetization": "Freemium, Pro 6,99 USD (≈ 160 CZK).",
+      "revenue_math": "Ideál: darbuka / darbuka rhythms / belly dance rhythms / 9/8 ≈ 2 500 stažení/měs. × 3,5 % = 88 × 6,99 × 0,85 = 523 USD ≈ 12 000 CZK.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "darbuka",
+          "saturation": 4,
+          "competitor": "odhad – simulátory darbuky",
+          "note": "Odhad; simulátory existují (Darbuka apps)."
+        },
+        {
+          "kw": "darbuka rhythms",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "belly dance rhythms",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "aksak",
+          "saturation": 0,
+          "competitor": "odhad",
+          "note": "Odhad; velmi úzké."
+        }
+      ],
+      "demand_evidence": "Pouze vlastní znalost: simulátory darbuky mají v TR/arabských storefrontech miliony stažení; výukový trenažér s notací je vzácnější. Nic ověřeno webem (dotaz v plánu).",
+      "competitors": [
+        {
+          "name": "Darbuka Simulator",
+          "url": "",
+          "role": "parent",
+          "note": "Simulátory darbuky (URL mimo evidenci)."
+        },
+        {
+          "name": "Handpan Rhythms",
+          "url": "https://apps.apple.com/de/app/handpan-rhythms/id6453123336",
+          "role": "niche",
+          "note": "Analogický model rytmické notace pro jiný nástroj."
+        },
+        {
+          "name": "Pro Metronome",
+          "url": "",
+          "role": "parent",
+          "note": "Parent metronom."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap: rytmické aplikace pro darbuku jsou populární v TR a arabském světě, ale v EU/US jazycích chybí dobrá výuková verze; lokalizace do DE/FR/NL/CZ/EL.",
+      "devils_advocate": [
+        "Simulátory darbuky zdarma s reklamami mají obrovskou dosažitelnost a část uživatelů jim stačí.",
+        "Terminologie a názvy rytmů se liší mezi zeměmi – spory o ‚správnost‘.",
+        "Tanečnice jsou velká skupina, ale ochota platit za rytmickou aplikaci nejistá.",
+        "Detekce úderů dum/tek na mobilu může být nespolehlivá v hlučném prostředí."
+      ],
+      "killer_risk": "Nedostatečný rozdíl vůči zdarma simulátorům.",
+      "mitigation": "Vést notací a tréninkem (ne simulátorem), cílit ‚belly dance rhythms‘ pro tanečnice jako druhý segment.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "music-17",
+      "name": "Tongue Drum & Kalimba Songbook",
+      "tagline": "Číselné noty pro ocelový bubínek a kalimbu – stovky lidovek, koled a klasiky s ladičkou.",
+      "pitch": "Ocelové jazýčkové bubny a kalimby jsou jedny z nejprodávanějších hudebních dárků na Amazonu – a majitelé okamžitě hledají ‚songs for tongue drum‘. Nástroj má čísla na jazýčcích, takže stačí číselná notace. Aplikace nabízí stovky public domain melodií transponovaných pro konkrétní ladění nástroje (8, 11, 13, 15 tónů), přehrávání s animací a ladičku. Jednoduché, dárkové, globální.",
+      "niche": "Zpěvník v číselné notaci pro tongue drum/kalimbu podle přesného ladění nástroje. Kalimba tabové aplikace existují, ale tongue drum (odlišné ladění, 8–15 jazýčků) je méně obsloužen.",
+      "parent_market": "Výukové aplikace nástrojů a songbooky (Kalimba Real, Kalimba Tabs, Simply Piano); boom levných nástrojů z Amazonu.",
+      "target_user": "Majitelé tongue drumu a kalimby, rodiče dětí, terapeuti (muzikoterapie), učitelky MŠ.",
+      "features": [
+        "Výběr nástroje a ladění (C dur, D dur, pentatonika, 8/11/13/15 tónů)",
+        "Stovky public domain písní v číselné notaci automaticky transponovaných",
+        "Animované přehrávání a režim ‚hraj se mnou‘",
+        "Ladička pro jazýčky",
+        "Vlastní zápis melodií"
+      ],
+      "offline": "full",
+      "offline_note": "Obsah v aplikaci, syntéza a ladička na zařízení.",
+      "monetization": "Freemium: 20 písní zdarma, Pro 5,99 USD (≈ 140 CZK) jednorázově nebo balíčky.",
+      "revenue_math": "Ideál: tongue drum / tongue drum songs / kalimba songs ≈ 5 000 stažení/měs. × 3 % = 150 × 5,99 × 0,85 = 764 USD ≈ 17 500 CZK; střed 90 prodejů ≈ 10 500 CZK.",
+      "revenue_czk_ideal": 14000,
+      "keywords": [
+        {
+          "kw": "tongue drum",
+          "saturation": 3,
+          "competitor": "odhad – simulátory tongue drum",
+          "note": "Odhad; simulátory existují."
+        },
+        {
+          "kw": "tongue drum songs",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad; pravděpodobně slabé."
+        },
+        {
+          "kw": "kalimba tabs",
+          "saturation": 5,
+          "competitor": "odhad – několik tabových aplikací",
+          "note": "Odhad; kalimba je obsazenější."
+        },
+        {
+          "kw": "steel tongue drum",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Vlastní znalost: tongue drumy a kalimby jsou bestsellery na Amazonu; kalimba tabové aplikace se prodávají. V evidenci je jen handpanový sousední trh (3 nové aplikace 2025). Tongue drum vyhledávání neověřeno.",
+      "competitors": [
+        {
+          "name": "Handpaner - Virtual Handpan",
+          "url": "https://apps.apple.com/sr/app/handpaner-virtual-handpan/id1606912680",
+          "role": "niche",
+          "note": "Sousední segment (stupnice a akordy handpanu)."
+        },
+        {
+          "name": "Kalimba Real",
+          "url": "",
+          "role": "parent",
+          "note": "Parent kalimba aplikace (URL mimo evidenci)."
+        },
+        {
+          "name": "Simply Piano",
+          "url": "",
+          "role": "parent",
+          "note": "Parent výukový trh."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Výrobci nástrojů přikládají zpěvníky PDF zdarma a QR na YouTube.",
+        "Public domain omezení: lidé chtějí ‚Interstellar‘ a pop, který nesmíme.",
+        "Kalimba tabové aplikace mohou přidat tongue drum režim za týden.",
+        "Nízká cena a jednorázový nákup → těsně nad limitem."
+      ],
+      "killer_risk": "Uživatelé chtějí chráněné písně, které nemůžeme nabídnout.",
+      "mitigation": "Silný vlastní editor (uživatel si zapíše co chce), lokalizované lidovky a koledy (sezónní špička prosinec).",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      }
+    },
+    {
+      "id": "music-18",
+      "name": "Konnakol: Rhythm Syllables for Drummers",
+      "tagline": "Indická rytmická řeč pro západní bubeníky – tisra, khanda a mishra krok za krokem.",
+      "pitch": "Konnakol (vokalizované rytmické slabiky jihoindické hudby) se stal hitem mezi západními bubeníky a jazzmany díky Gavinovi Harrisonovi a online kurzům. Karnatické aplikace (Tala Shruti, Talanome) jsou ale psané pro indické studenty. Konnakol vede bubeníka od ‚ta ka di mi‘ k polyrytmickým frázím s tala počítáním, generuje cvičení a měří timing vyslovených slabik. Posouvá produkt z indické niky k globálnímu publiku bubeníků.",
+      "niche": "Konnakol/solkattu jako rytmický trénink pro západní muzikanty. Karnatické aplikace cílí na tradiční výuku; bubenické aplikace (Drumeo, Rudiment) konnakol neznají.",
+      "parent_market": "Rytmické trenažéry a metronomy (Soundbrenner, Pro Metronome, Polynome) + karnatické tala aplikace.",
+      "target_user": "Bubeníci, perkusionisté, jazzoví hudebníci, studenti rytmiky; indická diaspora jako bonus.",
+      "features": [
+        "Lekce slabik (ta ka di mi, ta ki ta, ta di gi na tom) s gatis",
+        "Generátor frází a polyrytmů na tala cyklus s počítáním rukou",
+        "Detekce timingu vyslovených slabik (onset z mikrofonu)",
+        "Převod do západní notace (triplety, kvintoly)",
+        "Tempo trainer"
+      ],
+      "offline": "full",
+      "offline_note": "Samply slabik a detekce onsetů na zařízení.",
+      "monetization": "Pro 9,99 USD (≈ 230 CZK) jednorázově.",
+      "revenue_math": "Ideál: konnakol / solkattu / polyrhythm trainer ≈ 1 500 stažení/měs. × 4 % = 60 × 9,99 × 0,85 = 509 USD ≈ 11 700 CZK.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "konnakol",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad; v karnatických výsledcích se neobjevil žádný konnakol trenažér (neověřeno samostatným dotazem)."
+        },
+        {
+          "kw": "solkattu",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "carnatic tala",
+          "saturation": 4,
+          "competitor": "Tala Shruti",
+          "note": "Evidence: CROWDED (tala/shruti sat 3+) – parent důkaz."
+        },
+        {
+          "kw": "polyrhythm trainer",
+          "saturation": 4,
+          "competitor": "odhad – Polynome aj.",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Ověřeno: karnatický segment má 8 aplikací (aktivní trh). Konnakol konkurence neověřena (dotaz naplánován, rozpočet došel). Předpoklad: zájem západních bubeníků z vlastní znalosti (YouTube, kurzy).",
+      "competitors": [
+        {
+          "name": "Tala Shruti",
+          "url": "https://apps.apple.com/us/app/tala-shruti/id6740571964",
+          "role": "parent",
+          "note": "2025 all-in-one karnatická aplikace."
+        },
+        {
+          "name": "Talanome - Carnatic Metronome",
+          "url": "https://apps.apple.com/us/app/talanome-carnatic-metronome/id418862562?uo=4",
+          "role": "niche",
+          "note": "Karnatický metronom."
+        },
+        {
+          "name": "Carnatic Thaalam Robot",
+          "url": "https://apps.apple.com/in/app/carnatic-thaalam-robot/id1438376299",
+          "role": "niche",
+          "note": "Tala počítání."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Konnakol je módní na YouTube, ale lidé nemusí hledat v App Store – nízký objem.",
+        "Detekce vyslovených slabik v rychlém tempu je nespolehlivá.",
+        "Kulturní citlivost: zjednodušení tradice může vyvolat kritiku od indických učitelů.",
+        "Tala Shruti může přidat konnakol modul."
+      ],
+      "killer_risk": "Nízký objem vyhledávání mimo YouTube.",
+      "mitigation": "Kombinovat s ‚polyrhythm trainer‘ klíčovými slovy, spolupráce s učitelem konnakolu pro kredibilitu obsahu.",
+      "build_weeks": 5,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "music-19",
+      "name": "PartLab: SATB Part Player for Your Scores",
+      "tagline": "Nahrajte MusicXML nebo MIDI a cvičte svůj hlas – ostatní party ztište nebo zesilte.",
+      "pitch": "Sborové přehrávače (Choir Practice, Choir Player) prodávají vlastní katalog písní, ale sbor zpívá repertoár, který v katalogu není. Sbormistr přitom často má MusicXML z MuseScore nebo MIDI. PartLab otevře soubor na zařízení, rozdělí ho na S/A/T/B, umožní zesílit vlastní part, zpomalit bez změny výšky, opakovat takty a sledovat noty. Žádný server, žádný katalog, žádné licence – obsah přináší uživatel.",
+      "niche": "Offline přehrávač partů z vlastních souborů. Katalogové aplikace řeší obsah, notační aplikace (MuseScore) jsou pro sazbu, ne pro rychlý nácvik na telefonu.",
+      "parent_market": "Notační a nácvikové aplikace – MuseScore, forScore, Newzik; sborové přehrávače (Choir Practice, Choir Player).",
+      "target_user": "Sboristé a sbormistři, kteří dostávají MusicXML/MIDI, studenti hudebních škol.",
+      "features": [
+        "Import MusicXML/MIDI (Files, AirDrop, e-mail)",
+        "Mixér partů S/A/T/B + klavír, sólo/ztlumit/zesílit",
+        "Zpomalení bez změny výšky, smyčka taktů",
+        "Sledování not s kurzorem",
+        "Záznam vlastního hlasu přes ostatní party"
+      ],
+      "offline": "full",
+      "offline_note": "Parsování MusicXML a syntéza (SoundFont) na zařízení.",
+      "monetization": "Freemium: 1 skladba; Pro 9,99 USD (≈ 230 CZK) jednorázově.",
+      "revenue_math": "Ideál: satb practice / choir parts / musicxml player ≈ 2 000 stažení/měs. × 3,5 % = 70 × 9,99 × 0,85 = 594 USD ≈ 13 700 CZK.",
+      "revenue_czk_ideal": 13700,
+      "keywords": [
+        {
+          "kw": "choir practice",
+          "saturation": 4,
+          "competitor": "Choir Practice",
+          "note": "Evidence: CROWDED (3–5) – head term obsazený."
+        },
+        {
+          "kw": "satb practice",
+          "saturation": 2,
+          "competitor": "Choir Player - Learn Practice",
+          "note": "Evidence: Choir Player nabízí 4 SATB party + nahrávání; import vlastních souborů neověřen."
+        },
+        {
+          "kw": "musicxml player",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "midi player",
+          "saturation": 5,
+          "competitor": "odhad",
+          "note": "Odhad; obecné."
+        }
+      ],
+      "demand_evidence": "Ověřeno: 5 sborových nácvikových aplikací (poptávka existuje, trh platí). Neověřeno: zda některá umí import vlastních MusicXML/MIDI – mezera může být menší, než se zdá.",
+      "competitors": [
+        {
+          "name": "Choir Practice",
+          "url": "https://apps.apple.com/us/app/choir-practice/id1008660044",
+          "role": "parent",
+          "note": "Stahování písní, posuvník partů."
+        },
+        {
+          "name": "Choir Player - Learn Practice",
+          "url": "https://apps.apple.com/us/app/choir-player-learn-practice/id1139783014",
+          "role": "niche",
+          "note": "SATB + doprovod, nahrávání vlastního partu."
+        },
+        {
+          "name": "MuseScore",
+          "url": "",
+          "role": "parent",
+          "note": "Notační aplikace s přehráváním (URL mimo evidenci)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "MuseScore mobilní aplikace už MusicXML přehrává a umožňuje mixovat nástroje – může stačit.",
+        "Parsování MusicXML je plné výjimek (repetice, volty, text) – náročná implementace.",
+        "Sboristé často soubory nedostávají – dostávají PDF; bez OMR (rozpoznání not z PDF) je trh omezený.",
+        "Retence mezi koncertními sezónami klesá."
+      ],
+      "killer_risk": "MuseScore zdarma pokryje potřebu.",
+      "mitigation": "Zaměřit UX na zpěváka (velká tlačítka ‚můj hlas‘, smyčky, tempo) a přidat v2 OMR přes Vision pro jednoduché SATB.",
+      "build_weeks": 8,
+      "evidence": "web",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 3,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "music-20",
+      "name": "Choir Director Toolkit",
+      "tagline": "Docházka, rozesazení a hlasové obory sboru – pro sbormistra, bez účtů a bez serveru.",
+      "pitch": "Sborové aplikace řeší zpěváky (nácvik partů) nebo celou organizaci přes server a účty (Choir App). Sbormistr ale potřebuje jednoduchý nástroj jen pro sebe: seznam členů s hlasovými obory, docházku na zkouškách, drag&drop rozesazení na pódiu a repertoárový archiv. Choir Director Toolkit to dělá lokálně na iPadu, bez nutnosti, aby si členové cokoli instalovali.",
+      "niche": "Administrativa sbormistra (single-user). Konkurence se zaměřuje na zpěváky nebo na síťové řešení vyžadující registraci všech členů.",
+      "parent_market": "Sborové aplikace (Choir App, Choir Practice, cori) + aplikace pro vedení týmů/docházky (TeamSnap, Church Metrics).",
+      "target_user": "Sbormistři amatérských, školních a církevních sborů; vedoucí pěveckých souborů a orchestrů.",
+      "features": [
+        "Roster s hlasovými obory, rozsahem a kontakty",
+        "Docházka jedním klepnutím + statistiky",
+        "Drag&drop rozesazení sboru (řady, SATB bloky) + export PDF",
+        "Repertoárový archiv (kdy se co zpívalo)",
+        "Kalendář zkoušek a koncertů"
+      ],
+      "offline": "full",
+      "offline_note": "Lokální data + CloudKit sync mezi iPadem a iPhonem sbormistra.",
+      "monetization": "Jednorázově 19,99 USD (≈ 460 CZK) nebo 12,99 USD/rok.",
+      "revenue_math": "Ideál: choir director / choir attendance / choir seating ≈ 1 200 stažení/měs. × 4 % = 48 × 19,99 × 0,85 = 816 USD; střed 35 prodejů ≈ 595 USD ≈ 13 700 CZK.",
+      "revenue_czk_ideal": 13700,
+      "keywords": [
+        {
+          "kw": "choir director",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad; v evidenci jen jako neověřená díra."
+        },
+        {
+          "kw": "choir attendance",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad; Church Attendance Tracker existuje (business evidence)."
+        },
+        {
+          "kw": "choir seating chart",
+          "saturation": 0,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "choir app",
+          "saturation": 4,
+          "competitor": "Choir App (skupiny, server)",
+          "note": "Evidence: CROWDED na head term."
+        }
+      ],
+      "demand_evidence": "Ověřeno: sborová kategorie je aktivní, Choir App staví na serveru a skupinách; single-user nástroj pro sbormistra v úryvcích nebyl. Předpoklad: sbormistři hledají ‚choir director‘ v App Store.",
+      "competitors": [
+        {
+          "name": "Choir App",
+          "url": "https://apps.apple.com/us/app/choir-app/id1481118680",
+          "role": "niche",
+          "note": "Skupiny, server – jiný model."
+        },
+        {
+          "name": "cori - The App for Choirs",
+          "url": "https://apps.apple.com/us/app/cori-the-app-for-choirs/id6670766994",
+          "role": "niche",
+          "note": "~2024, mix nahrávek sboru."
+        },
+        {
+          "name": "Church Attendance Tracker",
+          "url": "https://apps.apple.com/us/app/church-attendance-tracker/id6757945112",
+          "role": "niche",
+          "note": "Docházka pro církve – sousední."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Sbormistři používají Excel/Google Sheets zdarma a funguje jim to.",
+        "Malá cílovka a hledání ‚choir director‘ může mít minimální objem.",
+        "Choir App může přidat ‚director mode‘.",
+        "GDPR – osobní údaje členů sboru ukládané sbormistrem; nutná jasná privacy policy (ale jen lokálně)."
+      ],
+      "killer_risk": "Excel stačí – nízká ochota platit.",
+      "mitigation": "Vizuální rozesazení (Excel to neumí) jako hlavní screenshot; import rosteru z CSV.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "music-21",
+      "name": "PianoTech Log: Tuning Service Book",
+      "tagline": "Kartotéka klientů pro ladiče klavírů – historie ladění, vlhkost a připomínky, vše v telefonu.",
+      "pitch": "Ladiči klavírů platí za ladicí software stovky dolarů (TuneLab, Verituner, Cybertuner), ale evidenci klientů vedou na papíře nebo v obecném CRM. PianoTech Log uchová každý nástroj: značku, sériové číslo (a z něj rok výroby), historii ladění, pitch raise, vlhkost v místnosti, fotky a připomínku dalšího ladění. Offline, rychle u klienta. Profesní nástroje se prodávají dobře, protože šetří čas.",
+      "niche": "Servisní deník pro ladiče klavírů. Ladicí aplikace řeší zvuk, ne evidenci; obecné CRM (Jobber, Housecall) nemají pole pro klavír a jsou předplatné pro jiné řemeslníky.",
+      "parent_market": "Profesionální ladicí nástroje (TuneLab Piano Tuner, Entropy Piano Tuner, Verituner) + field service CRM (Jobber, Housecall Pro).",
+      "target_user": "Ladiči klavírů a technici (US PTG ~3 000 členů, EU cechy), servisní firmy s 1–5 techniky.",
+      "features": [
+        "Karty klientů a nástrojů (značka, model, sériové číslo, umístění)",
+        "Historie ladění: odchylka A4, pitch raise, poznámky, fotky",
+        "Vlhkost/teplota (ruční zadání) a doporučení",
+        "Připomínky dalšího ladění + export kontaktů pro e-mail/SMS",
+        "Faktura/účtenka PDF"
+      ],
+      "offline": "full",
+      "offline_note": "Core Data + CloudKit; žádné účty, PDF na zařízení.",
+      "monetization": "Předplatné 29,99 USD/rok (≈ 690 CZK) nebo 59,99 USD lifetime.",
+      "revenue_math": "Ideál: piano tuner log / piano technician / piano service ≈ 600 stažení/měs. × 6 % = 36 × ~30 USD × 0,85 = 918 USD/měs. nových tržeb v ustáleném stavu → ≈ 21 000 CZK; konzervativně 20 prodejů ≈ 11 700 CZK.",
+      "revenue_czk_ideal": 14000,
+      "keywords": [
+        {
+          "kw": "piano tuner",
+          "saturation": 7,
+          "competitor": "odhad – ladičky pro amatéry",
+          "note": "Odhad; head term obsazený ladičkami."
+        },
+        {
+          "kw": "piano technician",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad; profesní fráze."
+        },
+        {
+          "kw": "piano service log",
+          "saturation": 0,
+          "competitor": "odhad",
+          "note": "Odhad; v business evidenci figuruje jen jako neověřený nápad."
+        },
+        {
+          "kw": "piano serial number",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "Odhad; lidé hledají rok výroby podle sériového čísla."
+        }
+      ],
+      "demand_evidence": "Business evidence (jiná kategorie) uvádí ‚piano tuner service log‘ jako neověřený kandidát. Vlastní znalost: TuneLab a Verituner se prodávají za 300+ USD → profese platí. Objem vyhledávání velmi malý a neověřený.",
+      "competitors": [
+        {
+          "name": "TuneLab Piano Tuner",
+          "url": "",
+          "role": "parent",
+          "note": "Profesní ladicí software (URL mimo evidenci)."
+        },
+        {
+          "name": "Jobber",
+          "url": "",
+          "role": "parent",
+          "note": "Obecné field service CRM."
+        },
+        {
+          "name": "Entropy Piano Tuner",
+          "url": "",
+          "role": "niche",
+          "note": "Ladička, ne evidence."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Profesní nástroje pro ladiče jsou anglické (US/UK); evropští ladiči (DE Klavierstimmer, FR accordeur, CZ ladič) nemají lokalizovaný servisní deník.",
+      "devils_advocate": [
+        "Velmi malá profese – i ideální objem je stovky stažení měsíčně.",
+        "Databáze sériových čísel značek (rok výroby) je licencovaná (Pierce Piano Atlas) – nelze ji zkopírovat.",
+        "Ladiči jsou konzervativní a papírová kartotéka jim funguje.",
+        "TuneLab může přidat evidenci klientů."
+      ],
+      "killer_risk": "Příliš malá cílovka na ASO – nedosažení objemu.",
+      "mitigation": "Cena výš (profese platí), obsah vlastní (ne Pierce); spojit s veřejně známými rozmezími sériových čísel pouze tam, kde jsou fakta volná, nebo vynechat.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 7,
+        "monetization": 7,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "music-22",
+      "name": "Palmas Coach: Flamenco Compás Trainer",
+      "tagline": "Tleskejte bulerías a aplikace vám řekne, jestli jste v compás.",
+      "pitch": "Flamencové metronomy jsou tři – všechny přehrávají palmas a cajón, ale žádná nehodnotí, jestli uživatel sám tleská správně. Palmas Coach poslouchá tleskání (palmas sordas/claras), porovná s compás a ukáže přesnost v ms na každou dobu 12dobého cyklu. Pro studenty flamenkového tance a kytary je to chybějící ‚učitel v kapse‘.",
+      "niche": "Hodnocení vlastního rytmu ve flamencu. Existující aplikace jsou přehrávače; hodnocení timingu vyžaduje detekci onsetů, kterou nikdo v nice nedělá.",
+      "parent_market": "Metronomy a rytmické trenažéry (Pro Metronome, Soundbrenner, Rhythm Trainer) + flamenco compás aplikace.",
+      "target_user": "Studenti flamenkového tance a kytary (ES, JP – velká flamenco komunita, US, DE, FR), učitelé tance.",
+      "features": [
+        "Compás pro soleá, bulerías, alegrías, seguiriyas, tangos, tientos",
+        "Detekce tleskání a hodnocení přesnosti per dobu",
+        "Postupné zrychlování a ‚výzvy‘",
+        "Palmas/cajón doprovod",
+        "Historie zlepšení"
+      ],
+      "offline": "full",
+      "offline_note": "Onset detection na zařízení, samply lokálně.",
+      "monetization": "Pro 7,99 USD (≈ 185 CZK) jednorázově nebo 1,99 USD/měs.",
+      "revenue_math": "Ideál: flamenco compas / flamenco metronome / palmas / bulerias ≈ 1 500 stažení/měs. × 4 % = 60 × 7,99 × 0,85 = 407 USD ≈ 9 400 CZK; s JP storefrontem (silný flamenco trh) ideálně ~75 prodejů ≈ 11 700 CZK.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "flamenco compas",
+          "saturation": 3,
+          "competitor": "Compás, a flamenco metronome",
+          "note": "Evidence: sat 3 – CONTESTED na velikost niky; všechny jsou přehrávače."
+        },
+        {
+          "kw": "flamenco metronome",
+          "saturation": 3,
+          "competitor": "Compás, a flamenco metronome",
+          "note": "Evidence: stejné 3 aplikace."
+        },
+        {
+          "kw": "palmas",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "bulerias",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Ověřeno: 3 flamenco compás aplikace (trh existuje a je malý); ověřeno, že žádná nehodnotí tleskání uživatele. Předpoklad: velikost JP flamenco trhu (vlastní znalost).",
+      "competitors": [
+        {
+          "name": "Compás, a flamenco metronome",
+          "url": "https://apps.apple.com/es/app/comp%C3%A1s-a-flamenco-metronome/id1509662092",
+          "role": "niche",
+          "note": "Palmas + cajón vzory."
+        },
+        {
+          "name": "Another Flamenco Compás App",
+          "url": "https://apps.apple.com/us/app/another-flamenco-comp%C3%A1s-app/id1462058409",
+          "role": "niche",
+          "note": "Přehrávač compás."
+        },
+        {
+          "name": "Flamenco Compás",
+          "url": "https://apps.apple.com/us/app/flamenco-comp%C3%A1s/id1236595563?l=es-MX",
+          "role": "niche",
+          "note": "Didaktický."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Tleskání vedle zapnutého doprovodu z téhož telefonu = echo – detekce onsetů bude rušená.",
+        "Nika je malá a 3 existující aplikace už zachytí většinu vyhledávání.",
+        "Flamenco je o ‚aire‘, ne o ms přesnosti – učitelé mohou funkci zlehčovat.",
+        "Jednorázová cena 7,99 je na hraně pro dosažení 10 000 CZK."
+      ],
+      "killer_risk": "Malý objem – výnos pod limitem.",
+      "mitigation": "Doprovod do sluchátek, tleskání do mikrofonu; lokalizace do japonštiny a španělštiny s kulturně správnou terminologií.",
+      "build_weeks": 4,
+      "evidence": "web",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "music-23",
+      "name": "Number Charts: Nashville System",
+      "tagline": "Pište akordové šablony v Nashville číslech a transponujte jedním klepnutím.",
+      "pitch": "Studioví a worship muzikanti v USA píšou akordy v Nashville Number System – čísla místo akordů, takže transpozice je okamžitá. V Evropě metodu zná málokdo, přestože by ušetřila hodiny přepisování. Number Charts nabízí rychlý editor čísel, převod mezi čísly a akordy v libovolné tónině, sdílení PDF a výukový režim. Model je americký; v 50 jazycích nebude mít konkurenci.",
+      "niche": "Editor Nashville chartů a výuka metody. Worship aplikace (OnSong, Planning Center) to umí jako dílčí funkci za drahé předplatné; samostatné editory jsou vzácné.",
+      "parent_market": "Lead-sheet a chord chart aplikace – OnSong, iReal Pro, Planning Center Music Stand (předplatné desítky USD/rok).",
+      "target_user": "Worship kapely, session muzikanti, učitelé kytary/klavíru, kapely s častou transpozicí.",
+      "features": [
+        "Rychlý editor čísel (1–7, ♭, m, sus, rytmické značky, diamanty)",
+        "Převod čísla ↔ akordy v libovolné tónině",
+        "PDF export a AirDrop sdílení",
+        "Výukový režim: kvíz stupňů a funkcí",
+        "Knihovna vlastních chartů"
+      ],
+      "offline": "full",
+      "offline_note": "Editor, převod a PDF na zařízení.",
+      "monetization": "Freemium, Pro 9,99 USD (≈ 230 CZK) nebo 14,99 USD/rok.",
+      "revenue_math": "Ideál: nashville number system / number chart / chord transposer ≈ 2 000 stažení/měs. × 3 % = 60 × 9,99 × 0,85 = 509 USD ≈ 11 700 CZK.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "nashville number system",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "Odhad; dotaz byl v evidenci naplánován, ale nevyhledán."
+        },
+        {
+          "kw": "number chart",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "chord transposer",
+          "saturation": 5,
+          "competitor": "odhad",
+          "note": "Odhad; obsazené."
+        },
+        {
+          "kw": "worship chords",
+          "saturation": 4,
+          "competitor": "odhad",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Pouze vlastní znalost: Nashville Number System je standard v US studiích a worship scéně; OnSong/Planning Center čísla podporují. Konkurence dedikovaných editorů neověřena.",
+      "competitors": [
+        {
+          "name": "OnSong",
+          "url": "",
+          "role": "parent",
+          "note": "Worship/gig chart aplikace (URL mimo evidenci)."
+        },
+        {
+          "name": "iReal Pro",
+          "url": "",
+          "role": "parent",
+          "note": "Lead sheets."
+        },
+        {
+          "name": "Count It Off-Setlist Metronome",
+          "url": "https://apps.apple.com/us/app/count-it-off-setlist-metronome/id1439712286?see-all=reviews&platform=iphone",
+          "role": "niche",
+          "note": "Nástroj pro worship/gig muzikanty – sousední segment."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Nashville Number System je americký model (Nashville, worship); mimo US se téměř neučí a lokalizovaný editor + výuka v 50 jazycích nemá konkurenci.",
+      "devils_advocate": [
+        "Mimo US lidé metodu neznají – nebudou ji hledat; musíme vytvořit poptávku, což ASO neumí.",
+        "OnSong/Planning Center ji podporují a worship kapely už platí za ně.",
+        "Editor čísel s rytmickými značkami je UX náročný na telefonu.",
+        "Malý US segment je obsluhován – US gap funguje jen, pokud se metoda šíří."
+      ],
+      "killer_risk": "Mimo US neexistuje vyhledávací poptávka.",
+      "mitigation": "ASO na ‚chord transposer‘ v lokalizacích a výukový obsah o metodě; US publikum jako primární zdroj.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "music-24",
+      "name": "Suzuki Practice Chart",
+      "tagline": "Rotace opakovaných skladeb, body a nálepky – cvičení podle Suzukiho metody bez papírových tabulek.",
+      "pitch": "Suzukiho metoda (housle, violoncello, klavír, flétna) stojí na každodenním opakování dříve naučených skladeb a rodič je ‚domácí učitel‘. Rodiče dnes vedou papírové tabulky, kostky a kartičky na losování opakování. Suzuki Practice Chart obsahuje seznamy skladeb všech Suzuki knih (jen názvy), losuje rotaci opakování, hlídá odpracované minuty a odměňuje dítě nálepkami. Obecné aplikace na cvičení (Modacity, Tonic) Suzuki strukturu neznají.",
+      "niche": "Cvičební deník pro rodiče Suzuki žáků. Obecné practice logy cílí na dospělé; Suzuki asociace aplikaci nemá (nebo jen omezenou) a model rotace je specifický.",
+      "parent_market": "Practice log aplikace (Modacity, Tonic, Andante, Practice Bird) – trh předplatného pro studenty hudby a učitele.",
+      "target_user": "Rodiče dětí 4–12 let ve Suzukiho výuce (US, JP, AU, UK, EU), Suzuki učitelé.",
+      "features": [
+        "Seznamy skladeb Suzuki knih pro housle/violoncello/klavír/flétnu/kytaru (jen názvy)",
+        "Losování opakování (kostka, karty, vážená rotace dle posledního hraní)",
+        "Timer a denní cíl, streaky",
+        "Nálepky a odměny pro dítě",
+        "Poznámky z hodiny a PDF týdenní report pro učitele"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, sdílení mezi rodiči přes iCloud (CloudKit sharing).",
+      "monetization": "Pro 4,99 USD/měs. nebo 29,99 USD/rok (≈ 690 CZK).",
+      "revenue_math": "Ideál: suzuki practice / practice chart / violin practice ≈ 1 500 stažení/měs. × 3 % = 45 × 29,99 × 0,85 = 1 147 USD ročních tržeb/měs.; ustálený měsíční ekvivalent ≈ 550 USD ≈ 12 600 CZK.",
+      "revenue_czk_ideal": 12600,
+      "keywords": [
+        {
+          "kw": "suzuki practice",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "practice chart",
+          "saturation": 4,
+          "competitor": "odhad – dětské tabulky",
+          "note": "Odhad."
+        },
+        {
+          "kw": "violin practice",
+          "saturation": 5,
+          "competitor": "odhad",
+          "note": "Odhad; obecnější."
+        },
+        {
+          "kw": "music practice log",
+          "saturation": 6,
+          "competitor": "odhad – Modacity, Tonic",
+          "note": "Odhad; obsazené."
+        }
+      ],
+      "demand_evidence": "Pouze vlastní znalost: Suzuki komunita je velká (desítky tisíc žáků v US/JP) a rodiče sdílejí papírové ‚practice charts‘; objem v App Store neověřen.",
+      "competitors": [
+        {
+          "name": "Modacity",
+          "url": "",
+          "role": "parent",
+          "note": "Practice log (URL mimo evidenci)."
+        },
+        {
+          "name": "Tonic",
+          "url": "",
+          "role": "parent",
+          "note": "Sociální practice aplikace."
+        },
+        {
+          "name": "Practice Bird",
+          "url": "",
+          "role": "niche",
+          "note": "Učitelsko-studentská aplikace (server)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "‚Suzuki‘ je ochranná známka (International Suzuki Association / automobilka) – riziko 2.3.7/5.2 při použití v názvu.",
+        "Seznamy skladeb v knihách jsou chráněné – i výpis názvů v pořadí může být sporný.",
+        "Rodiče nechtějí další předplatné pro dítě; papírové tabulky fungují.",
+        "Nová vydání knih mění pořadí skladeb – nutné aktualizace."
+      ],
+      "killer_risk": "Ochranná známka Suzuki v názvu/metadatech.",
+      "mitigation": "Neutrální název (‚Review Rotation Practice Chart‘), ‚Suzuki‘ jen v popisu jako kompatibilita; uživatel si seznamy importuje/píše sám (šablony bez oficiálního pořadí).",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 4
+      }
+    },
+    {
+      "id": "music-25",
+      "name": "Lug Tuner: Drum Head Tuning",
+      "tagline": "Naladění bubnů podle frekvence u každého šroubu – rychle a opakovatelně.",
+      "pitch": "Ladění bubnů je pro většinu bubeníků černá magie. Aplikace poslouchá ťuknutí u každého šroubu, zobrazí frekvenci a rozdíl mezi šrouby, doporučí poměr resonanční a úderové blány a uloží ‚recept‘ pro každý buben. Parent trh ukazuje, že bubeníci za takový nástroj platí (iDrumTune, Tune-Bot jako hardware za 100 USD).",
+      "niche": "Ladění bubnových blán per šroub. Obecné ladičky neumí krátké perkusivní tóny; specializovaných aplikací je jen pár.",
+      "parent_market": "Ladičky a bubenické utility – iDrumTune Pro, Tune-Bot (hardware), Drumeo; trh bubeníků platí za gear.",
+      "target_user": "Bubeníci amatéři i profesionálové, studiové nahrávání, učitelé bicích.",
+      "features": [
+        "Detekce frekvence z ťuknutí u šroubu (ton/fundament a lug frekvence)",
+        "Vizualizace rovnoměrnosti kolem blány",
+        "Recepty ladění (jazz, rock, funk) a poměry blán",
+        "Uložení a sdílení nastavení sady",
+        "Režim kopáku a virblu"
+      ],
+      "offline": "full",
+      "offline_note": "FFT analýza perkusivních onsetů na zařízení.",
+      "monetization": "Pro 7,99 USD (≈ 185 CZK) jednorázově.",
+      "revenue_math": "Ideál: drum tuner / drum tuning / snare tuner ≈ 3 000 stažení/měs. × 3 % = 90 × 7,99 × 0,85 = 611 USD ≈ 14 100 CZK.",
+      "revenue_czk_ideal": 14100,
+      "keywords": [
+        {
+          "kw": "drum tuner",
+          "saturation": 4,
+          "competitor": "odhad – iDrumTune a další",
+          "note": "Odhad; dotaz ‚drum tuner‘ byl v evidenci naplánován, ale nevyhledán."
+        },
+        {
+          "kw": "drum tuning",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "snare tuner",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "tom tuning",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Pouze vlastní znalost: iDrumTune Pro a hardware Tune-Bot dokazují placenou poptávku; počet konkurentů v App Store neověřen – pravděpodobně contested.",
+      "competitors": [
+        {
+          "name": "iDrumTune Pro",
+          "url": "",
+          "role": "parent",
+          "note": "Zavedená placená aplikace (URL mimo evidenci)."
+        },
+        {
+          "name": "Tune-Bot",
+          "url": "",
+          "role": "parent",
+          "note": "Hardware + aplikace."
+        },
+        {
+          "name": "Balance Pipe Band Tuner",
+          "url": "https://apps.apple.com/us/app/balance-bagpipe-tuner-pro/id1383389540",
+          "role": "niche",
+          "note": "Ladí i tenor/bas bubny pipe bandů – ukazuje, že technika ladění bubnů v aplikaci funguje."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "iDrumTune a Tune-Bot mají zavedenou značku a recenze – nejsme první ani jediní.",
+        "Mikrofon telefonu v hlučné zkušebně nezachytí čistě ťuknutí.",
+        "Bubeníci často ladí ‚podle ucha‘ a aplikaci po jednom použití smažou.",
+        "Obecné ladičky mohou přidat režim bubnu."
+      ],
+      "killer_risk": "Contested trh s etablovaným iDrumTune.",
+      "mitigation": "Lepší UX (vizualizace kruhu šroubů) a lokalizace (iDrumTune je hlavně anglický); nízká cena.",
+      "build_weeks": 5,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 3,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "music-26",
+      "name": "Wedding Musician Planner",
+      "tagline": "Cue sheet obřadu, repertoár pro nevěstu a checklist – pro svatební muzikanty.",
+      "pitch": "Svatební muzikanti (smyčcová kvarteta, harfistky, varhaníci, kapely) řeší s každým párem stejné věci: kdy nastoupit, na co hrát při příchodu nevěsty, podpis, odchod, koktejl, první tanec. Wedding Musician Planner vytvoří cue sheet obřadu, repertoárový katalog v PDF pro páry (výběr písní), časový harmonogram dne a checklist techniky. Profesionální výstup zvyšuje dojem a cenu služby.",
+      "niche": "Plánovač svatebního hraní pro muzikanty. Svatební plánovače cílí na páry (Zola, The Knot), gig aplikace na setlisty – svatební cue sheet nikdo neřeší.",
+      "parent_market": "Svatební aplikace (The Knot, Zola, WeddingWire) + gig aplikace pro muzikanty (Set List Maker, BandHelper).",
+      "target_user": "Svatební muzikanti: smyčcová tria/kvarteta, harfisté, varhaníci, akustická dua, DJové.",
+      "features": [
+        "Cue sheet obřadu (příchod, vstup nevěsty, podpis, odchod) s timingem",
+        "Repertoárový katalog → PDF/‚menu‘ pro pár",
+        "Harmonogram svatebního dne a kontakty (koordinátor, farář)",
+        "Checklist techniky a oblečení",
+        "Historie svateb + poznámky"
+      ],
+      "offline": "full",
+      "offline_note": "Lokální data a PDF export; žádné účty ani sdílení přes server.",
+      "monetization": "Předplatné 24,99 USD/rok (≈ 575 CZK) nebo 39,99 lifetime.",
+      "revenue_math": "Ideál: wedding musician / ceremony music planner / wedding cue sheet ≈ 1 200 stažení/měs. × 4 % = 48 × 24,99 × 0,85 = 1 020 USD ročních tržeb/měs.; průměr sezóny ≈ 600 USD ≈ 13 800 CZK.",
+      "revenue_czk_ideal": 13800,
+      "keywords": [
+        {
+          "kw": "wedding musician",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "ceremony music",
+          "saturation": 2,
+          "competitor": "odhad – playlisty obřadu",
+          "note": "Odhad."
+        },
+        {
+          "kw": "wedding cue sheet",
+          "saturation": 0,
+          "competitor": "odhad",
+          "note": "Odhad; velmi úzké."
+        },
+        {
+          "kw": "setlist",
+          "saturation": 8,
+          "competitor": "Set List Maker",
+          "note": "Evidence: SATURATED – parent."
+        }
+      ],
+      "demand_evidence": "Pouze vlastní znalost trhu; v evidenci je nápad jako neověřená díra sousedící se setlist aplikacemi. Objem vyhledávání neověřen.",
+      "competitors": [
+        {
+          "name": "Set List Maker",
+          "url": "https://apps.apple.com/ca/app/set-list-maker/id410496349",
+          "role": "parent",
+          "note": "Gig parent."
+        },
+        {
+          "name": "EasySetlist - Setlist Manager",
+          "url": "https://apps.apple.com/gb/app/easysetlist-setlist-manager/id1350127983",
+          "role": "niche",
+          "note": "Setlisty – svatby neřeší."
+        },
+        {
+          "name": "The Knot",
+          "url": "",
+          "role": "parent",
+          "note": "Svatební plánovač pro páry (URL mimo evidenci)."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Model ‚wedding ceremony musician‘ je silně US/UK (ceremony + cocktail hour); lokalizované verze pro evropské obřady (církevní vs civilní) a terminologii neexistují.",
+      "devils_advocate": [
+        "Sezónnost (květen–září) – výkyvy příjmů a odchody předplatitelů přes zimu.",
+        "Muzikanti mají vlastní Word šablony a neradi mění proces.",
+        "Svatební průmysl se liší kulturně – obřady v CZ/DE mají jiné momenty než US.",
+        "Velmi malý objem vyhledávání specifických frází."
+      ],
+      "killer_risk": "Nikdo tyto fráze v App Store nehledá.",
+      "mitigation": "Lifetime cena, šablony per kultura, klíčová slova ‚string quartet‘, ‚harpist‘, ‚wedding band‘.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "music-27",
+      "name": "Kirtan Harmonium Chords",
+      "tagline": "Akordy a melodie tradičních manter a bhadžanů pro harmonium – pro jógová studia a kirtanové skupiny.",
+      "pitch": "Kirtan (společné zpívání manter) je součástí jógové scény po celém světě a hraje se na indické harmonium. Začínající hráči potřebují jednoduché akordy a melodie tradičních manter (Om Namah Shivaya, Hare Krishna, Gayatri) na klávesách harmonia, transponované do jejich hlasu. Tradiční melodie jsou public domain; moderní verze známých interpretů nepoužíváme.",
+      "niche": "Akordové listy tradičních manter pro harmonium. Indické harmonium simulátory jsou pro indické publikum; jógové aplikace hudbu neučí.",
+      "parent_market": "Akordové aplikace a zpěvníky (Ultimate Guitar, OnSong) + jógové aplikace (Down Dog, Insight Timer) s obřím publikem.",
+      "target_user": "Učitelé jógy a vedoucí kirtanu, členové kirtanových skupin, jógová studia v US, DE, UK, AU, BR.",
+      "features": [
+        "Knihovna tradičních manter (text + přepis + akordy + melodie v sargam a západní notaci)",
+        "Transpozice do hlasu a klaviatura harmonia s prstoklady",
+        "Přehrávání drone/shruti a melodie",
+        "Setlisty pro kirtanový večer",
+        "Vlastní písně"
+      ],
+      "offline": "full",
+      "offline_note": "Obsah a samply harmonia v aplikaci.",
+      "monetization": "Pro 9,99 USD (≈ 230 CZK) jednorázově.",
+      "revenue_math": "Ideál: kirtan / harmonium chords / mantra chords ≈ 1 500 stažení/měs. × 4 % = 60 × 9,99 × 0,85 = 509 USD ≈ 11 700 CZK.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "kirtan",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "harmonium",
+          "saturation": 5,
+          "competitor": "odhad – simulátory harmonia",
+          "note": "Odhad; simulátory obsazené."
+        },
+        {
+          "kw": "mantra chords",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "shruti box",
+          "saturation": 5,
+          "competitor": "Shruti Box (~2009)",
+          "note": "Evidence z karnatického dotazu: shruti box aplikace existují (iSruthi, Shruti Box, Shruthi Box 2026) – obsazené."
+        }
+      ],
+      "demand_evidence": "Ověřeno jen sousedství: shruti/tampura aplikace jsou obsazené (8 karnatických aplikací). Kirtan a harmonium akordy – vlastní znalost, neověřeno.",
+      "competitors": [
+        {
+          "name": "iSruthi-Tampura Sruthi box",
+          "url": "https://apps.apple.com/in/app/isruthi-tampura-sruthi-box/id669394303",
+          "role": "niche",
+          "note": "Drone pro doprovod – sousední."
+        },
+        {
+          "name": "Shruthi Box",
+          "url": "https://apps.apple.com/il/app/shruthi-box/id6757926641",
+          "role": "niche",
+          "note": "2026 – nový vstup."
+        },
+        {
+          "name": "Ultimate Guitar",
+          "url": "",
+          "role": "parent",
+          "note": "Parent akordů (URL mimo evidenci)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Kulturní apropriace a přesnost – komunita je citlivá na chybné přepisy sanskrtu.",
+        "Populární melodie od známých interpretů (Krishna Das) jsou chráněné – tradiční verze mohou být méně žádané.",
+        "Harmonium simulátory zdarma mohou stačit.",
+        "Malá cílovka mimo US."
+      ],
+      "killer_risk": "Nízká poptávka po ‚tradičních‘ verzích vs chráněné populární.",
+      "mitigation": "Revize obsahu s učitelem kirtanu, důraz na výuku harmonia (prstoklady, levá ruka) místo jen akordů.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "music-28",
+      "name": "Clef Reader: Alto & Tenor Clef Trainer",
+      "tagline": "Čtěte altový a tenorový klíč plynule – pro violisty, violoncellisty a pozounisty.",
+      "pitch": "Aplikace na čtení not (Note Rush, Tenuto) se soustředí na houslový a basový klíč. Violisté čtou altový klíč denně, violoncellisté, fagotisté a pozounisté tenorový – a učí se ho pomalu. Clef Reader nabízí rychlé drilly pro C klíče, s rozpoznáním zahraného tónu přes mikrofon a postupnými úrovněmi. Specifický job-to-be-done, který velké aplikace zmiňují jen okrajově.",
+      "niche": "Trénink čtení C klíčů. Velké sight-reading aplikace je mají jako skrytou volbu nebo vůbec.",
+      "parent_market": "Aplikace na čtení not a teorii (Note Rush, Tenuto, Perfect Ear, Complete Music Reading Trainer).",
+      "target_user": "Violisté (a houslisté přecházející na violu), violoncellisté, fagotisté, pozounisté, studenti konzervatoří.",
+      "features": [
+        "Drily altového a tenorového klíče (plus soprán/mezzosoprán pro teorii)",
+        "Odpověď klaviaturou, jmény not nebo hrou na nástroj (detekce výšky)",
+        "Postupné rozšiřování rozsahu, pomocné linky",
+        "Statistiky chyb per nota",
+        "Režim ‚transpozice mezi klíči‘"
+      ],
+      "offline": "full",
+      "offline_note": "Generování not a detekce výšky na zařízení.",
+      "monetization": "Pro 5,99 USD (≈ 140 CZK) jednorázově.",
+      "revenue_math": "Ideál: alto clef / tenor clef / viola notes ≈ 2 500 stažení/měs. × 5 % = 125 × 5,99 × 0,85 = 636 USD ≈ 14 600 CZK (ideál; typicky polovina).",
+      "revenue_czk_ideal": 14600,
+      "keywords": [
+        {
+          "kw": "alto clef",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "Odhad; education evidence uvádí ‚alto clef‘ jako nevyhledaný kandidát."
+        },
+        {
+          "kw": "tenor clef",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "viola notes",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "note reading",
+          "saturation": 7,
+          "competitor": "odhad – Note Rush, Tenuto",
+          "note": "Odhad; head term obsazený."
+        }
+      ],
+      "demand_evidence": "Pouze vlastní znalost + zmínka v education evidenci (alto clef jako neprověřený kandidát). Studenti violy a violoncella jsou stabilní populace na hudebních školách.",
+      "competitors": [
+        {
+          "name": "Note Rush",
+          "url": "",
+          "role": "parent",
+          "note": "Sight-reading s poslechem (URL mimo evidenci)."
+        },
+        {
+          "name": "Tenuto",
+          "url": "",
+          "role": "parent",
+          "note": "Teorie a drily."
+        },
+        {
+          "name": "Complete Music Reading Trainer",
+          "url": "",
+          "role": "niche",
+          "note": "Obsahuje C klíče."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Note Rush/Complete Music Reading Trainer C klíče už podporují – rozdíl je jen marketingový.",
+        "Malá cílovka (violisté) a nízká cena → výnos těsně na hraně.",
+        "Aplikace se používá pár týdnů, pak ji student nepotřebuje – jednorázový nákup bez LTV.",
+        "Riziko 4.2 (minimální funkcionalita), pokud bude příliš jednoduchá."
+      ],
+      "killer_risk": "Existující sight-reading aplikace pokryjí funkci jako přepínač.",
+      "mitigation": "Hlubší obsah (výňatky orchestrálních partů z public domain, transpoziční cvičení) a lokalizace pro hudební školy (CZ ZUŠ, DE Musikschule, JP).",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 8
+      }
+    },
+    {
+      "id": "music-29",
+      "name": "Key Wheel: Harmonic Mixing Helper",
+      "tagline": "Camelot kolo v kapse: tónina a BPM vašich tracků na zařízení a návrh dalšího tracku.",
+      "pitch": "DJové mixují harmonicky podle Camelot kola, ale analýzu tóniny dělají v Mixed In Key na počítači. Key Wheel analyzuje tóninu a BPM souborů přímo v telefonu (Files, nikoli Apple Music DRM), ukáže kompatibilní tracky podle Camelot pravidel a pomůže sestavit set na cestě. Pro začínající DJe je to i výukový nástroj harmonického mixu.",
+      "niche": "Mobilní harmonický mix a příprava setu. Mixed In Key je desktop; DJ aplikace (djay) mají analýzu uvnitř, ale ne ‚plánovač‘ a výuku.",
+      "parent_market": "DJ nástroje – Mixed In Key (desktop, 58 USD), djay Pro, rekordbox; velký placený trh.",
+      "target_user": "Začínající a hobby DJové, producenti, DJ studenti.",
+      "features": [
+        "Analýza tóniny a BPM lokálních souborů (on-device)",
+        "Interaktivní Camelot kolo s pravidly (+1, −1, relativní)",
+        "Doporučení dalšího tracku z knihovny",
+        "Plánovač setu s energetickou křivkou",
+        "Výuka harmonického mixu"
+      ],
+      "offline": "full",
+      "offline_note": "Analýza zvuku na zařízení (chroma + beat tracking), soubory z Files; streamovací služby se nepoužívají.",
+      "monetization": "Pro 9,99 USD (≈ 230 CZK) jednorázově nebo 2,99 USD/měs.",
+      "revenue_math": "Ideál: camelot wheel / harmonic mixing / key finder ≈ 3 000 stažení/měs. × 2,5 % = 75 × 9,99 × 0,85 = 637 USD ≈ 14 600 CZK.",
+      "revenue_czk_ideal": 14600,
+      "keywords": [
+        {
+          "kw": "camelot wheel",
+          "saturation": 3,
+          "competitor": "odhad – statické reference",
+          "note": "Odhad; existují jednoduché referenční aplikace."
+        },
+        {
+          "kw": "harmonic mixing",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "key finder",
+          "saturation": 6,
+          "competitor": "odhad – song key finder aplikace",
+          "note": "Odhad; obsazené."
+        },
+        {
+          "kw": "dj key",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Pouze vlastní znalost: Mixed In Key je etablovaný placený produkt, Camelot kolo je standard v DJ komunitě. Konkurence na mobilu neověřena.",
+      "competitors": [
+        {
+          "name": "Mixed In Key",
+          "url": "",
+          "role": "parent",
+          "note": "Desktop lídr (URL mimo evidenci)."
+        },
+        {
+          "name": "djay - DJ App & Mixer",
+          "url": "",
+          "role": "parent",
+          "note": "DJ aplikace s analýzou tóniny."
+        },
+        {
+          "name": "rekordbox",
+          "url": "",
+          "role": "parent",
+          "note": "Pioneer DJ."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "DJové mají soubory v rekordbox/Serato na počítači, ne v telefonu – workflow nesedí.",
+        "‚Camelot‘ je ochranná známka Mixed In Key – nelze v názvu/klíčových slovech bez rizika.",
+        "djay a rekordbox mobilní verze analýzu mají zdarma.",
+        "Analýza tóniny není 100% přesná – DJ komunita je náročná."
+      ],
+      "killer_risk": "Ochranná známka ‚Camelot‘ + nesoulad s workflow DJů.",
+      "mitigation": "Vlastní notace ‚key wheel‘ (Open Key styl) a Camelot jen v popisu jako kompatibilita po právní kontrole; import rekordbox XML exportu.",
+      "build_weeks": 6,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 4
+      }
+    },
+    {
+      "id": "music-30",
+      "name": "Open Tuning Chord Finder",
+      "tagline": "Akordy a stupnice pro DADGAD, open G, open D a další ladění – všechno, co běžné akordové aplikace přeskočí.",
+      "pitch": "Fingerstyle, keltští a bluesoví kytaristé hrají v otevřených laděních, ale akordové aplikace jsou postavené na standardním ladění. Open Tuning Chord Finder generuje akordy a stupnice pro libovolné ladění (DADGAD, open G, open D, CGCGCD…), ukazuje hlasová vedení a má ladičku, která přeladí kytaru do daného ladění. Jednoduchý algoritmus, trvale užitečný obsah.",
+      "niche": "Akordová reference pro alternativní ladění. Velké aplikace je nabízí okrajově nebo za paywallem celé platformy.",
+      "parent_market": "Akordové aplikace (Ultimate Guitar, Smart Chords, GuitarTuna) – obří trh.",
+      "target_user": "Fingerstyle a akustičtí kytaristé, slide/blues hráči, keltská scéna, songwriteři.",
+      "features": [
+        "Generátor akordů pro libovolné ladění (algoritmicky)",
+        "Knihovna ladění s popisem a známými styly",
+        "Ladička pro přeladění do cílového ladění",
+        "Stupnice a pentatoniky na hmatníku",
+        "Oblíbené tvary a vlastní ladění"
+      ],
+      "offline": "full",
+      "offline_note": "Algoritmický generátor a ladička na zařízení.",
+      "monetization": "Pro 6,99 USD (≈ 160 CZK) jednorázově.",
+      "revenue_math": "Ideál: dadgad chords / open tuning / open g chords ≈ 3 000 stažení/měs. × 3 % = 90 × 6,99 × 0,85 = 535 USD ≈ 12 300 CZK.",
+      "revenue_czk_ideal": 12300,
+      "keywords": [
+        {
+          "kw": "dadgad",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "open tuning",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "open g chords",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "Odhad."
+        },
+        {
+          "kw": "alternate tuning",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Pouze vlastní znalost: DADGAD a open G jsou populární témata na YouTube a fórech; konkurence v App Store neověřena (evidence to označuje jako ‚pravděpodobně funkce velkých akordových aplikací‘).",
+      "competitors": [
+        {
+          "name": "Smart Chords",
+          "url": "",
+          "role": "parent",
+          "note": "Umí vlastní ladění – silná hrozba (URL mimo evidenci)."
+        },
+        {
+          "name": "Ultimate Guitar",
+          "url": "",
+          "role": "parent",
+          "note": "Parent."
+        },
+        {
+          "name": "UniTuner - Chromatic Tuner",
+          "url": "https://apps.apple.com/is/app/unituner-chromatic-tuner/id1546441866",
+          "role": "niche",
+          "note": "200+ ladění v ladičce."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Smart Chords a jiné už alternativní ladění podporují – nika může být funkce, ne produkt.",
+        "Kytaristé v otevřených laděních jsou zkušenější a mnozí akordy znají.",
+        "Nízká cena a jednorázový nákup – výnos na hraně.",
+        "4.3 riziko, pokud jde o ‚další akordovou aplikaci‘ v portfoliu (spolu s buzuki a dulcimerem)."
+      ],
+      "killer_risk": "Jen funkce existujících akordových aplikací.",
+      "mitigation": "Postavit sdílený engine, ale jasně odlišný produkt/UX; ASO na konkrétní ladění (DADGAD je samostatná fráze).",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 5
+      }
+    }
+  ]
+}

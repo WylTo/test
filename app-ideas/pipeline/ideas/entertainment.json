@@ -1,0 +1,2653 @@
+{
+  "category": "Entertainment",
+  "category_slug": "entertainment",
+  "search_notes": "",
+  "ideas": [
+    {
+      "id": "entertainment-01",
+      "name": "Lenormand Grand Tableau",
+      "tagline": "Moderní Lenormand s trenérem Grand Tableau – v 50 jazycích, zatímco konkurence usnula v roce 2016.",
+      "pitch": "Lenormand (36 karet) je obrovský v Brazílii („baralho cigano“), Německu a Francii, ale všechny aplikace, které evidence našla, pocházejí z let 2012–2017. Vytáhneme ho do moderního iOS: výklady 3/5/9 karet, kombinace dvojic, a hlavně trenér Grand Tableau (36 karet, domy, vzdálenosti), který nikdo pořádně neučí. Tarotový rodičovský trh vydělává miliony a platí předplatné; my bereme jeho zapomenutého sourozence. Lokalizace do PT-BR, DE, FR, ES a dalších je náš hlavní trumf.",
+      "niche": "Lenormand místo tarotu. Velké tarotové aplikace (Labyrinthos, Golden Thread) Lenormand ignorují nebo ho mají jen jako doplněk; dedikované aplikace jsou staré, anglické a bez trenéru Grand Tableau.",
+      "parent_market": "Tarot a věštění z karet – jeden z nejvýdělečnějších podžánrů Entertainment/Lifestyle (Labyrinthos, Golden Thread Tarot, Mystic Tarot Reading).",
+      "target_user": "Ženy 25–55 v BR, DE, FR, PL, CZ, které vykládají Lenormand samy nebo se ho učí; začínající kartářky.",
+      "features": [
+        "Denní karta a výklady 3/5/9 karet s významy dvojic",
+        "Trenér Grand Tableau: domy, blízko/daleko, zrcadlení, kvízy",
+        "Deník výkladů s fotkou fyzických karet",
+        "Vlastní balíček: veřejně volné historické ilustrace",
+        "Widget s kartou dne"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně: významy karet, kombinace a kvízy jsou statická data; deník v iCloud/CloudKit. Žádný server.",
+      "monetization": "Freemium: denní karta zdarma; Pro 19,99 USD/rok (~460 Kč) nebo doživotně 29,99 USD (~690 Kč).",
+      "revenue_math": "3 000 stažení/měs (součet klíčových slov v 50 jazycích, hlavně BR/DE/FR) × 3 % konverze = 90 nákupů × průměr 18 USD = 1 620 USD hrubě × 0,85 × 23 ≈ 31 700 Kč čistého.",
+      "revenue_czk_ideal": 31000,
+      "keywords": [
+        {
+          "kw": "lenormand",
+          "saturation": 6,
+          "competitor": "Tarot Lenormand! (stará appka, id z roku 2012)",
+          "note": "evidence (lifestyle): 6 titulů, ale všechny id 559M–1,29B = 2012–2017, pravděpodobně opuštěné; ověřeno webem"
+        },
+        {
+          "kw": "lenormand cards reading",
+          "saturation": 6,
+          "competitor": "Lenormand readings - FREE cards fortunetelling",
+          "note": "evidence: stejný shluk starých aplikací; nápověda Apple neověřena"
+        },
+        {
+          "kw": "grand tableau",
+          "saturation": 1,
+          "competitor": "Seventh Sphere Lenormand Tarot (dvojice karet)",
+          "note": "odhad (Apple API v tomto běhu blokované), trenér Grand Tableau v evidenci nikdo nemá"
+        },
+        {
+          "kw": "baralho cigano",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), portugalský termín, BR je hlavní trh"
+        }
+      ],
+      "demand_evidence": "Ověřeno (web, lifestyle evidence): na „lenormand cards reading“ existuje 6+ titulů, všechny staré (2012–2017) – poptávka kdysi byla dost velká na to, aby vznikly, a dnes je obsluhují zastaralé aplikace. Předpoklad: popularita v BR/DE/FR (znalost trhu, fyzické balíčky se prodávají masově); objemy vyhledávání neověřeny.",
+      "competitors": [
+        {
+          "name": "Mystic Tarot Reading",
+          "url": "https://apps.apple.com/ee/app/mystic-tarot-reading/id1466775754",
+          "role": "parent",
+          "note": "tarotový rodič, obecné věštění"
+        },
+        {
+          "name": "Tarot Lenormand!",
+          "url": "https://apps.apple.com/us/app/tarot-lenormand/id559741969",
+          "role": "niche",
+          "note": "stará appka s deníkem, pravděpodobně neaktualizovaná"
+        },
+        {
+          "name": "Fairy Tale Lenormand",
+          "url": "https://apps.apple.com/us/app/fairy-tale-lenormand/id1148686705",
+          "role": "niche",
+          "note": "tematický balíček s deníkem, starší id"
+        },
+        {
+          "name": "Lenormand readings - FREE cards fortunetelling",
+          "url": "https://apps.apple.com/ie/app/lenormand-readings-free-cards-fortunetelling-and/id982770853",
+          "role": "niche",
+          "note": "zdarma, reklamy, staré"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap: model velký v BR/DE/FR, v anglojazyčném App Store jen starými aplikacemi; lokalizujeme do 50 jazyků včetně PT-BR a DE jako první.",
+      "devils_advocate": [
+        "Tarotové aplikace (Labyrinthos) mohou Lenormand přidat jako balíček za týden a mají obrovskou uživatelskou základnu.",
+        "Brazilský trh má nízkou kupní sílu a vysoký podíl pirátství/Androidu – iOS konverze v BR může být pod 1 %.",
+        "Apple Guideline 4.3: věštecké aplikace jsou přeplněná kategorie a recenzent může appku vnímat jako šablonu.",
+        "Starší aplikace mají nasbírané recenze, a proto mohou držet pozice na hlavním termínu i bez aktualizací."
+      ],
+      "killer_risk": "Tarotový gigant přidá Lenormand balíček a náš klíčový termín převezme silou recenzí.",
+      "mitigation": "Postavit USP na Grand Tableau trenéru (hloubka, kterou velcí nedělají), rychle nasbírat recenze v PT-BR a DE, cenit regionálně (nižší BR ceny).",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 7,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "entertainment-02",
+      "name": "Audio Guest Book Kiosk",
+      "tagline": "Svatební „telefonní“ audio kniha hostů z iPadu nebo starého iPhonu – bez půjčovny za 5 000 Kč.",
+      "pitch": "Audio guestbook (starý telefon, do kterého hosté namluví vzkaz) je horký svatební trend a půjčovny si za něj účtují 150–300 USD. Starý iPhone nebo iPad s naší aplikací udělá totéž: velké tlačítko „Nahrát vzkaz“, přehrání pozdravu novomanželů, kiosk režim s Guided Access a export všech vzkazů jako alba. Páry platí na svatbě za všechno a jednorázových 15 USD je pro ně drobné. Nikdo tuto funkci jako dedikovanou iOS appku zatím výrazně nevlastní.",
+      "niche": "DIY audio kniha hostů. Svatební aplikace (Zola, The Knot) řeší plánování a weby; fotokoutky řeší fotky; hlasové vzkazy jako kiosk nikdo neřeší, protože trh vlastní půjčovny hardwaru.",
+      "parent_market": "Svatební tech a event rentals (audio guestbook rentals, fotokoutky jako Simple Booth); svatební aplikace Zola, The Knot, WeddingWire.",
+      "target_user": "Snoubenci 25–35, kteří plánují svatbu svépomocí; také oslavy narozenin a firemní akce.",
+      "features": [
+        "Kiosk režim s velkým tlačítkem a návodem pro Guided Access",
+        "Uvítací zpráva novomanželů a zvuk oznamovacího tónu",
+        "Nahrávání bez limitu, jméno hosta volitelně",
+        "Export: ZIP/M4A, sestřih do jedné „pásky“, sdílení přes AirDrop",
+        "Tisknutelná cedulka s QR a instrukcemi"
+      ],
+      "offline": "full",
+      "offline_note": "Nahrávání přes AVAudioRecorder lokálně, export do Files/AirDrop. Žádný server ani účet.",
+      "monetization": "Zdarma na test (3 vzkazy); odemčení akce 14,99 USD (~345 Kč) jednorázově, doplněk „sestřih pásky“ 4,99 USD.",
+      "revenue_math": "1 000 stažení/měs × 10 % (páry, které appku reálně nasadí) = 100 × 14,99 USD = 1 499 USD × 0,85 × 23 ≈ 29 300 Kč.",
+      "revenue_czk_ideal": 29000,
+      "keywords": [
+        {
+          "kw": "audio guest book",
+          "saturation": 3,
+          "competitor": "neznámý (spíše půjčovny a weby)",
+          "note": "odhad (Apple API v tomto běhu blokované), trend 2023–26; dedikovaných iOS aplikací v titulku odhaduji málo"
+        },
+        {
+          "kw": "wedding guest book",
+          "saturation": 5,
+          "competitor": "digitální knihy hostů (foto/text)",
+          "note": "odhad (Apple API v tomto běhu blokované), většinou foto/text, ne audio"
+        },
+        {
+          "kw": "voice guestbook",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), nízká poptávka, ale přesná shoda"
+        },
+        {
+          "kw": "wedding voicemail",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), slovo z marketingu půjčoven"
+        }
+      ],
+      "demand_evidence": "Neověřeno živými daty. Ze znalosti trhu: audio guestbook půjčovny (After the Tone, Fete Phone apod.) jsou v USA/UK běžné a svatební média o trendu píší od 2023. Objem App Store vyhledávání je předpoklad.",
+      "competitors": [
+        {
+          "name": "Simple Booth",
+          "url": "",
+          "role": "parent",
+          "note": "eventový kiosk (fotokoutek) s předplatným – dokazuje ochotu platit za event kiosk"
+        },
+        {
+          "name": "Zola Wedding Planner",
+          "url": "",
+          "role": "parent",
+          "note": "svatební rodičovský trh"
+        },
+        {
+          "name": "After the Tone (rental)",
+          "url": "",
+          "role": "us-only",
+          "note": "půjčovna hardwaru, USA; ukazuje cenu 150–300 USD"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Hosté na svatbě nečtou instrukce – bez telefonního sluchátka je zážitek slabší a páry raději zaplatí půjčovnu s retro telefonem.",
+        "Jednorázový nákup na jednu událost = žádné opakované příjmy, každý měsíc musíme získat nové páry.",
+        "Svatební sezóna: květen–září tvoří většinu tržeb, zima je slabá.",
+        "Kiosk režim na iOS vyžaduje ruční Guided Access – technicky neumíme appku „zamknout“ sami."
+      ],
+      "killer_risk": "Uživatelé chtějí fyzický retro telefon; appka na iPadu je pro ně „levná náhražka“.",
+      "mitigation": "Podpora sluchátka přes Lightning/USB-C/Bluetooth a návod „kup retro telefon s USB za 30 USD“; marketing jako DIY verze trendu.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 7,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-03",
+      "name": "Line Learner for Actors",
+      "tagline": "Nauč se roli s partnerem, který nikdy nechybí – pro ochotníky v jejich jazyce.",
+      "pitch": "Herci amatérských divadel se učí texty s tužkou a partnerem, který nemá čas. Americké aplikace (Rehearsal Pro, LineLearner, Scene Partner) to řeší, ale jsou anglocentrické a drahé. My uděláme appku, kam naskenuješ scénář (Vision OCR), označíš svoji roli, ostatní postavy přečte on-device hlas a ty odpovídáš – rozpoznávání řeči tě opraví. Ochotnická divadla jsou masová v DE, CZ, PL, NL a Skandinávii; to je náš prostor.",
+      "niche": "Amatérské divadlo a školní představení mimo angličtinu. Profesionální nástroje cílí na americké herce v konkurzech a nemají lokalizované hlasy ani UI.",
+      "parent_market": "Aplikace pro herce a učení textů (Rehearsal Pro – dlouholetý placený lídr, LineLearner, Scene Partner, ColdRead).",
+      "target_user": "Ochotníci, studenti dramatické výchovy, školní divadla, amatérské muzikálové soubory (DE „Laientheater“, CZ „ochotníci“).",
+      "features": [
+        "Sken scénáře kamerou (Vision OCR) + import PDF",
+        "Označení vlastní role, ostatní čte syntetický hlas zařízení",
+        "Režimy: čtu s nápovědou, skryté repliky, jen nástupy",
+        "Kontrola odříkané repliky přes on-device Speech",
+        "Nahrání vlastních partnerů hlasem"
+      ],
+      "offline": "full",
+      "offline_note": "OCR (Vision), TTS (AVSpeechSynthesizer) a rozpoznávání řeči (on-device Speech) běží lokálně; iCloud jen pro sync scénářů.",
+      "monetization": "Freemium (1 scénář zdarma); Pro 19,99 USD/rok (~460 Kč) nebo doživotně 34,99 USD (~805 Kč).",
+      "revenue_math": "1 500 stažení/měs × 5 % = 75 × průměr 20 USD = 1 500 USD × 0,85 × 23 ≈ 29 300 Kč.",
+      "revenue_czk_ideal": 29000,
+      "keywords": [
+        {
+          "kw": "learn lines",
+          "saturation": 6,
+          "competitor": "Rehearsal Pro / LineLearner",
+          "note": "odhad (Apple API v tomto běhu blokované), anglicky přeplněné, jen rodičovský důkaz"
+        },
+        {
+          "kw": "rollentext lernen",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), německý termín, pravděpodobně prázdný"
+        },
+        {
+          "kw": "script rehearsal",
+          "saturation": 4,
+          "competitor": "Scene Partner",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "theater lines",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        }
+      ],
+      "demand_evidence": "Ověřeno není nic (offline běh). Znalost trhu: Rehearsal Pro je dlouhodobě placený (~20 USD) a má stabilní uživatele, což dokazuje ochotu platit; ochotnických souborů jsou jen v DE tisíce. Objemy v lokálních jazycích jsou předpoklad.",
+      "competitors": [
+        {
+          "name": "Rehearsal Pro",
+          "url": "",
+          "role": "parent",
+          "note": "placený lídr v USA, anglocentrický"
+        },
+        {
+          "name": "LineLearner",
+          "url": "",
+          "role": "us-only",
+          "note": "anglické UI, nahrávání replik"
+        },
+        {
+          "name": "Scene Partner",
+          "url": "",
+          "role": "niche",
+          "note": "AI partner, pravděpodobně online"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Model ověřený v USA (Rehearsal Pro, LineLearner) je anglický; on-device TTS a Speech umí desítky jazyků, takže můžeme model přenést do DE/CZ/PL/NL/FR bez serveru.",
+      "devils_advocate": [
+        "On-device rozpoznávání řeči v menších jazycích (čeština, polština) má slabší přesnost a herce bude frustrovat.",
+        "OCR divadelních scénářů s různým formátováním (jména postav, poznámky režie) je křehké; ruční opravy zabijí první dojem.",
+        "Ochotníci jsou cenově citliví a často starší – předplatné nemusí vzít.",
+        "Apple může do Notes/Preview přidat „čtení rolí“ – nepravděpodobné, ale ChatGPT voice mode už něco podobného zvládne."
+      ],
+      "killer_risk": "Parsování scénáře selže v neanglických formátech a uživatel appku po prvním pokusu smaže.",
+      "mitigation": "Ruční režim „označ řádek jako moji repliku“ jako záloha, podpora nejčastějších formátů divadelních agentur (DE Verlag PDF), doživotní licence pro starší uživatele.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 7,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-04",
+      "name": "Kartenblock: Skat & Doppelkopf",
+      "tagline": "Digitální skatový blok, který spočítá každou hru – Skat, Doppelkopf a Schafkopf v jedné appce.",
+      "pitch": "Každý pátek se v Německu hrají statisíce partií Skatu a Doppelkopfu a body se stále píšou na papír s chybami. Evidence našla na celý trh jediný dedikovaný kalkulátor (Schafkopf-Rechner). Uděláme přehledný blok: zadáš hru, hlášky, Kontra/Re, a appka spočítá body podle oficiálních i domácích pravidel, vede statistiky hráčů a rozúčtuje centy. Hráči jsou věrní a starší publikum platí jednorázově bez odporu.",
+      "niche": "Počítadlo bodů pro německé karetní hry. Herní studia dělají hry proti AI/online, bodovací bloky nikoho nezajímají, protože jsou „malé“.",
+      "parent_market": "Online karetní hry pro DACH (Spiele-Palast: Schafkopf/Sheepshead Online, Skat-Palast; CardGames.io) – ověřená platící komunita.",
+      "target_user": "Skatové a Doppelkopf skupiny (typicky 40–75 let), spolky a hospodské stoly v DE/AT.",
+      "features": [
+        "Skat: hodnota hry, Hand/Schneider/Schwarz, Ramsch, seznam dle ISkO",
+        "Doppelkopf: Re/Kontra, hlášky, sóla, povinné sólo, Bock kola",
+        "Schafkopf: Ruf, Wenz, Solo, Tout, Laufende",
+        "Domácí pravidla a cena za bod – rozúčtování v eurech",
+        "Statistiky hráčů a export listu jako PDF"
+      ],
+      "offline": "full",
+      "offline_note": "Čistě lokální výpočty a uložení (SwiftData + iCloud). Žádná síť.",
+      "monetization": "Zdarma 1 hra/večer; Pro jednorázově 4,99 USD (~115 Kč), volitelný tip jar.",
+      "revenue_math": "1 500 stažení/měs (DE/AT, „skat liste“, „doppelkopf abrechnung“) × 8 % = 120 × 4,99 USD = 599 USD × 0,85 × 23 ≈ 11 700 Kč.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "schafkopf rechner",
+          "saturation": 1,
+          "competitor": "Schafkopf-Rechner",
+          "note": "evidence (games): jediný kalkulátor, 1 titul; ověřeno webem"
+        },
+        {
+          "kw": "doppelkopf abrechnung",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), v evidenci neprověřeno, jen jako kandidát"
+        },
+        {
+          "kw": "skat liste",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "skat block",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        }
+      ],
+      "demand_evidence": "Ověřeno (web, games evidence): „schafkopf rechner“ má jediný titul, „schafkopf offline“ 3 aplikace, Spiele-Palast provozuje placené online verze – komunita je živá. Neověřeno: přesné objemy pro Skat/Doppelkopf bloky.",
+      "competitors": [
+        {
+          "name": "Schafkopf-Rechner",
+          "url": "https://apps.apple.com/de/app/schafkopf-rechner/id1581835652",
+          "role": "niche",
+          "note": "jediný nalezený kalkulátor, jen Schafkopf"
+        },
+        {
+          "name": "Schafkopf Sheepshead Online (Spiele-Palast)",
+          "url": "https://apps.apple.com/us/app/schafkopf-sheepshead-online/id853048043",
+          "role": "parent",
+          "note": "placená online karetní komunita DACH"
+        },
+        {
+          "name": "CardGames.io",
+          "url": "https://apps.apple.com/ag/app/cardgames-io/id1496007149",
+          "role": "parent",
+          "note": "sbírka karetních her, ukazuje zájem o klasické hry"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Starší hráči mají papír a tužku za 0 Kč – digitalizace pro ně není bolest, jen zvyk.",
+        "Pravidla Doppelkopfu se liší stůl od stolu; když appka nepokryje domácí pravidla, dostaneme 1★ recenze.",
+        "Trh je prakticky jen DE/AT – 50 jazyků nepomůže a strop je nízký.",
+        "Games agentura navrhuje podobný „Kartenblock“ – riziko kanibalizace v našem vlastním portfoliu."
+      ],
+      "killer_risk": "Strop trhu: i dominantní pozice v DE přinese jen něco kolem 10k Kč/měs.",
+      "mitigation": "Flexibilní editor domácích pravidel, sdílení listu přes AirDrop pro celý stůl, případně rozšíření o Sheepshead (US Midwest) a Mariáš (CZ) v jedné appce.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 8,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "entertainment-05",
+      "name": "Fincan: Coffee Cup Reading",
+      "tagline": "Turecké věštění z kávové sedliny – přímo v telefonu, bez čekání na „kartářku“ a bez serveru.",
+      "pitch": "Věštění z kávové sedliny (kahve falı) je v Turecku, Řecku a na Blízkém východě masová zábava – Faladdin v Turecku vydělává miliony s lidskými „věštci“ a servery. My vyfotíme šálek, Vision najde tvary a on-device model (Apple Foundation Models) napíše hravý výklad ve stylu tradice, v jazyce uživatele. Nic neodchází z telefonu, výsledek je okamžitý. Jde o reverzní gap: model obrovský v TR, mimo něj téměř neznámý, a diaspora v DE/NL/UK ho hledá.",
+      "niche": "Tasseografie s on-device AI v 50 jazycích. Turečtí lídři běží na serverech a lidských čtenářích (drahé), mimo TR nikdo tradici nelokalizuje.",
+      "parent_market": "Věštecké a astrologické aplikace (Co–Star, Nebula, Faladdin v TR) – ověřeně vysoké tržby z předplatného.",
+      "target_user": "Ženy 18–40 v TR/GR/arabských zemích a diaspoře v DE/NL/UK; zvídaví uživatelé věšteckých appek jinde.",
+      "features": [
+        "Průvodce přípravou šálku a focení 3 úhlů",
+        "Detekce tvarů a symbolů (Vision + slovník 200 tradičních symbolů)",
+        "Výklad generovaný on-device (Foundation Models) s fallbackem na šablony",
+        "Deník výkladů a „splnilo se?“",
+        "Sdílitelná karta výkladu"
+      ],
+      "offline": "full",
+      "offline_note": "Vision a Apple Foundation Models běží na zařízení; na starších iPhonech bez Apple Intelligence fallback na šablonový výklad ze slovníku symbolů.",
+      "monetization": "3 výklady týdně zdarma; Premium 2,99 USD/týden nebo 29,99 USD/rok (~690 Kč).",
+      "revenue_math": "4 000 stažení/měs (TR + diaspora + 50 jazyků) × 4 % = 160 platících × průměr 7 USD/měs = 1 120 USD × 0,85 × 23 ≈ 21 900 Kč.",
+      "revenue_czk_ideal": 21900,
+      "keywords": [
+        {
+          "kw": "coffee cup reading",
+          "saturation": 4,
+          "competitor": "Faladdin",
+          "note": "odhad (Apple API v tomto běhu blokované), anglický termín, pár aplikací"
+        },
+        {
+          "kw": "kahve falı",
+          "saturation": 8,
+          "competitor": "Faladdin",
+          "note": "odhad (Apple API v tomto běhu blokované), v TR přeplněné, jen rodičovský důkaz"
+        },
+        {
+          "kw": "tasseography",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "kaffeesatz lesen",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), DE diaspora"
+        }
+      ],
+      "demand_evidence": "Neověřeno živě. Znalost trhu: Faladdin patří k nejstahovanějším zábavním appkám v Turecku; tradice je rozšířená v GR, CY, LB, AM. Poptávka mimo TR je předpoklad.",
+      "competitors": [
+        {
+          "name": "Faladdin",
+          "url": "",
+          "role": "parent",
+          "note": "turecký lídr, server + lidští čtenáři"
+        },
+        {
+          "name": "Mystic Tarot Reading",
+          "url": "https://apps.apple.com/ee/app/mystic-tarot-reading/id1466775754",
+          "role": "parent",
+          "note": "věštecký rodičovský trh"
+        },
+        {
+          "name": "Co–Star",
+          "url": "",
+          "role": "parent",
+          "note": "astrologie s předplatným, ukazuje ochotu platit"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap: model ověřený v Turecku, mimo TR a turečtinu téměř nedostupný; lokalizace do 50 jazyků a diaspora v DE/NL.",
+      "devils_advocate": [
+        "Apple Foundation Models nemusí podporovat turečtinu/arabštinu nebo běží jen na iPhonu 15 Pro a novějších – velká část trhu dostane slabší šablonový výklad.",
+        "Guideline 4.3 a 5.x: věštecké aplikace s AI jsou přeplněné „spam“ šablonami; recenze může být přísná.",
+        "Turecký trh je silně Android a ceny jsou nízké.",
+        "Kulturní nuance: bez lidského čtenáře výklad působí genericky a retence padá."
+      ],
+      "killer_risk": "On-device model v turečtině/arabštině není k dispozici nebo je kvalitativně slabý, takže hlavní trh dostane podřadný produkt.",
+      "mitigation": "Začít EN/DE/NL diasporou a jazyky, které Apple Intelligence podporuje; velmi kvalitní ručně psaný slovník symbolů jako základ, AI jen jako „vypravěč“.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 6,
+        "monetization": 7,
+        "build_ease": 5,
+        "offline_fit": 9,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-06",
+      "name": "Murder Mystery Host Kit",
+      "tagline": "Vražedná večírková hra pro 6–12 přátel: postavy, stopy a odhalení řídí telefon hostitele.",
+      "pitch": "Murder mystery večírky jsou v USA a UK stálice – boxové sady a PDF kity se prodávají za 20–40 USD. Aplikace, která je hostiteli naservíruje offline (postavy s tajnými kartami posílanými přes AirDrop, kola stop, časovač, hudba a finální odhalení), je vzácná a téměř nikdy není lokalizovaná. Napíšeme vlastní originální scénáře a prodáme je jako balíčky. Každý nový scénář je nový produkt pro stejné uživatele.",
+      "niche": "Offline hostitelský kit pro murder mystery s vlastními scénáři. Velcí vydavatelé prodávají papír/PDF, digitální tvůrci jsou anglicky a online.",
+      "parent_market": "Murder mystery party kity (US/UK trh boxových a PDF her), party hry typu Heads Up!, detektivní hry (Hunt A Killer – předplatné).",
+      "target_user": "Hostitelé domácích večírků 25–45, rozlučky, firemní teambuildingy, narozeniny.",
+      "features": [
+        "Průvodce přípravou: počet hráčů, obsazení rolí, pozvánky",
+        "Tajné karty postav přes AirDrop/tisk",
+        "Řízení kol: stopy, časovač, zvuková kulisa",
+        "Finální hlasování a dramatické odhalení",
+        "2 scénáře v základu, další jako IAP balíčky"
+      ],
+      "offline": "full",
+      "offline_note": "Scénáře jsou součástí aplikace nebo IAP (hostované Apple jako on-demand resources), sdílení karet přes AirDrop/PDF.",
+      "monetization": "Aplikace zdarma s ukázkou; scénář 9,99 USD (~230 Kč), balíček 3 scénářů 19,99 USD.",
+      "revenue_math": "1 500 stažení/měs × 8 % = 120 nákupů × 9,99 USD = 1 199 USD × 0,85 × 23 ≈ 23 400 Kč.",
+      "revenue_czk_ideal": 23400,
+      "keywords": [
+        {
+          "kw": "murder mystery party",
+          "saturation": 5,
+          "competitor": "neznámý (mix her a kitů)",
+          "note": "odhad (Apple API v tomto běhu blokované), v titulcích spíše hry/detektivky než hostitelské kity"
+        },
+        {
+          "kw": "murder mystery game",
+          "saturation": 7,
+          "competitor": "různé detektivní hry",
+          "note": "odhad (Apple API v tomto běhu blokované), přeplněné hrami, jen rodičovský důkaz"
+        },
+        {
+          "kw": "host murder mystery",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "krimidinner",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), DE termín – reverzní šance"
+        }
+      ],
+      "demand_evidence": "Neověřeno živě. Znalost trhu: kity (My Mystery Party, Night of Mystery) a „Krimidinner“ v DE se dlouhodobě prodávají; hostitelská appka je pro offline běh předpoklad.",
+      "competitors": [
+        {
+          "name": "Hunt A Killer",
+          "url": "",
+          "role": "parent",
+          "note": "detektivní předplatné, prokazuje ochotu platit"
+        },
+        {
+          "name": "Heads Up!",
+          "url": "",
+          "role": "parent",
+          "note": "party hry na telefonu"
+        },
+        {
+          "name": "Party Games: Imposter & Cards",
+          "url": "https://apps.apple.com/us/app/party-games-imposter-cards/id6766637109",
+          "role": "niche",
+          "note": "pass-and-play party hry, obecnější"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Formát je silný v USA/UK (anglické kity), lokalizované verze (DE Krimidinner, FR „soirée enquête“, ES) jako aplikace téměř chybí.",
+      "devils_advocate": [
+        "Tvorba kvalitních scénářů je drahá a pomalá (spisovatelská práce), a každý scénář hostitel použije jen jednou.",
+        "Lokalizace scénářů do 50 jazyků je obsahově obrovská – strojový překlad zabije humor a zápletku.",
+        "Sezónnost: Halloween a Silvestr tvoří špičky.",
+        "Konkurence levných PDF kitů na Etsy za 5–10 USD."
+      ],
+      "killer_risk": "Nízká opakovaná spotřeba: hostitel koupí jeden scénář za rok.",
+      "mitigation": "Začít EN+DE+ES, scénáře psát s AI asistencí a lidskou redakcí, nabídnout „scénář měsíce“ a firemní licenci.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 7,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-07",
+      "name": "Tooth Fairy & Pérez Cam",
+      "tagline": "Chyť Zoubkovou vílu – nebo Ratoncita Péreze, la Petite Souris či Zahnfee – na fotce z dětského pokoje.",
+      "pitch": "V USA existují „Catch the Tooth Fairy“ appky, kde rodiče vloží vílu do fotky dětského pokoje jako důkaz návštěvy. Ale tradice se liší: ve Španělsku a Latinské Americe nosí zub myška Ratoncito Pérez, ve Francii la Petite Souris, v Itálii Topolino. Uděláme appku s AR postavičkami podle kultury, certifikáty za zub, deníkem zoubků a dopisy – v 50 jazycích. Rodiče dětí 5–10 let platí za kouzlo bez váhání.",
+      "niche": "Zubní víla/myška lokalizovaná podle kultury. Americké aplikace mají jen anglosaskou vílu; španělsky/francouzsky mluvící trh je nepokrytý.",
+      "parent_market": "„Catch Santa/Elf“ a „Tooth Fairy“ foto aplikace – sezónní i celoroční kouzelné foto appky pro rodiče.",
+      "target_user": "Rodiče dětí 5–10 let (výměna zubů trvá ~6 let) v ES/LatAm, FR, IT, DE, BR i US.",
+      "features": [
+        "Vložení postavy do fotky/videa (AR s ARKit + animace)",
+        "Kulturní varianty: víla, myška Pérez, Petite Souris, Zahnfee",
+        "Certifikát a dopis od postavy s jménem dítěte",
+        "Deník vypadaných zubů s mapou úst",
+        "Tisknutelné „stopy“ a obálky"
+      ],
+      "offline": "full",
+      "offline_note": "Animace a assety v bundlu, skládání fotek on-device (ARKit/Core Image).",
+      "monetization": "Freemium: 1 fotka zdarma; odemčení 3,99 USD (~92 Kč) jednorázově nebo balíček postav 1,99 USD.",
+      "revenue_math": "3 000 stažení/měs (ES/LatAm/FR/IT/US) × 6 % = 180 × 3,99 USD = 718 USD × 0,85 × 23 ≈ 14 000 Kč.",
+      "revenue_czk_ideal": 14000,
+      "keywords": [
+        {
+          "kw": "tooth fairy",
+          "saturation": 7,
+          "competitor": "Catch the Tooth Fairy (US)",
+          "note": "odhad (Apple API v tomto běhu blokované), anglicky přeplněné, rodičovský důkaz"
+        },
+        {
+          "kw": "ratoncito perez",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), španělský termín"
+        },
+        {
+          "kw": "petite souris",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "zahnfee",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        }
+      ],
+      "demand_evidence": "Neověřeno živě; entertainment evidence uvádí tooth fairy jako US-gap kandidáta (Ratoncito Pérez ES/LatAm) bez vyhledání. Znalost trhu: v US existuje několik placených tooth fairy cam appek.",
+      "competitors": [
+        {
+          "name": "Catch the Tooth Fairy",
+          "url": "",
+          "role": "us-only",
+          "note": "anglická, jedna víla"
+        },
+        {
+          "name": "Catch Santa Claus in my house",
+          "url": "",
+          "role": "parent",
+          "note": "sezónní kouzelné foto, prokazuje model"
+        },
+        {
+          "name": "Tooth Fairy Cam",
+          "url": "",
+          "role": "us-only",
+          "note": "US analog"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Model ověřený v USA (tooth fairy foto appky) chybí v kulturních variantách; ES/LatAm Ratoncito Pérez, FR Petite Souris a IT Topolino jsou velké trhy bez appky.",
+      "devils_advocate": [
+        "Guideline 1.3 Kids: pokud appka skončí v Kids kategorii, zakázané jsou analytiky a vyžaduje se parental gate – ztěžuje monetizaci.",
+        "Každé dítě ztratí ~20 zubů, ale rodiče appku otevřou jen pár krát ročně – retence mizivá.",
+        "AI generátory obrázků (Apple Image Playground) umí „vílu v pokoji“ zdarma.",
+        "Obsah pro děti = citlivé na kvalitu 3D/animace; laciná grafika zabije konverzi."
+      ],
+      "killer_risk": "Image Playground / Genmoji a obecné AI editory udělají „vílu v pokoji“ zdarma.",
+      "mitigation": "Soustředit se na kulturní postavičky, certifikáty a zubní deník (hodnota nad rámec fotky); kvalitní ručně animované assety.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-08",
+      "name": "Quizmaster: Pub Quiz Host",
+      "tagline": "Hospodský kvíz z telefonu: otázky, bodovací tabulka na TV a bzučáky bez internetu.",
+      "pitch": "Tisíce hospod a klubů pořádají kvízové večery a moderátoři žonglují s Excelem, papíry a PowerPointem. Uděláme jedinou appku: vlastní i koupené balíčky otázek, výsledky týmů, žebříček přes AirPlay na televizi a volitelné bzučáky na telefonech hráčů přes lokální síť (MultipeerConnectivity) – bez serveru. Kvízmistři jsou „prosumer“, kteří za dobrý nástroj platí předplatné. Kahoot a Quizizz míří na školy a online, pub kvíz nechávají stranou.",
+      "niche": "Hostitel živého hospodského kvízu. Kahoot/Quizizz jsou online a školní; pub quiz generátory jsou weby nebo PDF služby.",
+      "parent_market": "Kvízové platformy (Kahoot!, Quizizz, Trivia Crack) a placené služby pub kvízových otázek.",
+      "target_user": "Moderátoři hospodských kvízů, spolky, firemní akce, rodinné kvízové večery (UK, IE, AU, CZ, DE, NL).",
+      "features": [
+        "Editor kol a otázek + import CSV",
+        "Žebříček týmů na TV (AirPlay/externí displej)",
+        "Bzučáky na telefonech hráčů přes lokální síť",
+        "Obrazová a zvuková kola, časovač",
+        "Balíčky otázek jako IAP"
+      ],
+      "offline": "full",
+      "offline_note": "MultipeerConnectivity funguje přes Wi-Fi/Bluetooth bez internetu; obsah lokálně.",
+      "monetization": "Zdarma pro 1 kvíz; Host Pro 4,99 USD/měs nebo 39,99 USD/rok (~920 Kč); balíčky otázek 4,99 USD.",
+      "revenue_math": "1 000 stažení/měs × 6 % = 60 platících × průměr 25 USD (roční mix + balíčky) = 1 500 USD × 0,85 × 23 ≈ 29 300 Kč.",
+      "revenue_czk_ideal": 29000,
+      "keywords": [
+        {
+          "kw": "pub quiz",
+          "saturation": 5,
+          "competitor": "různé trivia hry",
+          "note": "odhad (Apple API v tomto běhu blokované), hlavně hry pro hráče, ne hostitelské nástroje"
+        },
+        {
+          "kw": "quiz host",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "quiz buzzer",
+          "saturation": 4,
+          "competitor": "jednoduché bzučáky",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "trivia night",
+          "saturation": 4,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        }
+      ],
+      "demand_evidence": "Neověřeno živě. Znalost trhu: pub kvízy jsou běžné v UK/IE/AU a rostou v CZ; placené služby otázek (např. předplatné kvízových balíčků) existují. Počet hostitelů je předpoklad.",
+      "competitors": [
+        {
+          "name": "Kahoot!",
+          "url": "",
+          "role": "parent",
+          "note": "online kvízy, škola/firmy"
+        },
+        {
+          "name": "Trivia Crack",
+          "url": "",
+          "role": "parent",
+          "note": "trivia hra, ne nástroj hostitele"
+        },
+        {
+          "name": "Party Games: Imposter & Cards",
+          "url": "https://apps.apple.com/us/app/party-games-imposter-cards/id6766637109",
+          "role": "niche",
+          "note": "pass-and-play party, jiný formát"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Hostitelé mají zaběhnutý systém (papír + Excel) a změna je pro ně riziko uprostřed večera.",
+        "Obsah otázek musí být kvalitní a lokální – bez něj je appka prázdná skořápka a psaní otázek stojí peníze.",
+        "Kahoot může přidat „live venue mode“ a zadusit nás značkou.",
+        "Multipeer spojení s 30 telefony v přeplněné hospodě může být nestabilní."
+      ],
+      "killer_risk": "Hostitelů je málo a nejsou zvyklí platit za software – trh je menší, než vypadá.",
+      "mitigation": "Bzučáky jako volitelná fíčura, těžiště v bodovací tabulce na TV; zdarma pro 1 kvíz měsíčně a cílení na „rodinný kvíz“ jako širší vstup.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 7,
+        "build_ease": 4,
+        "offline_fit": 9,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-09",
+      "name": "DIY Wedding Photo Booth",
+      "tagline": "Fotokoutek z iPadu za cenu jednoho drinku – bez předplatného, bez internetu na sále.",
+      "pitch": "Simple Booth ukázal, že za iPad fotokoutek lidé platí vysoká předplatná – ale cílí na profesionální půjčovny. Páry a pořadatelé oslav chtějí jednorázovou „event licenci“: odpočet, rámečky s jmény a datem, GIF/boomerang, tisk přes AirPrint a galerii pro hosty přes AirDrop. Offline je nutnost: na venkovských sálech často není signál. Lokalizace a jednorázová cena jsou naše výhoda vůči profesionálním nástrojům.",
+      "niche": "Jednorázové DIY fotokoutky pro soukromé akce. Pro nástroje cílí na firmy s předplatným a online sdílením.",
+      "parent_market": "Fotokoutkové aplikace (Simple Booth, Snappic, Photobooth apps) a půjčovny fotokoutků.",
+      "target_user": "Páry plánující svatbu svépomocí, rodiče na maturitních a narozeninových oslavách, malé spolky.",
+      "features": [
+        "Kiosk s odpočtem a velkým tlačítkem",
+        "Šablony rámečků se jmény/datem, vlastní logo",
+        "Série 4 fotek, GIF a boomerang",
+        "Tisk přes AirPrint a sdílení přes AirDrop/QR s lokálním Wi-Fi",
+        "Export galerie po akci"
+      ],
+      "offline": "full",
+      "offline_note": "Kamera, kompozice a tisk běží lokálně; sdílení AirDropem, bez cloudu.",
+      "monetization": "Zdarma s vodoznakem; Event pass 12,99 USD (~300 Kč) na 7 dní, doživotně 29,99 USD.",
+      "revenue_math": "1 000 stažení/měs × 8 % = 80 × 12,99 USD = 1 039 USD × 0,85 × 23 ≈ 20 300 Kč.",
+      "revenue_czk_ideal": 20300,
+      "keywords": [
+        {
+          "kw": "photo booth",
+          "saturation": 8,
+          "competitor": "Simple Booth",
+          "note": "odhad (Apple API v tomto běhu blokované), přeplněné, jen rodičovský důkaz"
+        },
+        {
+          "kw": "wedding photo booth",
+          "saturation": 4,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "ipad photo booth",
+          "saturation": 5,
+          "competitor": "Simple Booth",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "fotobox hochzeit",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), DE termín, reverzní šance"
+        }
+      ],
+      "demand_evidence": "Neověřeno živě. Znalost trhu: Simple Booth je dlouholetý placený lídr s drahým předplatným, fotokoutky jsou standardem svateb. Poptávka po jednorázové licenci je předpoklad.",
+      "competitors": [
+        {
+          "name": "Simple Booth",
+          "url": "",
+          "role": "parent",
+          "note": "pro fotokoutek, předplatné"
+        },
+        {
+          "name": "Snappic",
+          "url": "",
+          "role": "parent",
+          "note": "pro eventy, online"
+        },
+        {
+          "name": "Pocketbooth",
+          "url": "",
+          "role": "niche",
+          "note": "starší fotokoutek, jednorázový"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "„Photo booth“ je přeplněný termín a nové appky se bez recenzí neprosadí.",
+        "Jednorázový nákup na akci = nulová retence.",
+        "Tisk přes AirPrint je pomalý a páry si stejně půjčí tiskárnu s fotopapírem – složitá logistika.",
+        "iOS kamera a Photo Booth na Macu pokrývají základní potřebu zdarma."
+      ],
+      "killer_risk": "Na obecném termínu nevyhrajeme a lokální termíny mají malý objem.",
+      "mitigation": "Lokalizovaná klíčová slova (fotobox, fotokoutek, photomaton) a bundling s Audio Guest Book jako „svatební kiosk“ dvojice.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-10",
+      "name": "Solo RPG Oracle",
+      "tagline": "Hraj RPG sám: orákulum, generátory a deník kampaně v jedné offline appce.",
+      "pitch": "Sólo RPG (hraní hry na hrdiny bez Pána jeskyně) je jeden z nejrychleji rostoucích podžánrů – Ironsworn, Mythic GME a desítky solo pravidel. Hráči potřebují orákulum (ano/ne s pravděpodobností), náhodné tabulky a deník. Existují spíše weby a pár appek; uděláme nejlepší generický nástroj s vlastními (ne licencovanými) tabulkami, importem vlastních tabulek a hezkým deníkem. Komunita je aktivní na Redditu a platí za dobré nástroje.",
+      "niche": "Sólo hraní RPG. Velké VTT nástroje (Roll20, D&D Beyond) cílí na skupiny online; sólo hráči mají roztříštěné weby a PDF.",
+      "parent_market": "Tabletop RPG nástroje (D&D Beyond, Roll20, Foundry, Fight Club 5e) – ověřeně platící komunita.",
+      "target_user": "Hráči RPG 20–45, kteří nemají skupinu; fanoušci Ironsworn a solo journaling her.",
+      "features": [
+        "Orákulum ano/ne s pravděpodobností a náhodnými událostmi",
+        "Generátory (NPC, místa, zápletky) s vlastními tabulkami",
+        "Import tabulek (CSV/JSON) a sdílení balíčků",
+        "Deník kampaně s kostkami v textu",
+        "Hod kostkami s notací (2d6+1)"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokální; tabulky a deník v iCloud.",
+      "monetization": "Freemium; Pro 7,99 USD jednorázově (~185 Kč) + balíčky tabulek 2,99 USD.",
+      "revenue_math": "1 500 stažení/měs × 6 % = 90 × 7,99 USD = 719 USD × 0,85 × 23 ≈ 14 100 Kč.",
+      "revenue_czk_ideal": 14000,
+      "keywords": [
+        {
+          "kw": "solo rpg",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "rpg oracle",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "gm emulator",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), „Mythic“ je ochranná známka – nepoužívat"
+        },
+        {
+          "kw": "rpg journal",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        }
+      ],
+      "demand_evidence": "Neověřeno živě. Znalost trhu: r/Solo_Roleplaying má desítky tisíc členů, Ironsworn je CC-BY a populární; entertainment shortlist uvádí „solo RPG oracle“ jako kandidáta.",
+      "competitors": [
+        {
+          "name": "D&D Beyond",
+          "url": "",
+          "role": "parent",
+          "note": "RPG rodičovský trh, online"
+        },
+        {
+          "name": "Fight Club 5e",
+          "url": "",
+          "role": "parent",
+          "note": "placený offline nástroj pro 5e"
+        },
+        {
+          "name": "Iron Journal",
+          "url": "",
+          "role": "niche",
+          "note": "odhad: menší sólo nástroj"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Komunita je malá a zvyklá na zdarma weby a PDF.",
+        "Ochranné známky (Mythic GME, Ironsworn) nesmíme použít v názvu/klíčových slovech – ztrácíme nejsilnější hledané výrazy.",
+        "Hráči preferují papír a kostky jako součást zážitku.",
+        "Velké nástroje mohou přidat sólo režim."
+      ],
+      "killer_risk": "Hlavní vyhledávané termíny jsou značky, které nesmíme použít.",
+      "mitigation": "Generické termíny, CC-BY obsah Ironsworn s atribucí, silná komunitní přítomnost na Redditu a import tabulek jako USP.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-11",
+      "name": "Riichi Score Calculator",
+      "tagline": "Spočítej han, fu a body v riichi mahjongu – pro evropské a americké kluby, ne jen v japonštině.",
+      "pitch": "Riichi mahjong roste mimo Japonsko (EMA kluby v Evropě, US kluby, fanoušci anime a Mahjong Soul). Nejtěžší je počítání bodů – han, fu, limity. V Japonsku existují desítky kalkulaček, ale většinou jen v japonštině; západní hráči mají pár slabých appek. Uděláme kalkulačku s výběrem kamenů (nebo kamerou přes on-device model), vysvětlením yaku a trenérem počítání.",
+      "niche": "Počítání bodů v riichi mimo japonštinu. Japonští vývojáři nelokalizují, západní vývojáři dělají hry, ne nástroje.",
+      "parent_market": "Mahjong hry (Mahjong Soul, Riichi City) a japonské 麻雀点数計算 kalkulačky.",
+      "target_user": "Hráči riichi v EU/US/BR, členové klubů, začátečníci z Mahjong Soul.",
+      "features": [
+        "Výběr kamenů ruky a kalkulace han/fu/bodů",
+        "Seznam yaku s příklady",
+        "Trenér počítání fu (kvíz)",
+        "Počítadlo bodů stolu a riichi sticků",
+        "Rozpoznání ruky kamerou (Core ML) – v2"
+      ],
+      "offline": "full",
+      "offline_note": "Výpočty lokálně; Core ML model pro kameny v bundlu.",
+      "monetization": "Kalkulačka zdarma; Pro 5,99 USD (~138 Kč) za trenéra, statistiky a kameru.",
+      "revenue_math": "1 500 stažení/měs × 7 % = 105 × 5,99 USD = 629 USD × 0,85 × 23 ≈ 12 300 Kč.",
+      "revenue_czk_ideal": 12300,
+      "keywords": [
+        {
+          "kw": "riichi mahjong calculator",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "mahjong score calculator",
+          "saturation": 4,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), mix čínského a japonského"
+        },
+        {
+          "kw": "riichi mahjong",
+          "saturation": 6,
+          "competitor": "Mahjong Soul",
+          "note": "odhad (Apple API v tomto běhu blokované), hry, rodičovský důkaz"
+        },
+        {
+          "kw": "mahjong fu",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        }
+      ],
+      "demand_evidence": "Neověřeno živě. Znalost trhu: Mahjong Soul a Riichi City mají miliony hráčů, EMA eviduje kluby napříč EU; japonské kalkulačky jsou husté. Objem EN klíčových slov předpoklad.",
+      "competitors": [
+        {
+          "name": "Mahjong Soul",
+          "url": "",
+          "role": "parent",
+          "note": "online riichi hra, miliony hráčů"
+        },
+        {
+          "name": "Riichi City",
+          "url": "",
+          "role": "parent",
+          "note": "online riichi"
+        },
+        {
+          "name": "麻雀点数計算 (různé JP appky)",
+          "url": "",
+          "role": "niche",
+          "note": "japonské kalkulačky, nelokalizované"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap: kalkulačky ověřené v JP (desítky aplikací), mimo japonštinu slabě pokryté; lokalizace EN/DE/FR/PT/ES.",
+      "devils_advocate": [
+        "Západní komunita je stále malá; strop tržeb nízký.",
+        "Mahjong Soul počítá body automaticky – online hráči kalkulačku nepotřebují.",
+        "Kamerové rozpoznání kamenů různých sad je obtížné a bez něj je UX zadávání pomalé.",
+        "Existující anglické kalkulačky mohou být lepší, než odhaduji (neověřeno)."
+      ],
+      "killer_risk": "Příliš malá komunita fyzických hráčů mimo Japonsko.",
+      "mitigation": "Trenér počítání jako hlavní hodnota (učí i online hráče), spolupráce s EMA kluby, nízká cena.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-12",
+      "name": "Hen Party Games",
+      "tagline": "Hry na rozlučku se svobodou: úkoly, kvíz o nevěstě a bodování týmů – v jazyce party.",
+      "pitch": "Rozlučky se svobodou (hen/bachelorette, JGA v Německu) mají pevné rituály: kvíz „jak dobře znáš nevěstu“, úkoly po městě, body pro týmy. Družička to celé organizuje s papíry a WhatsAppem. Appka připraví kvíz z odpovědí ženicha, bingo úkolů, bodování a finální vyhlášení – offline, protože se chodí po hospodách v cizím městě. V EN existuje pár appek, v DE/PL/CZ/NL téměř nic, a JGA je v Německu masový rituál.",
+      "niche": "Rozlučky jako herní kit pro družičky. Party hry cílí na obecné večírky; rozlučkové appky jsou anglické nebo online.",
+      "parent_market": "Party hry na telefonu (Heads Up!, Psych!, Party Games: Imposter & Cards) a svatební průmysl.",
+      "target_user": "Družičky/organizátorky 22–35 v DE, UK, PL, CZ, NL, US; obdobně „stag“ pro muže.",
+      "features": [
+        "Kvíz „jak znáš nevěstu“ s odpověďmi ženicha předem",
+        "Bingo úkolů po městě (rodinně/pikantně)",
+        "Bodování týmů a žebříček",
+        "Vtipné tituly a certifikát",
+        "Offline po celou noc"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, sdílení výsledků přes AirDrop/fotku.",
+      "monetization": "Základ zdarma; Party pass 5,99 USD (~138 Kč) jednorázově.",
+      "revenue_math": "2 000 stažení/měs × 6 % = 120 × 5,99 USD = 719 USD × 0,85 × 23 ≈ 14 000 Kč.",
+      "revenue_czk_ideal": 14000,
+      "keywords": [
+        {
+          "kw": "bachelorette party games",
+          "saturation": 4,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "hen party games",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), UK"
+        },
+        {
+          "kw": "jga spiele",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), DE, reverzní šance"
+        },
+        {
+          "kw": "bride quiz",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        }
+      ],
+      "demand_evidence": "Neověřeno živě; entertainment shortlist uvádí rozlučky vč. německého „JGA“ jako kandidáta. Znalost trhu: JGA je v DE silná tradice s vlastním trhem doplňků.",
+      "competitors": [
+        {
+          "name": "Heads Up!",
+          "url": "",
+          "role": "parent",
+          "note": "party hry"
+        },
+        {
+          "name": "Party Games: Imposter & Cards",
+          "url": "https://apps.apple.com/us/app/party-games-imposter-cards/id6766637109",
+          "role": "niche",
+          "note": "pass-and-play party hry, obecné"
+        },
+        {
+          "name": "Bachelorette Party Games (různé)",
+          "url": "",
+          "role": "us-only",
+          "note": "odhad: anglické kvízy"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Anglické bachelorette appky existují, lokalizované (JGA DE, wieczór panieński PL, rozlučka CZ) téměř ne.",
+      "devils_advocate": [
+        "Jednorázové použití – družička appku po rozlučce smaže.",
+        "Obsah úkolů musí být kulturně přesný; strojový překlad vtipů nefunguje.",
+        "Pikantní obsah = riziko 17+ ratingu a zamítnutí.",
+        "Družičky mohou použít zdarma Canva šablony a Kahoot."
+      ],
+      "killer_risk": "Nulová retence a nízký objem hledání v neanglických jazycích.",
+      "mitigation": "Lokální úkoly psané rodilými mluvčími pro 5 hlavních trhů, stag verze pro muže ve stejné appce, cena za párty.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-13",
+      "name": "Bit Vault for Comedians",
+      "tagline": "Trezor vtipů pro stand-up komiky: bity, setlisty, časy a nahrávky vystoupení.",
+      "pitch": "Stand-up komici píšou vtipy do poznámek, telefonu a sešitů a pak zapomenou, co kde fungovalo. Appka organizuje bity (tagy, stav: nový/testovaný/zabiják), skládá setlisty s odhadem času, nahraje vystoupení a on-device přepis ukáže, kde se lidi smáli (detekce smíchu). Open-mic scény rostou po celém světě; komici platí za nástroje řemesla. Konkurence je minimální a zastaralá.",
+      "niche": "Pracovní nástroj komika. Poznámkové appky jsou obecné; specializované appky pro komiky jsou malé a opuštěné.",
+      "parent_market": "Psaní a poznámky pro tvůrce (Notion, Bear, Scrivener) + herní nástroje pro performery.",
+      "target_user": "Open-mic a amatérští komici 20–40, improvizátoři, moderátoři.",
+      "features": [
+        "Knihovna bitů s tagy a stavem",
+        "Setlist builder s odhadem délky",
+        "Nahrávání vystoupení + on-device přepis",
+        "Detekce smíchu (SoundAnalysis) a heatmapa",
+        "Časovač se světelným signálem"
+      ],
+      "offline": "full",
+      "offline_note": "SoundAnalysis a Speech on-device; data v iCloud.",
+      "monetization": "Freemium; Pro 19,99 USD/rok (~460 Kč).",
+      "revenue_math": "800 stažení/měs × 6 % = 48 × 19,99 USD = 960 USD × 0,85 × 23 ≈ 18 800 Kč.",
+      "revenue_czk_ideal": 18800,
+      "keywords": [
+        {
+          "kw": "comedy set list",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "stand up comedy notes",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "joke organizer",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "comedian app",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        }
+      ],
+      "demand_evidence": "Neověřeno živě. Znalost trhu: open-mic scény (US, UK, DE, CZ) rostou; existuje pár malých appek pro komiky. Objemy předpoklad.",
+      "competitors": [
+        {
+          "name": "Notion",
+          "url": "",
+          "role": "parent",
+          "note": "obecné poznámky, co komici dnes používají"
+        },
+        {
+          "name": "Bear",
+          "url": "",
+          "role": "parent",
+          "note": "poznámky"
+        },
+        {
+          "name": "Comedy Set List apps (různé)",
+          "url": "",
+          "role": "niche",
+          "note": "odhad: malé a opuštěné"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Počet komiků je malý a většina vydělává málo – nízká ochota platit.",
+        "Detekce smíchu v hlučném klubu je nepřesná.",
+        "Komici jsou zvyklí na Apple Notes a změna workflow je těžká.",
+        "Nízký objem hledání – ASO strop malý."
+      ],
+      "killer_risk": "Trh je příliš malý na 18k Kč/měs i při dominanci.",
+      "mitigation": "Rozšířit publikum o improvizátory, moderátory a řečníky (Toastmasters) – setlist + časovač jsou pro ně stejně užitečné.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-14",
+      "name": "Treasure Hunt Maker",
+      "tagline": "Poklad pro dětskou oslavu za 10 minut: rýmované nápovědy, mapa a tisk.",
+      "pitch": "Rodiče chtějí pro děti na oslavě hledání pokladu, ale vymýšlení nápověd zabere hodinu. Appka vygeneruje řetěz nápověd podle míst v bytě/zahradě (rýmované, obrázkové pro nečtenáře), vytiskne kartičky a volitelně je zamkne QR kódem, který děti naskenují. Offline, bez účtu. Scavenger hunt appky jsou serverové a firemní (GooseChase); domácí rodičovský use-case nikdo nevlastní.",
+      "niche": "Domácí hledání pokladu pro děti. GooseChase a spol. míří na firmy a školy s online účty.",
+      "parent_market": "Scavenger hunt platformy (GooseChase, Actionbound) a party/kids aktivity.",
+      "target_user": "Rodiče dětí 4–11 let, pedagogové, vedoucí táborů.",
+      "features": [
+        "Výběr míst (kuchyň, pod postelí…) → řetěz nápověd",
+        "Rýmované a obrázkové nápovědy pro nečtenáře",
+        "Tisk kartiček a mapy pokladu",
+        "QR režim: děti skenují a odemykají další nápovědu",
+        "Témata: piráti, detektiv, princezny, Vánoce"
+      ],
+      "offline": "full",
+      "offline_note": "Šablony nápověd a témata v bundlu, volitelně on-device Foundation Models pro variace.",
+      "monetization": "1 téma zdarma; všechna témata 4,99 USD (~115 Kč).",
+      "revenue_math": "2 500 stažení/měs × 5 % = 125 × 4,99 USD = 624 USD × 0,85 × 23 ≈ 12 200 Kč.",
+      "revenue_czk_ideal": 12200,
+      "keywords": [
+        {
+          "kw": "treasure hunt",
+          "saturation": 7,
+          "competitor": "hry s pokladem",
+          "note": "odhad (Apple API v tomto běhu blokované), přeplněno hrami"
+        },
+        {
+          "kw": "scavenger hunt",
+          "saturation": 6,
+          "competitor": "GooseChase",
+          "note": "odhad (Apple API v tomto běhu blokované), firemní platformy"
+        },
+        {
+          "kw": "treasure hunt clues",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "schatzsuche",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), DE"
+        }
+      ],
+      "demand_evidence": "Neověřeno živě; entertainment shortlist uvádí „DIY treasure hunt clue kit“. Znalost trhu: tisknutelné sady nápověd se hojně prodávají na Etsy.",
+      "competitors": [
+        {
+          "name": "GooseChase",
+          "url": "",
+          "role": "parent",
+          "note": "scavenger hunt platforma, online"
+        },
+        {
+          "name": "Actionbound",
+          "url": "",
+          "role": "parent",
+          "note": "DE, trasy s QR, online editor"
+        },
+        {
+          "name": "Etsy printable clues",
+          "url": "",
+          "role": "niche",
+          "note": "papírová konkurence"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Tisknutelné sady na Etsy a Pinterest zdarma.",
+        "ChatGPT vymyslí nápovědy za minutu.",
+        "Rodič appku použije 1–2× ročně.",
+        "Hlavní klíčová slova jsou zabraná hrami."
+      ],
+      "killer_risk": "Generativní AI a zdarma šablony nahradí placenou appku.",
+      "mitigation": "Zabalit do hotového zážitku: tisk, QR odemykání, zvuky a certifikát – to AI chat nedá.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-15",
+      "name": "Bible Charades for Youth",
+      "tagline": "Hádej biblickou postavu! Heads-up hra pro mládež – ve španělštině, portugalštině i češtině.",
+      "pitch": "Církevní mládežnické skupiny hledají čisté party hry. Americké „Bible Heads Up“ appky existují, ale jsou anglicky. Hispanoamerika a Brazílie mají obrovské evangelikální komunity a malá nabídka lokalizovaných her. Nakloň telefon, hádej postavu, verš nebo příběh – balíčky pro děti, mládež i dospělé. Veřejný biblický obsah = žádné licence.",
+      "niche": "Křesťanské party hry v ES/PT/PL/CZ. Heads Up! (Warner) nemá biblický balíček lokalizovaný; křesťanské hry jsou anglické.",
+      "parent_market": "Heads Up! a charades hry; křesťanské appky (YouVersion jako signál velikosti publika).",
+      "target_user": "Vedoucí mládeže, katecheté, rodiny, sbory v LatAm, BR, ES, PL, US Hispánci.",
+      "features": [
+        "Náklonová hra s biblickými balíčky (postavy, příběhy, knihy)",
+        "Úrovně pro děti/mládež/dospělé",
+        "Týmový režim a bodování",
+        "Vlastní balíček vedoucího",
+        "Offline, bez reklam pro děti"
+      ],
+      "offline": "full",
+      "offline_note": "Balíčky v bundlu, CoreMotion pro náklon.",
+      "monetization": "Zdarma 2 balíčky; vše 4,99 USD (~115 Kč).",
+      "revenue_math": "3 000 stažení/měs × 4 % = 120 × 4,99 USD = 599 USD × 0,85 × 23 ≈ 11 700 Kč.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "bible charades",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "bible heads up",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "juegos biblicos",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), ES"
+        },
+        {
+          "kw": "jogos biblicos",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), PT-BR"
+        }
+      ],
+      "demand_evidence": "Neověřeno živě; entertainment shortlist uvádí „church youth group charades (US gap; ES/PT-BR)“. Znalost trhu: YouVersion má stovky milionů instalací, biblické kvízy jsou populární.",
+      "competitors": [
+        {
+          "name": "Heads Up!",
+          "url": "",
+          "role": "parent",
+          "note": "rodičovská hra, bez biblického lokalizovaného obsahu"
+        },
+        {
+          "name": "Party Games: Imposter & Cards",
+          "url": "https://apps.apple.com/us/app/party-games-imposter-cards/id6766637109",
+          "role": "niche",
+          "note": "pass-and-play party"
+        },
+        {
+          "name": "Bible Charades (různé US)",
+          "url": "",
+          "role": "us-only",
+          "note": "anglické"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "US biblické heads-up hry jsou anglicky; LatAm/BR evangelikální komunita je obrovská a slabě obsloužená.",
+      "devils_advocate": [
+        "Latinskoamerické trhy mají nízkou iOS penetraci a nízké ceny.",
+        "Denominace mají citlivost na obsah – chyba v textu vyvolá bouři recenzí.",
+        "Kopírování formátu Heads Up! = riziko 4.3 a stížností Warner Bros (trade dress).",
+        "Mládež může hrát zdarma v Heads Up! s vlastním balíčkem."
+      ],
+      "killer_risk": "Nízká monetizace v LatAm/BR navzdory stažením.",
+      "mitigation": "Regionální ceny, balíček pro vedoucí jako „zdroj na setkání“, čisté UI bez imitace Heads Up!.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-16",
+      "name": "Reminiscence Activity Host",
+      "tagline": "Aktivity pro domovy seniorů: vzpomínkové kvízy podle dekád a země, velké bingo a hudba.",
+      "pitch": "Aktivizační pracovníci v domovech seniorů každý den potřebují program: vzpomínkové kvízy („kolik stál chleba v roce 1970“), bingo s velkými čísly, hádání přísloví. Materiály hledají na Pinterestu a tisknou. Appka na iPadu/TV přes AirPlay přinese hotové lokalizované balíčky podle země a dekády, s velkým písmem. Instituce platí ročně a nevadí jim cena, která by běžného hráče odradila.",
+      "niche": "Aktivizace seniorů jako profese. Trivia appky jsou pro mladé; B2B platformy pro domovy jsou drahé a online.",
+      "parent_market": "Trivia/bingo appky a B2B aktivizační platformy pro péči o seniory (US: It's Never 2 Late, Linked Senior).",
+      "target_user": "Aktivizační pracovníci, ergoterapeuti, rodiny pečující o seniory s demencí.",
+      "features": [
+        "Vzpomínkové kvízy podle dekády a země",
+        "Bingo s velkými čísly a hlasem",
+        "Přísloví, písničky (vlastní hudba), obrázková kola",
+        "Režim TV přes AirPlay",
+        "Tisk podkladů"
+      ],
+      "offline": "full",
+      "offline_note": "Obsah v bundlu, TTS lokálně.",
+      "monetization": "Zkouška 14 dní; Pro 39,99 USD/rok (~920 Kč) na zařízení.",
+      "revenue_math": "500 stažení/měs × 6 % = 30 × 39,99 USD = 1 200 USD × 0,85 × 23 ≈ 23 400 Kč.",
+      "revenue_czk_ideal": 23400,
+      "keywords": [
+        {
+          "kw": "reminiscence activities",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "senior activities",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "dementia games",
+          "saturation": 5,
+          "competitor": "různé kognitivní hry",
+          "note": "odhad (Apple API v tomto běhu blokované), zdravotní claimy – pozor"
+        },
+        {
+          "kw": "activity director",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        }
+      ],
+      "demand_evidence": "Neověřeno živě. Znalost trhu: v USA existují B2B platformy pro aktivizaci seniorů (placené institucemi); v EU jsou domovy seniorů desítky tisíc. Lokalizovaný obsah chybí (předpoklad).",
+      "competitors": [
+        {
+          "name": "It's Never 2 Late",
+          "url": "",
+          "role": "parent",
+          "note": "B2B platforma, drahá, online"
+        },
+        {
+          "name": "Linked Senior",
+          "url": "",
+          "role": "parent",
+          "note": "B2B, US"
+        },
+        {
+          "name": "Trivia Crack",
+          "url": "",
+          "role": "parent",
+          "note": "trivia hra pro mladé"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "US B2B aktivizační platformy jsou anglické a americké dekádami; lokální vzpomínkový obsah (DE, CZ, PL, NL) je gap.",
+      "devils_advocate": [
+        "Obsah musí být hluboce lokální (ceny, písničky, události) – 50 jazyků je nereálné, spíš 5–8.",
+        "Guideline 1.4.1: „dementia“ v názvu = zdravotní claim.",
+        "Instituce nakupují přes faktury, ne App Store – procurement může blokovat.",
+        "Nízký objem hledání."
+      ],
+      "killer_risk": "Obsahová náročnost lokalizace vzpomínkových kvízů.",
+      "mitigation": "Začít CZ/DE/PL/NL, obsah s rodilými aktivizačními pracovníky; žádné zdravotní claimy.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 7,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-17",
+      "name": "Mentalist Pocket Kit",
+      "tagline": "Triky, které ohromí u stolu: sada mentalistických efektů pro amatérské kouzelníky.",
+      "pitch": "Kouzelníci platí za „iPhone triky“ desítky dolarů (Inject, WikiTest a podobné profesionální nástroje), ale ty cílí na profíky a jsou drahé. Amatéři a teenageři chtějí sadu 10 efektů s video návody: předpověď, vynucená karta, „čtení myšlenek“ přes počítač nebo kompas. Offline, bez serveru. Rodičovský trh kouzelnických appek je živý a appky se šíří ústně po ukázce.",
+      "niche": "Amatérský mentalismus. Profi nástroje jsou drahé a složité, dětské „magic tricks“ appky jsou jen videa.",
+      "parent_market": "Kouzelnické appky a obchody (Ellusionist, Penguin Magic, profesionální iPhone efekty).",
+      "target_user": "Teenageři a dospělí amatérští kouzelníci, bavitelé na večírcích.",
+      "features": [
+        "10 efektů (předpověď, vynucení karty, číslo myšlenky)",
+        "Video/animované návody a nácvik",
+        "Nenápadné režimy spouštění gesty",
+        "Deník vystoupení",
+        "Nové efekty jako IAP"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokální; žádné skryté síťové komunikace.",
+      "monetization": "3 efekty zdarma; vše 9,99 USD (~230 Kč), nové efekty 2,99 USD.",
+      "revenue_math": "1 500 stažení/měs × 5 % = 75 × 9,99 USD = 749 USD × 0,85 × 23 ≈ 14 600 Kč.",
+      "revenue_czk_ideal": 14600,
+      "keywords": [
+        {
+          "kw": "magic tricks",
+          "saturation": 8,
+          "competitor": "různé",
+          "note": "odhad (Apple API v tomto běhu blokované), přeplněno, rodičovský důkaz"
+        },
+        {
+          "kw": "mentalism",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "mind reading trick",
+          "saturation": 4,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "card force",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        }
+      ],
+      "demand_evidence": "Neověřeno živě; entertainment shortlist uvádí „magician/mentalism tools“. Znalost trhu: profesionální iPhone efekty se prodávají za 20–100 USD.",
+      "competitors": [
+        {
+          "name": "Penguin Magic",
+          "url": "",
+          "role": "parent",
+          "note": "obchod s triky a videi"
+        },
+        {
+          "name": "Magic Tricks (různé)",
+          "url": "",
+          "role": "niche",
+          "note": "video návody"
+        },
+        {
+          "name": "Inject",
+          "url": "",
+          "role": "parent",
+          "note": "profi mentalistický nástroj"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Guideline 2.3.1: skryté funkce/maskované UI může recenze označit za klamné.",
+        "Triky jsou závislé na tajemství – jakmile se appka rozšíří, efekty jsou „provalené“.",
+        "Kouzelníci kupují od známých tvůrců, ne od neznámého studia.",
+        "Patentově/autorsky chráněné efekty – musíme vymýšlet vlastní."
+      ],
+      "killer_risk": "Zamítnutí kvůli skrytým funkcím (2.3.1).",
+      "mitigation": "Transparentní popis v App Store („kouzelnický nástroj s tajnými režimy“), vlastní originální efekty.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-18",
+      "name": "Tavern Ambience Soundboard",
+      "tagline": "Hospoda, bouře, drak – atmosféra pro RPG hru jedním klepnutím, offline.",
+      "pitch": "Páni jeskyně chtějí atmosféru: hluk hospody, déšť, souboj. Syrinscape a Tabletop Audio jsou online nebo drahé předplatné. Nabídneme offline soundboard s vrstvami (ambient + efekty), scénami a crossfade, s vlastní CC0/zakoupenou knihovnou. Jednorázová cena, rychlé ovládání u stolu.",
+      "niche": "Offline, jednorázová atmosféra pro RPG u stolu. Lídři jsou online/předplatné.",
+      "parent_market": "RPG nástroje a audio (Syrinscape, Tabletop Audio, D&D Beyond).",
+      "target_user": "Páni jeskyně 18–45 hrající fyzicky u stolu.",
+      "features": [
+        "Scény s vrstvami ambientu",
+        "Tlačítka efektů (dveře, meč, drak)",
+        "Crossfade mezi scénami",
+        "Import vlastních zvuků",
+        "Ovládání z Apple Watch"
+      ],
+      "offline": "full",
+      "offline_note": "Zvuky v bundlu (CC0 + zakoupené licence), přehrávání AVAudioEngine.",
+      "monetization": "Základ zdarma; Pro 7,99 USD (~185 Kč), balíčky scén 2,99 USD.",
+      "revenue_math": "1 500 stažení/měs × 5 % = 75 × 7,99 USD = 599 USD × 0,85 × 23 ≈ 11 700 Kč.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "dnd soundboard",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), „DnD“ je ochranná známka – opatrně"
+        },
+        {
+          "kw": "rpg ambience",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "tabletop sounds",
+          "saturation": 3,
+          "competitor": "Syrinscape",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "fantasy ambience",
+          "saturation": 4,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        }
+      ],
+      "demand_evidence": "Neověřeno živě; entertainment shortlist uvádí „DM ambience soundboard“. Znalost trhu: Syrinscape a Tabletop Audio mají placené komunity.",
+      "competitors": [
+        {
+          "name": "Syrinscape",
+          "url": "",
+          "role": "parent",
+          "note": "online předplatné"
+        },
+        {
+          "name": "Tabletop Audio",
+          "url": "",
+          "role": "parent",
+          "note": "web/stream"
+        },
+        {
+          "name": "Ambient Mixer",
+          "url": "",
+          "role": "niche",
+          "note": "obecná atmosféra"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Kvalitní zvuky stojí peníze a CC0 knihovny jsou průměrné.",
+        "YouTube a Spotify mají zdarma „tavern ambience“ playlisty.",
+        "Ochranná známka D&D omezuje ASO.",
+        "Malý trh a konkurence Syrinscape."
+      ],
+      "killer_risk": "Zdarma YouTube playlisty.",
+      "mitigation": "Rychlost u stolu (1 klepnutí, offline) a efekty na povel jako USP; Watch ovládání.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-19",
+      "name": "Kipperkarten Deutung",
+      "tagline": "Kipper karty – německá věštecká tradice v moderní appce, konečně i mimo Německo.",
+      "pitch": "Kipperkarten (36 karet s postavami ze života) jsou v Německu a Rakousku stejně populární jako Lenormand, ale mimo DE jsou téměř neznámé a appek je málo. Uděláme výklady, výklad 9 a 36 karet, významy kombinací a deník – německy jako první, pak do dalších jazyků. Obsah (historické karty) je public domain.",
+      "niche": "Kipperkarten místo tarotu. Tarotové appky je nemají; lokální DE appky jsou malé.",
+      "parent_market": "Tarot a věštecké appky (Mystic Tarot Reading, Labyrinthos).",
+      "target_user": "Ženy 30–60 v DE/AT/CH, kartářky, fanynky Lenormandu.",
+      "features": [
+        "Denní karta a výklady 3/9/36 karet",
+        "Kombinace karet a význam podle polohy",
+        "Deník výkladů",
+        "Historický balíček (public domain)",
+        "Widget"
+      ],
+      "offline": "full",
+      "offline_note": "Statická data a obrázky v bundlu.",
+      "monetization": "Freemium; Pro 6,99 USD (~160 Kč) jednorázově.",
+      "revenue_math": "1 500 stažení/měs × 6 % = 90 × 6,99 USD = 629 USD × 0,85 × 23 ≈ 12 300 Kč.",
+      "revenue_czk_ideal": 12300,
+      "keywords": [
+        {
+          "kw": "kipperkarten",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "kipper karten legen",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "kartenlegen",
+          "saturation": 5,
+          "competitor": "různé",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "kipper cards",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), EN, téměř bez poptávky"
+        }
+      ],
+      "demand_evidence": "Neověřeno živě. Znalost trhu: Kipperkarten se v DE prodávají v obchodech s ezoterikou a mají vlastní knihy výkladů; lifestyle evidence ukazuje, že i Lenormand appky jsou staré – předpokládám obdobnou mezeru.",
+      "competitors": [
+        {
+          "name": "Mystic Tarot Reading",
+          "url": "https://apps.apple.com/ee/app/mystic-tarot-reading/id1466775754",
+          "role": "parent",
+          "note": "věštecký rodič"
+        },
+        {
+          "name": "Scrying Ink Lenormand",
+          "url": "https://apps.apple.com/us/app/scrying-ink-lenormand/id1118896048",
+          "role": "niche",
+          "note": "příbuzný Lenormand, starší"
+        },
+        {
+          "name": "Kipperkarten (DE appky)",
+          "url": "",
+          "role": "niche",
+          "note": "odhad: pár malých"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap: tradice z DE/AT, mimo němčinu nedostupná; lokalizace do EN/PL/CZ/NL.",
+      "devils_advocate": [
+        "Poptávka mimo DACH je minimální – 50 jazyků nic nepřinese.",
+        "Kanibalizace s Lenormand appkou ve vlastním portfoliu (4.3 riziko: podobná appka).",
+        "Starší cílovka méně nakupuje v appkách.",
+        "Malý strop trhu."
+      ],
+      "killer_risk": "Guideline 4.3 – dvě věštecké appky se stejným enginem od jednoho vývojáře.",
+      "mitigation": "Zabudovat Kipper jako balíček do Lenormand appky, nebo odlišit UI i obsah zásadně; samostatně jen pro DE ASO.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-20",
+      "name": "Anotador Truco & Generala",
+      "tagline": "Anotador na Truco, Generalu a Chinchón – fósforos na displeji, žádné papírky.",
+      "pitch": "V Argentině, Uruguayi a jižní Brazílii se Truco hraje všude a body se tradičně značí zápalkami (fósforos). Anotador appky existují, ale jsou jednoduché a roztříštěné po hrách. Uděláme jeden krásný anotador pro Truco (s hlasovým „¡Truco!“), Generalu (kostky), Chinchón a Escobu, s historií a statistikami. Obrovská uživatelská báze, nízká cena, reklamy jako doplněk.",
+      "niche": "Latinskoamerické karetní a kostkové hry – bodování. Herní studia dělají online Truco, bodování nechávají malým vývojářům.",
+      "parent_market": "Online Truco (Truco Blyts, Truco Argentino) s miliony hráčů; karetní sbírky jako CardGames.io.",
+      "target_user": "Hráči v AR, UY, PY, BR-RS, ES; rodiny a přátelé u stolu.",
+      "features": [
+        "Truco: 15/30 bodů, zápalky, hlasové příkazy",
+        "Generala: tabulka kostek",
+        "Chinchón a Escoba",
+        "Historie a statistiky",
+        "Apple Watch režim"
+      ],
+      "offline": "full",
+      "offline_note": "Lokální výpočty.",
+      "monetization": "Zdarma s decentní reklamou; odstranění + všechny hry 2,99 USD (~69 Kč).",
+      "revenue_math": "5 000 stažení/měs × 4 % = 200 × 2,99 USD = 598 USD × 0,85 × 23 ≈ 11 700 Kč (bez reklam).",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "anotador truco",
+          "saturation": 5,
+          "competitor": "různé anotadory",
+          "note": "odhad (Apple API v tomto běhu blokované), pravděpodobně několik malých appek"
+        },
+        {
+          "kw": "anotador generala",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "anotador chinchon",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "marcador truco",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), BR"
+        }
+      ],
+      "demand_evidence": "Neověřeno živě; entertainment shortlist uvádí „Truco counter (BR/AR)“. Znalost trhu: Truco je národní hra v AR/UY s online appkami s miliony stažení.",
+      "competitors": [
+        {
+          "name": "Truco Blyts",
+          "url": "",
+          "role": "parent",
+          "note": "online Truco, miliony hráčů"
+        },
+        {
+          "name": "CardGames.io",
+          "url": "https://apps.apple.com/ag/app/cardgames-io/id1496007149",
+          "role": "parent",
+          "note": "karetní sbírka"
+        },
+        {
+          "name": "Anotador de Truco (různé)",
+          "url": "",
+          "role": "niche",
+          "note": "odhad: jednoduché"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Argentina má vysokou inflaci, drahý iPhone a nízkou iOS penetraci.",
+        "Anotadorů zdarma je víc, než odhaduji (neověřeno).",
+        "Kulturní nuance (pravidla Truco se liší provincie od provincie).",
+        "Reklamy v LatAm mají nízké eCPM."
+      ],
+      "killer_risk": "Nízká monetizace v AR/UY i při dominanci.",
+      "mitigation": "Sdružit hry do jedné appky, regionální cena, silná ASO ve španělštině a portugalštině.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 3,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-21",
+      "name": "Housie & Tambola Caller",
+      "tagline": "Vyvolávač čísel na TV s tradičními rýmy – „two fat ladies, 88“ – a tisk lístků.",
+      "pitch": "Tambola/Housie je v Indii a UK klasikou rodinných a firemních oslav; bingo v UK klubech a domovech seniorů. Existující callery jsou často reklamní a ošklivé. Uděláme callera s tradičními rýmy (UK, IN), hlasem v mnoha jazycích, zobrazením na TV přes AirPlay, generátorem lístků k tisku a ověřením výhry. Italská tombola se smorfií jako lokalizovaná varianta.",
+      "niche": "Hostitel bingo/tambola bez hazardu. Online bingo je hazard; offline callery jsou reklamní a zastaralé.",
+      "parent_market": "Bingo hry (Bingo Blitz – top grossing) a tambola appky v Indii.",
+      "target_user": "Hostitelé oslav v IN/UK, domovy seniorů, rodiny o Vánocích (IT tombola).",
+      "features": [
+        "Caller s rýmy a hlasem",
+        "TV zobrazení přes AirPlay",
+        "Generátor lístků k tisku (PDF)",
+        "Ověření výherního lístku",
+        "Varianty: 90/75 čísel, italská tombola"
+      ],
+      "offline": "full",
+      "offline_note": "Lokální; TTS on-device.",
+      "monetization": "Zdarma s reklamou; Pro 3,99 USD (~92 Kč).",
+      "revenue_math": "5 000 stažení/měs × 3 % = 150 × 3,99 USD = 599 USD × 0,85 × 23 ≈ 11 700 Kč.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "tambola",
+          "saturation": 6,
+          "competitor": "různé tambola appky",
+          "note": "odhad (Apple API v tomto běhu blokované), v IN pravděpodobně hustší"
+        },
+        {
+          "kw": "housie caller",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "bingo caller",
+          "saturation": 5,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "tombola",
+          "saturation": 5,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), IT"
+        }
+      ],
+      "demand_evidence": "Neověřeno živě; entertainment shortlist uvádí „tambola/housie caller (IN/UK)“. Znalost trhu: v IN existují desítky tambola appek, v UK bingo tradice.",
+      "competitors": [
+        {
+          "name": "Bingo Blitz",
+          "url": "",
+          "role": "parent",
+          "note": "top grossing bingo hra"
+        },
+        {
+          "name": "Tambola (různé)",
+          "url": "",
+          "role": "niche",
+          "note": "reklamní callery"
+        },
+        {
+          "name": "Bingo Caller (různé)",
+          "url": "",
+          "role": "niche",
+          "note": "jednoduché"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Indický trh je silně Android a platí málo.",
+        "Guideline 5.3: bingo = riziko zaměnění s hazardem; nutné jasně bez peněz.",
+        "Callerů zdarma je hodně.",
+        "Italská tombola je sezónní (Vánoce)."
+      ],
+      "killer_risk": "Hustá konkurence zdarma a nízká ochota platit.",
+      "mitigation": "Kvalita designu, TV režim a tisk lístků jako placená hodnota; cílit UK a seniorské domovy.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-22",
+      "name": "Escape Room at Home",
+      "tagline": "Úniková hra v obýváku: appka je Game Master – časovač, nápovědy a zámky.",
+      "pitch": "Únikové hry jsou masová zábava a krabicové verze (EXIT, Unlock!) se prodávají milionově. Rodiče a hostitelé chtějí vlastní únikovku doma, ale nevědí, jak vymyslet hádanky. Appka dá hotové scénáře s tisknutelnými hádankami (šifry, UV, zámky), digitální zámky na telefonu a Game Mastera s nápovědami a časovačem. Vlastní obsah, bez licencí.",
+      "niche": "Domácí DIY únikovka. Krabicové hry jsou jednorázové a licencované; appky únikových her jsou pro jednoho hráče.",
+      "parent_market": "Escape room hry (EXIT, Unlock!, Escape Room hry v App Store) a party kity.",
+      "target_user": "Rodiče dětí 8–14, hostitelé večírků, učitelé.",
+      "features": [
+        "Scénáře s tisknutelnými hádankami",
+        "Digitální zámky (kód, směr, barva)",
+        "Game Master: časovač, nápovědy, hudba",
+        "Obtížnost podle věku",
+        "Scénáře jako IAP"
+      ],
+      "offline": "full",
+      "offline_note": "Obsah v bundlu/IAP, žádná síť.",
+      "monetization": "1 scénář zdarma; scénář 3,99 USD, balíček 7,99 USD (~185 Kč).",
+      "revenue_math": "1 200 stažení/měs × 7 % = 84 × 7,99 USD = 671 USD × 0,85 × 23 ≈ 13 100 Kč.",
+      "revenue_czk_ideal": 13100,
+      "keywords": [
+        {
+          "kw": "escape room at home",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "diy escape room",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "escape room",
+          "saturation": 9,
+          "competitor": "různé hry",
+          "note": "odhad (Apple API v tomto běhu blokované), přeplněno hrami"
+        },
+        {
+          "kw": "escape game kids",
+          "saturation": 4,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        }
+      ],
+      "demand_evidence": "Neověřeno živě; entertainment shortlist uvádí „DIY escape room / treasure hunt clue kit“. Znalost trhu: EXIT (Kosmos) a Unlock! (Asmodee) jsou bestsellery.",
+      "competitors": [
+        {
+          "name": "EXIT: The Game (Kosmos)",
+          "url": "",
+          "role": "parent",
+          "note": "krabicové únikovky"
+        },
+        {
+          "name": "Unlock! (Asmodee)",
+          "url": "",
+          "role": "parent",
+          "note": "hybridní únikovky s appkou"
+        },
+        {
+          "name": "Party Games: Imposter & Cards",
+          "url": "https://apps.apple.com/us/app/party-games-imposter-cards/id6766637109",
+          "role": "niche",
+          "note": "party hry"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Tvorba hádanek je náročná a každý scénář je jednorázový.",
+        "Krabicovky za 15 € jsou pohodlnější (nic se netiskne).",
+        "Hlavní klíčové slovo je obsazené hrami.",
+        "Podobnost s Murder Mystery a Treasure Hunt (4.3 riziko v portfoliu)."
+      ],
+      "killer_risk": "Uživatelé nechtějí tisknout a stříhat.",
+      "mitigation": "Scénáře s minimem tisku (1 A4), většina hádanek na telefonu; sdílený engine s Murder Mystery, ale odlišné UI.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-23",
+      "name": "Improv Games Deck",
+      "tagline": "Knihovna improvizačních her a generátor zadání pro trenéry a soubory.",
+      "pitch": "Improvizační divadlo roste (Theatresports, zápasy v improvizaci v CZ/FR/CA). Trenéři potřebují knihovnu her s pravidly, generátor zadání (místo, vztah, emoce) a časovač. Existují weby a starší appky; uděláme moderní offline deck s kartami, plánovačem lekcí a režimem zápasu.",
+      "niche": "Nástroj pro improvizační trenéry. Obecné party appky nemají pedagogickou strukturu.",
+      "parent_market": "Divadelní a drama nástroje; party hry (Heads Up!).",
+      "target_user": "Improvizátoři, trenéři, učitelé dramatu, týmy firem.",
+      "features": [
+        "Knihovna 200+ her s pravidly",
+        "Generátor zadání",
+        "Plánovač lekcí",
+        "Časovač a režim zápasu (body)",
+        "Offline"
+      ],
+      "offline": "full",
+      "offline_note": "Statická data.",
+      "monetization": "Freemium; Pro 9,99 USD (~230 Kč).",
+      "revenue_math": "800 stažení/měs × 7 % = 56 × 9,99 USD = 559 USD × 0,85 × 23 ≈ 10 900 Kč.",
+      "revenue_czk_ideal": 10900,
+      "keywords": [
+        {
+          "kw": "improv games",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "improv prompts",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "drama games",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "impro",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), FR/CZ"
+        }
+      ],
+      "demand_evidence": "Neověřeno živě. Znalost trhu: improvizační scény a kurzy jsou v US/FR/CZ/DE běžné; weby jako improwiki jsou zdarma.",
+      "competitors": [
+        {
+          "name": "Heads Up!",
+          "url": "",
+          "role": "parent",
+          "note": "party hry"
+        },
+        {
+          "name": "Improv Encyclopedia (web)",
+          "url": "",
+          "role": "niche",
+          "note": "web zdarma"
+        },
+        {
+          "name": "Improv Prompts (různé)",
+          "url": "",
+          "role": "niche",
+          "note": "odhad: malé appky"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Obsah her je volně na webech zdarma.",
+        "Malá komunita, nízký objem hledání.",
+        "Trenéři používají zápisník a paměť.",
+        "Nízká opakovaná platba."
+      ],
+      "killer_risk": "Zdarma webové encyklopedie improvizace.",
+      "mitigation": "Plánovač lekcí a režim zápasu jako placená hodnota, lokalizace do FR/CZ/DE.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-24",
+      "name": "Curtain Call Theatre Diary",
+      "tagline": "Deník divadelníka: každé představení, obsazení, sedadlo a hodnocení – z fotky vstupenky.",
+      "pitch": "Divadelní fanoušci (Broadway, West End, opera, balet) vedou seznamy viděných představení a obsazení – v Excelu nebo na Instagramu. Letterboxd pro divadlo neexistuje offline. Appka naskenuje vstupenku (Vision OCR), zapíše obsazení, sedadlo, cenu a hodnocení, a vytvoří roční statistiky („Wrapped“). Vše lokálně bez databáze představení.",
+      "niche": "Osobní divadelní deník. Filmové deníky (Letterboxd) divadlo ignorují, protože chybí databáze.",
+      "parent_market": "Letterboxd/TV Time (deníky), vstupenkové appky (TodayTix).",
+      "target_user": "Divadelní fanoušci 20–60, operní abonenti, studenti divadla.",
+      "features": [
+        "Sken vstupenky OCR",
+        "Zápis obsazení, sedadla, ceny",
+        "Hodnocení a poznámky",
+        "Roční statistiky a „Wrapped“ karta",
+        "Mapa divadel"
+      ],
+      "offline": "full",
+      "offline_note": "OCR on-device, data v iCloud; žádná databáze představení.",
+      "monetization": "Freemium; Pro 7,99 USD (~185 Kč) jednorázově.",
+      "revenue_math": "1 200 stažení/měs × 6 % = 72 × 7,99 USD = 575 USD × 0,85 × 23 ≈ 11 200 Kč.",
+      "revenue_czk_ideal": 11200,
+      "keywords": [
+        {
+          "kw": "theatre diary",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "broadway tracker",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "show log",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "opera diary",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        }
+      ],
+      "demand_evidence": "Neověřeno živě; entertainment shortlist uvádí „concert/theatre diary“. Znalost trhu: Letterboxd-like appky pro divadlo jsou vzácné.",
+      "competitors": [
+        {
+          "name": "Letterboxd",
+          "url": "",
+          "role": "parent",
+          "note": "filmový deník"
+        },
+        {
+          "name": "TodayTix",
+          "url": "",
+          "role": "parent",
+          "note": "vstupenky, ne deník"
+        },
+        {
+          "name": "Broadway show trackers (různé)",
+          "url": "",
+          "role": "niche",
+          "note": "odhad"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Bez databáze představení je ruční zápis pracný.",
+        "Malá cílovka a nízká frekvence (pár představení ročně).",
+        "Letterboxd může přidat divadlo.",
+        "Nízká ochota platit."
+      ],
+      "killer_risk": "Ruční zadávání odradí.",
+      "mitigation": "Silný OCR a šablony obsazení, rychlé zadání za 20 s.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-25",
+      "name": "Cosplay Build Planner",
+      "tagline": "Plánovač kostýmů: rozpočet, materiály, míry, deadline na con a checklist.",
+      "pitch": "Cosplayeři staví kostýmy měsíce a potřebují sledovat díly, materiály, náklady, míry a deadline do conu. Obecné plánovače to neumí. Appka: projekt podle dílů, referenční fotky, rozpočet, časová osa do conu, balicí checklist. Komunita je obrovská (anime, gaming) a globální.",
+      "niche": "Projektový plánovač pro cosplay. Cosplanner existuje, ale je omezený; obecné nástroje nemají strukturu.",
+      "parent_market": "Kreativní hobby a projektové appky; anime/con kultura.",
+      "target_user": "Cosplayeři 16–35 celosvětově.",
+      "features": [
+        "Projekty rozdělené na díly",
+        "Referenční galerie",
+        "Rozpočet a materiály",
+        "Míry a střihy",
+        "Con checklist a deadline"
+      ],
+      "offline": "full",
+      "offline_note": "Lokálně + iCloud.",
+      "monetization": "Freemium; Pro 7,99 USD nebo 14,99 USD/rok.",
+      "revenue_math": "1 500 stažení/měs × 5 % = 75 × 7,99 USD = 599 USD × 0,85 × 23 ≈ 11 700 Kč.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "cosplay planner",
+          "saturation": 2,
+          "competitor": "Cosplanner",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "cosplay",
+          "saturation": 6,
+          "competitor": "různé",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "costume planner",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "cosplay budget",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        }
+      ],
+      "demand_evidence": "Neověřeno živě. Znalost trhu: Cosplanner (web + appka) existuje a má uživatele; komunita cosplaye je globální.",
+      "competitors": [
+        {
+          "name": "Cosplanner",
+          "url": "",
+          "role": "niche",
+          "note": "existující plánovač"
+        },
+        {
+          "name": "Notion",
+          "url": "",
+          "role": "parent",
+          "note": "obecné plánování"
+        },
+        {
+          "name": "Trello",
+          "url": "",
+          "role": "parent",
+          "note": "obecné"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Mladá cílovka nerada platí.",
+        "Cosplanner má náskok.",
+        "Obecné nástroje stačí.",
+        "Nízká frekvence."
+      ],
+      "killer_risk": "Nízká ochota platit u teenagerů.",
+      "mitigation": "Zdarma core, Pro pro rozpočet a více projektů.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-26",
+      "name": "ESL Charades Classroom",
+      "tagline": "Hádej slovo! Charades a taboo pro hodiny angličtiny podle úrovně CEFR.",
+      "pitch": "Učitelé angličtiny jako cizího jazyka po celém světě hrají se třídou charades a taboo. Heads Up! nemá balíčky podle úrovně A1–C1 a obsahuje kulturní reference. Appka: balíčky podle CEFR a témat učebnic, režim na projektor, výslovnost (TTS). Obrovský globální trh ESL.",
+      "niche": "ESL výuka. Party appky nejsou pedagogicky strukturované.",
+      "parent_market": "Heads Up!, ESL appky (Duolingo), Kahoot.",
+      "target_user": "Učitelé angličtiny (ESL/EFL), lektoři, rodiče.",
+      "features": [
+        "Balíčky podle CEFR",
+        "Charades, taboo, pictionary",
+        "Režim projektoru",
+        "TTS výslovnost",
+        "Vlastní seznamy"
+      ],
+      "offline": "full",
+      "offline_note": "Statická data, TTS on-device.",
+      "monetization": "Freemium; Pro 6,99 USD (~160 Kč).",
+      "revenue_math": "1 000 stažení/měs × 8 % = 80 × 6,99 USD = 559 USD × 0,85 × 23 ≈ 10 900 Kč.",
+      "revenue_czk_ideal": 10900,
+      "keywords": [
+        {
+          "kw": "esl games",
+          "saturation": 4,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "esl charades",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "taboo esl",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), „Taboo“ je ochranná známka Hasbro"
+        },
+        {
+          "kw": "classroom charades",
+          "saturation": 2,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        }
+      ],
+      "demand_evidence": "Neověřeno živě; entertainment shortlist uvádí „ESL classroom charades“. Znalost trhu: ESL učitelů jsou miliony.",
+      "competitors": [
+        {
+          "name": "Heads Up!",
+          "url": "",
+          "role": "parent",
+          "note": "party hry"
+        },
+        {
+          "name": "Kahoot!",
+          "url": "",
+          "role": "parent",
+          "note": "třídní kvízy"
+        },
+        {
+          "name": "Party Games: Imposter & Cards",
+          "url": "https://apps.apple.com/us/app/party-games-imposter-cards/id6766637109",
+          "role": "niche",
+          "note": "party hry"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Učitelé nemají rozpočty a preferují zdarma.",
+        "„Taboo“ ochranná známka.",
+        "Kategorie spíš Education – ASO může být jinde.",
+        "Zdarma pracovní listy na webu."
+      ],
+      "killer_risk": "Nízká ochota platit učitelů.",
+      "mitigation": "Nízká cena, školní licence přes Apple School Manager.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-27",
+      "name": "Kids Party Games Host",
+      "tagline": "Tanec zmraž, židličkovaná, balíček – dětské hry řízené z telefonu s tvou hudbou.",
+      "pitch": "Na dětských oslavách se hrají stále stejné hry – a rodič u reproduktoru neví, kdy zastavit hudbu. Appka náhodně zastavuje hudbu (freeze dance, židličky, balíček), hlídá kola, vyřazené a vítěze, a má program oslavy. Používá hudbu z knihovny uživatele. Jednoduché, offline, univerzální.",
+      "niche": "Hostitel dětských her. Party appky jsou pro dospělé.",
+      "parent_market": "Party hry a dětské aktivity; hudební appky.",
+      "target_user": "Rodiče dětí 3–10, animátoři.",
+      "features": [
+        "Freeze dance s náhodným zastavením",
+        "Židličky a balíček",
+        "Program oslavy",
+        "Vyřazení a vítězové",
+        "Diplomy"
+      ],
+      "offline": "full",
+      "offline_note": "MusicKit / lokální hudba, bez sítě.",
+      "monetization": "Zdarma 2 hry; vše 4,99 USD (~115 Kč).",
+      "revenue_math": "2 500 stažení/měs × 5 % = 125 × 4,99 USD = 624 USD × 0,85 × 23 ≈ 12 200 Kč.",
+      "revenue_czk_ideal": 12200,
+      "keywords": [
+        {
+          "kw": "freeze dance",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "musical chairs",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "kids party games",
+          "saturation": 5,
+          "competitor": "různé",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "party games for kids",
+          "saturation": 5,
+          "competitor": "různé",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        }
+      ],
+      "demand_evidence": "Neověřeno živě; entertainment shortlist uvádí „freeze dance music stopper“.",
+      "competitors": [
+        {
+          "name": "Party Games: Imposter & Cards",
+          "url": "https://apps.apple.com/us/app/party-games-imposter-cards/id6766637109",
+          "role": "niche",
+          "note": "party pro dospělé"
+        },
+        {
+          "name": "Heads Up!",
+          "url": "",
+          "role": "parent",
+          "note": "party hry"
+        },
+        {
+          "name": "Freeze Dance (různé)",
+          "url": "",
+          "role": "niche",
+          "note": "odhad: jednoduché"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Rodič to zvládne ručně pauzou.",
+        "Jednorázové použití.",
+        "MusicKit omezení (DRM, Apple Music předplatné).",
+        "Kids kategorie – 1.3 pravidla."
+      ],
+      "killer_risk": "Produkt je příliš triviální na placení.",
+      "mitigation": "Program oslavy a diplomy jako hodnota navíc.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 3,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-28",
+      "name": "Road Trip Games Europe",
+      "tagline": "Hry do auta: SPZ bingo, poznávání okresů, I spy a 20 otázek – offline po celé Evropě.",
+      "pitch": "V USA je License Plate Game zavedenou appkou; v Evropě se hraje hádání okresů podle SPZ (DE Kennzeichen, AT, CZ, PL) a auto bingo. Appka bez signálu: bingo, hádání značek podle země, I spy s obrázky pro malé, 20 otázek, a sbírka viděných regionů na mapě. Rodinné cesty na dovolenou = sezónní špičky, ale velký objem.",
+      "niche": "Evropské auto hry podle SPZ. US appky sledují státy USA.",
+      "parent_market": "License Plate Game appky (US) a cestovní hry pro děti.",
+      "target_user": "Rodiny s dětmi 5–12 na cestách v DE, AT, CZ, PL, FR, IT.",
+      "features": [
+        "Sbírka regionů podle SPZ (DE, AT, CZ, PL, CH, IT…)",
+        "Auto bingo",
+        "I spy s obrázky",
+        "20 otázek",
+        "Mapa sbírky"
+      ],
+      "offline": "full",
+      "offline_note": "Statická data a mapy v bundlu.",
+      "monetization": "1 země zdarma; všechny 4,99 USD (~115 Kč).",
+      "revenue_math": "2 500 stažení/měs × 5 % = 125 × 4,99 USD = 624 USD × 0,85 × 23 ≈ 12 200 Kč (letní průměr).",
+      "revenue_czk_ideal": 12200,
+      "keywords": [
+        {
+          "kw": "license plate game",
+          "saturation": 6,
+          "competitor": "různé US",
+          "note": "odhad (Apple API v tomto běhu blokované), US, rodičovský důkaz"
+        },
+        {
+          "kw": "kennzeichen spiel",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), DE, několik appek"
+        },
+        {
+          "kw": "road trip games",
+          "saturation": 5,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "car bingo",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        }
+      ],
+      "demand_evidence": "Neověřeno živě. Znalost trhu: v US existuje více License Plate Game appek, v DE Kennzeichen appky (pravděpodobně několik).",
+      "competitors": [
+        {
+          "name": "License Plate Game (US)",
+          "url": "",
+          "role": "us-only",
+          "note": "US státy"
+        },
+        {
+          "name": "Kennzeichen (DE appky)",
+          "url": "",
+          "role": "niche",
+          "note": "odhad"
+        },
+        {
+          "name": "Heads Up!",
+          "url": "",
+          "role": "parent",
+          "note": "party hry"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "US License Plate Game model přenesený do evropských systémů SPZ a jazyků.",
+      "devils_advocate": [
+        "Sezónnost: léto a Vánoce.",
+        "DE Kennzeichen appky mohou být silné.",
+        "Změny SPZ systémů vyžadují aktualizace.",
+        "Děti na tabletech hrají hry, ne SPZ."
+      ],
+      "killer_risk": "Sezónnost a existující DE konkurence.",
+      "mitigation": "Více her v jedné appce, celoroční „víkendové výlety“ marketing.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-29",
+      "name": "Open Mic Night Host",
+      "tagline": "Přihlašovací listina, rotace a časovač pro open mic a karaoke večery – z jednoho iPadu.",
+      "pitch": "Moderátoři open micu a karaoke večerů řeší papírovou listinu, pořadí, časy a „kdo už byl“. Appka: kiosk přihlášení na iPadu, pořadí se spravedlivou rotací, časovač se světelným signálem pro vystupujícího, historie účinkujících a statistiky. Bez serveru a účtů.",
+      "niche": "Správa open mic/karaoke večerů. Pro karaoke software je na PC, open mic nemá nic.",
+      "parent_market": "Karaoke software (KaraFun), eventové nástroje.",
+      "target_user": "Moderátoři open micu, KJ (karaoke jockeys), bary.",
+      "features": [
+        "Kiosk přihlášení",
+        "Rotace a pořadí",
+        "Časovač se světlem",
+        "Historie účinkujících",
+        "Export"
+      ],
+      "offline": "full",
+      "offline_note": "Lokální.",
+      "monetization": "Pro 19,99 USD/rok (~460 Kč).",
+      "revenue_math": "600 stažení/měs × 8 % = 48 × 19,99 USD = 960 USD × 0,85 × 23 ≈ 18 700 Kč.",
+      "revenue_czk_ideal": 18700,
+      "keywords": [
+        {
+          "kw": "open mic",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "karaoke rotation",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "sign up sheet",
+          "saturation": 5,
+          "competitor": "různé",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "kj rotation",
+          "saturation": 1,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        }
+      ],
+      "demand_evidence": "Neověřeno živě. Znalost trhu: KJ software na PC je placený; open mic scény rostou.",
+      "competitors": [
+        {
+          "name": "KaraFun",
+          "url": "",
+          "role": "parent",
+          "note": "karaoke software"
+        },
+        {
+          "name": "Sign-up sheet apps",
+          "url": "",
+          "role": "niche",
+          "note": "obecné"
+        },
+        {
+          "name": "Bit Vault (vlastní)",
+          "url": "",
+          "role": "niche",
+          "note": "sesterská appka pro komiky"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Velmi malý trh.",
+        "Papír funguje.",
+        "KJ software už rotaci má.",
+        "Nízký objem hledání."
+      ],
+      "killer_risk": "Trh příliš malý.",
+      "mitigation": "Bundle s Bit Vault.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "entertainment-30",
+      "name": "Raffle Draw on TV",
+      "tagline": "Tombola na školní akci: slosování lístků na plátně s napínavou animací.",
+      "pitch": "Školní akce, plesy a spolky losují tomboly – ručně z klobouku. Appka: zadáš rozsah lístků a ceny, slosování s animací na projektoru přes AirPlay, protokol výsledků a tisk. Offline, jednoduché, spolehlivé.",
+      "niche": "Slosování tombol pro spolky a školy. Wheel pickery jsou obecné.",
+      "parent_market": "Random picker appky (Wheel of Names, Tap Roulette).",
+      "target_user": "Organizátoři plesů, škol, spolků.",
+      "features": [
+        "Rozsahy lístků a barvy",
+        "Seznam cen",
+        "Animace slosování",
+        "Protokol a export",
+        "AirPlay"
+      ],
+      "offline": "full",
+      "offline_note": "Lokální.",
+      "monetization": "Event 6,99 USD (~160 Kč) jednorázově.",
+      "revenue_math": "1 500 stažení/měs × 6 % = 90 × 6,99 USD = 629 USD × 0,85 × 23 ≈ 12 300 Kč.",
+      "revenue_czk_ideal": 12300,
+      "keywords": [
+        {
+          "kw": "raffle draw",
+          "saturation": 4,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "raffle",
+          "saturation": 5,
+          "competitor": "různé",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "tombola",
+          "saturation": 5,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        },
+        {
+          "kw": "prize draw",
+          "saturation": 3,
+          "competitor": "neznámý",
+          "note": "odhad (Apple API v tomto běhu blokované), "
+        }
+      ],
+      "demand_evidence": "Neověřeno živě; entertainment shortlist uvádí „raffle/door-prize drawing on AirPlay screen“.",
+      "competitors": [
+        {
+          "name": "Wheel of Names",
+          "url": "",
+          "role": "parent",
+          "note": "random picker"
+        },
+        {
+          "name": "Tap Roulette",
+          "url": "",
+          "role": "parent",
+          "note": "picker"
+        },
+        {
+          "name": "Raffle apps (různé)",
+          "url": "",
+          "role": "niche",
+          "note": "odhad"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Guideline 5.3 – losování může být zaměněno s loterií.",
+        "Zdarma pickery.",
+        "Nízká frekvence.",
+        "Malý trh."
+      ],
+      "killer_risk": "Zdarma alternativy.",
+      "mitigation": "Profesionální protokol a design.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    }
+  ]
+}
