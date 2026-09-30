@@ -39,3 +39,16 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
     - Thrifted: Scan & Price Clothes (noise) https://apps.apple.com/us/app/thrifted-scan-price-clothes/id6757867446
     - BoothMate - Artist Alley POS        https://apps.apple.com/id/app/boothmate-artist-alley-pos/id6759342304
 
+[4] query: site:apps.apple.com florist wedding flower recipe pricing  (idea business-23 Bloom Recipe)
+    saturation (florist stem-recipe/pricing tools in title): 0 — results are bouquet DESIGNERS/visualizers (consumer or AI) and flower delivery; no dedicated stem-recipe+markup app surfaced -> OPEN on App Store, but no evidence the audience searches the store (leaders Details Flowers / Curate are web SaaS)
+    - Flower Architect (designer, subs $11.99-24.99/mo) https://apps.apple.com/us/app/flower-architect/id6746823367
+    - Bridal Bouquet Builder 4            https://apps.apple.com/us/app/bridal-bouquet-builder-4/id1556717938
+    - Floral AI                           https://apps.apple.com/us/app/floral-ai/id6746684369
+    - Bridal Bouquet Builder              https://apps.apple.com/us/app/bridal-bouquet-builder/id1453041066
+    - (noise) Flower Girl: Big Wedding Day https://apps.apple.com/us/app/flower-girl-big-wedding-day/id1052729607
+    - Bridal Bouquet Builder (mn)         https://apps.apple.com/mn/app/bridal-bouquet-builder/id1453041066
+    - Fleur - Floral Arrangement          https://apps.apple.com/us/app/fleur-floral-arrangement/id6764493075
+    - FAA Network Florist App (wire network) https://apps.apple.com/us/app/faa-network-florist-app/id1456396172
+    - AI Bouquet - Flower Designer        https://apps.apple.com/us/app/ai-bouquet-flower-designer/id6756481683
+    - (noise) Floward Online Flowers & Gifts https://apps.apple.com/us/app/floward-online-flowers-gifts/id813597992
+

@@ -52,3 +52,17 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results. None construc
     - Rhapsode (poetry by heart, progressive word removal) https://apps.apple.com/us/app/rhapsode/id6759266455
     - MemoCoach - Memorize Texts (10+ methods, PDF/TXT import) https://apps.apple.com/us/app/memorize-texts-memocoach/id1220188894
     - same id other listing https://apps.apple.com/us/app/siempre-learn-texts-by-heart/id1220188894
+
+[6] query: site:apps.apple.com fantasy calendar timeline worldbuilding custom calendar  (idea books-13)
+    saturation (story-timeline apps with custom/fantasy calendars): 2 strong — Aeon Timeline 3 (explicit custom non-Gregorian calendars, pro writer brand) + Campfire (timeline + worldbuilding, big writer brand) -> core USP already owned by the category leader; rest is generic calendar noise
+    - Aeon Timeline 3 (custom fantasy calendars) https://apps.apple.com/us/app/aeon-timeline-3/id1563351378
+    - Campfire - Write Your Book (timeline + maps + worldbuilding) https://apps.apple.com/us/app/campfire-write-your-book/id1626123915
+    - Story Planner for Writers https://apps.apple.com/us/app/story-planner-for-writers/id860024390
+    - (noise) Calendar Maker https://apps.apple.com/us/app/calendar-maker-your-own-pics/id1069319152
+    - (noise) Calendar+ 2 https://apps.apple.com/us/app/calendar-2-planner-widget/id6767846596
+    - (noise) C-M-I Social Calendar https://apps.apple.com/us/app/c-m-i-social-calendar/id1072549257
+    - (noise) Klender Pro Calendar https://apps.apple.com/us/app/klender-pro-calendar/id1508858177
+    - (noise) Fantasy Scheduler (fantasy sports) https://apps.apple.com/us/app/fantasy-scheduler/id1367783493
+    - (noise) Fantastical Calendar https://apps.apple.com/bm/app/fantastical-calendar/id718043190
+
+Search budget used: 6/6. No further searches.

@@ -48,3 +48,16 @@ https://apps.apple.com/us/app/resin-calculator-by-resinpro/id1552555507
 https://apps.apple.com/at/app/measure-app-epoxy-floors/id6747101126?l=en-GB
 https://apps.apple.com/us/app/resin-calculator/id1474364956
 https://apps.apple.com/us/app/qepoxy-app/id6449526054
+
+## 5) query: site:apps.apple.com heating oil tank level dipstick chart  (2026-09-30) — idea utilities-10
+saturation (sensor-free manual dip/level + tracking apps): 4 (HomeHeat [no sensor, delivery prediction, 2025], Tank Volume Log [dip/ullage -> volume], Fillio [inches remaining, deliveries], Fuel Density & Dip Calculator) + hardware-gauge apps (T-Meter, Alice Metrics, SOS, Tank Gauge Fuel1) + DE Tankvolumen Rechner (travel_verify) -> CONTESTABLE, niche already entered by new apps
+https://apps.apple.com/us/app/t-meter/id1566693372
+https://apps.apple.com/us/app/homeheat-heating-oil-tracker/id6747320571   (sensor-free, predicts delivery via weather)
+https://apps.apple.com/ch/app/tank-volume-log/id6794287611?l=en-GB   (dip/ullage -> volume)
+https://apps.apple.com/in/app/fuel-density-dip-calculator/id6747696430
+https://apps.apple.com/us/app/energycontrol/id1478467447
+https://apps.apple.com/us/app/sos-xtreme-comfort/id6748151258
+https://apps.apple.com/ro/app/fillio/id6755162344   (inches remaining, deliveries)
+https://apps.apple.com/us/app/tank-gauge-fuel1/id6746115438
+https://apps.apple.com/us/app/alice-metrics/id1373939814
+https://apps.apple.com/us/app/mypropane/id1568216769

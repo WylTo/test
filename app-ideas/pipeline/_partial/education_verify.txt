@@ -51,3 +51,15 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results. No Apple API 
     - Роллс Ролл (by-catch)                    https://apps.apple.com/us/app/%D1%80%D0%BE%D0%BB%D0%BB%D1%81-%D1%80%D0%BE%D0%BB%D0%BB/id6443386614
     - Reroll (by-catch)                        https://apps.apple.com/us/app/reroll/id1463198495
 
+[5] query: site:apps.apple.com ATC phraseology radio communication trainer  (idea education-10)  date: 2026-09-30
+    saturation (dedicated ATC radio/phraseology trainers): 8 -> SATURATED (author assumed "atc phraseology" sat 1). Wave of 2025–26 AI voice trainers (id675x–677x), several explicitly ICAO-standard.
+    - ATC Radio Practice Trainer               https://apps.apple.com/pk/app/atc-radio-practice-trainer/id6778602428
+    - ATC Training: Pilot Comms                https://apps.apple.com/lc/app/atc-training-pilot-comms/id6745460815?platform=ipad
+    - Wilco: ATC Radio Trainer                 https://apps.apple.com/us/app/wilco-atc-radio-trainer/id6779737028
+    - ATC Air Traffic Control (ICAO trainer)   https://apps.apple.com/us/app/atc-air-traffic-control/id6446184830
+    - Radio COMM Training for Pilots           https://apps.apple.com/id/app/radio-comm-training-for-pilots/id6754387548?platform=mac
+    - ATC One: AI Radio Practice               https://apps.apple.com/us/app/atc-one-ai-radio-practice/id6754663148
+    - PlaneEnglish: ARSim                      https://apps.apple.com/us/app/planeenglish-arsim/id1461037185
+    - Learn ATC- SeeYUH!                       https://apps.apple.com/us/app/learn-atc-seeyuh/id6759210610
+    - ATC One (cd)                             https://apps.apple.com/cd/app/atc-one/id6754663148
+
