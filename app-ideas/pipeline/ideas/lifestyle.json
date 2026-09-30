@@ -1,0 +1,2604 @@
+{
+  "category": "Lifestyle",
+  "category_slug": "lifestyle",
+  "search_notes": "Offline běh: žádná volání Apple ani WebSearch. Jádro (10 nápadů s evidence='web') stojí na _partial/lifestyle_evidence.txt (15 webových hledání): přesycené shluky (aquarium log, chicken egg tracker, hive inspection, reptile tracker, planetary hours, qada, orthodox calendar, watch collection, fountain pen, fragrance diary) nejsou navrženy jako modrý oceán, jen jako parent. Sub-niky (reef dosing, varroa, queen rearing) se v titulech hledaných shluků neobjevily, ale samy hledány nebyly – saturace je u nich odhad. Nápady s evidence='knowledge' mají saturaci odhadnutou z tržní znalosti a blue_ocean max 7; URL jen z _partial souborů (vč. graphics-design a reference), jinak prázdné. Apple autocomplete (hint_found) nebyl k dispozici, takže poptávka není ověřena na úrovni klíčových slov. Portfolio riziko 4.3: několik nápadů je vhodné sloučit (Reef Dose + Planted Tank Dosing, Lenormand + Cartomancy, Varroa + Queen Rearing, Diamond Painting + Floss Stash, Perfume Lab + Decant Desk). Vyřazeno: qada tracker a orthodox fasting (přesycené v EN), planetary hours PT/ES (přesycené), witchcraft grimoire (překryv s tarotem), dog seizure diary (existuje bezplatný nástroj veterinární školy – z tržní znalosti).",
+  "ideas": [
+    {
+      "id": "lifestyle-01",
+      "name": "Reef Dose: Alk Ca Mg Calculator",
+      "tagline": "Kalkulačka dávkování a deník parametrů pro mořská akvária – přesně, offline, bez tabulek v Excelu.",
+      "pitch": "Majitelé mořských (reef) akvárií denně řeší alkalinitu, vápník a hořčík – chyba v dávce znamená mrtvé korály za stovky dolarů. Obecné 'aquarium log' appky jen zapisují čísla, ale neřeknou, kolik ml roztoku přidat a jak rozložit dávku na dávkovací pumpu. Reef Dose spočítá dávku z objemu, cílové hodnoty a typu přípravku (DIY recepty i běžné roztoky), ukáže spotřebu korálů za den a upozorní na nebezpečný skok alkalinity. Reefaři patří k nejochotněji platícím hobbistům vůbec, a přesto tento konkrétní job-to-be-done v titulcích App Store nikdo necílí.",
+      "niche": "Dávkování a spotřeba Ca/Alk/Mg pro mořská akvária. Obecné akvarijní deníky (7 titulů, hlavně nové indie appky) řeší sladkovodní parametry a grafy; výpočet dávky a denní spotřeby je pro ně jen okrajová funkce, protože vyžaduje doménovou znalost chemie reefu.",
+      "parent_market": "Akvarijní deníky a správa nádrží – přeplněný trh (Aquarium Tracker, AquaticLog, TankSync, Aquarium Log); mořská akvaristika je nejvíc monetizovaný segment (drahé vybavení, testy, dávkovací pumpy).",
+      "target_user": "Majitel mořského akvária (typicky 100–500 l, SPS/LPS korály), který měří parametry 1–3× týdně a dávkuje ručně nebo pumpou; US, UK, DE, AU, JP.",
+      "features": [
+        "Kalkulačka dávky Ca/Alk/Mg z objemu, aktuální a cílové hodnoty a zvoleného roztoku (vč. DIY receptů)",
+        "Výpočet denní spotřeby korálů z historie měření a návrh nastavení dávkovací pumpy",
+        "Deník parametrů s grafy a varováním při nebezpečném skoku alkalinity (> 1 dKH/den)",
+        "Převody jednotek dKH ↔ meq/l ↔ ppm, salinita SG ↔ ppt",
+        "Widget s posledními hodnotami a připomínky měření"
+      ],
+      "offline": "full",
+      "offline_note": "Vše na zařízení: výpočty jsou deterministické vzorce, data v SwiftData/Core Data se synchronizací přes iCloud. Žádné API.",
+      "monetization": "Freemium: kalkulačky zdarma, deník + spotřeba + widgety v Pro: 2,99 USD/měs. (79 Kč), 14,99 USD/rok (379 Kč), lifetime 29,99 USD (749 Kč).",
+      "revenue_math": "Ideál: 1 500 stažení/měs. z niche klíčových slov × 5 % konverze = 75 plateb/měs. × 14.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 22 000 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.3 ≈ 28 600 Kč netto/měs.",
+      "revenue_czk_ideal": 28600,
+      "keywords": [
+        {
+          "kw": "reef dosing calculator",
+          "saturation": 2,
+          "competitor": "AquaticLog (starý, reef parametry)",
+          "note": "Evidence: v hledání 'aquarium log water parameters' se dávkování Ca/Alk/Mg neobjevilo v žádném titulu; samotná fráze nebyla zvlášť hledána – saturace je odhad."
+        },
+        {
+          "kw": "alkalinity calculator",
+          "saturation": 3,
+          "competitor": "neznámý – obecné kalkulačky",
+          "note": "odhad; fráze přirozená, typická pro reefaře"
+        },
+        {
+          "kw": "reef tank log",
+          "saturation": 4,
+          "competitor": "TankSync - Aquarium Manager",
+          "note": "odhad; TankSync má salinitu, obecné deníky pronikají i sem"
+        },
+        {
+          "kw": "coral dosing",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; žádný titul v evidenci"
+        }
+      ],
+      "demand_evidence": "Ověřeno: generický trh akvarijních deníků je živý (7 titulů v 1 hledání, většina z let 2025–26), AquaticLog a TankSync pokrývají mořské parametry → poptávka po reef funkcích existuje. Neověřeno: přesný objem hledání frází 'reef dosing calculator' / 'alkalinity calculator' (Apple autocomplete nebyl dostupný).",
+      "competitors": [
+        {
+          "name": "Aquarium Tracker: Tank Manager",
+          "url": "https://apps.apple.com/us/app/aquarium-tracker-tank-manager/id6755304265",
+          "role": "parent",
+          "note": "Nový obecný deník s grafy pH/GH/KH/NO3/PO4 – bez výpočtu dávek."
+        },
+        {
+          "name": "AquaticLog",
+          "url": "https://apps.apple.com/us/app/aquaticlog/id583895470",
+          "role": "niche",
+          "note": "Starší app, pokrývá reef parametry (salinita, alk, Ca, Mg), ale ne dávkovací logiku."
+        },
+        {
+          "name": "TankSync - Aquarium Manager",
+          "url": "https://apps.apple.com/us/app/tanksync-aquarium-manager/id6746080095",
+          "role": "niche",
+          "note": "Salinita a upozornění; nejbližší konkurent pro mořské nádrže."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Výrobci přípravků (Red Sea, Tropic Marin, Fauna Marin) mají vlastní dávkovací kalkulačky zdarma a reefaři jim věří víc než neznámé appce.",
+        "Smart dávkovací pumpy (Red Sea ReefDose, Kamoer, GHL) mají vlastní appky, které dávku počítají a rovnou nastaví – náš 'návrh nastavení pumpy' je pro jejich majitele zbytečný.",
+        "Chyba ve vzorci = mrtvé korály = 1★ recenze a reputační katastrofa v malé komunitě (fóra Reef2Reef).",
+        "Nová indie akvarijní appka z 2025–26 může reef kalkulačku přidat během týdne."
+      ],
+      "killer_risk": "Reefaři zůstanou u zdarma kalkulaček výrobců a appek chytrých pump; ochota platit za 'další kalkulačku' se ukáže nízká.",
+      "mitigation": "Stavět na tom, co výrobci neumí: spotřeba napříč značkami, historie, varování před skoky a DIY recepty (Balling). Všechny vzorce otestovat proti publikovaným tabulkám a zobrazit postup výpočtu.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 7,
+        "monetization": 8,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "lifestyle-02",
+      "name": "Cattery: Cat Breeder Log",
+      "tagline": "Chovatelský deník pro kočičí chovatelské stanice – říje, krytí, porody a váha koťat na jednom místě.",
+      "pitch": "Chov psů má v App Store několik specializovaných appek (Breedera, Puppy-Center, Breeder Tracker), ale chovatelé koček se musí spokojit s papírem nebo Excelem. Přitom chov čistokrevných koček (britská, mainská mývalí, ragdoll, sphynx) je obrovský v Rusku, Polsku, Česku a Německu, kde vznikají tisíce registrovaných chovatelských stanic. Cattery sleduje říje, krytí, březost (63–67 dní), porody, denní váhu koťat a očkování před odběrem – vše offline a lokalizované. Jediná appka, která se koček vůbec dotýká (Bondly), je obecná zdravotní appka pro psy i kočky.",
+      "niche": "Chovatelé čistokrevných koček (cattery). Velcí hráči míří na psy, protože US trh psích chovatelů je větší; kočičí chovatelství je silné hlavně mimo US (RU/PL/CZ/DE/FR), kde anglické indie appky nemají lokalizaci.",
+      "parent_market": "Chovatelské appky pro psy (Breedera, Puppy-Center, Breeder Tracker, Dogr) a zdravotní deníky mazlíčků (Bondly) – ověřený placený trh chovatelů.",
+      "target_user": "Chovatel(ka) registrované stanice s 2–10 kočkami a 2–6 vrhy ročně, typicky žena 30–55 let, Evropa a Rusko/Ukrajina/Kazachstán.",
+      "features": [
+        "Karta kočky: plemeno, barva (EMS kód), rodokmen, testy (HCM, PKD, krevní skupina A/B)",
+        "Kalendář říjí a krytí, výpočet termínu porodu a připomínky",
+        "Deník porodu a denní váhy koťat s grafem a varováním při úbytku",
+        "Očkování, odčervení a checklist předání koťat novým majitelům (PDF smlouva/karta)",
+        "Kontrola kompatibility krevních skupin A/B/AB při plánování krytí (neonatální izoerytrolýza)"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, iCloud sync mezi iPhonem a iPadem, export PDF on-device. Žádné účty ani server.",
+      "monetization": "Zdarma do 2 koček; Pro 4,99 USD/měs. (129 Kč) nebo 29,99 USD/rok (749 Kč), lifetime 59,99 USD. Chovatelé prodávají kotě za 800–3000 EUR, cena je pro ně zanedbatelná.",
+      "revenue_math": "Ideál: 700 stažení/měs. z niche klíčových slov × 6 % konverze = 42 plateb/měs. × 29.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 24 600 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.4 ≈ 34 500 Kč netto/měs.",
+      "revenue_czk_ideal": 34500,
+      "keywords": [
+        {
+          "kw": "cat breeder",
+          "saturation": 1,
+          "competitor": "Bondly: Dog & Cat Health",
+          "note": "Evidence: v hledání dog heat/breeding se kočky objevily jen u Bondly; fráze sama nebyla hledána – saturace odvozená."
+        },
+        {
+          "kw": "cattery",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; chovatelský termín, v titulech appek jsme ho neviděli"
+        },
+        {
+          "kw": "cat heat tracker",
+          "saturation": 2,
+          "competitor": "Bondly: Dog & Cat Health",
+          "note": "Bondly predikuje říji psa i kočky (evidence); jinak neověřeno"
+        },
+        {
+          "kw": "kitten weight tracker",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; obecné pet trackery to mají jako funkci"
+        }
+      ],
+      "demand_evidence": "Ověřeno: psí chovatelské appky existují minimálně 4 a jsou placené (Breedera, Puppy-Center, Breeder Tracker, Dogr) → model je ověřený. Kočky pokrývá jen Bondly (obecná appka). Předpoklad: kočičí chovatelství je silné v RU/PL/CZ/DE – vychází ze znalosti trhu (FIFe/WCF kluby), ne z dat App Store.",
+      "competitors": [
+        {
+          "name": "Breedera - Dog Breeder App",
+          "url": "https://apps.apple.com/us/app/breedera-dog-breeder-app/id1430975439",
+          "role": "parent",
+          "note": "Psí chovatelská appka s predikcí hárání a váhou – vzor funkcí."
+        },
+        {
+          "name": "Puppy-Center: Dog Breeding App",
+          "url": "https://apps.apple.com/us/app/puppy-center-dog-breeding-app/id6502343093",
+          "role": "parent",
+          "note": "Hárání → porod → růst štěňat, jen psi."
+        },
+        {
+          "name": "Bondly: Dog & Cat Health",
+          "url": "https://apps.apple.com/us/app/bondly-dog-cat-health/id6756502928",
+          "role": "niche",
+          "note": "Jediná appka, která predikuje říji i u koček; obecná, ne pro chovatele."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap: model chovatelských deníků je ověřený v US na psech; kočičí chovatelé jsou nejsilnější v Evropě a RU mluvícím světě, kde žádná lokalizovaná appka není. Launch v 50 jazycích (hlavně RU, PL, CS, DE, FR, UK).",
+      "devils_advocate": [
+        "Chovatelé koček jsou konzervativní a mají zavedené PC programy / Excel a rodokmeny v klubových systémech – přechod na appku je pomalý.",
+        "Počet stanic je v řádu desítek tisíc celosvětově; i při 100% dominanci je strop tržeb nízký.",
+        "Ruský trh (největší) je od 2022 komplikovaný pro platby přes App Store – část publika nezaplatí.",
+        "Psí appky (Breedera, Puppy-Center) mohou přidat kočky jedním releasem."
+      ],
+      "killer_risk": "Malá a konzervativní cílovka, která se dá oslovit spíš přes kluby a Facebook skupiny než přes ASO.",
+      "mitigation": "Lokalizovat do RU/PL/CS/DE jako první, klíčová slova v místních jazycích ('hodowla kotów', 'питомник кошек'), a přidat funkce, které psí appky nemají (krevní skupiny A/B, EMS kódy barev).",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 8,
+        "monetization": 7,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "lifestyle-03",
+      "name": "Varroa Count: Mite Log",
+      "tagline": "Počítání roztočů, prahy zásahu a deník léčení kleštíka – sezónně, pro každé včelstvo.",
+      "pitch": "Kleštík (Varroa destructor) je příčina číslo jedna úhynu včelstev a každý včelař musí monitorovat spad a léčit ve správný čas. Stávající appky jsou obecné deníky prohlídek úlů; počítání roztočů, přepočet na 100 včel a sezónní prahy zásahu (jaro vs. léto vs. podzim) nikdo nemá jako hlavní funkci. Varroa Count vede včelaře od sčítání (podložka, cukrová metoda, alkoholová proplachová metoda) přes rozhodnutí 'léčit/nelečit' až po deník použitých přípravků s ochrannými lhůtami. EU má přes 600 tisíc včelařů (DE, PL, CZ, FR, ES) a v mnoha zemích je evidence léčení povinná.",
+      "niche": "Monitoring kleštíka a záznam léčení. Appky pro prohlídky úlů (6 titulů) řeší obecný záznam; specializovaný varroa nástroj s prahovými hodnotami se v titulech neobjevil. Většina appek je anglických a US-centrických.",
+      "parent_market": "Včelařské deníky prohlídek (HiveTracks, Hive Logger, Beekeeping Tracker, Apiary Book ApiNote) – přeplněné, ale dokazují placenou poptávku.",
+      "target_user": "Hobby a menší profesionální včelař s 5–50 včelstvy, hlavně Evropa (DE, PL, CZ, FR, AT) a US/UK.",
+      "features": [
+        "Průvodce metodami sčítání (spad na podložce, cukrové poprašování, alkohol) s přepočtem na % napadení",
+        "Sezónní prahy zásahu s barevným semaforem pro každé včelstvo",
+        "Deník léčení: přípravek, dávka, datum, ochranná lhůta medu, export pro úřední evidenci (PDF/CSV)",
+        "Graf vývoje napadení za sezónu a porovnání včelstev na stanovišti",
+        "Hlasové zadávání počtů v rukavicích (on-device Speech)"
+      ],
+      "offline": "full",
+      "offline_note": "Stanoviště bývají bez signálu – vše běží offline, rozpoznání řeči on-device, sync přes iCloud.",
+      "monetization": "Zdarma do 3 včelstev; Pro 12,99 USD/rok (329 Kč) nebo lifetime 24,99 USD (599 Kč).",
+      "revenue_math": "Ideál: 1 400 stažení/měs. z niche klíčových slov × 5 % konverze = 70 plateb/měs. × 12.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 17 800 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.4 ≈ 24 900 Kč netto/měs.",
+      "revenue_czk_ideal": 24900,
+      "keywords": [
+        {
+          "kw": "varroa",
+          "saturation": 2,
+          "competitor": "Beekeeping - Hive Inspections (AI Varroa detekce)",
+          "note": "Evidence: hledání 'beekeeping hive inspection' – varroa jen jako funkce jedné appky, v titulech ne; samotné slovo nehledáno."
+        },
+        {
+          "kw": "mite count",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "varroa treatment log",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; žádný titul v evidenci"
+        },
+        {
+          "kw": "beekeeping log",
+          "saturation": 6,
+          "competitor": "HiveTracks",
+          "note": "Evidence: sat 6 pro inspekční deníky – jen jako důkaz rodičovského trhu"
+        }
+      ],
+      "demand_evidence": "Ověřeno: 6 včelařských deníků v jednom hledání (většina 2024–26), jedna s AI detekcí kleštíka → problém kleštíka je uznaný. Neověřeno: objem hledání 'varroa' v App Store; počet včelařů v EU vychází z veřejně známých statistik (odhad).",
+      "competitors": [
+        {
+          "name": "Beekeeping - Hive Inspections",
+          "url": "https://apps.apple.com/us/app/beekeeping-hive-inspections/id6748213481",
+          "role": "niche",
+          "note": "Má AI detekci kleštíka z fotky – nejbližší hrozba."
+        },
+        {
+          "name": "HiveTracks",
+          "url": "https://apps.apple.com/us/app/hivetracks/id1667408004",
+          "role": "parent",
+          "note": "Zavedený US deník prohlídek."
+        },
+        {
+          "name": "Apiary Book Beekeeping ApiNote",
+          "url": "https://apps.apple.com/us/app/apiary-book-beekeeping-apinote/id6752503587",
+          "role": "parent",
+          "note": "Evropský původ – ukazuje, že EU včelaři appky používají."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Včelařské appky jsou převážně anglické a US-centrické; varroa monitoring s evropskými přípravky a povinnou evidencí léčení je lokální potřeba DE/PL/CZ/FR. Lokalizace do 50 jazyků + národní přípravky.",
+      "devils_advocate": [
+        "Silná sezónnost: sčítá se hlavně červenec–říjen, v zimě appka nikoho nezajímá → výkyvy tržeb a retence.",
+        "Národní včelařské svazy a výzkumné ústavy vydávají vlastní zdarma appky/tabulky (např. 'Varroa Alert' typu nástroje) – konkurence zdarma s autoritou.",
+        "Doporučení 'léčit teď' se blíží veterinární radě; špatný práh = úhyn včelstev = odpovědnost a recenze.",
+        "Přípravky a ochranné lhůty se liší podle země a mění se – data vyžadují údržbu."
+      ],
+      "killer_risk": "Sezónnost a konkurence bezplatných nástrojů národních svazů.",
+      "mitigation": "Prahy prezentovat jako konfigurovatelné s citací zdroje (ne jako radu), přípravky jako editovatelný seznam; zimní hodnota přes plán léčení a export evidence.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "lifestyle-04",
+      "name": "Lenormand Deck & Grand Tableau",
+      "tagline": "Moderní Lenormand: výklady, kombinace dvojic a trenér Grand Tableau – v 50 jazycích.",
+      "pitch": "Lenormandovy karty jsou v Brazílii ('baralho cigano'), Německu a Francii populárnější než tarot, ale všechny Lenormand appky v App Store jsou z let 2012–2017 a nikdo je neudržuje. Uživatel dnes dostane zastaralé UI, anglické texty a žádný trénink kombinací, což je u Lenormand to hlavní. Postavíme čistou moderní appku: denní karta, výklady na 3/5/9 karet, slovník významů dvojic a interaktivní trenér Grand Tableau (36 karet, domy, vzdálenost). Staré tituly potvrzují poptávku; jejich stáří je naše příležitost.",
+      "niche": "Lenormand (ne tarot). Tarot appky jsou přeplněné a moderní; Lenormand zůstal u zapomenutých titulů z let 2012–17 a téměř bez lokalizace do PT-BR/DE/FR, kde je nejsilnější.",
+      "parent_market": "Tarot a věštění (Labyrinthos, Golden Thread Tarot, Mystic Tarot Reading) – velký placený trh s předplatným.",
+      "target_user": "Žena 25–55 let, praktikující kartářka nebo zájemkyně o sebereflexi; Brazílie, Německo, Francie, Rusko, Česko.",
+      "features": [
+        "Denní karta a výklady 3/5/9 karet s významy v 50 jazycích",
+        "Slovník kombinací dvojic (36 × 35) s vyhledáváním",
+        "Trenér Grand Tableau: domy, vzdálenost, zrcadlení, kvíz",
+        "Deník výkladů s ročním přehledem",
+        "Volitelně vlastní fotografie fyzického balíčku"
+      ],
+      "offline": "full",
+      "offline_note": "Významy a ilustrace (vlastní, ne licencované) jsou součástí balíčku; deník lokálně s iCloud sync. Volitelně Apple Foundation Models pro shrnutí výkladu on-device.",
+      "monetization": "Zdarma denní karta a 3kartový výklad; Premium 3,99 USD/měs. (99 Kč), 24,99 USD/rok (599 Kč), lifetime 39,99 USD.",
+      "revenue_math": "Ideál: 2 500 stažení/měs. z niche klíčových slov × 3 % konverze = 75 plateb/měs. × 24.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 36 600 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.3 ≈ 47 600 Kč netto/měs.",
+      "revenue_czk_ideal": 47600,
+      "keywords": [
+        {
+          "kw": "lenormand",
+          "saturation": 6,
+          "competitor": "Lenormand! (id873095450, starý)",
+          "note": "Evidence: 6 titulů, ale všechny ID 559M–1,29B (2012–2017) → slabé/opuštěné."
+        },
+        {
+          "kw": "lenormand cards",
+          "saturation": 5,
+          "competitor": "Seventh Sphere Lenormand Tarot",
+          "note": "Evidence: stejný shluk starých appek."
+        },
+        {
+          "kw": "grand tableau",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad; v titulech evidence nebyl"
+        },
+        {
+          "kw": "baralho cigano",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad pro BR storefront; neověřeno"
+        }
+      ],
+      "demand_evidence": "Ověřeno: 7 Lenormand titulů existuje (poptávka dost velká na to, aby vznikly), všechny staré (2012–2017). Předpoklad: popularita v BR/DE/FR vychází ze znalosti trhu, ne z dat App Store; objem hledání neověřen.",
+      "competitors": [
+        {
+          "name": "Lenormand!",
+          "url": "https://apps.apple.com/sg/app/lenormand/id873095450",
+          "role": "niche",
+          "note": "Starý titul, drží hlavní klíčové slovo."
+        },
+        {
+          "name": "Seventh Sphere Lenormand Tarot",
+          "url": "https://apps.apple.com/us/app/seventh-sphere-lenormand-tarot/id1286796898",
+          "role": "niche",
+          "note": "Má významy dvojic – nejbližší funkčně."
+        },
+        {
+          "name": "Fairy Tale Lenormand",
+          "url": "https://apps.apple.com/us/app/fairy-tale-lenormand/id1148686705",
+          "role": "niche",
+          "note": "Balíček s deníkem, starý."
+        },
+        {
+          "name": "Mystic Tarot Reading",
+          "url": "https://apps.apple.com/ee/app/mystic-tarot-reading/id1466775754",
+          "role": "parent",
+          "note": "Tarotová appka – rodičovský trh."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap: Lenormand je velký v BR/DE/FR/RU, ale App Store nabízí jen staré anglické tituly. Launch s plnou lokalizací PT-BR, DE, FR, RU, CS.",
+      "devils_advocate": [
+        "Apple guideline 4.3: 'fortune telling' appky jsou častým cílem zamítnutí jako spam, pokud nepřinášejí unikátní hodnotu.",
+        "Staré tituly mají roky recenzí a Apple je může dál upřednostňovat v hledání 'lenormand'.",
+        "Ilustrace balíčku musí být vlastní – historické balíčky jsou public domain, ale moderní reedice ne; riziko autorských práv.",
+        "Věštění má nízkou konverzi na předplatné mimo US; brazilský trh má nízkou kupní sílu."
+      ],
+      "killer_risk": "Zamítnutí v review (4.3 / fortune telling) nebo nízká konverze v BR, kde je publikum největší.",
+      "mitigation": "Postavit appku jako výukový/trenérský nástroj (Grand Tableau trenér, slovník), ne jako 'věštbu'; regionální ceny pro BR; vlastní ilustrace nebo public-domain balíček s ověřeným původem.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "lifestyle-05",
+      "name": "Diamond Painting Stash",
+      "tagline": "Evidence sad, barev drilů a rozpracovaných obrazů – lokalizovaně pro Evropu.",
+      "pitch": "Diamantové malování (diamond painting) prodávají Lidl, Action, Pepco a Temu po celé Evropě, ale všechny appky na evidenci sad a drilů jsou anglické indie tituly zaměřené na US. Hobbistky mají desítky sad a tisíce drilů v sáčcích s DMC čísly a neví, co už mají, co chybí a co kde leží. Diamond Painting Stash eviduje sady (foto obalu), zásobu drilů podle barevných kódů, rozpracované projekty a čas. Lokalizace do DE/NL/FR/PL/CS je jednoduchá a nikdo ji neudělal.",
+      "niche": "Evidence zásob a projektů diamantového malování v neanglických zemích. Existující appky (4) jsou anglické, malé a US-centrické.",
+      "parent_market": "Řemeslné/hobby deníky a zásoby (Drillalog, Diamond Painting Logbook, GemsFlow, Dotterly); širší parent: cross-stitch a pletací appky s ověřenou monetizací.",
+      "target_user": "Žena 35–70 let, relaxační hobby, 5–100 sad; DE, NL, FR, PL, CZ, ES, IT.",
+      "features": [
+        "Katalog sad s fotkou obalu, rozměry, výrobcem a stavem (plán/rozpracováno/hotovo)",
+        "Zásoba drilů podle barevného kódu (kulaté/čtvercové, AB, speciální) s počtem sáčků",
+        "Seznam chybějících barev pro konkrétní sadu a nákupní seznam",
+        "Časovač a fotodeník postupu, statistika hotových obrazů",
+        "OCR čísel barev z legendy sady (Vision on-device)"
+      ],
+      "offline": "full",
+      "offline_note": "Katalog, fotky a OCR (Apple Vision) běží na zařízení, iCloud sync. Tabulka barevných kódů je statická data v balíčku.",
+      "monetization": "Zdarma do 5 sad; lifetime 9,99 USD (249 Kč) nebo 12,99 USD/rok (329 Kč).",
+      "revenue_math": "Ideál: 2 000 stažení/měs. z niche klíčových slov × 5 % konverze = 100 plateb/měs. × 9.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 19 500 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.1 ≈ 21 500 Kč netto/měs.",
+      "revenue_czk_ideal": 21500,
+      "keywords": [
+        {
+          "kw": "diamond painting",
+          "saturation": 4,
+          "competitor": "Drillalog: Diamond Painting",
+          "note": "Evidence: 4 dedikované appky, anglické indie tituly; hry s 'diamond painting' nejsou konkurence."
+        },
+        {
+          "kw": "diamond painting tracker",
+          "saturation": 2,
+          "competitor": "Diamond Painting Logbook",
+          "note": "Evidence: logbook sleduje DMC i Diamond Dotz barvy."
+        },
+        {
+          "kw": "diamond art",
+          "saturation": 4,
+          "competitor": "GemsFlow Diamond Painting",
+          "note": "odhad; hry obsazují část výsledků"
+        },
+        {
+          "kw": "diamantmalerei",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad pro DE storefront, neověřeno"
+        }
+      ],
+      "demand_evidence": "Ověřeno: 4 dedikované evidence appky (anglické), sat 4 → mírná konkurence, poptávka existuje. Předpoklad: silný evropský trh sad (diskonty) – znalost trhu, ne data App Store; neověřeno, zda existují lokální DE/NL appky.",
+      "competitors": [
+        {
+          "name": "Drillalog: Diamond Painting",
+          "url": "https://apps.apple.com/us/app/drillalog-diamond-painting/id6469571163",
+          "role": "niche",
+          "note": "Sleduje DMC barvy, anglicky."
+        },
+        {
+          "name": "Diamond Painting Logbook",
+          "url": "https://apps.apple.com/us/app/diamond-painting-logbook/id1440806990",
+          "role": "us-only",
+          "note": "Anglický logbook DMC + Diamond Dotz – vzor pro lokalizovanou verzi."
+        },
+        {
+          "name": "GemsFlow Diamond Painting",
+          "url": "https://apps.apple.com/us/app/gemsflow-diamond-painting/id1497430162",
+          "role": "niche",
+          "note": "Starší evidence app."
+        },
+        {
+          "name": "Dotterly: Diamond painting",
+          "url": "https://apps.apple.com/us/app/dotterly-diamond-painting/id6446167461",
+          "role": "niche",
+          "note": "Nová indie appka."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Všechny evidenční appky jsou anglické a US-centrické, přestože sady se masově prodávají v evropských diskontech. Lokalizace do DE/NL/FR/PL/CS/IT/ES + místní klíčová slova.",
+      "devils_advocate": [
+        "Starší publikum méně platí za appky a méně je hledá v App Store.",
+        "Trend diamantového malování může odeznít (módní vlna 2019–2024).",
+        "'DMC' je ochranná známka – nesmí být v názvu ani klíčových slovech (2.3.7 / trademark).",
+        "Stávající 4 appky mohou lokalizaci přidat přes automatický překlad během týdne."
+      ],
+      "killer_risk": "Nízká ochota starší cílovky platit + možný konec trendu.",
+      "mitigation": "Jednorázový nákup bez předplatného (cílovka ho nemá ráda), silné lokální ASO, žádné ochranné známky v metadatech.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "lifestyle-06",
+      "name": "Hatch Day: Egg Incubation Calendar",
+      "tagline": "Kalendář líhnutí pro slepice, křepelky, kachny, husy i krůty – prosvěcování a lockdown včas.",
+      "pitch": "Počítadla vajec pro domácí slepice jsou v App Store přesycená (9 titulů), ale líhnutí je samostatný problém: každý druh má jinou délku inkubace (křepelka 17–18 dní, kachna 28, husa 30, pižmovka 35), jinou teplotu, vlhkost a termín 'lockdownu'. Chovatelé to dnes počítají na papíře a zapomínají prosvítit nebo přestat otáčet. Hatch Day hlídá každou násadu zvlášť, upozorní na prosvěcování, lockdown a den líhnutí a vede statistiku líhnivosti. Jediný konkurent, který líhnutí vůbec zmiňuje (Superhen), je hlavně deník snášky.",
+      "niche": "Inkubace a líhnutí více druhů drůbeže. Appky na vejce se zaměřily na počítání snášky, protože to je největší cílovka; líhnutí vyžaduje data po druzích a nikdo ho nedělá jako hlavní funkci.",
+      "parent_market": "Deníky domácí drůbeže a vajec (FlockFriend, PoultryPal, Chicken & Egg Tracker, Superhen) – zlatá horečka 2025–26.",
+      "target_user": "Chovatel(ka) drůbeže na zahradě nebo malé farmě, který líhne 2–10 násad ročně v inkubátoru nebo pod kvočnou; US, UK, AU, DE, PL, CZ.",
+      "features": [
+        "Násady po druzích (slepice, křepelka, kachna, pižmovka, husa, krůta, perlička, bažant) s automatickým kalendářem",
+        "Připomínky prosvěcování (den 7/14), zastavení otáčení a lockdown, den líhnutí",
+        "Deník teploty a vlhkosti a checklist před líhnutím",
+        "Statistika oplozenosti a líhnivosti po násadě a po kohoutovi/liniích",
+        "Live Activity s odpočtem do líhnutí"
+      ],
+      "offline": "full",
+      "offline_note": "Tabulky druhů jsou statická data; kalendář a notifikace lokálně. Žádné API.",
+      "monetization": "Zdarma 1 aktivní násada; lifetime 6,99 USD (179 Kč) nebo 9,99 USD/rok (249 Kč).",
+      "revenue_math": "Ideál: 3 000 stažení/měs. z niche klíčových slov × 6 % konverze = 180 plateb/měs. × 6.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 24 600 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.1 ≈ 27 100 Kč netto/měs.",
+      "revenue_czk_ideal": 27100,
+      "keywords": [
+        {
+          "kw": "egg incubation",
+          "saturation": 2,
+          "competitor": "Superhen",
+          "note": "Evidence: jen Superhen zmiňuje líhnutí v hledání 'chicken egg tracker'; samotná fráze nehledána."
+        },
+        {
+          "kw": "hatching calendar",
+          "saturation": 1,
+          "competitor": "Superhen",
+          "note": "odhad"
+        },
+        {
+          "kw": "quail incubation",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; křepelky jsou rychle rostoucí hobby"
+        },
+        {
+          "kw": "chicken egg tracker",
+          "saturation": 9,
+          "competitor": "FlockFriend: Chicken Tracker",
+          "note": "Evidence: sat 9 – jen jako důkaz rodičovského trhu, necílit"
+        }
+      ],
+      "demand_evidence": "Ověřeno: 9 appek na vejce v jednom hledání (2025–26) → silná a rostoucí cílovka domácích chovatelů; líhnutí pokrývá jen Superhen. Neověřeno: objem hledání 'egg incubation'/'hatching'; odhad, že existují i starší inkubační kalkulačky mimo výsledky.",
+      "competitors": [
+        {
+          "name": "Superhen",
+          "url": "https://apps.apple.com/us/app/superhen/id6780077145",
+          "role": "niche",
+          "note": "Líhnutí + snáška – jediný, kdo líhnutí zmiňuje."
+        },
+        {
+          "name": "FlockFriend: Chicken Tracker",
+          "url": "https://apps.apple.com/us/app/flockfriend-chicken-tracker/id6745474579",
+          "role": "parent",
+          "note": "Typický nový deník hejna."
+        },
+        {
+          "name": "PoultryPal: Chicken & Egg Log",
+          "url": "https://apps.apple.com/us/app/poultrypal-chicken-egg-log/id6743654509",
+          "role": "parent",
+          "note": "Cílí na malé farmáře."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Výrobci inkubátorů (Brinsea aj.) mají chytré inkubátory s vlastními appkami a návody zdarma.",
+        "Líhnutí je sezónní (jaro) a uživatel appku potřebuje jen 3–5 týdnů v roce → nízká ochota platit předplatné.",
+        "Kterýkoli z 9 egg trackerů přidá multi-druhový kalendář za týden – funkce je jednoduchá.",
+        "Jednoduchá kalkulačka dnů riskuje zamítnutí 4.2 (minimum functionality), pokud nepřidáme hloubku."
+      ],
+      "killer_risk": "Funkce je tak jednoduchá, že ji zkopíruje kterýkoli z 9 konkurentů a uživatelé nebudou chtít platit.",
+      "mitigation": "Hloubka (statistika líhnivosti po liniích, deník vlhkosti, Live Activity), jednorázová cena a rychlé ovládnutí fráze 'egg incubation' v 50 jazycích.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "lifestyle-07",
+      "name": "Moon Hair Calendar",
+      "tagline": "Lunární kalendář stříhání vlasů a krásy – tradice z Německa a Česka poprvé pro celý svět.",
+      "pitch": "'Mondkalender Haare schneiden' patří v Německu, Rakousku, Česku a Rusku k dlouhodobě hledaným tématům a časopisy ho otiskují každý měsíc. V App Store jsou lunární kalendáře obecné (fáze Měsíce) nebo zahradnické; specializovaný kalendář stříhání, barvení a kosmetiky prakticky chybí v angličtině a v mnoha dalších jazycích. Moon Hair Calendar počítá polohu Měsíce ve znamení a fázi offline a zobrazí 'dobré dny' pro stříhání, barvení, depilaci a pleťové procedury podle tradice. Jde o čistý lifestyle/folklór produkt s widgetem – levný na vývoj a s jasnou poptávkou v DACH/CEE.",
+      "niche": "Lunární kalendář krásy a stříhání. Moon appky řeší astronomii nebo zahradu; kadeřnická tradice je regionální (DACH/CEE/RU) a anglicky mluvící vývojáři ji neznají.",
+      "parent_market": "Lunární kalendáře a moon phase appky (Moon Calendar - Moony, The Lunar Calendar, Full Moon) – stabilní, dobře monetizovaný segment s widgety.",
+      "target_user": "Žena 25–65 let v DE/AT/CH/CZ/SK/PL/RU, která stříhá/barví podle Měsíce nebo o tom čte v časopisech; kadeřnice jako sekundární cílovka.",
+      "features": [
+        "Denní ukazatel 'dobrý/neutrální/nevhodný den' pro stříhání, barvení, depilaci, pleť, nehty",
+        "Měsíční přehled a widget na plochu / zamykací obrazovku",
+        "Připomínka nejbližšího dobrého dne pro plánovaný úkon",
+        "Vysvětlení tradice (Měsíc ve znamení, dorůstající/couvající) – jako folklór",
+        "Deník stříhání s fotkou pro porovnání růstu"
+      ],
+      "offline": "full",
+      "offline_note": "Poloha Měsíce ve znamení a fáze se počítá lokálně (Meeus algoritmy, vlastní implementace, ne Swiss Ephemeris kvůli AGPL). Žádná síť.",
+      "monetization": "Zdarma aktuální den; Premium 1,99 USD/měs. (49 Kč) nebo 9,99 USD/rok (249 Kč), widgety a plánování v Premium.",
+      "revenue_math": "Ideál: 3 000 stažení/měs. z niche klíčových slov × 4 % konverze = 120 plateb/měs. × 9.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 23 400 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.4 ≈ 32 800 Kč netto/měs.",
+      "revenue_czk_ideal": 32800,
+      "keywords": [
+        {
+          "kw": "moon hair calendar",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; evidence zmiňuje jako neověřený reverse gap"
+        },
+        {
+          "kw": "haircut calendar",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "mondkalender",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad pro DE storefront; existují DE lunární kalendáře, které stříhání zahrnují"
+        },
+        {
+          "kw": "lunar calendar",
+          "saturation": 7,
+          "competitor": "Moon Calendar - Moony",
+          "note": "odhad; head term přeplněný – jen parent"
+        }
+      ],
+      "demand_evidence": "Ověřeno jen nepřímo: lunární kalendáře jsou v App Store etablované (Moony, The Lunar Calendar, Full Moon v evidenci). Předpoklad: poptávka po 'Mondkalender Haare' v DACH/CEE je znalost trhu (časopisy, weby), App Store saturace nebyla změřena.",
+      "competitors": [
+        {
+          "name": "Moon Calendar - Moony",
+          "url": "https://apps.apple.com/us/app/moon-calendar-moony/id1441214285",
+          "role": "parent",
+          "note": "Populární lunární kalendář – rodičovský trh."
+        },
+        {
+          "name": "The Lunar Calendar",
+          "url": "https://apps.apple.com/us/app/lunar-calendar-the-art-of-timing/id294805427",
+          "role": "parent",
+          "note": "'Art of timing' – obecné časování podle Měsíce."
+        },
+        {
+          "name": "Full - Moon",
+          "url": "https://apps.apple.com/si/app/full-moon/id954003668",
+          "role": "parent",
+          "note": "Moon phase appka."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap: tradice silná v DE/AT/CZ/RU, v angličtině téměř chybí. Launch v 50 jazycích, primární ASO v DE/CS/PL/RU a sekundárně EN.",
+      "devils_advocate": [
+        "V DE pravděpodobně už existují lokální Mondkalender appky, které stříhání obsahují – saturace v DE storefrontu je neověřená.",
+        "Mimo DACH/CEE je koncept neznámý – 50 jazyků nemusí přinést poptávku, jen náklady na lokalizaci.",
+        "Apple 4.3/1.4: tvrzení o 'rychlejším růstu vlasů' by působilo jako zavádějící zdravotní tvrzení.",
+        "Obecné moon appky (Moony) mohou přidat 'beauty days' jako feature."
+      ],
+      "killer_risk": "DE storefront je už obsazený lokálními lunárními kalendáři a mimo DACH/CEE poptávka neexistuje.",
+      "mitigation": "Prezentovat jako tradici/folklór bez zdravotních tvrzení; před buildem ověřit DE/CS storefront; prioritizovat CS/PL/RU, kde je konkurence pravděpodobně slabší.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "lifestyle-08",
+      "name": "Puzzle Shelf: Jigsaw Collection Log",
+      "tagline": "Sbírka skládaček, časy skládání, chybějící dílky a výměny – vše v jedné poličce.",
+      "pitch": "Skládání puzzle zažívá od roku 2020 renesanci a aktivní skládači mají desítky až stovky krabic, výměnné skupiny a osobní rekordy. App Store přitom nabízí jedinou dedikovanou evidenci (Puzzle Tracker, jen iPad) – hlavní klíčové slovo 'jigsaw' obsadily hry. Puzzle Shelf eviduje sbírku (sken čárového kódu/foto krabice), časy skládání, chybějící dílky, půjčky a výměny a přání. Je to nejotevřenější nika z celého výzkumu, jen s omezenou monetizací.",
+      "niche": "Evidence fyzických puzzle. Vývojáři míří na herní 'jigsaw' klíčová slova s reklamami; fyzičtí skládači jsou pro ně neviditelní.",
+      "parent_market": "Sběratelské/katalogové appky (Libib, CLZ pro knihy/filmy) a obrovský trh jigsaw her, který dokazuje objem hledání slova 'jigsaw'.",
+      "target_user": "Skládač(ka) 30–70 let s 20–300 puzzle, členové výměnných skupin a soutěžní skládači (speed puzzling).",
+      "features": [
+        "Katalog sbírky s fotkou krabice, značkou, počtem dílků a skenem čárového kódu (on-device)",
+        "Stopky a osobní rekordy, dílky za minutu, soutěžní režim",
+        "Chybějící dílky, půjčeno/vyměněno komu, přání",
+        "Statistiky a sdílitelná karta sbírky (obrázek)"
+      ],
+      "offline": "full",
+      "offline_note": "Čárový kód se jen uloží (bez online lookupu), foto a data lokálně, iCloud sync.",
+      "monetization": "Zdarma do 25 puzzle; lifetime 4,99 USD (129 Kč). Volitelný tip jar.",
+      "revenue_math": "Ideál: 2 500 stažení/měs. z niche klíčových slov × 8 % konverze = 200 plateb/měs. × 4.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 19 500 Kč netto/měs. Hranice 10 000 Kč je dosažitelná jen při vysokém dosahu – monetizace je slabá.",
+      "revenue_czk_ideal": 19500,
+      "keywords": [
+        {
+          "kw": "jigsaw puzzle tracker",
+          "saturation": 1,
+          "competitor": "Puzzle Tracker",
+          "note": "Evidence: sat 1 – jediná dedikovaná appka (iPad)."
+        },
+        {
+          "kw": "puzzle collection",
+          "saturation": 1,
+          "competitor": "Puzzle Tracker",
+          "note": "Evidence: stejné hledání, žádný další titul."
+        },
+        {
+          "kw": "puzzle log",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "speed puzzling",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad; rostoucí soutěžní komunita"
+        }
+      ],
+      "demand_evidence": "Ověřeno: nika je nejotevřenější z hledaných (sat 1). Neověřeno: objem hledání – 'jigsaw' je dominován hrami, takže poptávka po evidenci může být malá (hints nebyly k dispozici).",
+      "competitors": [
+        {
+          "name": "Puzzle Tracker",
+          "url": "https://apps.apple.com/us/app/puzzle-tracker/id1561473799",
+          "role": "niche",
+          "note": "Jediná dedikovaná appka (iPad): přání/hotovo, časovač."
+        },
+        {
+          "name": "Jigsaw Puzzle: Daily Puzzles",
+          "url": "https://apps.apple.com/us/app/jigsaw-puzzle-daily-puzzles/id495583717",
+          "role": "parent",
+          "note": "Hra, která drží head keyword 'jigsaw'."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Nízká poptávka v App Store: fyzičtí skládači appky pro evidenci aktivně nehledají.",
+        "Slabá monetizace – jednorázově 5 USD, hranice 10 000 Kč vyžaduje ~2 500 stažení/měs., což je u takové niky optimistické.",
+        "Hry obsazují všechny výsledky se slovem 'jigsaw' → i dobrý titul bude pod reklamními hrami.",
+        "Obecné katalogové appky (Libib, Sortly) pokryjí sbírku 'dost dobře'."
+      ],
+      "killer_risk": "Nedostatek hledání – nika je otevřená, protože o ni skoro nikdo nestojí.",
+      "mitigation": "Stavět levně (2 týdny) a jako doplněk portfolia; cílit speed-puzzling komunitu (soutěže, rekordy), sdílitelné karty pro organický růst.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 9,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "lifestyle-09",
+      "name": "Meter Log: Utility Readings",
+      "tagline": "Stavy elektroměru, plynoměru a vodoměru foťákem – a víte, jestli vám vyjde záloha.",
+      "pitch": "V Německu, Rakousku a Česku lidé pravidelně odečítají měřiče a řeší, zda jim roční vyúčtování vyjde s doplatkem ('Zählerstand', 'Nachzahlung'). Po energetické krizi 2022 se z toho stal masový zvyk a v DE je fráze 'Zählerstand App' známá. Meter Log přečte číslo z fotky měřiče (Vision OCR on-device), spočítá spotřebu, porovná se zálohami a odhadne doplatek. V US je koncept téměř neznámý (smart metery, měsíční účty) – proto ho anglicky mluvící vývojáři ignorují.",
+      "niche": "Ruční odečty měřičů s výpočtem doplatku. Energetické firmy mají vlastní appky jen pro své zákazníky; nezávislá, offline appka napříč dodavateli a medii je v EU mezera.",
+      "parent_market": "Energetické appky dodavatelů (Tibber, Octopus Energy) a domácí rozpočtové appky – velký trh, ale vázaný na konkrétního dodavatele.",
+      "target_user": "Nájemník nebo majitel bytu/domu v DE/AT/CH/CZ/PL/NL s ročním vyúčtováním; 25–70 let.",
+      "features": [
+        "Odečet z fotky měřiče (Vision OCR) nebo ručně, pro elektřinu, plyn, vodu, teplo, FVE",
+        "Spotřeba za období, graf a srovnání s loňskem",
+        "Kalkulačka: záloha vs. skutečná spotřeba → odhad doplatku/přeplatku",
+        "Připomínka odečtu (měsíčně, ke dni výměny tarifu, k odchodu z nájmu)",
+        "Export pro dodavatele a pro předávací protokol bytu (PDF)"
+      ],
+      "offline": "full",
+      "offline_note": "OCR, výpočty a export na zařízení; ceny energií zadává uživatel (žádná licencovaná data). iCloud sync.",
+      "monetization": "Zdarma 1 měřič; Pro 1,99 USD/měs. (49 Kč) nebo 9,99 USD/rok (249 Kč), lifetime 19,99 USD (499 Kč).",
+      "revenue_math": "Ideál: 3 000 stažení/měs. z niche klíčových slov × 4 % konverze = 120 plateb/měs. × 9.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 23 400 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.4 ≈ 32 800 Kč netto/měs.",
+      "revenue_czk_ideal": 32800,
+      "keywords": [
+        {
+          "kw": "meter reading",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad; v EN pravděpodobně i firemní appky pro odečítače"
+        },
+        {
+          "kw": "zählerstand",
+          "saturation": 5,
+          "competitor": "—",
+          "note": "odhad pro DE storefront; lokální appky pravděpodobně existují"
+        },
+        {
+          "kw": "utility tracker",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "electricity meter",
+          "saturation": 5,
+          "competitor": "Tibber (parent)",
+          "note": "odhad; mix dodavatelů a měřicích appek"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty App Store (offline běh, žádná evidence). Předpoklad z tržní znalosti: v DE existuje několik 'Zählerstand' appek a téma je masové kvůli ročnímu vyúčtování; v US minimální.",
+      "competitors": [
+        {
+          "name": "Tibber",
+          "url": "",
+          "role": "parent",
+          "note": "Dodavatel elektřiny s appkou spotřeby (DE/NO/SE/NL) – jen pro své zákazníky."
+        },
+        {
+          "name": "Octopus Energy",
+          "url": "",
+          "role": "parent",
+          "note": "Dodavatel s appkou a odečty – jen pro své zákazníky."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap: model ručních odečtů je silný v DE/AT/CZ, v US prakticky neexistuje. Launch primárně pro evropské storefronty v 50 jazycích.",
+      "devils_advocate": [
+        "V DE storefrontu už pravděpodobně jsou zavedené 'Zählerstand' appky s tisíci hodnocení – nika nemusí být modrý oceán.",
+        "Chytré měřiče (povinný rollout v DE/NL) odečty postupně zbytečně nahrazují.",
+        "Tarifní struktury (pevná složka, víceltarif, FVE přetoky) jsou složité; nepřesný odhad doplatku = špatné recenze.",
+        "Nízká frekvence používání (1× měsíčně) → slabá retence a konverze na předplatné."
+      ],
+      "killer_risk": "Existující lokální DE appky s náskokem v hodnoceních a pomalá smrt ručních odečtů kvůli smart meterům.",
+      "mitigation": "Před vývojem ověřit DE/CS storefront; diferencovat OCR z fotky a výpočtem doplatku; cílit i na CEE/PL, kde smart metery přijdou později.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "lifestyle-10",
+      "name": "Tortoise Care & Hibernation Log",
+      "tagline": "Váha, hibernace a Jacksonův poměr pro suchozemské želvy – bezpečně přes zimu.",
+      "pitch": "Zimování suchozemských želv (Testudo) je největší riziko jejich chovu – želva, která ztratí příliš mnoho váhy nebo se probudí při špatné teplotě, může uhynout. Britští a evropští chovatelé proto želvy během hibernace váží každý týden a hlídají teplotu v lednici či boxu, typicky v sešitě. Obecné reptile appky řeší krmení a svlékání hadů a ještěrů, ne zimování želv. Tortoise Care hlídá hmotnost (a 'Jacksonův poměr' délka/váha) a teplotu, upozorní na nebezpečný úbytek a vede i jarní probouzení.",
+      "niche": "Suchozemské želvy a jejich zimování. Reptile trackery (6 titulů) cílí na hady a ještěry (krmení, svlékání); želví hibernace je praxe hlavně UK/EU a US vývojáři ji neznají.",
+      "parent_market": "Reptile care trackery (ReptiCare, Reptile Buddy, Reptile Rocket, Shed) – přeplněný, ale dokazuje, že chovatelé plazů platí.",
+      "target_user": "Chovatel suchozemské želvy (Testudo hermanni/graeca/horsfieldii), UK, DE, CZ, IT, FR; často rodina s jednou až pěti želvami.",
+      "features": [
+        "Týdenní vážení s grafem a varováním při úbytku nad bezpečnou hranici během hibernace",
+        "Deník teploty zimování (lednice/box) a checklist před a po hibernaci",
+        "Kalkulačka poměru délka/hmotnost (Jacksonův poměr) jako orientační ukazatel s odkazem na veterináře",
+        "Krmení, UVB lampa (výměna žárovky), koupání – připomínky",
+        "Profil více želv s fotkou krunýře pro sledování růstu"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, iCloud sync; žádná síť.",
+      "monetization": "Zdarma 1 želva bez hibernačního modulu; lifetime 9,99 USD (249 Kč) nebo 4,99 USD/rok (129 Kč).",
+      "revenue_math": "Ideál: 1 500 stažení/měs. z niche klíčových slov × 8 % konverze = 120 plateb/měs. × 9.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 23 400 Kč netto/měs.",
+      "revenue_czk_ideal": 23400,
+      "keywords": [
+        {
+          "kw": "tortoise",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad; v EN existují obecné želví appky a hry"
+        },
+        {
+          "kw": "tortoise hibernation",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; evidence uvádí jako neověřenou sub-niku"
+        },
+        {
+          "kw": "tortoise care",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "reptile tracker",
+          "saturation": 6,
+          "competitor": "ReptiCare: Track Your Reptiles",
+          "note": "Evidence: sat 6 – jen jako parent"
+        }
+      ],
+      "demand_evidence": "Ověřeno: reptile tracker trh je živý (6 titulů, 2025–26). Předpoklad: želví hibernace je běžná praxe v UK/EU (veterinární návody, chovatelské spolky) – z tržní znalosti, bez dat App Store.",
+      "competitors": [
+        {
+          "name": "ReptiCare: Track Your Reptiles",
+          "url": "https://apps.apple.com/us/app/repticare-track-your-reptiles/id6755394469",
+          "role": "parent",
+          "note": "Obecný reptile tracker vč. chovu."
+        },
+        {
+          "name": "Reptile Buddy",
+          "url": "https://apps.apple.com/us/app/reptile-buddy/id1508892560",
+          "role": "parent",
+          "note": "Starší obecný tracker plazů."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Zimování Testudo je evropská (UK/DE/IT/CZ) praxe; US appky na plazy ho neřeší. Lokalizace do EU jazyků s ASO pro 'Schildkröte Winterstarre', 'želva zimování'.",
+      "devils_advocate": [
+        "Pokyny k hibernaci se blíží veterinární radě – chybná hranice úbytku váhy = uhynulé zvíře a riziko 1.4.1.",
+        "Malý trh: majitelé želv často mají jednu želvu a appku potřebují 4 měsíce v roce.",
+        "Obecné reptile appky mohou přidat 'hibernation mode' snadno.",
+        "Věrohodnost: chovatelé věří spolkům (např. Tortoise Protection Group) víc než neznámé appce."
+      ],
+      "killer_risk": "Příliš malý trh při jednorázové ceně, navíc sezónní.",
+      "mitigation": "Celoroční hodnota (růst, UVB, krmení), hranice úbytku jako editovatelné s odkazem na zdroj, spolupráce se spolky na doporučení.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "lifestyle-11",
+      "name": "Whelping Box: Litter & Puppy Weights",
+      "tagline": "Porod a prvních 8 týdnů štěňat: váhy, kojení a péče minutu po minutě.",
+      "pitch": "Nejkritičtější dny chovatele psů jsou porod a první dva týdny, kdy se štěňata váží dvakrát denně a každý úbytek je varovný signál. Existující chovatelské appky řeší celý cyklus (hárání → krytí → porod → prodej), ale samotný porodní deník a váhy štěňat jsou u nich jen jedna obrazovka. Whelping Box je rychlý, jednoruký nástroj pro noc porodu: časovač kontrakcí a intervalů mezi štěňaty, barevné obojky, dvojí denní vážení s grafem a upozorněním. Mnoho malých chovatelů mělo jen jeden vrh – nechtějí komplexní chovatelský systém.",
+      "niche": "Porodní deník a váhy štěňat pro příležitostné chovatele. Komplexní chovatelské appky cílí na profesionály s předplatným; příležitostný chovatel (1 vrh za 1–2 roky) chce jednoduchý nástroj.",
+      "parent_market": "Chovatelské appky pro psy (Breedera, Puppy-Center, Breeder Tracker, Dogr) – ověřené placené.",
+      "target_user": "Majitel(ka) feny s prvním nebo druhým vrhem a menší chovatel; celosvětově, hlavně US/UK/DE/AU.",
+      "features": [
+        "Porodní režim: časovač, záznam každého štěněte (čas, pohlaví, barva obojku, váha), intervaly",
+        "Vážení 2× denně s grafem na štěně a varováním při úbytku",
+        "Kontrolní seznam prvních 8 týdnů (odčervení, očkování, socializace)",
+        "Karta štěněte pro nového majitele (PDF)",
+        "Velká tlačítka a tmavý režim pro noční použití"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně; PDF on-device.",
+      "monetization": "Jednorázově za vrh: 9,99 USD (249 Kč) za 'Litter Pass' nebo lifetime 19,99 USD (499 Kč).",
+      "revenue_math": "Ideál: 1 500 stažení/měs. z niche klíčových slov × 6 % konverze = 90 plateb/měs. × 12.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 22 900 Kč netto/měs. Počítáno s mixem Litter Pass/lifetime, průměr ~13 USD.",
+      "revenue_czk_ideal": 22900,
+      "keywords": [
+        {
+          "kw": "whelping",
+          "saturation": 2,
+          "competitor": "Puppy-Center: Dog Breeding App",
+          "note": "Evidence: Puppy-Center a Breedera pokrývají porod jako součást cyklu; samotné slovo nehledáno."
+        },
+        {
+          "kw": "puppy weight tracker",
+          "saturation": 3,
+          "competitor": "Breedera - Dog Breeder App",
+          "note": "Evidence: Breedera má váhu; saturace odhad."
+        },
+        {
+          "kw": "litter tracker",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "dog breeding",
+          "saturation": 5,
+          "competitor": "Breedera - Dog Breeder App",
+          "note": "Evidence: pokryté – jen parent"
+        }
+      ],
+      "demand_evidence": "Ověřeno: chovatelské appky pro psy existují (Breedera, Puppy-Center, Breeder Tracker, Dogr) a pokrývají porod/váhy částečně. Neověřeno: objem hledání 'whelping'.",
+      "competitors": [
+        {
+          "name": "Puppy-Center: Dog Breeding App",
+          "url": "https://apps.apple.com/us/app/puppy-center-dog-breeding-app/id6502343093",
+          "role": "niche",
+          "note": "Hárání → porod → růst štěňat."
+        },
+        {
+          "name": "Breedera - Dog Breeder App",
+          "url": "https://apps.apple.com/us/app/breedera-dog-breeder-app/id1430975439",
+          "role": "niche",
+          "note": "Predikce hárání + váhy."
+        },
+        {
+          "name": "Breeder Tracker",
+          "url": "https://apps.apple.com/us/app/breeder-tracker/id6759652006",
+          "role": "niche",
+          "note": "Progesteron a krytí."
+        },
+        {
+          "name": "Dogr - Dog in Heat & Pregnancy",
+          "url": "https://apps.apple.com/us/app/dogr-dog-in-heat-pregnancy/id1660903644",
+          "role": "parent",
+          "note": "Hárání a březost."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Nika je z poloviny pokrytá: Puppy-Center a Breedera porod i váhy mají.",
+        "Uživatel appku potřebuje 8 týdnů a pak ji smaže – nulová retence, jen jednorázový příjem.",
+        "Zdravotní varování ('úbytek = problém') může spadnout pod 1.4.1, pokud zní jako diagnóza.",
+        "Kritika 'puppy mill' – část veřejnosti a recenzentů vnímá chovatelské appky negativně."
+      ],
+      "killer_risk": "Nedostatečné odlišení od Puppy-Center/Breedera, které to už umí.",
+      "mitigation": "Soustředit se na UX noci porodu (jedna ruka, velká tlačítka, bez registrace) a cenu za vrh místo předplatného; kočičí verze sdílí kód s ideou Cattery (pozor na 4.3 – jedna appka, ne dvě kopie).",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "lifestyle-12",
+      "name": "Koi Pond Log",
+      "tagline": "Krmení podle teploty vody, parametry a sezóna jezírka – pro koi a zahradní jezírka.",
+      "pitch": "U zahradního jezírka s koi se krmí podle teploty vody: pod 10 °C nekrmit, 10–15 °C lehce stravitelné krmivo, nad 20 °C proteinové – a chyba znamená nemocné ryby. Akvarijní deníky jsou postavené pro vnitřní nádrže a sezónní logiku jezírka neznají. Koi Pond Log vede krmení podle teploty, parametry vody, údržbu filtru a UV lampy, zazimování a jarní start. Koi chovatelé (UK, DE, NL, JP, US) utrácí za ryby stovky až tisíce eur a za dobrý nástroj zaplatí.",
+      "niche": "Venkovní jezírka a koi. Akvarijní appky (7 titulů) řeší vnitřní nádrže; jezírko má sezónnost a jinou logiku krmení, kterou nikdo nemá v titulu.",
+      "parent_market": "Akvarijní deníky (Aquarium Tracker, Aquarium Log, TankSync) – přeplněný, ověřený trh.",
+      "target_user": "Majitel zahradního jezírka s koi nebo zlatými rybkami, 40–70 let, UK, DE, NL, BE, CZ, US, JP.",
+      "features": [
+        "Doporučení krmení podle zadané teploty vody (tabulka jako orientační průvodce)",
+        "Deník parametrů (pH, KH, NO2, NH3) a teploty s grafem",
+        "Údržba: filtr, UV lampa, čerpadlo – připomínky podle sezóny",
+        "Evidence ryb s fotkou a růstem",
+        "Zazimování a jarní start – checklisty"
+      ],
+      "offline": "full",
+      "offline_note": "Teplota vody se zadává ručně (teploměr); volitelně z Bluetooth teploměru přes HomeKit. Žádné API.",
+      "monetization": "Zdarma deník; Pro 9,99 USD/rok (249 Kč) nebo lifetime 19,99 USD (499 Kč).",
+      "revenue_math": "Ideál: 1 200 stažení/měs. z niche klíčových slov × 6 % konverze = 72 plateb/měs. × 14.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 21 100 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.2 ≈ 25 300 Kč netto/měs. Počítáno s mixem roční/lifetime, průměr ~15 USD.",
+      "revenue_czk_ideal": 25300,
+      "keywords": [
+        {
+          "kw": "koi pond",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad; existují i koi hry a identifikátory"
+        },
+        {
+          "kw": "pond log",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; evidence uvádí jako neověřenou sub-niku"
+        },
+        {
+          "kw": "koi feeding",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "aquarium log",
+          "saturation": 7,
+          "competitor": "Aquarium Log - Tank Manager",
+          "note": "Evidence: sat 7 – jen parent"
+        }
+      ],
+      "demand_evidence": "Ověřeno: akvarijní deníky prokazují poptávku (7 titulů). Předpoklad: koi jezírkaři jsou výrazná subkultura (klubové výstavy, drahé ryby); saturace 'koi pond' v App Store neověřena.",
+      "competitors": [
+        {
+          "name": "Aquarium Log - Tank Manager",
+          "url": "https://apps.apple.com/us/app/aquarium-log-tank-manager/id1621042664",
+          "role": "parent",
+          "note": "Deník nádrže s CSV exportem, jezírko neřeší."
+        },
+        {
+          "name": "TankSync - Aquarium Manager",
+          "url": "https://apps.apple.com/us/app/tanksync-aquarium-manager/id6746080095",
+          "role": "parent",
+          "note": "Upozornění a parametry; vnitřní nádrže."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Silná sezónnost: v zimě se jezírko 'vypne' a appka s ním.",
+        "Výrobci krmiv a filtrů (Oase, Tetra Pond) mají vlastní průvodce zdarma.",
+        "Počet koi chovatelů s iPhonem, kteří hledají appku, může být jen pár stovek měsíčně.",
+        "Krmná tabulka podle teploty se liší podle zdroje – spory v komunitě a 1★ recenze."
+      ],
+      "killer_risk": "Malý objem hledání + sezónnost → nedosažení 10 000 Kč mimo letní měsíce.",
+      "mitigation": "Kombinovat jezírko s venkovní sezónní údržbou (filtr, UV, zazimování), roční cena místo měsíční, ASO v DE/NL/UK a JP.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "lifestyle-13",
+      "name": "Tarot Journal for Your Deck",
+      "tagline": "Deník výkladů pro fyzické tarotové karty – zapiš, vyfoť, najdi vzorce.",
+      "pitch": "Většina tarotových appek losuje digitální karty, ale velká část praktikujících vykládá z vlastního fyzického balíčku a chce jen deník. Dnes k tomu používají Notion, sešit nebo obecné deníky, kde nejde rychle vybrat kartu, zaznamenat obrácení a vidět statistiky ('Věž se mi objevila 5× za měsíc'). Tarot Journal nabídne rychlé zadání výkladu (tap na karty, foto rozložení), šablony výkladů, statistiky četnosti a reflexní otázky. Rodičovský trh tarotu je velký a monetizovaný; deník pro fyzický balíček je jeho zanedbaná část.",
+      "niche": "Deník pro fyzický balíček (ne losování). Tarot appky monetizují digitální výklad a obsah; journaling je u nich vedlejší funkce.",
+      "parent_market": "Tarot appky (Labyrinthos, Golden Thread Tarot, Mystic Tarot Reading, Tarot Lenormand!) – velký trh s předplatným.",
+      "target_user": "Praktikující tarotu 20–45 let, převážně ženy, s jedním nebo více fyzickými balíčky; US, UK, DE, BR, FR.",
+      "features": [
+        "Rychlé zadání výkladu: výběr karet (vč. obrácených) z 78 karet, foto rozložení",
+        "Šablony výkladů a vlastní rozložení",
+        "Statistiky: nejčastější karty, velká vs. malá arkána, barvy, trendy v čase",
+        "Reflexní otázky a propojení s fází Měsíce (lokální výpočet)",
+        "Více balíčků (evidence sbírky balíčků)"
+      ],
+      "offline": "full",
+      "offline_note": "Názvy karet a klíčová slova jsou vlastní texty v balíčku; fotky a deník lokálně s iCloud sync. Volitelně Foundation Models pro shrnutí on-device.",
+      "monetization": "Zdarma 20 záznamů; Premium 2,99 USD/měs. (79 Kč), 19,99 USD/rok (499 Kč), lifetime 39,99 USD.",
+      "revenue_math": "Ideál: 2 000 stažení/měs. z niche klíčových slov × 3 % konverze = 60 plateb/měs. × 19.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 23 400 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.4 ≈ 32 800 Kč netto/měs.",
+      "revenue_czk_ideal": 32800,
+      "keywords": [
+        {
+          "kw": "tarot journal",
+          "saturation": 4,
+          "competitor": "Tarot Lenormand! (má deník)",
+          "note": "odhad; journaling mají jako funkci i velké tarot appky"
+        },
+        {
+          "kw": "tarot diary",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "tarot log",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "tarot",
+          "saturation": 10,
+          "competitor": "Labyrinthos",
+          "note": "odhad; head term přesycený – jen parent"
+        }
+      ],
+      "demand_evidence": "Ověřeno nepřímo: evidence ukazuje tarot/Lenormand appky s journalingem (Tarot Lenormand!, Fairy Tale Lenormand) → funkce je žádaná. Neověřeno: saturace 'tarot journal' – odhaduji střední, protože nové indie appky tuto frázi často cílí.",
+      "competitors": [
+        {
+          "name": "Tarot Lenormand!",
+          "url": "https://apps.apple.com/us/app/tarot-lenormand/id559741969",
+          "role": "niche",
+          "note": "Obsahuje deník, starý titul."
+        },
+        {
+          "name": "Mystic Tarot Reading",
+          "url": "https://apps.apple.com/ee/app/mystic-tarot-reading/id1466775754",
+          "role": "parent",
+          "note": "Digitální výklady."
+        },
+        {
+          "name": "Labyrinthos",
+          "url": "",
+          "role": "parent",
+          "note": "Silná tarot appka s výukou a deníkem (z tržní znalosti, bez URL v evidenci)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Fráze 'tarot journal' je pravděpodobně už cílená několika novými indie appkami 2025–26 (neověřeno).",
+        "Velké tarot appky mají deník zdarma – uživatel nemusí vidět důvod platit zvlášť.",
+        "Notion/Day One šablony jsou zdarma a oblíbené v komunitě.",
+        "4.3: další tarot appka v kategorii s tisíci titulů může narazit v review."
+      ],
+      "killer_risk": "Saturace fráze 'tarot journal' novými indie appkami, o které nevíme (offline běh).",
+      "mitigation": "Diferencovat statistikami a rychlostí zadání pro fyzické balíčky; před buildem ověřit saturaci; sdílet engine s Lenormand appkou (ale jako jiný produkt).",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "lifestyle-14",
+      "name": "Perfume Lab: DIY Formula Calculator",
+      "tagline": "Receptury domácí parfumerie: ředění, škálování dávek a zrání – v gramech i kapkách.",
+      "pitch": "DIY parfumerie roste (YouTube, Reddit r/DIYfragrance, kurzy) a hobby parfuméři dnes vedou receptury v Excelu: procenta, ředění v alkoholu, přepočet dávky z 10 ml na 100 ml a hlídání zrání (maceration). Appky na parfémy jsou 'šatníky' sbírky (5 titulů), žádná nepočítá receptury. Perfume Lab převádí kapky/gramy/procenta, škáluje dávku, eviduje zásobu surovin a hlídá zrání a testovací proužky. Vyhýbáme se licencovaným IFRA datům – uživatel si limity zadává sám.",
+      "niche": "Tvorba receptur (formulace), ne sbírka hotových parfémů. Wardrobe appky cílí na spotřebitele; tvůrci jsou menší, ale placená skupina s drahým hobby.",
+      "parent_market": "Parfémové šatníky a deníky (Scentful, ScentShelf, Aromoshelf, Sillage) – přeplněné, ale dokazují zájem o fragrance appky.",
+      "target_user": "Hobby parfumér, výrobce svíček/mýdel s vůněmi, student parfumerie; 20–50 let, US, UK, FR, DE.",
+      "features": [
+        "Receptura v % / g / kapkách s automatickým přepočtem a škálováním dávky",
+        "Ředění (EdP/EdT/olej) a výpočet alkoholu",
+        "Sklad surovin s náklady → cena za ml hotového parfému",
+        "Časovač zrání a deník testů (top/heart/base vývoj)",
+        "Uživatelsky zadávané limity (bez licencovaných IFRA dat)"
+      ],
+      "offline": "full",
+      "offline_note": "Výpočty a data lokálně; žádná licencovaná databáze surovin, jen uživatelské záznamy a malá vlastní šablona.",
+      "monetization": "Zdarma 3 receptury; Pro 14,99 USD/rok (379 Kč) nebo lifetime 29,99 USD (749 Kč).",
+      "revenue_math": "Ideál: 900 stažení/měs. z niche klíčových slov × 6 % konverze = 54 plateb/měs. × 19.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 21 100 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.2 ≈ 25 300 Kč netto/měs. Průměr mixu roční/lifetime ~20 USD.",
+      "revenue_czk_ideal": 25300,
+      "keywords": [
+        {
+          "kw": "perfume formula",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; evidence uvádí jako neověřenou sub-niku"
+        },
+        {
+          "kw": "diy perfume",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "fragrance calculator",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; mohou existovat kalkulačky pro svíčky"
+        },
+        {
+          "kw": "fragrance diary",
+          "saturation": 5,
+          "competitor": "Scentful: Fragrance Wardrobe",
+          "note": "Evidence: sat 5 pro diary/wardrobe – jen parent"
+        }
+      ],
+      "demand_evidence": "Ověřeno: 5 parfémových appek (2025–26) → rostoucí zájem o fragrance appky. Neověřeno: poptávka po formulačním nástroji; opírá se o znalost komunit DIY parfumerie.",
+      "competitors": [
+        {
+          "name": "Scentful: Fragrance Wardrobe",
+          "url": "https://apps.apple.com/kh/app/scentful-fragrance-wardrobe/id6774532380",
+          "role": "parent",
+          "note": "Offline šatník, Apple Intelligence, 540+ vůní."
+        },
+        {
+          "name": "Sillage - Fragrance Logger",
+          "url": "https://apps.apple.com/pl/app/sillage-fragrance-logger/id6759444997",
+          "role": "parent",
+          "note": "Deník nošení."
+        },
+        {
+          "name": "ScentShelf Perfume Tracker",
+          "url": "https://apps.apple.com/us/app/scentshelf-perfume-tracker/id6760212472",
+          "role": "parent",
+          "note": "Sbírka a deník."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Malá cílovka: vážní hobby parfuméři jsou jednotky tisíc a mnoho z nich pracuje na desktopu (Excel, Perfumer's Workbench-like nástroje).",
+        "Bez IFRA limitů může appka působit neúplně; s nimi riziko licence a právní odpovědnosti (alergeny).",
+        "Slovo 'perfume' přitahuje spotřebitele, kteří hledají šatník – vysoká míra odinstalací.",
+        "Kalkulačky pro svíčkaře/mýdláře mohou přidat parfémový režim."
+      ],
+      "killer_risk": "Příliš malá cílovka pro 10 000 Kč měsíčně.",
+      "mitigation": "Rozšířit o svíčky a difuzéry (fragrance load) jako druhou cílovku ve stejné appce; cena pro profesionály (lifetime 29,99 USD).",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "lifestyle-15",
+      "name": "Bag Vault: Handbag Cost per Wear",
+      "tagline": "Sbírka kabelek s cenou za nošení, hodnotou a péčí – luxus, který se počítá.",
+      "pitch": "U sběratelů hodinek se v letech 2025–26 prosadil model 'cost-per-wear' a rotace (9 appek včetně Lug2Lug a Vellore). Sběratelky luxusních kabelek (Louis Vuitton, Chanel, Hermès – dle běžné terminologie, ne v metadatech) mají stejný problém: kolik stojí každé nošení, co je v prachovém obalu, jaká je aktuální hodnota a doklady pravosti. Bag Vault převezme ověřený model z hodinek pro kabelky: evidence, cena za nošení, deník péče, pojistný soupis. Hodinková nika je přesycená; kabelková je podle odhadu prázdná.",
+      "niche": "Sbírka kabelek a cost-per-wear. Wardrobe appky řeší oblečení obecně; hodinkové appky ukázaly, že sběratelé jedné kategorie chtějí dedikovaný nástroj.",
+      "parent_market": "Watch collection trackery (Watch Collection Tracker, Lug2Lug, Vellore, WristTime) a digitální šatníky (Stylebook, Indyx).",
+      "target_user": "Sběratelka luxusních a designových kabelek 25–55 let s 5–50 kusy; US, UK, FR, JP, KR, AE, CN.",
+      "features": [
+        "Evidence kabelek: foto, kupní cena, datum, doklady (účtenka, certifikát) v šifrovaném trezoru",
+        "Záznam nošení (widget, Shortcuts) → cena za nošení a rotace",
+        "Deník péče a uložení (prachový obal, výplň, opravy)",
+        "Pojistný soupis a export PDF s fotkami",
+        "Wishlist a rozpočet"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, šifrované přílohy, iCloud sync; žádné online oceňování (aktuální hodnotu zadává uživatel).",
+      "monetization": "Zdarma 5 kabelek; Premium 19,99 USD/rok (499 Kč) nebo lifetime 39,99 USD (999 Kč).",
+      "revenue_math": "Ideál: 1 200 stažení/měs. z niche klíčových slov × 5 % konverze = 60 plateb/měs. × 19.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 23 400 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.3 ≈ 30 500 Kč netto/měs.",
+      "revenue_czk_ideal": 30500,
+      "keywords": [
+        {
+          "kw": "handbag collection",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; model převzatý z hodinek, fráze nehledána"
+        },
+        {
+          "kw": "bag collection",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "cost per wear",
+          "saturation": 4,
+          "competitor": "Lug2Lug: Watch Collection",
+          "note": "Evidence: cost-per-wear u hodinek (Lug2Lug, Vellore); u kabelek odhad"
+        },
+        {
+          "kw": "purse organizer",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad; může přitahovat i fyzické organizéry"
+        }
+      ],
+      "demand_evidence": "Ověřeno: model cost-per-wear funguje u hodinek (9 titulů, sat 9). Předpoklad: sběratelky kabelek mají analogickou potřebu – neověřeno, fráze nehledány.",
+      "competitors": [
+        {
+          "name": "Lug2Lug: Watch Collection",
+          "url": "https://apps.apple.com/us/app/lug2lug-watch-collection/id6778995390",
+          "role": "parent",
+          "note": "Cost-per-wear u hodinek – model k převzetí."
+        },
+        {
+          "name": "Vellore - Watch Collection",
+          "url": "https://apps.apple.com/us/app/vellore-watch-collection/id6760221205",
+          "role": "parent",
+          "note": "Cost-per-wear + servisní připomínky."
+        },
+        {
+          "name": "Stylebook",
+          "url": "",
+          "role": "parent",
+          "note": "Placený digitální šatník (z tržní znalosti, bez URL v evidenci)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Sběratelky kabelek mohou appky hledat méně než sběratelé hodinek (menší 'nerd' kultura evidence).",
+        "Názvy značek nelze použít v metadatech (trademark, 2.3.7) – ztrácíme nejsilnější klíčová slova.",
+        "Wardrobe appky (Indyx, Stylebook) mohou evidovat doplňky 'dost dobře'.",
+        "Hodinkové appky mohou rozšířit na 'luxury collection' během týdne."
+      ],
+      "killer_risk": "Nedostatečný objem hledání bez možnosti použít značky v ASO.",
+      "mitigation": "ASO na generické fráze (bag collection, purse, cost per wear), sdílitelné 'collection card' obrázky pro Instagram/TikTok komunitu.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "lifestyle-16",
+      "name": "Void Moon: VoC & Retrograde Alerts",
+      "tagline": "Upozornění na Měsíc bez kurzu a retrográdní planety – přímo na zamykací obrazovce.",
+      "pitch": "Planetary hours appky jsou v angličtině přesycené (6 titulů), ale jejich uživatelé často potřebují jen jednu věc: vědět, kdy je Měsíc 'void of course' a kdy začíná retrográdní Merkur – aby nepodepisovali smlouvy nebo nezačínali projekty. Dnes to řeší přes webové tabulky nebo jako vedlejší funkci v Planetary Hours + Widget. Void Moon je jednoúčelová appka s Live Activity, widgety a notifikacemi, počítanými offline. Astrologie je jeden z nejlépe monetizovaných lifestyle trhů (Co–Star, TimePassages).",
+      "niche": "Jednoúčelové upozornění na VoC Měsíc a retrogrády. Velké astro appky řeší horoskopy a kompatibilitu; časovací nástroje jsou vedlejší funkce.",
+      "parent_market": "Astrologie a planetární hodiny (Co–Star, TimePassages, Planetary Hours + Widget, Planetaro) – velký, placený trh.",
+      "target_user": "Praktikující astrologie a 'electional' plánování, 20–50 let, US, UK, BR, DE; často freelanceři a podnikatelky.",
+      "features": [
+        "Aktuální stav: Měsíc v kurzu / bez kurzu, do kdy, Měsíc ve znamení",
+        "Retrogrády všech planet s kalendářem stínových období",
+        "Live Activity a widgety na zamykací obrazovce",
+        "Notifikace před začátkem VoC/retrogrády",
+        "Týdenní přehled pro plánování"
+      ],
+      "offline": "full",
+      "offline_note": "Efemeridy počítané lokálně (vlastní implementace Meeus/VSOP87, ne Swiss Ephemeris kvůli AGPL). Žádná síť.",
+      "monetization": "Zdarma aktuální stav; Pro 2,99 USD/měs. (79 Kč) nebo 19,99 USD/rok (499 Kč).",
+      "revenue_math": "Ideál: 1 500 stažení/měs. z niche klíčových slov × 4 % konverze = 60 plateb/měs. × 19.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 23 400 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.4 ≈ 32 800 Kč netto/měs.",
+      "revenue_czk_ideal": 32800,
+      "keywords": [
+        {
+          "kw": "void of course moon",
+          "saturation": 3,
+          "competitor": "Planetary Hours + Widget",
+          "note": "odhad; evidence: Planetary Hours + Widget VoC ukazuje jako funkci"
+        },
+        {
+          "kw": "mercury retrograde",
+          "saturation": 5,
+          "competitor": "—",
+          "note": "odhad; populární fráze, existují dedikované appky"
+        },
+        {
+          "kw": "retrograde",
+          "saturation": 5,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "planetary hours",
+          "saturation": 6,
+          "competitor": "Planetaro: Planetary Hours App",
+          "note": "Evidence: sat 6 – jen parent"
+        }
+      ],
+      "demand_evidence": "Ověřeno: planetary hours trh je živý (6 titulů), Planetary Hours + Widget nabízí VoC jako funkci. Neověřeno: saturace 'void of course' a 'mercury retrograde' – u retrogrády odhaduji vyšší konkurenci.",
+      "competitors": [
+        {
+          "name": "Planetary Hours + Widget",
+          "url": "https://apps.apple.com/us/app/planetary-hours-widget/id1517281147",
+          "role": "niche",
+          "note": "Ukazuje i VoC Měsíc – přímý konkurent funkce."
+        },
+        {
+          "name": "Planetary Hours & Moon Phase",
+          "url": "https://apps.apple.com/us/app/planetary-times/id1523559582",
+          "role": "parent",
+          "note": "Planetární hodiny + fáze."
+        },
+        {
+          "name": "Co–Star",
+          "url": "",
+          "role": "parent",
+          "note": "Velká astro appka (z tržní znalosti, bez URL v evidenci)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "'Mercury retrograde' appky existují a jsou pravděpodobně zavedené; nika může být obsazenější, než odhadujeme.",
+        "Přesnost efemerid bez Swiss Ephemeris: chyba v minutách VoC = ztráta důvěry u náročných astrologů.",
+        "Funkce je jednoduchá; Planetary Hours + Widget ji už má a může ji zvýraznit.",
+        "4.3: astrologie je přesycená kategorie, review může být přísné."
+      ],
+      "killer_risk": "Nedostatečné odlišení od existujících planetary hours appek s VoC funkcí.",
+      "mitigation": "Nejlepší Live Activity/widget UX na trhu, validace výpočtů proti publikovaným tabulkám, lokalizace PT-BR/ES/DE.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "lifestyle-17",
+      "name": "Beauty Shelf: Makeup Expiry Tracker",
+      "tagline": "Kdy vyhodit řasenku, krém a opalovací mléko? Datum otevření a PAO hlídá za vás.",
+      "pitch": "Každý kosmetický produkt má symbol PAO (6M, 12M, 24M) – kolik měsíců vydrží po otevření – ale nikdo si nepamatuje, kdy řasenku otevřel. Prošlá kosmetika způsobuje záněty očí a podráždění, a beauty komunita (TikTok 'declutter', 'project pan') to řeší často. Beauty Shelf naskenuje produkt fotkou, přečte PAO symbol a datum (Vision on-device), a upozorní na konec životnosti. Navíc 'project pan' a přehled, kolik utrácíte. Je to široká cílovka s nízkou cenou – spíš objemová hra.",
+      "niche": "Sledování expirace kosmetiky po otevření. Skincare appky řeší rutiny a ingredience; expirace je vedlejší funkce nebo ji řeší malé indie appky.",
+      "parent_market": "Skincare a beauty appky (Skin Bliss, FeelinMySkin, TroveSkin) a obecné expiry trackery potravin/léků.",
+      "target_user": "Žena 16–45 let s 20–100 kosmetickými produkty, beauty nadšenkyně; celosvětově.",
+      "features": [
+        "Přidání produktu fotkou, OCR PAO symbolu a data výroby/otevření",
+        "Upozornění před expirací a 'vyhoď teď' seznam",
+        "Project pan a statistika spotřeby a útraty",
+        "Kategorie (oči, rty, pleť, SPF, parfém) s výchozím PAO",
+        "Widget 'co brzy expiruje'"
+      ],
+      "offline": "full",
+      "offline_note": "OCR a klasifikace na zařízení (Vision), žádná databáze produktů online. iCloud sync.",
+      "monetization": "Zdarma 15 produktů; Premium 7,99 USD/rok (199 Kč) nebo lifetime 14,99 USD (379 Kč).",
+      "revenue_math": "Ideál: 3 500 stažení/měs. z niche klíčových slov × 3 % konverze = 105 plateb/měs. × 9.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 20 500 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.2 ≈ 24 600 Kč netto/měs. Průměr mixu roční/lifetime ~10 USD.",
+      "revenue_czk_ideal": 24600,
+      "keywords": [
+        {
+          "kw": "makeup expiration",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad; tuším několik malých indie appek"
+        },
+        {
+          "kw": "cosmetic expiry",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "skincare expiration tracker",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "project pan",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; beauty komunitní termín"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty (offline běh, žádná evidence). Předpoklad: téma expirace kosmetiky je v beauty komunitě časté; konkurence pravděpodobně několik malých appek (odhad sat 3–4).",
+      "competitors": [
+        {
+          "name": "Skin Bliss",
+          "url": "",
+          "role": "parent",
+          "note": "Skincare appka s ingrediencemi a rutinou (z tržní znalosti, bez URL v evidenci)."
+        },
+        {
+          "name": "FeelinMySkin",
+          "url": "",
+          "role": "parent",
+          "note": "Skincare rutina a deník pleti (z tržní znalosti)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Pravděpodobně už existuje několik expiry appek pro kosmetiku (neověřeno) – nízký blue ocean.",
+        "Nízká ochota platit: připomínky lze udělat v Připomínkách nebo lepením štítku na obal.",
+        "Uživatelky přestanou zadávat nové produkty po 2 týdnech → nízká retence.",
+        "Skincare appky (rutiny) mohou expiraci přidat jako funkci kdykoli."
+      ],
+      "killer_risk": "Nízká retence a ochota platit u 'připomínkové' appky, kterou lze nahradit systémovými nástroji.",
+      "mitigation": "Maximálně rychlé přidání (foto → hotovo), project pan a útrata jako důvod vracet se; nízká jednorázová cena.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "lifestyle-18",
+      "name": "Morph Calc: Reptile Genetics & Clutch",
+      "tagline": "Kalkulačka genetiky morfů a inkubace snůšek pro chovatele krajt, gekonů a hadů.",
+      "pitch": "Chovatelé krajt královských, leopardích gekonů a užovek obchodují s 'morfy' (barevnými mutacemi) a před každým párováním počítají pravděpodobnosti potomků (recesivní, co-dominantní, het). Obecné reptile trackery řeší krmení a svlékání, ne genetiku; genetické kalkulátory existují hlavně na webu tržišť. Morph Calc spočítá výsledky párování offline, vede snůšky v inkubátoru (teplota, dny, líhnutí) a eviduje potomstvo. Chovatelé prodávají zvířata za stovky dolarů, takže nástroj za 20 USD ročně je pro ně drobnost.",
+      "niche": "Genetika morfů a inkubace pro chovatele (ne chovatele-mazlíčkáře). Obecné trackery cílí na majitele jednoho zvířete.",
+      "parent_market": "Reptile trackery (ReptiCare, Reptile Tracker, Reptile Rocket) a tržiště MorphMarket s webovou kalkulačkou.",
+      "target_user": "Chovatel plazů s 10–200 zvířaty, prodávající odchovy; US, UK, DE, NL, PL.",
+      "features": [
+        "Genetický kalkulátor: recesivní, co-dom, dominantní, het %, kombinace více genů",
+        "Knihovna běžných morfů pro krajty královské, leopardí gekony, užovky (vlastní data)",
+        "Snůšky: datum snesení, teplota inkubace, očekávané líhnutí, výsledky",
+        "Evidence odchovů a prodejů s cenou",
+        "Export karty zvířete (PDF)"
+      ],
+      "offline": "full",
+      "offline_note": "Genetika je deterministická (Punnett), knihovna morfů je statická data v balíčku; žádná síť.",
+      "monetization": "Zdarma kalkulačka pro 2 geny; Pro 19,99 USD/rok (499 Kč) nebo lifetime 39,99 USD (999 Kč).",
+      "revenue_math": "Ideál: 1 000 stažení/měs. z niche klíčových slov × 5 % konverze = 50 plateb/měs. × 24.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 24 400 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.3 ≈ 31 800 Kč netto/měs. Průměr mixu roční/lifetime ~25 USD.",
+      "revenue_czk_ideal": 31800,
+      "keywords": [
+        {
+          "kw": "morph calculator",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad; tuším pár existujících kalkulaček"
+        },
+        {
+          "kw": "reptile genetics",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "ball python morph",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad; často identifikátory/hry"
+        },
+        {
+          "kw": "reptile breeding",
+          "saturation": 4,
+          "competitor": "ReptiCare: Track Your Reptiles",
+          "note": "Evidence: ReptiCare a Reptile Tracker mají breeding – saturace odhad"
+        }
+      ],
+      "demand_evidence": "Ověřeno: 2 ze 6 reptile trackerů v evidenci mají chovatelské funkce (ReptiCare, Reptile Tracker) → poptávka od chovatelů existuje. Neověřeno: saturace 'morph calculator' – MorphMarket nabízí kalkulačku zdarma (tržní znalost).",
+      "competitors": [
+        {
+          "name": "ReptiCare: Track Your Reptiles",
+          "url": "https://apps.apple.com/us/app/repticare-track-your-reptiles/id6755394469",
+          "role": "niche",
+          "note": "Tracker včetně chovu."
+        },
+        {
+          "name": "Reptile Tracker: Pets",
+          "url": "https://apps.apple.com/us/app/reptile-tracker-pets/id6746460491",
+          "role": "niche",
+          "note": "Tracker včetně chovu."
+        },
+        {
+          "name": "MorphMarket",
+          "url": "",
+          "role": "parent",
+          "note": "Tržiště s genetickou kalkulačkou zdarma (z tržní znalosti, bez URL v evidenci)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "MorphMarket kalkulačka je zdarma, důvěryhodná a všichni chovatelé ji znají.",
+        "Knihovna morfů se neustále rozšiřuje (nové mutace, názvy, 'complexy') – vyžaduje údržbu dat.",
+        "Chyba v alelických vztazích (např. superformy, letální kombinace) = poškozená reputace v úzké komunitě.",
+        "Etické problémy některých morfů (spider wobble) – riziko kritiky."
+      ],
+      "killer_risk": "Bezplatná MorphMarket kalkulačka jako výchozí volba chovatelů.",
+      "mitigation": "Offline, rychlejší, s evidencí snůšek a odchovů (MorphMarket to nemá jako workflow); uživatelsky editovatelná knihovna genů; varování u problematických morfů.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "lifestyle-19",
+      "name": "Queen Rearing Planner",
+      "tagline": "Kalendář chovu matek: přelarvování, zavíčkování, líhnutí a oplození – den po dni.",
+      "pitch": "Chov včelích matek má přesný časový harmonogram: přelarvování (den 0), zavíčkování, vložení matečníků, líhnutí matky (den 11–12 od přelarvování), výlet a kladení. Zmeškání jediného dne znamená ztrátu celé série matečníků. Deníky prohlídek úlů to nemají a včelaři používají papírové 'queen rearing kalendáře'. Queen Rearing Planner spočítá celý časový plán od zvolené metody (přelarvování, Cupkit, Jenter, oddělky), pošle notifikace a eviduje výsledky a rodokmen matek.",
+      "niche": "Chov matek a tvorba oddělků. Inspekční deníky (6 titulů) řeší obecné prohlídky; chov matek je pokročilá disciplína, kterou nikdo nemá v titulu.",
+      "parent_market": "Včelařské deníky (HiveTracks, Hive Logger, Beekeeping Tracker, Beehive: Beekeeping Manager).",
+      "target_user": "Pokročilý včelař (10–200 včelstev), který si chová vlastní matky nebo je prodává; EU, US, AU.",
+      "features": [
+        "Kalendář od metody (přelarvování, Jenter/Cupkit, nouzové matečníky, oddělky) s notifikacemi",
+        "Evidence sérií: počet přijatých larev, matečníků, vylíhnutých a oplozených matek",
+        "Rodokmen a značení matek (barva roku)",
+        "Plán oddělků a rojení",
+        "Offline použití na stanovišti"
+      ],
+      "offline": "full",
+      "offline_note": "Kalendář a data lokálně, iCloud sync.",
+      "monetization": "Lifetime 14,99 USD (379 Kč) nebo 9,99 USD/rok (249 Kč).",
+      "revenue_math": "Ideál: 800 stažení/měs. z niche klíčových slov × 8 % konverze = 64 plateb/měs. × 14.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 18 800 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.1 ≈ 20 600 Kč netto/měs.",
+      "revenue_czk_ideal": 20600,
+      "keywords": [
+        {
+          "kw": "queen rearing",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "Evidence: v hledání hive inspection žádný titul s chovem matek; fráze sama nehledána – odhad."
+        },
+        {
+          "kw": "queen bee",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad; může přitahovat hry"
+        },
+        {
+          "kw": "beekeeping calendar",
+          "saturation": 3,
+          "competitor": "Beekeeping Tracker - Hive",
+          "note": "odhad"
+        },
+        {
+          "kw": "hive inspection",
+          "saturation": 6,
+          "competitor": "Beekeeping - Hive Inspections",
+          "note": "Evidence: sat 6 – jen parent"
+        }
+      ],
+      "demand_evidence": "Ověřeno: včelařský trh appek je aktivní (6 titulů v jednom hledání) a chov matek se v titulech neobjevil. Neověřeno: objem hledání – pokročilí chovatelé matek jsou menšina včelařů.",
+      "competitors": [
+        {
+          "name": "Hive Logger: Beekeeping Hub",
+          "url": "https://apps.apple.com/us/app/hive-logger-beekeeping-hub/id6670728627",
+          "role": "parent",
+          "note": "QR a hlasové záznamy, obecný deník."
+        },
+        {
+          "name": "Beehive: Beekeeping Manager",
+          "url": "https://apps.apple.com/us/app/beehive-beekeeping-manager/id6759832883?uo=2&partnerId=11&at=10ln7k",
+          "role": "parent",
+          "note": "Obecná správa včelstev."
+        },
+        {
+          "name": "Beekeeping Tracker - Hive",
+          "url": "https://apps.apple.com/us/app/beekeeping-tracker-hive/id6759574093",
+          "role": "parent",
+          "note": "Obecný deník."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Velmi malá cílovka (chovatelé matek jsou zlomek včelařů) a navíc sezónní (květen–červenec).",
+        "Papírové kalendáře a 'queen rearing calculator' weby zdarma plně stačí.",
+        "Překryv s ideou Varroa Count – dvě včelařské appky ve stejném portfoliu mohou působit jako 4.3 spam; lepší jako modul.",
+        "Inspekční appky mohou přidat plánovač za týden."
+      ],
+      "killer_risk": "Cílovka příliš malá na 10 000 Kč měsíčně jako samostatná appka.",
+      "mitigation": "Zvážit jako placený modul uvnitř Varroa Count (společná včelařská appka) místo samostatného produktu; samostatně jen jako levný experiment.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "lifestyle-20",
+      "name": "Planted Tank Dosing",
+      "tagline": "Hnojení rostlinného akvária metodou EI i Lean – dávky z prášků a roztoků přesně na litr.",
+      "pitch": "Aquascaping (rostlinná akvária) má vlastní vědu o hnojení: metoda EI, PPS-Pro, 'Lean dosing', míchání vlastních roztoků z KNO3, KH2PO4, K2SO4 a stopových prvků. Nadšenci dnes používají webový kalkulátor nebo tabulky; akvarijní deníky nic takového nemají. Planted Tank Dosing spočítá dávky pro objem nádrže, cílové ppm, vytvoří recept roztoku a denní plán, a vede deník růstu s fotkami. Aquascaping je globální komunita s drahým vybavením (světla, CO2) a ochotou platit.",
+      "niche": "Hnojení rostlinných akvárií. Obecné deníky cílí na majitele ryb; DIY hnojení je expertní téma bez dedikované iOS appky v titulech.",
+      "parent_market": "Akvarijní deníky (Aquarium Tracker, AquaLens, TankDiary) + aquascaping komunita.",
+      "target_user": "Aquascaper 20–50 let s rostlinnou nádrží, CO2 a výkonným světlem; US, DE, PL, CZ, JP, CN, TW.",
+      "features": [
+        "Kalkulačka ppm z prášků (KNO3, KH2PO4, K2SO4, MgSO4, stopové prvky) a komerčních roztoků",
+        "Režimy EI / PPS / Lean s týdenním plánem a výměnou vody",
+        "Recept na zásobní roztok (g na ml) a počet dávek",
+        "Deník s fotkami růstu a CO2 (drop checker, pH/KH tabulka)",
+        "Připomínky dávkování"
+      ],
+      "offline": "full",
+      "offline_note": "Vzorce a molekulové hmotnosti jsou statická data; vše lokálně.",
+      "monetization": "Zdarma základní kalkulačka; Pro lifetime 9,99 USD (249 Kč) nebo 7,99 USD/rok (199 Kč).",
+      "revenue_math": "Ideál: 1 500 stažení/měs. z niche klíčových slov × 7 % konverze = 105 plateb/měs. × 9.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 20 500 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.1 ≈ 22 600 Kč netto/měs.",
+      "revenue_czk_ideal": 22600,
+      "keywords": [
+        {
+          "kw": "aquarium fertilizer calculator",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; evidence uvádí jako neověřenou sub-niku"
+        },
+        {
+          "kw": "planted tank",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "ei dosing",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; expertní termín s malým objemem"
+        },
+        {
+          "kw": "aquascape",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad; existují aquascaping galerie/hry"
+        }
+      ],
+      "demand_evidence": "Ověřeno: akvarijní deníky mají silnou poptávku (7 titulů). Neověřeno: saturace a objem hledání pro hnojení; opírá se o znalost aquascaping komunity (webové kalkulátory jsou populární).",
+      "competitors": [
+        {
+          "name": "Aquarium Tracker: Tank Manager",
+          "url": "https://apps.apple.com/us/app/aquarium-tracker-tank-manager/id6755304265",
+          "role": "parent",
+          "note": "Grafy NO3/PO4 – ale bez výpočtu hnojení."
+        },
+        {
+          "name": "AquaLens - Aquarium Log",
+          "url": "https://apps.apple.com/us/app/aqualens-aquarium-log/id6760222697",
+          "role": "parent",
+          "note": "Nový deník."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Oblíbený webový kalkulátor (Rotala Butterfly IFC) je zdarma a komunita mu věří.",
+        "Výrobci hnojiv (Tropica, Seachem) vydávají vlastní dávkovací tabulky; mnoho uživatelů používá all-in-one hnojiva a kalkulačku nepotřebuje.",
+        "Třetí akvarijní idea v portfoliu (vedle Reef Dose a Koi) – riziko 4.3 a zbytečné kanibalizace; lepší sloučit.",
+        "Malý objem hledání expertních termínů jako 'EI dosing'."
+      ],
+      "killer_risk": "Bezplatný webový kalkulátor s komunitní autoritou.",
+      "mitigation": "Offline, deník a připomínky (web neumí); zvážit sloučení s Reef Dose do jedné 'Aquarium Dosing' appky se dvěma režimy.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "lifestyle-21",
+      "name": "Floss Stash: Cross Stitch Thread Inventory",
+      "tagline": "Zásoba vyšívacích přízí, rozpracované projekty a nákupní seznam – už nikdy dvakrát stejné číslo.",
+      "pitch": "Vyšívačky křížkového stehu vlastní stovky přadének s čísly barev a v obchodě neví, co už doma mají. Pattern makery pro křížkový steh jsou přesycené (8 titulů), ale evidence zásob přízí a projektů je samostatný, jednodušší problém. Floss Stash eviduje zásobu podle čísel barev (vč. převodních tabulek mezi výrobci, bez ochranných známek v metadatech), porovná ji s legendou vzoru a vytvoří nákupní seznam. Plus deník projektů (WIP), čas a fotky postupu.",
+      "niche": "Zásoba přízí a projekty (ne tvorba vzorů). Vývojáři jdou po 'pattern maker' (obrázek → vzor), protože je to vizuálně atraktivní; evidence je nuda – a proto volná.",
+      "parent_market": "Cross-stitch pattern makery (Stitchly, Cross Stitch Creator, Pattern Maker for Cross Stitch) a pletací/háčkovací deníky.",
+      "target_user": "Vyšívačka 30–70 let s 100–1000 přadénky, US, UK, DE, FR, NL, RU, PL.",
+      "features": [
+        "Zásoba podle čísla barvy s množstvím (přadénka, částečně), foto kartičky",
+        "Legenda vzoru (OCR z fotky/PDF on-device) → co chybí → nákupní seznam",
+        "WIP deník: projekty, čas, fotky postupu, 'hotovo' statistika",
+        "Převodní tabulky mezi výrobci přízí (bez značek v metadatech)",
+        "Offline režim v obchodě"
+      ],
+      "offline": "full",
+      "offline_note": "OCR (Vision) a tabulky barev lokálně; iCloud sync.",
+      "monetization": "Zdarma do 50 barev; lifetime 9,99 USD (249 Kč) nebo 7,99 USD/rok (199 Kč).",
+      "revenue_math": "Ideál: 1 600 stažení/měs. z niche klíčových slov × 7 % konverze = 112 plateb/měs. × 9.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 21 900 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.1 ≈ 24 100 Kč netto/měs.",
+      "revenue_czk_ideal": 24100,
+      "keywords": [
+        {
+          "kw": "floss inventory",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; evidence uvádí jako neověřený nápad"
+        },
+        {
+          "kw": "cross stitch tracker",
+          "saturation": 3,
+          "competitor": "Cross Stitch Creator (sledování postupu)",
+          "note": "odhad; Cross Stitch Creator má progress tracking (evidence graphics-design)"
+        },
+        {
+          "kw": "embroidery thread",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "cross stitch pattern maker",
+          "saturation": 8,
+          "competitor": "Stitchly: Cross stitch",
+          "note": "Evidence (graphics-design): sat 8 – jen parent"
+        }
+      ],
+      "demand_evidence": "Ověřeno: 8 cross-stitch pattern makerů (evidence graphics-design) a diamond painting appky se sledováním barev → hobby vyšívání má placené appky. Neověřeno: saturace evidence přízí (tuším 2–3 starší appky).",
+      "competitors": [
+        {
+          "name": "Stitchly: Cross stitch",
+          "url": "https://apps.apple.com/us/app/stitchly-cross-stitch/id1467867656",
+          "role": "parent",
+          "note": "Pattern maker – rodičovský trh."
+        },
+        {
+          "name": "Cross Stitch Creator",
+          "url": "https://apps.apple.com/us/app/cross-stitch-creator/id897287820",
+          "role": "niche",
+          "note": "Pattern maker s progress trackingem."
+        },
+        {
+          "name": "Diamond Painting Logbook",
+          "url": "https://apps.apple.com/us/app/diamond-painting-logbook/id1440806990",
+          "role": "niche",
+          "note": "Analogický model – sleduje barvy DMC u diamond paintingu."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Pravděpodobně existují starší floss inventory appky s věrnými uživatelkami (neověřeno).",
+        "Ochranná známka hlavního výrobce přízí nesmí být v názvu/klíčových slovech – ztráta nejsilnějšího termínu.",
+        "Překryv s Diamond Painting Stash – dvě podobné 'stash' appky = riziko 4.3.",
+        "Pattern makery mohou přidat evidenci zásob."
+      ],
+      "killer_risk": "Riziko 4.3 kvůli podobnosti s Diamond Painting Stash a neznámá existující konkurence.",
+      "mitigation": "Zvážit jednu 'Craft Stash' appku se dvěma režimy (vyšívání + diamond painting) nebo výrazně odlišné UX a datové modely.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "lifestyle-22",
+      "name": "Box Tag: Moving Box Inventory",
+      "tagline": "Stěhování bez chaosu: QR štítky na krabice, obsah fotkou, a víte, kde je nabíječka.",
+      "pitch": "Při stěhování se balí 30–100 krabic a po týdnu nikdo neví, kde je nabíječka nebo zimní bundy. Box Tag vytiskne QR štítky (AirPrint) nebo je nakreslí fixou s kódem, obsah se zapíše fotkou a hlasem a vyhledávání najde věc napříč krabicemi. Na rozdíl od obecných inventářových appek (Sortly) je postavený na jednorázovou událost: místnosti, priority rozbalení, křehké, a také 'sklep/půda' dlouhodobé uskladnění. Stěhování je univerzální a opakující se potřeba – v US se ročně stěhuje ~10 % populace.",
+      "niche": "Stěhování a krabice, ne firemní inventář. Obecné inventory appky jsou postavené pro firmy s předplatným; stěhující se člověk chce jednorázový nákup.",
+      "parent_market": "Domácí a firemní inventář (Sortly, Encircle, Nest-like home inventory appky) a moving checklist appky.",
+      "target_user": "Člověk/rodina před stěhováním, 22–45 let; také uskladnění na půdě/sklepě a self-storage; celosvětově.",
+      "features": [
+        "QR štítky (tisk přes AirPrint nebo krátký kód psaný fixou)",
+        "Obsah krabice fotkou + hlasem (on-device Speech) + automatické tagy (Vision)",
+        "Hledání věci napříč krabicemi, místnost a priorita rozbalení",
+        "Checklist stěhování a odpočet",
+        "Sdílení s partnerem přes iCloud"
+      ],
+      "offline": "full",
+      "offline_note": "QR generování, Vision a Speech on-device; sdílení přes CloudKit (Apple).",
+      "monetization": "Zdarma 10 krabic; jednorázově 'Move Pass' 6,99 USD (179 Kč) nebo lifetime 12,99 USD (329 Kč).",
+      "revenue_math": "Ideál: 3 000 stažení/měs. z niche klíčových slov × 5 % konverze = 150 plateb/měs. × 7.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 23 400 Kč netto/měs. Průměr Move Pass/lifetime ~8 USD.",
+      "revenue_czk_ideal": 23400,
+      "keywords": [
+        {
+          "kw": "moving boxes",
+          "saturation": 5,
+          "competitor": "—",
+          "note": "odhad; existuje několik moving box appek"
+        },
+        {
+          "kw": "box inventory",
+          "saturation": 4,
+          "competitor": "Sortly (parent)",
+          "note": "odhad"
+        },
+        {
+          "kw": "moving organizer",
+          "saturation": 5,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "qr box labels",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty (offline běh, žádná evidence). Předpoklad: silná univerzální poptávka, ale také pravděpodobně existující konkurence (moving box appky, Sortly) – odhad sat 4–5.",
+      "competitors": [
+        {
+          "name": "Sortly",
+          "url": "",
+          "role": "parent",
+          "note": "Inventářová appka s QR štítky, cílí na firmy (z tržní znalosti, bez URL v evidenci)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Nika je pravděpodobně už obsazená několika moving box appkami (odhad, neověřeno) – nízký blue ocean.",
+        "Jednorázová potřeba: uživatel appku po stěhování smaže, žádná retence.",
+        "Uživatelé raději napíšou fixou 'KUCHYŇ' a obsah nezapisují – adopce disciplíny je slabá.",
+        "Apple může přidat podobnou funkci do Poznámek/Freeform nebo přes AirTag štítkování."
+      ],
+      "killer_risk": "Existující konkurence a zbytkové chování 'fix na krabici'.",
+      "mitigation": "Maximálně rychlé zadání (foto + hlas za 5 s), režim dlouhodobého uskladnění (sklep, půda) pro retenci; před buildem ověřit saturaci.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "lifestyle-23",
+      "name": "Goat & Sheep Kidding Log",
+      "tagline": "Říje, krytí, porody a dojivost pro malé stádo koz a ovcí.",
+      "pitch": "Domácí chov koz a ovcí roste spolu s 'homesteading' trendem, ale appky pro drobné chovatele jsou buď egg trackery pro slepice, nebo drahé farmářské systémy (Herdwatch) pro stovky kusů. Malý chovatel s 3–30 kozami potřebuje hlídat říje, termín porodu (kozy ~150 dní), porody a váhy kůzlat, dojivost a odčervení. Goat & Sheep Kidding Log to dělá offline v jedné jednoduché appce. Evidence ukazuje, že drobní chovatelé si appky kupují (zlatá horečka egg trackerů).",
+      "niche": "Malé stádo koz/ovcí. Farmářské systémy cílí na profesionály s předplatným; hobby chovatelé nemají nic přiměřeného.",
+      "parent_market": "Homestead a drůbeží appky (FlockFriend, PoultryPal) a farmářské systémy pro dobytek (Herdwatch).",
+      "target_user": "Homesteader nebo malý farmář se 3–30 kozami/ovcemi; US, UK, AU, NZ, DE, CZ, PL.",
+      "features": [
+        "Karta zvířete: plemeno, ušní číslo, rodiče, foto",
+        "Říje, krytí a výpočet termínu porodu, připomínky",
+        "Porod: kůzlata/jehňata, váha, růst",
+        "Dojivost (l/den) s grafem a odčervení (FAMACHA skóre)",
+        "Export pro veterinu a evidenci"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně (stáje bez signálu), iCloud sync.",
+      "monetization": "Zdarma 3 zvířata; Pro 14,99 USD/rok (379 Kč) nebo lifetime 29,99 USD (749 Kč).",
+      "revenue_math": "Ideál: 900 stažení/měs. z niche klíčových slov × 6 % konverze = 54 plateb/měs. × 19.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 21 100 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.3 ≈ 27 400 Kč netto/měs. Průměr mixu ~20 USD.",
+      "revenue_czk_ideal": 27400,
+      "keywords": [
+        {
+          "kw": "goat tracker",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad; evidence uvádí jako neověřenou sub-niku"
+        },
+        {
+          "kw": "kidding",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; homonymie s 'kidding' (vtipkování)"
+        },
+        {
+          "kw": "sheep lambing",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "homestead",
+          "saturation": 4,
+          "competitor": "PoultryPal: Chicken & Egg Log",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Ověřeno nepřímo: drůbeží appky pro drobné chovatele (9 titulů) dokazují, že homesteaders appky kupují. Neověřeno: saturace 'goat tracker' – mohou existovat 2–4 menší appky.",
+      "competitors": [
+        {
+          "name": "PoultryPal: Chicken & Egg Log",
+          "url": "https://apps.apple.com/us/app/poultrypal-chicken-egg-log/id6743654509",
+          "role": "parent",
+          "note": "Cílí na 'small farmers' – drůbež."
+        },
+        {
+          "name": "FlockFriend: Chicken Tracker",
+          "url": "https://apps.apple.com/us/app/flockfriend-chicken-tracker/id6745474579",
+          "role": "parent",
+          "note": "Homestead drůbež."
+        },
+        {
+          "name": "Herdwatch",
+          "url": "",
+          "role": "parent",
+          "note": "Profesionální farmářský systém IE/UK (z tržní znalosti, bez URL v evidenci)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Slovo 'kidding' je homonymum – ASO může přitahovat nerelevantní hledání.",
+        "Počet malých chovatelů koz s iPhonem hledajících appku je malý; strop tržeb nízký.",
+        "Existující goat appky (odhad 2–4) mohou mít náskok v hodnoceních.",
+        "Povinná úřední evidence zvířat se liší podle země – export nebude univerzální."
+      ],
+      "killer_risk": "Malý trh a neznámá konkurence (offline běh bez ověření).",
+      "mitigation": "Pokrýt kozy i ovce (a volitelně alpaky) v jedné appce, ASO v EN/DE/PL; FAMACHA a dojivost jako diferenciátor.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "lifestyle-24",
+      "name": "Decant Desk: Fragrance Split Manager",
+      "tagline": "Pro prodejce vzorků parfémů: ml v lahvích, cena za ml, objednávky a štítky.",
+      "pitch": "Fragrance komunita (Reddit, Facebook skupiny, Vinted) masově obchoduje s 'decanty' – malými vzorky 2–10 ml odlitými z plné lahve – a 'splity', kde se kupci skládají na jednu lahev. Organizátoři to vedou v Excelu: kolik ml zbývá, kdo kolik zaplatil, cena za ml včetně atomizérů a poštovného. Wardrobe appky (5 titulů) řeší sbírku, ne obchod. Decant Desk eviduje lahve po ml, rezervace ve splitu, cenu za ml s náklady a tiskne štítky.",
+      "niche": "Mikro-prodejci decantů a organizátoři splitů. Úzká, ale platící skupina s obchodním motivem.",
+      "parent_market": "Parfémové šatníky (ScentShelf, Aromoshelf, Perfume & Cologne: Fragrance) – rostoucí fragrance appky.",
+      "target_user": "Nadšenec do parfémů, který prodává decanty nebo organizuje splity; US, UK, DE, PL, CZ, AE.",
+      "features": [
+        "Lahve s objemem a zbytkem v ml (odečet při každém decantu)",
+        "Split: účastníci, rezervované ml, zaplaceno/nezaplaceno",
+        "Cena za ml včetně atomizérů, poštovného a marže",
+        "Štítky pro vzorky (AirPrint) a seznam k odeslání",
+        "Přehled tržeb a zisku"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně; žádné platby v appce (ty jdou mimo), žádný server.",
+      "monetization": "Pro lifetime 19,99 USD (499 Kč) nebo 9,99 USD/rok (249 Kč).",
+      "revenue_math": "Ideál: 600 stažení/měs. z niche klíčových slov × 8 % konverze = 48 plateb/měs. × 19.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 18 800 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.1 ≈ 20 600 Kč netto/měs.",
+      "revenue_czk_ideal": 20600,
+      "keywords": [
+        {
+          "kw": "perfume decant",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; evidence uvádí jako neověřenou sub-niku"
+        },
+        {
+          "kw": "fragrance split",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "perfume tracker",
+          "saturation": 5,
+          "competitor": "ScentShelf Perfume Tracker",
+          "note": "Evidence: wardrobe/diary sat 5 – jen parent"
+        },
+        {
+          "kw": "decant",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; homonymum (víno)"
+        }
+      ],
+      "demand_evidence": "Ověřeno: fragrance appky rostou (5 titulů 2025–26), Perfume & Cologne sleduje zbývající množství v lahvi. Neověřeno: počet decant prodejců a objem hledání – velmi pravděpodobně malý.",
+      "competitors": [
+        {
+          "name": "ScentShelf Perfume Tracker",
+          "url": "https://apps.apple.com/us/app/scentshelf-perfume-tracker/id6760212472",
+          "role": "parent",
+          "note": "Sbírka a deník."
+        },
+        {
+          "name": "Perfume & Cologne: Fragrance",
+          "url": "https://apps.apple.com/tt/app/perfume-cologne-fragrance/id6788549359",
+          "role": "niche",
+          "note": "Sleduje, kolik v lahvi zbývá – nejblíž k ml evidenci."
+        },
+        {
+          "name": "Aromoshelf: Perfume Diary",
+          "url": "https://apps.apple.com/ee/app/aromoshelf-perfume-diary/id1628531505",
+          "role": "parent",
+          "note": "Deník vůní."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Velmi malá cílovka – decant prodejců jsou tisíce, ne desetitisíce; 10 000 Kč vyžaduje ~50 plateb/měs.",
+        "Prodej decantů je v šedé zóně (ochranné známky, přebalování, EU předpisy o kosmetice) – Apple může odmítnout appku, která ho výslovně podporuje.",
+        "Excel/Google Sheets je pro obchodní účely zdarma a flexibilnější.",
+        "Nikdo to nehledá v App Store – prodejci se o nástrojích dozví v komunitě, ne přes ASO."
+      ],
+      "killer_risk": "Cílovka je příliš malá a ASO nepřinese dost stažení.",
+      "mitigation": "Postavit jako modul Perfume Lab (receptury + decanty) místo samostatné appky; komunitní šíření na Redditu.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "lifestyle-25",
+      "name": "Cartomancy: Playing Card Reading",
+      "tagline": "Výklad z obyčejných hracích karet – tradice z Itálie, Ruska a střední Evropy v kapse.",
+      "pitch": "Věštění z hracích karet (36/52 karet, 'гадание на игральных картах', 'cartomanzia') je v Rusku, Itálii, Polsku a Česku rozšířenější než tarot, protože hrací karty má doma každý. Appky v App Store se soustředí na tarot a Lenormand; hrací karty jsou okrajové a zastaralé. Cartomancy nabídne významy karet ve 3 tradicích (36 ruská, 32 německá, 52 anglo-americká), výklady, trenér a deník výkladů fyzických karet. Obrácený gap: silné mimo US, v angličtině téměř neznámé.",
+      "niche": "Věštění z hracích karet. Tarot vývojáři cílí na US trh, kde dominuje tarot; hrací karty jsou tradice východní a jižní Evropy.",
+      "parent_market": "Tarot a věštění (Mystic Tarot Reading, Lenormand!, Labyrinthos).",
+      "target_user": "Žena 25–60 let v RU/UA/KZ, IT, PL, CZ, BG, RO; zájemci o folklór.",
+      "features": [
+        "Významy karet pro 3 tradice (36/32/52 karet)",
+        "Výklady (na osobu, ano/ne, týden) s vlastními ilustracemi",
+        "Režim pro fyzické karty: zadání vytažených karet → výklad",
+        "Deník výkladů",
+        "Trenér významů"
+      ],
+      "offline": "full",
+      "offline_note": "Texty a ilustrace (vlastní hrací karty) v balíčku; vše lokálně.",
+      "monetization": "Zdarma 1 výklad denně; Premium 2,99 USD/měs. (79 Kč) nebo 14,99 USD/rok (379 Kč).",
+      "revenue_math": "Ideál: 2 000 stažení/měs. z niche klíčových slov × 3 % konverze = 60 plateb/měs. × 14.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 17 600 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.3 ≈ 22 900 Kč netto/měs.",
+      "revenue_czk_ideal": 22900,
+      "keywords": [
+        {
+          "kw": "cartomancy",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; v EN malý objem"
+        },
+        {
+          "kw": "playing card reading",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "cartomanzia",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad pro IT storefront"
+        },
+        {
+          "kw": "fortune telling cards",
+          "saturation": 5,
+          "competitor": "Mystic Tarot Reading",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Ověřeno nepřímo: Lenormand a tarot appky existují (evidence), zvl. staré tituly potvrzují dlouhodobou poptávku po kartách. Neověřeno: saturace v RU/IT storefrontech – mohou tam být lokální appky.",
+      "competitors": [
+        {
+          "name": "Mystic Tarot Reading",
+          "url": "https://apps.apple.com/ee/app/mystic-tarot-reading/id1466775754",
+          "role": "parent",
+          "note": "Věštecká appka, rodičovský trh."
+        },
+        {
+          "name": "Lenormand!",
+          "url": "https://apps.apple.com/sg/app/lenormand/id873095450",
+          "role": "parent",
+          "note": "Starý kartový titul – ukazuje, že netarotové karty mají publikum."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap: věštění z hracích karet je silné v RU/IT/PL/CZ, v US okrajové. Launch lokalizovaný s primárním ASO v RU/IT/PL/CS.",
+      "devils_advocate": [
+        "RU storefront (největší publikum) má omezené platby; IT/PL publikum je menší.",
+        "V RU storefrontu pravděpodobně existují lokální 'гадание' appky s reklamami zdarma (neověřeno).",
+        "Třetí věštecká appka v portfoliu (Lenormand, Tarot Journal) = riziko 4.3.",
+        "Nízká konverze na předplatné – 'gadanie' je impulzivní zábava."
+      ],
+      "killer_risk": "Hlavní trh (RU) je platebně omezený a lokálně obsazený freemium appkami s reklamami.",
+      "mitigation": "Sloučit s Lenormand appkou jako jeden 'Card Reading' produkt s režimy (Lenormand + hrací karty) – silnější ASO a nižší riziko 4.3.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "lifestyle-26",
+      "name": "Bird Weight Log for Parrots",
+      "tagline": "Denní vážení papoušků v gramech – první varování, že je pták nemocný.",
+      "pitch": "Papoušci a další ptáci skrývají nemoc až do poslední chvíle a jediný včasný signál je úbytek váhy – proto avian veterináři doporučují denní vážení v gramech. Majitelé (korely, andulky, žakoši, kakaduové) to zapisují do sešitu nebo Excelu. Bird Weight Log je jednoúčelový: rychlé zadání váhy, graf, klouzavý průměr a upozornění při poklesu nad nastavenou hranici. Obecné pet appky jsou postavené pro psy a kočky a ptáky neřeší.",
+      "niche": "Denní vážení ptáků. Pet appky cílí na psy/kočky (největší trh); ptáci jsou pro ně okrajoví, i když majitelů papoušků jsou miliony.",
+      "parent_market": "Pet health trackery (11pets, Bondly) a exotické pet trackery (Reptile Buddy, Reptile Rocket).",
+      "target_user": "Majitel papouška nebo více ptáků, 20–60 let; US, UK, DE, NL, AU.",
+      "features": [
+        "Rychlé zadání váhy (g) pro více ptáků, graf a klouzavý průměr",
+        "Upozornění při poklesu nad hranici (nastavitelná, s doporučením kontaktovat veterináře)",
+        "Deník krmení, pelichání a chování",
+        "Export pro avian veterináře (PDF)",
+        "Widget a připomínka ranního vážení"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, iCloud sync.",
+      "monetization": "Zdarma 1 pták; lifetime 7,99 USD (199 Kč).",
+      "revenue_math": "Ideál: 2 000 stažení/měs. z niche klíčových slov × 7 % konverze = 140 plateb/měs. × 7.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 21 900 Kč netto/měs.",
+      "revenue_czk_ideal": 21900,
+      "keywords": [
+        {
+          "kw": "bird weight",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; evidence uvádí jako neověřenou sub-niku"
+        },
+        {
+          "kw": "parrot tracker",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "budgie",
+          "saturation": 5,
+          "competitor": "—",
+          "note": "odhad; hodně her a zvuků"
+        },
+        {
+          "kw": "pet weight tracker",
+          "saturation": 4,
+          "competitor": "Reptile Rocket: pet tracker",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Ověřeno nepřímo: exotické pet trackery existují (Reptile Buddy, Reptile Rocket). Neověřeno: saturace 'bird weight' – předpoklad z doporučení avian veterinářů o denním vážení.",
+      "competitors": [
+        {
+          "name": "Reptile Rocket: pet tracker",
+          "url": "https://apps.apple.com/us/app/reptile-rocket-pet-tracker/id1558082005",
+          "role": "parent",
+          "note": "Exotický pet tracker (plazi)."
+        },
+        {
+          "name": "Reptile Buddy",
+          "url": "https://apps.apple.com/us/app/reptile-buddy/id1508892560",
+          "role": "parent",
+          "note": "Exotický pet tracker."
+        },
+        {
+          "name": "11pets",
+          "url": "",
+          "role": "parent",
+          "note": "Obecná pet health appka (z tržní znalosti, bez URL v evidenci)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Jednoduchá funkce, kterou má většina pet appek (váha) – obtížné vysvětlit, proč platit.",
+        "Nízká cena a jednorázový nákup → 10 000 Kč vyžaduje 2 000 stažení měsíčně, což je optimistické.",
+        "Varování 'pták je nemocný' se blíží diagnostice (1.4.1).",
+        "Majitelé andulek (největší skupina) jsou často děti/teenageři bez platební karty."
+      ],
+      "killer_risk": "Příliš jednoduchá appka s nízkou cenou – 4.2 minimum functionality a nízké tržby.",
+      "mitigation": "Přidat deník krmení/chování a export pro veterináře; cílit na majitele větších papoušků (vyšší ochota platit).",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "lifestyle-27",
+      "name": "Tick Rate: Mechanical Watch Accuracy",
+      "tagline": "Měření přesnosti mechanických hodinek: sekundy za den, trend a připomínka servisu.",
+      "pitch": "Watch collection appky jsou přesycené (9 titulů), ale majitelé mechanických hodinek řeší jinou věc: kolik se jejich hodinky předbíhají nebo zpožďují (s/den) a jestli už je čas na servis. Měření se dělá porovnáním s atomovým časem (fotka ciferníku, synchronizace) nebo akustickým 'timegrapherem' přes mikrofon. Tick Rate nabídne oba režimy, trend v čase a vliv polohy (korunka nahoru/dolů) a teploty. Toolwatch tento model dokázal, ale timegrapher přes mikrofon je technicky náročný.",
+      "niche": "Přesnost mechanických hodinek (ne sbírka). Collection trackery řeší evidenci a nošení; měření je technicky těžší a proto méně obsazené.",
+      "parent_market": "Watch collection trackery (Watch Collection Tracker, Vellore, WristTime, Lug2Lug) a měřiče přesnosti (Toolwatch).",
+      "target_user": "Majitel(ka) mechanických hodinek, nadšenec do hodinek 25–60 let; US, UK, DE, CH, JP.",
+      "features": [
+        "Měření odchylky porovnáním s přesným časem (NTP při připojení nebo GPS čas) a fotkou ciferníku",
+        "Akustický timegrapher přes mikrofon (beat rate, odchylka) – beta",
+        "Trend s/den v čase a podle polohy",
+        "Evidence hodinek a servisní připomínky",
+        "Export historie pro servis/prodej"
+      ],
+      "offline": "mostly",
+      "offline_note": "Akustická analýza a fotky na zařízení; referenční čas ze systémového času iPhonu (synchronizovaný sítí mobilního operátora) – krátká síťová synchronizace je volitelná.",
+      "monetization": "Zdarma 1 hodinky a ruční měření; Pro 19,99 USD lifetime (499 Kč), timegrapher v Pro.",
+      "revenue_math": "Ideál: 1 200 stažení/měs. z niche klíčových slov × 5 % konverze = 60 plateb/měs. × 19.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 23 400 Kč netto/měs.",
+      "revenue_czk_ideal": 23400,
+      "keywords": [
+        {
+          "kw": "watch accuracy",
+          "saturation": 3,
+          "competitor": "Toolwatch",
+          "note": "odhad; Toolwatch známý z tržní znalosti"
+        },
+        {
+          "kw": "timegrapher",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad; existuje několik timegrapher appek"
+        },
+        {
+          "kw": "watch tracker",
+          "saturation": 9,
+          "competitor": "Watch Collection Tracker",
+          "note": "Evidence: sat 9 – přesycené, jen parent"
+        },
+        {
+          "kw": "seconds per day",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Ověřeno: watch collection trh je velmi aktivní (9 appek, evidence) → nadšenci appky používají. Neověřeno: saturace 'timegrapher' a 'watch accuracy' – tuším Toolwatch a několik timegrapher appek.",
+      "competitors": [
+        {
+          "name": "Watch Collection Tracker",
+          "url": "https://apps.apple.com/us/app/watch-collection-tracker/id6448914596",
+          "role": "parent",
+          "note": "Evidence sbírky."
+        },
+        {
+          "name": "Vellore - Watch Collection",
+          "url": "https://apps.apple.com/us/app/vellore-watch-collection/id6760221205",
+          "role": "parent",
+          "note": "Servisní připomínky."
+        },
+        {
+          "name": "Toolwatch",
+          "url": "",
+          "role": "niche",
+          "note": "Měření přesnosti hodinek (z tržní znalosti, bez URL v evidenci)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Akustický timegrapher přes iPhone mikrofon je nespolehlivý (šum, různé mikrofony) → 1★ recenze 'neměří'.",
+        "Toolwatch a existující timegrapher appky mají náskok a zdarma režim.",
+        "Collection trackery (9 appek) mohou měření přesnosti přidat snadno (ruční režim).",
+        "Vyšší náročnost vývoje (DSP) – 6+ týdnů bez záruky kvality."
+      ],
+      "killer_risk": "Technická nespolehlivost měření přes mikrofon.",
+      "mitigation": "Začít ručním režimem (fotka + čas) a timegrapher vydat jako betu až po validaci s fyzickým timegrapherem; doporučit klip na mikrofon.",
+      "build_weeks": 7,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 4,
+        "offline_fit": 8,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "lifestyle-28",
+      "name": "Moon Garden: Sowing Calendar",
+      "tagline": "Lunární kalendář setí a sklizně – dny kořene, listu, květu a plodu počítané offline.",
+      "pitch": "Zahrádkaření podle Měsíce je v Evropě masová tradice ('Aussaatkalender', 'lunární kalendář zahrádkáře') a v App Store je trh jen mírně obsazený (3 dedikované tituly). Lídr Biodynamic Gardening Calendar je silná značka s licencovanými daty Thun, ostatní jsou obecné moon appky. Moon Garden spočítá polohu Měsíce ve znamení a přiřadí dny kořene/listu/květu/plodu vlastním výpočtem, přidá plán setí, deník záhonů a připomínky. Silná sezónnost, ale velká cílovka v DE/AT/CZ/PL/FR.",
+      "niche": "Lunární zahradnický kalendář s vlastním výpočtem a deníkem záhonů, lokalizovaný. Mírná konkurence; lídr je vázaný na licencovaná data a angličtinu.",
+      "parent_market": "Lunární kalendáře (Moony, The Lunar Calendar) a zahradnické appky (plánovače záhonů).",
+      "target_user": "Zahrádkář(ka) 40–75 let, chalupáři, DE, AT, CH, CZ, PL, FR, IT, RU.",
+      "features": [
+        "Denní typ dne (kořen/list/květ/plod), fáze a Měsíc ve znamení – vlastní výpočet",
+        "Plán setí podle plodin a oblíbených dnů",
+        "Deník záhonů s fotkami a sklizní",
+        "Widget na zamykací obrazovku",
+        "Připomínky nejbližšího vhodného dne"
+      ],
+      "offline": "full",
+      "offline_note": "Astronomické výpočty lokálně (vlastní Meeus implementace); žádná licencovaná data Thun.",
+      "monetization": "Zdarma aktuální den; Premium 9,99 USD/rok (249 Kč) nebo lifetime 19,99 USD (499 Kč).",
+      "revenue_math": "Ideál: 2 500 stažení/měs. z niche klíčových slov × 4 % konverze = 100 plateb/měs. × 12.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 25 400 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.3 ≈ 33 000 Kč netto/měs. Průměr mixu ~13 USD; silná sezónnost (březen–červen).",
+      "revenue_czk_ideal": 33000,
+      "keywords": [
+        {
+          "kw": "moon gardening",
+          "saturation": 3,
+          "competitor": "Moon Gardening Calendar: Sow",
+          "note": "Evidence: sat 3 (mírná konkurence)."
+        },
+        {
+          "kw": "biodynamic calendar",
+          "saturation": 3,
+          "competitor": "Biodynamic Gardening Calendar",
+          "note": "Evidence: silná značka Floris Books s licencovanými daty."
+        },
+        {
+          "kw": "planting calendar",
+          "saturation": 5,
+          "competitor": "—",
+          "note": "odhad; obecné zahradnické kalendáře"
+        },
+        {
+          "kw": "aussaatkalender",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad pro DE storefront"
+        }
+      ],
+      "demand_evidence": "Ověřeno: 6 titulů v hledání 'moon gardening calendar biodynamic', 3 dedikované (sat 3), nový hráč 2025–26 (Moon Gardening Calendar: Sow) potvrzuje zájem. Neověřeno: lokální DE/CZ konkurence.",
+      "competitors": [
+        {
+          "name": "Biodynamic Gardening Calendar",
+          "url": "https://apps.apple.com/us/app/biodynamic-gardening-calendar/id1467356605",
+          "role": "niche",
+          "note": "Silná značka, licencovaná data Thun."
+        },
+        {
+          "name": "Moon Gardening Calendar: Sow",
+          "url": "https://apps.apple.com/ng/app/moon-gardening-calendar-sow/id6800734938",
+          "role": "niche",
+          "note": "Nová appka s dny kořene/listu/květu/plodu."
+        },
+        {
+          "name": "Moon & Garden",
+          "url": "https://apps.apple.com/ar/app/moon-garden/id1038475934?l=en",
+          "role": "niche",
+          "note": "Starší moon garden appka."
+        },
+        {
+          "name": "Moon Calendar - Moony",
+          "url": "https://apps.apple.com/us/app/moon-calendar-moony/id1441214285",
+          "role": "parent",
+          "note": "Obecný lunární kalendář."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Lídr má licencovaná data Thun (Maria Thun) – autenticitu nelze replikovat a biodynamici to vědí.",
+        "Silná sezónnost: 70 % tržeb za 4 jarní měsíce.",
+        "Pravděpodobně existují lokální DE/CZ lunární kalendáře zahrádkáře (neověřeno).",
+        "Překryv s Moon Hair Calendar (stejný výpočetní engine) – dvě lunární appky = riziko 4.3; musí se výrazně lišit."
+      ],
+      "killer_risk": "Konkurence silné značky s licencovanými daty + lokální appky v DE/CZ.",
+      "mitigation": "Neoznačovat se jako 'Thun'; diferencovat deníkem záhonů a plánem setí; sloučit Moon Hair a Moon Garden do jedné appky jen pokud review hrozí 4.3.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 5
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "lifestyle-29",
+      "name": "Hot Tub Log: Spa Water Care",
+      "tagline": "Chemie vířivky jednoduše: měření, dávky chloru/bromu a výměna vody – bez chemika.",
+      "pitch": "Nafukovací a venkovní vířivky (Lay-Z-Spa, Intex a další) se od roku 2020 prodávají ve statisících kusů v UK, DE, NL a CZ, a jejich majitelé bojují se zakalenou vodou a nejasnými dávkami chemie. Bazénové appky (Pool Math, Orenda) jsou postavené na velké bazény a americké jednotky. Hot Tub Log počítá dávky pro malý objem (800–1500 l) v litrech, chlor vs. brom, šok, výměnu vody a filtru, a vede deník měření. Cílí na obrovskou skupinu 'náhodných' majitelů vířivek, ne na bazénové profesionály.",
+      "niche": "Malé (nafukovací) vířivky v Evropě. Bazénové appky jsou pro velké bazény a US jednotky; malé vířivky mají jinou chemii a jiné uživatele.",
+      "parent_market": "Pool care appky (Pool Math by Trouble Free Pool, Orenda) – etablovaný placený trh.",
+      "target_user": "Majitel nafukovací nebo malé vířivky 30–60 let, UK, DE, NL, BE, CZ, PL, AU.",
+      "features": [
+        "Kalkulačka dávek pro malý objem v litrech (chlor/brom, pH±, šok)",
+        "Deník měření (testovací proužky – ruční zadání) s grafem",
+        "Připomínky výměny vody, čištění filtru, šoku",
+        "Průvodce problémy (zákal, pěna, zápach) jako obecné tipy",
+        "Předvolby běžných modelů vířivek podle objemu"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně; volitelné čtení proužků fotkou (Vision) je až v 2. verzi.",
+      "monetization": "Zdarma kalkulačka; Pro 9,99 USD/rok (249 Kč) nebo lifetime 14,99 USD (379 Kč).",
+      "revenue_math": "Ideál: 2 000 stažení/měs. z niche klíčových slov × 5 % konverze = 100 plateb/měs. × 12.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 25 400 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.2 ≈ 30 500 Kč netto/měs. Průměr mixu ~13 USD; sezónnost duben–září.",
+      "revenue_czk_ideal": 30500,
+      "keywords": [
+        {
+          "kw": "hot tub",
+          "saturation": 5,
+          "competitor": "—",
+          "note": "odhad; výrobci vířivek mají appky k ovládání"
+        },
+        {
+          "kw": "hot tub chemicals",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "spa water",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "pool calculator",
+          "saturation": 6,
+          "competitor": "Pool Math (parent)",
+          "note": "odhad; přesycené – jen parent"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty (offline běh). Předpoklad: silný prodej nafukovacích vířivek v Evropě a etablovaný trh pool care appek; saturace 'hot tub' pravděpodobně vyšší kvůli ovládacím appkám výrobců.",
+      "competitors": [
+        {
+          "name": "Pool Math by Trouble Free Pool",
+          "url": "",
+          "role": "parent",
+          "note": "Populární kalkulačka bazénové chemie (z tržní znalosti, bez URL v evidenci)."
+        },
+        {
+          "name": "Orenda",
+          "url": "",
+          "role": "parent",
+          "note": "Profesionální kalkulačka chemie bazénů (z tržní znalosti)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Chemikálie: chybná dávka může způsobit poleptání kůže/očí – odpovědnost a přísnější review.",
+        "Pool Math už umí malé objemy a má silnou komunitu.",
+        "Výrobci chemie (Clearwater, Lay-Z-Spa) mají průvodce a někteří i appky zdarma.",
+        "Sezónnost u venkovních nafukovacích vířivek (zima = vypuštěno)."
+      ],
+      "killer_risk": "Chemická bezpečnost a odpovědnost + Pool Math jako zavedená alternativa.",
+      "mitigation": "Výpočty jen podle štítků uživatelem zadaných přípravků, výrazná upozornění a limity; cílit EU jednotky a nafukovací modely.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "lifestyle-30",
+      "name": "Dig Log: Metal Detecting Finds",
+      "tagline": "Deník nálezů detektoráře: GPS, foto, hloubka, signál – a export pro oficiální hlášení.",
+      "pitch": "Detektoráři (UK má desítky tisíc aktivních, dále NL, DE, PL, CZ, US) zapisují nálezy kvůli povinnému nebo dobrovolnému hlášení (UK Portable Antiquities Scheme), povolením od vlastníků pozemků a vlastní statistice. Dnes používají papír nebo obecné GPS appky. Dig Log eviduje nález fotkou, GPS polohou (offline), hloubkou, signálem (VDI/ID číslo detektoru), povolením a vytvoří export pro hlášení. Identifikace mincí (CoinSnap) je jiný trh; evidence nálezů je volná.",
+      "niche": "Deník nálezů a povolení pro detektoráře. Appky kolem detektorů jsou 'magnetometrové' hračky nebo identifikátory mincí; seriózní evidence nálezů je okrajová.",
+      "parent_market": "Identifikátory mincí a starožitností (CoinSnap, Antiq AI) a outdoor GPS deníky.",
+      "target_user": "Detektorář 30–70 let, hlavně UK, NL, DE, PL, CZ, US, AU.",
+      "features": [
+        "Nález: foto, GPS (offline), hloubka, VDI signál, materiál, datace",
+        "Pozemky a povolení vlastníků (smlouva jako PDF), hranice na mapě (Apple Maps cache)",
+        "Export pro oficiální hlášení (CSV/PDF), soukromí polohy (zamlžení)",
+        "Statistiky: nálezy/hodinu, typy, lokality",
+        "Galerie a sdílitelná karta nálezu bez přesné polohy"
+      ],
+      "offline": "mostly",
+      "offline_note": "GPS a data offline; podklad mapy z Apple Maps (vyžaduje síť, když není v cache) – vše ostatní na zařízení.",
+      "monetization": "Zdarma 30 nálezů; Pro 14,99 USD/rok (379 Kč) nebo lifetime 24,99 USD (599 Kč).",
+      "revenue_math": "Ideál: 1 200 stažení/měs. z niche klíčových slov × 5 % konverze = 60 plateb/měs. × 19.99 USD × 0 85 (provize Apple 15 %) × 23 Kč ≈ 23 400 Kč netto/měs. V ustáleném stavu (2. rok  obnovy ročních předplatných + lifetime) ×1.2 ≈ 28 100 Kč netto/měs. Průměr mixu ~20 USD.",
+      "revenue_czk_ideal": 28100,
+      "keywords": [
+        {
+          "kw": "metal detecting",
+          "saturation": 5,
+          "competitor": "—",
+          "note": "odhad; mnoho 'metal detector' magnetometrových appek"
+        },
+        {
+          "kw": "finds log",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "detectorist",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; UK termín"
+        },
+        {
+          "kw": "metal detecting log",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty (offline běh). Evidence reference ukazuje, že identifikace nálezů (Antiq AI, Rock Identifier, Meteorites) má poptávku; deník detektorářů je odhad z tržní znalosti.",
+      "competitors": [
+        {
+          "name": "Antiq AI - Identify & Appraise",
+          "url": "https://apps.apple.com/us/app/antiq-ai-identify-appraise/id6754059347",
+          "role": "parent",
+          "note": "Identifikace starožitností – příbuzný trh (evidence reference)."
+        },
+        {
+          "name": "CoinSnap",
+          "url": "",
+          "role": "parent",
+          "note": "Identifikátor mincí (z tržní znalosti, bez URL v evidenci)."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Model 'finds recording' je UK-centrický (Portable Antiquities Scheme) a v jiných zemích neexistuje lokalizovaná appka; lokalizace s národními pravidly hlášení (NL, DE, PL, CZ).",
+      "devils_advocate": [
+        "'Metal detecting' ve výsledcích zaplavují falešné magnetometrové appky – ASO bude těžké.",
+        "Právní citlivost: v mnoha zemích (CZ, DE části) je amatérské hledání omezené/ilegální – appka může působit jako podpora nelegální činnosti.",
+        "Detektoráři chrání lokality – nedůvěra k appkám s GPS (i když offline).",
+        "Výrobci detektorů (Minelab, XP, Garrett) mohou deník přidat do svých appek."
+      ],
+      "killer_risk": "Právní a reputační citlivost detektoringu mimo UK a zaplavené ASO.",
+      "mitigation": "Primárně UK/NL/US, jasné informace o místních pravidlech a povinnosti hlásit, žádné sdílení polohy.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 8,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    }
+  ]
+}

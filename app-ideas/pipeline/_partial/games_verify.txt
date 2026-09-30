@@ -1,0 +1,27 @@
+GAMES — REVIEWER VERIFY LOG (devil's advocate run)
+Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
+
+[1] query: site:apps.apple.com hand and foot score keeper  (idea games-11)
+    saturation (dedicated "hand and foot" in title): 2 (Hand and Foot Calculator; Hand and Foot Score Card - seen only as "You Might Also Like", no URL) + generic scorers advertising Hand & Foot
+    - Hand and Foot Calculator            https://apps.apple.com/us/app/hand-and-foot-calculator/id1422549865
+    - Keep Score: Game Score Tracker (generic, mentions Hand & Foot) https://apps.apple.com/us/app/keep-score-game-score-tracker/id1140300229
+    - Score Recorder (generic, mentions Hand and Foot) https://apps.apple.com/us/app/record-score/id454055560
+    - Score Keeper BACON (generic)        https://apps.apple.com/lr/app/score-keeper-bacon/id586533542
+    - Crowns Score Keeper                 https://apps.apple.com/nz/app/crowns-score-keeper/id1541508484
+    - Score Keeper: Darts & Dice          https://apps.apple.com/us/app/score-keeper-darts-dice/id6463562114
+    - Score Keeper Log: Keep Score        https://apps.apple.com/app/id6749599734
+    - (noise) Soccer and Football Score Tap https://apps.apple.com/us/app/soccer-football-score-keeper-free/id541843255
+    - (noise) US Football Score Tracker   https://apps.apple.com/sr/app/us-football-score-tracker/id6792562472
+
+[2] query: site:apps.apple.com doppelkopf offline  (idea games-05)
+    saturation ("doppelkopf" in title, distinct apps): 5 (Doppelkopf online/kultegin, Doppelkopf Mac, Doppelkopf LITE, Doppelkopf HD, Doppelkopf-Palast) -> HARD/SATURATED for head term; offline AI covered by LITE/HD (same dev as Schafkopf LITE)
+    - Doppelkopf online (kultegingames)   https://apps.apple.com/de/app/doppelkopf-online/id6761893018
+    - Doppelkopf online (pk storefront)   https://apps.apple.com/pk/app/doppelkopf-online/id6761893018
+    - Doppelkopf (Mac, reviews)           https://apps.apple.com/de/app/doppelkopf/id1441520588?mt=12&see-all=reviews&platform=mac
+    - Doppelkopf LITE (reviews)           https://apps.apple.com/de/app/992924790?see-all=reviews&platform=iphone
+    - Doppelkopf-Palast (Spiele-Palast, online-only) https://apps.apple.com/de/app/doppelkopf-palast/id732017198
+    - Doppelkopf LITE                     https://apps.apple.com/de/app/doppelkopf-lite/id992924790
+    - Doppelkopf Online Doko (same id as Palast) https://apps.apple.com/de/app/doppelkopf-online-doko/id732017198?l=en-GB
+    - Doppelkopf HD (offline vs AI)       https://apps.apple.com/de/app/doppelkopf-hd/id992787438
+    - Doppelkopf LITE (se)                https://apps.apple.com/se/app/doppelkopf-lite/id992924790?l=en-GB
+    - Schafkopf LITE                      https://apps.apple.com/de/app/schafkopf-lite/id1076626842

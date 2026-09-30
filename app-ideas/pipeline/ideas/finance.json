@@ -1,0 +1,2641 @@
+{
+  "category": "Finance",
+  "category_slug": "finance",
+  "search_notes": "Offline běh: žádná volání Apple ani WebSearch. Jádro (nápady 1–11 s evidence 'web') stojí na _partial/finance_evidence.txt (15 webových vyhledávání) a _partial/business_evidence.txt (church offering count, tip pool, cash drawer); všechny URL konkurentů jsou zkopírované z těchto souborů. Nápady s evidence 'knowledge' jsou z mé znalosti trhu 2025–26, saturace je odhad a blue_ocean max 7. Apple hinty (hint_found) nebyly v tomto běhu ověřeny u žádného klíčového slova – před stavbou je nutné spustit apple_fetch.py check na top 10 nápadů. Přeplněné niche vynechané jako blue ocean: HSA receipts, free-trial trackery, cash stuffing (EN), kakeibo, 100 envelope challenge (EN), allowance tracker (EN), server tip tracker, money counter.",
+  "ideas": [
+    {
+      "id": "finance-01",
+      "name": "Handmade Price Calculator",
+      "tagline": "Konečně férová cena za ručně vyrobený kus – materiál, čas, režie a marže v jedné obrazovce.",
+      "pitch": "Tvůrci svíček, šperků, mýdel, keramiky a pletenin notoricky podceňují ceny, protože nepočítají čas, poplatky tržišť a režii. Aplikace z receptury (materiál po gramech/kusech) a odpracovaných minut spočítá výrobní cenu, velkoobchodní i maloobchodní cenu a ukáže, kolik reálně zůstane po poplatcích tržiště. Jediná zavedená dedikovaná appka je z roku 2013, nové konkurentky z 2026 jsou slabé. Ruční výroba je obří a stále rostoucí trh a pricing je bolest číslo jedna v každé skupině tvůrců. Offline kalkulačka s knihovnou materiálů je pro nás ideální rozsah.",
+      "niche": "Tvůrci, kteří prodávají na trzích, Etsy/Vinted a vlastních e-shopech. Velcí hráči (Etsy, Shopify, Square) řeší prodej, ne kalkulaci ceny; účetní appky řeší daně, ne recepturu výrobku.",
+      "parent_market": "Nástroje pro malé tvůrčí podnikání a e-commerce prodejce (Etsy Seller, Shopify, Faire for Brands, Craftybase na webu) – prokazatelně placený segment.",
+      "target_user": "Hobby-podnikatelé a malé dílny (svíčky, mýdla, šperky, pryskyřice, háčkování, 3D tisk), převážně ženy 25–55, prodávají 10–200 kusů měsíčně.",
+      "features": [
+        "Knihovna materiálů s cenou za jednotku (g, ml, ks, m) a automatickým přepočtem při nákupu balení",
+        "Receptura výrobku: materiál + čas × hodinová sazba + režie + obal",
+        "Ceny velkoobchod/maloobchod podle vzorců (2×2, keystone, vlastní marže)",
+        "Předvolby poplatků tržišť (procento + fixní poplatek) a čistý zisk na kus",
+        "Export ceníku do PDF/CSV, iCloud sync mezi iPhonem a iPadem"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně (SwiftData/Core Data), synchronizace přes iCloud/CloudKit. Žádné API, poplatky tržišť jsou editovatelné předvolby.",
+      "monetization": "Zdarma 3 výrobky; Pro doživotně 14,99 USD (≈ 345 CZK) nebo 2,99 USD/měs (≈ 69 CZK).",
+      "revenue_math": "Ideál: 1 200 stažení/měs z clusteru craft pricing / handmade pricing / candle, soap cost × 5 % konverze × 14,99 USD = 899 USD hrubě → 764 USD čistě (po 15 %) → ≈ 17 600 CZK/měs.",
+      "revenue_czk_ideal": 17600,
+      "keywords": [
+        {
+          "kw": "craft pricing calculator",
+          "saturation": 1,
+          "competitor": "Craft Pricing Calculator (2013, jediná dedikovaná)",
+          "note": "Evidence z webu: v titulech 1–3 aplikace, jedna stará a dvě slabé nové; Apple hint neověřen (offline běh)."
+        },
+        {
+          "kw": "handmade pricing",
+          "saturation": 2,
+          "competitor": "CraftTok - Craft Cost Tracker (2026, slabá)",
+          "note": "Web: sat ≈ 1–3, konkurence nová a bez hodnocení; hint neověřen."
+        },
+        {
+          "kw": "candle cost calculator",
+          "saturation": 1,
+          "competitor": "odhad – obecné kalkulačky",
+          "note": "odhad; sub-niche podle materiálu (svíčky/mýdla) pro subtitle a keywords pole."
+        },
+        {
+          "kw": "product cost calculator",
+          "saturation": 3,
+          "competitor": "odhad – obecné business kalkulačky",
+          "note": "odhad; širší fráze jako záloha."
+        }
+      ],
+      "demand_evidence": "Ověřeno z webu: v niche jsou jen 3 dedikované aplikace (Craft Pricing Calculator z 2013 + dvě nové z 2026), tedy jiní vývojáři poptávku vidí, ale nikdo ji dobře neobsluhuje. Předpoklad (neověřeno Apple hinty): tvůrci tyto fráze skutečně hledají v App Store; pricing je dlouhodobě nejčastější dotaz v tvůrčích komunitách (moje znalost).",
+      "competitors": [
+        {
+          "name": "Craft Pricing Calculator",
+          "url": "https://apps.apple.com/us/app/craft-pricing-calculator/id725600238",
+          "role": "niche",
+          "note": "Z roku 2013, jediná zavedená dedikovaná kalkulačka – zastaralé UI."
+        },
+        {
+          "name": "CraftTok - Craft Cost Tracker",
+          "url": "https://apps.apple.com/us/app/crafttok-craft-cost-tracker/id6761536181",
+          "role": "niche",
+          "note": "Nová 2026, slabá."
+        },
+        {
+          "name": "Craftory: Handmade Business App",
+          "url": "https://apps.apple.com/us/app/craftory-craft-business-tool/id6760630587",
+          "role": "niche",
+          "note": "Nová 2026, širší business nástroj."
+        },
+        {
+          "name": "Faire for Brands",
+          "url": "https://apps.apple.com/us/app/faire-for-brands/id1544186836",
+          "role": "parent",
+          "note": "Velkoobchodní tržiště pro malé značky – důkaz platícího segmentu."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "Lze lokalizovat (DE Handmade, CZ rukodělná výroba), ale model není US-only.",
+      "devils_advocate": [
+        "Hlavní hledaný výraz zná jen část tvůrců; mnozí počítají v Excelu nebo na papíře a appku nehledají.",
+        "Nové slabé konkurentky z 2026 ukazují, že niche objevili i další indie vývojáři – do roka může být 6+ titulů.",
+        "Hobby tvůrci mají nízkou ochotu platit; doživotní nákup po první kalkulaci už nemusí mít důvod k obnově.",
+        "Guideline 4.3: pokud bychom vydali i Booth Sales a Commission Queue, musí být výrazně odlišné, jinak hrozí zamítnutí jako spam."
+      ],
+      "killer_risk": "Malý objem vyhledávání – niche může mít spíš stovky než tisíce stažení měsíčně.",
+      "mitigation": "Subtitle a keywords rozprostřít přes materiálové sub-niche (candle, soap, resin, jewelry), lokalizovat do DE/FR/ES/CZ a přidat funkce pro opakované použití (sledování zásob materiálu), aby šlo prodávat předplatné.",
+      "build_weeks": 3,
+      "evidence": "web",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 8,
+        "monetization": 6,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "finance-02",
+      "name": "Savings Circle Organizer",
+      "tagline": "Tanda, arisan, paluwagan, stokvel i committee – jedna offline appka pro toho, kdo kolečko vede.",
+      "pitch": "Rotující spořicí kroužky (ROSCA) používají stovky milionů lidí po celém světě, ale v App Store je každá aplikace jen pro jeden trh a jeden název. Organizátor kroužku přitom řeší pořád totéž: kdo zaplatil, kdo je na řadě s výplatou, pořadí losování a upomínky. Postavíme jednu offline appku a v každém storefrontu jí dáme lokální název (Tanda v MX/US, Arisan v ID, Paluwagan na PH, Stokvel v ZA, Committee v PK/IN, Tontine ve FR). Tím obsadíme 8+ malých klíčových slov jedním produktem.",
+      "niche": "Organizátor kroužku (ne členové) – potřebuje evidenci plateb a pořadí, ne fintech s licencí. Fintechy (Oraan, Moneyclub) chtějí peníze spravovat samy a jsou vázané na jeden stát; malé appky pokrývají vždy jeden termín.",
+      "parent_market": "Skupinové finance a ROSCA aplikace (Oraan, Moneyclub, StokFella, Golak) a širší trh sdílených výdajů (Splitwise, Tricount).",
+      "target_user": "Organizátorky tand/arisanů v Latinské Americe, Indonésii, na Filipínách, v JAR a Pákistánu a hlavně diaspora v USA/UK/EU (hispánští a filipínští uživatelé iPhonu).",
+      "features": [
+        "Kroužky s počtem členů, výší vkladu, frekvencí a pořadím výplat (ruční nebo losování)",
+        "Odškrtávání plateb, dluhy a pokuty za pozdní platbu",
+        "Upomínky přes lokální notifikace + předvyplněná zpráva do WhatsApp/SMS",
+        "PDF/obrázkový výpis stavu pro sdílení ve skupině",
+        "Lokalizované názvy a terminologie podle storefrontu"
+      ],
+      "offline": "full",
+      "offline_note": "Data jen na zařízení organizátora + iCloud záloha. Sdílení stavu přes share sheet (PDF/obrázek), žádný server ani účty členů.",
+      "monetization": "Zdarma 1 kroužek; Pro doživotně 9,99 USD v US/EU (≈ 230 CZK), v ID/PH/PK nižší cenová úroveň cca 3–5 USD.",
+      "revenue_math": "Ideál: 3 000 stažení/měs přes 8 storefrontů × 3 % konverze × průměrně 7 USD (mix cenových úrovní) = 630 USD hrubě → 535 USD čistě → ≈ 12 300 CZK/měs.",
+      "revenue_czk_ideal": 12300,
+      "keywords": [
+        {
+          "kw": "tanda",
+          "saturation": 3,
+          "competitor": "Tandapp - Tandas Organizer (nová)",
+          "note": "Web: sat 3, top výsledky mix – TANDA App je firemní spoření, ne ROSCA. Hint neověřen."
+        },
+        {
+          "kw": "arisan",
+          "saturation": 3,
+          "competitor": "Arisan Ceria (malá, Utilities)",
+          "note": "Web: sat 3, všechny malé; indonéský storefront."
+        },
+        {
+          "kw": "paluwagan",
+          "saturation": 1,
+          "competitor": "Fundaloop (PH, nová)",
+          "note": "Web: sat 1, nejotevřenější termín."
+        },
+        {
+          "kw": "stokvel",
+          "saturation": 3,
+          "competitor": "StokFella (od ~2016)",
+          "note": "Web: sat 3 v titulu, 5–6 aplikací celkem, některé fintech."
+        },
+        {
+          "kw": "committee app",
+          "saturation": 4,
+          "competitor": "Oraan - Digital Committee App (fintech)",
+          "note": "Web: sat 4, PK je nejvíc obsazený – brát jen jako doplněk."
+        }
+      ],
+      "demand_evidence": "Ověřeno z webu: 20+ aplikací v nejméně 8 storefrontech, každá pro jeden termín/trh – poptávka existuje a vývojáři na ni reagují. Neověřeno: objem vyhledávání na iOS (tyto trhy jsou silně androidové) a Apple hinty.",
+      "competitors": [
+        {
+          "name": "Tandapp - Tandas Organizer",
+          "url": "https://apps.apple.com/us/app/tandapp-tandas-organizer/id6763742265",
+          "role": "niche",
+          "note": "Nová, jen tanda."
+        },
+        {
+          "name": "Golak",
+          "url": "https://apps.apple.com/us/app/golak/id1486036524",
+          "role": "niche",
+          "note": "Vícejazyčná ROSCA appka – nejbližší multi-market konkurent."
+        },
+        {
+          "name": "Arisan Ceria",
+          "url": "https://apps.apple.com/us/app/arisan-ceria/id6742703765",
+          "role": "niche",
+          "note": "Losování zatřesením, v kategorii Utilities."
+        },
+        {
+          "name": "Moneyclub: Savings & Stokvel",
+          "url": "https://apps.apple.com/us/app/moneyclub-savings-stokvel/id1488315695",
+          "role": "parent",
+          "note": "Fintech se skutečnou správou peněz – jiný model."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap: model je silný v MX/ID/PH/ZA/PK, ale každá appka pokrývá jeden trh; v US je jen hispánská 'tanda' niche. Jedna appka lokalizovaná do 50 jazyků s lokálním titulem per storefront nemá obdobu.",
+      "devils_advocate": [
+        "Cílové trhy (ID, PH, PK, ZA) mají 80–90 % Androidu; na iOS může být jen zlomek poptávky.",
+        "Nízká kupní síla – i 3 USD je pro část organizátorek bariéra; appka musí vydělat hlavně na diaspoře.",
+        "Bez serveru nevidí členové stav v reálném čase; konkurence s účty to umí a členové to chtějí.",
+        "Apple může 8 lokálních titulů považovat za keyword stuffing (2.3.7), pokud název nebude přirozený v daném jazyce."
+      ],
+      "killer_risk": "Malý podíl iOS v hlavních ROSCA trzích – stažení se nenasbírají ani přes 8 storefrontů.",
+      "mitigation": "Primárně cílit diasporu v US/UK/CA/AU (tanda, susu, esusu, paluwagan) a hispánské uživatele v US; sdílení přes WhatsApp; cenové úrovně per storefront.",
+      "build_weeks": 4,
+      "evidence": "web",
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 9,
+        "safety": 6
+      }
+    },
+    {
+      "id": "finance-03",
+      "name": "Envelope Budget Local",
+      "tagline": "Obálková metoda pro Evropu, Latinskou Ameriku i Japonsko – v tvé měně a tvém jazyce.",
+      "pitch": "Cash stuffing a obálková metoda jsou v US virální trend a appek je tam spousta, jenže skoro všechny jsou anglické a v dolarech. Stejná metoda má přitom lokální tradice: německá Umschlagmethode, španělský método de sobres, japonský 袋分け家計簿. Postavíme obálkový rozpočet s lokální terminologií, měnou a bankovkami, přeloženými šablonami obálek a exportem. Soutěžíme v každém jazyce s minimem aplikací místo s desítkou v angličtině.",
+      "niche": "Neanglicky mluvící uživatelé obálkové metody. US hráči lokalizaci neřeší, protože jejich růst stojí na TikTok komunitě v USA.",
+      "parent_market": "Rozpočtové aplikace (YNAB, Goodbudget, EveryDollar) – dlouhodobě jedna z nejvýdělečnějších subkategorií Finance.",
+      "target_user": "Lidé 20–45 v DE/AT, ES/MX/AR, FR, IT, PL, CZ a JP, kteří platí hotově nebo chtějí 'virtuální obálky' na účtu.",
+      "features": [
+        "Obálky s měsíčními limity a přesuny mezi nimi, lokální měna a bankovky",
+        "Režim cash stuffing: kolik kterých bankovek dát do které obálky",
+        "Šablony obálek podle země (nájem, energie, 'Rundfunkbeitrag', dárky…)",
+        "Přehled měsíce a přenášení zůstatků, widget",
+        "iCloud sync pro páry (sdílená zóna CloudKit)"
+      ],
+      "offline": "full",
+      "offline_note": "Ruční zadávání, vše lokálně + CloudKit. Žádné napojení na banky (to by vyžadovalo licencovaná data).",
+      "monetization": "Freemium: 5 obálek zdarma; Pro 3,99 USD/měs (≈ 92 CZK), 19,99 USD/rok (≈ 460 CZK), doživotně 29,99 USD.",
+      "revenue_math": "Ideál: 2 000 stažení/měs z lokálních výrazů v 8 jazycích × 3 % konverze × 19,99 USD roční = 1 199 USD hrubě → 1 019 USD čistě → ≈ 23 400 CZK/měs.",
+      "revenue_czk_ideal": 23400,
+      "keywords": [
+        {
+          "kw": "cash stuffing",
+          "saturation": 3,
+          "competitor": "Tuckle: Envelope Cash Stuffing",
+          "note": "Web: v EN přeplněno (5+ obálkových appek) – jen důkaz poptávky, ne cíl."
+        },
+        {
+          "kw": "umschlagmethode",
+          "saturation": 1,
+          "competitor": "odhad – obecné Haushaltsbuch appky",
+          "note": "odhad; neověřeno, DE storefront."
+        },
+        {
+          "kw": "método de sobres",
+          "saturation": 1,
+          "competitor": "CashBinder (v CL jen en-GB)",
+          "note": "Web: CashBinder má v chilském storefrontu jen angličtinu – signál lokalizační mezery."
+        },
+        {
+          "kw": "袋分け家計簿",
+          "saturation": 3,
+          "competitor": "odhad – japonské kakeibo appky",
+          "note": "odhad; v JP je kakeibo trh silný, ale fukuro-wake specificky méně."
+        }
+      ],
+      "demand_evidence": "Ověřeno z webu: v angličtině 5+ obálkových appek a CashBinder nabízí v Chile jen en-GB – mezera v lokalizaci je doložená. Předpoklad: lokální výrazy (Umschlagmethode, método de sobres) jsou hledané; neověřeno Apple hinty.",
+      "competitors": [
+        {
+          "name": "Tuckle: Envelope Cash Stuffing",
+          "url": "https://apps.apple.com/us/app/tuckle-envelope-cash-stuffing/id6782596313",
+          "role": "niche",
+          "note": "Nová US appka, anglicky."
+        },
+        {
+          "name": "CashBinder: Budget & Envelopes",
+          "url": "https://apps.apple.com/cl/app/cashbinder-budget-envelopes/id6773762609?l=en-GB",
+          "role": "niche",
+          "note": "V Chile bez španělštiny."
+        },
+        {
+          "name": "Cash Stuffing",
+          "url": "https://apps.apple.com/gb/app/cash-stuffing/id6742150780?uo=2",
+          "role": "niche",
+          "note": "UK varianta, anglicky."
+        },
+        {
+          "name": "Goodbudget",
+          "url": "",
+          "role": "parent",
+          "note": "Zavedený obálkový rozpočet (server + účty)."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Cash-stuffing appky jsou US/EN a v USD; lokalizace do 50 jazyků s lokálními měnami a názvem metody je volný prostor.",
+      "devils_advocate": [
+        "Hotovost v EU (hlavně severní) mizí; metoda může mít lokálně mnohem menší komunitu než v US.",
+        "Goodbudget a YNAB mají lokalizace aspoň částečně a silnou značku; stačí přidat pár jazyků.",
+        "Ruční zadávání výdajů = vysoký churn po 2–3 měsících.",
+        "Lokální výraz může mít nízký objem; japonský trh má desítky zdarma kakeibo appek."
+      ],
+      "killer_risk": "Lokální výrazy mají malý objem a v každé zemi získáme jen pár stovek stažení.",
+      "mitigation": "Vybrat 6–8 trhů s nejsilnějším zájmem (DE, ES/MX, BR, FR, PL, JP), kombinovat s obecným 'budget' v lokálním jazyce a měřit po storefrontech; widget a rychlé zadání přes Shortcuts snižují churn.",
+      "build_weeks": 5,
+      "evidence": "web",
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "finance-04",
+      "name": "Sinking Funds Planner",
+      "tagline": "Pojistka, dárky, servis auta – rozpočítej roční výdaje na měsíce a už nikdy nebuď zaskočen.",
+      "pitch": "Sinking funds (rezervy na nepravidelné výdaje) jsou pojem, který se ve finančních komunitách šíří hlavně díky Dave Ramseymu a TikToku. Uživatel chce vidět, kolik si má každý měsíc odložit na každou položku a zda je na plánu. Konkurence jsou tři slabé appky z let 2025–26, bez silné značky. Postavíme kalendářově orientovaný plánovač, který to udělá líp a bude lokalizovaný.",
+      "niche": "Plánování ročních a nepravidelných výdajů. Velké rozpočtovky to mají jako vedlejší funkci schovanou v kategoriích, ne jako hlavní pohled.",
+      "parent_market": "Rozpočtové aplikace (YNAB, Monarch, EveryDollar, Goodbudget) – vysoké předplatné, prokázaná ochota platit.",
+      "target_user": "Domácnosti 25–45, které už mají základní rozpočet a chtějí přestat být překvapené ročními platbami.",
+      "features": [
+        "Fondy s cílem, termínem a automatickým výpočtem měsíční částky",
+        "Kalendář budoucích výdajů na 12 měsíců dopředu",
+        "Stav na plánu/pod plánem a návrh přerozdělení",
+        "Šablony (vánoce, pojistky, STK, dovolená, školní výdaje)",
+        "Widget + iCloud sync pro domácnost"
+      ],
+      "offline": "full",
+      "offline_note": "Ruční vklady a výběry, všechna data lokálně + CloudKit.",
+      "monetization": "Zdarma 3 fondy; Pro 24,99 USD/rok (≈ 575 CZK) nebo doživotně 39,99 USD.",
+      "revenue_math": "Ideál: 1 000 stažení/měs × 4 % konverze × 24,99 USD = 999 USD hrubě → 849 USD čistě → ≈ 19 500 CZK/měs.",
+      "revenue_czk_ideal": 19500,
+      "keywords": [
+        {
+          "kw": "sinking funds",
+          "saturation": 3,
+          "competitor": "SetAside: Sinking Funds App (2025-26)",
+          "note": "Web: sat 3, všechny tři appky slabé a nové – ještě vstupitelné."
+        },
+        {
+          "kw": "sinking fund tracker",
+          "saturation": 2,
+          "competitor": "SinkFund",
+          "note": "Web/odhad: odvozené od sat 3 pro 'sinking funds'."
+        },
+        {
+          "kw": "annual expenses planner",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad; alternativní formulace pro lidi, kteří termín neznají."
+        },
+        {
+          "kw": "savings goals",
+          "saturation": 7,
+          "competitor": "odhad – mnoho spořicích appek",
+          "note": "odhad; head term jen do popisu."
+        }
+      ],
+      "demand_evidence": "Ověřeno z webu: 3 dedikované appky z 2025–26 (SetAside, Tuck, SinkFund) – trh roste a zatím nemá lídra. Předpoklad: termín 'sinking funds' je hledaný hlavně v US/UK/AU; mimo angličtinu je potřeba jiný výraz.",
+      "competitors": [
+        {
+          "name": "SetAside: Sinking Funds App",
+          "url": "https://apps.apple.com/us/app/setaside-sinking-funds-app/id6754886161",
+          "role": "niche",
+          "note": "Nová 2025, slabá."
+        },
+        {
+          "name": "Tuck - Sinking Funds",
+          "url": "https://apps.apple.com/au/app/tuck-sinking-funds/id6787911273",
+          "role": "niche",
+          "note": "Nová, AU storefront."
+        },
+        {
+          "name": "SinkFund",
+          "url": "https://apps.apple.com/kn/app/sinkfund/id6760363742",
+          "role": "niche",
+          "note": "Nová 2026."
+        },
+        {
+          "name": "YNAB",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr rozpočtů; sinking funds řeší přes cíle kategorií."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Tři nové appky za rok znamenají, že za dalších 12 měsíců může být niche přeplněná.",
+        "YNAB/Monarch mají 'targets' a uživatelé, kteří platí za rozpočtovku, druhou appku nechtějí.",
+        "Termín je anglosaský; lokalizace do dalších jazyků přinese málo, protože lidé hledají jinak.",
+        "Ruční vedení = odchod po pár měsících, pokud nejsou připomínky a widget."
+      ],
+      "killer_risk": "Rychlé zaplnění niche dalšími indie appkami – blue ocean se změní v red ocean dřív, než naberou hodnocení.",
+      "mitigation": "Vyjít rychle (3 týdny), sbírat hodnocení in-app review promptem po prvním splněném fondu a odlišit se kalendářovým pohledem a šablonami.",
+      "build_weeks": 3,
+      "evidence": "web",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "finance-05",
+      "name": "Notice Period Tracker",
+      "tagline": "Nehlídej jen konec zkušební verze – hlídej výpovědní lhůty smluv, než se ti prodlouží o rok.",
+      "pitch": "Všechny trackery předplatných v App Store hlídají free triály a měsíční platby, ale žádný z deseti prověřených nehlídá výpovědní lhůtu smluv (Kündigungsfrist). Přitom pojistky, energie, mobilní tarify, posilovny a nájmy se automaticky prodlužují a výpověď musí přijít např. 3 měsíce před koncem. V Německu je to národní sport (Aboalarm, Volders), ale serverové služby nejsou dostupné jinde. Offline appka spočítá poslední den pro výpověď a vygeneruje výpovědní dopis ze šablony.",
+      "niche": "Smlouvy s automatickým prodloužením a výpovědní lhůtou – mimo DE nikdo neřeší, trial trackery je ignorují, protože jejich model je 'zruš předplatné v App Store'.",
+      "parent_market": "Správa předplatných a smluv (Rocket Money, Bobby, Aboalarm, Volders) – prokázaný placený trh.",
+      "target_user": "Domácnosti v EU (DE/AT/CZ/PL/NL/FR), malé firmy a OSVČ, kteří mají 10–30 smluv s automatickým prodloužením.",
+      "features": [
+        "Smlouva: začátek, minimální doba, automatické prodloužení, výpovědní lhůta → poslední den pro výpověď",
+        "Připomínky 30/14/3 dny před posledním dnem",
+        "Šablony výpovědních dopisů podle země, export PDF a sdílení",
+        "Fotky smlouvy s OCR na zařízení (Vision) pro vytažení dat",
+        "Přehled ročních nákladů smluv"
+      ],
+      "offline": "full",
+      "offline_note": "OCR přes Vision na zařízení, šablony dopisů zabalené v appce, žádná odesílací služba.",
+      "monetization": "Zdarma 5 smluv; Pro 1,99 USD/měs (≈ 46 CZK) nebo doživotně 19,99 USD (≈ 460 CZK).",
+      "revenue_math": "Ideál: 1 500 stažení/měs (DE + EU jazyky + EN 'contract renewal') × 5 % konverze × průměr 12 USD = 900 USD hrubě → 765 USD čistě → ≈ 17 600 CZK/měs.",
+      "revenue_czk_ideal": 17600,
+      "keywords": [
+        {
+          "kw": "kündigungsfrist",
+          "saturation": 2,
+          "competitor": "odhad – Aboalarm/Volders (serverové služby)",
+          "note": "odhad; DE storefront, hint neověřen."
+        },
+        {
+          "kw": "contract tracker",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad; EN varianta."
+        },
+        {
+          "kw": "cancellation deadline",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad; web ukázal, že žádná z 10 trial appek lhůty neřeší."
+        },
+        {
+          "kw": "free trial tracker",
+          "saturation": 8,
+          "competitor": "Cancel Alerts / TrialGuard",
+          "note": "Web: sat 8+, PŘEPLNĚNO – jen důkaz poptávky po rodičovském trhu."
+        }
+      ],
+      "demand_evidence": "Ověřeno z webu: 10 prověřených trial/subscription trackerů výpovědní lhůty nesleduje. Z vlastní znalosti: v DE existují úspěšné služby Aboalarm a Volders (serverové, generují výpovědi). Neověřeno: objem hledání výrazu v App Store.",
+      "competitors": [
+        {
+          "name": "Cancel Alerts",
+          "url": "https://apps.apple.com/us/app/cancel-alerts/id6760212109",
+          "role": "niche",
+          "note": "Trial tracker bez výpovědních lhůt."
+        },
+        {
+          "name": "TrialGuard",
+          "url": "https://apps.apple.com/us/app/trialguard/id6756027142",
+          "role": "niche",
+          "note": "Trial tracker, US."
+        },
+        {
+          "name": "Aboalarm",
+          "url": "",
+          "role": "parent",
+          "note": "DE služba pro výpovědi (serverová) – důkaz trhu, ale jiný model."
+        },
+        {
+          "name": "Volders",
+          "url": "",
+          "role": "parent",
+          "note": "DE správce smluv (účty, server)."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap z DE: kultura výpovědních lhůt je silná v DE a zbytku EU, US appky ji ignorují a DE služby nejsou lokalizované mimo DACH.",
+      "devils_advocate": [
+        "Aboalarm/Volders mají v DE značku a zdarma posílají výpovědi – offline appka je v DE jen doplněk.",
+        "Pravidla se mění (DE zákon o férových spotřebitelských smlouvách 2022 zavedl měsíční výpověď po min. době) – šablony a předvolby musí být aktuální, jinak škoda uživateli.",
+        "Nízká frekvence používání – appka se otevírá párkrát ročně, předplatné se špatně obhajuje.",
+        "iOS Připomínky nebo kalendář zvládnou totéž pro disciplinované uživatele."
+      ],
+      "killer_risk": "Lidé hledají 'cancel subscription', ne 'notice period' – niche fráze mají malý objem.",
+      "mitigation": "Titul kombinovat (\"Contracts & Renewals\"), cílit na DE/AT/CH/CZ/PL lokální výrazy, doživotní cena místo předplatného, právní texty jako vzory bez záruky.",
+      "build_weeks": 3,
+      "evidence": "web",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "finance-06",
+      "name": "Booth Sales: Market Stall Tracker",
+      "tagline": "Prodej na trhu, jarmarku nebo blešáku – tržba, co se prodalo a zda se stánek vůbec vyplatil.",
+      "pitch": "Prodejci na craft fairs, farmářských trzích, blešácích a conech potřebují rychle zapsat prodej, vidět tržbu podle akce a spočítat, zda se po poplatku za stánek a cestě vyplatilo. V angličtině jsou 3–4 appky, všechny vydané v roce 2026, slabé a jen anglické. V Evropě má kultura trhů (Flohmarkt, marché, mercadillo, jarmark) obrovskou tradici a nikdo pro ni appku nelokalizoval. Offline appka funguje i ve stanu bez signálu.",
+      "niche": "Prodejci na akcích bez pokladního systému; Square/SumUp řeší platby kartou, ne vyhodnocení akce a zásob.",
+      "parent_market": "Nástroje pro malé prodejce a POS (Square, SumUp, Shopify POS) – obří placený trh.",
+      "target_user": "Tvůrci a prodejci na trzích a festivalech, sběratelé na blešácích, spolky na jarmarcích (EU i US).",
+      "features": [
+        "Akce: poplatek za stánek, cesta, čas; zisk za akci",
+        "Rychlý prodej ťuknutím na produkt (hotově/kartou), slevy a balíčky",
+        "Zásoby na akci: co jsem přivezl vs. co zbylo",
+        "Srovnání akcí – které trhy se vyplatí opakovat",
+        "Export CSV pro účetnictví"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, iCloud sync. Platby kartou řeší externí terminál, appka jen zapisuje.",
+      "monetization": "Zdarma 2 akce; Pro 29,99 USD/rok (≈ 690 CZK) nebo 4,99 USD/měs.",
+      "revenue_math": "Ideál: 800 stažení/měs (EN + DE/FR/ES/CZ) × 4 % × 29,99 USD = 960 USD hrubě → 816 USD čistě → ≈ 18 700 CZK/měs (sezónně jaro–prosinec).",
+      "revenue_czk_ideal": 18700,
+      "keywords": [
+        {
+          "kw": "craft fair sales",
+          "saturation": 3,
+          "competitor": "VendStats: Sales Tracker (2026)",
+          "note": "Web: sat 3–4, všechny nové v 2026 a slabé."
+        },
+        {
+          "kw": "vendor sales tracker",
+          "saturation": 4,
+          "competitor": "QuiVend: Vendor Companion",
+          "note": "Web: sat 4; artist alley/cony."
+        },
+        {
+          "kw": "market stall",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad; UK/EU výraz."
+        },
+        {
+          "kw": "flohmarkt",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad; DE storefront, vyhledávání spíš na akce než appky."
+        }
+      ],
+      "demand_evidence": "Ověřeno z webu: 3–4 dedikované appky vydané v 2026 (VendStats, QuiVend, myBooth) – vývojáři vidí poptávku; všechny anglické. Předpoklad: lokální výrazy mají poptávku; neověřeno.",
+      "competitors": [
+        {
+          "name": "VendStats: Sales Tracker",
+          "url": "https://apps.apple.com/us/app/vendstats-sales-tracker/id6759027702",
+          "role": "niche",
+          "note": "Zmiňuje garage sale, flea market, booth owners."
+        },
+        {
+          "name": "QuiVend: Vendor Companion",
+          "url": "https://apps.apple.com/us/app/quivend-vendor-companion/id6773267361",
+          "role": "niche",
+          "note": "Artist alley a cony."
+        },
+        {
+          "name": "myBooth: Inventory & Events",
+          "url": "https://apps.apple.com/us/app/mybooth-inventory-events/id6763803666",
+          "role": "niche",
+          "note": "Nová 2026."
+        },
+        {
+          "name": "Square Point of Sale",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr POS pro malé prodejce."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Všechny niche appky jsou anglické a US-orientované; lokalizace do evropských jazyků pro trhy a blešáky je volná.",
+      "devils_advocate": [
+        "Sezónnost – v zimě skoro nulové stažení a v EU většina prodejců nemá iPhone jako pracovní nástroj.",
+        "SumUp/Square přidají 'události' a reporty zdarma k terminálu.",
+        "Blešákoví prodejci jsou extrémně citliví na cenu.",
+        "Překryv s Handmade Price Calculator – dvě appky pro stejné publikum mohou působit jako 4.3 spam; zvážit sloučení."
+      ],
+      "killer_risk": "Platební terminály (SumUp, Square) nabízejí reporty zdarma a prodejci nevidí důvod platit za další appku.",
+      "mitigation": "Zaměřit se na to, co terminály neumí (zisk po poplatku za stánek a cestě, srovnání akcí, zásoby), a zvážit spojení s pricing kalkulačkou do jedné 'maker suite' se dvěma vstupy.",
+      "build_weeks": 4,
+      "evidence": "web",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "finance-07",
+      "name": "Savings Challenge World",
+      "tagline": "52 týdnů, 500jenové mince, desafio de poupança – spořicí výzvy v tvé měně a tvé tradici.",
+      "pitch": "100 envelope challenge a 52-week challenge mají v angličtině spoustu appek, ale všechny počítají v dolarech a s americkými výzvami. Jinde mají vlastní tradice: v Japonsku 500円玉貯金, v Brazílii desafio das 52 semanas, v Mexiku reto de ahorro. Postavíme hravou appku s výzvami přepočtenými na lokální měnu a bankovky a s lokálními šablonami. Nízká cena, virální sdílení a lednový peak.",
+      "niche": "Neanglické spořicí výzvy s lokální měnou; US vývojáři nemají motivaci přepočítávat výzvy na jeny nebo reály.",
+      "parent_market": "Spořicí výzvy a gamifikované spoření (Qapital, Acorns, 100 Envelope Challenge appky).",
+      "target_user": "Mladí dospělí 18–35 v JP, BR, MX, ES, DE, PL, CZ, kteří hledají motivaci spořit.",
+      "features": [
+        "Katalog výzev (52 týdnů, obálky, mince, pojmenované výzvy) s lokální měnou",
+        "Zaokrouhlení na reálné bankovky a mince dané země",
+        "Kalendář a streaky, widget s progresem",
+        "Sdílecí obrázek pokroku pro sociální sítě",
+        "Vlastní výzvy"
+      ],
+      "offline": "full",
+      "offline_note": "Plně lokální, žádná data ze sítě.",
+      "monetization": "Zdarma 1 výzva; doživotně 4,99 USD (≈ 115 CZK), volitelně tip-jar.",
+      "revenue_math": "Ideál: 3 000 stažení/měs (8 jazyků, peak v lednu) × 5 % × 4,99 USD = 748 USD hrubě → 636 USD čistě → ≈ 14 600 CZK/měs.",
+      "revenue_czk_ideal": 14600,
+      "keywords": [
+        {
+          "kw": "100 envelope challenge",
+          "saturation": 4,
+          "competitor": "100 Envelope Savings Challenge",
+          "note": "Web: sat 4 v EN, USD – jen důkaz poptávky."
+        },
+        {
+          "kw": "desafio 52 semanas",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad; BR storefront."
+        },
+        {
+          "kw": "500円玉貯金",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad; JP storefront, tradice je silná."
+        },
+        {
+          "kw": "reto de ahorro",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad; MX/ES."
+        }
+      ],
+      "demand_evidence": "Ověřeno z webu: v EN je 4+ dedikovaných appek a Saving Money Challenge se objevuje v mnoha storefrontech (jen EN/USD). Předpoklad: lokální výrazy mají poptávku, zvlášť v JP a BR; neověřeno hinty.",
+      "competitors": [
+        {
+          "name": "Saving Money Challenge",
+          "url": "https://apps.apple.com/us/app/saving-money-challenge/id1578843165",
+          "role": "niche",
+          "note": "Ve více storefrontech, ale s USD výzvami."
+        },
+        {
+          "name": "100 Envelope Savings Challenge",
+          "url": "https://apps.apple.com/us/app/100-envelope-savings-challenge/id6761617286",
+          "role": "niche",
+          "note": "US, dolary."
+        },
+        {
+          "name": "Stash: Savings Challenge",
+          "url": "https://apps.apple.com/ye/app/stash-savings-challenge/id6780523233",
+          "role": "niche",
+          "note": "Nová."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "US výzvy jsou v USD a anglicky; lokalizované výzvy s místní měnou a tradicí (JP, BR, MX) nikdo nedělá.",
+      "devils_advocate": [
+        "Nízká cena a jednorázový nákup = strop příjmů; většina lidí vydrží výzvu 3 týdny.",
+        "Silná sezónnost (leden, začátek školního roku).",
+        "Saving Money Challenge už je ve více storefrontech a může jen doplnit lokalizaci.",
+        "Japonský trh má mnoho zdarma appek s rozšířeným 貯金 tématem."
+      ],
+      "killer_risk": "Ochota platit je velmi nízká – stažení přijdou, peníze ne.",
+      "mitigation": "Doživotní nákup za malou cenu + prémiové výzvy, silné sdílení (organický růst), lokální ceny per storefront.",
+      "build_weeks": 2,
+      "evidence": "web",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "finance-08",
+      "name": "Pocket Money Book",
+      "tagline": "Taschengeld, argent de poche, お小遣い帳, kieszonkowe – kapesné s úroky od rodičů v mateřštině.",
+      "pitch": "Anglický trh s allowance trackery je přeplněný, ale v Německu, Francii, Polsku, Česku nebo Brazílii rodiče hledají svými slovy a nacházejí málo. Appka vede kapesné pro každé dítě, pravidelné výplaty, spoření na cíl a 'rodinnou banku', kde rodiče platí úrok, aby dítě pochopilo složené úročení. Lokální doporučení výše kapesného podle věku (např. DE Jugendamt tabulka) přidávají důvěryhodnost. Offline a bez účtů dětí, což rodiče oceňují.",
+      "niche": "Rodiče mimo anglosaský svět; US appky počítají v dolarech a s americkým 'chores' modelem.",
+      "parent_market": "Dětské finance (Greenlight, BusyKid, GoHenry) – stovky milionů dolarů ročně v předplatném.",
+      "target_user": "Rodiče dětí 6–14 let v DE/AT/CH, FR, PL, CZ, BR, JP.",
+      "features": [
+        "Účty dětí, pravidelné kapesné, jednorázové příjmy a výdaje",
+        "Rodinná banka: úrok placený rodičem, vizualizace růstu",
+        "Spořicí cíle s obrázkem",
+        "Doporučená výše kapesného podle země a věku",
+        "Sdílení s druhým rodičem přes iCloud"
+      ],
+      "offline": "full",
+      "offline_note": "Lokálně + CloudKit sdílení v rodině. Žádné účty dětí, žádná banka.",
+      "monetization": "Zdarma 1 dítě; Pro 19,99 USD/rok (≈ 460 CZK) nebo doživotně 29,99 USD.",
+      "revenue_math": "Ideál: 1 200 stažení/měs v 6 jazycích × 4 % × 19,99 USD = 960 USD hrubě → 816 USD čistě → ≈ 18 700 CZK/měs.",
+      "revenue_czk_ideal": 18700,
+      "keywords": [
+        {
+          "kw": "allowance tracker",
+          "saturation": 6,
+          "competitor": "Chore Boss: Allowance Tracker",
+          "note": "Web: sat 6 v EN, PŘEPLNĚNO – jen důkaz poptávky."
+        },
+        {
+          "kw": "taschengeld",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad; DE storefront."
+        },
+        {
+          "kw": "お小遣い帳",
+          "saturation": 4,
+          "competitor": "odhad – více japonských free appek",
+          "note": "odhad; JP má zavedenou tradici i appky."
+        },
+        {
+          "kw": "kieszonkowe",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad; PL storefront."
+        }
+      ],
+      "demand_evidence": "Ověřeno z webu: v EN 6+ allowance appek (silná poptávka v rodičovském trhu). Neověřeno: lokální výrazy – US-gap je hypotéza z evidence souboru.",
+      "competitors": [
+        {
+          "name": "Chore Boss: Allowance Tracker",
+          "url": "https://apps.apple.com/us/app/chore-boss-allowance-tracker/id6475013233",
+          "role": "niche",
+          "note": "US, dolary."
+        },
+        {
+          "name": "Kiddos Cash: Allowance Tracker",
+          "url": "https://apps.apple.com/us/app/kiddos-cash-allowance-tracker/id6756292945",
+          "role": "niche",
+          "note": "Nová, US."
+        },
+        {
+          "name": "Allowance Tracker for Kids",
+          "url": "https://apps.apple.com/us/app/allowance-tracker-for-kids/id6754896227",
+          "role": "niche",
+          "note": "Nová, US."
+        },
+        {
+          "name": "Greenlight",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr dětských financí (karta + appka, US)."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "EN trh je přeplněný dolarovými appkami; v DE/FR/PL/CZ/BR chybí lokalizované kapesné s místními doporučeními.",
+      "devils_advocate": [
+        "Banky v EU (George, Revolut <18, bunq Kids) nabízejí dětské účty a appku zdarma.",
+        "Japonský trh má zavedené free appky お小遣い帳.",
+        "Pokud appka cílí na děti, spadá pod přísnější pravidla (Kids Category, 1.3) – musí zůstat rodičovskou appkou.",
+        "Rodiče po čase přestanou zadávat, retence je slabá."
+      ],
+      "killer_risk": "Bankovní dětské účty kapesné digitalizují a appka bez peněz působí zbytečně.",
+      "mitigation": "Cílit na mladší děti (6–11) s hotovostním kapesným, kde bankovní účet nedává smysl; rodinná banka s úroky jako hlavní odlišení.",
+      "build_weeks": 4,
+      "evidence": "web",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "finance-09",
+      "name": "Tronc Book",
+      "tagline": "Spravedlivé rozdělení spropitného podle britského zákona – pravidla, výpočet a tříletá evidence.",
+      "pitch": "Od října 2024 musí britské podniky ze zákona (Employment (Allocation of Tips) Act 2023) předávat zaměstnancům 100 % spropitného, mít písemnou politiku a vést evidenci 3 roky. Tip-pool kalkulačky v App Store jsou americké a na evidenci ani politiku nemyslí. Tronc Book spočítá rozdělení podle hodin, bodů nebo rolí, vygeneruje politiku a měsíční PDF výpisy pro personál. Platí manažer podniku, ne číšník – vyšší ochota platit.",
+      "niche": "Manažeři malých hospod, kaváren a restaurací v UK (a IE), kteří nemají troncmastera ani drahý payroll add-on.",
+      "parent_market": "Tip-pool/tip-out kalkulačky a hospitality payroll (Simple Tip Pool, Tip Out, payroll systémy Fourth, Sage).",
+      "target_user": "Majitelé a manažeři nezávislých hospod, kaváren a restaurací v UK s 5–30 zaměstnanci.",
+      "features": [
+        "Pravidla rozdělení (hodiny, body, role, procenta) a výpočet za směnu/týden",
+        "Generátor písemné tipping policy (PDF) podle zákona",
+        "Evidence rozdělení s archivací 3 roky, export CSV/PDF",
+        "Výpis pro každého zaměstnance",
+        "Režim hotovost vs. karetní spropitné"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně + iCloud; výpisy se sdílejí PDF. Žádné napojení na payroll.",
+      "monetization": "B2B předplatné 9,99 USD/měs (≈ 230 CZK) nebo 79,99 USD/rok na podnik.",
+      "revenue_math": "Ideál: 150 stažení/měs v UK/IE × 10 % konverze = 15 nových podniků/měs; po 6 měsících cca 70 aktivních × 9,99 USD = 699 USD hrubě → 594 USD čistě → ≈ 13 700 CZK/měs.",
+      "revenue_czk_ideal": 13700,
+      "keywords": [
+        {
+          "kw": "tronc",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad; hint neověřen, termín používají hlavně účetní."
+        },
+        {
+          "kw": "tip pool calculator",
+          "saturation": 5,
+          "competitor": "Simple Tip Pool",
+          "note": "Web: sat 5, PŘEPLNĚNO v US – rodičovský důkaz."
+        },
+        {
+          "kw": "tip allocation",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad; formulace ze zákona."
+        },
+        {
+          "kw": "tipping policy",
+          "saturation": 0,
+          "competitor": "odhad",
+          "note": "odhad; zákonná povinnost."
+        }
+      ],
+      "demand_evidence": "Ověřeno z webu: v US je 5 titulů s tip pool/tip out (poptávka po rodičovském trhu). Z vlastní znalosti: UK zákon o alokaci spropitného platí od října 2024 a vyžaduje politiku a evidenci. Neověřeno: zda manažeři hledají řešení v App Store.",
+      "competitors": [
+        {
+          "name": "Simple Tip Pool",
+          "url": "https://apps.apple.com/us/app/simple-tip-pool/id1434776478",
+          "role": "niche",
+          "note": "US kalkulačka (hodiny, body, % pro barbacky)."
+        },
+        {
+          "name": "Tip Out: Tip Pool Calculator",
+          "url": "https://apps.apple.com/ph/app/tip-out-staff-tip-calculator/id6759682320",
+          "role": "niche",
+          "note": "Nová kalkulačka."
+        },
+        {
+          "name": "Tipout Divider",
+          "url": "https://apps.apple.com/us/app/tipout-divider/id6479544605",
+          "role": "niche",
+          "note": "US."
+        },
+        {
+          "name": "Fourth (hospitality payroll)",
+          "url": "",
+          "role": "parent",
+          "note": "Enterprise payroll s tronc modulem."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácená lokalizace: tip-pool model je silný v US, ale britská zákonná evidence a politika chybí všem US appkám.",
+      "devils_advocate": [
+        "Hledaný objem 'tronc' v App Store může být téměř nulový; manažeři to řeší s účetním.",
+        "Právní odpovědnost: chybný výpočet nebo politika může podnik dostat do sporu – nutný disclaimer a opatrné texty.",
+        "Payroll systémy (Sage, Fourth, Deputy) přidají funkci a malé podniky ji dostanou 'zdarma'.",
+        "Bez serveru nevidí zaměstnanci výpisy průběžně, zákon ale vyžaduje dostupnost informací."
+      ],
+      "killer_risk": "Malý počet podniků hledá tento nástroj v App Store – B2B distribuce bez marketingu je těžká.",
+      "mitigation": "Keyword mix 'tip pool UK', 'tips act', 'tronc'; PDF politika jako lákadlo zdarma; rozšířit na IE a DE 'Trinkgeldkasse' verzi.",
+      "build_weeks": 4,
+      "evidence": "web",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 7,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 5
+      }
+    },
+    {
+      "id": "finance-10",
+      "name": "Offering Count Sheet",
+      "tagline": "Nedělní sbírka spočítaná dvěma lidmi, podepsaná a zapsaná – bez papírových formulářů.",
+      "pitch": "Každý kostel, sbor i farnost počítá každý týden sbírku: dva lidé, bankovky, mince, šeky, obálky s dary a podpisy. Většina to dělá na papírovém 'count sheetu'. V App Store neexistuje jediný titul, který by 'offering count' cílil; církevní appky řeší online dárcovství a docházku. Appka spočítá hotovost podle nominálů, zapíše šeky a obálky, obě osoby podepíšou na displeji a vznikne PDF pro pokladníka.",
+      "niche": "Počítací týmy sborů (US, UK, KR, BR, NG, PH). Tithe.ly a Planning Center řeší online dary; hotovost je pro ně okrajová.",
+      "parent_market": "Církevní dárcovství a správa sborů (Tithe.ly, Planning Center, Pushpay) – velký, prokázaně placený trh.",
+      "target_user": "Pokladníci a dobrovolníci počítacích týmů malých a středních sborů (50–500 členů).",
+      "features": [
+        "Počítání podle nominálů bankovek a mincí (lokální měny)",
+        "Šeky a obálky s dárci (kvůli daňovým potvrzením) a účely (fondy)",
+        "Dva podpisy na displeji a časové razítko",
+        "PDF/CSV report pro pokladníka a vklad do banky",
+        "Historie a součty po fondech"
+      ],
+      "offline": "full",
+      "offline_note": "Plně lokální; iCloud sync pro pokladníka.",
+      "monetization": "Zdarma 4 sčítání; Pro pro sbor 39,99 USD/rok (≈ 920 CZK) nebo 4,99 USD/měs.",
+      "revenue_math": "Ideál: 300 stažení/měs × 7 % konverze × 39,99 USD = 840 USD hrubě → 714 USD čistě → ≈ 16 400 CZK/měs (roční předplatné se kumuluje).",
+      "revenue_czk_ideal": 16400,
+      "keywords": [
+        {
+          "kw": "offering count",
+          "saturation": 0,
+          "competitor": "žádný titul (web)",
+          "note": "Web: 0 titulů cílí 'offering count' – nejlepší blue-ocean signál; poptávka NEověřena."
+        },
+        {
+          "kw": "church offering",
+          "saturation": 1,
+          "competitor": "odhad – Church Metrics (free)",
+          "note": "odhad; církevní appky řeší dary online."
+        },
+        {
+          "kw": "tithe count",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad."
+        },
+        {
+          "kw": "cash count sheet",
+          "saturation": 2,
+          "competitor": "odhad – Cash Drawer Keeper",
+          "note": "odhad; obecnější výraz pro školy a spolky."
+        }
+      ],
+      "demand_evidence": "Ověřeno z webu: 0 titulů cílí 'offering count/counting', církevní appky se zaměřují na dárcovství a docházku. NEověřeno: zda lidé tuto frázi v App Store hledají – je to předpoklad z praxe sborů.",
+      "competitors": [
+        {
+          "name": "Church Metrics",
+          "url": "https://apps.apple.com/us/app/church-metrics/id792901164",
+          "role": "niche",
+          "note": "Zdarma, docházka a dary – nepočítá hotovost."
+        },
+        {
+          "name": "Church App - Tithe.ly",
+          "url": "https://apps.apple.com/us/app/church-app-tithe-ly/id565301194",
+          "role": "parent",
+          "note": "Lídr církevního dárcovství."
+        },
+        {
+          "name": "Tilly Tally (Cash Counter)",
+          "url": "https://apps.apple.com/us/app/tilly-tally-cash-counter/id1454465678",
+          "role": "niche",
+          "note": "Obecné počítání hotovosti, multi-currency."
+        },
+        {
+          "name": "Cash Drawer Keeper",
+          "url": "https://apps.apple.com/gb/app/cash-drawer-keeper/id6451430691",
+          "role": "niche",
+          "note": "Počítání, doplňování a vklad hotovosti."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Poptávka není ověřená – sbory mohou vůbec nehledat v App Store a používat papír ze zvyku.",
+        "Planning Center / Breeze mají zadávání darů; stačí přidat počítací obrazovku.",
+        "Dobrovolníci jsou často starší a konzervativní, sbory mají mindset 'zdarma'.",
+        "Počítání hotovosti sdílí engine s cash countery – musí být jasně odlišené, jinak 4.3."
+      ],
+      "killer_risk": "Nulové vyhledávání fráze – blue ocean může být prázdný oceán.",
+      "mitigation": "Rozšířit publikum na školní spolky, sportovní kluby a sbírky ('donation count', 'cash box count'), levná roční licence, lokalizace pro KR/BR/NG/PH sbory.",
+      "build_weeks": 3,
+      "evidence": "web",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 8,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "finance-11",
+      "name": "Installments Tracker",
+      "tagline": "Všechny splátky 'pay in 4', parcelas a meses sin intereses na jednom místě – napříč poskytovateli.",
+      "pitch": "Buy now, pay later se rozšířilo a lidé mají rozjeté splátky u tří různých poskytovatelů a karet. Každý poskytovatel má svou appku, ale nikdo neukazuje celkový obraz – ve výsledcích pro 'buy now pay later tracker' je v top 10 pouze poskytovatelé, žádný nezávislý tracker. V Brazílii (parcelas) a Mexiku (meses sin intereses) je nákup na splátky kulturní norma. Offline appka zobrazí měsíční zátěž, kalendář splátek a varuje před přetížením.",
+      "niche": "Nezávislý přehled splátek napříč poskytovateli a kartami; poskytovatelé mají zájem ukazovat jen svoje.",
+      "parent_market": "BNPL a správa dluhů (Klarna, Afterpay, Affirm; Debt Payoff Planner) – obří trh.",
+      "target_user": "Mladí dospělí 20–35 v US, BR, MX, AU, UK s více souběžnými splátkami.",
+      "features": [
+        "Nákup se splátkovým plánem (4 splátky, N parcel, MSI) a automatickým kalendářem",
+        "Měsíční zátěž a výhled 6 měsíců",
+        "Připomínky před splátkou",
+        "OCR screenshotu splátkového plánu (Vision) pro rychlé zadání",
+        "Varování 'kolik ještě unesu'"
+      ],
+      "offline": "full",
+      "offline_note": "Ruční zadání + OCR na zařízení; žádné napojení na poskytovatele.",
+      "monetization": "Zdarma 3 aktivní nákupy; Pro 14,99 USD/rok (≈ 345 CZK) nebo doživotně 24,99 USD.",
+      "revenue_math": "Ideál: 2 000 stažení/měs (EN + PT-BR + ES-MX) × 3 % × 14,99 USD = 899 USD hrubě → 764 USD čistě → ≈ 17 600 CZK/měs.",
+      "revenue_czk_ideal": 17600,
+      "keywords": [
+        {
+          "kw": "bnpl tracker",
+          "saturation": 0,
+          "competitor": "žádný nezávislý tracker (web)",
+          "note": "Web: sat 0 – top 10 jsou jen poskytovatelé; objem hledání neověřen."
+        },
+        {
+          "kw": "buy now pay later tracker",
+          "saturation": 0,
+          "competitor": "Afterpay/Sezzle (poskytovatelé)",
+          "note": "Web: výsledky jen poskytovatelé."
+        },
+        {
+          "kw": "controle de parcelas",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad; BR storefront."
+        },
+        {
+          "kw": "meses sin intereses",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad; MX storefront."
+        }
+      ],
+      "demand_evidence": "Ověřeno z webu: pro 'buy now pay later tracker' vrací top 10 jen poskytovatele – žádný nezávislý tracker. NEověřeno: zda lidé tracker hledají (možná hledají jen poskytovatele).",
+      "competitors": [
+        {
+          "name": "Afterpay: Pay over time",
+          "url": "https://apps.apple.com/us/app/afterpay-pay-over-time/id1401019110",
+          "role": "parent",
+          "note": "Poskytovatel BNPL."
+        },
+        {
+          "name": "Sezzle: Buy Now, Pay Later",
+          "url": "https://apps.apple.com/us/app/sezzle-buy-now-pay-later/id1434922495",
+          "role": "parent",
+          "note": "Poskytovatel BNPL."
+        },
+        {
+          "name": "Zip - Buy Now, Pay Later",
+          "url": "https://apps.apple.com/us/app/zip-buy-now-pay-later/id1425045070",
+          "role": "parent",
+          "note": "Poskytovatel BNPL."
+        },
+        {
+          "name": "Klarna",
+          "url": "",
+          "role": "parent",
+          "note": "Největší BNPL, vlastní přehled nákupů."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Parcelas (BR) a MSI (MX) jsou masová kultura splátek, kterou US BNPL trackery (pokud vůbec) neřeší; lokalizace je hlavní odlišení.",
+      "devils_advocate": [
+        "Ochranné známky: nesmíme použít Klarna/Afterpay v názvu ani keywords (2.3.7, trademark) – přesně ty ale lidé hledají.",
+        "Cílová skupina má málo peněz a nízkou ochotu platit za 'appku na dluhy'.",
+        "Brazilské banky (Nubank, Inter) ukazují parcely přímo v appce karty.",
+        "Ruční zadávání je pro impulzivní nakupující překážka."
+      ],
+      "killer_risk": "Nízký objem vyhledávání generických výrazů – lidé hledají značky poskytovatelů.",
+      "mitigation": "Generické lokální výrazy (parcelas, installments, pay in 4), OCR screenshotu pro zadání za 5 s, nízká doživotní cena.",
+      "build_weeks": 4,
+      "evidence": "web",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 4
+      }
+    },
+    {
+      "id": "finance-12",
+      "name": "Chair Income: Stylist Earnings",
+      "tagline": "Provize, nájem křesla, spropitné a prodej kosmetiky – kolik kadeřnice, nehtařka nebo tatér reálně vydělá.",
+      "pitch": "Beauty profesionálové mají složitý příjem: provize ze služeb, provize z prodeje produktů, spropitné, nájem křesla (booth rent) a materiál. Tip trackery pro číšníky to neumí a salonní systémy (Vagaro, Square Appointments) řeší rezervace pro majitele, ne čistý příjem pracovníka. Appka ukáže čistý výdělek po nájmu a materiálu, hodinovou sazbu a rezervu na daně. Je to jasná, placená bolest desítek tisíc samostatných profesionálů.",
+      "niche": "Samostatní pracovníci na nájmu křesla a provizích; salonní software cílí na majitele.",
+      "parent_market": "Tip trackery a salonní software (Vagaro, Square Appointments, Fresha) – prokázaně placený.",
+      "target_user": "Kadeřnice, barbeři, nehtové designérky, kosmetičky, tatéři (US, UK, DE, CZ).",
+      "features": [
+        "Denní zápis: služby, provize %, spropitné hotově/kartou, prodej produktů",
+        "Náklady: nájem křesla, materiál, poplatky",
+        "Čistý příjem za den/týden/měsíc a efektivní hodinovka",
+        "Rezerva na daně v % a export pro účetní",
+        "Srovnání provize vs. booth rent kalkulačka"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně + iCloud.",
+      "monetization": "Zdarma 30 dní historie; Pro 29,99 USD/rok (≈ 690 CZK) nebo 3,99 USD/měs.",
+      "revenue_math": "Ideál: 700 stažení/měs × 5 % × 29,99 USD = 1 050 USD hrubě → 892 USD čistě → ≈ 20 500 CZK/měs.",
+      "revenue_czk_ideal": 20500,
+      "keywords": [
+        {
+          "kw": "stylist income tracker",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad; hint neověřen."
+        },
+        {
+          "kw": "booth rent",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad; US termín."
+        },
+        {
+          "kw": "hairstylist tips",
+          "saturation": 2,
+          "competitor": "odhad – TipIsServed (umí provize)",
+          "note": "odhad; tip trackery obecně přeplněné (web sat 7 pro server tip tracker)."
+        },
+        {
+          "kw": "commission tracker",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad; širší výraz (i prodejci)."
+        }
+      ],
+      "demand_evidence": "Z webu: server tip tracker je přeplněný (sat 7), jedna appka (TipIsServed) zmiňuje provize – rodičovská poptávka je doložená. Beauty niche samotná NEověřena, jde o mou znalost trhu.",
+      "competitors": [
+        {
+          "name": "TipIsServed: Tip Tracker",
+          "url": "https://apps.apple.com/us/app/tipisserved-tip-tracker/id6751820188",
+          "role": "niche",
+          "note": "Tip tracker s podporou provizního příjmu."
+        },
+        {
+          "name": "Checkout - Server Tip Tracker",
+          "url": "https://apps.apple.com/us/app/checkout-server-tip-tracker/id6759942669",
+          "role": "niche",
+          "note": "Pro číšníky."
+        },
+        {
+          "name": "Vagaro",
+          "url": "",
+          "role": "parent",
+          "note": "Salonní rezervační software."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Salonní software může snadno přidat 'my earnings' pro pracovníky.",
+        "Tip trackery pro číšníky mohou přidat režim 'stylist' během týdne.",
+        "Pracovníci na provizi často znají svůj příjem z výplatnice a appku nepotřebují.",
+        "Daňová rezerva se liší podle země – riziko nepřesných rad."
+      ],
+      "killer_risk": "Niche fráze mají malý objem a publikum hledá spíš 'tip tracker', kde je přeplněno.",
+      "mitigation": "Titul s profesí (Stylist/Nail Tech/Tattoo), subtitle s 'booth rent & tips', lokalizace do DE/CZ/PL, kde podobné appky nejsou.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "finance-13",
+      "name": "Snowball Debt Plan",
+      "tagline": "Metoda sněhové koule a laviny v češtině, němčině i španělštině – plán splacení všech dluhů.",
+      "pitch": "Debt snowball je v US obrovský fenomén (Dave Ramsey) a anglických appek je hodně, ale mimo angličtinu skoro nic. Lidé v Německu (Schulden abbauen), Španělsku a Latinské Americe (bola de nieve) nebo Česku (splácení dluhů) mají stejné problémy a lokální úvěrové produkty (spotřebitelské úvěry, kreditní karty, kontokorenty). Appka seřadí dluhy, spočítá termín splacení a úroky pro obě metody a motivuje vizualizací.",
+      "niche": "Neanglicky mluvící dlužníci; US appky jsou v dolarech a s americkou terminologií (APR, credit score).",
+      "parent_market": "Debt payoff appky (Debt Payoff Planner, Undebt.it, EveryDollar) – prokázaný placený segment.",
+      "target_user": "Lidé 25–50 s 2–8 dluhy v DE, ES, MX, BR, IT, PL, CZ.",
+      "features": [
+        "Dluhy s úrokem (RPSN/APR), minimální splátkou a zůstatkem",
+        "Snowball vs. avalanche vs. vlastní pořadí, datum splacení a ušetřené úroky",
+        "Extra splátka a její dopad",
+        "Motivační vizualizace a milníky",
+        "Lokální terminologie a měny"
+      ],
+      "offline": "full",
+      "offline_note": "Plně lokální výpočty.",
+      "monetization": "Zdarma 3 dluhy; Pro doživotně 24,99 USD (≈ 575 CZK) nebo 3,99 USD/měs.",
+      "revenue_math": "Ideál: 1 500 stažení/měs v 6 jazycích × 3 % × 24,99 USD = 1 125 USD hrubě → 956 USD čistě → ≈ 22 000 CZK/měs.",
+      "revenue_czk_ideal": 22000,
+      "keywords": [
+        {
+          "kw": "debt snowball",
+          "saturation": 6,
+          "competitor": "odhad – Debt Payoff Planner a další",
+          "note": "odhad; EN přeplněné, jen důkaz."
+        },
+        {
+          "kw": "schulden abbauen",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad; DE storefront."
+        },
+        {
+          "kw": "bola de nieve deudas",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad; ES/MX."
+        },
+        {
+          "kw": "quitar dívidas",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad; BR."
+        }
+      ],
+      "demand_evidence": "Pouze vlastní znalost: debt payoff je v US prokázaný placený trh s řadou appek; lokální poptávka v DE/ES/BR je předpoklad (neověřeno v této relaci).",
+      "competitors": [
+        {
+          "name": "Debt Payoff Planner",
+          "url": "",
+          "role": "parent",
+          "note": "Zavedený US lídr (znalost, URL není v evidenci)."
+        },
+        {
+          "name": "Undebt.it",
+          "url": "",
+          "role": "parent",
+          "note": "Web + appka, EN."
+        },
+        {
+          "name": "EveryDollar",
+          "url": "",
+          "role": "parent",
+          "note": "Ramsey Solutions rozpočtovka."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Debt snowball appky jsou EN/USD; lokalizovaná verze s lokální terminologií úvěrů je mimo angličtinu vzácná.",
+      "devils_advocate": [
+        "Silný stud kolem dluhů v EU – lidé nemusí hledat appku, ale dluhové poradny.",
+        "Zavedené EN appky mohou snadno přidat překlady.",
+        "Zadlužení lidé mají nízkou ochotu utrácet za appku.",
+        "Kalkulačky zdarma na webu bank a poraden."
+      ],
+      "killer_risk": "Lokální poptávka v App Store je malá a EN konkurenti se lokalizují.",
+      "mitigation": "Ceny per storefront, silná vizualizace, lokální výrazy v titulu a subtitle; spojit s motivačním prvkem (milníky, sdílení).",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "finance-14",
+      "name": "Card Show Ledger",
+      "tagline": "Nákup, prodej a výměny na card show – víš přesně, na čem jsi vydělal a co máš v krabici.",
+      "pitch": "Sběratelské karty (sport, Pokémon, TCG) zažívají boom a dealeři na card show dělají desítky transakcí za den včetně výměn, kde se zisk špatně počítá. Skenovací appky (CollX, Collectr) řeší hodnotu sbírky, ne P&L dealera. Appka zapisuje nákup/prodej/výměnu s nákladovou cenou, počítá zisk podle akce a skladovou hodnotu. Offline funguje i v přeplněné hale bez signálu.",
+      "niche": "Malí dealeři a 'flippeři' na card show; velké appky cílí na sběratele, ne na obchodníky.",
+      "parent_market": "Sběratelské karty a reselling (CollX, Collectr, Ludex; Vendoo pro resellery) – rychle rostoucí, ochotně platící trh.",
+      "target_user": "Hobby dealeři a flippeři karet (US, UK, DE, JP), 20–45 let.",
+      "features": [
+        "Transakce nákup/prodej/výměna s hodnotou na obou stranách",
+        "Nákladová cena položky a zisk při prodeji",
+        "Akce (show) s poplatkem za stůl a výsledkem",
+        "Inventář s fotkou a rychlým hledáním",
+        "Export CSV pro daně"
+      ],
+      "offline": "full",
+      "offline_note": "Bez cenových databází (licencovaná data) – ceny zadává dealer. Vše lokálně + iCloud.",
+      "monetization": "Zdarma 50 položek; Pro 39,99 USD/rok (≈ 920 CZK) nebo 4,99 USD/měs.",
+      "revenue_math": "Ideál: 500 stažení/měs × 5 % × 39,99 USD = 1 000 USD hrubě → 850 USD čistě → ≈ 19 500 CZK/měs.",
+      "revenue_czk_ideal": 19500,
+      "keywords": [
+        {
+          "kw": "card show",
+          "saturation": 2,
+          "competitor": "odhad – VendorPOS (zmiňuje card shows)",
+          "note": "odhad; web zachytil jen zmínku ve VendorPOS."
+        },
+        {
+          "kw": "card dealer inventory",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad."
+        },
+        {
+          "kw": "trade tracker",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad; obecný výraz."
+        },
+        {
+          "kw": "sports card inventory",
+          "saturation": 6,
+          "competitor": "odhad – CollX/Collectr",
+          "note": "odhad; přeplněno skenovacími appkami."
+        }
+      ],
+      "demand_evidence": "Z webu jen okrajově: VendorPOS zmiňuje card shows. Jinak vlastní znalost trhu – boom sběratelských karet 2020–2026 a silné platící komunity. Niche fráze neověřeny.",
+      "competitors": [
+        {
+          "name": "VendorPOS",
+          "url": "https://apps.apple.com/tt/app/vendorpos/id6760127529",
+          "role": "niche",
+          "note": "POS zmiňující card shows."
+        },
+        {
+          "name": "CollX",
+          "url": "",
+          "role": "parent",
+          "note": "Skenování a hodnota sbírky (licencovaná data)."
+        },
+        {
+          "name": "Collectr",
+          "url": "",
+          "role": "parent",
+          "note": "Portfolio TCG karet."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "CollX/Collectr mohou přidat 'dealer mode' a mají uživatelskou základnu.",
+        "Bez cenových dat je zadávání pracné; dealeři chtějí sken + cenu, což bez licencí nejde.",
+        "Názvy Pokémon/Topps nesmí do metadat (trademark).",
+        "Komunita je silně US; lokalizace přinese málo."
+      ],
+      "killer_risk": "Dealeři zůstanou u skenovacích appek s cenami a tabulek.",
+      "mitigation": "Soustředit se na výměny a zisk za show (co skenery neumí), rychlé zadání a CSV export; cílit i na TCG turnaje v EU.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 5
+      }
+    },
+    {
+      "id": "finance-15",
+      "name": "Antique Booth Ledger",
+      "tagline": "Nájem stánku v antique mall, provize, prodeje a zásoby – vyplácí se ti ten booth?",
+      "pitch": "V USA jsou tisíce antique malls a vintage marketů, kde si prodejci pronajímají booth, platí nájem a provizi a mall jim posílá měsíční výpis. Prodejce ale neví, které kusy a které booths vydělávají po nájmu. Appka spáruje inventář s výpisy z mallu, spočítá zisk po nájmu a provizi a ukáže, co leží ladem. Niche je malá, ale velmi ochotně platí a nikdo ji dedikovaně neobsluhuje.",
+      "niche": "Vendorové antique malls a consignment shopů; reseller appky cílí na online platformy (eBay, Poshmark).",
+      "parent_market": "Reseller nástroje (Vendoo, List Perfectly, Flipwise) – předplatné 10–50 USD/měs.",
+      "target_user": "Vendorové v antique malls a vintage marketech v US (často 45–70 let), 1–3 booths.",
+      "features": [
+        "Booth: nájem, provize %, poplatky za kartu",
+        "Inventář s fotkou, nákupní cenou a SKU štítkem",
+        "Zápis měsíčních prodejů z výpisu mallu",
+        "Zisk po nájmu a provizi, doba na skladě",
+        "Export pro daně (Schedule C)"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně + iCloud; žádné napojení na POS mallu.",
+      "monetization": "Zdarma 30 položek; Pro 34,99 USD/rok (≈ 805 CZK) nebo 4,99 USD/měs.",
+      "revenue_math": "Ideál: 350 stažení/měs × 7 % × 34,99 USD = 857 USD hrubě → 729 USD čistě → ≈ 16 800 CZK/měs.",
+      "revenue_czk_ideal": 16800,
+      "keywords": [
+        {
+          "kw": "antique booth",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad; hint neověřen."
+        },
+        {
+          "kw": "booth rent tracker",
+          "saturation": 1,
+          "competitor": "odhad – VendStats (flea market booth owners)",
+          "note": "odhad; VendStats zmiňuje booth owners (web)."
+        },
+        {
+          "kw": "consignment tracker",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad."
+        },
+        {
+          "kw": "vintage reseller",
+          "saturation": 4,
+          "competitor": "odhad – reseller appky",
+          "note": "odhad."
+        }
+      ],
+      "demand_evidence": "Pouze vlastní znalost trhu (antique malls v US, reseller předplatné). Z webu jen nepřímo: VendStats zmiňuje booth owners. Poptávka NEověřena.",
+      "competitors": [
+        {
+          "name": "VendStats: Sales Tracker",
+          "url": "https://apps.apple.com/us/app/vendstats-sales-tracker/id6759027702",
+          "role": "niche",
+          "note": "Obecný tracker prodejů pro booth owners."
+        },
+        {
+          "name": "Vendoo",
+          "url": "",
+          "role": "parent",
+          "note": "Crosslisting pro online resellery."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Velmi malé publikum a starší uživatelé méně stahují appky.",
+        "Malls mají vlastní vendor portály (např. web s výpisy) a appka je duplicita.",
+        "Ruční přepis výpisů je pracný; bez importu CSV odejdou.",
+        "Mimo US koncept skoro neexistuje – žádný růst lokalizací."
+      ],
+      "killer_risk": "Niche je příliš malá na 10 000 CZK/měs i v ideálu.",
+      "mitigation": "Import CSV výpisů, oslovit i consignment a 'vintage market' prodejce, případně sloučit s Booth Sales jako druhý režim.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "finance-16",
+      "name": "Irregular Income Budget",
+      "tagline": "Rozpočet pro ty, kdo nemají stejnou výplatu každý měsíc – freelanceři, sezónní práce, provize.",
+      "pitch": "Klasické rozpočtovky předpokládají stabilní výplatu. Freelanceři, řemeslníci, provizní prodejci a sezónní pracovníci ale potřebují 'vyhlazovat' příjem: odložit v dobrém měsíci, vyplatit si stabilní 'mzdu' ze zásobníku a vidět, na kolik měsíců vydrží. Appka dělá přesně tohle: příjmový buffer, stabilní výplata sobě a priority výdajů. Téma má silnou poptávku ve fórech, ale málo dedikovaných appek.",
+      "niche": "Lidé s nepravidelným příjmem; YNAB to řeší filozofií 'age of money', ale složitě a draze.",
+      "parent_market": "Rozpočtové aplikace (YNAB, Monarch, Goodbudget) – vysoké předplatné.",
+      "target_user": "Freelanceři, OSVČ, řemeslníci, prodejci na provizi, sezónní pracovníci (EN + lokalizace).",
+      "features": [
+        "Zásobník příjmů a výpočet stabilní 'výplaty sobě'",
+        "Priority výdajů (musím/měl bych/chci) při slabém měsíci",
+        "Runway: na kolik měsíců vystačí rezerva",
+        "Historie příjmů a průměr/medián",
+        "Widget a iCloud sync"
+      ],
+      "offline": "full",
+      "offline_note": "Ruční zadání, vše lokálně.",
+      "monetization": "Zdarma základ; Pro 29,99 USD/rok (≈ 690 CZK) nebo 4,99 USD/měs.",
+      "revenue_math": "Ideál: 700 stažení/měs × 5 % × 29,99 USD = 1 050 USD hrubě → 892 USD čistě → ≈ 20 500 CZK/měs.",
+      "revenue_czk_ideal": 20500,
+      "keywords": [
+        {
+          "kw": "irregular income budget",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad; hint neověřen."
+        },
+        {
+          "kw": "variable income",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad."
+        },
+        {
+          "kw": "freelance budget",
+          "saturation": 4,
+          "competitor": "odhad",
+          "note": "odhad; smíšené s invoicing appkami."
+        },
+        {
+          "kw": "income smoothing",
+          "saturation": 0,
+          "competitor": "odhad",
+          "note": "odhad; odborný výraz, malý objem."
+        }
+      ],
+      "demand_evidence": "Pouze vlastní znalost: téma je častý dotaz v komunitách osobních financí a freelancerů. V App Store NEověřeno.",
+      "competitors": [
+        {
+          "name": "YNAB",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr rozpočtů, filozofie pro nepravidelný příjem."
+        },
+        {
+          "name": "Goodbudget",
+          "url": "",
+          "role": "parent",
+          "note": "Obálková rozpočtovka."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Freelanceři už mají YNAB/tabulky a dvě finanční appky nechtějí.",
+        "Fráze 'irregular income' může mít velmi malý objem v App Store.",
+        "Koncept vyžaduje vysvětlení – onboarding je náročný.",
+        "Třetí nápad v rodičovském trhu rozpočtů – riziko kanibalizace s Envelope Budget a Sinking Funds."
+      ],
+      "killer_risk": "Nízké vyhledávání – lidé hledají 'budget', kde jsou giganti.",
+      "mitigation": "Titul s cílovou skupinou ('Freelancer Budget'), lokalizace (OSVČ, Freiberufler), jasný jednoobrazovkový onboarding.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "finance-17",
+      "name": "Stack Ledger: Gold & Silver",
+      "tagline": "Tvůj zlatý a stříbrný stack pod kontrolou – unce, nákupní ceny, prémie a zisk bez účtu a bez cloudu.",
+      "pitch": "Stackeři drahých kovů jsou vášnivá komunita, která ráda platí za nástroje a zároveň ze zásady nechce svá data dávat do cloudu (bezpečnost fyzického majetku). Appka eviduje mince a slitky (hmotnost, ryzost, nákupní cena, prémie, dealer), počítá obsah kovu a zisk při ruční nebo volitelně stažené ceně. Offline-first a 'private by design' je tady prodejní argument, ne omezení.",
+      "niche": "Soukromí dbalí stackeři; dealerské appky (APMEX, JM Bullion) jsou nákupní kanály, ne nezávislé portfolio.",
+      "parent_market": "Portfolio trackery a appky dealerů drahých kovů (Kitco, APMEX, JM Bullion).",
+      "target_user": "Sběratelé a investoři do fyzického zlata/stříbra (US, DE, CZ, PL, AU), 30–65 let.",
+      "features": [
+        "Položky s hmotností, ryzostí, typem (mince/slitek), nákupní cenou a prémií",
+        "Obsah čistého kovu a průměrná nákupní cena za unci/gram",
+        "Hodnota při ruční ceně, volitelně stažení spotové ceny",
+        "Fotky, dealer, pojistný report PDF",
+        "Zámek Face ID, žádný cloud (volitelně iCloud)"
+      ],
+      "offline": "mostly",
+      "offline_note": "Vše lokálně; volitelné stažení spotové ceny z bezplatného zdroje, jinak ruční zadání. Bez sítě appka plně funguje.",
+      "monetization": "Zdarma 20 položek; Pro 29,99 USD/rok (≈ 690 CZK) nebo doživotně 49,99 USD.",
+      "revenue_math": "Ideál: 800 stažení/měs × 5 % × 29,99 USD = 1 200 USD hrubě → 1 020 USD čistě → ≈ 23 400 CZK/měs.",
+      "revenue_czk_ideal": 23400,
+      "keywords": [
+        {
+          "kw": "silver stack",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad; hint neověřen."
+        },
+        {
+          "kw": "bullion tracker",
+          "saturation": 4,
+          "competitor": "odhad",
+          "note": "odhad."
+        },
+        {
+          "kw": "gold stack tracker",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad."
+        },
+        {
+          "kw": "edelmetall",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad; DE storefront."
+        }
+      ],
+      "demand_evidence": "Pouze vlastní znalost trhu (aktivní komunity stackerů, dealerské appky). Konkurenční niche appky v této relaci NEověřeny.",
+      "competitors": [
+        {
+          "name": "Kitco",
+          "url": "",
+          "role": "parent",
+          "note": "Ceny a zprávy o kovech."
+        },
+        {
+          "name": "APMEX",
+          "url": "",
+          "role": "parent",
+          "note": "Dealer s appkou a portfoliem."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Bezplatné zdroje spotových cen jsou omezené nebo licencované – riziko porušení podmínek.",
+        "Dealeři nabízí portfolio zdarma ve své appce.",
+        "Pravděpodobně existuje několik indie stack trackerů, které jsem v této relaci neověřil.",
+        "Nezobrazovat investiční rady (finanční regulace, 3.1.x/5.x)."
+      ],
+      "killer_risk": "Cenová data – bez spolehlivé bezplatné ceny appka působí nedokončeně.",
+      "mitigation": "Ruční cena jako výchozí, 'private by design' jako hlavní sdělení, stažení ceny jen z legálně volného zdroje; nulová povinnost sítě.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 7,
+        "safety": 5
+      }
+    },
+    {
+      "id": "finance-18",
+      "name": "Small Landlord Ledger",
+      "tagline": "1–3 byty k pronájmu: nájmy, zálohy, opravy a výnos – bez předplatného za správcovskou platformu.",
+      "pitch": "Drobní pronajímatelé s jedním až třemi byty nepotřebují platformu pro správu nemovitostí s online platbami a screeningem nájemníků; chtějí vidět, kdo zaplatil, vyúčtovat zálohy a znát výnos. Velké platformy jsou serverové, drahé a US-centrické. Offline ledger s lokalizovanými šablonami (vyúčtování služeb, Nebenkostenabrechnung) je jednoduchý a ochotně placený. Konkurence je ale velká, proto je to spíš sázka na lokalizaci.",
+      "niche": "Mikro-pronajímatelé mimo US; platformy typu TurboTenant a Landlord Studio cílí na US/UK a online platby.",
+      "parent_market": "Landlord software (Landlord Studio, TurboTenant, Stessa) – vysoké předplatné.",
+      "target_user": "Soukromí pronajímatelé 1–3 bytů v CZ, DE, PL, ES, IT.",
+      "features": [
+        "Jednotky, nájemníci, nájem a zálohy, evidence plateb",
+        "Náklady a opravy s fotkou účtenky",
+        "Roční výnos a podklady pro daňové přiznání",
+        "Šablona vyúčtování záloh na služby",
+        "Připomínky (valorizace, konec smlouvy)"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně + iCloud, žádné online platby ani účty nájemníků.",
+      "monetization": "Zdarma 1 jednotka; Pro 49,99 USD/rok (≈ 1 150 CZK) nebo 6,99 USD/měs.",
+      "revenue_math": "Ideál: 500 stažení/měs × 5 % × 49,99 USD = 1 250 USD hrubě → 1 062 USD čistě → ≈ 24 400 CZK/měs.",
+      "revenue_czk_ideal": 24400,
+      "keywords": [
+        {
+          "kw": "rent tracker",
+          "saturation": 6,
+          "competitor": "odhad",
+          "note": "odhad; EN přeplněno."
+        },
+        {
+          "kw": "rent ledger",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad."
+        },
+        {
+          "kw": "mietverwaltung",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad; DE storefront."
+        },
+        {
+          "kw": "nebenkostenabrechnung",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad; DE, sezónní (jaro)."
+        }
+      ],
+      "demand_evidence": "Pouze vlastní znalost: landlord software je prokázaně placený; lokální výrazy a jejich konkurence NEověřeny.",
+      "competitors": [
+        {
+          "name": "Landlord Studio",
+          "url": "",
+          "role": "parent",
+          "note": "Cloudová správa pronájmů."
+        },
+        {
+          "name": "TurboTenant",
+          "url": "",
+          "role": "parent",
+          "note": "US platforma, online platby."
+        },
+        {
+          "name": "Stessa",
+          "url": "",
+          "role": "parent",
+          "note": "US, napojení na banky."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Konkurence v EN je silná a i lokálně existují zavedené desktopové nástroje.",
+        "Daňová a právní pravidla (vyúčtování) se liší podle země a mění se – údržba šablon.",
+        "Pronajímatelé chtějí online platby a portál nájemníka, což bez serveru nejde.",
+        "Blue ocean je slabý – rent tracker je obsazený."
+      ],
+      "killer_risk": "Nepodaří se vyniknout v obsazeném výrazu a lokální výrazy mají malý objem.",
+      "mitigation": "Začít jedním trhem s nejsilnější potřebou (DE Nebenkostenabrechnung, CZ vyúčtování služeb), pak rozšiřovat.",
+      "build_weeks": 6,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 3,
+        "monetization": 7,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 5
+      }
+    },
+    {
+      "id": "finance-19",
+      "name": "Petty Cash Book",
+      "tagline": "Pokladní kniha pro kancelář, spolek nebo třídní fond – příjmy, výdaje, doklady a zůstatek.",
+      "pitch": "Malé kanceláře, spolky, třídní fondy a kluby vedou hotovostní pokladnu v sešitě nebo Excelu. Appka vede příjmy a výdaje s fotkou dokladu, průběžný zůstatek, doplnění (imprest) a měsíční uzávěrku s rozpočítáním podle kategorií. Cash countery jsou přeplněné, ale pokladní kniha jako proces je mezi nimi výjimka. Jednoduché, offline, s PDF exportem.",
+      "niche": "Správci hotovostních pokladen mimo účetní systém; účetní software je na to příliš velký a cash countery jen sčítají bankovky.",
+      "parent_market": "Počítání a správa hotovosti a malé účetnictví (Money Counter appky, QuickBooks, Expensify).",
+      "target_user": "Office manažeři, pokladníci spolků, třídní důvěrníci, trenéři klubů (EN + DE/CZ/PL/ES).",
+      "features": [
+        "Příjmy/výdaje s fotkou dokladu a kategorií",
+        "Průběžný zůstatek, doplnění pokladny (imprest)",
+        "Měsíční uzávěrka s počítáním hotovosti podle nominálů",
+        "PDF/CSV export pro účetní",
+        "Více pokladen (kancelář, akce, fond)"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně + iCloud.",
+      "monetization": "Zdarma 1 pokladna; Pro 19,99 USD/rok (≈ 460 CZK) nebo doživotně 29,99 USD.",
+      "revenue_math": "Ideál: 1 000 stažení/měs × 4 % × 19,99 USD = 800 USD hrubě → 680 USD čistě → ≈ 15 600 CZK/měs.",
+      "revenue_czk_ideal": 15600,
+      "keywords": [
+        {
+          "kw": "petty cash",
+          "saturation": 3,
+          "competitor": "odhad – Money Counter: Cash & Coins (zmiňuje petty cash)",
+          "note": "odhad; web zachytil jen zmínku v popisu cash counteru."
+        },
+        {
+          "kw": "cash book",
+          "saturation": 5,
+          "competitor": "odhad",
+          "note": "odhad."
+        },
+        {
+          "kw": "kassenbuch",
+          "saturation": 4,
+          "competitor": "odhad",
+          "note": "odhad; DE – pozor na GoBD (pro firmy právně náročné)."
+        },
+        {
+          "kw": "class fund",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad; školní fondy."
+        }
+      ],
+      "demand_evidence": "Z webu: cash counter je přeplněný (6–7 titulů) a jeden z nich zmiňuje petty cash – rodičovská poptávka doložená. Niche 'petty cash book' NEověřena.",
+      "competitors": [
+        {
+          "name": "Money Counter: Cash & Coins",
+          "url": "https://apps.apple.com/ca/app/money-counter-cash-coins/id6757389042",
+          "role": "niche",
+          "note": "USD counter, zmiňuje petty cash a tip jar."
+        },
+        {
+          "name": "Cash Drawer Keeper",
+          "url": "https://apps.apple.com/gb/app/cash-drawer-keeper/id6451430691",
+          "role": "niche",
+          "note": "Počítání a vklad hotovosti."
+        },
+        {
+          "name": "QuickBooks",
+          "url": "",
+          "role": "parent",
+          "note": "Účetní software."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "V DE je Kassenbuch pro podnikatele pod GoBD – appka bez certifikace nesmí slibovat soulad.",
+        "Excel/šablony zdarma jsou pro mnohé dostačující.",
+        "Hotovost ubývá, pokladny ve firmách se ruší.",
+        "Nízká ochota platit u spolků a třídních fondů."
+      ],
+      "killer_risk": "Uživatelé zůstanou u Excelu a appku nenajdou pod obecným 'cash book'.",
+      "mitigation": "Cílit na neformální pokladny (spolky, třídy, kluby) místo firem, jasný disclaimer k účetním předpisům.",
+      "build_weeks": 2,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 5
+      }
+    },
+    {
+      "id": "finance-20",
+      "name": "Driver Profit per Km",
+      "tagline": "Kolik ti jízda nebo rozvoz reálně vydělá po palivu, poplatcích a amortizaci auta – v tvé měně a v km.",
+      "pitch": "Řidiči Uberu, Boltu, Woltu a rozvozů vidí jen hrubé tržby, ne zisk na kilometr a hodinu po nákladech. US appky (Gridwise, Stride) jsou postavené na míle a americký daňový odpočet. V Brazílii, Mexiku, Polsku nebo Česku je milion řidičů, kteří počítají v km a lokální měně. Offline appka se zapnutou GPS stopou spočítá čistý výdělek na km a hodinu a řekne, zda se zakázka vyplatí.",
+      "niche": "Gig řidiči mimo US; US appky jsou mílové a daňově orientované.",
+      "parent_market": "Mileage a gig-driver trackery (Gridwise, Stride, MileIQ, Everlance) – velký placený trh.",
+      "target_user": "Řidiči ride-hailingu a rozvozů v BR, MX, PL, CZ, ES, DE.",
+      "features": [
+        "Směna: tržby, spropitné, bonusy, km (GPS na zařízení), čas",
+        "Náklady: palivo/elektřina, pronájem auta, poplatky, amortizace",
+        "Čistý zisk na km a hodinu, cílová minimální sazba",
+        "Rychlá kalkulačka 'vyplatí se tato zakázka?'",
+        "Týdenní/měsíční přehled a export"
+      ],
+      "offline": "mostly",
+      "offline_note": "GPS a výpočty na zařízení; mapy nejsou potřeba. Import z platforem není (bez API).",
+      "monetization": "Zdarma 7 dní historie; Pro 19,99 USD/rok (≈ 460 CZK) nebo 2,99 USD/měs, nižší ceny v BR/MX.",
+      "revenue_math": "Ideál: 1 500 stažení/měs × 3 % × 19,99 USD = 900 USD hrubě → 765 USD čistě → ≈ 17 600 CZK/měs.",
+      "revenue_czk_ideal": 17600,
+      "keywords": [
+        {
+          "kw": "gig driver",
+          "saturation": 5,
+          "competitor": "odhad – Gridwise/Stride",
+          "note": "odhad; EN obsazené."
+        },
+        {
+          "kw": "profit per mile",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad."
+        },
+        {
+          "kw": "ganhos motorista",
+          "saturation": 4,
+          "competitor": "odhad",
+          "note": "odhad; BR má pravděpodobně lokální appky."
+        },
+        {
+          "kw": "zarobki kierowcy",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad; PL."
+        }
+      ],
+      "demand_evidence": "Pouze vlastní znalost: gig-driver trackery jsou v US prokázaný trh; lokální poptávka a konkurence (hlavně BR) NEověřeny. Z webu jen Server44 zmiňuje delivery drivers.",
+      "competitors": [
+        {
+          "name": "Server44 - Tip Tracker",
+          "url": "https://apps.apple.com/us/app/server44-tip-tracker/id6758269550",
+          "role": "niche",
+          "note": "Tip tracker zmiňující delivery drivers."
+        },
+        {
+          "name": "Gridwise",
+          "url": "",
+          "role": "parent",
+          "note": "US gig driver analytika (napojení na platformy)."
+        },
+        {
+          "name": "Stride",
+          "url": "",
+          "role": "parent",
+          "note": "US mileage a daně."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Gridwise/Stride jsou US, mílové a na IRS odpočty; km/lokální měna/lokální náklady pro BR, MX, PL, CZ jsou mezera.",
+      "devils_advocate": [
+        "Řidiči v BR/MX/PL jsou převážně na Androidu.",
+        "V BR pravděpodobně existují lokální appky pro 'motoristas de app' (neověřeno).",
+        "Ruční zadávání tržeb po směně = rychlý odchod.",
+        "GPS na pozadí vybíjí baterii a Apple žádá jasné zdůvodnění polohy (5.1.1)."
+      ],
+      "killer_risk": "Nízký podíl iOS mezi gig řidiči v cílových zemích.",
+      "mitigation": "Začít EU (DE, CZ, PL) a iOS-silnějšími trhy, 'kalkulačka zakázky' jako rychlý háček bez GPS.",
+      "build_weeks": 5,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 8,
+        "safety": 5
+      }
+    },
+    {
+      "id": "finance-21",
+      "name": "Commission Queue for Artists",
+      "tagline": "Fronta zakázek, zálohy a doplatky pro digitální i tradiční umělce – nikdy nezapomeň, kdo zaplatil.",
+      "pitch": "Ilustrátoři, VTuber artisté a malíři portrétů berou 'commissions': ceník, zálohu 50 %, frontu, revize a doplatek. Dnes to řeší v Trellu, tabulkách a DM. Appka vede ceník, frontu se stavy, platby (záloha/doplatek), deadliny a příjmy za měsíc. Platformy typu VGen řeší marketplace, ne soukromou evidenci umělce.",
+      "niche": "Nezávislí umělci s vlastními zákazníky; invoicing appky jsou pro řemeslníky a firmy, ne pro frontu kreseb.",
+      "parent_market": "Invoicing a freelance nástroje (Invoice Simple, Bonsai) a commission platformy (VGen, Ko-fi).",
+      "target_user": "Digitální umělci 18–35 (Procreate generace), EN + JP/ES/PT komunity.",
+      "features": [
+        "Ceník (typ, velikost, příplatky) a výpočet ceny zakázky",
+        "Fronta se stavy (sketch/lineart/color/done) a deadliny",
+        "Záloha a doplatek, zbývá zaplatit",
+        "Měsíční příjmy a statistiky",
+        "Obrázková 'commission sheet' pro sociální sítě"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně + iCloud, platby mimo appku.",
+      "monetization": "Zdarma 5 aktivních zakázek; Pro 19,99 USD/rok (≈ 460 CZK) nebo doživotně 29,99 USD.",
+      "revenue_math": "Ideál: 1 000 stažení/měs × 4 % × 19,99 USD = 800 USD hrubě → 680 USD čistě → ≈ 15 600 CZK/měs.",
+      "revenue_czk_ideal": 15600,
+      "keywords": [
+        {
+          "kw": "art commission tracker",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad; hint neověřen."
+        },
+        {
+          "kw": "commission queue",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad."
+        },
+        {
+          "kw": "commission sheet",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad; umělci tímto termínem označují ceník."
+        },
+        {
+          "kw": "artist invoice",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad."
+        }
+      ],
+      "demand_evidence": "Pouze vlastní znalost komunity umělců (commissions jsou běžný model). V App Store NEověřeno.",
+      "competitors": [
+        {
+          "name": "VGen",
+          "url": "",
+          "role": "parent",
+          "note": "Commission marketplace (web/appka, server)."
+        },
+        {
+          "name": "Invoice Simple",
+          "url": "",
+          "role": "parent",
+          "note": "Obecný invoicing."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Mladí umělci mají nízké příjmy a appky za předplatné neradi.",
+        "VGen a Ko-fi přidávají správu fronty zdarma.",
+        "Trello/Notion šablony zdarma jsou pro mnohé dost.",
+        "Třetí nápad v rodičovském trhu 'maker business' – riziko 4.3 při podobném UI."
+      ],
+      "killer_risk": "Umělci zůstanou u zdarma nástrojů (Trello, Notion, VGen).",
+      "mitigation": "Doživotní cena, 'commission sheet' obrázek jako virální prvek, odlišné UI a brand od Handmade Price Calculatoru.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "finance-22",
+      "name": "Donation Value Log",
+      "tagline": "Věcné dary na charitu zapsané, oceněné a připravené na daňové přiznání – když ItsDeductible skončil.",
+      "pitch": "V USA lidé darují oblečení, nábytek a elektroniku charitám a odečítají je z daní; dlouholetý nástroj ItsDeductible byl podle mé (neověřené) znalosti v roce 2025 ukončen. Appka zapíše dar s fotkami a stavem, navrhne orientační hodnotu z vlastní tabulky, uloží potvrzení a vytvoří roční souhrn pro daňové přiznání. Přidává i peněžní dary, které od roku 2026 podle mé znalosti nově odečtou i neitemizující poplatníci.",
+      "niche": "Věcné dary jednotlivců; velké daňové appky se jim nevěnují a charity dávají jen papírové potvrzení.",
+      "parent_market": "Daňové a odpočtové aplikace (TurboTax, H&R Block, Keeper).",
+      "target_user": "Americké domácnosti, které pravidelně darují (Goodwill, Salvation Army atd.), hlavně itemizující.",
+      "features": [
+        "Dar: charita, datum, položky, stav, fotky, potvrzení",
+        "Orientační hodnota z vestavěné tabulky (editovatelná)",
+        "Peněžní dary a limity",
+        "Roční souhrn PDF/CSV pro daňové přiznání",
+        "Upozornění na doklady pro dary nad limit"
+      ],
+      "offline": "full",
+      "offline_note": "Tabulka hodnot zabalená v appce (aktualizace s verzí), vše lokálně.",
+      "monetization": "Zdarma 5 darů; Pro 9,99 USD/rok (≈ 230 CZK) nebo doživotně 14,99 USD.",
+      "revenue_math": "Ideál: 1 000 stažení/měs (průměr roku, peak leden–duben) × 5 % × 14,99 USD = 750 USD hrubě → 637 USD čistě → ≈ 14 600 CZK/měs.",
+      "revenue_czk_ideal": 14600,
+      "keywords": [
+        {
+          "kw": "donation tracker",
+          "saturation": 4,
+          "competitor": "odhad",
+          "note": "odhad."
+        },
+        {
+          "kw": "donation value guide",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad; nepoužívat značky charit v metadatech."
+        },
+        {
+          "kw": "charitable donations",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad."
+        },
+        {
+          "kw": "tax deduction tracker",
+          "saturation": 5,
+          "competitor": "odhad",
+          "note": "odhad; obsazené obecnými appkami."
+        }
+      ],
+      "demand_evidence": "Vlastní znalost (neověřená v relaci): ukončení ItsDeductible 2025 a změna odpočtu peněžních darů od 2026. Evidence soubor to uvádí jen jako neověřenou vzpomínku. Konkurence NEověřena.",
+      "competitors": [
+        {
+          "name": "TurboTax",
+          "url": "",
+          "role": "parent",
+          "note": "Daňový software; dříve provozoval ItsDeductible."
+        },
+        {
+          "name": "Keeper",
+          "url": "",
+          "role": "parent",
+          "note": "Odpočty pro freelancery."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Oceňování darů je daňově citlivé – chybná hodnota = riziko pro uživatele a reputaci.",
+        "Silná sezónnost (daňová sezóna).",
+        "Hodnotová tabulka stárne a potřebuje aktualizace.",
+        "Po zvýšení standardního odpočtu itemizuje málo domácností – trh se zmenšil."
+      ],
+      "killer_risk": "Většina domácností neitemizuje, takže věcné dary nemají daňový efekt a appku nepotřebují.",
+      "mitigation": "Zdůraznit i peněžní dary (nový odpočet), evidenci pro vlastní přehled a záruční texty 'orientační hodnota, ne daňová rada'.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 4
+      }
+    },
+    {
+      "id": "finance-23",
+      "name": "Medical Bill Check",
+      "tagline": "Spáruj účet od lékaře s EOB od pojišťovny a zjisti, zda neplatíš víc, než musíš.",
+      "pitch": "Americké zdravotní účty jsou chaotické: nemocnice pošle účet, pojišťovna pošle EOB a pacient neví, zda sedí. HSA receipt trackery jsou přeplněné, ale párování účtu s EOB a sledování sporů nikdo dedikovaně neřeší. Appka naskenuje oba dokumenty (Vision OCR na zařízení), spáruje je, ukáže rozdíly a pomůže sledovat odvolání a splátkové plány. Soukromí na zařízení je u zdravotních dat výhoda.",
+      "niche": "Pacienti s nesrovnalostmi v účtech; HSA appky řeší proplácení, ne kontrolu správnosti účtu.",
+      "parent_market": "HSA/FSA a zdravotní výdaje (HSA trackery, Silver, pojišťovací appky).",
+      "target_user": "Americké domácnosti s chronickou péčí, rodiče malých dětí, pečovatelé.",
+      "features": [
+        "Sken účtu a EOB s OCR na zařízení",
+        "Párování podle data a poskytovatele, rozdíly",
+        "Stav: zaplaceno / sporné / v odvolání / splátky",
+        "Šablony dopisů pro dotaz na položkový účet",
+        "Roční přehled pro HSA"
+      ],
+      "offline": "full",
+      "offline_note": "OCR přes Vision na zařízení, data lokálně, žádná napojení na pojišťovny.",
+      "monetization": "Zdarma 5 účtů; Pro 29,99 USD/rok (≈ 690 CZK) nebo 3,99 USD/měs.",
+      "revenue_math": "Ideál: 700 stažení/měs × 5 % × 29,99 USD = 1 050 USD hrubě → 892 USD čistě → ≈ 20 500 CZK/měs.",
+      "revenue_czk_ideal": 20500,
+      "keywords": [
+        {
+          "kw": "medical bill tracker",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad; hint neověřen."
+        },
+        {
+          "kw": "eob",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad; zkratka, kterou lidé znají z pošty."
+        },
+        {
+          "kw": "hsa receipt tracker",
+          "saturation": 8,
+          "competitor": "HSA Receipt Tracker: Tripl",
+          "note": "Web: sat 8, PŘEPLNĚNO – jen rodičovský důkaz."
+        },
+        {
+          "kw": "medical bills",
+          "saturation": 4,
+          "competitor": "odhad",
+          "note": "odhad."
+        }
+      ],
+      "demand_evidence": "Z webu: HSA receipt tracker je přeplněný (8 titulů z 2025–26) – poptávka po zdravotních financích je doložená. EOB/bill-check niche NEověřena.",
+      "competitors": [
+        {
+          "name": "HSA Receipt Tracker: Tripl",
+          "url": "https://apps.apple.com/us/app/hsa-receipt-tracker-tripl/id6761968218",
+          "role": "niche",
+          "note": "HSA účtenky."
+        },
+        {
+          "name": "Silver: Automate your FSA/HSA",
+          "url": "https://apps.apple.com/us/app/silver-automate-your-fsa-hsa/id6590604600",
+          "role": "niche",
+          "note": "Automatizace HSA/FSA."
+        },
+        {
+          "name": "ReceiptKeeper — HSA Tracker",
+          "url": "https://apps.apple.com/us/app/receiptkeeper-hsa-tracker/id6757621794",
+          "role": "niche",
+          "note": "HSA účtenky."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Zdravotní data – 5.1.1/5.1.3 a přísnější review; žádné sdílení mimo zařízení.",
+        "OCR EOB formátů různých pojišťoven je nespolehlivé – ruční oprava otráví uživatele.",
+        "HSA appky mohou přidat párování s EOB rychle.",
+        "US-only, bez možnosti lokalizace."
+      ],
+      "killer_risk": "Složitost dokumentů a OCR – appka nepřinese úsporu času.",
+      "mitigation": "MVP bez automatického párování: ruční zadání + sken jako příloha, důraz na stav sporů a připomínky.",
+      "build_weeks": 6,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 9,
+        "safety": 4
+      }
+    },
+    {
+      "id": "finance-24",
+      "name": "Warranty & Returns Vault",
+      "tagline": "Záruka, lhůta na vrácení a účtenka u každé věci – s připomínkou dřív, než lhůta vyprší.",
+      "pitch": "Účtenky blednou a lhůty na vrácení (14 dní odstoupení v EU, 30 dní u obchodů) a záruky (2 roky v EU) lidé propásnou. Appka vyfotí účtenku, vytáhne datum a obchod na zařízení a nastaví připomínky na vrácení i konec záruky. V EU ji lze postavit na zákonných lhůtách, což US appky ignorují. Konkurence v 'receipt/warranty' je ale velká, takže jde o precizní provedení a lokalizaci.",
+      "niche": "Lhůty na vrácení a zákonná záruka v EU; receipt appky řeší výdaje, ne lhůty.",
+      "parent_market": "Receipt a warranty appky (ReceiptCam, Expensify pro firmy, warranty trackery).",
+      "target_user": "Spotřebitelé v EU a US, kteří nakupují elektroniku a online.",
+      "features": [
+        "Sken účtenky s OCR (Vision) – obchod, datum, částka",
+        "Lhůta vrácení a záruky podle země a obchodu",
+        "Připomínky před vypršením",
+        "Fotky produktu, sériové číslo, manuál PDF",
+        "iCloud sync a export pro pojištění"
+      ],
+      "offline": "full",
+      "offline_note": "OCR a data na zařízení, iCloud sync.",
+      "monetization": "Zdarma 10 položek; Pro 14,99 USD/rok (≈ 345 CZK) nebo doživotně 19,99 USD.",
+      "revenue_math": "Ideál: 1 500 stažení/měs × 4 % × průměr 14 USD = 840 USD hrubě → 714 USD čistě → ≈ 16 400 CZK/měs.",
+      "revenue_czk_ideal": 16400,
+      "keywords": [
+        {
+          "kw": "warranty tracker",
+          "saturation": 6,
+          "competitor": "odhad",
+          "note": "odhad; pravděpodobně obsazené."
+        },
+        {
+          "kw": "return deadline",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad."
+        },
+        {
+          "kw": "receipt organizer",
+          "saturation": 7,
+          "competitor": "ReceiptCam: AI Receipt Tracker",
+          "note": "odhad; web ukázal vlnu receipt appek 2025–26."
+        },
+        {
+          "kw": "garantie",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad; DE/FR."
+        }
+      ],
+      "demand_evidence": "Z webu nepřímo: receipt a HSA appky zaplavují store (vlna 2025–26). Warranty/return niche NEověřena, jde o odhad.",
+      "competitors": [
+        {
+          "name": "ReceiptCam: AI Receipt Tracker",
+          "url": "https://apps.apple.com/us/app/receiptcam-ai-receipt-tracker/id6746401835",
+          "role": "niche",
+          "note": "Receipt appka 2025."
+        },
+        {
+          "name": "Receipt Savior - Save Receipts",
+          "url": "https://apps.apple.com/us/app/trackhsa/id6761667994",
+          "role": "niche",
+          "note": "Receipt úložiště."
+        },
+        {
+          "name": "CaptureBoard",
+          "url": "https://apps.apple.com/us/app/captureboard-scan-whiteboard-business-cards-receipts/id542229387",
+          "role": "niche",
+          "note": "Starý skener účtenek."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Apple Wallet / Mail už ukazují objednávky a obchody posílají e-mailové účtenky.",
+        "Warranty tracker je pravděpodobně přeplněný (odhad).",
+        "Nízká frekvence používání a nízká ochota platit.",
+        "Zákonné lhůty se liší – chyba = špatná rada."
+      ],
+      "killer_risk": "Přeplněný trh receipt appek a Sherlock ze strany Apple Wallet.",
+      "mitigation": "Titul na 'return deadline' a EU zákonné lhůty, lokalizace, velmi rychlé zadání.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 3,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "finance-25",
+      "name": "Tax Pot: Self-Employed Set-Aside",
+      "tagline": "Z každé faktury odlož správné procento na daně a pojištění – a na konci roku nebuď v šoku.",
+      "pitch": "OSVČ, Freiberufler a sole traders dostávají peníze v hrubém a daně platí později; každý rok se znovu diví. Appka z každé platby spočítá, kolik odložit na daň, sociální a zdravotní pojištění, podle jednoduchých pravidel dané země (paušální výdaje, paušální daň, Self Assessment). US appky (Keeper, Found) jsou bankovní a US-only. Jde o reálnou bolest, ale pravidla se mění a vyžadují pečlivou údržbu.",
+      "niche": "Freelanceři mimo US s jednoduchým režimem; US appky jsou svázané s bankou a IRS.",
+      "parent_market": "Freelance daně a bankovnictví (Keeper, Found, Lili, QuickBooks Self-Employed).",
+      "target_user": "OSVČ a freelanceři v CZ, DE, UK, PL, ES.",
+      "features": [
+        "Zápis příjmu a automatické rozdělení (daň, pojištění, rezerva)",
+        "Předvolby režimů podle země (editovatelné sazby)",
+        "Zálohy a termíny plateb s připomínkami",
+        "Roční přehled a odhad doplatku",
+        "Export pro účetní"
+      ],
+      "offline": "full",
+      "offline_note": "Sazby zabalené v appce a editovatelné, vše lokálně.",
+      "monetization": "Zdarma 1 režim; Pro 34,99 USD/rok (≈ 805 CZK) nebo 4,99 USD/měs.",
+      "revenue_math": "Ideál: 800 stažení/měs × 4 % × 34,99 USD = 1 120 USD hrubě → 952 USD čistě → ≈ 21 900 CZK/měs.",
+      "revenue_czk_ideal": 21900,
+      "keywords": [
+        {
+          "kw": "tax set aside",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad."
+        },
+        {
+          "kw": "self employed tax",
+          "saturation": 6,
+          "competitor": "odhad",
+          "note": "odhad; obsazené."
+        },
+        {
+          "kw": "steuerrücklage",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad; DE."
+        },
+        {
+          "kw": "osvč",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad; CZ, malý trh."
+        }
+      ],
+      "demand_evidence": "Pouze vlastní znalost: freelance daňové appky jsou v US prokázaný trh; lokální výrazy NEověřeny.",
+      "competitors": [
+        {
+          "name": "Keeper",
+          "url": "",
+          "role": "parent",
+          "note": "US odpočty a daně pro freelancery."
+        },
+        {
+          "name": "Found",
+          "url": "",
+          "role": "parent",
+          "note": "US banka pro OSVČ s daňovou rezervou."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "US appky jsou vázané na IRS a americké banky; lokalizovaná offline 'daňová obálka' pro EU režimy chybí.",
+      "devils_advocate": [
+        "Daňová pravidla se mění každý rok – chybná sazba = poškozený uživatel a reputační riziko.",
+        "Neobanky (Kontist v DE, Revolut Business) mají daňové rezervy zabudované.",
+        "Každá země = samostatná pravidla, údržba roste s lokalizací.",
+        "Účetní a lokální fakturační appky (Fakturoid, iDoklad) mohou přidat."
+      ],
+      "killer_risk": "Údržba daňových pravidel převýší přínos a jedna chyba zničí hodnocení.",
+      "mitigation": "Uživatel si sazby nastaví sám (appka jen počítá), předvolby jako návrh s datem platnosti, začít 3 zeměmi.",
+      "build_weeks": 6,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 3
+      }
+    },
+    {
+      "id": "finance-26",
+      "name": "Mortgage Overpayment Planner",
+      "tagline": "Kolik ušetříš mimořádnou splátkou hypotéky? Sondertilgung, overpayment i mimořádná splátka v jedné kalkulačce.",
+      "pitch": "Hypoteční kalkulačky jsou všude, ale mimořádné splátky mají v každé zemi svá pravidla: UK 10 % ročně bez poplatku, DE Sondertilgung 5 % ročně, CZ bezplatná mimořádná splátka jednou za rok k výročí. Appka simuluje plán mimořádných splátek s lokálními limity, porovná 'zkrátit dobu vs. snížit splátku' a ukáže ušetřené úroky. Obecné kalkulačky tyto lokální detaily nemají.",
+      "niche": "Majitelé hypoték řešící mimořádné splátky podle lokálních pravidel; generické kalkulačky jsou US-centrické.",
+      "parent_market": "Hypoteční a úvěrové kalkulačky – obsazený head term s velkým objemem.",
+      "target_user": "Majitelé hypoték 30–55 v UK, DE, CZ, PL, NL.",
+      "features": [
+        "Hypotéka: zůstatek, sazba, fixace, zbývající doba",
+        "Plán mimořádných splátek s limity podle země",
+        "Zkrátit dobu vs. snížit splátku",
+        "Ušetřené úroky a nový konec splácení",
+        "Scénáře při refixaci"
+      ],
+      "offline": "full",
+      "offline_note": "Čistě výpočetní appka.",
+      "monetization": "Zdarma základní výpočet; Pro doživotně 6,99 USD (≈ 160 CZK).",
+      "revenue_math": "Ideál: 2 000 stažení/měs × 4 % × 6,99 USD = 559 USD hrubě → 475 USD čistě → ≈ 10 900 CZK/měs.",
+      "revenue_czk_ideal": 10900,
+      "keywords": [
+        {
+          "kw": "mortgage overpayment calculator",
+          "saturation": 4,
+          "competitor": "odhad",
+          "note": "odhad; UK storefront."
+        },
+        {
+          "kw": "sondertilgung rechner",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad; DE."
+        },
+        {
+          "kw": "extra payment calculator",
+          "saturation": 5,
+          "competitor": "odhad",
+          "note": "odhad; US."
+        },
+        {
+          "kw": "mimořádná splátka",
+          "saturation": 0,
+          "competitor": "odhad",
+          "note": "odhad; CZ, malý trh."
+        }
+      ],
+      "demand_evidence": "Pouze vlastní znalost: hypoteční kalkulačky mají velký objem a konkurenci; lokální niche fráze NEověřeny.",
+      "competitors": [
+        {
+          "name": "Mortgage Calculator (různé)",
+          "url": "",
+          "role": "parent",
+          "note": "Desítky generických kalkulaček – head term přeplněný."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Lokalizace: generické (převážně US) kalkulačky neznají lokální limity mimořádných splátek v UK/DE/CZ.",
+      "devils_advocate": [
+        "Banky a srovnávače mají kalkulačky zdarma na webu.",
+        "Jednorázové použití – po výpočtu už appku nikdo neotevře.",
+        "Lokální pravidla se liší i mezi bankami – riziko nepřesnosti.",
+        "Nízká cena, strop příjmů."
+      ],
+      "killer_risk": "Uživatelé použijí webovou kalkulačku banky a appku nestáhnou.",
+      "mitigation": "Scénáře a připomínky výročí (důvod se vracet), lokální limity jako předvolby s možností úpravy.",
+      "build_weeks": 2,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 3,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "finance-27",
+      "name": "Gift Money Ledger",
+      "tagline": "Kdo ti dal kolik na svatbu nebo pohřeb – a kolik mu to máš vrátit. Tradice 축의금 a ご祝儀 v appce.",
+      "pitch": "V Koreji, Japonsku, Číně, Indii i ve Vietnamu je dávání peněz při svatbách, pohřbech a narozeninách reciproční povinnost a lidé si pečlivě vedou, kdo dal kolik. Existují na to lokální appky hlavně v KR, ale diaspora a další trhy (IN shagun, VN, PH) je nemají v jazyce. Appka vede příjmy i výdaje darů podle události a osoby, doporučí částku podle vztahu a připomene reciprocitu.",
+      "niche": "Reciproční peněžní dary; US gift appky jsou o registrech a dárcích, ne o penězích a oplátce.",
+      "parent_market": "Svatební a dárkové appky (Zola, The Knot) a lokální KR/JP ledgery 경조사비.",
+      "target_user": "Asijské rodiny a diaspora (KR, JP, CN, IN, VN) 25–60 let, organizátoři svateb.",
+      "features": [
+        "Události (svatba, pohřeb, narozeniny) a obálky s dárcem a částkou",
+        "Osobní historie: dal/dostal s bilancí",
+        "Doporučená částka podle vztahu a zvyklostí země",
+        "Import seznamu hostů, export",
+        "Soukromé, zamčené Face ID"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně + iCloud.",
+      "monetization": "Zdarma 1 událost; Pro doživotně 6,99 USD (≈ 160 CZK).",
+      "revenue_math": "Ideál: 2 000 stažení/měs (KR/JP/IN/VN + diaspora) × 5 % × 6,99 USD = 699 USD hrubě → 594 USD čistě → ≈ 13 700 CZK/měs.",
+      "revenue_czk_ideal": 13700,
+      "keywords": [
+        {
+          "kw": "축의금",
+          "saturation": 4,
+          "competitor": "odhad – lokální KR ledgery",
+          "note": "odhad; KR má zavedené appky."
+        },
+        {
+          "kw": "ご祝儀 管理",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad; JP."
+        },
+        {
+          "kw": "wedding gift tracker",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad; EN, spíš dárky."
+        },
+        {
+          "kw": "shagun",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad; IN."
+        }
+      ],
+      "demand_evidence": "Pouze vlastní znalost kulturních zvyklostí; v evidenci je nápad označen jako nejslabší (neověřený). Konkurence v KR NEověřena.",
+      "competitors": [
+        {
+          "name": "Zola",
+          "url": "",
+          "role": "parent",
+          "note": "Svatební registr a plánování (US)."
+        },
+        {
+          "name": "The Knot",
+          "url": "",
+          "role": "parent",
+          "note": "Svatební plánování (US)."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap: koncept je silný v KR/JP/CN, US appky ho nemají; diaspora a další asijské trhy nemají lokalizovanou appku.",
+      "devils_advocate": [
+        "V KR pravděpodobně existuje několik zavedených appek zdarma.",
+        "Kulturní citlivost – doporučené částky mohou urazit nebo být nepřesné.",
+        "Nízká frekvence (pár událostí ročně) a jednorázový nákup.",
+        "Čína je mimo náš dosah (bez licence ICP/služeb a s WeChat red packets)."
+      ],
+      "killer_risk": "Lokální free appky v KR/JP a nízký objem jinde.",
+      "mitigation": "Cílit diasporu (US/CA/AU) a IN/VN/PH, doporučení částek jen jako volitelná tabulka od uživatele.",
+      "build_weeks": 2,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "finance-28",
+      "name": "Family Plan Split",
+      "tagline": "Platíš rodinný tarif za ostatní? Appka hlídá, kdo ti za tento měsíc ještě neposlal svůj podíl.",
+      "pitch": "Rodinné tarify streamingů, cloudu a mobilů platí jeden člověk a pak měsíce nahání podíly od ostatních. Splitwise je na jednorázové útraty a vyžaduje účty; tady jde o opakované malé platby. Appka vede sdílené tarify, členy, podíly, kdo zaplatil, a posílá připravené upomínky přes Zprávy/WhatsApp. Jednoduché, levné, bez serveru.",
+      "niche": "Opakované sdílené platby; Splitwise a Tricount řeší jednorázové výdaje a skupinové cesty.",
+      "parent_market": "Sdílené výdaje (Splitwise, Tricount, Settle Up) a správa předplatných (Rocket Money).",
+      "target_user": "Mladí dospělí a rodiny, které sdílí 1–5 tarifů.",
+      "features": [
+        "Tarify s cenou, frekvencí a členy",
+        "Automatické měsíční dluhy a odškrtávání plateb",
+        "Upomínky přes share sheet (Zprávy, WhatsApp)",
+        "Změna ceny tarifu a přepočet podílů",
+        "Přehled 'kdo mi dluží'"
+      ],
+      "offline": "full",
+      "offline_note": "Jen zařízení správce, žádné účty členů.",
+      "monetization": "Zdarma 1 tarif; doživotně 4,99 USD (≈ 115 CZK).",
+      "revenue_math": "Ideál: 2 000 stažení/měs × 6 % × 4,99 USD = 599 USD hrubě → 509 USD čistě → ≈ 11 700 CZK/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "family plan",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad; nepoužívat značky (Spotify, Netflix)."
+        },
+        {
+          "kw": "subscription split",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad."
+        },
+        {
+          "kw": "shared subscription",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad; Together Price je marketplace."
+        },
+        {
+          "kw": "split bills",
+          "saturation": 7,
+          "competitor": "odhad – Splitwise",
+          "note": "odhad; head term přeplněný."
+        }
+      ],
+      "demand_evidence": "Pouze vlastní znalost; v evidenci je to 'otevřený' nápad bez vyhledání. Poptávka NEověřena.",
+      "competitors": [
+        {
+          "name": "Splitwise",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr sdílených výdajů."
+        },
+        {
+          "name": "Together Price",
+          "url": "",
+          "role": "parent",
+          "note": "Marketplace pro sdílení předplatných (server)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Sdílení rodinného tarifu mimo domácnost porušuje podmínky některých služeb (Netflix, Spotify) – Apple může mít výhrady k marketingu.",
+        "Splitwise umí opakované výdaje; stačí jej lépe nastavit.",
+        "Nízká cena, malý trh a slabá ochota platit.",
+        "Ochranné známky – bez značek v metadatech je těžké být nalezen."
+      ],
+      "killer_risk": "Splitwise pokryje potřebu 'dost dobře' a appku nikdo nehledá.",
+      "mitigation": "Formulovat jako 'shared bills & plans' pro domácnost (i nájem, internet), žádné značky, rychlé upomínky jako hlavní hodnota.",
+      "build_weeks": 2,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 4
+      }
+    },
+    {
+      "id": "finance-29",
+      "name": "Cooling Off Wishlist",
+      "tagline": "Chceš to? Dej tomu 30 dní. Pak uvidíš, kolik peněz jsi ušetřil tím, že jsi počkal.",
+      "pitch": "Pravidlo 30 dní proti impulzivním nákupům je populární rada, ale chybí k němu jednoduchý nástroj. Uživatel přidá věc (i ze share sheetu z e-shopu), appka ji 'zmrazí' na 7/30 dní, pak se zeptá, zda ji ještě chce, a počítá ušetřené peníze. Je to malá, milá appka s potenciálem virálního sdílení, ale s nízkou monetizací.",
+      "niche": "Mindful spending jako proces; wishlist appky jsou o přání a sdílení, ne o odkládání nákupů.",
+      "parent_market": "Mindful spending a osobní finance (Rocket Money, kakeibo appky, wishlist appky).",
+      "target_user": "Mladí dospělí 18–35 s tendencí k impulzivním nákupům.",
+      "features": [
+        "Přidání položky ze share sheetu (URL, cena)",
+        "Chladicí doba a připomínka rozhodnutí",
+        "Počítadlo ušetřených peněz",
+        "Statistiky a sdílecí karta 'ušetřil jsem'",
+        "Widget"
+      ],
+      "offline": "full",
+      "offline_note": "Share extension ukládá lokálně, žádný scraping cen.",
+      "monetization": "Zdarma 5 položek; doživotně 4,99 USD (≈ 115 CZK).",
+      "revenue_math": "Ideál: 3 000 stažení/měs × 4 % × 4,99 USD = 599 USD hrubě → 509 USD čistě → ≈ 11 700 CZK/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "impulse buying",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad."
+        },
+        {
+          "kw": "30 day rule",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad."
+        },
+        {
+          "kw": "mindful spending",
+          "saturation": 5,
+          "competitor": "Kakeibo: Mindful Spending",
+          "note": "odhad; web ukázal kakeibo vlnu (sat 6)."
+        },
+        {
+          "kw": "wishlist",
+          "saturation": 8,
+          "competitor": "odhad",
+          "note": "odhad; head term přeplněný."
+        }
+      ],
+      "demand_evidence": "Pouze vlastní znalost: pravidlo 30 dní je častá rada v osobních financích. App Store poptávka NEověřena; kakeibo/mindful spending je přeplněný (web).",
+      "competitors": [
+        {
+          "name": "Kakeibo: Mindful Spending",
+          "url": "https://apps.apple.com/us/app/kakeibo-mindful-spending/id6760362042",
+          "role": "niche",
+          "note": "Mindful spending přes kakeibo."
+        },
+        {
+          "name": "Rocket Money",
+          "url": "",
+          "role": "parent",
+          "note": "Správa výdajů a předplatných."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Velmi nízká ochota platit za 'appku, která mi říká, ať nekupuju'.",
+        "Wishlist a poznámky v iOS stačí.",
+        "Retence: po pár týdnech uživatel zapomene položky přidávat.",
+        "Malá appka s jedním trikem – riziko 4.2 (minimální funkčnost)."
+      ],
+      "killer_risk": "Nulová monetizace – stažení bez nákupů.",
+      "mitigation": "Vtipný tone of voice a sdílecí karty pro virální růst, doživotní cena a propojení se spořicím cílem.",
+      "build_weeks": 1.5,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 5,
+        "monetization": 3,
+        "build_ease": 9,
+        "offline_fit": 9,
+        "safety": 7
+      }
+    },
+    {
+      "id": "finance-30",
+      "name": "FIRE Number Planner",
+      "tagline": "Kdy můžeš přestat muset pracovat? FIRE a Coast FIRE výpočet s lokálními důchody a daněmi.",
+      "pitch": "Hnutí FIRE je silné v US i v Evropě (DE Frugalisten, NL, CZ komunity), ale kalkulačky počítají s americkými účty (401k, Roth, Social Security). Appka počítá FIRE číslo, Coast FIRE a Barista FIRE s lokálními parametry (státní důchod, daň z kapitálových výnosů, inflace) a ukáže datum finanční nezávislosti. Jen ruční vstupy, žádné napojení na banky – soukromí je plus. EN trh je ale plný kalkulaček, proto je to spodek žebříčku.",
+      "niche": "FIRE komunita mimo US; US nástroje neznají evropské důchodové systémy.",
+      "parent_market": "Investiční a plánovací nástroje (ProjectionLab, Empower, FIRE kalkulačky).",
+      "target_user": "Profesionálové 25–45 v DE, NL, CZ, PL, UK se zájmem o finanční nezávislost.",
+      "features": [
+        "FIRE, Coast FIRE, Barista FIRE číslo",
+        "Lokální předvolby (státní důchod, daně, inflace) – editovatelné",
+        "Scénáře úspor a výnosů, graf",
+        "Milníky a widget",
+        "Plně soukromé, bez účtů"
+      ],
+      "offline": "full",
+      "offline_note": "Čistě výpočetní, vše lokálně.",
+      "monetization": "Zdarma základ; Pro 24,99 USD/rok (≈ 575 CZK) nebo doživotně 39,99 USD.",
+      "revenue_math": "Ideál: 1 000 stažení/měs × 3 % × průměr 30 USD = 900 USD hrubě → 765 USD čistě → ≈ 17 600 CZK/měs.",
+      "revenue_czk_ideal": 17600,
+      "keywords": [
+        {
+          "kw": "fire calculator",
+          "saturation": 6,
+          "competitor": "odhad",
+          "note": "odhad; EN přeplněné."
+        },
+        {
+          "kw": "coast fire",
+          "saturation": 4,
+          "competitor": "odhad",
+          "note": "odhad."
+        },
+        {
+          "kw": "finanzielle freiheit",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad; DE."
+        },
+        {
+          "kw": "finanční nezávislost",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad; CZ, malý trh."
+        }
+      ],
+      "demand_evidence": "Pouze vlastní znalost: FIRE komunity a kalkulačky jsou rozšířené, v EN je mnoho zdarma nástrojů. Lokální poptávka NEověřena.",
+      "competitors": [
+        {
+          "name": "ProjectionLab",
+          "url": "",
+          "role": "parent",
+          "note": "Pokročilé plánování (web, předplatné)."
+        },
+        {
+          "name": "Empower",
+          "url": "",
+          "role": "parent",
+          "note": "Wealth tracking s napojením na účty (US)."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Lokalizace: US FIRE kalkulačky počítají s 401k/Roth/Social Security; evropské důchodové a daňové parametry chybí.",
+      "devils_advocate": [
+        "Webové kalkulačky zdarma (a Excel šablony komunity) jsou standard.",
+        "Investiční projekce mohou narazit na regulaci finančního poradenství – nutné disclaimery.",
+        "Lokální daně a důchody se mění – údržba předvoleb.",
+        "Head term 'FIRE calculator' je přeplněný a lokální výrazy jsou nízkoobjemové."
+      ],
+      "killer_risk": "Nezaplatí se – FIRE komunita je frugální a používá zdarma nástroje.",
+      "mitigation": "Doživotní cena, silná lokalizace s komunitními parametry (DE, NL), sdílitelné grafy.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 2,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    }
+  ]
+}

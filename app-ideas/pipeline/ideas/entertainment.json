@@ -1,7 +1,7 @@
 {
   "category": "Entertainment",
   "category_slug": "entertainment",
-  "search_notes": "",
+  "search_notes": "Offline běh: Apple API a WebSearch nedostupné. Soubor _partial/entertainment_evidence.txt obsahuje jen shortlist (0 úspěšných vyhledávání, žádné URL). Web-ověřené jsou proto jen 2 nápady: Lenormand (URL a saturace z lifestyle evidence – 6 titulů, všechny z let 2012–2017) a Skat/Doppelkopf blok (games evidence – 'schafkopf rechner' = 1 titul). Další URL převzaty z games evidence jako rodičovské/příbuzné odkazy (Spiele-Palast, CardGames.io, Party Games: Imposter & Cards, Mystic Tarot Reading). Zbylých 28 nápadů je 'knowledge': saturace jsou odhady, blue_ocean max 7, konkurenti bez URL. Pozor na překryv s jinými kategoriemi: Kartenblock se kryje s games #3, Lenormand s lifestyle #6 – koordinátor by měl vybrat jednu kategorii. Před stavbou je nutné ověřit apple_fetch.py check hlavně: 'audio guest book', 'coffee cup reading', 'rollentext lernen', 'murder mystery party', 'ratoncito perez', 'quiz host'.",
   "ideas": [
     {
       "id": "entertainment-01",
@@ -1509,7 +1509,7 @@
       "id": "entertainment-18",
       "name": "Tavern Ambience Soundboard",
       "tagline": "Hospoda, bouře, drak – atmosféra pro RPG hru jedním klepnutím, offline.",
-      "pitch": "Páni jeskyně chtějí atmosféru: hluk hospody, déšť, souboj. Syrinscape a Tabletop Audio jsou online nebo drahé předplatné. Nabídneme offline soundboard s vrstvami (ambient + efekty), scénami a crossfade, s vlastní CC0/zakoupenou knihovnou. Jednorázová cena, rychlé ovládání u stolu.",
+      "pitch": "Páni jeskyně chtějí u stolu atmosféru: hluk hospody, déšť, souboj s drakem. Syrinscape je výborný, ale drahé předplatné a streamování; Tabletop Audio je web a na chalupě bez signálu nefunguje. Nabídneme offline soundboard s vrstvami (ambient + jednorázové efekty), scénami připravenými předem, plynulým přechodem a ovládáním z Apple Watch, aby DM nemusel sahat po telefonu. Jednorázová cena a rychlost u stolu jsou naše USP.",
       "niche": "Offline, jednorázová atmosféra pro RPG u stolu. Lídři jsou online/předplatné.",
       "parent_market": "RPG nástroje a audio (Syrinscape, Tabletop Audio, D&D Beyond).",
       "target_user": "Páni jeskyně 18–45 hrající fyzicky u stolu.",
@@ -1575,13 +1575,13 @@
       "us_gap": false,
       "us_gap_note": "",
       "devils_advocate": [
-        "Kvalitní zvuky stojí peníze a CC0 knihovny jsou průměrné.",
-        "YouTube a Spotify mají zdarma „tavern ambience“ playlisty.",
-        "Ochranná známka D&D omezuje ASO.",
-        "Malý trh a konkurence Syrinscape."
+        "Kvalitní fantasy zvuky stojí peníze; CC0 knihovny (Freesound) jsou nerovnoměrné kvality a recenzenti to okamžitě poznají.",
+        "YouTube má desetihodinové „tavern ambience“ videa zdarma – většina DM si vystačí s nimi.",
+        "„D&D“ a „Dungeons & Dragons“ jsou ochranné známky Wizards of the Coast – nejhledanější slova nesmíme dát do názvu (2.3.7/5.2).",
+        "Syrinscape může vydat offline režim a má obsahovou knihovnu, kterou nedoženeme."
       ],
-      "killer_risk": "Zdarma YouTube playlisty.",
-      "mitigation": "Rychlost u stolu (1 klepnutí, offline) a efekty na povel jako USP; Watch ovládání.",
+      "killer_risk": "Zdarma YouTube playlisty stačí většině hráčů a placená konverze bude pod 3 %.",
+      "mitigation": "Důraz na ovládání efektů na povel (to YouTube neumí), Watch ovládání, jednorázová cena 7,99 USD a nákup 2–3 profesionálních zvukových balíčků s komerční licencí.",
       "build_weeks": 3,
       "scores": {
         "demand": 5,
@@ -1949,7 +1949,7 @@
       "id": "entertainment-23",
       "name": "Improv Games Deck",
       "tagline": "Knihovna improvizačních her a generátor zadání pro trenéry a soubory.",
-      "pitch": "Improvizační divadlo roste (Theatresports, zápasy v improvizaci v CZ/FR/CA). Trenéři potřebují knihovnu her s pravidly, generátor zadání (místo, vztah, emoce) a časovač. Existují weby a starší appky; uděláme moderní offline deck s kartami, plánovačem lekcí a režimem zápasu.",
+      "pitch": "Improvizační divadlo roste: Theatresports v anglosaském světě, zápasy v improvizaci v CZ, FR a Québecu, firemní improkurzy. Trenéři potřebují knihovnu her s pravidly, generátor zadání (místo, vztah, emoce, první věta) a časovač, a to uprostřed lekce, rychle. Existují weby a pár starších appek, nic moderního a lokalizovaného. Uděláme offline deck karet s plánovačem lekcí a režimem zápasu s hlasováním diváků.",
       "niche": "Nástroj pro improvizační trenéry. Obecné party appky nemají pedagogickou strukturu.",
       "parent_market": "Divadelní a drama nástroje; party hry (Heads Up!).",
       "target_user": "Improvizátoři, trenéři, učitelé dramatu, týmy firem.",
@@ -2015,13 +2015,13 @@
       "us_gap": false,
       "us_gap_note": "",
       "devils_advocate": [
-        "Obsah her je volně na webech zdarma.",
-        "Malá komunita, nízký objem hledání.",
-        "Trenéři používají zápisník a paměť.",
-        "Nízká opakovaná platba."
+        "Pravidla improvizačních her jsou volně na webech (improwiki, Improv Encyclopedia) – obsah sám nemá cenu.",
+        "Komunita je malá a vyhledávání „improv games“ ve více jazycích má odhadem stovky, ne tisíce hledání měsíčně.",
+        "Zkušení trenéři mají hry v hlavě; appku by potřebovali jen začátečníci, kteří neplatí.",
+        "Apple Guideline 4.2 (minimální funkčnost): „seznam her + generátor“ může recenzent považovat za příliš tenký obsah."
       ],
-      "killer_risk": "Zdarma webové encyklopedie improvizace.",
-      "mitigation": "Plánovač lekcí a režim zápasu jako placená hodnota, lokalizace do FR/CZ/DE.",
+      "killer_risk": "Obsah je zdarma na webu a zkušení trenéři appku nepotřebují.",
+      "mitigation": "Hodnota v nástrojích (plánovač lekcí, režim zápasu s body a hlasováním, časovač), lokalizace FR/CZ/DE a komunitní spolupráce se školami improvizace.",
       "build_weeks": 3,
       "scores": {
         "demand": 4,
@@ -2103,13 +2103,13 @@
       "us_gap": false,
       "us_gap_note": "",
       "devils_advocate": [
-        "Bez databáze představení je ruční zápis pracný.",
-        "Malá cílovka a nízká frekvence (pár představení ročně).",
-        "Letterboxd může přidat divadlo.",
-        "Nízká ochota platit."
+        "Bez databáze představení (licencovaná data = server/API) je zápis ruční a OCR vstupenek každého divadla má jiný formát.",
+        "Průměrný divák chodí do divadla 3–6× ročně – appku otevře párkrát a předplatné nedává smysl.",
+        "Letterboxd nebo TodayTix mohou přidat divadelní deník a mají komunitu, kterou nedoženeme.",
+        "Sociální prvek (sdílení s přáteli, jako Letterboxd) bez serveru nenabídneme – a to je hlavní důvod, proč lidé deníky vedou."
       ],
-      "killer_risk": "Ruční zadávání odradí.",
-      "mitigation": "Silný OCR a šablony obsazení, rychlé zadání za 20 s.",
+      "killer_risk": "Bez sociální vrstvy a databáze je deník jen „poznámky s ikonou“ a nemá dost hodnoty na placení.",
+      "mitigation": "Rychlý OCR zápis do 20 s, krásná roční „Wrapped“ karta ke sdílení na Instagram (virální smyčka bez serveru), opera/balet jako věrnější segment.",
       "build_weeks": 3,
       "scores": {
         "demand": 4,
@@ -2125,7 +2125,7 @@
       "id": "entertainment-25",
       "name": "Cosplay Build Planner",
       "tagline": "Plánovač kostýmů: rozpočet, materiály, míry, deadline na con a checklist.",
-      "pitch": "Cosplayeři staví kostýmy měsíce a potřebují sledovat díly, materiály, náklady, míry a deadline do conu. Obecné plánovače to neumí. Appka: projekt podle dílů, referenční fotky, rozpočet, časová osa do conu, balicí checklist. Komunita je obrovská (anime, gaming) a globální.",
+      "pitch": "Cosplayeři staví kostýmy týdny až měsíce: díly, materiály (EVA pěna, worbla, látky), náklady, míry a pevný deadline – con. Dnes to drží v Notion, Pinterestu a poznámkách. Appka dá strukturu projektu podle dílů s referenčními fotkami, rozpočtem, časovou osou do conu a balicím checklistem na den D. Komunita je globální (anime, gaming) a živě sdílí postupy, takže appka se může šířit ústně.",
       "niche": "Projektový plánovač pro cosplay. Cosplanner existuje, ale je omezený; obecné nástroje nemají strukturu.",
       "parent_market": "Kreativní hobby a projektové appky; anime/con kultura.",
       "target_user": "Cosplayeři 16–35 celosvětově.",
@@ -2191,13 +2191,13 @@
       "us_gap": false,
       "us_gap_note": "",
       "devils_advocate": [
-        "Mladá cílovka nerada platí.",
-        "Cosplanner má náskok.",
-        "Obecné nástroje stačí.",
-        "Nízká frekvence."
+        "Cílovka 16–25 let nerada platí a má levné/zdarma alternativy (Notion, Trello, Pinterest).",
+        "Cosplanner už niku obsadil a má jméno v komunitě.",
+        "Frekvence: 2–4 projekty ročně – nízká retence mezi cony.",
+        "Názvy postav a franšíz nesmíme použít v ASO (trademarky Nintendo, Marvel apod.)."
       ],
-      "killer_risk": "Nízká ochota platit u teenagerů.",
-      "mitigation": "Zdarma core, Pro pro rozpočet a více projektů.",
+      "killer_risk": "Nízká ochota mladé cílovky platit za plánovač, když Notion je zdarma.",
+      "mitigation": "Specializované fíčury, které Notion nemá (kalkulačka materiálu, šablony dílů, con countdown widget), jednorázová cena místo předplatného.",
       "build_weeks": 3,
       "scores": {
         "demand": 5,
@@ -2213,7 +2213,7 @@
       "id": "entertainment-26",
       "name": "ESL Charades Classroom",
       "tagline": "Hádej slovo! Charades a taboo pro hodiny angličtiny podle úrovně CEFR.",
-      "pitch": "Učitelé angličtiny jako cizího jazyka po celém světě hrají se třídou charades a taboo. Heads Up! nemá balíčky podle úrovně A1–C1 a obsahuje kulturní reference. Appka: balíčky podle CEFR a témat učebnic, režim na projektor, výslovnost (TTS). Obrovský globální trh ESL.",
+      "pitch": "Učitelé angličtiny jako cizího jazyka (miliony po celém světě) hrají se třídou charades a taboo, protože studenty rozmluví. Heads Up! ale nemá balíčky podle úrovně A1–C1 a je plný amerických popkulturních referencí, kterým žáci v Polsku nebo Japonsku nerozumí. Appka: balíčky podle CEFR a běžných témat učebnic, režim na projektor, výslovnost přes TTS a vlastní seznamy slovíček z lekce. Jednoduchá stavba, globální trh.",
       "niche": "ESL výuka. Party appky nejsou pedagogicky strukturované.",
       "parent_market": "Heads Up!, ESL appky (Duolingo), Kahoot.",
       "target_user": "Učitelé angličtiny (ESL/EFL), lektoři, rodiče.",
@@ -2279,13 +2279,13 @@
       "us_gap": false,
       "us_gap_note": "",
       "devils_advocate": [
-        "Učitelé nemají rozpočty a preferují zdarma.",
-        "„Taboo“ ochranná známka.",
-        "Kategorie spíš Education – ASO může být jinde.",
-        "Zdarma pracovní listy na webu."
+        "Učitelé platí z vlastní kapsy a preferují zdarma pracovní listy (ESL Brains, ISL Collective).",
+        "„Taboo“ je ochranná známka Hasbro – nesmí být v názvu ani klíčových slovech.",
+        "ASO může patřit spíš do Education než Entertainment – riziko, že v Entertainment nás učitelé nenajdou.",
+        "Kahoot a Wordwall už mají třídní hry se sdílenými sadami od učitelů."
       ],
-      "killer_risk": "Nízká ochota platit učitelů.",
-      "mitigation": "Nízká cena, školní licence přes Apple School Manager.",
+      "killer_risk": "Nízká ochota učitelů platit a silné zdarma alternativy (Wordwall, ISL Collective).",
+      "mitigation": "Nízká cena, školní licence přes Apple School Manager (volume purchase), primární kategorie Education a sekundární Entertainment.",
       "build_weeks": 2,
       "scores": {
         "demand": 5,
@@ -2301,7 +2301,7 @@
       "id": "entertainment-27",
       "name": "Kids Party Games Host",
       "tagline": "Tanec zmraž, židličkovaná, balíček – dětské hry řízené z telefonu s tvou hudbou.",
-      "pitch": "Na dětských oslavách se hrají stále stejné hry – a rodič u reproduktoru neví, kdy zastavit hudbu. Appka náhodně zastavuje hudbu (freeze dance, židličky, balíček), hlídá kola, vyřazené a vítěze, a má program oslavy. Používá hudbu z knihovny uživatele. Jednoduché, offline, univerzální.",
+      "pitch": "Na dětských oslavách se hrají stále stejné hry – tanec „zmraž“, židličkovaná, balíček – a rodič u reproduktoru neví, kdy zastavit hudbu, aby to bylo fér a napínavé. Appka náhodně zastavuje hudbu z knihovny uživatele, hlídá kola, vyřazené a vítěze, a má připravený program oslavy s časy. Na konci vytiskne diplomy. Jednoduché, offline, univerzální napříč kulturami.",
       "niche": "Hostitel dětských her. Party appky jsou pro dospělé.",
       "parent_market": "Party hry a dětské aktivity; hudební appky.",
       "target_user": "Rodiče dětí 3–10, animátoři.",
@@ -2367,13 +2367,13 @@
       "us_gap": false,
       "us_gap_note": "",
       "devils_advocate": [
-        "Rodič to zvládne ručně pauzou.",
-        "Jednorázové použití.",
-        "MusicKit omezení (DRM, Apple Music předplatné).",
-        "Kids kategorie – 1.3 pravidla."
+        "Rodič to zvládne ručně tlačítkem pauzy – bolest je malá.",
+        "Přehrávání Apple Music přes MusicKit vyžaduje předplatné uživatele a DRM omezuje ovládání; Spotify nemá offline SDK kontrolu.",
+        "Pokud skončí v Kids kategorii, Guideline 1.3 zakazuje analytiku a vyžaduje parental gate před nákupem.",
+        "Jednorázové použití 1–2× ročně = žádná retence a slabé recenze."
       ],
-      "killer_risk": "Produkt je příliš triviální na placení.",
-      "mitigation": "Program oslavy a diplomy jako hodnota navíc.",
+      "killer_risk": "Produkt je příliš triviální, aby za něj rodiče platili.",
+      "mitigation": "Prodávat jako „program oslavy“ (hry + časový plán + diplomy + hudba), vestavěné bezlicenční skladby pro děti, aby appka fungovala bez Apple Music.",
       "build_weeks": 2,
       "scores": {
         "demand": 5,
@@ -2455,13 +2455,13 @@
       "us_gap": true,
       "us_gap_note": "US License Plate Game model přenesený do evropských systémů SPZ a jazyků.",
       "devils_advocate": [
-        "Sezónnost: léto a Vánoce.",
-        "DE Kennzeichen appky mohou být silné.",
-        "Změny SPZ systémů vyžadují aktualizace.",
-        "Děti na tabletech hrají hry, ne SPZ."
+        "Silná sezónnost: letní prázdniny a Vánoce tvoří většinu stažení, v listopadu tržby padnou pod 10k Kč.",
+        "Německé „Kennzeichen“ appky s okresy existují (odhad několik) a mohou mít silné recenze.",
+        "Systémy SPZ se mění (DE přidává kódy, CZ nové značky od 2024) – data je potřeba udržovat.",
+        "Děti na zadním sedadle hrají na tabletu Minecraft, ne SPZ bingo – rodičovská představa ≠ realita."
       ],
-      "killer_risk": "Sezónnost a existující DE konkurence.",
-      "mitigation": "Více her v jedné appce, celoroční „víkendové výlety“ marketing.",
+      "killer_risk": "Sezónnost – ideální měsíc je realistický jen v létě.",
+      "mitigation": "Více her v jedné appce, marketing „víkendové výlety“ a lokální výlety po celý rok; sbírka regionů jako dlouhodobá výzva (retence).",
       "build_weeks": 3,
       "scores": {
         "demand": 5,
@@ -2477,7 +2477,7 @@
       "id": "entertainment-29",
       "name": "Open Mic Night Host",
       "tagline": "Přihlašovací listina, rotace a časovač pro open mic a karaoke večery – z jednoho iPadu.",
-      "pitch": "Moderátoři open micu a karaoke večerů řeší papírovou listinu, pořadí, časy a „kdo už byl“. Appka: kiosk přihlášení na iPadu, pořadí se spravedlivou rotací, časovač se světelným signálem pro vystupujícího, historie účinkujících a statistiky. Bez serveru a účtů.",
+      "pitch": "Moderátoři open micu a karaoke večerů řeší každý týden papírovou listinu, pořadí, časy a otázku „kdo už byl a kdo čeká nejdéle“. Appka: kiosk přihlášení na iPadu u baru, spravedlivá rotace (zohledňuje, kdo přišel první a kolikrát zpíval), časovač se světelným signálem pro vystupujícího a historie účinkujících. Bez serveru a účtů. Kombinuje se s Bit Vault pro komiky jako „performer“ dvojice appek.",
       "niche": "Správa open mic/karaoke večerů. Pro karaoke software je na PC, open mic nemá nic.",
       "parent_market": "Karaoke software (KaraFun), eventové nástroje.",
       "target_user": "Moderátoři open micu, KJ (karaoke jockeys), bary.",
@@ -2543,13 +2543,13 @@
       "us_gap": false,
       "us_gap_note": "",
       "devils_advocate": [
-        "Velmi malý trh.",
-        "Papír funguje.",
-        "KJ software už rotaci má.",
-        "Nízký objem hledání."
+        "Trh je velmi malý – odhadem tisíce aktivních moderátorů celosvětově, a „open mic“ hledají hlavně účinkující, ne moderátoři.",
+        "Profesionální KJ software (na PC) už rotaci má zabudovanou.",
+        "Papírová listina je zdarma a „funguje dost dobře“.",
+        "Bary mají slabé Wi-Fi a staré iPady – kompatibilita se starým iOS zvyšuje náklady na vývoj."
       ],
-      "killer_risk": "Trh příliš malý.",
-      "mitigation": "Bundle s Bit Vault.",
+      "killer_risk": "Příliš malý a těžko dosažitelný trh přes ASO.",
+      "mitigation": "Bundle s Bit Vault, rozšíření na „sign-up sheet“ pro jam session a slam poetry, podpora starších iOS verzí.",
       "build_weeks": 2,
       "scores": {
         "demand": 3,
@@ -2565,7 +2565,7 @@
       "id": "entertainment-30",
       "name": "Raffle Draw on TV",
       "tagline": "Tombola na školní akci: slosování lístků na plátně s napínavou animací.",
-      "pitch": "Školní akce, plesy a spolky losují tomboly – ručně z klobouku. Appka: zadáš rozsah lístků a ceny, slosování s animací na projektoru přes AirPlay, protokol výsledků a tisk. Offline, jednoduché, spolehlivé.",
+      "pitch": "Školní ples, spolkový večírek nebo firemní akce – všude se losuje tombola a obvykle ručně z klobouku, zdlouhavě a bez efektu. Appka: zadáš rozsahy a barvy lístků a seznam cen, slosování proběhne s napínavou animací na projektoru přes AirPlay, výsledky se zapíší do protokolu a vytisknou. Offline a spolehlivé i v tělocvičně bez signálu. Organizátoři zaplatí jednou za akci, protože to zvedne atmosféru.",
       "niche": "Slosování tombol pro spolky a školy. Wheel pickery jsou obecné.",
       "parent_market": "Random picker appky (Wheel of Names, Tap Roulette).",
       "target_user": "Organizátoři plesů, škol, spolků.",
@@ -2631,13 +2631,13 @@
       "us_gap": false,
       "us_gap_note": "",
       "devils_advocate": [
-        "Guideline 5.3 – losování může být zaměněno s loterií.",
-        "Zdarma pickery.",
-        "Nízká frekvence.",
-        "Malý trh."
+        "Guideline 5.3: losování a slovo „raffle“ může recenzent zaměnit za loterii/hazard – nutné jasně uvést, že appka nic neprodává.",
+        "Wheel of Names a desítky pickerů jsou zdarma a pro většinu akcí stačí.",
+        "Organizátor pořádá 1–2 akce ročně – nízká opakovaná spotřeba.",
+        "Tradice tomboly (fyzické lístky z klobouku) je součást zábavy; digitální losování může působit neosobně."
       ],
-      "killer_risk": "Zdarma alternativy.",
-      "mitigation": "Profesionální protokol a design.",
+      "killer_risk": "Zdarma pickery a webové kolečka (Wheel of Names).",
+      "mitigation": "Specializace na tombolu s barevnými bloky lístků, protokolem pro spolek a velkým efektem na TV – to obecné pickery neumí.",
       "build_weeks": 2,
       "scores": {
         "demand": 4,

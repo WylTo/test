@@ -1,0 +1,13 @@
+# navigation reviewer verification log (devil's advocate run), date 2026-09-30
+
+## 1) query: site:apps.apple.com mantrailing  (2026-09-30) → CONTESTED, sat ~4 dedicated trailing/tracking log apps (ManTrailing, The Mantrailing App, DogTracks, K9 Tracks) + SAR app
+https://apps.apple.com/us/app/mantrailing/id1634632348   (ManTrailing, Otto Kiefer, $4.99, trail log: age, length, weather, scent article, map screenshots)
+https://apps.apple.com/kz/developer/niklas-kuse/id1063051978   (developer page: The Mantrailing App by Niklas Kuse)
+https://apps.apple.com/ie/app/dogtracks-tracking-training/id847719412   (DogTracks: mantrailing, scent tracking, IGP, blood tracking)
+https://apps.apple.com/us/app/dogtracks-tracking-training/id847719412
+https://apps.apple.com/us/app/rescuedogs-the-searchdog-app/id6476817168   (SAR incl. mantrailing)
+https://apps.apple.com/us/app/plot-routes-touchtrails/id6739418128
+https://apps.apple.com/us/app/k9-tracks-dog-scent-tracking/id6753019946   (GPS scent tracking incl. mantrailing, 2025)
+https://apps.apple.com/us/app/canlyo/id6747003915
+https://apps.apple.com/us/app/tracking-dog-2026/id6476980182
+https://apps.apple.com/us/app/heimathund/id1671137670

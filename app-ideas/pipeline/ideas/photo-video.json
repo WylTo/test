@@ -1,0 +1,2540 @@
+{
+  "category": "Photo & Video",
+  "category_slug": "photo-video",
+  "search_notes": "Offline běh: žádná volání Apple API ani WebSearch. Evidence pro Photo & Video byla tenká (4 hledání): přeplněné jsou inspekce nájmu, skenování negativů a z části podvodní korekce barev; jediná potvrzeně OTEVŘENÁ nika je wigglegram. Lithophane (saturace 1) pochází z evidence kategorie Graphics & Design – může se překrývat s jejím výstupem. Ostatní nápady stojí na znalosti trhu (evidence: knowledge), saturace klíčových slov jsou odhady a blue_ocean je u nich max. 7. URL konkurentů jsou jen ty, které byly v _partial/*.txt jako celé URL; u konkurentů z evidence bez celé URL (FilmLab, ScubAI, Gif 3D Wiggle…) je url prázdná. Před vývojem nutno ověřit apple_fetch.py check hlavně u #03–#09.",
+  "ideas": [
+    {
+      "id": "photo-video-01",
+      "name": "Wiggle 3D – Wigglegram Maker",
+      "tagline": "Retro 3D „wiggle“ fotky z jednoho iPhonu – bez staré Nishiky a bez učení se v editoru.",
+      "pitch": "Wigglegramy (kývající se 3D GIFy ze stereo/multi-lens fotoaparátů Nishika N8000, Reto3D) jsou trend analogové komunity na TikToku a Instagramu. Dnes je lidé ručně skládají v desktopových editorech nebo kupují drahé retro foťáky. Naše appka udělá wigglegram z Live Photo, ze sekvence 3–4 snímků z pohybu ruky, nebo z naskenovaných políček z Nishiky – s automatickým zarovnáním na bod ostrosti. Podle dřívějšího vyhledávání existují jen 2 dedikované appky, takže klíčové slovo je reálně otevřené.",
+      "niche": "Wigglegram / stereo GIF z mobilu. Velcí hráči (CapCut, Lightroom, Picsart) řeší obecnou editaci a GIF; zarovnání stereo snímků na pivot bod je pro ně příliš specifické a komunita analogových fotografů je pro ně malá.",
+      "parent_market": "Foto-efekty a GIF/Live Photo nástroje (Picsart, Lively, intoLive) a hlavně analogová/retro fotografie (FilmLab, Dazz Cam, Huji) – prokazatelně placené trhy s miliony stažení.",
+      "target_user": "Analogoví fotografové s Nishikou/Reto3D (skenují políčka), mladí tvůrci retro obsahu na Instagram/TikTok, fotografové svateb hledající „wow“ efekt.",
+      "features": [
+        "Import 2–4 políček (sken z Nishiky/Reto3D) nebo sekvence z kamery",
+        "Automatické zarovnání na zvolený pivot bod (Vision feature matching)",
+        "Režim „wiggle z pohybu“ – průvodce 3 snímky posunem telefonu",
+        "Export GIF, MP4 smyčka, Live Photo",
+        "Nastavení rychlosti, pořadí (ping-pong), ořez 4:5 / 9:16"
+      ],
+      "offline": "full",
+      "offline_note": "Zarovnání snímků (Vision/Core Image), skládání GIF/MP4 i export běží lokálně. Žádná síť.",
+      "monetization": "Freemium: zdarma 3 exporty s vodoznakem; doživotní odemknutí 6,99 USD (≈ 137 CZK čistého) nebo 1,99 USD/měsíc (≈ 39 CZK čistého).",
+      "revenue_math": "Ideál: klíčová slova wigglegram/wiggle 3d/nishika/3d gif ≈ 3 000 stažení/měs × 4 % konverze = 120 nákupů × 137 CZK ≈ 16 400 CZK čistého/měs. S lokalizací do 50 jazyků +20–30 %.",
+      "revenue_czk_ideal": 16000,
+      "keywords": [
+        {
+          "kw": "wigglegram",
+          "saturation": 2,
+          "competitor": "Wigglegrams",
+          "note": "web evidence: jen 2 dedikované appky (Wigglegrams, Wigglegram Maker) + Gif 3D Wiggle; verdikt OPEN"
+        },
+        {
+          "kw": "wigglegram maker",
+          "saturation": 2,
+          "competitor": "Wigglegram Maker",
+          "note": "web evidence; přesná shoda v titulu jen u 1 appky"
+        },
+        {
+          "kw": "wiggle 3d",
+          "saturation": 2,
+          "competitor": "Gif 3D Wiggle",
+          "note": "odhad z evidence (Gif 3D Wiggle id1222932671); hint neověřen"
+        },
+        {
+          "kw": "nishika",
+          "saturation": 1,
+          "competitor": "Wigglegrams",
+          "note": "odhad – komunitní termín analogových fotografů; poptávka neověřena Apple hinty"
+        }
+      ],
+      "demand_evidence": "Ověřeno (web, 2026-09): na „wigglegram“ jen 2 dedikované appky + 1 starší Gif 3D Wiggle. Předpoklad (neověřeno): trend na TikToku/IG kolem Nishika N8000 a Reto3D; objem vyhledávání v App Store nemáme změřený.",
+      "competitors": [
+        {
+          "name": "Wigglegrams",
+          "url": "https://apps.apple.com/gb/app/wigglegrams/id6480203323",
+          "role": "niche",
+          "note": "Dedikovaná appka (gb), nová; hlavní přímý konkurent."
+        },
+        {
+          "name": "Wigglegram Maker",
+          "url": "https://apps.apple.com/us/app/wigglegram-maker/id1180060929",
+          "role": "niche",
+          "note": "Starší appka (id1180…), pravděpodobně málo aktualizovaná."
+        },
+        {
+          "name": "Gif 3D Wiggle",
+          "url": "",
+          "role": "niche",
+          "note": "Starší GIF 3D appka z evidence (id1222932671), URL v evidenci chybí."
+        },
+        {
+          "name": "FilmLab",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr skenování filmu z evidence – dokazuje platící analogovou komunitu."
+        }
+      ],
+      "evidence": "web",
+      "us_gap": true,
+      "us_gap_note": "Obě dedikované appky působí jako EN-only (neověřeno přes avail). Lokalizace do JP/KR/DE/FR/BR, kde je retro/film trend silný, je snadná výhoda.",
+      "devils_advocate": [
+        "Trend wigglegramů může odeznít během 12–18 měsíců – typický TikTok cyklus.",
+        "„Wiggle z pohybu jedné ruky“ dává nekonzistentní paralaxu; lidé mohou být zklamaní oproti skutečné Nishice.",
+        "Apple už z Live Photo umí „Bounce/Loop“ – část uživatelů to bude považovat za dostatečné.",
+        "Nishika je ochranná známka – nesmí být v názvu appky (2.3.7 / trademark)."
+      ],
+      "killer_risk": "Módní vlna opadne dřív, než appka nasbírá hodnocení.",
+      "mitigation": "Postavit to jako obecný „3D/stereo z fotek“ nástroj (wiggle + anaglyf + cross-view), rychlé MVP za 2 týdny, validovat na trendu a přidat evergreen funkce.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 8,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "photo-video-02",
+      "name": "Litho Studio – Photo to Lithophane",
+      "tagline": "Z fotky 3D-tisknutelná litofánie (STL/3MF) přímo v iPhonu – plochá, zakřivená, lampa i srdce.",
+      "pitch": "Litofánie (fotka, která se ukáže až při podsvícení) je jeden z nejpopulárnějších dárků, které si majitelé 3D tiskáren tisknou. Dnes k tomu používají webové nástroje (3dp.rocks, ItsLitho), které na mobilu fungují špatně. V App Store je jen Lit Pic, a to je tisková služba, ne generátor STL. My vygenerujeme STL/3MF lokálně, s náhledem podsvícení a presety pro Bambu/Prusa – a boom domácích tiskáren (Bambu Lab A1 mini) nám hraje do karet.",
+      "niche": "On-device generátor litofánií pro 3D tisk. Velké foto appky 3D tisk neřeší, slicery (Bambu Handy) řeší tisk, ne tvorbu modelů z fotky.",
+      "parent_market": "3D tisk a personalizované dárky z fotek; webové nástroje ItsLitho (placené Pro plány) a 3dp.rocks dokazují poptávku; spotřebitelské tiskárny Bambu Lab/Prusa se prodávají ve statisících kusů.",
+      "target_user": "Majitelé domácích 3D tiskáren (hobby, rodiče, Etsy prodejci personalizovaných lamp).",
+      "features": [
+        "Fotka → výšková mapa → STL/3MF (plochá, zakřivená, válec pro lampu, srdce, kostka)",
+        "Realistický náhled podsvícení",
+        "Presety tloušťky pro PLA bílé, vrstvu 0,1–0,2 mm",
+        "Rámeček, text, podstavec",
+        "Export do Soubory / sdílení do sliceru"
+      ],
+      "offline": "full",
+      "offline_note": "Generování sítě (mesh) i export STL/3MF počítá telefon lokálně; náhled v SceneKit/RealityKit.",
+      "monetization": "Zdarma plochá litofánie s omezeným rozlišením; Pro doživotně 9,99 USD (≈ 195 CZK čistého) – válec, srdce, lampa, vysoké rozlišení, 3MF.",
+      "revenue_math": "Ideál: lithophane/lithophane maker/3d print photo ≈ 2 000 stažení/měs × 5 % = 100 × 195 CZK ≈ 19 500 CZK čistého/měs. Sezónní špička před Vánoci a Dnem matek.",
+      "revenue_czk_ideal": 19500,
+      "keywords": [
+        {
+          "kw": "lithophane",
+          "saturation": 1,
+          "competitor": "Lit Pic - Lithophane Creator",
+          "note": "web evidence: saturace 1, jediný výsledek je tisková služba Lit Pic; LithoCam zmíněna bez URL"
+        },
+        {
+          "kw": "lithophane maker",
+          "saturation": 1,
+          "competitor": "Lit Pic - Lithophane Creator",
+          "note": "web evidence; verdikt OPEN"
+        },
+        {
+          "kw": "photo to stl",
+          "saturation": 2,
+          "competitor": "LithoCam",
+          "note": "odhad; generické „image to STL“ appky pravděpodobně existují"
+        },
+        {
+          "kw": "3d print photo",
+          "saturation": 2,
+          "competitor": "Lit Pic - Lithophane Creator",
+          "note": "odhad; hint neověřen"
+        }
+      ],
+      "demand_evidence": "Ověřeno (web evidence z kategorie Graphics & Design): „lithophane maker“ saturace 1, jen Lit Pic (tisková služba). Poptávku dokládají webové nástroje ItsLitho a 3dp.rocks (znalost). Počet hledání v App Store neověřen.",
+      "competitors": [
+        {
+          "name": "Lit Pic - Lithophane Creator",
+          "url": "https://apps.apple.com/us/app/lit-pic-lithophane-creator/id1489604752",
+          "role": "niche",
+          "note": "Tisková služba (objednáš a pošlou ti hotovou litofánii), ne STL generátor."
+        },
+        {
+          "name": "LithoCam",
+          "url": "",
+          "role": "niche",
+          "note": "Zmíněná v evidenci (Masaharu Tsukamoto) jako STL maker, URL nenalezena – nutno ověřit sílu."
+        },
+        {
+          "name": "ItsLitho",
+          "url": "",
+          "role": "parent",
+          "note": "Webový lídr s placeným Pro – důkaz monetizace (není v App Store)."
+        }
+      ],
+      "evidence": "web",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Bambu Lab/MakerWorld mají vlastní online generátory litofánií a mohou je dát do Bambu Handy (Sherlock od výrobce tiskárny).",
+        "Uživatelé 3D tisku jsou zvyklí na zdarma webové nástroje – ochota platit 10 USD je nejistá.",
+        "Kategorie Photo & Video nemusí být správná – hledači 3D tisku mohou hledat v Utilities/Graphics; nápad se kryje i s kategorií Graphics & Design.",
+        "Kvalitní síť pro válec/srdce bez artefaktů je výpočetně náročnější, než vypadá."
+      ],
+      "killer_risk": "Výrobce tiskáren (Bambu) přidá generátor zdarma do své appky.",
+      "mitigation": "Podpora všech tiskáren a formátů (3MF s barevnými vrstvami pro AMS – „barevná litofánie“), rychle nasbírat hodnocení a cílit i na Etsy prodejce (dávkové zpracování).",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 8,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "photo-video-03",
+      "name": "ArtBox – Kids Art Keeper",
+      "tagline": "Vyfoť dětské obrázky, vyhoď papíry, nech si vzpomínky – bez předplatného a bez cloudu cizí firmy.",
+      "pitch": "Rodiče mají doma hory dětských kreseb a výtvorů ze školky. V USA tuhle potřebu vydělává Artkive (skenování + tištěné knihy), ale je to americká služba, anglicky, postavená na zasílání a tisku. My nabídneme offline aplikaci, která kresbu automaticky ořízne, vyrovná, rozdělí podle dítěte a věku a na konci roku vytvoří PDF „ročenku“ k tisku u jakékoli lokální tiskárny fotoknih. V 50 jazycích, se soukromím na zařízení.",
+      "niche": "Archiv dětské tvorby lokalizovaný mimo USA. Artkive a Keepy stojí na službách a US trhu; obecné skenery (Photomyne) nejsou pro dětské kresby a nerozlišují dítě/rok.",
+      "parent_market": "Rodinné vzpomínky a fotoknihy (Artkive, Keepy, Photomyne, fotokniha služby) – rodiče jsou jedna z nejochotněji platících skupin.",
+      "target_user": "Rodiče dětí 2–12 let, prarodiče, učitelky ve školce (portfolio dítěte).",
+      "features": [
+        "Automatický ořez a vyrovnání kresby (VNDocumentSegmentation) + odlesky",
+        "Profily dětí, věk automaticky z data",
+        "Časová osa a štítky (škola, doma, dovolená)",
+        "Roční PDF „ročenka“ k tisku a koláže",
+        "iCloud sdílení s druhým rodičem (CloudKit)"
+      ],
+      "offline": "full",
+      "offline_note": "Detekce a ořez dokumentu, galerie i generování PDF lokálně; synchronizace volitelně přes iCloud (Apple, ne náš server).",
+      "monetization": "Zdarma 30 kreseb; Pro 19,99 USD/rok (≈ 391 CZK čistého) nebo doživotně 29,99 USD (≈ 586 CZK).",
+      "revenue_math": "Ideál: kids art/artwork keeper/children drawings ve 50 jazycích ≈ 2 500 stažení/měs × 3 % = 75 předplatných × ~450 CZK (mix) ≈ 33 750 CZK/rok-kohorta → ustálený stav ≈ 15 000 CZK čistého/měs po 6 měsících.",
+      "revenue_czk_ideal": 15000,
+      "keywords": [
+        {
+          "kw": "kids art",
+          "saturation": 4,
+          "competitor": "Artkive",
+          "note": "odhad (knowledge); Artkive a Keepy drží titul, jinak slabé"
+        },
+        {
+          "kw": "kids artwork",
+          "saturation": 3,
+          "competitor": "Keepy",
+          "note": "odhad"
+        },
+        {
+          "kw": "children drawings",
+          "saturation": 2,
+          "competitor": "Artkive",
+          "note": "odhad; lokalizované varianty (Kinderzeichnungen, dětské kresby) pravděpodobně prázdné"
+        },
+        {
+          "kw": "school artwork",
+          "saturation": 2,
+          "competitor": "Artkive",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno živými daty. Ze znalosti trhu: Artkive (US) a Keepy existují léta a monetizují předplatným/tiskem, což dokazuje ochotu platit. Předpoklad: lokalizovaná klíčová slova jsou prázdná.",
+      "competitors": [
+        {
+          "name": "Artkive",
+          "url": "",
+          "role": "us-only",
+          "note": "US služba skenování + tištěné knihy, anglicky; model prokázaný v USA."
+        },
+        {
+          "name": "Keepy",
+          "url": "",
+          "role": "niche",
+          "note": "Rodinný archiv s cloudem a předplatným."
+        },
+        {
+          "name": "Photomyne",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr skenování fotoalb – generický, ne pro dětské kresby."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": true,
+      "us_gap_note": "Artkive je silně US-centrický (angličtina, tisk v USA). Stejná potřeba existuje v DE/FR/CZ/JP – lokalizovaná offline appka s PDF pro lokální tisk nemá (předpoklad) konkurenci.",
+      "devils_advocate": [
+        "Apple Photos/Fotky už umí skenovat dokumenty a tvořit alba – řada rodičů nebude vidět důvod platit.",
+        "Retence: rodiče nadšeně naskenují 50 kreseb a pak zapomenou – předplatné se neobnoví.",
+        "Generický název „kids art“ sdílí hledání s kreslicími appkami pro děti (jiný záměr).",
+        "Guideline 1.3/Kids kategorie – nesmíme cílit na děti jako uživatele, jen na rodiče."
+      ],
+      "killer_risk": "Nízká ochota platit předplatné za „jen skenování“, které rodič vnímá jako funkci Fotek.",
+      "mitigation": "Doživotní nákup místo předplatného, silný hook = roční PDF kniha a „před/po“ koláž vývoje kresby podle věku; připomínka na konci školního roku.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "photo-video-04",
+      "name": "PhotoConsent – Model Release & GDPR",
+      "tagline": "Souhlas s focením podepsaný na místě – v jazyce modelu a podle GDPR, bez cloudu.",
+      "pitch": "Fotografové, videotvůrci i školy potřebují podepsaný souhlas s použitím fotek. Lídr Easy Release je americký, postavený na US „model release“ a angličtině. V EU platí GDPR a národní právo k podobizně (DE KUG, CZ občanský zákoník, FR droit à l’image) a fotografové si dnes tisknou papíry. Nabídneme šablony souhlasů pro 30+ zemí, podpis prstem, fotku průkazu, PDF – vše uložené jen v telefonu.",
+      "niche": "Lokalizované souhlasy s pořízením a užitím podobizny (model release / GDPR consent). US appky neřeší evropské právo a jazyky.",
+      "parent_market": "Obchodní nástroje pro fotografy (Easy Release, Release Me, Honeybook/Dubsado formuláře) – profesionálové platí 10–30 USD bez váhání.",
+      "target_user": "Fotografové na volné noze, video štáby, marketingové týmy, školy a spolky (fotky dětí na web).",
+      "features": [
+        "Šablony model/property release a GDPR souhlasu pro EU země + US",
+        "Dvoujazyčné formuláře (jazyk fotografa + jazyk modelu)",
+        "Podpis prstem, fotka modelu a dokladu, GPS/čas",
+        "PDF s hashovým otiskem, sdílení e-mailem",
+        "Evidence souhlasů pro odvolání (GDPR čl. 7)"
+      ],
+      "offline": "full",
+      "offline_note": "Formuláře, podpis, PDF i archiv lokálně; volitelná záloha přes iCloud.",
+      "monetization": "Zdarma 3 souhlasy; Pro 29,99 USD/rok (≈ 586 CZK čistého) nebo 4,99 USD/měs.",
+      "revenue_math": "Ideál: model release/photo consent/GDPR consent + lokalizované termíny (Einverständniserklärung Foto, droit à l'image) ≈ 1 500 stažení/měs × 4 % = 60 × 586 CZK ≈ 35 000 CZK/kohorta → ustáleně ≈ 20 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 20000,
+      "keywords": [
+        {
+          "kw": "model release",
+          "saturation": 5,
+          "competitor": "Easy Release",
+          "note": "odhad (knowledge); Easy Release silný lídr, pár dalších"
+        },
+        {
+          "kw": "photo consent form",
+          "saturation": 2,
+          "competitor": "Easy Release",
+          "note": "odhad"
+        },
+        {
+          "kw": "gdpr consent",
+          "saturation": 3,
+          "competitor": "Easy Release",
+          "note": "odhad; mnoho výsledků jsou firemní GDPR nástroje, jiný záměr"
+        },
+        {
+          "kw": "property release",
+          "saturation": 2,
+          "competitor": "Easy Release",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno živými daty. Znalost: Easy Release je dlouhodobě placená appka (≈10 USD) s tisíci hodnocení – prokazuje ochotu platit. Evropská lokalizovaná poptávka je předpoklad.",
+      "competitors": [
+        {
+          "name": "Easy Release",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr, US právní rámec, placená appka + in-app."
+        },
+        {
+          "name": "Release Me",
+          "url": "",
+          "role": "niche",
+          "note": "Menší US konkurent."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": true,
+      "us_gap_note": "US model-release appky jsou anglické a právně US. V DE/FR/CZ/PL/IT je souhlas s podobiznou řešen jinak – lokalizované šablony jsou reálná mezera (předpoklad, neověřeno přes avail).",
+      "devils_advocate": [
+        "Právní šablony: chyba v textu může poškodit uživatele – nutný právní disclaimer a revize šablon (drahé).",
+        "Fotografové často používají obecné e-podpisy (Adobe Sign, DocuSign) – nemusí chtít další appku.",
+        "Národní právo se mění; udržování 30 šablon je trvalá práce.",
+        "Malá skupina profesionálů v každé zemi – součet jazyků musí vyjít."
+      ],
+      "killer_risk": "Chybná/zastaralá právní šablona a z toho plynoucí reputační riziko.",
+      "mitigation": "Šablony jako „vzor k úpravě“ s jasným disclaimerem, plně editovatelné; začít 8 největšími trhy s ověřenými vzory od profesních komor.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 8,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      }
+    },
+    {
+      "id": "photo-video-05",
+      "name": "SafeShare – Blur Kids' Faces",
+      "tagline": "Fotka ze školky pro rodiče – všechny tváře rozmazané kromě jejich dítěte, jedním klepnutím.",
+      "pitch": "Učitelky ve školkách, trenéři a vedoucí kroužků denně posílají fotky rodičům, ale GDPR a rodiče bez souhlasu vyžadují, aby ostatní děti nebyly poznat. Dnes to dělají ručně v editoru nebo nefotí vůbec. Naše appka detekuje všechny obličeje na zařízení, nechá označit „svoje“ dítě a zbytek rozmaže/zakryje emoji – dávkově pro celé album. Žádná fotka dětí neopustí telefon, což je hlavní prodejní argument.",
+      "niche": "Dávkové anonymizování dětských tváří pro pedagogy a spolky. Obecné blur appky nejsou dávkové, neumí výjimku pro jedno dítě a neprodávají „GDPR bezpečnost“.",
+      "parent_market": "Foto editace a privacy nástroje (Blur Photo, Censor apps, Signal blur) – široký trh; plus EdTech komunikace se školkami (Brightwheel, Kindy apps).",
+      "target_user": "Učitelky MŠ/ZŠ, trenéři mládeže, vedoucí skautů a táborů, rodiče sdílející fotky z oslav.",
+      "features": [
+        "On-device detekce obličejů (Vision) v dávce celého alba",
+        "„Tohle dítě nerozmazávat“ – výběr tváře, sledování napříč fotkami",
+        "Styly: rozmazání, pixely, emoji, barevný kruh",
+        "Kontrolní náhled nejistých detekcí",
+        "Export bez metadat (GPS)"
+      ],
+      "offline": "full",
+      "offline_note": "Detekce i rozmazání přes Vision/Core Image v telefonu; fotky se nikam neposílají.",
+      "monetization": "Zdarma 10 fotek/den; Pro 2,99 USD/měs (≈ 58 CZK) nebo 19,99 USD/rok (≈ 391 CZK); licence pro instituce přes Volume Purchase.",
+      "revenue_math": "Ideál: blur faces/blur kids faces/anonymize photo + lokalizace (Gesichter verpixeln, rozmazat obličej) ≈ 3 000 stažení/měs × 3 % = 90 × ~250 CZK (mix měs/rok) ≈ 22 500 CZK čistého/měs po náběhu.",
+      "revenue_czk_ideal": 18000,
+      "keywords": [
+        {
+          "kw": "blur faces",
+          "saturation": 6,
+          "competitor": "Blur Photo Editor",
+          "note": "odhad; generický termín je plný, ale cílíme nišu"
+        },
+        {
+          "kw": "blur kids faces",
+          "saturation": 1,
+          "competitor": "Blur Photo Editor",
+          "note": "odhad; dedikovanou appku neznám"
+        },
+        {
+          "kw": "anonymize photo",
+          "saturation": 3,
+          "competitor": "Obscura",
+          "note": "odhad"
+        },
+        {
+          "kw": "gdpr photo",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; hint neověřen"
+        }
+      ],
+      "demand_evidence": "Neověřeno živými daty. Předpoklad: GDPR v EU školství (CZ, DE, AT) vede k praxi rozmazávání dětí; generické blur appky mají miliony stažení (znalost), dedikovaná dávková appka pro pedagogy podle znalosti chybí.",
+      "competitors": [
+        {
+          "name": "Blur Photo Editor",
+          "url": "",
+          "role": "parent",
+          "note": "Generické ruční rozmazání, bez dávky a výjimky."
+        },
+        {
+          "name": "Obscura",
+          "url": "",
+          "role": "niche",
+          "note": "Privacy editor pro redakci obrázků (znalost), ne dávkový."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Apple může přidat „rozmazat obličeje“ do Fotek (už má odstraňování objektů) – Sherlock.",
+        "Detekce selže u profilů a malých tváří v davu – jedna nerozmazaná tvář = GDPR incident, za který nás rodič obviní.",
+        "Učitelky nechtějí platit ze svého; školy nakupují pomalu a přes tendry.",
+        "Klíčové slovo „blur faces“ je saturované; dlouhý chvost může mít malý objem."
+      ],
+      "killer_risk": "Chybná detekce a z toho plynoucí incident s fotkou dítěte, který zničí důvěru.",
+      "mitigation": "Povinný kontrolní krok s označením nejistých tváří, ruční doplnění; marketing přes ASO lokalizované fráze a šablony „GDPR pro školky“.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "photo-video-06",
+      "name": "ScoreCam – Game Video with Score",
+      "tagline": "Natoč zápas dítěte se skóre a časem přímo v obraze – florbal, házená, volejbal, hokej.",
+      "pitch": "Rodiče a amatérští trenéři natáčejí zápasy na iPhone, ale bez skóre je video pro prarodiče i pro rozbor nečitelné. V USA existují scoreboard kamery pro baseball/basketbal, ale evropské sporty (florbal, házená, volejbal, hokej s periodami) chybí a appky jsou anglicky. Naše appka vypálí skóre, čas, periodu a jména týmů do videa v reálném čase a umí označit góly pro rychlý sestřih.",
+      "niche": "Scoreboard overlay pro amatérské evropské sporty. US appky cílí na baseball/basketbal/US fotbal; profi (Hudl, Veo) vyžadují hardware a cloud.",
+      "parent_market": "Sportovní video (Hudl, Veo, GameChanger, SlowMo video analýza) – obří, dobře monetizovaný trh s předplatnými.",
+      "target_user": "Rodiče mládežnických hráčů, amatérské kluby, trenéři florbalu/házené/volejbalu v CZ, SE, FI, DE, PL, CH.",
+      "features": [
+        "Nahrávání s živým skóre, časem a periodou (pravidla podle sportu)",
+        "Ovládání skóre velkými tlačítky / z Apple Watch",
+        "Značky gólů → automatický sestřih highlightů",
+        "Loga a barvy týmů, přednastavené šablony sportů",
+        "Export 1080p/4K do Fotek"
+      ],
+      "offline": "full",
+      "offline_note": "AVFoundation záznam s overlay kompozicí v reálném čase, střih lokálně; žádný server.",
+      "monetization": "Zdarma 1 zápas/týden s vodoznakem; Pro 4,99 USD/měs (≈ 98 CZK) nebo 29,99 USD/rok (≈ 586 CZK).",
+      "revenue_math": "Ideál: scoreboard camera/game video/floorball + lokalizace ≈ 2 500 stažení/měs × 4 % = 100 předplatitelů/měs; při mixu 50 % ročních ≈ 100 × 340 CZK ≈ 34 000 CZK nové tržby/měs, ustáleně ≈ 20 000 CZK čistého/měs (sezónní).",
+      "revenue_czk_ideal": 20000,
+      "keywords": [
+        {
+          "kw": "scoreboard camera",
+          "saturation": 3,
+          "competitor": "ScoreCam",
+          "note": "odhad (knowledge); pár US appek"
+        },
+        {
+          "kw": "sports video scoreboard",
+          "saturation": 3,
+          "competitor": "GameChanger",
+          "note": "odhad"
+        },
+        {
+          "kw": "floorball",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; výsledky jsou hlavně svazové appky a hry"
+        },
+        {
+          "kw": "handball video",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno živými daty pro overlay. Web evidence ze Sports ukazuje, že generická video analýza je saturovaná (~8 appek, CMV, CoachCam, SlowMo) – tedy sportovní video je placený trh. Nika evropských sportů je předpoklad.",
+      "competitors": [
+        {
+          "name": "SlowMo - Video Analysis",
+          "url": "https://apps.apple.com/us/app/slowmo-video-analysis/id843274461",
+          "role": "parent",
+          "note": "Web evidence: saturovaná generická video analýza – důkaz trhu, jiný záměr."
+        },
+        {
+          "name": "CoachCam: Video Analysis",
+          "url": "https://apps.apple.com/us/app/coachcam-video-analysis/id6764468152",
+          "role": "parent",
+          "note": "Nová (2026) video appka pro trenéry z evidence."
+        },
+        {
+          "name": "GameChanger",
+          "url": "",
+          "role": "us-only",
+          "note": "US lídr (baseball/softball) se skóre a streamem, cloudový."
+        },
+        {
+          "name": "ScoreCam",
+          "url": "",
+          "role": "niche",
+          "note": "Scoreboard overlay kamera (znalost), anglicky, US sporty."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": true,
+      "us_gap_note": "US appky se skóre v obraze (GameChanger aj.) jsou postavené na US sportech a angličtině; florbal/házená/volejbal v CZ/SE/FI/DE nemají lokalizovanou obdobu (předpoklad).",
+      "devils_advocate": [
+        "Rodič u hřiště nechce současně točit i klikat skóre – UX riziko; Watch ovládání je nutnost.",
+        "Sezónnost: mimo sezónu (léto) propad předplatných.",
+        "Kluby přecházejí na Veo/automatické kamery; amatérský segment může být malý.",
+        "Každý sport má jiná pravidla času – rozsah práce roste."
+      ],
+      "killer_risk": "Nepohodlné ovládání skóre během natáčení → appka se po 1 zápase nepoužívá.",
+      "mitigation": "Doplnit skóre až po zápase ze značek na časové ose (post-edit overlay) + Watch dálkové ovládání; začít florbalem a házenou (silné komunity CZ/SE/DE).",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 7,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "photo-video-07",
+      "name": "MirrorStep – Dance Practice Loop",
+      "tagline": "Nauč se choreografii: zrcadlo, zpomalení na 0,5×, A–B smyčka a vedle toho vlastní kamera.",
+      "pitch": "Miliony lidí se učí K-pop a TikTok choreografie z videí. Potřebují tři věci, které YouTube ani Fotky neumí dohromady: zrcadlově otočit video, zpomalit bez změny výšky tónu a opakovat úsek. Naše appka k tomu přidá split-screen s přední kamerou pro srovnání s vlastním pohybem. Vše z videí v galerii, offline.",
+      "niche": "Tréninkový přehrávač pro tanec z vlastních videí. Steezy/Just Dance prodávají obsah; obecné video přehrávače nemají zrcadlo+smyčku+kameru.",
+      "parent_market": "Taneční lekce a video analýza (Steezy, CoachMyVideo, SlowMo, Coach's Eye) – předplatné 10–20 USD/měs prokazuje ochotu platit.",
+      "target_user": "Teenageři a dospělí učící se K-pop/TikTok tance, studenti tanečních škol, cover dance skupiny.",
+      "features": [
+        "Zrcadlení, zpomalení 0,25–1× se zachovanou výškou tónu",
+        "A–B smyčky s pojmenovanými úseky (počítání 8)",
+        "Split-screen: vzor vedle přední kamery",
+        "Nahrání vlastního pokusu a srovnání vedle sebe",
+        "Metronom na 8-počty"
+      ],
+      "offline": "full",
+      "offline_note": "AVPlayer s time-pitch, kamera a nahrávání lokálně; videa jen z galerie uživatele (žádný obsah třetích stran).",
+      "monetization": "Zdarma zrcadlo + zpomalení; Pro 3,99 USD/měs (≈ 78 CZK) nebo 24,99 USD/rok (≈ 489 CZK) – smyčky, split-screen, srovnání.",
+      "revenue_math": "Ideál: dance mirror/dance practice/mirror video/slow down video ≈ 4 000 stažení/měs × 2,5 % = 100 × ~280 CZK (mix) ≈ 28 000 CZK; realisticky ustáleně ≈ 15 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 15000,
+      "keywords": [
+        {
+          "kw": "dance mirror",
+          "saturation": 3,
+          "competitor": "Mirror Dance",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "dance practice",
+          "saturation": 4,
+          "competitor": "Steezy",
+          "note": "odhad; Steezy dominuje, ale je obsahová platforma"
+        },
+        {
+          "kw": "mirror video",
+          "saturation": 5,
+          "competitor": "Video Mirror",
+          "note": "odhad; generické zrcadlové editory"
+        },
+        {
+          "kw": "kpop dance practice",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; hint neověřen"
+        }
+      ],
+      "demand_evidence": "Web evidence (Sports): generická video analýza/slow-mo je saturovaná (~8 appek), což dokládá poptávku po zpomalování videa. Taneční nika a K-pop poptávka jsou předpoklad ze znalosti (populární YouTube „mirrored + slowed“ kanály).",
+      "competitors": [
+        {
+          "name": "CMV: CoachMyVideo",
+          "url": "https://apps.apple.com/us/app/cmv-slow-frame-frame-video-analysis-coachmyvideo/id499915119",
+          "role": "parent",
+          "note": "Web evidence: sportovní frame-by-frame analýza, ne taneční UX."
+        },
+        {
+          "name": "CoachView Slowmo Video Player",
+          "url": "https://apps.apple.com/us/app/coachview-slowmo-video-player/id1662383024",
+          "role": "parent",
+          "note": "Web evidence: slow-mo přehrávač pro trenéry."
+        },
+        {
+          "name": "Steezy",
+          "url": "",
+          "role": "parent",
+          "note": "Taneční lekce s předplatným (vlastní obsah, server)."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "YouTube a TikTok už umí zpomalení a některé zrcadlo – Sherlock od platforem.",
+        "Uživatelé chtějí přímo TikTok/YouTube odkazy – stahování videí z platforem porušuje jejich podmínky (nesmíme).",
+        "Cílová skupina teenagerů má nízkou ochotu platit předplatné.",
+        "Guideline 4.3: video přehrávačů se zrcadlem je hodně – diferenciace musí být zjevná."
+      ],
+      "killer_risk": "Nutnost mít video v galerii (ne odkaz) odradí většinu uživatelů.",
+      "mitigation": "Import přes Sdílet → uložit do galerie (uživatel si video nahraje sám, např. záznam obrazovky), jednorázový nákup 7,99 USD pro teen segment.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "photo-video-08",
+      "name": "Tooth Fairy Cam",
+      "tagline": "Chyť zoubkovou vílu (nebo Myšáka Péreze) na fotku – kouzlo pro děti v jejich jazyce.",
+      "pitch": "V USA je „catch the tooth fairy“ fotka zavedený rodičovský rituál a existuje pro něj několik appek. Jenže jinde nosí zub jiná postava: Ratoncito Pérez (ES/LatAm), la Petite Souris (FR), Zahnfee (DE), v CZ zoubková víla. Uděláme realistické AR/foto kompozice přímo do fotky dětského pokoje s postavami podle země a jazyka. Jednorázový nákup, dárek pro rodiče.",
+      "niche": "Lokalizované „zoubkové“ postavy a rituály. US appky mají jen americkou vílu a angličtinu.",
+      "parent_market": "„Catch Santa / Elf“ kamera appky (sezónní hity s miliony stažení) a rodičovské zábavní foto appky.",
+      "target_user": "Rodiče dětí 5–8 let (věk výpadku mléčných zubů), prarodiče.",
+      "features": [
+        "Vložení animované postavy do fotky/Live Photo pokoje (AR + stíny)",
+        "Postavy podle země: víla, Ratoncito Pérez, Petite Souris…",
+        "Dopis od víly/myšáka v jazyce dítěte + certifikát zoubku",
+        "Deník zoubků s daty",
+        "Export video „důkazu“"
+      ],
+      "offline": "full",
+      "offline_note": "Kompozice (RealityKit / Core Image), animace a dopisy bundlované v appce.",
+      "monetization": "Zdarma 1 postava; odemknutí všech 5,99 USD (≈ 117 CZK čistého) jednorázově; balíčky postav 1,99 USD.",
+      "revenue_math": "Ideál: tooth fairy/ratoncito perez/petite souris/zahnfee ≈ 4 000 stažení/měs (celoročně – zuby padají stále) × 3 % = 120 × 117 CZK ≈ 14 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 14000,
+      "keywords": [
+        {
+          "kw": "tooth fairy",
+          "saturation": 6,
+          "competitor": "Tooth Fairy Camera",
+          "note": "odhad (knowledge); v US titulech hodně appek"
+        },
+        {
+          "kw": "ratoncito perez",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; ES/LatAm lokalita, reverzní mezera"
+        },
+        {
+          "kw": "petite souris",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; FR"
+        },
+        {
+          "kw": "zahnfee",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; DE"
+        }
+      ],
+      "demand_evidence": "Neověřeno živými daty. Evidence Entertainment zmiňuje „tooth fairy camera (US gap; Ratoncito Pérez ES/LatAm)“ jako neprověřeného kandidáta. Znalost: v US existuje řada Catch-the-Tooth-Fairy appek.",
+      "competitors": [
+        {
+          "name": "Tooth Fairy Camera",
+          "url": "",
+          "role": "us-only",
+          "note": "US appky „catch the tooth fairy“ (více vývojářů), anglicky."
+        },
+        {
+          "name": "Catch Santa Claus",
+          "url": "",
+          "role": "parent",
+          "note": "Sezónní vzor stejného modelu (kouzelná postava ve fotce)."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": true,
+      "us_gap_note": "Model „chyť vílu na fotku“ je prokázaný v US; lokální postavy (Ratoncito Pérez, Petite Souris) v ES/LatAm/FR pravděpodobně nemají kvalitní appku.",
+      "devils_advocate": [
+        "Nízká cena a jednorázovost – na 10 000 CZK je potřeba vysoký objem.",
+        "Kvalita kompozice rozhoduje; levně vypadající víla = 1★ recenze.",
+        "Ratoncito Pérez je chráněná postava? (literární postava z 1894 – volná, ale moderní vizuály, např. z filmu, chráněné) – nutný vlastní design.",
+        "Kids kategorie/COPPA – appka nesmí sbírat data, reklamy jen s omezeními."
+      ],
+      "killer_risk": "Objem v jednotlivých lokalitách je malý a jednorázová cena nedá 10k CZK.",
+      "mitigation": "Balíček s dalšími postavami (Velikonoční zajíček, Ježíšek, sv. Mikuláš) jako sezónní in-appy, aby jedna appka sbírala tržby celý rok.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "photo-video-09",
+      "name": "CullPro – Photo Culling for iPad",
+      "tagline": "Z 2 000 fotek ze svatby vyber 300 za čtvrt hodiny – ostrost, zavřené oči a duplicity pozná iPad sám.",
+      "pitch": "Fotografové tráví hodiny výběrem fotek (culling). Desktop nástroje s AI (Aftershoot, Narrative Select) jsou předplatné pro Mac/PC a na iPadu chybí. S iPad Pro/M-čipem a SD čtečkou jde vše lokálně: seskupit série, označit rozmazané snímky a zavřené oči, rychle hvězdičkovat a exportovat výběr do Lightroomu. Pro fotografy, kteří na cestě nechtějí notebook.",
+      "niche": "Culling na iPadu z SD karty s on-device AI. Aftershoot/Narrative/Photo Mechanic jsou desktop; iPad appky nabízejí jen prohlížení.",
+      "parent_market": "Workflow software fotografů (Aftershoot 10–20 USD/měs, Photo Mechanic 150 USD, Lightroom) – profesionálové platí vysoké částky.",
+      "target_user": "Svatební, eventoví a sportovní fotografové s iPadem; cestovatelé s full-frame fotoaparátem.",
+      "features": [
+        "Import RAW+JPEG z SD/USB-C bez duplikace do Fotek",
+        "Skupiny podobných snímků + výběr nejlepšího",
+        "Detekce neostrosti a zavřených očí (Vision)",
+        "Rychlé hodnocení klávesnicí/Pencil, XMP sidecar",
+        "Export výběru do Lightroomu/Souborů"
+      ],
+      "offline": "full",
+      "offline_note": "Analýza obrázků (Vision, Core ML) i XMP export lokálně; žádný cloud.",
+      "monetization": "Předplatné 7,99 USD/měs (≈ 156 CZK čistého) nebo 59,99 USD/rok (≈ 1 172 CZK); 7denní trial.",
+      "revenue_math": "Ideál: photo culling/cull photos/raw culling ≈ 800 stažení/měs × 5 % = 40 × ~700 CZK (mix) ≈ 28 000 CZK; ustáleně ≈ 20 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 20000,
+      "keywords": [
+        {
+          "kw": "photo culling",
+          "saturation": 3,
+          "competitor": "Aftershoot",
+          "note": "odhad (knowledge); na iOS málo dedikovaných"
+        },
+        {
+          "kw": "cull photos",
+          "saturation": 2,
+          "competitor": "Photo Mechanic",
+          "note": "odhad"
+        },
+        {
+          "kw": "raw photo viewer",
+          "saturation": 5,
+          "competitor": "Raw Power",
+          "note": "odhad; obsazenější"
+        },
+        {
+          "kw": "blurry photo finder",
+          "saturation": 5,
+          "competitor": "Gemini Photos",
+          "note": "odhad; spotřebitelské čističe"
+        }
+      ],
+      "demand_evidence": "Neověřeno živými daty. Znalost: Aftershoot a Narrative Select vybudovaly firmy s desítkami tisíc platících fotografů; na iPad verzi komunita (Reddit r/WeddingPhotography) volá. Objem App Store hledání neznámý – pravděpodobně malý.",
+      "competitors": [
+        {
+          "name": "Aftershoot",
+          "url": "",
+          "role": "parent",
+          "note": "AI culling pro desktop, předplatné."
+        },
+        {
+          "name": "Photo Mechanic",
+          "url": "",
+          "role": "parent",
+          "note": "Klasika pro rychlý výběr, desktop."
+        },
+        {
+          "name": "Raw Power",
+          "url": "",
+          "role": "niche",
+          "note": "RAW editor/prohlížeč na iPadu, bez AI cullingu."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Aftershoot/Narrative mohou vydat iPad verzi – mají peníze i značku.",
+        "Lightroom Mobile přidává AI výběr (Adobe „Assisted Culling“) – Sherlock.",
+        "Profesionálové na iPadu jsou menšina; ASO objem klíčových slov je malý.",
+        "RAW formáty (CR3, NEF, ARW) a výkon při 2 000 snímcích – náročné na paměť."
+      ],
+      "killer_risk": "Adobe dá AI culling do Lightroom Mobile zdarma pro předplatitele.",
+      "mitigation": "Zaměřit se na rychlost a nezávislost (bez Adobe účtu), jednorázová licence pro ty, kdo nenávidí předplatné; beta s fotografy z komunit.",
+      "build_weeks": 8,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 8,
+        "build_ease": 3,
+        "offline_fit": 10,
+        "safety": 5
+      }
+    },
+    {
+      "id": "photo-video-10",
+      "name": "Darkroom Timer – F-Stop & Test Strips",
+      "tagline": "Časovač do temné komory, který umí f-stop tisk, testovací proužky a vývojové řady – s červeným displejem.",
+      "pitch": "Analogová fotografie roste a s ní i lidé, kteří si doma vyvolávají film a zvětšují fotky. Massive Dev Chart řeší vyvolávací časy filmů, ale f-stop tisk (testovací proužky po 1/3 EV, dodge & burn plány) je rozházený po starých appkách. Nabízíme časovač se sytě červeným nočním UI bezpečným pro fotopapír, f-stop kalkulátor, plánovač uhýbání/přidávání a knihovnu vlastních receptů.",
+      "niche": "F-stop printing a zvětšovací workflow pro domácí temnou komoru. Velké foto appky analog neřeší; Massive Dev Chart je o vyvolávání filmu.",
+      "parent_market": "Analogová fotografie (FilmLab, Film scanner Pro, Lightme, Massive Dev Chart) – web evidence ukazuje, že skenování filmu je přeplněný placený trh.",
+      "target_user": "Domácí analogoví fotografové, fotoklubové komory, studenti fotografie.",
+      "features": [
+        "F-stop časovač s testovacím proužkem (1/6–1/2 EV)",
+        "Plán dodge/burn na fotce z kamery",
+        "Vyvolávací řada (vývojka, přerušovač, ustalovač) s akustickými signály",
+        "Red-safe UI (jen červené pixely, minimální jas)",
+        "Recepty papírů a chemie (uživatelské, bez licencovaných dat)"
+      ],
+      "offline": "full",
+      "offline_note": "Kalkulace a časovače lokálně; bez sítě.",
+      "monetization": "Placená appka 5,99 USD (≈ 117 CZK čistého) nebo freemium s Pro 7,99 USD (≈ 156 CZK).",
+      "revenue_math": "Ideál: darkroom timer/f-stop timer/enlarger timer/test strip ≈ 1 500 stažení/měs × 6 % = 90 × 156 CZK ≈ 14 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 14000,
+      "keywords": [
+        {
+          "kw": "darkroom timer",
+          "saturation": 4,
+          "competitor": "Massive Dev Chart",
+          "note": "odhad (knowledge); několik starých časovačů"
+        },
+        {
+          "kw": "f stop timer",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "enlarger timer",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "film developing timer",
+          "saturation": 5,
+          "competitor": "Massive Dev Chart",
+          "note": "odhad; obsazenější"
+        }
+      ],
+      "demand_evidence": "Web evidence: „film negative scanner“ CROWDED (6+ appek: FilmLab, Posify, Film scanner Pro) – prokazuje živý, platící analogový trh. Nika f-stop tisku je předpoklad (znalost; Massive Dev Chart je placená a dlouhodobě prodávaná).",
+      "competitors": [
+        {
+          "name": "Massive Dev Chart Timer",
+          "url": "",
+          "role": "parent",
+          "note": "Placený lídr vyvolávacích časů (znalost)."
+        },
+        {
+          "name": "FilmLab",
+          "url": "",
+          "role": "parent",
+          "note": "Web evidence: lídr skenování negativů (id1215777349), URL v evidenci chybí."
+        },
+        {
+          "name": "Film scanner Pro",
+          "url": "",
+          "role": "parent",
+          "note": "Web evidence (id1333240907)."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Domácí zvětšování je velmi malá komunita – 1 500 stažení/měs může být přehnané.",
+        "Telefon v temné komoře: i červený displej může zamlžit citlivé papíry (reklamace).",
+        "Starší bezplatné časovače a fyzické f-stop časovače (RH Designs) už mají věrné uživatele."
+      ],
+      "killer_risk": "Niche příliš malá na 10 000 CZK/měs.",
+      "mitigation": "Spojit s film-logbookem (#11) do jedné analog „suite“ se sdíleným nákupem; lokalizovat do JP/DE/FR, kde analog frčí.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "photo-video-11",
+      "name": "Frame Log – Film Exposure Notes",
+      "tagline": "Zapiš clonu, čas a místo ke každému políčku filmu – a po naskenování je vrať do EXIF.",
+      "pitch": "Analogoví fotografové si zapisují expozice do sešitků, protože film žádná metadata nemá. Stávající appky jsou buď světloměry s vedlejším deníkem, nebo neudržované. Uděláme rychlý deník rolí (fotoaparát, film, ISO, políčko → clona/čas/GPS/poznámka), s widgetem a Apple Watch, a hlavně s exportem, který po naskenování zapíše údaje do EXIF skenů. Tím vyřešíme největší bolest: „kde a jak jsem to fotil?“.",
+      "niche": "Deník expozic filmu s EXIF zpětným zápisem. Skenery (FilmLab) a světloměry (Lightme) to řeší jen okrajově.",
+      "parent_market": "Analogová fotografie – web evidence: skenování filmu je přeplněné (FilmLab, Posify, Film scanner Pro), tj. platící trh.",
+      "target_user": "Fotografové na film (35 mm, střední formát), studenti, sběratelé fotoaparátů.",
+      "features": [
+        "Role: fotoaparát, objektiv, film, ISO, push/pull",
+        "Rychlý zápis políčka jedním klepnutím (Watch, widget, Live Activity)",
+        "GPS a čas automaticky",
+        "EXIF zápis do naskenovaných JPG/TIFF podle pořadí",
+        "Statistiky filmů a fotoaparátů"
+      ],
+      "offline": "full",
+      "offline_note": "Deník, GPS (CoreLocation bez sítě) a zápis EXIF lokálně.",
+      "monetization": "Zdarma 3 role; Pro 14,99 USD doživotně (≈ 293 CZK čistého) nebo 1,99 USD/měs.",
+      "revenue_math": "Ideál: film log/film photography notes/exposure log ≈ 1 500 stažení/měs × 4 % = 60 × 293 CZK ≈ 17 500 CZK čistého/měs.",
+      "revenue_czk_ideal": 17000,
+      "keywords": [
+        {
+          "kw": "film log",
+          "saturation": 3,
+          "competitor": "Lightme – Logbook",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "film photography",
+          "saturation": 6,
+          "competitor": "Dazz Cam",
+          "note": "odhad; hlavně filtrové appky, jiný záměr"
+        },
+        {
+          "kw": "exposure notes",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "analog camera log",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Web evidence: přeplněné skenování negativů = živý analogový trh. Poptávka po deníku je předpoklad z fór (znalost); existence několika starších deníků (odhad) ukazuje zájem.",
+      "competitors": [
+        {
+          "name": "Lightme – Logbook",
+          "url": "",
+          "role": "niche",
+          "note": "Deník ze sady Lightme (světloměr), znalost."
+        },
+        {
+          "name": "Posify",
+          "url": "",
+          "role": "parent",
+          "note": "Web evidence: nový skener negativů (id6758020545)."
+        },
+        {
+          "name": "FilmLab",
+          "url": "",
+          "role": "parent",
+          "note": "Web evidence: lídr skenování (id1215777349)."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Přesunout se na fotoaparátu k telefonu po každém snímku ruší zážitek analogu – mnozí to dělat nebudou.",
+        "Skenery (FilmLab) mohou přidat deník a EXIF propojení.",
+        "Párování zápisů se skeny podle pořadí selže při vynechaných políčkách."
+      ],
+      "killer_risk": "Nízká retence – uživatel po 2 rolích přestane zapisovat.",
+      "mitigation": "Watch zápis jedním dotykem a „auto-guess“ políčka podle času; spojit s #10 do analog suity.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "photo-video-12",
+      "name": "Stereo 3D Cam – Anaglyph & Cross-View",
+      "tagline": "Opravdové 3D fotky ze dvou objektivů iPhonu – anaglyf, cross-view, side-by-side i prostorové pro Vision Pro.",
+      "pitch": "iPhone 15 Pro a novější umí prostorové fotky, ale sdílet je jde jen na Vision Pro. Hobby stereografové chtějí klasické formáty: červeno-modrý anaglyf, cross-view, parallel, MPO pro 3D TV a stereo karty k tisku. Starší 3D appky jsou roky neaktualizované. Uděláme převod prostorových fotek a dvojic snímků do všech stereo formátů, s kontrolou okna a paralaxy.",
+      "niche": "Převod prostorových/stereo fotek do klasických formátů. Apple a Spatial nástroje cílí jen na Vision Pro.",
+      "parent_market": "Foto efekty a 3D fotografie (spatial converter appky, wiggle/3D GIF appky – web evidence: Wigglegram/Gif 3D Wiggle).",
+      "target_user": "Stereo nadšenci (NSA, ISU kluby), učitelé (3D brýle ve škole), majitelé Vision Pro.",
+      "features": [
+        "Import prostorové fotky (HEIC) nebo L/R dvojice",
+        "Anaglyf (Dubois), cross-view, parallel, MPO, stereo karta",
+        "Úprava stereo okna a paralaxy",
+        "Automatické zarovnání vertikální disparity",
+        "Export i jako wigglegram"
+      ],
+      "offline": "full",
+      "offline_note": "Zpracování přes Image I/O a Core Image lokálně.",
+      "monetization": "Freemium; Pro 4,99 USD (≈ 97 CZK čistého) jednorázově.",
+      "revenue_math": "Ideál: 3d camera/anaglyph/spatial photo converter ≈ 3 000 stažení/měs × 4 % = 120 × 97 CZK ≈ 11 700 CZK čistého/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "anaglyph",
+          "saturation": 3,
+          "competitor": "3D Camera",
+          "note": "odhad (knowledge); starší appky"
+        },
+        {
+          "kw": "3d camera",
+          "saturation": 6,
+          "competitor": "3D Camera",
+          "note": "odhad; obsazený generický termín"
+        },
+        {
+          "kw": "spatial photo converter",
+          "saturation": 5,
+          "competitor": "Spatial Media Toolkit",
+          "note": "odhad; nová vlna appek pro Vision Pro"
+        },
+        {
+          "kw": "stereo photo",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Web evidence: wiggle/3D GIF nika má jen 2–3 appky. Poptávka po anaglyfu je předpoklad (znalost starých 3D appek s tisíci hodnocení).",
+      "competitors": [
+        {
+          "name": "Wigglegram Maker",
+          "url": "https://apps.apple.com/us/app/wigglegram-maker/id1180060929",
+          "role": "niche",
+          "note": "Web evidence: 3D wiggle – příbuzný formát."
+        },
+        {
+          "name": "Spatial Media Toolkit",
+          "url": "",
+          "role": "parent",
+          "note": "Konverze do prostorových médií pro Vision Pro (znalost)."
+        },
+        {
+          "name": "3D Camera",
+          "url": "",
+          "role": "niche",
+          "note": "Starší stereo appky (znalost), neudržované."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Kanibalizuje #01 Wiggle 3D – dvě appky se stejnou technologií = 4.3 riziko; lepší jako jedna appka.",
+        "Stereo komunita je malá a stárnoucí.",
+        "Apple může přidat export do anaglyfu/SBS do Fotek."
+      ],
+      "killer_risk": "Příliš malý trh + duplikace s Wiggle 3D.",
+      "mitigation": "Sloučit jako Pro modul appky Wiggle 3D, pokud nezíská samostatnou ASO trakci.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "photo-video-13",
+      "name": "HairLine – Transplant Progress Photos",
+      "tagline": "Stejný úhel, stejné světlo, den po dni – uvidíš, jak ti po transplantaci rostou vlasy.",
+      "pitch": "Každý rok podstoupí statisíce mužů transplantaci vlasů (hlavně v Turecku) a 12 měsíců pak nejistě sledují, zda vlasy rostou. Fotky z koupelny jsou nesrovnatelné. Naše appka vede focení pomocí „ghost“ překryvu a držáku úhlů (temeno, čelo, strany), hlídá kalendář fází (shock loss, růst) a tvoří time-lapse. V 50 jazycích – klienti klinik jsou z celého světa.",
+      "niche": "Progress foto pro FUE/DHI pacienty a pro léčbu vypadávání vlasů. Obecné progress appky jsou fitness; kliniky mají vlastní appky jen pro své klienty.",
+      "parent_market": "Progress-photo a timelapse appky (fitness Progress, bump/baby appky) a trh léčby vlasů (Hims, Keeps, minoxidil) – obrovský placený trh.",
+      "target_user": "Muži po transplantaci vlasů nebo na minoxidilu/finasteridu; ženy s řídnutím vlasů.",
+      "features": [
+        "Ghost overlay a vodítka pro 5 standardních pohledů",
+        "Kalendář fází po transplantaci s připomínkami focení",
+        "Srovnání vedle sebe a time-lapse video",
+        "Soukromý trezor (Face ID), nic do cloudu",
+        "Deník medikace (bez lékařských doporučení)"
+      ],
+      "offline": "full",
+      "offline_note": "Kamera, overlay, time-lapse i trezor lokálně; volitelně iCloud.",
+      "monetization": "Zdarma 2 pohledy; Pro 14,99 USD doživotně (≈ 293 CZK) nebo 2,99 USD/měs.",
+      "revenue_math": "Ideál: hair transplant/hair growth tracker/hair loss progress ve 20+ jazycích ≈ 2 500 stažení/měs × 4 % = 100 × ~250 CZK ≈ 25 000 CZK; konzervativně 15 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 15000,
+      "keywords": [
+        {
+          "kw": "hair transplant",
+          "saturation": 4,
+          "competitor": "clinic apps",
+          "note": "odhad (knowledge); hlavně appky klinik"
+        },
+        {
+          "kw": "hair growth tracker",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "hair loss tracker",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad; část appek slibuje AI diagnostiku"
+        },
+        {
+          "kw": "progress photo",
+          "saturation": 6,
+          "competitor": "Progress",
+          "note": "odhad; fitness appky – parent"
+        }
+      ],
+      "demand_evidence": "Neověřeno živými daty. Znalost: turistika za transplantací vlasů (Istanbul) je masová; fóra (r/HairTransplants) jsou plná srovnávacích fotek. Počet dedikovaných appek odhad.",
+      "competitors": [
+        {
+          "name": "Progress – Body Tracker",
+          "url": "",
+          "role": "parent",
+          "note": "Fitness progress foto s overlayem (znalost)."
+        },
+        {
+          "name": "Hair transplant clinic apps",
+          "url": "",
+          "role": "niche",
+          "note": "Uzavřené appky klinik jen pro jejich pacienty."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Guideline 1.4.1: jakékoli tvrzení o „měření růstu“ nebo diagnostice = zamítnutí; musíme být jen foto deník.",
+        "Kliniky dávají pacientům vlastní appku zdarma.",
+        "Po 12 měsících uživatel appku nepotřebuje – předplatné nevhodné, jen doživotní nákup.",
+        "Citlivý obsah (fotky hlavy) – soukromí musí být neprůstřelné."
+      ],
+      "killer_risk": "Omezený životní cyklus uživatele a nízké opakované tržby.",
+      "mitigation": "Doživotní nákup + partnerství s nezávislými lékaři (bez serveru, jen PDF export pro konzultaci); rozšířit na vousy/obočí.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      }
+    },
+    {
+      "id": "photo-video-14",
+      "name": "ReefLens – Aquarium Photo Color Fix",
+      "tagline": "Fotky korálů bez modrého nádechu – jedním klepnutím, podle tvého osvětlení.",
+      "pitch": "Každý majitel mořského akvária fotí korály pod modrým (aktinickým) LED světlem a fotky z iPhonu jsou fialovomodré a nepoužitelné. Existuje fyzický oranžový filtr na objektiv, ale digitálně to řeší jen obecné podvodní appky (ScubAI, AquaColorFix), které jsou kalibrované na potápění v moři, ne na akvarijní LED spektra. My dáme presety pro populární světla (Radion, AI Prime, Kessil), živou korekci v kameře a video.",
+      "niche": "Barevná korekce pro fotky/videa mořských akvárií. Potápěčské appky (web evidence ~6 appek) řeší jinou fyziku – útlum červené ve vodě, ne modré LED.",
+      "parent_market": "Podvodní barevná korekce (web evidence: ScubAI, AquaColorFix, SeaReal – ~6 appek, většinou nové) a akvaristika (evidence Lifestyle: aquarium log saturovaný = velká placená komunita).",
+      "target_user": "Reef akvaristé (mořská akvária, korálové farmy, prodejci korálů na Instagramu).",
+      "features": [
+        "Živá kamera s korekcí bílé pro modré LED (presety podle světla)",
+        "Dávková korekce fotek a videí",
+        "Makro režim pro polypy + fluorescence „pop“",
+        "Srovnání před/po",
+        "Vlastní kalibrace přes šedou kartu"
+      ],
+      "offline": "full",
+      "offline_note": "Korekce v Core Image/Metal lokálně, včetně videa.",
+      "monetization": "Freemium; Pro 9,99 USD doživotně (≈ 195 CZK) nebo 2,99 USD/měs.",
+      "revenue_math": "Ideál: reef camera/coral photo/aquarium photo filter ≈ 1 200 stažení/měs × 6 % = 72 × 195 CZK ≈ 14 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 14000,
+      "keywords": [
+        {
+          "kw": "reef camera",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "coral photo",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "aquarium photo filter",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "underwater color correction",
+          "saturation": 6,
+          "competitor": "ScubAI",
+          "note": "web evidence: ~6 appek, většinou nové od 2025 – jen parent"
+        }
+      ],
+      "demand_evidence": "Web evidence: „underwater color correction“ ~6 appek (ScubAI, AquaColorFix, SeaReal) – technologie prodává. Akvaristická komunita je velká (evidence Lifestyle: aquarium log saturace 7). Reef nika sama neověřena – předpoklad z fór, kde se běžně doporučují oranžové filtry.",
+      "competitors": [
+        {
+          "name": "ScubAI",
+          "url": "",
+          "role": "parent",
+          "note": "Web evidence: podvodní korekce (id6741768984), URL v evidenci chybí."
+        },
+        {
+          "name": "AquaColorFix",
+          "url": "",
+          "role": "parent",
+          "note": "Web evidence (id1579618383)."
+        },
+        {
+          "name": "SeaReal",
+          "url": "",
+          "role": "niche",
+          "note": "Web evidence (id1661438514) – nejbližší konkurent, pokud přidá akvarijní presety."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Podvodní appky (ScubAI, SeaReal) mohou přidat „aquarium mode“ během týdne.",
+        "Fyzický oranžový filtr za 10 USD dělá práci dobře a uživatelé ho už mají.",
+        "Reef komunita je dost malá (stovky tisíc lidí globálně).",
+        "Kalibrace pro každé světlo a nastavení je nekonečná práce."
+      ],
+      "killer_risk": "Zavedená podvodní appka přidá akvarijní preset a my ztratíme odlišení.",
+      "mitigation": "Hluboká specializace: presety podle modelů světel, fluorescence, prodejní šablony pro frag prodejce; rychle obsadit ASO.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "photo-video-15",
+      "name": "Farewell – Memorial Slideshow",
+      "tagline": "Důstojné vzpomínkové video na pohřeb za večer – v tvém jazyce, bez účtu a bez nahrávání fotek kamkoli.",
+      "pitch": "Když zemře blízký, rodina má pár dní na přípravu smutečního rozloučení a v USA je „memorial slideshow“ zavedená součást obřadu (Tribute, Animoto, pohřební ústavy). V Evropě se to rozšiřuje, ale nástroje jsou anglické webové služby. Nabídneme offline appku: skenování starých fotek, důstojné šablony, volná hudba, titulky se jmény a daty, export pro projektor. Emočně silný moment s ochotou jednorázově zaplatit.",
+      "niche": "Vzpomínková prezentace pro pohřby/rozloučení lokalizovaná a offline. Obecné slideshow appky nemají důstojné šablony a pohřební služby jsou webové a anglické.",
+      "parent_market": "Slideshow a video maker appky (Animoto, Slideshow Maker, iMovie) – velký placený trh; US pohřební tech (Tribute Technologies, Ever Loved).",
+      "target_user": "Pozůstalí (často 40–65 let), pohřební služby (malé firmy), duchovní.",
+      "features": [
+        "Import a sken starých fotek s vyrovnáním",
+        "Důstojné šablony (klid, pomalé přechody, černobílé tóny)",
+        "Knihovna bezplatné hudby (licencovaná jednorázově, bundlovaná)",
+        "Titulní a závěrečná karta se jmény, daty, citátem",
+        "Export 1080p/4K pro projektor, USB"
+      ],
+      "offline": "full",
+      "offline_note": "Veškerá tvorba a render lokálně; hudba je součástí appky.",
+      "monetization": "Zdarma náhled; export 9,99 USD jednorázově (≈ 195 CZK čistého); balíček pro pohřební služby 49,99 USD/rok.",
+      "revenue_math": "Ideál: memorial slideshow/funeral video + lokalizace (Trauerfeier Video, smuteční video) ≈ 1 500 stažení/měs × 5 % = 75 × 195 CZK ≈ 14 600 CZK čistého/měs.",
+      "revenue_czk_ideal": 14600,
+      "keywords": [
+        {
+          "kw": "memorial slideshow",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "funeral slideshow",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "tribute video",
+          "saturation": 3,
+          "competitor": "Tribute",
+          "note": "odhad; Tribute je spíš skupinové video"
+        },
+        {
+          "kw": "slideshow maker",
+          "saturation": 8,
+          "competitor": "SlideShow Maker",
+          "note": "odhad; saturované – jen parent"
+        }
+      ],
+      "demand_evidence": "Neověřeno živými daty. Znalost: v USA je memorial slideshow standardní služba pohřebních ústavů; Animoto/Tribute nabízejí šablony. Mimo USA je poptávka předpoklad.",
+      "competitors": [
+        {
+          "name": "Animoto",
+          "url": "",
+          "role": "parent",
+          "note": "Webový video maker se šablonami, předplatné."
+        },
+        {
+          "name": "Tribute",
+          "url": "",
+          "role": "us-only",
+          "note": "US skupinové vzpomínkové video (online, anglicky)."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": true,
+      "us_gap_note": "US služby (Tribute, pohřební weby) jsou online, anglické, často spojené s US pohřebním průmyslem. Lokalizovaná offline appka mimo USA pravděpodobně chybí.",
+      "devils_advocate": [
+        "Jednorázové a řídké použití – žádná retence, nízké hodnocení počty.",
+        "Pohřební služby to dělají pro klienty samy (PowerPoint), rodina nemusí appku hledat.",
+        "Kulturní citlivost – v některých zemích se video na pohřbu nepromítá.",
+        "Licence hudby: bundlovaná hudba musí mít neomezenou licenci pro soukromé použití."
+      ],
+      "killer_risk": "Uživatelé appku nenajdou v emočním stresu – hledají „pohřeb“ na Googlu, ne v App Store.",
+      "mitigation": "B2B tier pro malé pohřební služby (opakované použití), lokalizované ASO fráze, citlivý tón.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "photo-video-16",
+      "name": "StackFocus – Macro Focus Stacking",
+      "tagline": "Celý hmyz, minerál nebo mince ostře od kraje ke kraji – iPhone nafotí řadu a spojí ji sám.",
+      "pitch": "Makro fotografie z iPhonu má mělkou hloubku ostrosti a řešením je focus stacking: nafotit 10–30 snímků s posunutým ostřením a spojit je. Na desktopu to dělá Helicon Focus nebo Zerene (drahé), na iPhonu dedikovaný nástroj skoro chybí. Naše appka sama posouvá ostření (AVCapture lens position), zarovná a spojí snímky lokálně. Pro sběratele minerálů, hmyzu, mincí a pro prodejce drobných předmětů.",
+      "niche": "Focus stacking na iPhonu. Kamerové appky (Halide, ProCamera) mají makro, ale bez stackingu.",
+      "parent_market": "Pro kamerové appky (Halide, ProCamera, ProCam) a desktopový focus stacking (Helicon Focus, Zerene Stacker) – profesionální placený trh.",
+      "target_user": "Makro nadšenci, entomologové, sběratelé minerálů/mincí/známek, prodejci šperků a hodinek.",
+      "features": [
+        "Automatická série s krokováním ostření",
+        "Zarovnání a sloučení (pyramidová metoda) na GPU",
+        "Ruční import série",
+        "Export HEIF/TIFF v plném rozlišení",
+        "Režim pro stojan + dálková spoušť"
+      ],
+      "offline": "full",
+      "offline_note": "Snímání, zarovnání a stacking v Metal lokálně.",
+      "monetization": "Placená 7,99 USD (≈ 156 CZK čistého) nebo freemium s Pro 9,99 USD.",
+      "revenue_math": "Ideál: focus stacking/macro camera/focus stack ≈ 1 500 stažení/měs × 6 % = 90 × 175 CZK ≈ 15 700 CZK čistého/měs.",
+      "revenue_czk_ideal": 15700,
+      "keywords": [
+        {
+          "kw": "focus stacking",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad (knowledge); pár slabých appek"
+        },
+        {
+          "kw": "macro camera",
+          "saturation": 6,
+          "competitor": "Halide",
+          "note": "odhad; obsazené"
+        },
+        {
+          "kw": "focus stack",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "insect photography",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno živými daty. Znalost: Helicon Focus/Zerene jsou dlouhodobě placené desktop nástroje; na iPhonu se na fórech ptají po stackingu. Objem ASO hledání předpokládám malý až střední.",
+      "competitors": [
+        {
+          "name": "Halide Mark II",
+          "url": "",
+          "role": "parent",
+          "note": "Pro kamera s makro režimem, bez stackingu."
+        },
+        {
+          "name": "Helicon Focus",
+          "url": "",
+          "role": "parent",
+          "note": "Desktop lídr stackingu (má i mobilní ovladač fotoaparátů)."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Minimální ostřicí vzdálenost a krokování iPhone objektivu jsou hrubé – kvalita nemusí stačit náročným.",
+        "Apple může přidat „Deep Fusion makro“ s rozšířenou hloubkou ostrosti.",
+        "Pohyb objektu (hmyz) během série kazí výsledek – spousta 1★ recenzí.",
+        "Stavba spolehlivého alignmentu je spíš 5–6 týdnů."
+      ],
+      "killer_risk": "Technický výsledek nebude výrazně lepší než jeden makro snímek.",
+      "mitigation": "Předem prototyp a srovnání na 20 předmětech; cílit na statické objekty (minerály, mince, šperky) a stojan.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "photo-video-17",
+      "name": "Aurora Cam – Northern Lights Camera",
+      "tagline": "Polární záře na fotce ostrá a barevná – správná expozice, ISO a ostření na nekonečno za tebe.",
+      "pitch": "Silné sluneční maximum 2024–26 přineslo polární záře až do střední Evropy a miliony lidí zjistily, že je neumí vyfotit. iPhone noční režim pomáhá, ale neumí nastavit delší expozici, ostřit na nekonečno a stackovat. Naše appka nabídne preset „aurora“ s dlouhou expozicí, stackováním proti šumu, time-lapse a checklist. Offline – u polární záře obvykle není signál.",
+      "niche": "Kamera specializovaná na polární záři. Velké astro appky (NightCap, PhotoPills) jsou obecné; forecast appky (My Aurora Forecast) jen předpovídají.",
+      "parent_market": "Astro a noční fotografie (NightCap, PhotoPills, Slow Shutter Cam) + aurora forecast appky s miliony stažení.",
+      "target_user": "Turisté na Islandu/v Norsku/Finsku/Kanadě, lovci polárních září ve střední Evropě a USA.",
+      "features": [
+        "Preset aurora: expozice, ISO, ostření na nekonečno",
+        "Stackování více snímků proti šumu",
+        "Aurora time-lapse",
+        "Checklist a kompas směru severu",
+        "Volitelně: předpověď Kp z veřejného API (partial)"
+      ],
+      "offline": "mostly",
+      "offline_note": "Kamera, stacking a time-lapse offline; volitelná předpověď Kp indexu z NOAA SWPC (veřejné API) – appka funguje i bez ní.",
+      "monetization": "Freemium; Pro 6,99 USD (≈ 137 CZK čistého) nebo 1,99 USD/měs v sezóně.",
+      "revenue_math": "Ideál (sezóna září–březen): aurora camera/northern lights camera ≈ 5 000 stažení/měs × 3 % = 150 × 137 CZK ≈ 20 500 CZK čistého/měs; průměr přes rok ≈ 12 000 CZK.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "aurora camera",
+          "saturation": 4,
+          "competitor": "NightCap Camera",
+          "note": "odhad (knowledge); po 2024 vlna nových appek"
+        },
+        {
+          "kw": "northern lights camera",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "aurora photo",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "night sky camera",
+          "saturation": 6,
+          "competitor": "NightCap Camera",
+          "note": "odhad; obsazené"
+        }
+      ],
+      "demand_evidence": "Neověřeno živými daty. Znalost: květen 2024 a říjen 2024 – masové pozorování polárních září v Evropě/USA, virální dotazy „jak vyfotit polární záři na iPhone“. Po roce 2026 aktivita Slunce klesá – riziko.",
+      "competitors": [
+        {
+          "name": "NightCap Camera",
+          "url": "",
+          "role": "parent",
+          "note": "Silná noční/astro kamera s aurora režimem (znalost)."
+        },
+        {
+          "name": "My Aurora Forecast",
+          "url": "",
+          "role": "parent",
+          "note": "Předpověď, ne kamera."
+        },
+        {
+          "name": "PhotoPills",
+          "url": "",
+          "role": "parent",
+          "note": "Plánovač astro fotografie, drahý a složitý."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Sluneční maximum končí – po 2026 méně polárních září ve středních šířkách a propad poptávky.",
+        "NightCap už má aurora režim; Apple zlepšuje noční režim každý rok.",
+        "Silná sezónnost a cestovní povaha – uživatel použije appku 2× ročně."
+      ],
+      "killer_risk": "Útlum slunečního cyklu = propad hledání „aurora camera“.",
+      "mitigation": "Rozšířit na noční oblohu obecně (Mléčná dráha, star trails, meteory) jako „Night Sky Cam“ a lokalizovat pro severské trhy a turisty.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 8,
+        "safety": 5
+      }
+    },
+    {
+      "id": "photo-video-18",
+      "name": "DigiScope – Birding Camera for Scopes",
+      "tagline": "Fotky ptáků přes dalekohled bez vinětace – kamera, která ví, že koukáš okulárem.",
+      "pitch": "Birdeři fotí přes spektiv nebo binokulár telefonem (digiscoping), protože teleobjektiv je drahý. Standardní kamera bojuje s vinětací, ostřením a třesem. Naše kamera automaticky ořízne kruh okuláru, zvolí správný objektiv, stabilizuje a nafotí sérii pro výběr nejostřejšího. Přidáme deník pozorování s fotkou, místem a druhem (ruční výběr ze seznamu).",
+      "niche": "Digiscoping kamera. Birdingové appky (Merlin, eBird) jsou pro identifikaci a záznam; kamerové appky nic nevědí o okuláru.",
+      "parent_market": "Birding (Merlin, eBird, BirdNET – miliony uživatelů) a pro kamerové appky; výrobci spektivů prodávají adaptéry pro telefony.",
+      "target_user": "Birdeři, pozorovatelé zvěře, myslivci, astronomové s dalekohledem.",
+      "features": [
+        "Detekce a ořez kruhu okuláru, odstranění vinětace",
+        "Burst + výběr nejostřejšího snímku",
+        "Zámek ostření a expozice, dálková spoušť (Watch/sluchátka)",
+        "Deník pozorování (druh ručně, místo, čas)",
+        "Export s EXIF do Fotek"
+      ],
+      "offline": "full",
+      "offline_note": "Kamera, zpracování, deník i seznam druhů offline v appce.",
+      "monetization": "Freemium; Pro 5,99 USD (≈ 117 CZK čistého) nebo 14,99 USD/rok.",
+      "revenue_math": "Ideál: digiscoping/binocular camera/spotting scope camera ≈ 1 500 stažení/měs × 6 % = 90 × 150 CZK ≈ 13 500 CZK čistého/měs.",
+      "revenue_czk_ideal": 13500,
+      "keywords": [
+        {
+          "kw": "digiscoping",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "binocular camera",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad; hodně zoom/lupa appek"
+        },
+        {
+          "kw": "spotting scope",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "bird photography",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno živými daty. Znalost: birding komunita je obrovská (Merlin 10M+), adaptéry na telefon (Phone Skope) se prodávají; dedikovanou digiscoping kameru si nevybavuji.",
+      "competitors": [
+        {
+          "name": "Merlin Bird ID",
+          "url": "",
+          "role": "parent",
+          "note": "Bezplatná identifikace ptáků (Cornell)."
+        },
+        {
+          "name": "Phone Skope",
+          "url": "",
+          "role": "niche",
+          "note": "Výrobce adaptérů, jejich appka je jednoduchá (znalost, neověřeno)."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Merlin/eBird mohou přidat kameru s digiscoping režimem.",
+        "Rozdíl proti standardní kameře s 5× zoomem je pro laiky malý – hodnota se ukáže až s adaptérem.",
+        "Nízký objem ASO klíčových slov (digiscoping je odborný termín)."
+      ],
+      "killer_risk": "Příliš málo hledání – birdeři appku nehledají, dokud nemají adaptér.",
+      "mitigation": "Spolupráce s prodejci adaptérů (QR v balení) a obsah v birdingových komunitách.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "photo-video-19",
+      "name": "Sparkle – Jewelry Photo Studio",
+      "tagline": "Prstýnky a náušnice na fotce jako z katalogu – bílé pozadí, jiskra a stejný styl na celý e-shop.",
+      "pitch": "Tvůrci šperků na Etsy, Vinted a vlastních e-shopech potřebují konzistentní produktové fotky, ale šperky jsou nejtěžší na focení: odlesky, drobnost, ostrost. Obecné appky na odstranění pozadí (Photoroom) jsou cloudové a nemají šperkové presety. My nabídneme kameru s mřížkou pro malé předměty, on-device odstranění pozadí, „sparkle“ efekt, dávkové šablony a stín.",
+      "niche": "Produktová fotografie šperků pro malé prodejce. Photoroom a spol. jsou generické a cloudové.",
+      "parent_market": "Produktová fotografie pro e-commerce (Photoroom, Pixelcut – desítky milionů USD ročně).",
+      "target_user": "Tvůrci šperků (handmade), Etsy prodejci, malí klenotníci, prodejci bižuterie.",
+      "features": [
+        "Makro kamera s vodítky a kontrolou ostrosti",
+        "On-device odstranění pozadí (Vision subject lift)",
+        "Presety: bílé, šedé, mramor, přirozený stín",
+        "Sparkle/odlesk kontrola bez falšování barvy kamene",
+        "Dávkový export ve formátech Etsy/Shopify"
+      ],
+      "offline": "full",
+      "offline_note": "Subject lift (Vision), kompozice a export lokálně – na rozdíl od cloudových konkurentů.",
+      "monetization": "Předplatné 4,99 USD/měs (≈ 98 CZK) nebo 34,99 USD/rok (≈ 684 CZK).",
+      "revenue_math": "Ideál: jewelry photo/jewelry photography/product photo white background ≈ 2 000 stažení/měs × 3 % = 60 × ~400 CZK (mix) ≈ 24 000 CZK; konzervativně 14 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 14000,
+      "keywords": [
+        {
+          "kw": "jewelry photo",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "jewelry photography",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "product photo",
+          "saturation": 8,
+          "competitor": "Photoroom",
+          "note": "odhad; saturované – parent"
+        },
+        {
+          "kw": "white background",
+          "saturation": 7,
+          "competitor": "Photoroom",
+          "note": "odhad; saturované"
+        }
+      ],
+      "demand_evidence": "Neověřeno živými daty. Znalost: Photoroom a Pixelcut jsou mezi nejvýdělečnějšími foto appkami; šperky jsou uváděny jako nejtěžší kategorie produktové fotky (fóra Etsy).",
+      "competitors": [
+        {
+          "name": "Photoroom",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr produktových fotek (AI, cloud)."
+        },
+        {
+          "name": "Pixelcut",
+          "url": "",
+          "role": "parent",
+          "note": "Konkurent Photoroomu."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Photoroom přidá „jewelry“ šablonu za týden – nemají důvod nepřidat.",
+        "iOS subject lift je zdarma přímo ve Fotkách (Sherlock).",
+        "Etsy zakazuje zavádějící úpravy – „sparkle“ efekt může být problém pro prodejce.",
+        "Profesionálové používají světelný box a DSLR."
+      ],
+      "killer_risk": "Photoroom přidá šperkový režim a přebije nás značkou.",
+      "mitigation": "Offline/soukromí a jednorázová licence, focus na makro kameru (Photoroom je editor, ne kamera).",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 7,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      }
+    },
+    {
+      "id": "photo-video-20",
+      "name": "CarCheck – Rental Car Photo Proof",
+      "tagline": "Při převzetí půjčeného auta za 2 minuty nafoť všechno s časem a GPS – a neplať škody, které jsi neudělal.",
+      "pitch": "Půjčovny aut (hlavně na dovolené) účtují škody, které tam byly už předtím; cestovatelé si o tom vyprávějí horor-příběhy. Appky pro inspekci nájmu bytů jsou přeplněné (web evidence), ale pro auto na dovolené existují hlavně firemní appky půjčoven. Naše appka provede kolem auta checklistem (8 pohledů, tachometr, palivo), uloží čas/GPS, video a vytvoří PDF s hash otiskem jako důkaz. V 50 jazycích, pro turisty.",
+      "niche": "Důkazní fotky/video při převzetí a vrácení půjčeného auta. Rental inspection appky (bydlení) jsou pro nájemníky bytů; fleet appky jsou B2B.",
+      "parent_market": "Inspekční foto appky pro nájem (web evidence: Rental Inspector, Tenant Inspect, MoveSnap, Keyturn – 8+ appek) a cestovní appky.",
+      "target_user": "Turisté půjčující si auto v zahraničí, lidé na car-sharingu, uživatelé Turo.",
+      "features": [
+        "Průvodce 8 pohledy + detaily (kola, sklo, interiér)",
+        "Časové a GPS razítko vypálené do fotky",
+        "Video obchůzka kolem auta",
+        "PDF protokol převzetí/vrácení s porovnáním",
+        "Offline, uloženo i v iCloudu"
+      ],
+      "offline": "full",
+      "offline_note": "Kamera, razítka, PDF offline (i bez roamingu na letišti).",
+      "monetization": "Zdarma 1 pronájem; 3,99 USD za „trip pack“ nebo 9,99 USD doživotně (≈ 195 CZK čistého).",
+      "revenue_math": "Ideál: rental car inspection/car rental photos/car damage photos ≈ 2 500 stažení/měs (léto víc) × 5 % = 125 × ~120 CZK ≈ 15 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 15000,
+      "keywords": [
+        {
+          "kw": "rental car inspection",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "car rental photos",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "car damage photo",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad; část jsou B2B fleet appky"
+        },
+        {
+          "kw": "rental inspection",
+          "saturation": 8,
+          "competitor": "Rental Inspector",
+          "note": "web evidence: CROWDED pro bydlení (8+ appek) – jen parent"
+        }
+      ],
+      "demand_evidence": "Web evidence: „rental inspection“ pro bydlení CROWDED (8+), tedy ochota fotit důkazy je prokázaná. Nika aut je předpoklad (znalost: masivní stížnosti na půjčovny na TripAdvisor/Reddit).",
+      "competitors": [
+        {
+          "name": "Rental Inspector",
+          "url": "https://apps.apple.com/us/app/rental-inspector/id990917668",
+          "role": "parent",
+          "note": "Web evidence: inspekce nájmu bydlení."
+        },
+        {
+          "name": "Tenant Inspect (Rental Report)",
+          "url": "https://apps.apple.com/us/app/tenant-inspect-rental-report/id6450515110",
+          "role": "parent",
+          "note": "Web evidence: časově označené fotky pro nájemníky."
+        },
+        {
+          "name": "MoveSnap",
+          "url": "https://apps.apple.com/gb/app/movesnap/id6788945488",
+          "role": "parent",
+          "note": "Web evidence: UK nájemníci/pronajímatelé."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Uživatel si prostě nafotí auto běžnou kamerou – vnímaná hodnota appky je nízká.",
+        "Půjčovny (Hertz, Sixt) mají vlastní digitální převzetí s fotkami.",
+        "Hledání appky nastává až po problému – v tu chvíli je pozdě.",
+        "Hodnota důkazu PDF/hash je právně sporná."
+      ],
+      "killer_risk": "Lidé nevidí rozdíl proti vestavěné kameře a nezaplatí.",
+      "mitigation": "Marketing přes ASO frází „před vyzvednutím auta“, checklist a porovnání převzetí/vrácení jako unikátní funkce; nízká cena za trip.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "photo-video-21",
+      "name": "BlurTrack – Video Face & Plate Blur",
+      "tagline": "Rozmaž tváře a SPZ ve videu automaticky a přímo v telefonu – pro dashcam, vlog i YouTube.",
+      "pitch": "Vlogeři, dashcam uživatelé a rodiče sdílející videa potřebují rozmazat cizí tváře a SPZ – v DE a dalších zemích EU to vyžaduje ochrana osobnosti. Většina appek dělá jen fotky nebo ruční sledování; video řešení jsou na desktopu nebo v cloudu. My uděláme automatické sledování tváří a SPZ ve videu lokálně s ruční korekcí na časové ose.",
+      "niche": "Automatické rozmazání tváří a SPZ ve videu on-device. Cloud nástroje a desktop editory jsou pro profíky; foto blur appky video neumí.",
+      "parent_market": "Video editory a privacy nástroje (CapCut, PutMask, Blur Video apps) – velký trh.",
+      "target_user": "Vlogeři, YouTubeři s dashcam/cyklo videi, novinářky, rodiče.",
+      "features": [
+        "Detekce a tracking tváří (Vision) ve videu",
+        "Detekce SPZ (text + tvar, on-device)",
+        "Ruční přidání/odebrání sledovaného objektu na časové ose",
+        "Styly: blur, pixel, černý pruh",
+        "Export v původní kvalitě"
+      ],
+      "offline": "full",
+      "offline_note": "Vision tracking a render přes AVFoundation lokálně.",
+      "monetization": "Freemium (videa do 30 s); Pro 3,99 USD/měs nebo 24,99 USD/rok (≈ 489 CZK).",
+      "revenue_math": "Ideál: blur video/blur faces in video/blur license plate ≈ 3 000 stažení/měs × 3 % = 90 × ~250 CZK ≈ 22 500 CZK; konzervativně 13 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 13000,
+      "keywords": [
+        {
+          "kw": "blur video",
+          "saturation": 6,
+          "competitor": "Blur Video",
+          "note": "odhad (knowledge); obsazené"
+        },
+        {
+          "kw": "blur license plate",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "blur faces in video",
+          "saturation": 4,
+          "competitor": "PutMask",
+          "note": "odhad"
+        },
+        {
+          "kw": "dashcam blur",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno živými daty. Znalost: existuje několik video blur appek (PutMask aj.) s placeným Pro – trh existuje; SPZ nika a dashcam segment jsou předpoklad.",
+      "competitors": [
+        {
+          "name": "PutMask",
+          "url": "",
+          "role": "niche",
+          "note": "Video blur tváří, freemium (znalost)."
+        },
+        {
+          "name": "Blur Video",
+          "url": "",
+          "role": "parent",
+          "note": "Generické ruční rozmazání videa."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "CapCut/YouTube Studio už mají auto-blur tváří zdarma (YouTube face blur).",
+        "Tracking na telefonu u dlouhých 4K videí je pomalý a vybíjí baterii.",
+        "Obsahuje riziko, že detekce SPZ vynechá snímek – falešný pocit bezpečí.",
+        "Podobné k #05 SafeShare (stejná technologie) – 4.3 riziko, pokud UI bude podobné."
+      ],
+      "killer_risk": "YouTube/CapCut nabízejí totéž zdarma.",
+      "mitigation": "Diferencovat přes SPZ a dashcam presety; sdílený engine s #05, ale jiný produkt a jiná cílovka.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "photo-video-22",
+      "name": "ThenNow – Rephotography Camera",
+      "tagline": "Postav se přesně tam, kde vznikla stará fotka – průhledný překryv tě navede a vytvoří „tehdy a dnes“.",
+      "pitch": "Rephotografie (stejné místo před 100 lety a dnes) je populární formát v místních historických skupinách na Facebooku a v kronikách obcí. Dnes lidé hledají úhel od oka. Naše kamera zobrazí historickou fotku jako průhledný ghost překryv, pomůže sladit perspektivu a vytvoří posuvné srovnání, GIF nebo koláž. Pro kronikáře, spolky a turisty.",
+      "niche": "Then-and-now kamera s ghost overlay. Pár starších appek existuje, ale bez moderního exportu a lokalizace.",
+      "parent_market": "Foto koláže a before/after appky + místní historie (vlastivědné weby, Facebook skupiny „Zmizelá Praha“ atd.).",
+      "target_user": "Kronikáři obcí, spolky, učitelé dějepisu, turisté, fanoušci místní historie.",
+      "features": [
+        "Ghost overlay staré fotky s nastavitelnou průhledností",
+        "Pomocník zarovnání (horizont, klíčové body)",
+        "Automatické dorovnání perspektivy (homografie)",
+        "Export: posuvník, GIF, vedle sebe, koláž",
+        "Sbírka projektů s místy na mapě (offline MapKit cache)"
+      ],
+      "offline": "full",
+      "offline_note": "Kamera, zarovnání, export lokálně; mapa jen jako volitelný náhled.",
+      "monetization": "Freemium; Pro 4,99 USD (≈ 97 CZK čistého).",
+      "revenue_math": "Ideál: then and now/rephotography/old photo overlay ≈ 2 500 stažení/měs × 4 % = 100 × 97 CZK ≈ 9 700 → s balíčkem pro spolky (19,99 USD) ≈ 11 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 11000,
+      "keywords": [
+        {
+          "kw": "then and now",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad (knowledge); mix foto a quiz appek"
+        },
+        {
+          "kw": "rephotography",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "ghost camera overlay",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "before after photo",
+          "saturation": 7,
+          "competitor": "Before & After",
+          "note": "odhad; saturované – parent"
+        }
+      ],
+      "demand_evidence": "Neověřeno živými daty. Znalost: then-and-now fotografie je virální formát (Reddit r/OldPhotosInRealLife, lokální FB skupiny s desítkami tisíc členů).",
+      "competitors": [
+        {
+          "name": "Before & After Photo",
+          "url": "",
+          "role": "parent",
+          "note": "Generické srovnání dvou fotek."
+        },
+        {
+          "name": "Timera",
+          "url": "",
+          "role": "niche",
+          "note": "Starší then-and-now appka (znalost, pravděpodobně neudržovaná)."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Nadšenci historie jsou často starší a méně platí za appky.",
+        "Autorská práva historických fotek – export s cizí fotkou může porušit práva archivu.",
+        "Použití je sporadické – jeden víkendový projekt a konec."
+      ],
+      "killer_risk": "Nízká monetizace hobby, jednorázové použití.",
+      "mitigation": "Spolkový balíček a šablony pro kroniky/výstavy; využít sdílený ghost-overlay engine s #13 a #24 (ale odlišné UI a publikum).",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "photo-video-23",
+      "name": "ResellShot – Secondhand Listing Photos",
+      "tagline": "Fotky oblečení na prodej, které prodávají: stejné pozadí, správné světlo, míry v obrázku.",
+      "pitch": "Evropa prodává použité oblečení masově přes Vinted (a v USA Poshmark, Depop). Prodejci s desítkami inzerátů týdně řeší stejný problém: nevzhledné fotky, pomačkané pozadí, chybějící míry. Nabídneme kameru s vodítky pro flat-lay/ramínko, on-device vyčištění pozadí, šablonu s mírami (délka, šířka v podpaží) a dávkový export ve formátu inzerátů. Bez značek ve jméně.",
+      "niche": "Foto nástroj pro prodejce second-hand oblečení. Obecné produktové appky neřeší oblečení a míry; platformy mají jen základní kameru.",
+      "parent_market": "Produktová fotografie a resale (Photoroom, Vinted/Poshmark/Depop ekosystém; crosslisting nástroje Vendoo – placené).",
+      "target_user": "Aktivní prodejci na Vinted/Depop/Poshmark, maminky prodávající dětské oblečení, malé second-hand obchody.",
+      "features": [
+        "Vodítka flat-lay/ramínko, kontrola rovnosti",
+        "On-device vyčištění/sjednocení pozadí",
+        "Šablona měr (cm/in) přímo v obrázku",
+        "Dávkový export 4:5 / 1:1",
+        "Checklist fotek (štítek, vady, materiál)"
+      ],
+      "offline": "full",
+      "offline_note": "Kamera, segmentace (Vision) a export lokálně.",
+      "monetization": "Freemium (10 fotek/týden); Pro 2,99 USD/měs (≈ 58 CZK) nebo 19,99 USD/rok (≈ 391 CZK).",
+      "revenue_math": "Ideál: clothes photo/reseller photo/flat lay + lokalizované fráze (DE/FR/PL/CZ/LT) ≈ 3 000 stažení/měs × 3 % = 90 × ~200 CZK ≈ 18 000 CZK; konzervativně 12 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "reseller photo",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "clothes photo",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "flat lay",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "product photo",
+          "saturation": 8,
+          "competitor": "Photoroom",
+          "note": "odhad; saturované – parent"
+        }
+      ],
+      "demand_evidence": "Neověřeno živými daty. Znalost: Vinted má desítky milionů uživatelů v EU; Poshmark/Depop komunity diskutují foto tipy. Existence crosslisting předplatných (Vendoo, List Perfectly) dokazuje ochotu prodejců platit.",
+      "competitors": [
+        {
+          "name": "Photoroom",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr produktových fotek, cloud."
+        },
+        {
+          "name": "Vendoo",
+          "url": "",
+          "role": "us-only",
+          "note": "US crosslisting pro resellery, předplatné (cloud)."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": true,
+      "us_gap_note": "Reverzní mezera: resale nástroje (Vendoo, List Perfectly) jsou US-centrické; evropský Vinted trh v PL/LT/CZ/FR/DE nemá lokalizovaný foto nástroj (předpoklad).",
+      "devils_advocate": [
+        "Vinted může do své kamery přidat vodítka a čištění pozadí.",
+        "Příležitostní prodejci nezaplatí předplatné za pár inzerátů.",
+        "Nesmíme používat značky Vinted/Depop v názvu a klíčových slovech (2.3.7, trademark).",
+        "Photoroom je silný a má „resale“ šablony."
+      ],
+      "killer_risk": "Platforma (Vinted) vylepší vlastní kameru.",
+      "mitigation": "Cílit na power-sellery (dávky, míry, konzistence) a jednorázovou licenci; ASO přes obecné fráze v lokálních jazycích.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "photo-video-24",
+      "name": "GrowLapse – Plant Growth Timelapse",
+      "tagline": "Fotka rostliny každý den ze stejného místa – na konci sezóny úžasné time-lapse video.",
+      "pitch": "Pěstitelé (od monster po rajčata a bonsaje) rádi sledují růst, ale denní fotky z ruky jsou nesouměřitelné. Naše appka použije ghost overlay pro stejné postavení, připomene focení, automaticky zarovná snímky a vytvoří plynulé time-lapse video. Pro pokojové rostliny, zahrádkáře, klíčení semen a školní projekty.",
+      "niche": "Time-lapse z denních fotek rostlin. Plant care appky (Planta) řeší zálivku, time-lapse kamery vyžadují stálý telefon.",
+      "parent_market": "Plant care appky (Planta, Greg, PictureThis – desítky milionů USD) a progress-photo appky.",
+      "target_user": "Milovníci pokojových rostlin, zahrádkáři, učitelé přírodovědy, pěstitelé bonsají.",
+      "features": [
+        "Ghost overlay + připomínka focení",
+        "Automatické zarovnání (Vision registration)",
+        "Plynulé time-lapse s datem",
+        "Více rostlin/projektů",
+        "Widget „dnešní fotka“"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, včetně zarovnání a renderu.",
+      "monetization": "Freemium (1 rostlina); Pro 4,99 USD (≈ 97 CZK) nebo 9,99 USD/rok (≈ 195 CZK).",
+      "revenue_math": "Ideál: plant timelapse/plant growth tracker/plant progress ≈ 2 500 stažení/měs × 4 % = 100 × ~130 CZK ≈ 13 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 13000,
+      "keywords": [
+        {
+          "kw": "plant timelapse",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "plant growth tracker",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad; část jsou plant care appky"
+        },
+        {
+          "kw": "timelapse",
+          "saturation": 7,
+          "competitor": "Hyperlapse",
+          "note": "odhad; saturované – parent"
+        },
+        {
+          "kw": "plant diary",
+          "saturation": 4,
+          "competitor": "Planta",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno živými daty. Znalost: plant time-lapse videa jsou virální; plant care appky (Planta) mají miliony uživatelů. Dedikované appky na time-lapse z denních fotek existují jen okrajově (odhad).",
+      "competitors": [
+        {
+          "name": "Planta",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr plant care s předplatným."
+        },
+        {
+          "name": "Lapse It",
+          "url": "",
+          "role": "parent",
+          "note": "Time-lapse kamera – vyžaduje telefon na místě."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Planta/Greg mohou přidat růstovou time-lapse (mají už foto deníky).",
+        "Uživatelé zapomenou fotit – po 2 týdnech díra v řadě a appka ztrácí smysl.",
+        "Nízká ochota platit – hobby, ne problém."
+      ],
+      "killer_risk": "Retence – denní focení vyžaduje disciplínu.",
+      "mitigation": "Chytré připomínky, tolerance vynechaných dnů (interpolace), sdílení na sociální sítě jako motivace.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "photo-video-25",
+      "name": "Newborn Pose Guide",
+      "tagline": "Bezpečné pózy novorozenců krok za krokem – pro fotografky i odvážné rodiče.",
+      "pitch": "Newborn fotografie je velký byznys a nejčastější chyba začínajících fotografek je nebezpečné polohování miminka. Obecné pózovací appky řeší dospělé a páry. Nabídneme průvodce pózami s ilustracemi (ne fotkami cizích dětí), bezpečnostním checklistem (kompozitní snímky, teplota, podpora hlavičky), shot listem a pomůckami (zavinovačky, props). Offline v studiu.",
+      "niche": "Pózy a bezpečnost newborn fotografie. Posing appky (Posing App, Pose Guide) jsou pro dospělé.",
+      "parent_market": "Posing guide appky pro fotografy a vzdělávání fotografů (kurzy Kelly Brown, Newborn Posing academy – drahé).",
+      "target_user": "Začínající a středně pokročilé newborn fotografky, rodiče fotící doma.",
+      "features": [
+        "Knihovna 60 póz s ilustracemi, postupem a obtížností",
+        "Bezpečnostní checklist ke každé póze",
+        "Shot list na session a flow bez přehazování",
+        "Seznam props a nastavení světla",
+        "Poznámky ke klientům offline"
+      ],
+      "offline": "full",
+      "offline_note": "Obsah bundlovaný v appce; žádný server.",
+      "monetization": "Placená 9,99 USD (≈ 195 CZK čistého) nebo freemium s odemknutím 14,99 USD.",
+      "revenue_math": "Ideál: newborn photography/newborn poses/baby photo poses ≈ 1 500 stažení/měs × 5 % = 75 × 195 CZK ≈ 14 600 CZK čistého/měs.",
+      "revenue_czk_ideal": 14600,
+      "keywords": [
+        {
+          "kw": "newborn photography",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad (knowledge); hlavně editační appky"
+        },
+        {
+          "kw": "newborn poses",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "posing guide",
+          "saturation": 6,
+          "competitor": "Posing App",
+          "note": "odhad; obsazené pro dospělé"
+        },
+        {
+          "kw": "baby photo poses",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad; mix s baby milestone appkami"
+        }
+      ],
+      "demand_evidence": "Neověřeno živými daty. Znalost: newborn kurzy stojí stovky USD a posing appky pro dospělé mají placené verze; dedikovaný newborn průvodce na iOS si nevybavuji.",
+      "competitors": [
+        {
+          "name": "Posing App",
+          "url": "",
+          "role": "parent",
+          "note": "Pózy pro fotografy (dospělí, páry)."
+        },
+        {
+          "name": "Pose Guide",
+          "url": "",
+          "role": "parent",
+          "note": "Generický pose guide (znalost)."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Obsah vyžaduje profesionální ilustrace a odbornou revizi bezpečnosti – drahé.",
+        "Pokud někdo poranní dítě podle návodu, reputační a právní riziko.",
+        "Komunita se učí z YouTube/Instagramu zdarma.",
+        "Malá cílovka; jednorázová koupě."
+      ],
+      "killer_risk": "Bezpečnostní riziko a odpovědnost za pózy.",
+      "mitigation": "Spolupráce s certifikovanou newborn fotografkou/trenérkou, výrazné bezpečnostní upozornění, žádné riskantní pózy bez kompozitu.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 4
+      }
+    },
+    {
+      "id": "photo-video-26",
+      "name": "ShotList – Wedding Photo Planner",
+      "tagline": "Plán svatebního focení s časovou osou a skupinovými fotkami – odškrtávej, nic nezapomeň.",
+      "pitch": "Svatební fotografové a videografové řeší stejné stresy: zapomenutá skupinová fotka s babičkou, posun harmonogramu, západ slunce. Dnes používají papíry, Google Sheets nebo drahé CRM. Nabídneme offline shot list s šablonami (přípravy, obřad, skupinovky), časovou osou se západem slunce a zlatou hodinou (lokálně počítané), odškrtáváním a sdílením PDF se svatebčany.",
+      "niche": "Offline shot list a den svatby pro fotografy. CRM (HoneyBook, Studio Ninja) jsou cloudová a drahá, plánovací appky pro nevěsty neřeší foto.",
+      "parent_market": "Business nástroje pro fotografy (HoneyBook, Studio Ninja, Táve) a svatební plánovače (Zola, The Knot) – obří trh.",
+      "target_user": "Svatební fotografové a videografové, druhý fotograf, svatební koordinátoři.",
+      "features": [
+        "Šablony shot listů (obřad, skupinovky, detaily)",
+        "Časová osa dne se západem slunce/zlatou hodinou (offline výpočet)",
+        "Odškrtávání během dne, jména lidí ke skupinovkám",
+        "Sdílení PDF s párem",
+        "Kopírování šablon mezi svatbami"
+      ],
+      "offline": "full",
+      "offline_note": "Výpočet slunce (algoritmus NOAA) i data lokálně; sdílení přes systémové menu.",
+      "monetization": "Freemium (1 akce); Pro 19,99 USD/rok (≈ 391 CZK) nebo 29,99 USD doživotně.",
+      "revenue_math": "Ideál: wedding shot list/photography shot list/photo checklist ≈ 1 200 stažení/měs × 5 % = 60 × ~450 CZK ≈ 27 000 CZK; konzervativně 12 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "shot list",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad (knowledge); filmové shot list appky"
+        },
+        {
+          "kw": "wedding shot list",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "photography checklist",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "wedding photography",
+          "saturation": 5,
+          "competitor": "—",
+          "note": "odhad; mix editorů"
+        }
+      ],
+      "demand_evidence": "Neověřeno živými daty. Znalost: shot list šablony patří mezi nejstahovanější PDF od fotografických blogů; existují filmové shot list appky (Shot Lister) – foto verze slabá (odhad).",
+      "competitors": [
+        {
+          "name": "Shot Lister",
+          "url": "",
+          "role": "niche",
+          "note": "Filmový shot list (znalost), ne svatební foto."
+        },
+        {
+          "name": "HoneyBook",
+          "url": "",
+          "role": "parent",
+          "note": "CRM pro kreativce, cloudové předplatné."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Fotografové si jednou udělají šablonu v Poznámkách a appku nepotřebují.",
+        "CRM mohou přidat shot list modul.",
+        "Malý počet svateb na fotografa – předplatné tlačí na cenu."
+      ],
+      "killer_risk": "Nízká vnímaná hodnota proti Poznámkám/Google Sheets.",
+      "mitigation": "Doživotní licence, skvělé šablony v 20 jazycích, zlatá hodina a skupinovky se jmény jako „wow“ funkce.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "photo-video-27",
+      "name": "JerseyFind – Sort Photos by Number",
+      "tagline": "Z 800 fotek ze zápasu najdi všechny s číslem 17 – během minuty, bez nahrávání kamkoli.",
+      "pitch": "Týmoví fotografové a rodiče fotí celé zápasy a pak ručně hledají fotky konkrétního hráče. Velké platformy (SmugMug, Pic-Time) nabízejí vyhledání podle čísla dresu jen v cloudu a pro profíky. Naše appka přečte čísla dresů a startovní čísla (Vision OCR) lokálně, vytvoří alba podle hráčů a umožní rychle sdílet fotky každé rodině zvlášť.",
+      "niche": "Třídění sportovních fotek podle čísla dresu/startovního čísla on-device. Profi cloudové nástroje jsou drahé a B2B.",
+      "parent_market": "Sportovní a eventová fotografie (SmugMug, Pic-Time, bib-number vyhledávání u běžeckých závodů – placené služby).",
+      "target_user": "Týmoví fotografové mládeže, rodiče-fotografové, fotografové běžeckých závodů.",
+      "features": [
+        "OCR čísel dresů a startovních čísel (Vision)",
+        "Alba podle hráčů/čísel, ruční opravy",
+        "Rychlé sdílení výběru pro rodinu",
+        "Import z Fotek i Souborů",
+        "Filtry ostrosti"
+      ],
+      "offline": "full",
+      "offline_note": "OCR a třídění lokálně.",
+      "monetization": "Freemium (100 fotek/měs); Pro 3,99 USD/měs nebo 24,99 USD/rok (≈ 489 CZK).",
+      "revenue_math": "Ideál: jersey number/sports photo sort/bib number ≈ 1 000 stažení/měs × 5 % = 50 × ~350 CZK ≈ 17 500 CZK; konzervativně 11 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 11000,
+      "keywords": [
+        {
+          "kw": "jersey number",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "bib number",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; hlavně aplikace závodů"
+        },
+        {
+          "kw": "sports photo organizer",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "photo sorter",
+          "saturation": 5,
+          "competitor": "—",
+          "note": "odhad; čističe galerií"
+        }
+      ],
+      "demand_evidence": "Neověřeno živými daty. Znalost: bib-number vyhledávání je standardní placená funkce fotografických platforem u závodů. Objem hledání v App Store nejistý, spíš malý.",
+      "competitors": [
+        {
+          "name": "SmugMug",
+          "url": "",
+          "role": "parent",
+          "note": "Cloudové galerie fotografů s vyhledáváním (znalost)."
+        },
+        {
+          "name": "Pic-Time",
+          "url": "",
+          "role": "parent",
+          "note": "Galerie pro profi fotografy."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Apple Fotky už umí vyhledávat text ve fotkách (Live Text search) – „17“ se dá najít ve Fotkách zdarma.",
+        "OCR čísel v pohybu, na zmačkaných dresech a z boku je nespolehlivé.",
+        "Velmi malý objem hledání, lidé nevědí, že taková appka existuje."
+      ],
+      "killer_risk": "Vyhledávání textu ve Fotkách zdarma pokryje většinu potřeby (Sherlock).",
+      "mitigation": "Přidat přidanou hodnotu (alba per rodina, hromadné sdílení, ostrost), jinak nápad odložit.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 4
+      }
+    },
+    {
+      "id": "photo-video-28",
+      "name": "GeoTag Trail – GPX Photo Geotagging",
+      "tagline": "Fotky z foťáku bez GPS dostanou polohu z tvé trasy – po túře jedním tahem.",
+      "pitch": "Fotografové s fotoaparáty bez GPS (většina zrcadlovek a bezzrcadlovek) a drony bez sync chtějí mít fotky na mapě. Nahrají trasu z hodinek (GPX z Garmin/Apple Watch/Strava export) a appka páruje fotky podle času, včetně korekce časového posunu fotoaparátu. Na desktopu jsou nástroje (Lightroom, GeoSetter), na iPadu/iPhonu chybí jednoduchý offline.",
+      "niche": "Geotagging fotek z GPX na iOS. Lightroom Mobile to neumí, desktop nástroje ano.",
+      "parent_market": "Foto metadata nástroje (Metapho, Exif Viewer – placené a populární) a outdoor/GPX ekosystém.",
+      "target_user": "Outdoor a cestovatelští fotografové s fotoaparátem, uživatelé iPadu na cestách.",
+      "features": [
+        "Import GPX/FIT, zobrazení trasy",
+        "Párování fotek podle času s korekcí posunu (fotka hodin)",
+        "Zápis GPS do EXIF/XMP, i RAW sidecar",
+        "Mapa fotek na trase",
+        "Dávkové zpracování"
+      ],
+      "offline": "full",
+      "offline_note": "Párování a zápis metadat lokálně; mapové dlaždice jen cache MapKit (volitelné).",
+      "monetization": "Placená 4,99 USD (≈ 97 CZK) nebo freemium s Pro 7,99 USD (≈ 156 CZK).",
+      "revenue_math": "Ideál: geotag photos/gpx photo/add location to photo ≈ 2 000 stažení/měs × 5 % = 100 × ~120 CZK ≈ 12 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "geotag photos",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "gpx photo",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "add location to photo",
+          "saturation": 5,
+          "competitor": "Metapho",
+          "note": "odhad; editory metadat"
+        },
+        {
+          "kw": "photo gps",
+          "saturation": 5,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno živými daty. Znalost: EXIF editory (Metapho, Exif Viewer by Fluntro) patří k placeným foto utilitám s dobrými hodnoceními; GPX párování je častý dotaz fotografů.",
+      "competitors": [
+        {
+          "name": "Metapho",
+          "url": "",
+          "role": "parent",
+          "note": "EXIF editor s úpravou polohy (znalost)."
+        },
+        {
+          "name": "Exif Viewer by Fluntro",
+          "url": "",
+          "role": "parent",
+          "note": "EXIF editor."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Nové fotoaparáty mají Bluetooth GPS přes telefon (Canon, Sony, Nikon appky).",
+        "Fotky RAW přes iOS: omezený zápis metadat a nutnost sidecar souborů.",
+        "Malá, technická cílovka."
+      ],
+      "killer_risk": "Výrobci fotoaparátů řeší GPS přes vlastní appky.",
+      "mitigation": "Podpora dronů, akčních kamer a starších fotoaparátů; spojit s dalšími metadata funkcemi.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "photo-video-29",
+      "name": "ArtShot – Artwork Photo Capture",
+      "tagline": "Tvůj obraz vyfocený rovně, bez odlesků a ve věrných barvách – připravený na portfolio a prodej.",
+      "pitch": "Malíři a ilustrátoři potřebují kvalitní fotky svých děl pro Instagram, e-shop a přihlášky na výstavy. Mobilem je fotka zkreslená, s odlesky od laku a posunutými barvami. Dokumentové skenery ořežou papír, ale ne rám obrazu, a barvy „vylepší“. Naše appka perspektivně vyrovná dílo, kombinací více snímků potlačí odlesky, kalibruje barvy přes šedou kartu a exportuje v rozměrech pro tisk reprodukcí.",
+      "niche": "Fotodokumentace výtvarných děl. Doc scannery (CamScanner) cílí na dokumenty, ne na umění s texturou.",
+      "parent_market": "Skenovací appky (CamScanner – evidence Productivity, Photomyne) a trh pro umělce (Procreate, Artwork archive appky).",
+      "target_user": "Malíři, ilustrátoři, studenti výtvarky, galerie, prodejci umění online.",
+      "features": [
+        "Perspektivní vyrovnání s rámem i bez",
+        "Potlačení odlesků kombinací 3 snímků",
+        "Barevná kalibrace přes šedou/ColorChecker kartu",
+        "Export v rozlišení pro tisk (DPI kalkulačka)",
+        "Katalog děl (název, rozměr, technika, cena)"
+      ],
+      "offline": "full",
+      "offline_note": "Zpracování (Vision, Core Image) i katalog lokálně.",
+      "monetization": "Freemium; Pro 14,99 USD/rok (≈ 293 CZK) nebo 24,99 USD doživotně (≈ 489 CZK).",
+      "revenue_math": "Ideál: artwork photo/photograph artwork/art scanner ≈ 1 500 stažení/měs × 4 % = 60 × ~380 CZK ≈ 22 800 CZK; konzervativně 11 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 11000,
+      "keywords": [
+        {
+          "kw": "art scanner",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "artwork photo",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "photograph artwork",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "document scanner",
+          "saturation": 9,
+          "competitor": "CamScanner",
+          "note": "odhad; saturované – parent"
+        }
+      ],
+      "demand_evidence": "Web evidence (Productivity): skenovací trh je dominován CamScannerem – parent. Nika umělců je předpoklad (znalost: častý dotaz „how to photograph paintings“ na r/painting).",
+      "competitors": [
+        {
+          "name": "CamScanner",
+          "url": "https://apps.apple.com/om/app/camscanner-pdf-scanner-app/id388627783",
+          "role": "parent",
+          "note": "Web evidence (Productivity): lídr skenování dokumentů."
+        },
+        {
+          "name": "Artwork Archive",
+          "url": "",
+          "role": "niche",
+          "note": "Katalog umělců (cloud, předplatné) – znalost."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Potlačení odlesků z ruky bez stativu funguje špatně – slib, který nesplníme.",
+        "Umělci s vážným zájmem fotí fotoaparátem s polarizací, amatérům stačí Fotky.",
+        "Kalibrace přes kartu = další hardware, kterou většina nemá."
+      ],
+      "killer_risk": "Výsledek nebude viditelně lepší než běžná fotka + ořez ve Fotkách.",
+      "mitigation": "Soustředit se na geometrii a konzistentní katalog (prodejní hodnota), odlesky jen jako bonus se stativem.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "photo-video-30",
+      "name": "Eclipse 2027 – Photo Timer",
+      "tagline": "Úplné zatmění Slunce 2. 8. 2027: hlasový odpočet kontaktů a série fotek bez sahání na telefon.",
+      "pitch": "2. srpna 2027 bude nejdelší úplné zatmění Slunce století viditelné ze Španělska, Maroka, Egypta a Saúdské Arábie – miliony evropských turistů. Při totalitě má člověk 2–6 minut a zapomene fotit. Appka spočítá kontakty offline pro polohu (Besselovy elementy), nahlas odpočítá, připomene sundat filtr a automaticky nafotí sérii (diamantový prsten, korona).",
+      "niche": "Automatizované focení zatmění Slunce 2027 na telefonu. Solar Eclipse Timer existuje (hlas), ale kamerovou automatizaci pro telefon má slabou.",
+      "parent_market": "Astro plánovače (PhotoPills, Solar Eclipse Timer, Eclipse Guide) – během US zatmění 2024 byly tyto appky v top chartech.",
+      "target_user": "Turisté cestující za zatměním 2027 do ES/MA/EG, astro fotografové.",
+      "features": [
+        "Offline výpočet kontaktů podle GPS (Besselovy elementy)",
+        "Hlasový odpočet v 20 jazycích",
+        "Automatická série fotek s bracketingem",
+        "Upozornění „sundej/nasaď filtr“",
+        "Simulátor pro trénink"
+      ],
+      "offline": "full",
+      "offline_note": "Výpočty i kamera offline – u odlehlých lokalit bez signálu klíčové.",
+      "monetization": "Placená 4,99 USD (≈ 97 CZK čistého) nebo zdarma + Pro 6,99 USD.",
+      "revenue_math": "Ideál (jen únor–srpen 2027): eclipse/solar eclipse/eclipse 2027 ≈ 8 000 stažení/měs × 5 % = 400 × 110 CZK ≈ 44 000 CZK/měs v sezóně; celoroční průměr ≈ 10 000 CZK.",
+      "revenue_czk_ideal": 10000,
+      "keywords": [
+        {
+          "kw": "solar eclipse",
+          "saturation": 7,
+          "competitor": "Solar Eclipse Timer",
+          "note": "odhad (knowledge); po 2024 hodně appek"
+        },
+        {
+          "kw": "eclipse 2027",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; roste před akcí"
+        },
+        {
+          "kw": "eclipse photography",
+          "saturation": 3,
+          "competitor": "PhotoPills",
+          "note": "odhad"
+        },
+        {
+          "kw": "eclipse timer",
+          "saturation": 3,
+          "competitor": "Solar Eclipse Timer",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno živými daty. Znalost: během zatmění 8. 4. 2024 v USA byly eclipse appky v top chartech; 2027 je v evropských médiích „zatmění století“. Poptávka je čistě jednorázová.",
+      "competitors": [
+        {
+          "name": "Solar Eclipse Timer",
+          "url": "",
+          "role": "niche",
+          "note": "Zavedený hlasový časovač (Gordon Telepun), silný lídr."
+        },
+        {
+          "name": "PhotoPills",
+          "url": "",
+          "role": "parent",
+          "note": "Plánovač astro fotografie."
+        }
+      ],
+      "evidence": "knowledge",
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Jednorázová událost – po 2. 8. 2027 appka nemá tržby (do dalšího zatmění 2028 Austrálie).",
+        "Solar Eclipse Timer je lídr s důvěrou komunity.",
+        "Chyba ve výpočtu kontaktů = zkažený zážitek a vlna 1★.",
+        "Fotit Slunce telefonem bez filtru může poškodit senzor – nutné výrazné varování."
+      ],
+      "killer_risk": "Krátké okno prodeje a silný zavedený konkurent.",
+      "mitigation": "Brát jako kampaňovou appku: vydat v lednu 2027, pak rozšířit na zatmění 2028 a Měsíční zatmění; nízké náklady (3 týdny).",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 3
+      }
+    }
+  ]
+}

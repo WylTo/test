@@ -1,0 +1,2645 @@
+{
+  "category": "Graphics & Design",
+  "category_slug": "graphics-design",
+  "search_notes": "Offline běh: žádná volání apple_fetch.py ani WebSearch. Jádro (stained glass, litofánie, laser prep, mozaika, dýně, diamantové malování, balónky, islámská geometrie, cementové dlaždice) stojí na _partial/graphics-design_evidence.txt (18 WebSearch dotazů) a business evidence (balónky); ostatní nápady jsou z vlastní znalosti trhu (evidence: knowledge) se saturací jako odhad a blue_ocean max 7. Hlavní klíčová slova obecných konvertorů (cross stitch, fuse beads, PBN, tattoo stencil, quilt, míchání barev, barevná analýza) jsou v 2025–26 přeplněné — používáme je jen jako důkaz rodičovského trhu. Před buildem je nutné ověřit knowledge nápady přes apple_fetch check (hint_found, saturace).",
+  "ideas": [
+    {
+      "id": "graphics-design-01",
+      "name": "Stained Glass Pattern Maker",
+      "tagline": "Z fotky nebo skici hotový řezací vzor vitráže s očíslovanými díly a spotřebou materiálu.",
+      "pitch": "Vitrážisté (Tiffany technika i olověné pásky) dnes kreslí vzory ručně nebo v desktopových programech za stovky dolarů. Aplikace z fotky či skici vytvoří řezatelný vzor: zjednoduší tvary tak, aby šly skutečně vyříznout ze skla, očísluje díly, přiřadí barvy a textury skla a vytiskne vzor v měřítku 1:1 na A4/Letter dlaždice. K tomu spočítá plochu skla po barvách, délku měděné fólie a spotřebu cínu. Na App Store dnes není ani jeden návrhář vitrážových vzorů — jen dvě nové kalkulačky z roku 2026, což ukazuje, že indie vývojáři už platící publikum vidí.",
+      "niche": "Tvorba řezatelných vitrážových vzorů. Velcí hráči foto-na-vzor konvertorů (cross stitch, korálky, malování podle čísel) řeší pixelové mřížky; vitráž potřebuje vektorové křivky s omezením na řezatelné úhly a minimální šířku dílu, což je jiná geometrie, kterou nikdo nepostavil.",
+      "parent_market": "Foto-na-řemeslný-vzor konvertory (Beads Creator 1,5 mil. stažení, Stitchly, Paint by Number Creator) a desktopový vitrážový software (Glass Eye 2000). Rodič je prokazatelně ziskový, vitrážová větev je prázdná.",
+      "target_user": "Hobby vitrážisté (Tiffany/foil, olověné pásky), účastníci kurzů vitráže, malé dílny prodávající suncatchery na Etsy; převážně 35–70 let, US/UK/DE/AU.",
+      "features": [
+        "Foto/skica → vektorový vzor s kontrolou řezatelnosti (ostré vnitřní úhly, min. šířka dílu)",
+        "Očíslované díly, paleta barev a textur skla, náhled s prosvícením",
+        "Tisk v měřítku 1:1 na dlaždice A4/Letter s ořezovými značkami (PDF)",
+        "Kalkulace: plocha skla po barvách, fólie, cín, odpad v %",
+        "Knihovna 30 startovních vzorů (vlastní tvorba)"
+      ],
+      "offline": "full",
+      "offline_note": "Vše na zařízení: Vision (segmentace/obrysy), Core Image, vlastní vektorizace, PDFKit. Žádný server, volitelně iCloud pro projekty.",
+      "monetization": "Freemium: zdarma 1 projekt a tisk s vodoznakem; jednorázové odemčení Pro 14,99 USD (≈ 345 CZK) nebo předplatné 4,99 USD/měs (≈ 115 CZK) / 29,99 USD/rok (≈ 690 CZK) pro dílny.",
+      "revenue_math": "Ideál: 2 000 stažení/měs z klíčů stained glass pattern/designer/maker × 4 % konverze = 80 nákupů × 14,99 USD = 1 199 USD hrubě → ×0,85 = 1 019 USD čistě ≈ 23 400 CZK/měs. Poloviční scénář (1 000 stažení) stále ≈ 11 700 CZK.",
+      "revenue_czk_ideal": 23400,
+      "keywords": [
+        {
+          "kw": "stained glass pattern",
+          "saturation": 0,
+          "competitor": "Stained Glass Calculator (nová 2026, jen kalkulačka)",
+          "note": "Web evidence: 0 návrhářů vzorů v top výsledcích; jen 2 kalkulačky, foto efekt, AR a puzzle hry. OPEN."
+        },
+        {
+          "kw": "stained glass designer",
+          "saturation": 1,
+          "competitor": "Stained Glass Photo Effect (jen filtr)",
+          "note": "Odhad z evidence stejné rešerše — výsledky obsahovaly jen filtr a hry, žádný designér."
+        },
+        {
+          "kw": "stained glass calculator",
+          "saturation": 2,
+          "competitor": "Stained Glass Cost Calculator (2026)",
+          "note": "Web evidence: 2 nové kalkulačky 2026 — dokládá platící publikum; my kalkulaci přidáme jako feature."
+        },
+        {
+          "kw": "suncatcher pattern",
+          "saturation": 0,
+          "competitor": "žádný",
+          "note": "Odhad: long-tail pro Etsy prodejce, bez dedikované aplikace."
+        },
+        {
+          "kw": "glass cutting pattern",
+          "saturation": 1,
+          "competitor": "žádný dedikovaný",
+          "note": "Odhad; obecný výraz, ale bez titulové konkurence."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web evidence): na 'stained glass pattern' nevyšel žádný návrhář vzorů, ale v roce 2026 vznikly dvě specializované kalkulačky → vývojáři vidí poptávku. Rodičovský trh foto-na-vzor konvertorů je prokázán (Beads Creator: 1,5 mil. stažení). Předpoklad: objem hledání (Apple hint) jsme v offline běhu neověřili.",
+      "competitors": [
+        {
+          "name": "Stained Glass Calculator",
+          "url": "https://apps.apple.com/us/app/stained-glass-calculator/id6760149016",
+          "role": "niche",
+          "note": "Nová 2026, jen kalkulace a škálování vzoru 0,5–3×, neumí vzor vytvořit."
+        },
+        {
+          "name": "Stained Glass Cost Calculator",
+          "url": "https://apps.apple.com/us/app/stained-glass-cost-calculator/id6791704434",
+          "role": "niche",
+          "note": "Nová 2026, jen cenová kalkulace."
+        },
+        {
+          "name": "Beads Creator",
+          "url": "https://apps.apple.com/us/app/beads-creator-bead-patterns/id1235585928",
+          "role": "parent",
+          "note": "Důkaz rodičovského trhu foto-na-řemeslný-vzor (1,5 mil. stažení)."
+        },
+        {
+          "name": "Stained Glass Photo Effect",
+          "url": "https://apps.apple.com/us/app/stained-glass-photo-effect/id1142269336",
+          "role": "niche",
+          "note": "Jen fotofiltr — zabírá klíčové slovo, ale nenaplňuje záměr."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Automatická vektorizace, která vyrobí opravdu řezatelné díly, je těžká; vzor, který nejde vyříznout, přinese 1★ recenze od lidí, kteří si koupili sklo za desítky dolarů.",
+        "Publikum je starší a menší než u cross stitch; reálný objem hledání může být stovky, ne tisíce stažení měsíčně.",
+        "Zkušení vitrážisté kreslí na papír a mají zaběhnutý Glass Eye 2000 na PC — iPhone jim může připadat malý (nutná iPad verze).",
+        "Tvůrci obou kalkulaček z roku 2026 mohou generátor vzorů dodělat během pár týdnů."
+      ],
+      "killer_risk": "Kvalita vektorizace: pokud první vzory nejsou řezatelné bez ruční úpravy, recenze aplikaci pohřbí.",
+      "mitigation": "MVP postavit na poloautomatu: automatický návrh + ruční úprava čar prstem/Pencil, pravidla řezatelnosti jako varování; iPad-first; začít s knihovnou ručně ověřených vzorů.",
+      "build_weeks": 7,
+      "evidence": "web",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 9,
+        "monetization": 7,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "graphics-design-02",
+      "name": "Lithophane Maker 3D",
+      "tagline": "Fotka → STL/3MF litofánie přímo v iPhonu, bez webových nástrojů a bez odesílání fotek.",
+      "pitch": "Litofánie (fotka vytištěná na 3D tiskárně, která se ukáže až proti světlu) je jeden z nejoblíbenějších dárků mezi majiteli 3D tiskáren. Dnes se tvoří na webech jako 3dp.rocks nebo ItsLitho — na iPhonu neexistuje generátor STL, jediná aplikace Lit Pic je tisková služba. Aplikace na zařízení převede fotku na plochou, zakřivenou, válcovou (lampa) či srdcovou litofánii, s náhledem prosvícení a exportem STL/3MF rovnou do Bambu Handy nebo sliceru. Počet domácích 3D tiskáren (Bambu Lab A1/P1) prudce roste a jejich majitelé za nástroje platí.",
+      "niche": "Generátor litofánií na iOS. Výrobci tiskáren řeší ovládání tiskárny, slicery řeší tisk — převod fotky na geometrii nikdo na mobilu nedělá, protože historicky vznikl jako webová hračka.",
+      "parent_market": "3D tisk companion aplikace a modelové knihovny (Bambu Handy, MakerWorld, Printables, Thingiverse) + webové generátory litofánií (ItsLitho má placený Pro tarif).",
+      "target_user": "Majitelé domácích 3D tiskáren (Bambu, Prusa, Creality), hlavně muži 25–55 let, kteří tisknou dárky; Etsy prodejci litofánových lamp.",
+      "features": [
+        "Fotka → výšková mapa → STL/3MF (plochá, zakřivená, válec, srdce, noční lampa)",
+        "Živý náhled prosvícení s nastavením tloušťky min/max a rámečku",
+        "Presety podle tiskárny a filamentu (bílé PLA), odhad času tisku",
+        "Sdílení souboru přes Share Sheet do sliceru / Bambu Handy",
+        "Barevná (CMYK) litofánie jako Pro funkce"
+      ],
+      "offline": "full",
+      "offline_note": "Generování sítě (mesh) i export běží lokálně v Metal/Swift; fotky nikam neodcházejí (silný privacy argument proti webovým nástrojům).",
+      "monetization": "Freemium: plochá litofánie zdarma (s limitem rozlišení); Pro jednorázově 9,99 USD (≈ 230 CZK) — všechny tvary, barevná litofánie, dávkový export. Alternativa 2,99 USD/měs.",
+      "revenue_math": "Ideál: 2 500 stažení/měs (lithophane maker/generator/lamp) × 5 % = 125 × 9,99 USD = 1 249 USD hrubě → 1 061 USD čistě ≈ 24 400 CZK/měs.",
+      "revenue_czk_ideal": 24400,
+      "keywords": [
+        {
+          "kw": "lithophane maker",
+          "saturation": 1,
+          "competitor": "Lit Pic: Lithophane Creator (tisková služba, ne STL)",
+          "note": "Web evidence: saturace 1, jediný výsledek je služba tisku a zásilky. OPEN."
+        },
+        {
+          "kw": "lithophane",
+          "saturation": 1,
+          "competitor": "Lit Pic",
+          "note": "Web evidence: snippet zmiňuje LithoCam (STL generátor), URL nenalezena — reálný konkurent možná existuje."
+        },
+        {
+          "kw": "lithophane lamp",
+          "saturation": 0,
+          "competitor": "žádný",
+          "note": "Odhad; populární formát na MakerWorld."
+        },
+        {
+          "kw": "photo to stl",
+          "saturation": 2,
+          "competitor": "obecné 3D skenovací aplikace",
+          "note": "Odhad; šířší záměr, částečně obsazeno 3D skenery."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web evidence): v App Store saturace 1 (jen Lit Pic, tisková služba). Poptávku dokládají webové nástroje 3dp.rocks a ItsLitho (placený tarif). Předpoklad: objem mobilních hledání neověřen; existence LithoCam znamená, že 1 slabý konkurent pravděpodobně je.",
+      "competitors": [
+        {
+          "name": "Lit Pic: Lithophane Creator",
+          "url": "https://apps.apple.com/us/app/lit-pic-lithophane-creator/id1489604752",
+          "role": "niche",
+          "note": "Jen objednávka tisku a zásilky, ne generátor souborů."
+        },
+        {
+          "name": "LithoCam",
+          "url": "",
+          "role": "niche",
+          "note": "Zmíněn ve snippetu (Masaharu Tsukamoto), URL neověřena — prověřit před startem."
+        },
+        {
+          "name": "Bambu Handy",
+          "url": "",
+          "role": "parent",
+          "note": "Companion aplikace lídra domácího 3D tisku; ukazuje velikost publika."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Bambu Lab nebo MakerWorld mohou přidat generátor litofánií do svých aplikací (MakerWorld už má online 'MakerLab' nástroje) — klasický Sherlock od platformy.",
+        "Uživatel 3D tiskárny sedí u počítače a web je zdarma; placení za mobilní verzi není samozřejmé.",
+        "Po prvních 2–3 dárcích (Vánoce, Den matek) retence padá — výrazná sezónnost."
+      ],
+      "killer_risk": "MakerWorld/Bambu přidá zdarma litofánii do Bambu Handy a zabije placenou hodnotu.",
+      "mitigation": "Jednorázová cena, rychlost a soukromí (bez uploadu), tvary, které web neumí (barevná litofánie, lampa se závitem pro konkrétní LED sokly), a ASO na long-tail 'lithophane lamp', 'moon lamp photo'.",
+      "build_weeks": 5,
+      "evidence": "web",
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 8,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "graphics-design-03",
+      "name": "Laser Photo Engrave Prep",
+      "tagline": "Fotka připravená na laserové gravírování do dřeva, břidlice či skla — značkově neutrálně, za minutu.",
+      "pitch": "Levné diodové lasery (xTool, Atomstack, Sculpfun, LaserPecker) zaplavily domácnosti, ale fotogravírování je věda: dithering, gama, kontrast podle materiálu, inverze u břidlice. Aplikace výrobců umí jen svůj stroj; jediný obecný nástroj Engrave Me je starý. Připravíme fotku podle materiálu (preset dřevo/břidlice/kůže/akryl/eloxovaný hliník), nabídneme Jarvis/Stucki/Atkinson dithering, náhled simulace výsledku a export PNG/SVG v přesném DPI pro LightBurn i aplikace výrobců.",
+      "niche": "Značkově neutrální příprava fotek pro laser. Výrobci řeší jen vlastní hardware a nemají důvod pomáhat majitelům konkurence; desktop LightBurn je drahý a na mobilu není.",
+      "parent_market": "Laserové gravírování a řezání: LightBurn (placený desktop), xTool Creative Space, LaserPecker Design Space, Glowforge — trh hobby laserů roste dvouciferně.",
+      "target_user": "Majitelé hobby laserů, Etsy/marketplace prodejci personalizovaných dárků (prkénka, břidlicové fotky), makerspaces.",
+      "features": [
+        "Presety materiálů (dřevo, břidlice, kůže, sklo, akryl, eloxovaný hliník) s gamou a inverzí",
+        "6 algoritmů ditheringu + simulace výsledku 'spáleného' dřeva",
+        "Přesné DPI/velikost v mm, export PNG/BMP/SVG",
+        "Ořez, odstranění pozadí (Vision), text a rámečky",
+        "Test karta pro kalibraci výkonu/rychlosti"
+      ],
+      "offline": "full",
+      "offline_note": "Core Image + vlastní dithering v Metal, Vision pro odstranění pozadí; export přes Share Sheet/Files.",
+      "monetization": "Freemium: 3 exporty zdarma; Pro jednorázově 12,99 USD (≈ 300 CZK) nebo 3,99 USD/měs pro prodejce (dávkové zpracování).",
+      "revenue_math": "Ideál: 2 000 stažení/měs (laser engraving photo, dithering, slate engraving) × 4 % = 80 × 12,99 USD = 1 039 USD hrubě → 883 USD čistě ≈ 20 300 CZK/měs.",
+      "revenue_czk_ideal": 20300,
+      "keywords": [
+        {
+          "kw": "laser engraving photo",
+          "saturation": 3,
+          "competitor": "Engrave Me (starý, Atkinson dithering)",
+          "note": "Web evidence: výsledky dominují aplikace výrobců; obecný nástroj jen Engrave Me. MODERATE/OPEN pro neutrální nástroj."
+        },
+        {
+          "kw": "photo dithering",
+          "saturation": 2,
+          "competitor": "Engrave Me",
+          "note": "Web evidence: LaserPecker ditheruje defaultně, ale jen pro svůj stroj."
+        },
+        {
+          "kw": "laser engraving",
+          "saturation": 6,
+          "competitor": "LaserPecker, Genmitsu, AlgoLaser (značkové)",
+          "note": "Web evidence: head term obsazen značkovými aplikacemi — jen jako důkaz rodiče."
+        },
+        {
+          "kw": "slate engraving",
+          "saturation": 0,
+          "competitor": "žádný",
+          "note": "Odhad; long-tail pro prodejce dárků."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web evidence): 9 aplikací výrobců laserů + jediný starý obecný nástroj Engrave Me. To dokazuje velký rodičovský trh a slabou neutrální konkurenci. Předpoklad: objem hledání 'laser engraving photo' na iOS neověřen.",
+      "competitors": [
+        {
+          "name": "Engrave Me",
+          "url": "https://apps.apple.com/us/app/engrave-me/id488061300",
+          "role": "niche",
+          "note": "Jediný obecný nástroj, starý (id z roku 2011)."
+        },
+        {
+          "name": "LaserPecker Design Space",
+          "url": "https://apps.apple.com/us/app/laserpecker-design-space/id6445970960",
+          "role": "parent",
+          "note": "Značková aplikace, dithering jen pro vlastní stroje."
+        },
+        {
+          "name": "Laser Engraving",
+          "url": "https://apps.apple.com/au/app/laser-engraving/id1519391261",
+          "role": "niche",
+          "note": "Obecně pojmenovaná, zabírá head term."
+        },
+        {
+          "name": "AlgoLaser",
+          "url": "https://apps.apple.com/us/app/algolaser/id6450949534",
+          "role": "parent",
+          "note": "Další výrobce s vlastní aplikací — fragmentace trhu."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "xTool/LaserPecker zlepší vlastní fotomódy a uživatelé nebudou potřebovat mezikrok.",
+        "Profesionálové používají LightBurn na PC; aplikace může uvíznout mezi začátečníky, kteří neplatí, a profíky, kteří ji nepotřebují.",
+        "Simulace výsledku bez znalosti konkrétního laseru a dřeva bude nepřesná → zklamání a vratky."
+      ],
+      "killer_risk": "Aplikace výrobců doženou kvalitu fotogravírování a mezikrok ztratí smysl.",
+      "mitigation": "Sázet na neutralitu (jeden workflow pro všechny stroje), test karty a komunitní presety materiálů; ASO na materiály (slate, wood photo, leather).",
+      "build_weeks": 4,
+      "evidence": "web",
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 7,
+        "monetization": 7,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      }
+    },
+    {
+      "id": "graphics-design-04",
+      "name": "Mosaic Tile Planner",
+      "tagline": "Z fotky plán mozaiky z kamínků: mapa tesser, počty kusů po barvách a nákupní seznam.",
+      "pitch": "Mozaikáři (sklo, keramika, smalti) dnes převádějí motiv na plán ručně přes pauzovací papír. Hledání 'photo mosaic' je zamořené koláži z fotek, takže skutečný plánovač tesser na App Store chybí. Aplikace z fotky vytvoří mapu dílků s volbou velikosti (1×1, 2×2 cm), stylu kladení (opus tessellatum, vermiculatum), palety podle skutečných sad dlaždic a spočítá kusy i plochu spár. Výstup se tiskne 1:1 jako podklad pod síťku.",
+      "niche": "Plánování klasické mozaiky z tesser. Keyword 'photo mosaic' obsadily koláže, takže velcí hráči mozaikáře vůbec neobsluhují; brand aplikace (Mosaico) řeší jen vlastní cementové dlaždice.",
+      "parent_market": "Foto-na-řemeslný-vzor konvertory (Beads Creator, diamantové malování, malování podle čísel) + DIY/renovace (dlaždice, koupelny).",
+      "target_user": "Hobby mozaikáři, účastníci kurzů, učitelé výtvarky, DIY renovátoři, kteří chtějí mozaikový panel do koupelny nebo na zahradu.",
+      "features": [
+        "Foto → mapa tesser s volbou velikosti dílku, spár a stylu kladení",
+        "Palety podle sad (sklo, keramika, smalti) + vlastní barvy",
+        "Počty kusů po barvách, plocha, odhad lepidla a spárovačky",
+        "Tisk 1:1 na dlaždice A4 (PDF) jako podklad pod síťku",
+        "Režim ručního dokreslení obrysů (andamento)"
+      ],
+      "offline": "full",
+      "offline_note": "Kvantizace barev, Voronoi/mřížkové rozmístění a PDF export běží lokálně.",
+      "monetization": "Freemium: náhled zdarma, export a tisk v Pro — jednorázově 9,99 USD (≈ 230 CZK); balíčky palet značek 1,99 USD.",
+      "revenue_math": "Ideál: 1 800 stažení/měs (mosaic pattern, mosaic art planner, tile mosaic) × 4 % = 72 × 9,99 USD = 719 USD hrubě → 611 USD čistě ≈ 14 000 CZK/měs.",
+      "revenue_czk_ideal": 14000,
+      "keywords": [
+        {
+          "kw": "mosaic tile pattern designer",
+          "saturation": 2,
+          "competitor": "Mosaico (jen značkové cementové dlaždice)",
+          "note": "Web evidence: 1–2 relevantní, žádný skutečný plánovač tesser. OPEN."
+        },
+        {
+          "kw": "mosaic art",
+          "saturation": 2,
+          "competitor": "Geometric Mosaic (foto efekt)",
+          "note": "Web evidence: výsledky jsou efekty a hry, ne plánovače."
+        },
+        {
+          "kw": "photo mosaic",
+          "saturation": 7,
+          "competitor": "MosaicPro (koláž z fotek)",
+          "note": "Web evidence: jiný záměr (koláž) znečišťuje klíč — nepoužít jako hlavní."
+        },
+        {
+          "kw": "mosaic pattern maker",
+          "saturation": 1,
+          "competitor": "Tessera Design Studio (opakující vzory)",
+          "note": "Odhad na základě evidence."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web evidence): žádný skutečný plánovač tesser mezi výsledky; existence brand konfigurátoru Mosaico ukazuje zájem o úpravy dlaždic. Předpoklad: velikost komunity mozaikářů na iOS (Facebook skupiny, kurzy) neověřena.",
+      "competitors": [
+        {
+          "name": "Mosaico Tile Designer",
+          "url": "https://apps.apple.com/us/app/mosaico-tile-designer-app/id1460372752",
+          "role": "niche",
+          "note": "Jen konfigurátor vlastních cementových dlaždic."
+        },
+        {
+          "name": "Geometric Mosaic",
+          "url": "https://apps.apple.com/lc/app/geometric-mosaic/id1311514658",
+          "role": "niche",
+          "note": "Fotoefekt, neřeší kladení a počty."
+        },
+        {
+          "name": "MosaicPro Photo Mosaic",
+          "url": "https://apps.apple.com/us/app/mosaicpro-photo-mosaic-app/id1616212938",
+          "role": "niche",
+          "note": "Koláž z fotek — jiný záměr na stejném klíči."
+        },
+        {
+          "name": "Beads Creator",
+          "url": "https://apps.apple.com/us/app/beads-creator-bead-patterns/id1235585928",
+          "role": "parent",
+          "note": "Důkaz rodičovského trhu foto-na-vzor."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Klíč 'mosaic' je znečištěný koláži a hrami — Apple může aplikaci zařazovat špatně a konverze z hledání bude nízká.",
+        "Mozaikáři jsou často umělci, kteří automatický plán odmítnou jako 'nekreativní'.",
+        "Malá frekvence projektů (jeden panel za měsíce) → jednorázový nákup, nulová retence."
+      ],
+      "killer_risk": "Nedostatečný objem hledání pro čistý mozaikový záměr (klíč je přehlušen koláži).",
+      "mitigation": "ASO na přesné fráze (mosaic tile planner, tesserae, mosaic pattern), obrázky se skutečnými hotovými panely; iPad s Pencil pro ruční andamento.",
+      "build_weeks": 4,
+      "evidence": "web",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 8,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "graphics-design-05",
+      "name": "Pumpkin Carving Stencil",
+      "tagline": "Z libovolné fotky šablona na dýni s automatickými můstky, aby vyřezaný motiv nevypadl.",
+      "pitch": "Každý říjen hledají miliony lidí šablony na vyřezávání dýní. Hlavní problém domácích šablon: 'ostrůvky' (oči, písmena), které po vyřezání vypadnou. Aplikace z fotky/selfie vytvoří 2–3 tónovou šablonu (prořez, seškrábnutí, ponechání) a automaticky přidá můstky. Konkurence je malá: InstaGourd (knihovna), Pumpkin Masters (značka) a starý 3D prohlížeč. Halloween navíc rychle roste mimo USA (UK, DE, CZ, PL, MX), kde lokalizovaná aplikace neexistuje.",
+      "niche": "Foto → vyřezatelná šablona dýně s můstky. Americké aplikace jsou knihovny nebo marketing značky; lokalizace mimo angličtinu chybí.",
+      "parent_market": "Šablony a stencily (tattoo stencil makers — dnes přeplněno), halloweenské aplikace a obecné foto-na-šablonu nástroje.",
+      "target_user": "Rodiny s dětmi, páry a party hostitelé v říjnu; učitelé; v EU mladší publikum adoptující Halloween.",
+      "features": [
+        "Foto/selfie → 2–3 tónová šablona (prořez / seškrábnutí / ponechání)",
+        "Automatické můstky pro ostrůvky a kontrola minimální šířky",
+        "Text a písmena s 'stencil' fontem",
+        "Tisk přesně na velikost dýně (zadat obvod)",
+        "Knihovna 50 vlastních šablon zdarma"
+      ],
+      "offline": "full",
+      "offline_note": "Vision (osoba/tvář), prahování, topologická analýza ostrůvků, PDF — vše lokálně.",
+      "monetization": "Freemium + sezónní týdenní pass: odemčení foto šablon 4,99 USD (≈ 115 CZK) jednorázově; nebo 2,99 USD na sezónu. Pozor: příjmy téměř jen v září–říjnu.",
+      "revenue_math": "Ideál v sezóně: 30 000 stažení (září–říjen) × 4 % = 1 200 × 4,99 USD = 5 988 USD hrubě → 5 090 USD čistě ≈ 117 000 CZK/rok ≈ 9 750 CZK/měs průměr; v říjnu samotném ≈ 80 000 CZK. Proto uvádíme ideální měsíční průměr 10 000 CZK při plně lokalizovaném launch.",
+      "revenue_czk_ideal": 10000,
+      "keywords": [
+        {
+          "kw": "pumpkin carving stencil",
+          "saturation": 3,
+          "competitor": "InstaGourd (knihovna šablon)",
+          "note": "Web evidence: 2–3 relevantní aplikace, silně sezónní (říjen). MODERATE/OPEN."
+        },
+        {
+          "kw": "pumpkin carving",
+          "saturation": 3,
+          "competitor": "Pumpkin Masters (značka, selfie → design)",
+          "note": "Web evidence: značková aplikace, jinak slabá konkurence."
+        },
+        {
+          "kw": "pumpkin stencil maker",
+          "saturation": 1,
+          "competitor": "Pumpkin Masters",
+          "note": "Odhad na základě evidence; foto generátor s můstky nikdo nenabízí."
+        },
+        {
+          "kw": "halloween pumpkin",
+          "saturation": 5,
+          "competitor": "hry a tapety",
+          "note": "Odhad; široký klíč, hlavně hry — jen doplňkový."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web evidence): 2–3 relevantní aplikace (InstaGourd, Pumpkin Masters, Cooc), silná sezónnost. Masivní sezónní poptávka po 'pumpkin carving stencils' je obecně známá (Google Trends každoroční říjnový špička) — v tomto běhu neověřeno čísly.",
+      "competitors": [
+        {
+          "name": "InstaGourd: Halloween Carving",
+          "url": "https://apps.apple.com/us/app/instagourd-halloween-carving/id1439757596",
+          "role": "niche",
+          "note": "Knihovna šablon, ne generátor z fotky."
+        },
+        {
+          "name": "Pumpkin Masters",
+          "url": "https://apps.apple.com/us/app/pumpkin-masters/id1491958901",
+          "role": "niche",
+          "note": "Značková, selfie → design; US-only marketing."
+        },
+        {
+          "name": "Cooc",
+          "url": "https://apps.apple.com/us/app/cooc/id6764479741",
+          "role": "niche",
+          "note": "Deník/plánovač vyřezávání."
+        },
+        {
+          "name": "Tattoo Stencil Maker",
+          "url": "https://apps.apple.com/us/app/tattoo-stencil-maker/id6743803500",
+          "role": "parent",
+          "note": "Přeplněný rodič foto-na-stencil (důkaz technologie a poptávky)."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Model funguje v US (InstaGourd, Pumpkin Masters), ale bez lokalizace. Halloween roste v UK, DE, CZ, PL, MX, BR — lokalizované klíče ('Kürbis schnitzen Vorlage', 'šablona na dýni', 'plantilla calabaza') jsou pravděpodobně prázdné.",
+      "devils_advocate": [
+        "Extrémní sezónnost: 10 měsíců v roce téměř nulové příjmy a ASO pozice se musí každý rok znovu vybudovat.",
+        "Lidé chtějí šablonu jednou, zdarma, z Pinterestu — ochota platit 4,99 USD za jednorázovou věc je nízká.",
+        "Launch musí stihnout září; zmeškání o 3 týdny = rok zpoždění (dnes 30. 9. 2026 → reálně sezóna 2027).",
+        "Vyřezání fotorealistické šablony vyžaduje zručnost; neúspěch uživatel přičte aplikaci."
+      ],
+      "killer_risk": "Sezónnost a jednorázové použití — průměrný měsíční příjem nemusí dosáhnout 10 000 CZK.",
+      "mitigation": "Stejný engine (můstky, vrstvy) prodávat i jako obecný stencil (sprej, scroll saw) v sesterské aplikaci; launch v srpnu 2027 ve 20+ jazycích; widget odpočtu do Halloweenu.",
+      "build_weeks": 3,
+      "evidence": "web",
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 4
+      }
+    },
+    {
+      "id": "graphics-design-06",
+      "name": "Custom Diamond Painting Chart",
+      "tagline": "Vlastní diamantový obraz z fotky: chart se symboly, přesné počty kamínků DMC a tisk ve 100 %.",
+      "pitch": "Diamantové malování je masový koníček a fanoušci si stále častěji objednávají 'custom kit z fotky' za 30–60 USD. Existující aplikace (GemsFlow, Diamond Painting Logbook, Drillalog) jsou deníky zásob; náhled pixelizace má jen GemsFlow. Aplikace vytvoří plnohodnotný chart: kulaté/čtvercové kamínky, mapování na DMC 447 barev, počty kamínků +10 % rezervy a tisk po stranách pro plátno s lepidlem. Kdo má kamínky z předchozích sad, může omezit paletu na vlastní zásobu.",
+      "niche": "Tvorba vlastních diamantových chartů s omezením na zásobu kamínků. Deníky evidují, konvertory cross stitch neumí kamínky a velikosti plátna.",
+      "parent_market": "Diamantové malování (aplikace-deníky, obchody s kity Diamond Art Club) + foto-na-vzor konvertory (Beads Creator, cross stitch).",
+      "target_user": "Ženy 30–65, fanynky diamond painting komunit (Facebook, Reddit r/diamondpainting), které mají zbytky kamínků a chtějí vlastní motiv.",
+      "features": [
+        "Foto → chart (kulaté/čtvercové drilly, DMC 447 paleta)",
+        "Omezit paletu na vlastní zásobu kamínků (import z deníku)",
+        "Počty kamínků po barvách + rezerva, nákupní seznam",
+        "Tisk chartu po stranách se symboly (PDF)",
+        "Sledování postupu po oblastech"
+      ],
+      "offline": "full",
+      "offline_note": "Kvantizace barev do DMC, rozvržení symbolů, PDF — lokálně. iCloud pro sdílení mezi iPhonem a iPadem.",
+      "monetization": "Freemium: náhled zdarma, export chartu 5,99 USD (≈ 140 CZK) jednorázově nebo Pro 2,99 USD/měs (neomezené charty + sledování zásob).",
+      "revenue_math": "Ideál: 2 500 stažení/měs (diamond painting custom, diamond art pattern) × 3,5 % = 88 × ~7 USD průměr = 616 USD hrubě → 523 USD čistě ≈ 12 000 CZK/měs.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "diamond painting",
+          "saturation": 4,
+          "competitor": "GemsFlow (deník + náhled pixelizace)",
+          "note": "Web evidence: 4 dedikované aplikace, všechny deníky/obchody. MODERATE."
+        },
+        {
+          "kw": "custom diamond painting",
+          "saturation": 1,
+          "competitor": "GemsFlow (částečně)",
+          "note": "Web evidence: podniche 'foto → vlastní chart' neověřena, GemsFlow ji částečně pokrývá."
+        },
+        {
+          "kw": "diamond art pattern maker",
+          "saturation": 1,
+          "competitor": "žádný dedikovaný",
+          "note": "Odhad."
+        },
+        {
+          "kw": "diamond painting tracker",
+          "saturation": 4,
+          "competitor": "Diamond Painting Logbook",
+          "note": "Web evidence: deníky obsazené — jen jako doplněk."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web evidence): 4 deníkové aplikace (Logbook 0,99 USD, GemsFlow, Diamood, Dotterly, Drillalog) dokazují ochotu platit v komunitě. Předpoklad: poptávku po custom chartu odvozujeme od prodeje custom kitů v e-shopech, v App Store neměřeno.",
+      "competitors": [
+        {
+          "name": "GemsFlow Diamond Painting",
+          "url": "https://apps.apple.com/us/app/gemsflow-diamond-painting/id1497430162",
+          "role": "niche",
+          "note": "Deník, obchod s kity, náhled pixelizace — nejbližší konkurent."
+        },
+        {
+          "name": "Diamond Painting Logbook",
+          "url": "https://apps.apple.com/us/app/diamond-painting-logbook/id1440806990",
+          "role": "niche",
+          "note": "Deník za 0,99 USD."
+        },
+        {
+          "name": "Drillalog: Diamond Painting",
+          "url": "https://apps.apple.com/us/app/drillalog-diamond-painting/id6469571163",
+          "role": "niche",
+          "note": "Deník s DMC barvami."
+        },
+        {
+          "name": "Beads Creator",
+          "url": "https://apps.apple.com/us/app/beads-creator-bead-patterns/id1235585928",
+          "role": "parent",
+          "note": "Rodičovský foto-na-vzor trh."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "GemsFlow už pixelizaci má; přidat export chartu je pro ně týden práce.",
+        "Bez fyzického plátna s lepidlem je chart polovičatý — uživatelky chtějí hotový kit, ne PDF.",
+        "Tisk velkého chartu doma po stranách je nepohodlný; hodně uživatelek skončí u náhledu bez nákupu."
+      ],
+      "killer_risk": "Uživatelky chtějí hotový fyzický kit, ne digitální chart — aplikace řeší jen polovinu problému.",
+      "mitigation": "Zaměřit se na 'použij svoje zbytky kamínků' (omezená paleta) a na kombinaci s prázdnými plátny prodávanými na Amazonu; export ve formátu pro tiskárny plátna.",
+      "build_weeks": 4,
+      "evidence": "web",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "graphics-design-07",
+      "name": "Laser Box Maker",
+      "tagline": "Parametrická krabička pro laser: rozměry, tloušťka materiálu, zámky prstů a živé panty — SVG za 30 sekund.",
+      "pitch": "Nejčastější první projekt majitele laseru je krabička se zámky prstů (finger joints). Dnes ji lidé generují na webech MakerCase a boxes.py, pak přenášejí SVG do aplikace laseru. Na iPhonu, kde už mají aplikace xTool/LaserPecker, parametrický generátor chybí. Aplikace nabídne 20 typů krabic (víko, šuplík, pant, živý pant, přihrádky), kompenzaci šířky řezu (kerf) a 3D náhled, export SVG/DXF/PDF.",
+      "niche": "Parametrické krabice a spoje pro laser na mobilu. Webové nástroje jsou zdarma, ale nepohodlné na telefonu; výrobci řeší ovládání strojů, ne parametrickou geometrii.",
+      "parent_market": "Laserové řezání/gravírování (LightBurn, xTool Creative Space, Glowforge) + weby MakerCase, boxes.py, Festi.info (miliony návštěv).",
+      "target_user": "Majitelé diodových a CO2 laserů, učitelé techniky, makerspaces, Etsy prodejci krabiček a organizérů.",
+      "features": [
+        "20 parametrických šablon (víko, šuplík, pant, živý pant, přihrádky, šestiúhelník)",
+        "Kompenzace kerfu a tloušťky materiálu, tolerance spoje",
+        "3D náhled a rozložení na desku s minimem odpadu",
+        "Export SVG/DXF/PDF v mm",
+        "Gravírování textu/loga na strany"
+      ],
+      "offline": "full",
+      "offline_note": "Čistě geometrický výpočet v Swift; export přes Files. Žádná síť.",
+      "monetization": "Freemium: 3 základní krabice zdarma; Pro jednorázově 9,99 USD (≈ 230 CZK) všechny šablony + DXF; později balíčky šablon 2,99 USD.",
+      "revenue_math": "Ideál: 1 800 stažení/měs (laser box generator, finger joint box, laser cut box) × 4,5 % = 81 × 9,99 USD = 809 USD hrubě → 688 USD čistě ≈ 15 800 CZK/měs.",
+      "revenue_czk_ideal": 15800,
+      "keywords": [
+        {
+          "kw": "laser cut box",
+          "saturation": 2,
+          "competitor": "žádný dedikovaný (odhad)",
+          "note": "Odhad — nebylo v tomto běhu měřeno; evidence uvádí generátor krabic jako otevřeného kandidáta."
+        },
+        {
+          "kw": "finger joint box",
+          "saturation": 1,
+          "competitor": "žádný",
+          "note": "Odhad; fráze z webových nástrojů."
+        },
+        {
+          "kw": "box generator",
+          "saturation": 3,
+          "competitor": "obecné krabicové/obalové aplikace",
+          "note": "Odhad; klíč sdílí obalový design."
+        },
+        {
+          "kw": "laser cutting templates",
+          "saturation": 3,
+          "competitor": "knihovny SVG",
+          "note": "Odhad; knihovny šablon existují, parametrika ne."
+        }
+      ],
+      "demand_evidence": "Částečně ověřeno: web evidence ukazuje, že na iOS dominují aplikace výrobců a obecné nástroje jsou řídké; weby MakerCase/boxes.py dokazují poptávku po parametrických krabicích. Neověřeno: saturace přesných klíčů v App Store (odhad).",
+      "competitors": [
+        {
+          "name": "LaserPecker Design Space",
+          "url": "https://apps.apple.com/us/app/laserpecker-design-space/id6445970960",
+          "role": "parent",
+          "note": "Značková aplikace — ukazuje, že uživatelé laserů pracují z mobilu."
+        },
+        {
+          "name": "Genmitsu",
+          "url": "https://apps.apple.com/us/app/genmitsu/id6478152985",
+          "role": "parent",
+          "note": "Další výrobce; žádný parametrický generátor krabic."
+        },
+        {
+          "name": "MakerCase (web)",
+          "url": "",
+          "role": "niche",
+          "note": "Webový generátor zdarma — hlavní substitut."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "boxes.py a MakerCase jsou zdarma a uživatelé laserů mají počítač — mobilní verze může působit zbytečně.",
+        "xTool Creative Space může přidat generátor krabic (už má šablony) a uživatelé zůstanou v jedné aplikaci.",
+        "Špatně spočítaný kerf = krabice nedrží → recenze '1★ zničil jsem překližku'."
+      ],
+      "killer_risk": "Zdarma webové nástroje a šablony výrobců nechají placenou aplikaci bez důvodu k nákupu.",
+      "mitigation": "Mobilní pohodlí (měření skutečné tloušťky desky posuvkou, kerf test karta), šablony, které weby nemají (organizéry do šuplíků podle naměřeného šuplíku), balíčky pro učitele.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "graphics-design-08",
+      "name": "Needlepoint Canvas Designer",
+      "tagline": "Navrhni vlastní needlepoint/gobelín plátno z fotky — barvy vlny, počty přízí a tisk mřížky.",
+      "pitch": "V USA probíhá needlepoint boom (ručně malovaná plátna za 100–400 USD, mladší publikum, 'needlepoint is the new knitting'). Aplikace pro cross stitch jsou přeplněné, ale needlepoint má jiná pravidla: mesh 13/18, tent/basketweave steh, příze DMC/Appleton/Paternayan a výpočet délky příze podle stehu. Aplikace převede fotku nebo nápis na plátno, spočítá přízi a vytiskne mřížku. V Evropě stejný koníček žije jako gobelín/Stramin (DE, NL, FR) — lokalizace je navíc US-gap.",
+      "niche": "Needlepoint/gobelín design. Cross-stitch aplikace ignorují mesh a výpočet vlny; needlepoint je stále vnímán jako 'babiččin' a vývojáři ho přehlížejí, přestože se vrací.",
+      "parent_market": "Cross-stitch/výšivka pattern makery (Stitchly, Cross Stitch Creator, desítky nových 2025–26) a needlepoint obchody s malovanými plátny.",
+      "target_user": "Ženy 25–70 v US (needlepoint revival), v DE/NL/FR gobelínistky; majitelky malých obchodů s plátny.",
+      "features": [
+        "Foto/nápis → needlepoint vzor na mesh 10/13/14/18",
+        "Palety přízí (DMC perle, Appleton, Paternayan) a výpočet délky podle stehu",
+        "Náhled na plátně a na výsledném polštáři/pásku/klíčence",
+        "Tisk mřížky a barevného klíče (PDF)",
+        "Sledování postupu po sekcích"
+      ],
+      "offline": "full",
+      "offline_note": "Kvantizace barev do palet přízí a PDF lokálně; palety jako statická data.",
+      "monetization": "Freemium: návrh zdarma, export a výpočty v Pro 9,99 USD (≈ 230 CZK) jednorázově nebo 3,99 USD/měs pro designéry pláten.",
+      "revenue_math": "Ideál: 1 500 stažení/měs (needlepoint, needlepoint pattern, gobelin, Stramin) × 5 % = 75 × 9,99 USD = 749 USD hrubě → 637 USD čistě ≈ 14 600 CZK/měs.",
+      "revenue_czk_ideal": 14600,
+      "keywords": [
+        {
+          "kw": "needlepoint pattern",
+          "saturation": 3,
+          "competitor": "cross stitch aplikace s needlepoint režimem (odhad)",
+          "note": "Odhad — evidence uvádí needlepoint jako neověřeného kandidáta."
+        },
+        {
+          "kw": "needlepoint",
+          "saturation": 3,
+          "competitor": "needlepoint obchody/deníky (odhad)",
+          "note": "Odhad; head term, ale bez silného designéru."
+        },
+        {
+          "kw": "needlepoint canvas",
+          "saturation": 2,
+          "competitor": "žádný dedikovaný (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "gobelin",
+          "saturation": 2,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad; lokalizovaný klíč pro DE/PL/CZ/NL."
+        }
+      ],
+      "demand_evidence": "Předpoklad (knowledge): needlepoint revival v USA 2023–26 (nové obchody, influencerky) a ceny pláten ukazují kupní sílu. Rodičovský cross-stitch trh je ověřen web evidence (8 titulových aplikací). Saturace needlepoint klíčů v App Store neověřena.",
+      "competitors": [
+        {
+          "name": "Stitchly: Cross stitch",
+          "url": "https://apps.apple.com/us/app/stitchly-cross-stitch/id1467867656",
+          "role": "parent",
+          "note": "Lídr cross-stitch pattern makerů."
+        },
+        {
+          "name": "Cross Stitch Creator",
+          "url": "https://apps.apple.com/us/app/cross-stitch-creator/id897287820",
+          "role": "parent",
+          "note": "Starší konvertor se sledováním postupu."
+        },
+        {
+          "name": "Pattern Maker for Cross Stitch",
+          "url": "https://apps.apple.com/us/app/pattern-maker-for-cross-stitch/id6757927393",
+          "role": "niche",
+          "note": "Nová 2026 vlna — může přidat needlepoint mesh."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Needlepoint revival je americký fenomén s US-centrickými obchody a pojmy; v DE/NL/FR/PL existuje stejný koníček pod jménem gobelín/Stramin bez lokalizované aplikace. Launch ve 50 jazycích s lokálními názvy.",
+      "devils_advocate": [
+        "Needlepoint komunita kupuje ručně malovaná plátna jako umělecké dílo — vlastní design z fotky může být vnímán jako levná náhražka.",
+        "Cross-stitch aplikace přidají mesh a přízi za týden; rozdíl je pro ně triviální.",
+        "Bez tisku přímo na plátno (nutná služba) je vzor jen předloha — uživatelka musí plátno malovat sama."
+      ],
+      "killer_risk": "Cross-stitch konkurenti přidají needlepoint režim a obsadí klíč.",
+      "mitigation": "Hloubka pro needlepoint (stehy basketweave/continental, výpočet vlny podle stehu, náhled finishingu), komunitní ASO na 'needlepoint canvas design'; EU lokalizace jako obranný příkop.",
+      "build_weeks": 5,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 7,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "graphics-design-09",
+      "name": "Icing Color Mixer",
+      "tagline": "Kolik kapek které barvy do polevy? Recepty na přesný odstín royal icing a fondánu.",
+      "pitch": "Zdobitelé perníčků a dortů (cookie decorating je v USA obří komunita) neustále řeší, jak namíchat přesný odstín z gelových barev — 'dusty rose', 'sage green', firemní barvy pro zakázku. Existují jen tištěné tabulky výrobců. Malířských mixérů je přes deset, ale žádný nepočítá s gelovými potravinářskými barvami, které po zaschnutí ztmavnou. Aplikace vyfotí vzor nebo zadá HEX a navrhne recept v kapkách/zubních párátkách pro konkrétní značky, s varováním na ztmavnutí a velikosti dávky.",
+      "niche": "Míchání potravinářských barev. Mixéry pro malíře (Kubelka-Munk) jsou přeplněné, ale cukráři jsou jiné publikum s jinými pigmenty a jiným jazykem.",
+      "parent_market": "Aplikace na míchání barev (Mixable, Mixura, Real Paint Mixing Tools — 10+ aplikací) a cukrářské/pekařské aplikace (cenové kalkulačky dortů — přeplněné).",
+      "target_user": "Hobby i drobní profesionální zdobitelé perníčků a dortů (cottage bakers), převážně ženy 25–55; US, UK, AU, později MX/BR/PL.",
+      "features": [
+        "Foto/HEX → recept v kapkách pro gelové barvy (Americolor, Wilton, Chefmaster, Sugarflair)",
+        "Škálování na množství polevy (g/cup)",
+        "Varování na ztmavnutí po zaschnutí a vliv bílé/ne-bílé polevy",
+        "Knihovna 200 oblíbených odstínů (dusty rose, sage, navy…)",
+        "Uložené recepty zakázek"
+      ],
+      "offline": "full",
+      "offline_note": "Statická spektrální data barviv + výpočet mixu lokálně; kamera pro výběr barvy.",
+      "monetization": "Freemium: 20 receptů zdarma; Pro 4,99 USD (≈ 115 CZK) jednorázově nebo 1,99 USD/měs.",
+      "revenue_math": "Ideál: 3 000 stažení/měs (icing color, frosting color mixing, royal icing colors) × 4 % = 120 × 4,99 USD = 599 USD hrubě → 509 USD čistě ≈ 11 700 CZK/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "icing color mixing",
+          "saturation": 1,
+          "competitor": "žádný dedikovaný (odhad)",
+          "note": "Odhad — evidence uvádí icing/food-coloring jako neověřené sousední publikum přeplněného trhu míchání barev."
+        },
+        {
+          "kw": "frosting colors",
+          "saturation": 2,
+          "competitor": "recepty/pekařské aplikace (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "royal icing",
+          "saturation": 3,
+          "competitor": "recepty a kurzy zdobení (odhad)",
+          "note": "Odhad; head term cukrářské komunity."
+        },
+        {
+          "kw": "food coloring chart",
+          "saturation": 1,
+          "competitor": "tištěné tabulky výrobců",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Předpoklad (knowledge): cookie-decorating komunita (Instagram, Facebook skupiny, Cookie Con) a tabulky barev výrobců (Americolor, Wilton) dokazují opakovaný problém. Ověřeno (web evidence): rodičovský trh míchání barev je přeplněný 10+ aplikacemi → technologie i ochota platit existují. Saturace cukrářských klíčů neověřena.",
+      "competitors": [
+        {
+          "name": "Mixable: Paint Mixing Guide",
+          "url": "https://apps.apple.com/us/app/mixable-paint-mixing-guide/id6769655280",
+          "role": "parent",
+          "note": "Malířský mixér (akvarel/akryl/olej) — nepokrývá potravinářské barvy."
+        },
+        {
+          "name": "Mixura: Paint Color Matcher",
+          "url": "https://apps.apple.com/us/app/mixura-paint-color-matcher/id6757199310",
+          "role": "parent",
+          "note": "Databáze značek uměleckých barev."
+        },
+        {
+          "name": "Real Paint Mixing Tools",
+          "url": "https://apps.apple.com/us/app/real-paint-mixing-tools/id1431308757",
+          "role": "parent",
+          "note": "Starší lídr míchání."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Cookie decorating (royal icing, cookie-decorating business) je americká kultura; v UK/AU/DE/PL/MX/BR roste přes Instagram, ale neexistuje lokalizovaný nástroj a značky barviv se liší (Sugarflair, Rainbow Dust, Dr. Oetker) — lokální databáze = příkop.",
+      "devils_advocate": [
+        "Chybí spektrální data potravinářských gelů; bez vlastního měření budou recepty nepřesné a zdobitelky to poznají hned.",
+        "Barva závisí na dávce, šarži a době odstátí — i dobrý recept se mine a vina padne na aplikaci.",
+        "Zkušené zdobitelky míchají od oka; platit budou jen začátečnice, které po pár měsících přestanou."
+      ],
+      "killer_risk": "Nepřesné recepty kvůli chybějícím datům o barvivech.",
+      "mitigation": "Vlastní kalibrační měření 20 nejprodávanějších gelů (kuchyňský experiment + kolorimetr), komunitní korekce receptů lokálně ('bylo tmavší') a jasné varování 'začni polovinou kapek'.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "graphics-design-10",
+      "name": "Balloon Garland Designer",
+      "tagline": "Navrhni balónkovou girlandu či oblouk, spočítej balónky v metrech i stopách a pošli klientce nabídku.",
+      "pitch": "Balónková dekorace je rostoucí drobné podnikání (organické girlandy, oblouky, sloupy). Existující nástroje (Balloon Calculator, Balloon Brain, BalloonTools) jsou kalkulačky, lídr navíc počítá 'balloons per foot' — imperiálně a pro US. Aplikace spojí vizuální návrh (barvy a velikosti balónků na fotce místa), výpočet balónků a helia v metrech, a PDF nabídku pro klientku. Pro dekoratérky v LatAm, EU a na Blízkém východě bude první lokalizovaný nástroj.",
+      "niche": "Vizuální návrh + výpočet + nabídka pro balónkové dekoratérky mimo US. Stávající kalkulačky jsou imperiální a nemají návrh ani nabídku.",
+      "parent_market": "Event a party dekorace (Canva pro pozvánky, plánovače akcí) + kalkulačky balónků (Balloon Calculator 0,99 USD, 5,0★).",
+      "target_user": "Balónkové dekoratérky a malé party-decor firmy (často ženy podnikající z domu), MX/BR/ES/DE/PL/UAE.",
+      "features": [
+        "Vizuální návrh girlandy/oblouku/sloupu na fotce místa (AR volitelně)",
+        "Výpočet balónků podle délky v m/ft, velikostí 5\"/11\"/18\" a hustoty",
+        "Spotřeba helia, čas práce, cena materiálu",
+        "PDF nabídka s náhledem pro klientku",
+        "Katalog palet a značek balónků"
+      ],
+      "offline": "full",
+      "offline_note": "Návrh, výpočty i PDF lokálně; ARKit volitelně; žádný server.",
+      "monetization": "Freemium: kalkulačka zdarma; Pro (návrh + nabídky) 5,99 USD/měs (≈ 140 CZK) nebo 39,99 USD/rok (≈ 920 CZK) — B2B ochota platit.",
+      "revenue_math": "Ideál: 1 200 stažení/měs (balloon garland, balloon arch, balloon calculator + lokální klíče) × 5 % = 60 předplatných; při průměru 4 USD/měs a roční retenci ~50 % se ustálí ~150 aktivních × 4 USD = 600 USD hrubě → 510 USD čistě ≈ 11 700 CZK/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "balloon garland calculator",
+          "saturation": 3,
+          "competitor": "Balloon Calculator (0,99 USD, 5,0★, imperiální)",
+          "note": "Web evidence (business): SPARSE, 3 tituly."
+        },
+        {
+          "kw": "balloon arch",
+          "saturation": 3,
+          "competitor": "Balloon Brain (oblouky, organické girlandy)",
+          "note": "Web evidence (business): Balloon Brain pokrývá oblouky, bez nabídek."
+        },
+        {
+          "kw": "balloon decoration",
+          "saturation": 3,
+          "competitor": "Creador Party Designer (odhad)",
+          "note": "Odhad; široký klíč."
+        },
+        {
+          "kw": "balloon garland",
+          "saturation": 3,
+          "competitor": "BalloonTools",
+          "note": "Web evidence (business): 3 relevantní tituly."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web evidence z business kategorie): 3 tituly, lídr Balloon Calculator 0,99 USD s hodnocením 5,0 a imperiálními jednotkami. Předpoklad: lokální klíče (guirnalda de globos, Ballongirlande) jsou prázdné — neověřeno.",
+      "competitors": [
+        {
+          "name": "Balloon Calculator",
+          "url": "https://apps.apple.com/us/app/balloon-calculator/id6747648037",
+          "role": "us-only",
+          "note": "0,99 USD, 5,0★, 'balloons per foot' — US-centrické."
+        },
+        {
+          "name": "Balloon Brain",
+          "url": "https://apps.apple.com/us/app/balloon-brain/id6764686900",
+          "role": "niche",
+          "note": "Oblouky, girlandy, helium."
+        },
+        {
+          "name": "BalloonTools",
+          "url": "https://apps.apple.com/es/app/balloontools/id1406906441?l=en-GB",
+          "role": "niche",
+          "note": "Starší nástroj."
+        },
+        {
+          "name": "Creador (Party Designer)",
+          "url": "https://apps.apple.com/gr/app/creador-party-designer/id6469189292",
+          "role": "parent",
+          "note": "Party design — sousední trh."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Lídr počítá v imperiálních jednotkách pro US trh; metrická lokalizovaná verze s nabídkou v místní měně pro MX/BR/ES/DE/PL/Blízký východ je zjevná mezera.",
+      "devils_advocate": [
+        "Trh balónkových dekoratérek je malý a mnohé pracují 'od oka' — ochota platit předplatné je nejistá.",
+        "Vizuální návrh balónků (organické shluky) je graficky náročný; primitivní náhled klientku neosloví.",
+        "Balloon Brain nebo Balloon Calculator mohou přidat metrické jednotky a lokalizaci za pár dní."
+      ],
+      "killer_risk": "Malý počet platících dekoratérek na jazyk — i s lokalizací může zůstat pod 10 000 CZK.",
+      "mitigation": "Začít jednorázovým Pro (14,99 USD) pro nízkou bariéru, prioritizovat ES/PT/DE lokalizaci, ASO s lokálními frázemi; nabídka s logem firmy jako klíčová placená funkce.",
+      "build_weeks": 5,
+      "evidence": "web",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "graphics-design-11",
+      "name": "Peyote Bead Pattern Maker",
+      "tagline": "Vzory pro korálkový peyote, brick stitch a tkaní na stávku — z fotky, s počty Miyuki Delica korálků.",
+      "pitch": "Fuse-bead (zažehlovací korálky) konvertory jsou přeplněné, ale šperkařky s rokajlem pracují v úplně jiné geometrii: peyote a brick stitch mají posunuté řady, loom pracuje s osnovou. Obrovská komunita (Etsy prodává PDF vzory za 5–15 USD) dnes kreslí vzory v desktopových programech jako BeadTool. Aplikace převede fotku/logo na peyote/brick/loom vzor, namapuje na Miyuki Delica a Toho barvy, spočítá korálky a vytiskne 'word chart' (řádek po řádku).",
+      "niche": "Seed bead techniky s posunutou mřížkou. Fuse-bead aplikace pracují se čtvercovou mřížkou a nemají palety Delica ani word chart.",
+      "parent_market": "Korálkové pattern makery (Beads Creator 1,5 mil. stažení, Perlypop, Bead Master) + desktop BeadTool 4 a prodej PDF vzorů na Etsy.",
+      "target_user": "Korálkářky a šperkařky (25–65), prodejkyně náramků a náušnic na Etsy, designérky PDF vzorů.",
+      "features": [
+        "Foto/logo → peyote (even/odd count), brick stitch, loom, square stitch",
+        "Palety Miyuki Delica 11/0, Toho, Preciosa (CZ) + počty a gramy",
+        "Word chart řádek po řádku + sledování postupu",
+        "Náhled na náramku/náušnici, zrcadlení a opakování",
+        "Export PDF vzoru k prodeji"
+      ],
+      "offline": "full",
+      "offline_note": "Posunutá mřížka, kvantizace barev a PDF lokálně; palety jako statická data.",
+      "monetization": "Freemium: 1 vzor zdarma; Pro 9,99 USD (≈ 230 CZK) jednorázově; designérský tarif 3,99 USD/měs (neomezený export k prodeji).",
+      "revenue_math": "Ideál: 2 000 stažení/měs (peyote pattern, brick stitch, bead loom pattern) × 4 % = 80 × 9,99 USD = 799 USD hrubě → 679 USD čistě ≈ 15 600 CZK/měs.",
+      "revenue_czk_ideal": 15600,
+      "keywords": [
+        {
+          "kw": "peyote pattern",
+          "saturation": 2,
+          "competitor": "obecné korálkové aplikace (odhad)",
+          "note": "Odhad — evidence uvádí peyote/brick stitch jako neověřený kandidát."
+        },
+        {
+          "kw": "brick stitch pattern",
+          "saturation": 1,
+          "competitor": "žádný dedikovaný (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "bead loom pattern",
+          "saturation": 3,
+          "competitor": "Bead Master / Beads Art Creator (odhad překryvu)",
+          "note": "Odhad; loom částečně pokrývají obecné korálkové aplikace."
+        },
+        {
+          "kw": "seed bead pattern",
+          "saturation": 3,
+          "competitor": "Beads Creator (odhad)",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web evidence): rodičovský korálkový trh je velký (Beads Creator 1,5 mil. stažení, 6 titulových fuse-bead aplikací). Předpoklad (knowledge): Etsy prodej peyote/brick PDF vzorů a existence placeného BeadTool dokazují zájem; saturaci peyote klíčů jsme neměřili.",
+      "competitors": [
+        {
+          "name": "Beads Creator",
+          "url": "https://apps.apple.com/us/app/beads-creator-bead-patterns/id1235585928",
+          "role": "parent",
+          "note": "1,5 mil. stažení — rodičovský korálkový konvertor."
+        },
+        {
+          "name": "Bead Master",
+          "url": "https://apps.apple.com/us/app/bead-master/id962007863",
+          "role": "niche",
+          "note": "Obecné korálkové vzory, pravděpodobně bez posunuté mřížky."
+        },
+        {
+          "name": "Perlypop",
+          "url": "https://apps.apple.com/us/app/perlypop-perler-beads/id1450794449",
+          "role": "parent",
+          "note": "Lídr fuse-bead."
+        },
+        {
+          "name": "BeadTool 4 (desktop)",
+          "url": "",
+          "role": "niche",
+          "note": "Placený desktop standard designérek."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Beads Creator a spol. mohou přidat peyote režim — technicky jde jen o posunutou mřížku.",
+        "Designérky pracují na PC v BeadTool a na telefonu vzory jen čtou; tvorba na iPhonu může být nepohodlná.",
+        "Vzory z fotek dávají u malých šperků (20×40 korálků) špatné výsledky — kvalita závisí na ruční úpravě."
+      ],
+      "killer_risk": "Velký fuse-bead konkurent přidá peyote/brick režim a přebije nás ratingy.",
+      "mitigation": "Hloubka pro šperkařky (Delica palety včetně finiší, word chart s hlasovým čtením řádků, České Preciosa palety), iPad + Pencil editor.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "graphics-design-12",
+      "name": "Mosaic Crochet Designer",
+      "tagline": "Navrhni mozaikový háčkovaný vzor (overlay i inset) a aplikace ti vygeneruje psaný postup řádek po řádku.",
+      "pitch": "Mozaikové háčkování (overlay a inset mosaic crochet) je v posledních letech jedna z nejrychleji rostoucích technik — geometrické deky a tašky. Na rozdíl od C2C nebo tapisérie má přísná pravidla: každý řádek jen jedna barva, dlouhé sloupky 'dropují' o dva řádky dolů, takže ne každý obrázek jde uháčkovat. Aplikace hlídá platnost vzoru v reálném čase a vygeneruje psaný postup (US i UK terminologie).",
+      "niche": "Mozaikové háčkování s validací pravidel. C2C/graphgan aplikace (Tinnkle, Gridchet, Graphghan) generují mřížky bez znalosti mozaikových pravidel.",
+      "parent_market": "Háčkovací a pletací chart aplikace (Tinnkle, Gridchet, Crochet Chart, Knitting Chart) + prodej vzorů na Ravelry/Etsy.",
+      "target_user": "Háčkařky středně pokročilé až pokročilé, designérky vzorů na Ravelry/Etsy; US, UK, NL, DE, AU.",
+      "features": [
+        "Mřížkový editor s kontrolou pravidel overlay/inset v reálném čase",
+        "Automatický psaný postup řádek po řádku (US/UK termíny)",
+        "Symetrie, opakování a obruba, náhled deky/tašky",
+        "Počítadlo řádků se zvýrazněním aktuální řady",
+        "Export PDF vzoru"
+      ],
+      "offline": "full",
+      "offline_note": "Validace pravidel, generování textu a PDF lokálně.",
+      "monetization": "Freemium: editor zdarma do 40×40; Pro 7,99 USD (≈ 185 CZK) jednorázově — velké vzory, psaný postup, export.",
+      "revenue_math": "Ideál: 1 800 stažení/měs (mosaic crochet, overlay mosaic crochet, crochet pattern maker) × 4,5 % = 81 × 7,99 USD = 647 USD hrubě → 550 USD čistě ≈ 12 600 CZK/měs.",
+      "revenue_czk_ideal": 12600,
+      "keywords": [
+        {
+          "kw": "mosaic crochet",
+          "saturation": 1,
+          "competitor": "žádný dedikovaný (odhad)",
+          "note": "Odhad — evidence uvádí mosaic crochet jako neověřenou sub-niku C2C trhu."
+        },
+        {
+          "kw": "overlay mosaic crochet",
+          "saturation": 0,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad; dlouhý ocas."
+        },
+        {
+          "kw": "crochet pattern maker",
+          "saturation": 5,
+          "competitor": "Tinnkle, Gridchet, Graphghan",
+          "note": "Web evidence: C2C/graphgan ~4 dedikované; parent keyword."
+        },
+        {
+          "kw": "crochet chart",
+          "saturation": 4,
+          "competitor": "Crochet Chart",
+          "note": "Web evidence: moderate."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web evidence): C2C/graph háčkování ~4 dedikované aplikace, rodičovský trh plateb existuje. Předpoklad (knowledge): popularita mosaic crochet (Ravelry vzory, YouTube tutoriály, knihy) — saturaci v App Store jsme neměřili.",
+      "competitors": [
+        {
+          "name": "Tinnkle Crochet Patterns",
+          "url": "https://apps.apple.com/us/app/tinnkle-crochet-patterns/id6797259817",
+          "role": "niche",
+          "note": "C2C/graphgan/tapisérie z obrázku — nejbližší, bez mozaikových pravidel."
+        },
+        {
+          "name": "Gridchet",
+          "url": "https://apps.apple.com/us/app/gridchet/id6745152893",
+          "role": "niche",
+          "note": "Mřížkový editor háčkování."
+        },
+        {
+          "name": "Graphghan Pattern Creator",
+          "url": "https://apps.apple.com/us/app/graphghan-pattern-creator/id6448245144",
+          "role": "niche",
+          "note": "Graphgan vzory."
+        },
+        {
+          "name": "Knitting Chart",
+          "url": "https://apps.apple.com/us/app/knitting-chart/id1251317736",
+          "role": "parent",
+          "note": "Zavedený chart editor (obrázek → chart)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Tinnkle nebo Gridchet přidají 'mosaic mode' — pro ně je to jedna funkce, pro nás celý produkt.",
+        "Designérky mozaik často navrhují v Excelu/Stitch Fiddle (web) a jsou zvyklé na zdarma nástroje.",
+        "Technika je trendová; po vrcholu může zájem klesnout jako u friendship bracelets."
+      ],
+      "killer_risk": "Stitch Fiddle (web/zdarma) a C2C aplikace pokryjí mozaiku dříve, než získáme ratingy.",
+      "mitigation": "Unikátní hodnota v generování psaného postupu a validaci; ASO na 'mosaic crochet' + 'overlay'/'inset'; lokalizace termínů (NL/DE háčkařské komunity).",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "graphics-design-13",
+      "name": "Sashiko Pattern Studio",
+      "tagline": "Japonské sashiko a hitomezashi vzory: generuj, zvětši na látku a vytiskni mřížku pro viditelné spravování.",
+      "pitch": "Sashiko a hitomezashi jsou japonské techniky vyšívání, které se díky 'visible mending' a udržitelné módě rozšířily po světě. Hitomezashi má matematickou strukturu (binární řádky → vzor), takže ho lze elegantně generovat. Aplikace nabídne 60 tradičních vzorů (asanoha, seigaiha, kakinohanazashi), generátor hitomezashi z 'binárního' zadání nebo jména, převod na velikost záplaty a tisk přenosové mřížky. V Japonsku je technika tradiční, mimo něj chybí dobrý nástroj — reverse gap.",
+      "niche": "Generátor sashiko/hitomezashi vzorů a přenosových mřížek. Výšivkové aplikace řeší křížkový steh; sashiko je lineární steh, který nikdo cíleně neobsluhuje.",
+      "parent_market": "Výšivkové a cross-stitch aplikace (Stitchly, Cross Stitch Creator) + trh sashiko kitů (Olympus, Daruma) a knih o spravování.",
+      "target_user": "Fanoušci slow fashion a visible mending (20–45), vyšívačky, učitelky kurzů; JP, US, UK, FR, DE, AU.",
+      "features": [
+        "60 tradičních sashiko vzorů (vlastní vektorizace, public domain motivy)",
+        "Hitomezashi generátor z binárních sekvencí, textu nebo jména",
+        "Škálování na velikost záplaty/látky a tisk přenosové mřížky 1:1",
+        "Návod stehu a pořadí řádků",
+        "Náhled na denimu, barvy nití"
+      ],
+      "offline": "full",
+      "offline_note": "Generování vzorů je deterministická geometrie; vše lokálně.",
+      "monetization": "Freemium: 10 vzorů zdarma; Pro 5,99 USD (≈ 140 CZK) jednorázově — všechny vzory, generátor a tisk.",
+      "revenue_math": "Ideál: 2 500 stažení/měs (sashiko, hitomezashi, visible mending + JP klíče) × 3,5 % = 88 × 5,99 USD = 524 USD hrubě → 445 USD čistě ≈ 10 200 CZK/měs.",
+      "revenue_czk_ideal": 10200,
+      "keywords": [
+        {
+          "kw": "sashiko",
+          "saturation": 2,
+          "competitor": "sashiko návody/e-knihy (odhad)",
+          "note": "Odhad — evidence uvádí sashiko/hitomezashi jako neověřený kandidát (reverse gap JP)."
+        },
+        {
+          "kw": "hitomezashi",
+          "saturation": 0,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad; velmi dlouhý ocas, nízký objem."
+        },
+        {
+          "kw": "visible mending",
+          "saturation": 1,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "刺し子 図案",
+          "saturation": 3,
+          "competitor": "japonské návody (odhad)",
+          "note": "Odhad; JP klíč pro reverse gap."
+        }
+      ],
+      "demand_evidence": "Předpoklad (knowledge): trend visible mending a sashiko kity na Etsy/Amazonu, hitomezashi viral na YouTube/Instagramu (matematické vzory). Rodičovský výšivkový trh ověřen web evidence. Saturaci ani objem hledání jsme neměřili.",
+      "competitors": [
+        {
+          "name": "Stitchly: Cross stitch",
+          "url": "https://apps.apple.com/us/app/stitchly-cross-stitch/id1467867656",
+          "role": "parent",
+          "note": "Lídr výšivkových vzorů, sashiko neřeší."
+        },
+        {
+          "name": "Cross Stitch Creator",
+          "url": "https://apps.apple.com/us/app/cross-stitch-creator/id897287820",
+          "role": "parent",
+          "note": "Konvertor s trackerem."
+        },
+        {
+          "name": "Olympus sashiko (tištěné vzory)",
+          "url": "",
+          "role": "niche",
+          "note": "Fyzické kity a knihy — dnešní substitut."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Reverse gap: sashiko je japonská tradice s japonskými vzory a pojmy; mimo JP chybí nástroj, v JP chybí moderní generátor. Launch lokalizovaný (EN/JP/FR/DE) s oběma publiky.",
+      "devils_advocate": [
+        "Nízká ochota platit: tradiční vzory jsou zdarma na Pinterestu a v knihách.",
+        "Hitomezashi je hezké, ale úzké — objem hledání může být stovky měsíčně.",
+        "Kulturní citlivost: v Japonsku může západní 'generátor' působit povrchně; překlady musí být perfektní."
+      ],
+      "killer_risk": "Příliš malý placený objem — nádherný produkt s příjmem pod 10 000 CZK.",
+      "mitigation": "Jednorázová nízká cena, balíčky vzorů, zaměření na visible mending (širší klíč), spolupráce s učitelkami kurzů; JP lokalizace rodilou mluvčí.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "graphics-design-14",
+      "name": "Rug Tufting Designer",
+      "tagline": "Návrh koberce pro tufting a punch needle: obrys k projekci, barvy příze a spotřeba v gramech.",
+      "pitch": "Tufting (tufting gun) a punch needle se staly virálním koníčkem — vlastní koberečky a tapiserie. Nejčastější otázky: jak převést obrázek na čisté obrysy k obkreslení projektorem a kolik příze koupit. Aplikace zjednoduší obrázek na plochy, vytvoří obrysový 'coloring page' se zrcadlením (tuftuje se zezadu), spočítá plochu po barvách a gramy příze podle výšky vlasu a hustoty, a pošle obrys na AirPlay projektor.",
+      "niche": "Příprava návrhu pro tufting/punch needle. Obecné foto aplikace neumí zrcadlení, plochy a spotřebu příze; řemeslné konvertory řeší mřížky, ne plochy.",
+      "parent_market": "Foto-na-řemeslný-vzor konvertory a výšivka (Stitchly, Beads Creator) + prodej tufting kitů a přízí (TikTok shop, Tuft the World).",
+      "target_user": "Mladí tvůrci 18–35 (TikTok/Instagram), malé studia prodávající koberečky, kurzy tuftingu.",
+      "features": [
+        "Obrázek → zjednodušené plochy a obrysy (počet barev volitelný)",
+        "Automatické zrcadlení pro tufting zezadu, velikost v cm/palcích",
+        "Spotřeba příze v gramech podle plochy, výšky vlasu a hustoty",
+        "AirPlay na projektor / tisk dlaždic",
+        "Náhled textury koberce"
+      ],
+      "offline": "full",
+      "offline_note": "Segmentace a vektorizace lokálně (Core Image, Vision); AirPlay je lokální.",
+      "monetization": "Freemium: 1 návrh zdarma; Pro 6,99 USD (≈ 160 CZK) jednorázově nebo 2,99 USD/měs pro studia.",
+      "revenue_math": "Ideál: 2 500 stažení/měs (rug tufting, punch needle pattern, tufting design) × 3,5 % = 88 × 6,99 USD = 615 USD hrubě → 523 USD čistě ≈ 12 000 CZK/měs.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "rug tufting",
+          "saturation": 3,
+          "competitor": "tufting kity/obchody (odhad)",
+          "note": "Odhad — evidence uvádí rug tufting/punch needle jako neověřený kandidát."
+        },
+        {
+          "kw": "punch needle pattern",
+          "saturation": 2,
+          "competitor": "žádný dedikovaný (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "tufting design",
+          "saturation": 2,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "rug design",
+          "saturation": 4,
+          "competitor": "interiérové aplikace (odhad)",
+          "note": "Odhad; smíšený záměr."
+        }
+      ],
+      "demand_evidence": "Předpoklad (knowledge): tufting je virální trend (TikTok, kity na Amazonu a Etsy). Rodičovský trh foto-na-vzor je ověřen web evidence. Saturaci tufting klíčů neověřeno; trend může již klesat.",
+      "competitors": [
+        {
+          "name": "Beads Creator",
+          "url": "https://apps.apple.com/us/app/beads-creator-bead-patterns/id1235585928",
+          "role": "parent",
+          "note": "Rodičovský foto-na-vzor trh."
+        },
+        {
+          "name": "Paint by Number Creator",
+          "url": "https://apps.apple.com/us/app/paint-by-number-creator/id1533754947",
+          "role": "niche",
+          "note": "Obrys + optimalizovaná paleta — podobná technologie, jiný záměr."
+        },
+        {
+          "name": "Stitchly: Cross stitch",
+          "url": "https://apps.apple.com/us/app/stitchly-cross-stitch/id1467867656",
+          "role": "parent",
+          "note": "Výšivkový lídr."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Trend tuftingu může opadnout (vrchol 2021–23), pak klesne objem hledání.",
+        "Tvůrci většinou kreslí v Procreate a tam také řeší zrcadlení — aplikace musí nabídnout něco navíc (spotřebu příze).",
+        "Paint-by-number generátory umějí obrysy a palety; malý rozdíl = riziko 4.3 vnímání jako klon."
+      ],
+      "killer_risk": "Klesající trend a substituce Procreatem.",
+      "mitigation": "Kalkulace příze a projektorový režim jako jádro, ASO na punch needle (stabilnější dlouhodobý koníček), nízká jednorázová cena.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      }
+    },
+    {
+      "id": "graphics-design-15",
+      "name": "Spray Stencil Layers",
+      "tagline": "Vícevrstvé šablony pro sprej, airbrush a textil z fotky — s můstky a registračními značkami.",
+      "pitch": "Tattoo stencil makery obsadily klíč 'stencil maker', ale řeší jednu linku pro kůži. Street-art, airbrush, sítotisk na trička a malování na stěny potřebují vícevrstvé šablony (3–5 tónů), každá vrstva s můstky a registračními značkami, aby vrstvy seděly. Dnes se to dělá ručně v Photoshopu. Aplikace z fotky vytvoří vrstvy podle tónů, automaticky přidá můstky, zarovnávací křížky a exportuje SVG pro plotter/laser/Cricut nebo PDF k vyříznutí.",
+      "niche": "Vícevrstvé ne-tetovací šablony. Tattoo aplikace řeší jen linky; Cricut/SVG konvertory neřeší vrstvy ani můstky.",
+      "parent_market": "Stencil makery (tattoo stencil — 6+ nových AI aplikací 2025–26) + Cricut/Silhouette design ekosystém.",
+      "target_user": "Street-art a graffiti hobbyisté, airbrush modeláři, DIY textil (trička, tašky), malíři stěn a nábytku.",
+      "features": [
+        "Foto → 2–5 tónových vrstev s nastavením prahů",
+        "Automatické můstky pro ostrůvky + registrační značky",
+        "Náhled výsledku po vrstvách v barvách spreje",
+        "Export SVG/DXF/PDF v přesném měřítku",
+        "Režim 'jedna vrstva' pro rychlé nápisy"
+      ],
+      "offline": "full",
+      "offline_note": "Posterizace, topologie ostrůvků, vektorizace a export lokálně.",
+      "monetization": "Freemium: 1 vrstva zdarma; Pro 7,99 USD (≈ 185 CZK) jednorázově.",
+      "revenue_math": "Ideál: 2 000 stažení/měs (spray paint stencil, airbrush stencil, multi layer stencil) × 3,5 % = 70 × 7,99 USD = 559 USD hrubě → 475 USD čistě ≈ 10 900 CZK/měs.",
+      "revenue_czk_ideal": 10900,
+      "keywords": [
+        {
+          "kw": "spray paint stencil",
+          "saturation": 2,
+          "competitor": "tattoo stencil aplikace (odhad překryvu)",
+          "note": "Odhad — evidence uvádí vícevrstvé spray/airbrush šablony jako neověřené."
+        },
+        {
+          "kw": "multi layer stencil",
+          "saturation": 1,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "airbrush stencil",
+          "saturation": 1,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "stencil maker",
+          "saturation": 6,
+          "competitor": "StencilPro, Tattoo Stencil Maker",
+          "note": "Web evidence: head term obsazen (sat 6), jen parent důkaz."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web evidence): 'tattoo stencil maker' saturace 6 → silná poptávka po foto-na-šablonu. Předpoklad (knowledge): ne-tetovací vícevrstvé šablony nikdo necílí; objem hledání neměřen.",
+      "competitors": [
+        {
+          "name": "StencilPro: Stencil Maker",
+          "url": "https://apps.apple.com/us/app/stencilpro-stencil-maker/id6753896745",
+          "role": "niche",
+          "note": "Obecný titul 'Stencil Maker', tattoo zaměření."
+        },
+        {
+          "name": "Tattoo Stencil Maker",
+          "url": "https://apps.apple.com/us/app/tattoo-stencil-maker/id6743803500",
+          "role": "parent",
+          "note": "Přeplněný rodič."
+        },
+        {
+          "name": "Stencify",
+          "url": "https://apps.apple.com/us/app/stencify-tattoo-stencil-maker/id6753107716",
+          "role": "parent",
+          "note": "AI tattoo stencil."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "AI stencil aplikace (jsou jich desítky) přidají vícevrstvý režim a obsadí i tento klíč.",
+        "Graffiti komunita je citlivá na cenu a často má Photoshop.",
+        "Riziko App Review: aplikace podobná tattoo stencil klonům → 4.3; nutná jasná odlišnost."
+      ],
+      "killer_risk": "Tattoo stencil konkurence přidá vrstvy dříve, než získáme ratingy.",
+      "mitigation": "Sdílený engine s dýňovou a scroll saw aplikací, ale každá s unikátní doménou (můstky, registrace, výřezy); ASO přesně na airbrush/spray/textil.",
+      "build_weeks": 5,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 5
+      }
+    },
+    {
+      "id": "graphics-design-16",
+      "name": "Girih Pattern Studio",
+      "tagline": "Islámské geometrické vzory (girih, zellige, rosetty) konstrukcí kružítkem a pravítkem — pro umělce, řemeslníky i učitele.",
+      "pitch": "Islámská geometrie (girih, marocké zellige, perské rosetty) je obrovská tradice umění a řemesla — od kaligrafů po obkladače a laserové řezbáře mříží (mashrabiya). Na App Store je jen vzdělávací Mosaic TileMaker od Qatar Foundation International. Aplikace nabídne generátor vzorů z 'rozety n-fold' a mřížky, krok za krokem konstrukci kružítkem (výuka), barvení a export SVG pro laser, CNC a tisk. Lokalizace do arabštiny, turečtiny, perštiny, indonéštiny a malajštiny je prázdné pole.",
+      "niche": "Generátor a konstrukční výuka islámských geometrických vzorů. Západní vývojáři tuto tradici neznají, lokální vývojáři dělají spíše náboženské aplikace (Korán, modlitby).",
+      "parent_market": "Generátory vzorů a mozaik (Tessera Design Studio, Geometric Mosaic) + trh laserového řezání mříží a dekorů + kurzy islámské geometrie (Art of Islamic Pattern).",
+      "target_user": "Umělci a studenti islámské geometrie, řemeslníci (obklady, dřevořezba, laser mashrabiya), učitelé matematiky/výtvarky; MENA, TR, ID, MY, UK.",
+      "features": [
+        "Generátor vzorů 6/8/10/12/16-fold s volbou mřížky a stylu (girih, zellige)",
+        "Konstrukce krok za krokem kružítkem a pravítkem (výukový režim)",
+        "Barvení ploch a prokládání (interlace)",
+        "Export SVG/DXF/PDF pro laser, CNC a tisk",
+        "Knihovna 40 klasických vzorů s původem (Alhambra, Isfahán)"
+      ],
+      "offline": "full",
+      "offline_note": "Geometrická konstrukce a vektorový export lokálně; knihovna jako statická data.",
+      "monetization": "Freemium: 10 vzorů zdarma; Pro 7,99 USD (≈ 185 CZK) jednorázově; export pro řemeslníky v Pro.",
+      "revenue_math": "Ideál: 2 000 stažení/měs (islamic geometric pattern, girih, zellige + AR/TR klíče) × 3 % = 60 × 7,99 USD = 479 USD hrubě → 407 USD čistě ≈ 9 400 CZK; s řemeslným Pro exportem (13,99 USD pro 15 % kupujících) ≈ 11 000 CZK/měs.",
+      "revenue_czk_ideal": 11000,
+      "keywords": [
+        {
+          "kw": "islamic geometric pattern",
+          "saturation": 1,
+          "competitor": "Mosaic TileMaker (Qatar Foundation, vzdělávací)",
+          "note": "Web evidence: jediná relevantní aplikace je vzdělávací Mosaic TileMaker. OPEN."
+        },
+        {
+          "kw": "geometric pattern generator",
+          "saturation": 3,
+          "competitor": "Tessera Design Studio (opakující vzory)",
+          "note": "Web evidence: obecné generátory existují."
+        },
+        {
+          "kw": "girih",
+          "saturation": 0,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad; malý objem."
+        },
+        {
+          "kw": "zellige",
+          "saturation": 1,
+          "competitor": "brand obklady (odhad)",
+          "note": "Odhad; MA/FR trh."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web evidence): v App Store jen vzdělávací Mosaic TileMaker a obecné generátory; evidence výslovně označuje islámskou geometrii za reverse gap pro MENA/TR/ID/MY. Předpoklad: ochota platit v těchto regionech a objem hledání neověřeny.",
+      "competitors": [
+        {
+          "name": "Mosaic TileMaker",
+          "url": "https://apps.apple.com/pw/app/mosaic-tilemaker/id1433975270",
+          "role": "niche",
+          "note": "Qatar Foundation International — vzdělávací, zdarma."
+        },
+        {
+          "name": "Tessera Design Studio",
+          "url": "https://apps.apple.com/us/app/tessera-design-studio/id6756501042",
+          "role": "niche",
+          "note": "Opakující se vzory obecně."
+        },
+        {
+          "name": "Geometric Mosaic",
+          "url": "https://apps.apple.com/lc/app/geometric-mosaic/id1311514658",
+          "role": "parent",
+          "note": "Foto na geometrickou mozaiku (efekt)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Nižší kupní síla a nižší konverze in-app nákupů v části cílových trhů (ID, MY, EG).",
+        "Kulturní a náboženská citlivost: chybná atribuce nebo neobratný marketing může vyvolat odpor.",
+        "Zdarma dostupný Mosaic TileMaker a YouTube kurzy snižují ochotu platit za výukový režim.",
+        "Konstrukční geometrie pro 10/16-fold vzory je matematicky náročná — build se může protáhnout."
+      ],
+      "killer_risk": "Nízká monetizace na klíčových trzích (MENA/SEA) při malém západním publiku.",
+      "mitigation": "Monetizovat export pro řemeslníky (laser/CNC) a učitele, regionální ceny, spolupráce s rodilými konzultanty; začít s 6/8/12-fold vzory.",
+      "build_weeks": 6,
+      "evidence": "web",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 8,
+        "monetization": 4,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 5
+      }
+    },
+    {
+      "id": "graphics-design-17",
+      "name": "Tumbler Wrap Designer",
+      "tagline": "Sublimační obal na kónický tumbler bez deformace: šablona podle přesných rozměrů hrnku a export PNG ve 300 DPI.",
+      "pitch": "Sublimace na tumblery (20oz skinny, 40oz s uchem) je obří side-hustle v USA — Etsy je plné 'tumbler wraps' za 3–5 USD. Technický problém: kónické tumblery vyžadují zakřivenou (warped) šablonu, jinak se design na hrnku zkroutí. Lidé řeší deformaci v Photoshopu podle YouTube návodů. Aplikace vezme design a rozměry (horní/dolní průměr, výška), vygeneruje přesný oblouk, náhled 3D hrnku a export PNG 300 DPI zrcadlově pro sublimaci.",
+      "niche": "Kónická deformace sublimačních obalů. Cricut Design Space a obecné editory to neumějí; pomáhají jen PDF šablony na Etsy.",
+      "parent_market": "Cricut/Silhouette/sublimační ekosystém (Cricut Design Space, Canva pro print-on-demand) + Etsy trh digitálních tumbler wraps.",
+      "target_user": "Crafterky s sublimační tiskárnou a Cricut (US hlavně ženy 25–50), print-on-demand prodejci, v EU/LatAm začínající 'personalizace' byznysy.",
+      "features": [
+        "Databáze 40 běžných tumblerů (20oz skinny, 40oz, 30oz…) + vlastní rozměry",
+        "Přesná kónická deformace (warp) designu a mezery pro ucho",
+        "3D náhled na hrnku",
+        "Export PNG 300 DPI, zrcadlení, spadávka",
+        "Import designu z Fotek/Files"
+      ],
+      "offline": "full",
+      "offline_note": "Geometrická transformace a 3D náhled (SceneKit) lokálně.",
+      "monetization": "Freemium: náhled zdarma, export Pro 6,99 USD (≈ 160 CZK) jednorázově nebo 2,99 USD/měs pro prodejce.",
+      "revenue_math": "Ideál: 2 500 stažení/měs (tumbler wrap, sublimation template, tapered tumbler) × 4 % = 100 × 6,99 USD = 699 USD hrubě → 594 USD čistě ≈ 13 700 CZK/měs.",
+      "revenue_czk_ideal": 13700,
+      "keywords": [
+        {
+          "kw": "tumbler wrap",
+          "saturation": 3,
+          "competitor": "mockup/print-on-demand aplikace (odhad)",
+          "note": "Odhad — evidence uvádí tumbler sublimation wraps jako neověřeného kandidáta."
+        },
+        {
+          "kw": "sublimation template",
+          "saturation": 4,
+          "competitor": "sublimační design aplikace (odhad)",
+          "note": "Odhad; pravděpodobně aplikace s AI designy."
+        },
+        {
+          "kw": "tapered tumbler template",
+          "saturation": 1,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad; přesný technický záměr."
+        },
+        {
+          "kw": "sublimation design",
+          "saturation": 5,
+          "competitor": "AI design generátory (odhad)",
+          "note": "Odhad; obsazenější head term."
+        }
+      ],
+      "demand_evidence": "Předpoklad (knowledge): Etsy trh tumbler wraps, YouTube návody 'how to warp tumbler design', skupiny sublimace na Facebooku. V App Store existují sublimační design aplikace (odhad), ale přesnou warp funkci jsme neověřili — saturace je odhad.",
+      "competitors": [
+        {
+          "name": "Cricut Design Space",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr ekosystému; kónickou deformaci neřeší."
+        },
+        {
+          "name": "Canva",
+          "url": "",
+          "role": "parent",
+          "note": "Obecný editor používaný pro wraps."
+        },
+        {
+          "name": "Sublimation design aplikace (AI)",
+          "url": "",
+          "role": "niche",
+          "note": "Předpokládaná konkurence, neověřeno."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Sublimace na tumblery je US-centrická (oz rozměry, Etsy). Stejný byznys roste v MX/BR/DE/PL ('sublimación termos', 'Sublimation Becher'); lokalizovaná verze s metrickými rozměry a lokálními hrnky je mezera.",
+      "devils_advocate": [
+        "Konkurence v 'sublimation' klíčích bude AI design generátory s velkými rozpočty — přesný klíč 'tapered tumbler' má malý objem.",
+        "Etsy prodává hotové warped šablony za 1–3 USD; mnoho lidí si je koupí jednou a aplikaci nepotřebuje.",
+        "Canva nebo Cricut mohou přidat 'tapered wrap' nástroj (Canva má už mockupy)."
+      ],
+      "killer_risk": "Canva/Cricut přidá deformaci zdarma.",
+      "mitigation": "Databáze přesných rozměrů hrnků (včetně EU značek), 3D náhled a dávkový export pro prodejce; lokalizace.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      }
+    },
+    {
+      "id": "graphics-design-18",
+      "name": "Shadow Box Papercut",
+      "tagline": "Z fotky vrstvený papírový shadow box: 8–12 vrstev s můstky, připravené pro Cricut, laser nebo nůžky.",
+      "pitch": "Vrstvené papírové 'shadow boxy' s podsvícením jsou populární DIY i Etsy produkt — šablony se prodávají za 5–15 USD. Tvorba vlastního motivu (fotka rodiny, silueta města) je dnes ruční práce v Illustratoru. Aplikace rozloží fotku podle hloubky (LiDAR/Depth nebo odhad hloubky Core ML) a tónu do 8–12 vrstev, zajistí propojení (můstky) každé vrstvy s rámem a exportuje SVG pro Cricut, laser či tisk k ručnímu vyřezání.",
+      "niche": "Automatická tvorba vrstvených papercut shadow boxů. SVG konvertory dělají jednu vrstvu, laserové aplikace neřeší hloubkové vrstvení.",
+      "parent_market": "Laser/Cricut design (xTool Creative Space, Cricut Design Space) + Etsy trh SVG šablon shadow boxů.",
+      "target_user": "Majitelé Cricut/Silhouette a laserů, papírové crafterky, prodejci personalizovaných dárků.",
+      "features": [
+        "Fotka → 8–12 vrstev podle hloubky (Depth/Core ML) a tónu",
+        "Automatické propojení každé vrstvy s rámem (můstky)",
+        "Náhled s podsvícením a rozestupy",
+        "Export SVG/PDF podle velikosti rámu",
+        "Siluety měst a přírodní motivy jako šablony"
+      ],
+      "offline": "full",
+      "offline_note": "Odhad hloubky Core ML modelem na zařízení, vektorizace a export lokálně.",
+      "monetization": "Freemium: 3 vrstvy zdarma; Pro 8,99 USD (≈ 205 CZK) jednorázově.",
+      "revenue_math": "Ideál: 1 800 stažení/měs (shadow box svg, layered paper art, papercut light box) × 4 % = 72 × 8,99 USD = 647 USD hrubě → 550 USD čistě ≈ 12 600 CZK/měs.",
+      "revenue_czk_ideal": 12600,
+      "keywords": [
+        {
+          "kw": "shadow box svg",
+          "saturation": 2,
+          "competitor": "SVG knihovny (odhad)",
+          "note": "Odhad — evidence uvádí layered papercut shadow-box SVG jako otevřeného kandidáta, neměřeno."
+        },
+        {
+          "kw": "papercut light box",
+          "saturation": 1,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "layered paper art",
+          "saturation": 1,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "svg maker",
+          "saturation": 6,
+          "competitor": "SVG konvertory (odhad)",
+          "note": "Odhad; přeplněný head term — jen parent."
+        }
+      ],
+      "demand_evidence": "Částečně ověřeno: web evidence jmenuje 'layered papercut shadow-box SVGs' mezi otevřenými kandidáty v laserovém segmentu (bez měření). Předpoklad (knowledge): Etsy prodává tisíce shadow box šablon.",
+      "competitors": [
+        {
+          "name": "LaserPecker Design Space",
+          "url": "https://apps.apple.com/us/app/laserpecker-design-space/id6445970960",
+          "role": "parent",
+          "note": "Laserový ekosystém."
+        },
+        {
+          "name": "Cricut Design Space",
+          "url": "",
+          "role": "parent",
+          "note": "Hlavní platforma papírových crafterek."
+        },
+        {
+          "name": "Etsy SVG šablony",
+          "url": "",
+          "role": "niche",
+          "note": "Hotové šablony jako substitut."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Automatické rozvrstvení fotky do vyřezatelných vrstev je těžké — výsledky mohou vypadat 'rozbitě'.",
+        "Crafterky raději koupí ověřenou šablonu od designérky za 5 USD než riskují vlastní.",
+        "Vyřezat 12 vrstev ručně je hodiny práce; bez stroje aplikace ztrácí smysl."
+      ],
+      "killer_risk": "Kvalita automatického vrstvení nedosáhne úrovně ručně navržených Etsy šablon.",
+      "mitigation": "Kombinace automatu a ručních úprav, začít silhouetovými motivy (město, les, zvířata), kde automat funguje dobře.",
+      "build_weeks": 6,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "graphics-design-19",
+      "name": "Kumihimo Pattern Designer",
+      "tagline": "Navrhni vzor japonského pleteného šňůrování kumihimo a zjisti, jak nastavit nitě na disku.",
+      "pitch": "Kumihimo je japonská technika pletení šňůr na pěnovém disku (maru dai), oblíbená pro náramky a šperky. Hlavní potíž: jak rozmístit barevné nitě na disku, aby vznikl spirála, šachovnice nebo diamant. Aplikace simuluje výslednou šňůru z rozložení nití (Kongo gumi 8/16 nití, flat braids) a naopak z požadovaného vzoru navrhne rozmístění. Friendship bracelet aplikace existují, kumihimo simulátor ne — navíc reverse gap z Japonska.",
+      "niche": "Simulace a design kumihimo. Friendship bracelet aplikace řeší uzlíkové náramky; kumihimo má jinou mechaniku (rotace nití).",
+      "parent_market": "Friendship bracelet a náramkové aplikace (Friendship Bracelet, Friendship Bracelet Designer) + korálkové/šperkařské vzory.",
+      "target_user": "Šperkařky a korálkářky, děti a teenageři v kroužcích, učitelky výtvarky; JP, US, UK, DE, FR.",
+      "features": [
+        "Simulace šňůry z rozmístění 8/12/16 nití (Kongo gumi, flat braid)",
+        "Obrácený návrh: vzor → rozmístění nití na disku",
+        "Knihovna 40 vzorů (spirála, diamant, šachovnice)",
+        "Krokový režim pletení s počítadlem",
+        "Náhled s korálky"
+      ],
+      "offline": "full",
+      "offline_note": "Simulace je deterministická kombinatorika; vše lokálně.",
+      "monetization": "Freemium: 10 vzorů zdarma; Pro 4,99 USD (≈ 115 CZK) jednorázově.",
+      "revenue_math": "Ideál: 3 000 stažení/měs (kumihimo, kumihimo patterns, braiding disk + JP 組紐) × 4 % = 120 × 4,99 USD = 599 USD hrubě → 509 USD čistě ≈ 11 700 CZK/měs. Realisticky spíše 1 000 stažení → ≈ 4 000 CZK.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "kumihimo",
+          "saturation": 1,
+          "competitor": "žádný dedikovaný (odhad)",
+          "note": "Odhad — evidence uvádí kumihimo jako neověřenou sousední niku friendship bracelets."
+        },
+        {
+          "kw": "kumihimo patterns",
+          "saturation": 0,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "braiding patterns",
+          "saturation": 3,
+          "competitor": "pletení vlasů (odhad)",
+          "note": "Odhad; smíšený záměr (účesy)."
+        },
+        {
+          "kw": "friendship bracelet",
+          "saturation": 3,
+          "competitor": "Friendship Bracelet",
+          "note": "Web evidence: 3 dedikované, trend vrcholil 2023."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web evidence): friendship bracelet parent má 3 dedikované aplikace a tradiční komunitu. Předpoklad (knowledge): kumihimo disky se prodávají v hobby obchodech po celém světě; objem hledání v App Store neznámý.",
+      "competitors": [
+        {
+          "name": "Friendship Bracelet",
+          "url": "https://apps.apple.com/us/app/friendship-bracelet/id1558889177",
+          "role": "parent",
+          "note": "Vzory pro rovné/šikmé pletení náramků."
+        },
+        {
+          "name": "Friendship Bracelet Designer",
+          "url": "https://apps.apple.com/us/app/friendship-bracelet-designer/id1597925328",
+          "role": "parent",
+          "note": "Barevné uzly, generovaný vzor."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Reverse gap: kumihimo je japonská technika, disky prodávají globální hobby řetězce (Michaels, Hobbycraft), ale žádná aplikace ji neobsluhuje; lokalizovaný launch EN/JP/DE/FR/ES.",
+      "devils_advocate": [
+        "Velmi malý trh — kumihimo je okrajový koníček a náramek se naučí za odpoledne z karty.",
+        "Cílová skupina zahrnuje děti — nízká ochota platit a Kids kategorie komplikuje monetizaci.",
+        "Pletení kumihimo se dá pochopit z tištěné karty k disku; aplikace může působit zbytečně."
+      ],
+      "killer_risk": "Nedostatečný objem hledání — ideální scénář je optimistický.",
+      "mitigation": "Levný vývoj (2–3 týdny), zahrnout do portfolia jako long-tail; rozšířit o tablet weaving/inkle jen pokud data ukážou poptávku (vyhnout se 4.3 klonům).",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "graphics-design-20",
+      "name": "Tablet Weaving Designer",
+      "tagline": "Navrhni vzor pro tkaní na destičkách (card weaving) a inkle stav — simulace, navlékací karta a postup otáčení.",
+      "pitch": "Tkaní na destičkách (tablet/card weaving) a inkle stav je živá komunita historických reenactorů, vikingských fanoušků a tkalců pásků. Vzory se navrhují v desktopových programech (GTT — Guntram's Tabletweaving Thingy, jen Windows) nebo na papíře. Aplikace simuluje výsledný pásek z navlékání (threading S/Z) a sekvence otáčení, generuje navlékací kartu a krokový postup s počítadlem. Na iOS podobný nástroj chybí.",
+      "niche": "Tablet weaving a inkle design na mobilu. Tkalcovské nástroje jsou desktopové a zastaralé; friendship bracelet aplikace neřeší tkaní.",
+      "parent_market": "Tkalcovské a náramkové aplikace (Friendship Bracelet, weaving draft software) + trh inkle stavů a tkalcovských potřeb.",
+      "target_user": "Historičtí reenactoři (vikingové, středověk), tkalci pásků, fanoušci LARP; US, UK, DE, SE, NO, PL, CZ.",
+      "features": [
+        "Simulace pásku z navlékání (S/Z, 4 díry, barvy)",
+        "Sekvence otáčení (vpřed/vzad), double-face a 3/1 twill",
+        "Inkle stav: návrh osnovy a pick-up",
+        "Navlékací karta a krokový postup s počítadlem",
+        "Export PDF"
+      ],
+      "offline": "full",
+      "offline_note": "Simulace tkaní je deterministická; vše lokálně.",
+      "monetization": "Jednorázově 6,99 USD (≈ 160 CZK) placená aplikace nebo freemium s Pro 6,99 USD.",
+      "revenue_math": "Ideál: 1 500 stažení/měs (tablet weaving, card weaving, inkle loom) × 5 % = 75 × 6,99 USD = 524 USD hrubě → 445 USD čistě ≈ 10 200 CZK/měs. Realisticky nižší (viz rizika).",
+      "revenue_czk_ideal": 10200,
+      "keywords": [
+        {
+          "kw": "tablet weaving",
+          "saturation": 1,
+          "competitor": "žádný dedikovaný (odhad)",
+          "note": "Odhad — evidence uvádí tablet/card weaving a inkle jako neověřené sousední niky."
+        },
+        {
+          "kw": "card weaving",
+          "saturation": 1,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "inkle loom",
+          "saturation": 1,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "weaving pattern",
+          "saturation": 3,
+          "competitor": "iWeaveIt a tkalcovské draft aplikace (odhad)",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Předpoklad (knowledge): komunity reenactorů a tkalců (Facebook skupiny s desítkami tisíc členů, GTT software). Web evidence ověřila jen rodičovský trh friendship bracelets. Objem hledání neznámý.",
+      "competitors": [
+        {
+          "name": "Friendship Bracelet",
+          "url": "https://apps.apple.com/us/app/friendship-bracelet/id1558889177",
+          "role": "parent",
+          "note": "Náramkové pletení — sousední trh."
+        },
+        {
+          "name": "GTT – Guntram's Tabletweaving Thingy",
+          "url": "",
+          "role": "niche",
+          "note": "Desktop Windows, zdarma — dnešní standard."
+        },
+        {
+          "name": "iWeaveIt",
+          "url": "",
+          "role": "niche",
+          "note": "iOS weaving draft pro stavy (odhad, neověřeno)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Komunita je malá a zvyklá na zdarma GTT.",
+        "Mechanika otáčení destiček je komplexní; chyby simulace komunita okamžitě odhalí.",
+        "Retence: vzor se navrhne jednou, pak se týdny tká."
+      ],
+      "killer_risk": "Malé publikum + zdarma desktop nástroj.",
+      "mitigation": "Krokový tkací režim s počítadlem (mobilní výhoda u stavu), placené balíčky historických vzorů (Birka, Snartemo) s citací zdrojů.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "graphics-design-21",
+      "name": "Cement Tile Pattern Designer",
+      "tagline": "Navrhni vzor cementových a enkaustických dlaždic pro koupelnu či kuchyň — značkově neutrálně, s výpočtem kusů.",
+      "pitch": "Cementové (encaustic) dlaždice jsou trvalý interiérový trend a renovátoři chtějí vidět, jak bude podlaha vypadat při různém otočení a skladbě. Existující Mosaico je konfigurátor jedné značky. Aplikace nabídne knihovnu motivů, barvení, otáčení a kombinace do vzorů (šachovnice, bordura, patchwork), náhled na fotce místnosti a výpočet kusů s rezervou. Výstup lze poslat výrobci nebo obkladači jako PDF.",
+      "niche": "Neutrální designér cementových dlaždic. Značky dělají konfigurátory pouze pro své kolekce; obecné interiérové aplikace neřeší vzor dlaždice.",
+      "parent_market": "Interiérový design a renovace (Houzz, Planner 5D, RoomSketcher) + konfigurátory výrobců (Mosaico).",
+      "target_user": "Renovátoři domácností, interiéroví designéři, obkladači, malí výrobci dlaždic.",
+      "features": [
+        "Knihovna 80 motivů + vlastní barvení",
+        "Skladba vzorů (otočení, bordura, patchwork)",
+        "Náhled na fotce podlahy (perspektivní mapování)",
+        "Výpočet kusů, balení a rezervy",
+        "PDF pro výrobce/obkladače"
+      ],
+      "offline": "full",
+      "offline_note": "Knihovna motivů, perspektivní náhled a výpočty lokálně.",
+      "monetization": "Freemium: 20 motivů zdarma; Pro 5,99 USD (≈ 140 CZK) jednorázově; B2B tarif pro designéry 4,99 USD/měs.",
+      "revenue_math": "Ideál: 2 000 stažení/měs (cement tile, encaustic tile design, tile pattern) × 3 % = 60 × ~8 USD průměr = 480 USD hrubě → 408 USD čistě ≈ 9 400 CZK; s B2B podíl ≈ 10 500 CZK/měs.",
+      "revenue_czk_ideal": 10500,
+      "keywords": [
+        {
+          "kw": "cement tile designer",
+          "saturation": 1,
+          "competitor": "Mosaico (značkový)",
+          "note": "Web evidence: Mosaico je jen značkový konfigurátor. OPEN pro neutrální."
+        },
+        {
+          "kw": "encaustic tile",
+          "saturation": 1,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad; navazuje na evidence."
+        },
+        {
+          "kw": "tile pattern",
+          "saturation": 4,
+          "competitor": "tile kalkulačky a obkladové aplikace (odhad)",
+          "note": "Odhad; smíšený záměr."
+        },
+        {
+          "kw": "floor tile design",
+          "saturation": 4,
+          "competitor": "interiérové aplikace (odhad)",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web evidence): existence brand konfigurátoru Mosaico ukazuje poptávku po úpravách dlaždic; žádný neutrální designér. Předpoklad: objem hledání neověřen, renovace je nepravidelná potřeba.",
+      "competitors": [
+        {
+          "name": "Mosaico Tile Designer",
+          "url": "https://apps.apple.com/us/app/mosaico-tile-designer-app/id1460372752",
+          "role": "niche",
+          "note": "Konfigurátor jedné značky."
+        },
+        {
+          "name": "Tessera Design Studio",
+          "url": "https://apps.apple.com/us/app/tessera-design-studio/id6756501042",
+          "role": "niche",
+          "note": "Opakující se vzory obecně."
+        },
+        {
+          "name": "Houzz",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr interiérového designu."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Uživatel renovuje koupelnu jednou za 10 let — nulová retence a nízká ochota platit.",
+        "Výrobci dlaždic nabízejí konfigurátory zdarma na webu.",
+        "Perspektivní náhled na fotce bude působit amatérsky vedle AR aplikací velkých hráčů."
+      ],
+      "killer_risk": "Jednorázová potřeba bez retence → nedostatečný příjem.",
+      "mitigation": "Tarif pro designéry a obkladače (opakované projekty), spolupráce s malými výrobci (export do jejich formátu), ASO na lokální výrazy (baldosa hidráulica, Zementfliesen).",
+      "build_weeks": 4,
+      "evidence": "web",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "graphics-design-22",
+      "name": "Polymer Clay Color Recipes",
+      "tagline": "Recepty na míchání polymerové hmoty (Fimo, Sculpey, Cernit) v dílech — z fotky nebo HEX odstínu.",
+      "pitch": "Tvůrci náušnic a figurek z polymerové hmoty míchají odstíny z barevných bloků v poměru dílů (např. 2:1:½). Recepty sdílejí na Instagramu ručně, protože žádný nástroj nezná pigmenty Fimo/Sculpey/Cernit. Malířské mixéry jsou přeplněné, ale počítají s tekutými barvami. Aplikace navrhne recept v dílech pro konkrétní značky, přepočte na gramy a uloží 'kartičky receptů' s fotkou výsledku.",
+      "niche": "Míchání pevných polymerových hmot. Malířské mixéry (10+ aplikací) toto publikum ignorují.",
+      "parent_market": "Aplikace na míchání barev (Mixable, Mixura, Real Paint Mixing Tools, MiniPaints) + trh polymer clay (Etsy náušnice, Fimo/Sculpey).",
+      "target_user": "Tvůrkyně polymer clay náušnic a šperků (Etsy/Instagram), 20–45 let.",
+      "features": [
+        "Foto/HEX → recept v dílech pro Fimo Soft/Effect, Sculpey Premo/Souffle, Cernit",
+        "Přepočet na gramy a velikost dávky",
+        "Kartičky receptů s fotkou výsledku a verzí",
+        "Palety sezónních odstínů (terrakota, šalvěj…)",
+        "Vlastní kalibrace podle vzorku"
+      ],
+      "offline": "full",
+      "offline_note": "Data pigmentů jako statická databáze; výpočty lokálně.",
+      "monetization": "Freemium: 15 receptů zdarma; Pro 4,99 USD (≈ 115 CZK) jednorázově.",
+      "revenue_math": "Ideál: 2 500 stažení/měs (polymer clay color, clay color mixing, fimo colors) × 4 % = 100 × 4,99 USD = 499 USD hrubě → 424 USD čistě ≈ 9 800 CZK; s balíčky palet (1,99 USD) ≈ 10 500 CZK/měs.",
+      "revenue_czk_ideal": 10500,
+      "keywords": [
+        {
+          "kw": "polymer clay color",
+          "saturation": 1,
+          "competitor": "žádný dedikovaný (odhad)",
+          "note": "Odhad — evidence uvádí polymer clay recepty jako neověřené sousední publikum."
+        },
+        {
+          "kw": "polymer clay",
+          "saturation": 3,
+          "competitor": "tutoriálové aplikace (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "clay color mixing",
+          "saturation": 1,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "paint mixing",
+          "saturation": 8,
+          "competitor": "Mixable, Mix Paint, Mixura",
+          "note": "Web evidence: saturace 8+, jen parent."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web evidence): míchání barev je přeplněný rodičovský trh (10+ aplikací 2025–26). Předpoklad (knowledge): polymer clay komunita sdílí recepty ručně, Etsy náušnice jsou masové. Saturace klíčů neměřena.",
+      "competitors": [
+        {
+          "name": "Mixable: Paint Mixing Guide",
+          "url": "https://apps.apple.com/us/app/mixable-paint-mixing-guide/id6769655280",
+          "role": "parent",
+          "note": "Malířský mixér."
+        },
+        {
+          "name": "MixMaster: Miniature Paint Mix",
+          "url": "https://apps.apple.com/sa/app/mixmaster-miniature-paint-mix/id6772663734",
+          "role": "parent",
+          "note": "Důkaz, že mixéry se štěpí podle publika."
+        },
+        {
+          "name": "Real Paint Mixing Tools",
+          "url": "https://apps.apple.com/us/app/real-paint-mixing-tools/id1431308757",
+          "role": "parent",
+          "note": "Starší lídr."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Chybí data pigmentů hmot; bez vlastního měření budou recepty nepřesné.",
+        "Značky mění receptury (Fimo, Sculpey reformulace) → databáze zastará.",
+        "Publikum je malé a mnoho tvůrkyň míchá intuitivně."
+      ],
+      "killer_risk": "Nepřesné recepty kvůli chybějícím a měnícím se datům pigmentů.",
+      "mitigation": "Kalibrace z fotky vlastního vzorku (uživatel vyfotí míchání a aplikace se doučí), komunitní kartičky lokálně sdílené přes AirDrop/soubor.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "graphics-design-23",
+      "name": "Cookie Cutter 3D Maker",
+      "tagline": "Nakresli nebo vyfoť tvar a stáhni STL vykrajovátka na 3D tisk — vlastní vykrajovátko za 20 minut.",
+      "pitch": "Vlastní vykrajovátka jsou jedna z nejčastějších věcí, které majitelé 3D tiskáren tisknou (Vánoce, narozeniny, logo firmy). Dnes se dělají na webech (CookieCAD) nebo ve Fusion 360. Aplikace z obrysu (fotka, kresba prstem, text) vytvoří STL/3MF s řezací hranou, držadlem a volitelným razítkem (embosser) pro detaily. Sdílí technologický základ s litofánií, ale jde o jiné publikum (pečení + 3D tisk).",
+      "niche": "Mobilní generátor vykrajovátek. Webové nástroje existují, ale na iPhonu, kde lidé kreslí a fotí, chybí.",
+      "parent_market": "3D tisk companion aplikace a modelové knihovny (Bambu Handy, MakerWorld, Printables) + cukrářské zdobení perníčků.",
+      "target_user": "Majitelé 3D tiskáren, zdobitelky perníčků, drobné cukrárny, rodiny s dětmi (Vánoce).",
+      "features": [
+        "Obrys z fotky/kresby/textu → STL/3MF vykrajovátka",
+        "Nastavení výšky, tloušťky hrany, držadla a výztuh",
+        "Razítko/embosser pro detaily (dvoudílné)",
+        "Kontrola minimálních poloměrů pro tisk",
+        "Sdílení do sliceru"
+      ],
+      "offline": "full",
+      "offline_note": "Offset obrysu a generování sítě lokálně.",
+      "monetization": "Freemium: 1 vykrajovátko zdarma; Pro 5,99 USD (≈ 140 CZK) jednorázově.",
+      "revenue_math": "Ideál: 2 500 stažení/měs (cookie cutter maker, 3d cookie cutter, custom cookie cutter) × 4 % = 100 × 5,99 USD = 599 USD hrubě → 509 USD čistě ≈ 11 700 CZK/měs (silně sezónní: listopad–prosinec).",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "cookie cutter maker",
+          "saturation": 2,
+          "competitor": "žádný dedikovaný (odhad)",
+          "note": "Odhad — evidence uvádí 3D-print cookie-cutter maker jako neověřeného kandidáta."
+        },
+        {
+          "kw": "custom cookie cutter",
+          "saturation": 2,
+          "competitor": "tiskové služby (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "3d cookie cutter",
+          "saturation": 1,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "stl maker",
+          "saturation": 4,
+          "competitor": "3D skenery a CAD (odhad)",
+          "note": "Odhad; smíšený záměr."
+        }
+      ],
+      "demand_evidence": "Předpoklad (knowledge): CookieCAD a tisíce modelů vykrajovátek na Printables/MakerWorld ukazují poptávku. Web evidence ověřila jen příbuzný lithophane segment (saturace 1). Saturace klíčů neměřena.",
+      "competitors": [
+        {
+          "name": "Lit Pic: Lithophane Creator",
+          "url": "https://apps.apple.com/us/app/lit-pic-lithophane-creator/id1489604752",
+          "role": "niche",
+          "note": "Sousední 3D-tisk dárková niche (ukazuje slabou konkurenci segmentu)."
+        },
+        {
+          "name": "CookieCAD (web)",
+          "url": "",
+          "role": "niche",
+          "note": "Webový generátor — hlavní substitut."
+        },
+        {
+          "name": "Bambu Handy",
+          "url": "",
+          "role": "parent",
+          "note": "Companion aplikace lídra 3D tisku."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "MakerWorld má zdarma online generátory (MakerLab) a obrovskou knihovnu hotových vykrajovátek.",
+        "Sezónnost: poptávka hlavně před Vánoci a Velikonocemi.",
+        "Sdílený engine s lithophane aplikací → riziko, že App Review bude obě aplikace vnímat jako duplicity (4.3), pokud budou podobné UI."
+      ],
+      "killer_risk": "MakerWorld/Bambu nástroje zdarma.",
+      "mitigation": "Rychlost z fotky přímo v telefonu, dvoudílné razítko s detaily a presety pro perníčky; odlišné UI a značka než lithophane aplikace.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      }
+    },
+    {
+      "id": "graphics-design-24",
+      "name": "Hexie EPP Planner",
+      "tagline": "Plánovač English paper piecing: rozvrhni šestiúhelníky a jiné tvary, spočítej papírky i látku.",
+      "pitch": "English paper piecing (EPP — ruční šití šestiúhelníků přes papírové šablony) je oblíbená přenosná technika patchworku ve Velké Británii, Austrálii, Nizozemsku a Japonsku. Quiltovací aplikace jsou přeplněné, ale navrhují hlavně strojové bloky ve čtvercové mřížce. Aplikace nabídne izometrické a šestiúhelníkové mřížky (hexie, diamanty, La Passacaglia styl rozety), barvení látkami z fotek, počty papírků a spotřebu látky, tisk šablon v přesné velikosti.",
+      "niche": "Navrhování EPP s nečtvercovými tvary. Quiltovací aplikace (Quiltography, Quiltler) EPP neřeší nebo jen okrajově.",
+      "parent_market": "Quiltovací design aplikace (Quiltography '#1 best selling quilting app', Quiltler, Quilters DesignWall — placené 4–10 USD).",
+      "target_user": "Patchworkářky 35–75 (UK, AU, NL, JP, US), ruční šití na cestách.",
+      "features": [
+        "Mřížky hexie, diamant, 'jewel', rozety; kreslení prstem/Pencil",
+        "Barvení látkami z fotek (fussy cutting náhled)",
+        "Počty papírků po tvaru a velikosti, spotřeba látky",
+        "Tisk šablon v přesné velikosti (1\", 3/4\", mm)",
+        "Sledování postupu po rozetách"
+      ],
+      "offline": "full",
+      "offline_note": "Geometrie, výpočty a PDF lokálně; látky z fotoknihovny.",
+      "monetization": "Placená aplikace 6,99 USD (≈ 160 CZK) nebo freemium s Pro 6,99 USD — quilterky platí upfront (Quiltler 9,99 USD).",
+      "revenue_math": "Ideál: 1 500 stažení/měs (english paper piecing, hexie quilt, epp) × 6 % = 90 × 6,99 USD = 629 USD hrubě → 535 USD čistě ≈ 12 300 CZK/měs.",
+      "revenue_czk_ideal": 12300,
+      "keywords": [
+        {
+          "kw": "english paper piecing",
+          "saturation": 2,
+          "competitor": "quiltovací aplikace s hexie mřížkou (odhad)",
+          "note": "Odhad — evidence uvádí EPP jako neověřenou sub-niku přeplněného quilt design."
+        },
+        {
+          "kw": "hexie quilt",
+          "saturation": 2,
+          "competitor": "žádný dedikovaný (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "epp quilt",
+          "saturation": 1,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "quilt design",
+          "saturation": 8,
+          "competitor": "Quiltography, Quiltler",
+          "note": "Web evidence: saturace 8, jen parent."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web evidence): quilt design je přeplněný (8) a placené aplikace za 4–10 USD se prodávají → quilterky platí. Předpoklad (knowledge): EPP komunita (Instagram #epp, La Passacaglia) je velká; saturaci EPP klíčů jsme neměřili.",
+      "competitors": [
+        {
+          "name": "Quiltography",
+          "url": "https://apps.apple.com/us/app/quiltography-quilt-design-made-simple/id585991997",
+          "role": "parent",
+          "note": "Lídr quilt designu."
+        },
+        {
+          "name": "Quilters DesignWall",
+          "url": "https://apps.apple.com/gb/app/quilters-designwall/id6765559974",
+          "role": "niche",
+          "note": "£3,99, UK — může přidat EPP."
+        },
+        {
+          "name": "TideStitch Quilt Designer",
+          "url": "https://apps.apple.com/us/app/tidestitch-quilt-designer/id6785949038",
+          "role": "niche",
+          "note": "Nové layouty (on-point, bargello)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Quiltography nebo TideStitch přidají hexie mřížku a klíčové slovo převezmou.",
+        "EPP je pomalá ruční technika — jeden projekt trvá měsíce, nákup jen jednou.",
+        "Starší publikum hledá méně v App Store a více na Facebooku/YouTube."
+      ],
+      "killer_risk": "Zavedené quilt aplikace přidají EPP.",
+      "mitigation": "Hloubka pro EPP (fussy cutting náhled, rozety, počty papírků), UK/AU/NL/JP lokalizace a klíče.",
+      "build_weeks": 5,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "graphics-design-25",
+      "name": "Punchcard Knit Designer",
+      "tagline": "Navrhni 24-okový punchcard pro pletací stroj Brother/Silver Reed a vytiskni šablonu k proděrování.",
+      "pitch": "Pletací stroje (Brother KH, Silver Reed/Singer) zažívají comeback mezi mladými tvůrci, kteří kupují stroje z bazarů. Vzory se zadávají přes děrné štítky s 24 oky opakování; návrh je tedy výrazně omezený a na papíře zdlouhavý. Aplikace nabídne editor 24×N, kontrolu délky 'floats', náhled pleteniny (Fair Isle, tuck, slip) a tisk šablony karty v měřítku 1:1 k proděrování. Pro elektronické stroje export do formátu pro AYAB (open-source kit).",
+      "niche": "Design pro strojové pletení s punchcard omezeními. Knitting chart aplikace řeší ruční pletení a neznají pravidla karet.",
+      "parent_market": "Knitting chart aplikace (Knitting Chart, PatternGenius, Knit Pro) + komunita strojového pletení (AYAB, bazary strojů).",
+      "target_user": "Majitelé domácích pletacích strojů (mladí tvůrci i dlouholeté pletařky), DE/UK/US/NL/JP.",
+      "features": [
+        "Editor 24×N (i 12/8 oka) s opakováním a zrcadlením",
+        "Kontrola floats a technik (Fair Isle, tuck, slip)",
+        "Náhled pleteniny v barvách přízí",
+        "Tisk šablony karty 1:1 k proděrování (PDF)",
+        "Export PNG pro AYAB/elektronické stroje"
+      ],
+      "offline": "full",
+      "offline_note": "Editor, simulace a PDF lokálně.",
+      "monetization": "Placená 5,99 USD (≈ 140 CZK) nebo freemium s Pro 5,99 USD.",
+      "revenue_math": "Ideál: 1 500 stažení/měs (punchcard knitting, knitting machine pattern, fair isle) × 5 % = 75 × 5,99 USD = 449 USD hrubě → 382 USD čistě ≈ 8 800 CZK; s DE/JP klíči (Strickmaschine Lochkarte) 1 800 stažení ≈ 10 500 CZK/měs.",
+      "revenue_czk_ideal": 10500,
+      "keywords": [
+        {
+          "kw": "knitting machine",
+          "saturation": 2,
+          "competitor": "žádný design nástroj (odhad)",
+          "note": "Odhad — evidence uvádí machine-knitting punchcard designer jako neověřenou sub-niku."
+        },
+        {
+          "kw": "punchcard knitting",
+          "saturation": 0,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "fair isle chart",
+          "saturation": 3,
+          "competitor": "Knitting Chart (odhad překryvu)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "knitting chart",
+          "saturation": 4,
+          "competitor": "Knitting Chart, PatternGenius",
+          "note": "Web evidence: ~4 dedikované, parent."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web evidence): knitting chart segment má ~4 dedikované aplikace — trh platí. Předpoklad (knowledge): comeback strojového pletení (AYAB, YouTube, bazary). Objem hledání neměřen, pravděpodobně nízký.",
+      "competitors": [
+        {
+          "name": "Knitting Chart",
+          "url": "https://apps.apple.com/us/app/knitting-chart/id1251317736",
+          "role": "parent",
+          "note": "Obrázek → chart pro ruční pletení."
+        },
+        {
+          "name": "PatternGenius",
+          "url": "https://apps.apple.com/us/app/patterngenius/id906746599",
+          "role": "parent",
+          "note": "Pletací vzory, předplatné AllGenius."
+        },
+        {
+          "name": "Knit Pro Pattern Maker",
+          "url": "https://apps.apple.com/us/app/knit-pro-pattern-maker/id1601194384",
+          "role": "niche",
+          "note": "Obecný pattern maker."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Velmi malý trh; majitelé strojů často používají papír a tužku.",
+        "Stroje a karty se liší (Brother vs. Silver Reed vs. Passap) — chyba v rozměru šablony = zkažená karta.",
+        "Knitting Chart může přidat režim 24 ok za den."
+      ],
+      "killer_risk": "Malé publikum s nízkým objemem hledání.",
+      "mitigation": "Levný build, presety strojů, JP/DE lokalizace (silné komunity strojového pletení), ASO na modely strojů bez ochranných známek v názvu.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "graphics-design-26",
+      "name": "Digital Draping Pro",
+      "tagline": "Digitální 'draping' pro barevné poradkyně: profesionální konzultace barevného typu s klientkou přímo na iPadu.",
+      "pitch": "Spotřebitelská 'seasonal color analysis' je přeplněná (8+ aplikací), ale profesionální barevné poradkyně (image consultants) stále nosí kufry s látkovými šátky. Aplikace pro ně: kalibrované digitální šátky na iPadu kolem obličeje klientky (přes přední kameru a Center Stage), porovnání vedle sebe, 12/16 sezónní systém, poznámky a PDF 'barevný pas' s paletou pro klientku. B2B profesionálka zaplatí víc a nepotřebuje virální AI.",
+      "niche": "Profesionální nástroj pro poradkyně, ne pro spotřebitelky. Spotřebitelské AI aplikace řeší 'jaký jsem typ'; poradkyně potřebují řízenou konzultaci a výstup pro klientku.",
+      "parent_market": "Seasonal color analysis aplikace (Dressika, Drape, Colorlo — 8+ aplikací) + trh fyzických draping sad a kurzů image consultingu.",
+      "target_user": "Barevné a stylové poradkyně (image consultants), kadeřnice a vizážistky nabízející barevnou typologii; US, UK, DE, PL, CZ, BR.",
+      "features": [
+        "Digitální šátky kolem obličeje (přední kamera, režim celé obrazovky)",
+        "12/16 sezónní systém, porovnání A/B",
+        "Poznámky ke klientce, fotky před/po lokálně",
+        "PDF 'barevný pas' s paletou a doporučeními (logo poradkyně)",
+        "Kalibrace jasu/bílého bodu displeje"
+      ],
+      "offline": "mostly",
+      "offline_note": "Vše lokálně; fotky klientek zůstávají na zařízení (GDPR výhoda). iCloud volitelný.",
+      "monetization": "Předplatné 9,99 USD/měs (≈ 230 CZK) nebo 79,99 USD/rok (≈ 1 840 CZK); bez free tieru jen 7denní trial.",
+      "revenue_math": "Ideál: 600 stažení/měs (color analysis professional, color draping, image consultant) × 6 % trial→placené = 36 nových/měs; při retenci 70 %/rok ustálení ~200 aktivních × ~7 USD = 1 400 USD hrubě → 1 190 USD čistě ≈ 27 000 CZK/měs (ustálený stav po ~12 měsících; první rok ≈ 10 000 CZK).",
+      "revenue_czk_ideal": 27000,
+      "keywords": [
+        {
+          "kw": "color draping",
+          "saturation": 2,
+          "competitor": "Drape (spotřebitelská 12-sezónní)",
+          "note": "Odhad — evidence uvádí pro draping pro poradkyně jako neověřené; Drape je spotřebitelská."
+        },
+        {
+          "kw": "image consultant",
+          "saturation": 2,
+          "competitor": "žádný nástroj (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "color analysis professional",
+          "saturation": 3,
+          "competitor": "spotřebitelské AI aplikace (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "seasonal color analysis",
+          "saturation": 8,
+          "competitor": "Dressika, Colorlo, Drape",
+          "note": "Web evidence: saturace 8+, jen parent."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web evidence): spotřebitelská barevná analýza je přeplněná (8+) → obrovský zájem o téma. Předpoklad (knowledge): tisíce certifikovaných poradkyň (kurzy, asociace AICI) platí za sady šátků stovky USD; profesionální aplikace pravděpodobně vzácná — neověřeno.",
+      "competitors": [
+        {
+          "name": "Dressika: Seasonal Colors",
+          "url": "https://apps.apple.com/kw/app/dressika-seasonal-colors/id1536745174",
+          "role": "parent",
+          "note": "Starší lídr spotřebitelské analýzy."
+        },
+        {
+          "name": "Drape: Seasonal Color Analysis",
+          "url": "https://apps.apple.com/us/app/drape-seasonal-color-analysis/id6760720967",
+          "role": "niche",
+          "note": "12-sezónní kvíz, spotřebitelský."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Barvy displeje nejsou látka — puristické poradkyně digitální draping odmítnou jako nepřesný.",
+        "Fotky tváří klientek = osobní údaje; nevhodné zpracování → GDPR riziko a 5.1.1 otázky.",
+        "Malý počet profesionálek; bez přímého oslovení asociací se k nim ASO nemusí dostat.",
+        "Spotřebitelské aplikace mohou přidat 'pro mód' a přetáhnout poradkyně."
+      ],
+      "killer_risk": "Profesionálky nedůvěřují barvám displeje.",
+      "mitigation": "Pozicovat jako doplněk k fyzickým šátkům (dokumentace a PDF pas pro klientku), kalibrační průvodce, lokální uložení dat.",
+      "build_weeks": 5,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 5
+      }
+    },
+    {
+      "id": "graphics-design-27",
+      "name": "Lash Map Designer",
+      "tagline": "Lash mapy pro techničky prodlužování řas: navrhni délky, ohyby a styly po zónách a ulož ke klientce.",
+      "pitch": "Techničky prodlužování řas kreslí 'lash mapy' (rozvržení délek, ohybů a tlouštěk po zónách oka) na papírové šablony nebo náplasti. Mapa je vizuální design: cat eye, doll eye, squirrel, wispy. Aplikace umožní navrhnout mapu na šabloně oka, uložit ke klientce s fotkou výsledku, sdílet jako obrázek na Instagram a spočítat potřebné délky řas z palety. Obecné salonní aplikace (booking) to neřeší.",
+      "niche": "Vizuální návrh lash map. Booking aplikace pro salony řeší rezervace a formuláře; design mapy zůstal na papíře.",
+      "parent_market": "Beauty business aplikace (Fresha, Vagaro, booking) a beauty design aplikace (nail art, face charts).",
+      "target_user": "Lash technicians (prodlužování řas), začínající i studia; US, UK, PL, CZ, RU, BR, MX.",
+      "features": [
+        "Šablona oka se zónami, délky/ohyby/tloušťky, styly (cat, doll, squirrel, wispy)",
+        "Karta klientky s fotkou výsledku a historií map (lokálně)",
+        "Export mapy jako obrázek pro sociální sítě",
+        "Spotřeba řas podle palety",
+        "Výukový režim pro studentky kurzů"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně; fotky klientek na zařízení, iCloud volitelně.",
+      "monetization": "Freemium: 3 klientky zdarma; Pro 4,99 USD/měs (≈ 115 CZK) nebo 29,99 USD/rok.",
+      "revenue_math": "Ideál: 1 500 stažení/měs (lash map, lash mapping, eyelash extension styles) × 5 % = 75 nových/měs; ustálení ~180 aktivních × ~3,5 USD = 630 USD hrubě → 536 USD čistě ≈ 12 300 CZK/měs.",
+      "revenue_czk_ideal": 12300,
+      "keywords": [
+        {
+          "kw": "lash map",
+          "saturation": 3,
+          "competitor": "lash studiové aplikace (odhad)",
+          "note": "Odhad — business evidence uvádí lash map/lash tech client cards jako neověřený kandidát."
+        },
+        {
+          "kw": "lash mapping",
+          "saturation": 2,
+          "competitor": "žádný dedikovaný (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "lash extension",
+          "saturation": 5,
+          "competitor": "booking a kurzové aplikace (odhad)",
+          "note": "Odhad; obsazenější."
+        },
+        {
+          "kw": "lash tech",
+          "saturation": 4,
+          "competitor": "salonní aplikace (odhad)",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Předpoklad (knowledge): masový obor prodlužování řas, papírové lash map šablony se prodávají na Amazonu/Etsy. Web evidence (business) zmiňuje lash map jako neprověřenou niku. Saturace neměřena — pravděpodobně existuje několik menších aplikací.",
+      "competitors": [
+        {
+          "name": "Fresha",
+          "url": "",
+          "role": "parent",
+          "note": "Booking lídr pro salony, lash mapy neřeší."
+        },
+        {
+          "name": "Lash map aplikace (menší indie)",
+          "url": "",
+          "role": "niche",
+          "note": "Předpokládané, neověřené."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Pravděpodobně už existuje několik lash map aplikací — saturace je jen odhad a může být vyšší.",
+        "Techničky pracují s rukavicemi a lepidlem; během procedury telefon nepoužijí, mapa je jen před/po.",
+        "Booking platformy (Fresha, Vagaro) mohou přidat 'service notes s mapou' zdarma."
+      ],
+      "killer_risk": "Neověřená a možná vyšší konkurence v lash nice.",
+      "mitigation": "Před buildem ověřit klíče apple_fetch check; diferenciace přes výukový režim pro kurzy a sociální export; lokalizace PL/RU/BR (silné lash trhy).",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      }
+    },
+    {
+      "id": "graphics-design-28",
+      "name": "Scroll Saw Pattern Maker",
+      "tagline": "Z fotky vzor pro vyřezávání lupínkovou pilkou: portréty a siluety s propojenými díly a vrtacími body.",
+      "pitch": "Vyřezávání lupínkovou pilkou (scroll saw) je oblíbené dřevařské hobby — portréty, jména, siluety, 'fretwork'. Vzory se kupují v knihách a e-shopech, vlastní portrét je ruční práce v Inkscape. Aplikace převede fotku na propojený vzor (každý ostrůvek spojen s okrajem), vyznačí vrtací body pro vnitřní výřezy, zkontroluje minimální šířku pro tloušťku dřeva a vytiskne v měřítku. Stejná 'bridge' technologie jako u stencilů, ale specifická pro dřevo.",
+      "niche": "Foto → scroll saw vzor s vrtacími body. Tattoo/stencil aplikace neřeší dřevo (min. šířka, vrtání), dřevařské aplikace jsou kalkulačky.",
+      "parent_market": "Stencil makery (tattoo, přeplněné) + dřevařské hobby (kalkulačky, knihovny vzorů Scroll Saw Workshop).",
+      "target_user": "Hobby dřevaři 40–75 (US, UK, DE, AU, CZ), dílny s laserem jako alternativou.",
+      "features": [
+        "Foto → propojený vzor (můstky ke kraji), portréty a jména",
+        "Vrtací body pro vnitřní výřezy, kontrola min. šířky podle tloušťky",
+        "Fonty pro jména s automatickým propojením písmen",
+        "Tisk 1:1 na dlaždice (PDF)",
+        "Export SVG i pro laser/CNC"
+      ],
+      "offline": "full",
+      "offline_note": "Vision + topologie + PDF lokálně.",
+      "monetization": "Freemium: 1 vzor zdarma; Pro 7,99 USD (≈ 185 CZK) jednorázově.",
+      "revenue_math": "Ideál: 1 500 stažení/měs (scroll saw patterns, scroll saw portrait, fretwork) × 5 % = 75 × 7,99 USD = 599 USD hrubě → 509 USD čistě ≈ 11 700 CZK/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "scroll saw patterns",
+          "saturation": 2,
+          "competitor": "knihovny vzorů (odhad)",
+          "note": "Odhad — evidence uvádí scroll saw portrait patterns jako neověřené."
+        },
+        {
+          "kw": "scroll saw portrait",
+          "saturation": 0,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "fretwork patterns",
+          "saturation": 1,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "woodworking patterns",
+          "saturation": 4,
+          "competitor": "dřevařské knihovny/plány (odhad)",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Předpoklad (knowledge): trh scroll saw vzorů (e-shopy, časopis Scroll Saw Woodworking & Crafts, YouTube). Web evidence ověřila jen přeplněný tattoo stencil rodič. Saturace neměřena.",
+      "competitors": [
+        {
+          "name": "Tattoo Stencil Maker",
+          "url": "https://apps.apple.com/us/app/tattoo-stencil-maker/id6743803500",
+          "role": "parent",
+          "note": "Foto-na-šablonu rodič."
+        },
+        {
+          "name": "StencilPro: Stencil Maker",
+          "url": "https://apps.apple.com/us/app/stencilpro-stencil-maker/id6753896745",
+          "role": "niche",
+          "note": "Obecné stencily, neřeší dřevo."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Starší publikum dřevařů hledá vzory v knihách a na webu, ne v App Store.",
+        "Kvalitní portrétní vzor vyžaduje ruční umělecké úpravy; automat dá průměrné výsledky.",
+        "Sdílený engine se stencil aplikacemi → riziko 4.3, pokud UI nebude výrazně odlišné."
+      ],
+      "killer_risk": "Nízký objem hledání u staršího publika.",
+      "mitigation": "Sloučit případně se Spray Stencil Layers do jedné 'cut pattern' aplikace s režimy, pokud data ukážou malou poptávku; ASO na 'name puzzle', 'scroll saw names'.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 5
+      }
+    },
+    {
+      "id": "graphics-design-29",
+      "name": "Filet Crochet Chart Maker",
+      "tagline": "Filet háčkování z textu nebo obrázku: mřížka plných a prázdných oček, psaný postup a počítadlo řad.",
+      "pitch": "Filet crochet (síťované háčkování s plnými a prázdnými okénky) je tradiční technika pro záclony, ubrousky a nápisy — silná v Brazílii, Latinské Americe, východní Evropě a Itálii. Vzor je binární mřížka, takže převod textu či obrázku je snadný, ale ruční kreslení zdlouhavé. Aplikace převede text/obrázek na filet chart, přidá okraje, spočítá řetízek a vygeneruje postup řádek po řádku v místní terminologii.",
+      "niche": "Filet crochet v lokálních jazycích. C2C/graphgan aplikace jsou anglické a pracují s barvami, ne s binární filet mřížkou.",
+      "parent_market": "Háčkovací chart aplikace (Tinnkle, Gridchet, Crochet Chart, CrochetCreator) + tradiční háčkování v BR/LatAm/EE.",
+      "target_user": "Háčkařky 35–75 v BR, MX, AR, PL, IT, UA, CZ, SK; výrobkyně záclon a ubrousků na prodej.",
+      "features": [
+        "Text/obrázek → filet mřížka (plné/prázdné)",
+        "Fonty pro nápisy a okrajové bordury",
+        "Výpočet řetízku a rozměrů podle příze",
+        "Psaný postup v lokální terminologii + počítadlo řad",
+        "Tisk PDF"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně.",
+      "monetization": "Freemium: vzory do 50×50 zdarma; Pro 3,99 USD (≈ 90 CZK) jednorázově (regionální ceny).",
+      "revenue_math": "Ideál: 4 000 stažení/měs (filet crochet, crochê filé, ganchillo filet, szydełko filet) × 3 % = 120 × 3,99 USD = 479 USD hrubě → 407 USD čistě ≈ 9 400 CZK; s regionálními cenami a reklamou-free tierem ~10 000 CZK/měs v ideálu.",
+      "revenue_czk_ideal": 10000,
+      "keywords": [
+        {
+          "kw": "filet crochet",
+          "saturation": 1,
+          "competitor": "žádný dedikovaný (odhad)",
+          "note": "Odhad — evidence uvádí filet crochet (BR 'crochê filé') jako neověřenou sub-niku."
+        },
+        {
+          "kw": "crochê filé",
+          "saturation": 1,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad; PT-BR klíč."
+        },
+        {
+          "kw": "crochet chart",
+          "saturation": 4,
+          "competitor": "Crochet Chart",
+          "note": "Web evidence: moderate, parent."
+        },
+        {
+          "kw": "crochet pattern maker",
+          "saturation": 5,
+          "competitor": "Tinnkle, Gridchet",
+          "note": "Web evidence: parent."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web evidence): háčkovací chart aplikace mají ~4 dedikované tituly. Předpoklad (knowledge): filet je populární v BR/LatAm/EE; nižší kupní síla. Saturace lokálních klíčů neměřena.",
+      "competitors": [
+        {
+          "name": "Crochet Chart",
+          "url": "https://apps.apple.com/us/app/crochet-chart/id1473051046",
+          "role": "parent",
+          "note": "Obecný háčkovací chart."
+        },
+        {
+          "name": "CrochetCreator",
+          "url": "https://apps.apple.com/us/app/crochetcreator/id1477773801",
+          "role": "niche",
+          "note": "Obecný tvůrce vzorů."
+        },
+        {
+          "name": "Tinnkle Crochet Patterns",
+          "url": "https://apps.apple.com/us/app/tinnkle-crochet-patterns/id6797259817",
+          "role": "parent",
+          "note": "C2C/tapisérie z obrázku."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Nízká kupní síla a nižší podíl iPhonů v BR/LatAm/UA → konverze na placení nízká.",
+        "Filet je jednoduchý; zdarma webové generátory a Excel šablony stačí.",
+        "Třetí háčkovací aplikace v portfoliu (vedle Mosaic Crochet) — riziko kanibalizace a 4.3."
+      ],
+      "killer_risk": "Nízká monetizace na hlavních trzích filetu.",
+      "mitigation": "Sloučit s Mosaic Crochet Designer jako druhý režim, pokud samostatná aplikace nevydělá; regionální ceny a lokální ASO.",
+      "build_weeks": 2,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 6,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "graphics-design-30",
+      "name": "Yarn Dye Recipe Planner",
+      "tagline": "Plánovač receptů ručního barvení příze: kyselá barviva, % DOS, speckle a variegated schémata.",
+      "pitch": "Indie barvířky příze (hand-dyed yarn) prodávají přadena za 25–40 USD a každá kolekce je sada receptů: procenta barviva na hmotnost vlny (DOS), kombinace kyselých barviv (Jacquard, Dharma, Greener Shades), speckle a variegated schémata. Dnes to vedou v tabulkách. Aplikace spočítá navážky pro dávku, simuluje odstín a rozložení skvrn, vede log receptů s fotkou a reprodukovatelnou šarží.",
+      "niche": "Recepty ručního barvení příze. Malířské mixéry neznají % DOS ani kyselá barviva; pletací aplikace neřeší barvení.",
+      "parent_market": "Míchání barev (10+ aplikací) + trh indie hand-dyed příze (Etsy, festivaly vlny) a pletací aplikace (Ravelry).",
+      "target_user": "Indie barvířky příze (malé firmy, Etsy), hobby barvířky; US, UK, DE, NL, AU.",
+      "features": [
+        "Výpočet navážek podle % DOS a hmotnosti dávky",
+        "Knihovna kyselých barviv (Jacquard, Dharma, Greener Shades) a simulace odstínu",
+        "Schémata speckle/variegated/gradient s náhledem přadena",
+        "Log receptů s fotkou, šarží a poznámkami",
+        "Škálování receptu pro kolekci"
+      ],
+      "offline": "full",
+      "offline_note": "Databáze barviv a výpočty lokálně.",
+      "monetization": "Freemium: kalkulačka zdarma; Pro 4,99 USD/měs (≈ 115 CZK) nebo 39,99 USD/rok pro barvířky (B2B).",
+      "revenue_math": "Ideál: 800 stažení/měs (yarn dyeing, hand dyed yarn, dye calculator) × 6 % = 48 nových/měs; ustálení ~150 aktivních × ~3,5 USD = 525 USD hrubě → 446 USD čistě ≈ 10 300 CZK/měs.",
+      "revenue_czk_ideal": 10300,
+      "keywords": [
+        {
+          "kw": "yarn dyeing",
+          "saturation": 1,
+          "competitor": "žádný dedikovaný (odhad)",
+          "note": "Odhad — evidence uvádí hand-dyed yarn recipes jako neověřené sousední publikum."
+        },
+        {
+          "kw": "dye calculator",
+          "saturation": 2,
+          "competitor": "textilní/laboratorní kalkulačky (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "hand dyed yarn",
+          "saturation": 1,
+          "competitor": "žádný (odhad)",
+          "note": "Odhad."
+        },
+        {
+          "kw": "acrylic paint color mixing recipe",
+          "saturation": 8,
+          "competitor": "Mixable, Mixura",
+          "note": "Web evidence: saturace 8+, jen parent."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web evidence): míchání barev je přeplněný rodič (8+). Předpoklad (knowledge): tisíce indie barvířek na Etsy/Ravelry; objem hledání v App Store malý a neměřený.",
+      "competitors": [
+        {
+          "name": "Mixura: Paint Color Matcher",
+          "url": "https://apps.apple.com/us/app/mixura-paint-color-matcher/id6757199310",
+          "role": "parent",
+          "note": "Mixér s databázemi značek."
+        },
+        {
+          "name": "Color Maker Lab",
+          "url": "https://apps.apple.com/us/app/color-maker-lab/id6745688088",
+          "role": "parent",
+          "note": "Další mixér — rodič je přeplněný."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Velmi malé publikum; barvířky mají vyladěné tabulky v Google Sheets.",
+        "Simulace odstínu na vlně je nepřesná (absorpce, typ vlny) → malá důvěra.",
+        "Třetí 'color recipe' aplikace v portfoliu (icing, clay, yarn) — riziko 4.3 pokud sdílí UI a engine."
+      ],
+      "killer_risk": "Příliš malý placený trh.",
+      "mitigation": "B2B zaměření (kolekce, šarže, reprodukovatelnost), odlišné UI a značka; pokud icing aplikace uspěje, zvážit spíše rozšíření než samostatnou aplikaci.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    }
+  ]
+}

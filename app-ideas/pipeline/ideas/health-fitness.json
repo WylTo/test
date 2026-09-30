@@ -1,0 +1,2580 @@
+{
+  "category": "Health & Fitness",
+  "category_slug": "health-fitness",
+  "search_notes": "Offline běh: žádné Apple API ani WebSearch v tomto běhu. Jádro tvoří niky z evidence souboru (16 webových hledání z 2026-09-30): vibrační plošiny (sat 0), zátěžová vesta (sat 1), walking pad (sat 3), jet lag pro děti (0 z 9 appek), sauna, řidiči kamionů, rebounder, vozíčkáři, spánek směnařů a Japanese walking. Ostatní niky jsou z vlastní znalosti trhu (evidence 'knowledge') – saturace u nich je odhad a blue_ocean max 7. Apple autocomplete (hint_found) nebyl ověřen u žádného klíčového slova; před vývojem doporučuji spustit apple_fetch.py check na top 10 idejí. Obecně: v letech 2025–26 se mnoho nik rychle zaplnilo novými indie appkami, reálná výhoda je lokalizace do 50 jazyků + Apple Watch/HealthKit.",
+  "ideas": [
+    {
+      "id": "health-fitness-01",
+      "name": "Vibration Plate Coach",
+      "tagline": "Tréninkový plán pro každou vibrační plošinu – bez ohledu na značku.",
+      "pitch": "Levné vibrační plošiny z Amazonu, Lidlu a Aldi se v letech 2024–26 prodávají po statisících, ale v krabici je jen leták se třemi obrázky. Značkové aplikace (Power Plate, Hypervibe) fungují jen s jejich hardwarem nebo studiem. Vibration Plate Coach dá majiteli jakékoli plošiny jasný plán: cviky podle úrovně, doporučenou frekvenci a délku setu, časovač a postup. Jsme první brand-agnostická aplikace a navíc v 50 jazycích – tam, kde se levné plošiny prodávají nejvíc (DE, PL, CZ, FR, ES).",
+      "niche": "Majitelé no-name vibračních plošin. Výrobci hardware si hlídají jen vlastní zákazníky (Power Plate, Hypervibe), generické fitness appky plošinu jako vybavení vůbec neznají.",
+      "parent_market": "Domácí cvičení s vybavením a video-fitness (Power Plate Training s 1 300 videi, Hypervibe On Demand, obecné home-workout appky jako Core+). Značkové appky dokazují, že lidé chtějí k plošině vedení.",
+      "target_user": "Ženy a muži 35–65 let, kteří si koupili levnou vibrační plošinu (často kvůli trendu z TikToku) a nevědí, jak na ní cvičit.",
+      "features": [
+        "Knihovna 60 cviků s ilustracemi (stoj, dřep, výpad, plank, protažení) a doporučeným nastavením rychlosti",
+        "Plány 10/15/20 minut podle cíle a úrovně (začátečník → pokročilý)",
+        "Časovač se zvukovými a haptickými pokyny, Apple Watch",
+        "Zápis tréninku do Apple Zdraví (HealthKit)",
+        "Kontrolní seznam kontraindikací před prvním cvičením"
+      ],
+      "offline": "full",
+      "offline_note": "Vše je v balíčku aplikace: ilustrace, texty, plány, časovač. HealthKit a iCloud synchronizace jsou od Applu. Žádný server ani videa ke streamování.",
+      "monetization": "Freemium: 3 plány zdarma, plná knihovna za roční předplatné $29.99 (≈ 690 Kč) nebo měsíční $4.99 (≈ 115 Kč), doživotní licence $49.99 (≈ 1 150 Kč).",
+      "revenue_math": "Ideál: 1 500 stažení/měs z klastru 'vibration plate workout/exercises' ve 20+ jazycích × 3,5 % konverze na roční předplatné = 52 předplatných × $29.99 × 0,85 (≈ 586 Kč netto) = ~30 500 Kč netto/měs.",
+      "revenue_czk_ideal": 30000,
+      "keywords": [
+        {
+          "kw": "vibration plate workout",
+          "saturation": 0,
+          "competitor": "Power Plate Training (značková, vázaná na hardware)",
+          "note": "web: 0 aplikací s frází v názvu mimo značkové; Apple hint v tomto běhu neověřen"
+        },
+        {
+          "kw": "vibration plate exercises",
+          "saturation": 0,
+          "competitor": "HyperVibe - Vibration Machine (značková, 38 programů)",
+          "note": "web: žádná nezávislá appka; saturace odhad podle stejného dotazu"
+        },
+        {
+          "kw": "vibration plate",
+          "saturation": 3,
+          "competitor": "Power Plate / Hypervibe (značky)",
+          "note": "web: v názvu jen značkové appky a nesouvisející 'vibrator massager' appky"
+        },
+        {
+          "kw": "vibration machine workout",
+          "saturation": 1,
+          "competitor": "HyperVibe - Vibration Machine",
+          "note": "web: jediná značková appka; odhad"
+        }
+      ],
+      "demand_evidence": "Ověřeno webem: existují minimálně 4 značkové appky pro vibrační plošiny (Power Plate Training s 1 300 videi, Power Plate s 300+ OnDemand videi, dvě Hypervibe appky) – výrobci do obsahu investují, což dokládá poptávku po vedení. Nezávislá appka nenalezena (sat 0). Předpoklad (neověřeno): objem vyhledávání fráze v App Store a velikost trhu levných plošin v EU.",
+      "competitors": [
+        {
+          "name": "Power Plate Training",
+          "url": "https://apps.apple.com/us/app/power-plate-training/id1446549384?ls=1",
+          "role": "parent",
+          "note": "Lídr značky, 1 300 videí, kategorie anti-celulitida a pánevní dno; funguje pro zákazníky Power Plate."
+        },
+        {
+          "name": "HyperVibe - Vibration Machine",
+          "url": "https://apps.apple.com/us/app/hypervibe-vibration-machine/id1033481217",
+          "role": "niche",
+          "note": "Značková appka, 38 programů, vázaná na hardware Hypervibe."
+        },
+        {
+          "name": "Hypervibe - VIBE On Demand",
+          "url": "https://apps.apple.com/us/app/hypervibe-vibe-on-demand/id1584067111",
+          "role": "niche",
+          "note": "Video on-demand pro majitele Hypervibe."
+        },
+        {
+          "name": "Core+: Pilates & Home Workout",
+          "url": "https://apps.apple.com/us/app/core-pilates-home-workout/id6752533436",
+          "role": "parent",
+          "note": "Obecný home-workout – ukazuje, kam spadá rodičovský trh."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Značkové appky jsou anglické a US/UK-centrické; levné plošiny se ale masově prodávají v DE/PL/CZ/FR/ES bez jakékoli lokalizované aplikace. Vydáme v 50 jazycích.",
+      "devils_advocate": [
+        "Trend z TikToku (2024–25) může vyhasnout a s ním i nákupy plošin – aplikace stojí na jednom módním hardwaru.",
+        "Lákavé claimy (lymfatická drenáž, celulitida, hustota kostí) nás svádí k porušení Guideline 1.4.1; bez nich je ASO text slabší.",
+        "Značky mají stovky profesionálních videí; ilustrovaná appka může působit levně a nekonvertovat.",
+        "Kontraindikace (těhotenství, implantáty, trombóza, epilepsie) = riziko stížností a zamítnutí review, pokud nebudou dobře ošetřené.",
+        "Kupci nejlevnějších plošin jsou cenově citliví – předplatné za $30 může být pro ně víc než polovina ceny plošiny."
+      ],
+      "killer_risk": "Vyhasnutí trendu vibračních plošin – bez nových kupců nejsou nová stažení.",
+      "mitigation": "Postavit na obecné šabloně 'coach pro domácí vybavení' s vlastním obsahem, držet se neutrálního jazyka (síla, rovnováha, rozcvička), doživotní licenci pro cenově citlivé a rychle vydat před Vánoci (sezóna prodeje plošin).",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 8,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "health-fitness-02",
+      "name": "Weighted Vest Walk",
+      "tagline": "Chůze se zátěžovou vestou krok za krokem – bezpečně, s plánem a v Apple Watch.",
+      "pitch": "Zátěžová vesta je jedním z největších fitness trendů 2025–26, hlavně u žen 40+, které chtějí posílit kosti a svaly bez posilovny. Existující appky jsou buď ruckingové (vojenský styl, batoh), nebo obecné posilovny – nikdo nemluví k ženě, která si právě koupila 5kg vestu. Weighted Vest Walk nabídne progresivní plán (hmotnost vesty × délka chůze), jednoduchý silový okruh s vestou a zápis do Apple Zdraví. V názvu 'weighted vest' našel web jedinou (německou) appku.",
+      "niche": "Chůze a lehký silový trénink se zátěžovou vestou pro ženy 40+. Ruckingové appky cílí na muže a vojenský styl, posilovací appky vestu neřeší jako hlavní nástroj.",
+      "parent_market": "Walking/weight-loss a posilovací appky (Fitbod, Gymverse) plus nově ruckingové appky (Heavy Stride, Rucker) – trh ruckingu je v roce 2026 přeplněný, což dokládá poptávku po zátěžové chůzi.",
+      "target_user": "Ženy 40–65 let v perimenopauze a menopauze, které chodí pravidelně a chtějí přidat zátěž; sekundárně senioři a začátečníci.",
+      "features": [
+        "Progresivní 12týdenní plán: % tělesné hmotnosti × minuty chůze",
+        "Záznam chůze s hmotností vesty jako metadata do HealthKit, Apple Watch",
+        "10minutový silový okruh s vestou (dřepy, výpady, výpony)",
+        "Kontrola postavení těla a upozornění na příliš rychlé zvyšování zátěže",
+        "Týdenní přehled 'kilogram-minuty'"
+      ],
+      "offline": "full",
+      "offline_note": "Plány a cviky jsou v balíčku, GPS a tep přes Apple Watch/HealthKit na zařízení. Bez serveru.",
+      "monetization": "Roční předplatné $24.99 (≈ 575 Kč) s 7denní zkouškou, měsíční $3.99 (≈ 92 Kč).",
+      "revenue_math": "Ideál: 1 500 stažení/měs ('weighted vest workout/walking' + lokalizace) × 4 % konverze = 60 ročních předplatných × ≈ 489 Kč netto = ~29 300 Kč/měs.",
+      "revenue_czk_ideal": 29000,
+      "keywords": [
+        {
+          "kw": "weighted vest workout",
+          "saturation": 1,
+          "competitor": "Rucking & Gewichtsweste-App (DE)",
+          "note": "web: jediná appka s 'weighted vest'/'Gewichtsweste' v názvu; zbytek ruck/army appky"
+        },
+        {
+          "kw": "weighted vest walking",
+          "saturation": 1,
+          "competitor": "Heavy Stride (ruck tracker s hmotností batohu)",
+          "note": "web: stejný dotaz, odhad saturace"
+        },
+        {
+          "kw": "weighted vest for women",
+          "saturation": 0,
+          "competitor": "žádná",
+          "note": "odhad – ve výsledcích se nic nezaměřovalo na ženy"
+        },
+        {
+          "kw": "walking with weights",
+          "saturation": 2,
+          "competitor": "King Of Weighted App",
+          "note": "odhad; obecná fráze"
+        }
+      ],
+      "demand_evidence": "Ověřeno webem: v názvu 'weighted vest' jediná appka (DE), okolní výsledky jsou rucking/army appky; rucking je přeplněný (8+ appek), což potvrzuje zájem o zátěžovou chůzi. Předpoklad: trend 'weighted vest pro ženy 40+' ze sociálních sítí se promítá do vyhledávání v App Store (neověřeno Apple hinty).",
+      "competitors": [
+        {
+          "name": "Rucking & Gewichtsweste-App",
+          "url": "https://apps.apple.com/de/app/rucking-gewichtsweste/id6758959619",
+          "role": "niche",
+          "note": "Německá appka – jediný přímý název s vestou."
+        },
+        {
+          "name": "Heavy Stride",
+          "url": "https://apps.apple.com/us/app/heavy-stride/id6762533957",
+          "role": "niche",
+          "note": "Ruck tracker s hmotností batohu; mohl by snadno přidat 'vest mode'."
+        },
+        {
+          "name": "King Of Weighted App",
+          "url": "https://apps.apple.com/us/app/king-of-weighted-app/id6764844463",
+          "role": "niche",
+          "note": "Obecná 'weighted' appka."
+        },
+        {
+          "name": "Fitbod: Gym & Fitness Planner",
+          "url": "https://apps.apple.com/us/app/fitbod-gym-fitness-planner/id1041517543",
+          "role": "parent",
+          "note": "Lídr posilovacích plánů."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Trend vznikl v US (menopauzální influenceři); anglické ruckingové appky nejsou lokalizované. Lokalizace do DE/FR/ES/IT/PL/JP ženám, které trend přebírají se zpožděním.",
+      "devils_advocate": [
+        "Heavy Stride nebo jiná ruckingová appka přidá režim 'vesta pro ženy' za týden.",
+        "Claimy o osteoporóze a hustotě kostí = Guideline 1.4.1; bez nich slábne hlavní prodejní argument.",
+        "Trend může být krátkodobý jako 'Japanese walking' – po roce poptávka padne.",
+        "Apple Watch už chůzi zaznamenává zdarma; appka musí přinést plán, jinak neplatí nikdo.",
+        "Riziko zranění (záda, klouby) při špatné progresi → negativní recenze."
+      ],
+      "killer_risk": "Ruckingové appky s tisíci recenzí přidají funkci vesty a přebijí nás v ASO.",
+      "mitigation": "Obsadit ženský úhel (název, screenshoty, jazyk) a 50 jazyků dřív než konkurence; neutrální wellness jazyk bez medicínských tvrzení.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "health-fitness-03",
+      "name": "Jet Lag Kids",
+      "tagline": "Plán spánku pro děti na cesty přes časová pásma i změnu času.",
+      "pitch": "Rodiče s malými dětmi se jet lagu bojí víc než dospělí cestovatelé – dítě, které v Tokiu vstává ve 3 ráno, zničí dovolenou celé rodině. Všech 9 jet-lagových appek, které web našel, míří na dospělé (světlo, kofein, melatonin). Jet Lag Kids vytvoří plán podle věku dítěte (spánky přes den, posun o 15 minut denně před cestou) a dvakrát ročně pomůže se změnou letního/zimního času. Nikdo tuto niku neobsadil.",
+      "niche": "Jet lag a posun času u kojenců a dětí. Dospělé appky pracují s kofeinem a melatoninem, které u dětí nepřipadají v úvahu, a neznají denní spánky.",
+      "parent_market": "Jet-lag a spánkové appky (Timeshifter jako lídr, desítky nových appek 2025–26) a appky na dětský spánek (Huckleberry, Napper).",
+      "target_user": "Rodiče dětí 0–10 let, kteří letí přes 3+ časová pásma nebo řeší změnu času (EU, US, AU).",
+      "features": [
+        "Plán posunu spánku a denních spánků podle věku dítěte",
+        "Režim 'před cestou' – posun 10–15 min denně, notifikace",
+        "Režim změny času (březen/říjen) s automatickým termínem",
+        "Tipy na světlo a jídlo přizpůsobené dětem, offline databáze časových pásem",
+        "Sdílení plánu s partnerem přes iCloud"
+      ],
+      "offline": "full",
+      "offline_note": "Časová pásma a pravidla změny času jsou v iOS; plány se počítají na zařízení. Sdílení přes iCloud/CloudKit.",
+      "monetization": "Jednorázový nákup $9.99 (≈ 230 Kč) na neomezené cesty; volitelně roční $14.99 (≈ 345 Kč) pro rodiny, které cestují často.",
+      "revenue_math": "Ideál (letní a vánoční sezóna): 2 000 stažení/měs × 5 % konverze × $9.99 × 0,85 (≈ 195 Kč) = 100 × 195 = ~19 500 Kč; roční průměr spíš ~15 000 Kč/měs.",
+      "revenue_czk_ideal": 15000,
+      "keywords": [
+        {
+          "kw": "jet lag kids",
+          "saturation": 0,
+          "competitor": "žádná (0 z 9 jet-lag appek cílí na děti)",
+          "note": "web: ověřeno, že žádná appka z výsledků necílí na děti; saturace odhad"
+        },
+        {
+          "kw": "jet lag baby",
+          "saturation": 0,
+          "competitor": "žádná",
+          "note": "odhad; web nenašel dětský úhel"
+        },
+        {
+          "kw": "baby sleep time change",
+          "saturation": 1,
+          "competitor": "baby sleep appky (Huckleberry) jako funkce",
+          "note": "odhad"
+        },
+        {
+          "kw": "jet lag",
+          "saturation": 9,
+          "competitor": "Aviato: Jet Lag Coach",
+          "note": "web: saturace 8–9 – jen rodičovský trh, ne cílové klíčové slovo"
+        }
+      ],
+      "demand_evidence": "Ověřeno webem: 9 jet-lag appek, všechny pro dospělé, 0 pro děti. Že rodiče takovou pomoc hledají, je předpoklad (rodičovská fóra, články 'jet lag with toddler'); objem v App Store neověřen.",
+      "competitors": [
+        {
+          "name": "Aviato: Jet Lag Coach",
+          "url": "https://apps.apple.com/us/app/aviato-jet-lag-coach/id6755438884",
+          "role": "parent",
+          "note": "Nová dospělá jet-lag appka."
+        },
+        {
+          "name": "Jetlag - Wake up times",
+          "url": "https://apps.apple.com/us/app/jetlag-wake-up-times/id6627344724",
+          "role": "niche",
+          "note": "Jednoduché časy buzení, bez dětského režimu."
+        },
+        {
+          "name": "FlyWell - beat jet lag",
+          "url": "https://apps.apple.com/us/app/flywell-beat-jet-lag-travel/id6738649590",
+          "role": "parent",
+          "note": "Dospělí cestovatelé."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Silná sezónnost: léto, Vánoce a dvě změny času ročně; zbytek roku téměř nulová stažení.",
+        "Huckleberry nebo Napper přidají 'travel mode' a mají miliony uživatelů.",
+        "Pediatrické rady (spánek kojenců) = riziko Guideline 1.4.1 a stížností rodičů.",
+        "Jednorázový nákup nepřináší opakovaný příjem; rodiny cestují 1–2× ročně.",
+        "Pokud EU zruší změnu času, zmizí polovina use-casu."
+      ],
+      "killer_risk": "Velké dětské spánkové appky přidají cestovní režim jako funkci zdarma.",
+      "mitigation": "Vydat rychle, obsadit 'jet lag kids/baby/toddler' ve 50 jazycích, zdůraznit jednoduchost a jednorázovou cenu vs. předplatné Huckleberry; obsah formulovat jako obecné tipy, ne lékařské rady.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 8,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "health-fitness-04",
+      "name": "DeskWalk: Walking Pad Log",
+      "tagline": "Každý krok na běžícím pásu pod stolem se konečně započítá.",
+      "pitch": "Walking pady pod stůl jsou hit home-office, ale Apple Watch kroky často nezapočítá, protože ruce leží na klávesnici. Na trhu jsou dvě malé nezávislé appky a značkové appky vázané na konkrétní pás. DeskWalk dopočítá kroky a vzdálenost z rychlosti × času, zapíše je do Apple Zdraví, spustí se jedním klepnutím nebo zkratkou při začátku schůzky a ukáže týdenní 'kilometry u stolu'. Lokalizace do DE/JP/NL/KR, kde jsou walking pady populární.",
+      "niche": "Chůze na pásu pod stolem při práci. Značky (WalkingPad, UREVO) řeší jen svůj hardware přes Bluetooth, obecné krokoměry tento problém nevidí.",
+      "parent_market": "Krokoměry a treadmill appky (FitShow, značkové appky WalkingPad+, UREVO, Unsit).",
+      "target_user": "Lidé na home-office nebo v kanceláři s walking padem, 25–55 let, často s Apple Watch.",
+      "features": [
+        "Start/stop jedním klepnutím, widget, Live Activity a Shortcuts",
+        "Dopočet kroků a vzdálenosti z rychlosti a délky kroku → HealthKit",
+        "Volitelné připojení přes Bluetooth FTMS pro podporované pásy",
+        "Týdenní cíle 'km u stolu' a statistiky podle pracovních dnů",
+        "Upozornění na pauzu a hydrataci"
+      ],
+      "offline": "full",
+      "offline_note": "Výpočty a data na zařízení, HealthKit, volitelně Bluetooth s pásem. Žádný server.",
+      "monetization": "Jednorázová licence $14.99 (≈ 345 Kč) nebo roční $9.99 (≈ 230 Kč); základní ruční log zdarma.",
+      "revenue_math": "Ideál: 1 200 stažení/měs ('walking pad', 'under desk treadmill' + lokalizace) × 5 % × $14.99 × 0,85 (≈ 293 Kč) = 60 × 293 = ~17 600 Kč/měs.",
+      "revenue_czk_ideal": 17000,
+      "keywords": [
+        {
+          "kw": "walking pad",
+          "saturation": 3,
+          "competitor": "DeskWalker - Walking Pad Log",
+          "note": "web: 2 indie + 1 značková appka v názvu"
+        },
+        {
+          "kw": "walking pad tracker",
+          "saturation": 2,
+          "competitor": "WalkPadLog",
+          "note": "web: indie appka s logem do Apple Zdraví; odhad"
+        },
+        {
+          "kw": "under desk treadmill",
+          "saturation": 1,
+          "competitor": "Unsit Treadmill by InMovement",
+          "note": "web: značková; odhad"
+        },
+        {
+          "kw": "desk treadmill steps",
+          "saturation": 0,
+          "competitor": "žádná",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Ověřeno webem: 3 appky s 'walking pad' v názvu a problém 'Apple Watch nezapočítá kroky u stolu' je citován přímo v popisech appek. Objem vyhledávání neověřen.",
+      "competitors": [
+        {
+          "name": "DeskWalker - Walking Pad Log",
+          "url": "https://apps.apple.com/gb/app/deskwalker-walking-pad-log/id6762282048",
+          "role": "niche",
+          "note": "Nová indie appka, anglicky."
+        },
+        {
+          "name": "WalkPadLog",
+          "url": "https://apps.apple.com/us/app/walkpadlog/id6760960621",
+          "role": "niche",
+          "note": "Indie, zápis do Apple Zdraví."
+        },
+        {
+          "name": "WalkingPad+",
+          "url": "https://apps.apple.com/us/app/walkingpad/id6505090388",
+          "role": "parent",
+          "note": "Značková appka výrobce."
+        },
+        {
+          "name": "UREVO",
+          "url": "https://apps.apple.com/us/app/urevo/id1658714520",
+          "role": "parent",
+          "note": "Značková appka výrobce."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obě indie appky jsou anglické; lokalizace do DE/JP/KR/NL/FR, kde se walking pady prodávají masově.",
+      "devils_advocate": [
+        "Apple může ve watchOS vylepšit detekci chůze na pásu (režim 'ruce na klávesnici') a problém zmizí.",
+        "Dvě indie appky už existují a mohou se lokalizovat za den.",
+        "Logger je pro uživatele 'drobnost' – nízká ochota platit.",
+        "Bluetooth FTMS podporuje jen část levných pásů; zbytek znamená ruční zadávání a zklamání."
+      ],
+      "killer_risk": "Sherlock – Apple Watch začne chůzi u stolu počítat sama.",
+      "mitigation": "Postavit hodnotu i na přehledech 'aktivní práce', schůzkových automatizacích a Shortcuts; nízká jednorázová cena, rychlá lokalizace.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "health-fitness-05",
+      "name": "Strong After 60",
+      "tagline": "Jednoduchý silový deník a plán pro lidi nad 60 – velké písmo, žádné složitosti.",
+      "pitch": "Silový trénink je po šedesátce nejlepší investice do samostatnosti, ale posilovací appky (Fitbod, Strong, HeavySet) jsou psané pro 30leté: malé písmo, supersérie, RPE. Senior appky zase nabízejí jen cvičení na židli. Strong After 60 je uprostřed: dva tréninky týdně, 6–8 základních cviků s jednoduchou progresí, testy rovnováhy a vstávání ze židle, velké ovládání a PDF přehled pro trenéra či lékaře. Rodina může pokrok sledovat přes sdílení iCloud.",
+      "niche": "Skutečný progresivní silový trénink (ne jen židle) pro 60+. Posilovací appky tuto skupinu neoslovují designem ani jazykem, senior appky ji podceňují.",
+      "parent_market": "Posilovací deníky a plánovače (Fitbod, HeavySet, Gymverse) – jeden z nejvýdělečnějších segmentů Health & Fitness; plus senior-fitness appky.",
+      "target_user": "Lidé 60–80 let, kteří chodí do fitka nebo cvičí doma s jednoručkami a gumami; jejich děti jako kupující.",
+      "features": [
+        "Plán 2× týdně s automatickou progresí (opakování → váha)",
+        "Velké písmo, velká tlačítka, hlasové pokyny",
+        "Testy: 30s vstávání ze židle, stoj na jedné noze, rychlost chůze – trend v grafu",
+        "PDF export pro trenéra/lékaře",
+        "Sdílení pokroku s rodinou přes iCloud"
+      ],
+      "offline": "full",
+      "offline_note": "Plány, cviky a výpočty lokálně; HealthKit, iCloud sdílení od Applu.",
+      "monetization": "Roční předplatné $29.99 (≈ 690 Kč), doživotní $59.99 (≈ 1 380 Kč) – dárek od dětí.",
+      "revenue_math": "Ideál: 2 000 stažení/měs ('strength training for seniors', 'over 60 workout', lokalizace) × 3 % × ≈ 586 Kč netto = 60 × 586 = ~35 000 Kč/měs.",
+      "revenue_czk_ideal": 35000,
+      "keywords": [
+        {
+          "kw": "strength training for seniors",
+          "saturation": 3,
+          "competitor": "odhad – obecné senior workout appky",
+          "note": "odhad (knowledge), Apple hint neověřen"
+        },
+        {
+          "kw": "strength training over 60",
+          "saturation": 1,
+          "competitor": "žádná dedikovaná",
+          "note": "odhad"
+        },
+        {
+          "kw": "workout for seniors",
+          "saturation": 7,
+          "competitor": "chair workout appky",
+          "note": "odhad – přeplněné cvičením na židli, jen rodičovský trh"
+        },
+        {
+          "kw": "senior fitness",
+          "saturation": 6,
+          "competitor": "senior fitness appky",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad z tržních znalostí: senior-fitness a posilovací deníky patří k největším trhům kategorie; 'workout for seniors' je plné appek s cvičením na židli. Že chybí progresivní posilovací deník pro 60+, je odhad bez ověření v App Store.",
+      "competitors": [
+        {
+          "name": "Fitbod: Gym & Fitness Planner",
+          "url": "https://apps.apple.com/us/app/fitbod-gym-fitness-planner/id1041517543",
+          "role": "parent",
+          "note": "Lídr AI plánů, cílí na mladší."
+        },
+        {
+          "name": "HeavySet - Gym Workout Log",
+          "url": "https://apps.apple.com/gb/app/heavyset-gym-workout-log/id1171500310",
+          "role": "parent",
+          "note": "Oblíbený deník, složitý pro seniory."
+        },
+        {
+          "name": "SilverSneakers GO",
+          "url": "",
+          "role": "us-only",
+          "note": "US appka vázaná na pojišťovny – mimo US nepoužitelná."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Senioři mají nejnižší konverzi na předplatné a často nemají Apple ID s kartou.",
+        "Riziko pádu nebo zranění při cvičení = reputační a právní riziko, recenze typu 'zranil jsem se'.",
+        "Claimy o sarkopenii a osteoporóze = Guideline 1.4.1.",
+        "Fitbod může přidat 'older adult mode' a má obrovský ASO náskok.",
+        "Klíčová slova se 'seniors' jsou obsazená appkami cvičení na židli – těžké se prosadit."
+      ],
+      "killer_risk": "Nízká ochota seniorů platit a stahovat appky.",
+      "mitigation": "Cílit ASO i na děti seniorů ('dárek pro rodiče'), doživotní licence, velmi jednoduchý onboarding, neutrální jazyk bez zdravotních slibů.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "health-fitness-06",
+      "name": "Fit Test Prep EU",
+      "tagline": "Příprava na fyzické přijímačky k policii, hasičům a armádě – podle normy tvé země.",
+      "pitch": "V US existuje řada appek na armádní test ACFT, ale uchazeč o policii v Německu, Polsku, Česku nebo Španělsku hledá marně: normy jsou jiné v každé zemi (beep test, kliky, sed-lehy, 1 000 m, překážková dráha). Fit Test Prep EU obsahuje tabulky bodování pro jednotlivé země a složky, kalkulačku bodů, beep test s audio signály a 8–12týdenní plán až k datu testu. Motivace uchazečů je vysoká a časově ohraničená – ideální pro předplatné na 3 měsíce.",
+      "niche": "Fyzické přijímací testy bezpečnostních složek mimo US. Americké appky řeší jen US Army/Marines, lokální appky (hlavně ve Španělsku 'oposiciones') řeší teorii, ne fyzičku.",
+      "parent_market": "Appky na vojenské fitness testy (ACFT kalkulačky, Military Fitness: Army Workout) a běžecké/silové plány.",
+      "target_user": "Uchazeči 18–35 let o policii, hasiče, armádu, vězeňskou službu v EU a Latinské Americe.",
+      "features": [
+        "Tabulky bodů pro vybrané země a složky (začít DE, PL, CZ, ES, FR, IT)",
+        "Kalkulačka bodů a 'co mi chybí do limitu'",
+        "Beep test / Yo-Yo test s audio signály offline",
+        "Plán do data testu s týdenní progresí",
+        "Záznam pokusů a graf pokroku"
+      ],
+      "offline": "full",
+      "offline_note": "Normy jako statická data v balíčku (aktualizace s verzí appky), audio signály lokálně. Bez serveru.",
+      "monetization": "Přístup na 3 měsíce $14.99 (≈ 345 Kč) nebo doživotně $24.99 (≈ 575 Kč); kalkulačka zdarma.",
+      "revenue_math": "Ideál: 1 500 stažení/měs (součet malých národních klastrů, např. 'sporttest polizei', 'prueba fisica policia') × 5 % × $24.99 × 0,85 (≈ 489 Kč) = 75 × 489 = ~36 700 Kč; konzervativně s mixem cen ~29 000 Kč/měs.",
+      "revenue_czk_ideal": 29000,
+      "keywords": [
+        {
+          "kw": "police fitness test",
+          "saturation": 2,
+          "competitor": "odhad – jen US/UK appky",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "sporttest polizei",
+          "saturation": 0,
+          "competitor": "žádná známá",
+          "note": "odhad – německý klastr"
+        },
+        {
+          "kw": "prueba fisica policia",
+          "saturation": 1,
+          "competitor": "španělské appky na 'oposiciones' (hlavně teorie)",
+          "note": "odhad"
+        },
+        {
+          "kw": "beep test",
+          "saturation": 6,
+          "competitor": "beep test appky",
+          "note": "odhad – přeplněné, jen jako doplněk"
+        }
+      ],
+      "demand_evidence": "Evidence obsahuje 'Military Fitness: Army Workout' (appka vybírá cviky podle vybavení) a zmínku, že US má ACFT appky. Poptávka po přípravě na přijímačky v EU je předpoklad (fóra uchazečů, tisíce uchazečů ročně); objem v App Store neověřen.",
+      "competitors": [
+        {
+          "name": "Military Fitness: Army Workout",
+          "url": "https://apps.apple.com/in/app/military-fitness-army-workout/id6758405884",
+          "role": "parent",
+          "note": "Obecná 'army' fitness appka."
+        },
+        {
+          "name": "ACFT kalkulačky (různé)",
+          "url": "",
+          "role": "us-only",
+          "note": "US Army test, anglicky, US normy."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Opačný gap: model 'appka na přijímací fitness test' je v US osvědčený (ACFT), ale evropské národní normy nikdo nepokrývá. Každá země = vlastní lokalizovaný obsah.",
+      "devils_advocate": [
+        "Normy se mění (reformy testů) a liší se i mezi spolkovými zeměmi – zastaralá tabulka = 1★ recenze.",
+        "Každý národní trh je malý a vyžaduje vlastní rešerši; výroba obsahu je drahá.",
+        "Uživatel appku opustí hned po testu – krátký životní cyklus.",
+        "Zmínky o konkrétních policejních složkách mohou narazit na ochranné známky/logo a Guideline 5.2.",
+        "Obsahová chyba v limitech může uchazeče poškodit – reputační riziko."
+      ],
+      "killer_risk": "Údržba přesných národních norem se nevyplatí vzhledem k malým trhům.",
+      "mitigation": "Začít 4–5 zeměmi s největším počtem uchazečů, každou tabulku opatřit zdrojem a datem, jasný disclaimer; pokrýt zbytek obecnými 'beep test + kliky' plány.",
+      "build_weeks": 7,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 4,
+        "offline_fit": 9,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "health-fitness-07",
+      "name": "Cab Fit: Trucker Workouts",
+      "tagline": "Cvičení v kabině a na parkovišti během povinné pauzy – pro řidiče kamionů v Evropě.",
+      "pitch": "Řidiči kamionů patří k nejméně zdravým profesím: dlouhé sezení, bolesti zad, nadváha. Web našel jen dvě appky – obě americké a anglické. Cab Fit nabídne 7–20minutové tréninky v kabině a u tahače, protažení zad a krku a připomenutí během 45minutové povinné pauzy podle EU pravidel. Lokalizace do polštiny, rumunštiny, bulharštiny, litevštiny, ukrajinštiny, turečtiny a portugalštiny – jazyků, kterými mluví většina evropských řidičů.",
+      "niche": "Kamioňáci mimo US. Americké appky neznají evropské pauzy ani jazyky řidičů, fitness giganti tuto skupinu vůbec necílí.",
+      "parent_market": "Home workout bez vybavení (Leap Fitness, Nike Training Club) a appky pro profesní skupiny; v US Trucker's Routine a Iron Trucker.",
+      "target_user": "Řidiči mezinárodní kamionové dopravy v EU, 30–60 let, převážně z PL/RO/BG/LT/UA/TR, a brazilští caminhoneiros.",
+      "features": [
+        "Tréninky 7–20 min v kabině / u kamionu, bez vybavení nebo s gumou",
+        "Protažení zad, krku a kyčlí po dlouhé jízdě",
+        "Připomenutí cvičení podle času řízení (4,5 h → pauza)",
+        "Offline audio pokyny v 50 jazycích",
+        "Jednoduchý deník váhy a pasu (HealthKit)"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně; řidiči mají často omezená data v roamingu – offline je výhoda.",
+      "monetization": "Roční $19.99 (≈ 460 Kč), doživotní $29.99 (≈ 690 Kč).",
+      "revenue_math": "Ideál: 1 200 stažení/měs (součet 'truck driver workout' + národní fráze) × 3 % × ≈ 391 Kč netto = 36 × 391 = ~14 000 Kč/měs. Hraniční – splní limit jen při dobré lokalizaci.",
+      "revenue_czk_ideal": 14000,
+      "keywords": [
+        {
+          "kw": "truck driver workout",
+          "saturation": 2,
+          "competitor": "Trucker's Routine",
+          "note": "web: 2 appky v názvu, zbytek výsledků simulátory kamionů"
+        },
+        {
+          "kw": "trucker fitness",
+          "saturation": 1,
+          "competitor": "Iron Trucker",
+          "note": "odhad podle stejného dotazu"
+        },
+        {
+          "kw": "workout in truck",
+          "saturation": 0,
+          "competitor": "žádná",
+          "note": "odhad"
+        },
+        {
+          "kw": "lkw fahrer fitness",
+          "saturation": 0,
+          "competitor": "žádná",
+          "note": "odhad – německý klastr"
+        }
+      ],
+      "demand_evidence": "Ověřeno webem: jen 2 dedikované appky (US, anglicky), Trucker's Routine vyšel v 2025 – někdo trh testuje. Velikost evropské poptávky je předpoklad (≈ 3,5 mil. řidičů v EU); objem vyhledávání neověřen.",
+      "competitors": [
+        {
+          "name": "Trucker's Routine",
+          "url": "https://apps.apple.com/us/app/truckers-routine/id6753665205",
+          "role": "us-only",
+          "note": "2025, 7–45min tréninky v malém prostoru, anglicky."
+        },
+        {
+          "name": "Iron Trucker",
+          "url": "https://apps.apple.com/us/app/iron-trucker/id1449696182",
+          "role": "us-only",
+          "note": "Vytvořil řidič kamionu, anglicky."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obě appky jsou US a anglické; evropští a brazilští řidiči nemají nic ve svém jazyce.",
+      "devils_advocate": [
+        "Řidiči mají nízkou ochotu platit za fitness a mnoho z nich používá Android.",
+        "Motivace po 11 hodinách za volantem je nízká – retence bude slabá.",
+        "Keyword objem v každém jazyce je malý, suma nemusí dosáhnout 1 000 stažení.",
+        "Zmínky o pravidlech řízení a odpočinku musí být přesné, jinak hrozí zavádějící informace."
+      ],
+      "killer_risk": "Nízká ochota řidičů platit a Android-dominance v cílové skupině.",
+      "mitigation": "Nízká cena a doživotní licence, zaměřit ASO na polštinu/rumunštinu/turečtinu/portugalštinu, zjednodušit na 'jedno tlačítko = trénink na dnešní pauzu'.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 8,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "health-fitness-08",
+      "name": "Saunagang: Sauna Rituals",
+      "tagline": "Evropský saunový rituál – kola, ochlazování, Aufguss a odpočinek – ve tvém jazyce.",
+      "pitch": "Anglické sauna trackery (5 v názvu) jsou postavené na americkém biohackingu: minuty, teploty, AI tipy. Evropan ale saunuje jinak – 3 kola, ochlazení, odpočinek, Aufguss v wellness centru, rituál s přáteli. Saunagang nabídne časovač kol (teplo → ochlazení → odpočinek), deník návštěv saun, oblíbené Aufguss vůně a statistiky sezóny, lokalizované do němčiny, finštiny, nizozemštiny, češtiny, polštiny a estonštiny. Obrácený US-gap: kultura je evropská, appky americké.",
+      "niche": "Tradiční evropské saunování (Saunagang, Aufguss). Americké appky řeší domácí sauny a cold plunge pro biohackery a nejsou lokalizované.",
+      "parent_market": "Sauna a cold-plunge trackery (Sauna Tracker: Sauna Log se 100 000+ sezeními) a wellness/biohacking appky.",
+      "target_user": "Pravidelní návštěvníci saun a wellness v DE/AT/CH/FI/NL/CZ/PL/EE, 30–65 let.",
+      "features": [
+        "Časovač kol: teplo / ochlazení / odpočinek s haptikou na Apple Watch",
+        "Deník návštěv: sauna, teplota, počet kol, pocit",
+        "Statistiky sezóny a série",
+        "Oblíbené Aufguss vůně a poznámky k saunám",
+        "Zápis do HealthKit (tepová frekvence, mindful minutes)"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, Apple Watch a HealthKit na zařízení.",
+      "monetization": "Roční $19.99 (≈ 460 Kč) nebo doživotní $29.99 (≈ 690 Kč); časovač zdarma.",
+      "revenue_math": "Ideál: 1 000 stažení/měs (lokalizované fráze 'sauna timer', 'Saunagang', 'Aufguss') × 4 % × ≈ 391 Kč netto = 40 × 391 = ~15 600 Kč/měs.",
+      "revenue_czk_ideal": 15000,
+      "keywords": [
+        {
+          "kw": "sauna tracker",
+          "saturation": 5,
+          "competitor": "Sauna Tracker: Sauna Log",
+          "note": "web: 5 appek v názvu, všechny anglické a biohackingové"
+        },
+        {
+          "kw": "sauna timer",
+          "saturation": 4,
+          "competitor": "Sauner - Sauna Tracker & Log",
+          "note": "odhad"
+        },
+        {
+          "kw": "saunagang",
+          "saturation": 0,
+          "competitor": "žádná",
+          "note": "odhad – německá fráze"
+        },
+        {
+          "kw": "aufguss",
+          "saturation": 0,
+          "competitor": "žádná",
+          "note": "odhad"
+        },
+        {
+          "kw": "sauna rounds",
+          "saturation": 1,
+          "competitor": "SUNA - Sauna Tracker",
+          "note": "odhad; SUNA a Sauner už mají heat/cool/rest kola"
+        }
+      ],
+      "demand_evidence": "Ověřeno webem: 5 anglických sauna trackerů, lídr uvádí 100 000+ sledovaných sezení – poptávka po sauna logu existuje. Evropská lokalizovaná poptávka je předpoklad.",
+      "competitors": [
+        {
+          "name": "Sauna Tracker: Sauna Log",
+          "url": "https://apps.apple.com/us/app/sauna-tracker-sauna-log/id6739606616",
+          "role": "parent",
+          "note": "Lídr, 100 000+ sezení, sleduje i cold plunge a red light."
+        },
+        {
+          "name": "Sauner - Sauna Tracker & Log",
+          "url": "https://apps.apple.com/us/app/sauner-sauna-tracker-log/id6755998688",
+          "role": "niche",
+          "note": "Kola teplo/chlad/odpočinek – nejbližší evropskému rituálu."
+        },
+        {
+          "name": "SUNA - Sauna Tracker",
+          "url": "https://apps.apple.com/us/app/suna-sauna-tracker/id6758952338",
+          "role": "niche",
+          "note": "Rituál heat/cooling/rest, anglicky."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap: saunová kultura je evropská, ale všechny appky jsou americké/anglické. Lokalizace DE/FI/NL/CZ/PL/EE.",
+      "devils_advocate": [
+        "Ve veřejných saunách v DE/AT je telefon často zakázaný – appka se použije jen před a po.",
+        "Sauner a SUNA už mají kola; lokalizace přes AI jim zabere den.",
+        "Saunování je zážitek, ne 'výkon' – ochota platit za deník je nízká.",
+        "Zdravotní varování (srdce, tlak) musí být opatrná kvůli Guideline 1.4.1."
+      ],
+      "killer_risk": "Anglické konkurenční appky se lokalizují a náš jediný rozdíl zmizí.",
+      "mitigation": "Postavit na evropském rituálu (Aufguss, kalendář saunových ceremonií ve vlastních poznámkách, režim pro domácí saunu) a Apple Watch; nízká jednorázová cena.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "health-fitness-09",
+      "name": "Padel Fit",
+      "tagline": "Rozcvička, prevence zranění a kondice pro hráče padelu.",
+      "pitch": "Padel je nejrychleji rostoucí raketový sport v Evropě a Latinské Americe; hráči po 35 trpí tenisovým loktem, lýtky a koleny. Appky pro padel řeší rezervace kurtů a turnaje Americano (ty jsou už přeplněné), ale nikdo nenabízí rozcvičku před zápasem a kondiční plán pro amatéry. Padel Fit dá 8minutovou rozcvičku u kurtu, prevenci lokte a lýtek a 2× týdně kondiční trénink. Obrácený US-gap: ES/IT/SE/NL/AR/MX místo US.",
+      "niche": "Kondice a prevence zranění pro amatérské padelisty. Rezervační appky (Playtomic) a turnajové appky fitness neřeší.",
+      "parent_market": "Sport-specifické fitness appky (golf, tenis, běh) a padelové appky – turnaje Americano mají v App Store ~7 appek, což dokládá rychle rostoucí padelovou komunitu.",
+      "target_user": "Rekreační hráči padelu 30–55 let ve Španělsku, Itálii, Švédsku, Nizozemsku, Argentině, Mexiku a nově v ČR/PL.",
+      "features": [
+        "8min rozcvička před zápasem s časovačem a ilustracemi",
+        "Programy prevence: loket, rameno, lýtko, koleno",
+        "Kondiční plán 2× týdně (rychlost, postranní pohyb, core)",
+        "Protažení po zápase",
+        "Zápis tréninku do HealthKit"
+      ],
+      "offline": "full",
+      "offline_note": "Obsah v balíčku, časovač lokálně.",
+      "monetization": "Roční $24.99 (≈ 575 Kč), měsíční $3.99 (≈ 92 Kč); rozcvička zdarma.",
+      "revenue_math": "Ideál: 1 500 stažení/měs ('padel workout', 'padel fitness', španělské/italské fráze) × 3 % × ≈ 489 Kč netto = 45 × 489 = ~22 000 Kč/měs.",
+      "revenue_czk_ideal": 22000,
+      "keywords": [
+        {
+          "kw": "padel workout",
+          "saturation": 1,
+          "competitor": "odhad – žádná dedikovaná známá",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "padel fitness",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad"
+        },
+        {
+          "kw": "padel warm up",
+          "saturation": 0,
+          "competitor": "žádná",
+          "note": "odhad"
+        },
+        {
+          "kw": "padel training",
+          "saturation": 4,
+          "competitor": "padel coach/drill appky",
+          "note": "odhad – tréninkové appky na údery"
+        }
+      ],
+      "demand_evidence": "Sports evidence ověřuje ~7 appek jen pro padel Americano turnaje (2022–2026) – komunita je velká a aktivní. Že hráči hledají fitness a rozcvičku, je předpoklad; saturace klíčových slov je odhad.",
+      "competitors": [
+        {
+          "name": "Padel Americano - Round Robin / Tournaments",
+          "url": "https://apps.apple.com/us/app/padel-americano-tournaments/id1626101352",
+          "role": "parent",
+          "note": "Nejstarší turnajová padel appka (2022) – důkaz komunity, ne přímý konkurent."
+        },
+        {
+          "name": "Playtomic",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr rezervací kurtů; mohl by přidat rozcvičky."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap: padel je obrovský v ES/IT/SE/AR/MX a malý v US; anglické fitness appky ho ignorují.",
+      "devils_advocate": [
+        "Hráči padelu platí za kurty a rakety, ne za fitness appky – ochota platit nejasná.",
+        "Playtomic může přidat rozcvičky zdarma s milionovou uživatelskou základnou.",
+        "Obsah o prevenci zranění musí být ověřen fyzioterapeutem, jinak riziko 1.4.1 a špatných rad.",
+        "Na španělském trhu mohou vzniknout lokální appky s trenéry-celebritami."
+      ],
+      "killer_risk": "Nízká ochota rekreačních hráčů platit za rozcvičku.",
+      "mitigation": "Rozcvička zdarma jako magnet, předplatné za kondiční plány; spolupráce s fyzioterapeutem pro důvěryhodnost; lokalizace do ES/IT/SV jako první.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "health-fitness-10",
+      "name": "Pilates Bar Coach",
+      "tagline": "Konečně víš, co s pilates tyčí z e-shopu dělat.",
+      "pitch": "Pilates bar (tyč s gumami) je jedna z nejprodávanějších fitness pomůcek na Amazonu a Temu za posledních pár let – a stejně jako vibrační plošina přichází bez návodu. Pilates appky řeší podložku nebo reformer, tyč s gumami téměř nikdo. Pilates Bar Coach nabídne 40 cviků pro celé tělo, 15–30minutové plány a nastavení odporu podle délky gumy. Stejný vzor jako u vibrační plošiny: levná pomůcka, žádné vedení, žádný konkurent.",
+      "niche": "Levná pilates tyč s gumami (pilates bar kit). Studiové pilates appky ji neřeší, výrobci no-name kitů appky nemají.",
+      "parent_market": "Pilates a home-workout appky (Core+: Pilates & Home Workout a další) – pilates patří k nejrychleji rostoucím fitness trendům 2024–26.",
+      "target_user": "Ženy 25–55 let, které si koupily pilates bar kit a cvičí doma.",
+      "features": [
+        "40 cviků s ilustracemi a variantou pro kratší/delší gumu",
+        "Plány 15/20/30 min: celé tělo, hýždě, paže, core",
+        "Časovač s hlasovými pokyny",
+        "Týdenní program 4 týdny",
+        "Zápis do HealthKit"
+      ],
+      "offline": "full",
+      "offline_note": "Ilustrace a plány v balíčku, bez streamování videa.",
+      "monetization": "Roční $29.99 (≈ 690 Kč), měsíční $4.99 (≈ 115 Kč), doživotní $39.99 (≈ 920 Kč).",
+      "revenue_math": "Ideál: 1 200 stažení/měs ('pilates bar workout', 'pilates stick exercises' + lokalizace) × 4 % × ≈ 586 Kč netto = 48 × 586 = ~28 000 Kč/měs.",
+      "revenue_czk_ideal": 28000,
+      "keywords": [
+        {
+          "kw": "pilates bar workout",
+          "saturation": 1,
+          "competitor": "odhad – žádná dedikovaná známá",
+          "note": "odhad (knowledge); vzor stejný jako u vibrační plošiny"
+        },
+        {
+          "kw": "pilates bar",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad"
+        },
+        {
+          "kw": "pilates stick exercises",
+          "saturation": 0,
+          "competitor": "žádná",
+          "note": "odhad"
+        },
+        {
+          "kw": "home pilates",
+          "saturation": 8,
+          "competitor": "velké pilates appky",
+          "note": "odhad – přeplněné, jen rodičovský trh"
+        }
+      ],
+      "demand_evidence": "Neověřeno vyhledáváním (seznam 'unchecked' v evidenci). Opírá se o analogii s ověřenou nikou vibračních plošin a o znalost trhu (pilates bar kity mezi bestsellery e-shopů). Saturace je odhad.",
+      "competitors": [
+        {
+          "name": "Core+: Pilates & Home Workout",
+          "url": "https://apps.apple.com/us/app/core-pilates-home-workout/id6752533436",
+          "role": "parent",
+          "note": "Home pilates appka; bar zatím není hlavní téma (neověřeno)."
+        },
+        {
+          "name": "Alo Moves",
+          "url": "",
+          "role": "parent",
+          "note": "Velká video platforma pilates/jóga."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Stejná šablona jako Vibration Plate Coach a Rebounder – Apple může portfolio posoudit jako 4.3 spam.",
+        "Velké pilates appky mohou přidat kategorii 'bar' během jednoho sprintu.",
+        "Poptávka v App Store není ověřena – lidé možná hledají jen YouTube.",
+        "Ilustrace místo videa může působit méně prémiově."
+      ],
+      "killer_risk": "Guideline 4.3 – podobnost s našimi dalšími 'equipment coach' appkami.",
+      "mitigation": "Každá appka vlastní design, vlastní obsah a jiné funkce (bar: nastavení odporu gum); nevydávat tři equipment appky v jednom měsíci.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "health-fitness-11",
+      "name": "Rebound: Mini Trampoline Timer",
+      "tagline": "Offline intervalové tréninky na mini trampolíně – bez videí a předplatného studia.",
+      "pitch": "Rebounding (cvičení na mini trampolíně) má silnou komunitu v US, Německu a Nizozemsku, ale appky jsou většinou videopředplatné konkrétních studií. Rebound nabídne to, co chybí: offline intervalový časovač s hudbou z vlastní knihovny, 30 základních kroků s animacemi a plány 10–30 minut. Lokalizace do němčiny ('Trampolin Workout') a nizozemštiny, kde je trampolínový fitness silný.",
+      "niche": "Samostatné cvičení na mini trampolíně bez video studia. Studiové appky prodávají lekce, ne nástroj.",
+      "parent_market": "Video fitness studia (Carve It s 600+ lekcemi, Bounce N' Burn, Boogie Bounce) a intervalové časovače.",
+      "target_user": "Majitelé mini trampolín 30–60 let, hlavně ženy, v US/DE/NL/UK.",
+      "features": [
+        "30 kroků s krátkými animacemi",
+        "Intervalový časovač s hlasem a haptikou",
+        "Plány 10/20/30 min podle úrovně",
+        "Hudba z Apple Music/knihovny na pozadí",
+        "Zápis do HealthKit a Apple Watch"
+      ],
+      "offline": "full",
+      "offline_note": "Animace v balíčku, časovač lokálně.",
+      "monetization": "Roční $24.99 (≈ 575 Kč), doživotní $34.99 (≈ 805 Kč).",
+      "revenue_math": "Ideál: 1 000 stažení/měs ('rebounder workout', 'mini trampoline workout', 'Trampolin Workout') × 4 % × ≈ 489 Kč netto = 40 × 489 = ~19 500 Kč; konzervativně 18 000 Kč/měs.",
+      "revenue_czk_ideal": 18000,
+      "keywords": [
+        {
+          "kw": "rebounder workout",
+          "saturation": 4,
+          "competitor": "Mr. Rebounder",
+          "note": "web: ~4 appky, hlavně studiová videa"
+        },
+        {
+          "kw": "mini trampoline workout",
+          "saturation": 2,
+          "competitor": "Bounce N' Burn",
+          "note": "web: ~2"
+        },
+        {
+          "kw": "trampolin workout",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad – německý klastr"
+        },
+        {
+          "kw": "rebounding exercises",
+          "saturation": 2,
+          "competitor": "Rebounder Total Body Workouts",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Ověřeno webem: 6 appek pro rebounding, většinou video studia (Carve It 600+ lekcí, Jump&Jacked 2026 s 200+ tréninky) – trh platí za obsah. Offline časovač bez videa nikdo nenabízí (odvozeno z výsledků).",
+      "competitors": [
+        {
+          "name": "Mr. Rebounder",
+          "url": "https://apps.apple.com/us/app/mr-rebounder/id1300713793",
+          "role": "niche",
+          "note": "Zavedená rebounder appka."
+        },
+        {
+          "name": "Bounce N' Burn",
+          "url": "https://apps.apple.com/ca/app/bounce-n-burn/id6474211313",
+          "role": "niche",
+          "note": "Video lekce."
+        },
+        {
+          "name": "Carve It® Fitness",
+          "url": "https://apps.apple.com/us/app/carve-it-fitness/id6612038023",
+          "role": "parent",
+          "note": "NYC studio, 600+ lekcí."
+        },
+        {
+          "name": "Jump&Jacked.",
+          "url": "https://apps.apple.com/us/app/jump-jacked/id6759123272",
+          "role": "niche",
+          "note": "2026, 200+ tréninků."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Studiové appky jsou anglické; DE/NL (trampolínový fitness, silné domácí značky trampolín) nemají lokalizovaný nástroj.",
+      "devils_advocate": [
+        "Video studia mají motivující trenéry; animovaný časovač může být pro cílovku nudný.",
+        "4.3 riziko – podobnost s naší appkou pro vibrační plošinu a pilates bar.",
+        "Výrobci prémiových trampolín mohou mít vlastní appky s obsahem.",
+        "Malý trh, 4 zavedené appky v angličtině."
+      ],
+      "killer_risk": "Uživatelé chtějí video trenéra, ne časovač.",
+      "mitigation": "Postavit na hudbě uživatele a Apple Watch (tep, kalorie), cílit na DE/NL lokalizaci; odlišit design od ostatních equipment appek.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "health-fitness-12",
+      "name": "Nordic Walking Coach",
+      "tagline": "Technika, intervaly a plán pro nordic walking – s Apple Watch.",
+      "pitch": "Nordic walking je v Německu, Polsku, Česku, Finsku a Rakousku masový sport – miliony lidí, hlavně 45+. V US je okrajový, a proto pro něj skoro nejsou dobré appky; Apple Watch nemá ani samostatný typ tréninku. Nordic Walking Coach naučí správnou techniku krok za krokem (audio koučink), nabídne intervalové plány a měří rytmus paží přes Watch. Obrácený US-gap v nejčistší podobě.",
+      "niche": "Nordic walking jako technika a trénink. Obecné walking trackery ho berou jako chůzi, Garmin/Polar ho mají jen v hodinkách.",
+      "parent_market": "Walking a krokoměr appky (obrovský trh), fitness chůze pro 45+ (Japanese walking trend 2025 s 9 appkami dokazuje poptávku po 'strukturované chůzi').",
+      "target_user": "Lidé 45–75 let v DE/PL/CZ/AT/FI/NL/SK, začátečníci i pravidelní chodci s holemi.",
+      "features": [
+        "Audio kurz techniky v 6 lekcích (úchop, švih, odraz)",
+        "Intervalové plány a 8týdenní program",
+        "Měření rytmu paží a kadence přes Apple Watch",
+        "Záznam trasy do HealthKit (GPS lokálně)",
+        "Protažení před a po"
+      ],
+      "offline": "full",
+      "offline_note": "GPS, pohybové senzory a audio lokálně; mapy nejsou potřeba (trasa jen jako čára).",
+      "monetization": "Roční $19.99 (≈ 460 Kč), doživotní $29.99 (≈ 690 Kč).",
+      "revenue_math": "Ideál: 2 000 stažení/měs ('nordic walking' v DE/PL/CZ/FI) × 3 % × ≈ 391 Kč netto = 60 × 391 = ~23 500 Kč/měs.",
+      "revenue_czk_ideal": 23000,
+      "keywords": [
+        {
+          "kw": "nordic walking",
+          "saturation": 4,
+          "competitor": "starší nordic walking trackery",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "nordic walking technique",
+          "saturation": 1,
+          "competitor": "žádná známá",
+          "note": "odhad"
+        },
+        {
+          "kw": "nordic walking app",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad"
+        },
+        {
+          "kw": "nordic walking training",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno vyhledáváním. Opírá se o znalost trhu (nordic walking kluby a kurzy v DE/PL/CZ) a o ověřenou analogii Japanese walking (9 appek během roku 2025 = silná poptávka po strukturované chůzi).",
+      "competitors": [
+        {
+          "name": "Japanese Walking App",
+          "url": "https://apps.apple.com/us/app/japanese-walking-app/id6748023683",
+          "role": "parent",
+          "note": "Důkaz poptávky po strukturované chůzi; ne přímý konkurent."
+        },
+        {
+          "name": "Walkmeter",
+          "url": "",
+          "role": "parent",
+          "note": "Obecný walking tracker s mnoha typy aktivit."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap: nordic walking je obří v DE/PL/CZ/FI/AT a malý v US; anglické appky ho neřeší.",
+      "devils_advocate": [
+        "Cílová skupina 60+ má nízkou konverzi na předplatné.",
+        "Garmin a Polar mají nordic walking v hodinkách a jejich uživatelé appku nepotřebují.",
+        "Technika přes audio bez videa je těžko učitelná – zklamání.",
+        "Měření rytmu paží z Watch nemusí být přesné, když drží hůl."
+      ],
+      "killer_risk": "Nízká ochota starší cílovky platit.",
+      "mitigation": "Doživotní licence, důraz na výuku techniky (to lidé platí i v kurzech), ASO primárně v DE/PL/CZ.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "health-fitness-13",
+      "name": "Wheel Strong",
+      "tagline": "Posilování a kardio pro vozíčkáře – ve tvém jazyce, s Apple Watch.",
+      "pitch": "Apple Watch umí režim pro vozíčkáře (počítá odpichy), ale fitness appky pro lidi na vozíku jsou jen tři a anglické. Wheel Strong nabídne tréninky vsedě pro různou úroveň hybnosti trupu, program ochrany ramen (nejčastější problém vozíčkářů), kardio intervaly na vozíku a zápis do Apple Zdraví. Lokalizace do 50 jazyků pro komunitu, kterou fitness průmysl přehlíží.",
+      "niche": "Fitness pro vozíčkáře. Velké appky nemají obsah, cvičení na židli pro seniory je jiná skupina a jiný cíl.",
+      "parent_market": "Home workout a adaptivní fitness; Wheel Fit a Push Zones dokazují, že vozíčkáři předplatné platí.",
+      "target_user": "Aktivní vozíčkáři 18–60 let (paraplegie, amputace, RS), jejich fyzioterapeuti.",
+      "features": [
+        "Tréninky podle úrovně kontroly trupu (3 úrovně)",
+        "Program ochrany a posílení ramen",
+        "Kardio intervaly na vozíku s Apple Watch (pushCount)",
+        "Tréninky s gumou a jednoručkami",
+        "Plná podpora VoiceOver a Dynamic Type"
+      ],
+      "offline": "full",
+      "offline_note": "Obsah lokálně, HealthKit data (wheelchair distance, push count) na zařízení.",
+      "monetization": "Roční $29.99 (≈ 690 Kč), měsíční $4.99 (≈ 115 Kč).",
+      "revenue_math": "Ideál: 600 stažení/měs ('wheelchair workout', 'wheelchair exercises' ve 20+ jazycích) × 4,5 % × ≈ 586 Kč netto = 27 × 586 = ~15 800 Kč/měs.",
+      "revenue_czk_ideal": 15000,
+      "keywords": [
+        {
+          "kw": "wheelchair workout",
+          "saturation": 3,
+          "competitor": "Wheel Fit - Wheelchair Fitness",
+          "note": "web: 3 appky, 2 fitness appky vypadají jen anglicky (neověřeno)"
+        },
+        {
+          "kw": "wheelchair exercises",
+          "saturation": 2,
+          "competitor": "Wheelchair Exercises (pediatrická OT/PT)",
+          "note": "web: odhad"
+        },
+        {
+          "kw": "adaptive fitness",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad"
+        },
+        {
+          "kw": "seated workout",
+          "saturation": 5,
+          "competitor": "chair workout appky pro seniory",
+          "note": "odhad – jiná cílovka"
+        }
+      ],
+      "demand_evidence": "Ověřeno webem: 3 appky, Wheel Fit má předplatné, Push Zones sleduje tepové zóny a odpichy – malý, ale otevřený a platící trh. Velikost lokalizované poptávky je předpoklad.",
+      "competitors": [
+        {
+          "name": "Wheel Fit - Wheelchair Fitness",
+          "url": "https://apps.apple.com/us/app/wheel-fit-wheelchair-fitness/id6464079536",
+          "role": "us-only",
+          "note": "Předplatné, anglicky."
+        },
+        {
+          "name": "Push Zones: Wheelchair Fitness",
+          "url": "https://apps.apple.com/us/app/push-zones-wheelchair-fitness/id1515857732",
+          "role": "us-only",
+          "note": "Tepové zóny a odpichy, anglicky."
+        },
+        {
+          "name": "Wheelchair Exercises",
+          "url": "https://apps.apple.com/us/app/wheelchair-exercises/id1046975860",
+          "role": "niche",
+          "note": "43 cviků pro dětskou OT/PT."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obě fitness appky pro vozíčkáře vypadají anglicky a US-centricky; lokalizace pro EU/LatAm/Asii.",
+      "devils_advocate": [
+        "Velmi malý trh – i ve 50 jazycích může být jen stovky stažení měsíčně.",
+        "Potřeby se extrémně liší podle diagnózy; obecný obsah může být nevhodný nebo nebezpečný.",
+        "Obsah musí validovat fyzioterapeut – vyšší náklady a pomalejší vývoj.",
+        "Etika ceny: skupina s často nižšími příjmy, riziko negativních recenzí na předplatné."
+      ],
+      "killer_risk": "Trh je příliš malý na 10 000 Kč měsíčně.",
+      "mitigation": "Spolupráce s organizacemi vozíčkářů (ČR: Paraple) pro důvěryhodnost a PR, nízká cena, perfektní přístupnost jako hlavní rozdíl.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "health-fitness-14",
+      "name": "Quiet Home Workout",
+      "tagline": "Trénink bez skákání a dupání – sousedé pod tebou nic nepoznají.",
+      "pitch": "Lidé v paneláku a nájemních bytech chtějí cvičit doma, ale burpees a skoky jim přinesou stížnosti sousedů. 'No jumping' a 'quiet workout' jsou fráze, které lidé opravdu píšou, a velké appky je řeší jen jako filtr. Quiet Home Workout nabídne HIIT a silové tréninky s nulovým dopadem na podlahu, s měřením hluku mikrofonem ('tichý mód' ukáže, jestli dupeš). Jasný, snadno pochopitelný slib.",
+      "niche": "Tiché domácí cvičení pro byty. Obecné home-workout appky mají 'low impact' filtr, ale neprodávají tichost jako hlavní hodnotu.",
+      "parent_market": "Home workout bez vybavení (Leap Fitness 'Home Workout – No Equipment', Nike Training Club, Apple Fitness+) – jeden z největších trhů kategorie.",
+      "target_user": "Lidé 20–45 let v bytech (hlavně města v EU, JP, KR), studenti na kolejích.",
+      "features": [
+        "Knihovna 80 tichých cviků (bez skoků, bez dupání)",
+        "HIIT, síla a mobilita 10–30 min",
+        "Měření hlučnosti kroků mikrofonem na zařízení",
+        "Plány na 4 týdny",
+        "HealthKit a Apple Watch"
+      ],
+      "offline": "full",
+      "offline_note": "Obsah v balíčku, analýza hluku přes mikrofon lokálně (nic se nenahrává ani neodesílá).",
+      "monetization": "Roční $19.99 (≈ 460 Kč), měsíční $3.99 (≈ 92 Kč).",
+      "revenue_math": "Ideál: 2 000 stažení/měs ('no jumping workout', 'quiet workout', 'apartment workout') × 3 % × ≈ 391 Kč netto = 60 × 391 = ~23 500 Kč/měs.",
+      "revenue_czk_ideal": 23000,
+      "keywords": [
+        {
+          "kw": "no jumping workout",
+          "saturation": 2,
+          "competitor": "odhad – obecné home workout appky",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "quiet workout",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad"
+        },
+        {
+          "kw": "apartment workout",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad"
+        },
+        {
+          "kw": "low impact workout",
+          "saturation": 7,
+          "competitor": "velké home workout appky",
+          "note": "odhad – přeplněné"
+        }
+      ],
+      "demand_evidence": "Neověřeno vyhledáváním. Předpoklad ze znalosti trhu: 'apartment/quiet/no jumping workout' jsou běžné YouTube dotazy s miliony zhlédnutí; v App Store saturace odhadnuta.",
+      "competitors": [
+        {
+          "name": "Home Workout - No Equipment (Leap Fitness)",
+          "url": "",
+          "role": "parent",
+          "note": "Obří home-workout appka s low impact filtrem."
+        },
+        {
+          "name": "Nike Training Club",
+          "url": "",
+          "role": "parent",
+          "note": "Zdarma, velká knihovna."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Leap Fitness může vydat 'quiet' variantu – vydává desítky podobných appek.",
+        "Generická workout appka = vysoké 4.3 riziko a obtížné odlišení.",
+        "Nike Training Club je zdarma a má low-impact tréninky.",
+        "Měření hluku mikrofonem může být nepřesné a působit jako gimmick."
+      ],
+      "killer_risk": "Velcí hráči s generickými workout appkami obsadí stejná klíčová slova.",
+      "mitigation": "Tichost jako značka (název, ikona, screenshoty), unikátní funkce měření hluku, lokalizace do JP/KR kde je 'tichý trénink' kulturně důležitý.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "health-fitness-15",
+      "name": "Stroller Fit",
+      "tagline": "Cvičení s kočárkem na procházce – pro mámy po porodu.",
+      "pitch": "Kočárkové cvičení (v US franšíza FIT4MOM, v UK a DE skupinové lekce) je osvědčený model, ale funguje jen tam, kde je lektor. Stroller Fit dá mámě stejnou lekci do sluchátek kdykoli: 30minutová procházka s kočárkem proložená cviky, postupné plány od 6. týdne po porodu (po schválení lékařem) a zápis do Apple Zdraví. Postpartum appky řeší cvičení doma na podložce, procházku s kočárkem nikdo.",
+      "niche": "Cvičení během procházky s kočárkem. Postpartum appky jsou 'na podložce', lekce kočárkového fitness jsou jen offline skupiny.",
+      "parent_market": "Postpartum a mom-fitness appky (MUTU System, Peanut komunita, těhotenské appky) a US franšíza FIT4MOM.",
+      "target_user": "Ženy 3–18 měsíců po porodu, které chodí denně s kočárkem.",
+      "features": [
+        "Audio lekce 20–40 min: chůze + cviky u kočárku",
+        "Postupné plány od fáze zotavení po kondici",
+        "Cviky pánevního dna a core (neutrálně popsané)",
+        "Zápis procházky do HealthKit, Apple Watch",
+        "Offline, bez nutnosti koukat na displej"
+      ],
+      "offline": "full",
+      "offline_note": "Audio lekce jsou součástí balíčku (nebo On-Demand Resources od Applu), GPS lokálně.",
+      "monetization": "Roční $24.99 (≈ 575 Kč), měsíční $4.99 (≈ 115 Kč); první 3 lekce zdarma.",
+      "revenue_math": "Ideál: 1 200 stažení/měs ('stroller workout', 'postpartum walking', lokální fráze jako 'Kinderwagen Fitness') × 3,5 % × ≈ 489 Kč netto = 42 × 489 = ~20 500 Kč/měs.",
+      "revenue_czk_ideal": 20000,
+      "keywords": [
+        {
+          "kw": "stroller workout",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "postpartum workout",
+          "saturation": 7,
+          "competitor": "postpartum appky",
+          "note": "odhad – přeplněné, jen rodičovský trh"
+        },
+        {
+          "kw": "pram walk workout",
+          "saturation": 0,
+          "competitor": "žádná",
+          "note": "odhad – UK fráze"
+        },
+        {
+          "kw": "mom walking workout",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno vyhledáváním. Model je osvědčený offline (US franšíza, skupinové lekce v UK/DE/CZ); poptávka v App Store je předpoklad.",
+      "competitors": [
+        {
+          "name": "FIT4MOM",
+          "url": "",
+          "role": "us-only",
+          "note": "US franšíza kočárkových lekcí; appka slouží hlavně členům."
+        },
+        {
+          "name": "MUTU System",
+          "url": "",
+          "role": "parent",
+          "note": "Postpartum program na podložce."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Model kočárkového fitness je US franšíza bez lokalizované samostatné appky; v EU (DE 'Kinderwagen-Fitness', CZ 'cvičení s kočárkem') jen offline lekce.",
+      "devils_advocate": [
+        "Tvrzení o diastáze a pánevním dnu = Guideline 1.4.1; musí být velmi opatrná.",
+        "Krátký životní cyklus uživatelky (dítě povyroste) – vysoký churn.",
+        "Sezónnost a počasí (zima = méně procházek).",
+        "Ochranné známky typu 'Stroller Strides' a 'Buggyfit' nesmí být v klíčových slovech."
+      ],
+      "killer_risk": "Zdravotní claimy po porodu a riziko zamítnutí/stížností.",
+      "mitigation": "Obsah s porodní asistentkou/fyzioterapeutkou, jasný pokyn 'začni po souhlasu lékaře', žádné diagnostické funkce.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "health-fitness-16",
+      "name": "First Pull-Up",
+      "tagline": "Od nuly k prvnímu shybu za 8–12 týdnů.",
+      "pitch": "První shyb je jeden z nejčastějších fitness cílů, hlavně u žen a začátečníků – a zároveň jeden z nejvíc frustrujících. Kalistenické appky (Calisteniapp, Madbarz) jsou pro pokročilé; první shyb je v nich jen jedna úroveň. First Pull-Up je jednoúčelová appka: vstupní test (vis, negativní shyb, australské shyby), adaptivní plán 3× týdně a oslava prvního shybu. Úzký slib, jasný výsledek, dobře se prodává ve screenshotech.",
+      "niche": "Začátečníci s cílem 'první shyb'. Kalistenické appky cílí na pokročilé, obecné appky shyby ignorují.",
+      "parent_market": "Kalistenika a bodyweight trénink (Calisteniapp, Madbarz, Thenx).",
+      "target_user": "Ženy a začátečníci 18–45 let s hrazdou doma nebo v posilovně.",
+      "features": [
+        "Vstupní test a určení úrovně",
+        "Adaptivní plán 3× týdně (negativy, vis, gumy, australské shyby)",
+        "Časovač visu a počítadlo opakování",
+        "Graf pokroku a oslava prvního shybu",
+        "Pokračování: od 1 do 10 shybů"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně.",
+      "monetization": "Jednorázově $9.99 (≈ 230 Kč) za program nebo roční $19.99 (≈ 460 Kč) včetně dalších programů.",
+      "revenue_math": "Ideál: 1 500 stažení/měs ('pull up progression', 'first pull up', 'pull up workout') × 3 % × ≈ 391 Kč netto = 45 × 391 = ~17 600 Kč/měs.",
+      "revenue_czk_ideal": 17000,
+      "keywords": [
+        {
+          "kw": "first pull up",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "pull up progression",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad"
+        },
+        {
+          "kw": "pull up workout",
+          "saturation": 6,
+          "competitor": "pull-up challenge appky",
+          "note": "odhad – přeplněnější"
+        },
+        {
+          "kw": "pull up challenge",
+          "saturation": 4,
+          "competitor": "odhad",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno vyhledáváním (v evidenci jen jako 'unchecked'). Z trhu známo, že 'pull up' appky existují už léta; úzký začátečnický úhel je předpoklad.",
+      "competitors": [
+        {
+          "name": "Calisteniapp: Fit & Strong",
+          "url": "https://apps.apple.com/us/app/calisteniapp-fit-strong/id1265489771?platform=tv",
+          "role": "parent",
+          "note": "Kalistenika pro pokročilé, má i vážený program."
+        },
+        {
+          "name": "Madbarz",
+          "url": "",
+          "role": "parent",
+          "note": "Bodyweight tréninky."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Existuje řada starších 'pull up' appek a zdarma programů na YouTube/Redditu.",
+        "Po dosažení cíle uživatel appku smaže – nízké LTV.",
+        "Jednoduchá appka = 4.3 riziko 'málo funkcí'.",
+        "Bez hrazdy doma cílovka rychle ztratí motivaci."
+      ],
+      "killer_risk": "Zdarma programy na internetu snižují ochotu platit.",
+      "mitigation": "Nízká jednorázová cena, silné ASO na 'first pull up' a lokalizace (EN je nejplnější, ostatní jazyky prázdnější), navazující programy (dips, první klik na bradlech).",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "health-fitness-17",
+      "name": "Rider Fit",
+      "tagline": "Kondice, core a symetrie pro jezdce na koni.",
+      "pitch": "Jezdci tráví hodiny v sedle, ale kondici mimo stáj téměř netrénují – přitom sed, rovnováha a symetrie rozhodují o výsledku i zdraví koně. Jezdecké appky (Equilab, Ridely) měří jízdu koně, ne jezdce. Rider Fit nabídne 15–25minutové tréninky: core, kyčle, symetrie, rovnováha a mobilita pro drezuru, skoky i rekreační jízdu. Jezdectví je drahý koníček – ochota platit je vyšší než průměr.",
+      "niche": "Fitness jezdce mimo sedlo. Jezdecké appky sledují koně, fitness appky jezdectví neznají.",
+      "parent_market": "Jezdecké appky (Equilab, Ridely – miliony tréninků koní) a sport-specifické fitness (golf, lyže).",
+      "target_user": "Jezdkyně a jezdci 15–55 let v DE/NL/UK/FR/SE/CZ/PL.",
+      "features": [
+        "Programy podle disciplíny: drezura, skoky, rekreace",
+        "Test symetrie a rovnováhy (stoj na jedné noze, rotace)",
+        "Tréninky 15–25 min doma bez vybavení / s míčem",
+        "Plán před závodní sezónou",
+        "HealthKit a Apple Watch"
+      ],
+      "offline": "full",
+      "offline_note": "Obsah v balíčku, časovač lokálně.",
+      "monetization": "Roční $29.99 (≈ 690 Kč), měsíční $4.99 (≈ 115 Kč).",
+      "revenue_math": "Ideál: 700 stažení/měs ('equestrian fitness', 'rider fitness', 'Reiterfitness') × 5 % × ≈ 586 Kč netto = 35 × 586 = ~20 500 Kč/měs.",
+      "revenue_czk_ideal": 20000,
+      "keywords": [
+        {
+          "kw": "equestrian fitness",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "rider fitness",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad"
+        },
+        {
+          "kw": "horse riding exercises",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad"
+        },
+        {
+          "kw": "reiterfitness",
+          "saturation": 0,
+          "competitor": "žádná",
+          "note": "odhad – německý klastr"
+        }
+      ],
+      "demand_evidence": "Neověřeno vyhledáváním. Předpoklad ze znalosti trhu: jezdecké appky (Equilab) mají velkou platící základnu; fitness pro jezdce existuje jako kurzy a knihy.",
+      "competitors": [
+        {
+          "name": "Equilab",
+          "url": "",
+          "role": "parent",
+          "note": "Tracker jízdy koně, velká komunita."
+        },
+        {
+          "name": "Ridely",
+          "url": "",
+          "role": "parent",
+          "note": "Tréninky a plány pro koně a jezdce (neověřeno, jestli řeší fitness jezdce)."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap: jezdecký sport je nejsilnější v DE/NL/UK/FR/SE; lokalizace do těchto jazyků.",
+      "devils_advocate": [
+        "Equilab nebo Ridely mohou přidat fitness sekci pro svou velkou základnu.",
+        "Malý objem vyhledávání – jezdci hledají spíš trenéra než appku.",
+        "Důvěryhodnost obsahu vyžaduje jezdeckého trenéra/fyzioterapeuta.",
+        "Sezónnost závodů."
+      ],
+      "killer_risk": "Nízký objem vyhledávání – appka se nenajde.",
+      "mitigation": "Spolupráce s jezdeckou trenérkou (jméno ve screenshotech), obsazení DE/NL klíčových slov, programy podle disciplíny jako odlišení.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "health-fitness-18",
+      "name": "Ski Ready",
+      "tagline": "Šest týdnů do sezóny: lyžařská příprava ve tvém obýváku.",
+      "pitch": "Lyžařská gymnastika ('Skigymnastik') je v Rakousku a Německu tradice – každý podzim ji vysílá televize a nabízí každý sportovní klub. Appky pro lyžaře ale řeší jízdu (Carv, tracking sjezdovek), ne přípravu. Ski Ready nabídne 6týdenní program síly nohou, rovnováhy a prevence kolen, 20–30 minut 3× týdně, s odpočtem do první jízdy. Vydat v říjnu a obsadit sezónní špičku.",
+      "niche": "Předsezónní lyžařská příprava. Lyžařské appky měří jízdu, fitness appky lyžování neznají.",
+      "parent_market": "Lyžařské appky (Carv, Slopes, Ski Tracks) a sport-specifické fitness; tradice Skigymnastik v DACH.",
+      "target_user": "Rekreační lyžaři 25–60 let v DE/AT/CH/CZ/PL/IT/FR/Nordic a snowboardisti.",
+      "features": [
+        "6týdenní program s odpočtem do dne odjezdu",
+        "Cviky na sílu nohou, rovnováhu a stabilitu kolen",
+        "Časovač a hlasové pokyny",
+        "Varianta pro snowboard a skialpy",
+        "HealthKit"
+      ],
+      "offline": "full",
+      "offline_note": "Obsah lokálně.",
+      "monetization": "Sezónní pas $9.99 (≈ 230 Kč) jednorázově, nebo roční $14.99 (≈ 345 Kč).",
+      "revenue_math": "Ideál v sezóně (říjen–leden): 2 500 stažení/měs × 4 % × ≈ 195 Kč netto = 100 × 195 = ~19 500 Kč; roční průměr výrazně nižší (~8 000 Kč). Ideální měsíc ~15 000 Kč po započtení mixu cen.",
+      "revenue_czk_ideal": 15000,
+      "keywords": [
+        {
+          "kw": "ski workout",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "skigymnastik",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad – DACH fráze"
+        },
+        {
+          "kw": "ski fitness",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad"
+        },
+        {
+          "kw": "ski exercises",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno vyhledáváním. Předpoklad: silná sezónní tradice Skigymnastik v DACH a miliony rekreačních lyžařů v Alpách; objem v App Store neznámý.",
+      "competitors": [
+        {
+          "name": "Carv",
+          "url": "",
+          "role": "parent",
+          "note": "Digitální lyžařský kouč (senzory), silná značka."
+        },
+        {
+          "name": "Slopes",
+          "url": "",
+          "role": "parent",
+          "note": "Tracker lyžování."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap: Skigymnastik je tradice DACH/CZ/Nordic, v US malá; lokalizace pro alpské země.",
+      "devils_advocate": [
+        "Extrémní sezónnost – 4 měsíce v roce příjem, zbytek téměř nic.",
+        "Lyžaři přípravu často vynechají – motivace je nízká.",
+        "Carv může přidat předsezónní program pro svou platící základnu.",
+        "Klimatická změna a drahé lyžování zmenšují trh."
+      ],
+      "killer_risk": "Sezónnost – ideální měsíc nastane jen 2–3× ročně.",
+      "mitigation": "Rozšířit na celoroční 'ski & snowboard fitness' plus letní program pro skialpinisty; vydat v září, ASO aktualizovat na sezónu.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "health-fitness-19",
+      "name": "Shift Sleep Planner EU",
+      "tagline": "Plán spánku pro evropské směnové rotace – ve tvém jazyce.",
+      "pitch": "Anglických appek pro spánek směnařů vzniklo v letech 2025–26 přes devět, ale všechny počítají s americkými 12hodinovými směnami a jsou jen anglicky. Evropský směnař pracuje v rotacích jako ranní–odpolední–noční nebo 'krátký/dlouhý týden' a hledá ve svém jazyce. Shift Sleep Planner EU nabídne šablony evropských rotací, plán spánku, světla a kofeinu na každý den a widget 'kdy jít spát'. Poptávka je dokázaná, prostor jen v lokalizaci.",
+      "niche": "Směnaři mimo anglosaský svět a evropské rotace. Anglické appky pracují s US modelem směn.",
+      "parent_market": "Spánkové appky a appky pro směnaře (SleepShift, Riseo, Clairoe) – kategorie Sleep patří k nejvýdělečnějším v Health & Fitness.",
+      "target_user": "Zdravotní sestry, dělníci ve fabrikách, policisté a hasiči v DE/CZ/PL/FR/IT/ES/NL/JP, 25–55 let.",
+      "features": [
+        "Šablony evropských rotací (2-2-3, R-O-N, 12h Pitman) a vlastní rotace",
+        "Denní plán spánku, šlofíků, světla a kofeinového cut-offu",
+        "Widget a notifikace 'jdi spát teď'",
+        "Import spánku z HealthKit a porovnání s plánem",
+        "Sdílení kalendáře směn s rodinou přes iCloud"
+      ],
+      "offline": "full",
+      "offline_note": "Výpočty lokálně, HealthKit a iCloud od Applu.",
+      "monetization": "Roční $29.99 (≈ 690 Kč), měsíční $4.99 (≈ 115 Kč).",
+      "revenue_math": "Ideál: 1 500 stažení/měs (lokalizované 'Schichtarbeit Schlaf', 'praca zmianowa sen' atd.) × 3 % × ≈ 586 Kč netto = 45 × 586 = ~26 400 Kč; realisticky 25 000 Kč/měs.",
+      "revenue_czk_ideal": 25000,
+      "keywords": [
+        {
+          "kw": "shift work sleep",
+          "saturation": 7,
+          "competitor": "SleepShift",
+          "note": "web: 7+ appek, všechny nové a anglické"
+        },
+        {
+          "kw": "night shift sleep",
+          "saturation": 5,
+          "competitor": "Night Shift Sleep Planner",
+          "note": "odhad podle stejného dotazu"
+        },
+        {
+          "kw": "schichtarbeit schlaf",
+          "saturation": 0,
+          "competitor": "žádná",
+          "note": "odhad – německý klastr"
+        },
+        {
+          "kw": "shift worker",
+          "saturation": 6,
+          "competitor": "Shift Worker Sleep Management",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Ověřeno webem: 9 appek pro spánek směnařů, většina z 2025–26 = silný zájem vývojářů i uživatelů; všechny anglické a postavené na US 12h směnách. Lokalizovaná poptávka je předpoklad.",
+      "competitors": [
+        {
+          "name": "SleepShift",
+          "url": "https://apps.apple.com/gb/app/sleepshift/id6760953945",
+          "role": "niche",
+          "note": "Světlo, kofein, šlofíky."
+        },
+        {
+          "name": "Riseo: Shift Sleep Planner",
+          "url": "https://apps.apple.com/us/app/riseo-shift-sleep-planner/id6758026412",
+          "role": "niche",
+          "note": "Nová anglická appka."
+        },
+        {
+          "name": "Clairoe: Life in Rhythm",
+          "url": "https://apps.apple.com/mw/app/shift-the-app-for-shift-work/id1589005077",
+          "role": "parent",
+          "note": "Od 2021, dříve 'Shift – the app for shift work'."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Model je osvědčený v angličtině (9 appek), ale lokalizované verze s evropskými rotacemi chybí.",
+      "devils_advocate": [
+        "Devět konkurentů se může lokalizovat pomocí AI během dne – náš rozdíl je křehký.",
+        "Rady ke spánku a kofeinu se blíží medicíně (Guideline 1.4.1).",
+        "Směnaři už používají kalendáře směn (např. národní appky) s připomínkami.",
+        "Vysoké 4.3 riziko – přeplněný vzor."
+      ],
+      "killer_risk": "Konkurence se lokalizuje a v přeplněném vzoru nás Apple i uživatelé přehlédnou.",
+      "mitigation": "Hluboká lokalizace (evropské rotace, jazyk profesí), spojení kalendáře směn a spánku v jedné appce; neutrální wellness formulace.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 3,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "health-fitness-20",
+      "name": "Cold Water Log",
+      "tagline": "Deník otužování a zimního plavání – teplota, čas, série a bezpečnost.",
+      "pitch": "Otužování je v Česku, Polsku, Německu, Nizozemsku a Británii ('wild swimming') masový koníček s tisíci kluby. Sauna a cold-plunge appky jsou americké, řeší domácí ledovou vanu a jsou jen anglicky. Cold Water Log nabídne deník koupelí (teplota vody z Apple Watch Ultra/Series 10 nebo ručně), bezpečné vodítko 'minuty podle teploty', checklist zahřátí po koupeli a statistiky sezóny. Obrácený US-gap: kultura evropská, appky americké.",
+      "niche": "Otužování v přírodě a zimní plavání. Cold-plunge appky cílí na biohackery s ledovou vanou doma.",
+      "parent_market": "Sauna a cold-plunge trackery (Sauna Tracker: Sauna Log sleduje i cold plunge) a wellness appky.",
+      "target_user": "Otužilci a zimní plavci 25–65 let v CZ/PL/DE/NL/UK/Nordic.",
+      "features": [
+        "Záznam koupele: teplota vody, čas, místo, pocit",
+        "Automatická teplota vody z Apple Watch (kde dostupné)",
+        "Doporučená maximální doba podle teploty a zkušenosti (konzervativní)",
+        "Checklist bezpečnosti a zahřátí (afterdrop)",
+        "Sezónní statistiky, série a zimní výzvy"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, HealthKit (water temperature, kde podporováno).",
+      "monetization": "Roční $19.99 (≈ 460 Kč) nebo doživotní $29.99 (≈ 690 Kč).",
+      "revenue_math": "Ideál v zimě: 1 000 stažení/měs ('cold water swimming', 'wild swimming', 'otužování', 'morsowanie') × 3 % × ≈ 391 Kč netto = 30 × 391 = ~11 700 Kč/měs.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "cold water swimming",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "wild swimming",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad – UK fráze"
+        },
+        {
+          "kw": "cold plunge tracker",
+          "saturation": 5,
+          "competitor": "Sauna Tracker: Sauna Log (sleduje i cold plunge)",
+          "note": "odhad; souvisí s ověřenou sauna nikou"
+        },
+        {
+          "kw": "otužování",
+          "saturation": 0,
+          "competitor": "žádná",
+          "note": "odhad – český klastr"
+        },
+        {
+          "kw": "ice bath",
+          "saturation": 6,
+          "competitor": "ice bath timer appky",
+          "note": "odhad – přeplněné"
+        }
+      ],
+      "demand_evidence": "Evidence doporučuje winter/cold-water swimming log jako sousední niku sauny (neověřeno vyhledáváním). Cold plunge sledují již sauna trackery. Poptávka v EU je předpoklad podle velikosti komunit otužilců.",
+      "competitors": [
+        {
+          "name": "Sauna Tracker: Sauna Log",
+          "url": "https://apps.apple.com/us/app/sauna-tracker-sauna-log/id6739606616",
+          "role": "parent",
+          "note": "Sleduje i cold plunge; anglicky."
+        },
+        {
+          "name": "Sauna & Steam Tracker",
+          "url": "https://apps.apple.com/us/app/sauna-steam-tracker/id6751407927",
+          "role": "niche",
+          "note": "Anglický tracker, zahrnuje teplo/chlad (neověřeno)."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap: otužování v přírodě je evropská kultura; americké cold-plunge appky nejsou lokalizované.",
+      "devils_advocate": [
+        "Riziko podchlazení – jakékoli doporučení délky koupele je citlivé (bezpečnost, 1.4.1).",
+        "Sezónnost: zima; v létě téměř nulový zájem.",
+        "Otužilci nenosí telefon do vody; Apple Watch s teplotou vody má jen menšina.",
+        "Cold-plunge appky (5+) se mohou snadno přeorientovat."
+      ],
+      "killer_risk": "Bezpečnostní odpovědnost za doporučení doby ve studené vodě.",
+      "mitigation": "Žádné 'bezpečné limity', jen konzervativní orientační tabulka s výrazným varováním a důraz na deník; spolupráce s kluby otužilců.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "health-fitness-21",
+      "name": "Kettlebell Swing Counter",
+      "tagline": "Apple Watch počítá tvé swingy – výzva 10 000 swingů bez počítání v hlavě.",
+      "pitch": "Kettlebell swing je nejpopulárnější cvik s kettlebellem a výzva '10 000 swingů za měsíc' je léta oblíbená. Kettlebell appky jsou ale videotréninky; nikdo neumí swingy automaticky počítat. Kettlebell Swing Counter použije akcelerometr Apple Watch a on-device model (Core ML) k počítání swingů, snatchů a clean & press, spustí EMOM časovač a povede výzvu. Úzký, technicky odlišený produkt.",
+      "niche": "Automatické počítání opakování s kettlebellem. Video appky počítání neřeší, Apple Watch počítá jen kroky.",
+      "parent_market": "Posilovací deníky a kettlebell tréninkové appky (Fitbod, obecné kettlebell workout appky).",
+      "target_user": "Majitelé kettlebellu 25–55 let s Apple Watch, CrossFit a StrongFirst komunita.",
+      "features": [
+        "Počítání swingů/snatchů přes Apple Watch (Core ML na zařízení)",
+        "Výzva 10 000 swingů s denním plánem",
+        "EMOM a intervalový časovač",
+        "Zápis do HealthKit",
+        "Statistiky objemu (kg × opakování)"
+      ],
+      "offline": "full",
+      "offline_note": "Model pro rozpoznání pohybu běží na hodinkách; bez serveru.",
+      "monetization": "Roční $19.99 (≈ 460 Kč), doživotní $29.99 (≈ 690 Kč).",
+      "revenue_math": "Ideál: 1 000 stažení/měs ('kettlebell swing counter', 'kettlebell timer', '10000 swings') × 4 % × ≈ 391 Kč netto = 40 × 391 = ~15 600 Kč/měs.",
+      "revenue_czk_ideal": 15000,
+      "keywords": [
+        {
+          "kw": "kettlebell swing counter",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "kettlebell timer",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad"
+        },
+        {
+          "kw": "10000 swings",
+          "saturation": 0,
+          "competitor": "žádná",
+          "note": "odhad"
+        },
+        {
+          "kw": "kettlebell workout",
+          "saturation": 7,
+          "competitor": "kettlebell video appky",
+          "note": "odhad – přeplněné"
+        }
+      ],
+      "demand_evidence": "Neověřeno vyhledáváním (v evidenci jen jako 'unchecked'). Předpoklad: výzva 10 000 swingů je známá v kettlebell komunitě, video kettlebell appky jsou početné.",
+      "competitors": [
+        {
+          "name": "Fitbod: Gym & Fitness Planner",
+          "url": "https://apps.apple.com/us/app/fitbod-gym-fitness-planner/id1041517543",
+          "role": "parent",
+          "note": "Posilovací plány, kettlebell jen jako vybavení."
+        },
+        {
+          "name": "Kettlebell workout appky (různé)",
+          "url": "",
+          "role": "niche",
+          "note": "Videotréninky bez automatického počítání (odhad)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Přesnost počítání přes Watch může být nízká (různé techniky, zápěstí) – 1★ recenze.",
+        "Apple může přidat počítání opakování do watchOS (Sherlock).",
+        "Názvy programů jako 'Simple & Sinister' jsou chráněné – nesmíme je použít v ASO.",
+        "Malá nika; kettlebell komunita často používá papír a hlavu."
+      ],
+      "killer_risk": "Nepřesné počítání zničí hlavní slib aplikace.",
+      "mitigation": "Nejprve prototyp modelu na 20 lidech, ruční korekce počtu, pokrýt jen swing a snatch v MVP.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "health-fitness-22",
+      "name": "Heat Acclimation Coach",
+      "tagline": "Připrav se na závod v horku – 10denní protokol sauna, horká vana a trénink.",
+      "pitch": "Vytrvalci před závody v horku (Kona, Marathon des Sables, letní maratony) používají aklimatizaci teplem – sauna po tréninku, horká vana, trénink ve vrstvách. Protokol je dnes populární, ale zapisuje se do Excelu. Heat Acclimation Coach vede 10–14denní plán, měří ztrátu hmotnosti potem (sweat rate), čte tep z HealthKit a ukazuje adaptaci. Sauna appky jsou pro biohackery, ne pro závodníky.",
+      "niche": "Aklimatizace teplem pro vytrvalostní sportovce. Sauna appky řeší wellness, tréninkové platformy (TrainingPeaks) protokol nevedou.",
+      "parent_market": "Sauna trackery (Sauni – AI coach, Sauna Tracker) a vytrvalostní tréninkové appky; hardware CORE senzor tělesné teploty.",
+      "target_user": "Triatlonisté, ultraběžci, cyklisté 25–55 let před závodem v horku.",
+      "features": [
+        "10–14denní plán: sauna/horká vana/trénink podle dostupnosti",
+        "Kalkulačka sweat rate (vážení před a po)",
+        "Tep a HRV z HealthKit – trend adaptace",
+        "Časovač sauny/vany s bezpečnostními limity",
+        "Plán udržení adaptace před závodem"
+      ],
+      "offline": "full",
+      "offline_note": "Výpočty a data lokálně, HealthKit.",
+      "monetization": "Jednorázově $14.99 (≈ 345 Kč) za protokol nebo roční $24.99 (≈ 575 Kč).",
+      "revenue_math": "Ideál (jaro–léto): 800 stažení/měs ('heat acclimation', 'heat training', 'sauna training') × 5 % × ≈ 489 Kč netto = 40 × 489 = ~19 500 Kč/měs.",
+      "revenue_czk_ideal": 19000,
+      "keywords": [
+        {
+          "kw": "heat acclimation",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "heat training",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad"
+        },
+        {
+          "kw": "sauna training",
+          "saturation": 2,
+          "competitor": "Sauni: Sauna Tracker & Coach",
+          "note": "odhad; sousední ověřená sauna nika"
+        },
+        {
+          "kw": "sweat rate calculator",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Evidence uvádí heat acclimation jako nezkontrolovaného souseda sauna niky. Popularita protokolu mezi vytrvalci je znalost trhu, ne ověřený objem vyhledávání.",
+      "competitors": [
+        {
+          "name": "Sauni: Sauna Tracker & Coach",
+          "url": "https://apps.apple.com/us/app/sauni-sauna-tracker-coach/id6753734602",
+          "role": "niche",
+          "note": "AI sauna coach, wellness zaměření."
+        },
+        {
+          "name": "Sauna Tracker: Sauna Log",
+          "url": "https://apps.apple.com/us/app/sauna-tracker-sauna-log/id6739606616",
+          "role": "parent",
+          "note": "Lídr sauna logů."
+        },
+        {
+          "name": "CORE body temperature",
+          "url": "",
+          "role": "parent",
+          "note": "Hardware senzor s vlastní appkou pro heat training."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Úpal a přehřátí – odpovědnost a Guideline 1.4.1 při radách k délce sauny/vany.",
+        "Malá cílovka (závodníci v horku) a sezónnost.",
+        "TrainingPeaks nebo CORE mohou protokol přidat.",
+        "Sportovci často použijí zdarma PDF protokol od trenéra."
+      ],
+      "killer_risk": "Bezpečnostní riziko přehřátí a malá cílovka.",
+      "mitigation": "Konzervativní limity, jasná varování, obsah s odkazem na publikované protokoly; ASO i na 'sauna after workout' pro širší publikum.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "health-fitness-23",
+      "name": "Baduanjin: 8 Brocades Qigong",
+      "tagline": "Osm kusů brokátu – 12 minut klidného pohybu každý den.",
+      "pitch": "Baduanjin (Osm kusů brokátu) je nejrozšířenější qigongová sestava na světě – v Číně ji cvičí desítky milionů lidí a v roce 2024 se stala trendem i mezi mladými. Na Západě je populární mezi seniory a lidmi s bolestí zad, ale appky jsou buď čínské video platformy, nebo obecné tai-chi kurzy. Baduanjin nabídne jedinou sestavu perfektně: animovaná postava, audio vedení, pomalý/normální režim a denní série. Jasný produkt, jedna věc dobře.",
+      "niche": "Jedna konkrétní qigongová sestava s kvalitním vedením. Tai-chi appky jsou široké kurzy, čínské appky jsou video platformy.",
+      "parent_market": "Mind-body appky (jóga Down Dog, tai chi a qigong appky, meditace).",
+      "target_user": "Lidé 45+ v Evropě, US, Číně a jihovýchodní Asii; lidé se sedavým zaměstnáním.",
+      "features": [
+        "Animovaná 3D/2D postava pro všech 8 pohybů",
+        "Audio vedení s dýcháním, 3 tempa",
+        "Denní série a připomínky",
+        "Mindful minutes do HealthKit",
+        "Režim pro sezení (senioři)"
+      ],
+      "offline": "full",
+      "offline_note": "Animace a audio v balíčku.",
+      "monetization": "Jednorázově $9.99 (≈ 230 Kč) nebo roční $19.99 (≈ 460 Kč) s dalšími sestavami (Yijinjing).",
+      "revenue_math": "Ideál: 1 500 stažení/měs ('baduanjin', 'eight brocades', 'qigong', čínské a japonské fráze) × 3 % × ≈ 391 Kč netto = 45 × 391 = ~17 600 Kč/měs.",
+      "revenue_czk_ideal": 17000,
+      "keywords": [
+        {
+          "kw": "baduanjin",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "eight brocades",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad"
+        },
+        {
+          "kw": "qigong",
+          "saturation": 6,
+          "competitor": "qigong video appky",
+          "note": "odhad – širší, přeplněnější"
+        },
+        {
+          "kw": "tai chi for seniors",
+          "saturation": 4,
+          "competitor": "tai chi appky",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno vyhledáváním. Předpoklad ze znalosti trhu: Baduanjin je oficiálně propagovaná sestava v Číně, qigong/tai chi appky existují, ale specializovaná appka na tuto sestavu je vzácná (odhad).",
+      "competitors": [
+        {
+          "name": "Down Dog",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr jógových appek, mind-body segment."
+        },
+        {
+          "name": "Tai chi / qigong video appky (různé)",
+          "url": "",
+          "role": "niche",
+          "note": "Široké kurzy, často jen anglicky nebo čínsky."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácený gap: masivní v Číně/Tchaj-wanu; na Západě a v EU chybí kvalitní lokalizovaná appka.",
+      "devils_advocate": [
+        "V Číně dominují zdarma video platformy (Keep, Bilibili) – čínský trh je pro nás těžký.",
+        "Kvalitní animace 8 pohybů je dražší a pomalejší, než se zdá.",
+        "Senioři mají nízkou ochotu platit.",
+        "Kulturní autenticita – chyby v provedení odhalí komunita a napíše špatné recenze."
+      ],
+      "killer_risk": "Náklady na kvalitní animaci vs. malý příjem.",
+      "mitigation": "Spolupráce s certifikovaným instruktorem (motion capture jednorázově), cílit na EU/US/JP místo pevninské Číny.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "health-fitness-24",
+      "name": "Intervallgehen: Japanese Walking",
+      "tagline": "Japonská intervalová chůze pro seniory – ve tvém jazyce, bez angličtiny.",
+      "pitch": "Japonská intervalová chůze (3 minuty rychle, 3 pomalu) byla virální trend 2025 a vzniklo pro ni 9 anglických appek – poptávka je tedy prokázaná. Hlavní cílovka (lidé 55+) ale v Německu, Španělsku nebo Česku hledá ve svém jazyce: 'japanisches Gehen', 'caminata japonesa', 'japonská chůze'. Postavíme nejjednodušší možnou appku pro seniory – jedno tlačítko, hlasové pokyny, Apple Watch haptika – a obsadíme lokální fráze.",
+      "niche": "Lokalizované fráze a senioři. Anglický prostor je přeplněný, lokální jazyky zatím prázdné (jedna appka v PL storu).",
+      "parent_market": "Walking appky a trend Japanese walking (9 appek s frází v názvu, všechny z 2025).",
+      "target_user": "Lidé 55–80 let v DE/ES/FR/IT/CZ/PL/BR, kteří o trendu slyšeli v TV nebo novinách.",
+      "features": [
+        "Jedno tlačítko 'Start 30 minut'",
+        "Hlasové a haptické pokyny rychle/pomalu",
+        "Týdenní cíl 4× 30 min, jednoduchý kalendář",
+        "Zápis do HealthKit",
+        "Velké písmo, žádná registrace"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně.",
+      "monetization": "Doživotní licence $14.99 (≈ 345 Kč); základní režim zdarma.",
+      "revenue_math": "Ideál: 2 500 stažení/měs (lokální fráze v 10 jazycích) × 2,5 % × ≈ 293 Kč netto = 62 × 293 = ~18 200 Kč/měs.",
+      "revenue_czk_ideal": 18000,
+      "keywords": [
+        {
+          "kw": "japanese walking",
+          "saturation": 9,
+          "competitor": "Japanese Interval Walking",
+          "note": "web: 9 appek v názvu, všechny 2025 – SATURATED, jen rodičovský důkaz"
+        },
+        {
+          "kw": "interval walking",
+          "saturation": 6,
+          "competitor": "Paceriva - Japanese Walking",
+          "note": "odhad"
+        },
+        {
+          "kw": "japanisches gehen",
+          "saturation": 0,
+          "competitor": "žádná známá",
+          "note": "odhad – německá fráze"
+        },
+        {
+          "kw": "caminata japonesa",
+          "saturation": 0,
+          "competitor": "žádná známá",
+          "note": "odhad – španělská fráze"
+        }
+      ],
+      "demand_evidence": "Ověřeno webem: 9 appek s 'Japanese walking' v názvu, vzniklých během jednoho roku – silná prokázaná poptávka. Jedna appka už je v PL storu. Že lokální fráze nejsou obsazené, je odhad.",
+      "competitors": [
+        {
+          "name": "Japanese Interval Walking",
+          "url": "https://apps.apple.com/us/app/japanese-interval-walking/id6752210985",
+          "role": "parent",
+          "note": "Jedna z 9 anglických appek."
+        },
+        {
+          "name": "Paceriva - Japanese Walking",
+          "url": "https://apps.apple.com/us/app/paceriva-japanese-walking/id6747282230",
+          "role": "niche",
+          "note": "Stejné id i jako 'Japanese Interval Walking' v KZ storu."
+        },
+        {
+          "name": "Japanese Walking: Interval Fit",
+          "url": "https://apps.apple.com/pl/app/japanese-walking-interval-fit/id6754985035",
+          "role": "niche",
+          "note": "Už v PL storu."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Model je dokázaný v anglickém storu (9 appek); lokalizované listingy s místními frázemi chybí.",
+      "devils_advocate": [
+        "Vysoké riziko Guideline 4.3 – devátá appka stejného vzoru (Apple ji může odmítnout jako spam).",
+        "Trend může vyhasnout – virální vlny v chůzi trvají 1–2 roky.",
+        "Konkurenti mohou přeložit listing za hodinu.",
+        "Senioři málo platí a Apple Watch mají jen někteří."
+      ],
+      "killer_risk": "Zamítnutí podle 4.3 nebo rychlé vyhasnutí trendu.",
+      "mitigation": "Integrovat jako režim do Nordic Walking Coach místo samostatné appky, pokud Apple zamítne; výrazně odlišný design pro seniory.",
+      "build_weeks": 1,
+      "scores": {
+        "demand": 8,
+        "blue_ocean": 3,
+        "monetization": 4,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 3
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "health-fitness-25",
+      "name": "Camino Ready",
+      "tagline": "Tréninkový plán na Svatojakubskou cestu – 20 km denně s batohem bez puchýřů.",
+      "pitch": "Svatojakubskou cestu (Camino de Santiago) ročně dokončí přes 400 000 poutníků – Němci, Italové, Korejci, Brazilci, Američané, Češi. Většina z nich začíná bez tréninku a první týden trpí puchýři a bolestí kolen. Průvodcové appky (Buen Camino, Wise Pilgrim) řeší trasu a ubytování, ne přípravu. Camino Ready vede 12–16týdenní plán: postupné prodlužování tras, zátěž batohu, back-to-back dny, péče o nohy a checklist výbavy.",
+      "niche": "Příprava na dálkový pěší trek (Camino, dálkové trasy). Průvodcové appky řeší cestu samotnou, ruckingové appky vojenský trénink.",
+      "parent_market": "Hiking/rucking trénink (Rucker, MARCH – rucking je přeplněný) a průvodcové appky Camina.",
+      "target_user": "Budoucí poutníci 30–70 let, plánující Camino 2–6 měsíců dopředu.",
+      "features": [
+        "Plán 12/16 týdnů podle data odjezdu a délky etapy",
+        "Progrese hmotnosti batohu a back-to-back víkendy",
+        "Záznam tréninkových chůzí do HealthKit",
+        "Péče o nohy a checklist výbavy",
+        "Po návratu: deník etap na cestě"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně – offline je výhoda i na cestě.",
+      "monetization": "Jednorázově $14.99 (≈ 345 Kč).",
+      "revenue_math": "Ideál (jaro): 1 200 stažení/měs ('camino training', 'camino de santiago preparation', lokální fráze) × 4 % × ≈ 293 Kč netto = 48 × 293 = ~14 000 Kč/měs.",
+      "revenue_czk_ideal": 14000,
+      "keywords": [
+        {
+          "kw": "camino training",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "camino de santiago",
+          "saturation": 5,
+          "competitor": "průvodcové appky Camina",
+          "note": "odhad – obsazené průvodci, jen rodičovský trh"
+        },
+        {
+          "kw": "hiking training plan",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad"
+        },
+        {
+          "kw": "trek training",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Evidence zmiňuje 'Camino / trek prep' jako použití ruckingových appek (rucking ověřeně přeplněný, 8+ appek). Počet poutníků je veřejně známý (neověřeno v tomto běhu); objem vyhledávání neověřen.",
+      "competitors": [
+        {
+          "name": "MARCH: Ruck Club & Tracker",
+          "url": "https://apps.apple.com/gb/app/march-ruck-workouts/id6752545287",
+          "role": "parent",
+          "note": "Rucking kluby a plány."
+        },
+        {
+          "name": "Rucker, the rucking app",
+          "url": "https://apps.apple.com/us/app/rucker-the-rucking-app/id6742251218?platform=watch",
+          "role": "parent",
+          "note": "Rucking s Apple Watch."
+        },
+        {
+          "name": "Buen Camino",
+          "url": "",
+          "role": "parent",
+          "note": "Průvodce Caminem; může přidat tréninkový plán."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Silná sezónnost – příprava hlavně v zimě a na jaře.",
+        "Jednorázový nákup, žádný opakovaný příjem.",
+        "Průvodcové appky Camina mají velkou základnu a mohou plán přidat.",
+        "Mnoho poutníků používá zdarma plány z blogů a fór."
+      ],
+      "killer_risk": "Průvodcové appky přidají plán zdarma.",
+      "mitigation": "Rozšířit na 'long-distance walk prep' (West Highland Way, Via Francigena, Kungsleden) a lokalizovat do DE/IT/KO/PT.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "health-fitness-26",
+      "name": "Stair Summit",
+      "tagline": "Vystoupej na Everest po schodech – patro po patře.",
+      "pitch": "Apple Watch a iPhone počítají vystoupaná patra, ale nikdo s nimi nic nedělá. Stair Summit z nich udělá výzvu: vystoupej na Sněžku, Kilimandžáro nebo Everest (8 849 m) po schodech v práci a doma, s mapou výstupu, tábory a odznaky. Motivace pro kancelářské pracovníky a lidi, kteří nemají čas na posilovnu. Plně offline, data z HealthKit.",
+      "niche": "Virtuální horské výzvy z vystoupaných pater. Virtuální výzvy (The Conqueror) jsou o kilometrech a fyzických medailích.",
+      "parent_market": "Virtuální fitness výzvy a krokoměry (The Conqueror Virtual Challenges, Pacer).",
+      "target_user": "Kancelářští pracovníci 25–55 let, lidé bydlící v paneláku.",
+      "features": [
+        "Výzvy: Sněžka, Mont Blanc, Kilimandžáro, Everest",
+        "Automatický import pater z HealthKit (flightsClimbed)",
+        "Mapa výstupu s tábory a odznaky",
+        "Widget a Live Activity",
+        "Týmová výzva s přáteli přes sdílení iCloud"
+      ],
+      "offline": "full",
+      "offline_note": "HealthKit data a ilustrace výstupů lokálně; sdílení přes CloudKit.",
+      "monetization": "Jednorázově $9.99 (≈ 230 Kč) za všechny hory; první hora zdarma.",
+      "revenue_math": "Ideál: 2 000 stažení/měs ('stair climbing', 'stair challenge', 'everest challenge') × 3 % × ≈ 195 Kč netto = 60 × 195 = ~11 700 Kč/měs.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "stair climbing",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "stair challenge",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad"
+        },
+        {
+          "kw": "everest challenge",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad"
+        },
+        {
+          "kw": "flights climbed",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno vyhledáváním (v evidenci jako 'unchecked'). Předpoklad: virtuální výzvy jsou prokázaný model (The Conqueror), 'stair challenge' je populární ve firemních wellness programech.",
+      "competitors": [
+        {
+          "name": "The Conqueror Virtual Challenges",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr virtuálních výzev, fyzické medaile, vyžaduje server."
+        },
+        {
+          "name": "Pacer",
+          "url": "",
+          "role": "parent",
+          "note": "Krokoměr s výzvami."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "HealthKit 'patra' jsou nepřesná (barometr, výtahy) – frustrace.",
+        "Jednorázová nízká cena, malý výnos.",
+        "Jednoduchá appka = 4.3 riziko a snadné kopírování.",
+        "Apple Fitness může přidat vlastní výzvy s odznaky."
+      ],
+      "killer_risk": "Nízký výnos z jednorázové ceny u zábavné, ale 'malé' appky.",
+      "mitigation": "Přidat roční pas s novými horami každý měsíc a firemní týmové výzvy (sdílení přes iCloud).",
+      "build_weeks": 1.5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "health-fitness-27",
+      "name": "Daylight Minutes",
+      "tagline": "Kolik denního světla jsi dnes nachytal? Cíl, série a připomínka ven.",
+      "pitch": "Apple Watch od watchOS 10 měří čas strávený na denním světle – data leží v Apple Zdraví, ale skoro nikdo o nich neví. Ranní světlo je jeden z nejpopulárnějších tipů pro spánek a náladu (Huberman efekt). Daylight Minutes z těchto dat udělá jednoduchý cíl, sérii, widget a připomínku 'jdi ven', se zimním režimem pro severní Evropu. Minimální vývoj, jasný slib.",
+      "niche": "Využití HealthKit 'time in daylight'. Spánkové appky ho nepoužívají, Apple ho jen ukazuje bez motivace.",
+      "parent_market": "Spánkové a circadian appky (Rise Science, Timeshifter) a habit trackery.",
+      "target_user": "Lidé 25–50 let s Apple Watch, zajímající se o spánek a energii; rodiče sledující venkovní čas dětí (Family Setup).",
+      "features": [
+        "Denní cíl minut na světle a série",
+        "Widget a komplikace na Watch",
+        "Připomínka ráno, když ještě nebyl venku",
+        "Zimní režim (krátké dny) a týdenní trend",
+        "Korelace se spánkem z HealthKit"
+      ],
+      "offline": "full",
+      "offline_note": "Čte HealthKit (timeInDaylight) na zařízení, nic se neodesílá.",
+      "monetization": "Doživotní licence $14.99 (≈ 345 Kč), základ zdarma.",
+      "revenue_math": "Ideál: 1 500 stažení/měs ('daylight tracker', 'sunlight tracker', 'morning sunlight') × 3 % × ≈ 293 Kč netto = 45 × 293 = ~13 200 Kč/měs.",
+      "revenue_czk_ideal": 13000,
+      "keywords": [
+        {
+          "kw": "daylight tracker",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "sunlight tracker",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad"
+        },
+        {
+          "kw": "time in daylight",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad"
+        },
+        {
+          "kw": "morning sunlight",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno vyhledáváním. Předpoklad: popularita tipu 'ranní světlo' (podcasty, sociální sítě) a existence metriky v HealthKit od iOS 17.",
+      "competitors": [
+        {
+          "name": "Rise Science",
+          "url": "",
+          "role": "parent",
+          "note": "Spánková a energetická appka."
+        },
+        {
+          "name": "Apple Zdraví (Čas na denním světle)",
+          "url": "",
+          "role": "parent",
+          "note": "Vestavěné zobrazení metriky – Sherlock riziko."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Apple může metriku povýšit na cíl s připomínkou přímo ve Zdraví (Sherlock).",
+        "Vyžaduje Apple Watch – malá část uživatelů iPhonu.",
+        "Tvrzení o krátkozrakosti dětí nebo depresi = 1.4.1.",
+        "Nízká ochota platit za zobrazení dat, která už uživatel má."
+      ],
+      "killer_risk": "Sherlock – Apple udělá z metriky vlastní cíl.",
+      "mitigation": "Minimální investice (1,5 týdne), rychle vydat a sklízet; neutrální wellness jazyk.",
+      "build_weeks": 1.5,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 3,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "health-fitness-28",
+      "name": "Exercise Snacks",
+      "tagline": "Tři minutové 'svačinky pohybu' denně – věda o VILPA v kapse.",
+      "pitch": "Výzkum o krátkých intenzivních chvilkách pohybu (VILPA – 1–2 minuty rychle do schodů) se v letech 2022–25 dostal do všech médií: pár minut denně výrazně snižuje riziko. Exercise Snacks z toho udělá návyk: 3–4 minutové 'svačinky' denně, připomínky v pravý čas a detekci intenzivních chvilek z tepu v HealthKit. Pro lidi, kteří 'nemají čas cvičit'.",
+      "niche": "Mikro-tréninky a VILPA. Fitness appky prodávají 20–45min tréninky, Apple Watch připomíná jen stání.",
+      "parent_market": "Habit a activity appky (Apple Watch aktivity, stand reminders, 7-minute workout appky).",
+      "target_user": "Zaneprázdnění lidé 30–60 let v kanceláři, kteří necvičí.",
+      "features": [
+        "Knihovna 1–2min 'svačinek' (schody, dřepy, rychlá chůze)",
+        "Chytré připomínky podle kalendáře a aktivity",
+        "Detekce intenzivních chvilek z tepu (HealthKit)",
+        "Denní cíl 3 svačinky a série",
+        "Widget a Apple Watch"
+      ],
+      "offline": "full",
+      "offline_note": "Tep a aktivita z HealthKit lokálně.",
+      "monetization": "Roční $19.99 (≈ 460 Kč).",
+      "revenue_math": "Ideál: 1 500 stažení/měs ('exercise snacks', 'micro workouts') × 3 % × ≈ 391 Kč netto = 45 × 391 = ~17 600 Kč/měs.",
+      "revenue_czk_ideal": 17000,
+      "keywords": [
+        {
+          "kw": "exercise snacks",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "micro workouts",
+          "saturation": 4,
+          "competitor": "odhad",
+          "note": "odhad"
+        },
+        {
+          "kw": "vilpa",
+          "saturation": 0,
+          "competitor": "žádná",
+          "note": "odhad – odborný termín, nízká poptávka"
+        },
+        {
+          "kw": "desk exercise",
+          "saturation": 6,
+          "competitor": "desk workout appky",
+          "note": "odhad – přeplněné"
+        }
+      ],
+      "demand_evidence": "Neověřeno vyhledáváním. Předpoklad: široké mediální pokrytí studií VILPA a trend 'exercise snacks'; v App Store pravděpodobně už několik mikro-workout appek.",
+      "competitors": [
+        {
+          "name": "7 Minute Workout appky (různé)",
+          "url": "",
+          "role": "parent",
+          "note": "Krátké tréninky, zavedené."
+        },
+        {
+          "name": "Apple Watch – připomínky stání",
+          "url": "",
+          "role": "parent",
+          "note": "Vestavěná funkce – Sherlock riziko."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Apple může přidat 'exercise snacks' do Activity (Sherlock).",
+        "Detekce z tepu je nepřesná a pomalá.",
+        "Zdravotní claimy o snížení úmrtnosti = 1.4.1.",
+        "Micro-workout appek je hodně, odlišení je slabé."
+      ],
+      "killer_risk": "Sherlock a přeplnění micro-workout appkami.",
+      "mitigation": "Postavit značku kolem 'snacks' (vtipný jazyk, ikonografie), neutrální formulace, rychlé MVP.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "health-fitness-29",
+      "name": "Breath Rhythm Run",
+      "tagline": "Rytmické dýchání pro běžce – audio pokyny synchronizované s kadencí.",
+      "pitch": "Rytmické dýchání (nádech na 3 kroky, výdech na 2) je známá běžecká technika proti píchání v boku a pro lepší tempo. Aplikace ji nikdo neučí prakticky: běžec potřebuje jemný audio signál v rytmu kroků. Breath Rhythm Run měří kadenci přes Apple Watch/iPhone, přehrává nádech/výdech přes hudbu a postupně vede od 3:2 ke 2:1 v závodním tempu.",
+      "niche": "Dechová technika během běhu. Běžecké appky řeší tempo a plány, dechové appky jsou pro sezení.",
+      "parent_market": "Běžecké appky (Runna, Nike Run Club) a dechové appky (Breathwrk).",
+      "target_user": "Rekreační běžci 25–55 let, kteří trpí pícháním v boku nebo zadýcháním.",
+      "features": [
+        "Audio cue nádech/výdech synchronizované s kadencí (Core Motion)",
+        "Vzorce 3:2, 2:1, 2:2 a lekce",
+        "Ducking hudby a podcasty",
+        "Zápis běhu do HealthKit",
+        "Po běhu přehled dodržení rytmu"
+      ],
+      "offline": "full",
+      "offline_note": "Kadence a audio na zařízení.",
+      "monetization": "Roční $19.99 (≈ 460 Kč) nebo doživotní $24.99 (≈ 575 Kč).",
+      "revenue_math": "Ideál: 1 300 stažení/měs ('rhythmic breathing', 'breathing for runners', 'running breathing') × 3 % × ≈ 391 Kč netto = 39 × 391 = ~15 200 Kč/měs.",
+      "revenue_czk_ideal": 15000,
+      "keywords": [
+        {
+          "kw": "rhythmic breathing",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "breathing for runners",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad"
+        },
+        {
+          "kw": "running breathing",
+          "saturation": 2,
+          "competitor": "odhad",
+          "note": "odhad"
+        },
+        {
+          "kw": "running cadence",
+          "saturation": 5,
+          "competitor": "metronom appky",
+          "note": "odhad – obsazené metronomy"
+        }
+      ],
+      "demand_evidence": "Neověřeno vyhledáváním (v evidenci jako 'unchecked'). Předpoklad: technika je popsaná v běžeckých knihách a časopisech; objem vyhledávání v App Store je pravděpodobně malý.",
+      "competitors": [
+        {
+          "name": "Runna",
+          "url": "",
+          "role": "parent",
+          "note": "Běžecké plány, může přidat dechové pokyny."
+        },
+        {
+          "name": "Breathwrk",
+          "url": "",
+          "role": "parent",
+          "note": "Dechové appky, cvičení vsedě."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Velmi malý objem vyhledávání – technika je spíš 'fór' než vyhledávaná potřeba.",
+        "Běžci neplatí za nic kromě Strava/Runna.",
+        "Audio na pozadí se sluchátky a hudbou je technicky křehké (přerušení, ducking).",
+        "Runna nebo Nike přidá funkci zdarma."
+      ],
+      "killer_risk": "Nedostatečná poptávka.",
+      "mitigation": "Validovat nejprve jako funkci v jiné naší běžecké/walking appce, samostatně vydat jen při potvrzené poptávce.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "health-fitness-30",
+      "name": "Gamer Stretch",
+      "tagline": "2minutové protažení zápěstí, krku a očí mezi zápasy.",
+      "pitch": "Hráči tráví u her 4–8 hodin denně a esport týmy mají fyzioterapeuty kvůli zápěstím, krku a zádům – rekreační hráči nemají nic. Stretching appky (Bend) jsou obecné a pro hráče nezajímavé. Gamer Stretch nabídne 2–5minutové rutiny mezi zápasy (zápěstí/předloktí, krk, ramena, oči 20-20-20), připomínky navázané na Focus režim 'Hraní' a gamifikaci (série, levely), která hráče skutečně osloví.",
+      "niche": "Protahování a ergonomie pro hráče. Stretching appky hráče neoslovují, esport zdraví je jen v profesionálních týmech.",
+      "parent_market": "Stretching a mobilita (Bend – jedna z nejúspěšnějších appek kategorie, Pliability).",
+      "target_user": "Hráči 15–35 let (PC/konzole/mobil), streamerové.",
+      "features": [
+        "Rutiny 2–5 min: zápěstí, krk, záda, oči",
+        "Připomínky podle Focus režimu 'Hraní' a času",
+        "Gamifikace: XP, levely, série",
+        "Rutiny před turnajem a po něm",
+        "Widget a Apple Watch"
+      ],
+      "offline": "full",
+      "offline_note": "Obsah lokálně.",
+      "monetization": "Doživotní $14.99 (≈ 345 Kč), roční $9.99 (≈ 230 Kč).",
+      "revenue_math": "Ideál: 2 500 stažení/měs ('gamer stretches', 'wrist stretches', 'esports') × 2 % × ≈ 293 Kč netto = 50 × 293 = ~14 600 Kč/měs.",
+      "revenue_czk_ideal": 14000,
+      "keywords": [
+        {
+          "kw": "gamer stretches",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad (knowledge)"
+        },
+        {
+          "kw": "stretches for gamers",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad"
+        },
+        {
+          "kw": "wrist stretches",
+          "saturation": 3,
+          "competitor": "odhad",
+          "note": "odhad"
+        },
+        {
+          "kw": "esports fitness",
+          "saturation": 1,
+          "competitor": "odhad",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno vyhledáváním. Předpoklad: esport organizace řeší zdraví hráčů (fyzioterapeuti v týmech), YouTube videa 'stretches for gamers' mají miliony zhlédnutí.",
+      "competitors": [
+        {
+          "name": "Bend: Stretching & Flexibility",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr stretchingu, má i rutiny na zápěstí/kancelář."
+        },
+        {
+          "name": "1HP (esport health)",
+          "url": "",
+          "role": "niche",
+          "note": "Esport zdraví, převážně web/obsah (neověřeno)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Mladí hráči nechtějí platit za 'cvičení' a připomínky ignorují.",
+        "Bend má rutiny na zápěstí a může přidat 'gaming' kategorii.",
+        "Claimy o karpálním tunelu = 1.4.1.",
+        "Hráči na PC nemají telefon v ruce při hraní – připomínky nemusí fungovat."
+      ],
+      "killer_risk": "Nízká ochota mladé cílovky platit.",
+      "mitigation": "Gamifikace a humor ve stylu herní kultury, doživotní nízká cena, spolupráce se streamery.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    }
+  ]
+}
