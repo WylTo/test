@@ -6,20 +6,17 @@ vydělává, mít ověřenou poptávku a slabou konkurenci přes data z Apple (�
 slova), odkazy na konkurenci, výpočet cesty k 10 000 Kč měsíčně, oponenturu ďáblova
 advokáta a výsledné pořadí. Výstupem je HTML stránka.
 
-## Stav k 2026-09-30
+## Stav k 2026-09-30: hotovo
 
-Průzkum se v první relaci zastavil na dvou limitech cloudového prostředí:
-
-1. **Apple domény jsou blokované síťovou politikou prostředí**: `itunes.apple.com`,
-   `search.itunes.apple.com`, `apps.apple.com`, `rss.applemarketingtools.com`,
-   `api.appstoreconnect.apple.com`. Bez nich nejde ověřit skutečnou poptávku ani
-   konkurenci přímo u Apple.
-2. **Webové vyhledávání má limit 200 dotazů na relaci.** Paralelní agenti ho vyčerpali
-   během několika minut, dřív než stihli dokončit jedinou kategorii.
-
-Hotové ani ověřené nápady zatím nejsou. Připravená je celá výrobní linka a poznatky
-z prvních asi 200 vyhledávání (ve kterých nikách je už přeplněno a kde je volno, se
-skutečnými odkazy do App Store).
+- **Stránka:** `index.html` (otevřít lokálně) a publikovaný artifact. Data jsou v `data/ideas.json`.
+- **810 nápadů** (27 kategorií × 30), každý s pitchem, nikou, funkcemi MVP, monetizací, výpočtem
+  tržeb, klíčovými slovy, konkurencí a ďáblovým advokátem.
+- **Oponentura:** 27 nezávislých oponentů: 105× GO, 236× MAYBE, 469× KILL. Realistický odhad
+  tržeb podle oponentů nepřekračuje 10 000 Kč měsíčně u žádného nápadu, maximum je 8 000 Kč.
+- **Data:** 334 nápadů je ověřených webovým vyhledáváním výpisů App Store, zbytek je odhad
+  (skóre −3). Apple API bylo blokované, proto `verify_apple.py` doplní skutečná Apple čísla,
+  až bude přístup (viz níže).
+- **Duplicity** napříč kategoriemi jsou označené v `pipeline/build.py` (DUPES).
 
 ## Co je ve složce
 

@@ -217,11 +217,20 @@ code { font-family: var(--mono); font-size: 0.92em; }
   </header>
 
   <nav class="toc" aria-label="Obsah">
+    <a href="#verdikt">Verdikt v kostce</a>
     <a href="#top30">Top 30 napříč trhy</a>
     <a href="#kategorie">Kategorie</a>
     <a href="#napady">Všechny nápady</a>
     <a href="#metodika">Metodika a ověření přes Apple</a>
   </nav>
+
+  <section id="verdikt">
+    <div class="sec-head">
+      <h2>Verdikt <em>v kostce</em></h2>
+      <p>Co z 810 nápadů a 27 oponentur vyplývá pro další rozhodnutí.</p>
+    </div>
+    <div class="method" id="summary"></div>
+  </section>
 
   <section id="top30">
     <div class="sec-head">
@@ -305,6 +314,18 @@ const D = /*__DATA__*/null;
   $("#caveat").innerHTML = S.apple_verified
     ? `<b>Data z Apple jsou doplněna.</b> U klíčových slov, která prošla skriptem <code>verify_apple.py</code>, vidíte počet výsledků v App Store, nasycení titulků, sílu konkurence a to, zda Apple slovo našeptává. Tato data upravila skóre (viz Metodika).`
     : `<b>Jak spolehlivá jsou data:</b> přímé API Apple (vyhledávání, našeptávač, popularita z Apple Ads) bylo z cloudového prostředí zablokované a webové vyhledávání mělo limit 200 dotazů. Nápady se štítkem <b>OVĚŘENO WEBEM</b> (${S.web}) stojí na skutečných výpisech z App Store: kolik aplikací cílí na frázi a kdo je nejsilnější. Nápady se štítkem <b>ODHAD</b> vycházejí z tržních znalostí agentů a jejich skóre je o 3 body sníženo. Odkazy přímo na aplikace pocházejí jen z výsledků vyhledávání, u ostatních konkurentů je odkaz na vyhledávání. Před vývojem si klíčová slova ověřte skriptem <code>verify_apple.py</code> nebo v Apple Ads (návod v Metodice).`;
+
+  // Summary
+  const rev = D.ideas.map(x => x.revenue_czk_realistic).filter(v => v != null);
+  const over = rev.filter(v => v >= 10000).length, maxRev = Math.max(...rev);
+  const goIdeas = D.ideas.filter(x => x.verdict === "GO" && !x.dup_of);
+  const top5 = goIdeas.slice(0, 5).map(x => `<a href="#" data-jump="${esc(x.id)}">${esc(x.name)}</a> (${esc(x.category_cs)}, reálně ${czk(x.revenue_czk_realistic)})`).join(", ");
+  $("#summary").innerHTML = `
+    <div class="blk"><h4>Tvrdá pravda o tržbách</h4><p>Autoři nápadů počítali „ideál“ nad 10 000 Kč měsíčně u všech 810 nápadů. Nezávislí oponenti odhadli realistický medián po 6 měsících jen z ASO a <b>10 000 Kč nedosahuje ${over === 0 ? "ani jeden" : over} nápad</b>. Nejvyšší realistický odhad je ${czk(maxRev)}, typicky 1 000–6 000 Kč. Autorské ideály byly nafouknuté zhruba 3–6×.</p></div>
+    <div class="blk"><h4>Co z toho plyne</h4><p>Cíl 10 000 Kč je reálný jako <b>portfolio</b>, ne jako jedna niche aplikace: 2–3 GO aplikace po 4–6 tisících, ideálně se sdíleným kódem (např. karetní hry Mariáš, Schafkopf a Doppelkopf, nebo „foto → 3D tisk“). Plus lokalizace do 50 jazyků, která je u většiny GO nápadů hlavní výhodou.</p></div>
+    <div class="blk"><h4>Nejlepší GO nápady</h4><p>${top5}. Celkem ${S.go} GO, ${S.maybe} MAYBE, ${S.kill} KILL. Nápady, které se opakovaly ve více kategoriích, jsou označené jako duplicita a do žebříčku Top 30 nevstupují.</p></div>
+    <div class="blk"><h4>Než začnete stavět</h4><p>Webové ověření ukázalo, že odhady konkurence z pouhých znalostí byly skoro vždy příliš optimistické: z ~160 kontrol oponentů vyšla většina nik přeplněná. U vybraného vítěze proto vždy spusťte <code>verify_apple.py</code> nebo ověřte popularitu klíčových slov v Apple Ads.</p></div>`;
+  $("#summary").addEventListener("click", e => { const a = e.target.closest("a[data-jump]"); if (a) { e.preventDefault(); jump(a.dataset.jump); } });
 
   // Top 30
   $("#toptbody").innerHTML = D.ideas.filter(x => !x.dup_of).slice(0, 30).map(x => `
