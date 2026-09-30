@@ -1,0 +1,15 @@
+SHOPPING — REVIEWER VERIFY LOG (devil's advocate run)
+Date: 2026-09-30. All URLs copied verbatim from WebSearch results. "sat" = distinct apps with the niche phrase in the title.
+
+[1] query: site:apps.apple.com warranty tracker receipts  (ideas shopping-01, also shopping-04)  date: 2026-09-30
+    sat("warranty" in title): 9 — all new 2025-26 entrants, several private/on-device/no-account, two also track return windows -> SATURATED
+    - Warranty Tracker & Receipt           https://apps.apple.com/cy/app/warranty-tracker-receipt/id6783503117
+    - Warranty Receipt Tracker ($2.99 one-time) https://apps.apple.com/us/app/warranty-receipt-tracker/id6739620977
+    - Receipt Safe: Warranty Tracker       https://apps.apple.com/us/app/receipt-safe-warranty-tracker/id6755928701
+    - Warranty Tracker — Receiply          https://apps.apple.com/in/app/warranty-tracker-receiply/id6768314005
+    - Docly - Warranty Tracker (OCR)       https://apps.apple.com/us/app/docly-warranty-tracker/id6756065053
+    - Warranty & Return Tracker (on-device, return windows, claim docs) https://apps.apple.com/us/app/warranty-return-tracker/id6762097465
+    - Warrantify - Warranty Tracker        https://apps.apple.com/us/app/warrantify-warranty-tracker/id6749649028
+    - Warranty Receipts - Valid            https://apps.apple.com/us/app/warranty-receipts-valid/id6760669094
+    - Warrio: Warranty Tracker (return windows, no account) https://apps.apple.com/us/app/warrio-warranty-tracker/id6781723698
+

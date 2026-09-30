@@ -1,0 +1,2648 @@
+{
+  "category": "Magazines & Newspapers",
+  "category_slug": "magazines-newspapers",
+  "search_notes": "Offline běh: žádná volání Apple ani WebSearch a pro tuto kategorii neexistuje evidenční soubor. Všechny nápady jsou označené evidence=knowledge, saturace klíčových slov jsou můj odhad a blue_ocean je max. 7; autocomplete (hint) nebyl ověřen u žádného klíčového slova. Použitelné URL jsem převzal jen doslovně z jiných _partial souborů: CamScanner (productivity), Manga Collector, WriteTrack, Word Keeper, Poets & Writers Magazine a ClearRead (books), Kakuro Conceptis, Star Battle Hoshi a Nurikabe (games). Tam, kde URL chybí, je pole url prázdné. Vydavatelské appky s licencovaným obsahem jsem vyřadil. Varování k provozu: kategorie Magazines & Newspapers má málo utilit, takže dobře zacílená appka se snadno dostane do žebříčku, ale absolutní provoz je nízký a řadu nápadů (puzzle, layout, těsnopis) by bylo lepší vydat v Games, Graphics & Design nebo Education. Před vývojem je nutné spustit apple_fetch.py check aspoň na top 10 nápadů. Portfolio překryvy (4.3), které je třeba sledovat: Clipping Keeper / Press Clippings Book / Back Issue Index, Wedding Newspaper / Holiday Letter / Daily Me Gazette, Large Print Word Search / Fill-In, a Offline Reading List / Weekly Paper Digest.",
+  "ideas": [
+    {
+      "id": "magazines-newspapers-01",
+      "name": "Mini Zine Maker",
+      "tagline": "Z jednoho listu A4 skládaný 8stránkový zin — navrhni na iPhonu, vytiskni, přelož, hotovo.",
+      "pitch": "Ziny (malé samizdatové časopisy) zažívají comeback mezi studenty, ilustrátory, učiteli výtvarky a komunitami na TikToku/Instagramu. Nejtěžší na nich není obsah, ale imposice: aby 8 stránek na jednom listu po přeložení a jednom střihu šlo ve správném pořadí a správně otočené. Canva ani Pages to neumí, desktopové DTP je pro teenagery overkill. Naše appka dá 8 (nebo 16/booklet) stránek, fotky, kreslení Pencilem, fonty a vyexportuje tiskové PDF s ořezovými značkami — offline, bez účtu.",
+      "niche": "Tvorba mini-zinů a sešitových bookletů s automatickou imposicí pro tisk. Velcí designéři (Canva, Adobe Express) cílí na sociální sítě a letáky, tisk skládaného sešitu je pro ně okrajový use-case, a proto ho neřeší.",
+      "parent_market": "Grafické šablony a DTP — Canva, Adobe Express, Affinity Publisher; tiskové šablony na Etsy (prodej PDF šablon zinů a bookletů).",
+      "target_user": "Teenageři a studenti umění, ilustrátoři, učitelé (výtvarka, čeština — „vyrob si časopis“), punk/DIY komunity, knihovny a festivaly zinů.",
+      "features": [
+        "Šablony 8stránkový mini-zine (1 list), 16stránkový a sešitový booklet se sešívanou vazbou",
+        "Automatická imposice + tiskové PDF (A4/Letter, ořezové a skládací značky)",
+        "Fotky, text, kreslení Apple Pencilem, koláž a efekt fotokopie",
+        "Náhled 3D přeložení a návod ke skládání",
+        "Export PNG pro sdílení na sociální sítě"
+      ],
+      "offline": "full",
+      "offline_note": "Vše na zařízení: layout, PDFKit export, kreslení PencilKit; projekty v iCloud Drive. Žádný server.",
+      "monetization": "Zdarma 1 projekt s vodoznakem; Pro unlock 6,99 USD (≈ 160 Kč) jednorázově, volitelně balíček fontů/textur 2,99 USD (≈ 70 Kč).",
+      "revenue_math": "Ideál: 2000 stažení/měs. × 5 % platících = 100 plateb × 6.99 USD (jednorázový Pro unlock) ≈ 699 USD hrubého; po 15% provizi Apple ≈ 594 USD ≈ 13665 Kč čistého/měs. 2000 stažení je strop pro cluster „zine maker / mini zine / booklet maker“ ve 20+ jazycích; bez lokalizace spíš 800.",
+      "revenue_czk_ideal": 13665,
+      "keywords": [
+        {
+          "kw": "zine maker",
+          "saturation": 2,
+          "competitor": "odhad: 1–2 malé appky",
+          "note": "Odhad (offline běh, autocomplete neověřen); z mé znalosti existuje jen pár malých appek s „zine“ v názvu."
+        },
+        {
+          "kw": "mini zine",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "Odhad; fráze používaná v tutorialech a na Etsy, dedikovanou iOS appku neznám."
+        },
+        {
+          "kw": "booklet maker",
+          "saturation": 3,
+          "competitor": "obecné booklet/PDF nástroje",
+          "note": "Odhad; na iOS existují spíš PDF imposition utility pro tiskárny."
+        },
+        {
+          "kw": "make a magazine",
+          "saturation": 3,
+          "competitor": "magazine cover makery",
+          "note": "Odhad; výsledky zaplevelené generátory falešných titulek časopisů."
+        }
+      ],
+      "demand_evidence": "Neověřeno živými daty. Ze znalosti: zine festivaly a knihovní workshopy rostou, Etsy prodává tisíce PDF šablon zinů, tutoriály „how to fold a mini zine“ mají miliony zhlédnutí. Že lidé hledají v App Store právě „zine maker“, je předpoklad k ověření přes apple_fetch.py check.",
+      "competitors": [
+        {
+          "name": "Canva",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr grafických šablon; tiskovou imposici skládaného zinu nedělá."
+        },
+        {
+          "name": "Adobe Express",
+          "url": "",
+          "role": "parent",
+          "note": "Silný v letácích a sociálních sítích, ne v sešitovém tisku."
+        },
+        {
+          "name": "Affinity Publisher (iPad)",
+          "url": "",
+          "role": "parent",
+          "note": "Profesionální DTP, umí imposici, ale je složitý a drahý pro teenagery."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Tiny a sezónní trh: poptávka je hlavně od studentů v semestru, v létě může spadnout na polovinu.",
+        "Canva přidá šablonu „foldable zine“ s imposicí za týden a vezme celý trh jedním updatem.",
+        "Teenageři (hlavní uživatelé) málo platí a často nemají platební metodu — konverze může být 2 %, ne 5 %.",
+        "Kategorie Magazines & Newspapers má nízký provoz; appka bude asi muset žít v Graphics & Design, kde je větší konkurence."
+      ],
+      "killer_risk": "Malá placená poptávka: zine komunita je DIY a anti-komerční, raději použije zdarma šablonu v Canvě nebo papír a nůžky.",
+      "mitigation": "Cílit i na učitele a knihovny (třídní licence přes Family Sharing/Volume Purchase), nízká jednorázová cena místo předplatného, vodoznak jako virální prvek na vytištěných zinech.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-02",
+      "name": "Clipping Keeper",
+      "tagline": "Vyfoť výstřižek z novin, appka ho narovná, přečte, označí datem a zdrojem a uloží do archivu.",
+      "pitch": "Výstřižky z novin — parte, svatební oznámení, článek o dítěti ze zápasu, zmínka o firmě — se doma ztrácí v krabicích a žloutnou. Obecné skenery (CamScanner, Notes) je sice vyfotí, ale neumí zdroj, datum vydání, stránku, osoby ani citaci pro rodokmen. Naše appka spojí sken po sloupcích (i článek přes dva sloupce/přelom stránky), on-device OCR, fulltextové hledání, štítky osob a export PDF „scrapbook“ i genealogické citace. Nikdo tenhle přesný job-to-be-done na iOS nedělá dobře.",
+      "niche": "Archivace novinových výstřižků s metadaty (noviny, datum, strana, osoby) pro rodinnou historii a genealogii. Skenerovým gigantům je nika moc malá a genealogické platformy (Ancestry, MyHeritage) chtějí, aby lidé hledali v jejich placených novinových archivech, ne archivovali vlastní papír.",
+      "parent_market": "Mobilní skenery dokumentů (CamScanner, Adobe Scan, Genius Scan) a genealogie (Ancestry, MyHeritage, Newspapers.com) — oba trhy s vysokým ARPU předplatných.",
+      "target_user": "Rodinní genealogové (často 55+), rodiče dětí sportovců a umělců, lokální historici, spolky a obecní kronikáři.",
+      "features": [
+        "Skener výstřižku s narovnáním a spojením více fotek jednoho článku",
+        "On-device OCR (Vision) + fulltext přes celou sbírku",
+        "Metadata: noviny, datum, strana, osoby, místo; časová osa",
+        "Export PDF scrapbooku a citace pro genealogii (GEDCOM poznámka / text)",
+        "iCloud sync, rodinné sdílení alba přes CloudKit"
+      ],
+      "offline": "full",
+      "offline_note": "VisionKit skener, Vision OCR a hledání běží na zařízení; synchronizace přes iCloud/CloudKit (Apple). Žádné licencované archivy.",
+      "monetization": "Zdarma 25 výstřižků; Pro 19,99 USD/rok (≈ 460 Kč) nebo lifetime 39,99 USD (≈ 920 Kč).",
+      "revenue_math": "Ideál: 1200 stažení/měs. × 4 % platících = 48 plateb × 19.99 USD (roční předplatné) ≈ 960 USD hrubého; po 15% provizi Apple ≈ 816 USD ≈ 18759 Kč čistého/měs. Zdrojem stažení jsou genealogové a rodiče sportovců; 1200/měs. předpokládá lokalizaci a slova „newspaper clipping“, „obituary scanner“, „scrapbook scanner“.",
+      "revenue_czk_ideal": 18759,
+      "keywords": [
+        {
+          "kw": "newspaper clipping",
+          "saturation": 2,
+          "competitor": "odhad: žádná silná dedikovaná appka",
+          "note": "Odhad (offline, bez autocomplete); z mé znalosti jen pár malých archivérů."
+        },
+        {
+          "kw": "obituary scanner",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "Odhad; genealogové tu frázi používají, dedikovanou iOS appku neznám."
+        },
+        {
+          "kw": "clipping scanner",
+          "saturation": 2,
+          "competitor": "obecné skenery",
+          "note": "Odhad; výsledky ovládají obecné PDF skenery."
+        },
+        {
+          "kw": "scrapbook scanner",
+          "saturation": 4,
+          "competitor": "Photomyne / foto skenery",
+          "note": "Odhad; foto-skenery starých fotek jsou silné a mohou klíčové slovo přebít."
+        }
+      ],
+      "demand_evidence": "Ověřené je jen to, že CamScanner (evidence productivity) je obrovský parent trh. Poptávka po archivu výstřižků je odhad ze znalosti genealogických komunit (fóra, skupiny na Facebooku) a úspěchu Photomyne u skenování starých fotek; hledanost v App Store neověřena.",
+      "competitors": [
+        {
+          "name": "CamScanner - PDF Scanner App",
+          "url": "https://apps.apple.com/om/app/camscanner-pdf-scanner-app/id388627783",
+          "role": "parent",
+          "note": "Lídr skenerů; výstřižek naskenuje, ale bez novinových metadat a citací."
+        },
+        {
+          "name": "Photomyne",
+          "url": "",
+          "role": "parent",
+          "note": "Skenování starých fotek a alb — nejbližší analog, výstřižky řeší jen okrajově."
+        },
+        {
+          "name": "Ancestry",
+          "url": "",
+          "role": "parent",
+          "note": "Genealogický gigant; přes Newspapers.com prodává archivy, vlastní papír nearchivuje."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Apple Notes/Files mají skener s OCR zdarma a pro mnoho lidí bude „stačit“ — Sherlock riziko je už dnes.",
+        "Cílovka 55+ často neumí najít appku přes vyhledávání a vyžaduje podporu; recenze mohou trpět UX problémy.",
+        "Jednorázový job: kdo naskenuje krabici výstřižků, předplatné po roce zruší — retence je slabá.",
+        "Sloupcové OCR starých novin (fraktura, špatný tisk) bude chybovat a lidé to vyčtou v recenzích."
+      ],
+      "killer_risk": "„Stačí mi Poznámky“: vestavěný skener s Live Text je zdarma a dost dobrý pro většinu lidí.",
+      "mitigation": "Prodávat metadata a výstup (časová osa rodiny, PDF kniha, citace), ne sken; lifetime cena pro „krabicový“ jednorázový use-case.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-03",
+      "name": "Wedding Newspaper Maker",
+      "tagline": "Svatební program ve stylu novin — text, fotky, křížovka o novomanželích, tiskové PDF za pár minut.",
+      "pitch": "„Wedding newspaper“ program je hitem amerických a britských svateb: místo nudné kartičky dostanou hosté noviny s příběhem páru, programem dne, kvízem a křížovkou. Dnes se to dělá přes Etsy šablony do Canvy za 15–30 USD a mnoho hodin přetahování textových rámečků. Naše appka to udělá průvodcem: odpovíš na otázky, vložíš fotky, vygeneruje se křížovka z vašich slov a layout novin se sám zalomí — export PDF pro tiskárnu. Mimo angličtinu trend skoro nikdo neobslouží.",
+      "niche": "Novinový svatební program (a obdobně „výroční“ noviny k narozeninám/výročí). Canva a Etsy prodávají statické šablony, generátor s automatickým zalomením a křížovkou z vlastních slov neexistuje.",
+      "parent_market": "Svatební plánovače (The Knot, Zola) a prodej svatebních tiskových šablon na Etsy/Canva — prokazatelně utrácející cílovka.",
+      "target_user": "Snoubenci 25–35 let, kteří si svatbu dělají „DIY“, svatební koordinátoři; sekundárně oslavy výročí a 50. narozenin.",
+      "features": [
+        "Průvodce obsahem: příběh páru, program, menu, hosté, FAQ",
+        "Automatické sazby novinového layoutu (sloupce, titulek, datum vydání)",
+        "Generátor křížovky a word search z vlastních slov páru",
+        "Tiskové PDF (A3/Tabloid skládané) + PNG pro sdílení",
+        "Šablony stylů: vintage, moderní, minimal; 50 jazyků"
+      ],
+      "offline": "full",
+      "offline_note": "Layout, generátor křížovky (vlastní algoritmus) a export PDF běží na zařízení; nic se neposílá na server.",
+      "monetization": "Návrh zdarma; export bez vodoznaku 9,99 USD (≈ 230 Kč) za projekt, balíček prémiových stylů 4,99 USD (≈ 115 Kč).",
+      "revenue_math": "Ideál: 1200 stažení/měs. × 7 % platících = 84 plateb × 9.99 USD (jednorázový export svatby) ≈ 839 USD hrubého; po 15% provizi Apple ≈ 713 USD ≈ 16406 Kč čistého/měs. Svatby jsou sezónní (květen–září); mimo sezónu počítat s polovinou. Ideál předpokládá lokalizaci do DE/FR/NL/CZ/PL, kde trend teprve přichází.",
+      "revenue_czk_ideal": 16406,
+      "keywords": [
+        {
+          "kw": "wedding newspaper",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "Odhad (bez autocomplete); z mé znalosti žádná dedikovaná iOS appka, trh drží Etsy šablony."
+        },
+        {
+          "kw": "wedding program maker",
+          "saturation": 3,
+          "competitor": "invitation makery",
+          "note": "Odhad; svatební pozvánkové appky jsou silné, ale program-noviny nedělají."
+        },
+        {
+          "kw": "newspaper template",
+          "saturation": 3,
+          "competitor": "fake newspaper generátory",
+          "note": "Odhad; zaplevelené prank generátory titulků."
+        },
+        {
+          "kw": "birthday newspaper",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad; v DE/UK se prodávají historické noviny k narozeninám, šablonovou appku neznám."
+        }
+      ],
+      "demand_evidence": "Neověřeno živě. Ze znalosti: na Etsy existují tisíce prodávaných šablon „wedding newspaper program“ s desítkami tisíc recenzí a Pinterest trend je silný od ~2022. Že lidé totéž hledají v App Store, je předpoklad.",
+      "competitors": [
+        {
+          "name": "Canva",
+          "url": "",
+          "role": "parent",
+          "note": "Hlavní nástroj, kam kupci Etsy šablony importují."
+        },
+        {
+          "name": "Greetings Island",
+          "url": "",
+          "role": "parent",
+          "note": "Pozvánky a svatební tiskoviny; novinový program nemá jako produkt."
+        },
+        {
+          "name": "Zola",
+          "url": "",
+          "role": "parent",
+          "note": "Svatební plánovač s tiskovinami (server, USA)."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Trend „wedding newspaper“ je silný v USA/UK a řeší se anglickými Etsy šablonami; v DE/FR/NL/CZ/PL/BR není lokalizovaný nástroj a lokalizace textů (programové fráze, typografie data) je naše výhoda.",
+      "devils_advocate": [
+        "Jednorázový use-case: každý uživatel zaplatí max. jednou, žádné opakované příjmy a nulová retence.",
+        "Trend může odeznít stejně rychle jako přišel (Pinterest módní vlna).",
+        "Lidé chtějí svatbu na počítači s partnerem a tiskárnou, iPhone je pro sazbu novin malý — iPad je nutnost.",
+        "Etsy prodejci šablon mohou mít levnější a hezčí designy; náš layout musí být skutečně krásný."
+      ],
+      "killer_risk": "Nízký objem: i v ideálu jen stovky svateb měsíčně najdou appku v App Store místo Etsy/Pinterestu.",
+      "mitigation": "Rozšířit na výroční/narozeninové noviny (celoroční poptávka), kvalitní typografie a vzorové ukázky v screenshotech, lokalizace do 20+ jazyků.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 7,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-04",
+      "name": "Arrowword Puzzles",
+      "tagline": "Švédské křížovky jako z trafiky — v češtině, polštině, němčině a severských jazycích, offline.",
+      "pitch": "V ČR, Polsku, Německu a Skandinávii se každý týden prodávají statisíce výtisků křížovkářských časopisů se švédskými křížovkami (tajenky, šipky v políčkách). App Store je přitom zaplněný anglickými křížovkami, zatímco kvalitních švédských křížovek v češtině nebo polštině je minimum a často jsou plné reklam. Naše appka nabídne vlastní generované křížovky z licencovatelně čistého slovníku a vlastních legend, velké písmo pro seniory a denní tajenku — jako předplatné křížovkářského časopisu, ale v telefonu.",
+      "niche": "Švédská křížovka (arrowword) v menších evropských jazycích. Globální hráči dělají anglické crosswords, lokální vydavatelé křížovkářských časopisů do appek neinvestují.",
+      "parent_market": "Křížovky a slovní hry — NYT Games (Crossword), Penny Dell Puzzles, německé Kreuzworträtsel appky; tištěné křížovkářské časopisy (Křížovky Bravo, Kreuzworträtsel-Magazine).",
+      "target_user": "Senioři a lidé 45+ v CZ/SK/PL/DE/AT/SE/NO/DK/FI, kteří luští tištěné křížovky.",
+      "features": [
+        "Generátor švédských křížovek s legendami v políčkách a tajenkou",
+        "Denní křížovka + archiv, obtížnosti",
+        "Velké písmo, vysoký kontrast, tlačítko „prozraď písmeno“",
+        "Offline slovníky legend pro CZ, SK, PL, DE, SE, NO, DK, FI",
+        "Statistiky a série bez sociálních funkcí"
+      ],
+      "offline": "full",
+      "offline_note": "Slovník hesel a legend je přibalený; generátor a kontrola běží na zařízení. Reklamy (volitelné) jsou jediná síťová funkce.",
+      "monetization": "Zdarma denní křížovka + reklamy; předplatné 2,99 USD/měs. (≈ 69 Kč) nebo 19,99 USD/rok (≈ 460 Kč) za neomezený archiv bez reklam.",
+      "revenue_math": "Ideál: 3000 stažení/měs. × 3 % = 90 nových předplatitelů měsíčně; při 20% měsíčním odpadu se ustálí ~450 aktivních × 2,99 USD ≈ 1345 USD hrubého ≈ 1143 USD čistého ≈ 26300 Kč/měs. (+ reklamy). Senioři mají nízký podíl předplatného, ale vysokou věrnost.",
+      "revenue_czk_ideal": 26300,
+      "keywords": [
+        {
+          "kw": "švédské křížovky",
+          "saturation": 3,
+          "competitor": "lokální appky s reklamami",
+          "note": "Odhad (bez autocomplete); z mé znalosti existuje několik slabších CZ appek."
+        },
+        {
+          "kw": "krzyżówki panoramiczne",
+          "saturation": 4,
+          "competitor": "polské křížovkové appky",
+          "note": "Odhad; PL trh křížovek je silný, v App Store spíš na Androidu."
+        },
+        {
+          "kw": "schwedenrätsel",
+          "saturation": 6,
+          "competitor": "DE Kreuzworträtsel appky",
+          "note": "Odhad; německý trh je nejplnější — tam spíš HARD."
+        },
+        {
+          "kw": "arrowword",
+          "saturation": 3,
+          "competitor": "UK arrowword appky",
+          "note": "Odhad; v UK existuje několik appek, v US je formát neznámý."
+        }
+      ],
+      "demand_evidence": "Neověřeno živě. Ze znalosti: tištěné křížovkářské časopisy patří v CZ/PL/DE k nejprodávanějším titulům na trafikách; Google Play má v těchto jazycích appky se statisíci staženími, iOS je slabší. Konkrétní saturace v App Store je odhad.",
+      "competitors": [
+        {
+          "name": "NYT Games",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr slovních her, jen anglicky."
+        },
+        {
+          "name": "Penny Dell Puzzles",
+          "url": "",
+          "role": "parent",
+          "note": "Americký vydavatel luštěninových časopisů s appkou (angličtina)."
+        },
+        {
+          "name": "Schwedenrätsel (DE indie appky)",
+          "url": "",
+          "role": "niche",
+          "note": "Několik německých appek; v CZ/PL/Nordic slabší nabídka."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Opačný gap: formát je obří v DE/PL/CZ/Skandinávii, ale globální (US) puzzle appky ho v těchto jazycích nenabízí. Uvádíme lokální jazyky první, angličtinu (arrowword) až potom.",
+      "devils_advocate": [
+        "Kvalitní legendy (definice hesel) v každém jazyce jsou obrovská práce; strojově vygenerované legendy budou senioři kritizovat.",
+        "Wiktionary/otevřené slovníky mají licenci CC BY-SA — nutná atribuce a pozor na share-alike u odvozené databáze legend.",
+        "V DE je trh plný a v malých jazycích je celkový počet iPhonů seniorů omezený.",
+        "Hra spíš patří do kategorie Games/Word, v Magazines bude mít menší objevitelnost."
+      ],
+      "killer_risk": "Kvalita obsahu: generátor bez dobré databáze legend produkuje nudné nebo chybné křížovky a hodnocení spadne.",
+      "mitigation": "Začít jedním jazykem (CZ) s ručně kurátorovanou databází ~20 000 legend, pak přidávat jazyky s rodilými korektory; Apple Foundation Models jen jako pomocník, ne autor.",
+      "build_weeks": 8,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-05",
+      "name": "Church Bulletin Maker",
+      "tagline": "Týdenní farní zpravodaj za 10 minut: šablona, liturgický kalendář, tisk jako sešit.",
+      "pitch": "Každý týden tisíce farností a sborů skládají zpravodaj/ohlášky — typicky dobrovolník ve Wordu, který bojuje s rozložením sešitu. Existují drahé webové služby a tiskové servisy v USA, ale mobilní offline nástroj pro malé farnosti chybí. Naše appka má šablony pro sešit A5/Letter, přibalený liturgický kalendář (počítaný na zařízení), sekce ohlášek, úmysly, rozpis služeb a exportuje tiskové PDF se správnou imposicí.",
+      "niche": "Tvorba týdenních církevních zpravodajů pro malé farnosti a sbory. Webové služby cílí na velké americké církve s předplatným, malé evropské a latinskoamerické farnosti nikdo neobslouží.",
+      "parent_market": "Church management a tiskové služby (Planning Center, Faithlife, LPi bulletin services) + Canva šablony pro církve.",
+      "target_user": "Farní sekretářky, kněží a pastoři malých sborů, dobrovolníci; USA, Latinská Amerika, Filipíny, Polsko, Německo (Pfarrbrief), ČR.",
+      "features": [
+        "Šablony zpravodaje (skládaný sešit A5/Letter, jednostrana)",
+        "Liturgický kalendář počítaný offline (neděle, svátky, barvy)",
+        "Opakované sekce: ohlášky, úmysly, rozpis služeb, sbírky",
+        "Tiskové PDF s imposicí + PNG pro web/Facebook",
+        "Duplikace minulého čísla jedním klepnutím"
+      ],
+      "offline": "full",
+      "offline_note": "Liturgický kalendář je algoritmus (výpočet Velikonoc apod.), žádné licencované texty; layout a PDF na zařízení.",
+      "monetization": "Zdarma s vodoznakem; Pro 29,99 USD/rok (≈ 690 Kč) nebo 3,99 USD/měs. (≈ 92 Kč).",
+      "revenue_math": "Ideál: 700 stažení/měs. × 5 % platících = 35 plateb × 29.99 USD (roční předplatné) ≈ 1050 USD hrubého; po 15% provizi Apple ≈ 892 USD ≈ 20521 Kč čistého/měs. Farnosti a sbory platí z rozpočtu a mají týdenní opakovaný job — retence vysoká. 700 stažení/měs. předpokládá EN + ES + PT + DE + PL.",
+      "revenue_czk_ideal": 20521,
+      "keywords": [
+        {
+          "kw": "church bulletin",
+          "saturation": 3,
+          "competitor": "webové bulletin služby",
+          "note": "Odhad (bez autocomplete); z mé znalosti existuje pár appek, většinou companion k webu."
+        },
+        {
+          "kw": "bulletin maker",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad; malá konkurence na iOS."
+        },
+        {
+          "kw": "parish newsletter",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "Odhad; dedikovanou appku neznám."
+        },
+        {
+          "kw": "pfarrbrief",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "Odhad; DE farnosti řeší ve Wordu / Pfarrbriefservice.de (web)."
+        }
+      ],
+      "demand_evidence": "Neověřeno živě. Ze znalosti: LPi a podobné firmy v USA vydělávají na tisku bulletinů pro tisíce farností; Canva má celé sekce církevních šablon. Mobilní hledanost „church bulletin“ je předpoklad.",
+      "competitors": [
+        {
+          "name": "Canva",
+          "url": "",
+          "role": "parent",
+          "note": "Šablony pro církve, ale bez sešitové imposice a liturgického kalendáře."
+        },
+        {
+          "name": "Planning Center",
+          "url": "",
+          "role": "parent",
+          "note": "Church management (server), bulletin jen okrajově."
+        },
+        {
+          "name": "Faithlife",
+          "url": "",
+          "role": "parent",
+          "note": "Platforma pro církve s webovými nástroji."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Americký model placených bulletin služeb a nástrojů neexistuje lokalizovaně pro PL/DE/CZ/ES/PT farnosti; lokalizujeme liturgický kalendář a typografii.",
+      "devils_advocate": [
+        "Farnosti skládají zpravodaj na PC ve Wordu; přesvědčit je k iPadu může být nemožné.",
+        "Rozdíly mezi denominacemi (katolíci, luteráni, baptisté) = mnoho variant kalendářů a šablon.",
+        "Náboženský obsah může v některých zemích přinést negativní recenze a Apple review otázky ohledně lokálních zákonů.",
+        "Rozhodovatel (kněz) není uživatel (dobrovolník) — nákup předplatného se zadrhne na schvalování."
+      ],
+      "killer_risk": "Nesoulad platformy: práce se dělá na počítači a appka pro iPhone/iPad to nezmění.",
+      "mitigation": "Mac Catalyst verze od začátku (jeden kód), import textu z minulého čísla, jednoduchá roční licence jako „na farnost“.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-06",
+      "name": "Large Print Word Search",
+      "tagline": "Osmisměrky s opravdu velkým písmem pro seniory — jako luštěninový časopis, bez reklamního chaosu.",
+      "pitch": "Senioři patří k nejvěrnějším čtenářům luštěninových časopisů a osmisměrky jsou u nich nejoblíbenější. V App Store je sice spousta word search her, ale většina má malá písmena, agresivní reklamy a hustou mřížku. Naše appka je navržená pro 70+: obří písmo, málo slov, žádné časovače, jednoduché ovládání a tematická „čísla časopisu“ (zahrada, vaření, cestování) v mnoha jazycích.",
+      "niche": "Osmisměrky s velkým písmem pro seniory a slabozraké. Obecné word search hry optimalizují na monetizaci reklam a rychlost, ne na čitelnost.",
+      "parent_market": "Word search a slovní hry pro seniory — Penny Dell Puzzles, Word Search (mnoho free-to-play titulů), tištěné „large print“ luštěnky na Amazonu (bestsellery).",
+      "target_user": "Senioři 65+, lidé se zhoršeným zrakem, rodiny, které instalují appku babičce.",
+      "features": [
+        "Mřížky 8×8 až 12×12 s obřím písmem a vysokým kontrastem",
+        "Tematická „čísla“ po 20 osmisměrkách",
+        "Bez časovače, bez vyskakovacích reklam, velká tlačítka",
+        "Offline slovníky ve 20+ jazycích",
+        "Režim pro Apple TV/iPad na stole"
+      ],
+      "offline": "full",
+      "offline_note": "Generátor a slovníky na zařízení; žádná síť potřeba.",
+      "monetization": "Zdarma 1 číslo; odemknutí všeho 4,99 USD (≈ 115 Kč) jednorázově nebo 9,99 USD/rok (≈ 230 Kč) za nová čísla.",
+      "revenue_math": "Ideál: 4000 stažení/měs. × 3 % = 120 nákupů × 4,99 USD ≈ 599 USD hrubého ≈ 509 USD čistého ≈ 11700 Kč + roční předplatné nových čísel (~3000 Kč) ≈ 14700 Kč/měs. Hlavní klíčové slovo „word search“ je přeplněné, spoléháme na „large print“ varianty.",
+      "revenue_czk_ideal": 14700,
+      "keywords": [
+        {
+          "kw": "large print word search",
+          "saturation": 3,
+          "competitor": "large-print word search tituly",
+          "note": "Odhad (bez autocomplete); z mé znalosti existuje několik appek, žádná dominantní."
+        },
+        {
+          "kw": "word search for seniors",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "Odhad; seniorské zacílení v názvech řídké."
+        },
+        {
+          "kw": "big font word search",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad."
+        },
+        {
+          "kw": "word search",
+          "saturation": 10,
+          "competitor": "desítky F2P her",
+          "note": "Odhad; head term je SATURATED, jen parent."
+        }
+      ],
+      "demand_evidence": "Neověřeno živě. Ze znalosti: large-print luštěnky patří mezi bestsellery Amazonu v kategorii puzzle knih; word search appky mají miliony stažení. Hledanost varianty „large print“ v App Store je předpoklad.",
+      "competitors": [
+        {
+          "name": "Penny Dell Puzzles",
+          "url": "",
+          "role": "parent",
+          "note": "Vydavatel luštěnek s appkou; široká nabídka, ne seniorské UX."
+        },
+        {
+          "name": "Word Search (free-to-play hry)",
+          "url": "",
+          "role": "parent",
+          "note": "Mnoho titulů s reklamami; malé písmo."
+        },
+        {
+          "name": "Large Print Word Search (indie tituly)",
+          "url": "",
+          "role": "niche",
+          "note": "Několik menších appek, kvalita a lokalizace slabé."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Head term je saturovaný a „large print“ varianty mohou mít malou hledanost — objevitelnost je hlavní problém.",
+        "Senioři často nenakupují in-app, instaluje jim to rodina; konverze může být pod 2 %.",
+        "Guideline 4.3: word search je šablonovitý žánr, reviewer může appku vnímat jako klon.",
+        "Velké písmo zvládne iOS Dynamic Type; konkurence to přidá snadno."
+      ],
+      "killer_risk": "Objevitelnost: v moři word search her se niche varianta neprosadí nad top 10.",
+      "mitigation": "Lokalizované názvy („osmisměrky velké písmo“, „Suchsel große Schrift“) v 20+ jazycích, kde je konkurence menší; screenshoty ukazující rozdíl v čitelnosti.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 4,
+        "monetization": 6,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-07",
+      "name": "Back Issue Index",
+      "tagline": "Vyfoť obsah každého čísla a konečně najdi, ve kterém časopise byl ten návod.",
+      "pitch": "Kutilové, modeláři, švadleny a zahrádkáři mají doma desítky let starých časopisů plných návodů — a nikdy nenajdou, ve kterém čísle byl ten konkrétní projekt. Naše appka vyfotí obsah (table of contents) každého čísla, on-device OCR ho přečte a vytvoří hledatelný index celé sbírky: „dovetail jig“ → Wood Magazine, březen 2014, str. 42, krabice 3. Nic takového na iOS neznám a digitální archivy vydavatelů jsou drahé a jen pro jeden titul.",
+      "niche": "Hledatelný index obsahu vlastní sbírky tištěných hobby časopisů. Vydavatelé prodávají digitální archivy jen svých titulů, obecné skenery indexaci po článcích nedělají.",
+      "parent_market": "Skenery dokumentů (CamScanner, Adobe Scan) a digitální archivy časopisů (Zinio, Readly, archivy vydavatelů na DVD/online).",
+      "target_user": "Truhláři, modeláři, železniční modeláři, patchworkářky, pletařky, kutilové a zahrádkáři 40+ se sbírkou tištěných časopisů.",
+      "features": [
+        "Foto obsahu čísla → OCR → položky článků se stranami",
+        "Fulltext napříč celou sbírkou, filtry podle titulu/roku",
+        "Umístění fyzického výtisku (krabice, police)",
+        "Volitelná fotka stránek s návodem pro rychlý náhled",
+        "Export indexu do CSV/PDF"
+      ],
+      "offline": "full",
+      "offline_note": "VisionKit + Vision OCR na zařízení, lokální SQLite/SwiftData fulltext, iCloud sync.",
+      "monetization": "Zdarma 10 čísel; Pro 9,99 USD (≈ 230 Kč) jednorázově.",
+      "revenue_math": "Ideál: 1000 stažení/měs. × 6 % platících = 60 plateb × 9.99 USD (jednorázový Pro unlock) ≈ 599 USD hrubého; po 15% provizi Apple ≈ 509 USD ≈ 11718 Kč čistého/měs. Cílovka jsou hobby čtenáři s hromadami čísel (dřevo, modelářství, patchwork, kutilství); 1000/měs. je horní hranice.",
+      "revenue_czk_ideal": 11718,
+      "keywords": [
+        {
+          "kw": "magazine index",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "Odhad (bez autocomplete); dedikovanou appku neznám."
+        },
+        {
+          "kw": "magazine organizer",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad; výsledky spíš knihovní katalogy."
+        },
+        {
+          "kw": "table of contents scanner",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "Odhad; fráze možná bez hledanosti — ověřit."
+        },
+        {
+          "kw": "woodworking magazine",
+          "saturation": 3,
+          "competitor": "vydavatelské appky",
+          "note": "Odhad; obsazené publisher appkami, jen pro doplňkové zacílení."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Ze znalosti: fóra truhlářů a modelářů mají opakované dotazy „který časopis měl návod na…“ a komunitní indexy (weby a Excel tabulky) pro Fine Woodworking/Model Railroader. Hledanost v App Store je nejistá — klíčová slova je nutné ověřit.",
+      "competitors": [
+        {
+          "name": "CamScanner - PDF Scanner App",
+          "url": "https://apps.apple.com/om/app/camscanner-pdf-scanner-app/id388627783",
+          "role": "parent",
+          "note": "Obecný skener; neindexuje obsah časopisů."
+        },
+        {
+          "name": "CLZ Books / katalogy knih",
+          "url": "",
+          "role": "parent",
+          "note": "Katalogizace knih, ne článků v časopisech."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Může jít o nulovou hledanost: lidé nevědí, že takovou appku mohou hledat, a nezadají „magazine index“.",
+        "Pracnost: vyfotit obsah 300 čísel je otrava, uživatel to vzdá po 20 číslech.",
+        "OCR obsahů s grafickým layoutem (sloupce, čísla stran vedle názvů) bude nepřesné.",
+        "Blízko nápadu Magazine Collection Tracker — spojit, jinak riziko 4.3 v portfoliu."
+      ],
+      "killer_risk": "Chybí vyhledávací poptávka: problém existuje, ale lidé ho neřeší hledáním v App Store.",
+      "mitigation": "Ověřit apple_fetch check na „magazine index/organizer“; případně sloučit s Collection Trackerem jako jednu appku s dvěma režimy.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-08",
+      "name": "Magazine Collection Tracker",
+      "tagline": "Sbírka časopisů pod kontrolou: která čísla máš, která chybí, v jakém stavu a za kolik.",
+      "pitch": "Sběratelé National Geographic, MAD, Rolling Stone, Vogue, retro herních časopisů (Score, Excalibur) nebo vintage Playboye potřebují vědět, co mají a co jim chybí. Komiksy mají CLZ a Key Collector, manga má desítku trackerů, ale časopisy nemají nic dedikovaného. Appka nabídne mřížku ročníků se zvýrazněnými mezerami, stav (grading), cenu nákupu, fotky obálek a wishlist na burzy — offline, s ručně zadávanými nebo sdílenými seznamy titulů.",
+      "niche": "Evidence sbírky časopisů po ročnících a číslech. Komiksoví a knižní katalogizátoři časopisy řeší jen okrajově, protože nemají ISBN databázi.",
+      "parent_market": "Sběratelské trackery — CLZ Comics, Key Collector (komiksy), manga trackery, trackery hodinek a mincí; eBay trh vintage časopisů.",
+      "target_user": "Sběratelé vintage a retro časopisů, prodejci na burzách a eBay, fanoušci herních a hudebních časopisů 80.–90. let.",
+      "features": [
+        "Mřížka ročník × číslo se zvýrazněním chybějících čísel",
+        "Stav (grading), cena nákupu, odhad hodnoty ručně",
+        "Fotky obálek, skenování čárového kódu čísla (EAN/UPC s add-on)",
+        "Wishlist pro burzy, export seznamu chybějících",
+        "Šablony titulů (počty čísel ročně) sdílené přes soubor"
+      ],
+      "offline": "full",
+      "offline_note": "Bez databáze vydavatelů: titul a periodicitu zadá uživatel (nebo importuje sdílený soubor); čárové kódy přes VisionKit; iCloud sync.",
+      "monetization": "Zdarma 1 titul; Pro 9,99 USD (≈ 230 Kč) jednorázově, případně 14,99 USD/rok s exporty.",
+      "revenue_math": "Ideál: 1200 stažení/měs. × 6 % platících = 72 plateb × 9.99 USD (jednorázový Pro unlock) ≈ 719 USD hrubého; po 15% provizi Apple ≈ 611 USD ≈ 14062 Kč čistého/měs. Sběratelé platí rádi (analogie manga/hodinky/mince trackerů); 1200 stažení předpokládá „magazine collection“ + lokalizované varianty.",
+      "revenue_czk_ideal": 14062,
+      "keywords": [
+        {
+          "kw": "magazine collection",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad (bez autocomplete); z mé znalosti žádný silný dedikovaný tracker."
+        },
+        {
+          "kw": "magazine tracker",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad."
+        },
+        {
+          "kw": "back issues",
+          "saturation": 3,
+          "competitor": "publisher appky",
+          "note": "Odhad; obsazené vydavatelskými appkami se starými čísly."
+        },
+        {
+          "kw": "collection tracker",
+          "saturation": 7,
+          "competitor": "obecné sběratelské appky",
+          "note": "Odhad; generický termín je plný."
+        }
+      ],
+      "demand_evidence": "Ověřeno z evidence (books): manga collection tracker je SATURATED (9+ appek 2025–26) — sběratelské trackery tedy mají poptávku i vývojáře; časopisová varianta tam není. Samotná hledanost „magazine collection“ je odhad.",
+      "competitors": [
+        {
+          "name": "Manga Collector",
+          "url": "https://apps.apple.com/us/app/manga-collector/id6761459577",
+          "role": "parent",
+          "note": "Analogický sběratelský tracker; manga niche je dle evidence přeplněná, časopisy ne."
+        },
+        {
+          "name": "CLZ Comics",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr komiksových sbírek s předplatným; časopisy nepokrývá."
+        },
+        {
+          "name": "Key Collector Comics",
+          "url": "",
+          "role": "parent",
+          "note": "Komiksy + ceny; server-based."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Bez hotové databáze titulů je zadávání pracné — konkurence s databází (CLZ) je pohodlnější.",
+        "Sběratelé časopisů jsou výrazně menší skupina než sběratelé komiksů a manga.",
+        "Obecné katalogizátory (Sortly, Libib) mohou stačit a jsou zdarma.",
+        "Hodnota čísel se mění a uživatelé budou chtít živé ceny z eBay — to je server/API."
+      ],
+      "killer_risk": "Příliš malá cílovka, která navíc chce databázi a ceny, které offline nedodáme.",
+      "mitigation": "Sdílené komunitní šablony titulů (soubor přes AirDrop/web bez našeho serveru), zaměřit se na retro herní a hudební časopisy, kde jsou komunity aktivní.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-09",
+      "name": "Offline Reading List",
+      "tagline": "Ulož článek, čti ho v metru bez signálu nebo si ho nech přečíst nahlas — bez účtu a bez serveru.",
+      "pitch": "Pocket skončil v roce 2025 a Omnivore o rok dřív; miliony lidí hledaly náhradu a mnoho z nich nechce další účet a další službu, která může zmizet. Naše appka je local-first: stáhne článek přímo do zařízení (reader mode), synchronizuje přes vlastní iCloud uživatele, čte nahlas přes on-device hlasy a exportuje zvýrazněné pasáže. Protože nemáme server, nemůžeme zkrachovat „s daty uživatelů“ — to je marketingový argument, který velcí hráči nenabídnou.",
+      "niche": "Local-first read-later bez účtu s poslechem článků. Instapaper, Readwise Reader a Matter stojí na vlastních serverech a předplatném, GoodLinks je local-first, ale bez silného poslechu a lokalizace.",
+      "parent_market": "Read-later a čtečky — Pocket (zrušen 2025), Instapaper, Readwise Reader, Matter, GoodLinks; poslech článků (Speechify).",
+      "target_user": "Bývalí uživatelé Pocketu, dojíždějící, čtenáři long-form žurnalistiky, lidé dbající na soukromí.",
+      "features": [
+        "Share extension: uložit článek, stáhnout čistý text a obrázky do zařízení",
+        "Čtení nahlas on-device hlasy (AVSpeech) s frontou poslechu",
+        "Zvýraznění a poznámky, export do Markdownu",
+        "Import z Pocket/Instapaper exportu (HTML/CSV)",
+        "iCloud sync mezi iPhone, iPad a Mac"
+      ],
+      "offline": "mostly",
+      "offline_note": "Článek se stahuje přímo z webu vydavatele v okamžiku uložení (žádný náš server ani API); pak vše offline. Placené zdi se neobcházejí.",
+      "monetization": "Zdarma 30 článků; Pro 24,99 USD/rok (≈ 575 Kč) nebo lifetime 49,99 USD (≈ 1150 Kč).",
+      "revenue_math": "Ideál: 2000 stažení/měs. × 3 % platících = 60 plateb × 24.99 USD (roční předplatné) ≈ 1499 USD hrubého; po 15% provizi Apple ≈ 1274 USD ≈ 29313 Kč čistého/měs. Po zániku Pocketu (2025) je poptávka velká, ale klíčové slovo „read later“ je bojiště; 2000 stažení počítá s niche „offline reading list / listen to articles“.",
+      "revenue_czk_ideal": 29313,
+      "keywords": [
+        {
+          "kw": "read later",
+          "saturation": 7,
+          "competitor": "Instapaper, GoodLinks, Matter",
+          "note": "Odhad (bez autocomplete); head term je silně obsazený — jen parent."
+        },
+        {
+          "kw": "pocket alternative",
+          "saturation": 4,
+          "competitor": "nové indie appky 2025",
+          "note": "Odhad; po zániku Pocketu vzniklo mnoho alternativ."
+        },
+        {
+          "kw": "offline reading list",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "Odhad."
+        },
+        {
+          "kw": "listen to articles",
+          "saturation": 5,
+          "competitor": "Speechify, ElevenReader",
+          "note": "Odhad; TTS appky jsou silné."
+        }
+      ],
+      "demand_evidence": "Ze znalosti ověřitelné: Mozilla ukončila Pocket v červenci 2025, Omnivore skončil v listopadu 2024 — masivní migrace uživatelů. Aktuální saturace a počet nových alternativ v App Store neověřena; pravděpodobně už je jich mnoho.",
+      "competitors": [
+        {
+          "name": "Instapaper",
+          "url": "",
+          "role": "parent",
+          "note": "Nejstarší read-later, server + předplatné."
+        },
+        {
+          "name": "GoodLinks",
+          "url": "",
+          "role": "parent",
+          "note": "Local-first, silná recenzní základna — přímý rival."
+        },
+        {
+          "name": "Readwise Reader",
+          "url": "",
+          "role": "parent",
+          "note": "Prémiový nástroj pro power usery, 10 USD/měs."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Trh je po zániku Pocketu zaplavený desítkami nových alternativ — blue ocean už není.",
+        "Safari Reading List je vestavěný a zdarma (Sherlock) a Apple ho může kdykoli vylepšit o poslech.",
+        "Extrakce článků (reader mode) se na mnoha webech rozbíjí; údržba parseru je nekonečná práce.",
+        "Weby s paywallem a JavaScriptem nepůjdou uložit bez serverového renderu."
+      ],
+      "killer_risk": "Konkurence: GoodLinks a Instapaper mají zavedené recenze a head keywords; nováček se neprosadí.",
+      "mitigation": "Zacílit na lokalizovaný poslech (50 jazyků s on-device hlasy) a „žádný účet, žádný server“ jako hlavní claim; long-tail klíčová slova v neanglických storefrontech.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 8,
+        "blue_ocean": 3,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 7,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-10",
+      "name": "Family Newsletter & Holiday Letter",
+      "tagline": "Rodinný zpravodaj pro babičky a vánoční dopis ve stylu novin — fotky, rok v kostce, tisk.",
+      "pitch": "V USA a Británii má tradici „Christmas letter“ — shrnutí roku rodiny rozesílané příbuzným; v Německu je to „Weihnachtsbrief/Jahresrückblick“. Lidé ho píšou ve Wordu nebo kupují šablony a zápasí s fotkami. Naše appka z fotek a pár otázek vytvoří rodinný zpravodaj jako malé noviny (a měsíční „newsletter pro babičku“ celoročně), vytiskne PDF nebo pošle obrázek do WhatsAppu.",
+      "niche": "Rodinný zpravodaj/vánoční dopis v novinovém layoutu. Photobook služby (Shutterfly, Chatbooks) prodávají tisk, ne psaný zpravodaj; Canva má šablony bez průvodce obsahem.",
+      "parent_market": "Přání a fotoknihy — Shutterfly, Minted, Greetings Island, Chatbooks; Canva šablony „Christmas letter“.",
+      "target_user": "Rodiny s dětmi, prarodiče-příjemci, expati posílající novinky domů; USA, UK, DE, NL, Skandinávie.",
+      "features": [
+        "Průvodce „rok v kostce“: měsíce, milníky, citáty dětí",
+        "Automatický novinový layout s fotkami",
+        "Měsíční zpravodaj pro prarodiče (šablona opakovaného čísla)",
+        "Tiskové PDF, obrázek pro messenger, e-mail přes share sheet",
+        "Adresář příjemců a štítky na obálky"
+      ],
+      "offline": "full",
+      "offline_note": "Layout, PDF a fotky na zařízení; sdílení přes systémový share sheet, žádný náš server.",
+      "monetization": "Zdarma náhled; odemknutí 12,99 USD (≈ 300 Kč) jednorázově, nebo 9,99 USD/rok (≈ 230 Kč) pro měsíční zpravodaje.",
+      "revenue_math": "Silně sezónní (listopad–prosinec ~60 % ročních stažení). Ideální rok: 12 000 stažení × 5 % = 600 nákupů × 12,99 USD ≈ 7794 USD hrubého ≈ 6625 USD čistého ≈ 152000 Kč/rok ≈ 12700 Kč/měs. v průměru; v prosinci výrazně více, v létě téměř nic.",
+      "revenue_czk_ideal": 12700,
+      "keywords": [
+        {
+          "kw": "christmas letter",
+          "saturation": 2,
+          "competitor": "šablonové appky",
+          "note": "Odhad (bez autocomplete); z mé znalosti málo dedikovaných appek."
+        },
+        {
+          "kw": "family newsletter",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad."
+        },
+        {
+          "kw": "holiday letter",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad."
+        },
+        {
+          "kw": "jahresrückblick",
+          "saturation": 3,
+          "competitor": "foto-rekapitulace",
+          "note": "Odhad; DE fráze zaplevelená foto-rekapitulacemi a kalendáři."
+        }
+      ],
+      "demand_evidence": "Neověřeno živě. Ze znalosti: tradice christmas letter je v USA rozšířená (mediální články, šablony Canva/Minted), prarodičovské newslettery vykazují úspěch služeb typu FamilyApp/Famileo (EU, server-based, předplatné). Hledanost v App Store je odhad.",
+      "competitors": [
+        {
+          "name": "Famileo",
+          "url": "",
+          "role": "parent",
+          "note": "Evropská služba tištěných rodinných novin pro seniory — předplatné, server + tisk."
+        },
+        {
+          "name": "Canva",
+          "url": "",
+          "role": "parent",
+          "note": "Šablony christmas letter bez průvodce."
+        },
+        {
+          "name": "Minted",
+          "url": "",
+          "role": "parent",
+          "note": "Prémiová přání a tiskoviny (USA)."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Americká tradice christmas letter má v DE/NL/Skandinávii ekvivalenty, ale žádnou lokalizovanou iOS appku; lokalizujeme fráze a typografii.",
+      "devils_advocate": [
+        "Sezónnost: 10 měsíců v roce téměř nulové příjmy, ASO pozice se v prosinci musí znovu vybojovat.",
+        "Famileo a podobné služby řeší i doručení papíru prarodičům — my končíme u PDF, což je horší zážitek.",
+        "Christmas letter je v některých kulturách vnímán jako chlubení; trh mimo anglosféru může být malý.",
+        "Blízko wedding newspaper (stejný layout engine) — riziko 4.3, pokud appky vypadají podobně."
+      ],
+      "killer_risk": "Sezónnost a jednorázový nákup nedají průměrných 10 000 Kč měsíčně.",
+      "mitigation": "Celoroční režim měsíčního zpravodaje pro prarodiče s předplatným; odlišný vizuální jazyk a funkce od wedding appky.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-11",
+      "name": "Paper Route Log",
+      "tagline": "Pro doručovatele novin: trasa, pozastavené odběry, spropitné a kilometry na daně.",
+      "pitch": "V USA, Japonsku a Německu stále tisíce lidí rozváží noviny — často jako OSVČ, kteří si musí vést kilometry pro daňový odpočet a pamatovat si zastavené odběry na dovolenou. Vydavatelské appky jsou firemní a nepřehledné, obecné mileage trackery nevědí nic o trase. Naše appka má seznam zastávek v pořadí, dočasná přerušení s datem, poznámky („pes, dát za dveře“), GPS kilometry a přehled spropitného a výdělků.",
+      "niche": "Osobní nástroj doručovatele novin (carrier/Zusteller/新聞配達). Vydavatelé řeší svůj systém, mileage appky jsou generické.",
+      "parent_market": "Mileage a gig-driver trackery — MileIQ, Stride, Gridwise; delivery route plánovače (Circuit, Routific).",
+      "target_user": "Doručovatelé novin a letáků (často důchodci a brigádníci), USA, Japonsko, Německo, Rakousko, Švýcarsko.",
+      "features": [
+        "Seznam zastávek v pořadí trasy, rychlé odškrtávání",
+        "Dočasná přerušení/pozastavení odběru s automatickým návratem",
+        "GPS kilometry a export pro daně (CSV/PDF)",
+        "Spropitné a výdělky po týdnech",
+        "Poznámky ke zastávkám (fotka dveří, pes, klíč)"
+      ],
+      "offline": "full",
+      "offline_note": "Core Location a mapy Apple (MapKit) bez našeho serveru; data v zařízení/iCloud.",
+      "monetization": "Předplatné 3,99 USD/měs. (≈ 92 Kč) nebo 29,99 USD/rok (≈ 690 Kč); zdarma do 30 zastávek.",
+      "revenue_math": "Ideál: 600 stažení/měs. × 8 % = 48 nových předplatitelů; při 15% měsíčním odpadu ~250 aktivních × 3,99 USD ≈ 998 USD hrubého ≈ 848 USD čistého ≈ 19500 Kč/měs. Doručovatelé platí za nástroje, které šetří daně.",
+      "revenue_czk_ideal": 19500,
+      "keywords": [
+        {
+          "kw": "paper route",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "Odhad (bez autocomplete); z mé znalosti jen firemní appky vydavatelů."
+        },
+        {
+          "kw": "newspaper carrier",
+          "saturation": 2,
+          "competitor": "vydavatelské carrier appky",
+          "note": "Odhad."
+        },
+        {
+          "kw": "delivery route log",
+          "saturation": 3,
+          "competitor": "route plánovače",
+          "note": "Odhad; Circuit/Routific mohou slovo přebít."
+        },
+        {
+          "kw": "zeitungszusteller",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "Odhad; DE termín."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Ze znalosti: v USA je desítky tisíc doručovatelů novin na smlouvu (IRS mileage deduction), v Japonsku silná tradice 新聞配達. Hledanost v App Store velmi nejistá — segment stárne a zmenšuje se.",
+      "competitors": [
+        {
+          "name": "MileIQ",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr mileage trackingu, předplatné, bez znalosti trasy."
+        },
+        {
+          "name": "Circuit Route Planner",
+          "url": "",
+          "role": "parent",
+          "note": "Plánování doručovacích tras (server optimalizace)."
+        },
+        {
+          "name": "Stride",
+          "url": "",
+          "role": "parent",
+          "note": "Daňový tracker pro gig pracovníky (USA)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Umírající trh: náklady tištěných novin každoročně klesají o 5–10 %, doručovatelů ubývá.",
+        "Doručovatelé jsou často starší lidé s nízkým příjmem — citliví na předplatné.",
+        "Vydavatelé mohou poskytovat vlastní appku a zakazovat ukládání adres odběratelů (GDPR v EU!).",
+        "Hledanost fráze „paper route“ může být prakticky nulová."
+      ],
+      "killer_risk": "Zmenšující se a obtížně dosažitelná cílovka, která nehledá v App Store.",
+      "mitigation": "Rozšířit na doručovatele letáků/reklamních tiskovin (DE Prospektverteiler) a lokální kurýry; lifetime cena místo předplatného.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-12",
+      "name": "Crossword Constructor",
+      "tagline": "Profesionální tvorba křížovek na iPadu: mřížka, autofill ze slovníku, export pro redakce.",
+      "pitch": "Konstruktéři křížovek pro NYT, Guardian a lokální noviny dnes používají desktop (Crossfire, CrossFire, Crossword Compiler) nebo web (Ingrid) — na iPadu profesionální nástroj chybí. Autofill mřížky ze slovníku se skóre slov, symetrie, kontrola duplicit a export do .puz/.ipuz/PDF je vše, co potřebují; učitelé zase chtějí rychle udělat křížovku z vlastních slov. Jde o malý, ale platící trh bez mobilní konkurence.",
+      "niche": "Tvorba (konstrukce) křížovek na iPadu pro profesionály a pokročilé amatéry. Existující mobilní „crossword makery“ jsou jednoduché generátory pro děti a učitele.",
+      "parent_market": "Křížovky a nástroje pro konstruktéry — NYT Crossword (obrovská hráčská základna), Crossword Compiler (desktop, placený), Crossfire.",
+      "target_user": "Konstruktéři křížovek pro noviny a časopisy, vydavatelé puzzle knih na Amazon KDP, učitelé a nadšenci.",
+      "features": [
+        "Editor mřížky s americkými i britskými pravidly (symetrie, bloky)",
+        "Autofill ze slovníku se skórováním slov (vlastní seznamy)",
+        "Editor legend, kontrola duplicit a statistik",
+        "Export .puz / .ipuz / PDF pro tisk a redakce",
+        "Apple Pencil pro rychlé vyplňování"
+      ],
+      "offline": "full",
+      "offline_note": "Slovník (open-source seznamy s kompatibilní licencí + vlastní) a autofill běží na zařízení.",
+      "monetization": "Zdarma do mřížky 11×11; Pro 34,99 USD (≈ 805 Kč) jednorázově nebo 14,99 USD/rok (≈ 345 Kč).",
+      "revenue_math": "Ideál: 300 stažení/měs. × 10 % platících = 30 plateb × 34.99 USD (Pro licence) ≈ 1050 USD hrubého; po 15% provizi Apple ≈ 892 USD ≈ 20522 Kč čistého/měs. Konstruktéři (NYT, Guardian, lokální noviny, učitelé) jsou malá, ale platící skupina; 300 stažení/měs. je ideál pro iPad nástroj.",
+      "revenue_czk_ideal": 20522,
+      "keywords": [
+        {
+          "kw": "crossword maker",
+          "saturation": 5,
+          "competitor": "jednoduché generátory",
+          "note": "Odhad (bez autocomplete); z mé znalosti několik jednoduchých appek pro učitele."
+        },
+        {
+          "kw": "crossword constructor",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "Odhad; profesionální iPad nástroj neznám."
+        },
+        {
+          "kw": "create crossword",
+          "saturation": 5,
+          "competitor": "generátory",
+          "note": "Odhad."
+        },
+        {
+          "kw": "crossword builder",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Ze znalosti: komunita konstruktérů (Crossword Nexus, r/crossword, XWord Info) je aktivní a za desktop software platí 50–100 USD; Amazon KDP puzzle knihy jsou populární side-hustle. Mobilní poptávka je předpoklad.",
+      "competitors": [
+        {
+          "name": "NYT Games",
+          "url": "",
+          "role": "parent",
+          "note": "Hráčský trh křížovek; konstruktéři tam publikují."
+        },
+        {
+          "name": "Crossword Compiler (desktop)",
+          "url": "",
+          "role": "parent",
+          "note": "Placený profesionální software pro Windows."
+        },
+        {
+          "name": "Crossword Maker (mobilní generátory)",
+          "url": "",
+          "role": "niche",
+          "note": "Jednoduché appky pro učitele bez autofill."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Profesionálů je řádově tisíce; objem stažení bude velmi nízký.",
+        "Kvalitní slovník se skóre je klíčový a licenčně citlivý (placené seznamy konstruktérů nelze přibalit).",
+        "Autofill algoritmus s rozumnou rychlostí je netriviální — build 6–8 týdnů.",
+        "Web Ingrid/Crosshare je zdarma a funguje i v Safari na iPadu."
+      ],
+      "killer_risk": "Malý trh + bezplatné webové alternativy dostupné v prohlížeči iPadu.",
+      "mitigation": "Doplňkový segment učitelů a KDP autorů (export puzzle knihy do PDF) s jednodušším režimem; Mac Catalyst verze.",
+      "build_weeks": 7,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-13",
+      "name": "Acrostic Puzzles",
+      "tagline": "Akrostiky jako z amerických puzzle časopisů — rozlušti slova a odhal skrytý citát.",
+      "pitch": "Akrostik (double-crostic) je milovaný formát amerických puzzle časopisů (Dell, NYT Sunday Acrostic): z odpovědí na legendy se skládá citát z knihy a první písmena odpovědí tvoří autora a titul. Kvalitních akrostikových appek je v App Store velmi málo, zatímco cryptogramy jsou přeplněné. Obsah vytvoříme z public-domain citátů (autoři zemřelí před 1955) a vlastních legend, s denní úlohou a archivem.",
+      "niche": "Akrostiky/double-crostics — náročnější slovní hádanka pro zkušené luštitele. Herní studia volí jednodušší cryptogramy a word games s masovým dosahem.",
+      "parent_market": "Quote puzzle a cryptogram appky (Cryptogram od Razzle Puzzles, Cryptogram · Decode Quotes), luštěninové časopisy Dell/Penny Press.",
+      "target_user": "Zkušení luštitelé 45+ v USA/UK/AU/CA, čtenáři klasické literatury.",
+      "features": [
+        "Denní akrostik + archiv 300+ úloh",
+        "Propojená mřížka citátu a legend (klepnutí zvýrazní vazby)",
+        "Nápovědy: písmeno, slovo, kontrola",
+        "Citáty jen z public-domain děl s poznámkou o autorovi",
+        "Statistiky a série"
+      ],
+      "offline": "full",
+      "offline_note": "Úlohy přibalené v appce (a v aktualizacích); generátor/validátor na zařízení.",
+      "monetization": "Zdarma 1 úloha denně; předplatné 2,99 USD/měs. (≈ 69 Kč) nebo 19,99 USD/rok (≈ 460 Kč) za archiv.",
+      "revenue_math": "Ideál: 2000 stažení/měs. × 3,5 % ≈ 70 nových předplatitelů; při 25% měsíčním odpadu ~250 aktivních × 2,99 USD ≈ 748 USD hrubého ≈ 636 USD čistého ≈ 14600 Kč/měs.",
+      "revenue_czk_ideal": 14600,
+      "keywords": [
+        {
+          "kw": "acrostic",
+          "saturation": 3,
+          "competitor": "několik menších appek",
+          "note": "Odhad (bez autocomplete); z mé znalosti málo dedikovaných titulů."
+        },
+        {
+          "kw": "acrostic puzzles",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad."
+        },
+        {
+          "kw": "double crostic",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "Odhad; fráze znalců."
+        },
+        {
+          "kw": "quote puzzle",
+          "saturation": 5,
+          "competitor": "cryptogram hry",
+          "note": "Odhad; obsazeno cryptogramy."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Ze znalosti: akrostiky jsou stálicí Dell/Penny Press a NYT; cryptogram appky mají statisíce hodnocení, což dokazuje trh quote puzzles. Poptávka po akrostiku jako klíčovém slově je odhad.",
+      "competitors": [
+        {
+          "name": "Cryptogram (Razzle Puzzles)",
+          "url": "",
+          "role": "parent",
+          "note": "Silná quote puzzle hra s velkým počtem hodnocení."
+        },
+        {
+          "name": "Penny Dell Puzzles",
+          "url": "",
+          "role": "parent",
+          "note": "Vydavatel, jehož časopisy akrostiky obsahují."
+        },
+        {
+          "name": "NYT Games",
+          "url": "",
+          "role": "parent",
+          "note": "Akrostik vychází občas v NYT, v appce není hlavní."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Tvorba kvalitních akrostiků je ruční práce; bez dobrého generátoru nestačí obsah na denní režim.",
+        "Formát je náročný a úzký — konverze free → paid může být nízká.",
+        "Lokalizace do jiných jazyků vyžaduje úplně nový obsah; mimo angličtinu formát téměř neznámý.",
+        "Autorská práva citátů: překlady PD děl mohou být chráněné — nutná pečlivost."
+      ],
+      "killer_risk": "Obsahová dřina: bez stovek kvalitních úloh předplatné nedrží.",
+      "mitigation": "Generátor s ruční kontrolou (Foundation Models jen pro návrhy legend), dávkové přidávání obsahu v updatech, zdroje citátů z Project Gutenberg PD originálů.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-14",
+      "name": "PDF Magazine Shelf",
+      "tagline": "Tvoje PDF časopisy jako na stojanu: obálky, ročníky, dvojstrany a pozice čtení.",
+      "pitch": "Mnoho časopisů je legálně zdarma nebo ke koupi jako PDF (MagPi a další CC-licencované tituly, předplatná s PDF archivem, Humble Bundle, stará čísla od vydavatelů). Apple Books a Files je ukáží jako seznam souborů — bez ročníků, bez dvojstran, bez rozpoznání čísla. Naše appka automaticky seřadí PDF do titulů a ročníků, zobrazí mřížku obálek jako na trafice, čte po dvojstranách na iPadu a pamatuje si, kde jsi skončil.",
+      "niche": "Čtečka a knihovna vlastních PDF časopisů. Distribuční platformy (Zinio, Readly) čtou jen svůj obsah; PDF čtečky nejsou postavené na periodika.",
+      "parent_market": "Digitální kiosky a čtečky — Readly, Zinio, PressReader, Apple News+; PDF čtečky (PDF Expert, Documents).",
+      "target_user": "Předplatitelé s PDF archivy, makeři a elektronici (MagPi, HackSpace), sběratelé retro časopisů ve skenech, akademici s časopisy v PDF.",
+      "features": [
+        "Automatické rozpoznání titulu/čísla z názvu souboru a obálky",
+        "Mřížka obálek po ročnících, stav přečteno/rozečteno",
+        "Režim dvojstrany na iPadu a obálka zvlášť",
+        "Import ze souborů, iCloud Drive a sdílení",
+        "Vyhledávání v textu (PDFKit), záložky"
+      ],
+      "offline": "full",
+      "offline_note": "Vše na zařízení přes PDFKit; žádný obsah nedistribuujeme, uživatel importuje vlastní soubory.",
+      "monetization": "Zdarma do 20 čísel; Pro 7,99 USD (≈ 185 Kč) jednorázově.",
+      "revenue_math": "Ideál: 2000 stažení/měs. × 4 % platících = 80 plateb × 7.99 USD (jednorázový Pro unlock) ≈ 639 USD hrubého; po 15% provizi Apple ≈ 543 USD ≈ 12496 Kč čistého/měs. Stažení z klíčových slov „magazine reader / pdf magazine“; strop 2000 i s lokalizací.",
+      "revenue_czk_ideal": 12496,
+      "keywords": [
+        {
+          "kw": "pdf magazine reader",
+          "saturation": 3,
+          "competitor": "obecné PDF čtečky",
+          "note": "Odhad (bez autocomplete)."
+        },
+        {
+          "kw": "magazine reader",
+          "saturation": 6,
+          "competitor": "Zinio/Readly/PressReader",
+          "note": "Odhad; head term obsazený kiosky — jen parent."
+        },
+        {
+          "kw": "comic pdf reader",
+          "saturation": 5,
+          "competitor": "CBZ čtečky",
+          "note": "Odhad; komiksové čtečky (Panels, Chunky) jsou silné."
+        },
+        {
+          "kw": "magazine library",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Ze znalosti: Panels/Chunky ukazují poptávku po čtení vlastních komiksových souborů; PDF časopisy jsou rozšířené, ale specializovanou knihovnu neznám. V evidenci (books) je ClearRead s importem PDF — příbuzné, ne přímý rival.",
+      "competitors": [
+        {
+          "name": "Readly",
+          "url": "",
+          "role": "parent",
+          "note": "Kiosk s tisíci titulů, jen vlastní obsah."
+        },
+        {
+          "name": "Panels (komiksová čtečka)",
+          "url": "",
+          "role": "parent",
+          "note": "Analogický model: knihovna vlastních souborů, předplatné."
+        },
+        {
+          "name": "ClearRead - Dyslexia Reader",
+          "url": "https://apps.apple.com/gb/app/clearread-dyslexia-reader/id6760895785",
+          "role": "niche",
+          "note": "Příbuzná čtečka s importem PDF/ePub (evidence books), nezaměřená na periodika."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Apple Books umí PDF zdarma; pro mnoho lidí to „stačí“.",
+        "Guideline 5.2: appka může být vnímána jako nástroj pro pirátské skeny časopisů — pozor na screenshoty a marketing.",
+        "Cílovka s velkými PDF archivy je malá a technicky zdatná, sáhne po Panels nebo Documents.",
+        "Rozpoznávání čísla z názvu souboru je křehké."
+      ],
+      "killer_risk": "„Books/Files mi stačí“ — nízká ochota platit za další čtečku.",
+      "mitigation": "Ukázat dvojstrany a mřížku ročníků jako hlavní „wow“ na screenshotech; demonstrační obsah jen z CC-licencovaných časopisů.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-15",
+      "name": "Cryptic Crossword Trainer",
+      "tagline": "Nauč se luštit britské kryptické křížovky: anagramy, skryté slova, homofony — krok za krokem.",
+      "pitch": "Kryptické křížovky Times, Guardian a Telegraph jsou v Británii, Austrálii a Indii národní vášní, ale pro nováčky jsou nepřístupné — legenda má definici a slovní hříčku a začátečník neví, kde začít. Appky novin dávají křížovky, ne výuku. Naše appka učí typy legend (anagram, container, reversal, hidden…) na stovkách vlastních legend s interaktivním rozborem a pak mini-křížovkami se stoupající obtížností.",
+      "niche": "Výuka kryptických křížovek (ne samotné luštění). Noviny prodávají licencované křížovky pro experty; výukový obsah je v knihách a na YouTube.",
+      "parent_market": "Křížovky novin — Times Crossword, Guardian Puzzles, Telegraph Puzzles (předplatné), NYT Games; výukové knihy (\"How to Crack Cryptic Crosswords\").",
+      "target_user": "Začínající luštitelé v UK, IE, AU, NZ, IN, CA; lidé, kteří chtějí rozumět křížovce, kterou luští rodiče.",
+      "features": [
+        "Lekce typů legend s interaktivním rozborem (definice vs. hříčka)",
+        "300+ vlastních legend s nápovědami ve 3 úrovních",
+        "Mini kryptické křížovky 7×7 a 9×9",
+        "Slovník indikátorů (anagram, reversal, container)",
+        "Spaced repetition na chyby"
+      ],
+      "offline": "full",
+      "offline_note": "Obsah je autorsky vlastní a přibalený; nic se nestahuje.",
+      "monetization": "Zdarma 2 lekce; celý kurz 9,99 USD (≈ 230 Kč) jednorázově, balíčky nových křížovek 2,99 USD.",
+      "revenue_math": "Ideál: 1500 stažení/měs. × 5 % platících = 75 plateb × 9.99 USD (jednorázový unlock kurzu) ≈ 749 USD hrubého; po 15% provizi Apple ≈ 637 USD ≈ 14648 Kč čistého/měs. Cílovka UK/AU/IE/IN/NZ; 1500 stažení/měs. je ideál pro „cryptic crossword“ + „learn cryptic crosswords“.",
+      "revenue_czk_ideal": 14648,
+      "keywords": [
+        {
+          "kw": "cryptic crossword",
+          "saturation": 6,
+          "competitor": "novinové appky",
+          "note": "Odhad (bez autocomplete); head term drží Times/Guardian/Telegraph."
+        },
+        {
+          "kw": "learn cryptic crosswords",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad; výukových appek je málo."
+        },
+        {
+          "kw": "cryptic clues",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "Odhad."
+        },
+        {
+          "kw": "crossword tutor",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Ze znalosti: YouTube kanál Cracking the Cryptic má stovky tisíc odběratelů, knihy o luštění kryptických křížovek se dobře prodávají. Hledanost výukové varianty v App Store je předpoklad.",
+      "competitors": [
+        {
+          "name": "Times Crossword",
+          "url": "",
+          "role": "parent",
+          "note": "Licencované novinové křížovky s předplatným."
+        },
+        {
+          "name": "Guardian Puzzles",
+          "url": "",
+          "role": "parent",
+          "note": "Silná komunita luštitelů."
+        },
+        {
+          "name": "Telegraph Puzzles",
+          "url": "",
+          "role": "parent",
+          "note": "Předplatné puzzle appka."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Psaní 300+ kvalitních kryptických legend vyžaduje zkušeného autora — nejsme rodilí mluvčí angličtiny.",
+        "Nelze lokalizovat: formát je anglický (existují jen slabé ekvivalenty v jiných jazycích).",
+        "Jednorázový kurz = nulová retence po dokončení.",
+        "Noviny mohou přidat „learn mode“ do svých appek."
+      ],
+      "killer_risk": "Kvalita obsahu: špatné kryptické legendy komunita okamžitě roztrhá v recenzích.",
+      "mitigation": "Najmout zkušeného britského setter-a na smlouvu (cca 1000–2000 USD) na obsah; rozšiřovat balíčky jako IAP.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-16",
+      "name": "European Almanac & Moon Calendar",
+      "tagline": "Selský kalendář do kapsy: fáze Měsíce, východy slunce, výsevní kalendář a pranostiky — spočítané offline.",
+      "pitch": "Americký Old Farmer's Almanac je stoletá instituce s appkou, ale pro Evropu nic podobného v jedné kvalitní appce není — lidé v DE/AT/CZ/PL používají lunární kalendáře (Mondkalender), zahradní kalendáře a pranostiky roztroušené po webech. Náš almanach vše spočítá na zařízení podle polohy: fáze a znamení Měsíce, východy/západy, délka dne, výsevní okna, lidové pranostiky a jmeniny pro daný den. Vydáváme to jako „ročenku“ — tedy formát almanachu, který do kategorie Magazines sedí.",
+      "niche": "Evropský almanach/ročenka s lokálními pranostikami a výsevním kalendářem. Americký almanach nelokalizuje, evropské Mondkalender appky jsou úzké (jen Měsíc).",
+      "parent_market": "Almanachy a lunární kalendáře — The Old Farmer's Almanac (USA), Mondkalender appky v DE/AT, zahradní plánovače.",
+      "target_user": "Zahrádkáři a chalupáři 40+, příznivci biodynamického zahradničení, lidé se zálibou v lidových tradicích; DE, AT, CH, CZ, SK, PL.",
+      "features": [
+        "Astronomické výpočty offline (Měsíc, Slunce, znamení)",
+        "Výsevní a sázecí kalendář podle Měsíce (s poznámkou, že jde o tradici)",
+        "Pranostiky a jmeniny pro každý den v lokálních jazycích",
+        "Widget „dnes v almanachu“",
+        "Poznámky k zahradě a sklizni"
+      ],
+      "offline": "full",
+      "offline_note": "Astronomické algoritmy (Meeus) a přibalené texty pranostik; poloha přes Core Location.",
+      "monetization": "Zdarma dnešní den; Pro 12,99 USD/rok (≈ 300 Kč) nebo lifetime 24,99 USD (≈ 575 Kč).",
+      "revenue_math": "Ideál: 3000 stažení/měs. × 3 % platících = 90 plateb × 12.99 USD (roční předplatné) ≈ 1169 USD hrubého; po 15% provizi Apple ≈ 994 USD ≈ 22856 Kč čistého/měs. Mondkalender/lunární kalendář je v DE/AT/CZ/PL silný trh; 3000 stažení počítá s lokálními klíčovými slovy.",
+      "revenue_czk_ideal": 22856,
+      "keywords": [
+        {
+          "kw": "mondkalender",
+          "saturation": 7,
+          "competitor": "mnoho DE appek",
+          "note": "Odhad (bez autocomplete); DE head term je silně obsazený."
+        },
+        {
+          "kw": "farmers almanac",
+          "saturation": 4,
+          "competitor": "The Old Farmer's Almanac",
+          "note": "Odhad; v US drží originál (trademark!)."
+        },
+        {
+          "kw": "lunární kalendář",
+          "saturation": 4,
+          "competitor": "CZ lunární appky",
+          "note": "Odhad."
+        },
+        {
+          "kw": "pranostiky",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "Odhad; dedikovanou appku neznám."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Ze znalosti: Mondkalender appky patří v DE mezi populární lifestyle tituly, Old Farmer's Almanac prodává miliony výtisků ročně. Kombinace almanachu pro Evropu je předpoklad.",
+      "competitors": [
+        {
+          "name": "The Old Farmer's Almanac",
+          "url": "",
+          "role": "us-only",
+          "note": "Americký originál; evropské pranostiky a jazyky nemá."
+        },
+        {
+          "name": "Mondkalender (DE appky)",
+          "url": "",
+          "role": "parent",
+          "note": "Mnoho lunárních kalendářů; úzké, bez almanachu."
+        },
+        {
+          "name": "Gardenize / zahradní plánovače",
+          "url": "",
+          "role": "parent",
+          "note": "Zahradní deníky bez almanachu."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Opačný i přímý gap: americký almanach je jen anglicky a US-centrický; evropský ekvivalent s lokálními pranostikami v 10+ jazycích neexistuje.",
+      "devils_advocate": [
+        "„Farmer's Almanac“ je trademark — nesmí být v názvu appky, jen generické „almanac“.",
+        "Mondkalender trh v DE je přeplněný, v menších jazycích zase malý.",
+        "Výsev podle Měsíce je pseudověda — riziko kritických recenzí a opatrnosti App Review u tvrzení.",
+        "Obsah pranostik a jmenin pro každý jazyk je redakční práce."
+      ],
+      "killer_risk": "Uvíznutí mezi přeplněným DE Mondkalender trhem a malými trhy jinde.",
+      "mitigation": "Začít CZ/SK/PL (méně konkurence), silná lokalizovaná jména („Pranostiky a lunární kalendář“), tradici prezentovat jako folklór, ne vědu.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-17",
+      "name": "Freelance Pitch Tracker",
+      "tagline": "Pro nezávislé novináře: pitche, redaktoři, deadliny, honoráře a nezaplacené faktury na jednom místě.",
+      "pitch": "Freelance novinář posílá desítky pitchů měsíčně do různých redakcí, sleduje, kdo odpověděl, kdo čeká, jaké jsou honoráře, kill fee a práva — typicky v chaotické tabulce. Literární submission trackery (Duotrope, WriteTrack) jsou pro povídky, ne pro žurnalistiku. Naše appka spojí CRM redaktorů, stav pitchů, deadliny, faktury a připomínky follow-upů; vše offline a soukromě (kontakty zdrojů nepatří do cloudu třetí strany).",
+      "niche": "Pitch & assignment tracker pro freelance novináře a copywritery. Literární trackery se soustředí na povídky/básně, obecné CRM a fakturace jsou pro jiné obory.",
+      "parent_market": "Submission trackery a nástroje pro spisovatele (Duotrope 50 USD/rok, Submittable, WriteTrack) + freelancerská fakturace (FreshBooks, Bonsai).",
+      "target_user": "Freelance novináři, fejetonisté, cestovatelští a odborní autoři, copywriteři; USA, UK, DE, ES, BR.",
+      "features": [
+        "Pitch pipeline: nápad → poslán → přijat/odmítnut → publikováno",
+        "Kontakty redaktorů s historií a sazbami",
+        "Deadliny a připomínky follow-upů (lokální notifikace)",
+        "Honoráře, kill fee, stav faktury a přehled příjmů",
+        "Export CSV pro účetní"
+      ],
+      "offline": "full",
+      "offline_note": "Data v zařízení/iCloud; žádný server. Kontakty zdrojů zůstávají soukromé.",
+      "monetization": "Zdarma 10 pitchů; Pro 24,99 USD/rok (≈ 575 Kč) nebo 3,99 USD/měs. (≈ 92 Kč).",
+      "revenue_math": "Ideál: 500 stažení/měs. × 8 % platících = 40 plateb × 24.99 USD (roční předplatné) ≈ 1000 USD hrubého; po 15% provizi Apple ≈ 850 USD ≈ 19542 Kč čistého/měs. Freelance novináři a copywriteři; 500 stažení/měs. je ideál s lokalizací.",
+      "revenue_czk_ideal": 19542,
+      "keywords": [
+        {
+          "kw": "pitch tracker",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad (bez autocomplete); z mé znalosti žádná dedikovaná appka pro novináře."
+        },
+        {
+          "kw": "freelance writer",
+          "saturation": 5,
+          "competitor": "fakturace a job boardy",
+          "note": "Odhad."
+        },
+        {
+          "kw": "submission tracker",
+          "saturation": 2,
+          "competitor": "WriteTrack, Story Tracker",
+          "note": "Evidence books: niche „writing submission tracker“ OPEN (sat 2, staré appky) — příbuzné, literární."
+        },
+        {
+          "kw": "journalist tools",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Částečně ověřeno z evidence (books): writing submission tracker je OPEN se dvěma starými appkami a Duotrope (50 USD/rok) dokazuje ochotu platit. Žurnalistická varianta (pitch tracker) je můj odhad a nebyla ověřena.",
+      "competitors": [
+        {
+          "name": "WriteTrack - Track Submissions",
+          "url": "https://apps.apple.com/us/app/writetrack-track-submissions/id914818552",
+          "role": "niche",
+          "note": "Literární submission tracker z roku 2014 (evidence books)."
+        },
+        {
+          "name": "Poets & Writers Magazine",
+          "url": "https://apps.apple.com/us/app/poets-writers-magazine/id566507932",
+          "role": "parent",
+          "note": "Appka časopisu pro spisovatele v kategorii Magazines (evidence books) — ukazuje publikum."
+        },
+        {
+          "name": "Duotrope",
+          "url": "",
+          "role": "parent",
+          "note": "Webová databáze trhů a tracker, 50 USD/rok."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Kultura placených nástrojů pro freelance psaní je americká; v DE/ES/BR/FR podobný nástroj pro novináře neexistuje a lokalizujeme měny a fakturační zvyklosti.",
+      "devils_advocate": [
+        "Freelance novinářů je relativně málo a mají nízké příjmy — citliví na předplatné.",
+        "Notion/Airtable šablony zdarma řeší totéž a novináři už je mají.",
+        "Hodně práce probíhá v e-mailu na počítači — bez Mac verze to nepoužijí.",
+        "Portfolio riziko: blízkost s literárním submission trackerem z kategorie Books (4.3)."
+      ],
+      "killer_risk": "Notion/Sheets šablony zdarma jsou dost dobré a zabydlené.",
+      "mitigation": "Mac Catalyst + Share extension z Mailu (uložit pitch z odeslaného e-mailu), odlišit se od literárního trackeru fakturací a redakčním CRM.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-18",
+      "name": "Teeline Shorthand Trainer",
+      "tagline": "Těsnopis Teeline pro studenty žurnalistiky: abeceda, zkratky a diktáty na rychlost až 100 slov/min.",
+      "pitch": "Britská novinářská kvalifikace NCTJ vyžaduje těsnopis Teeline na 100 slov za minutu — a studenti se ho učí z učebnic a z YouTube diktátů. Na iOS je jen pár slabých appek. Naše appka naučí znaky Apple Pencilem s rozpoznáváním tahů na zařízení, nabídne diktáty s nastavitelnou rychlostí (on-device hlas) a sleduje pokrok k 60/80/100 slovům za minutu.",
+      "niche": "Výuka těsnopisu Teeline pro novináře. Kurzy dělají školy a učebnice; digitální trénink s rozpoznáním rukopisu nikdo pořádně nedělá.",
+      "parent_market": "Výukové appky dovedností a jazyků (Duolingo, Babbel) a nástroje pro studenty žurnalistiky; tištěné učebnice Teeline (Pearson).",
+      "target_user": "Studenti žurnalistiky v UK/IE (NCTJ), soudní zpravodajové, zapisovatelé, samouci.",
+      "features": [
+        "Abeceda a zkratky Teeline s animací tahů",
+        "Kreslení Apple Pencilem a rozpoznání znaků (Core ML)",
+        "Diktáty 40–120 slov/min s on-device hlasem",
+        "Přepis diktátu a vyhodnocení přesnosti",
+        "Plán tréninku do termínu zkoušky"
+      ],
+      "offline": "full",
+      "offline_note": "Rozpoznávací model a diktáty (TTS) na zařízení; texty diktátů vlastní nebo public-domain.",
+      "monetization": "Zdarma abeceda; celý kurz 19,99 USD (≈ 460 Kč) jednorázově.",
+      "revenue_math": "Ideál: 400 stažení/měs. × 10 % platících = 40 plateb × 19.99 USD (jednorázový kurz) ≈ 800 USD hrubého; po 15% provizi Apple ≈ 680 USD ≈ 15632 Kč čistého/měs. UK trh studentů žurnalistiky (NCTJ vyžaduje těsnopis 100 slov/min) + samouci; 400 stažení/měs. je ideál.",
+      "revenue_czk_ideal": 15632,
+      "keywords": [
+        {
+          "kw": "teeline",
+          "saturation": 2,
+          "competitor": "pár malých appek",
+          "note": "Odhad (bez autocomplete); z mé znalosti existují 1–3 slabší appky."
+        },
+        {
+          "kw": "shorthand",
+          "saturation": 4,
+          "competitor": "Gregg/Pitman appky",
+          "note": "Odhad; obecný termín sdílejí jiné systémy."
+        },
+        {
+          "kw": "nctj shorthand",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "Odhad; NCTJ je zkratka instituce — v názvu nepoužít."
+        },
+        {
+          "kw": "shorthand dictation",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Ze znalosti: NCTJ Diploma má těsnopis jako povinnou část, YouTube diktáty „Teeline 100wpm“ mají velké počty zhlédnutí. Objem je malý a výhradně anglický.",
+      "competitors": [
+        {
+          "name": "Teeline appky (indie)",
+          "url": "",
+          "role": "niche",
+          "note": "Pár menších titulů bez rozpoznávání rukopisu."
+        },
+        {
+          "name": "Duolingo",
+          "url": "",
+          "role": "parent",
+          "note": "Model gamifikované výuky, kterým se inspirujeme."
+        },
+        {
+          "name": "Pitman / Gregg shorthand appky",
+          "url": "",
+          "role": "niche",
+          "note": "Jiné systémy těsnopisu, stejné klíčové slovo „shorthand“."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Velmi malý trh (tisíce studentů ročně) a jen UK/IE — lokalizace nedává smysl.",
+        "Rozpoznávání tahů těsnopisu je těžké ML — tréninková data si musíme vytvořit sami.",
+        "Teeline může mít chráněné učební materiály (Pearson); obsah musíme psát sami.",
+        "Kategorie Magazines nesedí; appka patří do Education, kde je jiná konkurence."
+      ],
+      "killer_risk": "Mikro-trh: i při 100% dominanci niche může příjem zůstat pod 10 000 Kč.",
+      "mitigation": "Doplnit Gregg (US soudní zapisovatelé) a lokální systémy těsnopisu (CZ, DE Stenografie) jako další moduly v jedné appce.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-19",
+      "name": "Newsletter Planner",
+      "tagline": "Pro autory newsletterů: banka nápadů, plán vydání, série a přehled růstu — bez dalšího účtu.",
+      "pitch": "Substack, beehiiv a Ghost udělaly z newsletteru novou formu malého časopisu a statisíce autorů ho vydávají pravidelně. Jejich největší problém není psaní, ale konzistence: co vydat příští týden, kdy mají deadline, které nápady čekají. Platformy mají editor, ne redakční plán. Naše appka je redakční kalendář pro jednu osobu — banka nápadů ze Share sheetu, plán čísel, připomínky, ruční log odběratelů a přehled série vydání.",
+      "niche": "Redakční plánovač pro individuální vydavatele newsletterů. Platformy řeší doručení a platby, obecné plánovače (Notion, Trello) nejsou šité na periodikum.",
+      "parent_market": "Creator economy a newslettery — Substack, beehiiv, Ghost; content kalendáře (CoSchedule, Notion šablony).",
+      "target_user": "Autoři newsletterů na Substacku/beehiivu, podcasteři a blogeři s pravidelným vydáváním.",
+      "features": [
+        "Banka nápadů přes Share extension (odkazy, citáty, poznámky)",
+        "Kalendář čísel s deadliny a stavem (nápad → koncept → vydáno)",
+        "Ruční log odběratelů a open-rate s grafy",
+        "Série a streaky pravidelného vydávání",
+        "Šablony struktury čísla"
+      ],
+      "offline": "full",
+      "offline_note": "Data lokálně/iCloud; žádné API platforem (bez rizika závislosti).",
+      "monetization": "Zdarma 20 nápadů; Pro 19,99 USD/rok (≈ 460 Kč) nebo 2,99 USD/měs. (≈ 69 Kč).",
+      "revenue_math": "Ideál: 900 stažení/měs. × 5 % platících = 45 plateb × 19.99 USD (roční předplatné) ≈ 900 USD hrubého; po 15% provizi Apple ≈ 765 USD ≈ 17586 Kč čistého/měs. Tvůrci newsletterů (Substack, beehiiv, Ghost) jsou rostoucí skupina; 900/měs. je ideál pro „newsletter planner“.",
+      "revenue_czk_ideal": 17586,
+      "keywords": [
+        {
+          "kw": "newsletter planner",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad (bez autocomplete)."
+        },
+        {
+          "kw": "content calendar",
+          "saturation": 6,
+          "competitor": "sociální plánovače",
+          "note": "Odhad; obsazeno Later/Planoly — jen parent."
+        },
+        {
+          "kw": "substack",
+          "saturation": 3,
+          "competitor": "oficiální Substack appka",
+          "note": "Odhad; trademark — v názvu nelze."
+        },
+        {
+          "kw": "writing ideas",
+          "saturation": 5,
+          "competitor": "writing prompty",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Ze znalosti: Substack hlásí miliony platících odběrů a desetitisíce placených autorů; content-calendar appky pro sociální sítě jsou výdělečné. Specifická hledanost „newsletter planner“ je předpoklad. Evidence books ukazuje, že writing tracker niche (Word Keeper aj.) je MODERATE-CROWDED.",
+      "competitors": [
+        {
+          "name": "Word Keeper",
+          "url": "https://apps.apple.com/us/app/word-keeper-writing-tracker/id928955389",
+          "role": "parent",
+          "note": "Tracker psaní (evidence books) — příbuzný trh nástrojů pro autory."
+        },
+        {
+          "name": "Substack",
+          "url": "",
+          "role": "parent",
+          "note": "Platforma newsletterů; plánovač nápadů nemá."
+        },
+        {
+          "name": "Notion",
+          "url": "",
+          "role": "parent",
+          "note": "Univerzální nástroj s šablonami content kalendáře."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Substack nebo beehiiv mohou přidat plánování nápadů do své appky (Sherlock od platformy).",
+        "Tvůrci už žijí v Notionu a nechtějí další nástroj.",
+        "Bez napojení na API platforem musí data zadávat ručně — tření.",
+        "Mnoho autorů newsletter brzy vzdá; churn předplatného bude vysoký."
+      ],
+      "killer_risk": "Notion šablony zdarma a platformy přidávající vlastní plánování.",
+      "mitigation": "Mobilní rychlost (widget, share sheet, Apple Watch diktování nápadu) jako hlavní výhoda proti Notionu; lifetime cena.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-20",
+      "name": "Crossword Dictionary",
+      "tagline": "Křížovkářský slovník do kapsy: zadej známá písmena a legendu, appka najde slovo — offline, v tvém jazyce.",
+      "pitch": "Luštitelé tištěných křížovek v Česku, Polsku, Německu nebo Maďarsku běžně sahají po křížovkářském slovníku — na webu plném reklam nebo v tlusté knize. Anglické crossword solvery jsou v App Store všude, ale lokální slovníky s legendami (ne jen seznam slov) jsou vzácné a často potřebují internet. Naše appka má offline databázi legend a hesel pro každý jazyk, vyhledávání podle vzoru (P?A??) a legendy, a velké písmo pro starší uživatele.",
+      "niche": "Offline křížovkářský slovník legend v neanglických jazycích. Anglické solvery lokalizaci neřeší, lokální weby žijí z reklam a nemají dobré appky.",
+      "parent_market": "Crossword solvery a pomocníci (Crossword Solver, Kreuzworträtsel Hilfe appky v DE), tištěné křížovkářské slovníky.",
+      "target_user": "Luštitelé tištěných křížovek 45+ v CZ, SK, PL, HU, DE, NL, IT.",
+      "features": [
+        "Hledání podle vzoru písmen a délky",
+        "Hledání podle legendy (synonyma, definice)",
+        "Offline databáze pro každý jazyk",
+        "Velké písmo, historie hledání",
+        "Anagramy a tajenka pomocník"
+      ],
+      "offline": "full",
+      "offline_note": "Databáze legend a slov přibalená (licence CC BY-SA/otevřené zdroje s atribucí + vlastní); vyhledávání lokálně.",
+      "monetization": "Zdarma s bannerovou reklamou; bez reklam a plná databáze 3,99 USD (≈ 92 Kč) jednorázově.",
+      "revenue_math": "Ideál: 3000 stažení/měs. × 5 % = 150 nákupů × 3,99 USD ≈ 599 USD hrubého ≈ 509 USD čistého ≈ 11700 Kč + reklamy (~20 000 MAU, ~5000 Kč) ≈ 16700 Kč/měs.",
+      "revenue_czk_ideal": 16700,
+      "keywords": [
+        {
+          "kw": "křížovkářský slovník",
+          "saturation": 3,
+          "competitor": "CZ appky/weby",
+          "note": "Odhad (bez autocomplete); z mé znalosti pár slabších CZ appek."
+        },
+        {
+          "kw": "kreuzworträtsel hilfe",
+          "saturation": 7,
+          "competitor": "mnoho DE appek",
+          "note": "Odhad; DE trh je přeplněný."
+        },
+        {
+          "kw": "crossword solver",
+          "saturation": 8,
+          "competitor": "mnoho EN solverů",
+          "note": "Odhad; anglický head term SATURATED — jen parent."
+        },
+        {
+          "kw": "słownik krzyżówkowy",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "Odhad; PL varianta."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Ze znalosti: weby křížovkářských slovníků (např. v CZ a PL) mají vysokou návštěvnost z vyhledávačů; v DE existuje mnoho appek „Kreuzworträtsel Hilfe“, což ukazuje monetizovatelný trh. iOS hledanost v menších jazycích je předpoklad.",
+      "competitors": [
+        {
+          "name": "Crossword Solver (EN appky)",
+          "url": "",
+          "role": "parent",
+          "note": "Mnoho anglických solverů s reklamami."
+        },
+        {
+          "name": "Kreuzworträtsel Hilfe (DE appky)",
+          "url": "",
+          "role": "parent",
+          "note": "Silná konkurence v němčině."
+        },
+        {
+          "name": "Křížovkářský slovník (weby)",
+          "url": "",
+          "role": "niche",
+          "note": "Lokální weby s reklamami, slabé appky."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Opačný gap: formát slovníku legend je silný v DE/CZ/PL/HU, anglické solvery ho nelokalizují. Začínáme menšími jazyky.",
+      "devils_advocate": [
+        "Kvalitní databáze legend je jádro — otevřené zdroje nestačí a scrapování webů je nelegální.",
+        "Reklamní příjem v CZ/PL/HU je nízký (nízké eCPM).",
+        "Web ve Safari je zdarma a „stačí“.",
+        "Luštitelé digitálních křížovek slovník nepotřebují — trh závisí na tištěných křížovkách, které ubývají."
+      ],
+      "killer_risk": "Databáze: bez desítek tisíc kvalitních legend na jazyk je appka horší než web.",
+      "mitigation": "Sdílet databázi s nápadem Švédské křížovky (jeden obsahový asset pro dvě odlišné appky), začít jedním jazykem.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-21",
+      "name": "Weekly Paper Digest",
+      "tagline": "Tvoje uložené články jako týdenní noviny — vytiskni je nebo pošli na Kindle/Kobo.",
+      "pitch": "Stále víc lidí chce číst mimo obrazovku: e-ink čtečky, reMarkable a dokonce vytištěné „osobní noviny“ na víkend (trend digitálního detoxu). Služby jako Readwise nebo Instapaper umí poslat články na Kindle, ale ne udělat hezky zalomené noviny k tisku. Naše appka z uložených odkazů v týdnu vytvoří elegantní PDF noviny (sloupce, titulky, obsah) a EPUB pro e-ink — bez serveru, přímo v zařízení.",
+      "niche": "Tvorba tisknutelných osobních novin a e-ink digestů z vlastních článků. Read-later hráči končí u odeslání na Kindle, tiskový layout neřeší.",
+      "parent_market": "Read-later a e-ink ekosystém — Instapaper, Readwise Reader, Kindle (Send to Kindle), reMarkable; startupy „personal newspaper“ (tisk a doručení, server).",
+      "target_user": "Lidé s digitálním detoxem, majitelé e-ink čteček a reMarkable, víkendoví čtenáři, učitelé tisknoucí články pro třídu.",
+      "features": [
+        "Sbírka odkazů přes Share sheet během týdne",
+        "Automatický novinový layout PDF (A4/Letter, 2–3 sloupce)",
+        "EPUB export pro Kindle/Kobo/reMarkable",
+        "Plánování „vydání“ (pátek večer) s notifikací",
+        "Obsah čísla a QR kódy na originál"
+      ],
+      "offline": "mostly",
+      "offline_note": "Stažení článku probíhá přímo z webu při uložení; layout, PDF a EPUB na zařízení. Žádný náš server.",
+      "monetization": "Zdarma 1 vydání/měs.; Pro 29,99 USD/rok (≈ 690 Kč).",
+      "revenue_math": "Ideál: 600 stažení/měs. × 5 % platících = 30 plateb × 29.99 USD (roční předplatné) ≈ 900 USD hrubého; po 15% provizi Apple ≈ 765 USD ≈ 17589 Kč čistého/měs. Niche „digitálního detoxu“ a e-ink čtenářů; 600 stažení/měs. je ideál.",
+      "revenue_czk_ideal": 17589,
+      "keywords": [
+        {
+          "kw": "personal newspaper",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad (bez autocomplete)."
+        },
+        {
+          "kw": "send to kindle",
+          "saturation": 5,
+          "competitor": "Send to Kindle appky",
+          "note": "Odhad; obsazené, jen doplňkové."
+        },
+        {
+          "kw": "print articles",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad."
+        },
+        {
+          "kw": "epub maker",
+          "saturation": 4,
+          "competitor": "e-book tvůrci",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Ze znalosti: startupy tištěných osobních novin (např. služby doručující „your own newspaper“) a popularita reMarkable ukazují zájem; objem je malý a nejistý.",
+      "competitors": [
+        {
+          "name": "Instapaper",
+          "url": "",
+          "role": "parent",
+          "note": "Umí poslat na Kindle, ne tiskové noviny."
+        },
+        {
+          "name": "Readwise Reader",
+          "url": "",
+          "role": "parent",
+          "note": "E-ink export, prémiová cena."
+        },
+        {
+          "name": "Send to Kindle (Amazon)",
+          "url": "",
+          "role": "parent",
+          "note": "Oficiální nástroj pro dokumenty."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Velmi malá a nadšenecká cílovka — tisk novin doma dělá málokdo.",
+        "Extrakce článků se rozbíjí (paywally, JS weby) — stejný problém jako read-later.",
+        "Amazon může zjednodušit Send to Kindle o digest režim.",
+        "Druhá appka v parent trhu read-later — sdílení kódu s Offline Reading List (riziko 4.3, pokud vypadají podobně)."
+      ],
+      "killer_risk": "Objem: niche může mít desítky, ne stovky stažení měsíčně.",
+      "mitigation": "Zvážit jako Pro funkci Offline Reading List místo samostatné appky; samostatně jen pokud ASO check ukáže poptávku.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 7,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-22",
+      "name": "Pencil Puzzle Monthly",
+      "tagline": "Měsíčník vzácných japonských logických hádanek: Masyu, Heyawake, Yajilin, Tapa — ručně vyladěné obtížnosti.",
+      "pitch": "Sudoku, Kakuro a Star Battle jsou v App Store přeplněné, ale vzácnější typy z japonských puzzle časopisů (Masyu, Heyawake, Yajilin, Tapa) mají jen pár appek a hlavní bezplatná konkurence je Simon Tatham's Puzzles. Uděláme to ve formátu časopisu: každý měsíc „číslo“ se sadou hádanek různých typů s kurátorovanou obtížností a úvodem k novému typu. Generátor s jednoznačností řešení běží na zařízení.",
+      "niche": "Vzácné Nikoli-style pencil puzzles ve formátu měsíčníku. Velká puzzle studia se drží masových typů (sudoku, kakuro), kde jsou miliony hráčů.",
+      "parent_market": "Logické puzzle hry — Conceptis (Kakuro, Pic-a-Pix), Star Battle a Nurikabe appky; japonský Puzzle Communication Nikoli.",
+      "target_user": "Fanoušci logických hádanek, kteří „dohráli“ sudoku; komunita r/puzzles, čtenáři GAMES Magazine.",
+      "features": [
+        "Každý měsíc balíček 30 hádanek 4–6 typů",
+        "Generátor s kontrolou jednoznačnosti (offline)",
+        "Tutoriál ke každému typu, nápovědy s vysvětlením",
+        "Tužkové poznámky, undo, tmavý režim",
+        "Statistiky časů a obtížností"
+      ],
+      "offline": "full",
+      "offline_note": "Generátor a solver na zařízení; nové „číslo“ je předgenerované v appce (odemyká se datem), bez serveru.",
+      "monetization": "Zdarma aktuální týden; odemknutí archivu a všech typů 7,99 USD (≈ 185 Kč), nebo 14,99 USD/rok.",
+      "revenue_math": "Ideál: 2000 stažení/měs. × 5 % platících = 100 plateb × 7.99 USD (odemknutí sezónních balíčků) ≈ 799 USD hrubého; po 15% provizi Apple ≈ 679 USD ≈ 15620 Kč čistého/měs. Stažení z long-tail názvů vzácných typů (masyu, heyawake, yajilin, tapa); 2000/měs. je optimistický ideál.",
+      "revenue_czk_ideal": 15620,
+      "keywords": [
+        {
+          "kw": "masyu",
+          "saturation": 2,
+          "competitor": "pár appek",
+          "note": "Odhad (bez autocomplete); evidence games uvádí Masyu/Heyawake/Yajilin/Tapa jako neověřené vzácné typy."
+        },
+        {
+          "kw": "heyawake",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "Odhad."
+        },
+        {
+          "kw": "yajilin",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "Odhad."
+        },
+        {
+          "kw": "logic puzzles",
+          "saturation": 8,
+          "competitor": "Conceptis a další",
+          "note": "Odhad; head term SATURATED — jen parent."
+        }
+      ],
+      "demand_evidence": "Evidence (games): příbuzné typy jsou přeplněné — Kakuro 8+, Slitherlink 7+, Star Battle 6+, Nurikabe 5 (MODERATE, plní se). Vzácné typy nebyly vyhledány. Poptávka po nich je předpoklad a hledanost bude malá.",
+      "competitors": [
+        {
+          "name": "Kakuro: Number Crossword (Conceptis)",
+          "url": "https://apps.apple.com/us/app/kakuro-number-crossword/id1197071375",
+          "role": "parent",
+          "note": "Silný vydavatel logických hádanek, 4.8★ (evidence games)."
+        },
+        {
+          "name": "Star Battle Puzzle - Hoshi",
+          "url": "https://apps.apple.com/us/app/star-battle-puzzle-hoshi/id1663477610",
+          "role": "parent",
+          "note": "Denní Star Battle — příklad úspěšné niche puzzle appky (evidence games)."
+        },
+        {
+          "name": "Nurikabe - Logic Puzzle",
+          "url": "https://apps.apple.com/us/app/nurikabe-logic-puzzle/id6755807678",
+          "role": "niche",
+          "note": "Nový vstupující do Nikoli typů 2025–26 (evidence games)."
+        },
+        {
+          "name": "Simon Tatham's Puzzles",
+          "url": "",
+          "role": "niche",
+          "note": "Zdarma, mnoho typů včetně vzácných, strohé UI."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Hledanost „masyu“/„heyawake“ může být v desítkách měsíčně — příliš málo.",
+        "Simon Tatham's Puzzles je zdarma a pokrývá podobné typy.",
+        "Generátor s kvalitní obtížností (ne jen jednoznačností) je náročný.",
+        "Evidence ukazuje, že indie vývojáři v letech 2025–26 zaplavují i Nikoli typy — vzácné typy mohou být další na řadě."
+      ],
+      "killer_risk": "Mikroskopická hledanost jednotlivých typů a zdarma konkurence.",
+      "mitigation": "Balit více typů do jedné appky (součet long-tail klíčových slov), lokalizovat názvy typů (JP, DE, NL mají puzzle kulturu).",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-23",
+      "name": "Fill-In Puzzles",
+      "tagline": "Doplňovačky jako z časopisu: seznam slov, prázdná mřížka a klidná logika bez časovače.",
+      "pitch": "Fill-in (Fill-Its, Kriss Kross) patří v amerických a britských luštěninových časopisech mezi nejprodávanější formáty — hlavně u seniorů. V App Store je jich však výrazně méně než word search nebo crosswords a často mají slabé UX. Naše appka generuje doplňovačky ze slovníků v mnoha jazycích, s velkým písmem, škrtáním použitých slov a „čísly časopisu“ po tématech.",
+      "niche": "Doplňovačky (fill-in/kriss kross) v mobilní podobě a v mnoha jazycích. Puzzle studia se zaměřují na formáty s větším dosahem.",
+      "parent_market": "Luštěninové časopisy a word puzzle appky — Penny Dell Puzzles, Kappa/PennyPress, word search appky.",
+      "target_user": "Senioři a luštitelé 50+ v US/UK/DE/NL/Nordic.",
+      "features": [
+        "Generátor fill-in mřížek ze slovníků (20+ jazyků)",
+        "Seznam slov se škrtáním a nápovědou „kotva“",
+        "Tematická čísla po 20 úlohách",
+        "Velké písmo, bez časovače",
+        "Číselné fill-in varianty (number fill-in)"
+      ],
+      "offline": "full",
+      "offline_note": "Generátor a slovníky na zařízení.",
+      "monetization": "Zdarma 1 číslo; vše 6,99 USD (≈ 160 Kč) jednorázově.",
+      "revenue_math": "Ideál: 2000 stažení/měs. × 5 % platících = 100 plateb × 6.99 USD (jednorázový unlock) ≈ 699 USD hrubého; po 15% provizi Apple ≈ 594 USD ≈ 13665 Kč čistého/měs. „fill in puzzles / fill-its“ je long-tail z amerických puzzle časopisů; 2000/měs. předpokládá i lokalizované ekvivalenty (DE „Zahlen/Wort-Einsetzrätsel“).",
+      "revenue_czk_ideal": 13665,
+      "keywords": [
+        {
+          "kw": "fill in puzzles",
+          "saturation": 3,
+          "competitor": "pár appek",
+          "note": "Odhad (bez autocomplete)."
+        },
+        {
+          "kw": "kriss kross",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad; UK termín."
+        },
+        {
+          "kw": "fill it puzzles",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad."
+        },
+        {
+          "kw": "number fill in",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Ze znalosti: Fill-In je v portfoliu Penny Press/Dell samostatný titul časopisu, což ukazuje stabilní poptávku u tištěných luštitelů. App Store hledanost je předpoklad.",
+      "competitors": [
+        {
+          "name": "Penny Dell Puzzles",
+          "url": "",
+          "role": "parent",
+          "note": "Obsahuje fill-in mezi mnoha typy."
+        },
+        {
+          "name": "Fill-In (indie tituly)",
+          "url": "",
+          "role": "niche",
+          "note": "Několik menších appek."
+        },
+        {
+          "name": "Word Search (F2P)",
+          "url": "",
+          "role": "parent",
+          "note": "Sousední formát s obřím dosahem."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Formát je „snadný“ a hráči mohou rychle ztratit zájem.",
+        "Guideline 4.3: dvě seniorské slovní appky (word search + fill-in) od jednoho vývojáře mohou vypadat jako reskin.",
+        "Hledanost může být velmi nízká mimo anglosféru.",
+        "Penny Dell může formát rozvinout ve vlastní appce."
+      ],
+      "killer_risk": "Portfolio 4.3: blízkost s Large Print Word Search.",
+      "mitigation": "Spojit oba formáty do jedné appky „Puzzle Magazine“ s více typy, nebo zřetelně odlišit UI a mechaniky.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-24",
+      "name": "News Diet",
+      "tagline": "Zprávy jednou denně, ne stokrát: rozpočet času na zpravodajské appky a „ranní vydání“ místo doomscrollingu.",
+      "pitch": "Mnoho lidí trpí úzkostí z nekonečného zpravodajství, ale nechce zprávy vypnout úplně — chce je číst jako noviny: jednou denně, v klidu. Obecné blokátory (Opal, one sec) nevědí nic o zprávách. Naše appka přes Screen Time API (FamilyControls) povolí zpravodajské appky a weby jen v nastaveném „čase vydání“, počítá denní rozpočet a měří, jak se cítíš. Vše běží na zařízení.",
+      "niche": "Omezení konzumace zpráv (news anxiety, doomscrolling). Blokátory řeší sociální sítě obecně, zpravodajské appky kategorii nemají.",
+      "parent_market": "Screen-time a digitální wellbeing — Opal, one sec, ScreenZen, Freedom (předplatná s vysokým ARPU).",
+      "target_user": "Lidé s úzkostí ze zpráv, rodiče, lidé v době voleb a krizí; 25–55 let.",
+      "features": [
+        "Okna „vydání“ pro zpravodajské appky a weby (FamilyControls)",
+        "Denní rozpočet minut zpráv a pauza před otevřením",
+        "Nálada před/po čtení a týdenní report",
+        "Sezónní režimy (volby, krize) s přísnějšími limity",
+        "Widget „dnešní vydání otevřeno do 8:30“"
+      ],
+      "offline": "full",
+      "offline_note": "Screen Time API (FamilyControls/DeviceActivity) běží lokálně; žádná data neopouští zařízení.",
+      "monetization": "Zdarma 1 okno; Pro 19,99 USD/rok (≈ 460 Kč) nebo 3,99 USD/měs. (≈ 92 Kč).",
+      "revenue_math": "Ideál: 2000 stažení/měs. × 3 % platících = 60 plateb × 19.99 USD (roční předplatné) ≈ 1199 USD hrubého; po 15% provizi Apple ≈ 1019 USD ≈ 23448 Kč čistého/měs. Ideál počítá s klíčovými slovy „news detox / doomscrolling“; head „screen time“ drží Opal a one sec.",
+      "revenue_czk_ideal": 23448,
+      "keywords": [
+        {
+          "kw": "news detox",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad (bez autocomplete)."
+        },
+        {
+          "kw": "doomscrolling",
+          "saturation": 4,
+          "competitor": "screen time blokátory",
+          "note": "Odhad."
+        },
+        {
+          "kw": "news anxiety",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad; pozor na zdravotní tvrzení."
+        },
+        {
+          "kw": "screen time",
+          "saturation": 9,
+          "competitor": "Opal, one sec",
+          "note": "Odhad; head term SATURATED — jen parent."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Ze znalosti: Opal a one sec mají vysoké příjmy z předplatného a „news avoidance“ je dokumentovaný trend (Reuters Digital News Report). Specifická hledanost „news detox“ je předpoklad.",
+      "competitors": [
+        {
+          "name": "Opal",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr screen-time blokátorů."
+        },
+        {
+          "name": "one sec",
+          "url": "",
+          "role": "parent",
+          "note": "Pauza před otevřením appky."
+        },
+        {
+          "name": "ScreenZen",
+          "url": "",
+          "role": "parent",
+          "note": "Zdarma blokátor s podobnými funkcemi."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Opal/one sec mohou přidat preset „News“ za den — funkce je snadno kopírovatelná.",
+        "FamilyControls entitlement vyžaduje schválení Apple a API je notoricky chybové.",
+        "Tvrzení o úzkosti = riziko Guideline 1.4.1/zdravotních claimů.",
+        "iOS Screen Time zdarma umí limity kategorie „Informace a čtení“ (Sherlock)."
+      ],
+      "killer_risk": "Vestavěný Screen Time + velcí blokátory řeší 90 % potřeby zdarma nebo lépe.",
+      "mitigation": "Silný „zpravodajský“ framing (ranní vydání, rituál), bez zdravotních tvrzení, lokalizace do 30+ jazyků, kde blokátory nejsou přeložené.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-25",
+      "name": "Interview Notebook",
+      "tagline": "Nahraj rozhovor, dostaň přepis přímo v telefonu a vytáhni citace s časovou značkou — nic nejde do cloudu.",
+      "pitch": "Novináři, studenti a výzkumníci nahrávají rozhovory a pak hodiny přepisují; cloudové služby (Otter, Rev) jsou drahé a pro citlivé zdroje nebezpečné. S on-device přepisem (Speech framework / SpeechAnalyzer v iOS 26) lze vše udělat v telefonu: nahrávka, přepis, označení citací, ověření časové značky a export do článku. Soukromí zdrojů je pro novináře zásadní argument, který cloudové služby nenabídnou.",
+      "niche": "On-device přepis rozhovorů pro novináře s „quote bank“. Cloudové přepisy cílí na byznys meetingy, ne na žurnalistickou práci s citacemi a ochranou zdrojů.",
+      "parent_market": "Přepis a nahrávání — Otter.ai, Rev, Just Press Record, Apple Voice Memos (s přepisem v iOS 18+).",
+      "target_user": "Novináři, studenti žurnalistiky, výzkumníci (kvalitativní rozhovory), podcasteři, autoři biografií.",
+      "features": [
+        "Nahrávání s markery během rozhovoru",
+        "On-device přepis ve 30+ jazycích (Speech framework)",
+        "Quote bank: výběr citací s časovou značkou a přehráním",
+        "Export do Markdownu/DOCX s citacemi",
+        "Šifrovaný trezor pro citlivé rozhovory (Face ID)"
+      ],
+      "offline": "full",
+      "offline_note": "Přepis běží na zařízení (SpeechAnalyzer/SFSpeechRecognizer on-device); žádný cloud.",
+      "monetization": "Zdarma 60 minut přepisu měsíčně; Pro 29,99 USD/rok (≈ 690 Kč).",
+      "revenue_math": "Ideál: 1500 stažení/měs. × 3 % platících = 45 plateb × 29.99 USD (roční předplatné) ≈ 1350 USD hrubého; po 15% provizi Apple ≈ 1147 USD ≈ 26384 Kč čistého/měs. Studenti žurnalistiky, podcasteři a výzkumníci; „interview recorder“ je konkurenční, ale on-device soukromí je rozlišovací znak.",
+      "revenue_czk_ideal": 26384,
+      "keywords": [
+        {
+          "kw": "interview recorder",
+          "saturation": 5,
+          "competitor": "nahrávací appky",
+          "note": "Odhad (bez autocomplete)."
+        },
+        {
+          "kw": "journalist recorder",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad."
+        },
+        {
+          "kw": "transcribe interview",
+          "saturation": 6,
+          "competitor": "Otter, přepisové appky",
+          "note": "Odhad; obsazené."
+        },
+        {
+          "kw": "offline transcription",
+          "saturation": 5,
+          "competitor": "nové on-device appky",
+          "note": "Odhad; od iOS 26 roste."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Ze znalosti: Otter a Rev mají velké příjmy, přepisové appky jsou jedním z nejvýdělečnějších utility segmentů. Novinářská niche je předpoklad; Apple Voice Memos od iOS 18 přepisuje zdarma.",
+      "competitors": [
+        {
+          "name": "Otter.ai",
+          "url": "",
+          "role": "parent",
+          "note": "Cloudový přepis s předplatným."
+        },
+        {
+          "name": "Just Press Record",
+          "url": "",
+          "role": "parent",
+          "note": "Indie nahrávač s přepisem."
+        },
+        {
+          "name": "Apple Voice Memos",
+          "url": "",
+          "role": "parent",
+          "note": "Vestavěný přepis zdarma — hlavní Sherlock riziko."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Apple Voice Memos už přepisuje na zařízení zdarma — Sherlock se už stal.",
+        "Segment přepisových appek je přeplněný desítkami AI titulů.",
+        "Kvalita on-device přepisu v menších jazycích je slabší než cloud (Whisper).",
+        "Novináři mají redakční nástroje od zaměstnavatele."
+      ],
+      "killer_risk": "Voice Memos zdarma s přepisem udělá appku zbytečnou pro většinu lidí.",
+      "mitigation": "Soustředit se na to, co Voice Memos nemá: quote bank, markery, export s citacemi, trezor; ASO na „journalist“ long-tail.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 3,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-26",
+      "name": "Daily Me Gazette",
+      "tagline": "Deník, který vypadá jako noviny: tvůj den jako titulní strana s počasím, kroky a fotkou dne.",
+      "pitch": "Journaling appky (Day One, Journal od Apple) mají miliony uživatelů, ale většina deníků vypadá stejně. Naše appka udělá z každého dne titulní stranu novin: titulek, fotka dne, „počasí“ a kroky z HealthKitu, citát, drobné zprávy — a na konci měsíce vytiskne „ročník“. Formát je vizuálně sdílitelný (sociální sítě) a baví lidi, kterým klasický deník nevydržel.",
+      "niche": "Deník v novinovém formátu. Journaling giganti řeší soukromí a sync, ne formu výstupu jako artefaktu.",
+      "parent_market": "Journaling — Day One, Apple Journal, Daylio, Stoic; fotoknihy.",
+      "target_user": "Mladí dospělí 18–35 se zálibou v estetice, scrapbookingu a sdílení; rodiče vedoucí deník dítěte.",
+      "features": [
+        "Denní titulní strana s automatickým layoutem",
+        "Data z HealthKit (kroky), fotky dne, poloha (volitelně)",
+        "Měsíční „ročník“ jako PDF k tisku",
+        "Šablony stylů (1920s, tabloid, moderní)",
+        "Export obrázku pro sociální sítě"
+      ],
+      "offline": "full",
+      "offline_note": "HealthKit a fotky lokálně; layout a PDF na zařízení; bez WeatherKit (počasí zadává uživatel ikonou), takže plně offline.",
+      "monetization": "Zdarma 7 dní; Pro 14,99 USD/rok (≈ 345 Kč).",
+      "revenue_math": "Ideál: 1500 stažení/měs. × 4 % platících = 60 plateb × 14.99 USD (roční předplatné) ≈ 899 USD hrubého; po 15% provizi Apple ≈ 764 USD ≈ 17583 Kč čistého/měs. Journaling je velký trh; „newspaper journal“ je malá, ale vizuálně virální niche (TikTok/Pinterest).",
+      "revenue_czk_ideal": 17583,
+      "keywords": [
+        {
+          "kw": "newspaper journal",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "Odhad (bez autocomplete)."
+        },
+        {
+          "kw": "daily journal",
+          "saturation": 9,
+          "competitor": "Day One a další",
+          "note": "Odhad; head SATURATED — jen parent."
+        },
+        {
+          "kw": "aesthetic journal",
+          "saturation": 5,
+          "competitor": "aesthetic diary appky",
+          "note": "Odhad."
+        },
+        {
+          "kw": "newspaper maker",
+          "saturation": 4,
+          "competitor": "fake newspaper generátory",
+          "note": "Odhad; zaplevelené prank generátory."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Ze znalosti: journaling appky patří k výdělečným (Day One předplatné), „newspaper aesthetic“ je opakující se trend na TikToku/Pinterestu. Specifická hledanost je předpoklad.",
+      "competitors": [
+        {
+          "name": "Day One",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr journalingu s předplatným."
+        },
+        {
+          "name": "Apple Journal",
+          "url": "",
+          "role": "parent",
+          "note": "Vestavěný deník zdarma."
+        },
+        {
+          "name": "Daylio",
+          "url": "",
+          "role": "parent",
+          "note": "Mood journal s velkou základnou."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Novinový vzhled je gimmick — po týdnu omrzí, retence journaling appek je nízká.",
+        "Apple Journal je zdarma a integrovaný (Sherlock).",
+        "Sdílí layout engine s Wedding Newspaper a Holiday Letter — riziko 4.3 pro portfolio.",
+        "HealthKit data vyžadují pečlivý privacy popis (5.1.1)."
+      ],
+      "killer_risk": "Nízká retence: gimmick nevydrží na roční předplatné.",
+      "mitigation": "Měsíční tištěný „ročník“ jako hodnota, která roste s časem; výrazně odlišné UI od ostatních novinových appek.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-27",
+      "name": "Press Clippings Book",
+      "tagline": "Všechny tvoje mediální zmínky na jednom místě — výstřižky, odkazy, citace a hotový press kit v PDF.",
+      "pitch": "Autoři, výtvarníci, kapely, kavárny a malé firmy sbírají mediální ohlasy — článek v regionálních novinách, recenzi v časopise, rozhovor v rádiu — a pak je nemohou najít, když potřebují press kit nebo grantovou žádost. Media monitoring služby stojí stovky dolarů měsíčně. Naše appka je osobní „výstřižková kniha“: sken tištěného článku, uložení odkazu, citace k použití a jedním klepnutím elegantní PDF press kit.",
+      "niche": "Osobní evidence mediálních zmínek a press kit pro malé tvůrce. Media monitoring (Meltwater, Cision) je enterprise za stovky dolarů, malí to dělají v šuplíku.",
+      "parent_market": "Media monitoring a PR — Meltwater, Cision, Muck Rack (enterprise); skenery dokumentů (CamScanner).",
+      "target_user": "Autoři knih, umělci, hudebníci, řemeslníci, malé restaurace a startupy, PR freelanceři.",
+      "features": [
+        "Sken tištěné zmínky s OCR a metadaty (médium, datum)",
+        "Uložení online zmínky přes Share sheet (screenshot + odkaz)",
+        "Výběr citací („pull quotes“) pro web a obaly",
+        "Generátor PDF press kitu",
+        "Tagy (recenze, rozhovor, ocenění)"
+      ],
+      "offline": "mostly",
+      "offline_note": "Sken a OCR na zařízení; u online zmínek se uloží jen odkaz a snímek z webu při sdílení. Žádný monitoring ani server.",
+      "monetization": "Zdarma 15 zmínek; Pro 19,99 USD/rok (≈ 460 Kč).",
+      "revenue_math": "Ideál: 500 stažení/měs. × 6 % platících = 30 plateb × 19.99 USD (roční předplatné) ≈ 600 USD hrubého; po 15% provizi Apple ≈ 510 USD ≈ 11724 Kč čistého/měs. Umělci, autoři, kapely, malé firmy a startupy; 500/měs. je ideál.",
+      "revenue_czk_ideal": 11724,
+      "keywords": [
+        {
+          "kw": "press clippings",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "Odhad (bez autocomplete)."
+        },
+        {
+          "kw": "press kit",
+          "saturation": 3,
+          "competitor": "EPK buildery pro hudebníky",
+          "note": "Odhad."
+        },
+        {
+          "kw": "media coverage",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad."
+        },
+        {
+          "kw": "press book",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Ze znalosti: EPK (electronic press kit) buildery pro hudebníky existují jako webové služby s předplatným; malá firma/umělec problém má, ale hledanost v App Store je velmi nejistá.",
+      "competitors": [
+        {
+          "name": "CamScanner - PDF Scanner App",
+          "url": "https://apps.apple.com/om/app/camscanner-pdf-scanner-app/id388627783",
+          "role": "parent",
+          "note": "Obecný skener (evidence productivity)."
+        },
+        {
+          "name": "Muck Rack",
+          "url": "",
+          "role": "parent",
+          "note": "PR platforma pro profesionály, enterprise cena."
+        },
+        {
+          "name": "EPK buildery (Bandzoogle aj.)",
+          "url": "",
+          "role": "niche",
+          "note": "Webové press kity pro hudebníky."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Většina malých tvůrců má zmínek jen pár ročně — předplatné nedává smysl.",
+        "Blízko nápadu Clipping Keeper — v portfoliu hrozí 4.3, lepší jako režim jedné appky.",
+        "Nízká hledanost: lidé nevědí, že takovou appku hledat.",
+        "Canva šablona press kitu zdarma pokryje výstup."
+      ],
+      "killer_risk": "Nedostatečná frekvence použití pro předplatné.",
+      "mitigation": "Jednorázová cena, nebo integrovat jako „Pro/Business režim“ do Clipping Keeper místo samostatné appky.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 8,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-28",
+      "name": "On This Day Gazette",
+      "tagline": "Každé ráno vintage noviny s událostmi, které se staly přesně dnes — v tvém jazyce a offline.",
+      "pitch": "„Tento den v historii“ je jedním z nejoblíbenějších formátů novinových rubrik i sociálních sítí. Anglických appek je dost, ale v menších jazycích a s lokálními událostmi (česká, polská, německá historie) jich je málo. Obsah postavíme z Wikipedie (CC BY-SA, atribuce) pro 366 dní × jazyky, přibalený offline, v podobě stylových starých novin s widgetem na plochu.",
+      "niche": "Lokalizovaný „on this day“ ve formě denních vintage novin. Anglické appky nemají lokální historii, lokální weby nemají appky.",
+      "parent_market": "Historie a denní fakta — On This Day appky, History Channel appka, widgety denních faktů.",
+      "target_user": "Milovníci historie, učitelé dějepisu, senioři, lidé hledající denní widget.",
+      "features": [
+        "Denní titulní strana s 5–10 událostmi, narozeniny, úmrtí",
+        "Lokální filtr (události z tvé země)",
+        "Widget na plochu a zamykací obrazovku",
+        "Offline databáze pro 366 dní × 20 jazyků",
+        "Kvíz „uhodni rok“"
+      ],
+      "offline": "full",
+      "offline_note": "Data z Wikipedie předzpracovaná a přibalená (CC BY-SA s atribucí); aktualizace přes update appky.",
+      "monetization": "Zdarma s reklamou; Pro bez reklam a s archivem 2,99 USD (≈ 69 Kč) jednorázově, nebo 4,99 USD/rok.",
+      "revenue_math": "Ideál: 5000 stažení/měs. × 3 % = 150 nákupů × 2,99 USD ≈ 449 USD hrubého ≈ 381 USD čistého ≈ 8770 Kč + reklamy (~3000 Kč) ≈ 11700 Kč/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "this day in history",
+          "saturation": 7,
+          "competitor": "mnoho EN appek",
+          "note": "Odhad (bez autocomplete); anglický trh HARD."
+        },
+        {
+          "kw": "on this day",
+          "saturation": 7,
+          "competitor": "mnoho appek",
+          "note": "Odhad."
+        },
+        {
+          "kw": "tento den v historii",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad; CZ varianta."
+        },
+        {
+          "kw": "history widget",
+          "saturation": 4,
+          "competitor": "widget appky",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Ze znalosti: kategorie „on this day“ má mnoho appek a velký organický zájem; lokalizované varianty jsou můj předpoklad. Wikipedie data jsou volná (CC BY-SA).",
+      "competitors": [
+        {
+          "name": "On This Day (EN appky)",
+          "url": "",
+          "role": "parent",
+          "note": "Mnoho anglických titulů."
+        },
+        {
+          "name": "History (A+E)",
+          "url": "",
+          "role": "parent",
+          "note": "Velká mediální značka s obsahem."
+        },
+        {
+          "name": "Wikipedia",
+          "url": "",
+          "role": "parent",
+          "note": "Stránka „Selected anniversaries“ zdarma."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Guideline 4.3/2.3: appka postavená na volně dostupném obsahu Wikipedie může být označena za nízkou přidanou hodnotu.",
+        "CC BY-SA share-alike: odvozenou databázi musíme zveřejnit pod stejnou licencí.",
+        "Nízká monetizace — lidé nechtějí platit za fakta dostupná zdarma.",
+        "Anglický trh je plný, lokální trhy malé."
+      ],
+      "killer_risk": "Nízká ochota platit + riziko odmítnutí pro „repackaged web content“.",
+      "mitigation": "Přidat vlastní hodnotu (vintage layout, kvíz, lokální filtr, redakční výběr), začít CZ/PL/HU, kde konkurence skoro není.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 3,
+        "monetization": 3,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-29",
+      "name": "Print Subscription Tracker",
+      "tagline": "Hlídač předplatného novin a časopisů: kdy obnovit, kolik platíš a která upomínka je podvod.",
+      "pitch": "Starší domácnosti často odebírají několik časopisů a novin a dostávají matoucí upomínky o obnovení — včetně podvodných „renewal notices“ od třetích stran, před kterými varují americké spotřebitelské organizace. Obecné trackery předplatného (Bobby, Rocket Money) hlídají digitální služby, ne tištěná periodika s čísly a termíny. Naše appka eviduje předplatná, datum obnovy, cenu za číslo, dorazila čísla a upozorní, když upomínka nesedí.",
+      "niche": "Evidence tištěných předplatných a ochrana před falešnými upomínkami. Trackery předplatného řeší streaming a SaaS.",
+      "parent_market": "Trackery předplatného — Rocket Money, Bobby, Subscriptions trackery (vysoké příjmy u Rocket Money).",
+      "target_user": "Senioři a domácnosti s více tištěnými předplatnými, jejich dospělé děti, USA/UK/DE.",
+      "features": [
+        "Seznam předplatných s cenou, obdobím a datem obnovy",
+        "Check-in doručených čísel (chybějící číslo = reklamace)",
+        "Kontrola upomínky: porovnání s uloženým vydavatelem a cenou",
+        "Připomínky obnovy a zrušení",
+        "Sdílení s rodinou přes iCloud"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně/iCloud; kontrola upomínky porovnává s uživatelskými daty, ne s online databází.",
+      "monetization": "Předplatné 1,99 USD/měs. (≈ 46 Kč) nebo lifetime 14,99 USD (≈ 345 Kč).",
+      "revenue_math": "Ideál: 800 stažení/měs. × 6 % = 48 nových předplatitelů; při 15% odpadu ~320 aktivních × 1,99 USD ≈ 637 USD hrubého ≈ 541 USD čistého ≈ 12400 Kč/měs. Realisticky spíš polovina.",
+      "revenue_czk_ideal": 12400,
+      "keywords": [
+        {
+          "kw": "magazine subscription",
+          "saturation": 5,
+          "competitor": "vydavatelské appky",
+          "note": "Odhad (bez autocomplete); obsazené publisher appkami."
+        },
+        {
+          "kw": "subscription tracker",
+          "saturation": 8,
+          "competitor": "Bobby, Rocket Money",
+          "note": "Odhad; SATURATED — jen parent."
+        },
+        {
+          "kw": "renewal reminder",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "Odhad."
+        },
+        {
+          "kw": "magazine renewal",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Ze znalosti: FTC a spotřebitelské organizace opakovaně varují před falešnými magazine renewal notices; trackery předplatného jsou výdělečné. Hledanost specifické varianty je velmi nejistá.",
+      "competitors": [
+        {
+          "name": "Rocket Money",
+          "url": "",
+          "role": "parent",
+          "note": "Tracker předplatného napojený na banku (server)."
+        },
+        {
+          "name": "Bobby",
+          "url": "",
+          "role": "parent",
+          "note": "Jednoduchý manuální tracker předplatného."
+        },
+        {
+          "name": "Apple Reminders",
+          "url": "",
+          "role": "parent",
+          "note": "Zdarma připomínky obnovy."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Tištěná předplatná ubývají; cílovka stárne a zmenšuje se.",
+        "Obecné trackery předplatného (Bobby) pokryjí 80 % potřeby.",
+        "Senioři nehledají v App Store a konverze na předplatné bude nízká.",
+        "Ochrana proti podvodům jen z ručních dat je slabá — nelze slíbit detekci."
+      ],
+      "killer_risk": "Malý a klesající trh s nízkou ochotou platit.",
+      "mitigation": "Prodávat dětem seniorů („pohlídej rodičům předplatná“) s rodinným sdílením; lifetime cena.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 6,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "magazines-newspapers-30",
+      "name": "Pulp Magazine Vault",
+      "tagline": "Zlatý věk pulp časopisů v kapse: sci-fi, detektivky a dobrodružství z let 1920–1930, čistě public domain.",
+      "pitch": "Pulp časopisy (Amazing Stories, Weird Tales, Black Mask) z 20. let jsou kultovní, jejich obálky legendární a v USA jsou čísla vydaná do roku 1930 public domain (od ledna 2026). Dnes se čtou jako skeny na Internet Archive v nepohodlných prohlížečích. Naše appka nabídne kurátorovanou knihovnu přepsaných povídek s původními ilustracemi, v čtecím režimu pro telefon, s poznámkami k historii — ve formátu „čísel“ jako skutečný časopis.",
+      "niche": "Kurátorovaný public-domain pulp magazín pro mobil. Vydavatelé o PD obsah nestojí, Internet Archive nemá čtenářské UX.",
+      "parent_market": "Digitální čtení a e-knihy — Kindle, Apple Books, Serial Reader (PD klasika v dávkách), Standard Ebooks.",
+      "target_user": "Fanoušci retro sci-fi, hororu a detektivek, sběratelé pulp umění, čtenáři Lovecrafta.",
+      "features": [
+        "Kurátorovaná „čísla“ s povídkami a ilustracemi (PD)",
+        "Čtecí režim, audio přes on-device TTS",
+        "Galerie obálek v vysokém rozlišení",
+        "Historické poznámky k autorům a číslům",
+        "Offline knihovna"
+      ],
+      "offline": "full",
+      "offline_note": "Obsah přibalený v appce nebo jako On-Demand Resources od Apple; žádný server.",
+      "monetization": "Zdarma 1 číslo; předplatné 9,99 USD/rok (≈ 230 Kč) nebo lifetime 19,99 USD (≈ 460 Kč).",
+      "revenue_math": "Ideál: 1500 stažení/měs. × 4 % platících = 60 plateb × 9.99 USD (roční předplatné) ≈ 599 USD hrubého; po 15% provizi Apple ≈ 509 USD ≈ 11718 Kč čistého/měs. Vintage pulp a retro sci-fi fanoušci; 1500/měs. je optimistický ideál.",
+      "revenue_czk_ideal": 11718,
+      "keywords": [
+        {
+          "kw": "pulp magazines",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "Odhad (bez autocomplete)."
+        },
+        {
+          "kw": "pulp fiction stories",
+          "saturation": 3,
+          "competitor": "e-book appky",
+          "note": "Odhad; „pulp fiction“ koliduje s filmem."
+        },
+        {
+          "kw": "weird tales",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "Odhad; název titulu může být chráněná značka (dnes existuje nový vydavatel)."
+        },
+        {
+          "kw": "vintage sci-fi",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "Odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Ze znalosti: Serial Reader ukazuje, že PD literatura v mobilním formátu vydělává; pulp art je populární (plakáty, Pinterest). Licenční stav a hledanost nejsou ověřeny.",
+      "competitors": [
+        {
+          "name": "Serial Reader",
+          "url": "",
+          "role": "parent",
+          "note": "PD klasika v denních dávkách, předplatné."
+        },
+        {
+          "name": "Internet Archive",
+          "url": "",
+          "role": "parent",
+          "note": "Skeny pulp časopisů zdarma, bez čtenářského UX."
+        },
+        {
+          "name": "Standard Ebooks",
+          "url": "",
+          "role": "parent",
+          "note": "Kvalitní PD e-knihy zdarma."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Licence: PD v USA ≠ PD celosvětově — v EU platí 70 let od smrti autora, takže mnoho povídek je v EU chráněných; nutné geo-omezení obsahu.",
+        "Názvy časopisů (Weird Tales, Amazing Stories) jsou dnes chráněné ochranné známky nových vlastníků.",
+        "Guideline 4.3/2.3: appka s PD obsahem může být odmítnuta jako „repackaged content“.",
+        "Přepis a kurátorování obsahu je měsíce ruční práce.",
+        "Dobový obsah obsahuje rasistické pasáže — riziko recenzí a App Review."
+      ],
+      "killer_risk": "Licenční a trademark riziko (EU autorská práva, jména časopisů) + review jako repackaged content.",
+      "mitigation": "Jen povídky autorů zemřelých před 1956 (PD i v EU), generický název appky, vlastní redakční přidaná hodnota (poznámky, audio), obsahová varování.",
+      "build_weeks": 8,
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 5,
+        "monetization": 3,
+        "build_ease": 3,
+        "offline_fit": 10,
+        "safety": 2
+      },
+      "evidence": "knowledge"
+    }
+  ]
+}

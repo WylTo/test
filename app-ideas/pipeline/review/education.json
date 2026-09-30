@@ -1,0 +1,755 @@
+{
+  "category_slug": "education",
+  "summary": "Kategorie trpí optimistickými odhady saturace: 6 webových kontrol ukázalo, že tři ze čtyř nejvýše hodnocených „knowledge“ nápadů (ATC frazeologie, CELPIP mluvení, tóny vietnamštiny) jsou ve skutečnosti obsazené vlnou AI appek z let 2025–26 a u českých reálií a rolovaného R autor přehlédl přímé konkurenty. Nejlepší sázky jsou Radical Path (kanji radikály, lokalizované), Rolling R Coach a Phonics Check Prep; společnou vadou jsou úzké výukové niky s nízkou ochotou platit – realistický medián je 1–5 tis. Kč/měs., ne 10–20 tis. Kč, a nikde nevyšel 10 tis. v realistickém scénáři.",
+  "reviews": [
+    {
+      "id": "education-01",
+      "verdict": "GO",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "„learn kanji“ je SATURATED (sat 9) a velcí hráči (Kanji Study, Ringotan, Skritter) mají radikály jako filtr/rozklad – rozdíl musí být vidět už na screenshotech.",
+        "Klienti WaniKani pro iOS (Tsurukame, Smouldering Durtles) dávají radikálový přístup zdarma uživatelům, kteří už platí WaniKani.",
+        "Data rozkladu znaků (KRADFILE/KanjiVG) jsou pod CC BY-SA – nutné dodržet atribuci a share-alike u odvozených dat, jinak právní riziko.",
+        "Mnemotechniky k radikálům jsou jazykově specifické – lokalizace do 50 jazyků znamená přepsat stovky mnemotechnik, ne jen UI."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Tsurukame (WaniKani klient)",
+          "url": "",
+          "note": "radikály→kanji→slovíčka, zdarma pro předplatitele WaniKani; bez ověřené URL"
+        }
+      ],
+      "revenue_czk_realistic": 6000,
+      "reviewer_note": "Nejsolidnější nápad kategorie: platící publikum, dva slabí přímí konkurenti v evidenci a reálná mezera v neanglických lokalizacích. Cílit hlavně na DE/FR/ES/PT/PL studenty japonštiny s mnemotechnikami v jejich jazyce; 19 000 Kč je příliš optimistické, reálně 5–7 tis."
+    },
+    {
+      "id": "education-02",
+      "verdict": "GO",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Kids kategorie = žádná analytika třetích stran, parental gate, přísnější review (1.3, 5.1.4) – zdržení a nižší měřitelnost ASO.",
+        "Silná sezónnost: poptávka se soustředí do března–června, v zimě téměř nula; roční průměr bude hluboko pod špičkou.",
+        "Školy a rodiče mají zdarma oficiální minulé testy DfE (OGL) a Phonics Play; placená appka konkuruje zdarma dostupným PDF.",
+        "Trh je jen Anglie (~650 tis. dětí ročně), lokalizace do 50 jazyků nedává smysl – US-gap efekt nulový."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Jolly Classroom: Teach Phonics",
+          "url": "https://apps.apple.com/lc/app/jolly-classroom-teach-phonics/id1549452023",
+          "note": "školní nástroj od lídra, má PSC hodnocení"
+        },
+        {
+          "name": "The Phonics App",
+          "url": "https://apps.apple.com/us/app/the-phonics-app/id6742649576",
+          "note": "obecná phonics appka, může přidat alien words během týdne"
+        }
+      ],
+      "revenue_czk_realistic": 4500,
+      "reviewer_note": "Levná stavba (3 týdny), jasné klíčové slovo s jediným slabším přímým konkurentem (Your Phonics). Ale je to UK-only sezónní produkt – realisticky 3–6 tis. Kč v ročním průměru, ne 14 tis.; stavět jako rychlý experiment, ne jako vlajkovou loď."
+    },
+    {
+      "id": "education-03",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 8,
+        "monetization": 4,
+        "build_ease": 3,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "extra_risks": [
+        "„Teeline“ je ochranná známka – použití v názvu/podtitulu bez licence riskuje odmítnutí (5.2.1) a stížnost vlastníka.",
+        "Rozpoznání těsnopisných značek z Apple Pencil vyžaduje vlastní model a trénovací data, která neexistují – realisticky měsíce práce, ne 6 týdnů.",
+        "Publikum je mikroskopické: jednotky tisíc studentů NCTJ ročně ve UK + hobby komunita Gregg; škola často dodává vlastní materiály.",
+        "Poptávka „shorthand“ v App Store se míchá s text-expander appkami – noisy klíčové slovo."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Blue ocean je skutečný, ale protože tam nejsou peníze, ne protože by ho někdo přehlédl. Jediná cesta: MVP bez rozpoznávání (diktáty v rychlostech 60–120 wpm + kartičky značek), Teeline jen v popisu a ověřit licenci; počítat se 1–3 tis. Kč."
+    },
+    {
+      "id": "education-04",
+      "verdict": "GO",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Nejsou prázdné: existují minimálně 2 dedikované appky (České reálie cvičný test; Českých Reálií Czech Realities se všemi 300 otázkami).",
+        "Oficiální stránky (čeština pro cizince / NPI) nabízejí vzorové testy a databanku reálií zdarma – placená appka konkuruje bezplatnému oficiálnímu zdroji.",
+        "Databanka otázek se mění (aktualizace MŠMT/NPI); zastaralá otázka = 1★ recenze od lidí, pro které jde o pobyt.",
+        "Klíčová slova v češtině (trvalý pobyt, české reálie) mají malý objem a cizinci hledají spíš v ukrajinštině/vietnamštině/ruštině – nutné lokalizovat metadata do těchto jazyků."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Českých Reálií Czech Realities",
+          "url": "https://apps.apple.com/us/app/-/id6737776553",
+          "note": "všech 300 otázek zkoušky z reálií, 30 témat"
+        },
+        {
+          "name": "České reálie cvičný test",
+          "url": "https://apps.apple.com/id/app/%C4%8Desk%C3%A9-re%C3%A1lie-cvi%C4%8Dn%C3%BD-test/id1568458568",
+          "note": "testovací i procvičovací režim, statistiky"
+        }
+      ],
+      "revenue_czk_realistic": 4000,
+      "reviewer_note": "Lapnito má domácí výhodu (čeština, znalost systému) a konkurence je slabá, ale existuje – autor tvrdil opak bez URL. Vyhrát jde překladem otázek a vysvětlení do UA/VI/RU/EN + A2 modul; reálně 3–5 tis. Kč, ne 16 tis.",
+      "web_checked": true
+    },
+    {
+      "id": "education-05",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 5,
+        "monetization": 2,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Vidící, kteří se učí Braillovo písmo, jsou hlavně rodiče/učitelé nevidomých dětí – zlomek promile populace a většinou dostanou materiály zdarma od SONS/škol.",
+        "Národní kódy se liší hlavně v diakritice; základní abecedu pokryje každá anglická appka, takže „lokalizace“ je slabý diferenciátor.",
+        "Existuje ~8 anglických appek a množství bezplatných webových tabulek – nikdo nebude platit 5 USD za abecedu.",
+        "Chyby v národních tabulkách (např. české 6bodové znaky pro č/ř/ů) poškodí reputaci u komunity, která by appku doporučovala."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Hezký, ale nevýdělečný projekt: nízká ochota platit a malá cílová skupina. Pokud vůbec, pak jako zdarma dostupná appka pro dobré jméno, ne jako cesta k 10 tis. Kč."
+    },
+    {
+      "id": "education-06",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 3,
+        "build_ease": 4,
+        "offline_fit": 7,
+        "safety": 3
+      },
+      "extra_risks": [
+        "Nahrávky čtení dětí = osobní údaje nezletilých (GDPR, 5.1.1/1.3); školy budou chtít souhlas rodičů a DPA.",
+        "On-device rozpoznávání řeči pro dětské čtení v češtině/polštině má vysokou chybovost – WCPM bude nepřesné a učitel mu nebude věřit.",
+        "Chybí normy WCPM pro neanglické jazyky i licencované texty – bez norem je číslo bez kontextu a vlastní texty je nutné napsat a odstupňovat.",
+        "Učitelé v ČR z vlastní kapsy platí málo; nákup přes školu je pomalý a Lapnito nemá obchodníka."
+      ],
+      "missed_competitors": [
+        {
+          "name": "First Steps to Reading Fluency",
+          "url": "https://apps.apple.com/us/app/first-steps-to-reading-fluency/id1356214665",
+          "note": "další US fluency appka z books evidence"
+        }
+      ],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Jen jako jednoduchý nástroj s ručním klepáním chyb (bez ASR) a vlastní knihovnou textů pro CZ/PL/DE; s rozpoznáváním řeči je to projekt na měsíce s pochybnou přesností. Monetizace u učitelů je slabá."
+    },
+    {
+      "id": "education-07",
+      "verdict": "GO",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Autor přehlédl Rollr Academy / RollrApp (2025, vyvinutá logopedy, 12týdenní program) – přímý, vyleštěný konkurent na „roll your r“.",
+        "Detekce vibrantu (modulace 20–30 Hz) je proveditelná, ale falešně pozitivní výsledky u šumu/grkání zničí důvěru – nutné pečlivé ladění na různých hlasech.",
+        "Marketing „pro děti s rotacismem“ = zdravotní tvrzení (1.4.1); nutné držet se jazykového/výukového rámce.",
+        "Retence nízká: kdo R zvládne, appku smaže; příjem jen z jednorázových nákupů bez opakování."
+      ],
+      "missed_competitors": [
+        {
+          "name": "The Rollr Academy / RollrApp: Fix Rhotacism",
+          "url": "https://apps.apple.com/ke/app/the-rollr-academy/id6751569088",
+          "note": "dedikovaný trenér rolovaného R od logopedů, IAP"
+        }
+      ],
+      "revenue_czk_realistic": 5000,
+      "reviewer_note": "Klíčové slovo je přirozené a globální (studenti ŠP/IT/RU/CZ), měřitelná zpětná vazba z mikrofonu je skutečná hodnota a jediný konkurent je anglický. Vyhrát lokalizací + vizualizací vibrace; počítat s 4–6 tis. Kč, ne 15 tis.",
+      "web_checked": true
+    },
+    {
+      "id": "education-08",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 3,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "PhoSpeak (2025) už dělá přesně pitch-křivku uživatele vs. rodilý mluvčí pro vietnamštinu; Learn Vietnamese: Saigon má vizuální kontury tónů.",
+        "Tři jazyky = trojí nahrávání rodilých mluvčích a tři různé tónové modely (kantonština má 6–9 tónů, thajština 5) – scope exploze pro 1 vývojáře.",
+        "Extrakce F0 na nekvalitním mikrofonu a u tichých hlasů je nestabilní; hodnocení „správně/špatně“ bude často chybné.",
+        "Studenti vietnamštiny/thajštiny/kantonštiny jsou malé segmenty s nízkou ochotou platit za úzký nástroj."
+      ],
+      "missed_competitors": [
+        {
+          "name": "PhoSpeak",
+          "url": "https://apps.apple.com/us/app/phospeak/id6753764350",
+          "note": "nahrávání a porovnání tónové křivky s rodilým mluvčím"
+        },
+        {
+          "name": "Learn Vietnamese: Saigon",
+          "url": "https://apps.apple.com/us/app/learn-vietnamese-saigon/id6760660442",
+          "note": "trénink 6 tónů s vizuálními konturami"
+        }
+      ],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Vietnamština je už obsazená; smysl by dávala jen jedna jazyková verze – nejspíš kantonština pro heritage learnery (neověřeno) – a teprve po ověření konkurence. Ve stávající podobě jde o tři projekty v jednom.",
+      "web_checked": true
+    },
+    {
+      "id": "education-09",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 2,
+        "monetization": 3,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "„english pronunciation“ (sat 9) a „accent training“ ovládají ELSA, BoldVoice, Speechling, Sounds (Macmillan) – neprorazitelné.",
+        "„minimal pairs“ patří logopedickým appkám pro děti (Minimal Pairs Academy apod.), dospělí toto slovo nehledají.",
+        "L1-specifický obsah pro desítky mateřských jazyků = obrovská produkce audia a párů; bez ní je to jen další obecná appka.",
+        "Klíčové slovo „english listening sounds“ nemá žádný doklad poptávky."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Sounds: The Pronunciation App (Macmillan)",
+          "url": "",
+          "note": "zavedená percepční i produkční cvičení; bez ověřené URL"
+        }
+      ],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Neexistuje nika s vlastním klíčovým slovem – je to percepční varianta přeplněného trhu výslovnosti. Hodnota L1 párů je akademická, ASO ji neprodá."
+    },
+    {
+      "id": "education-10",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 1,
+        "monetization": 6,
+        "build_ease": 3,
+        "offline_fit": 8,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Nika je SATURATED: 8 dedikovaných ATC trenérů, většinou 2025–26 s AI hlasovým hodnocením a explicitně ICAO frazeologií (Wilco, ATC One, ATC Radio Practice Trainer, PlaneEnglish).",
+        "Kvalitní rádiový trénink dnes vyžaduje rozpoznávání řeči a dialog – konkurence to má (často přes cloud), offline skriptované dialogy budou působit zastarale.",
+        "Chyby ve frazeologii v letecké výuce = reputační i bezpečnostní riziko; nutná odborná revize (FRTOL, EASA/UK CAA CAP 413)."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Wilco: ATC Radio Trainer",
+          "url": "https://apps.apple.com/us/app/wilco-atc-radio-trainer/id6779737028",
+          "note": "push-to-talk, hodnocení volání po prvcích"
+        },
+        {
+          "name": "ATC One: AI Radio Practice",
+          "url": "https://apps.apple.com/us/app/atc-one-ai-radio-practice/id6754663148",
+          "note": "AI ATC dle ICAO standardu"
+        },
+        {
+          "name": "ATC Radio Practice Trainer",
+          "url": "https://apps.apple.com/pk/app/atc-radio-practice-trainer/id6778602428",
+          "note": "frazeologie, readbacks, poslechové drily"
+        },
+        {
+          "name": "PlaneEnglish: ARSim",
+          "url": "https://apps.apple.com/us/app/planeenglish-arsim/id1461037185",
+          "note": "zavedený lídr, VFR/IFR scénáře"
+        }
+      ],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Autor odhadl sat 1, realita je 8 přímých konkurentů s AI hlasem, z toho několik s ICAO frazeologií. Pozdě o rok; zabít.",
+      "web_checked": true
+    },
+    {
+      "id": "education-11",
+      "verdict": "GO",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "AI přepis starého písma (Transkribus, MyHeritage Scribe AI, Ancestry) snižuje potřebu se kurent učit – část publika si nechá text přečíst strojem.",
+        "Objem hledání „kurrent“/„sütterlin“ v App Store je nízký; hledání probíhá hlavně v Googlu a na genealogických fórech.",
+        "Pro reálná data (matriky) jsou potřeba ukázky rukopisů s jasnou licencí – skeny z archivů mají často omezení užití.",
+        "Rozdíly mezi českým, rakouským a pruským kurentem a mezi obdobími – obsah musí být pečlivě kurátorovaný."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Transkribus",
+          "url": "",
+          "note": "AI rozpoznávání historického rukopisu (web/freemium); bez ověřené URL"
+        }
+      ],
+      "revenue_czk_realistic": 3000,
+      "reviewer_note": "Publikum (genealogové 50+) platí jednorázově rádo a přímá výuková konkurence je slabá; Lapnito má výhodu CZ/DE kontextu. Stavět jako doplněk k AI přepisu („ověř, co AI přečetla“), ne proti němu; reálně 2–4 tis. Kč."
+    },
+    {
+      "id": "education-12",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 5,
+        "monetization": 2,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Tři notace se student naučí za odpoledne z bezplatného obrázku; appka nemá opakovanou hodnotu (4.2 minimum functionality riziko).",
+        "Zubní anatomie a DANB/NBDE přípravy už číslování obsahují jako kapitolu.",
+        "Studenti stomatologie a zubní asistenti jsou malý trh a za úzký kvíz zaplatí maximálně 1–2 USD."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Jednoduché na stavbu, ale jde o funkci, ne produkt – nikdo nezaplatí tolik, aby se to vyplatilo."
+    },
+    {
+      "id": "education-13",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Každá země má jinou účtovou osnovu a jiné učební plány – „50 jazyků“ znamená 50 obsahových projektů, ne lokalizaci.",
+        "Pro německé Azubi (IHK) existují zavedené prüfungs-appky a učebnice s appkami (Europa-Lehrmittel, Azubi-Trainer).",
+        "Chybné předkontace = 1★ recenze od studentů před zkouškou; nutná odborná revize.",
+        "Silná sezónnost kolem zkoušek (IHK jaro/podzim, maturity)."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Jen jako jedno-trhová appka (DE Buchungssätze SKR03/04 nebo CZ předkontace pro OA), ne globální produkt. Ověřit konkurenci „buchungssätze“ před stavbou; reálně 1–2 tis. Kč."
+    },
+    {
+      "id": "education-14",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "extra_risks": [
+        "Přesný název „Japanese Pitch Accent Trainer“ je už obsazený (2026) a Aomi Japanese: Speaking dělá rozpoznání a vizualizaci přízvuku.",
+        "Data o přízvuku (NHK slovník, OJAD, Kanjium) mají nejasnou nebo restriktivní licenci – bez vlastního datasetu je obsah právně rizikový.",
+        "Detekce výšky na krátkých slovech (2–3 mory) je citlivá na intonaci věty; zpětná vazba bude často matoucí.",
+        "Publikum jsou pokročilí studenti – menší podmnožina už tak nevelkého trhu."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Japanese Pitch Accent Trainer",
+          "url": "https://apps.apple.com/be/app/japanese-pitch-accent-trainer/id6760803133",
+          "note": "přesné klíčové slovo v názvu, minimal pairs, kvízy"
+        },
+        {
+          "name": "Aomi Japanese: Speaking",
+          "url": "https://apps.apple.com/us/app/aomi-japanese-speaking/id1559690620",
+          "note": "rozpoznání a vizualizace výškového přízvuku"
+        },
+        {
+          "name": "JAccent: Japanese dict with AI",
+          "url": "https://apps.apple.com/us/app/jaccent-japanese-dict-with-ai/id1252200087",
+          "note": "slovník tokijského přízvuku"
+        }
+      ],
+      "revenue_czk_realistic": 2500,
+      "reviewer_note": "Poptávka je reálná, ale nika je contested (3 dedikované appky) a data jsou licenčně problematická. Dává smysl jen jako modul k nápadu 01 (kanji) pro stejné publikum, ne jako samostatná appka.",
+      "web_checked": true
+    },
+    {
+      "id": "education-15",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 2,
+        "monetization": 2,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Výuka psaní všemi deseti se odehrává na webu zdarma (Keybr, Monkeytype, TypingClub, české psani-vsemi-deseti weby) – App Store není místo, kde to lidé hledají.",
+        "Psaní všemi deseti na iPadu je okrajový případ (dotyková klávesnice), na Macu konkurují zdarma weby.",
+        "„touch typing“/„typing tutor“ mají sat 6–7 – head term obsazený."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Zdarma webové alternativy zabíjejí ochotu platit. Neexistuje důvod, proč by si někdo stáhl placenou appku místo otevření webu."
+    },
+    {
+      "id": "education-16",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 4,
+        "monetization": 3,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Sousední „hair color formula“ je podle evidence graphics-design SATURATED (sat 7, vlna 2025–26 AI appek).",
+        "Značky (Wella, L'Oréal, Schwarzkopf) dávají barvířskou teorii zdarma v aplikacích a akademiích – učni ji mají v ceně školy.",
+        "„cosmetology exam“ (sat 6) je US state board trh; v EU se učí v rámci učebního oboru bez samostatných testů.",
+        "Barvy na obrazovce neodpovídají reálným odstínům – riziko zavádějícího učení."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Blendsor: Hair Color Formulas",
+          "url": "https://apps.apple.com/us/app/blendsor-hair-color-formulas/id6756733691",
+          "note": "AI receptury z fotky; bere klíčová slova kolem hair color"
+        }
+      ],
+      "revenue_czk_realistic": 700,
+      "reviewer_note": "Malá skupina učňů, kteří mají teorii zdarma od výrobců, a okolní klíčová slova jsou přeplněná. Nevyplatí se."
+    },
+    {
+      "id": "education-17",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 1,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 7,
+        "safety": 4
+      },
+      "extra_risks": [
+        "SATURATED: 8+ dedikovaných CELPIP appek, většinou 2025–26 s nahráváním a AI hodnocením mluvení (CELPIX, CELPIP Simulator, CELPIP 2026 Mock Exam…).",
+        "Oficiální materiály CELPIP (Paragon) jsou chráněné – napodobení formátu testu a značky v názvu = riziko 5.2.",
+        "Offline přepis bez hodnocení je slabší než AI zpětná vazba konkurentů; „soukromí“ není pro uchazeče o imigraci hlavní motivace."
+      ],
+      "missed_competitors": [
+        {
+          "name": "CELPIP Prep Practice - CELPIX",
+          "url": "https://apps.apple.com/us/app/celpip-prep-practice-celpix/id6752662613",
+          "note": "mluvení Tasks 1–8, okamžitá analýza řeči"
+        },
+        {
+          "name": "CELPIP Simulator - Mock Exams",
+          "url": "https://apps.apple.com/in/app/celpip-simulator-mock-exams/id6773822666",
+          "note": "115+ testů, AI hodnocení mluvení"
+        },
+        {
+          "name": "IELTS & CELPIP Speaking Prep",
+          "url": "https://apps.apple.com/ca/app/ielts-celpip-speaking-prep/id6448933453",
+          "note": "nahrávání odpovědí na mluvní části"
+        },
+        {
+          "name": "CELPIP Prep : Practice Test",
+          "url": "https://apps.apple.com/us/app/celpip-prep-practice-test/id6747511818",
+          "note": "neomezené pokusy v mluvní části"
+        }
+      ],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Autor odhadl „celpip speaking“ na sat 2, realita je 8+ appek s AI hodnocením. Nejvyšší sebehodnocená poptávka, ale pozdě a bez diferenciace; zabít.",
+      "web_checked": true
+    },
+    {
+      "id": "education-18",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 3,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 8,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Dekódování i výklad METAR/TAF je součástí každé přípravy na PPL teorii (Sporty's, Dauntless, ASA, Aircademy) a leteckých appek (ForeFlight, SkyDemon, Garmin Pilot) zdarma.",
+        "„metar“ (sat 6) je obsazený dekodéry; „metar quiz“ nemá žádný doklad poptávky.",
+        "Piloti se METAR naučí za pár dní a pak appku nepotřebují – nulová retence."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 700,
+      "reviewer_note": "Funkce, kterou mají přípravné balíčky na PPL v ceně. Samostatně to nikdo nekoupí za cenu, která by dala 10 tis. Kč."
+    },
+    {
+      "id": "education-19",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Německý trh SRC/SBF/UBI appek je vyspělý (Delius Klasing, SKS/SBF trainer appky) a některé už mají simulátor DSC.",
+        "Obsah zkoušek se liší podle státu (DE SRC/UBI, UK RYA, FR CRR, CZ VKV) – každá země = nová sada otázek a procedur.",
+        "Chyba v nouzových procedurách (MAYDAY, DSC distress) = bezpečnostní a reputační riziko; nutná odborná revize.",
+        "Sezónnost: zkoušky a kurzy hlavně zima–jaro."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Jediný diferenciátor je věrný interaktivní DSC/VHF simulátor (ICOM/Standard Horizon styl) – a ten se musí ověřit proti existujícím DE appkám. Pokud simulátor ještě nikdo nemá dobře, prodávat ho jako doplněk ke všem národním kurzům; reálně ~2 tis. Kč."
+    },
+    {
+      "id": "education-20",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 2,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "~6 soroban/flash anzan appek (Anzan Flash Soroban Math aj.) a „abacus math“ sat 6 – není blue ocean.",
+        "Čísla jsou univerzální, takže „lokalizace“ nepřináší skutečnou výhodu – US-gap tvrzení je slabé.",
+        "Rodiče mimo Asii soroban neznají; poptávku tvoří kroužky (UCMAS, Aloha), které mají vlastní software."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Autor sám dal blue_ocean 4; lokalizace nic neřeší, protože appka je z podstaty bez jazyka. Zabít."
+    },
+    {
+      "id": "education-21",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 2,
+        "monetization": 2,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Subnetting trenérů a kalkulaček je v App Store hodně a subnettingpractice.com je zdarma a dobrý.",
+        "Studenti CCNA kupují Boson/Pocket Prep/Cisco NetAcad, které subnetting obsahují.",
+        "IT studenti mají nízkou ochotu platit za úzký dril a subnetting se naučí za týden."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Snadné na stavbu, ale přeplněné a bez ochoty platit. Zabít."
+    },
+    {
+      "id": "education-22",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Tři disciplíny (svary, GD&T, elektro) = tři různá publika a rozmělněné ASO; jedna appka nevyhraje ani jedno klíčové slovo.",
+        "Normy (AWS A2.4, ISO 2553, ASME Y14.5, IEC 60617) jsou autorsky chráněné – text musí být vlastní, symboly nakreslené znovu.",
+        "Americké a evropské konvence se liší (AWS vs ISO 2553 systém A/B) – chyba zmate učně.",
+        "GD&T a welding symbols reference appky existují (neověřeno přesně kolik)."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Jen jako jedna disciplína – nejspíš svarové značky s přepínačem AWS/ISO 2553 pro učně v EU i US. Tři v jednom je recept na nulovou pozici."
+    },
+    {
+      "id": "education-23",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 3,
+        "build_ease": 2,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Generovat a ověřovat IUPAC názvy z nakreslené struktury offline vyžaduje cheminformatickou knihovnu (OPSIN je Java) – na iOS měsíce práce.",
+        "Národní názvosloví (česká, německá, polská pravidla) se liší – lokalizace je chemicky náročná, ne jen překlad.",
+        "Studenti mají zdarma Khan Academy, učebnice a quizlety; chemie je sezónní (semestry)."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Technicky nejtěžší nápad kategorie s nejmenší ochotou platit. Zabít."
+    },
+    {
+      "id": "education-24",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 6,
+        "monetization": 2,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Kodályovská komunita učitelů je malá a používá papírové karty a vlastní ruce – appka nenahrazuje výuku.",
+        "Rozpoznávání 7 ručních znaků kamerou vyžaduje vlastní model a trénovací data (různé ruce, světlo).",
+        "„solfege hand signs“/„curwen“ mají minimální objem hledání."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Pěkný edukační nápad bez trhu. Zabít."
+    },
+    {
+      "id": "education-25",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 5,
+        "monetization": 2,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Maqam ear training je mikro-nika; studenti arabské/turecké hudby se učí od učitele sluchem, ne z appek.",
+        "Maqamy se liší regionálně (arabské vs. turecké makamy, intonace čtvrttónů) – jakákoli „správná“ odpověď vyvolá spory.",
+        "Nízká ochota platit v cílových regionech (MENA, TR) s nízkou kupní silou v App Store."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Unikátní, ale bez peněz; 11 tis. Kč je fantazie. Zabít."
+    },
+    {
+      "id": "education-26",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 4,
+        "monetization": 3,
+        "build_ease": 3,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "BSL fingerspelling je obouruční – rozpoznání tvaru dvou rukou kamerou je výrazně těžší než ASL.",
+        "Národní organizace neslyšících vydávají bezplatné appky a slovníky (Auslan Signbank, BSL Signbank), komunita je citlivá na nekvalitní obsah od neslyšících nezávislých vývojářů.",
+        "Každá prstová abeceda potřebuje vlastní trénovací data a ideálně videa rodilých signerů – náklady na obsah.",
+        "Překryv s kategorií Kids (nápad 26 autor sám označil) – riziko duplikace v portfoliu (4.3)."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Jen jako receptivní trénink (čtení prstové abecedy z animací/videa) pro 1–2 jazyky, s konzultací od neslyšících; rozpoznávání kamerou je v MVP nereálné. Peníze malé."
+    },
+    {
+      "id": "education-27",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Lichess má blindfold režim a trénink souřadnic zdarma; Chess.com Vision také; existují dedikované blindfold/visualization trenéry.",
+        "Šachisté platí hlavně za obsah se jménem (Chessable) – bezejmenná appka má slabou konverzi.",
+        "Nutný kvalitní engine offline (Stockfish GPL – licenční komplikace pro closed-source appku) nebo vlastní AI."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Šachový trh platí, ale vizualizace je obsazená zdarma. Šance jen se strukturovaným kurzem (progresivní cvičení typu „zbytek partie naslepo“) a bez GPL enginu; reálně 1–2 tis. Kč."
+    },
+    {
+      "id": "education-28",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 4,
+        "monetization": 2,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Školy používají zdarma webové exam clocky a classroomscreen na projektoru; iPad na stojanu je výjimka.",
+        "Hodiny s časovačem riskují 4.2 minimum functionality i 4.3 (desítky timer appek).",
+        "Nákup přes školu je pomalý (Apple School Manager, volume purchase) a za jednu licenci škola nezaplatí dost."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Snadné, ale institucionální zákazník s bezplatnými alternativami a riziko odmítnutí jako triviální appka. Zabít."
+    },
+    {
+      "id": "education-29",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 3,
+        "monetization": 2,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Tenuto i Note Rush už alt a tenorový klíč podporují – parent market nika pokrývá.",
+        "Violisté/cellisté/trombonisté se C-klíč naučí za pár týdnů – krátká životnost, nízká ochota platit.",
+        "Rozpoznání tónu nástroje je u violy/cella v nízkých polohách méně přesné."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Funkce existující v zavedených appkách, publikum malé. Zabít."
+    },
+    {
+      "id": "education-30",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 5,
+        "monetization": 1,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Mnemotechnika Major system je hobby pro pár tisíc „memory athletes“; mainstream neplatí.",
+        "Anglické Major system/memory palace appky existují a lokální slovníky lze snadno vygenerovat zdarma na webu.",
+        "Generování kvalitních lokálních slovníků (fonetika pro 50 jazyků) je jazykově náročné."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 300,
+      "reviewer_note": "Nejnižší ochota platit v celé kategorii. Zabít."
+    }
+  ]
+}

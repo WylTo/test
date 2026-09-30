@@ -57,3 +57,16 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
     - AppScreen Studio Design Mockup (Mac) https://apps.apple.com/us/app/appscreen-studio-design-mockup/id6467930383?mt=12
     - Mockup - App Screenshot Design      https://apps.apple.com/us/app/mockup-app-screenshot-design/id1541634188
 
+[6] query: site:apps.apple.com mqtt dashboard  (idea developer-tools-05)
+    saturation (dedicated MQTT dashboard/client apps): 8 (MQTT Frame, MQTT Loupe, IoT MQTT Panel + Pro [the Android leader IS on iOS], MQTT Push Client, MQTT-Client, EasyMQTT, TLS IoT, MQTTAnalyzer [free, open-source]) -> SATURATED
+    - MQTT Frame                          https://apps.apple.com/us/app/mqtt-frame/id6743003699
+    - MQTT Loupe                          https://apps.apple.com/us/app/mqtt-loupe/id1617148458
+    - IoT MQTT Panel Pro                  https://apps.apple.com/us/app/iot-mqtt-panel-pro/id6466779963
+    - IoT MQTT Panel                      https://apps.apple.com/us/app/iot-mqtt-panel/id6466780124
+    - MQTT Push Client                    https://apps.apple.com/us/app/mqtt-push-client/id1454678876
+    - MQTT-Client                         https://apps.apple.com/us/app/mqtt-client/id6443841176
+    - EasyMQTT                            https://apps.apple.com/de/app/easymqtt/id1523099606?l=en-GB
+    - TLS IoT (X.509 MQTT)                https://apps.apple.com/us/app/tls-iot-x-509-mqtt/id1554992163
+    - MQTTAnalyzer                        https://apps.apple.com/us/app/mqttanalyzer/id1493015317
+
+Budget used: 6/6 WebSearch. All other ideas reviewed from market knowledge.

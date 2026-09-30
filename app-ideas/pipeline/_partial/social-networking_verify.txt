@@ -11,3 +11,37 @@
     - Remindy: birthdays, holidays   https://apps.apple.com/us/app/remindy-birthdays-and-events/id1448099239
     - Name-days (18,252 names, 17 countries, send greeting)   https://apps.apple.com/us/app/name-days/id289170101
     - iDays - Namedays & Birthdays   https://apps.apple.com/us/app/idays-namedays-birthdays/id991307193
+[2] query: site:apps.apple.com wichteln amigo secreto secret santa draw offline  (idea social-networking-02)  date: 2026-09-30
+    saturation (dedicated offline pass-the-phone draw apps already localized DE/ES/PT, distinct): 5 (O Amigo Secreto, Wichtel App, Amigo Invisible/Secret Santa app, Secret Santa: Kris Kringle/Wichteln/Amigo secreto (same id, localized titles), Secret Santa 2026) -> SATURATED for the exact angle "offline + localized"
+    - O Amigo Secreto (free, no ads, offline)   https://apps.apple.com/us/app/o-amigo-secreto/id6756224422
+    - Wichtel App - Secret Santa (at, offline mode)   https://apps.apple.com/at/app/wichtel-app-secret-santa/id6443517541
+    - Amigo Secreto App (ar, same id)   https://apps.apple.com/ar/app/amigo-secreto-app/id6443517541
+    - Secret Santa - Wichtel App (us, same id)   https://apps.apple.com/us/app/secret-santa-wichtel-app/id6443517541
+    - Amigo Invisible - Secret Santa (pa, offline mode)   https://apps.apple.com/pa/app/amigo-invisible-secret-santa/id1442673273
+    - Secret Santa app - draw names (us, same id)   https://apps.apple.com/us/app/secret-santa-app-draw-names/id1442673273
+    - Secret Santa: Kris Kringle (es)   https://apps.apple.com/es/app/secret-santa-kris-kringle/id1592116160?l=en-GB
+    - Amigo secreto: Secret Santa (mx, same id)   https://apps.apple.com/mx/app/amigo-secreto-secret-santa/id1592116160
+    - Wichteln: Secret Santa (de, same id, "offline ohne Registrierung")   https://apps.apple.com/de/app/wichteln-secret-santa/id1592116160
+    - Secret Santa 2026 / Amigo Secreto 2025   https://apps.apple.com/us/app/amigo-secreto-2025/id6738370995
+[3] query: site:apps.apple.com questions for grandparents record life story interview  (idea social-networking-04)  date: 2026-09-30
+    saturation (dedicated guided grandparent/life-story recorders, distinct): 8 (Capsle Stories, Memoir: AI Life Story (on-device transcription, $59/yr), Family Legacy: Story Recorder, Tell Me Your Story, Memoir: Record Your Life Story, Questions for Grandma, StoryCorps, LifeKept, STORYTAP) -> SATURATED; most are 2025-2026 entrants
+    - Capsle Stories: Family Legacy   https://apps.apple.com/us/app/capsle-stories-family-legacy/id1554817576
+    - Memoir: AI Life Story (ma)   https://apps.apple.com/ma/app/memoir-ai-life-story/id6767071322
+    - Family Legacy: Story Recorder (fr)   https://apps.apple.com/fr/app/family-legacy-story-recorder/id6759683199?l=en-GB
+    - Tell Me Your Story: Connect   https://apps.apple.com/us/app/tell-me-your-story-connect/id6754656872
+    - Memoir: Record Your Life Story   https://apps.apple.com/us/app/memoir-record-your-life-story/id6746061021
+    - Questions for Grandma (in, 120 prompts, PDF export)   https://apps.apple.com/in/app/questions-for-grandma/id6760905882
+    - StoryCorps   https://apps.apple.com/us/app/storycorps/id359071069
+    - LifeKept   https://apps.apple.com/us/app/lifekept/id6771614657
+    - STORYTAP (jp, vision)   https://apps.apple.com/jp/app/storytap/id6761691286?l=en-US&platform=vision
+[4] query: site:apps.apple.com remember names and faces learn student names  (idea social-networking-10)  date: 2026-09-30
+    saturation (dedicated name/face memory apps, distinct): 9 (NameVault, What Student?, Name Shark, NameMemory (on-device, no photo), Remember Names, Name Skillz, FaceTag, NameMe, Namester) -> SATURATED; 5 are 2024-2026 entrants
+    - NameVault: Remember Face & Name   https://apps.apple.com/us/app/namevault-remember-face-name/id1525602410
+    - What Student? Name & Face Quiz (teachers)   https://apps.apple.com/us/app/what-student-name-face-quiz/id6755244840
+    - Name Shark   https://apps.apple.com/us/app/name-shark/id906531062
+    - NameMemory (private, on-device)   https://apps.apple.com/us/app/namememory/id6756201292
+    - Remember Names: Name Reminder   https://apps.apple.com/us/app/remember-names-name-reminder/id6504533632
+    - Name Skillz: Remember Names   https://apps.apple.com/us/app/name-skillz-remember-names/id1409162011
+    - FaceTag: Memory Trainer   https://apps.apple.com/us/app/facetag-memory-trainer/id6756509803
+    - NameMe - Remember Names   https://apps.apple.com/us/app/nameme-remember-names/id6761031851
+    - Namester   https://apps.apple.com/us/app/namester/id6444921353

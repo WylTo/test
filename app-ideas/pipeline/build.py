@@ -29,6 +29,17 @@ CATS = [
 CAT_CS = dict(CATS)
 W = {"demand": 0.22, "blue_ocean": 0.26, "monetization": 0.18,
      "build_ease": 0.12, "offline_fit": 0.07, "safety": 0.15}
+# Same app idea proposed in several categories: build it once. Best-scored copy stays primary.
+DUPES = [
+    ["graphics-design-02", "photo-video-02"], ["business-02", "graphics-design-10"],
+    ["business-29", "graphics-design-27"], ["lifestyle-04", "entertainment-01"],
+    ["games-02", "entertainment-04"], ["kids-01", "education-02"],
+    ["business-01", "finance-10"], ["business-10", "finance-09"],
+    ["sports-02", "navigation-01"], ["health-fitness-03", "travel-03"],
+    ["education-26", "kids-14"], ["entertainment-02", "social-networking-03"],
+    ["shopping-19", "social-networking-02"], ["navigation-11", "utilities-04", "weather-04"],
+    ["navigation-06", "weather-10"],
+]
 VERDICT_ADJ = {"GO": 3.0, "MAYBE": 0.0, "KILL": -15.0, None: -4.0}
 
 
@@ -93,6 +104,18 @@ def main():
                 "apple": kwd, "apple_info": ainfo,
             })
             ideas.append(idea)
+
+    byid = {x["id"]: x for x in ideas}
+    for grp in DUPES:
+        members = [byid[i] for i in grp if i in byid]
+        if len(members) < 2:
+            continue
+        members.sort(key=lambda x: -x["score"])
+        prim = members[0]
+        for m in members[1:]:
+            m["dup_of"] = {"id": prim["id"], "name": prim["name"], "category_cs": prim["category_cs"]}
+            m["score"] = round(max(0.0, m["score"] - 8.0), 1)
+        prim["dup_also"] = [{"id": m["id"], "name": m["name"], "category_cs": m["category_cs"]} for m in members[1:]]
 
     vorder = {"GO": 0, "MAYBE": 1, None: 2, "KILL": 3}
     ideas.sort(key=lambda x: (-x["score"], vorder[x["verdict"]], -(x["revenue_czk_realistic"] or 0)))

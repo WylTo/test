@@ -1,0 +1,897 @@
+{
+  "category_slug": "productivity",
+  "summary": "Kategorie je výrazně slabší, než vypadá: 26 z 30 nápadů stojí jen na znalosti autora a všech 6 webových ověření (BCBA hodiny, CPD, custody kalendář, IEP data, expirace dokladů, dobrovolnické hodiny) ukázalo víc konkurence, než autor tvrdil – 4 z nich jsou saturované novými indie appkami z 2025–26. Nejlepší sázky jsou profesní logy s povinnou evidencí (BCBA supervised hours, billable čas pro solo advokáty, homeschool docházka) a levný whiteboard scanner. Společná vada: realistické příjmy jsou 1–6 tis. Kč měsíčně, ne 10–30 tis.; jednorázové nákupy u nízkofrekvenčních utilit hranici 10 000 Kč nepřekročí a mnoho nápadů řeší Apple (Poznámky, Journal, Kalendář, Apple Intelligence) nebo Microsoft zdarma.",
+  "reviews": [
+    {
+      "id": "productivity-01",
+      "verdict": "GO",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 7,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "ABA Mastery (2026) už má vestavěný fieldwork tracker, který kontroluje všechna pravidla BACB – a prodává ho spolu s přípravou na zkoušku, takže má silnější důvod ke koupi.",
+        "Pravidla BACB (fieldwork standards 2022+, procenta supervize, restricted/unrestricted) se mění; chybný výpočet = kandidát nesplní podmínky → jednohvězdičkové recenze a reputační riziko.",
+        "LPC/LCSW mají pravidla stát od státu (50 variant) – slibovat všechny tři licence v MVP je nereálné.",
+        "Čistě US trh v angličtině – výhoda lokalizace do 50 jazyků tu nefunguje."
+      ],
+      "missed_competitors": [
+        {
+          "name": "ABA Mastery",
+          "url": "https://apps.apple.com/us/app/aba-mastery/id6786924174",
+          "note": "exam prep + fieldwork tracker ověřující požadavky BACB; přímý rival pro BCBA segment"
+        }
+      ],
+      "revenue_czk_realistic": 6000,
+      "reviewer_note": "Nejlepší nápad kategorie: profesionál s povinností evidence platí rád a nika je tenká (1 dedikovaný rival, ostatní obecné trackery). Postavit jen na BCBA (jasná pravidla BACB, formulář M-FVF), LPC/LCSW až jako šablony později; 30 000 Kč je strop, realisticky kolem 6 000 Kč.",
+      "web_checked": true
+    },
+    {
+      "id": "productivity-02",
+      "verdict": "GO",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Microsoft Lens zmizel jako samostatná appka, ale jeho režim Whiteboard žije v aplikaci Microsoft 365 Copilot zdarma; Adobe Scan má režim tabule také zdarma.",
+        "iOS skener v Poznámkách/Souborech (VNDocumentCamera) zvládne 80 % potřeby zdarma – placený rozdíl musí být viditelný na prvním screenshotu (odlesky, stín, rovnání, spojení více fotek).",
+        "Nízká ochota platit: tabuli fotí studenti a lidé ve firmách, kde je Microsoft/Google zdarma; předplatné 2,99 USD/měs. neprojde, spíš jednorázový nákup."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Microsoft 365 Copilot (vestavěný Lens scan)",
+          "url": "",
+          "note": "bezplatný režim Whiteboard – náhrada za staženou appku Lens"
+        },
+        {
+          "name": "Adobe Scan",
+          "url": "",
+          "note": "režim tabule zdarma, silná značka"
+        }
+      ],
+      "revenue_czk_realistic": 4500,
+      "reviewer_note": "Jediný nápad s webovou evidencí volné niky a MVP za 3 týdny – proto GO, ale jako levná sázka: jednorázový Pro (~9,99 USD), rozlišení přes spojení více fotek jedné tabule + OCR do poznámek. Příjem pod 10 000 Kč je pravděpodobnější než nad."
+    },
+    {
+      "id": "productivity-03",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Goodnotes má vlastní Marketplace s plánovači a šablonami přímo v appce – uživatel nemusí nic hledat v App Store.",
+        "Kvalita designu je produkt: Etsy prodejci soutěží estetikou; generický generátor vypadá jako šablona a nekonvertuje.",
+        "Hyperlinky v PDF se v některých aplikacích (Notability, Samsung Notes) chovají rozdílně – support peklo.",
+        "Klíčové slovo 'digital planner' je obsazené (Zinnia, Planner Pro, Penly); 'planner pdf' má nejisté hledání v App Store."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Goodnotes Marketplace",
+          "url": "",
+          "note": "plánovače prodávané přímo uvnitř Goodnotes"
+        }
+      ],
+      "revenue_czk_realistic": 3500,
+      "reviewer_note": "Lokalizace (svátky, pondělí, jazyk) je reálná mezera, ale kupuje se to na Etsy/Pinterestu, ne v App Store. Stavět jen s 5–6 opravdu krásnými tématy a lokálními klíčovými slovy (DE 'digitaler Planer', FR 'agenda numérique'), jinak nevyplatí."
+    },
+    {
+      "id": "productivity-04",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Stát to dává zdarma: FR filigrane.beta.gouv.fr (FranceConnect), NL KopieID – přesně ve dvou největších trzích s touto kulturou.",
+        "Frekvence použití je pár krát ročně – jednorázových 4,99 USD × malý objem nedá 10 000 Kč.",
+        "Lidé to hledají na Googlu ('Ausweiskopie schwärzen'), ne v App Store; iOS Markup umí začernit a dopsat text zdarma."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Filigrane Facile (FR stát)",
+          "url": "",
+          "note": "bezplatná vládní služba na vodoznak dokladů"
+        },
+        {
+          "name": "KopieID (NL stát)",
+          "url": "",
+          "note": "autor zmiňuje, ale potvrzuje, že státy to řeší zdarma"
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Užitečné a bezpečné z pohledu App Review, ale peněz je málo. Dává smysl jen jako levná (2 týdny) lokalizovaná utilita s lokálními výrazy (Ausweiskopie, copie pièce d'identité) a ne jako příjmový pilíř."
+    },
+    {
+      "id": "productivity-05",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 1,
+        "monetization": 3,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "WebSearch našel 7+ dedikovaných appek; 'Volunteer Hours Log Tracker' je přesně pitch autora (bez účtu, PDF/CSV export).",
+        "Institucionální appky (x2VOL, VolTrack, Givefinity, MyCSF) jsou zdarma a školy je vyžadují – jednotlivec nemá důvod platit.",
+        "Cílovka jsou středoškoláci – nízká ochota platit 5,99 USD."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Volunteer Hours Log Tracker",
+          "url": "https://apps.apple.com/hu/app/volunteer-hours-log-tracker/id6771518791?platform=ipad",
+          "note": "identický koncept: bez účtu, PDF/CSV export"
+        },
+        {
+          "name": "VolTrack",
+          "url": "https://apps.apple.com/us/app/voltrack/id6740208893",
+          "note": "pro studenty Key Club/NHS"
+        },
+        {
+          "name": "Givefinity: Volunteer Tracking",
+          "url": "https://apps.apple.com/us/app/givefinity-volunteer-tracking/id1541781201",
+          "note": "stipendia, komunitní služba"
+        },
+        {
+          "name": "LogCycle: Volunteer Hours",
+          "url": "https://apps.apple.com/us/app/logcycle-volunteer-hours/id6749878753",
+          "note": "nový 2025"
+        }
+      ],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Nika je obsazená včetně přesné kopie nápadu a platí se v ní málo. Zabít.",
+      "web_checked": true
+    },
+    {
+      "id": "productivity-06",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 3,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Web: 8+ CPD trackerů, mnohé nové 2026 a profesně specifické (NMC revalidace, SAICA, aktuáři, CII, lékaři) – 'cpd tracker' už není modrý oceán.",
+        "Komory často vydávají vlastní appky zdarma (CII CPD, myCPD) – nezávislá appka soutěží s oficiálním zdrojem.",
+        "Každá profese/země má jiná pravidla bodů; generická appka nesedí nikomu, specifická je malá."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Revalidation Copilot",
+          "url": "https://apps.apple.com/vn/app/revalidation-copilot/id6760566022",
+          "note": "NMC revalidace, CPD log – přesně autorův 'nmc revalidation'"
+        },
+        {
+          "name": "myCPD",
+          "url": "https://apps.apple.com/gb/app/mycpd/id1632140770",
+          "note": "UK CPD log"
+        },
+        {
+          "name": "CPDTracks",
+          "url": "https://apps.apple.com/us/app/cpdtracks/id6760044004",
+          "note": "audit-ready výkaz pro SAICA"
+        },
+        {
+          "name": "Actuarial CPD Tracker",
+          "url": "https://apps.apple.com/us/app/actuarial-cpd-tracker/id6763814995",
+          "note": "foto certifikátu, 2026"
+        }
+      ],
+      "revenue_czk_realistic": 2500,
+      "reviewer_note": "Anglicky obsazeno. Jediný úhel: jedna profese v jedné neanglické zemi s lokálním výrazem (např. DE lékaři 'Fortbildungspunkte', CZ sestry 'kreditní systém') – nejdřív ověřit, že komora nemá vlastní appku.",
+      "web_checked": true
+    },
+    {
+      "id": "productivity-07",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 1,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Web: 8 dedikovaných appek na expiraci dokladů, většina z 2025–26; 'Document Expiry Reminder' je už offline a šifrovaná, RenewalKit má OCR i NFC čtení pasu.",
+        "Sherlock: iOS Připomínky + Wallet (digitální ID v iOS 26) a 1Password/Apple Hesla uchovávají doklady; stačí jedna připomínka.",
+        "Nízká frekvence – uživatel otevře appku 3× ročně, předplatné se neudrží."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Document Expiry Reminder",
+          "url": "https://apps.apple.com/us/app/document-expiry-reminder/id6756968613",
+          "note": "offline, AES-256, bez cloudu – přesně náš pitch"
+        },
+        {
+          "name": "Expiration Reminder RenewalKit",
+          "url": "https://apps.apple.com/us/app/expiration-reminder-renewalkit/id6758590671",
+          "note": "OCR + NFC čtení pasu"
+        },
+        {
+          "name": "RemindMe Document Expiry Dates",
+          "url": "https://apps.apple.com/us/app/remindme-document-expiry-dates/id6478255369",
+          "note": "pasy, víza, ID"
+        },
+        {
+          "name": "Deadlinr - Expiry Tracker",
+          "url": "https://apps.apple.com/us/app/deadlinr-expiry-tracker/id6757941172",
+          "note": "nový 2026"
+        }
+      ],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Tvrzení o 'jen US Docket' je vyvrácené – nika je zaplavená novými indie appkami. Zabít.",
+      "web_checked": true
+    },
+    {
+      "id": "productivity-08",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 3,
+        "offline_fit": 8,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Oddělit ručně psané řešení od tištěného zadání on-device je těžký ML problém (vlastní segmentační model), ne 'týden navíc'.",
+        "Pojem 'mistake notebook' je čínský (错题本); na Západě ho nikdo nepíše do App Store – poptávka neověřená.",
+        "Goodnotes/Notability přidaly studijní sady a AI kvízy; studenti mají Photomath/Gauth zdarma."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Goodnotes (Study Sets)",
+          "url": "",
+          "note": "flashcards/kvízy z poznámek přímo v appce, kterou studenti už mají"
+        }
+      ],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Zajímavý reverse-gap z Číny, ale západní poptávka je hypotéza a build je nejtěžší v kategorii. Jen pokud jde MVP bez mazání rukopisu (fotka + zakrytí oblasti řešení ručně) a cílí na JP/KR/TW, kde koncept znají."
+    },
+    {
+      "id": "productivity-09",
+      "verdict": "GO",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 7,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Obecné time trackery (Toggl, Clockify, Timely, Hours) umí 0,1h zaokrouhlení a mají silná hodnocení – 'legal-aware' musí být víc než inkrement.",
+        "Advokáti ve firmách musí používat firemní systém (Clio, Bill4Time, v CZ Advokátní software) – trh je jen solo praxe.",
+        "Profesní diskrétnost: data klientů na iCloudu – advokátní komory mají pravidla o mlčenlivosti a cloudu, nutné jasné sdělení 'jen v zařízení'."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Clockify",
+          "url": "",
+          "note": "zdarma, 0,1h zaokrouhlení, silné hodnocení"
+        },
+        {
+          "name": "Bill4Time / Clio mobile",
+          "url": "",
+          "note": "standard u US advokátů"
+        }
+      ],
+      "revenue_czk_realistic": 5000,
+      "reviewer_note": "Profesionál s drahou hodinou platí za 40 USD/rok bez mrknutí a offline+soukromí je pro advokáty skutečný argument. Lokalizovat pro EU advokáty (úkony podle tarifu, výkaz v lokálním formátu) – tam americké appky nesedí."
+    },
+    {
+      "id": "productivity-10",
+      "verdict": "GO",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Konkurence neověřená: existují Homeschool Tracker, Homeschool Planet i menší attendance appky – před stavbou nutný check.",
+        "Pravidla evidence se liší stát od státu (180 dní, 900/1000 hodin, portfolio) a mění se – bundled data je nutné udržovat.",
+        "Téměř výhradně US trh; sezónnost (srpen–září spike)."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Homeschool Planet",
+          "url": "",
+          "note": "plánovač s docházkou, předplatné – rodiče jsou zvyklí platit"
+        }
+      ],
+      "revenue_czk_realistic": 4500,
+      "reviewer_note": "Homeschool rodiny prokazatelně platí za nástroje (~20 USD/rok) a 'rychlý zápis + výkaz pro stát' je užší a jasnější než plánovače. Realisticky 4–5 tis. Kč; nejdřív ověřit 'homeschool attendance' a 'homeschool hours' na App Store."
+    },
+    {
+      "id": "productivity-11",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 2,
+        "monetization": 2,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Desítky bezplatných Toastmasters/speech timer appek s barevnými signály; řada z nich už má Apple Watch haptiku.",
+        "Jednorázových 4,99 USD × malý trh (klubové schůzky) = stovky korun měsíčně.",
+        "Sherlock částečně: Apple Watch časovače s haptikou, Keynote má přehrávání s časem."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Toastmasters timer appky (desítky, zdarma)",
+          "url": "",
+          "note": "barvy zelená/žlutá/červená jsou standard"
+        }
+      ],
+      "revenue_czk_realistic": 700,
+      "reviewer_note": "Commodity utilita s bezplatnou konkurencí a nízkou cenou – nedá 10 000 Kč ani v ideálu. Zabít."
+    },
+    {
+      "id": "productivity-12",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 5,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Sherlock: iOS 26 Poznámky/Hlasové poznámky přepisují a Apple Intelligence shrnuje; AI note-takery (Otter, Granola, Plaud) řeší 'zápis ze schůze'.",
+        "Spolky a SVJ nemají rozpočet a zapisovatel je dobrovolník – 20 USD/rok je bariéra.",
+        "Formální náležitosti zápisu (usnášeníschopnost, kvórum) se liší podle země a stanov – lokalizace je obsahová, ne jen jazyková."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Apple Notes / Hlasové poznámky (iOS 26 přepis + shrnutí)",
+          "url": "",
+          "note": "zdarma v systému"
+        }
+      ],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Strukturovaná usnesení a hlasování jsou reálný rozdíl proti AI přepisu, ale kupní síla je slabá. Zkusit jen jako jednorázový nákup s lokálními šablonami (SVJ, spolek, Verein 'Protokoll Mitgliederversammlung')."
+    },
+    {
+      "id": "productivity-13",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 9,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Sherlock: Apple Journal (iOS 17.2+) je zdarma a s návrhy; Poznámky + Apple Intelligence shrnou rok zápisů.",
+        "Retence: log úspěchů se píše 2× a pak se zapomene – předplatné se neobnoví.",
+        "'brag document' je termín z blogů (Julia Evans), v App Store ho téměř nikdo nepíše."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Apple Journal",
+          "url": "",
+          "note": "systémový deník zdarma"
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Hezký koncept s nulovou zjevnou poptávkou v App Store. Jen jako velmi levný build s hlavním klíčovým slovem 'performance review'/'self review', jinak nestavět."
+    },
+    {
+      "id": "productivity-14",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Profesionální akce používají Stagetimer.io/Rundown Studio kvůli vzdálenému ovládání přes internet – offline se prodává hůř, než autor tvrdí.",
+        "Peer-to-peer mezi iPhonem a iPadem bez sítě (MultipeerConnectivity) je zdroj chyb v nejhorší chvíli – živá akce.",
+        "Malý trh: koordinátoři akcí ≠ masová cílovka; 'run of show' je B2B termín."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Stagetimer.io",
+          "url": "",
+          "note": "webový standard, zdarma pro malé akce"
+        },
+        {
+          "name": "ProPresenter Stage display",
+          "url": "",
+          "note": "v církvích a na konferencích už nainstalováno"
+        }
+      ],
+      "revenue_czk_realistic": 3000,
+      "reviewer_note": "Menší akce (svatby, církve, školní akademie) by offline časovač ocenily, ale trh je úzký a spolehlivost kritická. Zúžit na 'stage timer' pro iPad + Watch s jednorázovou licencí a scénář až v druhé verzi."
+    },
+    {
+      "id": "productivity-15",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Nízká frekvence: nájemník stěhuje jednou za pár let – koupí za 4,99 USD jednou a appku smaže.",
+        "Pronajímatelé ve DE/FR už používají správcovské software a hotové formuláře (Haus & Grund, FR ALUR vzory); FR 'état des lieux' má vlastní B2B appky.",
+        "Právní forma protokolu (podpisy, FR zákonný vzor dle ALUR) – chyba v obsahu = reálná škoda uživateli."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 3000,
+      "reviewer_note": "Rodičovský trh je prokázaný (7+ EN appek), ale lokalizovaná verze je neověřená a jednorázová. Smysl má jen se zaměřením na pronajímatele s více byty (roční licence) a na 2–3 země se silnou kulturou protokolu (DE, FR, CZ)."
+    },
+    {
+      "id": "productivity-16",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Studio Ninja, HoneyBook a Táve mají šablony shot listů a timeline; fotografové je sdílí s klienty online (dotazník) – offline appka tu část neumí.",
+        "Malý trh s vysokou sezónností (květen–září), mimo sezónu nulové stažení.",
+        "'shot list' v App Store vrací filmové appky (Shot Lister, StudioBinder) – kolize záměru."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Studio Ninja / HoneyBook",
+          "url": "",
+          "note": "CRM s šablonami shot listů, fotografové už platí"
+        }
+      ],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Užitečné, ale nika je malá a sezónní. Přidat sdílený dotazník pro páry přes CloudKit share a cílit 'wedding shot list' + lokální výrazy (Hochzeit Fotoliste), jinak nevyjde."
+    },
+    {
+      "id": "productivity-17",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 3,
+        "monetization": 4,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Focus appky (Forest, Study Bunny, Flora) a prep kurzy (UWorld, Becker, Kaplan) mají vlastní sledování hodin.",
+        "Cílovka je malá a časově omezená (6–12 měsíců přípravy), jednorázových 9,99 USD.",
+        "'study hours tracker' je obsazené (autor sám dává 6)."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Becker / UWorld study planner",
+          "url": "",
+          "note": "vestavěný plán hodin v kurzu, který kandidát už zaplatil"
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Dá se postavit za 2 týdny, ale diferenciace je tenká. Jen s konkrétní zkouškou v názvu (CFA/CPA/bar) a pacingem k datu zkoušky + widgetem; realisticky pod 2 000 Kč."
+    },
+    {
+      "id": "productivity-18",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "extra_risks": [
+        "Fotky studentů (často nezletilých) v appce učitele: FERPA/GDPR a školní pravidla – učitel to může mít zakázané.",
+        "Potřeba je intenzivní 2 týdny v září/únoru, pak appka nemá smysl – sezónní jednorázový nákup.",
+        "Poptávka 'learn student names' v App Store neověřená; učitelé řeší tohle v Anki nebo papírem."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Name Shark",
+          "url": "",
+          "note": "autor uvádí; existuje dedikovaný nástroj na jména z fotek"
+        }
+      ],
+      "revenue_czk_realistic": 1200,
+      "reviewer_note": "Hezká mikro-niche, ale právní riziko s fotkami dětí a sezónnost. Cílit na VŠ vyučující a trenéry (dospělí), vše jen v zařízení a jasně to komunikovat."
+    },
+    {
+      "id": "productivity-19",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Porovnání OCR vyfocených stránek dává falešné rozdíly (zalomení, pomlčky) – kvalita výsledku bude horší než desktop.",
+        "Adobe Acrobat má 'Compare Files' a Word má porovnání dokumentů; kdo porovnává smlouvy, dělá to na počítači.",
+        "Nízká frekvence použití a poptávka po mobilním redline je neprokázaná."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Adobe Acrobat Compare Files",
+          "url": "",
+          "note": "porovnání PDF od Adobe"
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Technicky náročné (6 týdnů) s malou a neověřenou mobilní poptávkou. Jen pro digitální PDF/DOCX (bez OCR) a s jednorázovou cenou; jinak nestavět."
+    },
+    {
+      "id": "productivity-20",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 2,
+        "monetization": 3,
+        "build_ease": 7,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Head term 'job tracker' a 'job application tracker' jsou plné (Huntr, Teal, desítky indie appek i šablon v Notion).",
+        "Nástroj na pár měsíců – po nalezení práce uživatel odchází; LinkedIn i portály mají 'Moje žádosti' zdarma.",
+        "'bewerbung tracker' a podobné lokální výrazy mají pravděpodobně minimální hledanost."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Huntr",
+          "url": "",
+          "note": "EN leader s appkou"
+        },
+        {
+          "name": "LinkedIn My Jobs",
+          "url": "",
+          "note": "sledování žádostí zdarma"
+        }
+      ],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Blue ocean 3 i podle autora a produkt je komodita s krátkým životním cyklem uživatele. Zabít."
+    },
+    {
+      "id": "productivity-21",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 5,
+        "monetization": 2,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Poptávka po 'decision journal' v App Store je mikroskopická – koncept žije v knihách a newsletterech (Farnam Street), ne ve vyhledávání.",
+        "Retence: kalibrace dává smysl po měsících, uživatel odpadne dřív.",
+        "Poznámky/Journal + připomínka to udělají zdarma."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Demand 3 podle autora je stále optimistické – bez poptávky není čím ASO krmit. Zabít."
+    },
+    {
+      "id": "productivity-22",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 4,
+        "monetization": 2,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "extra_risks": [
+        "Fotoaparát + album v Fotkách (nebo Live Photo) řeší 'důkaz' zdarma a bez appky.",
+        "Cílení na OCD kontroly = 1.4.1/zdravotní tvrzení; terapeuti navíc upozorňují, že 'důkaz' posiluje kompulzivní kontrolu – etické i review riziko.",
+        "Jednorázových 6,99 USD × malé hledání = pár set korun."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Fotky (iOS)",
+          "url": "",
+          "note": "vyfotit zamčené dveře zvládne každý bez appky"
+        }
+      ],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Malá poptávka, nízká cena, a cílovka s OCD přináší zdravotní a etické riziko. Zabít."
+    },
+    {
+      "id": "productivity-23",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 1,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "extra_risks": [
+        "Web: 6+ dedikovaných IEP appek s 'IEP' v názvu; AbleSpace je financovaný leader s 10+ typy dat a sběrem jedním klepnutím.",
+        "Údaje o žácích se speciálními potřebami: FERPA/IDEA a školní IT často zakazují osobní appky – offline sólo appka narazí na compliance.",
+        "Učitelé chtějí sdílení s týmem (asistent, logoped) – čistě offline to neumí."
+      ],
+      "missed_competitors": [
+        {
+          "name": "AbleSpace - IEP Goal Tracking",
+          "url": "https://apps.apple.com/us/app/ablespace-iep-goal-tracking/id1662372988",
+          "note": "financovaný leader, sběr dat jedním klepnutím, grafy pro poradu"
+        },
+        {
+          "name": "SPED Goals: IEP Tracker",
+          "url": "https://apps.apple.com/us/app/sped-goals-iep-tracker/id6447784065",
+          "note": "hotové cíle v 8 doménách"
+        },
+        {
+          "name": "TrackBinder: IEP Goal Tracker",
+          "url": "https://apps.apple.com/us/app/trackbinder-iep-goal-tracker/id6756043768",
+          "note": "nový, záznam do 30 s"
+        },
+        {
+          "name": "IEP Report",
+          "url": "https://apps.apple.com/us/app/iep-report/id6761060896",
+          "note": "reporty za sekundy"
+        }
+      ],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Autor tvrdil 'několik malých appek' – ve skutečnosti saturováno včetně financovaného hráče. Zabít.",
+      "web_checked": true
+    },
+    {
+      "id": "productivity-24",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 2,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 8,
+        "safety": 4
+      },
+      "extra_risks": [
+        "Web: 7 dedikovaných custody appek (4 s 'Custody Calendar' v názvu), včetně nových 2025–26 indie; tvrzení 'OFW/AppClose jsou jediní' neplatí.",
+        "Sdílení s bývalým partnerem přes iCloud je konfliktní scénář (kdo edituje, důkazy pro soud) – support i 1★ recenze z emocí.",
+        "Lokalizované výrazy (Wechselmodell, střídavá péče) jsou neověřené a pravděpodobně s nízkou hledaností v App Store."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Child Custody Calendar",
+          "url": "https://apps.apple.com/us/app/child-custody-calendar/id6757625632",
+          "note": "2-2-3, týden/týden, výměny, svátky – přesně pitch"
+        },
+        {
+          "name": "SplitDay: Custody Calendar",
+          "url": "https://apps.apple.com/us/app/splitday-custody-calendar/id6758915123",
+          "note": "nový, skóre dnů"
+        },
+        {
+          "name": "KidCal: Co-Parent Calendar App",
+          "url": "https://apps.apple.com/us/app/kidcal-co-parent-calendar-app/id1450930204",
+          "note": "barevný kalendář, složité rozpisy"
+        },
+        {
+          "name": "Fayr: Co-Parenting & Custody",
+          "url": "https://apps.apple.com/us/app/fayr-co-parenting-custody/id1170670072",
+          "note": "kalendář + výdaje + komunikace"
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Anglicky saturované a mnohé z těchto appek jsou už lokalizované nebo dostupné celosvětově; zbylý lokální úhel je příliš spekulativní na 5 týdnů práce. Zabít.",
+      "web_checked": true
+    },
+    {
+      "id": "productivity-25",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 2,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "extra_risks": [
+        "QR box inventory appek jsou desítky (Sortly, Moving Box Inventory, BoxMate a další) – autor sám dává blue ocean 3.",
+        "Jednorázové použití (stěhování) + 6,99 USD = nízký LTV.",
+        "Tisk QR štítků vyžaduje tiskárnu – část uživatelů odpadne; alternativa je fixa na krabici."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Sortly",
+          "url": "",
+          "note": "silný leader, free tier"
+        }
+      ],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Komodita s jednorázovým použitím a přeplněnou nikou. Zabít."
+    },
+    {
+      "id": "productivity-26",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 2,
+        "monetization": 2,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "My Study Life, Class Timetable a další už podporují A/B týdny a rotace; školy často mají vlastní appku (Bakaláři, Edookit, Untis, SchoolBox) s rozvrhem.",
+        "Sherlock: Kalendář umí opakování 'každé 2 týdny' pro sudý/lichý týden.",
+        "Cílovka jsou studenti – 4,99 USD jednorázově a slabá ochota platit."
+      ],
+      "missed_competitors": [
+        {
+          "name": "My Study Life",
+          "url": "",
+          "note": "podporuje rotační rozvrhy zdarma"
+        },
+        {
+          "name": "Untis Mobile",
+          "url": "",
+          "note": "školní rozvrh vč. A/B týdnů přímo od školy"
+        }
+      ],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Okrajová funkce, kterou řeší existující appky i školní systémy zdarma. Zabít."
+    },
+    {
+      "id": "productivity-27",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 2,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 6,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Turno je pro uklízeče zdarma a hostitel platí; Breezeway/Properly mají free tier – ekosystém je dvoustranný a online.",
+        "Workflow hostitel ↔ uklízečka potřebuje sdílení a notifikace v reálném čase – 'offline' tady nesedí, CloudKit sdílení mezi cizími lidmi je křehké.",
+        "Airbnb přidává do appky nástroje pro co-hosty a úklid – Sherlock od platformy."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Turno",
+          "url": "",
+          "note": "zdarma pro uklízeče, marketplace + checklisty s fotkami"
+        }
+      ],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Dvoustranný B2B workflow postavený na serveru a síťových efektech – nesedí s offline strategií Lapnita. Zabít."
+    },
+    {
+      "id": "productivity-28",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "UK 'snagging' má dedikované appky i firmy nabízející snagging službu; DE 'Mängelliste' pokrývá PlanRadar a stavbyvedoucí mají vlastní nástroje.",
+        "Kupující novostavby jede jednou za život – jednorázových 9,99 USD, žádné obnovy.",
+        "Umístění vady na plánu vyžaduje import PDF půdorysu a špendlíky – build je složitější, než 5 týdnů odhaduje."
+      ],
+      "missed_competitors": [
+        {
+          "name": "PlanRadar",
+          "url": "",
+          "note": "B2B leader ve DE/AT, i pro Mängelmanagement"
+        }
+      ],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Evidence v EN je jen pro dodavatele (punch list saturovaný); spotřebitelská lokalizovaná verze je neověřená. Sloučit s nápadem 15 do jedné appky 'předávací protokol + vady' pro kupující/nájemníky, ať to nejsou dvě podobné appky (riziko 4.3)."
+    },
+    {
+      "id": "productivity-29",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 1,
+        "monetization": 4,
+        "build_ease": 3,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Sherlock: Microsoft Excel pro iOS má 'Data z obrázku' zdarma; Live Text kopíruje tabulky.",
+        "Ruční písmo v papírových formulářích se on-device rozpoznává špatně – šablonová extrakce po polích bude potřebovat ruční opravy a zklame.",
+        "Autor sám: 6+ title-matching appek, blue ocean 2."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Scan to Excel",
+          "url": "https://apps.apple.com/us/app/scan-to-excel/id1605484591",
+          "note": "dedikovaný rival (autor uvádí)"
+        },
+        {
+          "name": "Microsoft Excel – Data from Picture",
+          "url": "",
+          "note": "vestavěná funkce zdarma"
+        }
+      ],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Přeplněná nika + systémové/Microsoft náhrady + technicky nejistá kvalita. Zabít."
+    },
+    {
+      "id": "productivity-30",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 4,
+        "monetization": 2,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Laby používají institucionální ELN (LabArchives, Benchling, eLabFTW) kvůli auditům a IP – osobní offline deník nemá právní váhu.",
+        "Studenti neplatí a mají Goodnotes/OneNote zdarma přes školu.",
+        "'molarity calculator' a 'lab timer' jsou saturované kalkulačky – nerankují na 'lab notebook'."
+      ],
+      "missed_competitors": [
+        {
+          "name": "LabArchives",
+          "url": "",
+          "note": "institucionální ELN s appkou"
+        },
+        {
+          "name": "OneNote / Goodnotes",
+          "url": "",
+          "note": "studenti je mají zdarma"
+        }
+      ],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Autor dává demand 3 a monetization 3 – a to je stále přehnané. Zabít."
+    }
+  ]
+}

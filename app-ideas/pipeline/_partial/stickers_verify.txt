@@ -38,3 +38,41 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
     - Reward Chart & Goals Tracker         https://apps.apple.com/us/app/reward-chart-goals-tracker/id1494461554
     - (noise) (Not Boring) Camera          https://apps.apple.com/us/app/not-boring-camera/id6737783441
 
+[4] query: site:apps.apple.com workout stats stickers overlay run  (idea stickers-03)
+    saturation (dedicated workout-stats overlay/sticker apps, many HealthKit-based): 7 (Workshot = Apple Health -> overlays; WorkoutSnap; Workout Overlay - FitStory; Run Photo for Garmin/Strava; StatShot Strava Overlay; Fitness Story; Motion Studio Video Overlays) -> SATURATED
+    - Workshot - Run Overlay Editor        https://apps.apple.com/in/app/workshot-run-overlay-editor/id6746141624
+    - WorkoutSnap                          https://apps.apple.com/us/app/workoutsnap/id1148482605
+    - Workout Overlay - FitStory           https://apps.apple.com/us/app/workout-overlay-fitstory/id6737147040
+    - Run Photo - for Garmin, Strava       https://apps.apple.com/us/app/run-photo-for-garmin-strava/id1493366642
+    - StatShot: Strava Overlay Tool        https://apps.apple.com/us/app/statshot-strava-overlay-tool/id6745430902
+    - (noise) WatchieBesti: Watch Pet      https://apps.apple.com/us/app/watchiebesti-watch-pet/id6760113059
+    - Fitness Story                        https://apps.apple.com/us/app/fitness-story/id6748090363
+    - Motion Studio Video Overlays         https://apps.apple.com/us/app/motion-studio-video-overlays/id6757353103
+    - (noise) Athlytic                     https://apps.apple.com/us/app/athlytic-fitness-recovery/id1543571755
+
+[5] query: site:apps.apple.com sticker album tracker swap checklist  (idea stickers-30)
+    saturation (dedicated sticker-album trackers with duplicates/swap lists): 8+ distinct apps, most launched for World Cup 2026 (Stickers Album Tracker, 2026 Sticker Tracker, Sticker Collector 26, Stickers - Soccer World Cup, Stickers Cup 2026 List, Soccer Sticker Album 2026, Stickerdex, Stikr) -> SATURATED; demand now post-tournament trough
+    - Stickers Album Tracker               https://apps.apple.com/us/app/stickers-album-tracker/id6499235584
+    - 2026 Sticker Tracker                 https://apps.apple.com/gt/app/2026-sticker-tracker/id6762625015?l=en-GB
+    - Sticker Collector 26                 https://apps.apple.com/us/app/sticker-collector-26/id6756793556
+    - Stickers - Soccer World Cup          https://apps.apple.com/us/app/stickers-soccer-world-cup/id6493324719
+    - Stickers Cup 2026 List               https://apps.apple.com/hn/app/stickers-cup-2026-list/id6761439481?l=en-GB
+    - Soccer Sticker Album 2026            https://apps.apple.com/us/app/soccer-sticker-album-2026/id6759508780
+    - Stickerdex                           https://apps.apple.com/us/app/stickerdex/id6783103670
+    - Stickers Cup 2026 List (same id)     https://apps.apple.com/us/app/stickers-cup-2026-list/id6761439481
+    - 2026 Sticker Collector - Stikr       https://apps.apple.com/us/app/2026-sticker-collector-stikr/id6765567439
+
+[6] query: site:apps.apple.com teacher stickers grading stamps iPad  (idea stickers-08)
+    saturation (dedicated teacher/award stamp sticker packs): 2-3 cheap iMessage packs (Teacher Stickers $0.99, 35 designs; Award Stickers with 'Good Job'/'A+' stamps; Labels & Stamps pack) - all static, English-only, low quality; no localized grading-stamp tool for PDF marking seen. Goodnotes natively supports custom stamps/stickers (Sherlock-ish). -> CONTESTABLE, weak incumbents, but no evidence of paying demand
+    - Popsicle Sticks: Teacher Picks       https://apps.apple.com/us/app/popsicle-sticks-teacher-picks/id1139826444
+    - Popsicle Sticks (same id, vision)    https://apps.apple.com/mo/app/popsicle-sticks-teacher-picks/id1139826444?l=en-GB&platform=vision
+    - Award Stickers                       https://apps.apple.com/sg/app/award-stickers/id6758484233
+    - Teacher Stickers                     https://apps.apple.com/us/app/teacher-stickers/id6753334798?uo=2
+    - Easy Grade - EZ Grader               https://apps.apple.com/us/app/easy-grade-ez-grader/id564423623
+    - Labels & Stamps Stickers Pack        https://apps.apple.com/au/app/labels-stamps-stickers-pack/id1271313304
+    - Ink Stamp - Rubber Stamp Stickers    https://apps.apple.com/us/app/ink-stamp-rubber-stamp-stickers/id1152305908
+    - Places: Stamps and Stickers          https://apps.apple.com/vg/app/places-stamps-and-stickers/id1138658344
+    - (noise) graduation stickers!         https://apps.apple.com/us/app/graduation-stickers/id1587778666
+    - Goodnotes (dup)                      https://apps.apple.com/us/app/goodnotes-ai-notes-docs-pdf/id1444383602
+
+Search budget exhausted (6/6). Remaining ideas reviewed from knowledge only.

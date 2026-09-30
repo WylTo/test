@@ -61,3 +61,14 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results. None construc
     - PaperSpan: Save Web for Later (offline + text-to-speech)  https://apps.apple.com/us/app/paperspan-save-web-for-later/id1167530069
     - Later (in)  https://apps.apple.com/in/app/later-save-links-read-later/id1507396839
     - Couch (no sign-up)  https://apps.apple.com/be/app/couch-read-later/id963584693
+
+[6] query: site:apps.apple.com insider trading tracker form 4 sec filings alerts  (idea news-22)
+    saturation (dedicated Form 4 / insider trade trackers): 7 distinct (Undula, InsiderSignal, Insider Trades: Stock Tracker, Insider Trades: Smart Money, Insight, StockInsider, Whalex) -> SATURATED; all but one launched 2024-26, all do real-time Form 4 push (server-side), several add Congress/13F
+    - Undula: Insider Trading (real-time Form 4 alerts)  https://apps.apple.com/us/app/undula-insider-trading/id6744305133
+    - InsiderSignal - Trade Alerts  https://apps.apple.com/iq/app/insidersignal-trade-alerts/id6756303036
+    - Insider Trades: Stock Tracker (Form 4 direct from SEC)  https://apps.apple.com/ca/app/insider-trades-stock-tracker/id6752782016
+    - Insider Trades: Smart Money (Form 4 + Congress)  https://apps.apple.com/us/app/insider-trades-smart-money/id6756682826
+    - Insight - insider tracker app  https://apps.apple.com/us/app/insight-insider-tracker-app/id1661305299
+    - StockInsider: Stock Tracker  https://apps.apple.com/us/app/stockinsider-stock-tracker/id6737145743
+    - Whalex: Insider & 13F Tracker  https://apps.apple.com/nz/app/whalex-insider-13f-tracker/id6770400771
+Search budget used: 6/6. Remaining ideas reviewed from knowledge only.

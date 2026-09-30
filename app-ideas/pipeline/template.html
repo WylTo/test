@@ -307,7 +307,7 @@ const D = /*__DATA__*/null;
     : `<b>Jak spolehlivá jsou data:</b> přímé API Apple (vyhledávání, našeptávač, popularita z Apple Ads) bylo z cloudového prostředí zablokované a webové vyhledávání mělo limit 200 dotazů. Nápady se štítkem <b>OVĚŘENO WEBEM</b> (${S.web}) stojí na skutečných výpisech z App Store: kolik aplikací cílí na frázi a kdo je nejsilnější. Nápady se štítkem <b>ODHAD</b> vycházejí z tržních znalostí agentů a jejich skóre je o 3 body sníženo. Odkazy přímo na aplikace pocházejí jen z výsledků vyhledávání, u ostatních konkurentů je odkaz na vyhledávání. Před vývojem si klíčová slova ověřte skriptem <code>verify_apple.py</code> nebo v Apple Ads (návod v Metodice).`;
 
   // Top 30
-  $("#toptbody").innerHTML = D.ideas.slice(0, 30).map(x => `
+  $("#toptbody").innerHTML = D.ideas.filter(x => !x.dup_of).slice(0, 30).map(x => `
     <tr data-go="${esc(x.id)}" tabindex="0">
       <td class="r num">${x.rank}</td>
       <td><span class="n">${esc(x.name)}</span><span class="t">${esc(x.tagline)}</span></td>
@@ -366,7 +366,7 @@ const D = /*__DATA__*/null;
         <summary>
           <span class="rk">#${x.rank}<small>${x.cat_rank}. v kat.</small></span>
           <span class="main"><span class="nm">${esc(x.name)}</span><span class="tg">${esc(x.tagline)}</span></span>
-          <span class="meta"><span class="c">${esc(x.category_cs)}</span>${vpill(x.verdict)}${x.us_gap ? '<span class="tag us">US GAP</span>' : ""}${evTag(x)}</span>
+          <span class="meta"><span class="c">${esc(x.category_cs)}</span>${vpill(x.verdict)}${x.us_gap ? '<span class="tag us">US GAP</span>' : ""}${evTag(x)}${x.dup_of ? '<span class="tag us">DUPLICITA</span>' : ""}</span>
           <span class="sc"><b>${x.score.toFixed(1)}</b><span class="depth" aria-hidden="true"><i style="width:${x.score}%"></i></span><span>reálně ${czk(x.revenue_czk_realistic)}</span></span>
         </summary>
         <div class="body"></div>
@@ -396,6 +396,8 @@ const D = /*__DATA__*/null;
     const low = x.revenue_czk_realistic != null && x.revenue_czk_realistic < 10000;
     const apple = (x.apple || []).length ? `<div class="blk apple"><h4>Data z Apple (US)</h4><ul>${x.apple.map(k => `<li><code>${esc(k.keyword)}</code>: ${k.result_count} výsledků, nasycení titulků ${k.title_saturation}/10, nejsilnější v top 3: ${new Intl.NumberFormat("cs-CZ").format(k.top3_max_ratings || 0)} hodnocení, ${k.hint_found ? `Apple slovo našeptává${k.hint_priority != null ? ` (priorita ${k.hint_priority})` : ""}` : "Apple slovo nenašeptává"}</li>`).join("")}</ul></div>` : "";
     return `
+      ${x.dup_of ? `<p class="muted"><b>Duplicita:</b> stejný nápad je i v kategorii ${esc(x.dup_of.category_cs)} jako <a href="#" data-jump="${esc(x.dup_of.id)}">${esc(x.dup_of.name)}</a>. Stavět jen jednou, proto má tato kopie skóre o 8 bodů nižší.</p>` : ""}
+      ${x.dup_also ? `<p class="muted"><b>Pozor na duplicitu:</b> stejný nápad navrhla i jiná kategorie (${x.dup_also.map(d => `<a href="#" data-jump="${esc(d.id)}">${esc(d.name)}</a> v kategorii ${esc(d.category_cs)}`).join(", ")}). Postavit jako jednu aplikaci.</p>` : ""}
       <p class="pitch">${esc(x.pitch)}</p>
       <div class="cols">
         <div class="col">
@@ -429,6 +431,7 @@ const D = /*__DATA__*/null;
   }
 
   const list = $("#list");
+  list.addEventListener("click", e => { const a = e.target.closest("a[data-jump]"); if (a) { e.preventDefault(); jump(a.dataset.jump); } });
   list.addEventListener("toggle", e => {
     const d = e.target; if (!(d instanceof HTMLDetailsElement) || !d.open) return;
     const body = d.querySelector(".body");
