@@ -52,3 +52,16 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
     - AI Bouquet - Flower Designer        https://apps.apple.com/us/app/ai-bouquet-flower-designer/id6756481683
     - (noise) Floward Online Flowers & Gifts https://apps.apple.com/us/app/floward-online-flowers-gifts/id813597992
 
+[5] query: site:apps.apple.com AED inspection first aid kit checklist  (idea business-30 AED & First Aid Kit Check)
+    saturation (dedicated AED inspection / first-aid kit audit apps): 6 (CheckAED, AED Log, AED 365, AED Scanner, FIRST AID KIT REGISTER, Clever First Aid App) -> SATURATED-ish for a tiny niche; author missed all of them
+    - PulsePoint AED (AED registry/locator) https://apps.apple.com/us/app/pulsepoint-aed/id867150971
+    - CheckAED                            https://apps.apple.com/us/app/checkaed/id895244940
+    - Clever First Aid App                https://apps.apple.com/us/app/clever-first-aid-app/id1624838022
+    - AED Log (monthly inspection)        https://apps.apple.com/br/app/aed-log/id1578406359?l=en-GB&platform=watch
+    - Clever First Aid App (au)           https://apps.apple.com/au/app/clever-first-aid-app/id1624838022
+    - FIRST AID KIT REGISTER              https://apps.apple.com/nz/app/first-aid-kit-register/id1237165769
+    - SkillWise AED Finder                https://apps.apple.com/ie/app/skillwise-aed-finder/id6756319568
+    - AED 365 (program management)        https://apps.apple.com/us/app/aed-365/id1436175135
+    - AED Scanner (TrackMyAED)            https://apps.apple.com/us/app/aed-scanner/id1478924731
+    - NSC First Aid (training)            https://apps.apple.com/us/app/nsc-first-aid/id1604319243
+

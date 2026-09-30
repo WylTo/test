@@ -1,0 +1,814 @@
+{
+  "category_slug": "lifestyle",
+  "summary": "Kategorie stojí na poctivé evidenci jen u třetiny nápadů; nápady s evidence='knowledge' neprošly: 6 ze 6 ověřených hledání našlo přehlédnutou konkurenci (lunární stříhání 5 appek, odečty měřičů 7, VoC/retrogrády 9, tarot journal 5, koi 3, želvy 2). Nejlepší sázky jsou Lenormand (reverse gap BR/DE/FR, staré appky), Reef Dose a Cattery; skoro všechny nápady ale mají realistický výnos 1–8 tis. Kč, tedy pod hranicí 10 000 Kč, a autorovy 'ideální' výpočty (20–47 tis. Kč) jsou nafouknuté. Společná slabina: hodně malých 'log' appek ze stejné šablony (dávkování, chov, stash, věštění, lunární kalendáře) – 4.3 riziko; slučovat do menšího počtu silnějších appek.",
+  "reviews": [
+    {
+      "id": "lifestyle-01",
+      "verdict": "GO",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 7,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Reefaři s vyšším rozpočtem mají dávkovací pumpy s vlastní appkou (Red Sea ReefBeat, Neptune Apex), které spotřebu a dávky počítají samy – appka míří hlavně na ruční/levnější dávkování.",
+        "Komunita je zvyklá na zdarma webové kalkulačky (BRS, Randy Holmes-Farley); předplatné 2,99 USD/měs. bude těžké, lifetime je realističtější.",
+        "Chyba ve vzorci = mrtvé korály a jednohvězdičkové recenze; nutné testy a jasné jednotky (dKH/meq/ppm).",
+        "Sub-nika nebyla samostatně vyhledána – mohou existovat malé dedikované 'reef calculator' appky, které autor neviděl."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Red Sea ReefBeat",
+          "url": "",
+          "note": "Aplikace k dávkovačům ReefDose – řeší automatické dávkování pro majitele hardwaru (tržní znalost)."
+        },
+        {
+          "name": "Neptune Apex Fusion",
+          "url": "",
+          "note": "Controller ekosystém s dávkováním a trendy (tržní znalost)."
+        }
+      ],
+      "revenue_czk_realistic": 5000,
+      "reviewer_note": "Nejlepší kombinace v kategorii: platící hobby, deterministické výpočty, 100 % offline. Stavět jako lifetime-first 'Reef + Planted dosing' (sloučit s lifestyle-20) a před stavbou ověřit titulovou saturaci 'reef calculator'."
+    },
+    {
+      "id": "lifestyle-02",
+      "verdict": "GO",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Klíčové fráze 'cattery' / 'cat breeder' nebyly vůbec vyhledány – saturace 1 je jen odhad.",
+        "Chovatelé koček jsou organizovaní ve svazech (FIFe, TICA, WCF), které mají vlastní rodokmenové systémy; appka nesmí slibovat rodokmeny/registraci.",
+        "Psí chovatelské appky (Breedera, Puppy-Center) mohou přidat kočky během pár týdnů – Bondly už říji kočky predikuje.",
+        "Reverse gap (RU/PL/CZ) znamená hledání v lokálních jazycích ('питомник кошек', 'hodowla kotów') – bez lokalizace keywords ASO nezabere."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 5000,
+      "reviewer_note": "Reálná mezera a platící publikum (kotě za 800–3000 EUR), ale objem je malý. Stavět s nativní lokalizací klíčových slov RU/PL/DE/CZ, ne jen překladem UI; fráze ověřit v hints před stavbou."
+    },
+    {
+      "id": "lifestyle-03",
+      "verdict": "GO",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Včelaři jsou starší publikum s nízkou ochotou platit za appky; svazy (ČSV, DIB) šíří bezplatné metodiky a tabulky prahů.",
+        "Existují AI detektory kleštíka (Beekeeping - Hive Inspections, BeeScanning), které tlačí očekávání k 'vyfoť podložku' – ruční počítání působí zastarale.",
+        "Prahy zásahu se liší podle země a měsíce; špatně nastavený práh = odpovědnost za úhyn včelstev (reputační riziko).",
+        "Silně sezónní (červenec–říjen); v zimě prakticky nulové stažení."
+      ],
+      "missed_competitors": [
+        {
+          "name": "BeeScanning",
+          "url": "",
+          "note": "Švédská appka na AI detekci kleštíka z fotky včel (tržní znalost)."
+        }
+      ],
+      "revenue_czk_realistic": 4000,
+      "reviewer_note": "Český domácí trh (≈ 60 tis. včelařů) + DE/PL dává smysl a appka je malá. GO jen jako 'Varroa + chov matek' v jedné appce (sloučit s lifestyle-19) s lokalizovanými prahy; cena lifetime ≤ 399 Kč."
+    },
+    {
+      "id": "lifestyle-04",
+      "verdict": "GO",
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "V BR se hledá 'baralho cigano' / 'cigano' – tam existují lokální appky (nebylo ověřeno); saturace 2 je odhad.",
+        "Ilustrace 36 karet se musí nakreslit vlastní (nebo PD Dondorf/Piatnik skeny) – licence na moderní balíčky je riziko.",
+        "Věštecké appky jsou v 4.3 a 'entertainment only' režimu přísněji sledované; nutný disclaimer a žádné sliby předpovědi.",
+        "Lenormand, tarot journal a cartomancy v jednom portfoliu = riziko 4.3 (podobné šablony)."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 8000,
+      "reviewer_note": "Nejsilnější nápad s reverse-gap logikou: staré appky 2012–17, silná poptávka v BR/DE/FR a věštění monetizuje předplatným. Cartomancy (lifestyle-25) přidat jako modul, ne samostatnou appku."
+    },
+    {
+      "id": "lifestyle-05",
+      "verdict": "GO",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Diamantové malování je fad s kulminací 2020–23; objem v DE/NL může klesat.",
+        "Cílovka kupuje sady za 5–15 EUR v diskontech – 9,99 USD lifetime je pro ni vysoká cena; realisticky 4,99 USD.",
+        "4 anglické appky mohou přidat lokalizaci kdykoli (Drillalog je aktivní 2023+).",
+        "Kódy barev DMC a názvy značek (Diamond Dotz) jsou ochranné známky – nepoužívat v názvu/klíčových slovech."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 3000,
+      "reviewer_note": "Malá, ale čistá lokalizační mezera s 3týdenním buildem. Stavět jen jako rychlý low-cost titul pro DE/FR/NL/PL; nečekat 10 000 Kč."
+    },
+    {
+      "id": "lifestyle-06",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Kuřecí zlatá horečka 2025–26 (9 appek na egg tracker) téměř jistě zahrnuje i 'hatch countdown' – fráze 'egg incubation' nebyla vyhledána.",
+        "Líhnutí je silně sezónní (únor–květen) a jednorázové: po 21 dnech appka nemá důvod k návratu.",
+        "Líhně (Brinsea, Janoel) přikládají tištěné tabulky a mají vlastní appky u chytrých modelů.",
+        "Lifetime 6,99 USD při pár tisících stažení za sezónu nedá 10 000 Kč/měs."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 2500,
+      "reviewer_note": "Užitečné, ale monetizačně slabé a pravděpodobně obsazenější, než autor tvrdí. Stavět jen jako levný lifetime titul s křepelkami/kachnami v titulu po ověření saturace 'incubation'."
+    },
+    {
+      "id": "lifestyle-07",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 2,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Není to reverse gap: ověřeno 5 dedikovaných EN appek na lunární stříhání (Lunar Haircut Calendar:AW, LunaCut, HairCycle, Lunatio, Oliva) a Moony stříhání/barvení pokrývá.",
+        "Většina je z 2024–26 – nika se právě zaplňuje, ne je opuštěná.",
+        "iOS Weather ukazuje fázi Měsíce zdarma; bez znamení zvěrokruhu nemá appka hodnotu a s ním je to jen další astro kalendář."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Lunar Haircut Calendar:AW",
+          "url": "https://apps.apple.com/us/app/lunar-haircut-calendar-aw/id6758302349",
+          "note": "Dedikovaný lunární kalendář stříhání/barvení, IAP."
+        },
+        {
+          "name": "LunaCut: Lunar Haircut Guide",
+          "url": "https://apps.apple.com/us/app/lunacut-lunar-haircut-guide/id6772146123",
+          "note": "Nová dedikovaná appka 2026."
+        },
+        {
+          "name": "HairCycle - Haircut Planning",
+          "url": "https://apps.apple.com/us/app/haircycle-haircut-planning/id1445361090",
+          "note": "Starší dedikovaná appka na plánování stříhání podle Měsíce."
+        },
+        {
+          "name": "Lunatio: Moon Guide",
+          "url": "https://apps.apple.com/us/app/lunatio-moon-guide/id1282962161",
+          "note": "Lunární beauty kalendář (stříhání, barvení, pleť)."
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Hlavní premisa (anglicky mluvící vývojáři to neznají) je vyvrácená hledáním – 5 dedikovaných appek. Zabít; maximálně funkce v lifestyle-28.",
+      "web_checked": true
+    },
+    {
+      "id": "lifestyle-08",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 8,
+        "monetization": 2,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "extra_risks": [
+        "Autorova revenue 19 500 Kč z appky za 4,99 USD lifetime by vyžadovala ~170 prodejů měsíčně – u niky s jedinou konkurenční appkou bez recenzí nereálné.",
+        "Nulová retence: skládač zapíše puzzle jednou za týden, bez důvodu platit předplatné.",
+        "Soutěžní 'speed puzzling' komunita používá spreadsheety a web (Speed Puzzling Hub); malá a nezvyklá platit."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Modrý oceán, ale proto, že tu nejsou peníze. Nesplňuje hranici 10 000 Kč ani v ideálu; zabít nebo stavět jen jako víkendový projekt."
+    },
+    {
+      "id": "lifestyle-09",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 1,
+        "monetization": 3,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Ověřeno 7 dedikovaných appek na odečty měřičů včetně OCR foťákem (Meter Reading, Utility Meter Tracker, iMeter Reader, MeterPix, EasyMetr) – nika je nasycená.",
+        "Německý 'Zählerstand' reverse gap neexistuje: Energy Tracker Stromverbrauch (Meterable) a Consumptions jsou právě DE/EU appky.",
+        "Sherlock: iOS Live Text / Visual Intelligence přečte číslo z měřiče a dodavatelé (Octopus, E.ON, ČEZ) nabízejí odečty ve svých appkách zdarma.",
+        "Odečet jednou měsíčně až ročně = minimální engagement, předplatné 1,99 USD/měs. neudrží."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Meter Reading: Utility Tracker",
+          "url": "https://apps.apple.com/us/app/meter-readings-read-save/id6479006613",
+          "note": "OCR čtení elektro/plyn/voda foťákem."
+        },
+        {
+          "name": "Utility Meter Tracker",
+          "url": "https://apps.apple.com/us/app/utility-meter-tracker/id6746415150",
+          "note": "Elektřina, voda, plyn, teplo s odhadem nákladů."
+        },
+        {
+          "name": "Energy Tracker Stromverbrauch",
+          "url": "https://apps.apple.com/us/app/energy-tracker-stromverbrauch/id1584696105",
+          "note": "DE appka (Meterable) – vyvrací DE reverse gap."
+        },
+        {
+          "name": "MeterPix",
+          "url": "https://apps.apple.com/us/app/meterpix/id6743858065",
+          "note": "AI odečet z fotky vč. solárů."
+        }
+      ],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Hledání našlo 7+ dedikovaných konkurentů, včetně německých. Zabít.",
+      "web_checked": true
+    },
+    {
+      "id": "lifestyle-10",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 5,
+        "monetization": 3,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Existují 2 dedikované želví appky (Tortoise - Keep Tracking, Tortoise Care Tool) a reptile trackery s brumací/váhou (ReptiCare, Exotic Reptile Care, Reptile Log).",
+        "Jacksonův poměr je kontroverzní a zastaralý (UK veterináři/TPG ho dnes relativizují) – doporučení 'bezpečné k hibernaci' je veterinární rada s rizikem 1.4.1.",
+        "Majitelé želv jsou malá skupina (hlavně UK); 'tortoise hibernation' se hledá na Googlu, ne v App Store.",
+        "Sezónní: hibernace řešena 3–4 měsíce v roce."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Tortoise - Keep Tracking",
+          "url": "https://apps.apple.com/id/app/tortoise-keep-tracking/id1127680609",
+          "note": "Dedikovaná želví appka: váha, plastron, krmení, grafy."
+        },
+        {
+          "name": "Tortoise Care Tool",
+          "url": "https://apps.apple.com/us/app/tortoise-care-tool/id6753168606",
+          "note": "Nová (2025) želví appka s váhou a zdravím."
+        },
+        {
+          "name": "Husbandry.Pro Reptile Tracking",
+          "url": "https://apps.apple.com/us/app/husbandry-pro-reptile-tracking/id1550079634",
+          "note": "Silný reptile tracker pro chovatele."
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Hibernační úhel v titulu zatím nikdo nemá, ale trh je drobný a konkurence už existuje. Jen jako levný lifetime titul pro UK s formulací 'záznam', ne 'doporučení'.",
+      "web_checked": true
+    },
+    {
+      "id": "lifestyle-11",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 3,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Puppy-Center, Breedera a Breeder Tracker porod a váhy štěňat už pokrývají – autor sám uvádí 3 niche konkurenty.",
+        "Chovatelé s 1 vrhem za 1–2 roky appku znovu nestáhnou – 'Litter Pass' se prodá jednou za dva roky.",
+        "Kolize s lifestyle-02 (cattery) – dvě chovatelské appky ze stejné šablony = riziko 4.3."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 2500,
+      "reviewer_note": "Jen jako 'Litter mode' uvnitř jedné chovatelské appky pro psy i kočky (sloučit s lifestyle-02), ne samostatně."
+    },
+    {
+      "id": "lifestyle-12",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 2,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Klíčová funkce (krmení podle teploty vody) už existuje: KoiControl má kalkulačku krmiva podle teploty, Koi Cal loguje krmení s počasím/teplotou, KoiAi loguje teplotu jezírka.",
+        "Nika je sezónní (duben–říjen) a koi chovatelé v EU jsou malá, často starší skupina.",
+        "Konkurenti přidávají AI diagnostiku z fotky – offline appka bez AI vypadá slabší."
+      ],
+      "missed_competitors": [
+        {
+          "name": "KoiControl - The Koi App",
+          "url": "https://apps.apple.com/us/app/koicontrol-the-koi-app/id1558517332",
+          "note": "Kalkulačka krmiva podle teploty vody a populace koi."
+        },
+        {
+          "name": "Koi Cal Pond Care + Health AI",
+          "url": "https://apps.apple.com/us/app/koi-cal-pond-care-health-ai/id6738632755",
+          "note": "Denní krmení, testy vody, úprava dle počasí/teploty."
+        },
+        {
+          "name": "KoiAi",
+          "url": "https://apps.apple.com/us/app/koiai/id6749480399",
+          "note": "Denní log jezírka: kvalita vody, teplota, krmení."
+        }
+      ],
+      "revenue_czk_realistic": 1200,
+      "reviewer_note": "Tvrzení 'nikdo nemá v titulu' vyvráceno – 3 dedikované koi appky s přesně touto funkcí. Zabít.",
+      "web_checked": true
+    },
+    {
+      "id": "lifestyle-13",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 2,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Labyrinthos (dominantní, zdarma) i Learn Tarot a TarotLingo už umí zapsat výklad z fyzického balíčku – TarotLingo dokonce rozpozná karty foťákem.",
+        "Existuje dedikovaná appka 'Tarot Journal' s přesně tímto titulem.",
+        "Sherlock: Apple Journal (iOS 17.2+) a Notes s fotkou pokryjí jednoduché zapisování zdarma.",
+        "Kolize s lifestyle-04 a -25 (4.3 u tří věšteckých appek)."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Tarot Journal",
+          "url": "https://apps.apple.com/us/app/tarot-journal/id1271120458",
+          "note": "Dedikovaný deník výkladů fyzického balíčku, vlastní karty fotkou."
+        },
+        {
+          "name": "TarotLingo: Tarot Card Reading",
+          "url": "https://apps.apple.com/mk/app/tarotlingo-tarot-card-reading/id6746827482",
+          "note": "Log fyzického výkladu + rozpoznání karet kamerou."
+        },
+        {
+          "name": "Learn Tarot: Rider Waite Cards",
+          "url": "https://apps.apple.com/no/app/learn-tarot-rider-waite-cards/id6452754512",
+          "note": "Log fyzického balíčku, Face ID, iCloud."
+        },
+        {
+          "name": "Labyrinthos Tarot Reading",
+          "url": "https://apps.apple.com/us/app/labyrinthos-tarot-reading/id1155180220",
+          "note": "Lídr zdarma, zápis fyzických výkladů."
+        }
+      ],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Nika je obsazená zdarma lídrem i dedikovanými appkami. Zabít; deník přidat do Lenormand appky.",
+      "web_checked": true
+    },
+    {
+      "id": "lifestyle-14",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "extra_risks": [
+        "Poptávka po 'perfume formula' v App Store je neověřená – DIY parfuméři pracují v Excelu nebo na desktopu (Perfumer's Workbench, spreadsheety).",
+        "IFRA limity a alergenové deklarace: pokud appka ukáže %, uživatelé budou chtít IFRA kontrolu – bez licencovaných dat je to nedodělek, s nimi právní riziko.",
+        "Velmi malá komunita (r/DIYfragrance ~desítky tisíc), lokalizace do 50 jazyků pomůže málo."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Skupina platí, ale je drobná a klíčová slova neověřená. Stavět jen jako rychlý utility titul (ředění/škálování) bez IFRA slibů; spolu s mýdlovou/svíčkovou kalkulačkou jako rozšíření trhu."
+    },
+    {
+      "id": "lifestyle-15",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 4,
+        "monetization": 3,
+        "build_ease": 7,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Wardrobe appky (Indyx, Whering, Stylebook) už počítají cost-per-wear a kabelky jsou v nich jen kategorie.",
+        "Luxusní sběratelé kabelek řeší hodnotu přes resale platformy (Fashionphile, Vestiaire) – offline appka bez cen je pro ně slabá.",
+        "Kabelku 'nosíš' denně bez zapisování – CPW vyžaduje disciplínu, kterou tato skupina nemá; retence nízká.",
+        "Klíčová slova 'handbag collection' / 'bag collection' jsou čistý odhad bez ověření."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Indyx",
+          "url": "",
+          "note": "Digitální šatník s cost-per-wear (tržní znalost)."
+        },
+        {
+          "name": "Whering",
+          "url": "",
+          "note": "Digitální šatník zdarma, CPW statistiky (tržní znalost)."
+        }
+      ],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Převzetí modelu z hodinek nefunguje – hodinkáři jsou nerdi se sbírkou, kabelky jsou součást šatníku, který už obsluhují zdarma appky. Zabít."
+    },
+    {
+      "id": "lifestyle-16",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 1,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 9,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Ověřeno: dedikovaná appka 'Planetary Retrogrades' dělá přesně VoC + retrográdní notifikace; Lunation, Moonlight Phases (Susan Miller), MoonReader, TimePassages a Planetaro to mají také.",
+        "Vlastní implementace efemerid (VSOP87) a přesnost VoC na minutu = 5+ týdnů a riziko chyb, které astrologická komunita okamžitě odhalí v recenzích.",
+        "Co–Star a Chani posílají retrográdní upozornění zdarma."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Planetary Retrogrades",
+          "url": "https://apps.apple.com/ro/app/planetary-retrogrades/id6468492086",
+          "note": "Přesně stejný koncept: VoC a retrográdní notifikace."
+        },
+        {
+          "name": "Lunation - Moon & Astrology",
+          "url": "https://apps.apple.com/us/app/lunation-moon-astrology/id6759346776",
+          "note": "Upozornění před každým VoC Měsícem."
+        },
+        {
+          "name": "Moonlight Phases, Susan Miller",
+          "url": "https://apps.apple.com/us/app/moonlight-phases-susan-miller/id1571233700",
+          "note": "Silná značka, VoC časy dle polohy."
+        },
+        {
+          "name": "MoonReader",
+          "url": "https://apps.apple.com/us/app/moonreader/id921045502",
+          "note": "Uživatelé používají denně pro VoC a retrogrády."
+        }
+      ],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "9 appek s touto funkcí, jedna s totožným konceptem. Zabít.",
+      "web_checked": true
+    },
+    {
+      "id": "lifestyle-17",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 2,
+        "monetization": 2,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Nika je z tržní znalosti plná malých appek na expiraci kosmetiky (PAO trackery, obecné 'expiry date tracker' appky) a skincare appky (FeelinMySkin, Skin Bliss) ji mají jako funkci.",
+        "Ochota platit je velmi nízká – uživatelky čekají, že to bude zdarma; autor sám dal monetizaci 4.",
+        "Sherlock: Připomínky s datem + Visual Intelligence pokryjí základní potřebu zdarma.",
+        "PAO symbol na obalu (12M) si lidé nezaznamenávají – retence padá po týdnu."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Autor sám odhaduje saturaci 3–4 bez hledání a blue_ocean 4; s nízkou ochotou platit to nevychází. Zabít."
+    },
+    {
+      "id": "lifestyle-18",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 3,
+        "monetization": 4,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "MorphMarket (dominantní tržiště chovatelů) nabízí genetickou kalkulačku zdarma – přesně cílovka, přesně funkce.",
+        "Husbandry.Pro, ReptiCare a Reptile Tracker už mají chov a snůšky; Husbandry.Pro cílí na chovatele.",
+        "Knihovna morfů (alelické komplexy, letální kombinace jako spider wobble, super-forms) vyžaduje stálou aktualizaci a expertízu – chyba zničí důvěru.",
+        "Build 6+ týdnů pro nika, kde lídr je zdarma."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Husbandry.Pro Reptile Tracking",
+          "url": "https://apps.apple.com/us/app/husbandry-pro-reptile-tracking/id1550079634",
+          "note": "Tracker pro chovatele plazů vč. chovu."
+        },
+        {
+          "name": "MorphMarket",
+          "url": "",
+          "note": "Tržiště + bezplatná genetická kalkulačka (tržní znalost)."
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Hlavní funkce je zdarma u lídra trhu, na kterém cílovka denně prodává. Zabít."
+    },
+    {
+      "id": "lifestyle-19",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 6,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Chov matek dělá malý zlomek včelařů (pokročilí), a to 2–3 měsíce v roce.",
+        "Timeline přelarvování je pevný (16/21/24 dní) – stačí tištěná tabulka nebo kalendář; Pro hodnota je minimální.",
+        "Samostatně vedle Varroa appky = dvě včelařské appky z jedné šablony (4.3)."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Samostatně nemá šanci na 10 000 Kč. Zabít jako appku, přidat jako modul do lifestyle-03."
+    },
+    {
+      "id": "lifestyle-20",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Expertní publikum používá bezplatné webové kalkulačky (Rotala Butterfly, IFertz) a fóra; 'ei dosing' má mizivý objem v App Store.",
+        "Samostatně vedle Reef Dose = dvě dávkovací kalkulačky (4.3 riziko).",
+        "Planted-tank hobby je menší a méně platící než reef."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Jako samostatná appka ne; jako modul 'Planted' v lifestyle-01 ano – rozšíří záběr klíčových slov jedné appky."
+    },
+    {
+      "id": "lifestyle-21",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Existují dedikované 'floss/thread inventory' appky pro vyšívání (tržní znalost, neověřeno) a Cross Stitch Creator má tracking.",
+        "Čísla barev DMC/Anchor jsou ochranné známky; tabulka barev je licenčně šedá zóna.",
+        "Kolize s lifestyle-05 – dvě 'stash' appky pro ruční práce ze stejné šablony (4.3)."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Sloučit s Diamond Painting Stash do jedné 'craft stash' appky s více režimy; samostatně ne."
+    },
+    {
+      "id": "lifestyle-22",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 2,
+        "monetization": 2,
+        "build_ease": 7,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Z tržní znalosti je 'moving box' nika plná appek (Sortly, řada moving-box QR appek, home inventory appky) – autor sám odhaduje saturaci 4–5.",
+        "Jednorázové použití: stěhování 1× za několik let → žádná retence, žádné předplatné, žádné recenze.",
+        "Sherlock: Notes + Visual Look Up + QR v Kameře pokryjí základ zdarma."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Sortly",
+          "url": "",
+          "note": "Home/business inventory s QR štítky (tržní znalost)."
+        }
+      ],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Přeplněné a monetizačně nulové. Zabít."
+    },
+    {
+      "id": "lifestyle-23",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "'kidding' je homonymum (vtipy) a v App Store vrátí joke appky; 'goat tracker' přitahuje hry (Goat Simulator).",
+        "US homesteading má zavedené nástroje (Herdwatch, Farmbrite, obecné livestock appky) a kuřecí gold-rush vývojáři mohou přidat kozy.",
+        "Hobby chovatel se 3–10 kozami platí málo; dojivost řeší sešitem."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Jen pokud 'goat' klíčová slova ukážou hint a sat ≤ 3; stavět jako 'small herd' (kozy+ovce+alpaky) s lifetime cenou."
+    },
+    {
+      "id": "lifestyle-24",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 6,
+        "monetization": 3,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "extra_risks": [
+        "Cílovka jsou stovky, max. nízké tisíce prodejců decantů globálně – matematicky nedá 10 000 Kč.",
+        "Prodej decantů je v řadě zemí právně šedý (rebottling ochranných známek, EU kosmetické nařízení) – appka pro něj je reputační riziko.",
+        "Prodejci už používají Etsy/Shopify/spreadsheety s objednávkami."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 300,
+      "reviewer_note": "Příliš malé a právně šedé. Zabít."
+    },
+    {
+      "id": "lifestyle-25",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 4,
+        "monetization": 3,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "V RU/IT storefrontech jsou 'гадание на картах' a 'cartomanzia' plné lokálních appek (tržní znalost) – EU 'mezera' není mezera, jen jazyk, který autor nehledal.",
+        "V EN je objem 'cartomancy' zanedbatelný.",
+        "Třetí věštecká appka v portfoliu = vysoké riziko 4.3."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Samostatně ne; jako režim 'Playing cards' v Lenormand appce (lifestyle-04) rozšíří klíčová slova bez 4.3 rizika."
+    },
+    {
+      "id": "lifestyle-26",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 4,
+        "monetization": 2,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Existuje dedikovaná appka 'Bird Log: Weight & Care Diary' (nalezena při hledání pro lifestyle-10) a obecné pet weight trackery.",
+        "Denní vážení je činnost pár minut – majitelé papoušků použijí Numbers, Notes nebo zdarma appku; 7,99 USD lifetime s malým objemem nedá 10 000 Kč.",
+        "Varování 'pták je nemocný' je zdravotní tvrzení (1.4.1 u zvířat méně přísné, ale reputačně riskantní)."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Bird Log: Weight & Care Diary",
+          "url": "https://apps.apple.com/us/app/bird-log-weight-care-diary/id6745482482",
+          "note": "Dedikovaný deník váhy ptáků."
+        }
+      ],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Nika už má dedikovanou appku a nízkou ochotu platit. Zabít."
+    },
+    {
+      "id": "lifestyle-27",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 2,
+        "monetization": 4,
+        "build_ease": 3,
+        "offline_fit": 8,
+        "safety": 4
+      },
+      "extra_risks": [
+        "Existují nejméně 4 timegrapher appky přes mikrofon (Timegrapher, Chronolog, Watch Accuracy Checker) a Toolwatch zdarma.",
+        "Recenze konkurentů si stěžují na nestabilní měření přes mikrofon – technicky těžké, 7 týdnů buildu a vysoké riziko 1★ recenzí.",
+        "Hodinkáři si koupí fyzický timegrapher za 100–150 USD; appka je pro ně hračka."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Timegrapher - Watch Accuracy",
+          "url": "https://apps.apple.com/us/app/timegrapher-watch-accuracy/id6450460771",
+          "note": "Timegrapher přes mikrofon (utilities evidence)."
+        },
+        {
+          "name": "Chronolog - Watch Accuracy",
+          "url": "https://apps.apple.com/us/app/chronolog-watch-accuracy/id6452083510",
+          "note": "Záznam přesnosti hodinek (utilities evidence)."
+        },
+        {
+          "name": "Watch Accuracy Checker",
+          "url": "https://apps.apple.com/us/app/watch-accuracy-checker/id6478476307",
+          "note": "Další dedikovaná appka (utilities evidence)."
+        }
+      ],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Obsazené, technicky nejtěžší v kategorii a s rizikem špatných recenzí. Zabít."
+    },
+    {
+      "id": "lifestyle-28",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 3,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 5
+      },
+      "extra_risks": [
+        "DE/AT/CZ storefronty jsou plné lokálních 'Mondkalender' a 'lunární kalendář' appek (tržní znalost) – reverse gap v DE neexistuje.",
+        "Floris Books (Thun) je silná značka a biodynamici chtějí právě 'Maria Thun' – vlastní výpočet bez ní působí jako napodobenina.",
+        "Sezónní (březen–červen) a free alternativy v kalendářích zahrádkářských časopisů.",
+        "Kolize s lifestyle-07 (dva lunární kalendáře = 4.3)."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 3500,
+      "reviewer_note": "Poptávka je reálná, konkurence taky. Jen jako jedna 'Moon Garden + Beauty' appka s deníkem záhonů a silnou CZ/PL/HU lokalizací, kde je konkurence slabší."
+    },
+    {
+      "id": "lifestyle-29",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 3,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "extra_risks": [
+        "Pool Math (TFP), Orenda a Taylor mají spa režim zdarma; výrobci nafukovacích vířivek (Bestway Lay-Z-Spa, Intex) mají vlastní appky k ovládání.",
+        "Dávkování chloru/bromu = zdravotní riziko (chemie, Legionella); chybná rada je odpovědnost a důvod k 1★.",
+        "Klíčová slova 'hot tub' jsou obsazená výrobci a ovládacími appkami; saturace 5 je jen odhad."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Pool Math by Trouble Free Pool",
+          "url": "",
+          "note": "Parent se spa režimem zdarma (již u autora jako parent, bez URL)."
+        }
+      ],
+      "revenue_czk_realistic": 2500,
+      "reviewer_note": "UK/EU nafukovací vířivky jsou reálná cílovka, ale bez ověření klíčových slov je to hazard. Stavět jen s úhlem 'inflatable hot tub' pro UK/DE a konzervativními dávkami s odkazem na etiketu."
+    },
+    {
+      "id": "lifestyle-30",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 8,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Detektorování je v řadě zemí zakázané nebo vázané na povolení (CZ, FR, IT, část DE) – lokalizace do 50 jazyků nemá smysl a GPS log nálezů může uživatele usvědčit.",
+        "UK detektoráři používají oficiální PAS/Finds recording a klubové nástroje; US detektoráři hledají hlavně 'metal detector' magnetometrové appky (klíčové slovo obsazené hračkami).",
+        "Výrobci detektorů (Minelab, XP, Nokta) mají vlastní appky s logem nálezů u nových modelů."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 2500,
+      "reviewer_note": "Reálná komunita (UK/US) s ochotou platit za vybavení, ale úzké okno. Cílit jen na UK/US/NL/DK, kde je legální, a jako 'finds log', ne 'metal detector'."
+    }
+  ]
+}

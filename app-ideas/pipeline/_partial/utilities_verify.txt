@@ -61,3 +61,16 @@ https://apps.apple.com/ro/app/fillio/id6755162344   (inches remaining, deliverie
 https://apps.apple.com/us/app/tank-gauge-fuel1/id6746115438
 https://apps.apple.com/us/app/alice-metrics/id1373939814
 https://apps.apple.com/us/app/mypropane/id1568216769
+
+## 6) query: site:apps.apple.com tire age DOT code date  (2026-09-30) — idea utilities-19
+saturation (apps with DOT/tire-age decoding as a feature): 4 (Tiretime: DOT Tire Date Code [dedicated, 2025], My Wheels tire tracker, TheTireLab DOT decoder, TireBuddy DOT/TIN scan + PDF) + AI Car Tire Scanner -> CONTESTABLE, dedicated exact-match app exists
+https://apps.apple.com/us/app/tiretime-tire-age-decoder/id6755887918   (dedicated DOT/TIN date decoder)
+https://apps.apple.com/us/app/tire-spot/id6746969376
+https://apps.apple.com/pl/app/my-wheels-car-tires-tracker/id6753175774   (DOT date + replacement reminder)
+https://apps.apple.com/it/app/tirebuddy/id6744446345?l=en-GB   (DOT/TIN scanning, tire age on PDF)
+https://apps.apple.com/gb/app/ai-car-tire-scanner/id6754861301
+https://apps.apple.com/us/app/tireweb/id6450261776
+https://apps.apple.com/sl/app/thetirelab/id6740140054
+https://apps.apple.com/us/app/tire-pressure-correction/id547075173
+https://apps.apple.com/us/app/id6755887918
+# search budget exhausted (6/6). All other ideas reviewed from knowledge + other _partial files (navigation_verify #6 balcony solar, food-drink_verify soap calc, travel_verify camper).
