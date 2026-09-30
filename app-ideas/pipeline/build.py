@@ -80,7 +80,8 @@ def main():
             verdict = r["verdict"] if r else None
             kwd = [apple[k["kw"].lower()] for k in idea["keywords"] if k["kw"].lower() in apple]
             aadj, ainfo = apple_adjust(kwd)
-            score = round(max(0.0, min(100.0, base + VERDICT_ADJ[verdict] + aadj)), 1)
+            ev_adj = 0.0 if idea.get("evidence") == "web" else -3.0
+            score = round(max(0.0, min(100.0, base + VERDICT_ADJ[verdict] + aadj + ev_adj)), 1)
             idea = dict(idea)
             idea.update({
                 "category_slug": slug, "category_cs": cs, "author_rank": i,
@@ -118,6 +119,7 @@ def main():
         "kill": sum(1 for x in ideas if x["verdict"] == "KILL"),
         "unreviewed": sum(1 for x in ideas if x["verdict"] is None),
         "us_gap": sum(1 for x in ideas if x.get("us_gap")),
+        "web": sum(1 for x in ideas if x.get("evidence") == "web"),
         "competitor_links": sum(len(x["competitors"]) + len((x["review"] or {}).get("missed_competitors", [])) for x in ideas),
         "apple_verified": bool(apple),
         "generated": date.today().isoformat(),

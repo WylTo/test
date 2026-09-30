@@ -2,8 +2,15 @@
 """Validate an ideas/<slug>.json file against BRIEF.md. Prints OK or ERROR/WARN lines."""
 import json
 import re
+import glob
+import os
 import sys
 from statistics import mean
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+EVIDENCE_IDS = set()
+for _f in glob.glob(os.path.join(HERE, "_partial", "*.txt")):
+    EVIDENCE_IDS |= set(re.findall(r"\bid(\d{6,12})\b", open(_f, encoding="utf-8").read()))
 
 URL_RE = re.compile(r"^https://apps\.apple\.com/[a-z]{2}/app/([^/?#]+/)?id\d{6,12}(\?.*)?$")
 SCORE_KEYS = ["demand", "blue_ocean", "monetization", "build_ease", "offline_fit", "safety"]
@@ -74,9 +81,13 @@ def main(path):
             errors.append(f"{tag}: competitors must be a list of 1–4 objects")
         else:
             for c in comps:
-                url = str(c.get("url", ""))
-                if not URL_RE.match(url):
+                url = str(c.get("url") or "")
+                if url and not URL_RE.match(url):
                     errors.append(f"{tag}: competitor '{c.get('name')}' has non-App-Store or malformed url '{url}'")
+                if url:
+                    mid = re.search(r"id(\d+)", url)
+                    if mid and mid.group(1) not in EVIDENCE_IDS:
+                        errors.append(f"{tag}: competitor '{c.get('name')}' url id {mid.group(1)} is not in _partial evidence — drop the url (leave it empty), never write IDs from memory")
                 if c.get("role") not in ("parent", "niche", "us-only"):
                     errors.append(f"{tag}: competitor '{c.get('name')}' role must be parent|niche|us-only")
                 if not str(c.get("name", "")).strip():
@@ -84,6 +95,8 @@ def main(path):
                 m = re.search(r"id(\d+)", url)
                 if m:
                     seen_urls.setdefault(m.group(1), set()).add(str(c.get("name", "")).strip().lower())
+        if idea.get("evidence") not in ("web", "knowledge"):
+            errors.append(f"{tag}: evidence must be 'web' or 'knowledge'")
         if not isinstance(idea.get("us_gap"), bool):
             errors.append(f"{tag}: us_gap must be true/false")
         elif idea["us_gap"] and not str(idea.get("us_gap_note", "")).strip():

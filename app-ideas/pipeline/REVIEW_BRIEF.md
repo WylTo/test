@@ -65,3 +65,11 @@ Exactly one review per idea id (all 30). Then run
 `python3 <workdir>/validate_review.py <ideas json> <your review json>` and fix every ERROR
 until it prints `OK`. Final message ≤ 5 lines: GO/MAYBE/KILL counts, the single best idea,
 the most overrated idea.
+
+## OFFLINE RUN override
+In this run no live data is available: do NOT call WebSearch, WebFetch, curl or apple_fetch.py.
+Attack the ideas with your own market knowledge plus the `_partial/*.txt` evidence files
+(they contain real saturation findings and real App Store URLs). A `missed_competitors`
+entry may carry a `url` only if it is copied from a `_partial/*.txt` file; otherwise set
+`"url": ""` (the page generates a search link). Be especially skeptical of ideas marked
+`"evidence": "knowledge"`. Run the validator from the pipeline dir.

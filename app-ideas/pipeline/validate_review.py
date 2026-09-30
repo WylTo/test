@@ -52,7 +52,7 @@ def main(ideas_path, review_path):
             errors.append(f"{tag}: missed_competitors must be a list")
         else:
             for c in mc:
-                if not URL_RE.match(str(c.get("url", ""))):
+                if c.get("url") and not URL_RE.match(str(c.get("url", ""))):
                     errors.append(f"{tag}: missed competitor '{c.get('name')}' bad url '{c.get('url')}'")
         rr = r.get("revenue_czk_realistic")
         if not isinstance(rr, int) or rr < 0:

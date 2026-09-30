@@ -258,6 +258,7 @@ code { font-family: var(--mono); font-size: 0.92em; }
       </div>
       <label class="chk"><input type="checkbox" id="fus"> Jen US gap</label>
       <label class="chk"><input type="checkbox" id="foff"> Jen plně offline</label>
+      <label class="chk"><input type="checkbox" id="fweb"> Jen ověřené webem</label>
       <select id="fsort" aria-label="Řazení">
         <option value="score">Řadit: výsledné skóre</option>
         <option value="rev">Řadit: realistické tržby</option>
@@ -289,18 +290,21 @@ const D = /*__DATA__*/null;
   const SCORE_LABELS = { demand: "Poptávka", blue_ocean: "Modrý oceán", monetization: "Monetizace", build_ease: "Snadnost vývoje", offline_fit: "Offline", safety: "Bezpečnost (nízké riziko)" };
   const OFF = { full: "plně offline", mostly: "převážně offline", partial: "částečně online" };
   const ROLE = { parent: "lídr mateřského trhu", niche: "konkurent v nice", "us-only": "US předloha" };
+  const gsearch = (t) => "https://www.google.com/search?q=" + encodeURIComponent('site:apps.apple.com "' + t + '"');
+  const compLink = (c) => c.url ? `<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.name)} ↗</a>` : `<a href="${esc(gsearch(c.name))}" target="_blank" rel="noopener">${esc(c.name)} <span class="muted">(hledat v App Store ↗)</span></a>`;
+  const evTag = (x) => x.evidence === "web" ? '<span class="tag">OVĚŘENO WEBEM</span>' : '<span class="tag us">ODHAD</span>';
   const vpill = (v) => v ? `<span class="pill ${v.toLowerCase()}">${v}</span>` : `<span class="pill none">BEZ OPONENTURY</span>`;
   const byId = new Map(D.ideas.map(x => [x.id, x]));
 
   // Header
   $("#eyebrow").textContent = `Lapnito · průzkum App Store · ${S.generated}`;
   $("#lede").textContent = `${S.ideas} nápadů na offline aplikace bez serverů v ${S.categories} kategoriích App Store. Každý míří na opomíjenou niku v trhu, který už prokazatelně vydělává, a má cíl aspoň 10 000 Kč čistého měsíčně za ideálních podmínek. Každý nápad navrhl a obhájil jeden výzkumný agent a druhý, nezávislý agent ho jako ďáblův advokát napadl a přeskóroval.`;
-  const sd = [["", S.ideas, "nápadů"], ["", S.categories, "kategorií"], ["go", S.go, "GO — stavět"], ["maybe", S.maybe, "MAYBE — s úpravou"], ["kill", S.kill, "KILL — smetí"], ["", S.us_gap, "US gap nápadů"], ["", S.competitor_links, "odkazů na konkurenci"]];
+  const sd = [["", S.ideas, "nápadů"], ["", S.categories, "kategorií"], ["go", S.go, "GO — stavět"], ["maybe", S.maybe, "MAYBE — s úpravou"], ["kill", S.kill, "KILL — smetí"], ["", S.web, "ověřeno webem"], ["", S.us_gap, "US gap nápadů"], ["", S.competitor_links, "odkazů na konkurenci"]];
   if (S.unreviewed) sd.push(["", S.unreviewed, "bez oponentury"]);
   $("#soundings").innerHTML = sd.map(([c, n, t]) => `<div class="sounding ${c}"><b>${n}</b><span>${t}</span></div>`).join("");
   $("#caveat").innerHTML = S.apple_verified
     ? `<b>Data z Apple jsou doplněna.</b> U klíčových slov, která prošla skriptem <code>verify_apple.py</code>, vidíte počet výsledků v App Store, nasycení titulků, sílu konkurence a to, zda Apple slovo našeptává. Tato data upravila skóre (viz Metodika).`
-    : `<b>Co tato verze zatím neobsahuje:</b> přímá čísla z Apple API (iTunes Search, našeptávač App Store, popularita z Apple Ads). Cloudové prostředí, ve kterém analýza běžela, má Apple domény zablokované. Poptávka a konkurence jsou proto ověřené přes webové vyhledávání skutečných výpisů z App Store: kolik aplikací cílí na danou frázi v názvu, kdo je nejsilnější a jestli mateřský trh vydělává. Přesná Apple čísla doplníte skriptem <code>verify_apple.py</code> (návod je v Metodice), stránka se pak přepočítá.`;
+    : `<b>Jak spolehlivá jsou data:</b> přímé API Apple (vyhledávání, našeptávač, popularita z Apple Ads) bylo z cloudového prostředí zablokované a webové vyhledávání mělo limit 200 dotazů. Nápady se štítkem <b>OVĚŘENO WEBEM</b> (${S.web}) stojí na skutečných výpisech z App Store: kolik aplikací cílí na frázi a kdo je nejsilnější. Nápady se štítkem <b>ODHAD</b> vycházejí z tržních znalostí agentů a jejich skóre je o 3 body sníženo. Odkazy přímo na aplikace pocházejí jen z výsledků vyhledávání, u ostatních konkurentů je odkaz na vyhledávání. Před vývojem si klíčová slova ověřte skriptem <code>verify_apple.py</code> nebo v Apple Ads (návod v Metodice).`;
 
   // Top 30
   $("#toptbody").innerHTML = D.ideas.slice(0, 30).map(x => `
@@ -333,12 +337,13 @@ const D = /*__DATA__*/null;
   });
 
   // Filters
-  const state = { q: "", cat: "", v: "", us: false, off: false, sort: "score" };
+  const state = { q: "", cat: "", v: "", us: false, off: false, web: false, sort: "score" };
   $("#fcat").innerHTML = `<option value="">Všechny kategorie</option>` + D.categories.map(c => `<option value="${esc(c.slug)}">${esc(c.name_cs)} (${c.count})</option>`).join("");
   $("#q").addEventListener("input", e => { state.q = e.target.value.trim().toLowerCase(); render(); });
   $("#fcat").addEventListener("change", e => { state.cat = e.target.value; render(); });
   $("#fus").addEventListener("change", e => { state.us = e.target.checked; render(); });
   $("#foff").addEventListener("change", e => { state.off = e.target.checked; render(); });
+  $("#fweb").addEventListener("change", e => { state.web = e.target.checked; render(); });
   $("#fsort").addEventListener("change", e => { state.sort = e.target.value; render(); });
   $("#fverdict").addEventListener("click", e => {
     const b = e.target.closest("button"); if (!b) return;
@@ -361,7 +366,7 @@ const D = /*__DATA__*/null;
         <summary>
           <span class="rk">#${x.rank}<small>${x.cat_rank}. v kat.</small></span>
           <span class="main"><span class="nm">${esc(x.name)}</span><span class="tg">${esc(x.tagline)}</span></span>
-          <span class="meta"><span class="c">${esc(x.category_cs)}</span>${vpill(x.verdict)}${x.us_gap ? '<span class="tag us">US GAP</span>' : ""}<span class="tag">${OFF[x.offline] || esc(x.offline)}</span></span>
+          <span class="meta"><span class="c">${esc(x.category_cs)}</span>${vpill(x.verdict)}${x.us_gap ? '<span class="tag us">US GAP</span>' : ""}${evTag(x)}</span>
           <span class="sc"><b>${x.score.toFixed(1)}</b><span class="depth" aria-hidden="true"><i style="width:${x.score}%"></i></span><span>reálně ${czk(x.revenue_czk_realistic)}</span></span>
         </summary>
         <div class="body"></div>
@@ -384,9 +389,9 @@ const D = /*__DATA__*/null;
         <span class="track"><i style="width:${f[k] * 10}%"></i>${changed ? `<s style="left:calc(${a[k] * 10}% - 1px)" title="původní odhad autora"></s>` : ""}</span>
         <span class="v">${changed ? `<del>${a[k]}</del>` : ""}${f[k]}/10</span>`;
     }).join("");
-    const kw = (x.keywords || []).map(k => `<tr><td>${esc(k.kw)}</td><td>${dots(k.saturation)}</td><td>${esc(k.competitor)}<div class="muted">${esc(k.note)}</div></td></tr>`).join("");
-    const comps = (x.competitors || []).map(c => `<li><span class="role">${ROLE[c.role] || esc(c.role)}</span><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.name)} ↗</a>${c.note ? `<span class="note">${esc(c.note)}</span>` : ""}</li>`).join("");
-    const missed = (r.missed_competitors || []).map(c => `<li><span class="role">přehlédnutý konkurent</span><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.name)} ↗</a>${c.note ? `<span class="note">${esc(c.note)}</span>` : ""}</li>`).join("");
+    const kw = (x.keywords || []).map(k => `<tr><td><a href="${esc(gsearch(k.kw))}" target="_blank" rel="noopener">${esc(k.kw)}</a></td><td>${dots(k.saturation)}</td><td>${esc(k.competitor)}<div class="muted">${esc(k.note)}</div></td></tr>`).join("");
+    const comps = (x.competitors || []).map(c => `<li><span class="role">${ROLE[c.role] || esc(c.role)}</span>${compLink(c)}${c.note ? `<span class="note">${esc(c.note)}</span>` : ""}</li>`).join("");
+    const missed = (r.missed_competitors || []).map(c => `<li><span class="role">přehlédnutý konkurent (oponent)</span>${compLink(c)}${c.note ? `<span class="note">${esc(c.note)}</span>` : ""}</li>`).join("");
     const risks = (x.devils_advocate || []).map(t => `<li>${esc(t)}</li>`).join("") + (r.extra_risks || []).map(t => `<li class="rev">${esc(t)}<span class="src">OPONENT</span></li>`).join("");
     const low = x.revenue_czk_realistic != null && x.revenue_czk_realistic < 10000;
     const apple = (x.apple || []).length ? `<div class="blk apple"><h4>Data z Apple (US)</h4><ul>${x.apple.map(k => `<li><code>${esc(k.keyword)}</code>: ${k.result_count} výsledků, nasycení titulků ${k.title_saturation}/10, nejsilnější v top 3: ${new Intl.NumberFormat("cs-CZ").format(k.top3_max_ratings || 0)} hodnocení, ${k.hint_found ? `Apple slovo našeptává${k.hint_priority != null ? ` (priorita ${k.hint_priority})` : ""}` : "Apple slovo nenašeptává"}</li>`).join("")}</ul></div>` : "";
@@ -406,7 +411,7 @@ const D = /*__DATA__*/null;
         </div>
         <div class="col">
           <div class="blk"><h4>Klíčová slova (US App Store)</h4><div class="tablewrap"><table class="kwt"><thead><tr><th>Fráze</th><th>Nasycení</th><th>Nejsilnější v nice</th></tr></thead><tbody>${kw}</tbody></table></div>
-            <div class="legendline">Nasycení = kolik aplikací z výsledků vyhledávání má frázi přímo v názvu (0–10). Zelená = volné moře.</div></div>
+            <div class="legendline">Nasycení = kolik aplikací z výsledků vyhledávání má frázi přímo v názvu (0–10). Zelená = volné moře. ${x.evidence === "web" ? "Nika byla zkontrolována webovým vyhledáváním výpisů App Store." : "Nika nebyla vyhledávána, nasycení je odhad z tržních znalostí."} Kliknutím na frázi otevřete vyhledávání aplikací.</div></div>
           <div class="blk"><h4>Důkaz poptávky</h4><p>${esc(x.demand_evidence)}</p></div>
           <div class="blk"><h4>Konkurence (odkazy do App Store)</h4><ul class="comps">${comps}${missed}</ul></div>
           ${apple}
@@ -436,6 +441,7 @@ const D = /*__DATA__*/null;
       (!state.v || x.verdict === state.v) &&
       (!state.us || x.us_gap) &&
       (!state.off || x.offline === "full") &&
+      (!state.web || x.evidence === "web") &&
       (!state.q || hay.get(x.id).includes(state.q)));
     xs = xs.slice().sort(sorters[state.sort]);
     $("#count").textContent = `${xs.length} z ${D.ideas.length} nápadů`;
@@ -443,7 +449,7 @@ const D = /*__DATA__*/null;
   }
 
   function jump(id) {
-    state.q = ""; state.cat = ""; state.v = ""; state.us = false; state.off = false;
+    state.q = ""; state.cat = ""; state.v = ""; state.us = false; state.off = false; state.web = false; $("#fweb").checked = false;
     $("#q").value = ""; $("#fcat").value = ""; $("#fus").checked = false; $("#foff").checked = false;
     [...$("#fverdict").children].forEach(x => x.setAttribute("aria-pressed", String(x.dataset.v === "")));
     render();
@@ -456,11 +462,11 @@ const D = /*__DATA__*/null;
   const Wt = D.weights;
   $("#method").innerHTML = `
     <div class="blk"><h4>1. Návrh (27 výzkumných agentů)</h4>
-      <p>Každá kategorie App Store dostala vlastního agenta. Ten vymyslel přes 45 kandidátů, u každého přes webové vyhledávání zkontroloval skutečné výpisy z App Store (<code>site:apps.apple.com &lt;fráze&gt;</code>), mateřský trh a důkazy poptávky, a nechal 30 nejlepších. Odkazy na konkurenci jsou převzaté přímo z výsledků vyhledávání, žádné ID není vymyšlené.</p></div>
+      <p>Každá kategorie App Store dostala vlastního agenta. Ve 20 kategoriích nejdřív proběhlo zhruba 200 webových vyhledávání výpisů App Store (<code>site:apps.apple.com &lt;fráze&gt;</code>), která rozdělila niky na přeplněné a volné a dala přes 1 000 skutečných odkazů. Na nich agenti postavili jádro 30 nápadů a doplnili je z tržních znalostí. Přímé odkazy na aplikace jsou jen z výsledků vyhledávání, žádné ID není vymyšlené.</p></div>
     <div class="blk"><h4>2. Oponentura (ďáblův advokát)</h4>
       <p>Druhý, nezávislý agent každou kategorii napadl: hledal přehlédnuté konkurenty, riziko, že funkci přidá přímo iOS, reálnost poptávky i tržeb a rizika při schvalování v App Review (4.3 spam, 1.4.1, 5.1.1, ochranné známky). Každému nápadu dal verdikt GO / MAYBE / KILL, nové skóre a realistický odhad tržeb po 6 měsících.</p></div>
     <div class="blk"><h4>3. Výsledné skóre (0–100)</h4>
-      <p>Vážený průměr skóre po oponentuře × 10: poptávka ${Wt.demand * 100} %, modrý oceán ${Wt.blue_ocean * 100} %, monetizace ${Wt.monetization * 100} %, snadnost vývoje ${Wt.build_ease * 100} %, bezpečnost ${Wt.safety * 100} %, offline ${Wt.offline_fit * 100} %. Verdikt pak skóre posune: GO +3, MAYBE 0, KILL −15, bez oponentury −4. Data z Apple (až budou) přidají nejvýš +6 nebo uberou nejvýš −8.</p></div>
+      <p>Vážený průměr skóre po oponentuře × 10: poptávka ${Wt.demand * 100} %, modrý oceán ${Wt.blue_ocean * 100} %, monetizace ${Wt.monetization * 100} %, snadnost vývoje ${Wt.build_ease * 100} %, bezpečnost ${Wt.safety * 100} %, offline ${Wt.offline_fit * 100} %. Verdikt pak skóre posune: GO +3, MAYBE 0, KILL −15, bez oponentury −4. Nápad jen z odhadu (bez webového ověření) −3. Data z Apple (až budou) přidají nejvýš +6 nebo uberou nejvýš −8.</p></div>
     <div class="blk"><h4>Jak číst tržby</h4>
       <p>„Ideál“ je autorův výpočet trychtýře (stažení z niche klíčových slov × konverze × cena, po 15% provizi Apple). „Realisticky“ je střízlivý odhad oponenta pro medián po 6 měsících bez reklamy. Kde je realita pod 10 000 Kč, je číslo červeně.</p></div>
     <div class="blk"><h4>Doplnění přesných dat z Apple</h4>
