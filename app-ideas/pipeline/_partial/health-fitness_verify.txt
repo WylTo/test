@@ -12,3 +12,15 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results. No Apple API 
     - SeniorFit: Workout for Seniors                    https://apps.apple.com/us/app/seniorfit-workout-for-seniors/id6742771536
     - SeniorFit At-Home Workouts                        https://apps.apple.com/us/app/seniorfit-at-home-workouts/id6448442932
     - Active Aging App (gentle strength, 2026)          https://apps.apple.com/us/app/active-aging/id6758223883
+
+[2] query: site:apps.apple.com padel workout fitness  (idea health-fitness-09)  date: 2026-09-30
+    saturation (dedicated padel off-court fitness/workout plan apps): 1 (WorkPadel - bodyweight workouts for padel players). The rest (6) are Apple Watch scorekeepers/activity trackers with HealthKit -> "padel fitness" in title is taken by watch trackers, only 1 true workout-plan competitor. CONTESTABLE.
+    - 700 Padel & Fitness Hub (club booking)             https://apps.apple.com/by/app/700-padel-fitness-hub/id6443488558
+    - Padel Pro (score + fitness tracking, $4.99)        https://apps.apple.com/us/app/padel-pro/id6470145580
+    - padeltap (watchOS, HealthKit)                      https://apps.apple.com/us/app/padeltap/id6476618933
+    - Padel Tracker PadelTick                            https://apps.apple.com/us/app/padel-tracker-padeltick/id6744892176
+    - Padelio: Track Padel Activity (stroke detection)   https://apps.apple.com/us/app/padelio-track-padel-activity/id6502829514
+    - Padel Watch: Padel Scorekeeper App                 https://apps.apple.com/us/app/padel-watch/id6443518532
+    - Padel Keeper                                       https://apps.apple.com/kg/app/padel-keeper/id1599929559
+    - WorkPadel (bodyweight workouts for padel)          https://apps.apple.com/in/app/workpadel/id6443625445
+    - Deuce - Padel Scorekeeper                          https://apps.apple.com/do/app/deuce-padel-scorekeeper/id1554095897?l=en-GB

@@ -1,0 +1,880 @@
+{
+ "category_slug": "food-drink",
+ "summary": "Kategorie má solidní jádro v nenápadných hobby nástrojích (zavařování, medovina, zrání uzenin, sýrařství, kvásek lokalizovaně), ale autor systematicky podcenil saturaci: web ověření ukázalo, že 'knowledge' nápady Creami, ruční receptové kartičky, sous vide a mocktaily jsou už obsazené 4–8 dedikovanými appkami a Pour Cost má exact-match lídra s 223 hodnoceními. Revenue_math je nafouknutá zhruba 4–6×: realistický medián je 1–5 tis. Kč/měs a většina nápadů 10 tis. nedosáhne. Nejlepší sázky: Jar Timer (lokalizované zavařování), Levain (lokalizovaný kvásek), Cure Lab; společná slabina jsou jednorázové nízké ceny, sezónnost a potravinová bezpečnost/odpovědnost.",
+ "reviews": [
+  {
+   "id": "food-drink-01",
+   "verdict": "GO",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 7,
+    "monetization": 4,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Evropské 'tradiční' metody (sterilace v troubě, open-kettle, převracení sklenic dnem vzhůru) jsou podle USDA/NCHFP nebezpečné – pokud je aplikace uvede jako rovnocenné, hrozí odpovědnost i zamítnutí podle 1.4 (fyzická újma); pokud je odmítne, ztratí právě lokální publikum.",
+    "Poptávka je extrémně sezónní (VII–X); roční průměr bude zhruba třetina 'ideálního' měsíce a jednorázový nákup za 5,99 USD nevytvoří opakovaný příjem.",
+    "Němečtí uživatelé Einkochautomatů (Weck, Rommelsbacher) řídí časy dle manuálu přístroje a receptů z Chefkoch/YouTube – App Store vyhledávání 'einkochen' spíš vrací receptové aplikace než časovače.",
+    "Lokální DE/PL storu nebyly ověřeny; 'sat 2 v DE' je odhad autora."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Canning & Pantry Log - Jarred",
+     "url": "https://apps.apple.com/us/app/canning-pantry-log-jarred/id6760012445",
+     "note": "Nová (2026) a aktivně vyvíjená – může lokalizovat dřív, než se dostaneme do žebříčků."
+    }
+   ],
+   "revenue_czk_realistic": 3500,
+   "reviewer_note": "Nejlépe podložený US-gap nápad kategorie: EN konkurence opravdu jen 2 aplikace a lokální trh je reálný. Stavět jako 'zavařovací deník + spíž' (sklad sklenic s datem) kvůli retenci a jasně oddělit bezpečné vs. tradiční metody; příjem počítat na roční průměr, ne na srpen."
+  },
+  {
+   "id": "food-drink-02",
+   "verdict": "GO",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 7,
+    "monetization": 5,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Vážní mazeři používají zdarma webové kalkulačky (Got Mead, Meadmaking.wiki TOSNA kalkulačka) a Brewfather – ochota platit za samostatnou mobilní appku je nízká.",
+    "Nízký objem vyhledávání: 'mead calculator' je spíš Google dotaz; v App Store přinese jednotky stovek stažení měsíčně globálně.",
+    "Portfolio riziko 4.3: vedle #20 Cider Press jde o téměř stejnou kalkulačku cukru/ABV – dvě appky s identickým jádrem mohou být označeny jako spam."
+   ],
+   "missed_competitors": [
+    {
+     "name": "ABV Calculator - Minimalistic",
+     "url": "https://apps.apple.com/us/app/abv-calculator-minimalistic/id6754205227",
+     "note": "Pokrývá beer/cider/mead ABV – laciná alternativa pro nejjednodušší use-case."
+    }
+   ],
+   "revenue_czk_realistic": 3000,
+   "reviewer_note": "Levná stavba, nízké riziko, reálná komunita (r/mead, PL/CZ tradice). Příjem bude spíš 2–4 tis. Kč; sloučit s #20 do jedné appky 'Mead & Cider' s lokalizací je silnější než dvě slabé."
+  },
+  {
+   "id": "food-drink-03",
+   "verdict": "GO",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 8,
+    "monetization": 6,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Dávkování dusitanu (Prague Powder #1/#2) je bezpečnostně kritické – chyba výpočtu = otrava; Apple může požadovat výrazné disclaimery (1.4) a jediný bug znamená reputační katastrofu.",
+    "Charcuterie nadšenci často používají zdarma kalkulačky na webu (Meatsafe/Marianski tabulky) a Excel – hobby je malé a přísné, recenze budou nemilosrdné na chyby.",
+    "EU i různé země mají odlišné limity dusitanů/ dusičnanů (EU 2023 zpřísnění) – 'v mezích' se liší podle trhu."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Fermentation Journal: Fermento",
+     "url": "https://apps.apple.com/us/app/fermentation-journal-fermento/id6470132496",
+     "note": "Obecný deník, ale výslovně zmiňuje CHARCUTERIE – částečně pokrývá deník zrání."
+    }
+   ],
+   "revenue_czk_realistic": 3500,
+   "reviewer_note": "Skutečně řídká konkurence a lidé s drahou komorou platí; úbytek váhy + kalkulačka rovnovážného solení je jasná hodnota. Podmínka: výpočty validovat proti publikovaným tabulkám a nechat je nezávisle zkontrolovat."
+  },
+  {
+   "id": "food-drink-04",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 5,
+    "monetization": 6,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Autor nenašel přesně pojmenovanou aplikaci 'Pour Cost' (od ~2017, 4,9★ / 223 hodnocení) – exact-match klíčové slovo je obsazené silným hodnocením.",
+    "Profesionálové používají inventurní SaaS (BevSpot, WISK, Partender) a POS, kde je pour cost vestavěný; samostatná kalkulačka za 29,99 USD/rok se prodává těžko.",
+    "Předplatné na jednoduchou kalkulačku může neprojít 3.1.2 (předplatné musí nabízet průběžnou hodnotu).",
+    "B2B uživatelé pořád hledají spíš na Googlu než v App Store; 1 000 stažení/měs z 'pour cost' je optimismus."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Pour Cost",
+     "url": "https://apps.apple.com/us/app/pour-cost/id1195122501",
+     "note": "Exact-match titul, 223 hodnocení 4,9★, US uncie/dolary – zralý lídr niche."
+    },
+    {
+     "name": "AICostBar",
+     "url": "https://apps.apple.com/us/app/aicostbar/id6743988254?mt=12",
+     "note": "Mac nástroj na náklady baru."
+    }
+   ],
+   "revenue_czk_realistic": 2500,
+   "reviewer_note": "Ne blue ocean v EN. Úhel: metrický/lokalizovaný pour cost (cl, ml, EUR/CZK/PLN, DPH) pro evropské bary a mobilní bary, kde US 'Pour Cost' neobstojí; jednorázová cena místo předplatného.",
+   "web_checked": true
+  },
+  {
+   "id": "food-drink-05",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 5,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Fermentační deníky zaplavily store v letech 2025–26 (Fermento, Fermy, FermentMe, Ferment, Crock) a všechny mají kombuchu jako preset – rozdíl 'jen kombucha' je pro uživatele slabý.",
+    "Kombuchaři jsou nízkonákladové hobby – typický uživatel utratí za SCOBY 10 USD a za appku nechce platit nic; iOS připomínky/časovače pokryjí F1/F2.",
+    "TikTok trend odeznívá a vlna 2020–22 je za vrcholem."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Fermento - Brewing & Culturing",
+     "url": "https://apps.apple.com/sg/app/fermento-brewing-culturing/id6757434490",
+     "note": "Kombucha, kimchi, tepache presety – přímý překryv."
+    },
+    {
+     "name": "FermentMe - Recipes & tracker",
+     "url": "https://apps.apple.com/rs/app/fermentme-recipes-tracker/id6761524491",
+     "note": "Nový obecný fermentační deník s recepty."
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Poptávka existuje, peníze ne. Dává smysl jen jako lokalizovaný (DE/PL/CZ/FR) a hodně vizuální deník s widgety a Live Activity pro F1/F2; nepočítat s víc než 1–2 tis. Kč."
+  },
+  {
+   "id": "food-drink-06",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 6,
+    "monetization": 5,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 3
+   },
+   "extra_risks": [
+    "Chybná etiketa alergenů = právní odpovědnost prodejce a potenciálně anafylaxe; aplikace, která 'automaticky' generuje povinné údaje, nese reputační i právní riziko.",
+    "Pravidla se liší stát od státu (cottage food) i v EU (nařízení 1169/2011, národní výjimky) – bez neustálé aktualizace data zastarají.",
+    "Tisk štítků: termotiskárny Brother/DYMO/Zebra potřebují vlastní SDK, AirPrint na štítkové role je nepohodlný – MVP bude slabší, než pitch slibuje.",
+    "Domácí pekaři etikety dělají v Canvě/Avery šablonách zdarma; 'cottage food label' je Google dotaz, ne App Store dotaz."
+   ],
+   "missed_competitors": [
+    {
+     "name": "CakeCost",
+     "url": "https://apps.apple.com/us/app/cakecost/id1555897547",
+     "note": "Cenová kalkulačka pro domácí pekaře – přidání etiket je pro ně jednoduchý krok."
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Zajímavá B2B díra, ale poptávka v App Store je neprokázaná (sat 0 znamená i nulové hledání). Stavět jen jako doplněk k cenové kalkulačce (#16) nebo po ověření hint dat; výstup formulovat jako 'návrh etikety', ne jako garantovanou shodu."
+  },
+  {
+   "id": "food-drink-07",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 4,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Chytré teploměry (MEATER, ThermoPro, Inkbird) mají v appkách odhad času dokončení zdarma – majitel smokeru s teploměrem tuto appku nepotřebuje.",
+    "BBQ log je crowded (sat 6) a Smokeplan přímo dělá plánovač pozpátku – niche už má dedikovaného hráče.",
+    "Časové odhady briskety jsou notoricky nepřesné (stall) – appka bude obviňována, když maso není hotové."
+   ],
+   "missed_competitors": [
+    {
+     "name": "MEATER",
+     "url": "",
+     "note": "Hardware appka s odhadem času dokončení a návodem – zdarma k teploměru (URL neověřena)."
+    },
+    {
+     "name": "Smokeplan - BBQ Cook Planner",
+     "url": "https://apps.apple.com/in/app/smokeplan-bbq-cook-planner/id6789017609",
+     "note": "Přesně stejný koncept plánování od času servírování."
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Viable jen jako lokalizovaná DE/NL/Nordics/CZ verze (Grillen/Smoker boom) s množstvím masa na hosta a plánem pro celou grilovačku; bez lokalizace je to čtvrtá BBQ appka ve frontě."
+  },
+  {
+   "id": "food-drink-08",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 3,
+    "monetization": 2,
+    "build_ease": 9,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Sherlock: iOS Hodiny umí od iOS 17 více pojmenovaných časovačů zároveň a Siri 'timer na 20 sekund' – vícenálevový plán se udělá bez appky.",
+    "Čajové časovače jsou klasická 'minimum functionality' kategorie (4.2) s desítkami zdarma alternativ (Tea Timer, Steep, Teaware apps) – autor viděl jen jeden, protože nehledal.",
+    "Gongfu komunita je malá a zvyklá počítat nálevy v hlavě; ochota platit 3,99 USD minimální."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Steep: Tea Timer & Brew Guide",
+     "url": "https://apps.apple.com/us/app/steep-tea-timer-brew-guide/id6751850664",
+     "note": "Nový a přímo cílí na tea timer/brew guide."
+    }
+   ],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Hezký, ale bezcenný produkt: nízká poptávka, nulová cenová síla a vestavěné časovače. 12 tis. Kč ideál stojí na 3 000 stažení z 'gongfu', což je nereálné."
+  },
+  {
+   "id": "food-drink-09",
+   "verdict": "GO",
+   "scores": {
+    "demand": 8,
+    "blue_ocean": 4,
+    "monetization": 5,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "US-gap nebyl ověřen v DE/FR/IT storech – lokální aplikace (např. od německých pekařských blogů) mohou existovat a EN indie appky mohou přidat AI překlad během týdne.",
+    "Riziko 4.3: přes 10 skoro stejných sourdough trackerů – Apple může nový 'další tracker' odmítnout, pokud nebude mít zjevně odlišné funkce.",
+    "Evropané se kvásek učí z YouTube a blogů; nákup předplatného 14,99 USD/rok pro kvasový deník je nejistý – lifetime bude převažovat."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 5000,
+   "reviewer_note": "Nejsilnější důkaz poptávky v kategorii a jasná lokalizační hra. Podmínka: před stavbou ověřit 'sauerteig/levain/zakwas' v lokálních storech a odlišit se plánovačem pečení pozpátku a lokálními moukami (T550/T65/chlebová), ne dalším logem krmení."
+  },
+  {
+   "id": "food-drink-10",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 6,
+    "monetization": 5,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 3
+   },
+   "extra_risks": [
+    "Majitelé kaváren nehledají řešení v App Store – používají šablony úřadů (UK FSA, ČR SZPI), POS moduly nebo HACCP appky, které alergeny přidávají.",
+    "Chyba v matici = alergická reakce hosta a pokuta; placená appka tvrdící compliance přebírá odpovědnost.",
+    "Menu se mění, matici tvoří často ne-vlastník (kuchař) na počítači – iPhone appka je pro tento workflow nevhodná; iPad/tisk je nutnost."
+   ],
+   "missed_competitors": [
+    {
+     "name": "BackResto - HACCP",
+     "url": "https://apps.apple.com/qa/app/backresto-haccp/id1634053106?platform=tv",
+     "note": "HACCP appka, která už tiskne etikety potravin a funguje offline – pravděpodobně rozšíří o alergeny."
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Povinná potřeba, ale slabý App Store kanál. Úhel: udělat z matice iPad-first nástroj s tiskem A4 a lokalizovanými alergeny (DE/CZ/PL), a zvážit sloučení s #06 do 'etiketa + matice' pro drobné výrobce."
+  },
+  {
+   "id": "food-drink-11",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 4,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Pitchovaný produkt už existuje: CreamiLab (Ninja Creami companion s vyvažováním receptů) a Ice Cream Calculator (fat, MSNF, cukr, stabilizátor, sušina).",
+    "Ninja má vlastní oficiální recepty a stovky zdarma receptů na webu/TikToku; 'creami recipes' titulů je víc (Creami Ice Cream Maker Recipes, Ice Cream Journal).",
+    "Ochranná známka 'Creami' (SharkNinja) v názvu = riziko 5.2.1/trademark takedown.",
+    "PAC/POD data surovin pro protein prášky se liší značku od značky – databáze bude vždy nepřesná."
+   ],
+   "missed_competitors": [
+    {
+     "name": "CreamiLab",
+     "url": "https://apps.apple.com/us/app/creamilab/id6770989853",
+     "note": "Přímo Ninja Creami companion s AI vyváženými recepty."
+    },
+    {
+     "name": "Ice Cream Calculator",
+     "url": "https://apps.apple.com/us/app/ice-cream-calculator/id6474457917",
+     "note": "Vyvažovač fat/MSNF/cukr/stabilizátor/sušina, 5,0★."
+    },
+    {
+     "name": "Ice Cream Journal - Scoop",
+     "url": "https://apps.apple.com/us/app/ice-cream-journal-scoop/id6786448664",
+     "note": "Deník pro gelato/sorbet/Creami várky."
+    },
+    {
+     "name": "Creami Ice Cream Maker Recipes",
+     "url": "https://apps.apple.com/us/app/creami-ice-cream-maker-recipes/id6446147815",
+     "note": "Receptová appka na klíčové slovo creami (od 2023)."
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Web ověření ukázalo, že niche má 4 dedikované aplikace včetně přesné kopie pitche; blue ocean skóre autora (6) bylo iluze a název nese trademark riziko.",
+   "web_checked": true
+  },
+  {
+   "id": "food-drink-12",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Jednorázová potřeba (svatba jednou za život) – nula retence, nula recenzí, nula doporučení; Google vrátí zdarma kalkulačky dřív, než člověk otevře App Store.",
+    "Sherlock-lite: ChatGPT/Apple Intelligence odpoví 'kolik alkoholu na 80 hostů' během vteřiny.",
+    "2,99 USD × 5 % z 4 000 stažení předpokládá obrovský objem pro frázi, kterou lidé píší do Googlu, ne do App Store."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Batchr: Cocktail Batching",
+     "url": "https://apps.apple.com/us/app/batchr-cocktail-batching/id6744668021",
+     "note": "Batch kalkulačka s 250+ recepty – blízký use-case pro domácí párty."
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Slabé peníze. Smysl jen jako lokalizovaný 'party planner' (jídlo + pití + led + nákupní seznam) pro svatby/oslavy s jednorázovým nákupem – jinak nechat být."
+  },
+  {
+   "id": "food-drink-13",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 5,
+    "monetization": 6,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 3
+   },
+   "extra_risks": [
+    "Histaminové seznamy jsou vědecky sporné a nekonzistentní; tvrzení typu 'bezpečné/nebezpečné' + deník symptomů = 1.4.1 a rizika zdravotních tvrzení; Apple může appku přesunout do Medical a požadovat zdroje.",
+    "SIGHI seznam je chráněný – vlastní seznam musí být autorsky vytvořen a obhajitelný, což je týdny práce s literaturou.",
+    "OCR etiket na E-čísla a přísady v 50 jazycích je výrazně těžší, než se zdá (různé formáty, zkratky).",
+    "V DACH pravděpodobně existují německé histaminové appky (neověřeno) – 'reverse gap' není potvrzený."
+   ],
+   "missed_competitors": [
+    {
+     "name": "MCAS Tracker",
+     "url": "https://apps.apple.com/is/app/mcas-tracker/id6754931863",
+     "note": "Nová dedikovaná MCAS appka."
+    },
+    {
+     "name": "Food Intolerances",
+     "url": "https://apps.apple.com/us/app/food-intolerances/id419098758?platform=ipad",
+     "note": "Stará multi-intolerance appka s histaminovým profilem."
+    }
+   ],
+   "revenue_czk_realistic": 3500,
+   "reviewer_note": "Chronické onemocnění s ochotou platit předplatné a řídkou dedikovanou konkurencí – jeden z mála nápadů s reálnými penězi. Podmínka: bez OCR v MVP, opatrné formulace ('obsah histaminu dle literatury'), citace zdrojů a ověření DE storu."
+  },
+  {
+   "id": "food-drink-14",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 4,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "pH log vyžaduje pH metr – většina domácích výrobců ho nemá; appka, která říká 'pod 4,6 = bezpečné', nese odpovědnost za botulismus.",
+    "Odhad Scovilla ze směsi chilli je vědecky velmi nepřesný (odrůda, zralost) – vyvolá negativní recenze.",
+    "Fermentační appky (Ferment, Fermenty, Crock) už mají solnou kalkulačku; 'hot sauce' titul chybí proto, že je to malý trh, ne proto, že ho nikdo neviděl."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Fermenty",
+     "url": "https://apps.apple.com/us/app/fermenty/id6759230036",
+     "note": "Brine kalkulačka – jádro hot sauce appky zdarma."
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Zábavné, levné na stavbu, ale malé. Lepší jako lokalizovaná 'fermentace zeleniny + hot sauce' appka pro DE/PL/CZ (kysané zelí, okurky), kde je fermentace tradiční a EN appky nejsou lokalizované."
+  },
+  {
+   "id": "food-drink-15",
+   "verdict": "GO",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 5,
+    "monetization": 6,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Autor nenašel 2 dedikované deníky (Freeze-Dry Buddy, Freeze Dry Tracker) a výrobcovu appku DryLINK – niche je obsazená začínajícími hráči.",
+    "Harvest Right drží většinu trhu a může přidat logování várek do vlastní (Wi-Fi) appky u nových modelů.",
+    "Trh je téměř výhradně US – lokalizace do 50 jazyků pomůže málo, protože lyofilizátory jsou v EU vzácné a drahé."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Freeze-Dry Buddy: Batch Log",
+     "url": "https://apps.apple.com/us/app/freeze-dry-buddy-batch-log/id6763676080",
+     "note": "Deník várek (tácy, váha, nastavení, historie) – přímý konkurent."
+    },
+    {
+     "name": "Freeze Dry Tracker",
+     "url": "https://apps.apple.com/us/app/freeze-dry-tracker/id6748582588",
+     "note": "iPad deník s výpočtem úbytku váhy."
+    },
+    {
+     "name": "DryLINK",
+     "url": "https://apps.apple.com/us/app/drylink/id1321136896",
+     "note": "Appka výrobce/ovladače lyofilizátoru."
+    }
+   ],
+   "revenue_czk_realistic": 3500,
+   "reviewer_note": "Konkurence je slabá a nová, publikum bohaté (přístroj 2–4 tis. USD) a hodně aktivní ve FB skupinách. Vyhrát lze jen kvalitou: sklad + trvanlivost + šablony potravin + widgety; počítat s 3–5 tis. Kč, ne 20 tis.",
+   "web_checked": true
+  },
+  {
+   "id": "food-drink-16",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 4,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Brazílie má silný lokální ekosystém 'precificação' appek a kurzů pro confeiteiras (často zdarma jako lead magnet kurzů) – autor BR store vůbec neověřil.",
+    "Nízká kupní síla BR/MX/TR: regionální ceny 1,99 USD/měs dají po převodu zlomek; 3 000 stažení s 2,5 % roční konverzí je optimismus.",
+    "Cenotvorba dortů v EN je crowded (7–8) a stejné appky mohou snadno lokalizovat do PT/ES."
+   ],
+   "missed_competitors": [
+    {
+     "name": "CakeCost",
+     "url": "https://apps.apple.com/us/app/cakecost/id1555897547",
+     "note": "EN lídr, snadno přidá portugalštinu."
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Poptávka reálná, peníze slabé a lokální konkurence pravděpodobná. Jen s jasným ověřením BR/PL storu; PL/TR mohou být lepší cíl než BR."
+  },
+  {
+   "id": "food-drink-17",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 2,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Ooni (i Gozney) má ve vlastní zdarma appce kalkulačku těsta a recepty – přesně cílová skupina 'nadšenců s drahou pecí'.",
+    "'pizza dough' a 'pizza dough calculator' jsou crowded (autor sám uvádí sat 5–6) plus baker's % appky (sat 7); webové kalkulačky (pizzaapp/pizza party) zdarma.",
+    "Jednorázově 3,99 USD s 3 500 staženími/měs na saturovaných slovech je nereálné."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Ooni",
+     "url": "",
+     "note": "Oficiální appka Ooni s kalkulačkou těsta a recepty (URL neověřena)."
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Saturovaná niche s bezplatným výrobcovým nástrojem. Nestavět."
+  },
+  {
+   "id": "food-drink-18",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 2,
+    "monetization": 3,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Beanconqueror je zdarma, open-source, lokalizovaný a v DE/EU komunitě dominantní – lokalizační výhoda neexistuje.",
+    "7+ EN dial-in appek z let 2025–26 může lokalizovat přes AI během dnů; převodní tabulka mlýnků je nepřesná a kopíruje data výrobců.",
+    "Chytré váhy (Acaia, Timemore) a kávovary s appkami logují shoty automaticky."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Beanconqueror",
+     "url": "",
+     "note": "Zdarma, open-source, lokalizovaný, pokrývá shot log i zásobu zrn (URL neověřena)."
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "US-gap teze padá na Beanconqueror – bezplatný lokalizovaný lídr. Nestavět."
+  },
+  {
+   "id": "food-drink-19",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 4,
+    "monetization": 5,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 3
+   },
+   "extra_risks": [
+    "Kategorie Medical/Health: purinový rozpočet a 'deník záchvatů' jsou zdravotní tvrzení (1.4.1); Apple může chtít zdroje a lékařské disclaimery.",
+    "Japonsko má vlastní ekosystém zdravotních appek (pojišťovny, farma firmy, 尿酸値 deníky) – předpoklad 'nic v JP' je neověřený a pravděpodobně chybný.",
+    "Purinové tabulky pro lokální potraviny (sushi, kimchi, uzeniny) je třeba autorsky sestavit z literatury – data nejsou zdarma a snadno."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Gout Guru: Flare Tracker",
+     "url": "https://apps.apple.com/us/app/gout-guru-flare-tracker/id6756127987",
+     "note": "Další EN gout tracker, autor ho neuvádí."
+    },
+    {
+     "name": "Gout-Cha!",
+     "url": "https://apps.apple.com/sa/app/gout-cha/id6753363854?platform=ipad",
+     "note": "Další dedikovaná gout appka."
+    }
+   ],
+   "revenue_czk_realistic": 2500,
+   "reviewer_note": "EN je saturované (6+), lokalizační hra je jediná šance a JP/DE není ověřeno. Postavit jen po kontrole 痛風/Gicht v lokálních storech; položit důraz na potravinový průvodce, ne medicínské sledování."
+  },
+  {
+   "id": "food-drink-20",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 6,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Téměř identické jádro jako #02 Mead Calc – dvě appky = 4.3 spam riziko a kanibalizace.",
+    "Cider/ovocné víno se v CZ/DE dělá 'od oka' podle babiččina receptu; jednorázově 3,99 USD s 7 % konverzí je přehnané.",
+    "Silná sezónnost (IX–XI) a konkurence Brewfather/Brewer's Friend, které cider pokrývají."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Fermolog: Home Brewing App",
+     "url": "https://apps.apple.com/us/app/fermolog-home-brewing-app/id6745624694",
+     "note": "Obecný homebrew deník pokrývající i cider."
+    }
+   ],
+   "revenue_czk_realistic": 1200,
+   "reviewer_note": "Samostatně neobhajitelné. Sloučit s #02 do 'Mead, Cider & Fruit Wine' s lokalizací (medovina/ovocné víno/Most) a jedním kvalitním deníkem."
+  },
+  {
+   "id": "food-drink-21",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 1,
+    "monetization": 4,
+    "build_ease": 5,
+    "offline_fit": 9,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Nejméně 8 aplikací výslovně skenuje ručně psané receptové kartičky (Trivet, My Cookbook, CookBook, ReciScan, RecipEase…); Trivet je navíc offline bez účtu – přesně naše pozice.",
+    "Sherlock: iOS Notes/Live Text a Visual Intelligence umí rukopis přepsat zdarma; Paprika/Mela/Crouton importují z fotky.",
+    "Rozpoznání kurzívy a vybledlého inkoustu on-device (Vision) je výrazně horší než cloudové modely konkurentů."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Trivet: Recipe Box Scanner",
+     "url": "https://apps.apple.com/sa/app/trivet-recipe-box-scanner/id6790121828",
+     "note": "Ručně psané kartičky, bez účtu a cloudu, funguje v režimu letadlo."
+    },
+    {
+     "name": "My Cookbook: Recipe Scanner",
+     "url": "https://apps.apple.com/us/app/my-cookbook-recipe-scanner/id6759684127",
+     "note": "Čte kurzívu a staré rodinné kartičky."
+    },
+    {
+     "name": "CookBook - Recipe Keeper",
+     "url": "https://apps.apple.com/us/app/cookbook-recipe-keeper/id1073341917",
+     "note": "Zavedená appka s AI skenerem ručně psaných receptů."
+    },
+    {
+     "name": "ReciScan",
+     "url": "https://apps.apple.com/us/app/reciscan/id6478405196",
+     "note": "Skenování ručně psaných kartiček + tvorba kuchařky."
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Web ověření: saturováno a Sherlockováno. Autorův odhad 'sat 2–3' byl hluboko vedle.",
+   "web_checked": true
+  },
+  {
+   "id": "food-drink-22",
+   "verdict": "GO",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 7,
+    "monetization": 5,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Velmi malá cílovka – domácích sýrařů je řádově méně než kvasařů; 1 200 stažení/měs je strop, ne medián.",
+    "Make sheety se liší recept od receptu; bez knihovny receptů (autorsky napsaných) appka nemá obsah a knihy (Carroll, Caldwell) jsou chráněné.",
+    "Fermentační deníky (Fermentation Journal: Fermento) výslovně uvádí sýry a mohou přidat časovače kroků."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Fermentation Journal: Fermento",
+     "url": "https://apps.apple.com/us/app/fermentation-journal-fermento/id6470132496",
+     "note": "Obecný fermentační deník se sekcí CHEESES."
+    }
+   ],
+   "revenue_czk_realistic": 2500,
+   "reviewer_note": "Malá, ale věrná a platící niche s řídkou konkurencí a nízkým rizikem – přesně typ 'malé appky' pro portfolio. Počítat s 2–3 tis. Kč; rozvrh zrání s notifikacemi je klíčová retenční funkce."
+  },
+  {
+   "id": "food-drink-23",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 4,
+    "monetization": 2,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 3
+   },
+   "extra_risks": [
+    "Příjem jen 6 týdnů v roce; roční průměr hluboko pod 2 tis. Kč i v ideálu.",
+    "Bezpečnost potravin (rozmrazování krocana, drůbež a teploty) = odpovědnost; USDA/Butterball hotline a Google odpovídají zdarma.",
+    "Sherlock: Siri/Apple Intelligence a Google dávají časy pečení okamžitě; jednorázová potřeba nevytvoří recenze."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Brine!",
+     "url": "https://apps.apple.com/il/app/brine/id1519784056",
+     "note": "Kalkulačka nálevu od 2020."
+    }
+   ],
+   "revenue_czk_realistic": 400,
+   "reviewer_note": "Extrémní sezónnost + jednorázová potřeba + nízká cena = nelze dosáhnout ani zlomku cíle. Nestavět."
+  },
+  {
+   "id": "food-drink-24",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 4,
+    "monetization": 2,
+    "build_ease": 9,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Jednoduchý převod velikosti formy je 4.2 minimum functionality riziko a webové/AI odpovědi jsou zdarma.",
+    "2,99 USD jednorázově × 5,5 % z 3 500 stažení je nereálná konverze pro kalkulačku; lidé ji použijí jednou.",
+    "My Cake Calculator a Bake Master pokrývají use-case; evropské formy přidají za odpoledne."
+   ],
+   "missed_competitors": [
+    {
+     "name": "My Cake Calculator",
+     "url": "https://apps.apple.com/us/app/my-cake-calculator/id1439685088",
+     "note": "Od 2018, porce i velikosti."
+    }
+   ],
+   "revenue_czk_realistic": 600,
+   "reviewer_note": "Funkce, ne produkt. Může být modulem cenové kalkulačky (#16) nebo pekařské appky, samostatně nestavět."
+  },
+  {
+   "id": "food-drink-25",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 4,
+    "monetization": 5,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 3
+   },
+   "extra_risks": [
+    "Oxalátová data se mezi zdroji dramaticky liší (Harvard vs. OHF 2023) – lokální potraviny bez spolehlivých dat = autorská práce a riziko chyb.",
+    "Medicínský kontext (ledvinové kameny) = 1.4.1 a přesun do Medical; urologové dávají pacientům tištěné seznamy.",
+    "Nové EN appky (Low Ox Life, Oxal AI) rostou a mohou lokalizovat; Oxalator je zavedený od 2015."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Oxal AI",
+     "url": "https://apps.apple.com/ie/app/oxal-ai/id6755481914",
+     "note": "Nový AI hráč v niche."
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Podobný profil jako #19 – lokalizace je jediný úhel a není ověřená. Spíš jako jedna appka 'Kidney Stone Diet' pro DE/CZ/PL s pitným režimem."
+  },
+  {
+   "id": "food-drink-26",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 2,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Beanconqueror (zdarma) už sleduje zásobu zrn, dny od pražení a mražení.",
+    "Mikro-niche uvnitř kávové niche; 3 000 stažení/měs z 'coffee bean tracker' je fantazie.",
+    "Cena 2,99 USD / 0,99 USD měsíčně nedá 10 tis. Kč ani v ideálu při reálném objemu."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Bean Tracker",
+     "url": "https://apps.apple.com/us/app/bean-tracker/id1503960955",
+     "note": "Dedikovaný tracker zrn od ~2020."
+    },
+    {
+     "name": "Beanconqueror",
+     "url": "",
+     "note": "Zdarma, pokrývá inventář a dny odpočinku (URL neověřena)."
+    }
+   ],
+   "revenue_czk_realistic": 400,
+   "reviewer_note": "Příliš malé a pokryté bezplatným lídrem. Nestavět."
+  },
+  {
+   "id": "food-drink-27",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 3,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Nejméně 4 dedikované 'mocktail' tituly (Simply Mocktails 190+ receptů, Mocktail, Mocktail Recipes App, Mocktail Recipes - Easy…) plus koktejlové appky s nealko sekcí.",
+    "Receptové appky s bundlovaným obsahem jsou typický cíl 4.3/4.2 zamítnutí; recepty jsou zdarma na webu.",
+    "Sezónní vlny (Dry January) přinesou stažení, ne platby."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Simply Mocktails",
+     "url": "https://apps.apple.com/us/app/simply-mocktails/id6446698638",
+     "note": "190+ nealko receptů."
+    },
+    {
+     "name": "Mocktail",
+     "url": "https://apps.apple.com/in/app/mocktail/id6763183127",
+     "note": "Recepty, výživa, knihovna nealko destilátů."
+    },
+    {
+     "name": "Mocktail Recipes App",
+     "url": "https://apps.apple.com/us/app/mocktail-recipes-app/id1618980650",
+     "note": "Exact-match titul od 2022."
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Web ověření: saturováno a obsah je komodita. Nestavět.",
+   "web_checked": true
+  },
+  {
+   "id": "food-drink-28",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 2,
+    "monetization": 2,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Nejméně 6 dedikovaných sous vide kalkulaček (Sous Chef Pro, Sous Vide °Celsius, Kelvin, SouVD, Suvy, Timing Ruler) plus zdarma Anova a Joule – autorův odhad sat 2–3 je špatně.",
+    "Tabulky časů/teplot jsou zdarma na webu (Baldwin, Serious Eats) – nulová cenová síla.",
+    "Majitelé levných cirkulátorů jsou nejcitlivější na cenu."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Sous Chef Pro: Timers & Tools",
+     "url": "https://apps.apple.com/us/app/sous-chef-pro-timers-tools/id496424051",
+     "note": "'#1 sous vide cooking app', veterán."
+    },
+    {
+     "name": "Sous Vide °Celsius",
+     "url": "https://apps.apple.com/us/app/sous-vide-celsius/id419217101",
+     "note": "Časy/teploty pro všechny druhy potravin, od ~2011."
+    },
+    {
+     "name": "Kelvin Sous Vide",
+     "url": "https://apps.apple.com/dk/app/kelvin-sous-vide/id6764517692",
+     "note": "Nová kalkulačka času a teploty."
+    },
+    {
+     "name": "SouVD for Low Temperature Cook",
+     "url": "https://apps.apple.com/us/app/souvd-for-low-temperature-cook/id6444523365",
+     "note": "Časy podle tloušťky – přesně pitch."
+    }
+   ],
+   "revenue_czk_realistic": 600,
+   "reviewer_note": "Web ověření: saturovaná komoditní kategorie. Nestavět.",
+   "web_checked": true
+  },
+  {
+   "id": "food-drink-29",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 4,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Pokročilí sládci, kteří řeší chemii vody, už mají Brewfather/Brewer's Friend nebo zdarma Bru'n Water/Brewer's Friend web – samostatná appka řeší problém lidí, kteří ho mají vyřešený.",
+    "Lokální tabulky rozborů vody podle měst je nutné sestavit a udržovat (vodárny mění složení) – ne 'bundlovaná statická data'.",
+    "12 % konverze je extrémní předpoklad; realisticky 3–5 %."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Brew Meister: Measure & Manage",
+     "url": "https://apps.apple.com/at/app/brew-meister-measure-manage/id1521627812?l=en-GB",
+     "note": "Homebrew nástroje včetně výpočtů."
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Solidní nástroj s malým trhem. Smysl jen s lokalizovanými profily vody (CZ/DE/PL – plzeňská voda!) a jednorázovou cenou; nečekat víc než 1–2 tis. Kč."
+  },
+  {
+   "id": "food-drink-30",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 5,
+    "monetization": 3,
+    "build_ease": 5,
+    "offline_fit": 9,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Lokální nutriční databáze potravin (mimo USDA) nejsou volně licencované – 'lokální potraviny' naráží na licence dat.",
+    "Thru-hikeři plánují v tabulkách a LighterPack (web); 'backpacking food' hledají hlavně recepty a produkty.",
+    "Silná sezónnost a velmi malý trh; cena 4,99 USD jednorázově s 6,5 % konverzí je optimistická."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Nízká poptávka a datová licence. Jen jako malý modul s USDA/OFF (Open Food Facts, ODbL) daty a zaměřením na evropské dálkové trasy; jinak odložit."
+  }
+ ]
+}

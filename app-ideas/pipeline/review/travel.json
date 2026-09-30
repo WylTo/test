@@ -1,0 +1,735 @@
+{
+  "category_slug": "travel",
+  "summary": "Kategorie je slabá: 28 z 30 nápadů stojí jen na „odhadu“ autora a všech 6 ověřených nik bylo obsazenějších, než tvrdil (ILR absence, ultralight gear list, alergenové karty a Reisekosten jsou saturované 7–8 appkami, hlavně z vlny 2025–26). Nejlepší sázky jsou Snowbird Day Counter (ověřeně řídký, platící publikum), Jet Lag Kids (0 dětských konkurentů, levný build) a Motorhome Payload (2 noví konkurenti, lokalizace mimo DE). Opakovaná chyba: jednorázové použití a sezónnost při jednorázové ceně, data vyžadující právní údržbu a tři reskiny téže „visited“ mapy (06/23/26).",
+  "reviews": [
+    {
+      "id": "travel-01",
+      "verdict": "GO",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Obecné day-trackery už pravidla US Substantial Presence Test mají (Immio) – jeden preset je dělí od toho, aby niku převzaly.",
+        "Trh je jen Kanada (EN/FR), lokalizace do 50 jazyků nic nepřidá; publikum je starší a v App Store hledá méně než na Googlu.",
+        "Pravidla OHIP/RAMQ se liší po provinciích a mění se – chybný výpočet = reálná škoda (ztráta pojištění), nutný disclaimer a roční údržba."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Country Days Tracker: Immio",
+          "url": "https://apps.apple.com/us/app/country-days-tracker-immio/id6747927306",
+          "note": "už umí US Substantial Presence Test – nejbližší obecný konkurent"
+        },
+        {
+          "name": "Citizenship Tracker US, Canada",
+          "url": "https://apps.apple.com/us/app/citizenship-tracker-us-canada/id6444369099",
+          "note": "počítá dny v US/CA pro občanství, sousední publikum"
+        }
+      ],
+      "revenue_czk_realistic": 6000,
+      "reviewer_note": "Nejlépe podložený nápad kategorie: ověřená řídká nika (2 dedikované appky, jedna s cloud loginem) a publikum, které platí. Realisticky ale 1 země, sezónně a spíš 5–7k CZK; vyhrát jde jen na provinčních pravidlech a offline soukromí."
+    },
+    {
+      "id": "travel-02",
+      "verdict": "GO",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Nika už není prázdná: Cleared for Camping (nápravové zatížení + 3,5 t + packing váha) a CamperManager (payload) vznikly 2025–26.",
+        "Uživatel zadává desítky položek s váhou – bez váhy z vážního mostu je výsledek odhad, recenze typu „nepřesné“.",
+        "Sezónnost březen–září a jednorázová koupě = malý LTV; majitelé obytňáků jsou ale bohatší a pokuty v DE/AT za přetížení motivují."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Cleared for Camping",
+          "url": "https://apps.apple.com/de/app/cleared-for-camping/id6756673573",
+          "note": "přímý konkurent: nápravová kalkulačka, 3,5t limit, packing listy s váhou"
+        },
+        {
+          "name": "CamperManager",
+          "url": "https://apps.apple.com/us/app/campermanager/id6759843707",
+          "note": "payload kalkulačka + checklisty pro obytňáky"
+        }
+      ],
+      "revenue_czk_realistic": 5000,
+      "reviewer_note": "Stále dobrá sázka, ale blue ocean je poloviční – dva noví hráči už tu jsou. Vyhrát lokalizací (NL/FR/UK/CZ, kde oba chybí), zápisem z vážního lístku a spojením s tažením karavanu (nápad 11) do jedné appky.",
+      "web_checked": true
+    },
+    {
+      "id": "travel-03",
+      "verdict": "GO",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 8,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Rodiče hledají „jet lag baby“ na Googlu a v blozích, v App Store je objem malý – ASO může přinést jen stovky stažení.",
+        "Epizodické použití (1–2 cesty ročně + 2× DST) – jednorázová cena 9,99 USD je strop, předplatné nepůjde.",
+        "Huckleberry nebo Timeshifter mohou přidat dětský režim za týden; Timeshifter už má rodinné plány v roadmapě dle blogu (neověřeno)."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 3500,
+      "reviewer_note": "Ověřeně prázdná nika (0 z 9 jet lag appek cílí na děti) a 2týdenní build – levná sázka. 10k CZK je ale nereálné, spíš 3–4k; DST háček (březen/říjen) jako free funnel je správně."
+    },
+    {
+      "id": "travel-04",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 2,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Nika je přeplněná: 7 dedikovaných UK ILR/citizenship absence appek (ILR Tracker, Borderline, DayBank UK, UK Visa Day Tracker, Leave UK Calculator, Immio…), většinou 2025–26.",
+        "Autor měl u všech klíčových slov jen odhad saturace 1–3 – realita je 7+.",
+        "Imigrační pravidla (UK 2025 reforma ILR na 10 let) se mění – nutná častá aktualizace a právní odpovědnost."
+      ],
+      "missed_competitors": [
+        {
+          "name": "ILR Tracker",
+          "url": "https://apps.apple.com/it/app/ilr-tracker/id6757963377",
+          "note": "rolling 180 dní + 450/90 pro občanství – přesně navržená funkce"
+        },
+        {
+          "name": "Borderline - UK ILR Tracker",
+          "url": "https://apps.apple.com/us/app/borderline-uk-ilr-tracker/id6740153418",
+          "note": "ILR tracker pro BN(O)"
+        },
+        {
+          "name": "DayBank UK",
+          "url": "https://apps.apple.com/dk/app/daybank-uk/id6761231455",
+          "note": "automatické sledování absencí pro ILR"
+        },
+        {
+          "name": "Leave UK Calculator",
+          "url": "https://apps.apple.com/us/app/leave-uk-calculator/id6743054593",
+          "note": "180denní pravidlo + 450/90 BC"
+        }
+      ],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Nejvíc nadhodnocený nápad: „blue ocean“ je ve skutečnosti gold rush, 7+ appek dělá totéž. Zabít.",
+      "web_checked": true
+    },
+    {
+      "id": "travel-05",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 3,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 9,
+        "safety": 3
+      },
+      "extra_risks": [
+        "Přesně tuto funkci už mají Petport (termíny od odjezdu D-180/D-30/D-10) a Pet Passport: US-JP Travel (titr/FAVN countdown), plus Pawsport s časovými osami zemí.",
+        "Pravidla (CDC 2024, UK/IE tasemnice, EU nařízení) se mění a chyba znamená zvíře v karanténě – vysoké právní a recenzní riziko.",
+        "Klíčové slovo „pet passport“ obsazují vakcinační pasy (PetVax, Pasu, PetPass) – nová appka se neprosadí."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Petport",
+          "url": "https://apps.apple.com/ca/app/petport/id6763766224",
+          "note": "departure-anchored termíny pro cestování se zvířetem"
+        },
+        {
+          "name": "Pet Passport: US-JP Travel",
+          "url": "https://apps.apple.com/us/app/pet-passport-us-jp-travel/id6762554040",
+          "note": "titr, booster, 180denní FAVN čekání s notifikacemi"
+        },
+        {
+          "name": "Pawsport: Pet Health & Vaccine",
+          "url": "https://apps.apple.com/at/app/pawsport-pet-health-vaccine/id6760357356?l=en-GB",
+          "note": "časové osy a checklisty pro země světa"
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Nika se v letech 2025–26 zaplnila a data vyžadují neustálou právní údržbu s rizikem škody. Zabít.",
+      "web_checked": true
+    },
+    {
+      "id": "travel-06",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Kategorie visited map je přeplněná (Been, Visited, Countries Been, Map Chart, Polarsteps) a Visited už státy/regiony u velkých zemí podporuje.",
+        "Keikenchi je japonský kulturní formát – mimo JP „skóre regionů“ nikdo nehledá (keyword „regions visited“ má pravděpodobně nulový objem).",
+        "Nápady 06, 23 a 26 jsou tři reskiny téže „odškrtávací mapy“ – riziko 4.3 pro celé portfolio."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 2500,
+      "reviewer_note": "Jen jako JEDNA appka, která spojí 06 + 23 (UNESCO) + 26 (TCC/NomadMania seznamy) jako vrstvy jedné mapy; samostatně je každý z nich příliš malý."
+    },
+    {
+      "id": "travel-07",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 1,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Search našel 8 dedikovaných base-weight gear-list appek (PackList, Packstack, Hikt, GramPack, Gearfolio, MetaGear s importem z LighterPacku, trailscale…), skoro všechny z 2025–26.",
+        "Premisa „LighterPack je web-only, appka chybí“ už neplatí.",
+        "Ultralight komunita je malá, anglická a zvyklá na zdarma (LighterPack) – předplatné 14,99 USD/rok neprojde."
+      ],
+      "missed_competitors": [
+        {
+          "name": "GramPack - Ultralight Planner",
+          "url": "https://apps.apple.com/us/app/grampack-ultralight-planner/id6762997060",
+          "note": "ultralight planner s base weight, i Watch"
+        },
+        {
+          "name": "MetaGear: Outdoor Gear Tracker",
+          "url": "https://apps.apple.com/pl/app/metagear-outdoor-gear-tracker/id6759169487",
+          "note": "import z LighterPacku, base weight"
+        },
+        {
+          "name": "Packstack App",
+          "url": "https://apps.apple.com/hu/app/packstack-app/id6760873801",
+          "note": "zdarma, sleduje každou unci"
+        },
+        {
+          "name": "Gearfolio - Outdoor Gear List",
+          "url": "https://apps.apple.com/cz/app/gearfolio-outdoor-gear-list/id6757333526",
+          "note": "base vs. worn weight, AI gap analýza"
+        }
+      ],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Saturované (8 nových appek) – jde o gold rush, ne blue ocean. Zabít.",
+      "web_checked": true
+    },
+    {
+      "id": "travel-08",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 2,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Použití jednou ročně (plánování dovolené) – nikdo nezaplatí 3,99 USD za něco, co noviny a weby (brueckentage.de apod.) dávají zdarma.",
+        "V DE existuje řada zdarma „Brückentage/Feiertage“ appek s reklamou; kalendář iOS ukazuje svátky zdarma (Sherlock částečný).",
+        "US „PTO“ publikum má firemní PTO nástroje; americké svátky jsou federální, optimalizace mostů tam kulturně neexistuje."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Příjem je vázaný na 2–3 měsíce v roce a produkt je volně dostupný na webu. Zabít, nebo přidat zdarma jako feature jiné appky."
+    },
+    {
+      "id": "travel-09",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 1,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 3
+      },
+      "extra_risks": [
+        "Nika je saturovaná: Gluten Free Restaurant Cards, Food Allergy Travel Card, Equal Eats (700+ alergenů), Food Allergy Card, Allergy Translate (68 jazyků), Allerly, AllerGuide…",
+        "Apple Translate i Google Lens/AI menu scannery (Forkiee) řeší část zdarma – Sherlock.",
+        "Chybný překlad alergenu = anafylaxe → nejhorší možná odpovědnost a 1.4.1 riziko; profesionální překlady do 50 jazyků stojí statisíce."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Equal Eats",
+          "url": "https://apps.apple.com/us/app/equal-eats/id1574293110",
+          "note": "lídr niky, 700+ alergenů, více jazyků"
+        },
+        {
+          "name": "Allergy Translate",
+          "url": "https://apps.apple.com/us/app/allergy-translate/id1366620257",
+          "note": "68 jazyků + AI skener menu"
+        },
+        {
+          "name": "Food Allergy Travel Card",
+          "url": "https://apps.apple.com/fi/app/food-allergy-travel-card/id6738883232",
+          "note": "vícejazyčné karty pro kuchaře"
+        },
+        {
+          "name": "Gluten Free Restaurant Cards",
+          "url": "https://apps.apple.com/us/app/gluten-free-restaurant-cards/id294997385",
+          "note": "40+ celiakálních karet v mnoha jazycích"
+        }
+      ],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Přeplněno a s vysokým rizikem odpovědnosti. Zabít.",
+      "web_checked": true
+    },
+    {
+      "id": "travel-10",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Cruise countdown/planner appek je hodně (Ship Mate, Cruise Critic, CruiseMapper, desítky „Cruise Countdown“) – slabá niková slova typu „all aboard alarm“ nikdo nehledá.",
+        "Rejdaři (Royal Caribbean, MSC, AIDA) mají v appkách lodní čas, útratu i program zdarma přes lodní intranet bez placeného internetu – Sherlock.",
+        "Jednorázová platba za plavbu je chybná představa – člověk plave 1× ročně."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Jen s úzkým úhlem „lodní čas vs. telefon + budík návratu“ pro DE/IT/ES trh a cenou 4,99 lifetime; 18,7k CZK je nereálné."
+    },
+    {
+      "id": "travel-11",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Caravan and Motorhome Club i ADAC mají zdarma webové kalkulačky; výpočet je jednorázový (1× při koupi auta/karavanu).",
+        "Pravidla řidičských oprávnění (B96, UK změna 2021) se liší v každé zemi a chyba = neplatné pojištění → odpovědnost.",
+        "Kanibalizuje nápad 02 (stejný parent market, stejný uživatel) – dvě appky = 4.3 riziko."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Samostatně neobstojí; zapracovat jako modul „tažení“ do nápadu 02."
+    },
+    {
+      "id": "travel-12",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Camino má silné zdarma appky (Buen Camino, Wise Pilgrim, Camino Ninja) a poutníci píší deník v Polarsteps nebo Apple Journal (Sherlock pro „pilgrim journal“).",
+        "Credencial je fyzický papír s razítky – focení razítek je nice-to-have, ne pain; poutníci jsou často cenově citliví.",
+        "Sezónnost duben–říjen a jednorázová cesta = žádná retence."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 2500,
+      "reviewer_note": "Jen jako levný lokalizovaný (DE/IT/KR/PL) „credencial + etapy“ společník; realisticky 2–3k CZK, cíl 15,6k je fantazie."
+    },
+    {
+      "id": "travel-13",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 3,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Autor přehlédl SkyGuru – offline letový společník, který vysvětluje zvuky, fáze letu a turbulence, s vícejazyčnou podporou; to je přesně tento koncept.",
+        "SOAR, Am I Going Down? a Turbulence Forecast drží head term; lokalizované „flugangst“ klíčové slovo má i Lufthansa/semináře.",
+        "Obsah (vysvětlení pilota do 50 jazyků, ideálně audio) je drahý na kvalitu a u úzkostných lidí musí být nesmírně přesný."
+      ],
+      "missed_competitors": [
+        {
+          "name": "SkyGuru",
+          "url": "",
+          "note": "offline vysvětlovač zvuků a fází letu pro lidi se strachem z létání – přímý konkurent (URL neověřeno)"
+        }
+      ],
+      "revenue_czk_realistic": 3000,
+      "reviewer_note": "Poptávka i ochota platit jsou reálné, ale SkyGuru niku už drží. Jen pokud ověříš, že SkyGuru chybí v DE/ES/FR/IT, a postavíš to na lokalizaci."
+    },
+    {
+      "id": "travel-14",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 1,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Search našel 7+ DE Reisekosten appek se zákonnými paušály (N2F, Spesen und Reisekosten App, Onexma, VMA Rechner NE, os-Reisekosten, Trace…).",
+        "B2B segment – zaměstnanci používají firemní systém (SAP Concur, Personio), freelanceři účetní software (lexoffice, sevDesk).",
+        "Sazby BMF se mění každý rok pro ~200 zemí – povinná roční údržba s daňovou odpovědností."
+      ],
+      "missed_competitors": [
+        {
+          "name": "VMA Rechner NE",
+          "url": "https://apps.apple.com/de/app/vma-rechner-ne/id1463231038",
+          "note": "kalkulačka Verpflegungsmehraufwand – přesná nika"
+        },
+        {
+          "name": "Spesen und Reisekosten App",
+          "url": "https://apps.apple.com/de/app/spesen-und-reisekosten-app/id1281571628",
+          "note": "denní paušály, daňově správně"
+        },
+        {
+          "name": "Reisekosten & Mobile Spesen",
+          "url": "https://apps.apple.com/de/app/reisekosten-mobile-spesen/id478807993",
+          "note": "automatický výpočet stravného a zahraničních sazeb"
+        }
+      ],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Přeplněno a konkurují i firemní systémy. Zabít.",
+      "web_checked": true
+    },
+    {
+      "id": "travel-15",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 5,
+        "monetization": 2,
+        "build_ease": 8,
+        "offline_fit": 9,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Otázka „which side of the plane“ se řeší na Googlu (weby typu sunflight) – v App Store ji nikdo nehledá.",
+        "Použití pár vteřin před rezervací sedadla; 4,99 USD za to nikdo nedá, konverze < 1 %.",
+        "Existuje několik malých „sun seat“ appek a webů zdarma; data trasy letu (great circle ≠ skutečná trasa) dělají výsledek nepřesný."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Pěkná hračka, ne byznys. Zabít (případně zdarma feature letecké appky)."
+    },
+    {
+      "id": "travel-16",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 4,
+        "monetization": 2,
+        "build_ease": 7,
+        "offline_fit": 8,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Děti mají na cestách iPad s videem; Apple/Google Maps ETA na CarPlay ukazují zbývající čas zdarma – Sherlock.",
+        "„are we there yet“ je obsazené staršími US appkami a hrami; DE/CZ výrazy nemají objem.",
+        "Kids-orientovaná appka = přísnější App Review (Kids Category, žádná analytika); sezónní léto."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 600,
+      "reviewer_note": "Nízká ochota platit a skoro nulová poptávka v App Store. Zabít."
+    },
+    {
+      "id": "travel-17",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 3,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "extra_risks": [
+        "Kfz-Kennzeichen appky (zdarma s reklamou) už zahrnují kódy okresů i „spielen“ módy; kódy jsou volně dostupné.",
+        "Hra na značky je rodinná zábava, za kterou se v EU platí málo; 3,99 USD je strop, léto sezóna.",
+        "Riziko 4.3 s nápady 16 a dalšími „road trip“ reskiny."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Levný 2týdenní build s nízkým rizikem, ale příjem spíš 1–2k CZK. Jen jako freemium „Kennzeichen sammeln“ pro DE/AT/CH/PL/CZ s IAP za země."
+    },
+    {
+      "id": "travel-18",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 3,
+        "monetization": 3,
+        "build_ease": 5,
+        "offline_fit": 9,
+        "safety": 3
+      },
+      "extra_risks": [
+        "ADAC Trips/ADAC Drive, ÖAMTC a TCS mají tyto informace zdarma a ve svém jazyce; Apple/Google Maps ukazují mýtné.",
+        "Data (LEZ zóny, Crit'Air, vignetty, povinná výbava) se mění průběžně – offline bundlovaná verze bude brzy zastaralá a chyba = pokuta uživateli.",
+        "„vignette“ keyword drží prodejci známek (Tolls.eu, EDALNICE) s velkým rozpočtem."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Data-maintenance past s právním rizikem a silnými zdarma autoklubovými appkami. Zabít."
+    },
+    {
+      "id": "travel-19",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Sailing logbook appek je víc, než autor uvádí (Logbook Suite, Skipper's logbooks, Sailing Log, SeaPeople; Navionics a Savvy Navvy zaznamenávají tracky).",
+        "RYA/ICC kvalifikace často vyžadují podepsaný záznam skipperem – digitální log bez podpisu může být jen doplněk.",
+        "Malé publikum (charteroví kapitáni), sezóna květen–září."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 3000,
+      "reviewer_note": "Jachtaři platí, ale nika je menší a obsazenější. Jen s úhlem „kvalifikační míle + podpis skippera PDF“ a lokalizací DE/NL/PL/CZ."
+    },
+    {
+      "id": "travel-20",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 3,
+        "offline_fit": 9,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Nadšenci do vlaků mají zdarma Trainlog (web, open source) a appky typu Rail log/Traintracks; Travelling Train Log apod.",
+        "Bundlovat celoevropskou OSM síť tratí s routingem po kolejích je velké datové a vývojové sousto – 6 týdnů je optimismus, spíš 10+.",
+        "Běžní cestující deník vlaků nechtějí; platí jen úzký okruh nadšenců."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 2500,
+      "reviewer_note": "Zajímavé pro rail-nerd komunitu (DE/UK/CH/NL), ale drahé na build. Jen jako zjednodušená verze (stanice od-do, vzdušná čára + ruční trasa) a s ověřením konkurence před startem."
+    },
+    {
+      "id": "travel-21",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 5,
+        "monetization": 3,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Ruční zadávání stavu vody/plynu uživatel po 3 dnech vzdá – retence mizivá.",
+        "Moderní obytňáky mají senzory a appky výrobců (Victron, Truma iNet, CI-BUS) zdarma.",
+        "„van life“ je komunitní/sociální keyword (park4night), ne nástrojový."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Příliš malá a netrpělivá nika bez pain pointu. Zabít."
+    },
+    {
+      "id": "travel-22",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 3,
+        "monetization": 2,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Apple Translate (konverzační režim, offline jazyky) a Google Lens tento problém vyřešily – Sherlock.",
+        "ICOON a „Point It“ existují jako appky i knihy; poptávka po ukazovacím slovníku je z doby před smartphony.",
+        "Kolize s dětskými „picture dictionary“ appkami v ASO."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 300,
+      "reviewer_note": "Sherlocked offline překladačem v iOS. Zabít."
+    },
+    {
+      "id": "travel-23",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 3,
+        "monetization": 3,
+        "build_ease": 7,
+        "offline_fit": 9,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Existuje řada UNESCO tracker appek (World Heritage apps, Heritage/„UNESCO sites“ checklisty) a Been/Visited je mohou přidat jako vrstvu.",
+        "Název a logo UNESCO jsou chráněné – riziko zamítnutí či stížnosti.",
+        "Reskin nápadů 06 a 26 – portfolio 4.3 riziko."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Samostatně ne; vrstva uvnitř nápadu 06."
+    },
+    {
+      "id": "travel-24",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 9,
+        "safety": 4
+      },
+      "extra_risks": [
+        "„Passport To Your National Parks“ je ochranná známka Eastern National (America's National Parks) – titul i screenshoty musí známku obejít.",
+        "Oficiální NPS App je zdarma a má „Places visited“; Chimani i menší „park passport/stamps“ appky existují.",
+        "Čistě US publikum – lokalizace do 50 jazyků je zbytečná, US gap argument neplatí."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 3500,
+      "reviewer_note": "US parkoví sběratelé platí, ale nika je obsazenější, než autor tvrdí. Jen bez trademarku, s kompletním seznamem razítek (i bonusových/cancellation) a zaměřením na US."
+    },
+    {
+      "id": "travel-25",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 3,
+        "monetization": 3,
+        "build_ease": 3,
+        "offline_fit": 8,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Flyover Country je zdarma (financováno NSF), offline a dělá přesně tohle; několik dalších „window seat“ appek existuje.",
+        "8 týdnů buildu + velké mapové balíčky přes On-Demand Resources pro 1× za let použití.",
+        "Aerolinky mají moving map na palubní obrazovce i přes wi-fi portál zdarma."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 600,
+      "reviewer_note": "Drahý build proti zdarma lídrovi. Zabít."
+    },
+    {
+      "id": "travel-26",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "NomadMania má vlastní zdarma appku s TCC/UN/NM seznamy – přesně cílová komunita.",
+        "Publikum hardcore „country counters“ je v řádu tisíců lidí na světě.",
+        "Seznamy TCC jsou klubová data (autorská práva/trademark)."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Příliš malá nika; nanejvýš prémiová vrstva uvnitř nápadu 06."
+    },
+    {
+      "id": "travel-27",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 3,
+        "monetization": 3,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Futbology je zdarma, se sociální vrstvou a databází stadionů – groundhopperi už tam jsou; další groundhopping appky (DE) existují.",
+        "Bez licencovaných zápasových dat je ruční zápis slabší než konkurence; s nimi už nejde o offline.",
+        "Kluby a ligy chrání loga/názvy – screenshoty s logy jsou riziko."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Futbology niku vlastní zdarma. Zabít."
+    },
+    {
+      "id": "travel-28",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 3,
+        "monetization": 3,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 3
+      },
+      "extra_risks": [
+        "AR měření měkkého batohu je nepřesné (±2–3 cm) – u letiště rozhoduje centimetr → 1★ recenze a reklamace.",
+        "Již existuje vlna „carry on size / bag checker AR“ appek a některé aerolinky mají AR sizer ve vlastní appce (KLM); Apple Measure zdarma.",
+        "Limity aerolinek se mění několikrát ročně (Ryanair, Wizz) – offline tabulka rychle zastará."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 1200,
+      "reviewer_note": "Přesnost ARKit u zavazadel je slabá a konkurence rostoucí. Zabít."
+    },
+    {
+      "id": "travel-29",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 4,
+        "monetization": 2,
+        "build_ease": 8,
+        "offline_fit": 9,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Německá celní správa má oficiální zdarma appku „Zoll und Reise“; celní úřady dalších zemí mají weby zdarma.",
+        "Otázka se řeší jednou Google dotazem na letišti – nikdo za to nezaplatí 3,99 USD.",
+        "Limity se liší podle země původu/cíle a mění se – odpovědnost za pokutu."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 300,
+      "reviewer_note": "Zdarma oficiální zdroje a nulová ochota platit. Zabít."
+    },
+    {
+      "id": "travel-30",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 2,
+        "monetization": 2,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Apple Intelligence/ChatGPT/Siri odpoví na zásuvky a spropitné okamžitě zdarma – Sherlock.",
+        "Desítky zdarma „World Plugs“, „Tipping Guide“, „Travel Guide“ appek.",
+        "Generický obsah = vysoké 4.2/4.3 riziko (minimum functionality)."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 300,
+      "reviewer_note": "Generický obsah bez ochrany. Zabít."
+    }
+  ]
+}
