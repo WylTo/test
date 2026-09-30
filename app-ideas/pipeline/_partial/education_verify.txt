@@ -38,3 +38,16 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results. No Apple API 
     - Jengo: Learn Japanese                    https://apps.apple.com/us/app/jengo-learn-japanese/id6765958942
     - Yomoyo: Japanese Reader                  https://apps.apple.com/us/app/yomoyo-japanese-reader/id6744860737
 
+[4] query: site:apps.apple.com roll your r trill  (idea education-07)  date: 2026-09-30
+    saturation (dedicated rolled-R trainers): 1 app under two store names (The Rollr Academy / RollrApp: Fix Rhotacism, id6751569088, 2025, built by SLPs, 12-week program, IAP) + RRLL (unclear, possibly related). Rest is by-catch (games, dice). Author missed Rollr entirely. Niche thin but already has a polished, clinician-backed dedicated app.
+    - The Rollr Academy (ke)                   https://apps.apple.com/ke/app/the-rollr-academy/id6751569088
+    - RollrApp: Fix Rhotacism (id)             https://apps.apple.com/id/app/rollrapp-fix-rhotacism/id6751569088
+    - RRLL (unclear)                           https://apps.apple.com/us/app/rrll/id1611876569
+    - R0ll (game, by-catch)                    https://apps.apple.com/us/app/r0ll/id1478527778
+    - Roll and Troll (by-catch)                 https://apps.apple.com/us/app/roll-and-troll/id1491765554
+    - Roll For It! (by-catch)                  https://apps.apple.com/us/app/roll-for-it/id1002886058
+    - Dice Roller! (by-catch)                  https://apps.apple.com/us/app/dice-roller/id1562781829
+    - Rock 'n' Roll Running Series (by-catch)  https://apps.apple.com/us/app/rock-n-roll-running-series/id1097587092
+    - Роллс Ролл (by-catch)                    https://apps.apple.com/us/app/%D1%80%D0%BE%D0%BB%D0%BB%D1%81-%D1%80%D0%BE%D0%BB%D0%BB/id6443386614
+    - Reroll (by-catch)                        https://apps.apple.com/us/app/reroll/id1463198495
+

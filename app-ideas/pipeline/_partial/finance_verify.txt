@@ -62,3 +62,17 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results. "sat" = disti
     - TCG Card Shop Tycoon Simulator (noise) https://apps.apple.com/us/app/tcg-card-shop-tycoon-simulator/id1605261462
     - Bias Room: K-Pop Photocards (noise)  https://apps.apple.com/us/app/bias-room-k-pop-photocards/id6759857980
     - Deal IQ: Card Deal Manager (show dealers, profit) https://apps.apple.com/il/app/deal-iq-card-deal-manager/id6761696554
+
+[6] query: site:apps.apple.com petty cash book  (idea finance-19)
+    sat("petty cash" in title): 4 apps, all from one dev (Akira Yamada, JP corporate-accounting style, iPad, $6.99/mo) -> title-crowded but weak/clunky; consumer/club angle still open
+    - Petty Cash Book (Petty-T) (gh)       https://apps.apple.com/gh/app/petty-cash-book-petty-t/id1661456630
+    - Petty Cash Book (Petty-T) (in)       https://apps.apple.com/in/app/petty-cash-book-petty-t/id1661456630
+    - Petty cash general (ai)              https://apps.apple.com/ai/app/petty-cash-general/id1665362086
+    - Petty cash general                   https://apps.apple.com/us/app/petty-cash-general/id1665362086
+    - Petty cash accounting (Petty-A)      https://apps.apple.com/us/app/petty-cash-accounting-petty-a/id1636248725
+    - Petty cash accounting (Petty-A) (gb) https://apps.apple.com/gb/app/petty-cash-accounting-petty-a/id1636248725
+    - 小口現金出納帳 (Petty-S)              https://apps.apple.com/us/app/petty-cash-accounting-petty-s/id1636249051
+    - 小口現金出納帳 (Petty-S) (encoded)    https://apps.apple.com/us/app/%E5%B0%8F%E5%8F%A3%E7%8F%BE%E9%87%91%E5%87%BA%E7%B4%8D%E5%B8%B3-petty-s/id1636249051
+    - (developer page) Akira Yamada        https://apps.apple.com/md/developer/akira-yamada/id1329133546
+
+SEARCH BUDGET: 6/6 used. No further searches.

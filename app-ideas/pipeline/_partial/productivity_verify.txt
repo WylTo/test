@@ -63,3 +63,15 @@ Saturation: 6 dedicated IEP apps with "IEP" in title (AbleSpace = funded leader,
 - ID Vault: Travel Document Safe https://apps.apple.com/us/app/id-vault-travel-document-safe/id6744865269
 Saturation: 8 dedicated document-expiry apps, most launched 2025-26, one already offline/encrypted, one with OCR+NFC. SATURATED.
 
+6) query: "site:apps.apple.com volunteer hours tracker community service log"  date: 2026-09-30  (idea productivity-05 Service Hours)
+- Volunteer Hours Log Tracker (no account, PDF/CSV export — exact pitch) https://apps.apple.com/hu/app/volunteer-hours-log-tracker/id6771518791?platform=ipad
+- Voluntime - Hour Logs https://apps.apple.com/us/app/voluntime-hour-logs/id1567853199
+- GoodOrg: Community Service https://apps.apple.com/us/app/goodorg-community-service/id6737137411
+- Givefinity: Volunteer Tracking https://apps.apple.com/us/app/givefinity-volunteer-tracking/id1541781201
+- MyCSF https://apps.apple.com/us/app/mycsf/id6758374004
+- LogCycle: Volunteer Hours https://apps.apple.com/us/app/logcycle-volunteer-hours/id6749878753
+- Golden: Volunteer Portal https://apps.apple.com/us/app/golden-volunteer-portal/id1059267723
+- VolTrack (Key Club / NHS students) https://apps.apple.com/us/app/voltrack/id6740208893
+- LetServe https://apps.apple.com/us/app/letserve/id1333226371
+Saturation: 7+ dedicated volunteer-hour apps, incl. an offline no-account PDF exporter identical to the pitch. SATURATED.
+# WebSearch budget (6) spent.

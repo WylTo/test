@@ -44,3 +44,11 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results. None construc
     - (games) Whodunit?: Detective Archives https://apps.apple.com/us/app/whodunit-mystery-games/id6605932965
     - (games) Mini Murder Mysteries https://apps.apple.com/us/app/mini-murder-mysteries/id6772545874
     - (games) Murder Mystery Detective Story https://apps.apple.com/us/app/murder-mystery-detective-story/id1452970820
+
+[5] query: site:apps.apple.com memorize poem learn by heart  (idea books-17)
+    saturation (dedicated "memorize/learn by heart" text/poem apps): 4 -> CONTESTABLE-to-crowded; Rhapsode is poem-specific with progressive word hiding (= the pitched core mechanic); MemoCoach is localized (es slug "siempre") and multi-method
+    - Memorize By Heart https://apps.apple.com/us/app/memorize-by-heart/id1436935583
+    - Memorizun: learn by heart (classic-works database, auto fragments; ee storefront) https://apps.apple.com/gb/app/memorizun-learn-by-heart/id6737538820
+    - Rhapsode (poetry by heart, progressive word removal) https://apps.apple.com/us/app/rhapsode/id6759266455
+    - MemoCoach - Memorize Texts (10+ methods, PDF/TXT import) https://apps.apple.com/us/app/memorize-texts-memocoach/id1220188894
+    - same id other listing https://apps.apple.com/us/app/siempre-learn-texts-by-heart/id1220188894
