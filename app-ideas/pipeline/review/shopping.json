@@ -1,0 +1,808 @@
+{
+ "category_slug": "shopping",
+ "summary": "Shopping je slabá kategorie: autor neměl žádná Apple data a 29 z 30 nápadů stojí na odhadu. Šest cílených hledání vyvrátilo šest jeho nejlépe hodnocených nápadů – warranty tracker (9 appek), reseller tracker pro Vinted (6+), allergen scanner (7+), fungal acne (SkinSort + 4 OCR scannery), price book (3 s přesně stejným pitchem) i vánoční gift tracker (8+) jsou saturované čerstvými klony z 2025–26. Nejlepší sázky: CardShare (rodinné sdílení věrnostních karet po odchodu Stocard), Notvorrat/nouzové zásoby a sloučený No-Buy + 30denní wishlist; společná vada je nulová ochota platit u 'šetřících' a sezónních appek a revenue_math, která realisticky končí na 1–5 tis. Kč místo 10 tis.",
+ "reviews": [
+  {
+   "id": "shopping-01",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 1,
+    "monetization": 4,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Hledání 'warranty tracker' vrátilo 9 appek s 'Warranty' v názvu, všechny z let 2025–26, několik on-device bez účtu a jedna za 2,99 USD jednorázově – autor saturaci odhadl na 4, reálně je ~9.",
+    "Konkurenti už cenově podstřelují (jednorázových 2,99 USD, freemium), prostor pro předplatné je minimální.",
+    "Lokální právní pravidla (reklamace, 2 roky EU) jsou jen text v appce – konkurent je doplní za týden."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Warranty Receipt Tracker",
+     "url": "https://apps.apple.com/us/app/warranty-receipt-tracker/id6739620977",
+     "note": "2,99 USD jednorázově, sken účtenek, připomínky"
+    },
+    {
+     "name": "Warrio: Warranty Tracker",
+     "url": "https://apps.apple.com/us/app/warrio-warranty-tracker/id6781723698",
+     "note": "soukromé, bez účtu, i lhůty na vrácení"
+    },
+    {
+     "name": "Docly - Warranty Tracker",
+     "url": "https://apps.apple.com/us/app/docly-warranty-tracker/id6756065053",
+     "note": "OCR, kalendář expirací"
+    },
+    {
+     "name": "Receipt Safe: Warranty Tracker",
+     "url": "https://apps.apple.com/us/app/receipt-safe-warranty-tracker/id6755928701",
+     "note": "freemium"
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Nejvíc nadhodnocený nápad kategorie: 'warranty tracker' je v roce 2026 zaplavený desítkou čerstvých klonů, včetně privátních offline variant. Bez unikátního úhlu nemá nová appka šanci na top 3; jediné zbytky jsou lokální dotazy typu 'reklamace' v CZ, což je na 10 tis. Kč málo.",
+   "web_checked": true
+  },
+  {
+   "id": "shopping-02",
+   "verdict": "GO",
+   "scores": {
+    "demand": 7,
+    "blue_ocean": 5,
+    "monetization": 4,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Uživatelé loyalty peněženek očekávají appku zdarma (Stocard/Klarna, Pass2U, desítky klonů) – placené sdílení přes iCloud zkonvertuje jen malé procento.",
+    "iCloud sdílení (CKShare) funguje jen mezi Apple ID; rodiny s Androidem odpadají, což je v EU velká část domácností.",
+    "Klíčové slovo 'loyalty card wallet' má saturaci 6 – růst stojí na úzkých frázích 'family/shared loyalty cards' s nejistým objemem."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 5000,
+   "reviewer_note": "Jediný nápad s webovou evidencí poptávky (exodus ze Stocard do Klarna) a skutečně neobsazeným úhlem 'rodinné sdílení bez účtu'. Stavět jako freemium s jednorázovým Family unlockem; realisticky 4–6 tis. Kč, ne 12 tis. Sloučit s Voucher Vault (13) jako funkci, ne jako druhou appku."
+  },
+  {
+   "id": "shopping-03",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 2,
+    "monetization": 5,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Vyhledávání našlo 6+ dedikovaných reseller trackerů (salEZ, ResellStats, FlipperHelper, Profit Check, Reseller Pro, Profit Prophet), které výslovně počítají Vinted poplatky – 'reverzní EU mezera' neexistuje.",
+    "FlipperHelper cílí přímo na britské car boot/charity shop prodejce, tedy na evropské příležitostné flippery.",
+    "DAC7 reporting dělá Vinted sám a posílá přehled uživatelům – daňový úhel je slabý."
+   ],
+   "missed_competitors": [
+    {
+     "name": "ResellStats - Resell Tracker",
+     "url": "https://apps.apple.com/us/app/resellstats-resell-tracker/id6759117516",
+     "note": "čistý zisk po poplatcích Vinted/eBay/Depop"
+    },
+    {
+     "name": "FlipperHelper: Resell Tracker",
+     "url": "https://apps.apple.com/us/app/flipperhelper-resell-tracker/id6759716745",
+     "note": "car boot, charity shops, Vinted, Shpock"
+    },
+    {
+     "name": "salEZ: Resell Tracker",
+     "url": "https://apps.apple.com/in/app/salez-resell-tracker/id6450722919",
+     "note": "inventář, zisk, daně, Vinted"
+    },
+    {
+     "name": "Resell Tracker (Inventr)",
+     "url": "https://apps.apple.com/us/app/resell-tracker-inventr/id6753903683",
+     "note": "další dedikovaný tracker"
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Autor tvrdil saturaci 5 a 'žádný lokalizovaný nástroj pro Vinted' – obojí vyvrácené jedním hledáním. Trh je přeplněný novými appkami z 2025–26; KILL.",
+   "web_checked": true
+  },
+  {
+   "id": "shopping-04",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 3,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 9,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Lhůty na vrácení už sledují warranty appky (Warrio, Warranty & Return Tracker) – nápad je jen funkce saturovaného trhu z č. 01.",
+    "Bez přístupu k e-mailům (server/OAuth) musí uživatel objednávky zadávat ručně; tření zabije retenci.",
+    "Sherlock: připomínka v Reminders s datem splní 80 % potřeby zdarma; Apple Mail/Wallet už ukazuje stav objednávek.",
+    "Duplicita s č. 01 – obě appky v portfoliu zvyšují riziko 4.3."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Warranty & Return Tracker",
+     "url": "https://apps.apple.com/us/app/warranty-return-tracker/id6762097465",
+     "note": "sken účtenek, lhůty na vrácení, on-device"
+    },
+    {
+     "name": "Warrio: Warranty Tracker",
+     "url": "https://apps.apple.com/us/app/warrio-warranty-tracker/id6781723698",
+     "note": "sleduje i return windows"
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Funkce, ne produkt, a navíc už obsazená v saturovaném warranty trhu. Ruční zadávání bez parsování e-mailů je smrt retence. KILL.",
+   "web_checked": true
+  },
+  {
+   "id": "shopping-05",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 2,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 6,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Rozhodnutí 'koupit/nechat' vyžaduje prodejní ceny srovnatelných kusů (eBay sold, Vinted) – offline kalkulačka bez dat je jen násobilka.",
+    "Profit Check: Reseller Calc a FlipperHelper už tuto kalkulačku nabízejí; AI scannery (RKFY, Profit Prophet) odhadují cenu z fotky.",
+    "Příležitostní flippeři neplatí za kalkulačku; profíci mají tabulky nebo eBay appku."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Profit Check: Reseller Calc",
+     "url": "https://apps.apple.com/in/app/profit-check-reseller-calc/id6757164945",
+     "note": "kalkulačka zisku pro flippery"
+    },
+    {
+     "name": "RKFY Vinted Profit identifier",
+     "url": "https://apps.apple.com/jm/app/rkfy-vinted-profit-identifier/id6754532378",
+     "note": "AI odhad zisku z fotky"
+    }
+   ],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Bez tržních cen nemá hodnotu, s nimi potřebuje API/server. Kalkulačky jsou navíc obsazené. KILL.",
+   "web_checked": true
+  },
+  {
+   "id": "shopping-06",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 1,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Hledání našlo 8+ gift/Christmas trackerů s rozpočtem; úkryty dárků už mají Santa's Bag, Holiday Gift Tracker i Gift Vault (za Face ID).",
+    "Extrémní sezónnost: 70 % stažení v listopadu–prosinci, zbytek roku nula; předplatné nedává smysl.",
+    "Gift Tree už nabízí lokální uložení a AI návrhy – i 'soukromí' úhel je pryč."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Holiday Gift Tracker",
+     "url": "https://apps.apple.com/ca/app/holiday-gift-tracker/id6755163355",
+     "note": "koupeno, cena, kde schované, zabalené"
+    },
+    {
+     "name": "Gift Vault: Christmas List",
+     "url": "https://apps.apple.com/ae/app/gift-vault-christmas-list/id6756131469",
+     "note": "úkryty za Face ID"
+    },
+    {
+     "name": "Giftmas: Gift & Budget Tracker",
+     "url": "https://apps.apple.com/us/app/giftmas-gift-budget-tracker/id6752770368",
+     "note": "rozpočet na dárky"
+    },
+    {
+     "name": "Santa's Bag",
+     "url": "https://apps.apple.com/us/app/santas-bag/id397698040",
+     "note": "veterán s polem pro úkryt"
+    }
+   ],
+   "revenue_czk_realistic": 1200,
+   "reviewer_note": "Všechny autorovy diferenciátory (rozpočet, zabaleno, úkryt) už existují v několika appkách a trh je sezónní. KILL.",
+   "web_checked": true
+  },
+  {
+   "id": "shopping-07",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 3,
+    "monetization": 5,
+    "build_ease": 5,
+    "offline_fit": 9,
+    "safety": 3
+   },
+   "extra_risks": [
+    "Hledání našlo 7+ allergen scannerů fotících etiketu (AllergySnap, PNut, Verdict, Healthsnap…) – 'allergen scanner' je saturovaný.",
+    "Falešně negativní výsledek může způsobit anafylaxi: guideline 1.4.1 a reálná odpovědnost; App Review může chtít zdroje a disclaimery.",
+    "Offline OCR (Vision) nečte spolehlivě japonštinu/thajštinu na zakřivených obalech; slovník alergenů pro 50 jazyků je náročný na správnost."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Food Allergen Scanner - PNut",
+     "url": "https://apps.apple.com/us/app/food-allergen-scanner-pnut/id6756531546",
+     "note": "foto etikety, 40+ alergenů"
+    },
+    {
+     "name": "ScanGredients",
+     "url": "https://apps.apple.com/us/app/scangredients/id6473748132",
+     "note": "foto etikety bez čárového kódu"
+    },
+    {
+     "name": "Food Allergy Scan AllergySnap",
+     "url": "https://apps.apple.com/us/app/food-allergy-scan-allergysnap/id6747722744",
+     "note": "AI scan etiket"
+    }
+   ],
+   "revenue_czk_realistic": 3000,
+   "reviewer_note": "Jako obecný 'allergen scanner' je to mrtvé. Jediný úhel: 'allergy travel' – plně offline čtečka etiket v cizím jazyce + alergické karty pro restauraci, cílená na cestovatele (klíčová slova 'allergy travel', 'celiac travel'). Jen s právním disclaimerem a bez slibu přesnosti.",
+   "web_checked": true
+  },
+  {
+   "id": "shopping-08",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 5,
+    "monetization": 2,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 8
+   },
+   "extra_risks": [
+    "Garážový výprodej je jednorázová akce 1–2× ročně; nikdo si neplatí appku na jedno odpoledne.",
+    "Stánkařské trackery (VendStats, myBooth, QuiVend, Resell Tracker) už pokrývají prodej a evidenci; dělení mezi rodiny zvládne Splitwise nebo papír.",
+    "'yard sale' v App Store hledají lidé, kteří výprodeje HLEDAJÍ (mapy), ne pořadatelé – špatný intent."
+   ],
+   "missed_competitors": [
+    {
+     "name": "QuiVend: Vendor Companion",
+     "url": "https://apps.apple.com/us/app/quivend-vendor-companion/id6773267361",
+     "note": "stánkařský tracker"
+    },
+    {
+     "name": "Resell Tracker (Inventr)",
+     "url": "https://apps.apple.com/us/app/resell-tracker-inventr/id6753903683",
+     "note": "consignment/antique booth"
+    }
+   ],
+   "revenue_czk_realistic": 300,
+   "reviewer_note": "Mikro-niche s nulovou ochotou platit a špatným search intentem. KILL."
+  },
+  {
+   "id": "shopping-09",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 3,
+    "monetization": 4,
+    "build_ease": 5,
+    "offline_fit": 9,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Přesně tento koncept už existuje: 'Price Book - Grocery Tracker' s AI skenem účtenek a osobním indexem inflace, plus Assay a další 'price book' appky.",
+    "OCR účtenek je různé v každé zemi a řetězci (zkratky položek 'MLK POLOT 1,5%'); párování produktů napříč obchody je těžké a bez něj appka nefunguje.",
+    "Retence: skenovat každou účtenku vydrží týden; power users 'price book' jsou úzká US extreme-couponing komunita."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Price Book - Grocery Tracker",
+     "url": "https://apps.apple.com/gh/app/price-book-grocery-tracker/id6760607131",
+     "note": "AI sken účtenek + osobní cost-of-living index = autorův pitch"
+    },
+    {
+     "name": "Assay - Grocery Price Book",
+     "url": "https://apps.apple.com/us/app/assay-grocery-price-book/id6757925961",
+     "note": "price book, sales cycles"
+    },
+    {
+     "name": "PricePad - Track Prices & Save",
+     "url": "https://apps.apple.com/us/app/pricepad-track-prices-save/id1550316875",
+     "note": "srovnání cen napříč obchody"
+    }
+   ],
+   "revenue_czk_realistic": 2500,
+   "reviewer_note": "V angličtině obsazené. Smysl má jen jako lokalizovaná verze pro DE/CZ/PL, kde 'Preisbuch'/'cenová kniha' nikdo nevlastní, s parsováním účtenek konkrétních řetězců (Lidl, Kaufland, Albert). Jinak KILL.",
+   "web_checked": true
+  },
+  {
+   "id": "shopping-10",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 2,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "V EU je jednotková cena na cenovce povinná (směrnice 98/6/ES) – hlavní bolest v Evropě neexistuje.",
+    "Sherlock: Live Text + kalkulačka v iOS, a 'unit price' je saturovaný kalkulačkami zdarma.",
+    "Kalkulačky jednotkové ceny monetizují jen reklamou; placená verze nemá šanci."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 300,
+   "reviewer_note": "V EU zákonem vyřešeno na cenovce, v US zaplavené bezplatnými kalkulačkami. KILL."
+  },
+  {
+   "id": "shopping-11",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 8
+   },
+   "extra_risks": [
+    "Svatební platformy (Zola, The Knot, Joy) mají tracker dárků a poděkování zdarma a párům je vnutí přes registry.",
+    "Jednorázové použití (svatba, křtiny) – po poděkováních se appka smaže; předplatné nedává smysl.",
+    "Japonské 内祝い/お祝い管理 appky pravděpodobně existují v JP obchodě – 'reverzní mezera' je neověřená."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Západní verze prohraje se svatebními platformami. Smysl dává jen jako 'rodinná kniha darů' pro JP/KR/CN (uchiiwai, 축의금 – kdo kolik dal a co vrátit), kde je vzájemnost celoživotní a opakovaná. Nutné ověřit JP obchod před stavbou."
+  },
+  {
+   "id": "shopping-12",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 9,
+    "safety": 4
+   },
+   "extra_risks": [
+    "SkinSort (4,7 hvězd, ~6,3 tis. hodnocení) má dedikovanou analýzu fungal acne/Malassezia zdarma – autor ji uvedl, ale podcenil.",
+    "Další OCR scannery složení na akné: Acne Safe (2×), ReadLabel, Skincare Ingredient Checker, plus INCI Beauty a Think Dirty.",
+    "Seznamy 'fungal acne triggers' jsou vědecky sporné – riziko 1.4.1 u tvrzení o léčbě akné."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Acne Safe: Ingredient Scanner",
+     "url": "https://apps.apple.com/us/app/acne-safe-ingredient-scanner/id6747936538",
+     "note": "OCR složení kamerou, pore-clogging"
+    },
+    {
+     "name": "ReadLabel - Ingredient Checker",
+     "url": "https://apps.apple.com/us/app/readlabel-ingredient-checker/id6756375224",
+     "note": "acne scanner"
+    },
+    {
+     "name": "Skincare Ingredient Checker",
+     "url": "https://apps.apple.com/us/app/skincare-ingredient-checker/id6744064092",
+     "note": "dedikovaná kontrola složení"
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Niche vlastní silný SkinSort zdarma a obsazují ji 4+ OCR scannery. KILL.",
+   "web_checked": true
+  },
+  {
+   "id": "shopping-13",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 3,
+    "monetization": 2,
+    "build_ease": 9,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Gift card zůstatky: uživatelé nechtějí platit za evidenci pár karet; loyalty peněženky (Barcode Wallet, Anycode, Pass2U) už umí poznámky a expiraci.",
+    "Zůstatek se musí aktualizovat ručně po každém nákupu – nikdo to nedělá, appka lže a je smazaná.",
+    "Druhá peněženka vedle CardShare (02) = riziko 4.3 v portfoliu."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Samostatně neobhajitelné – jen jako modul 'poukázky s expirací' v CardShare (02). KILL jako samostatná appka."
+  },
+  {
+   "id": "shopping-14",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 1,
+    "monetization": 5,
+    "build_ease": 7,
+    "offline_fit": 8,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Recenze finance (finance_verify [5]) našla 4 dedikované card-show vendor nástroje z 2025–26 se Show Mode Buy/Sell/Trade – přesně autorův koncept.",
+    "Dealeři chtějí živé ceny (TCGplayer, 130point) – offline log bez cen je poloviční produkt.",
+    "Trh card-show dealerů mimo USA je malý a mluví anglicky."
+   ],
+   "missed_competitors": [
+    {
+     "name": "CardOps: TCG Vendor Tracker",
+     "url": "https://apps.apple.com/gb/app/cardops-tcg-vendor-tracker/id6790439848",
+     "note": "Show Mode: Sell/Buy/Trade"
+    },
+    {
+     "name": "DeckTradr",
+     "url": "https://apps.apple.com/us/app/decktradr/id6748241256",
+     "note": "TCG vendor POS, P/L, eventy"
+    },
+    {
+     "name": "CardCalc - TCG Calculator",
+     "url": "https://apps.apple.com/us/app/cardcalc-tcg-calculator/id6752672423",
+     "note": "trade kalkulačka pro card show vendory"
+    },
+    {
+     "name": "Deal IQ: Card Deal Manager",
+     "url": "https://apps.apple.com/il/app/deal-iq-card-deal-manager/id6761696554",
+     "note": "show dealers, profit"
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Přeplněno novými specializovanými appkami, autor je přehlédl. KILL."
+  },
+  {
+   "id": "shopping-15",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 4,
+    "monetization": 2,
+    "build_ease": 9,
+    "offline_fit": 10,
+    "safety": 8
+   },
+   "extra_risks": [
+    "Téměř duplikát č. 22 (No-Buy) – dvě appky na stejný behaviorální problém = 4.3 riziko a kanibalizace.",
+    "Lidé, kteří chtějí utrácet méně, nechtějí utrácet za appku; monetizace 'anti-shopping' appek je nejhorší v kategorii.",
+    "Sherlock: seznam v Poznámkách/Reminders s datem splní pravidlo 30 dní zdarma; Amazon 'Save for later' dělá totéž."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Jako samostatná appka ne – sloučit jako funkci 'odkladový wishlist' do č. 22."
+  },
+  {
+   "id": "shopping-16",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 8
+   },
+   "extra_risks": [
+    "Uživatel musí ručně zadat cenu a gramy bílkovin, OCR nutriční tabulky je nespolehlivé; bez databáze produktů je to kalkulačka.",
+    "Kalkulačky 'protein per dollar' jsou zdarma na webu a Reddit sdílí hotové tabulky – ochota platit nízká.",
+    "Fitness appky (MacroFactor, MyFitnessPal) mohou přidat cenu za gram za týden."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Zábavný háček, ale spíš funkce než produkt; realisticky jen jednorázových 2–3 USD. Stavět jen jako 1týdenní experiment s ASO ve více jazycích ('Protein pro Euro'), ne jako prioritu."
+  },
+  {
+   "id": "shopping-17",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 2,
+    "build_ease": 9,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Sherlock: velikosti rodiny se běžně píšou do Poznámek nebo kontaktu v Apple Contacts.",
+    "Převodníky velikostí jsou saturované (6) a zdarma; 'family sizes' nemá prokázaný objem hledání.",
+    "Portfolio překryv se č. 28 a 30 – tři dětské/velikostní appky = 4.3."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 300,
+   "reviewer_note": "Nulová ochota platit a Poznámky to řeší. Případně jako modul Foot Sizer (30). KILL."
+  },
+  {
+   "id": "shopping-18",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 4,
+    "monetization": 2,
+    "build_ease": 6,
+    "offline_fit": 9,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Sherlock: Live Text + 'Scan Text' v Reminders převede fotku seznamu na odškrtávací seznam zdarma; Reminders od iOS 17 i kategorizuje.",
+    "Extrémní sezónnost (červenec–září) a jednorázové použití; US retaileři (Target, Walmart, TeacherLists) seznamy nabízejí zdarma.",
+    "Školní seznamy v DE/CZ jsou krátké a psané rukou – OCR i hodnota malá."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 300,
+   "reviewer_note": "Apple to v podstatě dělá sám a použití je jednou ročně. KILL."
+  },
+  {
+   "id": "shopping-19",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 1,
+    "monetization": 1,
+    "build_ease": 10,
+    "offline_fit": 10,
+    "safety": 8
+   },
+   "extra_risks": [
+    "Offline losování bez registrace už nabízí několik lokalizovaných appek: Wichtel App (offline mód), Amigo Invisible (offline mód), 'Wichteln: Secret Santa' (offline ohne Registrierung) i Amigo Secreto 2025.",
+    "Monetizace ~0: appka na jeden večer v prosinci, uživatelé nezaplatí ani 1 USD.",
+    "Sezónnost 6 týdnů ročně."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Wichteln: Secret Santa",
+     "url": "https://apps.apple.com/de/app/wichteln-secret-santa/id1592116160",
+     "note": "'offline ohne Registrierung', lokalizované DE/ES/MX"
+    },
+    {
+     "name": "Wichtel App - Secret Santa",
+     "url": "https://apps.apple.com/at/app/wichtel-app-secret-santa/id6443517541",
+     "note": "offline mód"
+    },
+    {
+     "name": "Amigo Invisible - Secret Santa",
+     "url": "https://apps.apple.com/pa/app/amigo-invisible-secret-santa/id1442673273",
+     "note": "offline mód"
+    }
+   ],
+   "revenue_czk_realistic": 200,
+   "reviewer_note": "Přesně autorův úhel (offline, lokální názvy tradic) už existuje, a peníze nejsou. KILL."
+  },
+  {
+   "id": "shopping-20",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 2,
+    "blue_ocean": 6,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 8
+   },
+   "extra_risks": [
+    "Žádný důkaz, že lidé tuto potřebu hledají v App Store – 'light bulb finder' a 'replacement parts' jsou autorovy odhady bez dat.",
+    "Sherlock: fotka štítku filtru v Photos + Visual Look Up / hledání textu v Photos najde typ filtru zdarma.",
+    "Domácí inventáře (HomeZada, Sortly, Centriq) už mají pole pro díly a připomínky údržby."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Reálná, ale neartikulovaná potřeba – lidé ji v obchodě nehledají, takže ASO-only růst nefunguje. KILL."
+  },
+  {
+   "id": "shopping-21",
+   "verdict": "GO",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 6,
+    "monetization": 5,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Sběratelé figurek žijí na MyFigureCollection (má vlastní evidenci objednávek/zakoupeno) – část cílovky je už pokrytá zdarma.",
+    "Objem hledání 'preorder tracker' je malý; autor to nijak neověřil (evidence: knowledge).",
+    "Retence závisí na ručním zadávání z e-mailů obchodů (AmiAmi, HLJ) – bez parsování e-mailů pracné."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 3500,
+   "reviewer_note": "Malá, ale hobby niche s ochotou platit a bez zjevného dedikovaného hráče; cash-flow záloh/doplatků je reálná bolest. Realisticky 3–4 tis. Kč – stavět levně (3 týdny), jednorázový nákup, a před stavbou ověřit 'preorder tracker' přes apple_fetch."
+  },
+  {
+   "id": "shopping-22",
+   "verdict": "GO",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 5,
+    "monetization": 3,
+    "build_ease": 9,
+    "offline_fit": 10,
+    "safety": 8
+   },
+   "extra_risks": [
+    "'Anti-consumption' publikum nerado platí – monetizace přes jednorázový unlock, ne předplatné.",
+    "No-spend challenge appky existují (autor je nevyjmenoval s URL) a mohou přidat 'no-buy year' režim.",
+    "Trend je silný na YouTube/Reddit (r/nobuy), ale přenos do App Store hledání je nejistý."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 2500,
+   "reviewer_note": "GO jen jako sloučený produkt s č. 15: no-buy rok s pravidly po kategoriích + 30denní odkladový wishlist + počítadlo ušetřeného. Rychlá stavba (2 týdny), lokalizace 'Kaufverzicht'. Realisticky 2–3 tis. Kč, pod cílem."
+  },
+  {
+   "id": "shopping-23",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 2,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Predikce spotřeby vyžaduje měsíce ručně zadávaných nákupů – než appka začne být chytrá, uživatel odejde.",
+    "Sherlock: opakující se připomínka v Reminders; Amazon Subscribe & Save a Rohlík/Košík opakované objednávky to řeší automaticky.",
+    "Pantry a nákupní seznamy (AnyList, Bring!) mají 'často kupované' zdarma."
+   ],
+   "missed_competitors": [
+    {
+     "name": "My Pantry Tracker",
+     "url": "https://apps.apple.com/us/app/my-pantry-tracker/id1567647197",
+     "note": "evidence zásob domácnosti"
+    }
+   ],
+   "revenue_czk_realistic": 300,
+   "reviewer_note": "Cold-start problém + Reminders + e-shopy s opakovanou objednávkou. KILL."
+  },
+  {
+   "id": "shopping-24",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 5,
+    "monetization": 2,
+    "build_ease": 6,
+    "offline_fit": 7,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Pravidla tax-free se mění (UK zrušilo 2021, prahy v EU se posouvají) a operátoři přecházejí na digitální validaci (Global Blue app, Planet) – statická offline data zastarají a mohou uživatele poškodit.",
+    "Turista použije appku jednou za dovolenou; předplatné nesmyslné, jednorázový nákup malý objem.",
+    "Global Blue a Planet mají vlastní appky zdarma se stavem refundace – nezávislá appka nemá přístup ke stavu."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 300,
+   "reviewer_note": "Data vyžadují průběžnou údržbu a operátoři nabízejí lepší appky zdarma. KILL."
+  },
+  {
+   "id": "shopping-25",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 2,
+    "build_ease": 9,
+    "offline_fit": 10,
+    "safety": 8
+   },
+   "extra_risks": [
+    "'grocery/shopping calculator' je saturovaný bezplatnými kalkulačkami s reklamou.",
+    "Sherlock: Live Text a kalkulačka; v EU jsou ceny s DPH, takže 'včetně daně' je čistě US problém.",
+    "EBT uživatelé (Propel) jsou nízkopříjmová skupina – placená appka je eticky i obchodně špatná volba."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 300,
+   "reviewer_note": "Commodity kalkulačka bez diferenciace. KILL."
+  },
+  {
+   "id": "shopping-26",
+   "verdict": "GO",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 5,
+    "monetization": 5,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Pantry trackery jsou přeplněné (Pantry Check, My Pantry Tracker, freezer inventáře) – úhel musí být jasně 'nouzové zásoby', ne lednice.",
+    "Poptávka po Notvorrat skáče s krizemi (COVID, energetická krize, blackout ve Španělsku 2025) – mimo ně je nízká.",
+    "Oficiální checklisty (BBK Ratgeber, ČR 72 hodin) jsou zdarma jako web/PDF; appka musí přidat evidenci a FIFO rotaci."
+   ],
+   "missed_competitors": [
+    {
+     "name": "My Pantry Tracker",
+     "url": "https://apps.apple.com/us/app/my-pantry-tracker/id1567647197",
+     "note": "obecný pantry tracker – pozor na záměnu úhlu"
+    }
+   ],
+   "revenue_czk_realistic": 3500,
+   "reviewer_note": "Nejlepší evropský úhel kategorie: Notvorrat/72h zásoby podle oficiálních doporučení (DE BBK, EU 'preparedness' strategie 2025) s cílovými množstvími podle počtu osob a upozorněním na expiraci. Ověřit 'notvorrat' a 'emergency food supply' v apple_fetch; realisticky 3–4 tis. Kč, v krizi víc."
+  },
+  {
+   "id": "shopping-27",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 2,
+    "blue_ocean": 6,
+    "monetization": 3,
+    "build_ease": 9,
+    "offline_fit": 10,
+    "safety": 8
+   },
+   "extra_risks": [
+    "Sběratelé mají jednooborové appky (Discogs, CLZ, Goodreads) s want listy a tržními cenami – víceoborový seznam je slabší ve všem.",
+    "'want list' a 'collectors wishlist' nemají doložený objem hledání; Poznámky to zvládnou.",
+    "Překryv s č. 21 (Preorder Pile) – dvě sběratelské wishlist appky = 4.3."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 300,
+   "reviewer_note": "Generický seznam bez dat a bez poptávky. Pokud vůbec, jako funkce Preorder Pile (21). KILL."
+  },
+  {
+   "id": "shopping-28",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 2,
+    "blue_ocean": 6,
+    "monetization": 2,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 8
+   },
+   "extra_risks": [
+    "'hand me down' nemá prokázanou poptávku v App Store; rodiče používají krabice s popiskem.",
+    "Katalogizace dětského oblečení je pracná (fotit každý kus) a děti z něj vyrostou za 6 měsíců.",
+    "Třetí velikostní/dětská appka v portfoliu vedle 17 a 30 – 4.3."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 200,
+   "reviewer_note": "Nízká poptávka, vysoké tření, nulová monetizace. KILL."
+  },
+  {
+   "id": "shopping-29",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 2,
+    "blue_ocean": 5,
+    "monetization": 2,
+    "build_ease": 4,
+    "offline_fit": 6,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Fotky produktů podle země = licencovaný nebo neustále aktualizovaný obsah; offline pro 50 zemí je nereálné.",
+    "Sherlock: Live Text + Apple Translate v kameře přeloží etiketu v obchodě zdarma; Google Lens to dělá lépe.",
+    "Expati problém řeší ve Facebook skupinách jednorázově, ne dlouhodobou appkou."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 200,
+   "reviewer_note": "Datově neudržitelné a z velké části Sherlocknuté překladem v kameře. KILL."
+  },
+  {
+   "id": "shopping-30",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 4,
+    "monetization": 4,
+    "build_ease": 5,
+    "offline_fit": 9,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Přesnost měření z fotky s A4 je ±3–5 mm; špatná velikost dětské boty = poškozená noha a reklamace – rodiče budou hodnotit 1 hvězdou.",
+    "Výrobci dětských bot a e-shopy (Zalando, Deichmann, výrobci barefoot bot) mají vlastní měřicí šablony/appky zdarma.",
+    "'foot measure' a 'shoe size measure' mají saturaci 4 generickými měřiči; LiDAR/ARKit měřiče existují."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 2500,
+   "reviewer_note": "Rodiče v DE/CZ/AT řeší velikost dětských bot obsesivně (barefoot trend, pravidlo +12 mm), takže poptávka je reálná. Smysl jen s poctivou kalibrací (A4 + referenční karta), historií růstu a tabulkami značek; sloučit sem SizeBook (17). Před stavbou ověřit 'kinder fuß messen' v DE obchodě."
+  }
+ ]
+}
