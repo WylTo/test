@@ -1,0 +1,13 @@
+# weather reviewer verification log (devil's advocate run), date 2026-09-30
+
+## 1) query: site:apps.apple.com laundry drying forecast  (2026-09-30) → CONTESTED, sat ~3 dedicated laundry-drying forecast apps (Hang the Washing?, Laundry Timer - Drying Times, WashingBuddy) + national weather apps with drying index (MetService NZ, Dreich) — author estimated 1
+https://apps.apple.com/gb/app/hang-the-washing/id1493607531   (Hang the Washing?: yes/no/maybe from rain, humidity, wind, cloud, temp)
+https://apps.apple.com/us/app/hang-the-washing/id1493607531
+https://apps.apple.com/gb/app/laundry-timer-drying-times/id6444082143   (Laundry Timer: drying-rate forecast 3 days, 7 days paid)
+https://apps.apple.com/us/app/laundry-timer-drying-times/id6444082143
+https://apps.apple.com/ie/app/laundry-timer-drying-times/id6444082143
+https://apps.apple.com/us/app/wewash/id1128795787   (WeWash: laundromat booking, not relevant)
+https://apps.apple.com/us/app/metservice/id525900888   (MetService NZ: includes laundry drying index)
+https://apps.apple.com/us/app/dreich-scottish-weather/id6770678937   (Dreich: day ratings for drying a line)
+https://apps.apple.com/pg/app/washingbuddy/id6745972907   (WashingBuddy: 10-day drying forecast per laundry type)
+

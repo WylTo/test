@@ -56,3 +56,13 @@
     - Gift Logger (given/received, who to thank)   https://apps.apple.com/us/app/gift-logger/id6761291763
     - GiftPlanner   https://apps.apple.com/us/app/giftplanner/id479882306
     - Everyone - Gift Tracker   https://apps.apple.com/us/app/everyone-gift-tracker/id1204732555
+[6] query: site:apps.apple.com JGA Spiele Junggesellinnenabschied App  (idea social-networking-11)  date: 2026-09-30
+    saturation (dedicated JGA/hen apps in title): 1 (JGA-Spiel: Foto-Challenges) + 2 party apps with JGA decks (Melo, Wahrheit oder Pflicht: Abend) + espoto (paid event builder) -> CONTESTABLE; DE niche thin but not empty
+    - JGA-Spiel: Foto-Challenges   https://apps.apple.com/de/app/jga-spiel-foto-challenges/id6457205267
+    - Wahrheit oder Pflicht: Abend (ch)   https://apps.apple.com/ch/app/wahrheit-oder-pflicht-abend/id6761100608
+    - Spiel für Paare : Paarspiel   https://apps.apple.com/de/app/spiel-f%C3%BCr-paare-paarspiel/id1576361415
+    - Melo: Partyspiel für Freunde (JGA deck)   https://apps.apple.com/de/app/melo-partyspiel-f%C3%BCr-freunde/id6451415571
+    - espoto serious games (JGA location games)   https://apps.apple.com/de/app/espoto-serious-games/id1619117284
+    - (irrelevant) Bundesjugendspiele App   https://apps.apple.com/de/app/bundesjugendspiele-app/id6741110956
+    - (irrelevant) Spielsammlung: EJW Spielebox   https://apps.apple.com/de/app/spielsammlung-ejw-spielebox/id1503526937
+Search budget (6) used up.

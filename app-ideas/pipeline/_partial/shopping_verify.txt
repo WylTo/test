@@ -25,3 +25,15 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results. "sat" = disti
     - Reseller Pro                         https://apps.apple.com/us/app/reseller-pro/id6749879995
     - VintSnap: Sell on Vinted Fast        https://apps.apple.com/us/app/vintsnap-sell-on-vinted-fast/id6761385561
 
+[3] query: site:apps.apple.com allergen label scanner ingredients photo  (idea shopping-07)  date: 2026-09-30
+    sat("allergen/allergy scan" in title): 7+ photo-of-label allergen scanners (AllergySnap, Healthsnap, Allergy Scanner, Verdict, Food Scanner - Allergen Check, PNut, SYE), all 2024-26, mostly AI cloud but same UX -> SATURATED; only the "fully offline / travel / foreign language" angle is left
+    - Food Allergy Scan AllergySnap        https://apps.apple.com/us/app/food-allergy-scan-allergysnap/id6747722744
+    - Healthsnap: Food Allergen Scan       https://apps.apple.com/us/app/healthsnap-food-allergen-scan/id6742596349
+    - Allergy Scanner: Food Checker        https://apps.apple.com/us/app/allergy-scanner-food-checker/id6748245926
+    - Verdict: Allergen Scanner App        https://apps.apple.com/us/app/verdict-allergen-scanner/id6743694134
+    - Food Scanner - Allergen Check        https://apps.apple.com/us/app/food-scanner-allergen-check/id6711358397
+    - Food Allergen Scanner - PNut (40+ allergens, label photo) https://apps.apple.com/us/app/food-allergen-scanner-pnut/id6756531546
+    - ScanGredients (label photo, no barcode) https://apps.apple.com/us/app/scangredients/id6473748132
+    - Nutristant                           https://apps.apple.com/us/app/nutristant/id6745495283
+    - SYE: Allergen & Food Scanner         https://apps.apple.com/us/app/sye-allergen-food-scanner/id6759058947
+
