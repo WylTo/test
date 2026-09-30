@@ -1,0 +1,2513 @@
+{
+  "category": "Developer Tools",
+  "category_slug": "developer-tools",
+  "search_notes": "Offline běh: Apple API (apple_fetch.py) ani WebSearch nebyly použity. Pro Developer Tools neexistuje evidence soubor; ostatní _partial/*.txt obsahují použitelné URL jen pro laser/CNC nástroje (graphics-design: LaserPecker, Genmitsu, AlgoLaser) – ty jsou u GRBL senderu. Všechny ostatní nápady jsou 'knowledge': saturace klíčových slov je odhad, blue_ocean max 7, konkurenti bez URL (stránka vygeneruje hledání podle jména). Před vývojem nutno ověřit přes apple_fetch check hlavně: 'bluetooth terminal', 'sqlite viewer', 'pinout', 'modbus', 'mqtt dashboard', 'app store screenshots'. Vyřazeno z brainstormingu (45+): SSH klient a 'ssh client' head term (Termius/Blink – saturované), Wi-Fi skener (iOS API nedovoluje), subnet kalkulačka a Wake-on-LAN (přeplněné), NFC nástroje (NFC Tools dominuje), obecný Markdown editor, Python IDE head term, ASO/App Store Connect klienti (potřebují API a Apple má vlastní appku), USB serial přes DriverKit (entitlement, příliš těžké), OPC UA klient (náročné), Unicode inspektor a HTTP status reference (příliš malé), Shortcuts backup (formát nečitelný), cron builder a JSON viewer (sloučeno do DevBelt), Arduino reference (sloučeno do Pinout). 'US gap' je v této kategorii spíš 'Android gap' (Serial Bluetooth Terminal, ElectroDroid, RaspController, Hacker's Keyboard) a lokalizační mezera – vývojářské nástroje jsou téměř výhradně anglické.",
+  "ideas": [
+    {
+      "id": "developer-tools-01",
+      "name": "BLE Serial Terminal for ESP32",
+      "tagline": "Sériový monitor pro ESP32 a Arduino přes Bluetooth, když iPhone nemá USB sériovku.",
+      "pitch": "Maker s ESP32 nebo Arduinem + HM-10 chce vidět Serial.print() v telefonu, jenže iOS neumí klasický Bluetooth SPP ani USB sériový port. Na Androidu tuhle práci dělá milionová appka Serial Bluetooth Terminal, na iOS existují jen obecné BLE skenery (LightBlue, nRF Connect), kde je UART schovaný v menu pro inženýry. Uděláme jednoúčelový terminál: profily Nordic UART / HM-10 / ESP32 BLE UART jedním klepnutím, makro tlačítka, log do souboru a živý graf čísel jako Serial Plotter v Arduino IDE. Klíčová slova 'bluetooth terminal', 'ble serial' a 'hm-10' jsou na iOS podle naší znalosti obsazená slabě a zastaralými appkami.",
+      "niche": "BLE UART konzole pro hobby elektroniku. Velké BLE nástroje cílí na profesionální vývojáře GATT (hex, UUID) a výrobci desek (Adafruit, Nordic) dělají appky jen pro vlastní ekosystém, takže univerzální 'Serial Monitor v kapse' nikdo pořádně nedělá.",
+      "parent_market": "BLE/IoT vývojářské nástroje – LightBlue (Punch Through), nRF Connect (Nordic); na Androidu Serial Bluetooth Terminal (Kai Morich) s 1M+ instalací.",
+      "target_user": "Hobby makeři, studenti elektroniky a učitelé robotiky s ESP32, Arduino + HM-10/HC-08, micro:bit, nRF52.",
+      "features": [
+        "Auto-detekce UART profilů (Nordic UART, HM-10 FFE0, ESP32 BLE UART) a připojení jedním klepnutím",
+        "Terminál s časovými razítky, hex/ASCII režimem, volbou konce řádku",
+        "Makro tlačítka (odeslat příkaz) a sady maker pro projekty",
+        "Serial Plotter – živý graf čísel oddělených čárkou",
+        "Export logu do Files, iPad split-view"
+      ],
+      "offline": "full",
+      "offline_note": "Vše běží lokálně přes Core Bluetooth mezi telefonem a zařízením uživatele; žádný server ani účet.",
+      "monetization": "Freemium: terminál zdarma, Pro (plotter, neomezená makra, export) jednorázově 7,99 USD (≈ 184 CZK) nebo 1,99 USD/měs (≈ 46 CZK).",
+      "revenue_math": "Ideál: 3 000 stažení/měs z klastru 'bluetooth terminal / ble serial / hm-10 / esp32 bluetooth' × 3 % konverze = 90 nákupů × 7,99 USD × 0,85 × 23 CZK ≈ 14 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 14000,
+      "keywords": [
+        {
+          "kw": "bluetooth terminal",
+          "saturation": 3,
+          "competitor": "BLE Terminal (starší indie appky)",
+          "note": "odhad; hint pravděpodobně ano; na iOS málo dedikovaných, spíš zastaralé."
+        },
+        {
+          "kw": "ble serial",
+          "saturation": 2,
+          "competitor": "Bluefruit Connect",
+          "note": "odhad; technický termín, nízký objem, ale přesný záměr."
+        },
+        {
+          "kw": "hm-10",
+          "saturation": 1,
+          "competitor": "HM-10 Bluetooth Terminal (starší)",
+          "note": "odhad; modul HM-10 je nejčastější BLE modul pro Arduino."
+        },
+        {
+          "kw": "esp32 bluetooth",
+          "saturation": 1,
+          "competitor": "nRF Connect",
+          "note": "odhad; ESP32 v názvu skoro nikdo nemá."
+        }
+      ],
+      "demand_evidence": "Ověřeno nic (offline běh). Předpoklad z tržní znalosti: Serial Bluetooth Terminal má na Google Play 1M+ instalací a iOS verzi nemá; na fórech Arduino/ESP32 je častý dotaz 'HM-10 terminal for iPhone'. Nutno ověřit apple_fetch check.",
+      "competitors": [
+        {
+          "name": "LightBlue",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr BLE nástrojů na iOS, UART je jen okrajová funkce."
+        },
+        {
+          "name": "nRF Connect for Mobile",
+          "url": "",
+          "role": "parent",
+          "note": "Nordic, profesionální GATT nástroj, pro začátečníky složitý."
+        },
+        {
+          "name": "Bluefruit Connect",
+          "url": "",
+          "role": "niche",
+          "note": "Adafruit, UART + plotter, ale zaměřený na Adafruit desky, UX zastaralé."
+        },
+        {
+          "name": "Serial Bluetooth Terminal",
+          "url": "",
+          "role": "niche",
+          "note": "Kai Morich, jen Android – důkaz poptávky, na iOS chybí."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Není to US gap v užším smyslu, ale 'Android gap': model Serial Bluetooth Terminal (1M+ na Androidu) na iOS chybí; my ho přineseme lokalizovaný do 50 jazyků (makeři v DE/JP/BR hledají v rodném jazyce).",
+      "devils_advocate": [
+        "Klasické moduly HC-05/HC-06 (Bluetooth Classic SPP) na iOS fungovat nebudou a naštvaní uživatelé budou psát 1★ recenze.",
+        "Makeři jsou šetřiví a zvyklí na free nástroje; Bluefruit Connect i nRF Connect jsou zdarma.",
+        "Většina makerů programuje u počítače s USB kabelem, telefon je až druhá volba – malý objem hledání.",
+        "Adafruit nebo Nordic může svou appku zjednodušit a zdarma přetáhnout uživatele."
+      ],
+      "killer_risk": "Malá ochota platit u hobby publika – stažení přijdou, ale konverze na Pro zůstane pod 1 %.",
+      "mitigation": "Paywall až na výrazně 'pro' funkce (plotter, export, makra), jasně v popisu upozornit 'pouze BLE, ne HC-05'; ASO v 50 jazycích, Mac Catalyst verze jako bonus.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-02",
+      "name": "SQLite Viewer & Editor",
+      "tagline": "Otevři jakoukoli .sqlite nebo .db z Files, prohlédni tabulky a spusť SQL – offline.",
+      "pitch": "Vývojáři, analytici i zvědaví uživatelé často dostanou .sqlite/.db soubor (export z appky, záloha WhatsAppu, databáze z Home Assistantu) a na iPhonu ani iPadu ho nemají čím otevřít. TablePlus na iOS je silný, ale je to klient pro servery (Postgres, MySQL) a pro rychlé prohlédnutí lokálního souboru zbytečně těžký. Uděláme nejrychlejší 'Quick Look pro databáze': otevřít ze sdílení, procházet tabulky, filtrovat, spustit SQL, exportovat CSV. SQLite je na zařízení nativně, takže je to čistě offline appka s jasným placeným Pro.",
+      "niche": "Lokální SQLite soubory na iOS/iPadOS. Databázoví hráči (TablePlus, Navicat) míří na vzdálené servery a firmy; desktopový lídr DB Browser for SQLite na iOS není.",
+      "parent_market": "Databázové klienty – TablePlus, Navicat, DBeaver; desktopový DB Browser for SQLite má miliony stažení.",
+      "target_user": "iOS/Flutter vývojáři kontrolující databázi appky, datoví analytici na iPadu, studenti SQL, pokročilí uživatelé s exporty.",
+      "features": [
+        "Otevření .sqlite/.db/.sqlite3 z Files, AirDropu a share sheetu",
+        "Prohlížení tabulek s filtrem, řazením a úpravou buněk",
+        "SQL editor se zvýrazněním syntaxe a historií dotazů",
+        "Schéma, indexy, export do CSV/JSON",
+        "Quick Look rozšíření a Mac verze (Catalyst)"
+      ],
+      "offline": "full",
+      "offline_note": "SQLite engine je součástí iOS; vše lokálně, soubory přes Files/iCloud Drive.",
+      "monetization": "Prohlížení zdarma, editace + SQL + export jako Pro za 9,99 USD jednorázově (≈ 230 CZK) nebo 14,99 USD/rok.",
+      "revenue_math": "Ideál: 2 500 stažení/měs ('sqlite', 'sqlite viewer', 'db viewer', 'database viewer') × 3 % = 75 × 9,99 USD × 0,85 × 23 ≈ 14 600 CZK čistého/měs.",
+      "revenue_czk_ideal": 14600,
+      "keywords": [
+        {
+          "kw": "sqlite viewer",
+          "saturation": 3,
+          "competitor": "SQLite Mobile Client",
+          "note": "odhad; hint pravděpodobně ano; pár starších appek."
+        },
+        {
+          "kw": "sqlite",
+          "saturation": 4,
+          "competitor": "TablePlus",
+          "note": "odhad; širší, obsazenější; vhodné do klíčových slov, ne do názvu."
+        },
+        {
+          "kw": "db viewer",
+          "saturation": 3,
+          "competitor": "TablePlus",
+          "note": "odhad; obecné, část výsledků jsou jiné typy DB."
+        },
+        {
+          "kw": "database viewer",
+          "saturation": 4,
+          "competitor": "Navicat / TablePlus",
+          "note": "odhad; odhad středně obsazené."
+        }
+      ],
+      "demand_evidence": "Neověřeno (offline). Z tržní znalosti: DB Browser for SQLite je jeden z nejstahovanějších desktopových DB nástrojů; na iOS existuje jen několik málo hodnocených SQLite prohlížečů. Nutno ověřit hint a saturaci.",
+      "competitors": [
+        {
+          "name": "TablePlus",
+          "url": "",
+          "role": "parent",
+          "note": "Silný DB klient i na iOS, zaměřený na servery, předplatné."
+        },
+        {
+          "name": "DB Browser for SQLite",
+          "url": "",
+          "role": "niche",
+          "note": "Desktopový open-source lídr, iOS verze neexistuje."
+        },
+        {
+          "name": "Navicat",
+          "url": "",
+          "role": "parent",
+          "note": "Enterprise DB nástroj, drahý."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "TablePlus může přidat lepší práci s lokálními soubory a má už značku mezi vývojáři.",
+        "Poptávka po otevírání databází na telefonu je řídká – většina to udělá na Macu.",
+        "Soubory WhatsAppu apod. jsou šifrované, uživatelé budou zklamaní a hodnotit špatně."
+      ],
+      "killer_risk": "Nízký objem vyhledávání: 'sqlite' na iOS hledá málo lidí, protože to řeší na počítači.",
+      "mitigation": "Mac verze v Mac App Store (tam je poptávka větší), iPad-first UX, podpora velkých souborů a rychlost jako hlavní sdělení.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 7,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-03",
+      "name": "Pinout: ESP32, Arduino, Pi Pico",
+      "tagline": "Offline pinouty desek a senzorů, I2C adresy a zapojení – vždy po ruce u pájky.",
+      "pitch": "Každý maker má v prohlížeči deset záložek s obrázky pinoutů ESP32, Arduino Nano, Raspberry Pi Pico a modulů, a na dílně bez signálu je nenajde. Na Androidu tuto potřebu roky pokrývá ElectroDroid (miliony stažení), na iOS je jen pár obecných elektro kalkulaček. Uděláme čistou, rychlou a offline referenci pinoutů s vyhledáváním podle funkce (Který pin je SDA na ESP32-C3?), I2C adresami běžných senzorů a zapojovacími schématy. Lokalizace do 50 jazyků je tu výhoda – dokumentace výrobců je jen anglicky.",
+      "niche": "Hobby pinout reference. Výrobci desek mají PDF datasheety a velké elektro appky (kalkulačky, simulátory) pinouty neřeší do hloubky.",
+      "parent_market": "Elektronické reference a kalkulačky – ElectroDroid (Android), Electronic Toolbox (iOS), EveryCircuit.",
+      "target_user": "Hobby makeři, studenti SŠ/VŠ elektro, učitelé robotiky, drone/3D print builderi.",
+      "features": [
+        "Pinouty 100+ desek (ESP32 řada, Arduino, Pi, Pi Pico, STM32, Teensy) a modulů",
+        "Hledání podle funkce: SDA, PWM, ADC, touch, strapping pin s varováním",
+        "I2C adresy senzorů a kolize adres",
+        "Oblíbené desky, tmavý režim, iPad pro dílnu",
+        "Rychlé kalkulačky: rezistor pro LED, dělič napětí"
+      ],
+      "offline": "full",
+      "offline_note": "Všechna data i vektorové obrázky jsou přibalené; aktualizace přes update aplikace.",
+      "monetization": "Základní desky zdarma, Pro (všechny desky + moduly + kalkulačky) 4,99 USD jednorázově (≈ 115 CZK) nebo 0,99 USD/měs.",
+      "revenue_math": "Ideál: 4 000 stažení/měs (pinout, esp32 pinout, arduino pinout, raspberry pi pinout v 50 jazycích) × 3,5 % = 140 × 4,99 × 0,85 × 23 ≈ 13 700 CZK čistého/měs.",
+      "revenue_czk_ideal": 13700,
+      "keywords": [
+        {
+          "kw": "pinout",
+          "saturation": 3,
+          "competitor": "Pinout (starší indie)",
+          "note": "odhad; hint pravděpodobně ano, několik jednoúčelových appek."
+        },
+        {
+          "kw": "esp32 pinout",
+          "saturation": 1,
+          "competitor": "žádná dedikovaná",
+          "note": "odhad; velmi specifické, ale častý Google dotaz."
+        },
+        {
+          "kw": "arduino reference",
+          "saturation": 3,
+          "competitor": "Arduino reference appky",
+          "note": "odhad; několik starších offline referencí."
+        },
+        {
+          "kw": "raspberry pi pinout",
+          "saturation": 2,
+          "competitor": "Pi pinout appky",
+          "note": "odhad; odhad pár malých appek."
+        }
+      ],
+      "demand_evidence": "Neověřeno v App Store. Předpoklad: ElectroDroid má na Androidu 1M+ instalací a iOS verzi nemá; 'esp32 pinout' je jeden z nejčastějších maker dotazů na webu. Výsledky Apple hint jsou neznámé.",
+      "competitors": [
+        {
+          "name": "ElectroDroid",
+          "url": "",
+          "role": "niche",
+          "note": "Android-only lídr elektro referencí – model, který na iOS chybí."
+        },
+        {
+          "name": "Electronic Toolbox Pro",
+          "url": "",
+          "role": "parent",
+          "note": "iOS elektro sada kalkulaček, pinoutů má málo."
+        },
+        {
+          "name": "EveryCircuit",
+          "url": "",
+          "role": "parent",
+          "note": "Simulátor obvodů, zaplacený trh elektro nadšenců."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "'Android gap' + lokalizace: ElectroDroid je Android-only a anglické pinout appky na iOS nejsou lokalizované; makeři v DE/JP/BR/CZ hledají ve svém jazyce.",
+      "devils_advocate": [
+        "Obrázky pinoutů jsou zdarma na Googlu jedním hledáním – proč platit.",
+        "Licenční riziko: nesmíme kopírovat grafiku Espressifu/Arduina ani cizí pinout diagramy, vše kreslit sami (hodně práce).",
+        "Nové desky vycházejí každý měsíc – bez aktualizací appka zastará a recenze klesnou.",
+        "Arduino je ochranná známka – v názvu opatrně ('for Arduino')."
+      ],
+      "killer_risk": "Uživatelé nebudou platit za informace, které jsou zdarma na webu.",
+      "mitigation": "Hodnota = rychlost, offline a hledání podle funkce; freemium s levným jednorázovým Pro; vlastní vektorová grafika a data z datasheetů (fakta nejsou chráněná).",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-04",
+      "name": "Modbus Scanner TCP/RTU",
+      "tagline": "Čti a zapisuj Modbus registry střídače, tepelného čerpadla nebo PLC přímo z iPhonu.",
+      "pitch": "Servisní technici fotovoltaiky, tepelných čerpadel a automatizace potřebují na místě přečíst Modbus registry, a dnes na to tahají notebook s Modbus Poll. Na iOS je pár zastaralých Modbus klientů s mizerným UX. Uděláme moderní Modbus TCP master (a RTU přes Wi-Fi/BLE převodníky), se skenováním adres, uloženými mapami registrů a dekódováním float/int32/word swap. Technici B2B platí rádi – ušetřená jízda pro notebook se zaplatí hned.",
+      "niche": "Mobilní Modbus nástroj pro techniky v terénu. Průmysloví hráči dělají drahý Windows software a iOS ignorují; domácí FV boom (Home Assistant + Modbus střídače) rozšiřuje publikum i na kutily.",
+      "parent_market": "Průmyslové komunikační nástroje – Modbus Poll / Modbus Slave (Witte Software, placené licence), Simply Modbus; HMI appky výrobců.",
+      "target_user": "Servisní technici FV/HVAC/automatizace, integrátoři, pokročilí kutilové s Home Assistant a střídači.",
+      "features": [
+        "Modbus TCP master: čtení/zápis coils, holding a input registrů",
+        "RTU přes TCP brány a BLE-RS485 převodníky",
+        "Dekódování int16/32, float, byte/word swap, škálování",
+        "Uložené mapy registrů zařízení a sdílení jako soubor",
+        "Polling s grafem a logem do CSV"
+      ],
+      "offline": "full",
+      "offline_note": "Komunikace probíhá v lokální síti uživatele se zařízením; žádný cloud ani účet.",
+      "monetization": "Zdarma čtení 10 registrů; Pro 19,99 USD jednorázově (≈ 460 CZK) nebo 4,99 USD/měs pro firmy.",
+      "revenue_math": "Ideál: 800 stažení/měs ('modbus', 'modbus tcp', 'modbus scanner' – malý, ale B2B klastr) × 7 % = 56 × 19,99 × 0,85 × 23 ≈ 21 900 CZK čistého/měs.",
+      "revenue_czk_ideal": 21900,
+      "keywords": [
+        {
+          "kw": "modbus",
+          "saturation": 3,
+          "competitor": "Modbus Monitor (starší)",
+          "note": "odhad; hint pravděpodobně ano, pár slabých appek."
+        },
+        {
+          "kw": "modbus tcp",
+          "saturation": 2,
+          "competitor": "ModbusTCP klienti",
+          "note": "odhad; úzké, ale přesný B2B záměr."
+        },
+        {
+          "kw": "modbus scanner",
+          "saturation": 1,
+          "competitor": "žádná silná",
+          "note": "odhad; odhad téměř volné."
+        }
+      ],
+      "demand_evidence": "Neověřeno (offline). Předpoklad: Modbus Poll je placený standard na Windows, na Google Play existuje několik Modbus klientů s 100k+ instalacemi; boom FV střídačů (Huawei, Solax, Victron) zvyšuje počet lidí, kteří Modbus řeší.",
+      "competitors": [
+        {
+          "name": "Modbus Poll",
+          "url": "",
+          "role": "parent",
+          "note": "Windows standard, placená licence ~130 USD – důkaz, že technici platí."
+        },
+        {
+          "name": "Simply Modbus",
+          "url": "",
+          "role": "parent",
+          "note": "Windows nástroj pro testování Modbus."
+        },
+        {
+          "name": "Modbus Monitor",
+          "url": "",
+          "role": "niche",
+          "note": "Odhad: starší mobilní klient, slabé UX."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Objem hledání na iOS je malý – technici v průmyslu častěji používají Android/Windows tablety.",
+        "RTU (RS-485) nejde bez hardwarového převodníku – uživatelé budou očekávat USB a být zklamaní.",
+        "Zápis do registrů může poškodit zařízení; odpovědnost a špatné recenze při chybách.",
+        "Vývoj a testování vyžadují reálný hardware/simulátory, B2B support je náročnější."
+      ],
+      "killer_risk": "Příliš malé publikum na iOS – i dobrá konverze nemusí dát víc než pár tisíc CZK.",
+      "mitigation": "Paralelně Mac verze, vysoká cena, předpřipravené mapy registrů pro populární FV střídače jako ASO háček ('solar inverter modbus').",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 8,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-05",
+      "name": "MQTT Dashboard Builder",
+      "tagline": "Postav si ovládací panel pro svůj ESP32, Tasmotu nebo Home Assistant přes MQTT – bez cloudu.",
+      "pitch": "Makeři s ESP32, Tasmotou nebo Zigbee2MQTT chtějí jednoduchý panel s tlačítky, přepínači a grafy nad svým MQTT brokerem, bez registrace do cloudu typu Blynk. Na Androidu vládne IoT MQTT Panel, na iOS jsou jen spartánské MQTT klienty pro ladění (MQTTool) nebo cloudové platformy. Nabídneme drag-and-drop dashboard napojený přímo na broker uživatele, widgety na ploše a Shortcuts akce 'publish'. Žádný server na naší straně – vše jde přímo do domácí sítě.",
+      "niche": "Lokální MQTT dashboardy pro domácí makery. Cloudové IoT platformy chtějí účty a předplatné za servery, ladicí MQTT klienty neumí dashboard.",
+      "parent_market": "IoT ovládací platformy – Blynk, Arduino IoT Remote, Home Assistant; MQTT klienty IoT MQTT Panel (Android lídr), MQTT Explorer (desktop).",
+      "target_user": "Domácí automatizátoři, makeři s ESP32/Tasmota/ESPHome, studenti IoT.",
+      "features": [
+        "Připojení k brokeru (TCP/TLS/WebSocket, uživatel+heslo)",
+        "Dashboard z widgetů: tlačítko, přepínač, slider, gauge, graf, text",
+        "iOS widgety na ploše a akce Shortcuts 'Publish MQTT'",
+        "Ladicí konzole: odběr témat, retained zprávy",
+        "Synchronizace dashboardů přes iCloud"
+      ],
+      "offline": "mostly",
+      "offline_note": "Komunikace jen s brokerem uživatele (v LAN nebo jeho vlastním); nic neběží na našem serveru. Bez sítě appka nemá co ovládat.",
+      "monetization": "Zdarma 1 dashboard/5 widgetů; Pro 2,99 USD/měs (≈ 69 CZK) nebo 19,99 USD/rok, případně 29,99 USD lifetime.",
+      "revenue_math": "Ideál: 2 000 stažení/měs ('mqtt', 'mqtt client', 'mqtt dashboard', 'iot panel') × 4 % = 80 plateb/měs; při mixu ročních a lifetime ≈ průměr 20 USD × 0,85 × 23 ≈ 31 000 CZK čistého/měs po náběhu (bez odlivu); konzervativně 12 000 CZK.",
+      "revenue_czk_ideal": 15000,
+      "keywords": [
+        {
+          "kw": "mqtt",
+          "saturation": 5,
+          "competitor": "MQTTool",
+          "note": "odhad; hint pravděpodobně ano; více klientů, obsazenější."
+        },
+        {
+          "kw": "mqtt dashboard",
+          "saturation": 2,
+          "competitor": "IoT MQTT Panel",
+          "note": "odhad; dashboard varianta řidší."
+        },
+        {
+          "kw": "iot dashboard",
+          "saturation": 3,
+          "competitor": "Blynk IoT",
+          "note": "odhad; obecné, cloudové platformy."
+        },
+        {
+          "kw": "tasmota",
+          "saturation": 2,
+          "competitor": "Tasmota Control appky",
+          "note": "odhad; odhad; pozor, značka v titulku je riziko."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: IoT MQTT Panel má na Google Play 500k+ instalací a iOS verzi (pokud existuje) s mnohem menší penetrací; MQTT je standard Home Assistant/Zigbee2MQTT komunity. Saturace 'mqtt' odhadem vyšší.",
+      "competitors": [
+        {
+          "name": "IoT MQTT Panel",
+          "url": "",
+          "role": "niche",
+          "note": "Lídr MQTT dashboardů na Androidu, na iOS slabší."
+        },
+        {
+          "name": "MQTTool",
+          "url": "",
+          "role": "niche",
+          "note": "Jednoduchý iOS MQTT klient pro ladění, bez dashboardu."
+        },
+        {
+          "name": "Blynk IoT",
+          "url": "",
+          "role": "parent",
+          "note": "Cloudová IoT platforma s předplatným."
+        },
+        {
+          "name": "Home Assistant",
+          "url": "",
+          "role": "parent",
+          "note": "Oficiální companion, pro uživatele HA často stačí."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Home Assistant companion appka je zdarma a pokryje většinu domácích uživatelů.",
+        "MQTT klientů je víc, než si myslíme; open-source MQTT Analyzer je zdarma.",
+        "iOS neumí trvalé spojení na pozadí – notifikace z MQTT nepůjdou bez serveru."
+      ],
+      "killer_risk": "Home Assistant pohltí cílovku – kdo má MQTT, má často i HA a dashboard tam.",
+      "mitigation": "Cílit na makery bez HA (ESP32 projekty, školy), rychlé widgety a Shortcuts jako diferenciátor, jednorázový lifetime tier.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 8,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-06",
+      "name": "Pi Finder & SSH Companion",
+      "tagline": "Najdi svůj Raspberry Pi v síti, připoj se jedním klepnutím a měj pinout i příkazy po ruce.",
+      "pitch": "Klasický problém začátečníka s Raspberry Pi: nahrál headless systém a neví, jakou IP adresu Pi dostal. Fing najde zařízení obecně, Termius umí SSH, ale nikdo neřeší celý workflow 'najdi Pi → připoj se → spusť běžné příkazy'. Uděláme Pi companion: sken sítě s rozpoznáním Raspberry Pi (MAC OUI, mDNS raspberrypi.local), SSH terminál s tlačítky na časté příkazy (update, teplota, reboot, GPIO), a pinout offline. Klíčová slova 'raspberry pi' a 'pi finder' na iOS nemá nikdo s dobrou appkou.",
+      "niche": "Raspberry Pi začátečníci a homelabisté. Obecné SSH klienty (Termius, Blink) cílí na profesionální adminy, síťové skenery na IT.",
+      "parent_market": "SSH klienty (Termius, Blink Shell, Prompt) a síťové skenery (Fing, Network Analyzer).",
+      "target_user": "Začátečníci s Raspberry Pi, studenti, domácí homelabisté, učitelé informatiky.",
+      "features": [
+        "Sken LAN s detekcí Raspberry Pi (OUI, mDNS, otevřený port 22)",
+        "SSH terminál (klíče v Keychainu) a SFTP prohlížeč",
+        "Tlačítka rychlých příkazů: teplota, disk, update, reboot, vlastní",
+        "GPIO pinout a headless setup checklist",
+        "Stav více Pi na jedné obrazovce"
+      ],
+      "offline": "full",
+      "offline_note": "Vše v lokální síti uživatele; SSH knihovna na zařízení, žádný server.",
+      "monetization": "Zdarma sken + 1 zařízení; Pro 9,99 USD jednorázově (≈ 230 CZK) nebo 1,99 USD/měs.",
+      "revenue_math": "Ideál: 2 500 stažení/měs ('raspberry pi', 'pi finder', 'raspberry ssh', 'find raspberry pi') × 3 % = 75 × 9,99 × 0,85 × 23 ≈ 14 600 CZK čistého/měs.",
+      "revenue_czk_ideal": 14600,
+      "keywords": [
+        {
+          "kw": "raspberry pi",
+          "saturation": 4,
+          "competitor": "různé Pi appky",
+          "note": "odhad; hint pravděpodobně ano; značka Raspberry Pi v titulku = trademark riziko."
+        },
+        {
+          "kw": "pi finder",
+          "saturation": 1,
+          "competitor": "Adafruit Pi Finder (desktop)",
+          "note": "odhad; odhad volné na iOS."
+        },
+        {
+          "kw": "find ip address",
+          "saturation": 5,
+          "competitor": "Fing",
+          "note": "odhad; obecné, obsazené – jen doplňkově."
+        },
+        {
+          "kw": "ssh client",
+          "saturation": 7,
+          "competitor": "Termius",
+          "note": "odhad; SATUROVANÉ – jen jako důkaz parent trhu."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: Raspberry Pi prodalo 60M+ kusů, 'find raspberry pi ip' je častý webový dotaz; Adafruit Pi Finder existoval pro desktop. iOS saturace je odhad.",
+      "competitors": [
+        {
+          "name": "Termius",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr SSH na iOS, předplatné, cílí na profíky."
+        },
+        {
+          "name": "Fing",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr síťových skenerů, nerozpozná Pi specificky pro workflow."
+        },
+        {
+          "name": "RaspController",
+          "url": "",
+          "role": "niche",
+          "note": "Populární Pi ovladač na Androidu; iOS verze podle znalosti chybí/je slabá."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "'Android gap': RaspController (Android, 1M+) nemá plnohodnotný iOS ekvivalent; přineseme ho lokalizovaný.",
+      "devils_advocate": [
+        "Raspberry Pi Imager už umí přednastavit hostname/SSH a Wi-Fi, takže 'hledání Pi' řeší méně lidí.",
+        "Ochranná známka 'Raspberry Pi' – Apple může odmítnout název, musíme použít 'for Raspberry Pi' opatrně.",
+        "iOS 14+ Local Network permission a omezení ARP ztěžují spolehlivý sken sítě.",
+        "Termius je zdarma pro základní SSH a má silnou značku."
+      ],
+      "killer_risk": "Technické omezení skenování LAN na iOS (bez přístupu k ARP tabulce) sníží spolehlivost hlavní funkce.",
+      "mitigation": "Kombinace mDNS, TCP portu 22 a ping sweep; fallback ruční IP; hlavní hodnota přesunout na 'Pi dashboard' přes SSH.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-07",
+      "name": "App Store Screenshot Maker",
+      "tagline": "Hotové App Store screenshoty s rámečkem, textem a pozadím přímo na iPadu – v 50 jazycích.",
+      "pitch": "Každý indie vývojář řeší před vydáním screenshoty: rámečky zařízení, titulky, přesné rozměry pro 6,9\" a 13\" iPad a lokalizované texty. Dnes to dělá ve Figmě, webových službách s předplatným nebo Mac appkách jako Rotato. Uděláme nativní iPad/Mac nástroj s přesnými Apple rozměry, šablonami, rámečky a hromadnou lokalizací titulků (import CSV/xcstrings, on-device překlad). Lapnito to samo potřebuje – dogfooding a přímá znalost bolesti.",
+      "niche": "Offline tvorba App Store screenshotů na iPadu/Macu. Velké služby jsou webové SaaS s předplatným a účtem; nativní appky jsou málo a neumí lokalizaci do 40+ jazyků.",
+      "parent_market": "Nástroje pro marketing appek – Rotato, Previewed, AppLaunchpad, Screenshots Pro (web, předplatné 10–30 USD/měs).",
+      "target_user": "Indie iOS/Android vývojáři, malá studia, ASO freelanceři.",
+      "features": [
+        "Přesné rozměry pro všechny sloty App Store a Google Play",
+        "Rámečky zařízení, gradienty, titulky, 'split' panorama přes dva sloty",
+        "Hromadná lokalizace titulků (CSV/xcstrings import, Apple Translation on-device)",
+        "Export ZIP podle jazyků a zařízení",
+        "Šablony a projekty v iCloudu"
+      ],
+      "offline": "full",
+      "offline_note": "Render i překlad (Translation framework) na zařízení; žádné účty ani servery.",
+      "monetization": "Zdarma s vodoznakem; Pro 7,99 USD/měs (≈ 184 CZK) nebo 49,99 USD/rok nebo 79,99 USD lifetime.",
+      "revenue_math": "Ideál: 1 500 stažení/měs ('app screenshot', 'screenshot maker', 'app mockup', 'app store screenshots') × 4 % = 60 × průměr 40 USD (mix) × 0,85 × 23 ≈ 47 000 CZK čistého/měs; realistický ideál 20 000 CZK.",
+      "revenue_czk_ideal": 20000,
+      "keywords": [
+        {
+          "kw": "app store screenshots",
+          "saturation": 3,
+          "competitor": "Screenshot Maker appky",
+          "note": "odhad; odhad; několik novějších appek 2024–25."
+        },
+        {
+          "kw": "app mockup",
+          "saturation": 6,
+          "competitor": "Mockup appky",
+          "note": "odhad; obsazenější, mnoho mockup generátorů."
+        },
+        {
+          "kw": "screenshot maker",
+          "saturation": 5,
+          "competitor": "různé",
+          "note": "odhad; smíšený záměr (i obecné screenshoty)."
+        },
+        {
+          "kw": "device frame",
+          "saturation": 3,
+          "competitor": "Frame appky",
+          "note": "odhad; odhad středně."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: webové SaaS (AppLaunchpad, Previewed, Screenshots Pro) prodávají předplatné, Rotato je placený Mac nástroj; počet indie vývojářů roste s AI kódováním ('vibe coding' vlna 2025–26 = víc nových appek).",
+      "competitors": [
+        {
+          "name": "Rotato",
+          "url": "",
+          "role": "parent",
+          "note": "Placený Mac nástroj na 3D mockupy."
+        },
+        {
+          "name": "Previewed",
+          "url": "",
+          "role": "parent",
+          "note": "Web/Mac mockupy, předplatné."
+        },
+        {
+          "name": "AppLaunchpad",
+          "url": "",
+          "role": "parent",
+          "note": "Webový screenshot builder, předplatné."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Apple nebo Xcode může přidat generátor screenshotů (Xcode Cloud/Simulator) – Sherlock.",
+        "Vývojáři to dělají na Macu ve Figmě/webu, ne na iPadu – iPad verze může mít malou poptávku.",
+        "Mnoho nových AI 'screenshot' appek v letech 2025–26 – rostoucí saturace.",
+        "Rámečky zařízení Apple – licenční podmínky Apple Design Resources je nutné dodržet."
+      ],
+      "killer_risk": "Rychle rostoucí konkurence webových nástrojů a AI generátorů, které jsou 'dost dobré' zdarma.",
+      "mitigation": "Diferenciace: offline + hromadná lokalizace do 50 jazyků + Mac verze; sdílet workflow Lapnita (vlastní skill) a ASO v dev komunitě.",
+      "build_weeks": 7,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 4,
+        "monetization": 8,
+        "build_ease": 4,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-08",
+      "name": "Linux Commands Offline",
+      "tagline": "Příklady k 5 000 terminálovým příkazům offline, ve tvém jazyce, s vysvětlením celé řádky.",
+      "pitch": "Studenti Linuxu, začínající admini a každý, kdo pracuje s Raspberry Pi nebo serverem, potřebuje rychle vědět 'jak zabalit složku tar' nebo co dělá 'find . -mtime +7 -delete'. Komunitní projekt tldr-pages má tisíce stručných příkladů pod licencí CC-BY a překlady do mnoha jazyků, ale na iOS nemá kvalitní offline klienta v rodném jazyce. Postavíme rychlou referenci s vyhledáváním, oblíbenými a funkcí 'vysvětli příkaz' – rozložení řádku na přepínače z přibalených dat plus Apple Foundation Models na zařízení.",
+      "niche": "Lokalizovaná offline reference příkazů. Anglické 'Linux commands' appky existují, ale v japonštině, němčině, portugalštině nebo češtině je obsazenost minimální.",
+      "parent_market": "Vývojářské reference a výuka Linuxu – Linux Command Library, Dash (Kapeli), DevDocs; kurzy Linuxu (Udemy, KodeKloud).",
+      "target_user": "Studenti IT, začínající sysadmini, uživatelé Raspberry Pi, lidé připravující se na Linux certifikace.",
+      "features": [
+        "5 000+ příkazů z tldr-pages (CC-BY 4.0) s příklady, v lokálních jazycích",
+        "'Vysvětli příkaz': rozbor vložené řádky na části (offline data + Foundation Models)",
+        "Kategorie: soubory, síť, procesy, git, docker",
+        "Oblíbené, historie, widget 'příkaz dne'",
+        "Kopírování do schránky, iPad klávesnicové zkratky"
+      ],
+      "offline": "full",
+      "offline_note": "Databáze tldr přibalená; Foundation Models běží na zařízení (iPhone 15 Pro+), jinak pravidlové vysvětlení.",
+      "monetization": "Zdarma reference; Pro (vysvětlení příkazů, widgety, cheat sheety) 4,99 USD jednorázově nebo 9,99 USD/rok.",
+      "revenue_math": "Ideál: 3 500 stažení/měs ve 50 jazycích ('linux commands', 'terminal commands', 'bash' + lokální ekvivalenty) × 3 % = 105 × 4,99 × 0,85 × 23 ≈ 10 200 CZK čistého/měs.",
+      "revenue_czk_ideal": 10200,
+      "keywords": [
+        {
+          "kw": "linux commands",
+          "saturation": 5,
+          "competitor": "Linux Command Library",
+          "note": "odhad; anglicky obsazenější, hint pravděpodobně ano."
+        },
+        {
+          "kw": "terminal commands",
+          "saturation": 3,
+          "competitor": "různé cheat sheet appky",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "bash commands",
+          "saturation": 3,
+          "competitor": "Bash reference appky",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "linux befehle",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad; německý ekvivalent – odhad téměř volné."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: Linux Command Library má na Androidu 1M+ instalací; tldr-pages má 50k+ hvězd na GitHubu a překlady. Lokální jazykové verze v App Store podle znalosti chybí.",
+      "competitors": [
+        {
+          "name": "Linux Command Library",
+          "url": "",
+          "role": "niche",
+          "note": "Nejznámější referenční appka, anglicky, zdarma."
+        },
+        {
+          "name": "Dash",
+          "url": "",
+          "role": "parent",
+          "note": "Kapeli, offline dokumentace (iOS verze open-source, málo udržovaná)."
+        },
+        {
+          "name": "tldr pages",
+          "url": "",
+          "role": "niche",
+          "note": "Komunitní CLI/web projekt – zdroj dat pod CC-BY."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Anglické reference nejsou lokalizované; tldr má překlady, které nikdo na iOS nenabízí – launch v 50 jazycích (DE, JP, BR, ES, CZ…).",
+      "devils_advocate": [
+        "ChatGPT a vestavěné AI odpoví na 'jak zabalit tar' okamžitě a zdarma – Sherlock AI asistentů.",
+        "Referenční appky mají nízkou ochotu platit a vysoký odliv.",
+        "Guideline 4.2 (minimum functionality) – 'jen zabalený web obsah' může být odmítnut.",
+        "Překlady tldr pokrývají jen část stránek; zbytek zůstane anglicky."
+      ],
+      "killer_risk": "AI asistenti (ChatGPT, Apple Intelligence) nahradí potřebu referenční appky.",
+      "mitigation": "Offline a rychlost jako USP, zobrazení atribuce CC-BY, funkce 'vysvětli příkaz' offline, cílit na lokální jazyky a studenty certifikací.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-09",
+      "name": "GRBL Sender for CNC & Laser",
+      "tagline": "Ovládej svou CNC frézku nebo laser s GRBL z iPadu – jog, nulování, odeslání G-kódu.",
+      "pitch": "Levné CNC frézky a diodové lasery (Sainsmart Genmitsu, Atomstack, Ortur, Sculpfun) běží na firmwaru GRBL a ovládají se z Windows programů LaserGRBL, Candle nebo gSender. Značkové iOS appky (LaserPecker, Genmitsu, AlgoLaser) umí jen svoje stroje. Uděláme značkově neutrální GRBL sender pro iPad přes Wi-Fi (ESP32 GRBL/FluidNC) a BLE: jog, nulování, náhled dráhy, spuštění G-kódu ze souboru. Dílna bez notebooku je pro makery silný argument.",
+      "niche": "Brand-neutral ovládání GRBL strojů z iOS. Výrobci dělají appky jen pro vlastní hardware, desktopové sendery iOS ignorují.",
+      "parent_market": "Laser/CNC software – LightBurn (placený desktop lídr), LaserGRBL, gSender; značkové appky LaserPecker, Genmitsu, AlgoLaser.",
+      "target_user": "Hobby CNC a laser makeři, malé dílny a Etsy prodejci gravírovaných výrobků.",
+      "features": [
+        "Připojení k GRBL/FluidNC přes Wi-Fi (telnet/WebSocket) a BLE",
+        "Jog ovládání, nulování os, homing, feed/spindle override",
+        "Náhled G-kódu (2D dráha) a odhad času",
+        "Odeslání souboru z Files s pozastavením/obnovením",
+        "Makra a konzole pro GRBL $ nastavení"
+      ],
+      "offline": "full",
+      "offline_note": "Komunikace přímo se strojem uživatele v LAN/BLE; žádný cloud.",
+      "monetization": "Zdarma jog + konzole; Pro (odesílání souborů, náhled, makra) 14,99 USD jednorázově (≈ 345 CZK).",
+      "revenue_math": "Ideál: 1 200 stažení/měs ('grbl', 'cnc controller', 'laser engraver', 'g-code sender') × 5 % = 60 × 14,99 × 0,85 × 23 ≈ 17 600 CZK čistého/měs.",
+      "revenue_czk_ideal": 17600,
+      "keywords": [
+        {
+          "kw": "grbl",
+          "saturation": 1,
+          "competitor": "žádná silná",
+          "note": "odhad; technický termín, malý objem, přesný záměr."
+        },
+        {
+          "kw": "cnc controller",
+          "saturation": 3,
+          "competitor": "Genmitsu",
+          "note": "odhad; odhad; značkové appky."
+        },
+        {
+          "kw": "laser engraver",
+          "saturation": 5,
+          "competitor": "LaserPecker",
+          "note": "odhad; z evidence graphics-design: výsledky převážně značkové companion appky."
+        },
+        {
+          "kw": "gcode sender",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad; odhad volné."
+        }
+      ],
+      "demand_evidence": "Částečně ověřeno: _partial/graphics-design_evidence.txt (hledání 'laser engraving photo dithering') ukázalo, že laser appky v App Store jsou převážně značkové (LaserPecker, Genmitsu, AlgoLaser, DJLaser) a generických nástrojů je málo. Poptávka po GRBL senderu na iOS je odhad (LaserGRBL/gSender jsou populární na desktopu).",
+      "competitors": [
+        {
+          "name": "LaserPecker Design Space",
+          "url": "https://apps.apple.com/us/app/laserpecker-design-space/id6445970960",
+          "role": "niche",
+          "note": "Značková appka, jen pro LaserPecker."
+        },
+        {
+          "name": "Genmitsu",
+          "url": "https://apps.apple.com/us/app/genmitsu/id6478152985",
+          "role": "niche",
+          "note": "Sainsmart značková appka pro vlastní CNC/lasery."
+        },
+        {
+          "name": "AlgoLaser",
+          "url": "https://apps.apple.com/us/app/algolaser/id6450949534",
+          "role": "niche",
+          "note": "Značková laser appka."
+        },
+        {
+          "name": "LightBurn",
+          "url": "",
+          "role": "parent",
+          "note": "Placený desktopový lídr laser softwaru (~60–120 USD)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Většina levných GRBL strojů má jen USB – bez Wi-Fi/BLE modulu iOS appka nebude fungovat (iOS neumí USB serial).",
+        "Bezpečnost: chyba při odesílání může zničit materiál nebo stroj, laser je nebezpečný – odpovědnost a 1★.",
+        "Výrobci přidávají Wi-Fi a vlastní appky; LightBurn může vydat mobilní companion."
+      ],
+      "killer_risk": "Kompatibilita: velká část strojů je jen USB, takže adresovatelný trh na iOS je malý.",
+      "mitigation": "Jasně komunikovat požadavky (FluidNC/ESP32 Wi-Fi, BLE moduly), seznam ověřených strojů, iPad DriverKit USB jako budoucí rozšíření.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 7,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-10",
+      "name": "MicroPython IDE for iPad",
+      "tagline": "Piš a spouštěj MicroPython na ESP32 nebo Pico W bezdrátově z iPadu.",
+      "pitch": "Školy a makeři používají MicroPython na ESP32 a Raspberry Pi Pico W, ale editory (Thonny, Arduino Lab for MicroPython) běží jen na počítači přes USB. Na iPadech, které mají školy ve velkém, dnes MicroPython prakticky nejde. Uděláme editor se zvýrazněním syntaxe, REPL přes WebREPL (Wi-Fi) a BLE, nahrávání souborů na desku a šablony projektů. Offline, bez účtů, pro učitele ideální.",
+      "niche": "MicroPython na iPadu. Pythonista/Pyto spouští Python lokálně, nikoli na mikrokontroléru; Thonny je desktop.",
+      "parent_market": "Mobilní IDE a Python na iOS – Pythonista, Pyto, Juno; desktopové Thonny a Arduino Lab for MicroPython.",
+      "target_user": "Učitelé informatiky/robotiky se školními iPady, studenti, makeři s ESP32/Pico W.",
+      "features": [
+        "Editor MicroPythonu se zvýrazněním a doplňováním",
+        "REPL přes WebREPL (Wi-Fi) a BLE UART",
+        "Správce souborů na desce: nahrát, stáhnout, spustit main.py",
+        "Šablony projektů: LED, senzor, Wi-Fi, servo",
+        "Offline dokumentace machine modulu"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně mezi iPadem a deskou; žádný server.",
+      "monetization": "Jednorázově 9,99 USD (≈ 230 CZK), školní licence přes Apple School Manager (Volume Purchase, 50 % sleva).",
+      "revenue_math": "Ideál: 1 000 stažení/měs ('micropython', 'esp32', 'python for microcontroller') × placená appka konverze na stránce ~6 % = 60 × 9,99 × 0,85 × 23 ≈ 11 700 CZK čistého/měs (+ školní nákupy).",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "micropython",
+          "saturation": 1,
+          "competitor": "žádná silná",
+          "note": "odhad; odhad téměř volné; hint nejistý."
+        },
+        {
+          "kw": "esp32",
+          "saturation": 3,
+          "competitor": "značkové appky Espressif",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "python ide",
+          "saturation": 6,
+          "competitor": "Pythonista",
+          "note": "odhad; obsazené – jen doplňkově."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: MicroPython je oficiální jazyk pro Pi Pico (miliony prodaných kusů), školy v UK/DE používají iPady; Thonny má miliony stažení. Hint 'micropython' v App Store nejistý.",
+      "competitors": [
+        {
+          "name": "Pythonista",
+          "url": "",
+          "role": "parent",
+          "note": "Silné Python IDE na iOS, ne pro mikrokontroléry."
+        },
+        {
+          "name": "Pyto",
+          "url": "",
+          "role": "parent",
+          "note": "Python IDE na iOS."
+        },
+        {
+          "name": "Thonny",
+          "url": "",
+          "role": "niche",
+          "note": "Desktopový standard pro MicroPython, na iOS není."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "WebREPL je v MicroPythonu defaultně vypnutý a jeho nastavení vyžaduje USB – začátečník se k němu nedostane.",
+        "Pi Pico (ne W) nemá bezdrát vůbec – velká část publika nebude kompatibilní.",
+        "Školy nakupují pomalu a vyžadují podporu; malý objem vyhledávání."
+      ],
+      "killer_risk": "Bariéra prvotního nastavení (WebREPL/BLE firmware přes USB) zabije onboarding.",
+      "mitigation": "Průvodce nastavením, připravený firmware s BLE REPL, spolupráce s učiteli; Mac verze s USB podporou.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-11",
+      "name": "Regex Tester & Explainer",
+      "tagline": "Otestuj a pochop regulární výraz v češtině, japonštině či němčině – offline.",
+      "pitch": "Regulární výrazy jsou noční můra i zkušených vývojářů; regex101 a RegExr jsou skvělé, ale jen web a jen anglicky. Na iOS je pár malých testerů bez vysvětlení. Uděláme tester se zvýrazněním shod, vysvětlením každé části výrazu v rodném jazyce uživatele, knihovnou běžných vzorů (e-mail, PSČ, IBAN pro 50 zemí) a Shortcuts akcí 'Regex replace'. Lokalizace je naše zbraň – v japonštině nebo portugalštině tu nikdo nekonkuruje.",
+      "niche": "Lokalizovaný regex nástroj na iOS. Velcí hráči jsou webové, anglické, a mobilní nikdo neřeší.",
+      "parent_market": "Vývojářské utility – regex101, RegExr (web), Expressions (Mac), RegexBuddy (placený Windows).",
+      "target_user": "Vývojáři, testeři, datoví analytici, studenti, power-useři Shortcuts.",
+      "features": [
+        "Živé zvýraznění shod a skupin, flavours (ICU/JS/PCRE)",
+        "Vysvětlení výrazu po částech v 50 jazycích",
+        "Knihovna vzorů včetně lokálních formátů (PSČ, telefon, IBAN)",
+        "Shortcuts akce: match, replace, extract",
+        "Cheat sheet a mini trenažér"
+      ],
+      "offline": "full",
+      "offline_note": "Regex engine (NSRegularExpression/ICU) a vysvětlovač běží lokálně.",
+      "monetization": "Zdarma tester; Pro (Shortcuts, knihovna, flavours) 4,99 USD jednorázově (≈ 115 CZK).",
+      "revenue_math": "Ideál: 3 000 stažení/měs ('regex', 'regular expression' + lokální výrazy jako 正規表現) × 4 % = 120 × 4,99 × 0,85 × 23 ≈ 11 700 CZK čistého/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "regex",
+          "saturation": 4,
+          "competitor": "Regex Tester appky",
+          "note": "odhad; hint pravděpodobně ano; pár slabších appek."
+        },
+        {
+          "kw": "regular expression",
+          "saturation": 3,
+          "competitor": "RegEx Lab",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "正規表現",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad; japonský ekvivalent – odhad volné."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: regex101 má desítky milionů návštěv ročně; na iOS malá konkurence. Japonská poptávka ('正規表現 チェッカー') je silná na webu.",
+      "competitors": [
+        {
+          "name": "regex101",
+          "url": "",
+          "role": "parent",
+          "note": "Webový lídr, anglicky."
+        },
+        {
+          "name": "Expressions",
+          "url": "",
+          "role": "niche",
+          "note": "Placená Mac appka na regex."
+        },
+        {
+          "name": "RegexBuddy",
+          "url": "",
+          "role": "parent",
+          "note": "Placený Windows nástroj – vývojáři za regex platí."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Regex nástroje jsou anglické; lokalizované vysvětlení (JP, DE, BR, KR) je mezera – vývojáři v Asii preferují rodný jazyk.",
+      "devils_advocate": [
+        "Na telefonu regex skoro nikdo nepíše – iPad/Mac jsou nutnost.",
+        "AI asistenti vysvětlí regex zdarma a rychle.",
+        "Nízká cena a jednorázová platba = strop výnosu."
+      ],
+      "killer_risk": "Malá poptávka na mobilu – vývojáři regex testují v prohlížeči u počítače.",
+      "mitigation": "Mac verze + Shortcuts akce (reálné mobilní použití), lokalizované ASO, bundle s utility belt appkou.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-12",
+      "name": "DevBelt: JSON, JWT, Base64",
+      "tagline": "30 vývojářských utilit v kapse: JSON formát, JWT, Base64, hash, UUID, časy – vše offline.",
+      "pitch": "Vývojáři denně vkládají citlivé tokeny a JSON do náhodných webů 'jwt decoder' nebo 'json formatter' – bezpečnostní riziko. Na Macu to řeší DevUtils a DevToys, na iPadu a iPhonu chybí kvalitní offline sada. Uděláme 'švýcarský nůž': JSON formatter/validátor, JWT dekodér, Base64/URL encode, hashe, UUID, převod Unix času, cron vysvětlovač, barvy – vše lokálně, se share extension a Shortcuts. Soukromí ('nic neodchází ze zařízení') je hlavní prodejní argument.",
+      "niche": "Offline dev utility belt pro iOS/iPadOS. Mac má DevUtils/DevToys, iOS jen roztříštěné jednoúčelové appky.",
+      "parent_market": "Vývojářské utility – DevUtils (placená Mac appka), DevToys, Boop, Jayson (iOS JSON).",
+      "target_user": "Vývojáři na iPadu, DevOps na pohotovosti s telefonem, QA testeři.",
+      "features": [
+        "JSON formatter/validátor/stromový pohled, JSON ↔ YAML",
+        "JWT dekodér, Base64/URL/HTML encode, hashe (MD5/SHA)",
+        "Unix timestamp, UUID/ULID, cron vysvětlovač",
+        "Automatická detekce typu obsahu ze schránky",
+        "Share extension a Shortcuts akce pro každý nástroj"
+      ],
+      "offline": "full",
+      "offline_note": "Vše výpočetně lokálně, bez síťového přístupu.",
+      "monetization": "Základní nástroje zdarma; Pro 2,99 USD/měs nebo 19,99 USD/rok nebo 39,99 USD lifetime.",
+      "revenue_math": "Ideál: 2 500 stažení/měs ('json formatter', 'jwt decoder', 'base64', 'developer tools', 'dev utils') × 3 % = 75 × průměr 22 USD × 0,85 × 23 ≈ 32 000 CZK hrubý ideál; konzervativně 12 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "json formatter",
+          "saturation": 5,
+          "competitor": "Jayson",
+          "note": "odhad; odhad středně obsazené; Jayson silný."
+        },
+        {
+          "kw": "jwt decoder",
+          "saturation": 2,
+          "competitor": "malé appky",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "base64",
+          "saturation": 5,
+          "competitor": "Base64 appky",
+          "note": "odhad; mnoho jednoúčelových appek."
+        },
+        {
+          "kw": "developer tools",
+          "saturation": 5,
+          "competitor": "různé",
+          "note": "odhad; obecné."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: DevUtils a DevToys mají statisíce uživatelů na desktopu; jwt.io a jsonformatter.org mají miliony návštěv. iOS saturace je odhad.",
+      "competitors": [
+        {
+          "name": "DevUtils",
+          "url": "",
+          "role": "parent",
+          "note": "Placená Mac sada utilit – model, který kopírujeme pro iPad."
+        },
+        {
+          "name": "Jayson",
+          "url": "",
+          "role": "niche",
+          "note": "Silný iOS JSON prohlížeč se Shortcuts."
+        },
+        {
+          "name": "DevToys",
+          "url": "",
+          "role": "parent",
+          "note": "Open-source sada pro Windows/Mac."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Jednoúčelových utilit je na iOS hodně, 'developer tools' je zahlcené.",
+        "Guideline 4.3: sada utilit vypadá jako mnoho klonů – riziko odmítnutí.",
+        "Vývojáři tyto nástroje používají na počítači, kde mají zdarma alternativy."
+      ],
+      "killer_risk": "Nízká diferenciace – uživatel si nevšimne rozdílu oproti deseti dalším 'dev tools' appkám.",
+      "mitigation": "Chytrá detekce ze schránky, Shortcuts, soukromí a Mac verze; cílit na long-tail klíčová slova (jwt decoder, cron) místo head termů.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-13",
+      "name": "cURL Runner & API Client",
+      "tagline": "Vlož cURL příkaz z dokumentace a spusť ho na iPhonu – s hezkou odpovědí a historií.",
+      "pitch": "Dokumentace API (Stripe, OpenAI, GitHub) dávají příklady jako cURL příkazy; na iPhonu je ale nemáš kde spustit bez terminálu. HTTPBot je dobrý obecný klient, ale bez rychlé cesty 'vlož cURL → spusť'. Uděláme API klienta postaveného kolem cURL: vlož/sdílej příkaz, parsuj do formuláře, spusť, zobraz JSON strom, a vygeneruj kód pro Swift/Dart/Python. Proměnné prostředí a tajné klíče v Keychainu.",
+      "niche": "cURL-first HTTP klient na iOS. Postman a Insomnia na iOS nejsou; HTTPBot je obecný.",
+      "parent_market": "HTTP/API klienty – Postman (desktop, 30M+ uživatelů), Insomnia, HTTPBot a Proxyman na iOS.",
+      "target_user": "Backend a mobilní vývojáři na cestách, DevOps, studenti API.",
+      "features": [
+        "Import cURL ze schránky/share sheetu a export zpět",
+        "Formulář requestu, proměnné prostředí, tajemství v Keychainu",
+        "JSON strom, hlavičky, časování, historie",
+        "Generování kódu: Swift, Dart, Python, JS",
+        "Kolekce v iCloudu, Shortcuts akce 'Run request'"
+      ],
+      "offline": "mostly",
+      "offline_note": "Aplikace volá jen API zadané uživatelem; nic nejde přes náš server. Sestavování, historie a codegen offline.",
+      "monetization": "Zdarma 20 requestů v historii; Pro 14,99 USD/rok (≈ 293 CZK) nebo 24,99 USD lifetime.",
+      "revenue_math": "Ideál: 1 500 stažení/měs ('curl', 'api client', 'rest client', 'http request') × 4 % = 60 × průměr 18 USD × 0,85 × 23 ≈ 21 000 CZK hrubě; konzervativní ideál 12 500 CZK čistého/měs.",
+      "revenue_czk_ideal": 12500,
+      "keywords": [
+        {
+          "kw": "curl",
+          "saturation": 2,
+          "competitor": "malé appky",
+          "note": "odhad; odhad; hint pravděpodobně ano (i jiné významy slova)."
+        },
+        {
+          "kw": "rest client",
+          "saturation": 4,
+          "competitor": "HTTPBot",
+          "note": "odhad; odhad středně."
+        },
+        {
+          "kw": "api tester",
+          "saturation": 5,
+          "competitor": "API Tester",
+          "note": "odhad; obsazenější."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: Postman má desítky milionů uživatelů a iOS appku nemá; HTTPBot a několik menších klientů na iOS dokládá placenou poptávku.",
+      "competitors": [
+        {
+          "name": "HTTPBot",
+          "url": "",
+          "role": "niche",
+          "note": "Nejlepší iOS API klient, předplatné."
+        },
+        {
+          "name": "Postman",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr API klientů, bez iOS appky."
+        },
+        {
+          "name": "Proxyman",
+          "url": "",
+          "role": "parent",
+          "note": "Debug proxy iOS/Mac."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "HTTPBot může přidat cURL import za týden (možná už ho má).",
+        "Malá mobilní poptávka – API se testují u počítače.",
+        "Slovo 'curl' v App Store přitahuje i vlasy/kadeřnictví, ASO šum."
+      ],
+      "killer_risk": "HTTPBot a další klienti tuto funkci už mají; náš úhel nebude dost odlišný.",
+      "mitigation": "Share extension z Safari (označený cURL → spustit), codegen pro Flutter/Dart jako nika, Mac verze.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 7,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-14",
+      "name": "String Catalog Translator",
+      "tagline": "Otevři .xcstrings nebo .arb, přelož do 40 jazyků on-device a pošli zpět vývojáři.",
+      "pitch": "Lokalizace je největší ASO páka malých studií, ale editace Xcode String Catalogů (.xcstrings) nebo Flutter .arb souborů vyžaduje Mac s Xcode nebo drahé cloudové platformy (Lokalise, Crowdin). Uděláme iPad/Mac editor lokalizačních souborů s přehledem chybějících překladů, on-device překladem přes Apple Translation framework a kontrolou délky a placeholderů. Překladatel nebo dobrovolník nepotřebuje Xcode ani účet. Lapnito lokalizuje do 50 jazyků, takže přesně známe bolest.",
+      "niche": "Lokalizační editor pro indie vývojáře a jejich překladatele. Cloud TMS míří na firmy s předplatným stovek USD, Xcode je těžký pro nevývojáře.",
+      "parent_market": "Lokalizační platformy – Lokalise, Crowdin, Phrase (SaaS); Mac nástroje pro .strings.",
+      "target_user": "Indie iOS/Flutter vývojáři, dobrovolní překladatelé open-source appek, malé agentury.",
+      "features": [
+        "Otevření .xcstrings, .strings, .arb, Android strings.xml",
+        "Mřížka jazyků s chybějícími/zastaralými překlady",
+        "On-device strojový překlad (Translation framework) po řádcích i hromadně",
+        "Kontrola placeholderů, délky a plurálů",
+        "Export zpět do stejného formátu přes Files"
+      ],
+      "offline": "full",
+      "offline_note": "Parsování a překlad na zařízení (Apple Translation, stažené jazykové balíčky).",
+      "monetization": "Zdarma do 100 řetězců; Pro 29,99 USD jednorázově (≈ 690 CZK) nebo 4,99 USD/měs.",
+      "revenue_math": "Ideál: 600 stažení/měs ('xcstrings', 'localization', 'translate app strings', 'arb editor') × 6 % = 36 × 29,99 × 0,85 × 23 ≈ 21 100 CZK; realistický ideál 12 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "localization editor",
+          "saturation": 2,
+          "competitor": "malé Mac appky",
+          "note": "odhad; odhad; hint nejistý."
+        },
+        {
+          "kw": "xcstrings",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad; velmi úzké, hint nejistý."
+        },
+        {
+          "kw": "app localization",
+          "saturation": 3,
+          "competitor": "Lokalise",
+          "note": "odhad; odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: String Catalogs jsou od Xcode 15 standard, Lokalise/Crowdin vydělávají stovky milionů USD; indie vývojáři v komunitách (r/iOSProgramming) běžně řeší levnou lokalizaci. Objem App Store hledání je velmi nejistý.",
+      "competitors": [
+        {
+          "name": "Lokalise",
+          "url": "",
+          "role": "parent",
+          "note": "Cloud TMS, předplatné pro firmy."
+        },
+        {
+          "name": "Crowdin",
+          "url": "",
+          "role": "parent",
+          "note": "Cloud TMS, oblíbený u open-source."
+        },
+        {
+          "name": "Xcode",
+          "url": "",
+          "role": "parent",
+          "note": "Apple – String Catalog editor zdarma (Sherlock riziko)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Xcode 26 umí generovat komentáře a může přidat on-device překlad – Sherlock.",
+        "Objem vyhledávání v App Store je velmi malý, vývojáři hledají na webu.",
+        "Kvalita strojového překladu z Translation frameworku je pro UI texty nevyrovnaná."
+      ],
+      "killer_risk": "Apple přidá automatický překlad přímo do Xcode String Catalog editoru.",
+      "mitigation": "Podpora více formátů (Flutter .arb, Android), cílit na nevývojáře-překladatele, Mac verze jako hlavní produkt.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 7,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-15",
+      "name": "SSL Certificate Expiry Watch",
+      "tagline": "Hlídej expiraci SSL certifikátů a domén svých webů – bez účtu a bez cloudu.",
+      "pitch": "Vypršelý SSL certifikát shodí web i API a stává se i velkým firmám; freelanceři a indie vývojáři spravují desítky domén klientů bez monitoringu. Monitoring služby (UptimeRobot) vyžadují účet a předplatné. Uděláme appku, která při otevření a přes background refresh zkontroluje certifikáty tvých domén, spočítá dny do expirace a naplánuje lokální notifikace dopředu – takže upozornění přijde i bez serveru. K tomu inspektor certifikátového řetězce a widget.",
+      "niche": "Lehký osobní monitoring certifikátů. Velké monitoringy řeší uptime s účty a servery; osobní 'připomínač expirace' nikdo nedělá.",
+      "parent_market": "Monitoring webů – UptimeRobot, Pingdom, Better Stack (SaaS předplatné); SSL Labs.",
+      "target_user": "Freelance weboví vývojáři, správci malých firem, homelabisté s vlastními doménami.",
+      "features": [
+        "Seznam domén s dny do expirace a stavem řetězce",
+        "Lokální notifikace naplánované 30/7/1 den předem",
+        "Detail certifikátu: vydavatel, SAN, TLS verze",
+        "Widget a Shortcuts akce 'Check certificate'",
+        "Import domén ze schránky/CSV"
+      ],
+      "offline": "partial",
+      "offline_note": "Kontrola certifikátu vyžaduje TLS spojení na doménu uživatele (není to náš server); plánování upozornění a data lokálně.",
+      "monetization": "Zdarma 3 domény; Pro neomezeně 9,99 USD/rok (≈ 195 CZK) nebo 19,99 USD lifetime.",
+      "revenue_math": "Ideál: 1 000 stažení/měs ('ssl checker', 'ssl certificate', 'domain expiry') × 5 % = 50 × průměr 14 USD × 0,85 × 23 ≈ 13 700 CZK čistého/měs.",
+      "revenue_czk_ideal": 13700,
+      "keywords": [
+        {
+          "kw": "ssl checker",
+          "saturation": 3,
+          "competitor": "SSL appky",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "certificate expiry",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad; odhad volné."
+        },
+        {
+          "kw": "domain expiry",
+          "saturation": 2,
+          "competitor": "Whois appky",
+          "note": "odhad; odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: SSL Labs a 'ssl checker' weby mají velkou návštěvnost; Let's Encrypt přechází na kratší platnost certifikátů (plánované zkrácení na 47 dní do 2029) – víc důvodů hlídat.",
+      "competitors": [
+        {
+          "name": "UptimeRobot",
+          "url": "",
+          "role": "parent",
+          "note": "Monitoring s účtem, iOS appka, freemium."
+        },
+        {
+          "name": "SSL Labs",
+          "url": "",
+          "role": "parent",
+          "note": "Web test certifikátů (Qualys)."
+        },
+        {
+          "name": "Better Stack",
+          "url": "",
+          "role": "parent",
+          "note": "Placený monitoring pro firmy."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Automatická obnova (Let's Encrypt, Cloudflare) dělá z expirace méně častý problém.",
+        "Background refresh na iOS je nespolehlivý – kontrola nemusí proběhnout včas.",
+        "UptimeRobot free tarif hlídá SSL zdarma.",
+        "Whois/RDAP data expirace domén jsou nekonzistentní napříč TLD."
+      ],
+      "killer_risk": "Uživatelé si řeknou, že UptimeRobot zdarma stačí.",
+      "mitigation": "Soukromí bez účtu, rychlé přidání, notifikace předplánované lokálně podle známého data expirace (nepotřebují pozadí).",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 5,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-16",
+      "name": "Homelab Monitor for Proxmox",
+      "tagline": "Stav VM, kontejnerů a disků tvého domácího serveru na iPhonu – přímo, bez cloudu.",
+      "pitch": "Homelab komunita (r/homelab, r/selfhosted) roste a Proxmox VE je její nejoblíbenější hypervisor; oficiální mobilní appka ale podle naší znalosti cílí hlavně na Android a na iOS zbývají malé indie klienty. Uděláme nativní iOS klienta, který mluví přímo s Proxmox API ve tvé síti (nebo přes Tailscale): stav nodů, VM a LXC, start/stop, grafy, zálohy a widgety. Žádný náš server, API token v Keychainu.",
+      "niche": "iOS klient pro self-hosted hypervisor. Enterprise hráči (VMware) mají vlastní nástroje, homelab řeší jen komunita.",
+      "parent_market": "Serverové a SSH klienty – Termius, Blink; monitoring (Grafana), Unraid/TrueNAS companion appky.",
+      "target_user": "Homelabisté, správci malých firemních serverů, IT studenti.",
+      "features": [
+        "Přehled nodů, VM a LXC se stavem a zatížením",
+        "Start/stop/restart, snapshoty, konzole přes noVNC/xterm",
+        "Grafy CPU/RAM/disk, stav záloh",
+        "Widgety na plochu a Live Activity při záloze",
+        "Více serverů/clusterů, API tokeny v Keychainu"
+      ],
+      "offline": "mostly",
+      "offline_note": "Komunikace jen se serverem uživatele (LAN/VPN); nic nejde přes náš cloud.",
+      "monetization": "Zdarma 1 node; Pro 2,99 USD/měs (≈ 69 CZK) nebo 24,99 USD/rok nebo 49,99 USD lifetime.",
+      "revenue_math": "Ideál: 1 500 stažení/měs ('proxmox', 'homelab', 'server monitor') × 5 % = 75 × průměr 25 USD × 0,85 × 23 ≈ 36 000 CZK hrubý ideál; konzervativně 15 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 15000,
+      "keywords": [
+        {
+          "kw": "proxmox",
+          "saturation": 3,
+          "competitor": "malé indie klienty",
+          "note": "odhad; odhad; značka v titulku = trademark riziko."
+        },
+        {
+          "kw": "homelab",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad; odhad volné, hint nejistý."
+        },
+        {
+          "kw": "server monitor",
+          "saturation": 5,
+          "competitor": "různé",
+          "note": "odhad; obecné, obsazenější."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: r/homelab a r/selfhosted mají miliony členů, Proxmox VE má miliony instalací; opakované dotazy 'Proxmox iOS app' na fórech. Stav iOS konkurence je odhad.",
+      "competitors": [
+        {
+          "name": "Proxmox Virtual Environment (oficiální)",
+          "url": "",
+          "role": "parent",
+          "note": "Oficiální mobilní appka (Flutter) – podle znalosti hlavně Android, nutno ověřit iOS."
+        },
+        {
+          "name": "Termius",
+          "url": "",
+          "role": "parent",
+          "note": "SSH lídr, homelabisté ho používají jako workaround."
+        },
+        {
+          "name": "ControlR",
+          "url": "",
+          "role": "niche",
+          "note": "Populární Unraid companion – důkaz, že homelabisté platí."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Proxmox může vydat oficiální iOS appku zdarma a zničit placenou konkurenci.",
+        "Ochranná známka 'Proxmox' v názvu – nutné použít 'for Proxmox VE' opatrně.",
+        "Homelabisté jsou technicky zdatní a rádi používají web UI zdarma."
+      ],
+      "killer_risk": "Oficiální bezplatná appka Proxmoxu na iOS.",
+      "mitigation": "Rychlost, widgety, Live Activities a podpora dalších systémů (TrueNAS, Docker) jako rozšíření; jednorázový lifetime.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 7,
+        "build_ease": 5,
+        "offline_fit": 8,
+        "safety": 4
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-17",
+      "name": "Icon Preview for Liquid Glass",
+      "tagline": "Uvidíš ikonu své appky na skutečné ploše iPhonu – světlá, tmavá, tónovaná i čirá.",
+      "pitch": "iOS 26 přinesl Liquid Glass a ikony se nově zobrazují ve variantách Default, Dark, Tinted a Clear; vývojáři a designéři nevědí, jak jejich ikona vypadá na reálné ploše mezi ostatními appkami. Uděláme nástroj, který z PNG/vrstev vyrenderuje náhled ve všech variantách na tapetě uživatele, zkontroluje kontrast a bezpečnou zónu a vyexportuje všechny velikosti pro iOS, Android adaptive icon a macOS. Designéři a indie vývojáři za tohle platí jednorázově.",
+      "niche": "Náhled a export ikon pro nové Apple styly. Icon Composer je Mac-only a nezobrazí ikonu na skutečné ploše uživatele.",
+      "parent_market": "Nástroje pro ikony appek – Bakery (Mac), Icon Set Creator, Apple Icon Composer; design nástroje Figma.",
+      "target_user": "Indie vývojáři, UI designéři, Flutter vývojáři exportující ikony pro obě platformy.",
+      "features": [
+        "Náhled ikony v Default/Dark/Tinted/Clear na vlastní tapetě",
+        "Kontrola kontrastu a bezpečné zóny, srovnání s okolními ikonami",
+        "Export všech velikostí iOS/macOS/watchOS a Android adaptive",
+        "Import vrstev (foreground/background) z Files",
+        "Porovnání verzí A/B"
+      ],
+      "offline": "full",
+      "offline_note": "Rendering Core Image/Metal na zařízení.",
+      "monetization": "Jednorázově 6,99 USD (≈ 161 CZK) nebo freemium s Pro exportem.",
+      "revenue_math": "Ideál: 1 500 stažení/měs ('app icon', 'icon maker', 'icon preview') × 5 % = 75 × 6,99 × 0,85 × 23 ≈ 10 200 CZK čistého/měs.",
+      "revenue_czk_ideal": 10200,
+      "keywords": [
+        {
+          "kw": "app icon",
+          "saturation": 7,
+          "competitor": "Icon Changer appky",
+          "note": "odhad; SATUROVANÉ spotřebitelskými 'změň ikonu' appkami – jen parent."
+        },
+        {
+          "kw": "icon preview",
+          "saturation": 2,
+          "competitor": "malé appky",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "app icon generator",
+          "saturation": 4,
+          "competitor": "Icon generátory",
+          "note": "odhad; odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: přechod na Liquid Glass (iOS 26, 2025) donutil všechny vývojáře překreslit ikony; Bakery a podobné Mac nástroje se prodávají. Objem v App Store nejistý a 'app icon' je zaplevelené spotřebitelskými appkami.",
+      "competitors": [
+        {
+          "name": "Bakery",
+          "url": "",
+          "role": "parent",
+          "note": "Mac appka na generování ikon."
+        },
+        {
+          "name": "Icon Composer",
+          "url": "",
+          "role": "parent",
+          "note": "Apple nástroj pro Liquid Glass ikony (Sherlock)."
+        },
+        {
+          "name": "Icon Set Creator",
+          "url": "",
+          "role": "niche",
+          "note": "Mac export velikostí."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Apple Icon Composer je zdarma a oficiální – Sherlock.",
+        "Klíčové slovo 'app icon' je zaplevelené appkami na změnu ikon pro běžné uživatele.",
+        "Jednorázová potřeba (jednou za appku) – nízká retence.",
+        "iOS neumožňuje programově renderovat skutečný systémový Liquid Glass materiál – náhled bude aproximace."
+      ],
+      "killer_risk": "Náhled nebude 1:1 se systémem a vývojáři se vrátí k Icon Composeru.",
+      "mitigation": "Zaměřit se na to, co Apple nedělá: reálná tapeta, Android export, porovnání vedle konkurence; jednorázová cena.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-18",
+      "name": "Diff: Compare Text & Code",
+      "tagline": "Porovnej dvě verze textu, kódu nebo JSONu vedle sebe – na iPadu, offline.",
+      "pitch": "Porovnat dvě verze smlouvy, konfigurace nebo kódu je běžná potřeba; na Macu je Kaleidoscope, na webu Diffchecker, na iPhonu a iPadu skoro nic kvalitního. Uděláme rychlý diff se zobrazením vedle sebe i inline, zvýrazněním změn po slovech, režimem pro JSON (sémantické porovnání) a vstupem ze schránky, Files nebo share sheetu. Užitečné pro vývojáře, ale i pro právníky, copywritery a studenty – širší publikum než čistě dev nástroj.",
+      "niche": "Mobilní diff nástroj. Kaleidoscope je drahý Mac, Diffchecker je web s reklamami a desktop.",
+      "parent_market": "Diff nástroje – Kaleidoscope (placený Mac), Beyond Compare, Diffchecker (web + Pro předplatné).",
+      "target_user": "Vývojáři na iPadu, právníci a editoři porovnávající verze, studenti.",
+      "features": [
+        "Porovnání vedle sebe a inline, zvýraznění po znacích/slovech",
+        "JSON/YAML sémantický diff (ignoruje pořadí klíčů)",
+        "Vstup ze schránky, Files, share sheetu; porovnání složek",
+        "Export diffu jako PDF/patch",
+        "Mac verze a Shortcuts akce"
+      ],
+      "offline": "full",
+      "offline_note": "Diff algoritmy lokálně.",
+      "monetization": "Zdarma text diff; Pro (soubory, JSON, export) 5,99 USD jednorázově nebo 9,99 USD/rok.",
+      "revenue_math": "Ideál: 2 500 stažení/měs ('compare text', 'diff', 'text compare', 'diff checker') × 3,5 % = 88 × 5,99 × 0,85 × 23 ≈ 10 300 CZK čistého/měs.",
+      "revenue_czk_ideal": 10300,
+      "keywords": [
+        {
+          "kw": "compare text",
+          "saturation": 4,
+          "competitor": "Text Compare appky",
+          "note": "odhad; odhad středně."
+        },
+        {
+          "kw": "diff checker",
+          "saturation": 3,
+          "competitor": "malé appky",
+          "note": "odhad; odhad; 'Diffchecker' je značka – pozor."
+        },
+        {
+          "kw": "text diff",
+          "saturation": 2,
+          "competitor": "malé appky",
+          "note": "odhad; odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: Diffchecker.com má miliony návštěv měsíčně a prodává Pro desktop; Kaleidoscope se prodává za ~150 USD. iOS konkurence podle znalosti slabá.",
+      "competitors": [
+        {
+          "name": "Kaleidoscope",
+          "url": "",
+          "role": "parent",
+          "note": "Prémiový Mac diff nástroj."
+        },
+        {
+          "name": "Diffchecker",
+          "url": "",
+          "role": "parent",
+          "note": "Webový lídr, desktop Pro předplatné."
+        },
+        {
+          "name": "Beyond Compare",
+          "url": "",
+          "role": "parent",
+          "note": "Desktopový diff standard."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Porovnávání textu na telefonu je vzácné – malá obrazovka.",
+        "Working Copy a Git klienti diff už mají pro vývojáře.",
+        "Nízká cena a jednorázová potřeba."
+      ],
+      "killer_risk": "Poptávka na iOS je příliš malá; lidé porovnávají na počítači.",
+      "mitigation": "iPad + Mac jako primární platforma, share extension, široké ASO mimo vývojáře (smlouvy, eseje).",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-19",
+      "name": "G-code Viewer & Print Estimator",
+      "tagline": "Otevři G-code z Files, uvidíš 3D náhled po vrstvách, čas tisku a spotřebu filamentu.",
+      "pitch": "3D tiskaři dostávají .gcode soubory z sliceru nebo od kamarádů a na iPhonu nevidí, co v nich je; Quick Look je neumí. OctoPrint a Klipper klienty (OctoPod, Mobileraker) náhled mají, ale jen pro tiskárnu připojenou k serveru. Uděláme čistě offline prohlížeč: 3D náhled po vrstvách, rychlosti, teploty, odhad času a gramáže, Quick Look rozšíření. Levné, jednoduché, pro miliony majitelů Bambu/Prusa/Creality.",
+      "niche": "Offline G-code prohlížeč na iOS. Klienty tiskáren potřebují server/tiskárnu, slicery jsou desktop.",
+      "parent_market": "3D tisk software – OctoPrint + OctoPod, Klipper + Mobileraker, Bambu Handy; slicery PrusaSlicer, OrcaSlicer.",
+      "target_user": "Hobby 3D tiskaři, školy, makerspaces, Etsy výrobci.",
+      "features": [
+        "3D náhled G-code po vrstvách (Metal/SceneKit)",
+        "Odhad času, délky a hmotnosti filamentu, cena tisku",
+        "Info: teploty, rychlosti, retrakce, slicer metadata",
+        "Quick Look a thumbnail rozšíření pro Files",
+        "Podpora .gcode, .bgcode (Prusa binary) a 3MF náhledů"
+      ],
+      "offline": "full",
+      "offline_note": "Parsování a rendering lokálně.",
+      "monetization": "Jednorázově 4,99 USD (≈ 115 CZK), nebo zdarma s Pro za 4,99 USD.",
+      "revenue_math": "Ideál: 3 000 stažení/měs ('gcode viewer', '3d print', 'gcode', 'filament calculator') × 4 % = 120 × 4,99 × 0,85 × 23 ≈ 11 700 CZK čistého/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "gcode viewer",
+          "saturation": 2,
+          "competitor": "malé appky",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "gcode",
+          "saturation": 3,
+          "competitor": "OctoPod",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "3d print cost",
+          "saturation": 3,
+          "competitor": "kalkulačky",
+          "note": "odhad; odhad; utilities evidence ho uvádí jako neověřený kandidát."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: Bambu Lab a Creality prodávají miliony tiskáren; gcode viewer weby (zupfe, gcode.ws) mají velkou návštěvnost. '3D print cost' je v utilities evidence jen jako neověřený kandidát.",
+      "competitors": [
+        {
+          "name": "OctoPod",
+          "url": "",
+          "role": "parent",
+          "note": "Populární OctoPrint klient, zdarma."
+        },
+        {
+          "name": "Mobileraker",
+          "url": "",
+          "role": "parent",
+          "note": "Klipper klient s předplatným."
+        },
+        {
+          "name": "Bambu Handy",
+          "url": "",
+          "role": "parent",
+          "note": "Oficiální appka Bambu Lab (Sherlock pro jejich uživatele)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Bambu/Prusa appky už ukazují náhledy tisků a jejich uživatelé nic dalšího nepotřebují.",
+        "Nové binární formáty (.bgcode, šifrované Bambu soubory) ztěžují parsování.",
+        "3D rendering milionů segmentů na telefonu – výkonová náročnost."
+      ],
+      "killer_risk": "Výrobci tiskáren integrují náhledy do vlastních appek zdarma.",
+      "mitigation": "Brand-neutral + Quick Look (nikdo jiný), cenová kalkulačka pro prodejce tisků jako placený háček.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-20",
+      "name": "Code Keyboard: Symbols & Tab",
+      "tagline": "Klávesnice pro programování: {}, [], ;, Tab, šipky kurzoru a snippety v jedné řadě.",
+      "pitch": "Psát kód nebo terminálové příkazy na iPhonu či iPadu bez hardwarové klávesnice je utrpení – závorky a středníky jsou schované za dvěma přepínači. Na Androidu to řeší Hacker's Keyboard s miliony instalací, na iOS existují jen extra řady v jednotlivých editorech. Uděláme systémovou klávesnici s řadou programátorských symbolů, tabulátorem, pohybem kurzoru, snippety a volbou rozložení podle jazyka (Python, JS, Bash). Funguje všude: v GitHub webu, Codespaces, Pythonistě, Shortcuts.",
+      "niche": "Programátorská klávesnice na iOS. Velké klávesnice (Gboard, SwiftKey) jsou pro běžný text, editory řeší jen svou appku.",
+      "parent_market": "Klávesnice třetích stran – Gboard, SwiftKey, Fleksy; na Androidu Hacker's Keyboard (1M+).",
+      "target_user": "Vývojáři, kteří kódují na iPadu bez klávesnice, studenti programování, SSH uživatelé.",
+      "features": [
+        "Řada symbolů přizpůsobená jazyku (Python, JS, Swift, Bash, SQL)",
+        "Tab, šipky, pohyb kurzoru po slovech, výběr",
+        "Snippety a vlastní makra",
+        "Rozložení QWERTY/QWERTZ/AZERTY",
+        "Bez 'plného přístupu' – žádná data neodcházejí"
+      ],
+      "offline": "full",
+      "offline_note": "Klávesnicové rozšíření běží lokálně, bez plného přístupu k síti.",
+      "monetization": "Jednorázově 3,99 USD (≈ 92 CZK) nebo freemium s Pro snippety.",
+      "revenue_math": "Ideál: 3 000 stažení/měs ('coding keyboard', 'programmer keyboard', 'code keyboard') × 5 % = 150 × 3,99 × 0,85 × 23 ≈ 11 700 CZK čistého/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "coding keyboard",
+          "saturation": 2,
+          "competitor": "malé appky",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "programmer keyboard",
+          "saturation": 2,
+          "competitor": "malé appky",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "keyboard for code",
+          "saturation": 2,
+          "competitor": "žádná silná",
+          "note": "odhad; odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: Hacker's Keyboard (Android) má 1M+ instalací; na iPad fórech je častá stížnost na chybějící Tab/Esc. iOS custom keyboard API ale neumožňuje Ctrl/Esc.",
+      "competitors": [
+        {
+          "name": "Hacker's Keyboard",
+          "url": "",
+          "role": "niche",
+          "note": "Android-only programátorská klávesnice – důkaz poptávky."
+        },
+        {
+          "name": "Gboard",
+          "url": "",
+          "role": "parent",
+          "note": "Google klávesnice, pro kód nevhodná."
+        },
+        {
+          "name": "Blink Shell",
+          "url": "",
+          "role": "parent",
+          "note": "Smart keys, ale jen uvnitř své appky."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "'Android gap': Hacker's Keyboard nemá na iOS obdobu; lokalizace rozložení (QWERTZ/AZERTY) je pro EU trh navíc.",
+      "devils_advocate": [
+        "iOS klávesnice nemůže posílat Esc, Ctrl ani Cmd kombinace – vim/terminál uživatele zklameme.",
+        "Uživatelé mají odpor k instalaci klávesnic třetích stran (soukromí, přepínání).",
+        "Apple každoročně mění chování klávesnicových rozšíření – bugy a údržba."
+      ],
+      "killer_risk": "API omezení iOS klávesnic (bez modifikátorů) udělá z appky 'poloviční řešení'.",
+      "mitigation": "V popisu jasně co umí a neumí, zaměřit se na symboly/tab/kurzor; nabídnout snippety jako hlavní hodnotu.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-21",
+      "name": "Hex Editor & Firmware Inspector",
+      "tagline": "Otevři libovolný binární soubor na iPadu – hex, ASCII, hledání a rozbor firmware ESP32.",
+      "pitch": "Vývojáři embedded zařízení, reverse-engineeři a studenti občas potřebují nahlédnout do binárky: firmware .bin, uložená hra, síťový dump. Na Macu je zdarma Hex Fiend, na iOS podle naší znalosti jen pár zastaralých hex prohlížečů. Uděláme rychlý hex editor pro velké soubory s hledáním vzorů, šablonami struktur (ESP32 partition table, PNG, ZIP, ELF hlavička) a porovnáním dvou binárek. Úzké, ale ochotně platící publikum.",
+      "niche": "Hex editor na iPadu. Velcí hráči jsou desktopoví (Hex Fiend, 010 Editor, ImHex).",
+      "parent_market": "Binární nástroje – 010 Editor (placený ~150 USD), Hex Fiend, ImHex, HxD.",
+      "target_user": "Embedded vývojáři, bezpečnostní výzkumníci, studenti IT, modaři her.",
+      "features": [
+        "Rychlé zobrazení hex/ASCII pro soubory v GB (memory-mapped)",
+        "Hledání hex/textu, skoky na offset, záložky",
+        "Šablony struktur: ESP32 partitions, ELF, PNG, ZIP",
+        "Porovnání dvou binárek",
+        "Úpravy s undo, export"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně se soubory z Files.",
+      "monetization": "Zdarma prohlížení; Pro (editace, šablony, diff) 9,99 USD jednorázově (≈ 230 CZK).",
+      "revenue_math": "Ideál: 1 000 stažení/měs ('hex editor', 'hex viewer', 'binary viewer') × 5 % = 50 × 9,99 × 0,85 × 23 ≈ 9 800 CZK; s Mac verzí ≈ 12 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "hex editor",
+          "saturation": 3,
+          "competitor": "malé starší appky",
+          "note": "odhad; odhad; hint pravděpodobně ano."
+        },
+        {
+          "kw": "hex viewer",
+          "saturation": 2,
+          "competitor": "malé appky",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "binary viewer",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad; odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: 010 Editor se prodává desítky let; ImHex má 40k+ hvězd na GitHubu. Mobilní objem je malý a nejistý.",
+      "competitors": [
+        {
+          "name": "Hex Fiend",
+          "url": "",
+          "role": "parent",
+          "note": "Zdarma open-source Mac hex editor."
+        },
+        {
+          "name": "010 Editor",
+          "url": "",
+          "role": "parent",
+          "note": "Placený profesionální hex editor s šablonami."
+        },
+        {
+          "name": "ImHex",
+          "url": "",
+          "role": "parent",
+          "note": "Populární open-source desktopový hex editor."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Kdo potřebuje hex editor, sedí u počítače – mobilní poptávka minimální.",
+        "Mac trh pokrývá zdarma Hex Fiend.",
+        "Úzké publikum = pomalý růst recenzí a ASO."
+      ],
+      "killer_risk": "Příliš malá mobilní poptávka – nedosáhne 10 000 CZK.",
+      "mitigation": "Kombinovat s Mac verzí, cílit na embedded (ESP32 firmware) úhel, zvážit sloučení s Firmware/BLE nástroji do sady.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-22",
+      "name": "Code Snap: Beautiful Code Images",
+      "tagline": "Proměň kus kódu v krásný obrázek pro X, LinkedIn či slajdy – offline, bez vodoznaku webu.",
+      "pitch": "Vývojáři a tech influenceři sdílejí úryvky kódu jako obrázky (Carbon, ray.so), ale na iPhonu musí přes web s pomalým editorem. Uděláme nativní generátor: vlož kód, automatická detekce jazyka, desítky témat, rámečky oken, gradienty, export v rozměrech pro sociální sítě a slajdy. Share extension z editoru nebo GitHubu – dva klepnutí a hotovo.",
+      "niche": "Nativní 'Carbon' na iOS. Carbon a ray.so jsou webové, zdarma a na mobilu nepohodlné.",
+      "parent_market": "Nástroje pro sdílení kódu – Carbon, ray.so (web), CodeSnap (VS Code), Snappify (SaaS předplatné).",
+      "target_user": "Vývojáři na sociálních sítích, lektoři programování, tvůrci tech obsahu.",
+      "features": [
+        "Zvýraznění syntaxe 100+ jazyků s auto-detekcí",
+        "Témata, rámečky oken, pozadí, fonty s ligaturami",
+        "Exportní rozměry: X, LinkedIn, Instagram, 16:9 slajd",
+        "Share extension a Shortcuts akce",
+        "Zvýraznění řádků a anotace"
+      ],
+      "offline": "full",
+      "offline_note": "Highlighting (tree-sitter/Highlightr) a rendering lokálně.",
+      "monetization": "Zdarma se základními tématy; Pro 3,99 USD jednorázově nebo 9,99 USD/rok.",
+      "revenue_math": "Ideál: 2 500 stažení/měs ('code screenshot', 'code image', 'code snippet') × 5 % = 125 × 3,99 × 0,85 × 23 ≈ 9 750 CZK; s ročním tierem ideál ≈ 11 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 11000,
+      "keywords": [
+        {
+          "kw": "code screenshot",
+          "saturation": 2,
+          "competitor": "malé appky",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "code image",
+          "saturation": 2,
+          "competitor": "malé appky",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "code snippet",
+          "saturation": 3,
+          "competitor": "snippet managery",
+          "note": "odhad; odhad, smíšený záměr."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: Carbon má 35k+ hvězd na GitHubu, Snappify prodává předplatné; mobilní poptávka nejistá.",
+      "competitors": [
+        {
+          "name": "Carbon",
+          "url": "",
+          "role": "parent",
+          "note": "Populární webový generátor, zdarma."
+        },
+        {
+          "name": "ray.so",
+          "url": "",
+          "role": "parent",
+          "note": "Webový generátor od Raycastu, zdarma."
+        },
+        {
+          "name": "Snappify",
+          "url": "",
+          "role": "parent",
+          "note": "SaaS s předplatným pro prezentace kódu."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Webové nástroje jsou zdarma a 'stačí'.",
+        "Nízká frekvence použití = slabá retence a ochota platit.",
+        "Snadno kopírovatelné – během měsíce vzniknou klony (4.3 riziko pro celý žánr)."
+      ],
+      "killer_risk": "Nízká ochota platit za něco, co je zdarma na webu.",
+      "mitigation": "Rychlost share extension, nativní fonty, levná jednorázová cena; bundle s Diff/DevBelt.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 3,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-23",
+      "name": "Push Notification Tester",
+      "tagline": "Pošli testovací push notifikaci na svou appku přímo z iPhonu nebo Macu – s .p8 klíčem.",
+      "pitch": "Každý iOS vývojář ladí push notifikace a dnes používá zastaralé Mac appky (Knuff už léta neudržovaná), terminál s curl nebo Firebase konzoli. Uděláme moderní nástroj: načti .p8 klíč, zadej device token, vyber šablonu (alert, silent, Live Activity, rich media) a odešli přímo na APNs. Podpora Live Activities push-to-start a broadcast push je nová a bolí. iPad + Mac.",
+      "niche": "APNs tester s podporou nových typů pushů. Firebase míří na FCM, staré Mac nástroje nové typy neumí.",
+      "parent_market": "Push infrastruktura a nástroje – Firebase Cloud Messaging, OneSignal; Mac nástroje Knuff, PushNotifications (open-source).",
+      "target_user": "iOS vývojáři, QA testeři, Flutter vývojáři s FCM i APNs.",
+      "features": [
+        "JWT autentizace s .p8 klíčem (Keychain), sandbox/production",
+        "Šablony: alert, silent, Live Activity start/update/end, broadcast",
+        "Historie odeslání s odpověďmi APNs",
+        "Test FCM HTTP v1 pro Flutter/Android",
+        "Rychlé získání device tokenu přes vlastní testovací appku"
+      ],
+      "offline": "partial",
+      "offline_note": "Posílá přímo na APNs/FCM (Apple/Google servery, ne naše); klíče a historie lokálně.",
+      "monetization": "Jednorázově 9,99 USD (≈ 230 CZK) nebo freemium s Pro (Live Activities, FCM).",
+      "revenue_math": "Ideál: 800 stažení/měs ('push notification', 'apns', 'push tester') × 7 % = 56 × 9,99 × 0,85 × 23 ≈ 10 900 CZK čistého/měs.",
+      "revenue_czk_ideal": 10900,
+      "keywords": [
+        {
+          "kw": "push notification tester",
+          "saturation": 2,
+          "competitor": "malé appky",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "apns",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad; odhad, úzké."
+        },
+        {
+          "kw": "push notification",
+          "saturation": 5,
+          "competitor": "OneSignal a spotřebitelské appky",
+          "note": "odhad; obsazenější, smíšený záměr."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: open-source Mac nástroj PushNotifications má tisíce hvězd, Knuff byl populární a je opuštěný; Live Activities (iOS 16.1+) a broadcast push (iOS 18) přinesly nové potřeby.",
+      "competitors": [
+        {
+          "name": "PushNotifications",
+          "url": "",
+          "role": "niche",
+          "note": "Open-source Mac appka, zdarma."
+        },
+        {
+          "name": "Knuff",
+          "url": "",
+          "role": "niche",
+          "note": "Kdysi populární Mac nástroj, neudržovaný."
+        },
+        {
+          "name": "Firebase Console",
+          "url": "",
+          "role": "parent",
+          "note": "Webová konzole pro FCM, zdarma."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Apple spustil v roce 2024 Push Notifications Console na webu zdarma – Sherlock.",
+        "Velmi malý objem hledání v App Store.",
+        "Open-source alternativy zdarma."
+      ],
+      "killer_risk": "Apple Push Notifications Console (web, zdarma) pokryje většinu potřeb.",
+      "mitigation": "Mobilita (test z iPhonu v terénu), Live Activities šablony, FCM podpora; nízká cena.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 5,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-24",
+      "name": "SQL Sandbox: Practice Queries",
+      "tagline": "Trénuj SQL na reálných datech offline – 200 úloh od SELECT po window functions.",
+      "pitch": "SQL je nejžádanější dovednost datových analytiků, ale výukové appky (Sololearn, Mimo) učí povrchně a online. Kdo se chystá na pohovor, chce psát skutečné dotazy nad skutečnými tabulkami. Uděláme offline pískoviště s SQLite, přibalenými datasety (e-shop, lety, fotbal), 200 úlohami s automatickou kontrolou výsledku a volným režimem. Jednorázová platba bez předplatného je v kategorii výuky programování vzácná výhoda.",
+      "niche": "Praktický SQL trénink offline. Velké výukové appky jsou gamifikované kurzy mnoha jazyků, ne hluboké SQL cvičení.",
+      "parent_market": "Výuka programování – Sololearn, Mimo, DataCamp, LeetCode (SQL sekce); weby SQLBolt, SQLZoo.",
+      "target_user": "Uchazeči o pozice datových analytiků, studenti, samouci.",
+      "features": [
+        "SQL editor nad přibalenými datasety (SQLite)",
+        "200 úloh s automatickou kontrolou výsledku",
+        "Nápovědy a vysvětlení řešení",
+        "Režim pohovorových otázek s časovačem",
+        "Vlastní import CSV do pískoviště"
+      ],
+      "offline": "full",
+      "offline_note": "SQLite a datasety na zařízení.",
+      "monetization": "Prvních 30 úloh zdarma; celý obsah 9,99 USD jednorázově (≈ 230 CZK) nebo 4,99 USD/měs.",
+      "revenue_math": "Ideál: 3 000 stažení/měs ('sql practice', 'learn sql', 'sql editor') × 3 % = 90 × 9,99 × 0,85 × 23 ≈ 17 600 CZK čistého/měs.",
+      "revenue_czk_ideal": 17600,
+      "keywords": [
+        {
+          "kw": "learn sql",
+          "saturation": 7,
+          "competitor": "Sololearn / Mimo / SQL kurzy",
+          "note": "odhad; SATUROVANÉ – jen parent."
+        },
+        {
+          "kw": "sql practice",
+          "saturation": 3,
+          "competitor": "malé appky",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "sql playground",
+          "saturation": 2,
+          "competitor": "malé appky",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "sql editor",
+          "saturation": 4,
+          "competitor": "TablePlus",
+          "note": "odhad; odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: 'learn sql' je silně hledané a obsazené; SQLBolt/SQLZoo a LeetCode SQL mají velké publikum. Praktický offline trénink je odhadem méně obsazený.",
+      "competitors": [
+        {
+          "name": "Sololearn",
+          "url": "",
+          "role": "parent",
+          "note": "Velká výuková appka, SQL kurz."
+        },
+        {
+          "name": "Mimo",
+          "url": "",
+          "role": "parent",
+          "note": "Gamifikovaná výuka programování s předplatným."
+        },
+        {
+          "name": "SQLBolt",
+          "url": "",
+          "role": "niche",
+          "note": "Webové interaktivní SQL lekce zdarma."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Kategorie výuky programování je silně obsazená velkými hráči s marketingem.",
+        "Psát SQL na telefonu je nepohodlné – iPad nutnost.",
+        "AI tutoři (ChatGPT) generují úlohy zdarma.",
+        "Tvorba 200 kvalitních úloh je obsahově náročná."
+      ],
+      "killer_risk": "ASO prohra proti velkým výukovým appkám na klíčových slovech 'learn sql'.",
+      "mitigation": "Cílit na long-tail ('sql practice', 'sql interview'), lokalizace úloh, iPad UX s klávesnicí.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 4,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-25",
+      "name": "Snippet Vault for iPad & Mac",
+      "tagline": "Tvoje knihovna kódových snippetů synchronizovaná přes iCloud – rychle vložitelná kdekoli.",
+      "pitch": "SnippetsLab je oblíbený placený správce snippetů pro Mac, ale jeho iOS verze je omezená a vývojáři na iPadu hledají totéž. Uděláme nativní iPad/Mac/iPhone knihovnu snippetů: zvýraznění syntaxe, tagy, fulltext, proměnné v šablonách, iCloud sync a rychlé vložení přes share sheet, Shortcuts a Spotlight. Žádné účty, žádný cloud kromě iCloudu uživatele.",
+      "niche": "Snippet manager napříč Apple zařízeními bez účtu. Pieces a podobné míří na AI a cloud, GitHub Gist vyžaduje síť a účet.",
+      "parent_market": "Snippet managery – SnippetsLab (Mac), Pieces, Lepton (Gist klient), Raycast snippety.",
+      "target_user": "Vývojáři pracující na Macu i iPadu, DevOps s opakovanými příkazy.",
+      "features": [
+        "Snippety se zvýrazněním syntaxe, tagy a složkami",
+        "Šablony s proměnnými ({{name}})",
+        "Fulltext, Spotlight, Shortcuts akce 'Vlož snippet'",
+        "iCloud (CloudKit) sync, import z Gist JSON",
+        "Klávesnicové zkratky na iPadu"
+      ],
+      "offline": "full",
+      "offline_note": "Lokální databáze, sync přes iCloud uživatele.",
+      "monetization": "Zdarma 30 snippetů; Pro 14,99 USD jednorázově (≈ 345 CZK) nebo 1,99 USD/měs.",
+      "revenue_math": "Ideál: 1 200 stažení/měs ('code snippets', 'snippet manager', 'code notes') × 4 % = 48 × 14,99 × 0,85 × 23 ≈ 14 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 14000,
+      "keywords": [
+        {
+          "kw": "snippet manager",
+          "saturation": 3,
+          "competitor": "SnippetsLab",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "code snippets",
+          "saturation": 3,
+          "competitor": "malé appky",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "code notes",
+          "saturation": 2,
+          "competitor": "malé appky",
+          "note": "odhad; odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: SnippetsLab je placená Mac appka s dlouhou historií prodejů; Raycast snippety a Pieces ukazují zájem. Mobilní objem nejistý.",
+      "competitors": [
+        {
+          "name": "SnippetsLab",
+          "url": "",
+          "role": "parent",
+          "note": "Placený Mac lídr, iOS companion omezený."
+        },
+        {
+          "name": "Pieces",
+          "url": "",
+          "role": "parent",
+          "note": "AI snippet manager s cloudem."
+        },
+        {
+          "name": "Raycast",
+          "url": "",
+          "role": "parent",
+          "note": "Mac launcher se snippety zdarma."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Apple Notes s code bloky a Raycast zdarma pokryjí většinu potřeb.",
+        "Mac trh už obsluhuje SnippetsLab s lojálními uživateli.",
+        "Nízký objem mobilního vyhledávání."
+      ],
+      "killer_risk": "Uživatelé zůstanou u Notes/Raycast zdarma.",
+      "mitigation": "Důraz na iPad + Shortcuts + proměnné šablony; import ze SnippetsLab/Gist pro snadný přechod.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-26",
+      "name": "OSC Monitor & Sender",
+      "tagline": "Sleduj a posílej OSC zprávy mezi iPadem, TouchDesignerem, Ableton a Arduinem.",
+      "pitch": "Kreativní programátoři, VJ a zvukaři propojují TouchDesigner, Max/MSP, Ableton, Resolume a hardware přes protokol OSC; při ladění potřebují vidět, co po síti letí. TouchOSC je skvělý ovladač, ale ne monitor. Uděláme OSC 'Wireshark light': poslech na portu, filtr adres, graf hodnot, odesílání testovacích zpráv a sekvencí, převod OSC ↔ MIDI. Profesionálové na scéně za spolehlivý nástroj zaplatí.",
+      "niche": "Ladění OSC na iOS. TouchOSC a Lemur jsou ovladače, desktopové monitory (Protokol) jsou jen na počítači.",
+      "parent_market": "Kreativní ovladače – TouchOSC (placený, velmi úspěšný), Lemur; desktop Protokol, OSC Data Monitor.",
+      "target_user": "Kreativní kodéři, VJ, zvukaři/světelní technici, studenti interaktivních médií.",
+      "features": [
+        "Příjem OSC (UDP/TCP) s filtrem adres a živým logem",
+        "Grafy číselných hodnot, poslední hodnota na adresu",
+        "Odesílání zpráv, sekvencí a smyček",
+        "Bonjour detekce OSC služeb",
+        "OSC ↔ MIDI most (CoreMIDI, síťový MIDI)"
+      ],
+      "offline": "full",
+      "offline_note": "Pracuje v lokální síti uživatele, bez serveru.",
+      "monetization": "Jednorázově 7,99 USD (≈ 184 CZK).",
+      "revenue_math": "Ideál: 700 stažení/měs ('osc', 'osc monitor', 'open sound control') × placená appka 8 % = 56 × 7,99 × 0,85 × 23 ≈ 8 700 CZK; s Mac verzí ideál ≈ 11 000 CZK čistého/měs.",
+      "revenue_czk_ideal": 11000,
+      "keywords": [
+        {
+          "kw": "osc",
+          "saturation": 5,
+          "competitor": "TouchOSC",
+          "note": "odhad; krátké, smíšený záměr."
+        },
+        {
+          "kw": "osc monitor",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad; odhad volné."
+        },
+        {
+          "kw": "open sound control",
+          "saturation": 2,
+          "competitor": "TouchOSC",
+          "note": "odhad; odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: TouchOSC je dlouhodobě placený hit; komunita TouchDesigner roste. Mobilní poptávka po monitoru je úzká.",
+      "competitors": [
+        {
+          "name": "TouchOSC",
+          "url": "",
+          "role": "parent",
+          "note": "Placený lídr OSC/MIDI ovladačů (Hexler)."
+        },
+        {
+          "name": "Protokol",
+          "url": "",
+          "role": "niche",
+          "note": "Desktopový OSC/MIDI monitor od Hexler, zdarma."
+        },
+        {
+          "name": "Lemur",
+          "url": "",
+          "role": "parent",
+          "note": "Profesionální ovladač."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Hexler (TouchOSC) může přidat monitor do TouchOSC.",
+        "Velmi úzká nika – nedosáhne 10 000 CZK bez Mac verze.",
+        "Profesionálové ladí na počítači, kde je Protokol zdarma."
+      ],
+      "killer_risk": "Nika je příliš malá.",
+      "mitigation": "Mac + iPad verze, rozšíření o Art-Net/sACN monitor pro světelné techniky (širší publikum).",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-27",
+      "name": "BLE Peripheral Simulator",
+      "tagline": "Předstírej BLE senzor, tep nebo vlastní zařízení z iPhonu a testuj svou appku bez hardwaru.",
+      "pitch": "Vývojáři BLE appek (fitness, medical, IoT) čekají na prototyp hardwaru nebo si půjčují jediný vzorek. iPhone umí být BLE periferie, ale nastavit GATT server znamená psát kód. Uděláme simulátor: vyber profil (Heart Rate, Battery, Nordic UART, vlastní UUID), nastav hodnoty, skriptuj změny v čase a nech druhé zařízení se připojit. LightBlue to umí základně – my půjdeme do hloubky se skripty a scénáři.",
+      "niche": "Hloubkové BLE periferní simulace pro vývojáře. BLE nástroje primárně skenují, simulace je vedlejší funkce.",
+      "parent_market": "BLE vývojářské nástroje – LightBlue (virtuální zařízení), nRF Connect (GATT server na Androidu).",
+      "target_user": "Mobilní vývojáři BLE appek, QA týmy, studenti IoT.",
+      "features": [
+        "Standardní profily (Heart Rate, Battery, Cycling Power, Nordic UART) + vlastní GATT",
+        "Nastavitelné hodnoty, notifikace, scénáře v čase",
+        "Log zápisů od centrálního zařízení",
+        "Import/export konfigurace (JSON) pro tým",
+        "Mac verze jako periferie"
+      ],
+      "offline": "full",
+      "offline_note": "Core Bluetooth peripheral role, vše lokálně.",
+      "monetization": "Freemium; Pro 12,99 USD jednorázově (≈ 299 CZK) nebo 29,99 USD/rok pro týmy.",
+      "revenue_math": "Ideál: 700 stažení/měs ('ble simulator', 'bluetooth peripheral', 'gatt server') × 7 % = 49 × 12,99 × 0,85 × 23 ≈ 12 400 CZK čistého/měs.",
+      "revenue_czk_ideal": 12400,
+      "keywords": [
+        {
+          "kw": "ble simulator",
+          "saturation": 1,
+          "competitor": "LightBlue",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "bluetooth peripheral",
+          "saturation": 2,
+          "competitor": "LightBlue",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "gatt server",
+          "saturation": 1,
+          "competitor": "nRF Connect",
+          "note": "odhad; odhad, úzké."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: LightBlue má virtuální zařízení jako oblíbenou funkci; poptávka omezená na vývojáře BLE (desítky tisíc firem).",
+      "competitors": [
+        {
+          "name": "LightBlue",
+          "url": "",
+          "role": "parent",
+          "note": "Umí virtuální periferie zdarma, bez scénářů."
+        },
+        {
+          "name": "nRF Connect for Mobile",
+          "url": "",
+          "role": "parent",
+          "note": "GATT server hlavně na Androidu."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "LightBlue už virtuální zařízení zdarma má.",
+        "iOS omezuje advertising data (nelze libovolná manufacturer data) – některé simulace nepůjdou.",
+        "Úzké B2B publikum, malý objem hledání."
+      ],
+      "killer_risk": "LightBlue je zdarma a stačí většině.",
+      "mitigation": "Scénáře a skripty, sdílení konfigurací v týmu, Mac verze.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-28",
+      "name": "Git Visual Cheat Sheet",
+      "tagline": "Git konečně pochopíš: vizualizace větví a příkazů, offline a v tvém jazyce.",
+      "pitch": "Git je pro začátečníky nejvíc matoucí nástroj – rebase, reset --hard, detached HEAD. Web Learn Git Branching je skvělý, ale jen v prohlížeči; na iOS jsou jen statické cheat sheety. Uděláme interaktivní vizualizaci: napiš příkaz a uvidíš, co se stane s grafem commitů, plus 'záchranné recepty' (jak vrátit commit, jak opravit push). V 50 jazycích, pro studenty bootcampů po celém světě.",
+      "niche": "Interaktivní výuka Gitu na mobilu, lokalizovaná. Git klienty (Working Copy) jsou pro ty, kdo Git už umí.",
+      "parent_market": "Git klienty a výuka – Working Copy (iOS), GitKraken, Tower; Learn Git Branching (web).",
+      "target_user": "Studenti programování, absolventi bootcampů, junioři, designéři spolupracující s vývojáři.",
+      "features": [
+        "Vizuální simulátor grafu commitů s příkazy",
+        "50 lekcí a úrovní (branch, merge, rebase, reset)",
+        "'Oops' recepty: jak se dostat z problému",
+        "Offline cheat sheet s vyhledáváním",
+        "Lokalizace do 50 jazyků"
+      ],
+      "offline": "full",
+      "offline_note": "Simulátor Gitu v paměti, bez sítě.",
+      "monetization": "Prvních 10 lekcí zdarma; plná verze 5,99 USD jednorázově (≈ 138 CZK).",
+      "revenue_math": "Ideál: 3 000 stažení/měs ('git', 'learn git', 'git commands' + lokální ekvivalenty) × 3 % = 90 × 5,99 × 0,85 × 23 ≈ 10 500 CZK čistého/měs.",
+      "revenue_czk_ideal": 10500,
+      "keywords": [
+        {
+          "kw": "learn git",
+          "saturation": 3,
+          "competitor": "Git výukové appky",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "git commands",
+          "saturation": 3,
+          "competitor": "cheat sheet appky",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "git",
+          "saturation": 6,
+          "competitor": "Working Copy",
+          "note": "odhad; obsazené klienty – jen parent."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: Learn Git Branching má 30k+ hvězd a miliony návštěv; Git je povinný pro každého programátora. Obsazenost v App Store je odhad.",
+      "competitors": [
+        {
+          "name": "Working Copy",
+          "url": "",
+          "role": "parent",
+          "note": "Nejlepší Git klient na iOS, placený."
+        },
+        {
+          "name": "Learn Git Branching",
+          "url": "",
+          "role": "niche",
+          "note": "Webová interaktivní výuka, zdarma, open-source."
+        },
+        {
+          "name": "GitKraken",
+          "url": "",
+          "role": "parent",
+          "note": "Desktopový Git klient s předplatným."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Výukové Git materiály jsou dominantně anglické; lokalizovaná interaktivní výuka (JP, KR, BR, DE) na iOS chybí.",
+      "devils_advocate": [
+        "AI asistenti vysvětlí Git zdarma a okamžitě.",
+        "Learn Git Branching je zdarma a lokalizovaný na webu.",
+        "Výuka = jednorázové použití, nízká retence."
+      ],
+      "killer_risk": "Uživatelé zůstanou u bezplatných webových a AI zdrojů.",
+      "mitigation": "Mobilní 'kapesní' formát, 'oops' recepty jako trvalá hodnota, lokalizace a nízká cena.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-29",
+      "name": "Code Scanner: Photo to Code",
+      "tagline": "Vyfoť kód ze slajdu, knihy nebo monitoru a dostaneš ho správně odsazený a zvýrazněný.",
+      "pitch": "Studenti fotí kód z přednášek a knih, vývojáři ze screenshotů v chatu; Live Text text přečte, ale rozbije odsazení, závorky a uvozovky – Python je pak nepoužitelný. Uděláme skener postavený na Vision OCR s post-processingem pro kód: obnova odsazení podle pozic, oprava častých chyb (l/1, O/0, uvozovky), detekce jazyka a formátování. Export do schránky, souboru nebo Pythonisty.",
+      "niche": "OCR specializované na zdrojový kód. Obecné skenery a Live Text řeší prózu.",
+      "parent_market": "Skenery textu a OCR – Apple Live Text, Scanner Pro, Text Scanner appky; online 'image to code' AI nástroje.",
+      "target_user": "Studenti programování, lektoři, vývojáři kopírující kód z obrázků.",
+      "features": [
+        "Vision OCR s rekonstrukcí odsazení podle souřadnic",
+        "Opravy typických OCR chyb v kódu, detekce jazyka",
+        "Zvýraznění syntaxe a export (.py, .js, schránka)",
+        "Import ze screenshotu/fotek i živá kamera",
+        "Historie skenů"
+      ],
+      "offline": "full",
+      "offline_note": "Vision OCR a oprava na zařízení; volitelně Foundation Models pro opravy.",
+      "monetization": "3 skeny denně zdarma; Pro 2,99 USD/měs nebo 14,99 USD/rok.",
+      "revenue_math": "Ideál: 2 000 stažení/měs ('code scanner', 'image to code', 'ocr code') × 3 % = 60 předplatitelů/měs × 14,99 × 0,85 × 23 ≈ 17 600 CZK ročních tržeb měsíčně po náběhu; konzervativní ideál 10 500 CZK čistého/měs.",
+      "revenue_czk_ideal": 10500,
+      "keywords": [
+        {
+          "kw": "image to code",
+          "saturation": 5,
+          "competitor": "AI screenshot-to-code appky",
+          "note": "odhad; odhad; smíšený záměr (UI → kód)."
+        },
+        {
+          "kw": "code scanner",
+          "saturation": 4,
+          "competitor": "QR skenery",
+          "note": "odhad; zaplevelené QR/barcode appkami."
+        },
+        {
+          "kw": "ocr code",
+          "saturation": 2,
+          "competitor": "malé appky",
+          "note": "odhad; odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: studenti často fotí kód; Live Text neudrží odsazení. Klíčová slova jsou zaplevelená QR skenery a AI 'screenshot to code' appkami.",
+      "competitors": [
+        {
+          "name": "Live Text (Apple)",
+          "url": "",
+          "role": "parent",
+          "note": "Vestavěné OCR – Sherlock riziko."
+        },
+        {
+          "name": "Scanner Pro",
+          "url": "",
+          "role": "parent",
+          "note": "Readdle skener s OCR."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Apple může zlepšit Live Text pro kód (zachování odsazení) – Sherlock.",
+        "ChatGPT s fotkou udělá totéž a opraví i chyby.",
+        "Klíčová slova jsou zaplevelená QR skenery – ASO obtížné."
+      ],
+      "killer_risk": "Multimodální AI (ChatGPT, Gemini) vyřeší 'fotka → kód' lépe a zdarma.",
+      "mitigation": "Offline, soukromí, rychlost bez promptování; zaměřit se na studenty a lokalizaci.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 4
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "developer-tools-30",
+      "name": "Matter Code Inspector",
+      "tagline": "Dekóduj Matter QR a párovací kódy, najdi zařízení k párování a zjisti, proč nejde přidat.",
+      "pitch": "Matter sjednotil chytrou domácnost, ale párování často selže a uživatel ani vývojář netuší proč. Makeři stavějící vlastní Matter zařízení na ESP32 (ESP-Matter) potřebují ověřit QR payload, discriminator, vendor/product ID a vidět zařízení vysílající po BLE a mDNS. Uděláme diagnostický nástroj: dekodér MT: QR a 11místných kódů, sken BLE/mDNS commissionable zařízení, generátor testovacích QR. Úzké, nové a zatím neobsazené.",
+      "niche": "Diagnostika Matter pro makery a pokročilé uživatele. Apple Home, Google Home i výrobci diagnostiku neukazují.",
+      "parent_market": "Smart home ovládání – Apple Home, Home Assistant, Eve; vývojářské nástroje chip-tool (CLI), ESP RainMaker.",
+      "target_user": "Makeři s ESP32-C6/H2 Matter projekty, instalatéři chytrých domácností, pokročilí uživatelé.",
+      "features": [
+        "Dekodér Matter QR (MT:) a manuálních kódů: VID/PID, discriminator, flow",
+        "Sken BLE a mDNS (_matterc._udp) commissionable zařízení",
+        "Generátor testovacích QR kódů pro vlastní zařízení",
+        "Checklist řešení problémů s párováním (Thread, IPv6, Wi-Fi 2,4 GHz)",
+        "Přidání do Apple Home přes MatterSupport"
+      ],
+      "offline": "full",
+      "offline_note": "Dekódování lokálně, sken v LAN/BLE; žádný server.",
+      "monetization": "Dekodér zdarma; Pro (sken, generátor) 5,99 USD jednorázově (≈ 138 CZK).",
+      "revenue_math": "Ideál: 2 000 stažení/měs ('matter', 'matter qr code', 'matter setup') × 5 % = 100 × 5,99 × 0,85 × 23 ≈ 11 700 CZK čistého/měs.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "matter qr code",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad; odhad volné; hint nejistý."
+        },
+        {
+          "kw": "matter setup",
+          "saturation": 2,
+          "competitor": "smart home appky",
+          "note": "odhad; odhad."
+        },
+        {
+          "kw": "matter",
+          "saturation": 5,
+          "competitor": "Home appky výrobců",
+          "note": "odhad; obecné, smíšený záměr."
+        }
+      ],
+      "demand_evidence": "Neověřeno. Předpoklad: Matter zařízení se prodávají ve velkém od 2023, fóra jsou plná problémů s párováním; ESP-Matter je populární u makerů. Objem hledání v App Store neznámý.",
+      "competitors": [
+        {
+          "name": "Apple Home",
+          "url": "",
+          "role": "parent",
+          "note": "Vestavěné párování, bez diagnostiky (Sherlock)."
+        },
+        {
+          "name": "Home Assistant",
+          "url": "",
+          "role": "parent",
+          "note": "Matter server, pokročilé ladění pro HA uživatele."
+        },
+        {
+          "name": "ESP RainMaker",
+          "url": "",
+          "role": "niche",
+          "note": "Espressif appka pro jejich zařízení."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Apple Home může přidat lepší diagnostiku párování.",
+        "Běžní uživatelé to nevyhledávají slovem 'matter', hledají konkrétní značku.",
+        "Matter specifikace se rychle mění (1.3, 1.4…), údržba.",
+        "'Matter' je ochranná známka CSA – opatrně v názvu."
+      ],
+      "killer_risk": "Příliš technické pro běžné uživatele, příliš úzké pro makery – malý objem.",
+      "mitigation": "Srozumitelný troubleshooting pro laiky jako vstupní brána, pokročilé funkce v Pro.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    }
+  ]
+}

@@ -1,0 +1,2574 @@
+{
+ "category": "Stickers",
+ "category_slug": "stickers",
+ "search_notes": "Offline běh: žádná volání Apple API ani WebSearch. Pro kategorii Stickers neexistuje evidence soubor; z ostatních _partial souborů jsem použil jen několik relevantních URL jako rodičovský důkaz (znakový jazyk z Kids, pletení z Graphics & Design, lezení ze Sports, autismus z Kids). Všechny saturace jsou odhady z tržní znalosti, proto evidence='knowledge' a blue_ocean max 7. Upřímné varování: čisté balíčky nálepek téměř nikdy nedosáhnou 10 000 Kč/měsíc – iMessage App Store je od iOS 11 špatně objevitelný, opakovaná tržba je nulová a Genmoji (iOS 18.2+) i Live Stickers z fotek (iOS 17) jsou přímý Sherlock. Nejlepší šance mají nápady s užitnou hodnotou a předplatným (digitální plánovač, sticker chart, stats z tréninků, print&cut archy). Guideline 4.3: profesní a jazykové balíčky doporučuji sloučit do 1–2 appek s IAP (např. 'Work Life Stickers', 'Slavic Stickers') místo 10 samostatných appek. WhatsApp export (WAStickerApps) je klíčový pro dosah mimo USA. Vyřazeno: trucker balíček (řidiči převážně Android), svahilština (malý podíl iOS ve východní Africe), samostatný hindský balíček (nulová ochota platit, pokryto v Diwali), Nowruz (kulturně nelze sloučit s Eid, malý iOS trh – Írán je mimo App Store).",
+ "ideas": [
+  {
+   "id": "stickers-01",
+   "name": "Planner Sticker Studio",
+   "tagline": "Digitální nálepky pro GoodNotes a Notability – přetáhni, vystřihni, naplánuj.",
+   "pitch": "Digitální plánování na iPadu (GoodNotes, Notability, Noteshelf) je obrovská subkultura a lidé kupují na Etsy balíčky nálepek za 3–15 USD, které pak pracně importují jako PNG. Uděláme knihovnu nálepek s drag & drop přímo do plánovače, s widgety, washi páskami, ikonami a tvorbou vlastních nálepek z fotek (Vision vystřihne objekt). Jde o nejvíce monetizovatelnou část celé kategorie Stickers, protože nejde o vtip do chatu, ale o pracovní nástroj, který se používá denně. Lokalizace do němčiny, japonštiny a korejštiny míří na silné papírnické kultury, které anglické appky přehlížejí.",
+   "niche": "Velké sticker appky cílí na WhatsApp/iMessage, samotné plánovací appky mají vlastní obchody jen v rámci svého ekosystému. Nezávislá knihovna nálepek s drag & drop do libovolné appky na iPadu je mezi nimi – obchodují s ní hlavně Etsy prodejci, ne vývojáři.",
+   "parent_market": "Digitální plánování a poznámky na iPadu – GoodNotes, Notability, Zinnia; placené Etsy balíčky digitálních nálepek (miliony prodejů).",
+   "target_user": "Ženy 18–40 s iPadem a Apple Pencil, studentky, bullet-journal a studygram komunita; v DE/JP/KR fanoušci papírnictví.",
+   "features": [
+    "Knihovna 2 000+ nálepek (měsíční sady, sezónní, habit ikony, washi pásky) s drag & drop na iPadu",
+    "Tvorba vlastní nálepky z fotky (Vision odstranění pozadí) a z textu s fonty",
+    "Barevné přebarvení celé sady na paletu plánovače",
+    "Oblíbené a kolekce synchronizované přes iCloud",
+    "Export PNG/PDF sticker sheet pro import do GoodNotes"
+   ],
+   "offline": "full",
+   "offline_note": "Všechna grafika je v balíčku, vystřihování Vision on-device, sync přes CloudKit; nové sady přichází s aktualizací appky (bez serveru).",
+   "monetization": "Freemium: 150 nálepek zdarma, předplatné 2,99 USD/měs (≈ 69 Kč) nebo 19,99 USD/rok (≈ 459 Kč), lifetime 39,99 USD.",
+   "revenue_math": "Ideál: 4000 stažení/měsíc × 5 % konverze = 200 platících × 14.99 USD × 0,85 × 23 = cca 58600 Kč čistého/měsíc. Počítáno průměrným příjmem na nového platícího (mix roční/měsíční). Keyword cluster 'digital planner stickers', 'goodnotes stickers' a lokalizace DE/JP to v ideálu unesou; realisticky první rok 10–15 tis. Kč.",
+   "revenue_czk_ideal": 58600,
+   "keywords": [
+    {
+     "kw": "digital stickers",
+     "saturation": 5,
+     "competitor": "Sticker apps (generické)",
+     "note": "odhad z tržní znalosti; hint neověřen, fráze běžná na Etsy"
+    },
+    {
+     "kw": "goodnotes stickers",
+     "saturation": 3,
+     "competitor": "Goodnotes (vlastní marketplace)",
+     "note": "odhad; název značky nesmí být v titulu (2.3.7/ochranná známka), jen v klíčových slovech opatrně"
+    },
+    {
+     "kw": "planner stickers",
+     "saturation": 4,
+     "competitor": "Planner sticker packs",
+     "note": "odhad; na App Store jen pár iPad-first knihoven"
+    },
+    {
+     "kw": "digital planner",
+     "saturation": 7,
+     "competitor": "Zinnia, Planner apps",
+     "note": "odhad; hlavní termín přeplněný, použít jen jako rodičovský důkaz"
+    },
+    {
+     "kw": "washi tape stickers",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad; úzký dlouhý chvost"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty (offline běh). Z tržní znalosti: Etsy kategorie 'digital planner stickers' má statisíce listingů a prodávající hlásí tisíce prodejů; Goodnotes spustil vlastní marketplace, což dokazuje placenou poptávku. Že klíčová slova na App Store nikdo silně nedrží, je odhad.",
+   "competitors": [
+    {
+     "name": "Goodnotes",
+     "url": "",
+     "role": "parent",
+     "note": "Lídr digitálního plánování, vlastní marketplace nálepek – důkaz ochoty platit"
+    },
+    {
+     "name": "Zinnia Journal & Planner",
+     "url": "",
+     "role": "niche",
+     "note": "Plánovač s vestavěnými nálepkami, ale uzavřený ekosystém"
+    },
+    {
+     "name": "Sticker Maker Studio",
+     "url": "",
+     "role": "parent",
+     "note": "Lídr tvorby nálepek pro chat, iPad plánovače neřeší"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": true,
+   "us_gap_note": "Digitální plánování je silně US-centrické, knihovny nálepek jsou jen anglicky; v Japonsku (techo kultura), Koreji (다꾸) a Německu je obrovská papírnická scéna bez lokalizované iPad appky.",
+   "devils_advocate": [
+    "Goodnotes/Notability mohou rozšířit vlastní obchod s nálepkami a zabudovat ho přímo do appky – uživatel pak nemá důvod přepínat.",
+    "Etsy prodejci nabízejí balíčky za 3 USD jednorázově; předplatné může být vnímáno jako drahé.",
+    "Vyrobit 2 000 kvalitních nálepek je hlavně grafická práce (nebo AI s rizikem nízké kvality a 4.3/2.1 odmítnutí za generický obsah).",
+    "Drag & drop mezi appkami funguje dobře jen na iPadu – iPhone trh je slabší."
+   ],
+   "killer_risk": "Goodnotes zabuduje vlastní nálepkový obchod hlouběji a uzavře ekosystém.",
+   "mitigation": "Být nezávislý na plánovači (funguje s GoodNotes, Notability, Noteshelf, Freeform), sázet na lokalizované sezónní sady a tvorbu z fotek, kterou marketplace nemá.",
+   "build_weeks": 6,
+   "scores": {
+    "demand": 7,
+    "blue_ocean": 5,
+    "monetization": 7,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 6
+   }
+  },
+  {
+   "id": "stickers-02",
+   "name": "Sticker Chart for Grown-Ups",
+   "tagline": "Nálepkový diář pro dospělé – odměna za každý splněný zvyk, jako když jsi byl malý.",
+   "pitch": "Na TikToku a Instagramu se rozjel trend 'adult sticker chart' – dospělí (často s ADHD) si lepí nálepky za vypitou vodu, uklizenou myčku nebo zavolání mámě. Habit trackery jsou ověřeně ziskový trh, ale jsou strohé a 'produktivní'. My uděláme digitální nálepkovou tabuli: každý splněný zvyk = sběratelská nálepka, plné archy odemykají nové sady. Je to Stickers appka s opravdovou retencí, protože se otevírá denně.",
+   "niche": "Habit trackery (Streaks, Habitify) řeší statistiky, ne radost ze sbírání; dětské reward charty jsou pro rodiče. Dospělý 'sticker chart' s dopaminovou odměnou a humorem je mezi nimi.",
+   "parent_market": "Habit trackery – Streaks, Habitify, Finch (self-care pet, silně monetizovaný), Tiimo (ADHD).",
+   "target_user": "Dospělí 20–40 let, často s ADHD nebo vyhořením, kterým strohé trackery nefungují.",
+   "features": [
+    "Tabule zvyků s lepením animovaných nálepek (haptika, zvuk)",
+    "Sběratelské sady a vzácné nálepky za série",
+    "Widget na plochu se zaplněným archem",
+    "iMessage extension: pošli kamarádovi svůj archem jako nálepku",
+    "Připomínky a iCloud sync"
+   ],
+   "offline": "full",
+   "offline_note": "Vše lokálně, HealthKit není třeba, sync přes CloudKit; žádný server.",
+   "monetization": "Freemium: 3 zvyky zdarma, předplatné 2,99 USD/měs nebo 14,99 USD/rok (≈ 345 Kč), lifetime 29,99 USD.",
+   "revenue_math": "Ideál: 3500 stažení/měsíc × 5 % konverze = 175 platících × 11.99 USD × 0,85 × 23 = cca 41000 Kč čistého/měsíc. Průměrný příjem na nového platícího (mix plánů). Trendové klíčové slovo může dočasně nést víc stažení, ideál je spíš strop.",
+   "revenue_czk_ideal": 41000,
+   "keywords": [
+    {
+     "kw": "sticker chart",
+     "saturation": 4,
+     "competitor": "Reward chart apps pro děti",
+     "note": "odhad; většina výsledků jsou dětské reward charty"
+    },
+    {
+     "kw": "adult sticker chart",
+     "saturation": 1,
+     "competitor": "—",
+     "note": "odhad; trend z TikToku, dedikovanou appku v názvu neznám"
+    },
+    {
+     "kw": "habit stickers",
+     "saturation": 2,
+     "competitor": "Habit tracker apps",
+     "note": "odhad"
+    },
+    {
+     "kw": "adhd habit tracker",
+     "saturation": 5,
+     "competitor": "Tiimo, Routinery",
+     "note": "odhad; přeplněnější, jen sekundárně"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Z tržní znalosti: trend 'adult sticker chart' měl virální videa (2023–25), Finch ukazuje, že gamifikovaný self-care vydělává miliony. Poptávka po přesné frázi na App Store je předpoklad.",
+   "competitors": [
+    {
+     "name": "Finch: Self Care Pet",
+     "url": "",
+     "role": "parent",
+     "note": "Gamifikovaný self-care, silná monetizace"
+    },
+    {
+     "name": "Streaks",
+     "url": "",
+     "role": "parent",
+     "note": "Placený habit tracker, důkaz ochoty platit"
+    },
+    {
+     "name": "Reward chart apps (děti)",
+     "url": "",
+     "role": "niche",
+     "note": "Obsazují frázi 'sticker chart', ale pro rodiče"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": true,
+   "us_gap_note": "Trend a existující habit appky jsou převážně anglické a US-centrické; lokalizovaná 'nálepková tabule pro dospělé' v DE/FR/ES/PT/JP chybí.",
+   "devils_advocate": [
+    "Trendy z TikToku rychle vyhasínají – poptávka po frázi může za rok zmizet.",
+    "Finch nebo Habitify přidají nálepkový mód během týdne.",
+    "Retence habit appek je obecně nízká – po 2 týdnech lidé přestanou lepit.",
+    "Kategorie Stickers je pro habit appku špatné zařazení – lépe Health/Productivity, jinak ztratíme dohledatelnost."
+   ],
+   "killer_risk": "Zájem je trend, ne trvalá potřeba, a za 6–12 měsíců poptávka opadne.",
+   "mitigation": "Zařadit primárně do Productivity/Lifestyle, stavět na sběratelské mechanice (retence), iMessage extension jako viralitu.",
+   "build_weeks": 4,
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 6,
+    "monetization": 6,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   }
+  },
+  {
+   "id": "stickers-03",
+   "name": "Run Stats Stickers",
+   "tagline": "Z tvého běhu udělej nálepku – trasa, tempo a kilometry do chatu i Stories.",
+   "pitch": "Běžci milují sdílet výsledky, ale Strava overlay jsou uniformní a vyžadují účet. Appka vezme trénink z HealthKitu (vzdálenost, tempo, trasu, převýšení) a vytvoří z něj průhlednou nálepku ve 30 stylech – pro iMessage, WhatsApp i Instagram Stories. Vše na zařízení, bez registrace. Běžci jsou ověřeně platící publikum (hodinky, Strava premium, závody).",
+   "niche": "Strava a Garmin mají sdílení jen ve svém stylu a přes svůj účet; overlay appky jsou většinou foto-editory. Čistě 'workout → nálepka' s HealthKit trasou offline je okrajový nápad, kterým se velcí nezabývají.",
+   "parent_market": "Běžecké a fitness appky – Strava, Runna, Nike Run Club; overlay appky pro sdílení tréninků.",
+   "target_user": "Rekreační běžci a závodníci 20–45 let s Apple Watch, kteří sdílejí výsledky v Stories a skupinových chatech klubu.",
+   "features": [
+    "Import tréninku z HealthKit (vzdálenost, tempo, čas, trasa z HKWorkoutRoute)",
+    "30 šablon nálepek (minimal, retro, medaile, závodní číslo)",
+    "iMessage extension + export do WhatsAppu a průhledné PNG do Stories",
+    "Milníkové nálepky (první půlmaraton, PR na 5 km) generované automaticky",
+    "Podpora cyklistiky, plavání a chůze"
+   ],
+   "offline": "full",
+   "offline_note": "HealthKit a vykreslení na zařízení; mapa trasy jako vektorová linie bez mapových dlaždic (žádné API).",
+   "monetization": "Freemium: 5 šablon zdarma, Pro 1,99 USD/měs nebo 12,99 USD/rok (≈ 299 Kč), lifetime 24,99 USD.",
+   "revenue_math": "Ideál: 4000 stažení/měsíc × 4 % konverze = 160 platících × 11.99 USD × 0,85 × 23 = cca 37500 Kč čistého/měsíc. Klíčová slova 'workout stickers', 'run stats', 'running stickers'; ideál předpokládá top-3 v několika zemích.",
+   "revenue_czk_ideal": 37500,
+   "keywords": [
+    {
+     "kw": "workout stickers",
+     "saturation": 4,
+     "competitor": "Overlay/stats sticker apps",
+     "note": "odhad; několik nových appek (2024–26) cílí na Stories overlay"
+    },
+    {
+     "kw": "running stickers",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "run stats overlay",
+     "saturation": 3,
+     "competitor": "Strava-style overlay apps",
+     "note": "odhad"
+    },
+    {
+     "kw": "strava stickers",
+     "saturation": 3,
+     "competitor": "—",
+     "note": "odhad; značku Strava nesmíme dát do názvu"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Z tržní znalosti: overlay appky pro sdílení tréninků (typu 'stats overlay') se v letech 2024–26 množí a některé monetizují předplatným, takže poptávka existuje; saturace je odhad.",
+   "competitors": [
+    {
+     "name": "Strava",
+     "url": "",
+     "role": "parent",
+     "note": "Lídr běžeckého sdílení, vlastní sdílecí karty"
+    },
+    {
+     "name": "Nike Run Club",
+     "url": "",
+     "role": "parent",
+     "note": "Zdarma, sdílecí karty jen ve vlastním stylu"
+    },
+    {
+     "name": "Workout overlay apps",
+     "url": "",
+     "role": "niche",
+     "note": "Foto-editory s overlay, často bez HealthKit tras"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": false,
+   "us_gap_note": "",
+   "devils_advocate": [
+    "Strava nebo Apple Fitness přidají lepší sdílecí karty a nálepky – Sherlock během jedné WWDC.",
+    "Na 'overlay' se v posledních dvou letech vrhlo víc vývojářů, cluster už nemusí být modrý.",
+    "Uživatelé zaplatí za sdílení jen jednou, retence mimo závodní sezónu je slabá.",
+    "HKWorkoutRoute chybí u tréninků z jiných hodinek bez synchronizace trasy."
+   ],
+   "killer_risk": "Strava/Apple Fitness vylepší nativní sdílení a appka ztratí důvod existence.",
+   "mitigation": "Stavět na stylu a kolekcích (medaile, závodní čísla, lokalizované texty), podpora i Garmin dat přes HealthKit, rychlé sezónní šablony k maratonům.",
+   "build_weeks": 4,
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 5,
+    "monetization": 6,
+    "build_ease": 6,
+    "offline_fit": 9,
+    "safety": 6
+   }
+  },
+  {
+   "id": "stickers-04",
+   "name": "Nat20 Dice & Stickers",
+   "tagline": "Hoď kostkou přímo v iMessage – výsledek vidí celá družina.",
+   "pitch": "Hráči stolních RPG plánují sezení a hrají 'play-by-post' ve skupinových chatech. iMessage appka umožní hodit d4–d100 s modifikátory tak, že výsledek je vidět v bublině a nejde ho zfalšovat, plus sadu reakčních nálepek (natural 20, kritický neúspěch, 'kdy je session?'). Jde o funkční iMessage appku, ne jen obrázky, což zvyšuje hodnotu i ochranu proti 4.3. TTRPG publikum je ověřeně platící (D&D Beyond, digitální kostky).",
+   "niche": "Dice rollery jsou samostatné appky; v iMessage prakticky nikdo nedělá kvalitní sdílený hod s ověřitelností. Velcí (D&D Beyond) mají vlastní platformu a iMessage je nezajímá.",
+   "parent_market": "TTRPG nástroje – D&D Beyond, dice roller appky, Roll20; placené digitální kostky a skiny.",
+   "target_user": "Hráči a Game Masteři D&D/Pathfinder 16–40 let, skupiny co plánují v iMessage.",
+   "features": [
+    "Hod kostkami v iMessage bublině (MSMessage) s historií hodů skupiny",
+    "Vzorce (2d6+3, výhoda/nevýhoda), uložené makra postav",
+    "Skiny kostek a animace (IAP)",
+    "40 reakčních nálepek bez chráněných značek",
+    "Samostatná appka jako klasický roller"
+   ],
+   "offline": "full",
+   "offline_note": "Generování hodů lokálně, sdílení přes iMessage payload (URL v MSMessage), žádný server.",
+   "monetization": "Zdarma se základními kostkami; skiny 1,99 USD, Pro balíček 4,99 USD jednorázově (≈ 115 Kč).",
+   "revenue_math": "Ideál: 3000 stažení/měsíc × 8 % konverze = 240 platících × 4.99 USD × 0,85 × 23 = cca 23400 Kč čistého/měsíc. iMessage appky mají slabou objevitelnost, ideál předpokládá top-3 na 'dice roller imessage' a 'dnd dice'.",
+   "revenue_czk_ideal": 23400,
+   "keywords": [
+    {
+     "kw": "dice roller",
+     "saturation": 8,
+     "competitor": "Dice roller apps",
+     "note": "odhad; hlavní termín přeplněný"
+    },
+    {
+     "kw": "dnd dice imessage",
+     "saturation": 1,
+     "competitor": "—",
+     "note": "odhad; 'D&D' je ochranná známka, jen v klíčových slovech opatrně"
+    },
+    {
+     "kw": "rpg dice stickers",
+     "saturation": 1,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "ttrpg dice",
+     "saturation": 3,
+     "competitor": "Dice apps",
+     "note": "odhad"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Znalost trhu: dice roller appky mají desítky tisíc hodnocení a prodávají skiny; iMessage-specifických rollerů je minimum. Poptávka po iMessage variantě je předpoklad.",
+   "competitors": [
+    {
+     "name": "D&D Beyond",
+     "url": "",
+     "role": "parent",
+     "note": "Oficiální platforma, vlastní kostky, iMessage neřeší"
+    },
+    {
+     "name": "Dice by PCalc",
+     "url": "",
+     "role": "niche",
+     "note": "Kvalitní 3D roller s placenými skiny, bez iMessage sdílení"
+    },
+    {
+     "name": "Roll20",
+     "url": "",
+     "role": "parent",
+     "note": "Online VTT, vyžaduje účet a server"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": false,
+   "us_gap_note": "",
+   "devils_advocate": [
+    "Hráči používají Discord, ne iMessage – mimo USA je iMessage skupinová hra vzácná.",
+    "Ochranná známka D&D / Wizards of the Coast – nesmíme použít v názvu ani grafice.",
+    "Objevitelnost iMessage appek je historicky špatná, Apple iMessage App Store upozadil.",
+    "Dice rollery jsou zdarma všude, zaplatí jen zlomek hráčů."
+   ],
+   "killer_risk": "TTRPG komunita žije na Discordu a iMessage verzi prostě nepotřebuje.",
+   "mitigation": "Hlavní appka jako plnohodnotný roller (kategorie Games/Utilities), iMessage jako diferenciátor; export výsledku jako obrázek pro Discord.",
+   "build_weeks": 4,
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 6,
+    "monetization": 5,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 6
+   }
+  },
+  {
+   "id": "stickers-05",
+   "name": "Countdown Stickers",
+   "tagline": "Pošli v chatu nálepku 'ještě 12 dní do dovolené' – vždy s aktuálním číslem.",
+   "pitch": "Countdown appky (do dovolené, svatby, porodu) patří k ověřeně vydělávajícím widgetovým appkám. My spojíme odpočet s iMessage/WhatsApp nálepkou: appka každý den vygeneruje aktuální nálepku s číslem dní a tématem, kterou pošleš partnerovi nebo skupině. Je to návyková sdílená rutina ('ještě 3 spánky!') a zároveň widget na plochu.",
+   "niche": "Countdown appky řeší widgety a notifikace, nikoli sdílení do chatu; sticker appky nemají dynamická data. Průnik nikdo nezabírá.",
+   "parent_market": "Countdown a event widget appky – Countdown Widget apps, Dreamdays, Time Until; placené odemčení témat.",
+   "target_user": "Páry na dálku, snoubenci, těhotné, rodiny před dovolenou, studenti před zkouškami.",
+   "features": [
+    "Neomezené odpočty s tématy (dovolená, svatba, miminko, koncert)",
+    "Denně generovaná nálepka s aktuálním číslem do iMessage a WhatsAppu",
+    "Widgety na plochu a zamykací obrazovku",
+    "Fotka jako pozadí nálepky (Vision vystřižení)",
+    "Počítání i 'dní spolu' pro páry"
+   ],
+   "offline": "full",
+   "offline_note": "Generování nálepek i widgetů lokálně; Export do WhatsAppu přes oficiální iOS integraci WAStickerApps (pasteboard, 512×512 WebP, 3–30 nálepek/balíček) – běží offline.",
+   "monetization": "Freemium: 2 odpočty zdarma, Pro 9,99 USD/rok (≈ 230 Kč) nebo 14,99 USD lifetime.",
+   "revenue_math": "Ideál: 4000 stažení/měsíc × 4 % konverze = 160 platících × 10.99 USD × 0,85 × 23 = cca 34400 Kč čistého/měsíc. Průměrně na platícího (mix ročního a lifetime).",
+   "revenue_czk_ideal": 34400,
+   "keywords": [
+    {
+     "kw": "countdown widget",
+     "saturation": 7,
+     "competitor": "Countdown widget apps",
+     "note": "odhad; přeplněné, jen rodičovský důkaz"
+    },
+    {
+     "kw": "countdown stickers",
+     "saturation": 1,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "days until stickers",
+     "saturation": 1,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "vacation countdown",
+     "saturation": 4,
+     "competitor": "Vacation countdown apps",
+     "note": "odhad"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Znalost trhu: countdown widget appky mají statisíce stažení a monetizují témata; chatová nálepka s dynamickým číslem je nevyzkoušený předpoklad.",
+   "competitors": [
+    {
+     "name": "Countdown Widget apps",
+     "url": "",
+     "role": "parent",
+     "note": "Silně stahovaná kategorie widgetů"
+    },
+    {
+     "name": "Dreamdays Countdown",
+     "url": "",
+     "role": "niche",
+     "note": "Odpočty a výročí, sdílení jen jako obrázek"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": false,
+   "us_gap_note": "",
+   "devils_advocate": [
+    "Klíčové slovo 'countdown' je přeplněné a 'countdown stickers' nikdo nehledá – objevitelnost závisí na sekundárních frázích.",
+    "Apple může přidat odpočet do Kalendáře/Widgetů s nálepkou (Sherlock).",
+    "Uživatel pošle nálepku párkrát a přestane – slabá retence mimo událost.",
+    "Nálepky v iMessage nejdou automaticky aktualizovat, uživatel musí poslat novou."
+   ],
+   "killer_risk": "Nikdo nehledá 'countdown stickers' a hlavní 'countdown' klíčová slova jsou obsazená.",
+   "mitigation": "ASO postavit na 'vacation countdown', 'wedding countdown' lokalizovaných ve 50 jazycích; sticker funkce jako hlavní vizuální odlišení ve screenshotech.",
+   "build_weeks": 3,
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 6,
+    "monetization": 5,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 5
+   }
+  },
+  {
+   "id": "stickers-06",
+   "name": "Print & Cut Sticker Sheets",
+   "tagline": "Rozlož nálepky na arch A4/Letter s ořezovou konturou – připraveno pro Cricut i Silhouette.",
+   "pitch": "Tisíce malých prodejců na Etsy a kutilů tisknou vlastní nálepky na plotrech Cricut a Silhouette. Nejpracnější krok je rozmístit obrázky na arch, přidat bílý okraj (offset), spadávku a ořezovou konturu. Appka to udělá automaticky: vlož PNG nebo fotku, Vision vystřihne objekt, appka přidá kontury a vyexportuje tiskové PDF/SVG. Prodejci platí za nástroje, které jim šetří čas.",
+   "niche": "Cricut Design Space je pomalý a vyžaduje účet a online; appky na tvorbu nálepek řeší chat, ne tisk. Rozvržení tiskového archu je nedoceněný pracovní krok.",
+   "parent_market": "Řezací plottery a craft appky – Cricut Design Space, Silhouette Go, Canva (sticker sheet šablony); Etsy sticker shopy.",
+   "target_user": "Etsy/Vinted prodejci nálepek, kutilové s Cricut/Silhouette, učitelky a rodiče tisknoucí vlastní nálepky.",
+   "features": [
+    "Automatický offset (bílý okraj) a ořezová kontura z PNG/fotky",
+    "Rozmístění na arch A4/Letter/A5 se spadávkou a registračními značkami",
+    "Export PDF pro tisk + SVG/DXF kontura pro řezací software",
+    "Kiss-cut i die-cut režim, kulaté a čtvercové štítky",
+    "Šablony pro papíry Avery-kompatibilních rozměrů (bez značky)"
+   ],
+   "offline": "full",
+   "offline_note": "Vision vystřihování, výpočet kontury a export PDF/SVG vše na zařízení.",
+   "monetization": "Freemium: 1 arch s vodoznakem zdarma, Pro 4,99 USD/měs nebo 29,99 USD/rok (≈ 690 Kč), lifetime 49,99 USD.",
+   "revenue_math": "Ideál: 3000 stažení/měsíc × 5 % konverze = 150 platících × 24.99 USD × 0,85 × 23 = cca 73300 Kč čistého/měsíc. Průměrně na platícího (převaha ročních předplatných od prodejců).",
+   "revenue_czk_ideal": 73300,
+   "keywords": [
+    {
+     "kw": "sticker maker print",
+     "saturation": 3,
+     "competitor": "Sticker print apps",
+     "note": "odhad"
+    },
+    {
+     "kw": "sticker sheet maker",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad; vidím spíš Canva šablony než dedikované appky"
+    },
+    {
+     "kw": "print and cut",
+     "saturation": 3,
+     "competitor": "Cricut Design Space",
+     "note": "odhad"
+    },
+    {
+     "kw": "cricut stickers",
+     "saturation": 3,
+     "competitor": "—",
+     "note": "odhad; značku Cricut nesmíme mít v názvu"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Znalost trhu: Cricut má miliony uživatelů a 'print then cut stickers' je velké YouTube téma; photo-to-craft konvertory prokazatelně vydělávají (evidence Graphics & Design: Beads Creator 1,5 mil. stažení). Saturace je odhad.",
+   "competitors": [
+    {
+     "name": "Cricut Design Space",
+     "url": "",
+     "role": "parent",
+     "note": "Oficiální software, pomalý, vyžaduje účet"
+    },
+    {
+     "name": "Silhouette Go",
+     "url": "",
+     "role": "parent",
+     "note": "Oficiální appka Silhouette"
+    },
+    {
+     "name": "Canva",
+     "url": "",
+     "role": "niche",
+     "note": "Šablony sticker sheetů bez automatické kontury"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": true,
+   "us_gap_note": "Cricut kultura je silně americká a nástroje jsou anglicky; v DE/FR/JP/BR roste plotrová komunita bez lokalizovaného nástroje (A4 místo Letter).",
+   "devils_advocate": [
+    "Cricut Design Space přidá automatický offset (částečně už má) a náš hlavní trik zanikne.",
+    "Každý plotr má vlastní formát registračních značek – kompatibilita je technicky náročná a podpora drahá.",
+    "Na iPhonu je práce s tiskovým archem nepohodlná, reálný trh je iPad.",
+    "Ochranné známky Cricut/Silhouette nesmíme použít v názvu – slabší ASO."
+   ],
+   "killer_risk": "Cricut vylepší Design Space a bezplatně pokryje celý workflow.",
+   "mitigation": "Zaměřit se na rychlost a offline, podporu obou plotrů i klasických tiskáren, A4 a lokalizaci; SVG export pro jakýkoli řezací software.",
+   "build_weeks": 8,
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 5,
+    "monetization": 7,
+    "build_ease": 4,
+    "offline_fit": 10,
+    "safety": 6
+   }
+  },
+  {
+   "id": "stickers-07",
+   "name": "Sign Stickers",
+   "tagline": "Nálepky ve znakovém jazyce – ASL, BSL, DGS, LSF i ČZJ.",
+   "pitch": "Neslyšící a jejich rodiny, tlumočníci a lidé, kteří se znakový jazyk učí, nemají v chatu jak 'mluvit' svým jazykem. Připravíme ilustrované (a animované) nálepky běžných frází (děkuji, miluji tě, jak se máš) v národních znakových jazycích – ne jen v americkém ASL. Každý jazyk jako balíček uvnitř jedné appky, tvořeno s neslyšícími konzultanty. Evidence z kategorie Kids ukazuje, že znakové appky mimo ASL jsou téměř prázdné.",
+   "niche": "Existující nálepky se znaky jsou skoro výhradně ASL a často nepřesné; národní znakové jazyky (BSL, DGS, LSF, ČZJ, Libras) jsou pro velké studia příliš malé a vyžadují spolupráci s komunitou.",
+   "parent_market": "Výuka znakového jazyka – ASL appky (Lingvano, The ASL App), baby sign language appky (placené, 2,99–8,99 USD).",
+   "target_user": "Neslyšící a nedoslýchaví, CODA děti, rodiče neslyšících dětí, studenti znakového jazyka a tlumočníci.",
+   "features": [
+    "Balíčky 60–100 frází pro ASL, BSL, DGS, LSF, LSE, ČZJ, Libras",
+    "Animované nálepky (APNG) s pohybem ruky",
+    "Prstová abeceda: napiš slovo, appka složí nálepku z hláskování",
+    "Export do WhatsAppu",
+    "Popisek fráze v mluveném jazyce pro přístupnost (VoiceOver)"
+   ],
+   "offline": "full",
+   "offline_note": "Vše v balíčku; Export do WhatsAppu přes oficiální iOS integraci WAStickerApps (pasteboard, 512×512 WebP, 3–30 nálepek/balíček) – běží offline.",
+   "monetization": "Freemium: základní fráze zdarma, každý národní jazyk 2,99 USD (≈ 69 Kč), vše 7,99 USD (≈ 184 Kč).",
+   "revenue_math": "Ideál: 2500 stažení/měsíc × 8 % konverze = 200 platících × 4.49 USD × 0,85 × 23 = cca 17600 Kč čistého/měsíc. Ideál vyžaduje 50 lokalizací a přítomnost v komunitě neslyšících; realisticky spíš 3–6 tis. Kč.",
+   "revenue_czk_ideal": 17600,
+   "keywords": [
+    {
+     "kw": "sign language stickers",
+     "saturation": 2,
+     "competitor": "ASL sticker packs",
+     "note": "odhad; převážně ASL"
+    },
+    {
+     "kw": "asl stickers",
+     "saturation": 3,
+     "competitor": "ASL sticker packs",
+     "note": "odhad"
+    },
+    {
+     "kw": "bsl stickers",
+     "saturation": 0,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "fingerspelling",
+     "saturation": 3,
+     "competitor": "Fingerspelling apps",
+     "note": "odhad; evidence Education zmiňuje fingerspelling BSL/Auslan jako neověřenou mezeru"
+    }
+   ],
+   "demand_evidence": "Částečně ověřeno z evidence Kids: 'baby sign language' je v ASL přeplněné (sat ~7), německé Babyzeichen mají 3 appky s ochotou platit 8,99 USD, ostatní národní znakové jazyky vypadají prázdné. Poptávka po nálepkách je předpoklad.",
+   "competitors": [
+    {
+     "name": "Baby Sign and Learn ASL Pro",
+     "url": "https://apps.apple.com/us/app/baby-sign-and-learn-american-sign-language-pro-edition/id525724090",
+     "role": "parent",
+     "note": "Placená ASL appka (2,99 USD) – důkaz ochoty platit za znaky"
+    },
+    {
+     "name": "ASL Baby Sign language (Kwebl)",
+     "url": "https://apps.apple.com/gb/app/asl-baby-sign-language/id1161092101",
+     "role": "parent",
+     "note": "350+ ASL znaků, výhradně ASL"
+    },
+    {
+     "name": "Babyzeichen Zwergensprache",
+     "url": "https://apps.apple.com/de/app/babyzeichen-zwergensprache/id1104925876",
+     "role": "niche",
+     "note": "DGS, 8,99 USD – důkaz poptávky mimo ASL"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": true,
+   "us_gap_note": "Na trhu jsou prakticky jen ASL nálepky a appky; BSL, DGS, LSF, ČZJ a Libras nálepky chybí – lokalizace je zde podstata produktu.",
+   "devils_advocate": [
+    "Nepřesný znak = veřejná kritika komunity neslyšících; bez rodilých konzultantů nelze vydat.",
+    "Každý národní jazyk je malý trh (tisíce až desetitisíce uživatelů) – součet nemusí dosáhnout 10 tis. Kč.",
+    "Animace rukou je grafická dřina, 7 jazyků × 80 frází je stovky kreseb.",
+    "Riziko nařčení z kulturní apropriace, pokud tvůrci nejsou z komunity."
+   ],
+   "killer_risk": "Obsah vyžaduje spolupráci s neslyšícími a je drahý, zatímco trh každého jazyka je malý.",
+   "mitigation": "Začít ASL+BSL+DGS, spolupracovat s neslyšícími ilustrátory za podíl z tržeb, další jazyky podle poptávky; zisk sdílet s komunitou jako marketingový příběh.",
+   "build_weeks": 8,
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 7,
+    "monetization": 4,
+    "build_ease": 4,
+    "offline_fit": 10,
+    "safety": 5
+   }
+  },
+  {
+   "id": "stickers-08",
+   "name": "Teacher Stamps",
+   "tagline": "Digitální razítka a pochvaly pro opravování na iPadu – 'Výborně!' jedním dotykem.",
+   "pitch": "Učitelé, kteří opravují práce na iPadu (Notability, GoodNotes, Showbie, Seesaw), kupují na Teachers Pay Teachers 'digital teacher stickers' – PNG pochvaly, které pak ručně vkládají. Appka dá učiteli knihovnu pochval, známek a razítek v jeho jazyce (včetně českých jedniček, německých 'Sehr gut', francouzských 'Bravo'), s drag & drop do jakékoli appky. TPT je ověřený trh, kde učitelé platí vlastními penězi.",
+   "niche": "TPT prodejci dělají statické balíčky jen anglicky; ed-tech platformy mají pár vlastních razítek bez lokalizace. Lokalizované pochvaly podle školních zvyklostí nikdo nedělá.",
+   "parent_market": "Digitální výukové materiály – Teachers Pay Teachers (digital stickers), Seesaw, Showbie, ClassDojo.",
+   "target_user": "Učitelé 1. a 2. stupně s iPadem, doučovatelé, homeschooling rodiče.",
+   "features": [
+    "Knihovna pochval a razítek podle země (známky, hodnocení, smajlíci)",
+    "Drag & drop do Notability, GoodNotes, Showbie, Files",
+    "Vlastní razítko se jménem učitele a podpisem",
+    "Sezónní sady (Vánoce, konec roku) v aktualizacích",
+    "Rychlá lišta oblíbených pro opravování"
+   ],
+   "offline": "full",
+   "offline_note": "Vše lokálně v balíčku; sync oblíbených přes iCloud.",
+   "monetization": "Jednorázově 4,99 USD (≈ 115 Kč) za jazykový balíček, nebo 'All countries' 9,99 USD; školní licence přes Volume Purchase.",
+   "revenue_math": "Ideál: 2500 stažení/měsíc × 10 % konverze = 250 platících × 5.99 USD × 0,85 × 23 = cca 29300 Kč čistého/měsíc. Sezónně (září, leden) víc; ideál vyžaduje top-3 v 5+ zemích.",
+   "revenue_czk_ideal": 29300,
+   "keywords": [
+    {
+     "kw": "teacher stickers",
+     "saturation": 3,
+     "competitor": "Teacher sticker packs",
+     "note": "odhad"
+    },
+    {
+     "kw": "digital stickers for teachers",
+     "saturation": 1,
+     "competitor": "—",
+     "note": "odhad; fráze běžná na TPT"
+    },
+    {
+     "kw": "grading stamps",
+     "saturation": 1,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "reward stickers",
+     "saturation": 5,
+     "competitor": "Reward chart apps",
+     "note": "odhad; převážně rodičovské appky"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Znalost trhu: TPT má tisíce listingů 'digital stickers for teachers' a prodávající je prodávají po 3–5 USD; iPad je ve školách rozšířený (US, UK, AU, NL, severské země).",
+   "competitors": [
+    {
+     "name": "Teachers Pay Teachers",
+     "url": "",
+     "role": "parent",
+     "note": "Marketplace s balíčky digitálních razítek"
+    },
+    {
+     "name": "Seesaw",
+     "url": "",
+     "role": "parent",
+     "note": "Platforma s vlastními základními razítky"
+    },
+    {
+     "name": "Showbie",
+     "url": "",
+     "role": "niche",
+     "note": "Opravování na iPadu, omezená razítka"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": true,
+   "us_gap_note": "TPT a jeho digitální razítka jsou americká a jen anglicky; učitelé v DE/FR/CZ/PL/NL potřebují pochvaly podle vlastního hodnocení a jazyka.",
+   "devils_advocate": [
+    "Učitelé často nemají budget a čekají, že školní licence vše pokryje.",
+    "Seesaw/Showbie mohou přidat lokalizovaná razítka zdarma.",
+    "Učitelé si razítka snadno vytvoří v Canvě zdarma.",
+    "Sezónnost: poptávka vrcholí v září, v létě je nulová."
+   ],
+   "killer_risk": "Učitelé zůstanou u bezplatné Canvy a razítek vestavěných v platformách.",
+   "mitigation": "Nízká cena, rychlost (lišta oblíbených), lokalizace pro 20+ školních systémů a Volume Purchase pro školy.",
+   "build_weeks": 3,
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 6,
+    "monetization": 6,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   }
+  },
+  {
+   "id": "stickers-09",
+   "name": "Name Day Stickers",
+   "tagline": "Nálepky k svátku se jménem – česky, polsky, slovensky, maďarsky i řecky.",
+   "pitch": "Ve střední a východní Evropě, Pobaltí, Řecku a Skandinávii se slaví jmeniny a lidé si posílají přání v chatu. Appka zná kalendář jmen pro 10+ zemí, připomene, kdo má dnes svátek, a vytvoří nálepku 'Všechno nejlepší k svátku, Petře' se správným 5. pádem. Jde o obrácenou US mezeru – v USA jmeniny neexistují, proto je velcí vývojáři ignorují.",
+   "niche": "Globální sticker appky jsou postavené na amerických svátcích; lokální appky se jmeninami jsou jen kalendáře bez sdílitelných nálepek a bez gramatiky (vokativ).",
+   "parent_market": "Kalendáře jmenin a přání – lokální 'Svátky' / 'Imieniny' appky, eCard a greeting appky.",
+   "target_user": "Lidé 25–65 let v CZ, SK, PL, HU, LT, LV, EE, GR, SE/FI, kteří posílají přání rodině a kolegům.",
+   "features": [
+    "Kalendář jmenin pro 10+ zemí s připomínkami z kontaktů",
+    "Nálepky s automaticky skloněným jménem (vokativ v CZ/PL/SK/LT)",
+    "Widget 'dnes má svátek'",
+    "Export do WhatsAppu a iMessage",
+    "Sady stylů: klasické, vtipné, pracovní"
+   ],
+   "offline": "full",
+   "offline_note": "Kalendáře jmen a pravidla skloňování v balíčku; kontakty čteny lokálně; Export do WhatsAppu přes oficiální iOS integraci WAStickerApps (pasteboard, 512×512 WebP, 3–30 nálepek/balíček) – běží offline.",
+   "monetization": "Freemium: základní nálepky zdarma, Pro 1,99 USD/rok nebo 4,99 USD lifetime (≈ 115 Kč).",
+   "revenue_math": "Ideál: 4000 stažení/měsíc × 5 % konverze = 200 platících × 3.99 USD × 0,85 × 23 = cca 15600 Kč čistého/měsíc. Mix Pro plánů. Součet 10 malých trhů; realisticky první rok 3–6 tis. Kč.",
+   "revenue_czk_ideal": 15600,
+   "keywords": [
+    {
+     "kw": "imieniny",
+     "saturation": 4,
+     "competitor": "Polské kalendáře imenin",
+     "note": "odhad"
+    },
+    {
+     "kw": "svátky jmeniny",
+     "saturation": 3,
+     "competitor": "Czech name day apps",
+     "note": "odhad; CZ trh malý"
+    },
+    {
+     "kw": "name day",
+     "saturation": 3,
+     "competitor": "Name Days apps",
+     "note": "odhad"
+    },
+    {
+     "kw": "névnap",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Znalost trhu: jmeniny jsou v CZ/PL/SK/HU běžný zvyk, lokální kalendářové appky existují a mají hodnocení v řádu stovek až tisíců. Ochota platit za nálepky je předpoklad.",
+   "competitors": [
+    {
+     "name": "Name day calendar apps (CZ/PL)",
+     "url": "",
+     "role": "parent",
+     "note": "Lokální kalendáře jmenin bez nálepek"
+    },
+    {
+     "name": "Greeting card & eCard apps",
+     "url": "",
+     "role": "parent",
+     "note": "Přání bez jmenin a bez skloňování"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": true,
+   "us_gap_note": "Obrácená US mezera: zvyk jmenin v USA neexistuje, takže model nemá americký vzor a velcí vývojáři ho ignorují – my ho lokalizujeme pro všech 10+ jmeninových zemí.",
+   "devils_advocate": [
+    "Jmeniny slaví hlavně starší generace, která nálepky neposílá tolik jako mladí.",
+    "Ochota platit za přání v CEE je nízká – většina chce zdarma.",
+    "Skloňování jmen má výjimky; chybný vokativ zesměšní appku.",
+    "iPhone má v CEE menší podíl než Android."
+   ],
+   "killer_risk": "Nízká ochota platit v CEE regionu udrží tržby pod 10 tis. Kč.",
+   "mitigation": "Předplatné nahradit levným lifetime, přidat kontakty + widget jako hlavní hodnotu, ruční opravu vokativu.",
+   "build_weeks": 4,
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 7,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 6
+   }
+  },
+  {
+   "id": "stickers-10",
+   "name": "Nurse Life Stickers",
+   "tagline": "Nálepky pro sestry – 12h směna, káva, 'kdo mi zase vzal propisku'.",
+   "pitch": "Zdravotní sestry mají silnou profesní identitu a humor; nurse merch (hrnky, trička) je na Etsy obrovský. Balíček 80 nálepek o životě na směně, s lokalizací do jazyků (Krankenschwester, pielęgniarka, sestřička), pro iMessage i WhatsApp. Jde o nejlevnější a nejrychlejší typ produktu – ale musíme být upřímní, že dosáhnout 10 tis. Kč měsíčně je u čistého balíčku nálepek obtížné.",
+   "niche": "Profesní balíčky jsou pro velká studia příliš malé a obecné sticker appky dělají generické 'doctor' obrázky. Lokalizovaný profesní humor chybí.",
+   "parent_market": "Profesní merch a iMessage sticker packs – Etsy nurse merch, Nurse apps (Nursing Central), obecné iMessage balíčky.",
+   "target_user": "Zdravotní sestry a studentky ošetřovatelství 20–50 let, zejména v US, UK, DE, PL, PH.",
+   "features": [
+    "80 nálepek: směna, noční, káva, pacienti, kolegyně",
+    "Lokalizované texty do 15 jazyků",
+    "Animované nálepky pro iMessage",
+    "Export do WhatsAppu",
+    "Vlastní text na nálepce (jméno oddělení)"
+   ],
+   "offline": "full",
+   "offline_note": "Grafika v balíčku; Export do WhatsAppu přes oficiální iOS integraci WAStickerApps (pasteboard, 512×512 WebP, 3–30 nálepek/balíček) – běží offline.",
+   "monetization": "Placená iMessage appka 1,99 USD (≈ 46 Kč) nebo free + IAP 'všechny sady' 2,99 USD.",
+   "revenue_math": "Ideál: 5000 stažení/měsíc × 8 % konverze = 400 platících × 2.49 USD × 0,85 × 23 = cca 19500 Kč čistého/měsíc. Ideál = top-3 na 'nurse stickers' ve více zemích; realisticky balíček dělá 1–3 tis. Kč měsíčně.",
+   "revenue_czk_ideal": 19500,
+   "keywords": [
+    {
+     "kw": "nurse stickers",
+     "saturation": 5,
+     "competitor": "Nurse sticker packs",
+     "note": "odhad; několik starších iMessage balíčků"
+    },
+    {
+     "kw": "nursing stickers",
+     "saturation": 3,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "medical stickers",
+     "saturation": 5,
+     "competitor": "Medical emoji packs",
+     "note": "odhad"
+    },
+    {
+     "kw": "krankenschwester sticker",
+     "saturation": 0,
+     "competitor": "—",
+     "note": "odhad"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Znalost trhu: nurse merch patří na Etsy k nejprodávanějším profesním tématům; iMessage nurse balíčky existují, ale většinou z let 2016–2019. Poptávka na App Store je odhad.",
+   "competitors": [
+    {
+     "name": "Nurse sticker packs (iMessage)",
+     "url": "",
+     "role": "niche",
+     "note": "Starší balíčky z doby iOS 10, často neaktualizované"
+    },
+    {
+     "name": "Etsy nurse merch",
+     "url": "",
+     "role": "parent",
+     "note": "Silný profesní merch trh mimo App Store"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": false,
+   "us_gap_note": "",
+   "devils_advocate": [
+    "Genmoji (iOS 18.2+) a Image Playground umožní uživateli vygenerovat si podobnou nálepku zdarma během pár sekund – přímý Sherlock pro tematické balíčky.",
+    "Guideline 4.3: pokud vydáme víc balíčků se stejnou šablonou, Apple je může odmítnout jako spam a ohrozit i ostatní appky účtu.",
+    "iMessage sticker App Store je od iOS 11 téměř neobjevitelný – bez vnějšího marketingu se balíček neprodá.",
+    "Sestry jsou vytížené a nálepky kupují impulzivně jen jednou – nulová opakovaná tržba."
+   ],
+   "killer_risk": "Čistý balíček nálepek negeneruje opakované tržby a 10 tis. Kč měsíčně je pro něj téměř nedosažitelné.",
+   "mitigation": "Spojit profese do jedné appky 'Work Life Stickers' s IAP balíčky (sestry, piloti, vývojáři) a tím obejít 4.3; ASO lokalizované profesní termíny.",
+   "build_weeks": 2,
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 4,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 5
+   }
+  },
+  {
+   "id": "stickers-11",
+   "name": "Yarn Life Stickers",
+   "tagline": "Nálepky pro pletařky a háčkařky – 'ještě jedna řada', párání, stash.",
+   "pitch": "Pletení a háčkování je obrovská komunita (Ravelry, miliony uživatelů), s vlastním slangem (frogging, stash, WIP, UFO). Balíček vtipných nálepek s lokalizovaným slangem a přidaná mini funkce – nálepka s aktuálním počtem řad nebo stavem projektu. Publikum je starší, na iPhonu, a za řemeslné appky ověřeně platí (Knitting Chart, počítadla řad).",
+   "niche": "Pletařské appky řeší vzory a počítadla, sticker appky řemeslnou komunitu ignorují. Dedikovaný balíček s komunitním slangem je malý, proto ho nikdo neudělal kvalitně.",
+   "parent_market": "Pletařské a háčkovací appky – Ravelry (web), Knitting Chart, počítadla řad (placené), Knit Companion.",
+   "target_user": "Pletařky a háčkařky 25–70 let, členky Ravelry a Facebook skupin.",
+   "features": [
+    "70 nálepek s pletařským slangem (frogging, WIP, stash)",
+    "Nálepka projektu: fotka + 'řada 124/200'",
+    "Lokalizace slangu DE/NL/NO/DA/FR/CZ",
+    "Export do WhatsAppu a iMessage"
+   ],
+   "offline": "full",
+   "offline_note": "Vše v balíčku; Export do WhatsAppu přes oficiální iOS integraci WAStickerApps (pasteboard, 512×512 WebP, 3–30 nálepek/balíček) – běží offline.",
+   "monetization": "Free + IAP 2,99 USD (≈ 69 Kč) za plnou sadu; tip jar 0,99–4,99 USD.",
+   "revenue_math": "Ideál: 3000 stažení/měsíc × 10 % konverze = 300 platících × 2.99 USD × 0,85 × 23 = cca 17500 Kč čistého/měsíc. Ideál; realisticky 1–3 tis. Kč. Silnější varianta je spojení s počítadlem řad (jiná kategorie).",
+   "revenue_czk_ideal": 17500,
+   "keywords": [
+    {
+     "kw": "knitting stickers",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "crochet stickers",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "yarn stickers",
+     "saturation": 1,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "knitting",
+     "saturation": 8,
+     "competitor": "Knitting Chart, row counters",
+     "note": "odhad; hlavní termín jen jako rodičovský důkaz"
+    }
+   ],
+   "demand_evidence": "Částečně z evidence Graphics & Design: pletařské nástroje (Knitting Chart, Knit Pro, row counters) mají ~4 dedikované appky a ověřeně prodávají. Poptávka po nálepkách je předpoklad.",
+   "competitors": [
+    {
+     "name": "Knitting Chart",
+     "url": "https://apps.apple.com/us/app/knitting-chart/id1251317736",
+     "role": "parent",
+     "note": "Placený pletařský nástroj – důkaz, že komunita platí"
+    },
+    {
+     "name": "My Row Counter",
+     "url": "https://apps.apple.com/is/app/my-row-counter-knit-crochet/id1342608792",
+     "role": "parent",
+     "note": "Počítadlo řad s háčkovacími funkcemi"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": false,
+   "us_gap_note": "",
+   "devils_advocate": [
+    "Starší publikum iMessage nálepky používá méně než emoji a fotky.",
+    "Komunita žije na Ravelry a Facebooku, ne v App Store vyhledávání.",
+    "Genmoji (iOS 18.2+) a Image Playground umožní uživateli vygenerovat si podobnou nálepku zdarma během pár sekund – přímý Sherlock pro tematické balíčky.",
+    "Slang je jazykově specifický – překlad bez rodilé pletařky zní uměle."
+   ],
+   "killer_risk": "Pletařky nálepky na App Store nehledají, takže ASO nepřinese stažení.",
+   "mitigation": "Spojit s placeným mini nástrojem (nálepka projektu + počítadlo řad), propagovat v komunitách pletařek.",
+   "build_weeks": 2,
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 6,
+    "monetization": 4,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   }
+  },
+  {
+   "id": "stickers-12",
+   "name": "Sober Milestone Stickers",
+   "tagline": "Nálepky milníků střízlivosti – 30, 90, 365 dní, s tvým datem.",
+   "pitch": "Lidé v recovery slaví milníky (žetony za 24 hodin, 30 dní, rok) a sdílí je s podporující skupinou. Appka spočítá dny od data střízlivosti a vygeneruje důstojné, hezké nálepky milníků pro chat, plus sady povzbuzení pro sponzory a přátele. Sobriety countery (I Am Sober) jsou ověřeně vydělávající trh, nálepky jsou nezabraný doplněk.",
+   "niche": "Sobriety appky řeší počítání a komunitu, sdílení mají jen jako screenshot; sticker appky se tématu bojí. Důstojné, nekomerční nálepky milníků nikdo nedělá.",
+   "parent_market": "Sobriety countery – I Am Sober, Sober Time, Nomo; recovery komunity.",
+   "target_user": "Lidé v recovery z alkoholu, drog, hazardu a jejich sponzoři, rodiny a přátelé.",
+   "features": [
+    "Počítadlo dní od data střízlivosti (více závislostí)",
+    "Automaticky generované nálepky milníků (24 h až 10 let)",
+    "Sady povzbuzení pro přátele ('jsem na tebe hrdý')",
+    "Widget se dny",
+    "Soukromí: vše lokálně, zámek Face ID"
+   ],
+   "offline": "full",
+   "offline_note": "Vše lokálně, žádný účet; Export do WhatsAppu přes oficiální iOS integraci WAStickerApps (pasteboard, 512×512 WebP, 3–30 nálepek/balíček) – běží offline.",
+   "monetization": "Freemium: základní milníky zdarma, Pro 9,99 USD/rok nebo 14,99 USD lifetime (≈ 345 Kč).",
+   "revenue_math": "Ideál: 3000 stažení/měsíc × 5 % konverze = 150 platících × 11.99 USD × 0,85 × 23 = cca 35200 Kč čistého/měsíc. Mix plánů; ideál vyžaduje lokalizované ASO 'sober counter' ve více zemích.",
+   "revenue_czk_ideal": 35200,
+   "keywords": [
+    {
+     "kw": "sobriety counter",
+     "saturation": 7,
+     "competitor": "I Am Sober",
+     "note": "odhad; přeplněné, jen rodičovský důkaz"
+    },
+    {
+     "kw": "sober stickers",
+     "saturation": 1,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "sobriety milestones",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "recovery stickers",
+     "saturation": 1,
+     "competitor": "—",
+     "note": "odhad"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Znalost trhu: I Am Sober má statisíce hodnocení a předplatné; tradice žetonů milníků je doložená. Poptávka po nálepkách je předpoklad.",
+   "competitors": [
+    {
+     "name": "I Am Sober",
+     "url": "",
+     "role": "parent",
+     "note": "Lídr sobriety counterů s předplatným"
+    },
+    {
+     "name": "Nomo - Sobriety Clocks",
+     "url": "",
+     "role": "niche",
+     "note": "Počítadla a 'chipy' v aplikaci, sdílení omezené"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": true,
+   "us_gap_note": "Sobriety appky jsou převážně anglické a americké (AA/NA kultura); lokalizované počítadlo s nálepkami chybí v DE/FR/PL/CZ/BR.",
+   "devils_advocate": [
+    "I Am Sober může přidat nálepky do iMessage za týden.",
+    "Citlivé téma – nevhodný humor nebo design vyvolá negativní recenze.",
+    "Názvy a symbolika AA žetonů mohou být chráněné; musíme se jim vyhnout.",
+    "Zdravotní tvrzení (1.4.1) nesmíme dělat – nejde o léčbu."
+   ],
+   "killer_risk": "I Am Sober přidá vlastní nálepky milníků a uživatelé nebudou potřebovat druhou appku.",
+   "mitigation": "Být nejlepší lokalizovaný offline counter (soukromí jako USP) s nálepkami jako hlavním diferenciátorem, ne jen doplňkem.",
+   "build_weeks": 3,
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 6,
+    "monetization": 4,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 5
+   }
+  },
+  {
+   "id": "stickers-13",
+   "name": "Chess Reaction Stickers",
+   "tagline": "Brilantní tah!! Blunder?? En passant – šachové nálepky do chatu.",
+   "pitch": "Šachový boom po roce 2020 vytvořil obrovskou komunitu s vlastními memy ('google en passant', 'brilliant move', blunder). Balíček šachových reakčních nálepek s anotačními symboly (!!, ??, !?) a figurkami, plus nálepka z libovolné pozice (FEN → diagram). Chess.com a Lichess jsou ověřeně velké platformy.",
+   "niche": "Chess.com má vlastní ikony, ale nedělá nálepky do chatu; generické sticker appky šachy neznají. Pozice → diagram nálepka je nerealizovaný nápad.",
+   "parent_market": "Šachové platformy – Chess.com (miliony platících), Lichess, šachové výukové appky.",
+   "target_user": "Online hráči šachu 15–40 let, šachové kluby, streameři a jejich fanoušci.",
+   "features": [
+    "60 reakčních nálepek (!!, ??, blunder, mat, remíza)",
+    "Nálepka z pozice: vlož FEN nebo sestav pozici a vytvoř diagram",
+    "Témata figurek a desek",
+    "Export do WhatsAppu a iMessage"
+   ],
+   "offline": "full",
+   "offline_note": "Vykreslení diagramů lokálně; Export do WhatsAppu přes oficiální iOS integraci WAStickerApps (pasteboard, 512×512 WebP, 3–30 nálepek/balíček) – běží offline.",
+   "monetization": "Free + IAP 2,99 USD (≈ 69 Kč) plná sada, témata 0,99 USD.",
+   "revenue_math": "Ideál: 3500 stažení/měsíc × 9 % konverze = 315 platících × 3.29 USD × 0,85 × 23 = cca 20300 Kč čistého/měsíc. Ideál; realisticky 1–3 tis. Kč.",
+   "revenue_czk_ideal": 20300,
+   "keywords": [
+    {
+     "kw": "chess stickers",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "chess memes",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "chess emoji",
+     "saturation": 1,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "chess diagram",
+     "saturation": 3,
+     "competitor": "Chess diagram apps",
+     "note": "odhad"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Znalost trhu: Chess.com má přes 150 mil. účtů a šachové memy jsou virální (r/AnarchyChess). Poptávka po nálepkách na App Store je předpoklad.",
+   "competitors": [
+    {
+     "name": "Chess.com",
+     "url": "",
+     "role": "parent",
+     "note": "Lídr šachových platforem, vlastní ikony tahů"
+    },
+    {
+     "name": "Lichess",
+     "url": "",
+     "role": "parent",
+     "note": "Zdarma, open-source"
+    },
+    {
+     "name": "Chess sticker packs",
+     "url": "",
+     "role": "niche",
+     "note": "Malé množství starých iMessage balíčků"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": false,
+   "us_gap_note": "",
+   "devils_advocate": [
+    "Ikony 'brilliant/blunder' jsou vizuálně spojené s Chess.com – riziko sporu o trade dress.",
+    "Šachisté komunikují na Discordu/Redditu, iMessage nálepky jsou pro ně okrajové.",
+    "Genmoji (iOS 18.2+) a Image Playground umožní uživateli vygenerovat si podobnou nálepku zdarma během pár sekund – přímý Sherlock pro tematické balíčky.",
+    "Ochota platit za nálepky je nízká, zvláště u mladších hráčů."
+   ],
+   "killer_risk": "Šachová komunita nálepky na App Store nehledá a nezaplatí za ně.",
+   "mitigation": "Vlastní vizuální styl (standardní anotační symboly, ne Chess.com ikony), diagram z pozice jako placená užitná funkce.",
+   "build_weeks": 2,
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 6,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 5
+   }
+  },
+  {
+   "id": "stickers-14",
+   "name": "Eid & Ramadan Stickers",
+   "tagline": "Eid Mubarak a Ramadan Kareem v arabštině, turečtině, malajštině i urdštině.",
+   "pitch": "Během Ramadánu a Eidu si stovky milionů lidí posílají přání přes WhatsApp. Balíček s kvalitní kaligrafií a lokalizovanými pozdravy (Arabic, Turkish 'Bayramınız mübarek olsun', Malay 'Selamat Hari Raya', Indonesian, Urdu, Bosnian) pro iMessage i WhatsApp. Cílíme na uživatele iPhonu v Zálivu, Turecku, Malajsii a diaspoře v EU/US, kteří mají vyšší kupní sílu.",
+   "niche": "Android je plný bezplatných Eid balíčků, na iOS je nabídka slabší a málo kvalitní; lokalizace mimo arabštinu (turečtina, malajština, bosenština) chybí.",
+   "parent_market": "Sváteční přání a WhatsApp nálepky – Sticker.ly, WhatsApp sticker balíčky, islámské appky (Muslim Pro).",
+   "target_user": "Muslimové s iPhonem v zemích Zálivu, Turecku, Malajsii, Indonésii a diaspoře v UK/DE/FR/US.",
+   "features": [
+    "150 nálepek: Ramadan, iftar, Eid al-Fitr, Eid al-Adha",
+    "Kaligrafie v arabštině + pozdravy v 8 jazycích",
+    "Nálepka s vlastním jménem (Eid Mubarak, Ahmed)",
+    "Export do WhatsAppu, iMessage",
+    "Připomínka začátku svátků podle kalendáře (bundle Hijri výpočet)"
+   ],
+   "offline": "full",
+   "offline_note": "Grafika v balíčku, Hijri kalendář počítán lokálně (Foundation Calendar .islamicUmmAlQura); Export do WhatsAppu přes oficiální iOS integraci WAStickerApps (pasteboard, 512×512 WebP, 3–30 nálepek/balíček) – běží offline.",
+   "monetization": "Free + IAP 1,99 USD (≈ 46 Kč) za sezónu nebo 4,99 USD 'vše navždy'.",
+   "revenue_math": "Ideál: 8000 stažení/měsíc × 4 % konverze = 320 platících × 3.29 USD × 0,85 × 23 = cca 20600 Kč čistého/měsíc. Průměr roku je nízký – tržby přijdou ve 2 špičkách (Ramadán/Eid al-Fitr, Eid al-Adha), mimo ně téměř nula.",
+   "revenue_czk_ideal": 20600,
+   "keywords": [
+    {
+     "kw": "eid stickers",
+     "saturation": 6,
+     "competitor": "Eid sticker packs",
+     "note": "odhad; řada balíčků, spíš nízká kvalita"
+    },
+    {
+     "kw": "ramadan stickers",
+     "saturation": 5,
+     "competitor": "Ramadan sticker packs",
+     "note": "odhad"
+    },
+    {
+     "kw": "eid mubarak",
+     "saturation": 6,
+     "competitor": "Eid greeting apps",
+     "note": "odhad"
+    },
+    {
+     "kw": "bayram sticker",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad; turecký trh"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Znalost trhu: Eid a Ramadán jsou vrcholy sdílení nálepek na WhatsAppu; iOS nabídka existuje, ale je roztříštěná. Hledanost je sezónní.",
+   "competitors": [
+    {
+     "name": "Muslim Pro",
+     "url": "",
+     "role": "parent",
+     "note": "Islámská lifestyle appka s miliony uživatelů"
+    },
+    {
+     "name": "Sticker.ly",
+     "url": "",
+     "role": "parent",
+     "note": "Globální WhatsApp nálepky, obsahuje Eid balíčky zdarma"
+    },
+    {
+     "name": "Eid sticker packs (iOS)",
+     "url": "",
+     "role": "niche",
+     "note": "Několik balíčků s nízkou kvalitou"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": false,
+   "us_gap_note": "",
+   "devils_advocate": [
+    "Extrémní sezónnost: 2 špičky za rok, zbytek roku nulové tržby.",
+    "Náboženské téma – nevhodná kaligrafie nebo chyba v textu vyvolá bouři negativních recenzí.",
+    "Bezplatné balíčky na WhatsAppu kolují zdarma, ochota platit je nízká.",
+    "Datum svátků se liší podle země a pozorování měsíce – připomínky mohou být o den mimo."
+   ],
+   "killer_risk": "Uživatelé sdílejí bezplatné nálepky přes WhatsApp a za placenou appku nedají peníze.",
+   "mitigation": "Prémiová kaligrafie a personalizace jménem, spolupráce s muslimským ilustrátorem, spojit Ramadan + Eid + Hajj v jedné appce s celoročními pozdravy (Jummah Mubarak).",
+   "build_weeks": 3,
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 4,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 5
+   }
+  },
+  {
+   "id": "stickers-15",
+   "name": "Bilingual Love Stickers",
+   "tagline": "Nálepky pro páry dvou jazyků – 'miluju tě' v tvém i jejím jazyce.",
+   "pitch": "Mezinárodních párů přibývá (Erasmus, práce v zahraničí, online seznamky) a jedna z nejmilejších věcí je učit se jazyk partnera. Appka generuje nálepky s frází ve dvou jazycích najednou (např. čeština-španělština) s výslovností – z databáze 200 frází × 50 jazyků. Jedna appka, výběr páru jazyků, žádná reskinová spam sada.",
+   "niche": "Jazykové appky učí slovíčka, sticker appky jsou jednojazyčné. Kombinace pro konkrétní pár jazyků je kombinatoricky obrovská, proto ji nikdo ručně nedělá – my ji generujeme.",
+   "parent_market": "Výuka jazyků a páry – Duolingo, Babbel, appky pro páry (Paired, Between).",
+   "target_user": "Mezinárodní páry 20–40 let, páry na dálku, rodiny se dvěma jazyky.",
+   "features": [
+    "Výběr páru jazyků (50 × 50)",
+    "200 romantických a každodenních frází s ilustracemi",
+    "Výslovnost pro partnera (on-device TTS)",
+    "Export do WhatsAppu a iMessage",
+    "Mini kvíz 'frází týdne'"
+   ],
+   "offline": "full",
+   "offline_note": "Fráze a překlady v balíčku (ručně ověřené), TTS AVSpeechSynthesizer on-device; Export do WhatsAppu přes oficiální iOS integraci WAStickerApps (pasteboard, 512×512 WebP, 3–30 nálepek/balíček) – běží offline.",
+   "monetization": "Free 20 frází, plná sada 4,99 USD (≈ 115 Kč) jednorázově.",
+   "revenue_math": "Ideál: 2500 stažení/měsíc × 10 % konverze = 250 platících × 4.99 USD × 0,85 × 23 = cca 24400 Kč čistého/měsíc. Ideál; realisticky 2–4 tis. Kč.",
+   "revenue_czk_ideal": 24400,
+   "keywords": [
+    {
+     "kw": "couple stickers",
+     "saturation": 5,
+     "competitor": "Couple sticker packs",
+     "note": "odhad"
+    },
+    {
+     "kw": "bilingual stickers",
+     "saturation": 0,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "love stickers",
+     "saturation": 7,
+     "competitor": "Love sticker apps",
+     "note": "odhad; přeplněné"
+    },
+    {
+     "kw": "i love you in languages",
+     "saturation": 3,
+     "competitor": "—",
+     "note": "odhad"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Znalost trhu: couple appky (Paired) vydělávají; mezinárodních párů přibývá. Fráze 'bilingual stickers' pravděpodobně nemá hledanost – demand je nejslabší bod.",
+   "competitors": [
+    {
+     "name": "Paired",
+     "url": "",
+     "role": "parent",
+     "note": "Couple appka s předplatným"
+    },
+    {
+     "name": "Duolingo",
+     "url": "",
+     "role": "parent",
+     "note": "Lídr výuky jazyků"
+    },
+    {
+     "name": "Couple sticker packs",
+     "url": "",
+     "role": "niche",
+     "note": "Jednojazyčné romantické balíčky"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": false,
+   "us_gap_note": "",
+   "devils_advocate": [
+    "Nikdo nehledá 'bilingual stickers' – bez hledanosti ASO nefunguje.",
+    "Kvalita 200 × 50 překladů je obrovská lokalizační práce; strojový překlad romantických frází zní hloupě.",
+    "Páry pošlou pár nálepek a appku smažou.",
+    "Genmoji a Apple Translate umožní podobné zdarma."
+   ],
+   "killer_risk": "Neexistuje hledanost, takže appku nikdo nenajde.",
+   "mitigation": "ASO přes lokalizované 'love stickers' a 'couple stickers' v každém jazyce + konkrétní páry v klíčových slovech (spanish english couple).",
+   "build_weeks": 4,
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 7,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 6
+   }
+  },
+  {
+   "id": "stickers-16",
+   "name": "Czech Stickers – Ahoj",
+   "tagline": "České hlášky do chatu – 'no nazdar', 'to je v prdeli', 'pohodička'.",
+   "pitch": "Češi milují svoje hlášky a v iMessage/WhatsAppu mají jen anglické nebo generické nálepky. Balíček 100 ilustrovaných českých a slovenských hlášek, citoslovcí a 'čecháčkovských' situací (knedlík, pivo, chalupa, Krteček-styl bez licence). Je to domácí trh Lapnita – umíme jazyk i humor lépe než kdokoli jiný.",
+   "niche": "Česko je pro zahraniční studia příliš malé; čeští vývojáři dělají utility, ne nálepky. Balíček s dobrým jazykovým humorem neexistuje.",
+   "parent_market": "Lokalizované nálepky – WhatsApp/Messenger sticker balíčky, Sticker.ly komunitní balíčky.",
+   "target_user": "Češi a Slováci 18–45 s iPhonem, krajanská diaspora.",
+   "features": [
+    "100 nálepek s českými a slovenskými hláškami",
+    "Sezónní sady (Vánoce, Velikonoce – pomlázka, Silvestr)",
+    "Export do WhatsAppu a iMessage",
+    "Vlastní text na nálepce s diakritikou"
+   ],
+   "offline": "full",
+   "offline_note": "Vše v balíčku; Export do WhatsAppu přes oficiální iOS integraci WAStickerApps (pasteboard, 512×512 WebP, 3–30 nálepek/balíček) – běží offline.",
+   "monetization": "Free 15 nálepek, plná sada 2,49 USD (59 Kč) jednorázově.",
+   "revenue_math": "Ideál: 3500 stažení/měsíc × 12 % konverze = 420 platících × 2.49 USD × 0,85 × 23 = cca 20400 Kč čistého/měsíc. Ideál je na hranici – 3 500 stažení měsíčně v CZ/SK je velmi optimistické; realisticky 1–3 tis. Kč.",
+   "revenue_czk_ideal": 20400,
+   "keywords": [
+    {
+     "kw": "české nálepky",
+     "saturation": 1,
+     "competitor": "—",
+     "note": "odhad; malá hledanost"
+    },
+    {
+     "kw": "czech stickers",
+     "saturation": 1,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "nálepky",
+     "saturation": 3,
+     "competitor": "Sticker makery",
+     "note": "odhad"
+    },
+    {
+     "kw": "samolepky do chatu",
+     "saturation": 0,
+     "competitor": "—",
+     "note": "odhad"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Znalost trhu: lokální jazykové nálepky jsou populární na Messengeru/Viberu (sponzorované balíčky); v App Store CZ vidím minimum. Hledanost v CZ je malá.",
+   "competitors": [
+    {
+     "name": "Sticker.ly",
+     "url": "",
+     "role": "parent",
+     "note": "Globální WhatsApp nálepky, komunitní CZ balíčky zdarma"
+    },
+    {
+     "name": "Sticker Maker Studio",
+     "url": "",
+     "role": "parent",
+     "note": "Uživatelé si dělají vlastní CZ nálepky"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": false,
+   "us_gap_note": "",
+   "devils_advocate": [
+    "Český trh je malý (cca 3 mil. iPhonů) – 10 tis. Kč měsíčně je velmi optimistické.",
+    "Lidé si CZ nálepky vyrobí sami zdarma (iOS 17 live stickers, WhatsApp sticker maker).",
+    "Vulgarismy mohou vést k 17+ ratingu a nižší viditelnosti.",
+    "Guideline 4.3: pokud vydáme víc balíčků se stejnou šablonou, Apple je může odmítnout jako spam a ohrozit i ostatní appky účtu."
+   ],
+   "killer_risk": "Malý trh a nulová opakovaná tržba – strop je hluboko pod 10 tis. Kč.",
+   "mitigation": "Brát jako levný experiment a marketingový nástroj Lapnita; spojit CZ+SK+PL do jedné 'Slavic Stickers' appky s IAP jazyky kvůli 4.3.",
+   "build_weeks": 2,
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 7,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   }
+  },
+  {
+   "id": "stickers-17",
+   "name": "Spoonie Stickers",
+   "tagline": "Kolik lžiček máš dnes? Nálepky pro lidi s chronickou nemocí.",
+   "pitch": "Spoon theory je rozšířený způsob, jak lidé s chronickými nemocemi (ME/CFS, long covid, lupus, fibromyalgie, EDS) vysvětlují energii okolí. Nálepky 'dnes mám 3 lžičky', 'flare-up', 'musím zrušit plány' ušetří vysvětlování a pocit viny. Komunita spoonies je velká a aktivní na Instagramu a TikToku. Lokalizace do jazyků, kde výraz zatím nezdomácněl, je naše výhoda.",
+   "niche": "Symptom trackery (Bearable, Visible) řeší data, ne komunikaci s blízkými; sticker appky toto téma neznají.",
+   "parent_market": "Chronic illness trackery – Bearable, Visible (long covid pacing), Guava.",
+   "target_user": "Lidé s chronickými nemocemi a long covidem 18–50 let a jejich blízcí.",
+   "features": [
+    "60 nálepek energie (1–12 lžiček), flare-up, odpočinek",
+    "Vlastní 'baterie' nálepka s dnešním stavem",
+    "Widget energie dne",
+    "Export do WhatsAppu a iMessage",
+    "Sady pro blízké ('jak ti můžu pomoct?')"
+   ],
+   "offline": "full",
+   "offline_note": "Vše lokálně bez zdravotních dat na serveru; Export do WhatsAppu přes oficiální iOS integraci WAStickerApps (pasteboard, 512×512 WebP, 3–30 nálepek/balíček) – běží offline.",
+   "monetization": "Free 15 nálepek, plná sada 2,99 USD (≈ 69 Kč), tip jar.",
+   "revenue_math": "Ideál: 3000 stažení/měsíc × 10 % konverze = 300 platících × 2.99 USD × 0,85 × 23 = cca 17500 Kč čistého/měsíc. Ideál; realisticky 1–3 tis. Kč.",
+   "revenue_czk_ideal": 17500,
+   "keywords": [
+    {
+     "kw": "spoon theory",
+     "saturation": 2,
+     "competitor": "Spoon tracker apps",
+     "note": "odhad"
+    },
+    {
+     "kw": "chronic illness stickers",
+     "saturation": 0,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "spoonie",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "energy tracker",
+     "saturation": 5,
+     "competitor": "Visible, Bearable",
+     "note": "odhad; rodičovský důkaz"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Znalost trhu: hashtag #spoonie má miliony příspěvků na Instagramu; Visible a Bearable monetizují předplatným. Hledanost nálepek je předpoklad.",
+   "competitors": [
+    {
+     "name": "Bearable",
+     "url": "",
+     "role": "parent",
+     "note": "Symptom a mood tracker s předplatným"
+    },
+    {
+     "name": "Visible",
+     "url": "",
+     "role": "parent",
+     "note": "Pacing pro long covid/ME, placené"
+    },
+    {
+     "name": "Spoon counter apps",
+     "url": "",
+     "role": "niche",
+     "note": "Malé appky na počítání lžiček"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": false,
+   "us_gap_note": "",
+   "devils_advocate": [
+    "Nemocní lidé mají často omezené finance – ochota platit je nízká.",
+    "Pojem 'spoon theory' je hlavně anglický; v jiných jazycích nemusí být srozumitelný.",
+    "Visible může přidat sdílecí nálepky.",
+    "Musíme se vyhnout zdravotním tvrzením (1.4.1)."
+   ],
+   "killer_risk": "Malá platící základna – komunita je velká, ale za nálepky nezaplatí.",
+   "mitigation": "Nízká cena, 'pay what you want' tipy, spolupráce s pacientskými organizacemi a influencery komunity.",
+   "build_weeks": 2,
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 7,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 5
+   }
+  },
+  {
+   "id": "stickers-18",
+   "name": "Pilot Talk Stickers",
+   "tagline": "Roger, wilco, squawk 7700 – letecké nálepky pro piloty a spottery.",
+   "pitch": "Piloti, žáci pilotního výcviku a letečtí nadšenci milují leteckou frazeologii a humor ('mayday', 'go-around', 'cleared to land'). Balíček nálepek s radiofrazeologií a NATO abecedou, s nálepkou vlastní registrace letadla (OK-ABC). Letecká komunita je bohatá a za appky platí (ForeFlight 100+ USD/rok).",
+   "niche": "Letecké appky jsou profesionální nástroje, sticker appky letectví neznají; nálepky s frazeologií nikdo nedělá.",
+   "parent_market": "Letecké appky – ForeFlight, Garmin Pilot, ATC trenažéry; plus aviation merch.",
+   "target_user": "Soukromí a dopravní piloti, žáci PPL, spotteři, letecký personál.",
+   "features": [
+    "70 nálepek radiofrazeologie a leteckého humoru",
+    "Nálepka s vlastní imatrikulací a typem letadla",
+    "NATO abeceda: napiš text, vznikne nálepka",
+    "Export do WhatsAppu a iMessage"
+   ],
+   "offline": "full",
+   "offline_note": "Vše v balíčku; Export do WhatsAppu přes oficiální iOS integraci WAStickerApps (pasteboard, 512×512 WebP, 3–30 nálepek/balíček) – běží offline.",
+   "monetization": "Placená 2,99 USD (≈ 69 Kč) nebo free + IAP 3,99 USD.",
+   "revenue_math": "Ideál: 2500 stažení/měsíc × 12 % konverze = 300 platících × 3.49 USD × 0,85 × 23 = cca 20500 Kč čistého/měsíc. Ideál; realisticky 1–2 tis. Kč.",
+   "revenue_czk_ideal": 20500,
+   "keywords": [
+    {
+     "kw": "pilot stickers",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "aviation stickers",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "atc phrases",
+     "saturation": 3,
+     "competitor": "ATC trainers",
+     "note": "odhad"
+    },
+    {
+     "kw": "phonetic alphabet",
+     "saturation": 5,
+     "competitor": "NATO alphabet apps",
+     "note": "odhad"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Znalost trhu: ForeFlight a letecké appky mají vysoké ceny a platící uživatele; aviation merch je silný. Poptávka po nálepkách je předpoklad.",
+   "competitors": [
+    {
+     "name": "ForeFlight",
+     "url": "",
+     "role": "parent",
+     "note": "Profesionální letecká appka, 100+ USD/rok"
+    },
+    {
+     "name": "Aviation sticker packs",
+     "url": "",
+     "role": "niche",
+     "note": "Pár starých iMessage balíčků"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": false,
+   "us_gap_note": "",
+   "devils_advocate": [
+    "Pilotů je málo (cca 800 tis. aktivních licencí ve světě) – strop trhu je nízký.",
+    "Piloti nehledají nálepky v App Store.",
+    "Genmoji (iOS 18.2+) a Image Playground umožní uživateli vygenerovat si podobnou nálepku zdarma během pár sekund – přímý Sherlock pro tematické balíčky.",
+    "Loga aerolinek a výrobců letadel nesmíme použít."
+   ],
+   "killer_risk": "Trh je příliš malý na opakovanou tržbu.",
+   "mitigation": "Sloučit do 'Work Life Stickers' spolu se sestrami a vývojáři; propagovat v leteckých komunitách.",
+   "build_weeks": 2,
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 6,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 5
+   }
+  },
+  {
+   "id": "stickers-19",
+   "name": "Dev Reaction Stickers",
+   "tagline": "LGTM, works on my machine, it's always DNS – nálepky a Slack emoji pro vývojáře.",
+   "pitch": "Vývojáři žijí ve Slacku, Discordu a iMessage a mají vlastní humor. Appka nabízí 100 vývojářských reakcí jako iMessage nálepky a navíc je exportuje jako balíček custom emoji pro Slack/Discord (ZIP se správnými rozměry a názvy). Tato druhá funkce je užitná a odlišuje nás od prostého balíčku.",
+   "niche": "Slack custom emoji se sdílí jako neorganizované ZIPy na GitHubu; nikdo nedělá kurátorskou appku s exportem.",
+   "parent_market": "Vývojářské nástroje a meme kultura – Slack emoji packs (GitHub), dev merch.",
+   "target_user": "Vývojáři, DevOps, QA a produktoví manažeři v tech firmách.",
+   "features": [
+    "100 vývojářských reakcí (LGTM, ship it, merge conflict)",
+    "Export ZIP custom emoji pro Slack/Discord",
+    "Vlastní text nálepky monospace fontem",
+    "iMessage a WhatsApp"
+   ],
+   "offline": "full",
+   "offline_note": "Vše lokálně, ZIP generován na zařízení a sdílen přes share sheet.",
+   "monetization": "Placená 1,99 USD (≈ 46 Kč) nebo free + 'Team pack' 4,99 USD.",
+   "revenue_math": "Ideál: 3000 stažení/měsíc × 8 % konverze = 240 platících × 3.49 USD × 0,85 × 23 = cca 16400 Kč čistého/měsíc. Ideál; realisticky pod 2 tis. Kč – vývojáři čekají, že emoji jsou zdarma na GitHubu.",
+   "revenue_czk_ideal": 16400,
+   "keywords": [
+    {
+     "kw": "developer stickers",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "programmer stickers",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "slack emoji",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "coding memes",
+     "saturation": 3,
+     "competitor": "—",
+     "note": "odhad"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Znalost trhu: vývojářské memy a Slack emoji packy jsou populární na GitHubu (tisíce hvězd), ale zdarma. Ochota platit je nízká.",
+   "competitors": [
+    {
+     "name": "Slack emoji packs (GitHub)",
+     "url": "",
+     "role": "parent",
+     "note": "Bezplatné komunitní sbírky"
+    },
+    {
+     "name": "Dev sticker packs",
+     "url": "",
+     "role": "niche",
+     "note": "Pár iMessage balíčků"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": false,
+   "us_gap_note": "",
+   "devils_advocate": [
+    "Vývojáři najdou emoji zdarma na GitHubu (slackmojis.com).",
+    "Humor rychle stárne a je anglocentrický – lokalizace nedává smysl.",
+    "Genmoji (iOS 18.2+) a Image Playground umožní uživateli vygenerovat si podobnou nálepku zdarma během pár sekund – přímý Sherlock pro tematické balíčky.",
+    "Loga technologií (Git, Docker) jsou chráněné."
+   ],
+   "killer_risk": "Bezplatné alternativy na webu zabíjejí ochotu platit.",
+   "mitigation": "Sloučit do 'Work Life Stickers' s profesními IAP; export pro Slack jako placená funkce.",
+   "build_weeks": 1.5,
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   }
+  },
+  {
+   "id": "stickers-20",
+   "name": "Diwali & Festival Stickers",
+   "tagline": "Happy Diwali, Holi, Raksha Bandhan – v hindštině, gudžarátštině i tamilštině.",
+   "pitch": "Indická diaspora (US, UK, Kanada, Austrálie, Emiráty) je bohatá, používá iPhone a slaví Diwali, Holi, Navratri a Raksha Bandhan. Balíček s kvalitní grafikou (diya, rangoli, rakhi) a pozdravy ve více indických jazycích a písmech, s nálepkou vlastního jména. V Indii je trh zdarma, ale diaspora zaplatí za kvalitu.",
+   "niche": "V Indii dominují bezplatné WhatsApp balíčky na Androidu; kvalitní iOS balíček pro diasporu s více jazyky (nejen hindština) nikdo nedělá.",
+   "parent_market": "Sváteční přání a WhatsApp nálepky – Sticker.ly, indické greeting appky, Hindu kalendáře (Panchang).",
+   "target_user": "Indická diaspora 20–55 let v US, UK, CA, AU, UAE s iPhonem.",
+   "features": [
+    "150 nálepek: Diwali, Holi, Navratri, Raksha Bandhan, Ganesh Chaturthi",
+    "Pozdravy v hindštině, gudžarátštině, tamilštině, telugštině, marátštině, bengálštině",
+    "Nálepka s vlastním jménem",
+    "Připomínky svátků (kalendář předpočítaný na 10 let)",
+    "Export do WhatsAppu a iMessage"
+   ],
+   "offline": "full",
+   "offline_note": "Grafika a předpočítaný kalendář v balíčku; Export do WhatsAppu přes oficiální iOS integraci WAStickerApps (pasteboard, 512×512 WebP, 3–30 nálepek/balíček) – běží offline.",
+   "monetization": "Free + IAP 1,99 USD za festival nebo 4,99 USD 'vše' (≈ 115 Kč).",
+   "revenue_math": "Ideál: 6000 stažení/měsíc × 4 % konverze = 240 platících × 3.49 USD × 0,85 × 23 = cca 16400 Kč čistého/měsíc. Tržby ve špičkách (Diwali, Holi, Raksha Bandhan); ideál je roční průměr.",
+   "revenue_czk_ideal": 16400,
+   "keywords": [
+    {
+     "kw": "diwali stickers",
+     "saturation": 5,
+     "competitor": "Diwali sticker packs",
+     "note": "odhad"
+    },
+    {
+     "kw": "holi stickers",
+     "saturation": 4,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "rakhi stickers",
+     "saturation": 3,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "hindi stickers",
+     "saturation": 5,
+     "competitor": "Hindi sticker apps",
+     "note": "odhad; převážně Android/zdarma"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Znalost trhu: Diwali je jeden z největších vrcholů WhatsApp nálepek na světě; diaspora v US je 4+ mil. lidí s vysokou mediánovou mzdou. Hledanost na iOS je odhad.",
+   "competitors": [
+    {
+     "name": "Sticker.ly",
+     "url": "",
+     "role": "parent",
+     "note": "Bezplatné indické balíčky"
+    },
+    {
+     "name": "Hindu calendar (Panchang) apps",
+     "url": "",
+     "role": "parent",
+     "note": "Kalendáře svátků s velkou uživatelskou základnou"
+    },
+    {
+     "name": "Diwali sticker packs",
+     "url": "",
+     "role": "niche",
+     "note": "Několik iOS balíčků, převážně jen anglicky"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": false,
+   "us_gap_note": "",
+   "devils_advocate": [
+    "Sezónnost: Diwali dominuje, zbytek roku slabý.",
+    "Bezplatné balíčky kolují přes WhatsApp i mezi diasporou.",
+    "Náboženské symboly vyžadují kulturní citlivost; chyba v písmu je ostuda.",
+    "Data svátků se určují podle lunárního kalendáře a regionu – riziko chyb."
+   ],
+   "killer_risk": "Diaspora sdílí bezplatné nálepky z WhatsAppu a za appku nezaplatí.",
+   "mitigation": "Prémiová grafika od indického ilustrátora, personalizace jménem a regionální jazyky, které bezplatné balíčky nemají.",
+   "build_weeks": 3,
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 5,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 5
+   }
+  },
+  {
+   "id": "stickers-21",
+   "name": "Send It Climbing Stickers",
+   "tagline": "Beta, crimp, send, flash – lezecké nálepky s obtížnostmi.",
+   "pitch": "Lezení a bouldering zažívá boom (olympijský sport, lezecké stěny ve městech). Lezci mají vlastní slang a milují sdílení 'sendů'. Balíček nálepek s lezeckým slangem a nálepka obtížnosti (V-scale, Font, UIAA, francouzská stupnice) s názvem cesty. Lezci ověřeně platí za tréninkové appky (hangboard timery).",
+   "niche": "Lezecké appky řeší deníky a trénink; sticker appky lezení nepokrývají. Stupnice obtížností v různých zemích jsou pro generické appky moc specifické.",
+   "parent_market": "Lezecké appky – hangboard timery (placené), Crimpd, TopLogger, 27 Crags.",
+   "target_user": "Lezci a boulderisti 18–40 let, členové lezeckých stěn.",
+   "features": [
+    "60 nálepek slangu (send, beta, crimp, jug, whipper)",
+    "Nálepka obtížnosti s názvem cesty ve 5 stupnicích",
+    "Lokalizace slangu DE/FR/CZ/ES/JP",
+    "Export do WhatsAppu a iMessage"
+   ],
+   "offline": "full",
+   "offline_note": "Vše v balíčku; Export do WhatsAppu přes oficiální iOS integraci WAStickerApps (pasteboard, 512×512 WebP, 3–30 nálepek/balíček) – běží offline.",
+   "monetization": "Free + IAP 2,99 USD (≈ 69 Kč).",
+   "revenue_math": "Ideál: 3000 stažení/měsíc × 10 % konverze = 300 platících × 2.99 USD × 0,85 × 23 = cca 17500 Kč čistého/měsíc. Ideál; realisticky 1–2 tis. Kč.",
+   "revenue_czk_ideal": 17500,
+   "keywords": [
+    {
+     "kw": "climbing stickers",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "bouldering stickers",
+     "saturation": 1,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "climbing grades",
+     "saturation": 3,
+     "competitor": "Grade converter apps",
+     "note": "odhad"
+    },
+    {
+     "kw": "bouldering",
+     "saturation": 6,
+     "competitor": "TopLogger, Crimpd",
+     "note": "odhad; rodičovský důkaz"
+    }
+   ],
+   "demand_evidence": "Částečně z evidence Sports: hangboard timery jsou saturované (sat ~6), což dokazuje placené lezecké publikum. Poptávka po nálepkách je předpoklad.",
+   "competitors": [
+    {
+     "name": "HangClimb Timer",
+     "url": "https://apps.apple.com/us/app/hangclimb-timer/id1424450509",
+     "role": "parent",
+     "note": "Placený lezecký tréninkový nástroj – důkaz, že lezci platí"
+    },
+    {
+     "name": "Crimpd",
+     "url": "",
+     "role": "parent",
+     "note": "Lezecký trénink s předplatným"
+    },
+    {
+     "name": "Climbing sticker packs",
+     "url": "",
+     "role": "niche",
+     "note": "Minimum iOS balíčků"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": false,
+   "us_gap_note": "",
+   "devils_advocate": [
+    "Lezci sdílí videa na Instagramu, ne nálepky v chatu.",
+    "Komunita je malá a hledanost nálepek téměř nulová.",
+    "Genmoji (iOS 18.2+) a Image Playground umožní uživateli vygenerovat si podobnou nálepku zdarma během pár sekund – přímý Sherlock pro tematické balíčky.",
+    "Guideline 4.3: pokud vydáme víc balíčků se stejnou šablonou, Apple je může odmítnout jako spam a ohrozit i ostatní appky účtu."
+   ],
+   "killer_risk": "Nulová hledanost 'climbing stickers' – appku nikdo nenajde.",
+   "mitigation": "Hlavní funkci postavit na nálepce obtížnosti a převodníku stupnic (užitná hodnota), propagace přes lezecké stěny.",
+   "build_weeks": 2,
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 6,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   }
+  },
+  {
+   "id": "stickers-22",
+   "name": "Bird Stickers Field Pack",
+   "tagline": "Ptáci tvého regionu jako nálepky – pošli kamarádům svůj nový 'lifer'.",
+   "pitch": "Birdwatching je rychle rostoucí hobby (Merlin má miliony uživatelů) a birdeři rádi hlásí pozorování skupině. Appka nabízí ilustrované nálepky 300 druhů podle regionu (Evropa, Severní Amerika) s českým/lokálním názvem a nálepkou 'lifer #214'. Birdeři ověřeně platí za terénní průvodce (Sibley, Collins).",
+   "niche": "Merlin a eBird jsou zdarma a zaměřené na určování; nálepky druhů pro chat nikdo nedělá, protože ilustrace stovek druhů je drahá.",
+   "parent_market": "Birding appky – Merlin Bird ID, eBird, Sibley Birds (placený), Collins Bird Guide (placený).",
+   "target_user": "Birdeři 30–70 let, členové ornitologických spolků, fotografové ptáků.",
+   "features": [
+    "300 ilustrovaných druhů na region (EU, NA) s lokalizovanými názvy",
+    "Nálepka 'lifer #N' s datem",
+    "Sady 'dnes na krmítku'",
+    "Export do WhatsAppu a iMessage"
+   ],
+   "offline": "full",
+   "offline_note": "Ilustrace a názvy druhů v balíčku; Export do WhatsAppu přes oficiální iOS integraci WAStickerApps (pasteboard, 512×512 WebP, 3–30 nálepek/balíček) – běží offline.",
+   "monetization": "Free 20 druhů, region 3,99 USD (≈ 92 Kč), vše 6,99 USD.",
+   "revenue_math": "Ideál: 2000 stažení/měsíc × 12 % konverze = 240 platících × 4.99 USD × 0,85 × 23 = cca 23400 Kč čistého/měsíc. Ideál; realisticky 2–3 tis. Kč.",
+   "revenue_czk_ideal": 23400,
+   "keywords": [
+    {
+     "kw": "bird stickers",
+     "saturation": 3,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "birding stickers",
+     "saturation": 1,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "birdwatching",
+     "saturation": 7,
+     "competitor": "Merlin, eBird",
+     "note": "odhad; rodičovský důkaz"
+    },
+    {
+     "kw": "bird emoji",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Znalost trhu: Merlin má desítky milionů stažení, Collins Bird Guide a Sibley se prodávají za 10–25 USD. Hledanost nálepek je předpoklad.",
+   "competitors": [
+    {
+     "name": "Merlin Bird ID",
+     "url": "",
+     "role": "parent",
+     "note": "Zdarma, Cornell Lab, miliony uživatelů"
+    },
+    {
+     "name": "Sibley Birds",
+     "url": "",
+     "role": "parent",
+     "note": "Placený terénní průvodce"
+    },
+    {
+     "name": "Collins Bird Guide",
+     "url": "",
+     "role": "parent",
+     "note": "Placený evropský průvodce"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": false,
+   "us_gap_note": "",
+   "devils_advocate": [
+    "Ilustrace 300+ druhů je týdny grafické práce nebo drahý nákup licence.",
+    "Starší birdeři nálepky moc nepoužívají.",
+    "Merlin může přidat sdílecí nálepky.",
+    "Nepřesná ilustrace druhu = kritika od odborné komunity."
+   ],
+   "killer_risk": "Náklady na ilustrace převýší malé tržby.",
+   "mitigation": "Začít jen se 100 nejčastějšími druhy Evropy, rozšiřovat podle tržeb; spolupráce s ilustrátorem za podíl.",
+   "build_weeks": 8,
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 6,
+    "monetization": 4,
+    "build_ease": 4,
+    "offline_fit": 10,
+    "safety": 6
+   }
+  },
+  {
+   "id": "stickers-23",
+   "name": "Pickleball Stickers",
+   "tagline": "Dink, kitchen, erne – pickleballové nálepky a skóre do chatu.",
+   "pitch": "Pickleball je nejrychleji rostoucí sport v USA a šíří se do Evropy a Asie. Hráči se domlouvají v chatových skupinách ('kdo jde zítra v 7?'). Balíček slangu + funkční nálepka se skóre zápasu a pozvánkou na hru. Pickleballové appky (skóre, turnaje) ukazují, že komunita za nástroje platí.",
+   "niche": "Pickleball appky řeší skóre a rezervace kurtů; nálepky pro komunitu s vtipným slangem nikdo pořádně nedělá, a mimo USA vůbec.",
+   "parent_market": "Pickleball appky – PickleballBrackets, DUPR, skórovací appky.",
+   "target_user": "Pickleballisté 35–70 let v USA, Kanadě, a nově v UK, ES, NL, CZ.",
+   "features": [
+    "60 nálepek slangu (dink, kitchen, erne, pickle)",
+    "Nálepka se skóre zápasu (11-9) a jmény",
+    "Pozvánka na hru jako nálepka (čas, kurt)",
+    "Export do WhatsAppu a iMessage"
+   ],
+   "offline": "full",
+   "offline_note": "Vše v balíčku; Export do WhatsAppu přes oficiální iOS integraci WAStickerApps (pasteboard, 512×512 WebP, 3–30 nálepek/balíček) – běží offline.",
+   "monetization": "Free + IAP 2,99 USD (≈ 69 Kč).",
+   "revenue_math": "Ideál: 3500 stažení/měsíc × 9 % konverze = 315 platících × 2.99 USD × 0,85 × 23 = cca 18400 Kč čistého/měsíc. Ideál; realisticky 1–3 tis. Kč.",
+   "revenue_czk_ideal": 18400,
+   "keywords": [
+    {
+     "kw": "pickleball stickers",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "pickleball",
+     "saturation": 8,
+     "competitor": "DUPR, pickleball score apps",
+     "note": "odhad; rodičovský důkaz"
+    },
+    {
+     "kw": "pickleball memes",
+     "saturation": 1,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "pickleball score",
+     "saturation": 5,
+     "competitor": "Scorekeeper apps",
+     "note": "odhad"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Znalost trhu: pickleball má v USA 13+ mil. hráčů, řada appek monetizuje; hledanost nálepek je předpoklad.",
+   "competitors": [
+    {
+     "name": "DUPR",
+     "url": "",
+     "role": "parent",
+     "note": "Rating systém pickleballu"
+    },
+    {
+     "name": "Pickleball score apps",
+     "url": "",
+     "role": "parent",
+     "note": "Skórovací appky, některé placené"
+    },
+    {
+     "name": "Pickleball sticker packs",
+     "url": "",
+     "role": "niche",
+     "note": "Pár balíčků z let 2022–24"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": true,
+   "us_gap_note": "Pickleball kultura i appky jsou americké a anglické; v UK/ES/NL/CZ sport roste a lokalizovaný slang chybí.",
+   "devils_advocate": [
+    "Pickleball boom může opadnout (hype cyklus).",
+    "Starší publikum nálepky používá méně.",
+    "Genmoji (iOS 18.2+) a Image Playground umožní uživateli vygenerovat si podobnou nálepku zdarma během pár sekund – přímý Sherlock pro tematické balíčky.",
+    "Mimo USA je komunita zatím malá."
+   ],
+   "killer_risk": "Hráči nálepky nehledají a boom se zpomalí.",
+   "mitigation": "Užitné nálepky (skóre, pozvánka) jako hodnota, ne jen humor; propagace v klubech.",
+   "build_weeks": 2,
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 6,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 5
+   }
+  },
+  {
+   "id": "stickers-24",
+   "name": "Polish Stickers – Siema",
+   "tagline": "Polské hlášky do chatu – 'siema', 'kurczę', 'no weź'.",
+   "pitch": "Polsko má 38 mil. obyvatel a velkou diasporu (UK, DE, IE, US). Polské hlášky a situace (pierogi, działka, Janusz-humor) v kvalitní grafice pro iMessage a WhatsApp. Polský trh je 3,5× větší než český a Poláci ve Spojeném království používají iPhone častěji.",
+   "niche": "Globální appky polštinu neznají; polští vývojáři dělají utility. Diaspora hledá 'polish stickers' anglicky.",
+   "parent_market": "Lokalizované nálepky – WhatsApp/Messenger balíčky, Sticker.ly.",
+   "target_user": "Poláci 18–45 doma i v diaspoře.",
+   "features": [
+    "100 nálepek s polskými hláškami",
+    "Sezónní sady (Wigilia, Śmigus-dyngus, imieniny)",
+    "Export do WhatsAppu a iMessage",
+    "Vlastní text s diakritikou"
+   ],
+   "offline": "full",
+   "offline_note": "Vše v balíčku; Export do WhatsAppu přes oficiální iOS integraci WAStickerApps (pasteboard, 512×512 WebP, 3–30 nálepek/balíček) – běží offline.",
+   "monetization": "Free 15 nálepek, plná sada 2,49 USD (≈ 57 Kč).",
+   "revenue_math": "Ideál: 3500 stažení/měsíc × 12 % konverze = 420 platících × 2.49 USD × 0,85 × 23 = cca 20400 Kč čistého/měsíc. Ideál; realisticky 1–3 tis. Kč. Silnější jako IAP v 'Slavic Stickers'.",
+   "revenue_czk_ideal": 20400,
+   "keywords": [
+    {
+     "kw": "polish stickers",
+     "saturation": 1,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "naklejki",
+     "saturation": 3,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "polskie naklejki",
+     "saturation": 1,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "naklejki whatsapp",
+     "saturation": 3,
+     "competitor": "Sticker makery",
+     "note": "odhad"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Znalost trhu: polské sticker balíčky jsou populární na Messengeru; iOS nabídka je minimální. Hledanost je předpoklad.",
+   "competitors": [
+    {
+     "name": "Sticker.ly",
+     "url": "",
+     "role": "parent",
+     "note": "Globální WhatsApp nálepky, komunitní PL balíčky zdarma"
+    },
+    {
+     "name": "Sticker Maker Studio",
+     "url": "",
+     "role": "parent",
+     "note": "Uživatelé si dělají vlastní"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": false,
+   "us_gap_note": "",
+   "devils_advocate": [
+    "Vytvoření kvalitního polského humoru vyžaduje rodilého autora.",
+    "Android dominuje v Polsku (~70 %+).",
+    "Guideline 4.3: pokud vydáme víc balíčků se stejnou šablonou, Apple je může odmítnout jako spam a ohrozit i ostatní appky účtu.",
+    "Lidé si vytvoří vlastní nálepky zdarma."
+   ],
+   "killer_risk": "Android dominance a bezplatné alternativy udrží tržby nízko.",
+   "mitigation": "Sloučit s CZ/SK do jedné appky s jazykovými IAP; polský ilustrátor za podíl.",
+   "build_weeks": 2,
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 6,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   }
+  },
+  {
+   "id": "stickers-25",
+   "name": "Lunar New Year Stickers",
+   "tagline": "Šťastný nový rok koně – čínsky, vietnamsky i korejsky.",
+   "pitch": "Lunární nový rok slaví přes miliardu lidí; diaspora v US, Kanadě, Austrálii a Evropě používá iMessage a WhatsApp místo WeChatu. Balíček se zvířetem roku (2027 koza), červenými obálkami a pozdravy v mandarínštině, kantonštině, vietnamštině (Tết) a korejštině (Seollal). Každý rok nová sada = opakovaná tržba.",
+   "niche": "V Asii nálepky vládnou WeChat/Line/KakaoTalk; pro iMessage/WhatsApp diasporu jsou balíčky roztříštěné a jednojazyčné.",
+   "parent_market": "Sváteční nálepky – LINE/WeChat sticker obchody (obrovské tržby), Sticker.ly.",
+   "target_user": "Čínská, vietnamská a korejská diaspora 20–50 let v US, CA, AU, UK.",
+   "features": [
+    "120 nálepek se zvířetem roku a symboly",
+    "Pozdravy ve 4 jazycích a 2 písmech (zjednodušené/tradiční)",
+    "Každoroční nová sada zvířete (IAP)",
+    "Export do WhatsAppu a iMessage"
+   ],
+   "offline": "full",
+   "offline_note": "Vše v balíčku; Export do WhatsAppu přes oficiální iOS integraci WAStickerApps (pasteboard, 512×512 WebP, 3–30 nálepek/balíček) – běží offline.",
+   "monetization": "Free + IAP 1,99 USD za rok zvířete, 4,99 USD 'všechna zvířata' (≈ 115 Kč).",
+   "revenue_math": "Ideál: 6000 stažení/měsíc × 4 % konverze = 240 platících × 3.29 USD × 0,85 × 23 = cca 15400 Kč čistého/měsíc. Tržby téměř výhradně v lednu–únoru; ideál je roční průměr, realisticky mnohem méně.",
+   "revenue_czk_ideal": 15400,
+   "keywords": [
+    {
+     "kw": "lunar new year stickers",
+     "saturation": 4,
+     "competitor": "LNY sticker packs",
+     "note": "odhad"
+    },
+    {
+     "kw": "chinese new year stickers",
+     "saturation": 5,
+     "competitor": "CNY sticker packs",
+     "note": "odhad"
+    },
+    {
+     "kw": "tet stickers",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "year of the horse",
+     "saturation": 4,
+     "competitor": "—",
+     "note": "odhad; rok 2026 již proběhl, další je koza 2027"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Znalost trhu: LINE/WeChat nálepky k novému roku jsou jedny z nejprodávanějších; na iOS existuje řada balíčků. Konkurence je vyšší než u ostatních svátků.",
+   "competitors": [
+    {
+     "name": "LINE Stickers",
+     "url": "",
+     "role": "parent",
+     "note": "Obrovský placený trh nálepek v Asii"
+    },
+    {
+     "name": "WeChat",
+     "url": "",
+     "role": "parent",
+     "note": "Dominantní v Číně, vlastní nálepky"
+    },
+    {
+     "name": "CNY sticker packs (iOS)",
+     "url": "",
+     "role": "niche",
+     "note": "Několik balíčků, hlavně anglicky"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": false,
+   "us_gap_note": "",
+   "devils_advocate": [
+    "Tržby jen 4–6 týdnů v roce.",
+    "Silná konkurence velkých sticker platforem a bezplatných balíčků.",
+    "Kulturní nuance (tradiční vs. zjednodušené písmo, Tết vs. CNY) – chyba urazí.",
+    "Genmoji (iOS 18.2+) a Image Playground umožní uživateli vygenerovat si podobnou nálepku zdarma během pár sekund – přímý Sherlock pro tematické balíčky."
+   ],
+   "killer_risk": "Extrémní sezónnost a konkurence bezplatných balíčků.",
+   "mitigation": "Každoroční sada jako IAP, kvalitní ilustrátor z komunity, vietnamská a korejská varianta jako diferenciace.",
+   "build_weeks": 3,
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 4,
+    "monetization": 3,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 4
+   }
+  },
+  {
+   "id": "stickers-26",
+   "name": "Taglish Stickers",
+   "tagline": "Filipínské hlášky – 'kain na', 'ingat', 'charot' – pro Pinoy diasporu.",
+   "pitch": "Filipíny mají jednu z nejsilnějších 'sticker' kultur (Messenger, Viber) a 10 mil. lidí v diaspoře (US, Emiráty, Saúdská Arábie, Kanada, UK), kteří často používají iPhone a posílají domů zprávy. Balíček s Taglish hláškami, jídlem (adobo, halo-halo) a rodinným humorem ('ingat', 'anak'). Diaspora je emočně silně vázaná na domov.",
+   "niche": "Filipínský trh je pro vývojáře 'chudý' a diaspora je přehlížena; kvalitní iOS Taglish balíček chybí.",
+   "parent_market": "Lokalizované nálepky – Viber a Messenger sticker obchody (sponzorované balíčky), Sticker.ly.",
+   "target_user": "Filipínci v zahraničí (OFW) a mladí Filipínci 18–40 s iPhonem.",
+   "features": [
+    "100 nálepek Taglish hlášek a jídla",
+    "Rodinné sady (nanay, tatay, balikbayan box)",
+    "Export do WhatsAppu, iMessage",
+    "Vlastní text"
+   ],
+   "offline": "full",
+   "offline_note": "Vše v balíčku; Export do WhatsAppu přes oficiální iOS integraci WAStickerApps (pasteboard, 512×512 WebP, 3–30 nálepek/balíček) – běží offline.",
+   "monetization": "Free 15 nálepek, plná sada 1,99 USD (≈ 46 Kč).",
+   "revenue_math": "Ideál: 5000 stažení/měsíc × 10 % konverze = 500 platících × 1.99 USD × 0,85 × 23 = cca 19500 Kč čistého/měsíc. Ideál; realisticky pod 2 tis. Kč – nízká kupní síla, Viber/Messenger zdarma.",
+   "revenue_czk_ideal": 19500,
+   "keywords": [
+    {
+     "kw": "tagalog stickers",
+     "saturation": 1,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "filipino stickers",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "pinoy stickers",
+     "saturation": 1,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "taglish",
+     "saturation": 0,
+     "competitor": "—",
+     "note": "odhad"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Znalost trhu: Filipíny jsou top trh Viber/Messenger nálepek; diaspora je velká. Ochota platit na iOS je nejistá.",
+   "competitors": [
+    {
+     "name": "Viber",
+     "url": "",
+     "role": "parent",
+     "note": "Silné nálepky ve Filipínách, zdarma i placené"
+    },
+    {
+     "name": "Sticker.ly",
+     "url": "",
+     "role": "parent",
+     "note": "Komunitní Filipino balíčky zdarma"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": false,
+   "us_gap_note": "",
+   "devils_advocate": [
+    "Filipínci používají Messenger a Viber, ne iMessage/WhatsApp.",
+    "Nízká ochota platit; bezplatné nálepky jsou na Messengeru všude.",
+    "Slang rychle stárne – vyžaduje rodilého autora a aktualizace.",
+    "Guideline 4.3: pokud vydáme víc balíčků se stejnou šablonou, Apple je může odmítnout jako spam a ohrozit i ostatní appky účtu."
+   ],
+   "killer_risk": "Cílové publikum žije v Messengeru/Viberu, kam iOS appka nálepky dostat neumí.",
+   "mitigation": "Cílit na diasporu v US/UK/Emirátech (vyšší kupní síla, WhatsApp), nízká cena, rodilý autor.",
+   "build_weeks": 2,
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 6,
+    "monetization": 2,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 5
+   }
+  },
+  {
+   "id": "stickers-27",
+   "name": "Social Battery Stickers",
+   "tagline": "Dnes neverbálně / potřebuju klid / sociální baterie 10 % – nálepky pro neurodivergentní.",
+   "pitch": "Autističtí dospělí a lidé s ADHD mají dny, kdy je mluvení nebo psaní těžké. Nálepky se stavy ('shutdown', 'přetížení', 'napíšu později', 'jen objetí') umožní dát blízkým vědět jedním tapnutím. AAC appky (Proloquo2Go) jsou drahé a pro jiné situace; my jsme lehká komunikační pomůcka do chatu.",
+   "niche": "AAC appky jsou těžké a drahé (250 USD) a cílí na nemluvící děti; sticker appky neurodiverzitu neznají.",
+   "parent_market": "AAC a neurodivergentní appky – Proloquo2Go, Tiimo, Finch; komunita #ActuallyAutistic.",
+   "target_user": "Autističtí dospělí, lidé s ADHD, úzkostmi, jejich partneři a rodiny.",
+   "features": [
+    "60 nálepek stavů a potřeb (sociální baterie, smyslové přetížení)",
+    "Vlastní 'status' nálepka s barvou (zelená/žlutá/červená)",
+    "Widget rychlého sdílení",
+    "Export do WhatsAppu a iMessage"
+   ],
+   "offline": "full",
+   "offline_note": "Vše lokálně; Export do WhatsAppu přes oficiální iOS integraci WAStickerApps (pasteboard, 512×512 WebP, 3–30 nálepek/balíček) – běží offline.",
+   "monetization": "Free 20 nálepek, plná sada 2,99 USD (≈ 69 Kč).",
+   "revenue_math": "Ideál: 3000 stažení/měsíc × 10 % konverze = 300 platících × 2.99 USD × 0,85 × 23 = cca 17500 Kč čistého/měsíc. Ideál; realisticky 1–3 tis. Kč.",
+   "revenue_czk_ideal": 17500,
+   "keywords": [
+    {
+     "kw": "social battery",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "autism stickers",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "nonverbal communication",
+     "saturation": 4,
+     "competitor": "AAC apps",
+     "note": "odhad"
+    },
+    {
+     "kw": "adhd stickers",
+     "saturation": 1,
+     "competitor": "—",
+     "note": "odhad"
+    }
+   ],
+   "demand_evidence": "Částečně: evidence Kids ukazuje, že autistické 'visual schedule' appky jsou přeplněné (10 titulů 2025–26), tedy trh je aktivní; dospělí a nálepky jsou předpoklad.",
+   "competitors": [
+    {
+     "name": "Proloquo2Go",
+     "url": "",
+     "role": "parent",
+     "note": "Drahá AAC appka, jiná situace"
+    },
+    {
+     "name": "Tiimo",
+     "url": "",
+     "role": "parent",
+     "note": "ADHD plánovač s předplatným"
+    },
+    {
+     "name": "Pictalk Buddy: Autism Routine",
+     "url": "https://apps.apple.com/us/app/pictalk-buddy-autism-routine/id6502835578",
+     "role": "niche",
+     "note": "Autismus – rutiny pro děti, důkaz aktivního trhu"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": false,
+   "us_gap_note": "",
+   "devils_advocate": [
+    "Citlivé téma – komunita je velmi kritická vůči 'vydělávání na autismu'.",
+    "Nesmí působit jako terapeutická/zdravotní pomůcka (1.4.1).",
+    "Lidé si podobné nálepky vytvoří zdarma v Genmoji.",
+    "Malá ochota platit."
+   ],
+   "killer_risk": "Komunita odmítne appku jako neautentickou a nízká ochota platit.",
+   "mitigation": "Spolupráce s autistickými tvůrci (co-design), transparentnost, nízká cena, část zisku pro komunitní organizace.",
+   "build_weeks": 2,
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 6,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 4
+   }
+  },
+  {
+   "id": "stickers-28",
+   "name": "Kind Words Stickers",
+   "tagline": "Když nevíš, co napsat – citlivé nálepky soustrasti a podpory.",
+   "pitch": "Když kamarádovi zemře blízký nebo onemocní, lidé v chatu nevědí, co napsat. Tematické sady soustrasti, podpory v nemoci, po potratu nebo rozchodu, s citlivými ilustracemi a texty v 20 jazycích. Nikdo tento segment nedělá, protože není 'zábavný' – ale je trvalý a nesezónní.",
+   "niche": "Sticker appky jsou postavené na humoru a oslavách; smutné momenty jsou pro ně tabu. Greeting card appky mají jen tištěné kondolence.",
+   "parent_market": "Přání a kondolence – greeting card appky (Postable, Felt), eCard služby.",
+   "target_user": "Dospělí 25–60, kteří chtějí vyjádřit soucit v chatu.",
+   "features": [
+    "80 citlivých nálepek (soustrast, podpora, uzdrav se, myslím na tebe)",
+    "Texty ve 20 jazycích (správné kulturní formulace)",
+    "Neutrální i náboženské varianty",
+    "Export do WhatsAppu a iMessage"
+   ],
+   "offline": "full",
+   "offline_note": "Vše v balíčku; Export do WhatsAppu přes oficiální iOS integraci WAStickerApps (pasteboard, 512×512 WebP, 3–30 nálepek/balíček) – běží offline.",
+   "monetization": "Free 10 nálepek, plná sada 2,99 USD (≈ 69 Kč).",
+   "revenue_math": "Ideál: 2500 stažení/měsíc × 12 % konverze = 300 platících × 2.99 USD × 0,85 × 23 = cca 17500 Kč čistého/měsíc. Ideál; realisticky pod 2 tis. Kč – hledanost je velmi nízká.",
+   "revenue_czk_ideal": 17500,
+   "keywords": [
+    {
+     "kw": "sympathy stickers",
+     "saturation": 1,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "condolence messages",
+     "saturation": 3,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "get well soon stickers",
+     "saturation": 3,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "support stickers",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Znalost trhu: kondolenční karty jsou stabilní segment přáníček (Hallmark); poptávka v App Store je nejistá.",
+   "competitors": [
+    {
+     "name": "Felt: Greeting Cards",
+     "url": "",
+     "role": "parent",
+     "note": "Placené tištěné karty z appky"
+    },
+    {
+     "name": "Postable",
+     "url": "",
+     "role": "parent",
+     "note": "Tištěná přání"
+    },
+    {
+     "name": "Get well sticker packs",
+     "url": "",
+     "role": "niche",
+     "note": "Pár generických balíčků"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": false,
+   "us_gap_note": "",
+   "devils_advocate": [
+    "Lidé v smutku nechtějí posílat 'nálepku' – může působit necitlivě.",
+    "Velmi nízká hledanost.",
+    "Kulturní rozdíly v projevech soustrasti – chyby jsou bolestivé.",
+    "Genmoji (iOS 18.2+) a Image Playground umožní uživateli vygenerovat si podobnou nálepku zdarma během pár sekund – přímý Sherlock pro tematické balíčky."
+   ],
+   "killer_risk": "Téma je pro nálepky společensky nevhodné a hledanost je téměř nulová.",
+   "mitigation": "Důraz na podporu v nemoci a těžkých obdobích (ne jen úmrtí), jemný design, testování s psychology.",
+   "build_weeks": 2,
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 7,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 5
+   }
+  },
+  {
+   "id": "stickers-29",
+   "name": "Pet Sticker Pack Maker",
+   "tagline": "Z 10 fotek tvého psa celý balíček nálepek s emocemi a texty.",
+   "pitch": "Majitelé mazlíčků jsou jednou z nejochotnějších platících skupin a milují svého psa/kočku v chatu. Appka z fotek automaticky vystřihne mazlíčka (Vision), přidá obrys, texty ('ne', 'hlad', 'miluju tě') a vytvoří celý pojmenovaný balíček pro WhatsApp i iMessage. Upřímně: iOS 17 už umí nálepky z fotek, takže vyhrát můžeme jen na hotových balíčcích a exportu do WhatsAppu.",
+   "niche": "Velké sticker makery jsou obecné; zaměření na mazlíčky, hotové textové šablony a batch zpracování 10 fotek najednou je úzký úhel.",
+   "parent_market": "Sticker makery – Sticker Maker Studio (Sticker.ly), Personal Stickers for WhatsApp; pet appky.",
+   "target_user": "Majitelé psů a koček 18–45, hlavně ženy.",
+   "features": [
+    "Batch vystřižení 10–30 fotek mazlíčka (Vision)",
+    "Šablony textů a emocí, rámečky, obrysy",
+    "Export celého balíčku do WhatsAppu",
+    "iMessage extension s balíčky",
+    "Tisk sticker sheetu (PDF)"
+   ],
+   "offline": "full",
+   "offline_note": "Vision cutout on-device, bez cloudové AI; Export do WhatsAppu přes oficiální iOS integraci WAStickerApps (pasteboard, 512×512 WebP, 3–30 nálepek/balíček) – běží offline.",
+   "monetization": "Freemium: 1 balíček zdarma, Pro 2,99 USD/týden je obvyklé, my 19,99 USD/rok (≈ 460 Kč) nebo 4,99 USD/měs.",
+   "revenue_math": "Ideál: 5000 stažení/měsíc × 3 % konverze = 150 platících × 14.99 USD × 0,85 × 23 = cca 44000 Kč čistého/měsíc. Mix plánů; ideál předpokládá top-3 na 'pet stickers' – realisticky velmi obtížné.",
+   "revenue_czk_ideal": 44000,
+   "keywords": [
+    {
+     "kw": "pet stickers",
+     "saturation": 5,
+     "competitor": "Sticker maker apps",
+     "note": "odhad"
+    },
+    {
+     "kw": "dog sticker maker",
+     "saturation": 3,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "sticker maker",
+     "saturation": 10,
+     "competitor": "Sticker Maker Studio",
+     "note": "odhad; zcela přeplněné"
+    },
+    {
+     "kw": "cat stickers",
+     "saturation": 5,
+     "competitor": "—",
+     "note": "odhad"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Znalost trhu: sticker makery mají stovky milionů stažení a monetizují předplatným; pet segment má vysokou ochotu platit. Konkurence je vysoká.",
+   "competitors": [
+    {
+     "name": "Sticker Maker Studio",
+     "url": "",
+     "role": "parent",
+     "note": "Lídr tvorby nálepek pro WhatsApp"
+    },
+    {
+     "name": "Personal Stickers for WhatsApp",
+     "url": "",
+     "role": "parent",
+     "note": "Velký sticker maker"
+    },
+    {
+     "name": "Pet sticker apps",
+     "url": "",
+     "role": "niche",
+     "note": "Několik appek s AI stylizací"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": false,
+   "us_gap_note": "",
+   "devils_advocate": [
+    "Sherlock: iOS 17 umí z fotky vytvořit nálepku podržením prstu – základní funkce je zdarma v systému.",
+    "Sticker maker trh je přeplněný s agresivními předplatnými a velkými ASO budgety.",
+    "Uživatel vytvoří balíček jednou a předplatné zruší.",
+    "WhatsApp může změnit iOS sticker API."
+   ],
+   "killer_risk": "iOS vestavěné Live Stickers dělají hlavní funkci zdarma.",
+   "mitigation": "Vyhrát na batch zpracování, textových šablonách a WhatsApp exportu (to iOS nemá), a na tisku sticker sheetu.",
+   "build_weeks": 4,
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 2,
+    "monetization": 5,
+    "build_ease": 6,
+    "offline_fit": 9,
+    "safety": 2
+   }
+  },
+  {
+   "id": "stickers-30",
+   "name": "Sticker Album Tracker",
+   "tagline": "Které samolepky do alba ti chybí? Seznam a výměny bez internetu.",
+   "pitch": "Sbírání samolepek do alb (fotbalová mistrovství, Pokémon, Disney) je masový jev a sběratelé potřebují vědět, co mají, co chybí a co mají navíc k výměně. Appka má checklisty alb (čísla, ne licencovaný obsah), rychlé ťukání a generuje sdílitelný seznam 'chybí mi / mám navíc' do chatu. Je to 'stickers' v doslovném smyslu a přitom užitečná appka.",
+   "niche": "Oficiální appka vydavatele je zaměřená na digitální album; nezávislé trackery jsou nekvalitní a jednoalbové. Multi-album offline tracker s exportem výměnného seznamu je mezera.",
+   "parent_market": "Sběratelská alba samolepek – oficiální appky vydavatelů, trackery sbírek (Collectr), fotbalová mistrovství.",
+   "target_user": "Rodiče sbírajících dětí, dospělí sběratelé, fotbaloví fanoušci.",
+   "features": [
+    "Checklisty alb (čísla, sekce) v balíčku, přidání vlastního alba",
+    "Rychlé ťukání mám/chybí/duplikát",
+    "Export výměnného seznamu jako text/obrázek do chatu",
+    "Statistika dokončení a odhad nákladů",
+    "iCloud sync mezi rodiči a dětmi"
+   ],
+   "offline": "mostly",
+   "offline_note": "Vše lokálně; nové checklisty přichází s aktualizací appky nebo je uživatel zadá sám (bez serveru).",
+   "monetization": "Free 1 album, Pro 3,99 USD jednorázově (≈ 92 Kč) za neomezená alba.",
+   "revenue_math": "Ideál: 8000 stažení/měsíc × 5 % konverze = 400 platících × 3.99 USD × 0,85 × 23 = cca 31200 Kč čistého/měsíc. Průměr roku; ve špičce mistrovství mnohonásobně víc, mezi turnaji minimum.",
+   "revenue_czk_ideal": 31200,
+   "keywords": [
+    {
+     "kw": "sticker album",
+     "saturation": 5,
+     "competitor": "Oficiální a trackery alb",
+     "note": "odhad"
+    },
+    {
+     "kw": "sticker tracker",
+     "saturation": 3,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "sticker swap",
+     "saturation": 3,
+     "competitor": "—",
+     "note": "odhad"
+    },
+    {
+     "kw": "album checklist",
+     "saturation": 2,
+     "competitor": "—",
+     "note": "odhad"
+    }
+   ],
+   "demand_evidence": "Neověřeno živými daty. Znalost trhu: během mistrovství světa se trackery alb dostávají do žebříčků; mezi turnaji hledanost padá. MS 2026 již proběhlo – další vrchol je EURO 2028.",
+   "competitors": [
+    {
+     "name": "Official sticker album apps",
+     "url": "",
+     "role": "parent",
+     "note": "Oficiální appky vydavatelů"
+    },
+    {
+     "name": "Sticker tracker apps",
+     "url": "",
+     "role": "niche",
+     "note": "Nezávislé trackery s nízkou kvalitou"
+    }
+   ],
+   "evidence": "knowledge",
+   "us_gap": false,
+   "us_gap_note": "",
+   "devils_advocate": [
+    "Ochranná známka vydavatele (Panini) – nesmíme ji použít v názvu ani klíčových slovech.",
+    "Extrémní cykličnost podle turnajů; teď (podzim 2026) jsme po MS.",
+    "Checklisty je třeba pro každé album přepisovat ručně.",
+    "Oficiální appka vydavatele přidá tracker zdarma."
+   ],
+   "killer_risk": "Časování: po MS 2026 je poptávka nízká až do EURO 2028 a trademark omezuje ASO.",
+   "mitigation": "Podporovat i Pokémon/Disney/NBA alba a vlastní alba, spustit před EURO 2028; generické ASO bez značek.",
+   "build_weeks": 3,
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 4,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 9,
+    "safety": 3
+   }
+  }
+ ]
+}
