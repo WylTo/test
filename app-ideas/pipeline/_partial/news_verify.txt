@@ -10,3 +10,16 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results. None construc
     - Safe Pet Treats (pet food barcode scan, recall push)  https://apps.apple.com/us/app/safe-pet-treats/id1023344412
     - Recall Watch: Product Alerts  https://apps.apple.com/us/app/recall-watch-product-alerts/id6753550502
     - Woozy: Recall & Safety Alerts (food, auto, pet, baby, pharma)  https://apps.apple.com/mn/app/woozy-recall-safety-alerts/id969894256
+
+[2] query: site:apps.apple.com car seat expiration recall  (idea news-02, also news-01/03)
+    saturation (dedicated baby/family product recall trackers incl. car seats): 6 (Baby Recall Tracker, RecallScope, Recall Alert & Safety News, RecallDefense, RecallSentry, Safe: Baby Recall & Safety) + official NHTSA SaferCar -> SATURATED; nearly all launched 2025-26, several with barcode scan + saved-product monitoring (exactly the pitched feature). Expiration-date feature not confirmed in snippets.
+    - Baby Recall Tracker (saved products vs official recalls, car seat guides)  https://apps.apple.com/ca/app/baby-recall-tracker/id6777469945
+    - Car Care+ (noise/adjacent)  https://apps.apple.com/us/app/car-care/id6747317854
+    - RecallScope: Family Safety (car seats etc.)  https://apps.apple.com/us/app/recallscope-family-safety/id6753904018
+    - Recall Alert & Safety News Notification  https://apps.apple.com/us/app/recall-alert-safety-news-notification/id1121107968
+    - RecallDefense (parents track car seats vs gov databases)  https://apps.apple.com/us/app/recalldefense/id6760236829
+    - RecallSentry (multi-agency incl. NHTSA car seats)  https://apps.apple.com/us/app/recallsentry/id6757089047
+    - VIN Recall Check: Car Safety  https://apps.apple.com/sg/app/vin-recall-check-car-safety/id6767997361?platform=vision
+    - Product Recall Alerts - Safe  https://apps.apple.com/us/app/product-recall-alerts-safe/id6779204311
+    - Baby Recall & Safety - Safe (barcode scan car seat vs CPSC)  https://apps.apple.com/us/app/baby-recall-safety-safe/id6779204311
+    - SaferCar (official NHTSA)  https://apps.apple.com/us/app/safercar/id1526869558

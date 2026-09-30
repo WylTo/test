@@ -1,0 +1,12 @@
+DEVELOPER TOOLS — REVIEWER VERIFY LOG (devil's advocate run)
+Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
+
+[1] query: site:apps.apple.com bluetooth serial terminal BLE UART  (idea developer-tools-01)
+    saturation (dedicated BLE UART/serial terminal apps): 6 (BLE Serial Pro, BLESerial nRF, BLE Serial tiny, BLESerial HM-10, Bluetooth Serial Connect, BLE serial terminal V2) -> NOT blue ocean; one dev family (BLESerial) owns hm-10/nRF keywords
+    - BLE Serial Pro                      https://apps.apple.com/us/app/ble-serial-pro/id1632245655
+    - BLESerial nRF                       https://apps.apple.com/gb/app/bleserial-nrf/id1632235163
+    - BLE Serial tiny                     https://apps.apple.com/us/app/ble-serial-tiny/id1607862132
+    - Bluetooth Serial Connect            https://apps.apple.com/us/app/bluetooth-serial-connect/id6449396821
+    - BLESerial HM-10                     https://apps.apple.com/us/app/bleserial-hm-10/id1602239700
+    - BLE serial terminal V2              https://apps.apple.com/qa/app/ble-serial-terminal-v2/id6449844797?l=ar
+
