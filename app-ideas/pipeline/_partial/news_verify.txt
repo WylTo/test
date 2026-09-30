@@ -49,3 +49,15 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results. None construc
     - 5-0 Radio Pro Police Scanner (ten-codes list)  https://apps.apple.com/us/app/5-0-radio-pro-police-scanner/id341776037
     - 10-21 Police Phone (noise)  https://apps.apple.com/us/app/10-21-police-phone/id1034040333
     - Pocket Sergeant - Police Guide (UK officer reference)  https://apps.apple.com/gb/app/pocket-sergeant-police-guide/id902491237
+
+[5] query: site:apps.apple.com read later offline no account pocket alternative  (ideas news-04, news-24)
+    saturation (dedicated no-account/offline read-later apps): 8 (InfoFlow "Pocket Alternative" local-first; ReadIt-Later private AI offline; Pocket Reader no login; Reeed offline + AI summaries + highlights + RSS; SnapDeck no account; Later no account; Couch no sign-up; PaperSpan offline + TTS) -> SATURATED; the exact USP "no account, offline, AI summary" is taken several times, mostly 2024-26 launches
+    - InfoFlow: Pocket Alternative (local-first, no registration)  https://apps.apple.com/us/app/infoflow-pocket-alternative/id6499456022
+    - ReadIt-Later (private, AI, offline)  https://apps.apple.com/ca/app/readit-later/id6745271301
+    - Pocket Reader: Read Later (no login)  https://apps.apple.com/us/app/pocket-reader-read-later/id6474945380
+    - Read Later - Reeed: Save (offline, AI summaries, highlights, RSS)  https://apps.apple.com/us/app/read-later-reeed-save/id6757073720
+    - SnapDeck - Read Later (no account)  https://apps.apple.com/us/app/snapdeck-read-later/id6758098882
+    - Later (no ads, no accounts, offline)  https://apps.apple.com/us/app/later-save-links-read-later/id1507396839
+    - PaperSpan: Save Web for Later (offline + text-to-speech)  https://apps.apple.com/us/app/paperspan-save-web-for-later/id1167530069
+    - Later (in)  https://apps.apple.com/in/app/later-save-links-read-later/id1507396839
+    - Couch (no sign-up)  https://apps.apple.com/be/app/couch-read-later/id963584693

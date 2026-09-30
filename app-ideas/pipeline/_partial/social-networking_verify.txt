@@ -1,0 +1,13 @@
+# social-networking verify (review run, 2026-09-30)
+[1] query: site:apps.apple.com name day reminder contacts imieniny  (idea social-networking-01)  date: 2026-09-30
+    saturation (dedicated name-day apps with contact sync / multi-country, distinct): 6 (Imieniny, Meniny - Name day, Meniny - Slovak Calendar, Name day - calendar, Name-days (17 countries, 18k names, greet via message), iDays) -> CONTESTED; multi-country + contacts + greeting already exists
+    - Imieniny (contact sync, notifications)   https://apps.apple.com/us/app/imieniny/id1296335324
+    - Imieniny (in)   https://apps.apple.com/in/app/imieniny/id1296335324
+    - Meniny - Slovak Calendar (widgets)   https://apps.apple.com/us/app/meniny-slovak-calendar/id6754215341
+    - Meniny - Name day (contact sync)   https://apps.apple.com/us/app/meniny-name-day/id1039502134
+    - Meniny - Name day (eg)   https://apps.apple.com/eg/app/meniny-name-day/id1039502134
+    - Meniny - Name day (bj)   https://apps.apple.com/bj/app/meniny-name-day/id1039502134
+    - Name day - calendar (cz)   https://apps.apple.com/cz/app/name-day-calendar/id6444107846
+    - Remindy: birthdays, holidays   https://apps.apple.com/us/app/remindy-birthdays-and-events/id1448099239
+    - Name-days (18,252 names, 17 countries, send greeting)   https://apps.apple.com/us/app/name-days/id289170101
+    - iDays - Namedays & Birthdays   https://apps.apple.com/us/app/idays-namedays-birthdays/id991307193

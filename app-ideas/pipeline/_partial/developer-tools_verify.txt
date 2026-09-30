@@ -45,3 +45,15 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
     - ModbusClient (Mac)                  https://apps.apple.com/us/app/modbusclient/id645867613?mt=12
     - ModTest Pro                         https://apps.apple.com/us/app/modtest-pro/id1552784932
 
+[5] query: site:apps.apple.com app store screenshot maker mockup  (idea developer-tools-07)
+    saturation (dedicated App Store screenshot maker apps): 9 (Screenshot Maker - Mockup Pro, Mocko [Mac], Screenshot Bro, Screeny, Screenshot Studio, App Screenshots Maker, Mockup Screenshot, AppScreen Studio [Mac], Mockup - App Screenshot Design) -> SATURATED; 4 launched 2025-2026 (vibe-coder gold rush)
+    - Screenshot Maker - Mockup Pro       https://apps.apple.com/us/app/screenshot-maker-mockup-pro/id6758569663
+    - Mocko: App Screenshot Maker (Mac)   https://apps.apple.com/us/app/mocko-app-screenshot-maker/id6759636625?mt=12
+    - Screenshot Bro: Mockup Maker        https://apps.apple.com/us/app/screenshot-bro-mockup-maker/id6760177675
+    - Mockup & Demo Maker: Screeny        https://apps.apple.com/us/app/mockup-demo-maker-screeny/id6757925827
+    - Screenshot Studio - App Mockup      https://apps.apple.com/us/app/screenshot-studio-app-mockup/id6473832582
+    - App Screenshots Maker               https://apps.apple.com/us/app/app-screenshots-maker/id6504984964
+    - Mockup Screenshot                   https://apps.apple.com/us/app/mockup-screenshot/id6443696943
+    - AppScreen Studio Design Mockup (Mac) https://apps.apple.com/us/app/appscreen-studio-design-mockup/id6467930383?mt=12
+    - Mockup - App Screenshot Design      https://apps.apple.com/us/app/mockup-app-screenshot-design/id1541634188
+
