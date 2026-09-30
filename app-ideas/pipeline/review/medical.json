@@ -1,0 +1,943 @@
+{
+  "category_slug": "medical",
+  "summary": "Kategorie je slabší než ostatní: autorův vlastní výzkum ukázal, že klasické niche (dna, pacing, POTS, vertigo, bladder diary, oční kapky) jsou v 2025–26 zaplavené AI appkami, a moje ověření 6 „knowledge“ nápadů (injekce, plasma, surgical log, allergy card, cluster, ostomy) našlo saturaci ve všech šesti. Nejlepší sázky jsou úzké klinické formáty s ověřenou saturací ≤1: Hives Diary (UAS7), bladder training a post-prostatektomický pad log, plus pressure-headache forecast s JP důkazem (ale ne offline). Společná vada: realistické příjmy jsou 1–5 tis. CZK, ideály 15–35 tis. předpokládají konverze, které mikroniky nedají, a mnoho nápadů sdílí jednu šablonu (wear-timer, kožní deník) → riziko 4.3.",
+  "reviews": [
+    {
+      "id": "medical-01",
+      "verdict": "GO",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Keyword „hives“ je v App Store sdílený s včelařskými appkami – relevance řazení je nejistá, reálně poneseme hlavně „urticaria“/„chronic hives“, které lidé píšou méně.",
+        "Pacienti s chronickou kopřivkou na omalizumabu/remibrutinibu často dostávají zdarma podpůrné appky/materiály od farmy – tlak na cenu.",
+        "UAS7 je veřejně publikované skóre, ale sesterské UCT/AAS jsou licencované (MOXIE) – do MVP nesmí."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 5000,
+      "reviewer_note": "Nejlepší nápad kategorie: ověřená saturace 1, jasný klinický formát (7denní skóre), rychlý build. Ideál 19 500 CZK je ale optimistický – počítej spíš s 4–6 tis.; drž UAS7 bez UCT a prodávej PDF export pro alergologa."
+    },
+    {
+      "id": "medical-02",
+      "verdict": "GO",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Poptávka po keywordu „prostatectomy“ nebyla nikdy ověřena Apple hints – může být převážně Google/forum dotaz.",
+        "Cílovka 60+ mužů má nízkou míru nákupů v appkách; rozhodne spíš partnerka nebo urologická sestra.",
+        "Kegel appky pro muže (velký trh) mohou snadno přidat počítadlo vložek."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Bladder Journal",
+          "url": "https://apps.apple.com/us/app/bladder-journal/id6743176692",
+          "note": "obecný bladder deník, A/B testuje titulky – může přidat mužský režim"
+        }
+      ],
+      "revenue_czk_realistic": 3500,
+      "reviewer_note": "Reálná a opomíjená potřeba s otevřeným keywordem; stojí za to jako levný 3týdenní build. Přidej „kegel for men“ program do titulu/subtitlu, jinak nedosáhneš ani na 5 tis. CZK."
+    },
+    {
+      "id": "medical-03",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 7,
+        "monetization": 3,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Absolutní trh je malý: řádově jednotky tisíc nových helm měsíčně celosvětově, z toho zlomek hledá appku.",
+        "Ortotické kliniky dávají vlastní tabulky a kontrolují nošení osobně každé 1–2 týdny – appka je nice-to-have.",
+        "Sdílí kód s #18 (wear-timer) – dvě appky ze stejné šablony zvyšují riziko 4.3 pro celé portfolio."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Matematika ideálu (126 nákupů/měs) vyžaduje ~2 500 stažení měsíčně z mikroniky – nereálné. Samostatně nestavět; jen jako režim uvnitř lokalizovaného brace timeru (#18)."
+    },
+    {
+      "id": "medical-04",
+      "verdict": "GO",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Starší multi-intolerance appka Food Intolerances (od 2011) už histamin pokrývá; v DE storu pravděpodobně existují lokální Histamin appky, které nebyly ověřeny.",
+        "Vlastní seznam potravin = obsahová práce a odpovědnost; literatura si v hodnocení potravin protiřečí, recenze typu „v seznamu je chyba“ zabijí rating.",
+        "HIT je medicínsky sporná diagnóza – Apple review může u tvrzení o „korelacích“ chtít disclaimer (1.4.1)."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Food Intolerances",
+          "url": "https://apps.apple.com/us/app/food-intolerances/id419098758?platform=ipad",
+          "note": "multi-intolerance profily vč. histaminu, od 2011 – autor ho nezmínil"
+        }
+      ],
+      "revenue_czk_realistic": 4500,
+      "reviewer_note": "DACH reverse-gap je nejsilnější lokalizační úhel kategorie; spusť DE jako primární trh, seznam postav na 3stupňové škále s citacemi a bez slibů diagnózy. Před buildem ručně projdi DE store na „Histamin“."
+    },
+    {
+      "id": "medical-05",
+      "verdict": "GO",
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 4,
+        "safety": 6
+      },
+      "extra_risks": [
+        "WeatherKit je zdarma jen do 500 000 volání/měs a vyžaduje síť – bez dat appka nefunguje, tedy „partial“, ne offline.",
+        "Západní uživatelé platí za počasí méně než JP; Zutool v JP monetizuje hlavně reklamou, ne předplatným.",
+        "Existující migrénové appky (Migraine Buddy) a obecné barometr appky mají tlakové notifikace; EN konkurence na „weather headache“ nebyla ověřena."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Migraine Buddy (weather/pressure alerts)",
+          "url": "",
+          "note": "parent s předpovědí počasí – URL nebyla v evidenci"
+        }
+      ],
+      "revenue_czk_realistic": 7000,
+      "reviewer_note": "Nejvyšší stropový potenciál kategorie díky JP důkazu a denní notifikaci, ale ne offline a konkurence v EN je neověřená. GO pod podmínkou: nejdřív ověř „barometric headache“ a „weather headache“ v US storu, pak stav s Barometer + CoreMotion (lokální barometr iPhonu) jako offline fallback."
+    },
+    {
+      "id": "medical-06",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Ménièrova choroba má prevalenci ~0,2 % – samostatný keyword přinese desítky, ne tisíce stažení.",
+        "Balance Vestibular Diary už explicitně cílí na Ménièra a Verti má tlak/počasí.",
+        "Nízkosodíková dieta je 1.4.1 hraniční (doporučení léčby)."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Vertige",
+          "url": "https://apps.apple.com/us/app/vertige/id1623476042",
+          "note": "vertigo deník"
+        },
+        {
+          "name": "Dizztinct",
+          "url": "https://apps.apple.com/us/app/dizztinct/id1169501597",
+          "note": "dizziness deník"
+        }
+      ],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Samostatně pod prahem. Dává smysl jen spojený s #26 do jedné appky „Meniere & Vestibular Diary“ (deník + domácí cvičení od fyzioterapeuta), což zároveň snižuje 4.3 riziko."
+    },
+    {
+      "id": "medical-07",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "JP store má silné domácí zdravotní appky a farma appky pro 尿酸値 – lokální stor nebyl vůbec ověřen, takže „US-gap“ je hypotéza.",
+        "Purinové tabulky japonských jídel (痛風財団) mohou být chráněné – vlastní autorství v JA/KO vyžaduje rodilého mluvčího s odborností.",
+        "V EN je 6+ AI gout appek, které se mohou lokalizovat přes AI překlad během týdne."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Gout Guru: Flare Tracker",
+          "url": "https://apps.apple.com/us/app/gout-guru-flare-tracker/id6756127987",
+          "note": "další EN gout appka, kterou autor nezmínil"
+        },
+        {
+          "name": "Gout +",
+          "url": "https://apps.apple.com/us/app/gout/id6670218175",
+          "note": "EN gout appka"
+        },
+        {
+          "name": "JP domácí 痛風/尿酸値 appky",
+          "url": "",
+          "note": "neověřeno – nutné zkontrolovat jp store"
+        }
+      ],
+      "revenue_czk_realistic": 4000,
+      "reviewer_note": "Poptávka je reálná (dna/kyselina močová je v JP masové téma), ale blue ocean je neprokázaný. Nejdřív ruční průzkum jp/de/kr storu; pokud tam top 10 nejsou lokální appky, jde o GO."
+    },
+    {
+      "id": "medical-08",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 3,
+        "monetization": 3,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 3
+      },
+      "extra_risks": [
+        "Visible (parent z #30) postavil celý produkt na denním ortostatickém měření tepu – stejný protokol, silná značka.",
+        "Autonomic: HRV & POTS Tracker už prodává „POTS testing on your wrist“.",
+        "Watch HR při stání se sampluje nepravidelně bez workout session – přesnost bude sporná a recenze kardiologů/pacientů to vytknou.",
+        "Diagnostický kontext (test na POTS) = vysoké riziko 1.4.1 a MDR."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Visible: Pacing for illness",
+          "url": "https://apps.apple.com/gb/app/visible-long-covid-me-cfs/id1624474919",
+          "note": "denní ortostatický test tepu (Morning Stability) je jeho jádro"
+        },
+        {
+          "name": "POTS Buddy",
+          "url": "https://apps.apple.com/us/app/pots-buddy/id6758968233",
+          "note": "Watch appka pro POTS"
+        }
+      ],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Jednoúčelový diagnostický protokol s nízkou cenou, přímým překryvem s Visible/Autonomic a regulačním rizikem. Nestavět."
+    },
+    {
+      "id": "medical-09",
+      "verdict": "GO",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Hyperaktivní měchýř (OAB) je velký trh, ale platí hlavně ženy 50+ – Kegel/pelvic floor appky (Squeezy, Elvie) přetahují tentýž rozpočet.",
+        "5 bladder-diary appek může přidat „training mode“ během sprintu; Bladder Journal už mění titulky.",
+        "12týdenní program → vysoký churn po skončení; lifetime cena bude převažovat nad předplatným."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Bladder Journal",
+          "url": "https://apps.apple.com/us/app/bladder-journal/id6743176692",
+          "note": "bladder deník, rychle iteruje titulky"
+        },
+        {
+          "name": "FemPulse Bladder Diary",
+          "url": "https://apps.apple.com/us/app/fempulse-bladder-diary/id6462870195",
+          "note": "ženy – překryv s OAB cílovkou"
+        }
+      ],
+      "revenue_czk_realistic": 4500,
+      "reviewer_note": "Timed voiding je standardní první linie léčby OAB a trh deníků ho ignoruje – aktivní program s denními notifikacemi má lepší retenci než pasivní deník. Prodávej 12týdenní program jako lifetime, subscription jen volitelně."
+    },
+    {
+      "id": "medical-10",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Oxalátový segment roste: Oxalator (od 2015, 1 500 potravin), Low Ox Life (Harvard list), Oxal AI, OxiPur – autor našel jen OxiPur.",
+        "Harvardský oxalátový seznam je de facto standard, ale jeho použití/licence je nejasné; vlastní seznam = obsahová práce a riziko chyb.",
+        "Po akutní epizodě motivace rychle padá – churn předplatného 2,99 USD bude vysoký."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Oxalator - Low Oxalate diet",
+          "url": "https://apps.apple.com/us/app/oxalator-low-oxalate-diet-its-easy/id1035176284",
+          "note": "dedikovaná oxalátová appka od 2015"
+        },
+        {
+          "name": "Low Ox Life",
+          "url": "https://apps.apple.com/us/app/low-ox-life/id6748654148?see-all=reviews&platform=iphone",
+          "note": "Harvard list zdarma, placený import"
+        },
+        {
+          "name": "Oxal AI",
+          "url": "https://apps.apple.com/ie/app/oxal-ai/id6755481914",
+          "note": "nová AI oxalátová appka 2025"
+        }
+      ],
+      "revenue_czk_realistic": 3500,
+      "reviewer_note": "Nepouštěj se do oxalátového seznamu – tam už je 4 konkurenti. Úhel: „kidney stone prevention“ jako pitný režim + barva moči + citráty + připomínky (bez databáze potravin), pak je to MAYBE→GO."
+    },
+    {
+      "id": "medical-11",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 4,
+        "monetization": 3,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Ověřeno: existují 2 dedikované cluster appky (ClusterUck s PDF/CSV exportem, MyClusters z 2025) + 7 headache deníků, které cluster zmiňují.",
+        "Prevalence 0,1 % a epizodický průběh (cykly) → appka se otevírá pár týdnů v roce, jednorázová platba 9,99 USD.",
+        "Komunita (Clusterbusters) doporučuje konkrétní appky i papírové deníky – nováček bez recenzí nepřebije."
+      ],
+      "missed_competitors": [
+        {
+          "name": "ClusterUck",
+          "url": "https://apps.apple.com/us/app/clusteruck/id1072769448",
+          "note": "dedikovaný cluster deník, PDF/CSV export, počasí"
+        },
+        {
+          "name": "MyClusters",
+          "url": "https://apps.apple.com/np/app/myclusters/id6745556184",
+          "note": "dedikovaný cluster deník (2025)"
+        },
+        {
+          "name": "HeadEase: Migraine Tracker",
+          "url": "https://apps.apple.com/us/app/headease-migraine-tracker/id6781348749",
+          "note": "obecný deník cílí i na cluster"
+        }
+      ],
+      "revenue_czk_realistic": 1200,
+      "reviewer_note": "Niche není prázdná (autor odhadl bez hledání) a je příliš malá na 10 tis. CZK. Nestavět.",
+      "web_checked": true
+    },
+    {
+      "id": "medical-12",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 3,
+        "monetization": 3,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Apple Health Medications (iOS 16+) je zdarma, lokalizovaný a podporuje oční kapky s rozpisem a připomínkami – přímý Sherlock.",
+        "Eyeday, eyeRx, DropMinder, EyeDropAlarm už kapky pro glaukom pokrývají; výrobci léků (Théa, Santen) mají adherenční programy zdarma.",
+        "Pacient nitrooční tlak sám neměří – IOP historie se zapisuje jednou za 3–6 měsíců, to není denní hodnota."
+      ],
+      "missed_competitors": [
+        {
+          "name": "eyeRx",
+          "url": "https://apps.apple.com/tr/app/eyerx/id1521167251",
+          "note": "eye drop reminder"
+        },
+        {
+          "name": "DropMinder: Eye Drop Reminder",
+          "url": "https://apps.apple.com/za/app/dropminder-eye-drop-reminder/id6795706144",
+          "note": "eye drop reminder"
+        },
+        {
+          "name": "Apple Health – Medications",
+          "url": "",
+          "note": "vestavěné, zdarma"
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Sherlockované vestavěnou funkcí Health a obsazené 5+ reminder appkami; IOP log nemá denní použití. Nestavět."
+    },
+    {
+      "id": "medical-13",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 2,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Ověřeno: 8 dedikovaných ostomy appek (Stoma.AI zdarma, OstoBuddy, Ozzi, MyOstomy, Customa, Heylo, Ostomy University, My Ostomy Journey).",
+        "Výrobci pomůcek (Coloplast, ConvaTec, Hollister) dávají appky a zásilkovou službu zdarma – nezávislý placený deník nemá argument.",
+        "Evidence zásob se v praxi řeší přes distributora pomůcek, ne v appce."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Stoma.AI",
+          "url": "https://apps.apple.com/us/app/stoma-ai/id6758678626",
+          "note": "zdarma, výdej, výměny sáčků, dieta"
+        },
+        {
+          "name": "OstoBuddy Ostomy Companion",
+          "url": "https://apps.apple.com/us/app/ostobuddy-ostomy-companion/id1397020822",
+          "note": "výdej a konzistence"
+        },
+        {
+          "name": "Ozzi Ostomy",
+          "url": "https://apps.apple.com/us/app/ozzi-ostomy/id1535899024",
+          "note": "výdej, moč, hydratace"
+        },
+        {
+          "name": "Customa Journal",
+          "url": "https://apps.apple.com/co/app/customa-journal/id6761512477?l=en-GB",
+          "note": "výdej, barva stomie, pomůcky"
+        }
+      ],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Autor odhadl saturaci 1–3, realita je 8 dedikovaných appek, mnohé zdarma. Nestavět.",
+      "web_checked": true
+    },
+    {
+      "id": "medical-14",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 3,
+        "monetization": 3,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Lidé s tinnitem platí za úlevu (zvuky, CBT), ne za deník – deník je feature, ne produkt.",
+        "Tinnilog má Watch appku a klasifikaci spouštěčů; Track Your Tinnitus je zdarma a akademický.",
+        "Kanibalizuje #29 (tentýž keyword cluster, stejné portfolio → 4.3)."
+      ],
+      "missed_competitors": [
+        {
+          "name": "TinnitusHelp.me",
+          "url": "https://apps.apple.com/us/app/tinnitushelp-me/id6741688965",
+          "note": "tinnitus appka s deníkem"
+        },
+        {
+          "name": "Tinnitus Relief: MyPattern",
+          "url": "https://apps.apple.com/us/app/tinnitus-relief-mypattern/id6757972866",
+          "note": "úleva + vzorce"
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Silný přímý konkurent + slabá ochota platit za samotný deník. Pokud tinnitus, tak jen jako součást #29."
+    },
+    {
+      "id": "medical-15",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 3,
+        "monetization": 2,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Apple Health Medications je lokalizovaný do všech jazyků iOS, zdarma, a umí rozpis kapek – přesně „jazyk babičky“.",
+        "Pooperační rozpis trvá 4 týdny, platí se jednou 3,99 USD – LTV ~90 CZK.",
+        "Kliniky rozpis tisknou a senioři appky ke kapkám téměř nestahují; mluvené připomínky dnes zvládne Siri/Reminders."
+      ],
+      "missed_competitors": [
+        {
+          "name": "DropMinder: Eye Drop Reminder",
+          "url": "https://apps.apple.com/za/app/dropminder-eye-drop-reminder/id6795706144",
+          "note": "eye drop reminder"
+        },
+        {
+          "name": "EyeMantra",
+          "url": "https://apps.apple.com/us/app/eyemantra/id1622595903",
+          "note": "oční appka"
+        },
+        {
+          "name": "Apple Health – Medications",
+          "url": "",
+          "note": "vestavěné, lokalizované"
+        }
+      ],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "US-gap argument „EN-only“ padá, protože vestavěná lokalizovaná alternativa je zdarma. Nestavět."
+    },
+    {
+      "id": "medical-16",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 1,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Ověřeno: 9 z 9 výsledků jsou injection/shot trackery s rotací míst (JabBuddy, Steadii, Injectly, Protocol Peptide Tracker s 3D mapou těla…).",
+        "GLP-1 a peptidový boom 2025–26 přitahuje desítky AI appek týdně – keyword je rudý oceán.",
+        "Peptidy/TRT segment je citlivý pro App Review (neschválené látky)."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Medication & Injection Tracker",
+          "url": "https://apps.apple.com/us/app/medication-injection-tracker/id1297105025",
+          "note": "rotace míst, mapy těla, od 2017"
+        },
+        {
+          "name": "Injection Tracker & Reminder",
+          "url": "https://apps.apple.com/us/app/injection-tracker-reminder/id6762521861",
+          "note": "body rotation tracker"
+        },
+        {
+          "name": "Drop: Injection Tracker",
+          "url": "https://apps.apple.com/eg/app/drop-injection-tracker/id6748859148",
+          "note": "diabetes + GLP-1, rotace"
+        },
+        {
+          "name": "Protocol Peptide Tracker App",
+          "url": "https://apps.apple.com/us/app/protocol-peptide-tracker-app/id6761315875",
+          "note": "3D mapa míst vpichu"
+        }
+      ],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Nejpřeceněnější nápad kategorie: autor čekal 31 300 CZK na „prázdné“ nichi, která je ve skutečnosti přeplněná. Nestavět.",
+      "web_checked": true
+    },
+    {
+      "id": "medical-17",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "„Hidradenitis suppurativa“ lidé neumějí napsat; pacienti používají „HS“, což je nejednoznačný keyword (high school, …).",
+        "Pacienti na biologikách (adalimumab, secukinumab, bimekizumab) dostávají farma podpůrné programy/appky.",
+        "Sdílí kód s #1 a #24 – tři kožní deníky z jedné šablony = 4.3 riziko."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 2500,
+      "reviewer_note": "Opomíjená, ale malá a špatně vyhledávaná nika. Místo samostatné appky ji zahrň jako druhou diagnózu do #1 (Hives Diary) s vlastním keywordem v subtitlu, nebo počkej na data z #1."
+    },
+    {
+      "id": "medical-18",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "„Schroth“ je jméno metody/rodiny a „Schroth Best Practice“ značka – riziko u titulu i obsahu cviků.",
+        "Předvádění cviků = léčebná intervence; bez fyzioterapeuta hrozí 1.4.1 i reputační kritika.",
+        "Lokální trhy (PL/CZ/DE) jsou malé a rodiče dostávají tabulky od ortotika; EN konkurence (Tina, ReAlign) se může lokalizovat."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Tina - For Life With Scoliosis",
+          "url": "https://apps.apple.com/us/app/tina-for-life-with-scoliosis/id6760977686",
+          "note": "nová skoliózní appka 2026"
+        },
+        {
+          "name": "ReAlign Scoliosis",
+          "url": "https://apps.apple.com/us/app/realign-scoliosis/id6755268437",
+          "note": "skoliózní appka"
+        }
+      ],
+      "revenue_czk_realistic": 2500,
+      "reviewer_note": "Jen jako jedna lokalizovaná „wear timer“ appka pro korzet, dětskou helmu (#3) i Ponseti dlahu – bez obsahu cviků a bez slova Schroth v titulu. Samostatně pod prahem."
+    },
+    {
+      "id": "medical-19",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 6,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Školy vyžadují oficiální papírový/elektronický záznam s podpisem mentora – appka ho nenahradí, jen duplikuje.",
+        "Záznamy o porodech jsou zdravotní data třetích osob (GDPR) – i anonymizované deníky mohou narazit na pravidla nemocnice.",
+        "Trh: desítky tisíc studentek v EU, jednorázově 9,99 USD, každý stát jiná pravidla a jazyk."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Logitbox: Medical Logbook",
+          "url": "https://apps.apple.com/au/app/logitbox-medical-logbook/id1413535606",
+          "note": "obecný klinický logbook (UK)"
+        },
+        {
+          "name": "Procedure Log",
+          "url": "https://apps.apple.com/us/app/procedure-log/id888851773",
+          "note": "logbook i pro zdravotnické studenty"
+        }
+      ],
+      "revenue_czk_realistic": 700,
+      "reviewer_note": "Příliš malý a institucionálně řízený trh; ideál 24 400 CZK je fantazie. Nestavět."
+    },
+    {
+      "id": "medical-20",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 1,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Ověřeno: 7+ dedikovaných surgical logbook appek (Case Logging App, Blue Ledger, Surgeonal, UNIRA, Logitbox, Procedure Log, Urology Operation Register) + oficiální ACGME appka zdarma.",
+        "Evropské rezidentury používají národní e-logbooky (UK ISCP/eLogbook, DE Logbuch) – soukromá appka je jen mezikrok.",
+        "Pacientská data v appce (i číslo případu) = GDPR/HIPAA riziko."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Case Logging App",
+          "url": "https://apps.apple.com/ca/app/case-logging-app/id1493195189",
+          "note": "CPT, role, supervisor"
+        },
+        {
+          "name": "ACGME Case Logs",
+          "url": "https://apps.apple.com/us/app/acgme-case-logs/id1462667153",
+          "note": "oficiální, zdarma"
+        },
+        {
+          "name": "Blue Ledger: Surgical Case Log",
+          "url": "https://apps.apple.com/au/app/blue-ledger-surgical-case-log/id6760433422",
+          "note": "moderní case ledger 2026"
+        },
+        {
+          "name": "Surgeonal(Surgical Logbook)",
+          "url": "https://apps.apple.com/us/app/surgeonal-surgical-logbook/id6451452934",
+          "note": "surgical logbook"
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Saturovaná nika s oficiální bezplatnou konkurencí; autor ji odhadl bez hledání. Nestavět.",
+      "web_checked": true
+    },
+    {
+      "id": "medical-21",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 6,
+        "monetization": 3,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Pacientky měří obvody u lymfoterapeuta; domácí měření páskou je nepřesné a appka nemá denní použití.",
+        "„Lymphedema“ v App Store vyhledávají spíš terapeuté; poptávka pacientů je neprokázaná.",
+        "Výpočet objemu končetiny a „varování před otokem“ je diagnostické tvrzení (1.4.1)."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 600,
+      "reviewer_note": "Laskavý nápad, ale bez prokázané poptávky a s jednorázovou platbou nedosáhne ani na zlomek prahu. Nestavět."
+    },
+    {
+      "id": "medical-22",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 4,
+        "monetization": 2,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Apple Watch Movement Disorder API už automaticky sleduje tremor a dyskineze; StrivePD (Rune Labs) to nabízí zdarma s neurology.",
+        "Cílovka 65+ s motorickými obtížemi má problém s hodinovým ručním zápisem – compliance papírových ON/OFF deníků je notoricky nízká.",
+        "Neurologické kliniky používají validované Hauser deníky a vlastní nástroje."
+      ],
+      "missed_competitors": [
+        {
+          "name": "StrivePD",
+          "url": "",
+          "note": "automatické sledování tremoru přes Apple Watch – URL nebyla v evidenci"
+        }
+      ],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Ruční deník prohrává s automatickým Watch sledováním zdarma. Nestavět."
+    },
+    {
+      "id": "medical-23",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 1,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Ověřeno: nezávislý Donor Track už existuje (čas, protein, cykly) a Parachute sdružuje centra; operátoři (Grifols, BioLife, ADMA, LFB) ukazují historii i výdělky zdarma.",
+        "Dárci plazmy darují kvůli penězům – platit za appku, která počítá výdělky, jde proti motivaci.",
+        "Placená plazma je legální jen v několika zemích (US, DE, AT, CZ, HU) – 50 jazyků nepomůže."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Donor Track",
+          "url": "https://apps.apple.com/us/app/donor-track/id1667108011",
+          "note": "nezávislý plasma tracker"
+        },
+        {
+          "name": "Parachute: Get Paid for Plasma",
+          "url": "https://apps.apple.com/us/app/parachute-plasma-donation/id1519284283",
+          "note": "multi-center booking a sledování"
+        },
+        {
+          "name": "Grifols Plasma Donor Hub",
+          "url": "https://apps.apple.com/us/app/grifols-plasma-donor-hub/id1591378876",
+          "note": "historie darování a výdělků"
+        },
+        {
+          "name": "Haemalogic - Plasma Donation",
+          "url": "https://apps.apple.com/cz/app/haemalogic-plasma-donation/id6499265063",
+          "note": "CZ operátor"
+        }
+      ],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Monetizace blízko nuly a nika není prázdná; ideál 29 300 CZK je nejnadsazenější číslo v souboru. Nestavět.",
+      "web_checked": true
+    },
+    {
+      "id": "medical-24",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Konkurence rosacea appek nebyla ověřena (jen generický Ninoa) – skincare kategorie má AI „skin analyzer“ appky, které rosacea zmiňují.",
+        "Denní fotka obličeje ve stejném světle je náročná na disciplínu; retence trigger deníků typicky padá po 2–3 týdnech.",
+        "Třetí kožní deník v portfoliu (#1, #17) – 4.3 riziko."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 3000,
+      "reviewer_note": "Velká prevalence a reálné vyhledávání „rosacea“, ale neověřená konkurence. Pokud stavět, tak jako rozšíření Hives Diary platformy do samostatné, výrazně odlišné appky (foto-first, UV/teplota z iPhonu), a až po výsledcích #1."
+    },
+    {
+      "id": "medical-25",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 1,
+        "monetization": 2,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "extra_risks": [
+        "Ověřeno: 9 dedikovaných allergy card appek – Food Allergy Card už umí překlad, přehrání OFFLINE a QR; Equal Eats, Allergy Advisor a Allerly jsou zdarma nebo freemium.",
+        "Google Translate (offline balíčky, konverzační režim) je zdarma a je Sherlock pro většinu uživatelů.",
+        "Chybný překlad u anafylaxe = reálné riziko újmy a odpovědnosti."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Food Allergy Card",
+          "url": "https://apps.apple.com/us/app/food-allergy-card/id6448350429",
+          "note": "offline překlad + QR – přesně náš USP"
+        },
+        {
+          "name": "Equal Eats",
+          "url": "https://apps.apple.com/us/app/equal-eats/id1574293110",
+          "note": "lídr allergy translation cards"
+        },
+        {
+          "name": "Allergy Advisor",
+          "url": "https://apps.apple.com/us/app/allergy-advisor/id6751273886",
+          "note": "karta zdarma, překlad, read-aloud"
+        },
+        {
+          "name": "Food Allergy Options",
+          "url": "https://apps.apple.com/us/app/food-allergy-options/id6762036188",
+          "note": "12 jazyků"
+        }
+      ],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Autorův předpoklad „existující řešení jsou anglická nebo webová“ je vyvrácen – nika je saturovaná. Nestavět.",
+      "web_checked": true
+    },
+    {
+      "id": "medical-26",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 5,
+        "monetization": 3,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 3
+      },
+      "extra_risks": [
+        "Vestibulární rehabilitace se předepisuje individuálně; appka s cviky bez fyzioterapeuta = 1.4.1 riziko a možné zhoršení závratí.",
+        "Vertigenius (klinická VRT) a Vertigo BPPV Vestibular Coach už cvičení nabízejí; Epley Assist cílí na stejné pacienty.",
+        "Demand 4 u autora + jednorázově 6,99 USD = pod prahem i v ideálu."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Epley Assist: Dizziness Relief",
+          "url": "https://apps.apple.com/us/app/epley-assist-dizziness-relief/id6448395635",
+          "note": "vestibulární cvičení"
+        },
+        {
+          "name": "Dizztinct",
+          "url": "https://apps.apple.com/us/app/dizztinct/id1169501597",
+          "note": "dizziness deník"
+        }
+      ],
+      "revenue_czk_realistic": 700,
+      "reviewer_note": "Samostatně nestavět; nanejvýš časovač cviků jako modul uvnitř Ménière appky (#6)."
+    },
+    {
+      "id": "medical-27",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 5,
+        "monetization": 3,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Rodiče řeší enurézu hlavně alarmem (hardware) a pediatrem; obecné reward chart appky jsou zdarma a zvládnou „suchou noc“.",
+        "Kids-adjacent obsah → pokud zamíří na děti, platí Kids Category pravidla (žádná analytika, parental gate).",
+        "Jednorázově 4,99 USD a použití 3–6 měsíců = nízké LTV."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Obecné reward/sticker chart appky",
+          "url": "",
+          "note": "zdarma, pokrývají motivační část – URL nebyla v evidenci"
+        }
+      ],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Levný 2týdenní build s nízkým rizikem, ale pod prahem. Diferencuj plánovaným buzením (lifting schedule) + deníkem pro pediatra; jinak je to jen sticker chart."
+    },
+    {
+      "id": "medical-28",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 6,
+        "monetization": 2,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Apple Health Medications umí rozpis dávek i týdenní/měsíční injekce – Sherlock pro hlavní funkci.",
+        "Injekce se podávají na klinice, kde se evidence vede; SLIT tablety jsou denní pilulka jako každá jiná.",
+        "Výrobci (ALK, Stallergenes) mají vlastní adherenční programy zdarma."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Apple Health – Medications",
+          "url": "",
+          "note": "vestavěné, zdarma"
+        }
+      ],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Vestavěná funkce + klinika vede evidenci = žádný důvod platit. Nestavět."
+    },
+    {
+      "id": "medical-29",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 2,
+        "offline_fit": 10,
+        "safety": 3
+      },
+      "extra_risks": [
+        "V DE jsou tinnitus programy jako DiGA (kalmeda, Meine Tinnitus App) na předpis zdarma – placená appka tam nemá šanci.",
+        "Terapeutický program (CBT prvky) je v EU pravděpodobně zdravotnický prostředek (MDR třída I+) – bez CE značky riziko i v review (1.4.1).",
+        "Obsah 8týdenního kurzu v 50 jazycích = měsíce práce a odborná korektura; AI překlad zdravotní psychoedukace je reputačně riskantní."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Quieten : Tinnitus Relief",
+          "url": "https://apps.apple.com/us/app/quieten-tinnitus-relief/id1480018706",
+          "note": "CBT-style tinnitus program"
+        },
+        {
+          "name": "Tinnitus Relief: MyPattern",
+          "url": "https://apps.apple.com/us/app/tinnitus-relief-mypattern/id6757972866",
+          "note": "tinnitus relief"
+        },
+        {
+          "name": "kalmeda (DiGA)",
+          "url": "",
+          "note": "v DE zdarma na předpis – URL nebyla v evidenci"
+        }
+      ],
+      "revenue_czk_realistic": 4000,
+      "reviewer_note": "Monetizace je nejlepší v kategorii, ale build a regulace jsou nejtěžší. Jen s úhlem „edukace a relaxační zvuky, ne terapie“, start FR/ES/JA (ne DE), 3 jazyky místo 50."
+    },
+    {
+      "id": "medical-30",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 2,
+        "monetization": 3,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "„pacing“ sat 7 a Visible je lídr s 250 000+ uživateli – lokalizace je pro něj jeden sprint.",
+        "ME/CFS a long-COVID pacienti mají často snížené příjmy; Visible má základ zdarma.",
+        "Komunity (Long COVID Deutschland) doporučují Visible – nováček bez klinické validace nepřebije."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Long COVID Pacer",
+          "url": "https://apps.apple.com/ng/app/long-covid-pacer/id6780022526",
+          "note": "pacing appka"
+        },
+        {
+          "name": "Pacing",
+          "url": "https://apps.apple.com/us/app/pacing/id6448513970",
+          "note": "pacing appka s přesným keywordem v titulu"
+        },
+        {
+          "name": "Long COVID Diary",
+          "url": "https://apps.apple.com/us/app/long-covid-diary/id6760281000",
+          "note": "long-COVID deník"
+        }
+      ],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Autor sám dal blue_ocean 3; lokalizace není obrana proti lídrovi, který se může lokalizovat. Nestavět."
+    }
+  ]
+}

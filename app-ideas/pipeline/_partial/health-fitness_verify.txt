@@ -1,0 +1,14 @@
+HEALTH & FITNESS — REVIEWER VERIFY LOG (devil's advocate run)
+Date: 2026-09-30. All URLs copied verbatim from WebSearch results. No Apple API calls.
+
+[1] query: site:apps.apple.com strength training for seniors over 60  (idea health-fitness-05)  date: 2026-09-30
+    saturation (dedicated senior / over-50 / over-60 workout apps in results): 9 -> SATURATED (author assumed 1-3). Mostly chair/gentle, but Bold (science-backed strength+balance, VC-funded) and "Workout for Over 50s" do strength.
+    - Grow Young Fitness (chair workouts, 60+)        https://apps.apple.com/us/app/grow-young-fitness/id6466878352
+    - Exercise Plan for Seniors (65+, strength)        https://apps.apple.com/me/app/exercise-plan-for-seniors/id1499804902
+    - Workout for Over 50s (strength training)         https://apps.apple.com/gb/app/workout-for-over-50s/id1552880139
+    - Workout for Seniors: SeniorFit                    https://apps.apple.com/us/app/workout-for-seniors-seniorfit/id6443794000
+    - GentleFit: Senior Exercise (2026)                 https://apps.apple.com/us/app/gentlefit-senior-exercise/id6760631535
+    - Bold: Science-backed exercises                    https://apps.apple.com/us/app/bold-science-backed-exercises/id6478184749
+    - SeniorFit: Workout for Seniors                    https://apps.apple.com/us/app/seniorfit-workout-for-seniors/id6742771536
+    - SeniorFit At-Home Workouts                        https://apps.apple.com/us/app/seniorfit-at-home-workouts/id6448442932
+    - Active Aging App (gentle strength, 2026)          https://apps.apple.com/us/app/active-aging/id6758223883

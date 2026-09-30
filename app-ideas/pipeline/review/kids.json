@@ -1,0 +1,796 @@
+{
+ "category_slug": "kids",
+ "summary": "Kids nápady stojí většinou na odhadu, ne na datech: 6 ověřovacích hledání ukázalo, že 4 „znalostní“ niky jsou obsazené (Uhr lernen ~10 appek, spelling list s přesně stejnou funkcí, Legasthenie ≥6, token board ≥6) a u dalších dvou konkurence existuje (mots outils ≥2, vibrantní R nový RollrApp). Nejlepší sázky jsou ověřeně řídké a levné: Phonics Check Prep, Money Kids (eura), Story Helper, b/d trenažér a Rolling R – ale reálně dají 2–5 tis. Kč měsíčně, ne 10 tis. Společná vada: přehlížení lokálních konkurentů v neanglických jazycích a nízká ochota platit za jednorázové dětské dovednosti.",
+ "reviews": [
+  {
+   "id": "kids-01",
+   "verdict": "GO",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 8,
+    "monetization": 4,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Trh je jen Anglie (~650 tis. dětí v Y1 ročně) a jen angličtina – výhoda 50 lokalizací tu úplně padá.",
+    "Silná sezónnost: poptávka březen–červen, zbytek roku téměř nula; výsledek testu se pak navíc opakuje jen pro děti, které v Y1 neprošly.",
+    "Zdarma substituty: minulé testy DfE (Open Government Licence), Twinkl, phonicscheck.co.uk, Monster Phonics – rodič platí jen za pohodlí.",
+    "Čisté hlásky a alien words nejde spolehlivě udělat syntézou řeči – je nutné nahrát britského mluvčího, jinak recenze zabijí appku."
+   ],
+   "missed_competitors": [
+    {
+     "name": "phonicscheck.co.uk (webová aplikace)",
+     "url": "",
+     "note": "Zdarma/levná webová simulace PSC, silný Google substitut – na App Store ale ne."
+    }
+   ],
+   "revenue_czk_realistic": 3500,
+   "reviewer_note": "Verifikovaně modrý oceán s jasnou frází a levnou stavbou, jenže strop je nízký: UK-only a sezónní. Stavět jako levnou sázku (2–3 týdny) s nahraným audiem a obsahem z OGL materiálů; 10 000 Kč/měsíc jen v dubnu–červnu."
+  },
+  {
+   "id": "kids-02",
+   "verdict": "GO",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 7,
+    "monetization": 4,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Reprodukce bankovek podléhá pravidlům centrálních bank (ECB, ČNB, NBP, BoE): zmenšení/zvětšení, nápis SPECIMEN, u některých souhlas – nutné ohlídat měnu po měně.",
+    "Obsahová zátěž: každá měna = nové ilustrace, nominály, zaokrouhlování (CZK bez haléřů, CHF 5 rappen) – 30 měn na začátku je nereálné.",
+    "V lokálních jazycích (Geld lernen, compter la monnaie, contar dinero) pravděpodobně existují školní appky vázané na osnovy – ověřeno je jen „euro coins kids“."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 4500,
+   "reviewer_note": "Solidní US-gap s ověřenou prázdnou nikou pro eura. Začít EUR + GBP + CZK + PLN (4 měny, 20+ storefrontů eurozóny), ostatní měny přidávat podle stažení; 10 000 Kč je strop spíše než medián."
+  },
+  {
+   "id": "kids-03",
+   "verdict": "GO",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 7,
+    "monetization": 4,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Rodiče na App Store píší „dyslexia“, ne „letter reversal“ – úzká fráze má pravděpodobně velmi malý objem hledání.",
+    "Záměna b/d je do ~7 let vývojově normální; jakékoli tvrzení o „léčbě“ reverzí naráží na 1.4.1 a nespokojené recenze.",
+    "Jednorázový problém – dítě to za pár týdnů přeroste, žádná retence ani prostor pro předplatné."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Ověřeně řídká nika (jediná stará appka) a stavba na 2 týdny, takže pro portfolio levná sázka; výnos ale bude spíš 1–3 tis. Kč. Nepozicovat jako dyslektickou terapii, ale jako „b nebo d“ procvičovačku; lokalizovat i číslice 6/9 a zrcadlové psaní."
+  },
+  {
+   "id": "kids-04",
+   "verdict": "GO",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 6,
+    "monetization": 6,
+    "build_ease": 6,
+    "offline_fit": 8,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Apple Foundation Models běží jen na zařízeních s Apple Intelligence (iPhone 15 Pro a novější) a v omezené sadě jazyků – velká část rodičů/škol má starší iPady.",
+    "Generovaný text pro dítě s autismem musí být konzistentní a bezpečný; halucinace nebo nevhodná věta = jednohvězdičková recenze od terapeuta.",
+    "„Social Stories“ je ochranná známka Carol Gray – nesmí být v názvu ani v keywords jako značka.",
+    "Nika se hýbe: Socially (2025) a nové visual-schedule appky mohou AI generování přidat během týdnů."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Social Story Creator Educators",
+     "url": "https://apps.apple.com/us/app/social-story-creator-educators/id998334331",
+     "note": "Placená pro verze pro učitele od lídra – autor ji neuvedl, dokládá ochotu platit."
+    },
+    {
+     "name": "Make Your Story-Story Creator",
+     "url": "https://apps.apple.com/us/app/make-your-story-story-creator/id1565183603",
+     "note": "Další tvůrce příběhů – nika má víc hráčů, než autor uvádí."
+    }
+   ],
+   "revenue_czk_realistic": 4000,
+   "reviewer_note": "Nejzajímavější produkt kategorie: stará konkurence a platící učitelé/logopedi. Jádro postavit na šablonách a vlastních fotkách (funguje na všech zařízeních), AI jen jako volitelný návrh na podporovaných iPhonech; zvážit kategorii Education/Medical místo Kids."
+  },
+  {
+   "id": "kids-05",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 6,
+    "monetization": 5,
+    "build_ease": 2,
+    "offline_fit": 9,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Obsah je video znakujícího rodilého uživatele pro každý znak a každý znakový jazyk – produkce stovek videí na jazyk je měsíce práce a peníze, ne 1 vývojář.",
+    "Komunity neslyšících citlivě reagují na nepřesné znaky a nekonzultovaný obsah – bez spolupráce s místní organizací hrozí veřejná kritika.",
+    "Velikost appky (DE lídr má 423 MB) a regionální varianty znaků (LSF, DGS mají dialekty).",
+    "„Baby Signs“ je registrovaná ochranná známka – název „Little Hands: Baby Signs“ je riziko."
+   ],
+   "missed_competitors": [
+    {
+     "name": "MiniSigns Babygebärden",
+     "url": "https://apps.apple.com/us/app/minisigns-babygeb%C3%A4rden/id1564402672",
+     "note": "Třetí DE appka z evidence, autor ji vynechal."
+    }
+   ],
+   "revenue_czk_realistic": 3000,
+   "reviewer_note": "Poptávka a ochota platit jsou doložené (Zwergensprache 8,99 USD), ale stavba je pro solo dev neúměrná. Jen pokud začnete jedním jazykem s největším trhem (FR „signes bébé“ je silný trend) a s licencovaným videem od místní organizace; název bez „Baby Signs“."
+  },
+  {
+   "id": "kids-06",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 4,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Ověřeno: německý App Store má ~10 dedikovaných „Uhr lernen“ appek včetně značkových (Conni, Flik & Flak) – přesně ten jazyk, který autor považoval za mezeru.",
+    "Lokální appky přirozeně už používají „halb drei“ / „viertel nach“ – jazykově specifické fráze nejsou diferenciace, ale standard.",
+    "Zbývající trhy s mezerou (CZ, NL) jsou malé; hodiny jsou navíc obsah prvních dvou tříd, retence krátká."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Conni Uhrzeit",
+     "url": "https://apps.apple.com/de/app/id1116692318",
+     "note": "Placená 3,49 EUR, silná licencovaná značka."
+    },
+    {
+     "name": "Flik & Flak",
+     "url": "https://apps.apple.com/ch/app/flik-flak/id1139197323",
+     "note": "Zdarma, značka Swatch, 36 úrovní."
+    },
+    {
+     "name": "ClockWise, lesen Sie die Uhr!",
+     "url": "https://apps.apple.com/de/app/clockwise-lesen-sie-die-uhr/id1383339035",
+     "note": "Freemium od 2015."
+    },
+    {
+     "name": "Uhr Lesen Lernen - macht Spaß",
+     "url": "https://apps.apple.com/de/app/interaktiv-die-uhr-lesen-lernen-macht-spa%C3%9F/id477389150",
+     "note": "Placená 2,99 EUR."
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Klíčový předpoklad (DE bez lokálních appek) se ukázal jako chybný – DE je saturovaný. Bez DE zbývají jen malé jazyky, kde 10 000 Kč není reálných.",
+   "web_checked": true
+  },
+  {
+   "id": "kids-07",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 2,
+    "monetization": 4,
+    "build_ease": 7,
+    "offline_fit": 9,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Ověřeno: „zadej týdenní seznam od učitele → hry + test“ je přesně pozicování Spelling Stream (2026) a funkce „vyfoť seznam“ už má Spelling Bee Games & Tests.",
+    "Anglický spelling je saturovaný 5+ dedikovanými appkami; český diktát a DE Diktat jsou malé trhy s tvrdou konkurencí free (ANTON).",
+    "OCR ručně psaného seznamu od učitele je nespolehlivé – první špatně přečtené slovo = rodič odchází."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Spelling Stream: Practice Test",
+     "url": "https://apps.apple.com/us/app/spelling-stream-practice-test/id6762540929",
+     "note": "Nový přímý klon nápadu – týdenní seznam učitele, bez trackingu."
+    },
+    {
+     "name": "Spelling Bee - Games & Tests",
+     "url": "https://apps.apple.com/us/app/spelling-bee-games-tests/id1080283215",
+     "note": "Foto seznamu → test během sekund."
+    },
+    {
+     "name": "Word Wizard for Kids",
+     "url": "https://apps.apple.com/us/app/word-wizard-for-kids/id1466660110",
+     "note": "Oceňovaná, vlastní seznamy."
+    },
+    {
+     "name": "ANTON - Lernen - Schule",
+     "url": "https://apps.apple.com/at/app/anton-lernen-schule/id1180554775?platform=ipad",
+     "note": "Zdarma DE/CZ školní giant včetně pravopisu."
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Nápad už existuje v téměř identické podobě, a to několikrát. Nemá smysl.",
+   "web_checked": true
+  },
+  {
+   "id": "kids-08",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "„Sight words“ jako koncept se nepřenáší: čeština a španělština mají fonetický pravopis, tam se frekvenční slova neučí jako celky – reálně zbývá FR a DE.",
+    "Ověřeno: FR „mots outils“ už má ≥ 2 dedikované appky a několik CP čtenářských appek; francouzské školy používají zdarma Lalilo/ANTON.",
+    "Nízká cena a krátké použití (1 školní rok)."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Mots outils pour CP et CE1",
+     "url": "https://apps.apple.com/fr/app/mots-outils-pour-cp-et-ce1/id1468752177",
+     "note": "Dedikovaná FR appka na přesně tuto frázi."
+    },
+    {
+     "name": "Orthographe - Les Mots-Outils",
+     "url": "https://apps.apple.com/ne/app/orthographe-les-mots-outils/id1208142283",
+     "note": "100+ mots outils CP/CE1."
+    },
+    {
+     "name": "1000 Mots CP-CE1",
+     "url": "https://apps.apple.com/fr/app/1000-mots-cp-ce1/id1302256878",
+     "note": "Frekvenční slova CP-CE1."
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Není to prázdná nika, ale konkurence je stará a malá. Jen jako FR+DE produkt s moderním UX a audiem; ostatní jazyky vypustit. Výnos pod prahem.",
+   "web_checked": true
+  },
+  {
+   "id": "kids-09",
+   "verdict": "GO",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 6,
+    "monetization": 5,
+    "build_ease": 4,
+    "offline_fit": 8,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Ověřeno: RollrApp / The Rollr Academy (2025) už nabízí 12týdenní program na vibrantní R od logopedů – tvrzení, že nika je prázdná, neplatí.",
+    "Autor minul nejdůležitější lokální fráze: CZ „ráčkování“, ES „pronunciar la erre“/„rotacismo“ – bez nich ASO neuspěje.",
+    "Detekce vibrace (~25 Hz amplitudová modulace) je na hlučném dětském záznamu nespolehlivá; falešný „úspěch“ nebo „neúspěch“ frustruje.",
+    "Logopedické claimy (1.4.1) – pozicovat jako procvičování, ne terapii; rodiče s vážnějším problémem půjdou k logopedovi."
+   ],
+   "missed_competitors": [
+    {
+     "name": "RollrApp: Fix Rhotacism",
+     "url": "https://apps.apple.com/id/app/rollrapp-fix-rhotacism/id6751569088",
+     "note": "Dedikovaný konkurent na rolled R, 12týdenní SLP program."
+    }
+   ],
+   "revenue_czk_realistic": 3000,
+   "reviewer_note": "Pořád řídká nika se skutečnou bolestí rodičů (ráčkování je v CZ/PL/ES častý problém) a jediným konkurentem v angličtině. GO jen s lokálními keywords, dětským obsahem v každém jazyce a detekcí vibrace jako doplňkem, ne jediným hodnocením.",
+   "web_checked": true
+  },
+  {
+   "id": "kids-10",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 3,
+    "monetization": 2,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "ES a PT-BR App Store jsou plné bezplatných slabikových appek (sílabas, família silábica) financovaných reklamou – a v kategorii Kids nesmíme mít reklamu, takže nemáme ani jejich model.",
+    "Nejnižší ochota platit v celé kategorii (LATAM/BR regionální ceny ~1 USD).",
+    "Čeština a polština mají slabikáře vázané na nakladatele (Fraus, Nová škola) – licenční i obsahové riziko."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 900,
+   "reviewer_note": "Slabiková metoda je reálná, ale trhy, kde se používá, jsou buď saturované free appkami, nebo malé. 10 000 Kč nevidím."
+  },
+  {
+   "id": "kids-11",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Rodič nehledá „articulation homework“ – úkol dostane od logopeda na papíře; akvizice přes ASO je slabá, fungovala by jen doporučení logopedem (mimo náš model).",
+    "Speech Blubs a Articulation Station mají silné značky; logopedové mají zavedené zvyky.",
+    "Nahrávání dětského hlasu = citlivá data; v Kids kategorii přísné nároky na soukromí."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Užitečný nástroj, ale bez distribuce přes logopedy nemá ASO tah. Jen pokud se dá cílit na lokální fráze „logopedie cvičení“, „Logopädie Übungen“ a appka dostane obecný nástroj pro logopedy (přijímá seznam slov jako sdílený soubor)."
+  },
+  {
+   "id": "kids-12",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 4,
+    "monetization": 4,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Kontrola úchopu tužky kamerou je na iPadu prakticky nerealizovatelná a děti kreslí prstem – funkce slibuje, co nemůže splnit.",
+    "Předpísankové tahy mají LetterSchool, Vorschule Buchstaben Lernen i desítky tracing her – „tracing lines“ je obsazené.",
+    "Grafomotorika se v CZ/DE cvičí hlavně na papíře ve školce; rodič platit za appku nebude chtít."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Jako „Schwungübungen/grafomotorika“ s Apple Pencil a tiskem pracovních listů je to malá, ale čistá nika; bez kamerového úchopu. Výnos nízký."
+  },
+  {
+   "id": "kids-13",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 5,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Rodič, který chce umět čisté hlásky, pustí zdarma video (Oxford Owl, Jolly Phonics, YouTube) – appka nemá hodnotu nad bezplatný obsah.",
+    "Fráze „pure sounds“ / „phonics for parents“ skoro jistě nikdo do App Store nepíše; rodiče hledají appky pro dítě.",
+    "Použití na jedno odpoledne – žádná retence."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 300,
+   "reviewer_note": "Řeší reálný problém, ale bezplatné video ho řeší lépe a nikdo to v App Store nehledá."
+  },
+  {
+   "id": "kids-14",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 3,
+    "build_ease": 2,
+    "offline_fit": 9,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Rozpoznání prstové abecedy kamerou pro 6 abeced vyžaduje trénovací data pro každou; pohybová písmena (ASL J/Z) a dvouruční BSL abeceda jsou pro Vision hand pose těžké.",
+    "Fingerspelling appky pro ASL i BSL existují a obecné kurzy (Lingvano) ho mají zdarma.",
+    "Placená dětská poptávka po prstové abecedě je minimální – kupují spíš dospělí studenti."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 700,
+   "reviewer_note": "Měsíce ML práce pro miniaturní placený trh. Nestavět."
+  },
+  {
+   "id": "kids-15",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 5,
+    "build_ease": 3,
+    "offline_fit": 10,
+    "safety": 3
+   },
+   "extra_risks": [
+    "Ověřeno: DE má ≥ 6 dedikovaných Legasthenie/LRS appek včetně GoLexic lokalizovaného přímo jako „für Legasthenie & LRS“ a nových (Heldenschule 2025).",
+    "Tvrzení o tréninku dyslexie = 1.4.1 a odborná kritika; skutečná LRS intervence potřebuje lingvisty a evidenci.",
+    "PL/CZ/FR bez DE jsou malé a stavba je nejtěžší v celé sadě."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Legasthenie & LRS Trainer",
+     "url": "https://apps.apple.com/de/app/legasthenie-lrs-trainer/id6443904704",
+     "note": "Přesná shoda s nápadem, freemium, s LRS pedagogy."
+    },
+    {
+     "name": "Heldenschule: Rechtschreibung",
+     "url": "https://apps.apple.com/us/app/heldenschule-rechtschreibung/id6748237145",
+     "note": "Nový LRS trénink 2025."
+    },
+    {
+     "name": "Wortbild",
+     "url": "https://apps.apple.com/lu/app/wortbild/id6714465600",
+     "note": "LRS/dyslexie/dyskalkulie."
+    },
+    {
+     "name": "DocLexi: Lesen & Buchstabieren",
+     "url": "https://apps.apple.com/de/app/doclexi-lesen-buchstabieren/id1090442763",
+     "note": "Dlouholetý DE hráč."
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Hlavní trh (DE) je obsazený, stavba nejdražší a regulatorní riziko nejvyšší. Nestavět.",
+   "web_checked": true
+  },
+  {
+   "id": "kids-16",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 4,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "The Math Learning Center nabízí zdarma kvalitní Number Frames a Number Rack – učitelé, kteří znají „subitizing“, je používají.",
+    "Rodiče hledají „math games“, ne „number sense“/„subitizing“ – pedagogický žargon bez spotřebitelské poptávky.",
+    "Pozicování na dyskalkulii = zdravotní claim (1.4.1)."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Number Frames (The Math Learning Center)",
+     "url": "",
+     "note": "Zdarma, desítkové rámečky – přímý substitut (z vlastní znalosti, neověřeno vyhledáváním)."
+    }
+   ],
+   "revenue_czk_realistic": 700,
+   "reviewer_note": "Pedagogicky správné, komerčně mrtvé: bezplatné kvalitní alternativy a žádná spotřebitelská fráze."
+  },
+  {
+   "id": "kids-17",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 5,
+    "monetization": 3,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Premisa se nepřenáší na dotyk: výhody výuky leváků jsou náklon papíru a úchop tužky – na iPadu prstem ani jedno netrénujete.",
+    "Hledání „left handed kids“ je minimální; LetterSchool i Writey mají nastavení pro leváky.",
+    "Jednorázová starost rodiče, žádná retence."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 300,
+   "reviewer_note": "Reálná rodičovská starost, ale obrazovka ji neřeší. Lépe jako tištěný pracovní list než appka."
+  },
+  {
+   "id": "kids-18",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Ověřeno: „token board“ má ≥ 6 dedikovaných appek v názvu, většina z let 2025–26 – autorova saturace 3 byla podhodnocená.",
+    "Funkce je triviální a visual-schedule appky (10 nových v 2025–26) ji přidávají jako bonus.",
+    "ABA terapeuti mají hotové nástroje a fyzické tabule; ochota platit za samostatnou tabuli je nízká."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Token Board ABA",
+     "url": "https://apps.apple.com/us/app/token-board-aba/id6748097587",
+     "note": "Přesná shoda, nová."
+    },
+    {
+     "name": "ABA Token Board",
+     "url": "https://apps.apple.com/us/app/aba-token-board/id6752328327",
+     "note": "Přesná shoda, AppsForParents."
+    },
+    {
+     "name": "Token Board Pro",
+     "url": "https://apps.apple.com/us/app/token-board-pro-aba-therapy/id6749283487",
+     "note": "Pro verze pro ABA terapii."
+    },
+    {
+     "name": "Custom Token Board",
+     "url": "https://apps.apple.com/us/app/custom-token-board/id6760485991",
+     "note": "Nová 2026."
+    },
+    {
+     "name": "My Token Board",
+     "url": "https://apps.apple.com/us/app/my-token-board/id1033833898",
+     "note": "Starší zavedená."
+    }
+   ],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Saturováno čerstvými klony. Nestavět.",
+   "web_checked": true
+  },
+  {
+   "id": "kids-19",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 4,
+    "monetization": 5,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Anglické minimální páry pro logopedy mají několik zavedených SLP appek (Smarty Ears aj.) – autorova saturace 3 je odhad a pravděpodobně nízká.",
+    "Obsah v jiných jazycích vyžaduje lingvistu na každý jazyk (správné páry, obrázky, nahrávky).",
+    "Kupující (logopedi) je malá profesní skupina; rodiče fonologické procesy neznají."
+   ],
+   "missed_competitors": [
+    {
+     "name": "SLP minimal-pairs appky (např. Smarty Ears)",
+     "url": "",
+     "note": "Z vlastní znalosti, neověřeno – anglický segment pravděpodobně obsazený."
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Anglicky ne. Jako neanglický nástroj (DE/ES/CZ/PL) pro logopedy za 9,99 USD je to malá, ale reálná nika; výnos pod prahem."
+  },
+  {
+   "id": "kids-20",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 3,
+    "monetization": 2,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Deset nových visual-schedule appek 2025–26 (Lil Planner, VizyPlan, Pictalk Buddy) umí sekvenci s vlastními fotkami – nočník je jen další rutina.",
+    "Použití jednou – dítě se naučí a appka končí; 79 Kč jednorázově.",
+    "„potty training“ je přeplněné; „potty autism“ je fráze s mizivým objemem."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Lil Planner: Visual Schedule",
+     "url": "https://apps.apple.com/us/app/lil-planner-visual-schedule/id6448482826",
+     "note": "Vlastní fotky a kroky – pokryje nácvik toalety."
+    },
+    {
+     "name": "VizyPlan: Visual Routines",
+     "url": "https://apps.apple.com/us/app/vizyplan-visual-routines/id6756069118",
+     "note": "Obecné vizuální rutiny."
+    }
+   ],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Podmnožina saturované kategorie visual schedule, jednorázové použití a nízká cena. Nestavět."
+  },
+  {
+   "id": "kids-21",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 4,
+    "monetization": 2,
+    "build_ease": 9,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Britská fráze „how many sleeps“ je silně sezónní (Vánoce, narozeniny) a pravděpodobně už má několik dedikovaných countdown appek.",
+    "Widget countdown appky pro dospělé umí vlastní obrázek – rodič si „spaní“ nastaví sám.",
+    "Monetizace 79 Kč jednorázově dává jednotky tisíc Kč i při slušném objemu."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Levné (1 týden) a bez rizika, ale výnos malý. Jen jako rychlý experiment s britským „how many sleeps“ a lokalizovanými frázemi („Wie oft noch schlafen“, „kolikrát se vyspím“)."
+  },
+  {
+   "id": "kids-22",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 4,
+    "build_ease": 4,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "JP a KR mají silné lokální edtech hráče pro フォニックス / 파닉스 (autor sám dává saturaci 5–6) s obsahem napsaným rodilými pedagogy.",
+    "Vysvětlivky pro rodiče v japonštině/korejštině musí být pedagogicky i kulturně přesné – bez rodilého autora to působí jako překlad.",
+    "Brazilský trh má nízkou ochotu platit a zdarma YouTube kanály."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Mezera neexistuje tam, kde se platí (JP/KR), a tam, kde existuje (BR), se neplatí."
+  },
+  {
+   "id": "kids-23",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 5,
+    "build_ease": 3,
+    "offline_fit": 6,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Offline rozpoznání řeči (SFSpeechRecognizer) je na dětských hlasech a čtení s chybami nepřesné – měření tempa a chyb bude nespolehlivé, zvlášť mimo angličtinu.",
+    "Silná a financovaná konkurence (Ello, Bookbot, Lexy) s AI čtenářskými kouči; Google Read Along je zdarma.",
+    "Předplatné za offline appku bez nového obsahu se špatně obhajuje; nahrávání dětí = citlivá data."
+   ],
+   "missed_competitors": [
+    {
+     "name": "First Steps to Reading Fluency",
+     "url": "https://apps.apple.com/us/app/first-steps-to-reading-fluency/id1356214665",
+     "note": "Dedikovaná fluency appka z evidence."
+    },
+    {
+     "name": "Reading Log: Parents & School",
+     "url": "https://apps.apple.com/us/app/reading-log-parents-school/id6757205089",
+     "note": "Čtenářský deník pro rodiče – pokrývá sledování pokroku."
+    },
+    {
+     "name": "Ello (AI reading coach)",
+     "url": "",
+     "note": "Financovaný konkurent s AI posloucháním čtení (z vlastní znalosti)."
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Technicky nejslabší místo (dětská řeč offline) je zároveň jádro produktu a konkurence je financovaná. Nestavět."
+  },
+  {
+   "id": "kids-24",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Téměř duplikát kids-04 (sociální příběhy) – dvě appky = riziko 4.3 v portfoliu; správně jde o balíček šablon v kids-04.",
+    "Nemocnice a dětská oddělení dávají přípravné materiály (a vlastní appky) zdarma.",
+    "Zdravotní obsah (očkování, MRI) = odpovědnost za přesnost a 1.4.1."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Social Story Creator Educators",
+     "url": "https://apps.apple.com/us/app/social-story-creator-educators/id998334331",
+     "note": "Obecný tvůrce příběhů pokryje i návštěvu lékaře."
+    }
+   ],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Jako samostatná appka ne; jako balíček šablon „lékař / zubař / očkování“ uvnitř kids-04 ano."
+  },
+  {
+   "id": "kids-25",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 2,
+    "blue_ocean": 5,
+    "monetization": 2,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Nikdo nehledá „shopping math“ pro děti; nápad nemá frázi s poptávkou.",
+    "Scénář „dítě fotí cenovky v obchodě“ je nepraktický a jednorázový.",
+    "Překrývá se s kids-02 (peníze) – kanibalizace a 4.3."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 300,
+   "reviewer_note": "Gimmick bez vyhledávací poptávky. Případně jako režim uvnitř kids-02."
+  },
+  {
+   "id": "kids-26",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Silně obsazeno: Breathe, Think, Do with Sesame (zdarma), Moshi, Headspace/Calm pro děti a desítky emočních appek.",
+    "Duševní zdraví dětí = citlivé téma pro App Review a rodiče; bez odborného garanta nedůvěryhodné.",
+    "3,99 USD proti bezplatné Sesame appce neobstojí."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Saturovaný trh s bezplatným lídrem od Sesame Workshop. Nestavět."
+  },
+  {
+   "id": "kids-27",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 5,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 8,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Synchronizace mezi dvěma domácnostmi přes CloudKit sdílení vyžaduje spolupráci obou rodičů – u konfliktních rozvodů to nenastane.",
+    "Kategorie Kids je špatná volba (platí rodič); co-parenting appky (OurFamilyWizard, 2houses) už kalendář mají a rodiče často sdílí Google kalendář.",
+    "Emočně citlivé téma – chybný údaj „dnes spíš u táty“ vyvolá konflikt a jednohvězdičkové recenze."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 2500,
+   "reviewer_note": "Úhel s potenciálem: rozpis střídavé péče je pravidlový (2-2-3, týden/týden), takže ho každý rodič nastaví lokálně bez synchronizace a dítě vidí widget „u koho spím“. S tímto zjednodušením a v kategorii Lifestyle stojí za zvážení."
+  },
+  {
+   "id": "kids-28",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 2,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 7,
+    "safety": 3
+   },
+   "extra_risks": [
+    "AI pohádky jsou v letech 2025–26 přeplněné (Oscar Stories a desítky klonů); autor sám uvádí saturaci 7–9.",
+    "On-device Foundation Models: jen novější iPhony a omezené jazyky; kvalita dlouhých příběhů z ~3B modelu je znatelně horší než u cloudu.",
+    "Generovaný obsah pro děti bez moderace = riziko nevhodného textu a problém s App Review v Kids kategorii.",
+    "Apple může generování příběhů přidat přímo do systému (Sherlock)."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Jediná výhoda (levné on-device AI) je zároveň slabina v kvalitě a dostupnosti. Saturováno."
+  },
+  {
+   "id": "kids-29",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 2,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Ruské a ukrajinské „прописи“ appky existují ve velkém a většina je zdarma.",
+    "Diaspora má nízkou ochotu platit a mnoho rodin používá tištěné písanky ze sobotních škol.",
+    "Politická citlivost (UA vs RU obsah, recenze) a odlišné tvary písmen v UA a RU psacím písmu."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Malý trh s bezplatnou konkurencí a nízkou ochotou platit. Nestavět."
+  },
+  {
+   "id": "kids-30",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 1,
+    "monetization": 2,
+    "build_ease": 9,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Kontrastní obrázky pro miminka jsou zdarma na YouTube (Hey Bear) a v desítkách appek; autor sám dává saturaci 5–8.",
+    "Pediatrické doporučení (AAP) je žádná obrazovka pod 18 měsíců – rodiče a recenzenti to vyčtou.",
+    "Použití několik týdnů, 79 Kč, žádná retence."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 300,
+   "reviewer_note": "Saturováno, zdarma na YouTube a proti doporučení pediatrů. Nestavět."
+  }
+ ]
+}

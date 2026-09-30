@@ -1,0 +1,992 @@
+{
+ "category_slug": "navigation",
+ "summary": "Kategorie Navigation je slabá: téměř všechny nápady stojí jen na vlastní znalosti autora a tam, kde jsem je ověřil webem (mantrailing, regularity rally, Drückjagd, houbařská místa, balkonová FV, nástupci Soundscape), byla saturace výrazně podhodnocená – místo 1–3 aplikací jich tam je 4–7. Jediný opravdu obhajitelný nápad je Carp Swim Mapper (ověřená saturace ~2, reverse gap EU vs. US); několik dalších (Sea Miles Logbook, Detectorist Find Log, Grid Ref pro S-JTSK) jsou MAYBE s realistickými tržbami 3–5 tis. Kč. Společná vada: 'offline utility' s jednou funkcí, kterou iOS/watchOS (Compass, Backtrack, Level, AML, offline mapy) nebo free aplikace už dělají, a nereálné konverze 7–12 % na jednorázové ceny.",
+ "reviews": [
+  {
+   "id": "navigation-01",
+   "verdict": "GO",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 6,
+    "monetization": 5,
+    "build_ease": 7,
+    "offline_fit": 9,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Deeper Smart Sonar (Fish Deeper app) už kaprařům mapuje dno swimu i hloubky a je v UK/PL kaprařině standardem – 'mapa swimu' bez sonaru bude vypadat jako chudší varianta.",
+    "Autorova matematika počítá 100 NOVÝCH ročních předplatných každý měsíc; 2 500 stažení/měs z úzkého clusteru carp/peg/wrap je horní hranice, ne ideál – reálně spíš 400–800.",
+    "Kompasový azimut z telefonu drženého u prutu má chybu ±5–10° → na 100 m je to ±10–17 m, což u spotu na hraně znehodnocuje hlavní slib přesnosti.",
+    "Sezónnost (hlavní sezóna IV–X) a sdílení účtů v rámci party kaprařů snižují konverzi."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Fish Deeper (Deeper Smart Sonar)",
+     "url": "",
+     "note": "parent/substitut – bathymetrie swimu přes sonar, silná značka v kaprařině; URL není v evidenci"
+    }
+   ],
+   "revenue_czk_realistic": 7000,
+   "reviewer_note": "Jediný nápad s ověřenou saturací (~2) a skutečným reverse gapem UK/FR/NL/CZ/PL; stavět. Klíč: wrap count + marker spoty jako hlavní funkce a lokalizované klíčové slovo v každé zemi (karpfen, karper, kapr, karp), ne generický 'fishing log'."
+  },
+  {
+   "id": "navigation-02",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 2,
+    "monetization": 2,
+    "build_ease": 4,
+    "offline_fit": 9,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Ověřeno: existují minimálně 3–4 bezplatní nástupci Soundscape se stejnou funkcí zvukového majáku (VoiceVista, Soundscape Community, Soundscape relaunch, EchoScape) – autor je znal, ale podcenil.",
+    "Nevidomá komunita je extrémně citlivá na placené nástroje, když free open-source varianta existuje; doporučení organizací půjdou k free aplikacím.",
+    "Aplikace pro nevidomé musí mít bezchybný VoiceOver a testování s cílovou skupinou – 6 týdnů je optimistické; chyba v navigaci = reputační i bezpečnostní riziko.",
+    "VoiceVista i Soundscape Community jsou lokalizované do více jazyků, takže argument '50 jazyků' neplatí."
+   ],
+   "missed_competitors": [
+    {
+     "name": "VoiceVista: Blind Navigation",
+     "url": "https://apps.apple.com/ro/app/voicevista-blind-navigation/id6450388413",
+     "note": "zdarma, fork Soundscape (MIT), beacony"
+    },
+    {
+     "name": "Soundscape Community",
+     "url": "https://apps.apple.com/us/app/soundscape-community/id6449701760",
+     "note": "zdarma, Audio Beacon přesně jako v návrhu"
+    },
+    {
+     "name": "Soundscape",
+     "url": "https://apps.apple.com/us/app/soundscape/id6459021379",
+     "note": "relaunch 3D audio navigace s markery"
+    },
+    {
+     "name": "EchoScape: Spatial Audio Guide",
+     "url": "https://apps.apple.com/ru/app/echoscape-spatial-audio-guide/id6754217576?l=en-GB",
+     "note": "novější spatial audio průvodce"
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Díra po Soundscape je od 2023 zaplněná bezplatnými forky se stejnou funkcí; placený klon nemá čím vyhrát. Nestavět.",
+   "web_checked": true
+  },
+  {
+   "id": "navigation-03",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 3,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 8,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Ověřeno: nika má ≥ 4 dedikované aplikace – ManTrailing (4,99 USD, deník stop s věkem, počasím, pachovým předmětem), The Mantrailing App (DE vývojář), DogTracks (od 2014, trasa kladeče vs. psa), K9 Tracks (2025).",
+    "Překryv trasy figuranta a psa – hlavní 'díra' v pitchi – už DogTracks a K9 Tracks dělají.",
+    "Trh je malý (DACH/CZ hobby školy) a trenéři často nahrávají přes Garmin obojky (Alpha/Astro), ne telefon.",
+    "Autorova odhadovaná saturace 1–2 byla výrazně podhodnocená."
+   ],
+   "missed_competitors": [
+    {
+     "name": "ManTrailing",
+     "url": "https://apps.apple.com/us/app/mantrailing/id1634632348",
+     "note": "placený deník mantrailingu"
+    },
+    {
+     "name": "DogTracks: Tracking Training",
+     "url": "https://apps.apple.com/us/app/dogtracks-tracking-training/id847719412",
+     "note": "mantrailing, stopování, IGP – dvě trasy"
+    },
+    {
+     "name": "K9 Tracks - Dog Scent Tracking",
+     "url": "https://apps.apple.com/us/app/k9-tracks-dog-scent-tracking/id6753019946",
+     "note": "GPS stopování vč. mantrailingu, 2025"
+    },
+    {
+     "name": "The Mantrailing App (Niklas Kuse)",
+     "url": "",
+     "note": "DE aplikace přímo s 'Mantrailing' v názvu; ve výsledku jen stránka vývojáře"
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Není to blue ocean – klíčové slovo 'mantrailing' už obsazují dedikované aplikace a hlavní funkci (dvě trasy) mají. Nestavět.",
+   "web_checked": true
+  },
+  {
+   "id": "navigation-04",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 2,
+    "monetization": 5,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Ověřeno: ~7 dedikovaných TSD/regularity aplikací (3pRally + Pro, Regularity Mate 2026, Master-Of-Regularity, Rabbit Rally 2.0, TSD Rally, TSD Rally Clock) – autor odhadoval saturaci 1.",
+    "3pRally Pro už nabízí předplatné, roadbook i průměrkové úseky – přesně navrhovaný produkt.",
+    "Řada soutěží zakazuje GPS v hodnocených třídách (to uvedl i autor) → trh se zužuje na tréninkové/turistické kategorie.",
+    "GPS odometr v telefonu driftuje v tunelech a lesních úsecích; posádky chtějí senzor z kola (Rabbit Rally to umí)."
+   ],
+   "missed_competitors": [
+    {
+     "name": "3pRally Pro - TSD Rally",
+     "url": "https://apps.apple.com/us/app/3prally-pro-tsd-rally/id997786330",
+     "note": "nejkompletnější TSD nástroj, předplatné"
+    },
+    {
+     "name": "Regularity Mate: TSD Rally",
+     "url": "https://apps.apple.com/us/app/regularity-mate-tsd-rally/id6759557753",
+     "note": "nový 2026"
+    },
+    {
+     "name": "Master-Of-Regularity",
+     "url": "https://apps.apple.com/us/app/master-of-regularity/id1369749472",
+     "note": "IT/classic regolarità"
+    },
+    {
+     "name": "Rabbit Rally 2.0",
+     "url": "https://apps.apple.com/us/app/rabbit-rally-2-0/id1262789127",
+     "note": "GPS odometr + senzory vozu"
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Saturovaná nika s vyspělými specializovanými nástroji; bez vlastní hardwarové výhody nemáme čím konkurovat. Nestavět.",
+   "web_checked": true
+  },
+  {
+   "id": "navigation-05",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 2,
+    "monetization": 4,
+    "build_ease": 5,
+    "offline_fit": 8,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Ověřeno: organizaci Drückjagd už nabízejí diwima Ansteller, HuntersMapp (živá GPS poloha všech účastníků), REVIERWELT, HNTR a WeHunt – často zdarma pro střelce.",
+    "Konkurenti mají server a živé sdílení; náš QR/AirDrop model je pro organizátora s 40 střelci horší, ne lepší.",
+    "Organizátor honu je jeden na revír a sezónu – 50 platících organizátorů měsíčně je nereálné; revenue je výrazně sezónní (X–I).",
+    "České a polské myslivecké spolky jsou konzervativní a iPhone share mezi myslivci je nízký."
+   ],
+   "missed_competitors": [
+    {
+     "name": "HuntersMapp",
+     "url": "https://apps.apple.com/at/app/huntersmapp/id1236152421",
+     "note": "kompletní organizace Drückjagd + messenger"
+    },
+    {
+     "name": "diwima Ansteller",
+     "url": "https://apps.apple.com/de/app/diwima-ansteller/id1538397766",
+     "note": "digitální seznamy stanovišť pro naháňku"
+    },
+    {
+     "name": "REVIERWELT",
+     "url": "https://apps.apple.com/us/app/revierwelt/id1565506300",
+     "note": "plánování Drückjagd v revíru"
+    },
+    {
+     "name": "HNTR",
+     "url": "https://apps.apple.com/de/app/hntr-1-j%C3%A4gergemeinschaft/id1619932034",
+     "note": "organizace od čekané po naháňku"
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "V DACH je nika obsazená několika aplikacemi se serverovým sdílením, které serverless verze neporazí. Nestavět.",
+   "web_checked": true
+  },
+  {
+   "id": "navigation-06",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 3,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 9,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Ověřeno: 'mushroom spots/map' má ~7 aplikací v názvu; Mush - Mushroom Hunter přesně nabízí soukromý seznam oblíbených míst.",
+    "Mapy.cz (v CZ zdarma, offline mapy, uložená místa se složkami) pokrývá 90 % hodnoty; houbař nevidí důvod platit.",
+    "Sezónní připomínky 'podle historie nálezů' jsou slabé – růst hub určují srážky a teplota, ne kalendář; bez počasí (API) je funkce kosmetická.",
+    "V PL a na Slovensku dominuje Android; iOS publikum je malé."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Mush - Mushroom Hunter",
+     "url": "https://apps.apple.com/us/app/mush-mushroom-hunter/id930379621",
+     "note": "soukromá houbařská místa"
+    },
+    {
+     "name": "Mushroom Spot: mushroom map",
+     "url": "https://apps.apple.com/us/app/mushroom-spot-mushroom-map/id1660126297",
+     "note": "1M+ spotů, AI ID"
+    },
+    {
+     "name": "Mushroom Map: Spots near you",
+     "url": "https://apps.apple.com/us/app/mushroom-map-spots-near-you/id6746188596",
+     "note": "komunitní mapa"
+    }
+   ],
+   "revenue_czk_realistic": 3000,
+   "reviewer_note": "EN klíčová slova jsou obsazená; smysl má jen jako lokální CZ/PL/SK aplikace na klíčová slova 'houby/grzyby' s důrazem na soukromí a levný lifetime – počítej s 2–4 tis. Kč, ne 23 tis.",
+   "web_checked": true
+  },
+  {
+   "id": "navigation-07",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 5,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "UK grid reference je zdarma v OS Locate a OS Maps – britská část trhu nezaplatí.",
+    "Generické konvertory souřadnic s knihovnou EPSG (proj) už S-JTSK (EPSG:5514), LV95 i Gauss-Krüger umí; nika není prázdná, jen nepopsaná v názvech.",
+    "Hranice pozemku telefonem (přesnost 3–10 m) je zavádějící slib – riziko sousedských sporů a špatných recenzí; profesionálové (geodeti, lesníci) mají GNSS přijímače.",
+    "Hledanost 's-jtsk' v App Store je velmi pravděpodobně minimální – lidé to hledají na Googlu, ne v App Store."
+   ],
+   "missed_competitors": [
+    {
+     "name": "OS Locate",
+     "url": "",
+     "note": "Ordnance Survey, zdarma, UK grid ref"
+    },
+    {
+     "name": "Coordinate converter apps (proj/EPSG)",
+     "url": "",
+     "note": "podporují tisíce systémů vč. S-JTSK"
+    }
+   ],
+   "revenue_czk_realistic": 3000,
+   "reviewer_note": "Jen jako CZ/SK aplikace 'najdi bod z katastru (S-JTSK)' s poctivým upozorněním na přesnost; UK/DE vynechat. Realistický strop je pod 10 tis. Kč."
+  },
+  {
+   "id": "navigation-08",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 3,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 8
+   },
+   "extra_risks": [
+    "Radioamatéři mají desítky free/0,99 USD grid utilit a každý logovací program (HamLog, QRZ, logovací aplikace pro POTA) lokátor počítá sám.",
+    "JARL komunita používá japonské aplikace a Android; 'lokalizace do 50 jazyků' u komunity, která mluví anglicky Q-kódy, nepřidá mnoho.",
+    "8% konverze na placenou kalkulačku je fantazie; spíš 1–2 %.",
+    "Riziko 4.2 (minimum functionality) pro čistě výpočetní utilitu."
+   ],
+   "missed_competitors": [
+    {
+     "name": "HamLog",
+     "url": "",
+     "note": "parent – logování s grid square"
+    },
+    {
+     "name": "Ham grid square utilities",
+     "url": "",
+     "note": "desítky free aplikací; URL nejsou v evidenci"
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Samostatně nevydělá; má smysl jen jako širší 'Ham Toolkit' (lokátor + azimut + SOTA/POTA spot log + band plan) za 4,99 USD. I tak spíš vedlejší projekt."
+  },
+  {
+   "id": "navigation-09",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 4,
+    "monetization": 5,
+    "build_ease": 6,
+    "offline_fit": 9,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Existuje řada sea-time/sea-service aplikací pro profesionální posádky a sailing logbooků; 'sailing logbook' je středně obsazené.",
+    "RYA a národní autority vyžadují podpis skippera/potvrzení – PDF z aplikace samo o sobě nestačí; nutná funkce podpisu, jinak slib 'export pro zkoušku' nesedí.",
+    "Charterový jachtař pluje 1–3 týdny ročně – nízká retence, předplatné neudrží; one-time spíš.",
+    "Navionics/Savvy Navvy a lodní plottery už stopu zaznamenávají; stačí jim přidat export mil."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Sea time / sea service logbook apps",
+     "url": "",
+     "note": "pro profesionální posádky (MCA sea service); URL nejsou v evidenci"
+    }
+   ],
+   "revenue_czk_realistic": 4000,
+   "reviewer_note": "Obhajitelné, pokud se úzce zaměří na požadavky konkrétních licencí (RYA, ICC, VMP/kapitán C) s podpisy skippera a automatickým nočním časem; jednorázová cena, ne předplatné."
+  },
+  {
+   "id": "navigation-10",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 2,
+    "build_ease": 8,
+    "offline_fit": 9,
+    "safety": 3
+   },
+   "extra_risks": [
+    "Lovecký čas je zdarma v HuntStand, onX Hunt, HuntWise i desítkách 'hunting times/solunar' aplikací.",
+    "Legální doba lovu se liší podle státu, druhu zvěře a sezóny; chybný výpočet = lovec porušil zákon → odpovědnost a 1-hvězdičkové recenze; udržovat pravidla 50 států je průběžná práce.",
+    "Návrat k autu/posedu už řeší Backtrack ve watchOS Compass a waypointy – Sherlock.",
+    "Evropská varianta (občanský soumrak) nemá jednotnou právní definici – nelze prodávat jako 'legální'."
+   ],
+   "missed_competitors": [
+    {
+     "name": "HuntStand",
+     "url": "",
+     "note": "parent – zdarma legální světlo a mapy"
+    },
+    {
+     "name": "Apple Compass (watchOS) Backtrack",
+     "url": "",
+     "note": "vestavěný návrat po trase"
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Funkce zadarmo v silných loveckých aplikacích a právně riskantní; nestavět."
+  },
+  {
+   "id": "navigation-11",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 3,
+    "monetization": 2,
+    "build_ease": 7,
+    "offline_fit": 9,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Ověřeno: v DE existují dedikované aplikace s kompasem, inklinometrem a odhadem výnosu – PV Wizard (2026), Solarertrag, Solartelligent PV-Planer, PV Energy Planner, plus sun-path aplikace (Sunlitt, SunOnTrack).",
+    "Výrobci (EcoFlow, Anker Solix, Solakon) mají vlastní free aplikace a PVGIS/Wattbewerb kalkulačky jsou zdarma na webu.",
+    "Jednorázové použití: panel se natočí jednou a aplikace se smaže; nulová retence, recenze přijdou jen od zklamaných.",
+    "Balkon má daný azimut – uživatel ho nemůže změnit, takže hodnota 'optimální orientace' je malá."
+   ],
+   "missed_competitors": [
+    {
+     "name": "PV Wizard",
+     "url": "https://apps.apple.com/de/app/pv-wizard/id6762192446",
+     "note": "kompas + inklinometr pro přesnou orientaci"
+    },
+    {
+     "name": "Solarertrag",
+     "url": "https://apps.apple.com/ch/app/solarertrag/id6448853706",
+     "note": "výnos podle polohy a sklonu telefonu"
+    },
+    {
+     "name": "Solartelligent: PV-Planer",
+     "url": "https://apps.apple.com/de/app/solartelligent-pv-planer/id6470352546",
+     "note": "inklinometr a optimální sklon"
+    },
+    {
+     "name": "PV Energy Planner",
+     "url": "https://apps.apple.com/us/app/pv-energy-planner/id6755328705",
+     "note": "plánování orientace"
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Reverse gap existuje jen v teorii – DE trh už má několik přesně takových nástrojů a produkt je jednorázový. Nestavět.",
+   "web_checked": true
+  },
+  {
+   "id": "navigation-12",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 3,
+    "monetization": 4,
+    "build_ease": 3,
+    "offline_fit": 6,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Apple Maps (iOS 17+) a Google Maps umí stáhnout offline oblasti; GPS v letadle pak ukáže polohu – částečný Sherlock.",
+    "Flyover Country je zdarma a pokrývá i mimo USA (Macrostrat, Wikipedia); 'placená lokalizovaná verze' soupeří s free.",
+    "Stahování balíčků dat pro trasu = hosting a přenosy (CDN stojí peníze) – porušuje princip 'žádný server'; plně zabalený svět je stovky MB.",
+    "GPS v letadle funguje jen u okna a nespolehlivě; první špatný zážitek = odinstalace."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Flyover Country",
+     "url": "",
+     "note": "zdarma, offline in-flight mapa s geologií a POI"
+    },
+    {
+     "name": "Apple Maps offline maps",
+     "url": "",
+     "note": "vestavěné offline oblasti od iOS 17"
+    }
+   ],
+   "revenue_czk_realistic": 3000,
+   "reviewer_note": "Jen pokud zabalíme globální vektorovou mapu malého rozlišení + Wikidata POI přímo do aplikace (bez CDN) a budeme cílit na klíčová slova typu 'airplane mode map' v lokálních jazycích; 8 týdnů práce na nejisté tržby."
+  },
+  {
+   "id": "navigation-13",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 2,
+    "blue_ocean": 5,
+    "monetization": 2,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Nikdo nehledá 'turnaround time' v App Store – problém si turista neuvědomuje předem (autor to sám přiznal jako killer risk).",
+    "Komoot/AllTrails/Mapy.cz ukazují odhad času trasy a Apple Weather/Watch zobrazí západ slunce; watchOS Backtrack řeší návrat.",
+    "Jednoduchá kalkulačka za 3,99 USD s rizikem 4.2 a nulovou retencí.",
+    "Bezpečnostní slib ('budeš dole před tmou') nese odpovědnost, pokud výpočet selže."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Komoot",
+     "url": "",
+     "note": "parent – odhad času trasy"
+    },
+    {
+     "name": "Apple Weather / watchOS Compass",
+     "url": "",
+     "note": "západ slunce, Backtrack"
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Pěkná myšlenka bez vyhledávací poptávky – ASO-only model ji nedokáže prodat. Nestavět."
+  },
+  {
+   "id": "navigation-14",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 4,
+    "monetization": 5,
+    "build_ease": 7,
+    "offline_fit": 8,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Detektoristé už mají několik find-log aplikací a aplikace výrobců (Minelab, XP, Nokta) s GPS záznamem nálezů; odhadovaná saturace 3 je spíš podhodnocená.",
+    "V CZ, IE a části EU je hledání bez povolení nezákonné – lokalizace do 50 jazyků může narazit na zákony a negativní PR; App Review ani ne, ale recenze a média ano.",
+    "Heatmapa pokrytí vyžaduje nepřetržitý GPS běh na pozadí hodiny – baterie a přesnost 3–5 m (šíře záběru cívky je ~30 cm) dělají 'pokrytí' spíš orientační.",
+    "Detektoristé tají místa; iCloud sync je OK, ale ne každý věří aplikaci."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Minelab Discovery",
+     "url": "",
+     "note": "parent – aplikace výrobce s GPS nálezy"
+    },
+    {
+     "name": "Metal detecting find log apps",
+     "url": "",
+     "note": "několik indie deníků; URL nejsou v evidenci"
+    }
+   ],
+   "revenue_czk_realistic": 4000,
+   "reviewer_note": "Obhajitelné pro UK/US/NL/PL trh s důrazem na povolení od vlastníků a PAS export; země, kde je hobby nelegální, vynechat. Před stavbou ověřit saturaci 'metal detecting log'."
+  },
+  {
+   "id": "navigation-15",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 3,
+    "monetization": 5,
+    "build_ease": 2,
+    "offline_fit": 9,
+    "safety": 3
+   },
+   "extra_risks": [
+    "Vestavěná GPS iPhonu (3–5 m) je pro paralelní navádění nepoužitelná – nutný externí RTK/SBAS přijímač, a ten prodává FieldBee i s vlastní aplikací (i na iOS).",
+    "Externí GNSS přes Bluetooth Classic na iOS vyžaduje MFi program; BLE přijímače jsou málo rozšířené – výrazně delší vývoj.",
+    "Zemědělci používají převážně Android tablety v kabině; iOS nika je malá.",
+    "Chybné navádění = škoda na plodinách/postřiku → odpovědnost."
+   ],
+   "missed_competitors": [
+    {
+     "name": "FieldBee",
+     "url": "",
+     "note": "parent – vlastní RTK hardware + aplikace"
+    },
+    {
+     "name": "Farmis",
+     "url": "",
+     "note": "Android navádění"
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Bez hardwaru nefunguje, s hardwarem prohrajeme s těmi, kdo ho prodávají. Nestavět."
+  },
+  {
+   "id": "navigation-16",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 3,
+    "monetization": 5,
+    "build_ease": 4,
+    "offline_fit": 10,
+    "safety": 4
+   },
+   "extra_risks": [
+    "3pRally Pro už nabízí TSD Rally + Roadbook na iOS (ověřeno ve výsledcích hledání regularity rally) a existují další iOS čtečky roadbooku.",
+    "Apple oficiálně varuje, že vibrace motocyklových motorů poškozují OIS kamery iPhonu – adventure motorkáři proto volí Android nebo dedikované zařízení.",
+    "Ovládání z řídítek vyžaduje BLE ovladač; autorovo 'Android má DMD2 ekosystém' je právě důvod, proč iOS verze nevyhraje.",
+    "Formáty roadbooků (Rally Navigator RNS, PDF) jsou proprietární/nesourodé."
+   ],
+   "missed_competitors": [
+    {
+     "name": "3pRally Pro TSD Rally Roadbook",
+     "url": "https://apps.apple.com/us/app/3prally-pro-tsd-rally-roadbook/id997786330?at=10lvhm&ct=site",
+     "note": "TSD + roadbook na iOS"
+    },
+    {
+     "name": "DMD2 / Rally Navigator",
+     "url": "",
+     "note": "Android ekosystém, standard komunity"
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Cílovka je na Androidu a dedikovaném hardwaru; iOS verze by lovila zbytky. Nestavět."
+  },
+  {
+   "id": "navigation-17",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 2,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Hloubka nástrahy závisí na rychlosti vůči vodě, ne vůči zemi (GPS SOG); s proudem/větrem je GPS rychlost zavádějící – jádro hodnoty je fyzikálně vadné.",
+    "Trolling rybáři na lodích mají echolot/plotter se SOG; kajakáři používají free rychloměry.",
+    "Free GPS speedometery s velkým displejem jsou desítky; 5,99 USD one-time při 8% konverzi je nereálné.",
+    "Sezónnost a nízká retence."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Fish Track: Personal Logbook",
+     "url": "https://apps.apple.com/ga/app/fish-track-personal-logbook/id6774517223?l=en-GB&platform=watch",
+     "note": "rybářský deník – parent"
+    },
+    {
+     "name": "GPS speedometer apps",
+     "url": "",
+     "note": "zdarma, velký displej"
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Úzká utilita s fyzikální vadou a free substituty. Nestavět."
+  },
+  {
+   "id": "navigation-18",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 5,
+    "monetization": 2,
+    "build_ease": 8,
+    "offline_fit": 9,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Freemium se 3 hroby zdarma pokryje potřebu téměř každé rodiny → nikdo nezaplatí.",
+    "Find a Grave/BillionGraves jsou zdarma s GPS a fotkou; mnoho měst (Praha, Brno) má webové vyhledávání hrobů; stačí i pin v Apple Maps nebo fotka s polohou.",
+    "Použití 1–2× ročně (Dušičky) = nulová retence a slabé ASO.",
+    "Hledanost 'hroby' v App Store je minimální."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Find a Grave",
+     "url": "",
+     "note": "parent – zdarma"
+    },
+    {
+     "name": "BillionGraves",
+     "url": "",
+     "note": "parent – zdarma s GPS"
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Příliš nízká frekvence a free substituty; freemium limit zabije monetizaci. Nestavět."
+  },
+  {
+   "id": "navigation-19",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 5,
+    "build_ease": 3,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Existuje několik zavedených astronavigačních aplikací a desktopových nástrojů (a free webové kalkulátory) – uživatelé jsou věrní ověřeným nástrojům.",
+    "Almanach a redukce musí být na obloukové minuty přesné; jedna chyba = aplikace je v komunitě odepsaná; 8 týdnů je optimistické.",
+    "Globálně jde o několik tisíc aktivních zájemců; 700 stažení/měs je nereálné.",
+    "GNSS rušení zvyšuje zájem profesionálů, kteří mají schválené nástroje – ne indie aplikace."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Celestial navigation apps (EN)",
+     "url": "",
+     "note": "několik starších placených nástrojů; URL nejsou v evidenci"
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Náročný vývoj pro miniaturní trh. Nestavět."
+  },
+  {
+   "id": "navigation-20",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 4,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 9,
+    "safety": 6
+   },
+   "extra_risks": [
+    "GPS přesnost 5–10 m je pro dětskou hru teplo–zima frustrující, zvlášť pod stromy a u chaty.",
+    "Existuje řada scavenger/treasure hunt aplikací a tištěných šablon zdarma; 'treasure hunt' je obsazené.",
+    "Kategorie Kids / cílení na děti = přísnější pravidla (1.3, žádné třetí strany) – i když platí rodič.",
+    "Jednorázová akce (narozeniny) → nízká retence."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Actionbound",
+     "url": "",
+     "note": "parent – DE, školy/bundy"
+    },
+    {
+     "name": "Geocaching",
+     "url": "",
+     "note": "parent"
+    }
+   ],
+   "revenue_czk_realistic": 2500,
+   "reviewer_note": "Má smysl jen s ARKit (fotokotvy/AR šipka na posledních metrech) místo holé GPS a s šablonami her pro oslavy; i tak spíš 2–4 tis. Kč."
+  },
+  {
+   "id": "navigation-21",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 2,
+    "blue_ocean": 6,
+    "monetization": 2,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "ACP kalkulátory kontrol jsou zdarma na webu (RUSA, Audax UK) a organizátoři časy tisknou na brevet kartu.",
+    "Globálně desítky tisíc randonneurů, drtivá většina s Garminem/Wahoo; příjmy mimo rok PBP 2027 blízké nule.",
+    "Foto razítek jako 'záloha karty' pořadatelé neuznávají (i když elektronické ověření roste přes jejich vlastní systémy).",
+    "4.2 riziko u čisté kalkulačky."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Ride with GPS",
+     "url": "",
+     "note": "parent"
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Sympatický, ale miniaturní a free-substituovaný trh. Nestavět."
+  },
+  {
+   "id": "navigation-22",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 2,
+    "blue_ocean": 5,
+    "monetization": 4,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 2
+   },
+   "extra_risks": [
+    "Palubní počítač pro letectví = odpovědnost při nehodě; výpočet doletu proti větru s chybou může někoho zabít.",
+    "PPG piloti používají dedikované varia/GPS (Flymaster, SkyDrop) nebo free XCTrack na Androidu.",
+    "Počet PPG pilotů s iPhonem, kteří hledají v App Store, je velmi malý; 500 stažení/měs je přehnané.",
+    "Odhad paliva vyžaduje ruční kalibraci spotřeby – většina uživatelů to neudělá a čísla budou chybná."
+   ],
+   "missed_competitors": [
+    {
+     "name": "XCTrack",
+     "url": "",
+     "note": "parent – zdarma, Android"
+    },
+    {
+     "name": "FlySkyHy",
+     "url": "",
+     "note": "parent – iOS vario"
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Malý trh s vysokým rizikem odpovědnosti. Nestavět."
+  },
+  {
+   "id": "navigation-23",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 2,
+    "build_ease": 6,
+    "offline_fit": 8,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Rejdaři (Royal Caribbean, MSC, Carnival) ukazují polohu lodi zdarma v lodní aplikaci/intranetu bez placeného internetu.",
+    "Starlink na lodích prudce zlevnil Wi-Fi balíčky; CruiseMapper a Ship Mate pokrývají plánování.",
+    "Apple Maps zobrazí polohu i nad oceánem s cache základní mapy – pro většinu cestujících stačí.",
+    "Použití 1× ročně na plavbě, nízká retence."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Ship Mate",
+     "url": "",
+     "note": "parent"
+    },
+    {
+     "name": "Cruise line apps (onboard intranet)",
+     "url": "",
+     "note": "zdarma poloha lodi"
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Vyřešeno zdarma aplikacemi rejdařů a levnějším internetem. Nestavět."
+  },
+  {
+   "id": "navigation-24",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 4,
+    "monetization": 2,
+    "build_ease": 8,
+    "offline_fit": 9,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Pro autobus a vlak přímka/velký kruh nesedí s reálnou trasou (serpentiny, severojižní úseky) – bez routingu budou doporučení často špatně.",
+    "Existují weby a malé aplikace typu 'sit in shade'/sun seat; nápad je snadno kopírovatelný za víkend.",
+    "Za jednoduchý výpočet lidé neplatí 2,99 USD; virálnost na App Store bez sociálních sítí neexistuje.",
+    "Riziko 4.2 (minimum functionality)."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Sun seat / sit-in-shade utilities",
+     "url": "",
+     "note": "weby a malé aplikace; URL nejsou v evidenci"
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Jen jako 2týdenní experiment s letadly (velký kruh funguje) a výhledem z okna (hory/pobřeží); pro autobusy/vlaky to bez routingu nefunguje. Očekávej jednotky tisíc Kč."
+  },
+  {
+   "id": "navigation-25",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 2,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Vojáci a skauti se land nav učí s buzolou a mapou – telefon je na cvičišti často zakázaný; kadeti hledají free materiály.",
+    "Existuje řada free 'land navigation' a kompasových aplikací; iOS Compass + Watch waypointy.",
+    "Kalibrace kroku krokoměrem v terénu je nepřesná → výsledek tréninku zkreslený.",
+    "Nízká ochota platit a nízká retence."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Land navigation / compass apps",
+     "url": "",
+     "note": "free; URL nejsou v evidenci"
+    }
+   ],
+   "revenue_czk_realistic": 1200,
+   "reviewer_note": "Malá ochota platit a free substituty. Nestavět."
+  },
+  {
+   "id": "navigation-26",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 2,
+    "monetization": 2,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 2
+   },
+   "extra_risks": [
+    "Sherlock: iOS Measure (Level) měří sklon zdarma; desítky free clinometerů.",
+    "Lavinová pomůcka = extrémní odpovědnost; komunita doporučuje kalibrované inklinometry a CalTopo/Fatmap slope shading.",
+    "Skialpinisté plánují sklon předem na mapě (slope angle vrstvy v Mapy.cz, CalTopo, Gaia) – měření na svahu je pozdě.",
+    "Zimní sezónnost."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Apple Measure (Level)",
+     "url": "",
+     "note": "vestavěné, zdarma"
+    },
+    {
+     "name": "CalTopo / Gaia slope shading",
+     "url": "",
+     "note": "plánování sklonu na mapě"
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Sherlock + odpovědnost + free alternativy. Nestavět."
+  },
+  {
+   "id": "navigation-27",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 2,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 9,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Feng shui/Luopan kompasy jsou saturované v EN i CN (autor sám dal 'feng shui compass' saturaci 6).",
+    "Magnetometr v budovách (železobeton, elektronika) chybuje o desítky stupňů – u Luopanu, kde sektor má 15°, je výsledek bezcenný a recenze to rozbijí.",
+    "Profesionální konzultanti používají fyzický Luopan; laici chtějí free kompas.",
+    "Kulturní/odborný obsah (Flying Stars) vyžaduje expertízu, jinak hrozí zesměšnění."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Feng Shui Compass / Luopan apps",
+     "url": "",
+     "note": "desítky EN i CN aplikací; URL nejsou v evidenci"
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Saturované a technicky nespolehlivé uvnitř budov. Nestavět."
+  },
+  {
+   "id": "navigation-28",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 1,
+    "monetization": 2,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Autor sám uvádí saturaci ~6; lean angle aplikací jsou desítky včetně free.",
+    "Moderní motorky mají IMU a ukazují náklon na displeji.",
+    "Telefon v kapse/tankbagu měří náklon nepřesně; na řídítkách hrozí poškození kamery vibracemi (Apple varování).",
+    "Trackday nika je malá a používá laptimery (RaceChrono, Harry's)."
+   ],
+   "missed_competitors": [
+    {
+     "name": "RaceChrono",
+     "url": "",
+     "note": "trackday laptimer s daty"
+    },
+    {
+     "name": "Lean angle apps",
+     "url": "",
+     "note": "desítky"
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Saturované, bez diferenciace. Nestavět."
+  },
+  {
+   "id": "navigation-29",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 1,
+    "monetization": 1,
+    "build_ease": 9,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Sherlock: iOS AML automaticky posílá přesnou polohu dispečinku 112 a Emergency SOS přes satelit.",
+    "Záchranka (CZ), what3words a free 'my coordinates' aplikace pokrývají zbytek zdarma.",
+    "V krizi nikdo nekupuje aplikaci za 2,99 USD – musí ji mít předem, a to je free Záchranka.",
+    "Autor sám dal monetizaci 2."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Záchranka",
+     "url": "",
+     "note": "CZ free, oficiální"
+    },
+    {
+     "name": "what3words",
+     "url": "",
+     "note": "free"
+    }
+   ],
+   "revenue_czk_realistic": 300,
+   "reviewer_note": "Sherlocked a zdarma řešené. Nestavět."
+  },
+  {
+   "id": "navigation-30",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 3,
+    "monetization": 1,
+    "build_ease": 9,
+    "offline_fit": 9,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Sherlock: watchOS Compass waypointy a Backtrack, Apple Maps pin a 'Parked car' najdou stan offline stejně.",
+    "10 000 stažení/měs a 12% konverze za 1,99 USD je naprosto nereálné; sezóna 3 měsíce.",
+    "Existující 'find my car/tent' aplikace jsou zdarma.",
+    "Riziko 4.2 – aplikace je jedna šipka a vzdálenost."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Apple Compass waypoints / Backtrack",
+     "url": "",
+     "note": "vestavěné"
+    },
+    {
+     "name": "Find my car apps",
+     "url": "",
+     "note": "free"
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Vestavěná funkce iOS/watchOS; nestavět."
+  }
+ ]
+}

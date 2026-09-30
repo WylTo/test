@@ -1,0 +1,762 @@
+{
+ "category_slug": "reference",
+ "summary": "Kategorie je slabší než ostatní: většina nápadů jsou úzké referenční tabulky s jednorázovou cenou 3–5 USD, které LLM/Visual Intelligence nebo bezplatné weby nahrazují, a autorův ideál 11–35 tis. Kč je u většiny 3–10× nad realitou. Z 6 ověřovacích hledání vyšlo 5 nik jako obsazené (pet toxic plants, ADR, star notes, karate terminologie, crochet US/UK jako funkce) — nápady ‚evidence: knowledge‘ jsou systematicky přeceněné. Nejlepší sázky: Bottle Dater, Meteorite Check, Kurrent Reader a Euro Coin Album; společná vada je slabá monetizace referenčního obsahu.",
+ "reviews": [
+  {
+   "id": "reference-01",
+   "verdict": "GO",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 7,
+    "monetization": 5,
+    "build_ease": 4,
+    "offline_fit": 9,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Model 24,99 USD/rok je pro komunitu sběratelů lahví přestřelený — typický uživatel identifikuje pár kusů za rok a předplatné zruší; lifetime/unlock bude konvertovat lépe.",
+    "Nejlepší datovací klíč (SHA/BLM Historic Glass Bottle Identification) je volně na webu — appka musí přidat hodnotu offline použitím v terénu a sbírkou, ne jen přepsaným obsahem.",
+    "Hledanost je silně US (bottle digging, privy digging); lokalizace do 50 jazyků přinese málo, v EU je koníček okrajový."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 5000,
+   "reviewer_note": "Nejlépe podložená nika kategorie (1 dedikovaná appka, rodič s 4+ monetizujícími AI apps). Stavět jako strukturovaný klíč (ústí, šev, forma, barva skla) + deník nálezů s jednorázovým unlockem ~9,99 USD; ideál 22 000 Kč je 4× nad realitou."
+  },
+  {
+   "id": "reference-02",
+   "verdict": "GO",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 8,
+    "monetization": 4,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Jednorázová cena 5,99 USD při převaze negativních výsledků („není to meteorit“) — konverze 6 % je optimistická, reálně 2–3 %.",
+    "Rock ID giganti (Rock Identifier, Rock Finder) mají v popisech „meteorite“ a přebijí ASO na hlavním termínu „meteorite identifier“ — hrát je nutné na dlouhý ocas („is it a meteorite“, „meteorwrong“)."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 4500,
+   "reviewer_note": "Levná, plně offline appka s jasnou emocí a bez dedikovaného konkurenta; reálně 4–5 tis. Kč/měs., ale nízké riziko a 4 týdny práce. Nezaměňovat s odhadem ceny, formulovat výsledky jako „pravděpodobnost“ kvůli recenzím."
+  },
+  {
+   "id": "reference-03",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 2,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 3
+   },
+   "extra_risks": [
+    "Ověřeno: 7 dedikovaných appek na toxické rostliny pro mazlíčky (Pet Protect Plan, Pet Toxic, ToxiPets, Pet Safe Plant Identifier, VETCPD, CatPoison…) + plant ID appky (Plantz, PictureThis) označují toxicitu zdarma.",
+    "US-gap tvrzení je nepravdivé — CatPoison je dostupná v tureckém storefrontu a PictureThis je lokalizovaná do desítek jazyků.",
+    "Falešně negativní odpověď = otrávené zvíře; odpovědnost a 1.4.1 (zdravotní rady pro zvířata) jsou reálné riziko.",
+    "Apple Visual Intelligence / Siri s ChatGPT odpoví „is this plant toxic to cats“ z fotky zdarma."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Pet Protect Plan: Toxic Plant",
+     "url": "https://apps.apple.com/us/app/pet-protect-plan-plant-id/id1456505975",
+     "note": "720+ rostlin, foto ID, psi/kočky/koně"
+    },
+    {
+     "name": "CatPoison - Poisonous plants",
+     "url": "https://apps.apple.com/tr/app/catpoison-poisonous-plants/id994249067",
+     "note": "1500+ záznamů, mimo US — vyvrací US-gap"
+    },
+    {
+     "name": "Pet Toxic",
+     "url": "https://apps.apple.com/us/app/pet-toxic/id6758074515",
+     "note": "vet-reviewed, 2026"
+    },
+    {
+     "name": "ToxiPets: Pet Poison Scanner",
+     "url": "https://apps.apple.com/us/app/toxipets-pet-poison-scanner/id1602251141",
+     "note": "scanner s lily alertem"
+    },
+    {
+     "name": "Pet Safe Plant Identifier",
+     "url": "https://apps.apple.com/us/app/pet-safe-plant-identifier/id6755623945",
+     "note": "foto ID + toxicita"
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Nejvyšší autorovo demand skóre, ale nika je nasycená (7+ dedikovaných appek) a US-gap neplatí. Nestavět.",
+   "web_checked": true
+  },
+  {
+   "id": "reference-04",
+   "verdict": "GO",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 8,
+    "monetization": 6,
+    "build_ease": 5,
+    "offline_fit": 9,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Ověřeno: nová appka „Old Letters & Handwriting AI“ (2026) cílí na genealogii a přepis starých dopisů cloudovou AI — uživatelé budou čekat přepis fotky, ne výuku.",
+    "Multimodální LLM (ChatGPT, Gemini) už kurent přepisují použitelně; pokud Apple Foundation Models přidá čtení rukopisu, zbyde jen výuka.",
+    "Keyword „kurrent“ v anglickém store má nízký objem; hlavní trh jsou US genealogové, kteří spíš hledají „german genealogy“."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Old Letters & Handwriting AI",
+     "url": "https://apps.apple.com/gb/app/old-letters-handwriting-ai/id6770993921",
+     "note": "AI přepis starých dopisů pro genealogy, 2026, cloud"
+    }
+   ],
+   "revenue_czk_realistic": 5000,
+   "reviewer_note": "Titulní klíčová slova jsou prázdná (0 dedikovaných čteček kurentu) a genealogové platí. Pozicovat jako trenažér + abeceda s variantami písmen + slovník matričních výrazů (DE/LAT), ne jako OCR; jednorázově 7,99–9,99 USD.",
+   "web_checked": true
+  },
+  {
+   "id": "reference-05",
+   "verdict": "GO",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 5,
+    "monetization": 5,
+    "build_ease": 5,
+    "offline_fit": 8,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Autorův důkaz „OPEN“ pochází z kids hledání „euro coins counting kids“, ne ze sběratelského dotazu — sběratelské 2€ appky v DE/IT/FR storefrontech nebyly ověřeny a několik jich podle mé znalosti existuje.",
+    "Numista (bezplatný katalog s appkou a sběratelskou evidencí) pokrývá euro mince včetně pamětních; appka musí vyhrát rychlostí checklistu a offline.",
+    "Každý rok ~40–50 nových 2€ mincí — bez aktualizace do měsíce od vydání přijdou 1★ recenze; je to trvalá práce, ne jednorázový build."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Numista",
+     "url": "",
+     "note": "bezplatný celosvětový katalog mincí s appkou; kryje euro i pamětní 2€"
+    },
+    {
+     "name": "Euro und Cent",
+     "url": "https://apps.apple.com/hu/app/euro-und-cent/id6757074344?platform=ipad",
+     "note": "kids appka — jen dokládá, že autorovo OPEN je z kids dotazu"
+    }
+   ],
+   "revenue_czk_realistic": 6000,
+   "reviewer_note": "Masový koníček v eurozóně s ochotou platit malé částky; nejvíc ze všech nápadů má skutečný lokální trh. Prodávat jednorázový unlock + roční „update pack“, launch v DE/IT/FR/NL/ES, a před vývojem ověřit „2 euro münzen“ v DE storefrontu."
+  },
+  {
+   "id": "reference-06",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 5,
+    "monetization": 5,
+    "build_ease": 2,
+    "offline_fit": 9,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Datová základna (tisíce značek s obdobími) je v knihách Kovel/Godden/Röntgen chráněná — vlastní sběr zabere měsíce, 10 týdnů je podhodnocených.",
+    "Antiq AI / AntiqSnap už „značky na dně“ čtou fotkou a mají velké ASO rozpočty; hlavní termín „antique identifier“ je nasycený (8).",
+    "Loga živých výrobců (Meissen, Rosenthal, Royal Doulton) jsou ochranné známky — v názvu/screenshotech riziko 5.2."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 3500,
+   "reviewer_note": "Poptávka reálná (reselleři, bleší trhy), ale náklad dat je vysoký. Jen jako úzká verze: středoevropský porcelán (Thun, Haas & Czjzek, Meissen, Rosenthal, Augarten) s vlastními fotkami a výborným vyhledáváním podle tvaru značky."
+  },
+  {
+   "id": "reference-07",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 6,
+    "monetization": 4,
+    "build_ease": 3,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Obsah je drahý: ilustrace stop/trusu pro 100+ druhů × lokální názvy ve 20+ jazycích — bez ilustrátora nevznikne; 8 týdnů je optimistických.",
+    "Sezónní (sníh, zima) a nízká ochota platit; myslivci používají tištěné atlasy a iNaturalist.",
+    "Evropská konkurence nebyla ověřena — v DE existují atlasy stop od nakladatelů (Kosmos), které mohou mít appky."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 2500,
+   "reviewer_note": "Legitimní reverzní gap k iTrack Wildlife, ale vysoký náklad obsahu vs. nízký výnos. Začít jen DE+CZ+PL se 40 nejčastějšími druhy a jednorázovou cenou; škálovat podle stažení."
+  },
+  {
+   "id": "reference-08",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 2,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Ověřeno: Hooked přepíná celý vzor US↔UK jedním ťuknutím, Loopsy, Knitting Buddy 1/2 mají glosáře zkratek — je to funkce, ne produkt.",
+    "Překlad cizojazyčných vzorů (NL→CZ) dnes zdarma udělá Apple Translate nebo LLM z fotky vzoru.",
+    "Samostatný slovník za 3,99 USD je na hraně 4.2 (minimální funkcionalita)."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Hooked - Crochet & Knitting",
+     "url": "https://apps.apple.com/us/app/hooked-crochet-knitting/id6757484781",
+     "note": "US/UK převod celého vzoru + glosář"
+    },
+    {
+     "name": "Loopsy - Crochet & Knitting",
+     "url": "https://apps.apple.com/us/app/loopsy-crochet-knitting/id6745416564",
+     "note": "zkratky + převodník háčků"
+    },
+    {
+     "name": "Knitting Buddy",
+     "url": "https://apps.apple.com/us/app/knitting-buddy/id958827195",
+     "note": "zkratky, symboly, převodník velikostí"
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Funkce, kterou už mají pletací companion appky, a kterou sherlockuje Translate/LLM. Nestavět.",
+   "web_checked": true
+  },
+  {
+   "id": "reference-09",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 5,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Hledání nebylo ověřeno; podle mé znalosti existuje několik „welding symbols“ quiz/reference appek a výrobci (Miller, Lincoln) mají zdarma kalkulačky i materiály.",
+    "Učni dostanou tabulku symbolů ve škole zdarma; platí hlavně US studenti CWI/AWS, kde je konkurence nejvyšší.",
+    "Rozdíl AWS vs. ISO 2553 (šipka/referenční čára, dvojitá čára) je oborově cenný, ale obsahu je málo — 4.2 riziko u čisté tabulky."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 3000,
+   "reviewer_note": "Rozumná B2B nika, ale peníze jsou malé. Fix: kvíz/trenažér pro zkoušky svářečů (ISO 9606, AWS D1.1 teorie) se sekcí symbolů, lokalizovaný DE/PL/CZ/ES, kde je ISO a méně konkurence."
+  },
+  {
+   "id": "reference-10",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 6,
+    "monetization": 5,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 8
+   },
+   "extra_risks": [
+    "Cílovka jsou studenti GIA/Gem-A a profesionálové — globálně pár tisíc lidí; 1 500 stažení/měs. je nereálných, spíš 150–300.",
+    "Profesionálové mají papírové tabulky a GIA materiály; appka musí přidat výpočty (SG hydrostaticky, dvojlom, carat odhad z rozměrů), jinak 4.2."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Levný build, nízké riziko, ale strop příjmu je nízký. Stavět jen jako rychlý doplněk portfolia s cenou 9,99–14,99 USD; nepočítat s 10 000 Kč."
+  },
+  {
+   "id": "reference-11",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 3,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "The Wood Database (web) je zdarma a nejlepší zdroj — truhláři ho googlí, ne hledají v App Store.",
+    "Hodnoty Janka/hustota jsou fakta, ale texty a fotky ze známých databází jsou chráněné — nutný vlastní obsah.",
+    "Nízká ochota platit (4,99 USD jednorázově) a malá retence."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Offline a bezpečné, ale slabé peníze. Fix: spojit s kalkulačkou (board feet, pohyb dřeva podle vlhkosti, výběr dřeva podle použití) — samotná tabulka neprodá."
+  },
+  {
+   "id": "reference-12",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 3,
+    "monetization": 2,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "OCR DOT kódu z boku pneumatiky (černý reliéf na černé gumě) je s Vision nespolehlivé — klíčová funkce z taglinu reálně nefunguje.",
+    "„tire size calculator“ má saturaci 6 (autor sám) a stáří pneu (4 číslice WWYY) vyřeší jedna věta v Google.",
+    "Monetizace 2,99 USD / reklamy — při realistických ~500 staženích/měs. se nedostane ani k 2 000 Kč."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Nízká hodnota, silné nasycení kalkulaček a technicky slabá hlavní funkce. Nestavět."
+  },
+  {
+   "id": "reference-13",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 2,
+    "blue_ocean": 6,
+    "monetization": 3,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Žádný důkaz poptávky: obsluha traktoru/VZV hledá v manuálu nebo se zeptá mechanika, ne v App Store; autor sám dal demand 4 bez hintu.",
+    "Symboly se liší výrobce od výrobce (John Deere, CLAAS, Fendt) — obecný ISO 3767 výklad nestačí, značkové verze jsou trademarkové riziko.",
+    "Firmy nenakupují 3,99 USD appky hromadně; B2B prodej bez obchodníka nefunguje."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Prázdný oceán, protože tam nejsou ryby. Nestavět."
+  },
+  {
+   "id": "reference-14",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 2,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 9,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Ověřeno: RareBill (on-device OCR, radar/ladder/repeater, i v BR storefrontu), LuckyNote, MyCurrencyCollection, Serial Collector a DollarScan — US nika je obsazená.",
+    "US-gap je chybný: hvězdičkové bankovky jsou US fenomén; euro/GBP nemá rozšířenou kulturu lovu sériových čísel, takže lokalizace nemá komu prodávat.",
+    "Hodnoty bankovek (PMG/PCGS) vyžadují živá data — offline verze bude slabší než konkurence."
+   ],
+   "missed_competitors": [
+    {
+     "name": "RareBill: Star Note Lookup",
+     "url": "https://apps.apple.com/us/app/rarebill-star-note-lookup/id6801428016",
+     "note": "on-device čtení sériového čísla, fancy typy"
+    },
+    {
+     "name": "LuckyNote: Banknote Collecting",
+     "url": "https://apps.apple.com/us/app/luckynote-banknote-collecting/id6754352197",
+     "note": "fancy serial + star notes + ceny"
+    },
+    {
+     "name": "MyCurrencyCollection",
+     "url": "https://apps.apple.com/us/app/mycurrencycollection/id6746132029",
+     "note": "star note / fancy serial checker"
+    },
+    {
+     "name": "Serial Collector",
+     "url": "https://apps.apple.com/us/app/serial-collector/id6761130114",
+     "note": "sbírka sériových čísel"
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Obsazená US nika a neexistující mimo-US trh. Nestavět.",
+   "web_checked": true
+  },
+  {
+   "id": "reference-15",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 4,
+    "build_ease": 7,
+    "offline_fit": 9,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Band plány IARU R1/R3 jsou zdarma v PDF a existuje řada ham toolbox appek (logbooky, Q-kódy, locator) — samostatný band plan je tenký produkt (4.2).",
+    "Radioamatérů je málo a stárnou; v CZ ~5 000 koncesí, DE ~60 000 — 12 300 Kč/měs. je nereálných.",
+    "Band plány se mění po konferencích IARU — údržba pro desítky zemí."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Fix: místo band planu udělat přípravu na národní zkoušku radioamatérů (DE Klasse N/E/A, CZ, PL) s band planem jako bonus — zkoušky mají jasnou ochotu platit."
+  },
+  {
+   "id": "reference-16",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 1,
+    "monetization": 4,
+    "build_ease": 4,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Ověřeno: 6 dedikovaných ADR appek, několik offline a vícejazyčných (ADR Tool, Dangerous Goods, Dangerous Goods ADR 2025, MYDG2SAVE), jedna zdarma.",
+    "Reverzní US-gap neplatí — evropský trh je pokrytý včetně ročních edic ADR.",
+    "Chyba v tunelovém kódu/klasifikaci = pokuta nebo nehoda; každé 2 roky nová edice ADR — trvalá údržba."
+   ],
+   "missed_competitors": [
+    {
+     "name": "UN Numbers Dangerous Goods ADR",
+     "url": "https://apps.apple.com/us/app/un-numbers-dangerous-goods-adr/id1668677326",
+     "note": "zdarma, vyhledávání UN čísel"
+    },
+    {
+     "name": "Dangerous Goods ADR 2025",
+     "url": "https://apps.apple.com/us/app/dangerous-goods-adr-2025/id1588378944",
+     "note": "kompletní ADR 2025 + ERI karty"
+    },
+    {
+     "name": "ADR Tool 2025 Dangerous Goods",
+     "url": "https://apps.apple.com/us/app/adr-tool-2025-dangerous-goods/id6746951636?uo=2",
+     "note": "vícejazyčná tabulka A"
+    },
+    {
+     "name": "MYDG2SAVE — ADR Emergency",
+     "url": "https://apps.apple.com/us/app/mydg2save-adr-emergency/id6795130673",
+     "note": "offline, oranžová tabule"
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Nasycená nika s bezplatnou alternativou. Nestavět.",
+   "web_checked": true
+  },
+  {
+   "id": "reference-17",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 3,
+    "monetization": 3,
+    "build_ease": 5,
+    "offline_fit": 9,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Sherlock: iOS Visual Intelligence (+ ChatGPT) vysvětlí etiketu z fotky zdarma; Vivino skenuje etikety a má obří ASO.",
+    "Wine Folly a další glosáře jsou zdarma na webu; „wine label“ saturace 5.",
+    "Cílovka (vinní amatéři) chce hodnocení a cenu, ne slovník — nízká konverze."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Zbytná funkce nad tím, co dělá kamera iPhonu a Vivino. Nestavět."
+  },
+  {
+   "id": "reference-18",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 6,
+    "monetization": 4,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Perforační měrka na displeji vyžaduje přesné fyzické měřítko per model iPhonu — chyba o 0,25 zoubku rozhoduje o variantě a vede k 1★.",
+    "Filatelisté jsou staří a mizí; měrku z kovu mají za 5 USD, katalogy (Michel, Scott) jsou licencované a nelze je vložit.",
+    "Stamp ID appky (foto + cena) dominují hledání „stamp“; „perforation gauge“ má minimální objem."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Levné a bezpečné, ale malé. Fix: měření perforace fotkou vedle mince/karty jako referenčního měřítka + watermark průvodce; počítat s ~1–2 tis. Kč/měs."
+  },
+  {
+   "id": "reference-19",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 3,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 8
+   },
+   "extra_risks": [
+    "Ověřeno: Shotokan Karate Theory (2026, terminologie, výslovnost, kvízy), Martial Arts Tracker, Kenzen Karate, Karate Shito-ryu, Judo Gokyo — trh je fragmentovaný, ale obsazený.",
+    "Každý styl a dojo má vlastní syllabus; obecný slovník nesedí nikomu, stylové verze = 4.3 riziko reskinů.",
+    "Příjem 21 900 Kč při ceně 2,99 USD vyžaduje ~350 prodejů/měs. — pro terminologický slovník fantazie."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Shotokan Karate Theory",
+     "url": "https://apps.apple.com/us/app/shotokan-karate-theory/id6761344570",
+     "note": "terminologie, výslovnost, kvízy"
+    },
+    {
+     "name": "Martial Arts Tracker - Dojo",
+     "url": "https://apps.apple.com/us/app/martial-arts-tracker-dojo/id6774305771",
+     "note": "požadavky na pásy vč. terminologie"
+    },
+    {
+     "name": "Judo Gokyo",
+     "url": "https://apps.apple.com/us/app/judo-gokyo/id340070427",
+     "note": "judo terminologie a techniky"
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Nízká monetizace a obsazené stylové niky. Nestavět.",
+   "web_checked": true
+  },
+  {
+   "id": "reference-20",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 3,
+    "monetization": 4,
+    "build_ease": 4,
+    "offline_fit": 10,
+    "safety": 3
+   },
+   "extra_risks": [
+    "Knots 3D i Animated Knots by Grog už mají kategorii „Arborist“ s animacemi — hlavní parent pokrývá niku přímo.",
+    "Bezpečnost života: chybně ukázaný úvaz = pád; vysoké reputační riziko a nutnost odborné revize.",
+    "Arboristé se učí na kurzech a z YouTube; počet profesionálů je malý."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Knots 3D",
+     "url": "",
+     "note": "má kategorii Arborist, silné ASO"
+    },
+    {
+     "name": "Animated Knots by Grog",
+     "url": "",
+     "note": "má kategorii Arborist"
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Parent už niku pokrývá a riziko odpovědnosti je vysoké. Nestavět."
+  },
+  {
+   "id": "reference-21",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 3,
+    "build_ease": 3,
+    "offline_fit": 9,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Autokluby (ADAC, ÖAMTC, ÚAMK) a vlády mají zdarma průvodce pravidly v zahraničí; velký hráč s daty zdarma.",
+    "Pravidla, limity a ceny dálničních známek se mění každý rok ve 45 zemích — nelze udržet offline bez stálé redakce.",
+    "Chyba (např. povinná výbava, emisní zóny) = pokuta a právní stížnosti; sezónní a jednorázové použití."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Údržba dat a bezplatní autoklubové konkurenti zabíjí marži. Nestavět."
+  },
+  {
+   "id": "reference-22",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 3,
+    "monetization": 2,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Odpověď „jak vyčistit skvrnu od vína“ je 1 dotaz do Google/Siri/ChatGPT zdarma — appka pro jednorázovou krizi se nestahuje předem.",
+    "Stain Snap a laundry symbol appky už skvrny řeší; „laundry symbols“ saturace 6.",
+    "Monetizace 3 (autor) — reklamy při pár stovkách stažení nedají ani 1 000 Kč."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Sherlocked vyhledáváním a LLM, bez retence a bez peněz. Nestavět."
+  },
+  {
+   "id": "reference-23",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 4,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Podle mé znalosti existuje řada „construction Spanish“ appek a kurzů (i od pojišťoven/OSHA partnerů zdarma); saturace neověřena.",
+    "Google Translate a Apple Translate umí offline konverzaci — fráze bez výcviku výslovnosti jsou slabý diferenciátor.",
+    "Čistě US produkt; 50 jazyků nepomůže (reverzní UK/DE varianty mají jiné jazykové páry)."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 2500,
+   "reviewer_note": "Reálná US bolest (mistr vs. hispánští dělníci), ale plně konkurenční. Fix: bezpečnostní fráze OSHA + toolbox talks v obou jazycích, B2B prodej firmám; jinak nestavět."
+  },
+  {
+   "id": "reference-24",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 3,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 8
+   },
+   "extra_risks": [
+    "Studenti egyptologie mají zdarma Gardinerův seznam na webu/Wikipedii a v Unicode; turisti v Luxoru nebudou platit za akademickou referenci.",
+    "Existující hieroglyfické appky jsou „hračky“ právě proto, že peníze jsou v zábavě (jméno v hieroglyfech), ne v referenci.",
+    "Malá cílovka globálně (stovky kupujících/rok)."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 700,
+   "reviewer_note": "Cílovka, která platí, neexistuje. Nestavět."
+  },
+  {
+   "id": "reference-25",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 6,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 8
+   },
+   "extra_risks": [
+    "Knife Steel Nerds a zknives jsou zdarma a nožaři je znají; appka musí být lepší UX, ne jen tabulka.",
+    "Hodnoty výdrže/houževnatosti jsou sporné a liší se podle zdroje — komunita bude hádat v recenzích.",
+    "3,99 USD jednorázově a nízký objem hledání „knife steel“."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "2týdenní build s nízkým rizikem, ale slabé peníze. Fix: srovnávač + sbírka nožů (kolekce, brusné úhly, údržba) — kolekcionáři platí za evidenci, ne za tabulku."
+  },
+  {
+   "id": "reference-26",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 5,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Backyard chicken trackery jsou v gold rush 2025–26 (saturace 9 v kids/lifestyle evidenci) — kterýkoli z nich přidá výběr plemen za týden.",
+    "Výběr plemene je jednorázové rozhodnutí → nulová retence a nízká konverze za 3,99 USD.",
+    "Data o plemenech jsou volně (Cackle Hatchery, Wikipedia) a LLM odpoví zdarma."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Chicken & Egg Tracker",
+     "url": "https://apps.apple.com/us/app/chicken-egg-tracker/id6752914586",
+     "note": "tracker, může přidat výběr plemen"
+    },
+    {
+     "name": "Flockora: Backyard Chickens",
+     "url": "https://apps.apple.com/fi/app/flockora-chicken-tracker/id6793725764",
+     "note": "backyard chickens, mimo US"
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Silný parent trh, ale samotný breed guide je jednorázová potřeba. Fix: spojit s kalkulačkou kurníku/krmiva a evropskými plemeny (lokální názvy) — nebo nestavět."
+  },
+  {
+   "id": "reference-27",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 5,
+    "monetization": 4,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "„DMC“ a „Anchor“ jsou ochranné známky — nesmí být v názvu appky, jen v popisu jako kompatibilita; převodní tabulky třetích stran mohou být chráněné.",
+    "Podle mé znalosti existuje několik „floss inventory/converter“ appek pro cross-stitch; nika není prázdná.",
+    "Barevná shoda mezi značkami je přibližná — komunita je citlivá na nepřesnost."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 2500,
+   "reviewer_note": "Reálná potřeba vyšívaček (sklad nití, nákupní seznam podle vzoru). Fix: postavit jako inventář + nákupní seznam s převodem jako bonusem, vlastní převodní data."
+  },
+  {
+   "id": "reference-28",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 3,
+    "monetization": 5,
+    "build_ease": 3,
+    "offline_fit": 9,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Klíčová slova v angličtině jsou obsazená (Silver Hallmarks – Maker Marks, Hallmark ID, Silver Hallmark Identifier, Ring Appraisal) — a AI hallmark appky přidají kontinentální punce snadno.",
+    "Kontinentální systémy (FR Minerva, AT/CZ Diana, RU/PL) mají stovky variant a mistrovských značek — data jsou v licencovaných knihách (Tardy).",
+    "8 týdnů při blue_ocean 3 je špatný poměr."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Silver Hallmark Ring Appraisal",
+     "url": "https://apps.apple.com/us/app/silver-hallmark-ring-appraisal/id6754300034",
+     "note": "další AI hallmark appka, autor ji neuvedl"
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Jediná šance: lokalizované názvy (silberstempel, poinçon argent, punc stříbra) v DE/FR/CZ storefrontech, kde anglické appky nerankují. Ověřit před vývojem, jinak KILL."
+  },
+  {
+   "id": "reference-29",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 3,
+    "monetization": 3,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Podle mé znalosti existuje několik baletních slovníků s videem/výslovností; „ballet terms“ saturace 3 (autor).",
+    "Baletní školy učí terminologii osobně; rodiče nebudou platit 3,99 USD za slovník.",
+    "Ilustrace/animace pozic jsou drahé; bez nich je appka 4.2."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Slabé peníze v obsazené nice. Jen pokud se spojí s tréninkovým deníkem/zkouškami RAD/Vaganova; jinak nestavět."
+  },
+  {
+   "id": "reference-30",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 2,
+    "blue_ocean": 5,
+    "monetization": 3,
+    "build_ease": 4,
+    "offline_fit": 9,
+    "safety": 2
+   },
+   "extra_risks": [
+    "V mnoha evropských zemích je sběr archeologických artefaktů regulovaný (UK Treasure Act, DE Schatzregal, CZ zákon o památkové péči) — appka podporující „nálezy“ má reputační a právní riziko.",
+    "Evropská typologie (magdalénien, gravettien…) je akademická, laik ji neurčí z fotky; demand 3 (autor).",
+    "US arrowhead niku už obsazují 4+ AI appky (Arrowhead ID, Arrowhead Vault, ArrowPoint…)."
+   ],
+   "missed_competitors": [
+    {
+     "name": "ArrowPoint",
+     "url": "https://apps.apple.com/us/app/arrowpoint-be153b/id6753772882",
+     "note": "další arrowhead ID appka, autor ji neuvedl"
+    }
+   ],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Nulová poptávka v EU a právní šedá zóna. Nestavět."
+  }
+ ]
+}
