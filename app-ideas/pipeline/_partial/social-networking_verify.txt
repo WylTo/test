@@ -45,3 +45,14 @@
     - FaceTag: Memory Trainer   https://apps.apple.com/us/app/facetag-memory-trainer/id6756509803
     - NameMe - Remember Names   https://apps.apple.com/us/app/nameme-remember-names/id6761031851
     - Namester   https://apps.apple.com/us/app/namester/id6444921353
+[5] query: site:apps.apple.com gift tracker ideas for people who gave what  (ideas social-networking-06, -08)  date: 2026-09-30
+    saturation (dedicated gift given/received trackers, distinct): 9 (Gift Recorder, The Giver, Gift Track, WrapSheet (wedding/baby shower + thank-you notes), Christmas Gift List Tracker, GivWrap, Gift Logger (who to thank), GiftPlanner, Everyone) -> SATURATED; also covers thank-you tracking (idea -08)
+    - Gift Recorder: Log & Ideas (cd)   https://apps.apple.com/cd/app/gift-recorder-log-ideas/id1514423614
+    - The Giver Gift Tracker   https://apps.apple.com/us/app/the-giver-gift-tracker/id6758078745
+    - Gift Track - Planner, Reminder, and List Maker   https://apps.apple.com/us/app/gift-track-planner-reminder-and-list-maker/id314810819
+    - WrapSheet - Gift Tracker (weddings, baby showers, AI thank-you notes)   https://apps.apple.com/us/app/wrapsheet-gift-tracker/id6760680674
+    - Christmas Gift List Tracker   https://apps.apple.com/us/app/christmas-gift-list-tracker/id1444504033
+    - GivWrap: Gift Planner & Budget   https://apps.apple.com/us/app/givwrap-gift-planner-budget/id6761728473
+    - Gift Logger (given/received, who to thank)   https://apps.apple.com/us/app/gift-logger/id6761291763
+    - GiftPlanner   https://apps.apple.com/us/app/giftplanner/id479882306
+    - Everyone - Gift Tracker   https://apps.apple.com/us/app/everyone-gift-tracker/id1204732555

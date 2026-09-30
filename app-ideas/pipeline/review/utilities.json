@@ -1,0 +1,874 @@
+{
+ "category_slug": "utilities",
+ "summary": "Utilities je nejslabší typ kategorie: většina nápadů jsou jednorázové kalkulačky nebo měřítka (dřevo, pneumatiky, jističe, pryskyřice, kufr), kde nikdo neplatí opakovaně a kde web ověření odhalilo 4–7 přímých konkurentů tam, kde autor tvrdil saturaci 1–3 (neighbor noise, epoxy, breaker panel, tire DOT, oil tank). Nejlepší sázky: TickTrue (timegrapher — ověřená platící nika, čisté on-device DSP), BoardSnap (mezera po Microsoft Lens) a SpaChem (jediné přirozené předplatné, velké EU publikum nafukovacích vířivek). Společná vada: revenue_czk_ideal kolem 11 700 Kč je šablona, reálný medián po 6 měsících je u většiny 300–3 000 Kč.",
+ "reviews": [
+  {
+   "id": "utilities-01",
+   "verdict": "GO",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 5,
+    "monetization": 6,
+    "build_ease": 4,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Autor vynechal etablované soupeře Watch Tuner Timegrapher a Toolwatch (měření přesnosti proti atomovému času) — nika má reálně 5–6 aplikací, ne 4.",
+    "Mikrofon iPhonu s AGC a šumem okolí dává nestabilní amplitudu; recenze konkurentů si stěžují právě na to — pokud DSP nebude výrazně lepší, dostaneme stejné 2hvězdičkové recenze.",
+    "Amplituda vyžaduje znát lift angle kalibru — bez databáze kalibrů (ETA, Seiko NH35, Miyota) budou výsledky chybné.",
+    "$7.99 lifetime je pro hodinářské nadšence málo; platí $10–20 za kvalitní nástroj."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Watch Tuner Timegrapher",
+     "url": "",
+     "note": "známá placená akustická aplikace, silný hráč v nice (URL neověřena v tomto běhu)"
+    },
+    {
+     "name": "Toolwatch",
+     "url": "",
+     "note": "zdarma měření přesnosti proti času serveru — kanibalizuje základní 's/den' funkci"
+    }
+   ],
+   "revenue_czk_realistic": 5000,
+   "reviewer_note": "Jediný nápad s ověřenou nikou, platící komunitou a čistě on-device DSP. Uspěje jen s výrazně stabilnějším měřením (kontaktní režim, filtr AGC, databáze lift angle) a cenou $12.99–14.99 lifetime; 23 400 Kč je přestřelené."
+  },
+  {
+   "id": "utilities-02",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 5,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Nika je obsazená: minimálně 5 dedikovaných aplikací pro deník hluku od sousedů, většina nová 2025–26, včetně PDF exportu a šablon stížností.",
+    "Německý trh (Lärmprotokoll) už má vlastní titulovou aplikaci Ruhestörer — US-gap argument padá.",
+    "Nahrávání hovorů/zvuku sousedů naráží v EU na GDPR a zákazy záznamu soukromé komunikace — riziko pro uživatele i review.",
+    "Nákup je jednorázový a krátkodobý (konflikt skončí) — žádná retence."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Noise Log: Neighbor Complaint",
+     "url": "https://apps.apple.com/us/app/noise-log-neighbor-complaint/id6789116754",
+     "note": "přesně náš koncept: čas, dB, typ hluku, PDF a dopisy"
+    },
+    {
+     "name": "Ruhestörer – Lärmprotokoll",
+     "url": "https://apps.apple.com/us/app/ruhest%C3%B6rer-l%C3%A4rmprotokoll/id6763788979",
+     "note": "DE lärmprotokoll — zabírá autorovu 'US gap' klíčovku"
+    },
+    {
+     "name": "QuietCase",
+     "url": "https://apps.apple.com/gb/app/quietcase/id6759844730",
+     "note": "UK, důkazy pro úřady a tribunály"
+    },
+    {
+     "name": "dB Logger: Sound Level Meter",
+     "url": "https://apps.apple.com/us/app/db-logger-sound-level-meter/id6778236281",
+     "note": "timestamped CSV + PDF pro stížnost"
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Autor odhadl saturaci 1–3, reálně je to 5+ dedikovaných aplikací včetně německé. Žádný blue ocean, KILL.",
+   "web_checked": true
+  },
+  {
+   "id": "utilities-03",
+   "verdict": "GO",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 7,
+    "monetization": 4,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Výrobci (EcoFlow, Jackery, Bluetti, Anker) mají výdrž přímo v aplikaci a na webu zdarma — kalkulačka je 'nice to have'.",
+    "Zákazník počítá výdrž jednou před nákupem; po nákupu ukazuje zbývající čas displej stanice — slabá retence i ochota platit.",
+    "Nutná knihovna modelů stanic a spotřebičů se zastarává každých pár měsíců (nové modely 2×/rok).",
+    "Generické battery/UPS kalkulačky a Wire Gauge Calculator s modelem zátěž+solár už existují."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Wire Gauge Calculator: Cable",
+     "url": "https://apps.apple.com/us/app/wire-gauge-calculator-cable/id6752443870",
+     "note": "modeluje spotřebiče, nabíječky, baterie a solár → predikce výdrže"
+    },
+    {
+     "name": "Battery Calculator & Converter",
+     "url": "https://apps.apple.com/in/app/battery-calculator-converter/id6755130177",
+     "note": "generická výdrž/kapacita baterie"
+    },
+    {
+     "name": "UPS Runtime Calc",
+     "url": "https://apps.apple.com/il/app/ups-runtime-calc/id6761905234",
+     "note": "UPS výdrž — blízký use-case"
+    }
+   ],
+   "revenue_czk_realistic": 3000,
+   "reviewer_note": "Vyhledávání nenašlo žádnou značkově neutrální 'power station' aplikaci — skutečně otevřené, levné (3 týdny) a bez rizika. Slabý GO: cílit na vanlife/CPAP/blackout scénáře a solární dobíjení; reálně spíš 2–4 tis. Kč, ne 12 300.",
+   "web_checked": true
+  },
+  {
+   "id": "utilities-04",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 3,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 8,
+    "safety": 5
+   },
+   "extra_risks": [
+    "DE trh (balkonkraftwerk) je obsazený: PV Wizard, Solarertrag, Solartelligent PV-Planer, PV Energy Planner + sun-path aplikace, vše 2023–26.",
+    "Odhad výroby offline vyžaduje přibalit data oslunění (PVGIS) pro celou Evropu — PVGIS web je zdarma a přesnější.",
+    "Jednorázové použití (panel se ustaví jednou), cena $5.99 lifetime → žádná retence ani opakovaný příjem.",
+    "Vendorské aplikace (Anker Solix, Hoymiles, Solakon) ukazují reálnou výrobu zdarma."
+   ],
+   "missed_competitors": [
+    {
+     "name": "PV Wizard",
+     "url": "https://apps.apple.com/de/app/pv-wizard/id6762192446",
+     "note": "kompas + inklinometr pro přesnou orientaci, 2026"
+    },
+    {
+     "name": "Solarertrag",
+     "url": "https://apps.apple.com/ch/app/solarertrag/id6448853706",
+     "note": "poloha telefonu → odhad výnosu"
+    },
+    {
+     "name": "Solartelligent PV-Planer",
+     "url": "https://apps.apple.com/de/app/solartelligent-pv-planer/id6470352546",
+     "note": "inklinometr, optimální orientace"
+    },
+    {
+     "name": "PV Energy Planner",
+     "url": "https://apps.apple.com/us/app/pv-energy-planner/id6755328705",
+     "note": "plánovač výnosu"
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Ověřeno v navigation_verify: ~4 dedikované DE aplikace na přesně tento use-case a jednorázová potřeba. Lokalizace do CZ/PL nezachrání monetizaci."
+  },
+  {
+   "id": "utilities-05",
+   "verdict": "GO",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 6,
+    "monetization": 5,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Sherlock: skener dokumentů v Poznámkách/Souborech a Live Text zvládají tabuli 'dost dobře'; zlepšení v iOS 26 mohou mezeru zavřít.",
+    "Předplatné $2.99/měs za skenování tabulí je pro jednotlivce těžko obhajitelné — očekávejte hlavně lifetime/roční nákupy.",
+    "Odlesky a perspektivu už řeší i OneDrive/Adobe Scan zdarma; odlišení musí být vidět na prvním screenshotu."
+   ],
+   "missed_competitors": [
+    {
+     "name": "OneDrive (scan) / Adobe Scan",
+     "url": "",
+     "note": "bezplatné skenery s whiteboard režimem, kam Microsoft odkazuje bývalé uživatele Lens"
+    }
+   ],
+   "revenue_czk_realistic": 5000,
+   "reviewer_note": "Stažení Microsoft Lens (hlavní whiteboard skener) uvolnilo reálnou poptávku a dedikovaní soupeři jsou slabí. GO, ale s lifetime $9.99 + roční $9.99 místo měsíčního předplatného a s killer funkcí 'série tabulí → jedno PDF + odstranění odlesků'."
+  },
+  {
+   "id": "utilities-06",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 6,
+    "monetization": 2,
+    "build_ease": 5,
+    "offline_fit": 9,
+    "safety": 6
+   },
+   "extra_risks": [
+    "LiDAR mají jen Pro modely iPhonu — většina kupujících palivového dřeva ho nemá; bez LiDARu AR měření hráně selhává na nepravidelném povrchu.",
+    "Hráň se dá změřit metrem za minutu; přepočet prmr/prm/ster/cord je triviální a zdarma na webu.",
+    "Silná sezónnost (září–listopad) a nákup 1× ročně → 115 Kč lifetime nepokryje 5 týdnů vývoje.",
+    "Lesnické foto-měřicí aplikace (Fovea/Timbeter apod.) už existují pro profesionály."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Hezký nápad, ale nulová ochota platit za jednorázový výpočet, který zvládne svinovací metr. KILL."
+  },
+  {
+   "id": "utilities-07",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 3,
+    "build_ease": 5,
+    "offline_fit": 9,
+    "safety": 2
+   },
+   "extra_risks": [
+    "Sherlock: iOS už v Nastavení ukazuje Zdraví baterie, počet cyklů (iPhone 15+) a Historii dílů a servisu — to jsou klíčové informace při koupi bazarového iPhonu.",
+    "Aplikace nemá přes veřejné API přístup ke kondici baterie, originalitě dílů ani iCloud zámku — tvrzení 'test baterie' je v rozporu s 2.3 (přesnost metadat).",
+    "Aplikaci musí nainstalovat prodávající na svůj telefon — reálná bariéra v okamžiku koupě.",
+    "Nika je plná: Phone Doctor Plus, TestM, Phone Diagnostics a desítky 'phone tester' aplikací."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Phone Doctor Plus",
+     "url": "",
+     "note": "zavedený diagnostický nástroj"
+    },
+    {
+     "name": "TestM",
+     "url": "",
+     "note": "hardware test telefonu"
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Nejdůležitější data (baterie, díly, aktivační zámek) aplikace nevidí a iOS je ukazuje sám zdarma. KILL."
+  },
+  {
+   "id": "utilities-08",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 7,
+    "blue_ocean": 5,
+    "monetization": 6,
+    "build_ease": 2,
+    "offline_fit": 9,
+    "safety": 3
+   },
+   "extra_risks": [
+    "Reverse-engineering proprietárních BLE protokolů Niimbot/Phomemo: výrobce může změnit firmware nebo šifrovat (Niimbot už ověřuje RFID štítků) → aplikace přes noc přestane tisknout.",
+    "Nutnost koupit a testovat desítky modelů tiskáren, obrovská zákaznická podpora ('moje tiskárna nejde').",
+    "Použití jmen značek v názvu/klíčovkách = riziko trademark stížnosti (5.2.1) a zamítnutí.",
+    "Obecné multi-printer aplikace pro levné termotiskárny už v App Store jsou (např. různé 'label maker' aplikace podporující Phomemo/Niimbot)."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 6000,
+   "reviewer_note": "Poptávka je reálná a největší v kategorii, ale 10+ týdnů a křehká závislost na cizím HW. Jen pokud začneme 1–2 rodinami tiskáren (Niimbot D11/B1, Phomemo M110), bez značek v názvu, a ověříme protokoly na koupeném HW."
+  },
+  {
+   "id": "utilities-09",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 1,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Nika je saturovaná: 7+ dedikovaných kalkulaček pryskyřice, včetně Epoxy River Calculator (přímo river table) a ResinCalc Pro s 57 značkami a 14 tvary.",
+    "Pracovní název 'ResinCalc' je už obsazený (ResinCalc Pro) — riziko záměny a 4.1/trademark.",
+    "Výrobci (ArtResin, Jesmonite) mají kalkulačky zdarma na webu i v aplikaci."
+   ],
+   "missed_competitors": [
+    {
+     "name": "ResinCalc Pro",
+     "url": "https://apps.apple.com/us/app/resincalc-pro/id6761789602",
+     "note": "57+ značek, 14 tvarů, pryskyřice+tužidlo — to, co autor plánoval jako Pro"
+    },
+    {
+     "name": "Epoxy River Calculator",
+     "url": "https://apps.apple.com/us/app/epoxy-river-calculator/id6480120402",
+     "note": "přímo river table, více šířek"
+    },
+    {
+     "name": "Resin and Jesmonite Calculator",
+     "url": "https://apps.apple.com/in/app/resin-and-jesmonite-calculator/id1522370169",
+     "note": "zavedená, s masterclass IAP"
+    },
+    {
+     "name": "Resin Calculator Master",
+     "url": "https://apps.apple.com/cz/app/resin-calculator-master/id6772931749",
+     "note": "nová, i v CZ storu"
+    }
+   ],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Autor odhadl saturaci 2–3, web ukázal 7+ aplikací a obsazený název. KILL.",
+   "web_checked": true
+  },
+  {
+   "id": "utilities-10",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 2,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Nika už má nové sensor-free aplikace: HomeHeat (predikce dodávky podle počasí), Tank Volume Log (dip/ullage → objem), Fillio (palce → galony).",
+    "Tabulky nádrží závisí na tvaru a výrobci (Roth, Schütz, válcové ležaté) — bez správných dat budou čísla špatně a recenze zlé.",
+    "Trh topného oleje v EU se zmenšuje (zákazy nových olejových kotlů v DE/AT/CZ), v CZ je minimální.",
+    "Kontrola 3–4× ročně → 115 Kč lifetime, nulová retence."
+   ],
+   "missed_competitors": [
+    {
+     "name": "HomeHeat",
+     "url": "https://apps.apple.com/us/app/homeheat-heating-oil-tracker/id6747320571",
+     "note": "bez senzoru, predikce dodávky podle počasí"
+    },
+    {
+     "name": "Tank Volume Log",
+     "url": "https://apps.apple.com/ch/app/tank-volume-log/id6794287611?l=en-GB",
+     "note": "dip/ullage odečet → objem"
+    },
+    {
+     "name": "Fillio",
+     "url": "https://apps.apple.com/ro/app/fillio/id6755162344",
+     "note": "sledování nádrže a dodávek v palcích/galonech"
+    },
+    {
+     "name": "Tankvolumen Rechner",
+     "url": "https://apps.apple.com/de/app/tankvolumen-rechner/id6727014725",
+     "note": "DE kalkulačka objemu nádrže (travel_verify)"
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Malý, zmenšující se trh s již obsazenou nikou a mizivou cenou. KILL.",
+   "web_checked": true
+  },
+  {
+   "id": "utilities-11",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 3,
+    "monetization": 3,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Nika je plná, často zdarma: RPM – Turntable Speed, PlatterSpeed, Pro-Ject Speed Test (brand, zdarma) a další měření otáček přes gyroskop.",
+    "Wow & flutter přes mikrofon vyžaduje testovací desku (3150 Hz) — bez ní jsou výsledky nevěrohodné; seřízení přenosky telefonem nejde (vyžaduje tištěnou šablonu).",
+    "Jednorázové seřízení → žádná retence; audiofilové věří HW měřákům."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Pro-Ject Speed Test",
+     "url": "",
+     "note": "bezplatná aplikace výrobce gramofonů"
+    },
+    {
+     "name": "PlatterSpeed",
+     "url": "",
+     "note": "zavedený nástroj s testovací deskou"
+    }
+   ],
+   "revenue_czk_realistic": 700,
+   "reviewer_note": "Malý trh obsazený bezplatnými a brandovými aplikacemi; hlavní 'Pro' funkce jsou telefonem neproveditelné. KILL."
+  },
+  {
+   "id": "utilities-12",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 1,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Nika je saturovaná: 6+ dedikovaných aplikací (Breaker Box, Panel Tracker, Panelweave, SwiftPanel, Circuit Navigator, Breaker Meister), několik nových 2025–26, PDF štítek je standard.",
+    "V EU (DIN lišty, jističe s popiskami) je potřeba výrazně menší a nikdo nehledá 'Sicherungskasten Beschriftung' v App Store — tiskne se šablona z webu.",
+    "Jednorázová akce → 140 Kč lifetime, nulová retence."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Breaker Box: Panel Directory",
+     "url": "https://apps.apple.com/us/app/breaker-box-panel-directory/id1459288663",
+     "note": "PDF legenda přesně na dvířka rozvaděče"
+    },
+    {
+     "name": "Panelweave: Home Panel Map",
+     "url": "https://apps.apple.com/pk/app/panelweave-home-panel-map/id6792172170",
+     "note": "fotky, ověřené okruhy, export — nová"
+    },
+    {
+     "name": "SwiftPanel",
+     "url": "https://apps.apple.com/us/app/swiftpanel/id6761280748",
+     "note": "print-ready PDF pro domácnosti i elektrikáře"
+    },
+    {
+     "name": "Breaker Meister: Panel Manager",
+     "url": "https://apps.apple.com/us/app/breaker-meister-panel-manager/id1612667329",
+     "note": "místnosti a spotřebiče na jistič"
+    }
+   ],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Autor tvrdil blue ocean 7, web ukázal 6+ přímých konkurentů. KILL.",
+   "web_checked": true
+  },
+  {
+   "id": "utilities-13",
+   "verdict": "GO",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 5,
+    "monetization": 6,
+    "build_ease": 5,
+    "offline_fit": 9,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Čtení testovacích proužků kamerou je nepřesné (osvětlení, desítky značek proužků s různými škálami) — špatná dávka = podráždění kůže a 1‑hvězdičkové recenze; doporučení chemie může spadat pod 1.4.1 (zdraví).",
+    "Hot Tub Keeper a další předplatitelské spa aplikace už míří na totéž publikum (autor je nezmínil).",
+    "Sezónnost u nafukovacích vířivek (léto) a vysoký churn — mnoho vířivek skončí po 1–2 sezónách ve sklepě.",
+    "Chemie se v EU prodává pod jinými názvy/koncentracemi než v US — nutná lokální databáze produktů."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Hot Tub Keeper",
+     "url": "",
+     "note": "zavedená předplatitelská aplikace pro péči o vířivky"
+    },
+    {
+     "name": "Pool Math by Trouble Free Pool",
+     "url": "",
+     "note": "zdarma dávkovací kalkulačka, i pro spa"
+    }
+   ],
+   "revenue_czk_realistic": 4500,
+   "reviewer_note": "Průběžná údržba = jediný nápad v kategorii s přirozeným předplatným a velkým EU publikem (Lay-Z-Spa, Intex). GO s úpravou: MVP bez čtení proužků (ruční zadání hodnot + dávkovač + připomínky výměny vody/filtru), EU chemie a jazyky; kamera až ve v2."
+  },
+  {
+   "id": "utilities-14",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 3,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Nika 3D print cost/filament tracker je v letech 2024–26 přeplněná indie aplikacemi a slicery (Bambu Studio, OrcaSlicer) už cenu filamentu počítají.",
+    "NFC: iOS Core NFC neumí MIFARE Classic, takže RFID tagy cívek Bambu Lab nepřečte — hlavní 'wow' funkce funguje jen s vlastními NTAG nálepkami.",
+    "Hobby tiskaři jsou zvyklí na open-source a zdarma (Spoolman, tabulky).",
+    "Prodejci výtisků jsou malá podmnožina publika."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Spoolman",
+     "url": "",
+     "note": "open-source sklad filamentu, zdarma (self-host)"
+    }
+   ],
+   "revenue_czk_realistic": 2500,
+   "reviewer_note": "Velké a platící publikum, ale přeplněné a hlavní diferenciátor (NFC Bambu) na iOS nejde. Jen jako 'filament inventory + cena zakázky pro prodejce na Etsy' s importem ze sliceru; jinak nestavět."
+  },
+  {
+   "id": "utilities-15",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 2,
+    "monetization": 2,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Board foot / lumber / cut-list kalkulačky jsou v App Store desítky, mnoho zdarma (Board Foot Calculator, CutList Optimizer, OptiCutter, Sawmill apps).",
+    "Metrický trh (m³ řeziva) počítá cenu podle ceníku pily — výpočet objemu je triviální a v každé stavební kalkulačce.",
+    "Optimalizátor řezů je jediná placená funkce — a tu už dobře dělají CutList Optimizer a další."
+   ],
+   "missed_competitors": [
+    {
+     "name": "CutList Optimizer",
+     "url": "",
+     "note": "zavedený optimalizátor řezů"
+    }
+   ],
+   "revenue_czk_realistic": 600,
+   "reviewer_note": "Triviální výpočet v přeplněném segmentu; US-gap neplatí, metrické kalkulačky existují. KILL."
+  },
+  {
+   "id": "utilities-16",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 5,
+    "monetization": 3,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Měření flickeru kamerou (rolling shutter) je jen kvalitativní — bez fotodiody nelze spolehlivě určit % modulace a frekvenci nad ~1 kHz; hrozí recenze 'nepřesné'.",
+    "Publikum (citliví na flicker, migrény) je malé; tvrzení o migrénách/únavě očí = riziko 1.4.1.",
+    "Existují bezplatné 'flicker tester' aplikace a videotvůrci používají náhled kamery se shutter 1/1000."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Levný experiment, ale malý trh a měřicí limity. Jen s úhlem pro videotvůrce ('otestuj světla před natáčením — hrozí pruhy?') bez zdravotních tvrzení; jinak neinvestovat víc než 2–3 týdny."
+  },
+  {
+   "id": "utilities-17",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 4,
+    "monetization": 2,
+    "build_ease": 5,
+    "offline_fit": 9,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Jednorázový projekt (pověsit obrazy) → 115 Kč lifetime, nulová retence.",
+    "Existují picture-hanging kalkulačky a AR aplikace prodejců rámů/plakátů (Desenio, IKEA) zdarma; Apple Measure + papírové šablony stačí.",
+    "Přesnost AR na zdi (ne)textura bílé stěny — ARKit špatně trackuje hladké bílé zdi → body pro hřebíky ujedou o centimetry."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Hezká UX, ale bez ochoty platit a s technickým problémem přesnosti AR na bílé zdi. KILL."
+  },
+  {
+   "id": "utilities-18",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 3,
+    "monetization": 5,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Existuje více iOS kalkulaček louhu (např. Soap Calculator: Lye & Recipe, nová) plus bezplatný SoapCalc/Soapee na webu, které komunita zná.",
+    "Chyba v SAP hodnotách = popáleniny pokožky; odpovědnost a potřeba pečlivě ověřených dat.",
+    "Komunita mýdlařů je malá a 'lokalizace do češtiny' má malý objem hledání."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Soap Calculator: Lye & Recipe",
+     "url": "https://apps.apple.com/ca/app/soap-calculator-lye-recipe/id6770798190",
+     "note": "dedikovaná kalkulačka louhu + recepty (food-drink_verify)"
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Věrná, ale malá komunita a konkurence už dorazila. Smysl jen jako recept-manažer (šarže, doba zrání, náklady, štítky s INCI) v DE/FR/CZ/PL, kde webové kalkulačky nejsou lokalizované."
+  },
+  {
+   "id": "utilities-19",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 3,
+    "monetization": 1,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Nika už má dedikovanou exact-match aplikaci Tiretime: DOT Tire Date Code (2025) a DOT dekodéry v tire-tracker aplikacích (My Wheels, TireBuddy, TheTireLab).",
+    "Dekódování je triviální (4 číslice = týden+rok) — lidé si to vygooglí, za to nikdo nezaplatí.",
+    "OCR vylisovaného DOT kódu na černé pneumatice je velmi nespolehlivé (nízký kontrast)."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Tiretime: DOT Tire Date Code",
+     "url": "https://apps.apple.com/us/app/tiretime-tire-age-decoder/id6755887918",
+     "note": "dedikovaný DOT/TIN dekodér"
+    },
+    {
+     "name": "My Wheels - Car Tires Tracker",
+     "url": "https://apps.apple.com/pl/app/my-wheels-car-tires-tracker/id6753175774",
+     "note": "DOT datum + připomínky výměny"
+    },
+    {
+     "name": "TireBuddy",
+     "url": "https://apps.apple.com/it/app/tirebuddy/id6744446345?l=en-GB",
+     "note": "skenování DOT/TIN, stáří v PDF"
+    }
+   ],
+   "revenue_czk_realistic": 300,
+   "reviewer_note": "Triviální informace, která nemá cenu, a obsazená klíčovka. KILL.",
+   "web_checked": true
+  },
+  {
+   "id": "utilities-20",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 5,
+    "monetization": 4,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Hobby studiaři a podcasteři používají zdarma REW na počítači; AudioTools (drahé moduly) a další RT60 aplikace pokrývají profíky.",
+    "Mikrofon iPhonu má zpracování signálu (AGC, voice processing) — nutné vypnout measurement mode, jinak RT60 nesedí; kvalita měření na basech je špatná (kde jsou problémy místností).",
+    "Počet lidí, kteří hledají 'rt60' v App Store, je malý."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Room EQ Wizard (REW)",
+     "url": "",
+     "note": "zdarma desktopový standard domácí akustiky"
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Technicky zajímavé, ale malá poptávka v App Store. Jen jako 'kolik panelů potřebuju' pro podcastery/home-office s jednoduchým doporučením a affiliate-free; cílit na nižší očekávání."
+  },
+  {
+   "id": "utilities-21",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 9,
+    "safety": 6
+   },
+   "extra_risks": [
+    "RV/caravan leveling aplikací je mnoho (RV Level, Camper Level, leveling-block kalkulačky) a Apple Measure má vodováhu zdarma.",
+    "Telefon musí ležet v obytňáku při couvání na podložky — proto lidé kupují HW senzor (LevelMatePRO), aplikace je horší UX.",
+    "Obytňákový segment už zabírají nové aplikace (CamperManager, Cleared for Camping) s širší funkcí."
+   ],
+   "missed_competitors": [
+    {
+     "name": "CamperManager",
+     "url": "https://apps.apple.com/us/app/campermanager/id6759843707",
+     "note": "nová camper aplikace s kalkulacemi (travel_verify)"
+    },
+    {
+     "name": "LevelMatePRO",
+     "url": "",
+     "note": "HW senzor + aplikace, lídr"
+    }
+   ],
+   "revenue_czk_realistic": 700,
+   "reviewer_note": "Přeplněné a Sherlocknuté vodováhou v Measure. KILL."
+  },
+  {
+   "id": "utilities-22",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 5,
+    "build_ease": 3,
+    "offline_fit": 10,
+    "safety": 3
+   },
+   "extra_risks": [
+    "Data pro dekódování sériových čísel jsou de facto proprietární (Building Intelligence Center, Preston's Guide) — sestavit je z veřejných zdrojů je týdny práce a riziko porušení autorských práv k databázi.",
+    "Chybně určený rok výroby v inspekční zprávě = odpovědnost inspektora → nedůvěra k neznámé aplikaci.",
+    "Trh je čistě US (inspektoři, realitní) — 50 jazyků nepomůže; formáty sériových čísel se mění a nové značky přibývají."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Building Intelligence Center (HVAC/water heater age)",
+     "url": "",
+     "note": "zavedený placený zdroj dat pro inspektory"
+    }
+   ],
+   "revenue_czk_realistic": 2500,
+   "reviewer_note": "Inspektoři platí, ale data jsou těžká a právně šedá. Jen pokud najdeme čistě veřejné dekódovací tabulky pro top 15 značek a prodáme to jako rychlý nástroj pro US inspektory; jinak KILL."
+  },
+  {
+   "id": "utilities-23",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 2,
+    "monetization": 2,
+    "build_ease": 6,
+    "offline_fit": 9,
+    "safety": 6
+   },
+   "extra_risks": [
+    "DE 'Zählerstand' je přeplněný (desítky aplikací, i od dodavatelů a měst); CZ trh je malý a ČEZ/E.ON/PRE mají vlastní odečty.",
+    "Chytré elektroměry (EU rollout, v CZ od 2024+) postupně odstraňují potřebu ručních odečtů.",
+    "OCR mechanických počítadel (rolující číslice) je náchylné k chybám."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Zmenšující se potřeba a přeplněný hlavní trh. KILL."
+  },
+  {
+   "id": "utilities-24",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 6,
+    "build_ease": 2,
+    "offline_fit": 10,
+    "safety": 3
+   },
+   "extra_risks": [
+    "LiDAR iPhonu má dosah ~5 m — velké hromady štěrku/písku jsou vyšší a širší, sken bude neúplný; pro obchodní fakturaci je chyba 10–20 % nepřijatelná.",
+    "B2B zákazníci přes ASO nepřijdou — hledají 'stockpile measurement' v Googlu a chtějí podporu, fakturu, cloudové reporty.",
+    "Konkurenti: Stockpile Reports (má iPhone aplikaci), Polycam/Scaniverse zdarma + výpočet objemu, Pix4Dcatch."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Polycam",
+     "url": "",
+     "note": "LiDAR sken + objem, freemium"
+    },
+    {
+     "name": "Pix4Dcatch",
+     "url": "",
+     "note": "profesionální mobilní volumetrie"
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Vysoké ARPU je lákavé, ale LiDAR dosah a ASO-only B2B prodej jsou vážné problémy. Jen pro malé hromady (mulč, kompost, dřevní štěpka do ~4 m) jako prosumer nástroj za $49/rok; enterprise ambice zahodit."
+  },
+  {
+   "id": "utilities-25",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 2,
+    "build_ease": 6,
+    "offline_fit": 9,
+    "safety": 2
+   },
+   "extra_risks": [
+    "Právní rada o řidičském oprávnění (B/BE/B96, nová EU směrnice o ŘP) — chyba = pokuta/neplatné pojištění; aplikace nese reputační i právní riziko.",
+    "Pravidla se mění (UK 2021 zrušila B+E test, EU revize ŘP) → nutné průběžné aktualizace, což není 'postav a zapomeň'.",
+    "Kluby (Caravan and Motorhome Club, ADAC) mají kalkulačky zdarma; camper payload aplikace (Cleared for Camping) už obsazují vedlejší nišu.",
+    "Jednorázový výpočet → 140 Kč lifetime."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Cleared for Camping",
+     "url": "https://apps.apple.com/de/app/cleared-for-camping/id6756673573",
+     "note": "DE: zatížení náprav, 3,5 t, váha nákladu (travel_verify)"
+    }
+   ],
+   "revenue_czk_realistic": 600,
+   "reviewer_note": "Malý příjem, vysoké riziko chybné právní rady a nutnost aktualizací. KILL."
+  },
+  {
+   "id": "utilities-26",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 1,
+    "monetization": 2,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Inklinometrů je v App Store desítky a 'offroad/4x4 inclinometer' titulů několik, mnoho zdarma.",
+    "Sherlock: Apple Measure má vodováhu; onX Offroad a Gaia GPS mají náklon v navigaci.",
+    "Varování před převrácením podle auta = bezpečnostní tvrzení, za které nechceme nést odpovědnost."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 400,
+   "reviewer_note": "Nejvíc 'reskin' nápad v seznamu (riziko 4.3) v saturované nice. KILL."
+  },
+  {
+   "id": "utilities-27",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 2,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Ham radio kalkulačky (antény, koax, lokátor) existují v desítkách, mnohé zdarma a od radioamatérů (komunita preferuje zdarma/open-source).",
+    "Radioamatérů je celosvětově ~3 mil. a aktivních stavitelů antén zlomek; ochota platit $7.99 nízká.",
+    "Klíčovka 'ham radio' je saturovaná (autor 7), niche klíčovky mají minimální objem."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Malý, konzervativní trh plný bezplatných nástrojů. KILL."
+  },
+  {
+   "id": "utilities-28",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 2,
+    "monetization": 2,
+    "build_ease": 5,
+    "offline_fit": 5,
+    "safety": 2
+   },
+   "extra_risks": [
+    "Limity aerolinek (Ryanair, Wizz, easyJet) se mění několikrát ročně — offline data rychle zastarají a chybná odpověď = poplatek €50–70 u gate → 1‑hvězdičkové recenze.",
+    "Přesnost AR měření ±1–2 cm nestačí na hraniční kufry; Apple Measure a již existující 'carry-on size' aplikace to dělají zdarma.",
+    "Jednorázové použití před cestou, $4.99 nikdo nezaplatí, když rozměr zjistí metrem."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Nepřesnost a zastarávání dat přímo generují negativní recenze. KILL."
+  },
+  {
+   "id": "utilities-29",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 2,
+    "monetization": 2,
+    "build_ease": 3,
+    "offline_fit": 7,
+    "safety": 2
+   },
+   "extra_risks": [
+    "Sherlock: iOS 26 Visual Intelligence + Live Text s překladem a Google Translate kamerou přeloží ovladač pračky zdarma a okamžitě.",
+    "Databáze tisíců modelů spotřebičů v desítkách jazyků je neudržitelná; on-device rozpoznání ikon ovladačů bez trénovacích dat je nereálné za 6 týdnů.",
+    "Publikum (expati s cizojazyčnou pračkou) řeší problém jednou a pak si ho pamatuje."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 300,
+   "reviewer_note": "Přímo sherlocknuto systémovým překladem kamerou. KILL."
+  },
+  {
+   "id": "utilities-30",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 2,
+    "blue_ocean": 4,
+    "monetization": 1,
+    "build_ease": 8,
+    "offline_fit": 9,
+    "safety": 3
+   },
+   "extra_risks": [
+    "Sherlock: iOS umožňuje smazat odebírané kalendáře v Nastavení a Safari od iOS 14.6 omezuje spamové odběry — problém mizí.",
+    "EventKit nemusí aplikaci dovolit odstranit odebíraný (subscribed) kalendář — hlavní funkce může být technicky neproveditelná a končí u návodu (4.2 minimum functionality).",
+    "Existující Calendar AdBlocker a Calendar Spam Cleaner a spousta bezplatných návodů na webu."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Calendar AdBlocker",
+     "url": "",
+     "note": "dedikovaná aplikace (id v utilities_evidence bez celé URL)"
+    }
+   ],
+   "revenue_czk_realistic": 300,
+   "reviewer_note": "Klesající problém, který iOS řeší sám; aplikace hrozí zamítnutím jako návod. KILL."
+  }
+ ]
+}

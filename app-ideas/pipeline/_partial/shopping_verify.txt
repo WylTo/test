@@ -13,3 +13,15 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results. "sat" = disti
     - Warranty Receipts - Valid            https://apps.apple.com/us/app/warranty-receipts-valid/id6760669094
     - Warrio: Warranty Tracker (return windows, no account) https://apps.apple.com/us/app/warrio-warranty-tracker/id6781723698
 
+[2] query: site:apps.apple.com reseller profit tracker vinted  (ideas shopping-03, also shopping-05)  date: 2026-09-30
+    sat("resell/reseller" in title): 6+ (salEZ, FlipperHelper, ResellStats, Profit Check, Reseller Pro, Profit Prophet) all explicitly market Vinted fees; FlipperHelper targets UK car-boot/charity-shop sourcing (EU angle already taken); Profit Check = sourcing calculator -> SATURATED, reverse EU gap not real
+    - salEZ: Resell Tracker (Vinted, tax)  https://apps.apple.com/in/app/salez-resell-tracker/id6450722919
+    - FlipperHelper: Resell Tracker (car boot, charity shops, Vinted, Shpock) https://apps.apple.com/us/app/flipperhelper-resell-tracker/id6759716745
+    - FlipperHelper (gb, same id)          https://apps.apple.com/gb/app/flipperhelper-resell-tracker/id6759716745
+    - ResellStats - Resell Tracker (Vinted fees, net profit) https://apps.apple.com/us/app/resellstats-resell-tracker/id6759117516
+    - Profit Check: Reseller Calc (flip calc, Vinted) https://apps.apple.com/in/app/profit-check-reseller-calc/id6757164945
+    - RKFY Vinted Profit identifier (AI scanner) https://apps.apple.com/jm/app/rkfy-vinted-profit-identifier/id6754532378
+    - Profit Prophet: Scan & Resell (AI)   https://apps.apple.com/gb/app/profit-prophet-reselling-ai/id6759406284
+    - Reseller Pro                         https://apps.apple.com/us/app/reseller-pro/id6749879995
+    - VintSnap: Sell on Vinted Fast        https://apps.apple.com/us/app/vintsnap-sell-on-vinted-fast/id6761385561
+
