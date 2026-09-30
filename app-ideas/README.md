@@ -1,4 +1,4 @@
-# Atlas niche aplikací: rozpracovaný průzkum
+# Atlas niche aplikací
 
 Cíl: 30 nápadů na offline aplikace bez serverů pro každou kategorii App Store (27 kategorií,
 asi 810 nápadů). Každý nápad má mířit na opomíjenou niku v trhu, který už prokazatelně
