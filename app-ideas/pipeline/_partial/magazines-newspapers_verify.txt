@@ -11,3 +11,15 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results. None construc
     - Photozine (8-page zine from 1 sheet)     https://apps.apple.com/us/app/photozine/id6770308723
     - (noise) ProCCD - Digital Film Camera     https://apps.apple.com/dk/app/proccd-digital-film-camera/id1616113199
 
+[2] query: site:apps.apple.com newspaper clipping scanner obituary archive  (ideas magazines-newspapers-02, -07, -27)
+    saturation (dedicated newspaper-clipping archivers): 1 partial (Swift OCR Archive Daily memo — clip parts of newspapers/web, folders, notes); obituary/memorial keepers: 1 (Custos — scans prayer cards, obituaries, funeral programs); rest = generic scanners / obituary search -> keyword "newspaper clipping" looks OPEN-ish, but generic scanners (Genius Scan, Archive, iOS Notes/Files scanner) cover the job
+    - The Obituary App                 https://apps.apple.com/us/app/the-obituary-app/id1447392301
+    - Findmypast (newspaper archive)   https://apps.apple.com/us/app/findmypast/id1444898210
+    - Archive: Document Scanner        https://apps.apple.com/pl/app/archive-document-scanner/id6757704202
+    - Custos - Keeper of Memory        https://apps.apple.com/us/app/custos-keeper-of-memory/id6761027136
+    - Write an Obituary: AI Guidance   https://apps.apple.com/us/app/write-an-obituary-ai-guidance/id6670371715
+    - ObitFinder (Legacy.com)          https://apps.apple.com/us/app/obitfinder/id464840275
+    - Scanner App: Genius Scan         https://apps.apple.com/us/app/scanner-app-genius-scan/id377672876
+    - The Obituary App (alt link)      https://apps.apple.com/app/id1447392301
+    - Swift OCR Archive Daily memo     https://apps.apple.com/us/app/swift-ocr-archive-daily-memo/id6624306331?l=ru
+

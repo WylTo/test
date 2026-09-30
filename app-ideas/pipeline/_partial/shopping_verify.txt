@@ -62,3 +62,17 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results. "sat" = disti
     - Grocery Dealz: Compare Prices        https://apps.apple.com/us/app/grocery-dealz-compare-prices/id6478849172
     - Groceries Tracker app                https://apps.apple.com/us/app/-/id958368717
 
+[6] query: site:apps.apple.com gift tracker christmas budget hiding spot  (idea shopping-06)  date: 2026-09-30
+    sat(gift/christmas list+budget in title): 8+ ; hiding spots already a feature in Santa's Bag, Holiday Gift Tracker ("where you hid it, wrapped"), Gift Vault (Face ID); Gift Tree local-only -> SATURATED, the author's differentiators (budget, wrapped, hidden) are all taken
+    - Giftmas: Gift & Budget Tracker       https://apps.apple.com/us/app/giftmas-gift-budget-tracker/id6752770368
+    - Santa's Bag (hiding spot field)      https://apps.apple.com/us/app/santas-bag/id397698040
+    - Gift List: Budget Tracker            https://apps.apple.com/au/app/gift-list-budget-tracker/id6444318089
+    - Holiday Gift Tracker (bought/cost/hid/wrapped) https://apps.apple.com/ca/app/holiday-gift-tracker/id6755163355
+    - Gift Vault: Christmas List (hiding spots, Face ID) https://apps.apple.com/ae/app/gift-vault-christmas-list/id6756131469
+    - Gift Tree (local-only, budgets)      https://apps.apple.com/us/app/gift-tree/id6755916379
+    - Scrooge List                         https://apps.apple.com/us/app/scrooge-list/id6471744638
+    - The Christmas Gift List              https://apps.apple.com/us/app/the-christmas-gift-list/id769268887
+    - Christmas Planner.                   https://apps.apple.com/us/app/christmas-planner/id1133468344
+    - The Christmas Gift List Pro          https://apps.apple.com/us/app/the-christmas-gift-list-pro/id755493890
+
+Searches used: 6/6. Other ideas reviewed from knowledge + other _partial files (card show -> finance_verify [5]; secret santa -> social-networking_verify [2]; resale booth -> business_verify [3]; pantry -> food-drink_verify).
