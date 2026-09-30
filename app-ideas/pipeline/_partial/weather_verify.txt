@@ -45,3 +45,15 @@ https://apps.apple.com/us/app/ground-spray/id528759748
 https://apps.apple.com/us/app/sprayer-calibrator/id1382685677
 https://apps.apple.com/us/app/meteoblue-weather-radar-maps/id994459137   (meteoblue, parent)
 
+## 5) query: site:apps.apple.com frizz forecast hair humidity  (2026-09-30) → SATURATED, sat ~7 dedicated frizz/hair-weather apps incl. one literally titled "Frizz Forecast: Hair Weather" (author estimated 1)
+https://apps.apple.com/us/app/frizz-wiz/id6760796199   (Frizz Wiz: humidity + dew point -> styling tips)
+https://apps.apple.com/us/app/frizzometer-hair-forecast/id6761673373   (Frizzometer: 10-day frizz forecast, risk score)
+https://apps.apple.com/us/app/frizz-forecast-hair-weather/id6790016876   (Frizz Forecast: dew point frizz score, hair type & porosity — same concept as weather-12)
+https://apps.apple.com/tn/app/frizz-hair-forecast/id6449395852   (Frizz - Hair Forecast)
+https://apps.apple.com/cz/app/hemline/id6756072116   (Hemline: humidity -> hairstyle prediction)
+https://apps.apple.com/us/app/frizzcheck-the-cute-hair-app/id1584417329   (FrizzCheck)
+https://apps.apple.com/us/app/hair-type-ai-photo-analysis/id6759535279
+https://apps.apple.com/pl/app/haircast-flat-iron-weather/id6762104305   (HairCast: flat iron weather)
+https://apps.apple.com/mw/app/weather-fit-forecast-widget/id1194408342   (Weather Fit outfit planner)
+https://apps.apple.com/us/app/babeweather/id6747877445
+

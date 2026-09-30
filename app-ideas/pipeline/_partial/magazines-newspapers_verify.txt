@@ -23,3 +23,15 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results. None construc
     - The Obituary App (alt link)      https://apps.apple.com/app/id1447392301
     - Swift OCR Archive Daily memo     https://apps.apple.com/us/app/swift-ocr-archive-daily-memo/id6624306331?l=ru
 
+[3] query: site:apps.apple.com wedding newspaper program template  (ideas magazines-newspapers-03, -10)
+    saturation (dedicated newspaper-style wedding program apps): 0; generic "Wedding Program" app 1 + Pages template packs (Wedding Templates by Nobody, Mac) + invitation makers -> keyword OPEN, but no evidence people search "wedding newspaper" in App Store (it's an Etsy/Canva template purchase)
+    - Wedding Templates (by Nobody) (Mac, Pages templates incl. program)  https://apps.apple.com/cy/app/wedding-templates-by-nobody/id1325994851?mt=12
+    - The Knot: Wedding Planner        https://apps.apple.com/us/app/knot-wedding-planner-ideas/id457941553
+    - Wedding Timeline Checklist       https://apps.apple.com/us/app/wedding-timeline-checklist/id6473653949
+    - Wedding Program                  https://apps.apple.com/us/app/wedding-program/id1133389037
+    - Invitation Maker Greeting Card   https://apps.apple.com/us/app/invitation-maker-greeting-card/id1354806829
+    - Zola - Wedding Planner           https://apps.apple.com/us/app/zola-wedding-planner/id852691916
+    - Envelope Printer Labels (noise)  https://apps.apple.com/us/app/envelope-printer-labels/id6446146267
+    - Invitation Card Creator (RSVP)   https://apps.apple.com/us/app/invitation-card-creator-rsvp/id1585509187
+    - Invitation Card Maker, RSVP      https://apps.apple.com/us/app/invitation-maker-rsvp-cards/id1320828574
+
