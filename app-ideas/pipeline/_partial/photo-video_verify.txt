@@ -46,3 +46,29 @@
    - Redact Photo: Censor & Blur https://apps.apple.com/us/app/redact-photo-censor-blur/id6749859478
    saturation: 8 dedicated on-device face-blur apps, 2+ explicitly for kids/schools, 2 do video -> SATURATED for both #05 and #21.
 
+5) query: "site:apps.apple.com focus stacking macro iPhone" (2026-09-30) — idea photo-video-16 StackFocus
+   - Zeus Focus Stacking https://apps.apple.com/us/app/zeus-focus-stacking/id6471365204 (iPhone capture + blend, freemium)
+   - Focus Stack Camera https://apps.apple.com/mz/app/focus-stack-camera/id6740208889
+   - Focus Stack Camera https://apps.apple.com/ca/app/focus-stack-camera/id6740208889
+   - Bloom - Macro photography https://apps.apple.com/nz/app/bloom-macro-photography/id6781364940?platform=watch (on-device, offline stacking, 2026)
+   - Focus Stacker https://apps.apple.com/us/app/focus-stacker/id1297424550?mt=12 (Mac)
+   - iFocus Stacking https://apps.apple.com/us/app/ifocus-stacking/id6752693470
+   - CameraPixels PRO https://apps.apple.com/us/app/camerapixels-pro/id1148178499
+   - FocusStacker https://apps.apple.com/us/app/focusstacker/id648686483
+   - Live Focus https://apps.apple.com/us/app/live-focus/id1050917948
+   - TASO Focus AI for microscopes https://apps.apple.com/hn/app/taso-focus-ai-for-microscopes/id6753968836?l=en-GB&platform=watch
+   saturation: 5 dedicated iPhone focus-stacking apps (Zeus, Focus Stack Camera, Bloom, iFocus, FocusStacker) + Mac -> SATURATED; author's "focus stacking 2" was wrong.
+
+6) query: "site:apps.apple.com dance practice mirror slow motion loop video" (2026-09-30) — idea photo-video-07 MirrorStep
+   - Dance Drill https://apps.apple.com/gh/app/dance-drill/id6759819098 (mirror, 0.25x, A-B loop)
+   - CyphrCam: Dance Video Camera https://apps.apple.com/ae/app/cyphrcam-dance-video-camera/id6755174205
+   - Master Motion https://apps.apple.com/us/app/master-motion/id6739801998
+   - DanSync https://apps.apple.com/us/app/dansync/id6760836499 (mirror, 0.25x, loop, grid)
+   - iNSYNC - Dance to Any Video https://apps.apple.com/us/app/insync-dance-to-any-video/id1599957566 (side-by-side with camera)
+   - Noteloop https://apps.apple.com/us/app/noteloop/id6448219890
+   - SlowDance - Master every move https://apps.apple.com/us/app/slowdance-master-every-move/id6743317064
+   - SpeedPlayer: Play Slow & Fast https://apps.apple.com/us/app/speedplayer-play-slow-fast/id6762168595
+   - Mirrored Perfect https://apps.apple.com/us/app/mirrored-perfect/id6748153168
+   - FYP Dance: Cover Practice Tool https://apps.apple.com/us/app/fyp-dance-cover-practice-tool/id6759196501 (K-pop cover angle)
+   saturation: 9 dedicated dance-practice players with exactly the MVP feature set, 7 new in 2025-26 -> SATURATED (vibe-coded flood).
+Search budget used: 6/6.

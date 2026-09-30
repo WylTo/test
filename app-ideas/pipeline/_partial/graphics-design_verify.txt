@@ -13,3 +13,69 @@ GRAPHICS & DESIGN (graphics-design) — REVIEWER VERIFY LOG (devil's advocate ru
 - CutOut Superimpose Lasso (by-catch) https://apps.apple.com/us/app/cutout-superimpose-lasso/id730188679
 Saturation: 1 dedicated box generator (Box-o-matic, exactly the pitched product, since 2017) + brand apps; rest is games/by-catch. Niche not empty but thin; demand in App Store (vs. web MakerCase/boxes.py) unproven.
 
+2) query: "site:apps.apple.com needlepoint canvas design pattern"  date: 2026-09-30  (idea graphics-design-08 Needlepoint Canvas Designer)
+- Cross Stitch Pattern Creator https://apps.apple.com/us/app/cross-stitch-pattern-creator/id6476002744
+- Cross Stitch Pattern Maker (GB; "x-stitch, needlepoint, patterns and canvas") https://apps.apple.com/gb/app/cross-stitch-pattern-maker/id6479785282
+- Needlepoint Pattern Maker AI (photo -> pattern) https://apps.apple.com/sr/app/needlepoint-pattern-maker-ai/id6758918904
+- StitchALot Studio (pro design tool for needlepoint + cross-stitch, photo -> canvas) https://apps.apple.com/us/app/stitchalot-studio/id6759666733?platform=mac
+- Cross Stitch Pattern Maker https://apps.apple.com/us/app/cross-stitch-pattern-maker/id6479785282
+- Stitch Belle (iPad: virtual hand-painted needlepoint canvas, mesh count, paint intersections) https://apps.apple.com/us/app/stitch-belle/id6759628528
+- Stitchly: Cross stitch (BH) https://apps.apple.com/bh/app/stitchly-cross-stitch/id1467867656
+- Stitchly: Cross stitch https://apps.apple.com/us/app/stitchly-cross-stitch/id1467867656
+- Stitchpoint https://apps.apple.com/us/app/stitchpoint/id6759072297
+- Stitch Creator (cross-stitch, needlepoint, pixel) https://apps.apple.com/us/app/stitch-creator/id6470660972
+Saturation: 4 dedicated needlepoint designers (Needlepoint Pattern Maker AI, StitchALot Studio, Stitch Belle, Stitchpoint), all new 2026 (id675x-676x), + 3 cross-stitch makers advertising needlepoint -> CONTESTED, not blue ocean.
+
+3) query: "site:apps.apple.com icing color mixing food coloring"  date: 2026-09-30  (idea graphics-design-09 Icing Color Mixer; by-catch relevant to -22 Polymer Clay)
+- Mazeiro: Color Mixing Puzzle (game) https://apps.apple.com/us/app/mazeiro-color-mixing-puzzle/id6791533011
+- Coloring Match https://apps.apple.com/vc/app/coloring-match/id1586980403
+- ColorMixTool (generic two-color mixer) https://apps.apple.com/us/app/colormixtool/id6757428596
+- Paleto - mixing colors (photo color extract + mix) https://apps.apple.com/us/app/paleto-mixing-colors/id1425573301
+- PC Color Mixer ("exact weight of primary clay colors" = POLYMER CLAY mixer, directly competes with idea -22) https://apps.apple.com/us/app/pc-color-mixer/id6528674966
+- Ice Cream Games: Dessert Maker (game) https://apps.apple.com/us/app/ice-cream-games-dessert-maker/id1619048183?platform=watch
+- Iromaze: Color Mixing Kids https://apps.apple.com/us/app/iromaze-color-mixing-kids/id6762496623
+- Colors: Learning and Coloring https://apps.apple.com/us/app/colors-learning-and-coloring/id1403955660
+- Mix & Paint https://apps.apple.com/us/app/mix-paint/id1492035864
+- DiscoveryColors https://apps.apple.com/mx/app/discoverycolors/id6749164169
+Saturation (icing/food coloring): 0 dedicated -> OPEN, but also no evidence the phrase is searched in App Store (search engine returned only generic mixers/kids games). Polymer clay: 1 dedicated (PC Color Mixer).
+
+4) query: "site:apps.apple.com peyote brick stitch bead pattern"  date: 2026-09-30  (idea graphics-design-11 Peyote Bead Pattern Maker)
+- Loomerly: Loom, peyote & brick (KY) https://apps.apple.com/ky/app/loomerly-loom-peyote-brick/id1631555997
+- Loomerly: Loom, peyote & brick (TT) https://apps.apple.com/tt/app/loomerly-loom-peyote-brick/id1631555997
+- Threadologie: Bead Pattern (premium; peyote, brick, loom; image -> beadwork) https://apps.apple.com/us/app/threadologie-bead-pattern/id6755602806
+- Beadium: Beading Patterns (peyote, brick, loom, triangle; photo -> chart) https://apps.apple.com/pk/app/beadium-beading-patterns/id6780272641
+- Beadly (peyote, brick, loom) https://apps.apple.com/us/app/beadly/id6763494727
+- BeadPatternCreator (square, brick, peyote, 2-drop, RAW) https://apps.apple.com/us/app/beadpatterncreator/id6448072309
+- BeadsDesign https://apps.apple.com/us/app/beadsdesign/id601626010
+- BeadPatternCreator (GB) https://apps.apple.com/gb/app/beadpatterncreator/id6448072309
+- BeadPainter: 3D Bead Patterns (loom, brick, peyote) https://apps.apple.com/us/app/beadpainter-3d-bead-patterns/id6746971764
+- BeadPainter: Beading Studio (CA) https://apps.apple.com/ca/app/beadpainter-beading-studio/id6746971764
+Saturation: 7 dedicated peyote/brick/loom designers (Loomerly, Threadologie, Beadium, Beadly, BeadPatternCreator, BeadsDesign, BeadPainter) -> SATURATED. Author's "brick stitch pattern: 1" estimate is wrong.
+
+5) query: "site:apps.apple.com mosaic crochet pattern"  date: 2026-09-30  (idea graphics-design-12 Mosaic Crochet Designer)
+- Mosaic Overlay Crochet (70+ mosaic overlay blanket patterns, monthly new designs, row-by-row checklist, focus mode, video tutorials) https://apps.apple.com/us/app/mosaic-overlay-crochet/id6774931873
+- Tinnkle: Crochet Patterns https://apps.apple.com/us/app/tinnkle-crochet-patterns/id6797259817
+- Stitch Fiddle Pattern Maker (NOW ON iOS; the web tool the author cited as "web only") https://apps.apple.com/nz/app/stitch-fiddle-pattern-maker/id6759521479?see-all=customers-also-bought-apps&platform=iphone
+- Patternize https://apps.apple.com/us/app/patternize/id6758268844
+- Gridchet https://apps.apple.com/us/app/gridchet/id6745152893
+- Crochet AI Identifier Patterns https://apps.apple.com/us/app/crochet-ai-identifier-patterns/id6754254934
+- Crochet Pal for Beginner https://apps.apple.com/us/app/crochet-pal-for-beginner/id6771014727
+- Patternum - Pattern creator https://apps.apple.com/us/app/patternum-pattern-creator/id1536002920
+- Crochet Chart https://apps.apple.com/us/app/crochet-chart/id1473051046
+- Crochet Studio https://apps.apple.com/us/app/crochet-studio/id1619485014
+Saturation ("mosaic crochet"): 1 dedicated title (Mosaic Overlay Crochet, pattern library, not a designer) + Stitch Fiddle native app (supports mosaic crochet charts on web) -> CONTESTABLE; the designer angle still has space but Stitch Fiddle now on iOS.
+
+6) query: "site:apps.apple.com lash map lash extension mapping"  date: 2026-09-30  (idea graphics-design-27 Lash Map Designer)
+- Lash Maps (eye geometry analysis -> style/length/curl suggestions, CRM) https://apps.apple.com/us/app/lash-maps/id6741912184
+- MY Lash Book https://apps.apple.com/lb/app/my-lash-book/id858795085
+- The Lash Look: Consultations (plan/explain/document lash sets) https://apps.apple.com/ca/app/the-lash-look-consultations/id6739705878
+- Lash Tech Pro (curl, length mapping calculator) https://apps.apple.com/us/app/lash-tech-pro/id6759000907
+- Lash Atlas (eye analysis, custom lash mapping, bookings, try-on) https://apps.apple.com/us/app/lash-atlas/id6772648358
+- Lash Create - Virtual Lashes (design, map, preview on photo) https://apps.apple.com/vn/app/lash-create-virtual-lashes/id6758023090
+- AP Map (visual mapping for estheticians/lash artists) https://apps.apple.com/us/app/ap-map/id6767785436
+- Lash Dash https://apps.apple.com/gb/app/lash-dash/id1435421910
+- Lash Create: Design & Booking (TT, iPad) https://apps.apple.com/tt/app/lash-create-design-booking/id6758023090?l=fr-FR&platform=ipad
+- LashMap https://apps.apple.com/us/app/lashmap/id6744845417
+Saturation: 7 dedicated lash mapping apps (Lash Maps, LashMap, Lash Atlas, Lash Create, The Lash Look, Lash Tech Pro, AP Map) -> SATURATED.
+
+WebSearch budget used: 6/6 — stopped.

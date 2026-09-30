@@ -1,0 +1,79 @@
+LIFESTYLE — REVIEWER VERIFY LOG (devil's advocate run)
+Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
+
+[1] query: site:apps.apple.com moon calendar haircut hair cutting  (idea lifestyle-07)
+    saturation (dedicated lunar haircut/beauty apps): 5 (Lunar Haircut Calendar:AW, LunaCut, HairCycle, Lunatio beauty calendar, Oliva; Moony also covers haircut/dye) -> CROWDED, not a reverse gap in EN
+    - Lunar Haircut Calendar:AW           https://apps.apple.com/us/app/lunar-haircut-calendar-aw/id6758302349
+    - LunaCut: Lunar Haircut Guide        https://apps.apple.com/us/app/lunacut-lunar-haircut-guide/id6772146123
+    - Lunatio: Moon Guide                 https://apps.apple.com/us/app/lunatio-moon-guide/id1282962161
+    - Lunar Calendar By Oliva             https://apps.apple.com/in/app/lunar-calendar-by-oliva/id6670185937
+    - HairCycle - Haircut Planning        https://apps.apple.com/us/app/haircycle-haircut-planning/id1445361090
+    - Moon Calendar - Moony               https://apps.apple.com/us/app/moon-calendar-moony/id1441214285
+    - Moon Calendar Horoscope             https://apps.apple.com/app/moon-calendar-horoscope/id1296911050
+    - Full Moon Phase                     https://apps.apple.com/us/app/full-moon-phase/id1119055470
+    - Moon phases calendar and sky        https://apps.apple.com/us/app/moon-phases-calendar-and-sky/id1032783648
+
+[2] query: site:apps.apple.com meter reading utility tracker electricity gas water  (idea lifestyle-09)
+    saturation (dedicated meter-reading apps, several with camera OCR): 7 (Meter Reading, Utility Meter Tracker, iMeter Reader, Energy Tracker Stromverbrauch (DE), EasyMetr, Consumptions, MeterPix) -> SATURATED, incl. DE-native app
+    - Meter Reading: Utility Tracker      https://apps.apple.com/us/app/meter-readings-read-save/id6479006613
+    - Utility Meter Tracker               https://apps.apple.com/us/app/utility-meter-tracker/id6746415150
+    - iMeter Reader: Meter Tracker        https://apps.apple.com/pl/app/imeter-reader-meter-tracker/id6759241901
+    - Utility Meter Tracker (tc)          https://apps.apple.com/tc/app/utility-meter-tracker/id6746415150
+    - Energy Tracker Stromverbrauch       https://apps.apple.com/us/app/energy-tracker-stromverbrauch/id1584696105
+    - EasyMetr                            https://apps.apple.com/us/app/easymetr/id6755668707
+    - Meter readings (sa)                 https://apps.apple.com/sa/app/meter-readings-read-save/id6479006613
+    - Consumptions                        https://apps.apple.com/us/app/consumptions/id705212178
+    - MeterPix                            https://apps.apple.com/us/app/meterpix/id6743858065
+
+[3] query: site:apps.apple.com tortoise care hibernation weight log  (ideas lifestyle-10, also lifestyle-26 via Bird Log)
+    saturation (dedicated tortoise apps): 2 (Tortoise - Keep Tracking (old, weight/plastron), Tortoise Care Tool (new, weight)); reptile trackers with brumation/weight: 4+ -> CONTESTABLE; hibernation-specific angle not in titles
+    also found: Bird Log: Weight & Care Diary (dedicated bird weight app -> relevant to lifestyle-26)
+    - Tortoise - Keep Tracking            https://apps.apple.com/id/app/tortoise-keep-tracking/id1127680609
+    - Tortoise Care Tool                  https://apps.apple.com/us/app/tortoise-care-tool/id6753168606
+    - Bird Log: Weight & Care Diary       https://apps.apple.com/us/app/bird-log-weight-care-diary/id6745482482
+    - Reptile Log                         https://apps.apple.com/gb/app/reptile-log/id6762501311
+    - Exotic Reptile Care (se)            https://apps.apple.com/se/app/exotic-reptile-care/id6753999852
+    - ReptiCare: Track Your Reptiles      https://apps.apple.com/us/app/repticare-track-your-reptiles/id6755394469
+    - Exotic Reptile Care                 https://apps.apple.com/us/app/exotic-reptile-care/id6753999852
+    - Pet Growth Notes                    https://apps.apple.com/us/app/pet-growth-notes/id1202148489
+    - Pet Tracker                         https://apps.apple.com/pw/app/pet-tracker-animal-care-log/id6450134839
+    - Husbandry.Pro Reptile Tracking      https://apps.apple.com/us/app/husbandry-pro-reptile-tracking/id1550079634
+
+[4] query: site:apps.apple.com koi pond log water feeding temperature  (idea lifestyle-12)
+    saturation (dedicated koi/pond apps incl. temperature-based feeding): 3 (Koi Cal Pond Care + Health AI - daily feed + weather/temp; KoiAi - pond log + temp; KoiControl - food calculator by water temperature) -> the author's core feature (feeding by water temp) is already shipped by 2 apps -> CONTESTABLE/taken
+    - Koi Cal Pond Care + Health AI       https://apps.apple.com/us/app/koi-cal-pond-care-health-ai/id6738632755
+    - KoiAi                               https://apps.apple.com/us/app/koiai/id6749480399
+    - KoiControl - The Koi App            https://apps.apple.com/us/app/koicontrol-the-koi-app/id1558517332
+    - TankLog: Aquascape                  https://apps.apple.com/es/app/tanklog-aquascape/id6762062161?l=en-GB
+    - Koi Pond & Fish Health AI           https://apps.apple.com/us/app/koi-pond-fish-health-ai/id6738632755
+    - AquaticLog                          https://apps.apple.com/us/app/aquaticlog/id583895470
+    - AquaLog: Aquarium Log               https://apps.apple.com/gb/app/aqualog-aquarium-log/id6758230854
+    - Fish Log: Catch Intelligence        https://apps.apple.com/us/app/fish-log-catch-intelligence/id6782484121
+    - TankDiary: Aquarium Tracker         https://apps.apple.com/us/app/tankdiary-aquarium-tracker/id6788005172
+    - TankSync - Aquarium Manager         https://apps.apple.com/us/app/tanksync-aquarium-manager/id6746080095
+
+[5] query: site:apps.apple.com tarot journal log readings physical deck  (idea lifestyle-13)
+    saturation (apps that log physical-deck readings): 5 (TarotLingo - camera scan of physical spread; Learn Tarot: Rider Waite - physical log + Face ID + iCloud; Labyrinthos - physical input; Seventh Sphere; Tarot Journal - dedicated title) -> CROWDED, the dominant free app (Labyrinthos) already does it
+    - TarotX: Tarot Card Reading          https://apps.apple.com/us/app/tarotx-tarot-card-reading/id6446361413
+    - TarotLingo: Tarot Card Reading      https://apps.apple.com/mk/app/tarotlingo-tarot-card-reading/id6746827482
+    - Labyrinthos Tarot Reading           https://apps.apple.com/us/app/labyrinthos-tarot-reading/id1155180220
+    - Learn Tarot: Rider Waite Cards      https://apps.apple.com/no/app/learn-tarot-rider-waite-cards/id6452754512
+    - Seventh Sphere Lenormand Tarot      https://apps.apple.com/us/app/seventh-sphere-lenormand-tarot/id1286796898
+    - Tarot and Runes: Daily Reading      https://apps.apple.com/us/app/tarot-and-runes-daily-reading/id1267312220
+    - Tarot!                              https://apps.apple.com/us/app/tarot/id543929148
+    - Tarot Simple: Cards & Readings      https://apps.apple.com/us/app/tarot-simple-cards-readings/id1546692464
+    - Tarot Journal                       https://apps.apple.com/us/app/tarot-journal/id1271120458
+
+[6] query: site:apps.apple.com void of course moon mercury retrograde alerts  (idea lifestyle-16)
+    saturation (apps with VoC + retrograde alerts as core/pro feature): 9 (Planetary Retrogrades - dedicated VoC+retrograde notifications; Lunation - VoC alerts; MoonReader; TimePassages; Planetaro; Moonlight Phases by Susan Miller; Moon Phase & Widgets; Full Moon Phase; Planetary Hours & Moon Phase) -> SATURATED, exact concept exists
+    - Planetary Retrogrades               https://apps.apple.com/ro/app/planetary-retrogrades/id6468492086
+    - Planetary Hours & Moon Phase        https://apps.apple.com/us/app/planetary-hours-moon-phase/id1523559582
+    - MoonReader                          https://apps.apple.com/us/app/moonreader/id921045502
+    - Full Moon Phase                     https://apps.apple.com/us/app/full-moon-phase/id1119055470
+    - TimePassages Astrology              https://apps.apple.com/us/app/timepassages-astrology/id488946918?l=zh-Hans-CN
+    - Planetary Hours by Planetaro        https://apps.apple.com/us/app/planetary-hours-by-planetaro/id1533644988
+    - Moon Phase & Widgets - Lunar App    https://apps.apple.com/pe/app/moon-phase-widgets-lunar/id1141720421?l=en-GB
+    - Moonlight Phases, Susan Miller      https://apps.apple.com/us/app/moonlight-phases-susan-miller/id1571233700
+    - Lunation - Moon & Astrology         https://apps.apple.com/us/app/lunation-moon-astrology/id6759346776
+
+(6/6 searches used. Remaining ideas reviewed from market knowledge + _partial/*.txt only.)

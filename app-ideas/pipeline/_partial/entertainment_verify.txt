@@ -21,3 +21,47 @@
     - LearnMyLines: Memorise Scripts   https://apps.apple.com/tw/app/learnmylines-memorise-scripts/id6751444669?l=en-GB
     - Linus: Learn Lines & Self Tape (auto-detects script language, multilingual)   https://apps.apple.com/us/app/linus-learn-lines-self-tape/id6742599484
     - The Actor's Lines   https://apps.apple.com/us/app/the-actors-lines/id1211450919
+[3] query: site:apps.apple.com coffee cup reading fortune  (idea entertainment-05)  date: 2026-09-30
+    saturation (coffee reading/fortune in title, distinct apps): 7 (CoffeeTells, Hazzi, Telveden, Turkish Coffee Fortune Reader, Cosmica, Kopuklu, falai incl. coffee) -> SATURATED/HARD in EN too; 4 of them are 2024-2026 AI photo readers
+    - CoffeeTells: Coffee Reading (AI photo)   https://apps.apple.com/ee/app/coffeetells-coffee-reading/id6748279021
+    - Hazzi Fortune & Coffee Reading (human readers)   https://apps.apple.com/us/app/hazzi-fortune-coffee-reading/id1168138314
+    - falai: Fortune Teller, Tarot (AI coffee cup, palm)   https://apps.apple.com/eg/app/falai-fortune-teller-tarot/id6474351016
+    - Telveden - Coffee Cup Reading (AI)   https://apps.apple.com/us/app/telveden-coffee-cup-reading/id6759950935
+    - Turkish Coffee Fortune Reader   https://apps.apple.com/om/app/turkish-coffee-fortune-reader/id1480604848
+    - Turkish Coffee Fortune Reader (lr)   https://apps.apple.com/lr/app/turkish-coffee-fortune-reader/id1480604848
+    - Falyolu: Psychic Reading Tarot   https://apps.apple.com/tr/app/falyolu-psychic-reading-tarot/id1429600652
+    - Cosmica: Coffee Fortune Teller (Gemini Vision)   https://apps.apple.com/us/app/cosmica-coffee-fortune-teller/id6762094483
+    - Kopuklu Tarot & Coffee Fortune   https://apps.apple.com/us/app/kopuklu-tarot-coffee-fortune/id1142831604
+[4] query: site:apps.apple.com murder mystery party host game  (idea entertainment-06)  date: 2026-09-30
+    saturation (host-a-murder-mystery apps, distinct): 7 (Alibi, Murder Mystery Party, Whodunnit, Foul Play, Party Games: Imposter & Cards, Murder Dinner Club, Turtle Noir) -> SATURATED; 5 of them launched 2025-2026 incl. AI-generated scenarios
+    - Alibi: Host a Murder Mystery (AI scripts, 6-12 players)   https://apps.apple.com/mt/app/alibi-host-a-murder-mystery/id6759176992
+    - Murder Mystery Party   https://apps.apple.com/us/app/murder-mystery-party/id6751867663
+    - Whodunnit: Murder Mystery Game (since 2015)   https://apps.apple.com/us/app/whodunnit-murder-mystery-game/id978469738
+    - Foul Play: Murder Mystery (one host device)   https://apps.apple.com/sr/app/foul-play-murder-mystery/id6794909129?platform=ipad
+    - Party Games: Imposter & Cards (one phone hosts murder mystery)   https://apps.apple.com/us/app/party-games-imposter-cards/id6766637109
+    - Murder Dinner Club   https://apps.apple.com/uy/app/murder-dinner-club/id6756533133?platform=watch
+    - Turtle Noir: Murder Mystery   https://apps.apple.com/us/app/turtle-noir-murder-mystery/id6758731270
+    - StoryPop   https://apps.apple.com/us/app/storypop/id1623617837
+[5] query: site:apps.apple.com pub quiz host scoreboard trivia night  (idea entertainment-08)  date: 2026-09-30
+    saturation (host/scoring tools for trivia night, distinct): 5 (Quizado, Trivnow, Trivia Maker, Buzzer Blitz, Trivia Hub) -> CONTESTABLE/HARD; Quizado already does host+scoreboard+buzzer+question sets
+    - Quizado: Bar Trivia & Pub Quiz (host control + game screen, buzzer, scoreboard)   https://apps.apple.com/sg/app/quizado-bar-trivia-pub-quiz/id1610106151
+    - Quizado (us)   https://apps.apple.com/us/app/quizado-bar-trivia-pub-quiz/id1610106151
+    - Quizado (us, alt title)   https://apps.apple.com/us/app/quizado-bar-trivia-quiz-game/id1610106151
+    - Quizado (us, alt title 2)   https://apps.apple.com/us/app/quizado-trivia-party-games/id1610106151
+    - 9PM Quiz: Daily Trivia Game   https://apps.apple.com/jp/app/9pm-quiz-daily-trivia-game/id6757186427?l=en-US
+    - Buzzer Blitz: Trivia Scoring   https://apps.apple.com/us/app/buzzer-blitz-trivia-scoring/id1522809359
+    - Trivnow - Trivia Night (hosts/venues)   https://apps.apple.com/us/app/trivnow-trivia-night/id1503986303
+    - Trivia Maker - Quiz Creator   https://apps.apple.com/ca/app/trivia-maker-quiz-creator/id1344136222
+    - Trivia Hub (Google Sheet -> game)   https://apps.apple.com/us/app/trivia-hub/id6760589154
+[6] query: site:apps.apple.com reminiscence activities seniors dementia trivia  (idea entertainment-16)  date: 2026-09-30
+    saturation (dedicated reminiscence/dementia-activity apps, distinct): 7 (Memory Lane Games + Pro, InspireD Reminiscence, Golden Memories, elderlyentertainment, Recollect, RecallCue, The Memoryboard) -> CONTESTED; Memory Lane Games owns "reminiscence trivia" with care-home B2B
+    - Memory Lane Games   https://apps.apple.com/us/app/memory-lane-games/id1517193093
+    - Memory Lane Games (sa)   https://apps.apple.com/sa/app/memory-lane-games/id1517193093
+    - Memory Lane Games Pro   https://apps.apple.com/us/app/memory-lane-games-pro/id6443470453
+    - The InspireD Reminiscence App   https://apps.apple.com/us/app/the-inspired-reminiscence-app/id1544800098
+    - Golden Memories   https://apps.apple.com/us/app/golden-memories/id1629883500
+    - elderlyentertainment   https://apps.apple.com/eg/app/elderlyentertainment/id6455220441
+    - Recollect - Dementia Care   https://apps.apple.com/us/app/recollect-dementia-care/id6747959814
+    - RecallCue   https://apps.apple.com/us/app/recallcue/id1224175629
+    - The Memoryboard   https://apps.apple.com/us/app/the-memoryboard/id6698894688
+# Search budget (6) exhausted. All other ideas reviewed from knowledge + _partial/*.txt only.

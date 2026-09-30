@@ -1,0 +1,857 @@
+{
+  "category_slug": "sports",
+  "summary": "Sportovní kategorie je v roce 2026 přeplněná rychlými indie apps; 6 ověřovacích hledání (netball, golf society, referee pay, hokejový shift timer, badminton club night, vypletání) našlo u každého 2–7 dedikovaných konkurentů, takže předpoklady autora typu 'reverse gap/nikdo to nedělá' se nepotvrdily. Reálné sázky jsou jen dvě rybářské niche ověřené dříve (bass culling/livewell a lokalizovaný kaprařský deník), ale i tam jsou odhady 2000+ stažení/měs 3–5× nadsazené. Společná chyba: nápady na úrovni jedné funkce v mikrosportech s cenou 10–20 USD/rok, kde realistický výnos končí pod 3 000 Kč měsíčně.",
+  "reviews": [
+    {
+      "id": "sports-01",
+      "verdict": "GO",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Bass Log (2026) už má Tournament Mode, Pro Livewell i Smart Culling – nejsme první, jen specializovanější; stačí jedna aktualizace ASO názvu a klíčové slovo 'cull' je jejich.",
+        "BUBBA a chytré váhy s cull tagy (hardware + app) řeší culling automaticky; ruční zadávání vah konkuruje fyzické kádince a vážení na palubě.",
+        "2000 stažení/měs z 'bass cull'/'livewell' je fantazie – realisticky stovky; JP trh (バス釣り) hledá japonsky a má vlastní lokální apps, které autor neověřil.",
+        "Silná sezónnost (turnaje duben–říjen v USA) – roční předplatné se prodává hlavně na jaře."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 6000,
+      "reviewer_note": "Nejlepší ověřený nápad kategorie: 'cull'/'livewell' nikdo nemá v názvu a turnajoví rybáři platí za výbavu. Počítej ale s 300–800 staženími měsíčně, ne 2000, a postav to jako Watch-first nástroj s JP/ES lokalizací."
+    },
+    {
+      "id": "sports-02",
+      "verdict": "GO",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 7
+      },
+      "extra_risks": [
+        "CarpMarks (2026) cílí přesně na 'carp logbook' a má náskok v hodnoceních; Carpy drží 'peg mapper' od 2016.",
+        "Kapraři používají Fishbrain/Anglr a WhatsApp skupiny; mapování 'swim' s wrap countem vyžaduje disciplínu, retence po 1. sezóně je riziko.",
+        "Mapy/satelitní podklad offline = MapKit tiles potřebují síť; skutečně offline je jen deník bez mapy.",
+        "Anglické klíčové slovo 'carp fishing' je CONTESTABLE, výhra je hlavně v lokalizaci (CZ 'kaprařina', PL 'karpiarstwo', FR 'pêche carpe', NL 'karpervissen')."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 5000,
+      "reviewer_note": "Domácí hřiště studia a ověřená řídká konkurence – GO, ale výhra je v lokálních jazycích (CZ/PL/FR/NL/DE), ne v anglickém 'carp fishing log'. Wrap-count a boilie statistiky jako hlavní USP."
+    },
+    {
+      "id": "sports-03",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 2,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Ověřeno: min. 6 dedikovaných netball coach apps – Netball Game Planner dělá přesně 'kdo hraje kde v každé čtvrtině' s preferencemi pozic, CoachMe Netball a Great Coach Netball mapují pozice a rotace/interchange.",
+        "Reverse-gap argument neplatí: netballové země jsou anglicky mluvící (UK/AU/NZ/ZA), lokalizace do 50 jazyků nepřinese nic.",
+        "Kluby používají Netball Connect/federační platformy, sezónní využití (zima UK, zima AU)."
+      ],
+      "missed_competitors": [
+        {
+          "name": "CoachMe Netball",
+          "url": "https://apps.apple.com/au/app/coachme-netball/id6759787060",
+          "note": "mapuje pozice a rotace, game day plánování"
+        },
+        {
+          "name": "Great Coach Netball",
+          "url": "https://apps.apple.com/au/app/great-coach-netball/id1394526615",
+          "note": "interchange planning, player time management"
+        },
+        {
+          "name": "Netball - Team Manager",
+          "url": "https://apps.apple.com/us/app/netball-team-manager/id6446082567",
+          "note": "týmový manažer pro netball"
+        },
+        {
+          "name": "Squad: Netball Coach",
+          "url": "https://apps.apple.com/gw/app/squad-netball-coach/id1608854494",
+          "note": "plánování tréninků a sestav"
+        }
+      ],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Niche je obsazená – autor netball vůbec nehledal a 'blue ocean' byl předpoklad. Nestavět.",
+      "web_checked": true
+    },
+    {
+      "id": "sports-04",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "GameChanger a většina pitch counterů už počítá povinné dny odpočinku podle Pitch Smart/Little League – 'kalendář způsobilosti' je feature, ne produkt.",
+        "Japonské 球数制限 (500 nadhozů/týden na HS) řeší školy papírově a existují japonské pitch-counter apps, které autor neověřil (hledal jen anglicky).",
+        "Trenéři mládeže v LatAm/DO jsou cenově citliví; 14,99 USD/rok tam neprodá.",
+        "Pravidla lig se liší a mění – nutná údržba pravidel, jinak 1★ recenze."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Better Pitch Baseball Tracker",
+          "url": "https://apps.apple.com/us/app/better-pitch-baseball-tracker/id6746173591",
+          "note": "další 2025 pitch tracker, anglicky"
+        },
+        {
+          "name": "Pitch Tracker Pro",
+          "url": "https://apps.apple.com/us/app/pitch-tracker-pro/id6450057490",
+          "note": "Watch pitch counter"
+        }
+      ],
+      "revenue_czk_realistic": 2500,
+      "reviewer_note": "Jen s jasným JP/KR/TW úhlem: lokalizovaná pravidla (高野連 týdenní limit) jako hlavní funkce a japonské ASO. V angličtině je to 7. pitch counter v řadě."
+    },
+    {
+      "id": "sports-05",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Ověřeno: Referee Expenses (poplatek + km, nastavitelná sazba), Refr Sports (earnings reports) – dedikované apps existují.",
+        "REFSIX a Ref90 (dominantní referee watch apps) mají sledování odměn a sezónních součtů přímo v sobě – rozhodčí nebude mít druhou app.",
+        "Assignor platformy (Assignr, RefMyGame, YesRef, Arbiter) už drží historii zápasů a plateb – data si nikdo nepřepisuje ručně.",
+        "Daňové šablony pro DE/UK/CZ/PL = právní odpovědnost a průběžná údržba."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Referee Expenses",
+          "url": "https://apps.apple.com/us/app/referee-expenses/id1518766278",
+          "note": "match fee + mileage, nastavitelná sazba"
+        },
+        {
+          "name": "Refr Sports",
+          "url": "https://apps.apple.com/us/app/refr-sports/id1629866058",
+          "note": "earnings reports pro rozhodčí"
+        },
+        {
+          "name": "Ref90 - Referee Watch",
+          "url": "https://apps.apple.com/us/app/ref90-referee-watch/id6753694941",
+          "note": "earnings tracking v referee watch app"
+        },
+        {
+          "name": "Assignr",
+          "url": "https://apps.apple.com/us/app/assignr/id1579690125",
+          "note": "assignor platforma vyplácí rozhodčí"
+        }
+      ],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Funkce je pohlcená referee watch a assignor platformami a samostatná app už existuje. Nestavět.",
+      "web_checked": true
+    },
+    {
+      "id": "sports-06",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 2,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 8,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Ověřeno: MyGolfSociety, Golf Society, MyGS, Wgaf, Golfify, Squabbit, ParUp – min. 7 apps cílí přímo na golf society + Stableford.",
+        "Society apps jsou z principu sdílené/online (hráči zadávají skóre do společného leaderboardu) – offline verze bez serveru je horší produkt.",
+        "WHS povolenky a Course Handicap vyžadují aktuální slope/course rating hřišť = licencovaná data (England Golf/R&A)."
+      ],
+      "missed_competitors": [
+        {
+          "name": "MyGolfSociety",
+          "url": "https://apps.apple.com/gb/app/mygolfsociety/id1333512977",
+          "note": "society eventy, Stableford kalkulačka, live skóre"
+        },
+        {
+          "name": "Golf Society",
+          "url": "https://apps.apple.com/us/app/golf-society/id6449663141",
+          "note": "přesný název = klíčové slovo"
+        },
+        {
+          "name": "Wgaf",
+          "url": "https://apps.apple.com/gb/app/wgaf/id6757706252",
+          "note": "kompletní správa golf society"
+        },
+        {
+          "name": "Golfify - Golf Tournament App",
+          "url": "https://apps.apple.com/us/app/golfify-golf-tournament-app/id1525555279",
+          "note": "society a kluby, Stableford"
+        },
+        {
+          "name": "Squabbit - Golf Tournament App",
+          "url": "https://apps.apple.com/us/app/squabbit-golf-tournament-app/id1556538444",
+          "note": "turnajové formáty vč. Stableford"
+        }
+      ],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "'Golf society' je saturované a vyžaduje server pro sdílený leaderboard. Reverse gap neexistuje.",
+      "web_checked": true
+    },
+    {
+      "id": "sports-07",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 2,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Ověřeno: Badminton Peg System, Qcourt, Court-Buddy, CourtMate, Pickleball Mixer (i badminton) – přesně 'club night rotation' existuje 5×.",
+        "Organizátoři klubových večerů nechtějí platit; free alternativy a papírové kolíčky stačí.",
+        "Padel/pickleball mixery přidají badminton jedním přepínačem (Pickleball Mixer už to udělal)."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Badminton Peg System",
+          "url": "https://apps.apple.com/us/app/badminton-peg-system/id6752628366",
+          "note": "přesně tento koncept – klubový večer, férová rotace"
+        },
+        {
+          "name": "Court-Buddy",
+          "url": "https://apps.apple.com/us/app/court-buddy/id6756144108",
+          "note": "badminton club nights, fairness engine"
+        },
+        {
+          "name": "Qcourt",
+          "url": "https://apps.apple.com/ph/app/qcourt/id6757377299",
+          "note": "fronta kurtů pro badmintonové kluby"
+        },
+        {
+          "name": "Pickleball Mixer: Court Sports",
+          "url": "https://apps.apple.com/ca/app/pickleball-mixer-court-sports/id6748310977",
+          "note": "multi-sport mixer vč. badmintonu"
+        }
+      ],
+      "revenue_czk_realistic": 600,
+      "reviewer_note": "Mezera, kterou autor předpokládal, se během 2025–26 zaplnila. Nestavět.",
+      "web_checked": true
+    },
+    {
+      "id": "sports-08",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 2,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Ověřeno: Hockey Time, TimeOnIce, HockeyTracker (shift timer s haptikou), Ice Time Track (auto přes Watch), Hockey Lineup Manager (férový ice time) – 6 apps.",
+        "Na hokejové střídačce trenér opravdu nemá ruce volné; rodiče na tribuně používají existující TimeOnIce.",
+        "Ice Time Track měří automaticky senzory Watch – ruční ťukání je zastaralý přístup."
+      ],
+      "missed_competitors": [
+        {
+          "name": "TimeOnIce - Hockey",
+          "url": "https://apps.apple.com/ca/app/timeonice-hockey/id1023242258",
+          "note": "shift a TOI pro každého hráče"
+        },
+        {
+          "name": "Hockey Time",
+          "url": "https://apps.apple.com/ca/app/hockey-time/id459324788",
+          "note": "shifts a ice time od 2011"
+        },
+        {
+          "name": "HockeyTracker",
+          "url": "https://apps.apple.com/bs/app/hockeytracker/id1297971760",
+          "note": "shift timer s haptickým upozorněním"
+        },
+        {
+          "name": "Hockey Lineup Manager",
+          "url": "https://apps.apple.com/us/app/hockey-lineup-manager/id6756636286",
+          "note": "férový ice time pro mládež"
+        }
+      ],
+      "revenue_czk_realistic": 700,
+      "reviewer_note": "Saturované, včetně automatického měření přes Watch. Nestavět.",
+      "web_checked": true
+    },
+    {
+      "id": "sports-09",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 2,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Ověřeno: STRUNG App (zakázky, zákazníci, rakety, výplety) a stringster 2.0 (zákaznické reporty) cílí přesně na vypletače; RacquetTune dominuje hráčské části.",
+        "Profesionální vypletači používají software výrobců strojů / e-shop systémy; počet vypletačů hledajících app je desítky měsíčně.",
+        "Autor sám přiznává demand 3 – s 400 staženími/měs a reálnou konverzí to nedá ani 3 000 Kč."
+      ],
+      "missed_competitors": [
+        {
+          "name": "STRUNG App",
+          "url": "https://apps.apple.com/us/app/strung-app/id6757720720",
+          "note": "job management pro vypletače – přímý konkurent"
+        },
+        {
+          "name": "stringster for Tennis 2.0",
+          "url": "https://apps.apple.com/us/app/stringster-for-tennis-2-0/id6446997820",
+          "note": "stringing report a správa zákazníků"
+        },
+        {
+          "name": "RacquetTune - String Tension",
+          "url": "https://apps.apple.com/us/app/racquettune-string-tension/id365729342",
+          "note": "silný starý titul, log napětí"
+        },
+        {
+          "name": "mystrings - Tennis",
+          "url": "https://apps.apple.com/at/app/mystrings-tennis/id6670494565",
+          "note": "stringing log"
+        }
+      ],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Malý trh a přímý konkurent (STRUNG) už existuje. Nestavět.",
+      "web_checked": true
+    },
+    {
+      "id": "sports-10",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Organizátorů klubových závodů je v každé zemi pár stovek a app v App Store nehledají – spoléhají na Excel, papír nebo federační software (ČRS, Angling Trust).",
+        "Pravidla bodování (sektory, CIPS/FIPSed body) se liší mezi zeměmi i svazy – každá lokalizace = jiná pravidla, ne jen překlad.",
+        "Závodníci chtějí vidět výsledky na svém telefonu – bez serveru jen export PDF/obrázku, což je slabší než konkurence s online výsledky.",
+        "'match fishing'/'peg draw' – hledanost v App Store neověřena (hint_found neznámý)."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Blue ocean spíš proto, že tam nejsou peníze. Má smysl jen jako doplněk/bundle k CarpBook pro české a polské rybářské svazy, s CZ/PL pravidly v první verzi."
+    },
+    {
+      "id": "sports-11",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 4,
+        "monetization": 3,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "BJJ timer/scoreboard apps existují v desítkách (generické MMA/BJJ interval timery s body), gymy používají Smoothcomp zdarma na turnajích.",
+        "7,99 USD jednorázově × realisticky 200–400 stažení = pod 2 000 Kč.",
+        "iPad scoreboard u žíněnky obvykle zobrazuje TV/Apple TV – bez AirPlay/external display je to hračka."
+      ],
+      "missed_competitors": [
+        {
+          "name": "BJJ scoreboard/timer apps (generické)",
+          "url": "",
+          "note": "několik titulů 'BJJ Timer'/'Jiu Jitsu Scoreboard' – neověřeno, URL chybí"
+        }
+      ],
+      "revenue_czk_realistic": 1200,
+      "reviewer_note": "Levné, rychlé, ale bez peněz; autor sám připouští, že 10 000 Kč vyjde jen s gym licencí, kterou nikdo nekupuje. Nestavět."
+    },
+    {
+      "id": "sports-12",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 3,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 9,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Webscorer i RaceSplitter fungují offline (synchronizují až po závodě) – hlavní USP 'offline-first' není rozdíl.",
+        "OCR čísel startovních čísel na cílové čáře za běhu je nespolehlivé (pohyb, překryv) – chyba v pořadí = reklamace od pořadatele.",
+        "Pořadatelé platí za důvěru a výsledkové weby; nový titul bez historie se do top-3 'race timer' nedostane.",
+        "Sezónní použití (jaro/podzim), jednorázové závody = nízká obnova předplatného."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Webscorer",
+          "url": "",
+          "note": "dominantní, offline + online výsledky"
+        },
+        {
+          "name": "RaceSplitter",
+          "url": "",
+          "note": "offline-first časomíra s bib entry"
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Obsazený trh s důvěryhodnými lídry, kteří offline už umí. Nestavět."
+    },
+    {
+      "id": "sports-13",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 6,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Dračí lodě mají jednotky tisíc týmů světově; lineup se řeší v Excelu/Google Sheets a webových nástrojích zdarma.",
+        "Hlavní trhy (HK/CN/SG) mají lokální sociální a klubové apps; čínský App Store navíc vyžaduje ICP/licence.",
+        "Nízká frekvence – sestava se dělá pár desítek krát za sezónu."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 600,
+      "reviewer_note": "Mezera je, ale protože tam nejsou peníze; i autor uvádí demand 3. Nestavět."
+    },
+    {
+      "id": "sports-14",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Francouzské kluby používají zavedený software (FFPJP 'Gestion Concours', Boulistenaute) a francouzské apps pro mêlée, které autor neověřil.",
+        "Klientela pétanque je starší a cenově úsporná; 12,99 USD/rok za losování se prodá těžko.",
+        "Generické round-robin/mixer apps (Pickleball Mixer, Americano generátory) se dají použít i na pétanque."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Pickleball Mixer: Court Sports",
+          "url": "https://apps.apple.com/ca/app/pickleball-mixer-court-sports/id6748310977",
+          "note": "generický mixer rozpisů kol, použitelný i mimo raketové sporty"
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Jen pokud rychlé ověření 'concours pétanque' ve FR storu ukáže <3 dedikované apps; pak postavit jako FR-first s pravidly FFPJP (poule, cadrage, A/B concours). Jinak kill."
+    },
+    {
+      "id": "sports-15",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 3,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Sight-mark kalkulačky existují léta (Archer's Mark, Archers Toolbox/ArcheryCalc, výrobci jako Sure-Loc/Shibuya mají vlastní tabulky) – blue ocean 4 je spíš 3.",
+        "Balistický výpočet z 3 bodů je jednoduchý – konkurence ho má zdarma; hodnota je v tisku sight tape v přesném měřítku, což vyžaduje kalibraci tiskárny.",
+        "Loví-li se lukem, Apple 1.4.3/zbraně je OK, ale lokální regulace lovu lukem (EU zákaz v řadě zemí) omezují 'bowhunting' ASO mimo US."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Archers Toolbox",
+          "url": "",
+          "note": "zavedený ekosystém pro terčové lukostřelce (neověřeno URL)"
+        }
+      ],
+      "revenue_czk_realistic": 2500,
+      "reviewer_note": "Jen s úhlem 3D/field archery a exportem sight tape pro konkrétní mířidla; jinak jen další kalkulačka."
+    },
+    {
+      "id": "sports-16",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Stroke-rate stopky existují (tempo apps, 'Swim Coach Stopwatch' typy) a Apple Watch plavání měří tempa sám – Sherlock pro plavce, ne pro trenéra.",
+        "Trenéři týmů používají papír + Hy-Tek / Swimtopia (serverové) – přenos časů do klubového systému chybí.",
+        "Multi-lane split timer na jednom telefonu je UX noční můra (ťukání za 8 plavců)."
+      ],
+      "missed_competitors": [
+        {
+          "name": "CoachCam: Video Analysis",
+          "url": "https://apps.apple.com/us/app/coachcam-video-analysis/id6764468152",
+          "note": "nová 2026 video coach app, může přidat stroke rate"
+        }
+      ],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Jen pokud se zúží na video + stroke rate + DPS z jednoho záznamu (on-device Vision), ne 'další stopky'."
+    },
+    {
+      "id": "sports-17",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 2,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Tenisové scorekeepery a match chartery jsou husté (TennisKeeper, Tennis Math, SwingVision s auto-statistikou z videa).",
+        "SwingVision automaticky počítá statistiky z kamery – ruční charting rodičem je krok zpět.",
+        "Rodič, který platí trenéra a turnaje, chce video; statistiky bez videa má nízkou hodnotu."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Tennis Math",
+          "url": "",
+          "note": "ruční match charting, zavedený titul (URL neověřeno)"
+        }
+      ],
+      "revenue_czk_realistic": 1200,
+      "reviewer_note": "Autor sám dává blue_ocean 3 – hustý trh s AI lídrem. Nestavět."
+    },
+    {
+      "id": "sports-18",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 2,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 8,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Ověřeno v jiném hledání: Golf Handicapp podporuje 'team Cup' formáty, Squabbit a Golfify dělají multi-day turnaje; Golf GameBook a 18Birdies mají Ryder Cup módy.",
+        "Buddies trip = každý hráč chce skóre na svém telefonu, tj. sdílení/online – offline single-device verze prohrává.",
+        "Nákup 1× ročně za výlet = nízké LTV."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Golf Handicapp: Leaderboards",
+          "url": "https://apps.apple.com/ca/app/golf-handicapp-leaderboards/id1459228624",
+          "note": "Stableford, Skins a team Cup formáty"
+        },
+        {
+          "name": "Squabbit - Golf Tournament App",
+          "url": "https://apps.apple.com/us/app/squabbit-golf-tournament-app/id1556538444",
+          "note": "golf trip / tournament formáty"
+        },
+        {
+          "name": "Golfify - Golf Tournament App",
+          "url": "https://apps.apple.com/us/app/golfify-golf-tournament-app/id1525555279",
+          "note": "turnaje pro skupiny"
+        }
+      ],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Saturované a vyžaduje sdílení mezi telefony. Nestavět."
+    },
+    {
+      "id": "sports-19",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Jezdci kroky počítají vlastníma nohama (4 kroky = 1 cval) – app řeší problém, který mají jen začátečníci.",
+        "Měření vzdálenosti telefonem (krokoměr/GPS) má chybu ±1 m, což je na kombinaci rozdíl jednoho cvalu – hrozí nedůvěra a 1★.",
+        "Na mnoha závodech je telefon na course walku nevhodný/zakázaný etiketou; použití jen na tréninku."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Jen s ARKit/LiDAR měřením (přesnost) a knihovnou typických vzdáleností kombinací; jinak je to kalkulačka na 1 obrazovku (4.2 riziko)."
+    },
+    {
+      "id": "sports-20",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 3,
+        "monetization": 3,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Plate calculators jsou stovky (i zdarma ve Strong/Hevy); IPF GL body počítá OpenPowerlifting web.",
+        "Soutěží se 2–4× ročně – jednorázových 9,99 USD od malé skupiny.",
+        "Na soutěži rozhoduje trenér/handler, který má vlastní tabulku."
+      ],
+      "missed_competitors": [
+        {
+          "name": "LiftingCast",
+          "url": "",
+          "note": "meet management, soutěžící ho znají (URL neověřeno)"
+        }
+      ],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Feature, ne produkt; nízká frekvence a cena. Nestavět."
+    },
+    {
+      "id": "sports-21",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 3,
+        "monetization": 3,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "UDisc (monopol v disc golfu) má tréninkové/putting funkce nebo je přidá; JYLY trackerů je víc (neověřeno).",
+        "Discgolfisté jsou zvyklí na UDisc předplatné – druhou app za putting si nekoupí.",
+        "Realisticky stovky stažení/měs × 9,99 USD/rok ≈ pár tisíc Kč."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Nízká hodnota a Sherlock uvnitř sportu (UDisc). Nestavět."
+    },
+    {
+      "id": "sports-22",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 3,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Evidence ukazuje 6+ volleyball rotation apps (vč. Rotations Coach 2026, Lineup Generator) – přidat počítadlo střídání a libera je týden práce.",
+        "Zapisovatel má oficiální zápis (papír/e-scoresheet federace) – trenérova app nemá autoritu.",
+        "Úzká funkce = riziko Guideline 4.2 minimum functionality."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Volleyball - Lineup Generator",
+          "url": "https://apps.apple.com/us/app/volleyball-lineup-generator/id6450906832",
+          "note": "coed lineupy, může přidat substituce"
+        },
+        {
+          "name": "Volleyball rotation &customize",
+          "url": "https://apps.apple.com/us/app/volleyball-rotation-customize/id6503193598",
+          "note": "další rotation app"
+        }
+      ],
+      "revenue_czk_realistic": 600,
+      "reviewer_note": "Feature pro existující rotation apps. Nestavět."
+    },
+    {
+      "id": "sports-23",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 5,
+        "monetization": 3,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Sailwave je zdarma, standard pro britské kluby a má PY tabulky; race officer výsledky zpracovává na notebooku v klubovně.",
+        "PY čísla RYA se aktualizují ročně – nutná údržba dat a otázka licence tabulky.",
+        "Pár stovek klubů v UK/AU/NZ, rozhoduje jeden dobrovolník, který Sailwave umí."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 600,
+      "reviewer_note": "Proti free standardu (Sailwave) v mikroniche. Nestavět."
+    },
+    {
+      "id": "sports-24",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 4,
+        "offline_fit": 8,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Stokt je zdarma, má velkou komunitu a spray wall funkci – uživatelé chtějí sdílet problémy s kamarády (server), offline je nevýhoda, ne výhoda.",
+        "Označování chytů na fotce vyžaduje dobrou UX a ideálně Vision segmentaci – 8 týdnů je optimistické.",
+        "Domácí stěny mají typicky 1–3 lezci – ochota platit 19,99 USD/rok je nejistá."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Stokt",
+          "url": "",
+          "note": "dominantní, zdarma, spray wall + gymy (URL v evidenci chybí)"
+        }
+      ],
+      "revenue_czk_realistic": 2500,
+      "reviewer_note": "Jen s iCloud/CloudKit sdílením stěny mezi členy domácnosti/party (bez vlastního serveru) a on-device detekcí chytů; jinak Stokt vyhraje zdarma."
+    },
+    {
+      "id": "sports-25",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 5,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Kluby používají FencingTime/Engarde a federační systémy (FIE, národní) – licencované, zavedené.",
+        "Šermířských klubů je globálně pár tisíc; klubový turnaj je pár za rok.",
+        "Mimo anglické trhy (FR/IT/HU) mají svazy vlastní software."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Mikroniche bez peněz. Nestavět."
+    },
+    {
+      "id": "sports-26",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 6,
+        "build_ease": 4,
+        "offline_fit": 9,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Holubáři jsou starší generace a žijí v desktopu (Pigeon Planner, Compuclub) a v elektronických systémech Benzing/Tauris/Unikon – import dat do mobilu je nutnost, jinak nikdo nepřejde.",
+        "Rodokmeny = hodně datové práce, 8 týdnů je minimum; tisk rodokmenů je klíčová funkce (PDF).",
+        "Existují mobilní apps (Pigeon Manager, loft apps) – autor je neověřil; PL/BE/NL/TW lokální apps pravděpodobné."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 3000,
+      "reviewer_note": "Jen pokud existuje import z Pigeon Planner/Benzing a tisk rodokmenů; cílovka platí (drahý koníček), ale přechod z desktopu je bariéra."
+    },
+    {
+      "id": "sports-27",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "GAA je irský trh (~2 200 klubů) + diaspora; statistiky dělají dobrovolníci zdarma na papíře nebo v Performa/StatsZone.",
+        "Pravidla (2pt arc 2025) se mění – údržba.",
+        "Lokalizace do 50 jazyků nemá smysl, sport existuje jen anglicky/irsky."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 700,
+      "reviewer_note": "Příliš malý trh i v ideálu. Nestavět."
+    },
+    {
+      "id": "sports-28",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 2,
+        "offline_fit": 9,
+        "safety": 4
+      },
+      "extra_risks": [
+        "12 týdnů + 3D animace desítek vzorů = obsahová náročnost, která se nesplatí; chyby ve vzoru = recenze od instruktorů.",
+        "YouTube (Kukkiwon, ITF oficiální videa) je zdarma a autoritativní; Karate AI: Dojo Coach ukazuje, že AI coaching už přichází.",
+        "WT vs ITF vs ATA – tři nekompatibilní syllaby, každá škola má vlastní variace."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Karate AI: Dojo Coach",
+          "url": "https://apps.apple.com/us/app/karate-ai-dojo-coach/id6759972525",
+          "note": "AI trenér vzorů, může rozšířit na TKD"
+        },
+        {
+          "name": "Martial Arts Tracker - Dojo",
+          "url": "https://apps.apple.com/us/app/martial-arts-tracker-dojo/id6774305771",
+          "note": "pokrývá TKD WT/ITF pásky"
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Náklady na obsah nepoměrné k výnosu a konkurenci YouTube. Nestavět."
+    },
+    {
+      "id": "sports-29",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 3,
+        "monetization": 3,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Autor sám přiznává, že multi-sport série 'Simple X Tactic Board' florbal pravděpodobně pokrývá; Tactical Pad a švédské 'innebandy' tabule existují.",
+        "Florbalové trhy (CZ/SE/FI/CH) jsou malé a trenéři jsou dobrovolníci; 12,99 USD/rok je pro ně moc.",
+        "Tactic board je 4.3 rizikový typ (stovky reskinů)."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Domácí sport, ale obsazený typ aplikace s nízkou ochotou platit. Nestavět."
+    },
+    {
+      "id": "sports-30",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 2,
+        "monetization": 2,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Basketbalové scorery a bench apps jsou saturované (sat 8), InTimer i All Sports Score Keeper chyby a timeouty umí.",
+        "9,99 USD/rok × malá niche – autor sám počítá s 11 700 Kč v ideálu, realita je desetina.",
+        "Stolek zapisovatele (FIBA zápis) je oficiální zdroj; trenér se dívá na tabuli v hale."
+      ],
+      "missed_competitors": [
+        {
+          "name": "All Sports Score Keeper",
+          "url": "https://apps.apple.com/au/app/all-sports-score-keeper/id1254911810",
+          "note": "generický scorer vč. basketbalu"
+        }
+      ],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Saturované a levné. Nestavět."
+    }
+  ]
+}

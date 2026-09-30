@@ -50,3 +50,28 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
     - Allerly                             https://apps.apple.com/us/app/allerly/id6746579529
     - Food Allergy Options                https://apps.apple.com/us/app/food-allergy-options/id6762036188
     - AllerGuide Food Allergy Travel      https://apps.apple.com/us/app/allerguide-food-allergy-travel/id6759512120
+
+[5] query: site:apps.apple.com pet travel passport dog rabies titer timeline  (idea travel-05)
+    saturation (dedicated pet-travel deadline/timeline apps): 3 exact (Pet Passport: US-JP Travel — titer/FAVN countdown; Petport — departure-anchored D-180/D-30/D-10 deadlines; Pawsport — country travel timelines) + 4 pet vaccine-passport apps, all 2025–26 -> CONTESTABLE→CROWDED, the exact feature already exists
+    - Pet Passport: US-JP Travel          https://apps.apple.com/us/app/pet-passport-us-jp-travel/id6762554040
+    - PetVax: Pet Health Passport         https://apps.apple.com/ca/app/petvax-pet-health-passport/id6758548102
+    - Petport                             https://apps.apple.com/ca/app/petport/id6763766224
+    - PetPass Health                      https://apps.apple.com/il/app/petpass-health/id6792501715
+    - Pawsport: Pet Health & Vaccine      https://apps.apple.com/at/app/pawsport-pet-health-vaccine/id6760357356?l=en-GB
+    - Pasu - Pet Passport                 https://apps.apple.com/br/app/pasu-pet-passport/id6762033650?l=en-GB
+    - Vet Record: Pet Health Tracker      https://apps.apple.com/rs/app/vet-record-pet-health-tracker/id6756975927
+    - VitusVet Pet Medical Records        https://apps.apple.com/us/app/vitusvet-pet-medical-records/id955252538
+
+[6] query: site:apps.apple.com Verpflegungspauschale Reisekosten App  (idea travel-14)
+    saturation (dedicated DE Reisekosten / Verpflegungspauschale apps): 7+ (N2F, Spesen und Reisekosten App, Reisekosten & Mobile Spesen (Onexma), VMA Rechner NE, os-Reisekosten, Trace, Reisekosten für DB Mitarbeiter, meine Fahrten) -> SATURATED, many with statutory rate tables
+    - N2F - Reisekosten                   https://apps.apple.com/de/app/n2f-reisekosten/id1137882652
+    - Spesen und Reisekosten App          https://apps.apple.com/de/app/spesen-und-reisekosten-app/id1281571628
+    - Reisekosten & Mobile Spesen         https://apps.apple.com/de/app/reisekosten-mobile-spesen/id478807993
+    - VMA Rechner NE                      https://apps.apple.com/de/app/vma-rechner-ne/id1463231038
+    - os-Reisekosten                      https://apps.apple.com/de/app/os-reisekosten/id1510642094
+    - meine Fahrten                       https://apps.apple.com/at/app/meine-fahrten/id6443567888
+    - EÜR & EAR Einfach Buchhaltung       https://apps.apple.com/de/app/e%C3%BCr-ear-einfach-buchhaltung/id6745961146
+    - os-Reisekosten (us)                 https://apps.apple.com/us/app/id1510642094
+    - Trace                               https://apps.apple.com/de/app/trace/id1474668298
+    - Reisekosten für DB Mitarbeiter      https://apps.apple.com/us/app/id1640011653
+Search budget exhausted (6/6). Remaining ideas reviewed from market knowledge + _partial evidence.

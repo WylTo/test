@@ -1,0 +1,874 @@
+{
+ "category_slug": "games",
+ "summary": "Kategorie games je nejsilnější tam, kde máme domácí know-how a ověřenou řídkou konkurenci: Mariáš, Schafkopf (výuka + scorer) s portem na US Sheepshead, a US seniorské long-taily Hand & Foot scorer a Chicken Foot dominoes. Hlavní vada: téměř všechny 'ideální' příjmy byly dopočteny těsně nad 10 000 Kč, ale realisticky je medián 0,5–5 tis. Kč/měs.; 6 kontrol 'knowledge' idejí potvrdilo saturaci u Doppelkopfu, Schnapsenu, Oh Hell scoreru i Fishbowlu. Abstraktní deskové hry pro nízko-ARPU trhy (oware, congkak, makruk, janggi, tafl) a lokalizované puzzle klony jsou nemonetizovatelné a zvyšují 4.3 riziko portfolia – doporučuji sdílený trick-taking engine (Mariáš → Schafkopf → Sheepshead → Smear) jako páteř.",
+ "reviews": [
+  {
+   "id": "games-01",
+   "verdict": "GO",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 7,
+    "monetization": 5,
+    "build_ease": 4,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Český iOS trh je malý (iPhone má v CZ jen ~20–25 % podíl), většina mariášníků 50+ hraje na Androidu – reálně 300–700 stažení/měs., ne 1 500.",
+    "Lizany Marias (2026) je aktivní nový vývojář – pokud přidá volený mariáš dřív než my, ztrácíme argument 'jediná moderní appka'.",
+    "Pravidla se liší hospoda od hospody (flek na hru/sedmu, ceny her); špatně zvolený výchozí sazebník = 1★ recenze od nejhlasitější skupiny.",
+    "Reklamní část příjmu (4 500 Kč) je přestřelená – CZ eCPM je nízké a starší hráči reklamy trestají recenzemi."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 5000,
+   "reviewer_note": "Nejsilnější idea kategorie: ověřeně řídká konkurence (2 malé appky) a domácí know-how, které zahraničí neokopíruje. Příjem ale počítejte spíš 4–6 tis. Kč; klíčové je kvalitní ISMCTS AI a nastavitelné ceny her od prvního dne."
+  },
+  {
+   "id": "games-02",
+   "verdict": "GO",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 7,
+    "monetization": 4,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 8
+   },
+   "extra_risks": [
+    "Skórovací appky prodávají jednu licenci na celou skupinu 4 hráčů – reálná konverze 2–4 %, ne 8 %.",
+    "Doppelkopf- a Skat-bloky jsou výrazně obsazenější než Schafkopf (autor to sám nechal neověřené); realisticky vyhrajeme jen 'schafkopf rechner/block'.",
+    "Generické score-keepery (Keep Score apod.) se aktivně propagují jako vhodné pro konkrétní karetní hry.",
+    "Tarify (Sauspiel/Solo/Wenz/Laufende/Stock) se liší podle regionu – potřeba rozsáhlé nastavení, jinak recenze 'špatně počítá'."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Keep Score: Game Score Tracker",
+     "url": "https://apps.apple.com/us/app/keep-score-game-score-tracker/id1140300229",
+     "note": "generický scorer, který se cíleně nabízí pro konkrétní karetní hry – nízká bariéra pro přidání tarifů"
+    }
+   ],
+   "revenue_czk_realistic": 2500,
+   "reviewer_note": "Levná (3 týdny) a bezpečná sázka s ověřeně jediným konkurentem na 'schafkopf rechner'. Nečekejte 13 tis. Kč – spíš 2–3 tis.; smysl má jako satelit Schafkopf Coach (cross-promo) a s Doppelkopf/Skat až ve 2. verzi."
+  },
+  {
+   "id": "games-03",
+   "verdict": "GO",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 6,
+    "monetization": 6,
+    "build_ease": 4,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Online platforma Sauspiel (silná bavorská značka) nabízí výuku i hraní – začátečníci často jdou tam, ne do App Store.",
+    "Schafkopf LITE/Schafkopf od stejného vývojáře už pokrývají offline AI s nastavitelnou obtížností; náš rozdíl musí být čistě ve výuce a vysvětlování tahů.",
+    "Vysvětlující AI ('proč jsi prohrál') je výrazně těžší než hrající AI – riziko, že 7 týdnů přeteče na 10+.",
+    "Bavorsko je ~13 mil. lidí; hledanost 'schafkopf lernen' v App Store (ne Google) je neověřená."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Schafkopf LITE",
+     "url": "https://apps.apple.com/de/app/schafkopf-lite/id1076626842",
+     "note": "zdarma verze offline Schafkopfu s AI od stejného vývojáře jako 'Schafkopf' – autor ji neuvedl"
+    },
+    {
+     "name": "Sauspiel",
+     "url": "",
+     "note": "online Schafkopf platforma s vlastní appkou a výukovým obsahem – URL nemám z ověřeného zdroje"
+    }
+   ],
+   "revenue_czk_realistic": 4000,
+   "reviewer_note": "Dobrá idea s platící německou cílovkou a jen 1 výukovým konkurentem. Engine sdílený se Sheepshead (games-04) a Kartenblock (games-02) z ní dělá jádro portfolia; výuku postavte na předpřipravených scénářích, ne na obecné vysvětlující AI."
+  },
+  {
+   "id": "games-04",
+   "verdict": "GO",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 5,
+    "monetization": 6,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Sheepshead, the App má 4,5★ a zavedené recenze – top-1 na 'sheepshead' je nepravděpodobné, cílíme na top-3.",
+    "Trh = Wisconsin/Minnesota (~11 mil. lidí), silně sezónní a věkově starší; 1 500 stažení/měs. je strop, ne medián.",
+    "Pravidla (leaster, doubler-on-the-bump, partner by called ace vs. jack of diamonds) se liší podle klubu – bez nastavení špatné recenze."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Sheepshead (Derek Hoffmeister)",
+     "url": "https://apps.apple.com/us/app/sheepshead/id878817235",
+     "note": "free, 3,3★ – autor ho neuvedl"
+    },
+    {
+     "name": "Sheepshead (Schafkopf)",
+     "url": "https://apps.apple.com/us/app/sheepshead-schafkopf/id834683690",
+     "note": "další dedikovaný titul, autor neuvedl"
+    }
+   ],
+   "revenue_czk_realistic": 3000,
+   "reviewer_note": "Samostatně jen MAYBE, ale jako port Schafkopf enginu (+2–3 týdny) je to nejlevnější vstup na US trh s vyšším ARPU a slabými (3,0–3,5★) konkurenty. Stavět až po games-03."
+  },
+  {
+   "id": "games-05",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 3,
+    "monetization": 6,
+    "build_ease": 4,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Ověřeno: 'doppelkopf' má 5 dedikovaných appek včetně Spiele-Palast (Doppelkopf-Palast) a offline Doppelkopf LITE/HD s AI – žádná díra.",
+    "Doppelkopf AI (skryté partnerství přes dámy křížové, hlášky Re/Kontra, svatba) je těžší než Schafkopf; 5 týdnů je nereálné.",
+    "Hausregeln jsou nekonečné – nikdy nevyhovíme všem, recenze budou o 'špatných pravidlech'."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Doppelkopf LITE",
+     "url": "https://apps.apple.com/de/app/doppelkopf-lite/id992924790",
+     "note": "offline Doppelkopf s AI, zdarma verze"
+    },
+    {
+     "name": "Doppelkopf HD",
+     "url": "https://apps.apple.com/de/app/doppelkopf-hd/id992787438",
+     "note": "offline proti AI, poslední štych, zkrácení hry"
+    },
+    {
+     "name": "Doppelkopf online",
+     "url": "https://apps.apple.com/de/app/doppelkopf-online/id6761893018",
+     "note": "nový online titul (kultegingames)"
+    },
+    {
+     "name": "Doppelkopf-Palast",
+     "url": "https://apps.apple.com/de/app/doppelkopf-palast/id732017198",
+     "note": "Spiele-Palast, lídr, online"
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Ověřeno hledáním: 'doppelkopf offline' je obsazené (LITE/HD + Palast + nový online titul). Nejde o blue ocean; Doppelkopf patří maximálně do scoreru games-02, ne jako samostatná AI hra.",
+   "web_checked": true
+  },
+  {
+   "id": "games-06",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 5,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Ověřeno: 5 dedikovaných Schnapsen appek, Schnopsn (DonkeyCat) 4,7★, Favorite Games lokalizuje do 20+ jazyků – multi-name lokalizace už není diferenciátor.",
+    "Schnopsn je dostupný i v CZ storu v češtině – ani 'domácí' trh není volný.",
+    "2hráčová hra s jednoduchou AI je snadno kopírovatelná – další nováček přijde každý rok."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Schnopsn - 66 Card Game",
+     "url": "https://apps.apple.com/us/app/schnapsen-66-sixty-six/id438673649",
+     "note": "DonkeyCat, 4,7★/137, online + AI, lokalizované i do češtiny"
+    },
+    {
+     "name": "Schnapsen (66)",
+     "url": "https://apps.apple.com/in/app/schnapsen-66/id1620959730",
+     "note": "Favorite Games, 20+ jazyků"
+    },
+    {
+     "name": "Schnapsen - 66 Online",
+     "url": "https://apps.apple.com/us/app/schnapsen-66-online/id6670622859",
+     "note": "Cherrytap, offline AI i online"
+    },
+    {
+     "name": "Schnapsen App Vollversion",
+     "url": "https://apps.apple.com/us/app/schnapsen-app-vollversion/id657362226",
+     "note": "placená verze pro AT"
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Ověřeno: trh je saturovaný a už lokalizovaný. Autorův hlavní argument (konkurenti cílí jen na jeden název) neplatí.",
+   "web_checked": true
+  },
+  {
+   "id": "games-07",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Hashi má 5+ titulů včetně Conceptis (200 úloh zdarma) a zdarma Simon Tatham's Puzzles ('Bridges') – lokalizace nestačí jako diferenciátor.",
+    "Lokalizované názvy ('Brücken Rätsel') lidé do App Store nepíšou – kdo zná Hashi, hledá 'hashi'.",
+    "Puzzle appky žijí z reklam a objemu; 3 000 stažení/měs. z long-tailu je fantazie.",
+    "Samostatné Hashi + Nurikabe + Rare Puzzles = tři téměř stejné appky → Guideline 4.3 riziko pro celé portfolio."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Hashi: Bridge Building Puzzle!",
+     "url": "https://apps.apple.com/uy/app/hashi-bridge-building-puzzle/id6447013027",
+     "note": "další dedikovaný titul, autor neuvedl"
+    },
+    {
+     "name": "Hashi Bridges - Puzzle Islands",
+     "url": "https://apps.apple.com/hu/app/hashi-bridges-puzzle-islands/id6759544698",
+     "note": "nový titul (2025–26), autor neuvedl"
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Jako samostatná appka KILL. Pokud vůbec, pak Hashi jako jeden z typů uvnitř jedné lokalizované kolekce (viz games-20)."
+  },
+  {
+   "id": "games-08",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 8,
+    "monetization": 5,
+    "build_ease": 3,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Tři různé partnerské hry s licitací = tři AI; 7 týdnů je optimistické, reálně 10+.",
+    "Kaiser je Saskatchewan/Manitoba (~2,5 mil. lidí); Forty-Fives je Maritimes + New England – autor nekontroloval, kolik 45s appek existuje.",
+    "Kanadský iOS trh je malý a starší hráči tyto hry hrají hlavně naživo v klubech (crib/kaiser nights)."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1800,
+   "reviewer_note": "Blue ocean je reálný, ale peníze ne. Fix: začít jen Forty-Fives (větší publikum včetně US New England), Kaiser přidat jako update; očekávat 1–3 tis. Kč, ne 10 tis."
+  },
+  {
+   "id": "games-09",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 2,
+    "monetization": 3,
+    "build_ease": 9,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Ověřeno: 5+ dedikovaných Oh Hell scorerů (OH HELL Scoreboard už v popisu vyjmenovává 15 alternativních názvů vč. German Bridge a Up and Down the River), plus 2026 nováčci Tally Ho! a Oh Hell & Whist Score Tracker.",
+    "Kalkulačka na papírové skóre má minimální ochotu platit a Apple Notes/Numbers ji nahradí.",
+    "Národní názvy (Boerenbridge, Rikiki) mají v App Store zanedbatelný objem – US-gap je neprokázaný."
+   ],
+   "missed_competitors": [
+    {
+     "name": "OH HELL Scoreboard",
+     "url": "https://apps.apple.com/us/app/oh-hell-scoreboard/id1370111473",
+     "note": "pokrývá 15+ aliasů hry v popisu"
+    },
+    {
+     "name": "Oh Hell & Whist Score Tracker",
+     "url": "https://apps.apple.com/gb/app/oh-hell-whist-score-tracker/id6758681474",
+     "note": "2026, 7 variant, až 10 hráčů"
+    },
+    {
+     "name": "Tally Ho! Score Keeper",
+     "url": "https://apps.apple.com/us/app/tally-ho-score-keeper/id6760871828",
+     "note": "2026, Oh Hell jako první hra"
+    },
+    {
+     "name": "Oh Hell! Scorekeeper",
+     "url": "https://apps.apple.com/us/app/oh-hell-scorekeeper/id6480419852",
+     "note": "zdarma"
+    },
+    {
+     "name": "Oh Hell Card Game Scoring",
+     "url": "https://apps.apple.com/us/app/oh-hell-card-game-scoring/id1110805574",
+     "note": "dedikovaný scorer"
+    }
+   ],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Ověřeno: saturováno (autor odhadoval 3, reálně 5+). Zdarma alternativy a nízká hodnota = KILL.",
+   "web_checked": true
+  },
+  {
+   "id": "games-10",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 7,
+    "blue_ocean": 1,
+    "monetization": 5,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "'Solitaire big cards / for seniors / large print' je red ocean – desítky appek od velkých studií, které velké karty a klidný režim mají jako standard.",
+    "Velcí hráči (MobilityWare, Microsoft Solitaire Collection) jsou lokalizovaní do desítek jazyků – 'US-gap' neexistuje.",
+    "Příjem stojí na reklamách a objemu; bez UA rozpočtu se na solitaire klíčích nový titul nezobrazí.",
+    "Guideline 4.3: další solitaire klon je pro recenzenty klasický spam signál."
+   ],
+   "missed_competitors": [
+    {
+     "name": "MobilityWare Solitaire",
+     "url": "",
+     "note": "lídr, lokalizovaný, má režim velkých karet – URL nemám z ověřeného zdroje"
+    },
+    {
+     "name": "Microsoft Solitaire Collection",
+     "url": "",
+     "note": "lokalizovaný, zdarma – URL nemám z ověřeného zdroje"
+    }
+   ],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Autor sám dal blue_ocean 3 a přesto nejvyšší příjem (17 900 Kč) – to je wishful thinking. Solitaire je nejhorší možný trh pro ASO-only nováčka."
+  },
+  {
+   "id": "games-11",
+   "verdict": "GO",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 6,
+    "monetization": 5,
+    "build_ease": 9,
+    "offline_fit": 10,
+    "safety": 8
+   },
+   "extra_risks": [
+    "Generické scorery (Keep Score, Score Recorder) se v popisu výslovně propagují pro Hand & Foot – vezmou část provozu.",
+    "Pravidla Hand and Foot se liší rodina od rodiny (počet nohou, minimální meld 50/90/120/150) – bez editovatelných pravidel 1★ recenze; to je přesně slabina lídra.",
+    "Cílovka (US senioři) je loajální, ale objem hledání 'hand and foot score' je stovky, ne tisíce měsíčně.",
+    "Rychlá kopírovatelnost – kdokoli naklonuje za víkend."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Hand and Foot Calculator",
+     "url": "https://apps.apple.com/us/app/hand-and-foot-calculator/id1422549865",
+     "note": "dedikovaný scorer, ale jen 3 hráči a needitovatelné kategorie – přímý cíl"
+    },
+    {
+     "name": "Keep Score: Game Score Tracker",
+     "url": "https://apps.apple.com/us/app/keep-score-game-score-tracker/id1140300229",
+     "note": "generický, cíleně zmiňuje Hand & Foot"
+    },
+    {
+     "name": "Score Recorder",
+     "url": "https://apps.apple.com/us/app/record-score/id454055560",
+     "note": "generický, zmiňuje Hand and Foot"
+    },
+    {
+     "name": "Hand and Foot Score Card",
+     "url": "",
+     "note": "viděno jen v 'You Might Also Like', URL nezachycena"
+    }
+   ],
+   "revenue_czk_realistic": 3000,
+   "reviewer_note": "Ověřeno: jen 1–2 dedikované scorery, lídr má jasné slabiny (3 hráči, fixní pravidla). 2 týdny práce, platící US senioři, nulové policy riziko – GO, ale počítejte 2–4 tis. Kč, ne 15 tis.",
+   "web_checked": true
+  },
+  {
+   "id": "games-12",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 6,
+    "monetization": 5,
+    "build_ease": 2,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Čtyři různé tarokové hry (CZ taroky, AT Königrufen, SI tarok) = čtyři AI s 54/42kartovými balíčky – 10 týdnů je minimum, spíš 4 měsíce.",
+    "Rakouský Königrufen má zavedené hráče a online komunitu (Tarock turnaje) – saturace neověřena.",
+    "Karty 'tarok' vyžadují vlastní grafiku 22 trumfů – licence na klasické motivy (Industrie und Glück) je sice volná, ale výroba stojí čas.",
+    "Taroky v CZ hraje výrazně menší a starší publikum než mariáš."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Fix: nestavět jako čtyřhru. Pouze české taroky jako druhý titul nad engine Mariáše, a jen pokud Mariáš dosáhne ≥ 500 stažení/měs."
+  },
+  {
+   "id": "games-13",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 3,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "5 Nurikabe titulů, z toho 2 noví v 2025–26 a Conceptis zdarma – niche se zaplňuje právě teď.",
+    "Příjem je z 40 % reklamy u malé logické komunity – realisticky stovky Kč.",
+    "Téměř duplikát games-07 a games-20 → Guideline 4.3 pro portfolio."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Nurikabe puzzle (Yuki Fujimoto)",
+     "url": "https://apps.apple.com/us/app/nurikabe-puzzle/id1073531290",
+     "note": "dedikovaný titul, autor neuvedl v konkurentech"
+    },
+    {
+     "name": "Nurikabe Vault",
+     "url": "https://apps.apple.com/dk/app/nurikabe-vault/id344653774",
+     "note": "další dedikovaný titul"
+    }
+   ],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Samostatně KILL; Nurikabe maximálně jako typ uvnitř kolekce games-20."
+  },
+  {
+   "id": "games-14",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 2,
+    "monetization": 4,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "42 Dominoes (11K+ hodnocení) je už dnes appka, kterou hrají právě texaští senioři – 'senior UX' není diferenciátor.",
+    "Moon a Nello jsou varianty, které lídr může přidat updatem za týden; hledanost 'moon dominoes' je mikroskopická.",
+    "Trh = Texas; mimo US prakticky nulová poptávka."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Lídr s 11K hodnocení vlastní celé publikum; long-tail varianty neunesou samostatnou appku."
+  },
+  {
+   "id": "games-15",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 3,
+    "monetization": 2,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Ověřeno: 5 dedikovaných Fishbowl/Salad Bowl appek, 2 nové v 2025–26, a 'Papelitos' už pokrývá španělský název – lokalizační gap se zavírá.",
+    "Fatální vada monetizace: ve Fishbowlu slova píšou hráči sami, takže placené balíčky slov nemají logiku a appka jen nahrazuje papírky.",
+    "Konkurent 'Fishbowl: The Guessing Game' je offline bez IAP zdarma – cenový strop je 0.",
+    "Party hry se hrají pár večerů do roka – retence a doporučení minimální."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Fishbowl: The Guessing Game",
+     "url": "https://apps.apple.com/us/app/fishbowl-the-guessing-game/id6760678538",
+     "note": "nový, offline, bez IAP"
+    },
+    {
+     "name": "Salad Bowl - Papelitos",
+     "url": "https://apps.apple.com/us/app/salad-bowl-papelitos/id6758815542",
+     "note": "nový, španělský název"
+    },
+    {
+     "name": "Fishbowl - The Party Game",
+     "url": "https://apps.apple.com/fr/app/fishbowl-the-party-game/id1519039998",
+     "note": "zavedený titul"
+    },
+    {
+     "name": "Fish Bowl - Group Game",
+     "url": "https://apps.apple.com/us/app/fish-bowl-group-game/id1317655075?l=ko",
+     "note": "zdarma"
+    },
+    {
+     "name": "Sardines: Party Game",
+     "url": "https://apps.apple.com/us/app/sardines-party-game/id6657948802",
+     "note": "varianta Fishbowl mechaniky"
+    }
+   ],
+   "revenue_czk_realistic": 400,
+   "reviewer_note": "Ověřeno: obsazeno a nemonetizovatelné (slova dodávají hráči). KILL.",
+   "web_checked": true
+  },
+  {
+   "id": "games-16",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 2,
+    "monetization": 3,
+    "build_ease": 3,
+    "offline_fit": 8,
+    "safety": 4
+   },
+   "extra_risks": [
+    "'Stadt Land Fluss', 'Petit Bac', 'Tutti Frutti', 'Stop' jsou v DE/FR/ES/BR saturované desítkami appek, řada z nich funguje offline.",
+    "Automatická kontrola slov v 50 jazycích vyžaduje kategorizované slovníky (města, řeky, zvířata…) pro každý jazyk – to není 4 týdny, ale měsíce, a nikdy to nebude přesné.",
+    "'Scattergories' je ochranná známka Hasbro – nesmí být v keywordech (2.3.7 / trademark).",
+    "Hra je přirozeně multiplayer – offline single-player verze je nuda, pass-and-play je pomalý."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 600,
+   "reviewer_note": "Autor sám odhaduje saturaci 8 na head term a výnos staví na reklamách. Kontrola slov offline v mnoha jazycích je technicky nereálná. KILL."
+  },
+  {
+   "id": "games-17",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 5,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "'pitch' je v App Store zaplevelené (pitch deck, pitch tuner, Pitch Perfect) – hledání přinese šum, ne hráče.",
+    "Smear/Pitch/Setback mají desítky lokálních variant (5-point, 10-point, jick/jack/joker) – jedna appka nezavděčí všem.",
+    "Konkurence zcela neověřená; z trhu je známo několik Smear appek s online hraním.",
+    "Publikum = Iowa/Minnesota/Wisconsin senioři, silně sezónní."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Fix: ověřit saturaci 'smear card game' a pokud ≤ 3 titulů, postavit jen Smear (ne Pitch) nad sdíleným trick-taking enginem z Mariáše/Schafkopfu."
+  },
+  {
+   "id": "games-18",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 3,
+    "monetization": 2,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "EN 'nine men's morris' má 8+ titulů; 'Mühle' v DE je jedna z nejstarších deskových her a má řadu appek (neověřeno, ale velmi pravděpodobné).",
+    "ARPU mlýnku je minimální – hraje se zdarma, 2 % konverze × 2,99 USD je příliš optimistické.",
+    "Lokalizovaný název v titulu nezmění nic, pokud jsou lokalizované i metadata konkurentů – Apple indexuje i lokalizovaná metadata."
+   ],
+   "missed_competitors": [
+    {
+     "name": "9Kukri : Nine Men's Morris",
+     "url": "https://apps.apple.com/us/app/9kukri-nine-mens-morris/id6760107407",
+     "note": "online + hlasový chat, autor neuvedl"
+    },
+    {
+     "name": "Nine Men's Morris Game",
+     "url": "https://apps.apple.com/gb/app/nine-mens-morris-game/id690194008",
+     "note": "další dedikovaný titul"
+    },
+    {
+     "name": "9 Men's Morris",
+     "url": "https://apps.apple.com/nz/app/9-mens-morris/id424610463",
+     "note": "další dedikovaný titul"
+    }
+   ],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Saturovaná abstraktní hra s nulovou ochotou platit. Lokalizace názvu není strategie."
+  },
+  {
+   "id": "games-19",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 3,
+    "monetization": 4,
+    "build_ease": 3,
+    "offline_fit": 10,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Korejci hrají janggi v obřích online appkách (Hangame/Kakao) – korejský trh je pro nás zavřený.",
+    "Nekorejská poptávka po janggi je miniaturní; nový JokGosu (2026, 3D, online+AI, předplatné, 6 jazyků) už obsadil i 'lokalizovaný' úhel.",
+    "Fairy-Stockfish je GPLv3 → vlastní AI od nuly, 8 týdnů je nereálné pro kvalitní sílu."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 600,
+   "reviewer_note": "4 dedikované tituly včetně silného nováčka, malá mimokorejská poptávka a drahá AI. KILL."
+  },
+  {
+   "id": "games-20",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 5,
+    "build_ease": 4,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Nikoli má vlastní oficiální appky s Masyu/Heyawake/Yajilin (Puzzle Square JP) a zdarma Simon Tatham's Puzzles pokrývá Masyu-like typy – skuteční fanoušci je znají.",
+    "Nikoli drží v Japonsku ochranné známky na některé názvy puzzlí – nutné ověřit, zda lze 'Heyawake'/'Yajilin' použít v titulu.",
+    "Generátor s garancí unikátního řešení pro 4 různé typy je 4–6 týdnů jen na solvery.",
+    "Hledanost vzácných názvů je velmi nízká; peníze jen od malé hardcore komunity."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Puzzle Square JP (Nikoli)",
+     "url": "",
+     "note": "oficiální Nikoli appka s předplatným a těmito typy – URL nemám z ověřeného zdroje"
+    },
+    {
+     "name": "Simon Tatham's Puzzles",
+     "url": "",
+     "note": "zdarma kolekce 40 logických puzzlí vč. Bridges, Loopy – URL nemám z ověřeného zdroje"
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Fix: sloučit games-07 (Hashi), games-13 (Nurikabe) a tuto ideu do JEDNÉ lokalizované kolekce 'pencil puzzles' s jednorázovým unlockem – eliminuje 4.3 riziko a sčítá long-tail klíče. Před použitím názvů v titulu ověřit ochranné známky Nikoli."
+  },
+  {
+   "id": "games-21",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 6,
+    "monetization": 4,
+    "build_ease": 3,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Blindfold Games nabízí 80+ přístupných her zdarma/levně – komunita je tam zvyklá a velmi loajální k autorovi.",
+    "Skutečná přístupnost (VoiceOver rotor, zvukové cues, gesta) vyžaduje testování s nevidomými uživateli v každém jazyce – bez toho 1★ recenze.",
+    "Nevidomí uživatelé mimo angličtinu jsou rozptýlení v 50 jazycích – na jazyk jen desítky stažení.",
+    "15% konverze je nepodložená."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Blindfold Games",
+     "url": "",
+     "note": "dominantní US vývojář přístupných her – URL nemám z ověřeného zdroje"
+    }
+   ],
+   "revenue_czk_realistic": 1200,
+   "reviewer_note": "Eticky hodnotná, ale komerčně slabá. Fix: neudělat samostatnou appku, ale VoiceOver-first režim do Mariáše/Schafkopfu (diferenciátor + šance na Apple featuring v rubrice přístupnosti)."
+  },
+  {
+   "id": "games-22",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 6,
+    "monetization": 4,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Slovo 'kasino/cassino' v názvu přitáhne App Review kontrolu na simulovaný hazard (5.3) a ruší hledání výsledky hazardních appek.",
+    "Finsko + Norsko + Švédsko ≈ 21 mil. lidí; mladší hráči tuto rodinnou hru v appce nehledají.",
+    "Nordické jazyky mají v App Store malý objem vyhledávání; keyword 'kasino' v FI storu vede hlavně na hazard."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Fix: pojmenovat hru neutrálně (např. 'Kasino Card Game – family fishing game') s jasným 'no gambling' v popisu a cílit hlavně FI. Očekávejte 1–2 tis. Kč; jen jako rychlý 3týdenní satelit."
+  },
+  {
+   "id": "games-23",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 4,
+    "monetization": 4,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Hledání 'golf card game' je zaplevelené Golf Solitaire a skutečnými golfovými appkami – nový titul se ztratí.",
+    "Existuje značkový 'Play Nine' (golf card game) s vlastní appkou a řada neznačkových Golf appek – saturace neověřena.",
+    "6-card Golf je jednoduchá hra, AI a pass-and-play zvládne každý nováček – nízká bariéra kopírování."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Play Nine",
+     "url": "",
+     "note": "značková golf karetní hra s appkou – URL nemám z ověřeného zdroje"
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Fix: před vývojem ověřit saturaci '6 card golf' a 'golf card game'; pokud ≥ 4 slušné tituly, KILL. Jinak levný 3týdenní titul s pass-and-play pro rodiny."
+  },
+  {
+   "id": "games-24",
+   "verdict": "GO",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 7,
+    "monetization": 5,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Jediný konkurent (Chickenfoot Dominoes, 2,99 USD) je starý, ale právě placený titul ukazuje, že lidé za hru platí – a může se probudit s updatem.",
+    "Chicken Foot se hraje hlavně naživo v rodinách; hledanost v App Store je stovky/měs., ne 1 800.",
+    "Mexican Train appky (výrazně populárnější) mohou Chicken Foot přidat jako variantu.",
+    "Domino scoreboardy (Dommy, DomiNotes) už Chicken Foot podporují – kdo hraje naživo, nepotřebuje hru."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Chickenfoot Dominoes",
+     "url": "https://apps.apple.com/us/app/chickenfoot-dominoes/id1197884823",
+     "note": "jediná dedikovaná hra (Scott Slocum, 2,99 USD, iOS 11 éra, 1 hráč vs 3 AI) – autor ji neuvedl s URL"
+    },
+    {
+     "name": "Dommy",
+     "url": "https://apps.apple.com/ca/app/dommy/id6746079429",
+     "note": "žebříčky pro domino hry včetně Chicken Foot"
+    },
+    {
+     "name": "DomiNotes: Domino Scoreboard",
+     "url": "https://apps.apple.com/us/app/dominotes-domino-scoreboard/id6753987115",
+     "note": "scoreboard podporující Chicken Foot"
+    }
+   ],
+   "revenue_czk_realistic": 3000,
+   "reviewer_note": "Ověřeno: jen 1 starý placený titul na 'chicken foot dominoes' – skutečný blue ocean s US publikem, které platí. Přidejte pass-and-play a velké kostky; příjem spíš 2–4 tis. Kč, s Mexican Train variantou jako updatem.",
+   "web_checked": true
+  },
+  {
+   "id": "games-25",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 6,
+    "monetization": 3,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 3
+   },
+   "extra_risks": [
+    "Hra je o sázení do potu – i s virtuálními žetony 17+ rating, 5.3 kontrola a omezené zobrazování ve vyhledávání.",
+    "Trh = Louisiana (~4,6 mil.) – i perfektní ASO dá desítky stažení denně maximálně.",
+    "Z trhu je známo několik Bourré appek s online stolem; autorova saturace je čistý odhad.",
+    "Hráči Bourré hrají pro skutečné peníze naživo – virtuální žetony je nemotivují."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 700,
+   "reviewer_note": "Mikrotrh + hazardní charakter + neověřená konkurence = příjem hluboko pod cílem. KILL."
+  },
+  {
+   "id": "games-26",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 3,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Tavli/Plakoto/Fevga mají řadu řeckých appek a velké backgammon appky varianty už obsahují; Fevga ≈ 'Long Nardy', která má desítky ruských/kavkazských appek.",
+    "Backgammon trh je ovládán silnými multiplayer tituly s AI (Backgammon NJ, Backgammon Live) – nováček bez recenzí se neprosadí.",
+    "Řecký trh je malý a nízké ARPU; diaspora hraje v existujících appkách."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 600,
+   "reviewer_note": "Autor sám dává blue_ocean 3; varianty backgammonu jsou pokryté. KILL."
+  },
+  {
+   "id": "games-27",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 2,
+    "build_ease": 4,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Thajský trh má nízké ARPU a Thajci Makruk hrají v zavedených bezplatných thajských appkách a online.",
+    "Mezinárodní zájem o Makruk je mikroskopický (hrstka šachových nadšenců).",
+    "Kvalitní AI pro Makruk bez GPL enginu = týdny práce navíc."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 300,
+   "reviewer_note": "Nízké ARPU, malá mezinárodní poptávka, drahá AI. KILL."
+  },
+  {
+   "id": "games-28",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 3,
+    "monetization": 2,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Nový silný konkurent (Hnefatafl - Viking Chess Game, 2025, 9 variant, offline) už nabízí přesně 'kolekci historických variant'.",
+    "5+ dedikovaných titulů včetně Game of Vikings; tafl komunita je malá a zvyklá na zdarma.",
+    "Monetizace 2,99 USD u abstraktní hry pro nadšence = desítky nákupů měsíčně."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Hnefatafl (Philippe Schober)",
+     "url": "https://apps.apple.com/ug/app/hnefatafl/id1498725934",
+     "note": "další dedikovaný titul, autor neuvedl"
+    },
+    {
+     "name": "Game of Vikings",
+     "url": "https://apps.apple.com/us/app/game-of-vikings/id1499261219",
+     "note": "tafl hra, autor neuvedl"
+    }
+   ],
+   "revenue_czk_realistic": 400,
+   "reviewer_note": "Niche už obsadil silný nováček s totožným konceptem. KILL."
+  },
+  {
+   "id": "games-29",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 1,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Hlavní publikum (Ghana, Nigérie, Karibik) má minimální podíl iOS a nízké ARPU; UK/US diaspora nehledá 'oware abapa'.",
+    "4–5 dedikovaných titulů včetně Awale Online s ABAPA pravidly – turnajový úhel je obsazen.",
+    "70 % příjmu je z reklam při 5 000 DAU – to je pro niche abstraktní hru nereálné."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Awale Online",
+     "url": "https://apps.apple.com/ng/app/awale-online/id914277051?see-all=reviews&platform=iphone",
+     "note": "ABAPA pravidla, online – přesně autorův úhel, neuvedl ho"
+    }
+   ],
+   "revenue_czk_realistic": 300,
+   "reviewer_note": "I v ideálu na hraně, realisticky stovky Kč. KILL."
+  },
+  {
+   "id": "games-30",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 1,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Malajsie/Indonésie/Filipíny = nízký podíl iOS a nízké ARPU; 6 000 stažení/měs. je nereálné bez UA.",
+    "Mancala head term je saturovaný (Mancala od velkých studií) a varianty congkak mají lokální free appky.",
+    "Téměř duplikát games-29 (mancala s jinými pravidly) → 4.3 riziko."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 300,
+   "reviewer_note": "Nízké ARPU, závislost na reklamách, duplikát oware idey. KILL."
+  }
+ ]
+}
