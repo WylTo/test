@@ -63,3 +63,16 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results. No Apple API 
     - Learn ATC- SeeYUH!                       https://apps.apple.com/us/app/learn-atc-seeyuh/id6759210610
     - ATC One (cd)                             https://apps.apple.com/cd/app/atc-one/id6754663148
 
+[6] query: site:apps.apple.com vietnamese tones pronunciation trainer  (idea education-08)  date: 2026-09-30
+    saturation (Vietnamese apps with pitch-curve/tone training as a core feature): 3 strong-match (PhoSpeak — record + compare pitch vs native; Learn Vietnamese: Saigon — visual pitch contours; Learn Vietnamese Alphabet ABC — tone-curve visuals) + 4 general Vietnamese apps with tone modules. CONTESTABLE; the exact pitched feature (your pitch curve vs native) exists in PhoSpeak (2025). Cantonese/Thai not checked.
+    - PhoSpeak                                 https://apps.apple.com/us/app/phospeak/id6753764350
+    - Learn Vietnamese - Phrasebook            https://apps.apple.com/us/app/learn-vietnamese-phrasebook/id615964822
+    - Learn Vietnamese Alphabet ABC            https://apps.apple.com/do/app/learn-vietnamese-alphabet-abc/id6787408835?l=en-GB
+    - Vietlingo                                https://apps.apple.com/us/app/vietlingo/id6758497117
+    - VietLingo: Speak Vietnamese              https://apps.apple.com/us/app/vietlingo-speak-vietnamese/id1498274420
+    - Trời Ơi - Viet Companion                 https://apps.apple.com/us/app/tr%E1%BB%9Di-%C6%A1i-viet-companion/id6759873659
+    - Learn Vietnamese - Lentil                https://apps.apple.com/nz/app/learn-vietnamese-lentil/id1435712866
+    - Learn Vietnamese: Saigon                 https://apps.apple.com/us/app/learn-vietnamese-saigon/id6760660442
+    - iVietnamese                              https://apps.apple.com/us/app/ivietnamese/id586131162
+
+Search budget exhausted (6/6). Remaining ideas reviewed from knowledge + _partial/*.txt.
