@@ -1,0 +1,48 @@
+# Productivity — evidence from the only 4 WebSearch calls that ran (2026-09-30), before the session budget (200/200) ran out.
+# URLs are verbatim from WebSearch results. Reuse on a re-run so these searches aren't spent again.
+
+## "punch list" (site:apps.apple.com punch list app construction) — SATURATED (8+ title matches, mostly new indie apps) -> drop
+Punchly - Punch List App | https://apps.apple.com/us/app/punchly-punch-list-app/id6746079705
+PunchList-Construction Manager | https://apps.apple.com/us/app/punchlist-construction-manager/id6503963996
+PunchPad: Punch List App | https://apps.apple.com/us/app/punchpad-punch-list-app/id6752496094
+PunchList - Get more done | https://apps.apple.com/us/app/punchlist-get-more-done/id6449427310
+Site Report Pro- Punchlist App | https://apps.apple.com/us/app/site-report-pro-punchlist-app/id1246734455
+BuildReport Pro: Punch List | https://apps.apple.com/us/app/buildreport-pro-punch-list/id6754534271
+Punch List - Pro | https://apps.apple.com/us/app/punch-list-pro/id6758642910
+
+## "move in inspection / rental inspection" — SATURATED in EN (7+ title matches). Only possible angle: localized (e.g. DE "Übergabeprotokoll") — unverified.
+Rental Inspection & Check Log | https://apps.apple.com/gb/app/rental-inspection-check-log/id6758512299
+Tenant Inspect | https://apps.apple.com/us/app/tenant-inspect-rental-report/id6450515110
+Rental Inspection & Checklist | https://apps.apple.com/us/app/rental-inspection-checklist/id6759527153
+Rental Inspector | https://apps.apple.com/us/app/rental-inspector/id990917668
+Keyturn - Rental inspection | https://apps.apple.com/us/app/keyturn-rental-inspection/id6451185509
+Rental Property Inspections | https://apps.apple.com/us/app/rental-property-inspections/id6447664554
+Mono Property Inspections | https://apps.apple.com/us/app/mono-property-inspections/id6615071171
+
+## "whiteboard scanner" — PROMISING (≈3 weak dedicated apps; Microsoft Lens retired) -> keep candidate
+SlatCam: Whiteboard Scanner | https://apps.apple.com/us/app/slatcam-whiteboard-scanner/id6759267167  (new indie)
+MEMO Whiteboard Scanner | https://apps.apple.com/us/app/memo-whiteboard-scanner/id6758513056  (hardware companion)
+SnapBoard | https://apps.apple.com/us/app/snapboard/id6444752706
+CaptureBoard | https://apps.apple.com/us/app/captureboard-scan-whiteboard-business-cards-receipts/id542229387  (old)
+CamScanner - PDF Scanner App (parent) | https://apps.apple.com/om/app/camscanner-pdf-scanner-app/id388627783
+
+## "scan table to excel / image to excel" — CROWDED (6+ title matches, several on-device) -> weak candidate at best
+Image to Table Scanner | https://apps.apple.com/us/app/image-to-table-scanner/id6759829974
+Scan to Excel | https://apps.apple.com/us/app/scan-to-excel/id1605484591
+Scan to Spreadsheet | https://apps.apple.com/us/app/scan-to-spreadsheet/id478631675
+QuickScan: Image to Excel OCR | https://apps.apple.com/us/app/quickscan-image-to-excel-ocr/id6757146630  (on-device, direct rival)
+ScanToExcel - Document Scanner | https://apps.apple.com/us/app/scantoexcel-document-scanner/id6760785704
+Image to Excel Converter－XLSX | https://apps.apple.com/us/app/image-to-excel-converter-xlsx/id6633430093
+
+## Candidates brainstormed but NOT yet searched (search these on re-run)
+volunteer hours tracker; BCBA/supervised fieldwork hours; notary journal; CE/CEU license tracker (nurses);
+warranty tracker; home inventory for insurance; moving box inventory; open house sign-in (realtors);
+visitor sign-in kiosk; firefighter shift calendar (24/48, Kelly); nurse brain sheet; IEP data collection;
+speech/Toastmasters timer; run of show; photographer shot list; construction daily log; pre-trip inspection (DVIR);
+HACCP temperature log; Airbnb turnover checklist; lab notebook; field notes GPS; offline transcription;
+sermon notes; book highlights scanner; ADHD brain dump / task breakdown (Foundation Models);
+job application tracker; flyer/poster to calendar; screenshot organizer; photo measurements;
+ID card scanner (front+back); text templates / canned replies; work log / brag document;
+study hours tracker (CPA/bar); book scanner; learner driving hours log; nanny hours; Apple Watch voice notes;
+snow removal proof-of-service; offline kanban; teacher gradebook (iDoceo model); visual schedule;
+Dynamic Island timer; meeting speaker timer.

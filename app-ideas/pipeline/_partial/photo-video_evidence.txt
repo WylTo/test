@@ -1,0 +1,5 @@
+# Photo & Video — evidence from 4 searches (2026-09-30)
+- "rental inspection" / move-in photos: CROWDED (8+ dedicated apps: Rental Inspector id990917668, MoveSnap, Tenant Inspect id6450515110, Keyturn).
+- "film negative scanner": CROWDED (6+: FilmLab id1215777349, Posify id6758020545, Film scanner Pro id1333240907).
+- "underwater color correction": ~6 apps, mostly new since 2025 (ScubAI id6741768984, AquaColorFix id1579618383, SeaReal id1661438514) → drop or low.
+- "wigglegram": OPEN — only 2 dedicated: Wigglegrams https://apps.apple.com/gb/app/wigglegrams/id6480203323 ; Wigglegram Maker https://apps.apple.com/us/app/wigglegram-maker/id1180060929 ; plus Gif 3D Wiggle id1222932671.

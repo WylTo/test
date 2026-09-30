@@ -1,0 +1,215 @@
+LIFESTYLE (category_slug: lifestyle) — PARTIAL EVIDENCE
+Date: 2026-09-30. 15 WebSearch calls ran; the session-wide budget (200/200) was used up at call 16 (a retry also failed).
+The ideas/lifestyle.json file was NOT written, as the coordinator instructed.
+Every URL below was copied verbatim from WebSearch results. None was constructed.
+"sat" = number of returned apps.apple.com results that literally target the phrase in their title (0-10).
+Observation: most niche hits have 2025-2026 IDs (id67xxxxxxxx-id68xxxxxxxx). These are new indie apps, often with few ratings.
+So the niches are crowded but the competitors are weak, and they fill up fast.
+
+================================================================
+A. SEARCHED CLUSTERS (query -> saturation -> URLs)
+================================================================
+
+1) "aquarium log water parameters" -> sat 7 (CROWDED, all indie/new except AquaticLog)
+- Aquarium Tracker: Tank Manager  https://apps.apple.com/us/app/aquarium-tracker-tank-manager/id6755304265  (pH/GH/KH/NO3/PO4/TDS charts)
+- Aquarium Log - Tank Manager  https://apps.apple.com/us/app/aquarium-log-tank-manager/id1621042664  (CSV export)
+- Aquarium Tank Tracker: AquaLog  https://apps.apple.com/jm/app/aquarium-tank-tracker-aqualog/id6755156178
+- AquaticLog  https://apps.apple.com/us/app/aquaticlog/id583895470  (old; covers reef params: salinity, alk, Ca, Mg)
+- AquaLens - Aquarium Log  https://apps.apple.com/us/app/aqualens-aquarium-log/id6760222697
+- TankDiary  https://apps.apple.com/us/app/tankdiary/id6762593557
+- TankSync - Aquarium Manager  https://apps.apple.com/us/app/tanksync-aquarium-manager/id6746080095  (salinity, alerts)
+=> Generic "aquarium log" is saturated. Open sub-niches (NOT verified by a separate search): reef dosing calculator (Ca/Alk/Mg),
+   koi/garden pond log (feeding by water temperature), planted-tank fertilizer (EI dosing) calculator. None of these appeared in any title.
+
+2) "chicken egg tracker backyard flock" -> sat 9 (SATURATED, 2025-26 gold rush)
+- FlockFriend: Chicken Tracker  https://apps.apple.com/us/app/flockfriend-chicken-tracker/id6745474579
+- Chicken & Egg Tracker  https://apps.apple.com/us/app/chicken-egg-tracker/id6752914586
+- Chicken Egg Tracker Logging (CluckWatch)  https://apps.apple.com/us/app/chicken-egg-tracker-logging/id6748435024
+- PoultryPal: Chicken & Egg Log  https://apps.apple.com/us/app/poultrypal-chicken-egg-log/id6743654509  ("small farmers")
+- Chicken Scratch: Flock Tracker  https://apps.apple.com/us/app/chicken-scratch-flock-tracker/id6747099523
+- Flockora: Backyard Chickens  https://apps.apple.com/fi/app/flockora-chicken-tracker/id6793725764
+- Count Your Eggs  https://apps.apple.com/us/app/count-your-eggs/id957518668
+- FlockPlenty - Chicken Egg Tracker  https://apps.apple.com/us/app/flockplenty-chicken-egg-tracker/id1017524534
+- Superhen  https://apps.apple.com/us/app/superhen/id6780077145  (hatching + egg log)
+=> Avoid egg counters. Possible open sub-niches (unverified): a multi-species egg incubation/hatching calendar
+   (quail/duck/goose/turkey, candling and lockdown reminders; only Superhen touches it), and a goat/sheep kidding, lambing and milk log.
+
+3) "beekeeping hive inspection" -> sat 6 (CROWDED)
+- Beekeeping - Hive Inspections  https://apps.apple.com/us/app/beekeeping-hive-inspections/id6748213481  (AI Varroa detection)
+- Beekeeping Tracker - Hive  https://apps.apple.com/us/app/beekeeping-tracker-hive/id6759574093
+- Hive Logger: Beekeeping Hub  https://apps.apple.com/us/app/hive-logger-beekeeping-hub/id6670728627  (QR, voice)
+- Apiary Book Beekeeping ApiNote  https://apps.apple.com/us/app/apiary-book-beekeeping-apinote/id6752503587  (EU origin)
+- HiveTracks  https://apps.apple.com/us/app/hivetracks/id1667408004
+- Beehive: Beekeeping Manager  https://apps.apple.com/us/app/beehive-beekeeping-manager/id6759832883?uo=2&partnerId=11&at=10ln7k
+=> Inspection logs are taken. Open sub-niches (unverified): a Varroa mite-count and treatment log (seasonal thresholds;
+   big EU beekeeper base in DE/CZ/PL), and a queen-rearing and split calendar (graft -> capping -> emergence timeline). No title hits.
+
+4) "reptile feeding shedding tracker" -> sat 6 (CROWDED)
+- Shed: Reptile Feeding Tracker  https://apps.apple.com/gt/app/shed-reptile-feeding-tracker/id6761770562?l=en-GB  (one-time purchase, no subscription)
+- ReptiCare: Track Your Reptiles  https://apps.apple.com/us/app/repticare-track-your-reptiles/id6755394469  (incl. breeding)
+- Reptile Rocket: pet tracker  https://apps.apple.com/us/app/reptile-rocket-pet-tracker/id1558082005
+- Reptile Tracker: Pets  https://apps.apple.com/us/app/reptile-tracker-pets/id6746460491  (incl. breeding)
+- Reptile Shed Logger  https://apps.apple.com/us/app/reptile-shed-logger/id6761304763
+- Reptile Buddy  https://apps.apple.com/us/app/reptile-buddy/id1508892560
+=> Generic reptile logs are saturated. Unverified sub-niches: morph genetics calculator plus clutch incubation (breeders),
+   tortoise care and hibernation weight log (UK/EU practice), parrot/bird daily weight log.
+
+5) "dog heat cycle tracker" -> sat 3 dedicated (one app, Dogr, listed under several names, plus breeder apps)
+- Dogr - Dog in Heat & Pregnancy  https://apps.apple.com/us/app/dogr-dog-in-heat-pregnancy/id1660903644
+  (the same id1660903644 appears as "Dogr - Dog Period Tracker" /ca/ and "Dog in Heat - Estrus Cycle App" /us/. Use ONE name.)
+- Puppy-Center: Dog Breeding App  https://apps.apple.com/us/app/puppy-center-dog-breeding-app/id6502343093  (heat -> whelping -> puppy growth)
+- Breedera - Dog Breeder App  https://apps.apple.com/us/app/breedera-dog-breeder-app/id1430975439  (heat prediction + weight)
+- Breeder Tracker  https://apps.apple.com/us/app/breeder-tracker/id6759652006  (progesterone, mating)
+- Bondly: Dog & Cat Health  https://apps.apple.com/us/app/bondly-dog-cat-health/id6756502928  (heat prediction for dog AND cat)
+=> Dog breeding is covered. Probably open (unverified): a CAT breeder/cattery log (only Bondly touches cats;
+   cat breeding is big in RU/PL/CZ/DE, a reverse gap), a dog seizure/epilepsy diary (Bondly as parent),
+   and whelping plus puppy weight (partly covered by Puppy-Center and Breedera).
+
+6) "lenormand cards reading" -> sat 6 by title, but OLD apps (ids 559M-1.29B, i.e. 2012-2017), likely weak or abandoned
+- Lenormand!  https://apps.apple.com/sg/app/lenormand/id873095450
+- Lenormand readings - FREE cards fortunetelling...  https://apps.apple.com/ie/app/lenormand-readings-free-cards-fortunetelling-and/id982770853
+- Tarot Lenormand!  https://apps.apple.com/us/app/tarot-lenormand/id559741969  (has a journal)
+- Scrying Ink Lenormand  https://apps.apple.com/us/app/scrying-ink-lenormand/id1118896048
+- Seventh Sphere Lenormand Tarot  https://apps.apple.com/us/app/seventh-sphere-lenormand-tarot/id1286796898  (card pairs)
+- Mystic Tarot Reading  https://apps.apple.com/ee/app/mystic-tarot-reading/id1466775754
+- Fairy Tale Lenormand  https://apps.apple.com/us/app/fairy-tale-lenormand/id1148686705  (journaling)
+=> Reverse-gap candidate: Lenormand is big in BR ("baralho cigano"), DE and FR. A modern app localized into 50 languages
+   (Grand Tableau trainer, pair meanings) could win. Adjacent ideas: a tarot journal for physical decks, and playing-card cartomancy.
+
+7) "planetary hours" -> sat 6 (SATURATED in EN)
+- Planetary Hours + Widget  https://apps.apple.com/us/app/planetary-hours-widget/id1517281147  (also shows Void-of-Course moon)
+- Planetaro: Planetary Hours App  https://apps.apple.com/kw/app/planetaro-planetary-hours-app/id1533644988
+- Horaly: Planetary Hours  https://apps.apple.com/sa/app/horaly-planetary-hours/id6760537574
+- Planetary Hours - Astro Clock  https://apps.apple.com/us/app/planetary-hours-astro-clock/id6757678864
+- Planetary Hours & Moon Phase  https://apps.apple.com/us/app/planetary-times/id1523559582
+- Hora Now - Planetary Hours  https://apps.apple.com/us/app/hora-now-planetary-hours/id6758165913  (Vedic)
+=> Head term saturated. Unverified angles: a dedicated Void-of-Course moon plus retrograde alert app (widgets/Live Activity,
+   offline ephemeris via Meeus/VSOP, NOT Swiss Ephemeris because of AGPL), and a PT/ES-localized version.
+
+8) "moon gardening calendar biodynamic" -> sat 3 (moderate)
+- Biodynamic Gardening Calendar  https://apps.apple.com/us/app/biodynamic-gardening-calendar/id1467356605  (Floris Books, strong brand, licensed Thun data)
+- Moon Gardening Calendar: Sow  https://apps.apple.com/ng/app/moon-gardening-calendar-sow/id6800734938  (new; root/leaf/flower/fruit days)
+- The Lunar Calendar  https://apps.apple.com/us/app/lunar-calendar-the-art-of-timing/id294805427
+- Moon & Garden  https://apps.apple.com/ar/app/moon-garden/id1038475934?l=en
+- Moon Calendar - Moony  https://apps.apple.com/us/app/moon-calendar-moony/id1441214285
+- Full - Moon  https://apps.apple.com/si/app/full-moon/id954003668
+=> Moderate. Reverse-gap idea (unverified): a moon hair-cutting and beauty calendar ("Mondkalender Haare schneiden",
+   big in DE/AT/CZ/RU, almost absent in EN). Also a witchcraft grimoire with sabbat and moon calendar, using Moony/Mystic Tarot as parents.
+
+9) "qada prayer tracker missed prayers" -> sat 9 (SATURATED in EN, 2025-26 gold rush)
+- Sajdah: Qada Prayer Tracker  https://apps.apple.com/nz/app/sajdah-qada-prayer-tracker/id6761850851
+- Qada  https://apps.apple.com/us/app/qada/id6759224630
+- Qadha Prayer & Fasting Tracker  https://apps.apple.com/ca/app/qadha-prayer-fasting-tracker/id6756798183
+- Qadaa  https://apps.apple.com/ae/app/qadaa/id6450267788
+- Hudan - Missed Prayer Tracker  https://apps.apple.com/ca/app/hudan-missed-prayer-tracker/id6752993823
+- Kaza Tracker  https://apps.apple.com/us/app/kaza-tracker-qada-prayers/id6742993708
+- Qada Tracker  https://apps.apple.com/qa/app/qada-tracker/id6764135699
+- Qadha Tracker  https://apps.apple.com/us/app/qadha-tracker/id6760733053
+- Qaza Tracker: Missed Salah  https://apps.apple.com/us/app/qaza-tracker-missed-salah/id6757230191
+=> Too crowded in English. The only possible angle is a locale niche (Indonesian "utang shalat", Malay, Urdu, Bengali), unverified.
+
+10) "orthodox fasting calendar" -> sat 8 as "Orthodox calendar" (SATURATED; fasting is a feature inside the calendars)
+- Orthodox Calendar †  https://apps.apple.com/us/app/orthodox-calendar/id1437751976
+- Orthodox Tewahedo Calendar  https://apps.apple.com/us/app/orthodox-tewahedo-calendar/id6461818799  (Ethiopian/Eritrean; only 1 app)
+- Greek Orthodox Calendar  https://apps.apple.com/us/app/greek-orthodox-calendar/id303474817
+- Orthodox Christian Calendar+  https://apps.apple.com/us/app/orthodox-christian-calendar/id1010208102
+- Russian Orthodox Calendar  https://apps.apple.com/us/app/russian-orthodox-calendar/id886987357
+- Russian Orthodox Calendar Pro  https://apps.apple.com/ao/app/russian-orthodox-calendar-pro/id886989071
+- Pravoslaven Kalendar 2026  https://apps.apple.com/me/app/pravoslaven-kalendar-2026/id1606911510
+- Old Believer Orthodox Calendar  https://apps.apple.com/us/app/old-believer-orthodox-calendar/id1446199469
+=> Calendars are saturated. Weak angle: a single-purpose "what can I eat today" fasting guide. The Tewahedo audience is too small for 10k CZK.
+
+11) "perfume collection diary fragrance wardrobe" -> sat 5 (CROWDED, mostly 2025-26 apps)
+- Scentful: Fragrance Wardrobe  https://apps.apple.com/kh/app/scentful-fragrance-wardrobe/id6774532380  (fully offline, Apple Intelligence, 540+ scents)
+- ScentShelf Perfume Tracker  https://apps.apple.com/us/app/scentshelf-perfume-tracker/id6760212472  (also appears as "ScentShelf: Fragrance Diary" /gb/)
+- Aromoshelf: Perfume Diary  https://apps.apple.com/ee/app/aromoshelf-perfume-diary/id1628531505  (also /us/app/aromoshelf-ai-scent-wardrobe/id1628531505)
+- Sillage - Fragrance Logger  https://apps.apple.com/pl/app/sillage-fragrance-logger/id6759444997
+- Perfume & Cologne: Fragrance  https://apps.apple.com/tt/app/perfume-cologne-fragrance/id6788549359  (tracks how much is left)
+=> The wardrobe/diary niche is taken. Unverified sub-niches: a DIY perfumery formula lab (dilution, batch scaling, maceration timers;
+   avoid licensed IFRA data), and a decant/split seller manager (ml inventory, cost per ml).
+
+12) "watch collection rotation tracker wrist" -> sat 9 (SATURATED)
+- Watch Collection Tracker  https://apps.apple.com/us/app/watch-collection-tracker/id6448914596
+- WatchGrid - Watch Tracker  https://apps.apple.com/us/app/watchgrid-watch-tracker/id6761049207
+- WristTime - Watch Wear Tracker  https://apps.apple.com/us/app/wristtime-watch-wear-tracker/id6757169018
+- Lug2Lug: Watch Collection  https://apps.apple.com/us/app/lug2lug-watch-collection/id6778995390  (cost-per-wear)
+- WORN - Watch Collection  https://apps.apple.com/us/app/worn-watch-collection/id6760927760
+- Vellore - Watch Collection  https://apps.apple.com/us/app/vellore-watch-collection/id6760221205  (cost-per-wear, service reminders)
+- Watch Collector  https://apps.apple.com/ca/app/watch-collector/id6508170960
+- ChronoQueue - Watch Wishlists  https://apps.apple.com/us/app/chronoqueue-watch-wishlists/id6751517365
+- Wristlog: Watch Log  https://apps.apple.com/uy/app/wristlog-watch-log/id6792917033
+=> Do not build a watch collection app. The cost-per-wear model is proven here and could transfer to handbag collectors
+   (unverified). A mechanical watch accuracy log is also possible, but Toolwatch is known to exist (not seen in results).
+
+13) "fountain pen ink collection" -> sat ~5 (CROWDED)
+- My Fountain Pens & Inks  https://apps.apple.com/us/app/my-fountain-pens-inks/id1488898621
+- Inkwell: Pen and Ink Collector  https://apps.apple.com/us/app/inkwell-pen-and-ink-collector/id6759237242?platform=ipad
+- InkPalette  https://apps.apple.com/in/app/inkpalette/id6504635766  (colour -> ink matching)
+- InkSwatch: Pen Journal  https://apps.apple.com/us/app/inkswatch-pen-journal/id6771600685
+- PratherPens Fountain Pen iD  https://apps.apple.com/us/app/pratherpens-fountain-pen-id/id6756326263
+- Fountain Pen Identifier  https://apps.apple.com/us/app/fountain-pen-identifier/id6758245941
+- Penedex  https://apps.apple.com/gb/app/penedex/id1535416271
+=> Drop this cluster.
+
+14) "diamond painting inventory drills" -> sat 4 (moderate; English-only indie apps)
+- GemsFlow Diamond Painting  https://apps.apple.com/us/app/gemsflow-diamond-painting/id1497430162
+- Drillalog: Diamond Painting  https://apps.apple.com/us/app/drillalog-diamond-painting/id6469571163  (tracks DMC colours)
+- Dotterly: Diamond painting  https://apps.apple.com/us/app/dotterly-diamond-painting/id6446167461
+- Diamond Painting Logbook  https://apps.apple.com/us/app/diamond-painting-logbook/id1440806990  (DMC + Diamond Dotz colours)
+- (game, not a competitor) Diamond Painting: Antistress  https://apps.apple.com/gb/app/diamond-painting-antistress/id6745960433
+=> US-gap candidate: localize for DE/NL/FR/PL, where kits sell at discounters. Adjacent idea: a cross-stitch floss stash and project tracker
+   (unverified; avoid "DMC" in the title because it is a trademark).
+
+15) "jigsaw puzzle collection tracker" -> sat 1 (OPEN)
+- Puzzle Tracker  https://apps.apple.com/us/app/puzzle-tracker/id1561473799  (iPad, wishlist/completed, timer; the only dedicated app)
+- Jigsaw Puzzle: Daily Puzzles  https://apps.apple.com/us/app/jigsaw-puzzle-daily-puzzles/id495583717  (a game that owns the head keyword)
+- other games in results: Jigsawscapes id1589762792, Jigsaw Puzzles Explorer id6445890717
+=> The most open niche found: a jigsaw puzzle collection, completion time, missing-pieces and swap log. Monetization is weak (one-time $3.99-4.99).
+
+================================================================
+B. SUMMARY: OPEN vs CROWDED
+================================================================
+CROWDED/SATURATED (avoid the head terms): aquarium log, chicken egg tracker, hive inspection, reptile tracker, planetary hours,
+  qada tracker, Orthodox calendar, watch collection, fountain pen collection, fragrance diary.
+MODERATE: Lenormand (many titles, but all old), moon gardening, diamond painting, dog heat/breeding.
+OPEN: jigsaw puzzle tracker (1 app). Cat breeder log (only Bondly touches it) is probably open, but that is inferred, not searched.
+
+================================================================
+C. DRAFT 30-IDEA SHORTLIST (competitor URL cluster in brackets). Items marked * have their niche keyword UNVERIFIED.
+================================================================
+ 1 Reef dosing & parameter log*            [1]  high willingness to pay
+ 2 Cat breeder / cattery log*              [5]  reverse gap (RU/PL/CZ/DE)
+ 3 Varroa mite count & treatment log*      [3]  EU beekeeping base
+ 4 Jigsaw puzzle log                        [15] sat 1, weak monetization
+ 5 Egg incubation / hatching calendar*     [2]  multi-species
+ 6 Lenormand trainer, localized             [6]  reverse gap BR/DE/FR
+ 7 Diamond painting tracker, localized      [14] US gap
+ 8 Queen rearing & split planner*          [3]  seasonal, small
+ 9 Handbag collection & cost-per-wear*     [12] model transfer
+10 Whelping & puppy weight log             [5]  partly covered
+11 Dog seizure / epilepsy diary*           [5]  1.4.1 risk
+12 Reptile morph genetics & clutch log*    [4]
+13 Tortoise care & hibernation log*        [4]  UK/EU practice
+14 Koi / garden pond log*                  [1]  seasonal
+15 Planted-tank fertilizer calculator*     [1]
+16 Void-of-course moon & retrograde alerts* [7]
+17 Moon hair-cut / beauty calendar*        [8]  reverse gap DE/RU/CZ
+18 Moon planting calendar (computed)       [8]  Floris is strong
+19 Tarot journal for physical decks*       [6]
+20 Playing-card cartomancy*                [6]  IT/RU/CZ
+21 DIY perfume formula lab*                [11]
+22 Fragrance decant/split manager*         [11]
+23 Mechanical watch accuracy log*          [12]
+24 Cross-stitch floss stash & projects*    [14]
+25 Goat/sheep kidding & milk log*          [2]  homestead
+26 Parrot / bird weight log*               [4]
+27 Witchcraft grimoire + sabbat/moon*      [8]
+28 Planetary hours, PT/ES localized        [7]  saturated in EN
+29 Qada tracker for ID/MY/UR locales       [9]  saturated in EN
+30 Orthodox "what can I eat today" fasting guide [10]
+NEVER SEARCHED (candidates): makeup expiration (PAO) tracker, laundry-symbol scanner (on-device ML), metal-detecting finds log,
+  soap lye calculator, candle fragrance-load calculator, pool/hot-tub chemistry log, home paint-colour/home manual log,
+  meter-reading log (DE "Zaehlerstand" reverse gap), moving-box inventory, capsule wardrobe/cost-per-wear, bonsai care,
+  orchid care, seed inventory, mushroom grow log, hydroponics, horse care, raw-feeding (BARF) calculator, reactive-dog log,
+  pigeon loft, novena/Latin Mass/Omer/hifz/japa counters, sermon notes, prayer journal, curly-hair wash-day log,
+  one-line-a-day journal, dream journal, date-night jar, LDR countdown.

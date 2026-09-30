@@ -1,0 +1,165 @@
+BUSINESS (category_slug: business) — PARTIAL EVIDENCE
+Date: 2026-09-30. 12 WebSearch calls succeeded; the 13th hit the session-wide budget (200/200) and returned nothing.
+All URLs below were copied verbatim from WebSearch results (none constructed). US store unless the URL says otherwise.
+"Saturation" = number of returned apps.apple.com results whose TITLE literally targets the niche phrase (0-10).
+
+======================================================================
+A. SEARCHED NICHES — FINDINGS + VERBATIM URLS
+======================================================================
+
+1) PAINTING ESTIMATE (painters)   query: site:apps.apple.com painting estimate app painters
+   Verdict: CROWDED in US. Titles with painting estimate/estimator: 6. Painter-business apps: 3 more (9 total).
+   Many listings are new in 2025-26 (ids 67xx), several use AI. Open angle not checked: a metric (m2/litres) version localized for EU/LatAm (possible US-gap).
+   - Paintbox App for Painters | https://apps.apple.com/us/app/paintbox-app-for-painters/id1526501121 | all-in-one painting contractor app
+   - Estimate Painting Form App | https://apps.apple.com/us/app/estimate-painting-form-app/id1150825650 | simple estimate form (older)
+   - PaintPro - Painting Estimates | https://apps.apple.com/us/app/paintpro-painting-estimates/id6757255183 | room measurements -> price, labour/materials/margins
+   - The Painters app | https://apps.apple.com/us/app/the-painters-app/id6744658682
+   - BrushQuote: Paint Estimates | https://apps.apple.com/us/app/brushquote-paint-estimates/id6762495897 | AI drafts scope from photos and voice
+   - PaintTab | https://apps.apple.com/us/app/painttab/id6761379649
+   - Painting Contractor Estimates | https://apps.apple.com/us/app/painting-contractor-estimates/id897185714 (also gb: https://apps.apple.com/gb/app/painting-contractor-estimates/id897185714) | calculates materials and labour from room dimensions
+   - PaintForce Painting Estimator | https://apps.apple.com/us/app/paintforce-painting-estimator/id6738657815
+   - Paint Estimator Pro | https://apps.apple.com/us/app/paint-estimator-pro/id1464865584?l=zh-Hant-TW
+
+2) HACCP / TEMPERATURE LOG   query: site:apps.apple.com HACCP temperature log
+   Verdict: CROWDED. 5 titles contain "HACCP" and 4 contain "temperature log"/"templog" (8 distinct apps). Most are small indie/new apps; several claim offline use.
+   Untested sub-niches: "cooling log" (FDA 2-stage cooling; 0 titles among these 10 results), vaccine/medication fridge log, legionella water-temperature log (UK), HACCP plan builder, food date/day-dot labels.
+   - Temperature Log | https://apps.apple.com/us/app/temperature-log/id1579256016 (gr: https://apps.apple.com/gr/app/temperature-log/id1579256016) | generic equipment/environment temperature log
+   - TempLog Pro | https://apps.apple.com/us/app/templog-pro-haccp-logs/id6757482808 | restaurants, food trucks; replaces paper logs
+   - Food Safety App | https://apps.apple.com/us/app/food-safety-app-haccp/id6772256894 | cooking, cooling, reheating, cold and hot holding temperatures
+   - BackResto - HACCP | https://apps.apple.com/qa/app/backresto-haccp/id1634053106?platform=tv | fridge temps, PRINTS FOOD LABELS, works offline
+   - Kitchen HACCP Logs | https://apps.apple.com/gb/app/kitchen-haccp-logs/id6756550638 | temps, deliveries, cleaning, audit reports (UK)
+   - Temperature Log Book | https://apps.apple.com/us/app/temperature-log-book/id1449271996
+   - Templog | https://apps.apple.com/gb/app/templog/id6479650776?platform=iphone | multi-location, employees (server-type)
+   - HACCP App | https://apps.apple.com/us/app/haccp-app/id1201774065
+   - Pro Food Safe System | https://apps.apple.com/us/app/pro-food-safe-system/id1529676695
+
+3) NOTARY JOURNAL   query: site:apps.apple.com notary journal
+   Verdict: MEDIUM-CROWDED, US-only need. "Journal" in title: 2; "notary" in title: 6. Leaders are cloud-based (NotaryAct), so an offline/private journal is a possible angle. Untested: "loan signing agent" fee, mileage and scanback tracker.
+   - NotaryCentral | https://apps.apple.com/us/app/notarycentral/id6593684890
+   - NotaryAct - Electronic Journal | https://apps.apple.com/in/app/notaryact-electronic-journal/id577611054 (bb: https://apps.apple.com/bb/app/notaryact-electronic-journal/id577611054) | cloud-based, sequential, non-modifiable records
+   - NotaryAssist | https://apps.apple.com/us/app/notaryassist/id1552293025 (ne: https://apps.apple.com/ne/app/notaryassist/id1552293025)
+   - NotaryGadget | https://apps.apple.com/us/app/notarygadget/id1633651969 | bookkeeping, journal and ops for mobile notaries
+   - Notary eJournal | https://apps.apple.com/us/app/notary-ejournal/id1517094829 | California-made, used in 45+ states
+   - BlueNotary | https://apps.apple.com/us/app/bluenotary/id6761999017 (gb: https://apps.apple.com/gb/app/bluenotary/id6761999017) | RON platform with e-journal
+
+4) TATTOO CONSENT FORM   query: site:apps.apple.com tattoo consent form
+   Verdict: MEDIUM. Only 2 titles target "consent form(s)" (InkForm; Piercing and Tattoo Forms), but 5 tattoo-studio apps include consent forms. Piercing and Tattoo Forms ships forms for the 50 US states, so the category is US-centric: a localized EU/LatAm version with an ink-batch (REACH) log is a possible US gap. Untested nearby niches: PMU/microblading consent, lash/brow/hair-tint patch-test log.
+   - Tattoo Consent Forms: InkForm | https://apps.apple.com/ly/app/tattoo-consent-forms-inkform/id6795292581 | intake, health history, ID photo, e-signature
+   - Tattoospot | https://apps.apple.com/ca/app/tattoospot/id1493266569 (ua: https://apps.apple.com/ua/app/tattoospot/id1493266569)
+   - Piercing and Tattoo Forms | https://apps.apple.com/us/app/piercing-and-tattoo-forms/id6751235239 | forms for all 50 US states
+   - tattoogenda | https://apps.apple.com/us/app/tattoogenda/id6461407749 (ie: https://apps.apple.com/ie/app/tattoogenda/id6461407749)
+   - Inkarte: Tattoo Client Manager | https://apps.apple.com/be/app/inkarte-tattoo-client-manager/id6792252166 | "fully offline" client, booking and consent app
+   - STUDIO Artist: Calendar Tattoo | https://apps.apple.com/us/app/studio-artist-calendar-tattoo/id6751468838 | PDF informed-consent forms
+   - Tattoo Studio Pro | https://apps.apple.com/do/app/tattoo-studio-pro/id1490817384?l=en-GB&platform=vision
+
+5) FARRIER   query: site:apps.apple.com farrier app horse shoeing records
+   Verdict: SPARSE-MEDIUM. 3 titles target "farrier" and 1 targets "shoeing". The rest are general horse-owner apps. Small niche; worth pursuing only with low build cost. Untested adjacent niche: horse-boarding-stable monthly billing (BarnManager is the parent).
+   - The Farriers App | https://apps.apple.com/us/app/the-farriers-app/id1587307883 | farriers and barefoot trimmers, invoicing, SMS reminders
+   - Farrier Fleet | https://apps.apple.com/us/app/farrier-fleet/id6757606700 | new; horse records, due dates, hoof photos
+   - My Cheval: Horse Management | https://apps.apple.com/us/app/my-cheval-horse-management/id6468960996
+   - The Shoeing Lab | https://apps.apple.com/us/app/the-shoeing-lab/id1670857750 (gb: https://apps.apple.com/gb/app/the-shoeing-lab/id1670857750)
+   - Horsekeeping | https://apps.apple.com/us/app/horsekeeping/id1378029847
+   - EQUINET - Mustad Farrier App | https://apps.apple.com/us/app/equinet-mustad-farrier-app/id1459492568 | brand-backed (Mustad)
+   - HorseKeeper - Equine Manager | https://apps.apple.com/us/app/horsekeeper-equine-manager/id6767037803
+   - BarnManager | https://apps.apple.com/us/app/barnmanager/id1261521499
+   - HorseBook - Equine Records | https://apps.apple.com/us/app/horsebook-equine-records/id6759075592
+
+6) FIRE EXTINGUISHER INSPECTION   query: site:apps.apple.com fire extinguisher inspection
+   Verdict: CROWDED for the pro angle (NFPA 10, barcode/QR): "fire inspection" in 4 titles and "extinguisher" in 2. Untested angles: a UK/EU "fire log book" for small premises (weekly alarm tests, emergency lights, drills; possible reverse gap), an AED/first-aid-kit check log, and UK fire-door inspection.
+   - Fire Inspection App | https://apps.apple.com/gb/app/fire-inspection-app/id860747212 (lc: https://apps.apple.com/lc/app/fire-inspection-app/id860747212)
+   - InspectNTrack: Fire Inspection | https://apps.apple.com/us/app/inspectntrack-fire-inspection/id1528342812 | barcode inventory (pro)
+   - Fire Inspection Pro | https://apps.apple.com/ie/app/fire-inspection-pro-safety/id6761208778
+   - Fire Extinguisher Check Log | https://apps.apple.com/us/app/fire-extinguisher-check-log/id6760390952 | simple owner-level log (new)
+   - FireTag: Safety Inspections | https://apps.apple.com/za/app/firetag-safety-inspections/id6762494298 | extinguishers and "other safety equipment"
+   - FireArrest | https://apps.apple.com/us/app/firearrest/id1503296820
+   - Firehub | https://apps.apple.com/us/app/firehub/id1555059195
+   - Extinguisher360 | https://apps.apple.com/us/app/extinguisher360/id6462470501 | QR, NFPA 10
+
+7) VENDING ROUTE / OPERATOR   query: site:apps.apple.com vending machine route tracker
+   Verdict: MEDIUM. "vending" appears in 7 titles, but only about 4 are operator-management apps. VendSoft is the strong leader (offline route mode, cash and photos). The side-hustle operator with 1-30 machines (profit per machine, location commission) looks underserved but is unconfirmed. The market is US/CA-centric.
+   - Vending Tracker | https://apps.apple.com/tr/app/vending-tracker/id6759473990 | consumer locator (not a competitor)
+   - VendSoft: Vending Management | https://apps.apple.com/us/app/vendsoft-vending-management/id1020242222 (eg: https://apps.apple.com/eg/app/vendsoft-vending-management/id1020242222) | PARENT leader
+   - Vend-IT | https://apps.apple.com/us/app/vend-it/id1150199513 | stock levels and packing
+   - Vending Village | https://apps.apple.com/us/app/vending-village/id6779238696
+   - VendingMetrics | https://apps.apple.com/be/app/vendingmetrics/id1449725396 | web plus mobile (server)
+   - The Vendlist | https://apps.apple.com/us/app/the-vendlist/id1531472088
+   - VendingOps | https://apps.apple.com/mx/app/vendingops/id6468369042?l=en-GB
+   - Smart Mart Leads - Vending | https://apps.apple.com/us/app/smart-mart-leads-vending/id6768784203 | location leads
+
+8) CHURCH OFFERING COUNT   query: site:apps.apple.com church offering count
+   Verdict: OPEN (best blue-ocean signal found). 0 titles target "offering count"/"offering counting". Church apps focus on giving, attendance and engagement. Demand was NOT verified (no search for "offering count sheet" / reddit). Church Metrics (free) covers attendance, so an attendance/usher app has weak monetization. Untested: offline kids check-in with label printing.
+   - Church Attendance Tracker | https://apps.apple.com/us/app/church-attendance-tracker/id6757945112 | 1 dedicated attendance app
+   - Called: Grow Disciples | https://apps.apple.com/us/app/called-grow-disciples/id6445821834
+   - Church Metrics | https://apps.apple.com/us/app/church-metrics/id792901164 (uy: https://apps.apple.com/uy/app/church-metrics/id792901164) | FREE; tracks attendance and giving
+   - Church App - Tithe.ly | https://apps.apple.com/us/app/church-app-tithe-ly/id565301194 | PARENT (church giving; 5,000+ churches)
+   - The Church App | https://apps.apple.com/us/app/the-church-app/id336032331
+   - ChurchCast | https://apps.apple.com/us/app/churchcast/id1455535488
+   - Church Social | https://apps.apple.com/us/app/church-social/id1530981100
+   - (irrelevant hit) Count It Off-Setlist Metronome | https://apps.apple.com/us/app/count-it-off-setlist-metronome/id1439712286?see-all=reviews&platform=iphone
+
+9) CASH DRAWER / CASH COUNTER   query: site:apps.apple.com cash drawer count till
+   Verdict: CROWDED for "cash counter" (6 titles) and "cash drawer" (2). US-GAP signal: Money Counter is "built for US dollar denominations", so a counter localized into 50 languages and currencies (EUR, CZK, PLN, JPY, INR, BRL...) is possible, but Tilly Tally already supports several currencies. Untested: "petty cash" book, event/bake-sale cash box, church offering (see 8).
+   - Cash Drawer Cool Counting App | https://apps.apple.com/pk/app/cash-drawer-cool-counting-app/id6760420497
+   - Tilly Tally (Cash Counter) | https://apps.apple.com/us/app/tilly-tally-cash-counter/id1454465678 | iPad, multi-currency, multiple drawers
+   - Money Counter: Cash & Coins | https://apps.apple.com/us/app/money-counter-cash-coins/id6757389042 | USD only; mentions tip jar and petty cash
+   - Cash Drawer Keeper | https://apps.apple.com/gb/app/cash-drawer-keeper/id6451430691 (sr: https://apps.apple.com/sr/app/cash-drawer-keeper/id6451430691) | counting, replenishment and deposit
+   - Cash Register Counter | https://apps.apple.com/us/app/cash-register-counter/id1617114923
+   - Cash Counter Totals Calculator | https://apps.apple.com/us/app/cash-counter-totals-calculator/id6758898081
+   - Cash Count Deluxe | https://apps.apple.com/us/app/cash-count-deluxe/id1628018753
+   - Money Calculator: Cash Counter | https://apps.apple.com/tt/app/money-calculator-cash-counter/id6776553279
+
+10) TIP POOL CALCULATOR   query: site:apps.apple.com tip pool calculator restaurant
+   Verdict: CROWDED (5 titles target tip pool/tip out/tip split). Untested angles: a UK "tronc" record-keeper under the Employment (Allocation of Tips) Act 2023 (in force Oct 2024; written policy plus 3-year records; possible reverse gap), and a US tip-income tracker for the 2025 "no tax on tips" deduction.
+   - Tip Out: Tip Pool Calculator | https://apps.apple.com/ph/app/tip-out-staff-tip-calculator/id6759682320 (ca: https://apps.apple.com/ca/app/tip-out-staff-tip-calculator/id6759682320)
+   - Tip-Split | https://apps.apple.com/us/app/tip-split/id6755898031
+   - Simple Tip Pool | https://apps.apple.com/us/app/simple-tip-pool/id1434776478 | hours, points, % for barbacks
+   - Tip Calc Log & Tipping Calculator for Restaurant | https://apps.apple.com/us/app/tip-calc-log-tipping-calculator-for-restaurant/id1059318860
+   - Tipout Divider | https://apps.apple.com/us/app/tipout-divider/id6479544605
+   - TipOut - Staff Tip Calculator | https://apps.apple.com/us/app/tipout-staff-tip-calculator/id6760897005
+   - Tip Calculator - GratuityPro | https://apps.apple.com/us/app/tip-calculator-gratuitypro/id6746385808
+   - Tipity - Tip Calculator | https://apps.apple.com/us/app/tipity-tip-calculator/id6444921554
+   - Tip Calculator | https://apps.apple.com/us/app/tip-calculator/id543096939
+
+11) MOVE-IN / MOVE-OUT RENTAL INSPECTION   query: site:apps.apple.com move in move out inspection rental
+   Verdict: CROWDED in English/US (8 dedicated, several AI). US-GAP angle, not checked in local stores: a tenant-side handover protocol localized under local legal terms (FR "état des lieux", DE "Wohnungsübergabeprotokoll", CZ "předávací protokol"). Untested: an Airbnb/short-term-rental turnover cleaning checklist with photo proof, aimed at cleaners.
+   - Keyturn - Rental inspection | https://apps.apple.com/us/app/keyturn-rental-inspection/id6451185509
+   - Rental Inspector | https://apps.apple.com/us/app/rental-inspector/id990917668
+   - MoveSnap | https://apps.apple.com/gb/app/movesnap/id6788945488 | tenants, landlords, PMs (UK)
+   - Tenant Inspect (Rental Report) | https://apps.apple.com/us/app/tenant-inspect-rental-report/id6450515110 | renter-side, timestamped photos
+   - RentCheck | https://apps.apple.com/us/app/rentcheck/id1134017691 | PARENT-like leader (resident-guided inspections)
+   - Pendo Rental | https://apps.apple.com/us/app/pendo-rental/id1170272824
+   - Mono - move-in inspections | https://apps.apple.com/xk/app/mono-move-in-inspections/id6615071171 (us: https://apps.apple.com/us/app/mono-property-inspections/id6615071171)
+   - Rental Property Inspections | https://apps.apple.com/us/app/rental-property-inspections/id6447664554 (tz: https://apps.apple.com/tz/app/rental-property-inspections/id6447664554)
+
+12) BALLOON GARLAND CALCULATOR   query: site:apps.apple.com balloon garland calculator
+   Verdict: SPARSE. 3 titles (Balloon Calculator at $0.99 with a 5.0 rating, Balloon Brain, BalloonTools). Balloon Calculator counts "balloons per foot", so it is imperial/US-centric; a metric version localized for LatAm/EU/Middle East plus a quote/invoice PDF for balloon-decor businesses is a plausible US-gap idea.
+   - Balloon Calculator | https://apps.apple.com/us/app/balloon-calculator/id6747648037 | $0.99, 5.0, garland length x colours, Watch app
+   - Balloon Brain | https://apps.apple.com/us/app/balloon-brain/id6764686900 | arches, organic garlands, columns, helium
+   - Creador (Party Designer) | https://apps.apple.com/gr/app/creador-party-designer/id6469189292
+   - BalloonTools | https://apps.apple.com/es/app/balloontools/id1406906441?l=en-GB
+   - (irrelevant) Hot Air Balloon Lift Calc | https://apps.apple.com/us/app/hot-air-balloon-lift-calc/id1444265786 ; Balloon Nav | https://apps.apple.com/us/app/balloon-nav/id1569290375
+
+======================================================================
+B. SUMMARY — CROWDED vs OPEN
+======================================================================
+CROWDED (drop or only with a localized/metric twist): painting estimate (6+), HACCP/temperature log (8), move-in inspection (8), cash counter (6), tip pool (5), fire extinguisher/fire inspection (6).
+MEDIUM: notary journal (2 journal titles, 6 notary), tattoo consent (2 direct, 7 incl. studio apps), vending operator (about 4 operator apps; VendSoft strong).
+OPEN / SPARSE: church offering count (0), farrier (3, small niche), balloon garland/decor business (3, imperial-only leader).
+Strongest US-gap leads found: localized cash counter (Money Counter is USD-only); localized tattoo/PMU consent (US-state forms); metric balloon calculator and quote tool; tenant handover protocol under local legal names; metric painter estimate.
+
+======================================================================
+C. CANDIDATES NOT YET CHECKED (brainstorm; none searched)
+======================================================================
+Trades estimate/invoice: roofing estimate, house-cleaning estimate/invoice, pressure-washing estimate, lawn-care invoice, mobile auto-detailing invoice (+vehicle condition photos), window cleaning quote, carpet cleaning, junk removal (truck-load pricing), Christmas-light install quote, wallpaper installer estimate, epoxy floor/garage coating estimate, tree service/arborist, locksmith, piano tuner service log, pool service chemical log, pest control report, HVAC refrigerant log, chimney sweep report, snow removal log (timestamped proof of service), handyman.
+Beauty/pets: dog grooming client log, lash map/lash tech client cards, hair colour formula record, PMU/microblading consent, patch-test log, nail tech.
+Compliance: cooling log (2-stage), vaccine/medication fridge log, legionella water-temp log (UK), HACCP plan builder, food day-dot labels, allergen matrix (EU 14 / UK Natasha's Law), DVIR pre-trip vehicle inspection, forklift daily checklist, AED/first-aid check log, UK fire log book, fire-door inspection, security guard daily activity report, construction daily log, punch list.
+Money/admin: petty cash book (DE "Kassenbuch" caution: GoBD), event/bake-sale cash box, tronc records (UK), tips-tax tracker (US 2025), customer credit ledger (Khatabook model for LatAm/Africa), commission tracker, nanny/caregiver hours, crew time card, notary signing-agent tracker.
+Sales/inventory: offline catalog/quote builder for wholesale reps, trade-show lead capture (on-device card OCR), door-knocking tracker, open-house sign-in kiosk, tool tracker (contractors), key log (property managers), stocktake/bar inventory, craft-fair sales tracker, screen-printing/embroidery/laser-engraving/3D-print pricing calculators, cake/bakery pricing, florist recipe pricing, film call-sheet maker, meeting minutes (on-device speech), horse-boarding billing, church kids check-in (offline, labels).
+
+======================================================================
+D. CAVEATS
+======================================================================
+- Saturation counts come from the ~10 results per query; they are not a full store scan.
+- No ratings or review counts were visible in snippets (except Balloon Calculator: $0.99, 5.0).
+- No demand searches (reddit/"best X app") were run, so demand is unverified for every niche above.
+- The ideas JSON (ideas/business.json) was intentionally NOT written, per coordinator instruction.

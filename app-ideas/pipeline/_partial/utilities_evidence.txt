@@ -1,0 +1,10 @@
+# Utilities — evidence from 4 searches (2026-09-30)
+- Timegrapher (watch accuracy via mic): KEEP, ~4 apps, reviews complain about unstable readings:
+  https://apps.apple.com/us/app/timegrapher-watch-accuracy/id6450460771
+  https://apps.apple.com/us/app/chronolog-watch-accuracy/id6452083510
+  https://apps.apple.com/us/app/watch-accuracy-checker/id6478476307
+  https://apps.apple.com/mx/app/timegrapher-watch-accuracy/id6788081843
+- Controller stick-drift tester: DROP (7+ apps, many 2025–26).
+- Video compressor for Discord: DROP (8+ apps).
+- Calendar spam cleaner: WEAK (Calendar AdBlocker id1575471324, Calendar Spam Cleaner id6787564566; demand unclear).
+Unchecked (50+): LiDAR firewood volume (cords + ster/Raummeter DE/CZ), stockpile volume, fish length ruler; tire age from DOT code; water-heater age from serial; on-screen bolt/screw gauge; 4x4 inclinometer; motorcycle lean angle; RV/trailer leveling; solar tilt; garden sun hours; grow-light PPFD meter; LED flicker meter; vibration meter; neighbour noise log; RT60 reverb meter; speaker polarity; dead pixel test; used-iPhone check; Wake-on-LAN; rigging, conduit bending, HVAC superheat/subcool, pipe offset, board feet (+ metric timber volume); epoxy resin, soap lye, 3D print cost; pool test strip reader; ring sizer; PD meter.

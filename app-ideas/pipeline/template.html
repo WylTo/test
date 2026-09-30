@@ -1,0 +1,476 @@
+<title>Atlas niche aplikací</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a nautical-chart ledger. Title block like a chart cartouche, then the leaderboard,
+   a category grid, and a long list of "soundings" (ideas) that unfold into full dossiers.
+   Sea blue = opportunity depth, chart magenta = hazards (devil's advocate), buoy colours = verdicts. */
+:root {
+  --paper: #f2f5f3;
+  --panel: #e7eeec;
+  --card: #fbfcfb;
+  --ink: #0f2a37;
+  --ink-2: #4b6371;
+  --rule: #c7d4d3;
+  --sea: #1f6688;
+  --sea-soft: #d5e6ed;
+  --magenta: #a81f68;
+  --magenta-soft: #f6e3ed;
+  --go: #1d7447;
+  --go-soft: #d8eee1;
+  --maybe: #9a6b00;
+  --maybe-soft: #f5ead0;
+  --kill: #b0271f;
+  --kill-soft: #f7dedb;
+  --display: "Newsreader", "Iowan Old Style", Georgia, serif;
+  --body: "IBM Plex Sans", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  --r: 6px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0c1a21; --panel: #12242d; --card: #10212a; --ink: #e2ebed; --ink-2: #93a9b3;
+    --rule: #26404b; --sea: #6cb4d6; --sea-soft: #16394a; --magenta: #eb82ba; --magenta-soft: #37182a;
+    --go: #5dc793; --go-soft: #143626; --maybe: #e2bb52; --maybe-soft: #3a2f12; --kill: #f2837b; --kill-soft: #3d1a17;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0c1a21; --panel: #12242d; --card: #10212a; --ink: #e2ebed; --ink-2: #93a9b3;
+  --rule: #26404b; --sea: #6cb4d6; --sea-soft: #16394a; --magenta: #eb82ba; --magenta-soft: #37182a;
+  --go: #5dc793; --go-soft: #143626; --maybe: #e2bb52; --maybe-soft: #3a2f12; --kill: #f2837b; --kill-soft: #3d1a17;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--paper); color: var(--ink); font: 15px/1.55 var(--body); margin: 0; }
+a { color: var(--sea); text-underline-offset: 2px; }
+a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid var(--sea); outline-offset: 2px; border-radius: 3px;
+}
+.wrap { max-width: 1180px; margin: 0 auto; padding-inline: 20px; padding-block: 28px 80px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 600; text-wrap: balance; margin: 0; }
+h2 { font-size: 30px; line-height: 1.15; letter-spacing: -0.01em; }
+h2 em, h1 em { font-style: italic; font-weight: 400; }
+.eyebrow { font: 500 11.5px/1.3 var(--mono); letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-2); }
+.num { font-family: var(--mono); font-variant-numeric: tabular-nums; }
+
+/* Title block */
+.titleblock { border: 1.5px solid var(--ink); padding: 26px 28px 24px; position: relative; background: var(--card); }
+.titleblock::after { content: ""; position: absolute; inset: 5px; border: 0.5px solid var(--ink); pointer-events: none; opacity: 0.45; }
+.titleblock h1 { font-size: clamp(36px, 6vw, 64px); line-height: 1.02; letter-spacing: -0.02em; margin-top: 10px; }
+.lede { font-size: 17px; max-width: 68ch; margin: 14px 0 0; color: var(--ink); }
+.soundings { display: flex; flex-wrap: wrap; gap: 10px 28px; margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--rule); }
+.sounding { display: grid; gap: 2px; }
+.sounding b { font: 500 26px/1 var(--mono); font-variant-numeric: tabular-nums; }
+.sounding span { font-size: 12.5px; color: var(--ink-2); }
+.sounding.go b { color: var(--go); } .sounding.maybe b { color: var(--maybe); } .sounding.kill b { color: var(--kill); }
+.caveat { margin-top: 18px; padding: 12px 14px; background: var(--magenta-soft); border-left: 3px solid var(--magenta); font-size: 14px; max-width: 90ch; }
+.caveat b { color: var(--magenta); }
+.toc { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 22px 0 8px; font-size: 14px; }
+.toc a { text-decoration: none; border-bottom: 1px solid var(--rule); color: var(--ink); }
+.toc a:hover { border-color: var(--sea); color: var(--sea); }
+
+section { margin-top: 56px; }
+.sec-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 24px; margin-bottom: 16px; border-bottom: 1.5px solid var(--ink); padding-bottom: 10px; }
+.sec-head p { margin: 0; color: var(--ink-2); font-size: 14px; max-width: 70ch; }
+
+/* Pills */
+.pill { display: inline-block; font: 600 11px/1 var(--mono); letter-spacing: 0.08em; padding: 4px 7px 3px; border-radius: 3px; border: 1px solid currentColor; white-space: nowrap; }
+.pill.go { color: var(--go); background: var(--go-soft); }
+.pill.maybe { color: var(--maybe); background: var(--maybe-soft); }
+.pill.kill { color: var(--kill); background: var(--kill-soft); }
+.pill.none { color: var(--ink-2); background: var(--panel); }
+.tag { display: inline-block; font: 500 11px/1 var(--mono); padding: 4px 6px 3px; border-radius: 3px; background: var(--sea-soft); color: var(--sea); white-space: nowrap; letter-spacing: 0.04em; }
+.tag.us { background: var(--panel); color: var(--ink); border: 1px dashed var(--ink-2); }
+
+/* Top 30 table */
+.tablewrap { overflow-x: auto; border: 1px solid var(--rule); background: var(--card); border-radius: var(--r); }
+table { border-collapse: collapse; width: 100%; font-size: 14px; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--rule); vertical-align: top; }
+th { font: 500 11px/1.2 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; color: var(--ink-2); background: var(--panel); position: sticky; top: 0; }
+td.r, th.r { text-align: right; }
+tbody tr:last-child td { border-bottom: 0; }
+tbody tr { cursor: pointer; }
+tbody tr:hover td { background: var(--sea-soft); }
+td .t { display: block; color: var(--ink-2); font-size: 12.5px; margin-top: 2px; }
+td .n { font-weight: 600; }
+
+/* Category grid */
+.catgrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 12px; }
+.cat { text-align: left; background: var(--card); border: 1px solid var(--rule); border-radius: var(--r); padding: 14px 14px 12px; cursor: pointer; font: inherit; color: inherit; display: grid; gap: 8px; min-width: 0; }
+.cat:hover { border-color: var(--sea); }
+.cat h3 { font-size: 19px; }
+.cat .en { font: 400 11.5px/1 var(--mono); color: var(--ink-2); letter-spacing: 0.04em; }
+.cat .bar { display: flex; height: 6px; border-radius: 3px; overflow: hidden; background: var(--panel); }
+.cat .bar i { display: block; height: 100%; }
+.cat .bar .g { background: var(--go); } .cat .bar .m { background: var(--maybe); } .cat .bar .k { background: var(--kill); }
+.cat .row { display: flex; justify-content: space-between; gap: 8px; font-size: 12.5px; color: var(--ink-2); }
+.cat .best { font-size: 13.5px; }
+.cat .best b { font-weight: 600; }
+
+/* Filters */
+.filters { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 5; background: var(--paper); padding-block: 10px; border-bottom: 1px solid var(--rule); display: flex; flex-wrap: wrap; gap: 8px 10px; align-items: center; }
+.filters input[type="search"], .filters select { font: inherit; font-size: 14px; color: var(--ink); background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 7px 9px; min-width: 0; }
+.filters input[type="search"] { flex: 1 1 220px; }
+.filters select { flex: 0 1 auto; max-width: 100%; }
+.seg { display: inline-flex; border: 1px solid var(--rule); border-radius: 4px; overflow: hidden; }
+.seg button { font: 500 12px/1 var(--mono); letter-spacing: 0.05em; background: var(--card); color: var(--ink-2); border: 0; padding: 9px 10px; cursor: pointer; }
+.seg button + button { border-left: 1px solid var(--rule); }
+.seg button[aria-pressed="true"] { background: var(--ink); color: var(--paper); }
+.chk { display: inline-flex; gap: 6px; align-items: center; font-size: 13.5px; color: var(--ink-2); cursor: pointer; }
+.count { font: 500 12.5px/1 var(--mono); color: var(--ink-2); margin: 14px 0 8px; }
+
+/* Idea list */
+ol.ideas { list-style: none; margin: 0; padding: 0; display: grid; gap: 8px; }
+.idea { background: var(--card); border: 1px solid var(--rule); border-radius: var(--r); min-width: 0; }
+.idea.kill-row { opacity: 0.86; }
+.idea > details > summary { list-style: none; cursor: pointer; display: grid; grid-template-columns: 56px minmax(0, 1fr) auto 118px; gap: 14px; align-items: center; padding: 12px 14px; }
+.idea > details > summary::-webkit-details-marker { display: none; }
+.idea > details[open] > summary { border-bottom: 1px solid var(--rule); }
+.rk { font: 500 13px/1 var(--mono); color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.rk small { display: block; font-size: 10.5px; margin-top: 4px; }
+.main { min-width: 0; }
+.nm { font-family: var(--display); font-size: 20px; font-weight: 600; line-height: 1.2; }
+.tg { display: block; color: var(--ink-2); font-size: 14px; margin-top: 2px; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px; justify-content: flex-end; align-items: center; max-width: 290px; }
+.meta .c { font-size: 12.5px; color: var(--ink-2); white-space: nowrap; }
+.sc { display: grid; gap: 5px; justify-items: end; }
+.sc b { font: 500 22px/1 var(--mono); font-variant-numeric: tabular-nums; }
+.sc .depth { width: 100%; height: 7px; background: var(--panel); border-radius: 2px; position: relative; overflow: hidden; }
+.sc .depth i { position: absolute; inset: 0 auto 0 0; background: var(--sea); }
+.sc span { font-size: 11.5px; color: var(--ink-2); white-space: nowrap; }
+
+.body { padding: 18px 18px 20px; display: grid; gap: 20px; }
+.pitch { font-family: var(--display); font-size: 19px; line-height: 1.5; max-width: 75ch; margin: 0; }
+.cols { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 26px; }
+.col { min-width: 0; display: grid; gap: 14px; align-content: start; }
+.blk h4 { font: 500 11px/1.2 var(--mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--ink-2); margin: 0 0 5px; }
+.blk p { margin: 0; }
+.blk ul { margin: 0; padding-left: 18px; display: grid; gap: 3px; }
+.money { display: flex; flex-wrap: wrap; gap: 8px 22px; margin-top: 8px; }
+.money div { display: grid; }
+.money b { font: 500 18px/1.2 var(--mono); font-variant-numeric: tabular-nums; }
+.money span { font-size: 12px; color: var(--ink-2); }
+.money .low b { color: var(--kill); }
+.kwt { width: 100%; font-size: 13px; border: 1px solid var(--rule); border-radius: 4px; }
+.kwt td, .kwt th { padding: 6px 8px; }
+.kwt td:first-child { font-family: var(--mono); font-size: 12.5px; white-space: nowrap; }
+.dots { display: inline-flex; gap: 2px; vertical-align: middle; }
+.dots i { width: 6px; height: 10px; background: var(--panel); border-radius: 1px; }
+.dots i.on { background: var(--kill); }
+.dots i.on.lo { background: var(--go); }
+.dots i.on.mid { background: var(--maybe); }
+.comps { list-style: none; padding: 0 !important; }
+.comps li { display: grid; gap: 1px; padding: 6px 0; border-bottom: 1px dotted var(--rule); }
+.comps li:last-child { border-bottom: 0; }
+.comps .role { font: 500 10.5px/1 var(--mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); }
+.comps .note { font-size: 13px; color: var(--ink-2); }
+.scores { display: grid; grid-template-columns: auto minmax(0, 1fr) auto; gap: 5px 10px; align-items: center; font-size: 13px; }
+.scores .lab { color: var(--ink-2); white-space: nowrap; }
+.scores .track { height: 8px; background: var(--panel); border-radius: 2px; position: relative; }
+.scores .track i { position: absolute; top: 0; bottom: 0; left: 0; background: var(--sea); border-radius: 2px; }
+.scores .track s { position: absolute; top: -3px; bottom: -3px; width: 2px; background: var(--ink-2); text-decoration: none; }
+.scores .v { font-family: var(--mono); font-size: 12.5px; white-space: nowrap; }
+.scores .v del { color: var(--ink-2); margin-right: 4px; }
+.legendline { font-size: 12px; color: var(--ink-2); margin-top: 6px; }
+.devil { background: var(--magenta-soft); border: 1px solid var(--magenta); border-radius: var(--r); padding: 14px 16px; display: grid; gap: 10px; }
+.devil h4 { font: 500 11px/1.2 var(--mono); letter-spacing: 0.1em; text-transform: uppercase; color: var(--magenta); margin: 0; }
+.devil ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.devil li.rev::marker { color: var(--magenta); }
+.devil .src { font: 500 10px/1 var(--mono); color: var(--magenta); letter-spacing: 0.06em; margin-left: 4px; }
+.devil p { margin: 0; }
+.verdictline { display: flex; gap: 10px; align-items: flex-start; padding-top: 10px; border-top: 1px solid var(--magenta); }
+.apple { font-size: 13px; }
+.muted { color: var(--ink-2); }
+.empty { padding: 30px; text-align: center; color: var(--ink-2); border: 1px dashed var(--rule); border-radius: var(--r); }
+
+/* Method */
+.method { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 18px 28px; }
+.method .blk p + p { margin-top: 8px; }
+pre { background: var(--card); border: 1px solid var(--rule); border-radius: 4px; padding: 10px 12px; overflow-x: auto; font: 13px/1.5 var(--mono); margin: 8px 0 0; }
+code { font-family: var(--mono); font-size: 0.92em; }
+
+@media (max-width: 820px) {
+  .idea > details > summary { grid-template-columns: 40px minmax(0, 1fr) 76px; }
+  .meta { grid-column: 2 / 4; justify-content: flex-start; max-width: none; grid-row: 2; }
+  .sc { grid-row: 1; grid-column: 3; }
+  .cols { grid-template-columns: minmax(0, 1fr); }
+  .nm { font-size: 18px; }
+  .titleblock { padding: 20px 18px; }
+  .wrap { padding-inline: 16px; }
+  .filters { position: static; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .idea { transition: border-color 0.15s; }
+  .idea:hover { border-color: var(--sea); }
+}
+</style>
+
+<div class="wrap">
+  <header class="titleblock">
+    <div class="eyebrow" id="eyebrow">Lapnito · průzkum App Store</div>
+    <h1>Atlas niche <em>aplikací</em></h1>
+    <p class="lede" id="lede"></p>
+    <div class="soundings" id="soundings"></div>
+    <div class="caveat" id="caveat"></div>
+  </header>
+
+  <nav class="toc" aria-label="Obsah">
+    <a href="#top30">Top 30 napříč trhy</a>
+    <a href="#kategorie">Kategorie</a>
+    <a href="#napady">Všechny nápady</a>
+    <a href="#metodika">Metodika a ověření přes Apple</a>
+  </nav>
+
+  <section id="top30">
+    <div class="sec-head">
+      <h2>Top 30 <em>napříč trhy</em></h2>
+      <p>Seřazeno podle výsledného skóre po oponentuře. Kliknutím na řádek otevřete celý rozbor nápadu.</p>
+    </div>
+    <div class="tablewrap"><table>
+      <thead><tr><th class="r">#</th><th>Aplikace</th><th>Kategorie</th><th>Verdikt</th><th class="r">Skóre</th><th class="r">Reálně / měs.</th><th class="r">Vývoj</th></tr></thead>
+      <tbody id="toptbody"></tbody>
+    </table></div>
+  </section>
+
+  <section id="kategorie">
+    <div class="sec-head">
+      <h2>Kategorie <em>App Store</em></h2>
+      <p>Pruh ukazuje poměr verdiktů GO / MAYBE / KILL. Kliknutím zobrazíte nápady jen z dané kategorie.</p>
+    </div>
+    <div class="catgrid" id="catgrid"></div>
+  </section>
+
+  <section id="napady">
+    <div class="sec-head">
+      <h2>Všechny <em>nápady</em></h2>
+      <p>Každý nápad má pitch, klíčová slova, odkazy na konkurenci, výpočet tržeb a oponenturu ďáblova advokáta.</p>
+    </div>
+    <div class="filters" role="search">
+      <input type="search" id="q" placeholder="Hledat název, klíčové slovo, niku…" aria-label="Hledat">
+      <select id="fcat" aria-label="Kategorie"></select>
+      <div class="seg" id="fverdict" role="group" aria-label="Verdikt">
+        <button type="button" data-v="" aria-pressed="true">VŠE</button>
+        <button type="button" data-v="GO" aria-pressed="false">GO</button>
+        <button type="button" data-v="MAYBE" aria-pressed="false">MAYBE</button>
+        <button type="button" data-v="KILL" aria-pressed="false">KILL</button>
+      </div>
+      <label class="chk"><input type="checkbox" id="fus"> Jen US gap</label>
+      <label class="chk"><input type="checkbox" id="foff"> Jen plně offline</label>
+      <select id="fsort" aria-label="Řazení">
+        <option value="score">Řadit: výsledné skóre</option>
+        <option value="rev">Řadit: realistické tržby</option>
+        <option value="blue">Řadit: modrý oceán (konkurence)</option>
+        <option value="demand">Řadit: poptávka</option>
+        <option value="build">Řadit: nejrychlejší vývoj</option>
+      </select>
+    </div>
+    <div class="count" id="count" aria-live="polite"></div>
+    <ol class="ideas" id="list"></ol>
+  </section>
+
+  <section id="metodika">
+    <div class="sec-head">
+      <h2>Metodika <em>a ověření přes Apple</em></h2>
+      <p>Jak nápady vznikly, jak se počítá skóre a jak doplnit přesná čísla z Apple.</p>
+    </div>
+    <div class="method" id="method"></div>
+  </section>
+</div>
+
+<script>
+const D = /*__DATA__*/null;
+(function () {
+  const $ = (s, el = document) => el.querySelector(s);
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const czk = (n) => n == null ? "—" : new Intl.NumberFormat("cs-CZ").format(n) + " Kč";
+  const S = D.stats;
+  const SCORE_LABELS = { demand: "Poptávka", blue_ocean: "Modrý oceán", monetization: "Monetizace", build_ease: "Snadnost vývoje", offline_fit: "Offline", safety: "Bezpečnost (nízké riziko)" };
+  const OFF = { full: "plně offline", mostly: "převážně offline", partial: "částečně online" };
+  const ROLE = { parent: "lídr mateřského trhu", niche: "konkurent v nice", "us-only": "US předloha" };
+  const vpill = (v) => v ? `<span class="pill ${v.toLowerCase()}">${v}</span>` : `<span class="pill none">BEZ OPONENTURY</span>`;
+  const byId = new Map(D.ideas.map(x => [x.id, x]));
+
+  // Header
+  $("#eyebrow").textContent = `Lapnito · průzkum App Store · ${S.generated}`;
+  $("#lede").textContent = `${S.ideas} nápadů na offline aplikace bez serverů v ${S.categories} kategoriích App Store. Každý míří na opomíjenou niku v trhu, který už prokazatelně vydělává, a má cíl aspoň 10 000 Kč čistého měsíčně za ideálních podmínek. Každý nápad navrhl a obhájil jeden výzkumný agent a druhý, nezávislý agent ho jako ďáblův advokát napadl a přeskóroval.`;
+  const sd = [["", S.ideas, "nápadů"], ["", S.categories, "kategorií"], ["go", S.go, "GO — stavět"], ["maybe", S.maybe, "MAYBE — s úpravou"], ["kill", S.kill, "KILL — smetí"], ["", S.us_gap, "US gap nápadů"], ["", S.competitor_links, "odkazů na konkurenci"]];
+  if (S.unreviewed) sd.push(["", S.unreviewed, "bez oponentury"]);
+  $("#soundings").innerHTML = sd.map(([c, n, t]) => `<div class="sounding ${c}"><b>${n}</b><span>${t}</span></div>`).join("");
+  $("#caveat").innerHTML = S.apple_verified
+    ? `<b>Data z Apple jsou doplněna.</b> U klíčových slov, která prošla skriptem <code>verify_apple.py</code>, vidíte počet výsledků v App Store, nasycení titulků, sílu konkurence a to, zda Apple slovo našeptává. Tato data upravila skóre (viz Metodika).`
+    : `<b>Co tato verze zatím neobsahuje:</b> přímá čísla z Apple API (iTunes Search, našeptávač App Store, popularita z Apple Ads). Cloudové prostředí, ve kterém analýza běžela, má Apple domény zablokované. Poptávka a konkurence jsou proto ověřené přes webové vyhledávání skutečných výpisů z App Store: kolik aplikací cílí na danou frázi v názvu, kdo je nejsilnější a jestli mateřský trh vydělává. Přesná Apple čísla doplníte skriptem <code>verify_apple.py</code> (návod je v Metodice), stránka se pak přepočítá.`;
+
+  // Top 30
+  $("#toptbody").innerHTML = D.ideas.slice(0, 30).map(x => `
+    <tr data-go="${esc(x.id)}" tabindex="0">
+      <td class="r num">${x.rank}</td>
+      <td><span class="n">${esc(x.name)}</span><span class="t">${esc(x.tagline)}</span></td>
+      <td>${esc(x.category_cs)}</td>
+      <td>${vpill(x.verdict)}${x.us_gap ? ' <span class="tag us">US GAP</span>' : ""}</td>
+      <td class="r num">${x.score.toFixed(1)}</td>
+      <td class="r num">${czk(x.revenue_czk_realistic)}</td>
+      <td class="r num">${x.build_weeks} týd.</td>
+    </tr>`).join("");
+  $("#toptbody").addEventListener("click", e => { const tr = e.target.closest("tr[data-go]"); if (tr) jump(tr.dataset.go); });
+  $("#toptbody").addEventListener("keydown", e => { if (e.key === "Enter") { const tr = e.target.closest("tr[data-go]"); if (tr) jump(tr.dataset.go); } });
+
+  // Categories
+  $("#catgrid").innerHTML = D.categories.map(c => {
+    const n = c.count || 1;
+    return `<button type="button" class="cat" data-cat="${esc(c.slug)}">
+      <div><h3>${esc(c.name_cs)}</h3><div class="en">${esc(c.name_en)}</div></div>
+      <div class="bar" aria-hidden="true"><i class="g" style="width:${100 * c.go / n}%"></i><i class="m" style="width:${100 * c.maybe / n}%"></i><i class="k" style="width:${100 * c.kill / n}%"></i></div>
+      <div class="row"><span>${c.count} nápadů · GO ${c.go} · MAYBE ${c.maybe} · KILL ${c.kill}</span><span class="num">⌀ ${c.avg}</span></div>
+      <div class="best">Nejlepší: <b>${esc(c.top)}</b> <span class="num muted">${c.top_score.toFixed(1)}</span></div>
+    </button>`;
+  }).join("");
+  $("#catgrid").addEventListener("click", e => {
+    const b = e.target.closest(".cat"); if (!b) return;
+    state.cat = b.dataset.cat; $("#fcat").value = state.cat; render();
+    $("#napady").scrollIntoView({ behavior: "smooth" });
+  });
+
+  // Filters
+  const state = { q: "", cat: "", v: "", us: false, off: false, sort: "score" };
+  $("#fcat").innerHTML = `<option value="">Všechny kategorie</option>` + D.categories.map(c => `<option value="${esc(c.slug)}">${esc(c.name_cs)} (${c.count})</option>`).join("");
+  $("#q").addEventListener("input", e => { state.q = e.target.value.trim().toLowerCase(); render(); });
+  $("#fcat").addEventListener("change", e => { state.cat = e.target.value; render(); });
+  $("#fus").addEventListener("change", e => { state.us = e.target.checked; render(); });
+  $("#foff").addEventListener("change", e => { state.off = e.target.checked; render(); });
+  $("#fsort").addEventListener("change", e => { state.sort = e.target.value; render(); });
+  $("#fverdict").addEventListener("click", e => {
+    const b = e.target.closest("button"); if (!b) return;
+    state.v = b.dataset.v;
+    [...$("#fverdict").children].forEach(x => x.setAttribute("aria-pressed", String(x === b)));
+    render();
+  });
+  const hay = new Map(D.ideas.map(x => [x.id, [x.name, x.tagline, x.pitch, x.niche, x.parent_market, x.category_cs, ...(x.keywords || []).map(k => k.kw), ...(x.competitors || []).map(c => c.name)].join(" ").toLowerCase()]));
+  const sorters = {
+    score: (a, b) => a.rank - b.rank,
+    rev: (a, b) => (b.revenue_czk_realistic ?? -1) - (a.revenue_czk_realistic ?? -1) || a.rank - b.rank,
+    blue: (a, b) => b.final_scores.blue_ocean - a.final_scores.blue_ocean || a.rank - b.rank,
+    demand: (a, b) => b.final_scores.demand - a.final_scores.demand || a.rank - b.rank,
+    build: (a, b) => a.build_weeks - b.build_weeks || a.rank - b.rank,
+  };
+
+  function row(x) {
+    return `<li class="idea${x.verdict === "KILL" ? " kill-row" : ""}" id="i-${esc(x.id)}">
+      <details data-id="${esc(x.id)}">
+        <summary>
+          <span class="rk">#${x.rank}<small>${x.cat_rank}. v kat.</small></span>
+          <span class="main"><span class="nm">${esc(x.name)}</span><span class="tg">${esc(x.tagline)}</span></span>
+          <span class="meta"><span class="c">${esc(x.category_cs)}</span>${vpill(x.verdict)}${x.us_gap ? '<span class="tag us">US GAP</span>' : ""}<span class="tag">${OFF[x.offline] || esc(x.offline)}</span></span>
+          <span class="sc"><b>${x.score.toFixed(1)}</b><span class="depth" aria-hidden="true"><i style="width:${x.score}%"></i></span><span>reálně ${czk(x.revenue_czk_realistic)}</span></span>
+        </summary>
+        <div class="body"></div>
+      </details>
+    </li>`;
+  }
+
+  function dots(n) {
+    const cls = n <= 2 ? "lo" : n <= 5 ? "mid" : "";
+    let s = ""; for (let i = 1; i <= 10; i++) s += `<i class="${i <= n ? "on " + cls : ""}"></i>`;
+    return `<span class="dots" title="nasycení ${n}/10" aria-label="nasycení ${n} z 10">${s}</span>`;
+  }
+
+  function detail(x) {
+    const r = x.review || {};
+    const a = x.scores, f = x.final_scores;
+    const scoreRows = Object.keys(SCORE_LABELS).map(k => {
+      const changed = r.scores && r.scores[k] !== a[k];
+      return `<span class="lab">${SCORE_LABELS[k]}</span>
+        <span class="track"><i style="width:${f[k] * 10}%"></i>${changed ? `<s style="left:calc(${a[k] * 10}% - 1px)" title="původní odhad autora"></s>` : ""}</span>
+        <span class="v">${changed ? `<del>${a[k]}</del>` : ""}${f[k]}/10</span>`;
+    }).join("");
+    const kw = (x.keywords || []).map(k => `<tr><td>${esc(k.kw)}</td><td>${dots(k.saturation)}</td><td>${esc(k.competitor)}<div class="muted">${esc(k.note)}</div></td></tr>`).join("");
+    const comps = (x.competitors || []).map(c => `<li><span class="role">${ROLE[c.role] || esc(c.role)}</span><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.name)} ↗</a>${c.note ? `<span class="note">${esc(c.note)}</span>` : ""}</li>`).join("");
+    const missed = (r.missed_competitors || []).map(c => `<li><span class="role">přehlédnutý konkurent</span><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.name)} ↗</a>${c.note ? `<span class="note">${esc(c.note)}</span>` : ""}</li>`).join("");
+    const risks = (x.devils_advocate || []).map(t => `<li>${esc(t)}</li>`).join("") + (r.extra_risks || []).map(t => `<li class="rev">${esc(t)}<span class="src">OPONENT</span></li>`).join("");
+    const low = x.revenue_czk_realistic != null && x.revenue_czk_realistic < 10000;
+    const apple = (x.apple || []).length ? `<div class="blk apple"><h4>Data z Apple (US)</h4><ul>${x.apple.map(k => `<li><code>${esc(k.keyword)}</code>: ${k.result_count} výsledků, nasycení titulků ${k.title_saturation}/10, nejsilnější v top 3: ${new Intl.NumberFormat("cs-CZ").format(k.top3_max_ratings || 0)} hodnocení, ${k.hint_found ? `Apple slovo našeptává${k.hint_priority != null ? ` (priorita ${k.hint_priority})` : ""}` : "Apple slovo nenašeptává"}</li>`).join("")}</ul></div>` : "";
+    return `
+      <p class="pitch">${esc(x.pitch)}</p>
+      <div class="cols">
+        <div class="col">
+          <div class="blk"><h4>Opomíjená nika</h4><p>${esc(x.niche)}</p></div>
+          <div class="blk"><h4>Mateřský trh, který už vydělává</h4><p>${esc(x.parent_market)}</p></div>
+          <div class="blk"><h4>Pro koho</h4><p>${esc(x.target_user)}</p></div>
+          <div class="blk"><h4>MVP funkce</h4><ul>${(x.features || []).map(t => `<li>${esc(t)}</li>`).join("")}</ul></div>
+          <div class="blk"><h4>Offline</h4><p><span class="tag">${OFF[x.offline] || esc(x.offline)}</span> ${esc(x.offline_note)}</p></div>
+          <div class="blk"><h4>Monetizace</h4><p>${esc(x.monetization)}</p></div>
+          <div class="blk"><h4>Cesta k 10 000 Kč měsíčně</h4><p>${esc(x.revenue_math)}</p>
+            <div class="money"><div><b>${czk(x.revenue_czk_ideal)}</b><span>ideál (autor)</span></div><div class="${low ? "low" : ""}"><b>${czk(x.revenue_czk_realistic)}</b><span>realisticky po 6 měs. (oponent)</span></div><div><b>${x.build_weeks} týd.</b><span>odhad vývoje MVP</span></div></div></div>
+          ${x.us_gap ? `<div class="blk"><h4>US gap</h4><p>${esc(x.us_gap_note)}</p></div>` : ""}
+        </div>
+        <div class="col">
+          <div class="blk"><h4>Klíčová slova (US App Store)</h4><div class="tablewrap"><table class="kwt"><thead><tr><th>Fráze</th><th>Nasycení</th><th>Nejsilnější v nice</th></tr></thead><tbody>${kw}</tbody></table></div>
+            <div class="legendline">Nasycení = kolik aplikací z výsledků vyhledávání má frázi přímo v názvu (0–10). Zelená = volné moře.</div></div>
+          <div class="blk"><h4>Důkaz poptávky</h4><p>${esc(x.demand_evidence)}</p></div>
+          <div class="blk"><h4>Konkurence (odkazy do App Store)</h4><ul class="comps">${comps}${missed}</ul></div>
+          ${apple}
+          <div class="blk"><h4>Skóre po oponentuře</h4><div class="scores">${scoreRows}</div>
+            <div class="legendline">Svislá čárka = původní odhad autora nápadu, pokud ho oponent změnil. Základ ${x.score_base.toFixed(1)}, výsledné skóre ${x.score.toFixed(1)}.</div></div>
+        </div>
+      </div>
+      <div class="devil">
+        <h4>Ďáblův advokát: proč to může selhat</h4>
+        <ul>${risks}</ul>
+        <p><b>Hlavní riziko:</b> ${esc(x.killer_risk)}</p>
+        <p><b>Jak ho zmírnit:</b> ${esc(x.mitigation)}</p>
+        <div class="verdictline">${vpill(x.verdict)}<p>${esc(r.reviewer_note || "Tento nápad zatím neprošel nezávislou oponenturou.")}</p></div>
+      </div>`;
+  }
+
+  const list = $("#list");
+  list.addEventListener("toggle", e => {
+    const d = e.target; if (!(d instanceof HTMLDetailsElement) || !d.open) return;
+    const body = d.querySelector(".body");
+    if (!body.dataset.done) { body.innerHTML = detail(byId.get(d.dataset.id)); body.dataset.done = "1"; }
+  }, true);
+
+  function render() {
+    let xs = D.ideas.filter(x =>
+      (!state.cat || x.category_slug === state.cat) &&
+      (!state.v || x.verdict === state.v) &&
+      (!state.us || x.us_gap) &&
+      (!state.off || x.offline === "full") &&
+      (!state.q || hay.get(x.id).includes(state.q)));
+    xs = xs.slice().sort(sorters[state.sort]);
+    $("#count").textContent = `${xs.length} z ${D.ideas.length} nápadů`;
+    list.innerHTML = xs.length ? xs.map(row).join("") : `<li class="empty">Filtru nic neodpovídá. Zkuste uvolnit kategorii nebo verdikt.</li>`;
+  }
+
+  function jump(id) {
+    state.q = ""; state.cat = ""; state.v = ""; state.us = false; state.off = false;
+    $("#q").value = ""; $("#fcat").value = ""; $("#fus").checked = false; $("#foff").checked = false;
+    [...$("#fverdict").children].forEach(x => x.setAttribute("aria-pressed", String(x.dataset.v === "")));
+    render();
+    const li = document.getElementById("i-" + id); if (!li) return;
+    const d = li.querySelector("details"); d.open = true;
+    li.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  // Method
+  const Wt = D.weights;
+  $("#method").innerHTML = `
+    <div class="blk"><h4>1. Návrh (27 výzkumných agentů)</h4>
+      <p>Každá kategorie App Store dostala vlastního agenta. Ten vymyslel přes 45 kandidátů, u každého přes webové vyhledávání zkontroloval skutečné výpisy z App Store (<code>site:apps.apple.com &lt;fráze&gt;</code>), mateřský trh a důkazy poptávky, a nechal 30 nejlepších. Odkazy na konkurenci jsou převzaté přímo z výsledků vyhledávání, žádné ID není vymyšlené.</p></div>
+    <div class="blk"><h4>2. Oponentura (ďáblův advokát)</h4>
+      <p>Druhý, nezávislý agent každou kategorii napadl: hledal přehlédnuté konkurenty, riziko, že funkci přidá přímo iOS, reálnost poptávky i tržeb a rizika při schvalování v App Review (4.3 spam, 1.4.1, 5.1.1, ochranné známky). Každému nápadu dal verdikt GO / MAYBE / KILL, nové skóre a realistický odhad tržeb po 6 měsících.</p></div>
+    <div class="blk"><h4>3. Výsledné skóre (0–100)</h4>
+      <p>Vážený průměr skóre po oponentuře × 10: poptávka ${Wt.demand * 100} %, modrý oceán ${Wt.blue_ocean * 100} %, monetizace ${Wt.monetization * 100} %, snadnost vývoje ${Wt.build_ease * 100} %, bezpečnost ${Wt.safety * 100} %, offline ${Wt.offline_fit * 100} %. Verdikt pak skóre posune: GO +3, MAYBE 0, KILL −15, bez oponentury −4. Data z Apple (až budou) přidají nejvýš +6 nebo uberou nejvýš −8.</p></div>
+    <div class="blk"><h4>Jak číst tržby</h4>
+      <p>„Ideál“ je autorův výpočet trychtýře (stažení z niche klíčových slov × konverze × cena, po 15% provizi Apple). „Realisticky“ je střízlivý odhad oponenta pro medián po 6 měsících bez reklamy. Kde je realita pod 10 000 Kč, je číslo červeně.</p></div>
+    <div class="blk"><h4>Doplnění přesných dat z Apple</h4>
+      <p>Na svém Macu (nebo v prostředí s povoleným přístupem na <code>itunes.apple.com</code> a <code>search.itunes.apple.com</code>) spusťte ve složce <code>app-ideas</code>:</p>
+      <pre>python3 pipeline/verify_apple.py --top 200
+python3 pipeline/build.py</pre>
+      <p>Skript projde klíčová slova 200 nejlépe hodnocených nápadů (nebo všech s <code>--top 0</code>), stáhne výsledky iTunes Search API a našeptávač App Store, uloží je do <code>apple_data.json</code> a stránka se přepočítá. Dodržuje limit asi 18 dotazů za minutu, 200 nápadů zabere zhruba 45 minut a výsledky se ukládají do mezipaměti, takže přerušený běh lze navázat.</p></div>
+    <div class="blk"><h4>Co data neřeknou</h4>
+      <p>Webové vyhledávání vidí titulky a výřezy popisků, ne skryté pole klíčových slov konkurence ani popularitu z Apple Ads. Nasycení je proto spodní hranice. Před vývojem vítěze si ověřte popularitu klíčových slov zdarma v Apple Ads (vytvořit kampaň, nespouštět) a stáhněte si 2–3 konkurenty.</p></div>`;
+
+  render();
+})();
+</script>

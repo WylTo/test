@@ -1,0 +1,8 @@
+# Education — evidence from 12 searches (2026-09-30)
+SATURATED (6+ title matches, many 2025–26): Morse Koch-method trainers; COLREGs lights & shapes quizzes; nursing dosage calculation; trading-interview mental math; Cyrillic/Greek/Georgian alphabet apps.
+PROMISING:
+1. Teeline shorthand trainer — no App Store app targets it; NCTJ-accredited UK journalism courses teach it (NCTJ owns Teeline; "Teeline Gold Standard" book + CD). No competitor URL yet.
+2. Braille for sighted learners in non-English languages — ~8 apps, all English UEB only: Braille Academy https://apps.apple.com/us/app/braille-academy-play-learn/id1561530189 ; Bonocle Alphabet https://apps.apple.com/fi/app/bonocle-alphabet/id1590436026
+3. Kanji radicals trainer — only 2 radical-first apps: Radical: Kanji Dictionary https://apps.apple.com/us/app/radical-kanji-dictionary/id6760137001 ; Kanji Maker https://apps.apple.com/us/app/kanji-maker-make-kanji-from-radicals/id1000441353
+4. Soroban / flash anzan — moderate (~6); strongest Anzan Flash Soroban Math https://apps.apple.com/us/app/anzan-flash-soroban-math/id1627090066
+Unchecked: non-US exam prep (Canadian & German amateur radio, EU A2 drone), fingerspelling for BSL/Auslan/Libras, Japanese pitch accent, aviation & maritime English, alto clef, drum rudiments, SQL/regex/shortcut trainers.

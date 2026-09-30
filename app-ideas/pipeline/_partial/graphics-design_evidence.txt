@@ -1,0 +1,208 @@
+CATEGORY: Graphics & Design (graphics-design)
+STATUS: partial. 18 WebSearch calls succeeded, then the session-wide budget (200/200) ran out.
+ideas/graphics-design.json was NOT written, per the coordinator's instruction.
+All URLs below were copied verbatim from WebSearch results. Saturation = number of apps.apple.com
+results whose title literally targets the phrase (out of ~10 returned).
+
+=====================================================================
+A. CROWDED NICHES (saturation >= 5, avoid or treat only as parent-market proof)
+=====================================================================
+1) "cross stitch pattern maker from photo": saturation 8
+   https://apps.apple.com/us/app/pattern-maker-for-cross-stitch/id6757927393   (Pattern Maker for Cross Stitch)
+   https://apps.apple.com/us/app/cross-stitch-patterns/id6757147214            (Cross Stitch Patterns)
+   https://apps.apple.com/us/app/cross-stitch-pattern-maker-pro/id6758528237   (Cross Stitch Pattern Maker Pro)
+   https://apps.apple.com/us/app/stitchly-cross-stitch/id1467867656            (Stitchly: Cross stitch, claims "best cross stitch pattern maker")
+   https://apps.apple.com/us/app/cross-stitch-embroidery-maker/id1353303895    (Cross Stitch: Embroidery Maker)
+   https://apps.apple.com/us/app/cross-stitch-pattern-maker/id6479785282       (Cross Stitch Pattern Maker)
+   https://apps.apple.com/us/app/cross-stitch-creator/id897287820              (Cross Stitch Creator, includes progress tracking)
+   https://apps.apple.com/us/app/magic-needle-cross-stitch/id1323730066        (Magic Needle: Cross-Stitch)
+   Note: many are new in 2025–26 (id675x…), so the head term is a red ocean.
+
+2) "fuse bead pattern maker": saturation 6
+   https://apps.apple.com/tt/app/fuse-beads-pattern-maker/id6799906107         (Fuse Beads: Pattern Maker, Shanghai dev, PNG/PDF export)
+   https://apps.apple.com/us/app/perlypop-perler-beads/id1450794449            (Perlypop, market leader)
+   https://apps.apple.com/us/app/fusebeads/id6766812660                        (FuseBeads)
+   https://apps.apple.com/us/app/beads-creator-bead-patterns/id1235585928      (Beads Creator, snippet: "downloaded 1.5 million times", strong proof of demand for photo-to-craft converters)
+   https://apps.apple.com/us/app/bead-master/id962007863                       (Bead Master)
+   https://apps.apple.com/us/app/beads-art-creator/id1388892121                (Beads Art Creator)
+
+3) "quilt design app": saturation 8
+   https://apps.apple.com/gb/app/quilters-designwall/id6765559974              (Quilters DesignWall, £3.99 paid)
+   https://apps.apple.com/us/app/quiltler-quilt-designer/id1120958195          (Quiltler, $9.99 paid, iPad)
+   https://apps.apple.com/us/app/quiltography-quilt-design-made-simple/id585991997 (Quiltography, "#1 Lifestyle / best selling quilting app", leader)
+   https://apps.apple.com/us/app/quilt-wizard/id475622761                      (Quilt Wizard)
+   https://apps.apple.com/us/app/quiltler-2-quilt-app/id1495594391             (Quiltler 2)
+   https://apps.apple.com/us/app/tidestitch-quilt-designer/id6785949038        (TideStitch, on-point/brick/bargello layouts)
+   https://apps.apple.com/us/app/swatchit-quilt-color-design/id6760553382?uo=2 (Swatchit, photo of pattern to editable quilt)
+   https://apps.apple.com/us/app/quiltler-3-quilt-design/id6755831082          (Quiltler 3)
+   Note: paid-upfront iPad apps at $4–10 sell here, so quilters pay. Sub-niches not checked: English paper piecing (EPP/hexies), barn quilts.
+
+4) "string art generator": saturation 6
+   https://apps.apple.com/be/app/string-art-diy/id1599931263
+   https://apps.apple.com/tr/app/string-art-maker/id6474099905
+   https://apps.apple.com/us/app/string-art-generator-penelope/id6749775842
+   https://apps.apple.com/sa/app/string-art-maker-ai-craft/id6781164050
+   https://apps.apple.com/id/app/genie-strings/id6747290176                    (nail sequence plus to-scale PDF)
+   https://apps.apple.com/us/app/string-art/id6443872608
+
+5) "tattoo stencil maker": saturation 6 (mostly new AI apps from 2025–26)
+   https://apps.apple.com/us/app/tattoo-stencil-maker/id6743803500             (Bravycode)
+   https://apps.apple.com/us/app/stencil-maker-tattoo/id6760659182
+   https://apps.apple.com/us/app/stencify-tattoo-stencil-maker/id6753107716
+   https://apps.apple.com/us/app/tattoo-stencil-maker-stencr/id6774958420
+   https://apps.apple.com/us/app/stencilpro-stencil-maker/id6753896745         (generic "Stencil Maker" title)
+   https://apps.apple.com/pl/app/tattoo-stencil-maker-inkline/id6759935181
+   Note: the tattoo stencil head term is taken. Non-tattoo stencil sub-niches were NOT checked: multi-layer spray/airbrush stencils, scroll saw patterns, henna stencils.
+
+6) "paint by numbers generator from photo": saturation 7
+   https://apps.apple.com/us/app/paintme-color-by-number/id6761812316
+   https://apps.apple.com/us/app/pixel-color-paint-by-number/id1436858922
+   https://apps.apple.com/us/app/paint-the-photo-by-number-game/id1532183952
+   https://apps.apple.com/us/app/colorcrafter-paint-by-numbers/id6745644936
+   https://apps.apple.com/us/app/paint-by-number-creator/id1533754947          (prints outline plus optimized palette)
+   https://apps.apple.com/us/app/paint-by-number-creator-lite/id1535640970
+   https://apps.apple.com/us/app/paint-by-numbers-creator/id1044268277
+
+7) "acrylic paint color mixing recipe": saturation 8+ (wave of 2025–26 apps, some use Kubelka-Munk)
+   https://apps.apple.com/us/app/mixable-paint-mixing-guide/id6769655280      (watercolor/acrylic/oil)
+   https://apps.apple.com/us/app/mix-paint/id6758065640
+   https://apps.apple.com/au/app/mixrs/id6751583367                            (tied to the Kolor Kingdom paint kit)
+   https://apps.apple.com/ba/app/impasto-paint-recipes/id6760235665           (Kubelka-Munk)
+   https://apps.apple.com/sa/app/mixmaster-miniature-paint-mix/id6772663734   (miniature painters, also crowded)
+   https://apps.apple.com/us/app/real-paint-mixing-tools/id1431308757
+   https://apps.apple.com/us/app/real-paint-mixing-tools-pro/id1593248741
+   https://apps.apple.com/us/app/mixura-paint-color-matcher/id6757199310      (Golden/Liquitex/W&N brand databases)
+   https://apps.apple.com/us/app/color-maker-lab/id6745688088
+   https://apps.apple.com/us/app/minipaints/id1473735851
+   Note: artist paint mixing is a red ocean. Unchecked adjacent audiences that may still be open: icing/food-coloring mixing, polymer clay color recipes, hand-dyed yarn recipes.
+
+8) "hair color formula stylist": saturation 7
+   https://apps.apple.com/us/app/colorer/id6758462954                          (inventory plus formulas)
+   https://apps.apple.com/us/app/blendsor-hair-color-formulas/id6756733691     (AI formula from photo)
+   https://apps.apple.com/us/app/s-h-e-colorist/id1621950604                   (shade mixing simulation)
+   https://apps.apple.com/us/app/gloss-save-formulas-clients/id1212498579
+   https://apps.apple.com/us/app/color-coach-hair-formulation/id6463155438     (brand conversions)
+   https://apps.apple.com/lt/app/color-calculator-bes-usa/id1465993560         (brand app)
+   https://apps.apple.com/sg/app/hair-dye-selection/id6760969114
+   https://apps.apple.com/us/app/charm-save-formulas-clients/id1467161766
+   Unchecked sub-niche: a hair color theory / level and toner trainer for cosmetology students (DE Friseur-Azubi Farblehre is a possible localization angle).
+
+9) "seasonal color analysis": saturation 8+
+   https://apps.apple.com/kw/app/dressika-seasonal-colors/id1536745174        (Dressika, older leader)
+   https://apps.apple.com/us/app/colour-seasonal-analysis/id6758033488
+   https://apps.apple.com/us/app/season-color-analysis-colorlo/id6755318096
+   https://apps.apple.com/rs/app/color-analysis-season-finder/id6670609301
+   https://apps.apple.com/us/app/drape-seasonal-color-analysis/id6760720967   (12-season quiz)
+   https://apps.apple.com/uy/app/mycolortype-color-analysis/id6758907793
+   https://apps.apple.com/us/app/color-analysis-season-palette/id6740197585
+   https://apps.apple.com/us/app/palette-color-analysis/id6483686620
+   Note: the consumer side is a red ocean. Unchecked: a pro "digital draping" tool for image consultants.
+
+=====================================================================
+B. MODERATE NICHES (saturation 3–5)
+=====================================================================
+10) "knitting chart maker colorwork": about 4 dedicated
+   https://apps.apple.com/us/app/knitting-chart/id1251317736                   (Knitting Chart, image to chart, 500x500, PDF, C2C mode)
+   https://apps.apple.com/us/app/patterngenius/id906746599                     (PatternGenius, AllGenius subscription)
+   https://apps.apple.com/us/app/knit-pro-pattern-maker/id1601194384           (Knit Pro)
+   https://apps.apple.com/ph/app/knit-crochet/id6744092783                     (Knit & Crochet by WeaveHelper)
+   https://apps.apple.com/ca/app/patternum-pattern-creator/id1536002920        (Patternum)
+   https://apps.apple.com/us/app/knitting-buddy/id958827195                    (Knitting Buddy)
+   Unchecked sub-niches: machine-knitting punchcard designer (24-stitch repeats), floor-loom weaving drafts (WIF).
+
+11) "C2C crochet graph": about 4 dedicated (Tinnkle, Gridchet, Graphghan, Crochet Chart)
+   https://apps.apple.com/us/app/tinnkle-crochet-patterns/id6797259817         (C2C/graphgan/tapestry from image)
+   https://apps.apple.com/is/app/my-row-counter-knit-crochet/id1342608792      (row counter with C2C highlighter)
+   https://apps.apple.com/us/app/gridchet/id6745152893
+   https://apps.apple.com/us/app/crochet-chart/id1473051046
+   https://apps.apple.com/us/app/graphghan-pattern-creator/id6448245144
+   https://apps.apple.com/us/app/crochetcreator/id1477773801
+   Unchecked sub-niches: mosaic crochet (overlay/inset), filet crochet charts (strong in BR/LatAm/EE).
+
+12) "friendship bracelet pattern": 3 dedicated (trend peaked in 2023)
+   https://apps.apple.com/us/app/friendship-bracelet/id1558889177              (straight/oblique weaving patterns)
+   https://apps.apple.com/us/app/friendship-bracelet-designer/id1597925328     (color knots, pattern auto-generated)
+   https://apps.apple.com/us/app/friendship-bracelets/id6463438950             (letter-bead bracelets)
+   https://apps.apple.com/us/app/friendship-bracelet-trade-swap/id6475718007   (game)
+   Unchecked adjacent niches: kumihimo pattern designer, tablet/card weaving and inkle loom designer.
+
+13) "diamond painting tracker": 4 dedicated
+   https://apps.apple.com/us/app/diamond-painting-logbook/id1440806990         ($0.99 logbook)
+   https://apps.apple.com/us/app/gemsflow-diamond-painting/id1497430162        (logbook, kit store, pixelation preview, drill stock)
+   https://apps.apple.com/gb/app/diamood-diamond-painting/id6469818890
+   https://apps.apple.com/mv/app/dotterly-diamond-painting/id6446167461
+   Unchecked sub-niche: custom photo-to-diamond-painting chart with drill counts (GemsFlow partly overlaps).
+
+14) "pumpkin carving stencil": 2–3 relevant (heavily seasonal, October)
+   https://apps.apple.com/us/app/instagourd-halloween-carving/id1439757596     (stencil library)
+   https://apps.apple.com/us/app/pumpkin-masters/id1491958901                  (brand, selfie to carvable design)
+   https://apps.apple.com/us/app/jack-o-lantern/id334831470?ls=1               (old 3D viewer)
+   https://apps.apple.com/us/app/cooc/id6764479741                             (carving journal/planner)
+   https://apps.apple.com/us/app/stencil-art-3d/id1640483617                   (unclear, probably a game)
+   Idea: photo to pumpkin stencil with automatic "bridges" for islands. The same engine also covers scroll saw and spray stencils. Launch for the 2027 season.
+
+15) "laser engraving photo dithering": mostly machine-brand companion apps. Generic prep tools are sparse.
+   https://apps.apple.com/us/app/laserpecker-design-space/id6445970960        (brand, dithering by default)
+   https://apps.apple.com/us/app/engrave-me/id488061300                        (old generic app, Atkinson dithering, the only generic one found)
+   https://apps.apple.com/au/app/laser-engraving/id1519391261
+   https://apps.apple.com/us/app/mini-laser-engraving-machine/id1485978951
+   https://apps.apple.com/in/app/laserburn/id6451089363
+   https://apps.apple.com/hk/app/laserpecker/id1462056860?l=en-GB
+   https://apps.apple.com/us/app/genmitsu/id6478152985
+   https://apps.apple.com/us/app/djlaser/id6736925894
+   https://apps.apple.com/us/app/algolaser/id6450949534
+   Open candidates: brand-neutral photo engraving prep (dithering/material presets/export), a parametric laser-cut box generator (finger joints, living hinge; the web tools MakerCase and boxes.py prove demand), and layered papercut shadow-box SVGs.
+
+=====================================================================
+C. OPEN / BLUE-OCEAN NICHES (saturation 0–2), the most promising finds
+=====================================================================
+16) "stained glass pattern": 0 pattern designers. Results were only 2 calculators, a photo effect, an AR app and puzzle games.
+   https://apps.apple.com/us/app/stained-glass-calculator/id6760149016         (new 2026 calculator, pattern scaling 0.5–3x)
+   https://apps.apple.com/us/app/stained-glass-cost-calculator/id6791704434    (new 2026 cost calculator)
+   https://apps.apple.com/us/app/stained-glass-photo-effect/id1142269336       (filter only)
+   https://apps.apple.com/us/app/stained-glass-ar/id6680150934                 (unclear what it does)
+   https://apps.apple.com/ge/app/hexlogic-stained-glass/id607902247            (game)
+   https://apps.apple.com/us/app/glass-mosaic-jigsaw-puzzle/id511869357        (game)
+   IDEA (top pick): Stained Glass Pattern Maker. Photo or sketch to cuttable pattern with numbered pieces, glass color and texture palette, printable full-scale tiles, and foil/solder/glass-area estimate. Two new 2026 calculators show indie devs see a paying audience.
+
+17) "lithophane maker": saturation 1. The only result is Lit Pic, which is a print-and-ship service, not an STL generator. The snippet mentions LithoCam (STL maker) by Masaharu Tsukamoto, but no URL was found.
+   https://apps.apple.com/us/app/lit-pic-lithophane-creator/id1489604752
+   IDEA (top pick): on-device photo to lithophane STL/3MF generator (flat, curved, cylinder lamp, heart), for 3D-printing hobbyists. Fully offline. The web tools (3dp.rocks, ItsLitho) prove demand.
+
+18) "mosaic tile pattern designer": 1–2 relevant, and none is a real tesserae mosaic planner
+   https://apps.apple.com/us/app/mosaico-tile-designer-app/id1460372752        (brand-only cement tile configurator; shows demand for tile customizing)
+   https://apps.apple.com/us/app/tessera-design-studio/id6756501042            (repeating patterns)
+   https://apps.apple.com/pw/app/mosaic-tilemaker/id1433975270                 (Qatar Foundation Intl, Islamic geometric mosaic education)
+   https://apps.apple.com/lc/app/geometric-mosaic/id1311514658                 (photo to geometric mosaic effect)
+   https://apps.apple.com/us/app/mosaicpro-photo-mosaic-app/id1616212938       (photo-collage mosaic: a different intent that pollutes the "photo mosaic" keyword)
+   https://apps.apple.com/us/app/mosaic-video-photo-collage/id633846868
+   https://apps.apple.com/us/app/mosaic-match/id6475325582                     (unclear/game)
+   IDEAS: (a) mosaic art tesserae planner (photo to tile map plus tile counts per color); (b) Islamic geometric/girih/zellige pattern generator, a reverse gap for MENA/TR/ID/MY localizations; (c) brand-neutral cement/encaustic tile pattern designer for renovators.
+
+=====================================================================
+D. UNCHECKED CANDIDATE LIST (budget ran out before verification)
+=====================================================================
+Craft pattern sub-niches: needlepoint canvas designer (US needlepoint boom; Gobelin in EU); rug tufting / punch needle designer;
+sashiko / hitomezashi pattern generator (reverse gap JP to world, visible mending); seed bead loom / peyote / brick stitch pattern maker;
+mosaic crochet designer; filet crochet chart maker (BR "crochê filé"); machine-knitting punchcard designer; floor-loom weaving draft (WIF) designer;
+kumihimo designer (reverse gap JP); tablet/card weaving and inkle designer; English paper piecing (hexie) planner (UK/AU/NL/JP, US-gap);
+barn quilt designer (US-only); cross-stitch PDF pattern tracker (Pattern Keeper is Android-only; iOS alternative demand).
+Stencil/cutting: multi-layer spray/airbrush stencil with bridges; scroll saw portrait patterns; layered papercut shadow box SVG; henna stencil (IN/MENA).
+Color for trades: icing/food-coloring mixer (US cookie-decorating culture, US-gap); polymer clay color recipes; hand-dyed yarn recipe planner;
+hair color theory/toner trainer for students; pro digital draping for image consultants.
+Other: parametric laser box generator; photo to custom diamond painting chart; gallery wall planner; balloon garland designer; lash map
+designer (lash techs); brow mapping (PMU); makeup face charts; haircut diagrams; nail art design; cookie decorating designer; neon sign
+mockup; aquascape planner; bonsai styling sketch; tile layout visualizer; van-conversion layout; image to SVG for cutting machines; tumbler
+sublimation wraps; screen-print color separation; machine embroidery file (PES/DST) viewer; pottery glaze combo library; pyrography patterns;
+calligraphy guide-sheet generator; sign-painting layout; notan/value study; perspective/isometric grids; fashion croquis; Celtic knot
+generator; hanko/seal stamp designer (JP/CN); kolam/rangoli (IN); 3D-print cookie-cutter maker.
+
+=====================================================================
+E. TAKEAWAYS
+=====================================================================
+- Obvious craft converters (cross stitch, fuse beads, PBN, string art, tattoo stencils, quilt design, paint mixing,
+  hair formulas, seasonal color) were flooded by new apps in 2025–26 (many IDs 674x–680x). Do NOT target those head terms.
+- Real openings found: stained glass pattern design, lithophane STL generation, brand-neutral laser engraving prep,
+  and tesserae mosaic / Islamic geometric patterns.
+- A good next step with fresh budget: verify the section D craft sub-niches with site:apps.apple.com queries, highest value first: needlepoint,
+  sashiko, peyote/brick stitch, mosaic crochet, kumihimo, tablet weaving, EPP, icing color, polymer clay, laser box generator.
