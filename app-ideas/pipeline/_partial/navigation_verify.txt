@@ -58,3 +58,16 @@ https://apps.apple.com/de/app/hunting-sniper-3d-jagd-spiele/id1501749754   (irre
 https://apps.apple.com/lu/app/wild-hunt-j%C3%A4ger-simulator/id1164890160?l=de-DE   (irrelevant game)
 https://apps.apple.com/us/app/revierwelt/id1565506300   (REVIERWELT: Drückjagd planning)
 https://apps.apple.com/de/app/hntr-1-j%C3%A4gergemeinschaft/id1619932034   (HNTR: organise stalking to Drückjagd)
+
+## 6) query: site:apps.apple.com balkonkraftwerk ausrichtung  (2026-09-30) → CONTESTED/CROWDED, sat ~4 dedicated PV compass/tilt/yield apps in DE (PV Wizard, Solarertrag, Solartelligent, PV Energy Planner) + sun-path apps
+https://apps.apple.com/de/app/sma-360/id1474232533?l=en-GB   (SMA monitoring, parent)
+https://apps.apple.com/de/app/pv-wizard/id6762192446   (PV Wizard: compass + inclinometer for exact orientation, 2026)
+https://apps.apple.com/de/app/sunlitt-sonnen-sonnenverlauf/id1628751457   (Sunlitt sun path)
+https://apps.apple.com/ch/app/solarertrag/id6448853706   (Solarertrag: phone position/orientation/tilt → yield estimate)
+https://apps.apple.com/de/app/solartelligent-pv-planer/id6470352546   (Solartelligent PV-Planer: inclinometer, optimal orientation)
+https://apps.apple.com/de/app/sunenergyxt/id6444396114
+https://apps.apple.com/tz/app/solakon/id6478878569   (Solakon balcony-solar vendor app)
+https://apps.apple.com/us/app/pv-energy-planner/id6755328705
+https://apps.apple.com/ch/app/sunontrack-sonnenverlauf/id1610305853   (SunOnTrack, users align PV modules)
+https://apps.apple.com/ch/app/solarize/id6448853706
+# search budget exhausted (6/6). All other ideas reviewed from knowledge.

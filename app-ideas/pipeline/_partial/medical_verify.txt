@@ -25,3 +25,14 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
     - Grifols Plasma Donor Hub         https://apps.apple.com/us/app/grifols-plasma-donor-hub/id1591378876  (donation + compensation history)
     - Parachute: Get Paid for Plasma   https://apps.apple.com/us/app/parachute-plasma-donation/id1519284283  (multi-center booking + tracking)
     - FMOLHS Blood Donor Services      https://apps.apple.com/us/app/fmolhs-blood-donor-services/id6698895155
+
+[3] query: site:apps.apple.com surgical case log residents logbook  (idea medical-20)
+    saturation (dedicated surgical/case logbook in title): 7 -> SATURATED (plus official ACGME app)
+    - Case Logging App                 https://apps.apple.com/ca/app/case-logging-app/id1493195189  (CPT, role, supervisor; ABO reporting)
+    - ACGME Case Logs                  https://apps.apple.com/us/app/acgme-case-logs/id1462667153  (official, free)
+    - Procedure Log                    https://apps.apple.com/us/app/procedure-log/id888851773
+    - Blue Ledger: Surgical Case Log   https://apps.apple.com/au/app/blue-ledger-surgical-case-log/id6760433422
+    - Surgeonal (Surgical Logbook)     https://apps.apple.com/tj/app/surgeonal-surgical-logbook/id6451452934  (also https://apps.apple.com/us/app/surgeonal-surgical-logbook/id6451452934)
+    - UNIRA                            https://apps.apple.com/al/app/unira/id1573054600  (surgeon-owned case logging)
+    - Logitbox: Medical Logbook        https://apps.apple.com/au/app/logitbox-medical-logbook/id1413535606  (UK ARCP-ready)
+    - Urology Operation Register       https://apps.apple.com/us/app/urology-operation-register/id6751779812

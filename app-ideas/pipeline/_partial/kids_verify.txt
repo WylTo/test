@@ -26,3 +26,26 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
     - Spelling Bee Lists 1000+ Spelling Tests Grade 1-12 https://apps.apple.com/us/app/spelling-bee-lists-1000-spelling-tests-grade-1-12/id885695499
     - Spelling Teacher                    https://apps.apple.com/us/app/spelling-teacher/id543373793
 
+[3] query: site:apps.apple.com rolling r trilled r pronunciation  (idea kids-09)
+    saturation (dedicated trilled/rolled-R app in title): 1 (RollrApp / The Rollr Academy — same id, 12-week SLP-designed program, new 2025) -> author's "nobody covers trilled R" is false, but niche still thin
+    - The Rollr Academy                   https://apps.apple.com/id/app/the-rollr-academy/id6751569088
+    - RollrApp: Fix Rhotacism (same id)   https://apps.apple.com/id/app/rollrapp-fix-rhotacism/id6751569088
+    - Articulate R (English R)            https://apps.apple.com/us/app/articulate-r/id1439692133
+    - Speak R Clearly (English R)         https://apps.apple.com/in/app/speak-r-clearly/id6751442522
+    - Fun With R (English R)              https://apps.apple.com/us/app/fun-with-r/id695133638
+    - (noise) toPhonetics Converter       https://apps.apple.com/us/app/tophonetics-converter/id791324886
+    - (noise) e pronunciation             https://apps.apple.com/us/app/e-pronunciation/id1507671496
+    - (noise) Translate Voice             https://apps.apple.com/us/app/translate-voice-language-translator-dictionary/id323470584
+
+[4] query: site:apps.apple.com Legasthenie LRS Training Kinder  (idea kids-15)
+    saturation ("Legasthenie"/"LRS" dedicated in title/subtitle): 5-6 -> HARD in DE (GoLexic already localized DE as "für Legasthenie & LRS")
+    - Legasthenie & LRS Trainer           https://apps.apple.com/de/app/legasthenie-lrs-trainer/id6443904704 (freemium, dyslexia-teacher designed)
+    - Legasthenie & LRS Trainer (us)      https://apps.apple.com/us/app/-/id6443904704
+    - Heldenschule: Rechtschreibung       https://apps.apple.com/us/app/heldenschule-rechtschreibung/id6748237145 (LRS focus, new 2025)
+    - GoLexic: Besser lesen lernen        https://apps.apple.com/de/app/golexic-f%C3%BCr-legasthenie-lrs/id1511002428
+    - Wortbild                            https://apps.apple.com/lu/app/wortbild/id6714465600 (dyslexia/LRS/dyscalculia)
+    - DocLexi: Lesen & Buchstabieren      https://apps.apple.com/de/app/doclexi-lesen-buchstabieren/id1090442763
+    - SpeechCare LRS                      https://apps.apple.com/us/app/speechcare-lrs/id652221065
+    - Lesen lernen nach IntraActPlus      https://apps.apple.com/at/app/lesen-lernen-nach-intraactplus/id1145332061
+    - ANTON - Lernen - Schule (free giant) https://apps.apple.com/at/app/anton-lernen-schule/id1180554775?platform=ipad
+

@@ -1,0 +1,14 @@
+MUSIC — REVIEWER VERIFY LOG (devil's advocate run)
+Date: 2026-09-30. All URLs copied verbatim from WebSearch results (none constructed).
+
+[1] query: site:apps.apple.com hymn board  (idea music-08)
+    saturation ("hymn board" in title): 0 — results are all hymnal/lyrics apps (hymnal market is crowded, but no dedicated song-number display surfaced). Demand for the exact phrase unproven.
+    - The Christian Hymn Book            https://apps.apple.com/us/app/the-christian-hymn-book/id1500143517
+    - Hymns for Worship                  https://apps.apple.com/us/app/hymns-for-worship/id1470789635
+    - Advent Hymnal                      https://apps.apple.com/cd/app/advent-hymnal/id6741869944
+    - Church Hymnal                      https://apps.apple.com/us/app/church-hymnal/id1600515374
+    - Mobile Hymns Sheet Music           https://apps.apple.com/us/app/mobile-hymns-sheet-music/id6670275549
+    - New Believers Hymn Book (NBHB)     https://apps.apple.com/us/app/new-believers-hymn-book-nbhb/id1515157357
+    - EPC Ewe Hymnal                     https://apps.apple.com/us/app/e-p-c-ewe-hymnal/id1467545778
+    - Baptist Hymnal Free                https://apps.apple.com/us/app/baptist-hymnal-free/id465294957
+    - Hymnals (iPad, Catholic hymnals)   https://apps.apple.com/us/app/id523183662

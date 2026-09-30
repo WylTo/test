@@ -13,3 +13,15 @@ FOOD & DRINK (food-drink) — REVIEWER VERIFY LOG (devil's advocate run). URLs c
 - Ice Cream Evolution Clicker (game) https://apps.apple.com/us/app/ice-cream-evolution-clicker/id1238189589
 Saturation: 4 dedicated (Ice Cream Calculator, CreamiLab, Creami Ice Cream Maker Recipes, Ice Cream Journal) -> "ice cream calculator" and "creami" both already targeted; CreamiLab is exactly the pitched product.
 
+2) query: "site:apps.apple.com freeze dryer log batch tracker"  date: 2026-09-30  (idea food-drink-15 Freeze Dry Log)
+- Freeze-Dry Buddy: Batch Log (White Pepper Farms; trays, weight, settings, history) https://apps.apple.com/us/app/freeze-dry-buddy-batch-log/id6763676080
+- Freeze Dry Tracker (weight loss checkpoints, food library) https://apps.apple.com/us/app/freeze-dry-tracker/id6748582588
+- Freeze-Dry Buddy: Batch Log (KW store) https://apps.apple.com/kw/app/freeze-dry-buddy-batch-log/id6763676080
+- My Freezers Inventory Tracker https://apps.apple.com/sv/app/my-freezers-inventory-tracker/id6781491921?l=en-GB&platform=watch
+- Freezer Inventory Tracker https://apps.apple.com/us/app/freezer-inventory-tracker/id6744560567
+- My Pantry Tracker https://apps.apple.com/us/app/my-pantry-tracker/id1567647197
+- DryLINK (freeze dryer manufacturer/controller app) https://apps.apple.com/us/app/drylink/id1321136896
+- FryserTjek https://apps.apple.com/us/app/frysertjek/id923706127
+- FrostList: Freezer Inventory https://apps.apple.com/us/app/frostlist-freezer-inventory/id6789963620
+Saturation: 2 dedicated freeze-dry batch logs (Freeze-Dry Buddy, Freeze Dry Tracker) + DryLINK hardware app; freezer inventory apps are a separate crowded space (4+).
+

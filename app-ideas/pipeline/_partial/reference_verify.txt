@@ -1,0 +1,22 @@
+REFERENCE — REVIEWER VERIFY LOG (devil's advocate run)
+Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
+
+[1] query: site:apps.apple.com toxic plants for cats dogs  (idea reference-03)
+    saturation (dedicated pet-toxic-plant apps): 7 -> SATURATED; CatPoison (tr storefront, localized) weakens the US-gap claim
+    - Pet Protect Plan: Toxic Plant       https://apps.apple.com/us/app/pet-protect-plan-plant-id/id1456505975
+    - Pooch Protect (same id)             https://apps.apple.com/ai/app/pooch-protect/id1456505975
+    - Pet Toxic                           https://apps.apple.com/us/app/pet-toxic/id6758074515
+    - CatPoison - Poisonous plants        https://apps.apple.com/tr/app/catpoison-poisonous-plants/id994249067
+    - Pet Safe Plant Identifier           https://apps.apple.com/us/app/pet-safe-plant-identifier/id6755623945
+    - ToxiPets: Pet Poison Scanner        https://apps.apple.com/us/app/toxipets-pet-poison-scanner/id1602251141
+    - Pet Poison App VETCPD               https://apps.apple.com/us/app/pet-poison-app-vetcpd/id1330144238
+    - Plantz: Plant, Tree & Weed ID (generic plant ID with pet toxicity flag) https://apps.apple.com/uy/app/plantz-plant-tree-weed-id/id6739429047
+    - (noise) Petguard: AI Breed Identifier https://apps.apple.com/us/app/petguard-ai-breed-identifier/id6529520364
+
+[2] query: site:apps.apple.com kurrent sütterlin old german handwriting  (idea reference-04)
+    saturation (dedicated Kurrent/Sütterlin reader in title): 0; 1 new AI transcriber for old letters/genealogy (cloud AI, 2026) -> OPEN on keyword, but AI-transcription substitute exists
+    - Old Letters & Handwriting AI        https://apps.apple.com/gb/app/old-letters-handwriting-ai/id6770993921
+    - Handwriting Analysis Graphoria (mentions Sütterlin, graphology) https://apps.apple.com/dk/app/handwriting-analysis-graphoria/id6744299219
+    - (noise) Preschoolers ABC Playground (Sütterlin/Kurrent tracing fonts) https://apps.apple.com/ca/app/preschoolers-abc-playground/id574794981
+    - (noise) Writey Cursive Handwriting  https://apps.apple.com/us/app/writey-cursive-handwriting/id1512640380
+    - (noise) Writey Calligraphy (same id) https://apps.apple.com/ai/app/writey-calligraphy-handwriting/id1512640380

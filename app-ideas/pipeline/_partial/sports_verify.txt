@@ -27,3 +27,28 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
     - MyGS                                https://apps.apple.com/gb/app/mygs/id6744665376
     - Wgaf                                https://apps.apple.com/gb/app/wgaf/id6757706252
 
+[3] query: site:apps.apple.com referee game log pay mileage  (idea sports-05)
+    saturation (dedicated referee fee/expense trackers): 2 dedicated (Referee Expenses - match fee + mileage; Refr Sports - earnings reports) + Ref90 & REFSIX with earnings tracking + assignor platforms (Assignr, RefMyGame, YesRef) that pay refs -> CONTESTABLE, feature absorbed by referee watch apps
+    - Refr Sports                         https://apps.apple.com/us/app/refr-sports/id1629866058
+    - Referee Expenses                    https://apps.apple.com/us/app/referee-expenses/id1518766278
+    - REFSIX - Soccer Referee app         https://apps.apple.com/us/app/refsix-soccer-referee-app/id1235649461
+    - REFSIX - Football Referee app (gb)  https://apps.apple.com/gb/app/refsix-football-referee-app/id1235649461
+    - Ref90 - Referee Watch               https://apps.apple.com/us/app/ref90-referee-watch/id6753694941
+    - Assignr                             https://apps.apple.com/us/app/assignr/id1579690125
+    - RefMyGame                           https://apps.apple.com/us/app/refmygame/id1596368707
+    - YesRef                              https://apps.apple.com/us/app/yesref-sports-official-mgt/id1573222404
+    - Ref Insight                         https://apps.apple.com/us/app/ref-insight/id6453357367
+    - zRef                                https://apps.apple.com/pg/app/zref/id1619561284
+
+[4] query: site:apps.apple.com hockey shift timer ice time  (idea sports-08)
+    saturation (dedicated shift/ice-time apps): 6 (Ice Time Track, Hockey Time, TimeOnIce, HockeyTracker shift timer, Hockey +/-, Hockey Lineup Manager - equal ice time) -> CROWDED
+    - Ice Time Track                      https://apps.apple.com/ca/app/ice-time-track/id6758258172
+    - Hockey Time                         https://apps.apple.com/ca/app/hockey-time/id459324788
+    - Simple Ice Hockey Scoreboard        https://apps.apple.com/us/app/simple-ice-hockey-scoreboard/id1579517088
+    - TimeOnIce - Hockey                  https://apps.apple.com/ca/app/timeonice-hockey/id1023242258
+    - HockeyTracker                       https://apps.apple.com/bs/app/hockeytracker/id1297971760
+    - Hockey Time (reviews)               https://apps.apple.com/us/app/hockey-time/id459324788?see-all=reviews&platform=iphone
+    - HockeyTracker (kg)                  https://apps.apple.com/kg/app/hockeytracker/id1297971760
+    - Hockey +/- (Plus Minus)             https://apps.apple.com/us/app/hockey-plus-minus/id6756597490
+    - Hockey Lineup Manager               https://apps.apple.com/us/app/hockey-lineup-manager/id6756636286
+
