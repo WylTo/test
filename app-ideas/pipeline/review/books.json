@@ -1,0 +1,930 @@
+{
+ "category_slug": "books",
+ "summary": "Kategorie Books je slabší: jen první čtveřice nápadů stojí na webové evidenci, zbytek (21 nápadů „knowledge“) jsou převážně funkce, ne produkty. Web ověření 6 knowledge nápadů odhalilo, že autor podcenil konkurenci – citáty z knih (09) jsou saturované, memorizace básní (17) a fantasy kalendáře (13) mají přímé konkurenty, čtenářský deník (05) má obsazený titulní keyword. Nejlepší sázky: Syllabe s barevnými slabikami (08), audiobook log (04), SubTrack (02) a 1000 knih (01) – všechny ale realisticky pod 10 000 Kč/měsíc; společná chyba je nadsazená lokalizační US-gap matematika a jednorázové ceny, které k cíli nedosáhnou.",
+ "reviews": [
+  {
+   "id": "books-01",
+   "verdict": "GO",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 6,
+    "monetization": 4,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Ve většině US knihoven se 1000BBK vede přes knihovní platformy (Beanstack, READsquared) zdarma – rodič, kterého program zajímá, už aplikaci od knihovny má.",
+    "US-gap je obrácený: fráze „1000 books before kindergarten“ existuje jen anglicky; v CZ/DE/JP nikdo takový program nehledá, takže 50 lokalizací přinese téměř nulové stažení.",
+    "Jednorázových 6,99 USD od rodičů batolat, kteří dosáhnou limitu 100 knih až po měsících – konverze bude pomalá a opožděná.",
+    "Název programu je spojený s nadací (1000 Books Before Kindergarten Foundation) – riziko ochranné známky i v podtitulu."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Beanstack Tracker",
+     "url": "",
+     "note": "knihovní platforma, přes kterou řada US knihoven 1000BBK provozuje zdarma"
+    },
+    {
+     "name": "READsquared",
+     "url": "",
+     "note": "druhá knihovní platforma se stejným programem"
+    }
+   ],
+   "revenue_czk_realistic": 3500,
+   "reviewer_note": "Nejlevnější a nejčistší stavba v kategorii s reálně řídkou konkurencí na anglickém keywordu (oficiální app z roku 2013 + jeden nový indie). Stavět jako anglickou app pro US/CA/AU, ne jako 50jazyčný US-gap; ideál 16 400 Kč je zhruba 4–5× nad realitou."
+  },
+  {
+   "id": "books-02",
+   "verdict": "GO",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 7,
+    "monetization": 5,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 8
+   },
+   "extra_risks": [
+    "Bezplatné webové trackery (The Submission Grinder, Chill Subs) mají navíc databázi časopisů a statistiky odpovědí – holý offline tracker bez databáze trhů prodává jen pohodlí na telefonu.",
+    "Kultura podávání do literárních časopisů je silně anglofonní (hlavně SFF povídky a poezie); lokalizace do ES/DE/FR přinese jen zlomek, soutěže tam fungují jinak (jednorázové výzvy, ne průběžné podávání).",
+    "Cílovka je malá (desítky tisíc aktivních autorů povídek globálně) a zvyklá na tabulky – 24,99 USD/rok bude konvertovat hůř než lifetime."
+   ],
+   "missed_competitors": [
+    {
+     "name": "The Submission Grinder",
+     "url": "",
+     "note": "bezplatný webový tracker + databáze trhů, dominantní u SFF autorů"
+    },
+    {
+     "name": "Chill Subs",
+     "url": "",
+     "note": "bezplatná webová databáze časopisů s trackerem podání"
+    }
+   ],
+   "revenue_czk_realistic": 4000,
+   "reviewer_note": "Solidní malá nika: oba titulní konkurenti jsou 10+ let staří a keyword je čistý, stavba 3 týdny, nízké policy riziko. Počítat s lifetime cenou (~39 USD) a anglickým trhem; 23 400 Kč je nereálné, 3–5 tisíc je poctivý strop."
+  },
+  {
+   "id": "books-03",
+   "verdict": "GO",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 6,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 9,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Učitelé v CZ/PL běžně za aplikace neplatí ze svého; platící segment jsou spíš soukromí tutoři a logopedi, kterých je málo.",
+    "Normy rychlosti čtení (slova za minutu podle ročníku) jsou v CZ/DE často z publikací chráněných autorským právem – bez norem jde jen o stopky s grafem.",
+    "On-device rozpoznávání řeči u dětského čtení v češtině/polštině je nepřesné; automatické počítání chyb nelze slíbit, musí to být ruční „ťukni na chybu“.",
+    "Ukládání nahrávek dětí = citlivá data (5.1.1, Kids/COPPA/GDPR); nutné nic neodesílat a nic nesbírat."
+   ],
+   "missed_competitors": [
+    {
+     "name": "First Steps to Reading Fluency",
+     "url": "https://apps.apple.com/us/app/first-steps-to-reading-fluency/id1356214665",
+     "note": "další dedikovaná ORF aplikace z evidence, autor ji v konkurenci neuvedl"
+    }
+   ],
+   "revenue_czk_realistic": 3500,
+   "reviewer_note": "Reverse US-gap je věrohodný (měření rychlosti čtení je v CZ/SK/PL školní praxe bez nástroje), konkurence v angličtině je řídká. Postavit jako ruční WCPM timer s grafem pro tutory/rodiče, bez vlastních norem a bez ASR slibů; příjem pod 10 000 Kč."
+  },
+  {
+   "id": "books-04",
+   "verdict": "GO",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 5,
+    "monetization": 5,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Ruční logování je nepohodlné: Audible i Libby vlastní statistiky poslechu mají zdarma a automaticky; uživatel musí mít důvod zapisovat ještě jednou (multi-platform poslech).",
+    "Obecné trackery (ReadTracker, Book Progress, Bookshelf) už audio hodiny počítají – odlišení „jen audio + interpreti + rychlost“ zkopírují za týden.",
+    "Metadata interpretů nejsou v bezplatných knižních API spolehlivě; ruční zadávání interpretů sníží hodnotu hlavní funkce.",
+    "Retence: logovací aplikace bez automatického importu typicky ztrácí většinu uživatelů do 30 dní."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Reading Tracker - ReadTracker",
+     "url": "https://apps.apple.com/us/app/bookshelf-readtracker/id6692608551",
+     "note": "obecný tracker se statistikami audioknižních hodin (z evidence, autor neuvedl)"
+    },
+    {
+     "name": "Book Tracker: Bookshelf & TBR",
+     "url": "https://apps.apple.com/us/app/book-tracker-tbr/id1491660771",
+     "note": "loguje stránky i minuty"
+    }
+   ],
+   "revenue_czk_realistic": 5000,
+   "reviewer_note": "Největší rodičovský trh v kategorii (posluchači audioknih) a titulní keyword „audiobook tracker“ je volný – rychlá stavba, plně offline. Vítězí jen s widgetem/Live Activity a rychlým logem přes Share/Shortcuts z Audible/Libby; bez toho retence padne."
+  },
+  {
+   "id": "books-05",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 4,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Klíčovou frázi „čtenářský deník“ v CZ titulech už drží dvě aplikace (Leto, Čtenářský deník) – sice obecné trackery, ale title slot i hodnocení mají.",
+    "Mnoho učitelů vyžaduje ručně psaný deník v sešitě; PDF z aplikace nemusí být akceptováno a děti hledají hotové výtahy na webu nebo v AI, ne nástroj na psaní.",
+    "V DE primární školy používají licencovanou platformu Antolin (kvízy ke knihám) – Lesetagebuch v aplikaci tam bojuje se školním standardem.",
+    "Trh je fragmentovaný po jazycích (CZ/SK/PL/DE mají každý jinou strukturu) = 4 obsahové varianty jedné appky; 3,99 USD jednorázově z malého CZ trhu nedá 10 000 Kč."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Leto - Čtenářský deník",
+     "url": "https://apps.apple.com/cz/app/leto-%C4%8Dten%C3%A1%C5%99sk%C3%BD-den%C3%ADk/id1561653139?l=cs",
+     "note": "obecný tracker s CZ titulem „Čtenářský deník“, skenování čárových kódů"
+    },
+    {
+     "name": "Čtenářský deník (Reading Diary - Book Tracker)",
+     "url": "https://apps.apple.com/cz/app/%C4%8Dten%C3%A1%C5%99sk%C3%BD-den%C3%ADk/id1551851756?l=cs",
+     "note": "druhá CZ aplikace s přesnou frází v názvu"
+    },
+    {
+     "name": "Antolin",
+     "url": "",
+     "note": "DE školní platforma čtenářských kvízů – de facto standard místo Lesetagebuch"
+    }
+   ],
+   "revenue_czk_realistic": 3000,
+   "reviewer_note": "Školní struktura deníku (postavy, děj, hodnocení, export pro učitele) na iOS skutečně chybí, ale titulní fráze je už dvakrát obsazená a trh je malý a jazykově roztříštěný. Dává smysl jen jako CZ/SK/PL „školní čtenářský deník“ s tiskem do sešitové šablony a případně sloučený s nápadem 12.",
+   "web_checked": true
+  },
+  {
+   "id": "books-06",
+   "verdict": "GO",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 6,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 9,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Knihovny samy posílají e-mail/SMS upomínky před koncem výpůjčky (CZ systémy Tritius, Koha, Clavius) – bolest „zapomněl jsem vrátit“ je z velké části vyřešená zdarma.",
+    "Libby umí více knihovních průkazů najednou pro digitální výpůjčky; papírové výpůjčky zůstávají, ale US trend fine-free knihoven bolest dál snižuje.",
+    "OCR výpůjčních lístků je u každé knihovny jiné (termální papír, různé layouty) – spolehlivost importu bude kolísat a ruční zadávání zabije retenci.",
+    "Nízká ochota platit: rodiny berou knihovnu jako bezplatnou službu; 4,99 USD jednorázově je strop."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Libby",
+     "url": "",
+     "note": "OverDrive app s více průkazy a výpůjčkami (digitální) – bere část hodnoty multi-library"
+    },
+    {
+     "name": "Libraries Online",
+     "url": "https://apps.apple.com/us/app/libraries-online/id6739070221",
+     "note": "generická knihovní app z evidence"
+    }
+   ],
+   "revenue_czk_realistic": 2500,
+   "reviewer_note": "Dedikovaná konkurence je jediná nová indie app, stavba je jednoduchá a offline, policy riziko nízké. Cílit na rodiny v zemích s pokutami (CZ, DE, AT, PL) a rodinný widget „co vrátit tento týden“; příjem bude spíš 2–4 tisíce než 13 700 Kč."
+  },
+  {
+   "id": "books-07",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 4,
+    "monetization": 4,
+    "build_ease": 5,
+    "offline_fit": 6,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Autor přehlédl Booksource Classroom Organizer – bezplatnou a v US učiteli masově používanou aplikaci přesně na třídní knihovničky; plus Libib (zdarma do tisíců položek, s výpůjčkami).",
+    "ISBN lookup za běhu (Open Library/Google Books) = partial; evropské tituly v bezplatných API často chybí, takže v cílových lokalizacích bude sken selhávat.",
+    "Učitelé v DE/ES/CZ platí za aplikace velmi neochotně a sezónnost (srpen–září) znamená 10 měsíců slabého provozu.",
+    "Evidence jmen žáků na osobním telefonu učitele = GDPR problém ve školách EU."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Booksource Classroom Organizer",
+     "url": "",
+     "note": "bezplatný US standard pro třídní knihovny"
+    },
+    {
+     "name": "Libib",
+     "url": "",
+     "note": "bezplatný katalog s výpůjčkami, používají ho učitelé"
+    },
+    {
+     "name": "Library CheckOut",
+     "url": "https://apps.apple.com/in/app/library-checkout/id1185776203",
+     "note": "generická ISBN výpůjční app z evidence (autor zmínil jen v keywordu)"
+    }
+   ],
+   "revenue_czk_realistic": 3000,
+   "reviewer_note": "Anglický trh je obsazený bezplatnými nástroji, takže jediný úhel je lokalizace (Klassenbücherei, biblioteca de aula) s ručním/offline katalogem, kde ISBN API selže. Stavět jen pokud se ověří DE/ES keywordy; jinak přeskočit."
+  },
+  {
+   "id": "books-08",
+   "verdict": "GO",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 5,
+    "monetization": 6,
+    "build_ease": 4,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "iOS 26 Accessibility Reader dává systémově písmo, barvy, rozestupy a předčítání zdarma – čistě „dyslexia font reader“ je Sherlocknutý; obhajitelné je jen barvení slabik.",
+    "Dělení na slabiky pro 50 jazyků není triviální: systémové hyphenation vzory (CFStringGetHyphenationLocationBeforeIndex) nekopírují vždy fonetické slabiky; kvalitně jde jen DE/CZ/SK/PL/FR/ES/IT.",
+    "Import ePub/PDF: DRM knihy (Apple Books, Kindle) otevřít nejde, PDF reflow je bolest – rodič musí mít vlastní DRM-free text nebo fotku stránky (Live Text).",
+    "1.4.1: žádné tvrzení o „léčbě“ nebo „zlepšení“ dyslexie; marketing jen jako čtecí pomůcka."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Apple Accessibility Reader (iOS 26)",
+     "url": "",
+     "note": "systémový čtecí režim – Sherlock pro font/barvy/TTS"
+    },
+    {
+     "name": "Dyslexia fonts",
+     "url": "https://apps.apple.com/us/app/dyslexia-fonts/id1513035642",
+     "note": "instalátor dyslektických písem z evidence"
+    }
+   ],
+   "revenue_czk_realistic": 6000,
+   "reviewer_note": "Nejsilnější monetizace v kategorii (rodiče dyslektiků platí předplatné) a slabikové barvení (DE „Silbenmethode“, FR „syllabes colorées“, CZ slabikování) velcí anglocentričtí hráči ani iOS nemají. GO pouze s pozicí „barevné slabiky + foto stránky“, ne jako další dyslexia font reader; začít DE/FR/CZ."
+  },
+  {
+   "id": "books-09",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 4,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Nika je saturovaná: minimálně 6 dedikovaných aplikací dělá přesně „vyfoť stránku, označ větu, ulož s knihou a stranou“ – Highlighted byl dokonce App of the Day.",
+    "Live Text v iOS umí vybrat text z fotky/kamery zdarma, takže technický základ je commodity.",
+    "Bookly, Basmo a další trackery mají citáty jako funkci – rodičovský trh nepotřebuje další samostatnou app."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Highlighted: Book Highlights",
+     "url": "https://apps.apple.com/gb/app/highlighted-book-highlighter/id1480216009",
+     "note": "přesně stejný workflow, Apple App of the Day"
+    },
+    {
+     "name": "Excerpt - The Book Highlighter",
+     "url": "https://apps.apple.com/us/app/excerpt-the-book-highlighter/id1447907126",
+     "note": "kamera → citát → poznámky podle strany"
+    },
+    {
+     "name": "QuoteMark: AI Scan Book Quotes",
+     "url": "https://apps.apple.com/us/app/quotemark-ai-scan-book-quotes/id6471570608",
+     "note": "AI sken citátů"
+    },
+    {
+     "name": "BooJi - Book Notes & Scanner",
+     "url": "",
+     "note": "minimalistická varianta téhož"
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Autor saturaci odhadl na 5 z vlastní znalosti; web ukázal 6+ přímých klonů včetně Apple featured aplikace. Není blue ocean – zahodit.",
+   "web_checked": true
+  },
+  {
+   "id": "books-10",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 2,
+    "blue_ocean": 5,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Keywordy „mystery / clue / suspects / murder mystery“ v App Store patří hrám – výsledky jsou plné detektivních her, autorova appka tam nebude k nalezení a bude mít špatné konverze z nesprávného záměru.",
+    "Autoři detektivek plánují na desktopu (Scrivener, Plottr má žánrové šablony) nebo v Storyfolk, který už má crime & mystery prompty.",
+    "Žádný doklad poptávky: nikdo v App Store nehledá „mystery plot planner“; nika je podmnožinou už tak saturovaného novel-planner trhu (sat 6)."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Storyfolk Novel Planner",
+     "url": "https://apps.apple.com/ca/app/storyfolk-novel-planner-app/id6744127272",
+     "note": "plánovač s crime & mystery šablonami"
+    },
+    {
+     "name": "Whodunit Now? - Mystery Solver",
+     "url": "https://apps.apple.com/us/app/whodunit-now-mystery-solver/id6751511946",
+     "note": "tracker podezřelých/stop (pro řešitele) – obsazuje stejná slova"
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Dedikovaný konkurent sice neexistuje, ale protože neexistuje ani poptávka a slova jsou herní. Maximálně jako šablona v obecném plánovači, ne samostatná app.",
+   "web_checked": true
+  },
+  {
+   "id": "books-11",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Uncover (Romance Trope Bingo, sezónní výzvy) a BookSlayer (náhodné Book Bingo karty) funkci už mají, Goodreads a StoryGraph mají výzvy – bingo je feature, ne produkt.",
+    "Silná sezónnost: r/Fantasy Bingo startuje v dubnu, knihovní letní výzvy v červnu; mimo ně skoro nulová stažení.",
+    "Komunitní bingo karty jsou zdarma jako obrázek; ochota zaplatit 4,99 USD za generátor karet je nízká."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Uncover - Bookish App",
+     "url": "https://apps.apple.com/us/app/uncover-bookish-app/id6479319484",
+     "note": "Romance Trope Bingo + šablony ke sdílení"
+    },
+    {
+     "name": "BookSlayer",
+     "url": "https://apps.apple.com/us/app/bookslayer/id6751204622",
+     "note": "náhodné Book Bingo karty a výzvy"
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Title keyword „book bingo“ je volný (0 aplikací v názvu), ale funkci mají dva bookish trackery. Má smysl jen jako extrémně rychlá stavba (2 týdny) s vizuálním editorem karet a sdílením do Stories; příjem malý a sezónní.",
+   "web_checked": true
+  },
+  {
+   "id": "books-12",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 4,
+    "build_ease": 7,
+    "offline_fit": 9,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Guideline 4.3: v portfoliu by vedle nápadů 01 a 05 byla třetí dětská čtenářská „log“ appka – přesně vzor, který Apple zamítá jako spam.",
+    "US homeschool rodiny už mají komplexní plánovače (Homeschool Planet, Homeschool Panda, Homeschool Tracker) a Reading Log: Parents & School zmiňuje homeschool záznamy.",
+    "Mimo US je homeschooling malý (CZ individuální vzdělávání řádově jednotky tisíc dětí) a požadavky na doklad čtení nejsou standardizované."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Homeschool Tracker",
+     "url": "",
+     "note": "US homeschool plánovač s knihami a portfoliem"
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Jako samostatná appka nedává smysl – je to exportní režim nápadu 05 (čtenářský deník). Sloučit, nestavět zvlášť."
+  },
+  {
+   "id": "books-13",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 3,
+    "monetization": 4,
+    "build_ease": 5,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Hlavní USP (vlastní fantasy kalendáře, ne-gregoriánská data) je headline funkce Aeon Timeline 3, který na iOS existuje a je etablovaná profi značka.",
+    "Campfire (velká writer značka) má timeline + worldbuilding + mapy na iOS; worldbuilding keyword je navíc plný AI aplikací.",
+    "Keyword „fantasy calendar“ má v App Store kolize s obecnými kalendáři a fantasy-sport rozpisy; DM komunita používá zdarma web fantasy-calendar.com."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Aeon Timeline 3",
+     "url": "https://apps.apple.com/us/app/aeon-timeline-3/id1563351378",
+     "note": "vlastní fantasy kalendáře – přesně pitchovaná funkce"
+    },
+    {
+     "name": "Campfire - Write Your Book",
+     "url": "https://apps.apple.com/us/app/campfire-write-your-book/id1626123915",
+     "note": "timeline + worldbuilding pro spisovatele"
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Autor tvrdil, že sub-nika custom kalendářů není obsazená – web ukázal, že ji drží lídr kategorie. Levnější klon Aeonu bez doložené poptávky nestojí za 5 týdnů.",
+   "web_checked": true
+  },
+  {
+   "id": "books-14",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 2,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "RSVP readerů s importem dokumentů je mnoho (Outread, ReadQuick, Spreeder, Speed Reading RSVP klony) a keyword speed reading je saturovaný.",
+    "Import vlastních ePub naráží na DRM – většina lidí má knihy v Kindle/Apple Books, které RSVP číst nedovolí; DRM-free ePub vlastní malá menšina.",
+    "RSVP má pověst sníženého porozumění (výzkum Rayner et al.), uživatelé ho zkusí a opustí – vysoký churn."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Outread",
+     "url": "",
+     "note": "RSVP/speed reading s importem dokumentů"
+    },
+    {
+     "name": "ReadQuick",
+     "url": "",
+     "note": "RSVP čtečka, dlouho na trhu"
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Rudý oceán se slabým diferenciátorem (ePub import mají i konkurenti) a technickou bariérou DRM. Zahodit."
+  },
+  {
+   "id": "books-15",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 4,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 4
+   },
+   "extra_risks": [
+    "iPady nemají NFC čtečku vůbec a starý iPhone čte NFC na pozadí až od XS – slibované „NFC samolepky místo karet“ na typickém recyklovaném zařízení nefungují.",
+    "Yoto a Tonies mají vlastní aplikace s obsahem; iOS Guided Access + Apple Music/Books už z libovolného zařízení udělá zamčený přehrávač zdarma.",
+    "Obsah: rodiče mají audioknihy v Audible/Spotify (DRM, nejde importovat); vlastní MP3 má málokdo – bez obsahu je přehrávač prázdný.",
+    "Dětská kategorie (Kids 1.3) zakazuje odkazy ven a běžnou analytiku a paywall musí být za parental gate."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Yoto",
+     "url": "",
+     "note": "Yoto app přehrává obsah karet i bez přehrávače"
+    },
+    {
+     "name": "Tonies",
+     "url": "",
+     "note": "oficiální app s Creative-Tonie nahráváním"
+    }
+   ],
+   "revenue_czk_realistic": 2500,
+   "reviewer_note": "Úhel „starý telefon jako Yoto zdarma“ je chytlavý, ale NFC slib neplatí pro iPady. Stavět jen jako dlaždicový přehrávač s Guided Access a bundlovaným public-domain obsahem (LibriVox), NFC jako bonus pro iPhone."
+  },
+  {
+   "id": "books-16",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Import je zabiják: novější Kindly používají MTP, které iPhone/iPad Files neumí přečíst, takže My Clippings.txt se na iOS reálně nedostane bez počítače.",
+    "Readwise (s free trialem), Kindle Notebook export přes e-mail a webové Clippings.io/Bookcision řeší totéž; uživatelé s tímto problémem jsou na desktopu.",
+    "Slovo Kindle nelze použít v názvu ani keywordu bezpečně (trademark/2.3.7) – a bez něj keyword „my clippings“ nikdo nenajde."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Bookcision",
+     "url": "",
+     "note": "bezplatný bookmarklet na export Kindle zvýraznění"
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Mikronika s technickou bariérou importu na iOS a silným cloudovým lídrem. Zahodit."
+  },
+  {
+   "id": "books-17",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 3,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 9,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Mechanika postupného mizení slov už existuje minimálně ve 4 dedikovaných aplikacích – Rhapsode je přímo na poezii, MemoCoach i Memorizun mají lokalizace a databázi klasiky.",
+    "Básnička nazpaměť je jednou týdně na 10 minut; rodič nezaplatí za nástroj, který nahradí papír a opakování s dítětem.",
+    "Rozpoznávání řeči dětí recitujících v CZ/FR je nepřesné – kontrola hlasem bude frustrovat."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Rhapsode",
+     "url": "https://apps.apple.com/us/app/rhapsode/id6759266455",
+     "note": "poezie nazpaměť, postupné odebírání slov"
+    },
+    {
+     "name": "MemoCoach - Memorize Texts",
+     "url": "https://apps.apple.com/us/app/memorize-texts-memocoach/id1220188894",
+     "note": "10+ metod, import textů, lokalizovaná"
+    },
+    {
+     "name": "Memorizun: learn by heart",
+     "url": "https://apps.apple.com/gb/app/memorizun-learn-by-heart/id6737538820",
+     "note": "databáze klasických děl, automatické dělení"
+    },
+    {
+     "name": "Memorize By Heart",
+     "url": "https://apps.apple.com/us/app/memorize-by-heart/id1436935583",
+     "note": "obecný memorizér básní a textů"
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Autor tvrdil, že memorizační appky jsou jen biblické/divadelní – web našel 4 přímé konkurenty včetně poetry-specific Rhapsode. Reverse-gap zůstává jen v lokalizovaných frázích s mizivou monetizací.",
+   "web_checked": true
+  },
+  {
+   "id": "books-18",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 5,
+    "monetization": 5,
+    "build_ease": 6,
+    "offline_fit": 9,
+    "safety": 7
+   },
+   "extra_risks": [
+    "CLZ Books a BookBuddy/Libib mají vlastní pole, stav, hodnotu i fotky – sběratelé si „first edition“ modul poskládají tam.",
+    "Hodnota knih vyžaduje ceny z AbeBooks/aukcí – licencovaná živá data nejdou offline, ručně zadaná hodnota je jen číslo.",
+    "Sběratelé vzácných knih jsou malá, starší skupina, která často vede katalog v tabulce nebo u antikváře; hledanost v App Store je minimální."
+   ],
+   "missed_competitors": [
+    {
+     "name": "CLZ Books",
+     "url": "",
+     "note": "placený katalog s rozsáhlými poli pro sběratele"
+    },
+    {
+     "name": "Libib",
+     "url": "",
+     "note": "bezplatný katalog s vlastními poli"
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Malá, ale platící cílovka; obhajitelné jen jako „pojistný inventář sbírky“ (foto, stav, provenience, PDF pro pojišťovnu) s lifetime cenou. Bez doložené poptávky jde o sázku s nízkým stropem."
+  },
+  {
+   "id": "books-19",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 4,
+    "monetization": 5,
+    "build_ease": 4,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Audioknihy z Audible/Apple Books jsou DRM a nelze je importovat; pracovat se dá jen s DRM-free MP3 (LibriVox, vlastní nákupy) – to drasticky zužuje „vlastní audioknihy“.",
+    "Segmentace na věty vyžaduje on-device přepis dlouhého audia (SpeechAnalyzer iOS 26) – na starších zařízeních a v menších jazycích pomalé/nepřesné.",
+    "Shadowing a A-B repeat přehrávačů je spousta (hlavně JP/KR/EN trh) a LingQ/Language Reactor mají obsah i přepisy – odlišení je jen „tvoje audio, offline“."
+   ],
+   "missed_competitors": [
+    {
+     "name": "LingQ",
+     "url": "",
+     "note": "import vlastního audia s přepisem (cloud)"
+    },
+    {
+     "name": "Language Reactor",
+     "url": "",
+     "note": "přepis a opakování vět (web/desktop)"
+    }
+   ],
+   "revenue_czk_realistic": 4000,
+   "reviewer_note": "Rodičovský trh (studenti jazyků) platí, ale DRM omezuje obsah na LibriVox a vlastní MP3. Dává smysl jako „shadowing přehrávač pro libovolné audio/podcast soubory“ s bundlovanými public-domain audioknihami; 6 týdnů stavby je hranice."
+  },
+  {
+   "id": "books-20",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 3,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 8,
+    "safety": 5
+   },
+   "extra_risks": [
+    "iOS Live Text + systémové „Vyhledat“ ukáže význam slova z fotky stránky zdarma; Kindle má Vocabulary Builder vestavěný – Sherlock na obou stranách.",
+    "Offline slovníky pro více jazyků vyžadují licenci (WordNet je jen EN); systémový slovník iOS nedovolí definici vytáhnout do kartiček.",
+    "Keyword „vocabulary builder“ je saturovaný, long-tail „vocabulary from books“ nemá doloženou poptávku."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Kindle Vocabulary Builder",
+     "url": "",
+     "note": "vestavěná funkce Kindle – sbírá neznámá slova s kontextem"
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Funkce na hraně Sherlocku s licenčním problémem slovníků. Zahodit, případně jen jako modul čtenářského trackeru."
+  },
+  {
+   "id": "books-21",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 2,
+    "blue_ocean": 8,
+    "monetization": 3,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Cílovka (ilustrátoři a aspirující autoři obrázkových knih, SCBWI) je v řádu desítek tisíc globálně a pracuje v Procreate/InDesign, kde si 32stránkovou šablonu udělají zdarma.",
+    "V App Store po frázi „picture book dummy“ prakticky nikdo nehledá – prázdná nika, protože v ní nejsou peníze.",
+    "Jednorázových 14,99 USD × pár prodejů měsíčně nikdy nedosáhne 10 000 Kč."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Procreate (šablony)",
+     "url": "",
+     "note": "ilustrátoři dělají makety v Procreate/InDesign šablonách"
+    }
+   ],
+   "revenue_czk_realistic": 700,
+   "reviewer_note": "Nejmodřejší oceán kategorie je prázdný z dobrého důvodu – nemá poptávku ani peníze. Zahodit."
+  },
+  {
+   "id": "books-22",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 2,
+    "monetization": 4,
+    "build_ease": 4,
+    "offline_fit": 9,
+    "safety": 3
+   },
+   "extra_risks": [
+    "Focus režimy v iOS (vlastní Focus „Čtení“) a Screen Time blokování jsou zdarma – Sherlock.",
+    "Blokátory aplikací (Opal, one sec, Brick, ScreenZen) masivně investují do ASO i reklamy; keyword focus/blocker je rudý oceán.",
+    "FamilyControls/Screen Time API vyžaduje schválení entitlementu od Apple a je notoricky nestabilní – build ease 5 je optimistický.",
+    "Čtenářské trackery (Bookly, Book Tracker & Reading Log) už mají časovač čtení; úhel „blokace jen pro čtení“ je tenký."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Opal",
+     "url": "",
+     "note": "lídr blokátorů s obrovským ASO rozpočtem"
+    },
+    {
+     "name": "one sec",
+     "url": "",
+     "note": "blokátor s intervencí, silné hodnocení"
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Kříženec dvou obsazených trhů bez vlastního keywordu, se Sherlockem v iOS Focus. Zahodit."
+  },
+  {
+   "id": "books-23",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 2,
+    "monetization": 3,
+    "build_ease": 5,
+    "offline_fit": 7,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Po zániku NaNoWriMo (2025) se komunita přesunula na Discord/Zoom sprint boty – psaní ve skupině probíhá na počítači, ne přes FaceTime na telefonu.",
+    "SharePlay vyžaduje běžící FaceTime hovor všech účastníků – obrovské tření pro psací sprint.",
+    "Word Keeper, Write/Sprint, Prolific, Word Tracker a Writing Tracker obsazují writing-sprint keywordy (sat 4–5), sezónnost jen listopad."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Word Tracker",
+     "url": "https://apps.apple.com/us/app/word-tracker/id1541495523",
+     "note": "další tracker slov z evidence"
+    },
+    {
+     "name": "Writing Tracker - Word Count",
+     "url": "https://apps.apple.com/us/app/writing-tracker-word-count/id6763339544",
+     "note": "nový tracker slov z evidence"
+    }
+   ],
+   "revenue_czk_realistic": 700,
+   "reviewer_note": "Obsazený keyword + sezónnost + technicky nešikovný SharePlay. Zahodit."
+  },
+  {
+   "id": "books-24",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 2,
+    "blue_ocean": 6,
+    "monetization": 3,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Nezávislých audioknižních interpretů (ACX/Findaway) jsou globálně nízké desítky tisíc a přípravu dělají v PDF na iPadu nebo v DAW – App Store vyhledávání „audiobook narrator“ vede k Audible.",
+    "Keyword „audiobook narrator“ má spotřebitelský záměr (poslech), ne profesní.",
+    "Ani 29,99 USD/rok při pár desítkách platících nikdy nedá 10 000 Kč."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Profesní mikronika bez vyhledávací poptávky. Zahodit."
+  },
+  {
+   "id": "books-25",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 2,
+    "blue_ocean": 6,
+    "monetization": 3,
+    "build_ease": 3,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Conlang komunita (r/conlangs) je malá a používá bezplatné desktop/web nástroje (PolyGlot, Lexique Pro, Vulgarlang) – na telefonu se jazyk nestaví.",
+    "Stavba (fonologie, generátor slov, sound changes, gramatika) je spíš 8–10 týdnů, ne 7 – build ease autor nadsadil.",
+    "9,99 USD jednorázově × desítky prodejů = stovky korun měsíčně."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Vulgarlang",
+     "url": "",
+     "note": "placený webový generátor conlangů"
+    },
+    {
+     "name": "PolyGlot",
+     "url": "",
+     "note": "bezplatný desktop nástroj na conlangy"
+    }
+   ],
+   "revenue_czk_realistic": 700,
+   "reviewer_note": "Nadšená, ale mikroskopická a neplatící komunita, dlouhá stavba. Zahodit."
+  },
+  {
+   "id": "books-26",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 2,
+    "monetization": 2,
+    "build_ease": 6,
+    "offline_fit": 8,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Bookclubs (zdarma, specializované na organizaci klubů: hlasování o knize, termíny, hostitelé), Fable a Goodreads skupiny už řeší přesně logistiku.",
+    "Kluby se organizují ve WhatsApp/Messenger skupinách – nová app pro všechny členy je bariéra; CloudKit sdílení vyžaduje iCloud účty všech a vylučuje Android členy.",
+    "Platí jen hostitel, jednorázově 6,99 USD – příjem nemůže dosáhnout 10 000 Kč."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Bookclubs",
+     "url": "",
+     "note": "bezplatná app přímo na organizaci čtenářských klubů"
+    }
+   ],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Obsazeno bezplatnými platformami, iOS-only sdílení nefunguje pro smíšené skupiny, mizivá monetizace. Zahodit."
+  },
+  {
+   "id": "books-27",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 2,
+    "blue_ocean": 5,
+    "monetization": 2,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "„Book rotation“ je Pinterest/Instagram koncept – v App Store ho nikdo nehledá; rodiče rotují knihy od oka.",
+    "4.3: čtvrtá dětsko-knižní „log“ appka v portfoliu vedle 01, 05, 12.",
+    "4,99 USD jednorázově od úzké Montessori skupiny; slovo Montessori v názvu vzbuzuje kontrolu recenzentů."
+   ],
+   "missed_competitors": [
+    {
+     "name": "ReadSteps",
+     "url": "https://apps.apple.com/us/app/readsteps/id6760748484?uo=2",
+     "note": "rodinný tracker dětských knih z evidence"
+    }
+   ],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Funkce, ne produkt; nanejvýš modul nápadu 01. Zahodit."
+  },
+  {
+   "id": "books-28",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 2,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "iOS Speak Screen/Speak Selection, Pages a Word (Read Aloud) i Google Docs předčítají rukopis zdarma – přímý Sherlock.",
+    "Voice Dream, Speechify a NaturalReader mají lepší hlasy; autoři korigují na počítači, ne na telefonu.",
+    "Keyword „text to speech“ saturovaný, long-tail „proofread aloud“ bez doložené poptávky."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Speak Screen (iOS)",
+     "url": "",
+     "note": "vestavěné předčítání obrazovky zdarma"
+    },
+    {
+     "name": "Microsoft Word Read Aloud",
+     "url": "",
+     "note": "vestavěné předčítání v editoru"
+    }
+   ],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Sherlocknuté vestavěnými funkcemi editorů i iOS. Zahodit."
+  },
+  {
+   "id": "books-29",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 2,
+    "blue_ocean": 5,
+    "monetization": 3,
+    "build_ease": 6,
+    "offline_fit": 9,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Readability vzorce (LIX, Flesch-Amstad, Wiener Sachtextformel) jsou pro odhad věku dětských knih nespolehlivé – výstup „pro 8 let“ bude často špatně a poškodí hodnocení.",
+    "Nikdo v App Store nehledá „Lesbarkeit“ nebo „book level“ v jiném než US kontextu, kde vládnou licencované systémy (Lexile, Scholastic Book Wizard) zdarma.",
+    "Je to funkce (třídní knihovna 07, fluency 03), ne produkt; jednorázových 6,99 USD bez opakovaného použití."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Scholastic Book Wizard",
+     "url": "",
+     "note": "bezplatný US nástroj na úrovně knih"
+    }
+   ],
+   "revenue_czk_realistic": 700,
+   "reviewer_note": "Nepřesná metrika bez poptávky. Nanejvýš jako funkce v 07. Zahodit."
+  },
+  {
+   "id": "books-30",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 2,
+    "build_ease": 7,
+    "offline_fit": 8,
+    "safety": 3
+   },
+   "extra_risks": [
+    "Hlasová zpráva v iMessage/WhatsApp + fotka stránky dělá totéž zdarma; Tonies Creative-Tonie a Yoto Make Your Own řeší nahrávání pro děti s hardwarem, Caribu s videohovorem.",
+    "Nahrávky předčítání autorsky chráněných knih sdílené přes aplikaci = riziko 5.2 (duševní vlastnictví) při review i stížnostech nakladatelů.",
+    "Platí jen babička jednorázově 4,99 USD; distribuce přes CloudKit sdílení vyžaduje iCloud na obou stranách a app u dítěte."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Caribu",
+     "url": "",
+     "note": "videohovory s knihami pro prarodiče"
+    },
+    {
+     "name": "Tonies (Creative-Tonie)",
+     "url": "",
+     "note": "nahrávání vlastních příběhů pro děti"
+    }
+   ],
+   "revenue_czk_realistic": 700,
+   "reviewer_note": "Dojemný pitch, ale nahraditelný zprávou v messengeru, s rizikem autorských práv a mizivou monetizací. Zahodit."
+  }
+ ]
+}

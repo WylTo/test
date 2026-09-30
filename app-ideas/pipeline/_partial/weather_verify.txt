@@ -23,3 +23,25 @@ https://apps.apple.com/us/app/paint-my-house-ai-visualizer/id6743083264
 https://apps.apple.com/us/app/awesome-weather-yowindow/id799653744
 https://apps.apple.com/us/app/glidden/id1492393963   (Glidden paint brand app)
 
+## 3) query: site:apps.apple.com WBGT heat stress  (2026-09-30) → CROWDED, sat ~6 dedicated WBGT/heat-stress apps (author estimated 3); several free (AIHA, HeatAlert/Tempest) + OSHA-NIOSH not even in results
+https://apps.apple.com/gr/app/wbgt-app/id6544800367   (WBGT App: real-time WBGT for athletes/outdoor workers)
+https://apps.apple.com/us/app/heatalert-heat-stress-index/id6475117114   (HeatAlert: WBGT from 65k Tempest stations)
+https://apps.apple.com/il/app/heat-stress-log-crewhalo/id6779949032   (CrewHalo: heat stress log, worker checks, PDF/CSV)
+https://apps.apple.com/us/app/wbgt-estimator/id6739461541   (WBGT Estimator: flag conditions, custom ranges)
+https://apps.apple.com/us/app/wbgt-calculator/id6755830636   (WBGT Calculator)
+https://apps.apple.com/us/app/aiha-heat-stress-app/id6478508187   (AIHA Heat Stress App: WBGT + risk scoring for workers, industry association)
+https://apps.apple.com/eg/app/aiha-heat-stress-app/id6478508187
+https://apps.apple.com/us/app/humidcalc/id1135328698
+https://apps.apple.com/us/app/flash-weather-future-radar/id6462927563
+
+## 4) query: site:apps.apple.com spray forecast delta T  (2026-09-30) → CROWDED, sat ~6 dedicated spray-window/Delta T apps, most FREE from agro-chem/ag-weather companies (Bayer Spray, DTN, Elders, Sencrop, NDAWN, SmartSpray) — author estimated 2–3
+https://apps.apple.com/us/app/ndawn-inversion/id1385751300   (NDAWN Inversion: Delta T map, inversion — free, university)
+https://apps.apple.com/us/app/dtn-ag-weather-tools/id445062163   (DTN Ag Weather Tools)
+https://apps.apple.com/in/app/elders-weather-app/id1121822860   (Elders Weather AU: Delta-T, free)
+https://apps.apple.com/us/app/bayer-spray/id1186046518   (Bayer Spray: field-specific spray windows, inversion risk, free)
+https://apps.apple.com/us/app/smartspray/id1472281763   (SmartSpray)
+https://apps.apple.com/us/app/sencrop-local-weather-app/id1447941336   (Sencrop: spraying windows by product type)
+https://apps.apple.com/us/app/ground-spray/id528759748
+https://apps.apple.com/us/app/sprayer-calibrator/id1382685677
+https://apps.apple.com/us/app/meteoblue-weather-radar-maps/id994459137   (meteoblue, parent)
+

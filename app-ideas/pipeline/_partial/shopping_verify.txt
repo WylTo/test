@@ -37,3 +37,28 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results. "sat" = disti
     - Nutristant                           https://apps.apple.com/us/app/nutristant/id6745495283
     - SYE: Allergen & Food Scanner         https://apps.apple.com/us/app/sye-allergen-food-scanner/id6759058947
 
+[4] query: site:apps.apple.com fungal acne ingredient checker  (idea shopping-12)  date: 2026-09-30
+    sat("fungal acne" in title): 0, but SkinSort (4.7, ~6.3K ratings) ships dedicated fungal-acne/Malassezia analysis; 4 dedicated "acne/skincare ingredient scanner" OCR apps (Acne Safe x2, ReadLabel, Skincare Ingredient Checker) + INCI Beauty, Think Dirty -> CONTESTED; feature already owned by strong SkinSort
+    - SkinSort - Skincare Scanner (fungal acne analysis, 4.7/6.3K) https://apps.apple.com/us/app/skinsort-skincare-scanner/id6478040418
+    - SkinSort (sg, same id)               https://apps.apple.com/sg/app/skinsort-skincare-scanner/id6478040418
+    - Acne Safe: Ingredient Scanner (camera OCR) https://apps.apple.com/us/app/acne-safe-ingredient-scanner/id6747936538
+    - SkinCare & Skin Analyzer: Pure       https://apps.apple.com/my/app/skincare-skin-analyzer-pure/id6760477484
+    - Skincare Ingredient Checker          https://apps.apple.com/us/app/skincare-ingredient-checker/id6744064092
+    - ReadLabel - Ingredient Checker       https://apps.apple.com/us/app/readlabel-ingredient-checker/id6756375224
+    - Skin Care Scanner - ReadLabel (same id) https://apps.apple.com/us/app/skin-care-scanner-readlabel/id6756375224
+    - Acne-Safe (older)                    https://apps.apple.com/us/app/acne-safe/id1526314570
+    - Think Dirty                          https://apps.apple.com/us/app/think-dirty-shop-clean/id687176839
+    - INCI Beauty - Cosmetic scanner       https://apps.apple.com/us/app/inci-beauty-cosmetic-scanner/id1276113963
+
+[5] query: site:apps.apple.com grocery price book tracker  (idea shopping-09)  date: 2026-09-30
+    sat("price book" in title): 3 (Price Book - Grocery Tracker w/ AI receipt scan + personal cost-of-living index = the author's exact pitch; Assay - Grocery Price Book; Price Book-Track Grocery Price) + 4 grocery price-history trackers -> CONTESTED/SATURATED for the exact concept
+    - Price Book - Grocery Tracker (AI receipt scan, personal inflation index) https://apps.apple.com/gh/app/price-book-grocery-tracker/id6760607131
+    - Price Book - Grocery Tracker (id, same id) https://apps.apple.com/id/app/price-book-grocery-tracker/id6760607131
+    - Assay - Grocery Price Book           https://apps.apple.com/us/app/assay-grocery-price-book/id6757925961
+    - Price Book-Track Grocery Price       https://apps.apple.com/vn/app/price-book-track-grocery-price/id1431720584
+    - PricePad - Track Prices & Save       https://apps.apple.com/us/app/pricepad-track-prices-save/id1550316875
+    - Grocery Prices History               https://apps.apple.com/us/app/grocery-prices-history/id1474544565
+    - My Grocery Tracker                   https://apps.apple.com/us/app/my-grocery-tracker/id6471903579
+    - Grocery Dealz: Compare Prices        https://apps.apple.com/us/app/grocery-dealz-compare-prices/id6478849172
+    - Groceries Tracker app                https://apps.apple.com/us/app/-/id958368717
+

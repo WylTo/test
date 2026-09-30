@@ -1,0 +1,13 @@
+MAGAZINES-NEWSPAPERS — REVIEWER VERIFY LOG (devil's advocate run)
+Date: 2026-09-30. All URLs copied verbatim from WebSearch results. None constructed.
+
+[1] query: site:apps.apple.com zine maker  (idea magazines-newspapers-01)
+    saturation (dedicated zine-maker apps): 6 (ZINECORE, Zinel [social], Ziner, EZZINE [8-image folded mini-zine = exact pitch], Sequence: Zines & Books [print-ready], Photozine [8-page zine from 1 sheet = exact pitch]) -> SATURATED/CROWDED, mostly 2025-26 entrants
+    - ZINECORE                         https://apps.apple.com/us/app/zinecore/id6763522374
+    - Zinel                            https://apps.apple.com/us/app/zinel/id6760587635
+    - Ziner                            https://apps.apple.com/us/app/ziner/id6755310040
+    - EZZINE (folded mini-zine from 8 images)  https://apps.apple.com/us/app/ezzine/id6758923332
+    - Sequence: Zines & Books (print-ready)     https://apps.apple.com/ph/app/sequence-zines-books/id6789496773
+    - Photozine (8-page zine from 1 sheet)     https://apps.apple.com/us/app/photozine/id6770308723
+    - (noise) ProCCD - Digital Film Camera     https://apps.apple.com/dk/app/proccd-digital-film-camera/id1616113199
+
