@@ -50,3 +50,15 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results. "sat" = disti
     - Recordly (se)                        https://apps.apple.com/se/app/recordly-earnings-tracker/id6749276198?l=en-GB
     - Boomie Rent (noise)                  https://apps.apple.com/us/app/boomie-rent/id6476128095
     - Pickle (noise)                       https://apps.apple.com/us/app/pickle-rent-lend-fashion/id1551736097
+
+[5] query: site:apps.apple.com card show dealer inventory buy sell trade  (idea finance-14)
+    sat(dedicated card-show vendor tools): 4 (DeckTradr, CardOps: TCG Vendor Tracker w/ Show Mode, CardCalc "#1 tool for Pokemon card show vendors", Deal IQ: Card Deal Manager) — all 2025-26 with live prices/scanning -> CROWDED, author missed all 4
+    - DeckTradr (TCG vendor POS, P/L, events) https://apps.apple.com/us/app/decktradr/id6748241256
+    - Alt: Buy & Sell Cards (marketplace)  https://apps.apple.com/us/app/alt-buy-sell-cards/id1575997830
+    - CardOps: TCG Vendor Tracker (Show Mode: Sell/Buy/Trade) https://apps.apple.com/gb/app/cardops-tcg-vendor-tracker/id6790439848
+    - My Card Post                         https://apps.apple.com/us/app/my-card-post/id6502495942
+    - CardCalc - TCG Calculator (card show vendors, trade calc) https://apps.apple.com/us/app/cardcalc-tcg-calculator/id6752672423
+    - CardBook                             https://apps.apple.com/us/app/cardbook/id1635383933
+    - TCG Card Shop Tycoon Simulator (noise) https://apps.apple.com/us/app/tcg-card-shop-tycoon-simulator/id1605261462
+    - Bias Room: K-Pop Photocards (noise)  https://apps.apple.com/us/app/bias-room-k-pop-photocards/id6759857980
+    - Deal IQ: Card Deal Manager (show dealers, profit) https://apps.apple.com/il/app/deal-iq-card-deal-manager/id6761696554

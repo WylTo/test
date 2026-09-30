@@ -26,3 +26,16 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
     - Redken Style Station (brand, free)  https://apps.apple.com/us/app/redken-style-station/id1456235983
     - (noise) MyColor AI - Color Analysis https://apps.apple.com/us/app/mycolor-ai-color-analysis/id6746819572
 
+[3] query: site:apps.apple.com antique booth consignment sales tracker  (idea business-21 Booth Ledger)
+    saturation (apps explicitly targeting antique mall/consignment booth vendors): 2 direct (Resell Tracker "consignment booths, antique malls"; Quail for Vendors = mall POS-linked real-time sales, server) + 3 booth/vendor trackers (VendStats, QuiVend, myBooth) -> CONTESTED, not open
+    - Resell Tracker (Inventr)            https://apps.apple.com/us/app/resell-tracker-inventr/id6753903683
+    - Quail for Vendors                   https://apps.apple.com/us/app/quail-for-vendors/id1494924515
+    - TreasureLens: Antique Scanner (noise, identifier) https://apps.apple.com/us/app/treasurelens-antique-scanner/id6752492542
+    - VendStats: Sales Tracker            https://apps.apple.com/gh/app/vendstats-sales-tracker/id6759027702
+    - QuiVend: Vendor Companion           https://apps.apple.com/us/app/quivend-vendor-companion/id6773267361
+    - Antique Identifier: Pawn Shop (noise) https://apps.apple.com/us/app/antique-identifier-pawn-shop/id6748286766
+    - myBooth: Inventory & Events         https://apps.apple.com/us/app/mybooth-inventory-events/id6763803666
+    - Antique Identifier - Relic (noise)  https://apps.apple.com/us/app/antique-identifier-relic/id6747602157
+    - Thrifted: Scan & Price Clothes (noise) https://apps.apple.com/us/app/thrifted-scan-price-clothes/id6757867446
+    - BoothMate - Artist Alley POS        https://apps.apple.com/id/app/boothmate-artist-alley-pos/id6759342304
+

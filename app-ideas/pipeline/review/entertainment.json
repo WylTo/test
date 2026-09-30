@@ -1,0 +1,810 @@
+{
+  "category_slug": "entertainment",
+  "summary": "Slabá kategorie: 28 z 30 nápadů je jen 'knowledge' a 4 ze 6 web-ověřených nejlépe hodnocených (audio kniha hostů, učení textů, věštění z kávy, murder mystery, pub quiz host, reminiscence) mají ve skutečnosti 5–9 dedikovaných konkurentů, často z let 2025–2026. Nejlepší sázky jsou levné nástroje s ověřenou mezerou: Lenormand trenér (#01) a Kartenblock (#04) – obě ale kolidují s nápady v lifestyle/games. Společná vada: přemrštěná revenue_math (téměř nic realisticky nepřesáhne 10 tis. Kč), 4.3(b) (fortune telling, drinking games) a tři téměř stejné charades/party appky (4.3 spam). GO podíl je záměrně nízký.",
+  "reviews": [
+    {
+      "id": "entertainment-01",
+      "verdict": "GO",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Guideline 4.3(b) výslovně jmenuje fortune telling jako přeplněnou kategorii – review může appku odmítnout, pokud nevypadá jako výrazně odlišná (trenér/učení musí být hlavní, ne generátor výkladů).",
+        "Duplicita s lifestyle #6 (stejný Lenormand nápad) – portfolio nesmí vydat dvě podobné věštecké appky, jinak 4.3 spam na účet.",
+        "Poptávka 'lenormand' je malá a z velké části na Google/YouTube; 'baralho cigano' v BR má nízkou kupní sílu a nízký podíl iOS.",
+        "Stará konkurence (2012–2017) má i tak nasbírané recenze a stáří účtu – nová appka je v prvních měsících pod nimi."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Lenormand!",
+          "url": "https://apps.apple.com/sg/app/lenormand/id873095450",
+          "note": "další stará dedikovaná appka z evidence, autor ji neuvedl"
+        }
+      ],
+      "revenue_czk_realistic": 7000,
+      "reviewer_note": "Jediný nápad s reálně ověřenou mezerou (6 titulů, vše 2012–2017). Stavět jako 'Lenormand trenér Grand Tableau' (vzdělávací rámec kvůli 4.3(b)) a vydat jen v jedné kategorii – buď tady, nebo lifestyle #6. Kipperkarten (#19) přidat jako balíček uvnitř, ne jako samostatnou appku."
+    },
+    {
+      "id": "entertainment-02",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 3,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Ověřeno: 'audio guestbook' už má 5 appek z let 2024–2026, včetně přesně stejného iPad kiosku za 1,99 USD (Audio Guestbook - Wedding app) – cenu 14,99 USD neudržíte.",
+        "Kouzlo trendu je fyzické retro sluchátko; iPad na stole je pro nevěsty slabší náhrada, půjčovny prodávají zážitek, ne software.",
+        "Jednorázový nákup na celý život (1 svatba), silná sezónnost květen–září, nulová retence a nulový word-of-mouth v App Store.",
+        "QR varianty konkurence (hosté nahrávají z vlastního telefonu) jsou pohodlnější – offline kiosk je výhoda jen pro sály bez Wi-Fi."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Audio Guestbook - Wedding app",
+          "url": "https://apps.apple.com/us/app/audio-guestbook-wedding-app/id6717612763",
+          "note": "přímý iPad kiosk za 1,99 USD – stejný koncept"
+        },
+        {
+          "name": "Dial Moments: Audio Guestbook",
+          "url": "https://apps.apple.com/us/app/dial-moments-audio-guestbook/id6760517005",
+          "note": "QR/odkaz, free+IAP, 2026"
+        },
+        {
+          "name": "Audio Guestbook (Wedding Audio)",
+          "url": "https://apps.apple.com/ie/app/audio-guestbook/id6748583010",
+          "note": "QR model, free+IAP"
+        },
+        {
+          "name": "Guestbook Go: wedding fun",
+          "url": "https://apps.apple.com/us/app/guestbook-go/id1450808655",
+          "note": "starší svatební kniha hostů"
+        }
+      ],
+      "revenue_czk_realistic": 4000,
+      "reviewer_note": "Není to modrý oceán – EN klíčová slova jsou obsazená novými appkami. Dává smysl jen jako lokalizovaný kiosk (DE 'Audio-Gästebuch', FR 'livre d'or audio', ES) s podporou USB-C/Bluetooth sluchátka a exportem 'sestřihu'; počítat s ~3–5 tis. Kč sezónně.",
+      "web_checked": true
+    },
+    {
+      "id": "entertainment-03",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 1,
+        "monetization": 5,
+        "build_ease": 4,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Ověřeno: 9 z 9 výsledků jsou dedikované appky na učení textů, 6+ z let 2025–2026 (Run Lines s offline AI hlasem, Linus s automatickou detekcí jazyka scénáře).",
+        "Lokalizační výhoda neexistuje – iOS TTS a on-device hlasy fungují ve všech jazycích, konkurence ji dostane zadarmo.",
+        "Amatérští ochotníci (cílovka) jsou cenově nejcitlivější segment a dostávají text jako PDF – import PDF/OCR a rozpoznání postav je pracné (build_ease 4, ne 5)."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Run Lines: Script Rehearsal",
+          "url": "https://apps.apple.com/us/app/run-lines-script-rehearsal/id6755323192",
+          "note": "offline AI hlas – přesně náš diferenciátor"
+        },
+        {
+          "name": "Linus: Learn Lines & Self Tape",
+          "url": "https://apps.apple.com/us/app/linus-learn-lines-self-tape/id6742599484",
+          "note": "vícejazyčné scénáře a akcenty"
+        },
+        {
+          "name": "LearnMyLines: Memorise Scripts",
+          "url": "https://apps.apple.com/tw/app/learnmylines-memorise-scripts/id6751444669?l=en-GB",
+          "note": "nový konkurent"
+        },
+        {
+          "name": "MyLine - Memorize your lines",
+          "url": "https://apps.apple.com/us/app/myline-memorize-your-lines/id6463235632",
+          "note": "dedikovaná appka"
+        },
+        {
+          "name": "Action! Script Rehearsal",
+          "url": "https://apps.apple.com/us/app/action-script-rehearsal/id6759596370",
+          "note": "2026"
+        }
+      ],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Přeplněno: autor odhadoval saturaci 4–6, realita je 9/9 a konkurence už má offline AI i vícejazyčnost. Německé 'rollentext lernen' samo nestačí na appku s 10k Kč.",
+      "web_checked": true
+    },
+    {
+      "id": "entertainment-04",
+      "verdict": "GO",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "extra_risks": [
+        "Duplicita s games #3 (Kartenblock) – stejný nápad ve dvou kategoriích; vydat jen jednou.",
+        "Skat/Doppelkopf hráči jsou převážně 50+ a hrají s papírovým blokem; ochota platit za appku nízká, cena 4,99 USD je strop.",
+        "Autor ověřil jen 'schafkopf rechner'; pro Doppelkopf a Skat existují podle znalosti malé bodovací appky (Doko/Skat listy), saturace 1–2 je optimistická.",
+        "Pravidla se regionálně liší (Hausregeln, Bockrunden, Solo varianty) – bez konfigurovatelných pravidel přijdou 1★ recenze."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Schafkopf-Rechner",
+          "url": "https://apps.apple.com/de/app/schafkopf-rechner/id1581835652",
+          "note": "jediný ověřený kalkulátor – autor ho má"
+        },
+        {
+          "name": "Doppelkopf LITE",
+          "url": "https://apps.apple.com/de/app/doppelkopf-lite/id992924790",
+          "note": "hra, ne blok, ale obsazuje 'doppelkopf' v titulu (games verify: saturace 5)"
+        }
+      ],
+      "revenue_czk_realistic": 4000,
+      "reviewer_note": "Levná 2–3týdenní stavba s ověřenou mezerou a opakovaným týdenním použitím (Stammtisch). Příjem spíš 3–5 tis. Kč, ne 11,7 tis.; GO jako levná sázka jen pokud se nevydá zároveň games #3."
+    },
+    {
+      "id": "entertainment-05",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 1,
+        "monetization": 6,
+        "build_ease": 4,
+        "offline_fit": 4,
+        "safety": 2
+      },
+      "extra_risks": [
+        "Ověřeno: 7+ appek na 'coffee cup reading' i v angličtině, 4 z nich 2024–2026 s AI rozborem fotky (Telveden, CoffeeTells, Cosmica, falai).",
+        "Apple Foundation Models na zařízení jsou textové – rozpoznání tvarů v sedlině offline není reálné; výsledek by byl náhodný text, tj. 'offline full' je iluze.",
+        "Guideline 4.3(b) výslovně uvádí fortune telling jako přeplněnou kategorii; další věštecká appka od stejného vývojáře (vedle Lenormand) zvyšuje riziko zamítnutí účtu.",
+        "Týdenní předplatné 2,99 USD za 'náhodný výklad' je vzorec, který Apple aktivně zamítá (3.1.2 / 5.6 klamavé praktiky)."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Telveden - Coffee Cup Reading",
+          "url": "https://apps.apple.com/us/app/telveden-coffee-cup-reading/id6759950935",
+          "note": "AI rozbor 5 zón šálku, 2026"
+        },
+        {
+          "name": "CoffeeTells: Coffee Reading",
+          "url": "https://apps.apple.com/ee/app/coffeetells-coffee-reading/id6748279021",
+          "note": "AI tasseografie"
+        },
+        {
+          "name": "Cosmica: Coffee Fortune Teller",
+          "url": "https://apps.apple.com/us/app/cosmica-coffee-fortune-teller/id6762094483",
+          "note": "Gemini Vision"
+        },
+        {
+          "name": "falai: Fortune Teller, Tarot",
+          "url": "https://apps.apple.com/eg/app/falai-fortune-teller-tarot/id6474351016",
+          "note": "káva, dlaň, tarot"
+        },
+        {
+          "name": "Kopuklu Tarot & Coffee Fortune",
+          "url": "https://apps.apple.com/us/app/kopuklu-tarot-coffee-fortune/id1142831604",
+          "note": "TR veterán"
+        }
+      ],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Saturováno AI appkami, které běží na cloudovém vision modelu – offline to neumíme udělat dobře a 4.3(b) nás tlačí k zamítnutí. Zabít.",
+      "web_checked": true
+    },
+    {
+      "id": "entertainment-06",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 1,
+        "monetization": 6,
+        "build_ease": 3,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Ověřeno: 7 dedikovaných 'host a murder mystery' appek, 5 z nich 2025–2026, některé s AI generovanými scénáři (Alibi) – obsah už není konkurenční výhoda.",
+        "Autorem citovaný 'niche' konkurent Party Games: Imposter & Cards sám už murder mystery z jednoho telefonu hostuje.",
+        "Obsahová dřina: kvalitní scénář pro 6–12 hráčů je týdny psaní; 50 jazyků × N scénářů je nerealistické pro 1 vývojáře.",
+        "Použití 1–2× za rok na hostitele, nákup scénáře ne předplatné – nízké LTV."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Alibi: Host a Murder Mystery",
+          "url": "https://apps.apple.com/mt/app/alibi-host-a-murder-mystery/id6759176992",
+          "note": "AI scénáře, 6–12 hráčů – přesný duplikát pitche"
+        },
+        {
+          "name": "Whodunnit: Murder Mystery Game",
+          "url": "https://apps.apple.com/us/app/whodunnit-murder-mystery-game/id978469738",
+          "note": "od 2015, hostitelský model"
+        },
+        {
+          "name": "Foul Play: Murder Mystery",
+          "url": "https://apps.apple.com/sr/app/foul-play-murder-mystery/id6794909129?platform=ipad",
+          "note": "jeden hostitel, iPhone/iPad"
+        },
+        {
+          "name": "Murder Dinner Club",
+          "url": "https://apps.apple.com/uy/app/murder-dinner-club/id6756533133?platform=watch",
+          "note": "bez game mastera"
+        },
+        {
+          "name": "Murder Mystery Party",
+          "url": "https://apps.apple.com/us/app/murder-mystery-party/id6751867663",
+          "note": "2025"
+        }
+      ],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Nika, kterou autor považoval za prázdnou, je nejhustěji obsazená z celé kategorie. Jediný zbytek je DE 'Krimidinner', ale to nestačí na obsahově náročný produkt.",
+      "web_checked": true
+    },
+    {
+      "id": "entertainment-07",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Pokud appka skončí v Kids kategorii nebo cílí na děti, platí přísná pravidla 1.3/5.1.4 (žádná analytika, parental gate) – je nutné ji pozicovat pro rodiče.",
+        "Jednorázový nákup 3,99 USD a použití párkrát za rok (vypadlý zub) = velmi nízké LTV; realisticky stovky nákupů měsíčně ne.",
+        "Ratoncito Pérez/Petite Souris mají pravděpodobně malé místní appky (neověřeno) a trh ES/LatAm má nízký podíl iOS mimo Španělsko.",
+        "Kvalita AR/kompozitu rozhoduje o recenzích; levně vypadající víla = 1★."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 3000,
+      "reviewer_note": "Kulturní lokalizace (Ratoncito Pérez, Petite Souris, Zahnfee) je legitimní reverzní úhel, ale peníze jsou malé. Stavět jen jako 3–4týdenní projekt s balíčkem postav a bez ambice 14 tis. Kč."
+    },
+    {
+      "id": "entertainment-08",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 2,
+        "monetization": 5,
+        "build_ease": 3,
+        "offline_fit": 8,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Ověřeno: Quizado už dělá přesně hostitel + obrazovka pro hráče + bzučák + scoreboard + hotové sady otázek; dále Trivnow, Trivia Maker, Buzzer Blitz.",
+        "Hospodský kvíz potřebuje každý týden čerstvé otázky – to je obsahová služba (server/aktualizace), ne offline appka; balíčky v 50 jazycích nelze napsat.",
+        "Kahoot/Quizizz jsou pro hostitele zdarma a hráči je znají; profesionální quizmasteři kupují otázky od specializovaných služeb, ne z App Store.",
+        "Pojmenovávat to 'pub quiz' je v UK/IE obsazené a v jiných zemích se tak nevyhledává."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Quizado: Bar Trivia & Pub Quiz",
+          "url": "https://apps.apple.com/us/app/quizado-bar-trivia-pub-quiz/id1610106151",
+          "note": "host + game screen + bzučák + scoreboard – náš celý pitch"
+        },
+        {
+          "name": "Trivnow - Trivia Night",
+          "url": "https://apps.apple.com/us/app/trivnow-trivia-night/id1503986303",
+          "note": "pro hostitele i podniky"
+        },
+        {
+          "name": "Trivia Maker - Quiz Creator",
+          "url": "https://apps.apple.com/ca/app/trivia-maker-quiz-creator/id1344136222",
+          "note": "vlastní kvíz se scoreboardem"
+        },
+        {
+          "name": "Buzzer Blitz: Trivia Scoring",
+          "url": "https://apps.apple.com/us/app/buzzer-blitz-trivia-scoring/id1522809359",
+          "note": "bodování týmů"
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Hlavní funkce už nabízí Quizado a hodnota je v obsahu otázek, který offline studio nedokáže průběžně dodávat. Zabít.",
+      "web_checked": true
+    },
+    {
+      "id": "entertainment-09",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 2,
+        "monetization": 4,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "'photo booth' je jedno z nejhustších klíčových slov (Simple Booth, Snappic, Pocketbooth, desítky klonů) – i 'wedding photo booth' a 'ipad photo booth' vlastní stejní hráči.",
+        "Fotokoutek jako appka pro 4.3 hraničí s šablonou; zjednodušené fotokoutky jsou zdarma s reklamou.",
+        "DIY páry chtějí tisk a sdílení na místě (AirPrint, QR stažení) – QR sdílení bez vlastního serveru nejde.",
+        "Jednorázové použití, sezónnost svateb."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Autor sám dal blue_ocean 4 a má pravdu – je to rudý oceán s jednorázovým použitím. DE 'Fotobox Hochzeit' je slabá opora. Zabít."
+    },
+    {
+      "id": "entertainment-10",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 5,
+        "monetization": 3,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Sólo RPG komunita je zvyklá na zdarma nástroje (weby, Obsidian pluginy, PDF tabulky) a platí za pravidla (Mythic, Ironsworn/Starforged), ne za oracle appku.",
+        "Nejlepší tabulky jsou chráněné (Mythic, Ironsworn karty mimo CC části) – bez licence zůstane generický oracle, který se snadno kopíruje.",
+        "'solo rpg' se hledá hlavně na Redditu/Google; v App Store je poptávka nejistá (neověřeno), existují dice/oracle appky (Iron Journal ap.).",
+        "Nízká cena 7,99 USD jednorázově × malé publikum = pod 10 tis. Kč."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 2500,
+      "reviewer_note": "Rychlá stavba, ale malé peníze. Smysl jen s vlastním obsahem pod CC licencí + deníkem kampaně synchronizovaným přes iCloud a jazykovou lokalizací (DE/FR/ES/PL sólo komunity), kde anglické nástroje nefungují."
+    },
+    {
+      "id": "entertainment-11",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "extra_risks": [
+        "Japonské kamerové kalkulačky (rozpoznání kamenů z fotky) už mají statisíce uživatelů; stačí, aby jedna přidala angličtinu, a náš jediný diferenciátor zmizí.",
+        "Western riichi komunita je malá (kluby EMA/USA, desítky tisíc aktivních) a online hry (Mahjong Soul, Riichi City) počítají body automaticky.",
+        "Rozpoznání 34 typů kamenů přes Core ML potřebuje trénovací dataset a různé sady kamenů – build_ease 4, ne 6.",
+        "Anglické riichi kalkulačky pravděpodobně existují (autor neověřil) – 'mahjong score calculator' navíc míchá čínské/HK/americké varianty."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Reálná reverzní mezera (JP → svět), ale trh je malý. Dává smysl jen s kamerovým rozpoznáním a výukou han/fu v EN/DE/FR/PT; počítat s ~2 tis. Kč měsíčně."
+    },
+    {
+      "id": "entertainment-12",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 3,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "extra_risks": [
+        "Guideline 4.3(b) jmenuje drinking games jako přeplněnou kategorii – rozlučkové hry jsou z velké části pitné úkoly.",
+        "Velké party appky (Picolo a podobné, Party Games: Imposter & Cards) mají rozlučkové balíčky; 'bachelorette party games' má řadu dedikovaných appek.",
+        "Použití jednou za život skupiny, platí jen jedna družička 5,99 USD – nemožné dostat se na 14 tis. Kč.",
+        "Obsah rozlučkových úkolů je silně kulturní (JGA v DE ≠ hen do v UK) – překlad nestačí, nutné psát znovu."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Party Games: Imposter & Cards",
+          "url": "https://apps.apple.com/us/app/party-games-imposter-cards/id6766637109",
+          "note": "univerzální party appka pokrývající stejné použití"
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Jednorázová událost, pitné hry v 4.3(b) a konkurence velkých party appek. Zabít."
+    },
+    {
+      "id": "entertainment-13",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 5,
+        "monetization": 2,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "extra_risks": [
+        "Pracujících stand-up komiků je globálně pár desítek tisíc a většina používá Apple Notes/Notion – poptávka v App Store minimální.",
+        "Apple Notes (tagy, složky, nahrávky, přepis v iOS 18+) Sherlockuje 80 % funkcí včetně nahrávání a přepisu setu.",
+        "Existují malé komediální appky (set list/bit organizer) – nízký rating, ale důkaz, že trh neplatí.",
+        "Revenue 18 800 Kč by vyžadovalo ~40 předplatných měsíčně z hrstky uživatelů – nereálné."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Krásná nika, žádné peníze. Předplatné 19,99 USD/rok pro pár tisíc potenciálních uživatelů globálně a Apple Notes + Voice Memos s přepisem to dělají zdarma. Zabít."
+    },
+    {
+      "id": "entertainment-14",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 3,
+        "monetization": 2,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "ChatGPT/Apple Intelligence vygeneruje rýmované nápovědy zdarma za 10 sekund – Sherlock pro hlavní funkci.",
+        "Pinterest/Etsy mají tisíce tisknutelných sad zdarma nebo za 3 USD; rodiče hledají na Google, ne v App Store.",
+        "'treasure hunt' a 'scavenger hunt' jsou v App Store obsazené hrami a GooseChase/Actionbound; long-tail 'treasure hunt clues' má nejistou poptávku.",
+        "Jednorázový nákup 4,99 USD, sezónní (narozeniny, Velikonoce)."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Obsah je dostupný zdarma na webu a z AI; appka nemá obhajitelnou výhodu. Zabít."
+    },
+    {
+      "id": "entertainment-15",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 3,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Anglické 'bible charades/heads up' appky existují v počtu (autor sám odhaduje 3); španělské 'juegos bíblicos' mají trivia appky – mezera je jen ve formátu heads-up, ne v tématu.",
+        "Cílové trhy (LatAm, BR) mají nízký podíl iOS a kupní sílu; mládežnické skupiny platí málokdy, 4,99 USD je strop.",
+        "Stejný engine jako ESL charades (#26) a dětské party hry (#27) – více téměř stejných appek = 4.3 spam riziko pro účet.",
+        "Denominační citlivost (katolické vs. evangelikální překlady jmen) vede k 1★ recenzím."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Jednotýdenní stavba s reálným publikem, ale malými penězi. Postavit jen jako jedinou charades appku studia (ES/PT/PL lokalizovaný obsah, ne překlad), ne jako jednu ze tří variant."
+    },
+    {
+      "id": "entertainment-16",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 3,
+        "monetization": 5,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Ověřeno: 7+ dedikovaných appek (Memory Lane Games + Pro, InspireD Reminiscence, Golden Memories, Recollect, RecallCue) – 'reminiscence' není prázdný.",
+        "Vzpomínkový obsah je kulturně specifický (česká 60. léta ≠ americká) – nelze přeložit, pro každou zemi se musí psát znovu; 50 jazyků je nesmysl.",
+        "B2B nákup domovů seniorů jde přes smlouvy a faktury, ne přes Apple ID aktivizačního pracovníka; ASO-only kanál je slabý.",
+        "Klíčové slovo 'dementia games' tlačí ke zdravotním claimům (1.4.1)."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Memory Lane Games",
+          "url": "https://apps.apple.com/us/app/memory-lane-games/id1517193093",
+          "note": "vlastní 'reminiscence trivia' pro péči o seniory"
+        },
+        {
+          "name": "Memory Lane Games Pro",
+          "url": "https://apps.apple.com/us/app/memory-lane-games-pro/id6443470453",
+          "note": "profesní verze pro zařízení"
+        },
+        {
+          "name": "The InspireD Reminiscence App",
+          "url": "https://apps.apple.com/us/app/the-inspired-reminiscence-app/id1544800098",
+          "note": "personalizovaná reminiscence"
+        },
+        {
+          "name": "Golden Memories",
+          "url": "https://apps.apple.com/us/app/golden-memories/id1629883500",
+          "note": "trénink s rodinnými fotkami"
+        }
+      ],
+      "revenue_czk_realistic": 2500,
+      "reviewer_note": "Anglicky obsazeno. Jediná cesta: lokální vzpomínkový obsah pro 2–3 země (DE, CZ, PL), kde Memory Lane nic nemá, a žádné zdravotní claimy. Počítat s pár tisíci Kč.",
+      "web_checked": true
+    },
+    {
+      "id": "entertainment-17",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 3,
+        "monetization": 3,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 3
+      },
+      "extra_risks": [
+        "Popis a screenshoty v App Store prozradí tajemství triku – diváci si appku najdou; profesionální efekty proto prodává Penguin Magic/Ellusionist mimo App Store.",
+        "Amatéři chtějí video tutoriály zdarma (YouTube); 'magic tricks' je přeplněné.",
+        "Skryté/klamavé funkce (falešná obrazovka, tajný vstup) mohou narazit na 2.3.1 (skryté funkce) při review.",
+        "Nové efekty 2,99 USD vyžadují stálý tok vynálezů – mentalistické principy jsou omezené a známé."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Model podnikání mentalistických appek stojí na utajení a distribuci přes kouzelnické obchody, ne na ASO. Zabít."
+    },
+    {
+      "id": "entertainment-18",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 2,
+        "monetization": 3,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Tabletop Audio je zdarma, YouTube/Spotify mají hodiny RPG ambience zdarma; Syrinscape má oficiální licence na velké systémy.",
+        "Kvalitní zvukové smyčky je nutné licencovat nebo nahrát – cena obsahu převyšuje realistický příjem.",
+        "'dnd' je ochranná známka Wizards of the Coast – nelze použít v titulu/klíčových slovech bez rizika (2.3.7/5.2).",
+        "Existuje řada iOS RPG soundboardů (neověřeno URL) – 'rpg ambience' není prázdné."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Obsah zdarma všude, silní lídři s licencemi a trademark na hlavním klíčovém slově. Zabít."
+    },
+    {
+      "id": "entertainment-19",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 5,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 3
+      },
+      "extra_risks": [
+        "Samostatná appka s enginem Lenormand (#01) = téměř jistá 4.3 spam/duplicita na účtu + 4.3(b) fortune telling.",
+        "'kipper cards' v angličtině prakticky bez poptávky; Kipperkarten je úzký DE/AT trh, starší uživatelky platí málo přes App Store.",
+        "Ilustrace karet: tradiční Kipper sady mohou mít chráněné novodobé verze (Piatnik/ASS) – nutné vlastní kresby."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Scrying Ink Lenormand",
+          "url": "https://apps.apple.com/us/app/scrying-ink-lenormand/id1118896048",
+          "note": "autor sám uvádí"
+        }
+      ],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Jako samostatná appka ne – přidat Kipperkarten jako prémiový balíček do Lenormand appky (#01)."
+    },
+    {
+      "id": "entertainment-20",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 2,
+        "monetization": 2,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "V Argentině/Uruguayi existuje řada zdarma anotadorů (Truco, Generala, Chinchón) – autor sám odhaduje saturaci 5.",
+        "Argentina má nízký podíl iOS a extrémní cenovou citlivost; 2,99 USD na odstranění reklam je pro trh vysoká cena.",
+        "Reklamy v modelu jsou proti filozofii studia a v LatAm mají velmi nízké eCPM.",
+        "Truco v BR ('truco paulista/mineiro') má jiná pravidla bodování – další fragmentace."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Nika je obsazená zdarma appkami a trh neplatí. Zabít."
+    },
+    {
+      "id": "entertainment-21",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 2,
+        "monetization": 2,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Indie má ~3–5 % podíl iOS a desítky zdarma tambola/housie appek; 'bingo caller' je obsazené.",
+        "Guideline 5.3 – tambola/bingo s penězi (kitty party) je v IN časté; appka musí zdůraznit, že nejde o hazard, jinak review problémy.",
+        "Italská 'tombola' je sezónní (Vánoce) a hraje se s papírovými kartami.",
+        "Model s reklamou + 3,99 USD Pro na trhu, který neplatí."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 700,
+      "reviewer_note": "Trh s nulovou ochotou platit a spoustou bezplatných klonů. Zabít."
+    },
+    {
+      "id": "entertainment-22",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 3,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "App Store vyhledávání 'escape room' vrací hry pro jednoho hráče; 'escape room at home' je Google fráze – v App Store poptávka nejistá.",
+        "Scénáře vyžadují fyzické rekvizity a tisk – složitý onboarding, uživatelé hledají hotové boxy (EXIT, Unlock!) nebo Etsy PDF.",
+        "Obsahová dřina: každý scénář = návrh hádanek + testování; 50 jazyků prakticky nereálné.",
+        "Překryv s Treasure Hunt (#14) – dětské oslavy jsou stejná cílovka."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Pouze jako 'dětská úniková hra na narozeniny' se 3–5 tisknutelnými scénáři v 5 jazycích a appkou jako game masterem (časovač, nápovědy, zámky). Jinak zabít."
+    },
+    {
+      "id": "entertainment-23",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 5,
+        "monetization": 2,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "extra_risks": [
+        "Improv trenérů je málo a mají zdarma Improv Encyclopedia, knihy a vlastní poznámky.",
+        "Generátor zadání je triviální pro ChatGPT – Sherlock.",
+        "Existují zdarma 'improv prompts' appky – příjem 9,99 USD jednorázově × stovky kupců globálně."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 400,
+      "reviewer_note": "Nika bez peněz. Zabít."
+    },
+    {
+      "id": "entertainment-24",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 5,
+        "monetization": 3,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "extra_risks": [
+        "Bez databáze představení je to lepší poznámkový blok; Letterboxd-pro-divadlo appky (US Broadway zaměřené) existují a mají komunitu, kterou offline nenahradíme.",
+        "Divadelní diváci jsou vytrvalí, ale nízkoobjemoví – pár návštěv měsíčně, jednorázový nákup 7,99 USD.",
+        "OCR vstupenek funguje špatně na různých formátech (mobilní vstupenky, Wallet) – nutný dobrý ruční vstup."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Příjemná, bezpečná appka pro evropské operní/divadelní diváky (DE/AT/CZ/UK), ale pod 10 tis. Kč. Stavět jen pokud je volná kapacita; hlavní hook: statistika + import z Wallet vstupenek."
+    },
+    {
+      "id": "entertainment-25",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 3,
+        "monetization": 2,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "extra_risks": [
+        "Cosplanner je zavedený a zdarma, komunita ho zná; nová appka nemá čím přetáhnout.",
+        "Cílovka (teenageři, studenti) platí velmi málo; 14,99 USD/rok nereálné.",
+        "Obecné nástroje (Notion šablony, Trello) mají cosplay šablony zdarma."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 600,
+      "reviewer_note": "Obsazeno bezplatným lídrem a cílovka neplatí. Zabít."
+    },
+    {
+      "id": "entertainment-26",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 3,
+        "monetization": 2,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Učitelé používají projektor a webové nástroje zdarma (Baamboozle, Wordwall, Kahoot) – telefon na čele není třídní formát.",
+        "'Taboo' je ochranná známka Hasbro – klíčové slovo 'taboo esl' nelze použít.",
+        "Stejný engine jako #15 a #27 – 4.3 duplicita v portfoliu.",
+        "Učitelé kupují appky zřídka z vlastních peněz; školy nakupují přes Apple School Manager hromadně jen u známých značek."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 600,
+      "reviewer_note": "Rozdělení charades enginu do tří appek je spam riziko a ESL varianta má nejslabší peníze. Zabít (případně ESL balíček uvnitř #15)."
+    },
+    {
+      "id": "entertainment-27",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 3,
+        "monetization": 2,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Freeze dance = pauza na Spotify; rodiče appku nepotřebují – Sherlock existujícími přehrávači.",
+        "Přehrávání uživatelské hudby z Apple Music přes MusicKit je OK, ale Spotify nelze ovládat bez SDK a internetu – offline slib je slabý.",
+        "Stejný party engine jako #15/#26 – 4.3."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Party Games: Imposter & Cards",
+          "url": "https://apps.apple.com/us/app/party-games-imposter-cards/id6766637109",
+          "note": "party appka z evidence (autor uvádí)"
+        }
+      ],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Problém, který rodiče nemají. Zabít."
+    },
+    {
+      "id": "entertainment-28",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 3,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "V DE existuje mnoho appek na KFZ-Kennzeichen (vyhledávání okresů, kvízy) s tisíci hodnocení – 'kennzeichen spiel' není prázdné.",
+        "Sezónnost (letní prázdniny) a jednorázový nákup 4,99 USD.",
+        "Registrační kódy se mění (CZ krajské značky, nové DE 'Altkennzeichen') – data potřebují údržbu.",
+        "US 'license plate game' appky mají zavedené značky; evropská verze musí pokrýt 20+ zemí s různými systémy."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Solidní reverzní úhel (US → EU), ale malé peníze a obsazené DE vyhledávání. Stavět jen jako 'rodinné hry do auta EU' s CZ/PL/AT/NL/IT kódy, kde DE appky nejsou."
+    },
+    {
+      "id": "entertainment-29",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 5,
+        "monetization": 2,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "extra_risks": [
+        "Karaoke KJ používají profesionální software (Karaoke Media Players, KaraFun Business) s rotací v ceně; open mic pořadatelé používají papír nebo Google formulář.",
+        "Poptávka 3/10 dle autora – příjem 18 700 Kč je v rozporu s vlastním skóre (vyžadovalo by ~40 ročních předplatných měsíčně).",
+        "Přihlašování hostů z vlastních telefonů by vyžadovalo server; bez toho jde jen o seznam na iPadu."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 400,
+      "reviewer_note": "Malý profesní trh s existujícími nástroji a revenue_math vyšší než poptávka dovoluje. Zabít."
+    },
+    {
+      "id": "entertainment-30",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 2,
+        "monetization": 2,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Wheel of Names (web) je zdarma a promítá se na plátno; iOS má desítky random picker/raffle appek.",
+        "Slosování tombol je jednou za rok na spolek; 6,99 USD za event je vysoká cena proti zdarma alternativám.",
+        "Losování ceny za peníze = loterie; v některých zemích licence (appka jen losuje, ale review se může ptát – 5.3)."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Commodity funkce zdarma na webu. Zabít."
+    }
+  ]
+}
