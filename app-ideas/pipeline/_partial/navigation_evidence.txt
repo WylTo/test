@@ -1,2 +1,13 @@
 # Navigation — 0 searches succeeded. Unchecked candidates:
 anchor alarm; sailing race start line; celestial navigation; trolling-speed GPS for anglers; motorcycle lean angle & G-force; rally tripmaster; paragliding variometer; avalanche slope angle; tractor GPS parallel guidance; hunters' legal shooting hours; mushroom/foraging secret spots; metal-detecting find log; mantrailing / dog-tracking training (DE/CZ); festival tent finder; bus-stop wake-up alarm; in-flight offline GPS map; cruise-ship offline GPS; solar panel tilt compass (DE balcony solar); ham radio Maidenhead locator; MGRS/UTM converter; land-nav pace-count trainer; kids' GPS treasure hunt; emergency coordinates by SMS; talking compass for blind users (gap after Microsoft Soundscape shut down 2023).
+
+# 2026-09-30 search: site:apps.apple.com anchor alarm → SATURATED (9 dedicated apps)
+https://apps.apple.com/us/app/anchor-watch-anchor-alarm/id6479644118
+https://apps.apple.com/us/app/anchor-alarm-gps-boat-watch/id6749796095
+https://apps.apple.com/us/app/anchor-alarm-watch/id1428485893
+https://apps.apple.com/om/app/eh-anchor-alarm/id6757268282
+https://apps.apple.com/us/app/social-anchor-anchor-alarm/id1666335314
+https://apps.apple.com/us/app/anchor-alarm-for-boaters/id743610888
+https://apps.apple.com/us/app/anchor-alarm-with-late-set/id1292028990
+https://apps.apple.com/us/app/anchory-anchor-drag-alarm/id1444742965
+https://apps.apple.com/gb/app/safeanchor-net-anchor-alarm/id1225033114
