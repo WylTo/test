@@ -1,0 +1,855 @@
+{
+  "category_slug": "news",
+  "summary": "News je pro serverless studio nejslabší kategorie, jakou jsem viděl. Všech 30 nápadů je jen z autorovy znalosti a všech 6 mých ověřovacích searchů (pet/food recall, baby/car seat recall, graded news, police codes, read-later, insider Form 4) našlo saturaci 6–8 appek, většinou z let 2024–26. Autorovy odhady saturace 2–3 byly systematicky špatně. Společná vada: polovina nápadů je ‚alert‘ z veřejného feedu, jehož hodnota je rychlost, a tu bez vlastního serveru (jen BGAppRefresh) nedodáme. Kromě toho ochota platit za zprávy je nízká a ideální výnosy 25–38 tis. Kč jsou fikce. Nejlepší sázky jsou latenci necitlivé offline utility: Clipping Keeper (genealogie) a Tender Alerts (B2B, lhůty v týdnech). Realisticky ale ani ty nepřesáhnou 5 tis. Kč/měs.",
+  "reviews": [
+    {
+      "id": "news-01",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 2,
+        "monetization": 3,
+        "build_ease": 6,
+        "offline_fit": 3,
+        "safety": 4
+      },
+      "extra_risks": [
+        "Ověřeno: 7 dedikovaných recall appek včetně pet food, 4 z nich spuštěné 2025 — autorův odhad saturace 2–3 je špatně.",
+        "Safe Pet Treats už dělá přesně pitch: sken čárového kódu krmiva + push při stažení FDA; náš ‚Live Text štítku‘ není výhoda.",
+        "Bez vlastního serveru jen BGAppRefresh (iOS ho spouští nepravidelně, u málo otevírané appky i dny) — ‚alert‘ přijde pozdě, což je u bezpečnosti potravin reputační i odpovědnostní problém.",
+        "Mimo USA nejsou feedy jednotné (EU Safety Gate/RASFF bez per-brand filtru), takže lokalizace do 50 jazyků nemá data."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Safe Pet Treats",
+          "url": "https://apps.apple.com/us/app/safe-pet-treats/id1023344412",
+          "note": "pet-specific: barcode sken krmiva + push při FDA recallu — přesně náš pitch"
+        },
+        {
+          "name": "Recall Radar: Food Alerts",
+          "url": "https://apps.apple.com/us/app/recall-radar-food-alerts/id6741593814",
+          "note": "food + pet food + drug recall alerty, 2025"
+        },
+        {
+          "name": "Recalls 365: Food Recalls",
+          "url": "https://apps.apple.com/us/app/recalls-365-food-recalls/id6741032452",
+          "note": "food, alergeny, auta, děti, pet — všechno v jedné appce"
+        },
+        {
+          "name": "Woozy: Recall & Safety Alerts",
+          "url": "https://apps.apple.com/mn/app/woozy-recall-safety-alerts/id969894256",
+          "note": "food, auto, pet, baby, pharma recally"
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Niche je obsazená — search našel 7 recall appek a jednu přesně pet-specific s barcode skenem. K tomu serverless alert bez spolehlivé latence. Nestavět.",
+      "web_checked": true
+    },
+    {
+      "id": "news-02",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 3,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 6,
+        "safety": 4
+      },
+      "extra_risks": [
+        "Ověřeno: 6 dedikovaných baby/family recall trackerů (Baby Recall Tracker, RecallDefense, Safe s barcode vs CPSC, RecallScope…), skoro všechny 2025–26 — recall část je saturovaná.",
+        "Datum expirace autosedačky se liší podle výrobce a modelu (6–10 let). Chybný údaj v offline databázi = riziko pro dítě a odpovědnost.",
+        "Když rodič zadá 1–2 položky, jednorázová platba $4.99 za tak malou věc neprojde. Konverze bude spíš 1 % než 4 %."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Baby Recall Tracker",
+          "url": "https://apps.apple.com/ca/app/baby-recall-tracker/id6777469945",
+          "note": "ukládá produkty a hlídá recally, má i průvodce autosedačkami"
+        },
+        {
+          "name": "RecallDefense",
+          "url": "https://apps.apple.com/us/app/recalldefense/id6760236829",
+          "note": "rodiče hlídají autosedačky proti vládním databázím"
+        },
+        {
+          "name": "Baby Recall & Safety - Safe",
+          "url": "https://apps.apple.com/us/app/baby-recall-safety-safe/id6779204311",
+          "note": "barcode sken autosedačky proti CPSC"
+        }
+      ],
+      "revenue_czk_realistic": 2500,
+      "reviewer_note": "Recall v pitchi zahodit, je obsazený. Zbývá úzký offline úhel: ‚expirace autosedačky + kontrola sedačky z druhé ruky‘ (checklist nehody, výrobní štítek přes Live Text, EU i-Size normy lokalizovaně). Předtím ověřit, že keyword ‚car seat expiration‘ nemá vlastní appky.",
+      "web_checked": true
+    },
+    {
+      "id": "news-03",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 3,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 3,
+        "safety": 3
+      },
+      "extra_risks": [
+        "Ověřeno: Recalls 365 už explicitně nabízí ‚allergen warnings‘ a obecné food-recall appky jsou 4+, všechny 2025.",
+        "Pro alergika je zmeškaný nebo opožděný alert nebezpečný (anafylaxe). Serverless latence tu proto nese riziko odpovědnosti i odmítnutí v review (1.4.1).",
+        "Relevantních alertů na jednoho uživatele je pár za rok, takže předplatné $12.99 se neobnoví. Ze stejného důvodu je FSA alert zdarma přes e-mail a X."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Recalls 365: Food Recalls",
+          "url": "https://apps.apple.com/us/app/recalls-365-food-recalls/id6741032452",
+          "note": "food recally + allergen warnings v jedné appce"
+        },
+        {
+          "name": "Food Recalls & Alerts",
+          "url": "https://apps.apple.com/us/app/food-recalls-alerts/id1508680654",
+          "note": "food recall alerty"
+        },
+        {
+          "name": "USA Recalls: Food, Drug Alerts",
+          "url": "https://apps.apple.com/us/app/usa-recalls-food-drug-alerts/id6742926499",
+          "note": "FDA food/drug alerty"
+        }
+      ],
+      "revenue_czk_realistic": 1200,
+      "reviewer_note": "Alergen je jen filtr nad saturovaným recall trhem. Nese zdravotní odpovědnost a hodnota je nízkofrekvenční. Jediný zajímavý kus je UK FSA allergy API lokálně, ale na 10k Kč to nestačí.",
+      "web_checked": true
+    },
+    {
+      "id": "news-04",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 1,
+        "monetization": 4,
+        "build_ease": 5,
+        "offline_fit": 7,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Ověřeno: 8 no-account/offline read-later appek, mnohé přímo s ‚Pocket Alternative‘ v názvu a s AI souhrny (Reeed, ReadIt-Later) — USP ‚bez účtu, offline, AI souhrn‘ je vyčerpaný.",
+        "Safari Reading List (offline uložení zdarma) a Apple Intelligence souhrny v Safari Readeru dělají jádro zdarma.",
+        "Parsování článků (Readability) se rozbíjí na paywallech a JS webech → recenze 1★ bez serveru na fallback."
+      ],
+      "missed_competitors": [
+        {
+          "name": "InfoFlow: Pocket Alternative",
+          "url": "https://apps.apple.com/us/app/infoflow-pocket-alternative/id6499456022",
+          "note": "‚Pocket Alternative‘ v názvu, local-first, bez registrace"
+        },
+        {
+          "name": "Read Later - Reeed: Save",
+          "url": "https://apps.apple.com/us/app/read-later-reeed-save/id6757073720",
+          "note": "offline, AI souhrny, highlights, RSS — skoro kopie pitche"
+        },
+        {
+          "name": "Later",
+          "url": "https://apps.apple.com/us/app/later-save-links-read-later/id1507396839",
+          "note": "no ads, no accounts, offline"
+        },
+        {
+          "name": "Couch",
+          "url": "https://apps.apple.com/be/app/couch-read-later/id963584693",
+          "note": "no sign-up read-later"
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Rudý oceán — pocket exodus 2025 trh přeplnil a GoodLinks drží prémiovou jednorázovou pozici. Nestavět.",
+      "web_checked": true
+    },
+    {
+      "id": "news-05",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 7,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Zotero pro iOS (zdarma) už umí přes share extension uložit stránku s metadaty a citovat. Anglický trh je tak pokrytý zdarma, stejně jako ChatGPT, Scribbr a MyBib.",
+        "Metadata webů bývají neúplná (chybí autor nebo datum), takže výsledná citace je špatně. Student to pozná až od vyučujícího a dá appce 1★.",
+        "Poptávka je silně sezónní (zkouškové a odevzdávání prací), mezi tím se předplatné ruší."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Zotero (iOS)",
+          "url": "",
+          "note": "zdarma, share extension ukládá metadata, generuje bibliografii — autor ho má jen jako ‚parent‘, ale je přímý konkurent"
+        },
+        {
+          "name": "Citace PRO (citace.com)",
+          "url": "",
+          "note": "dominuje ISO 690 v CZ/SK přes institucionální licence (odhad, bez URL)"
+        }
+      ],
+      "revenue_czk_realistic": 4000,
+      "reviewer_note": "V angličtině nemá šanci. Viabilní je jen reverse US-gap úhel: lokální normy ABNT (Brazílie, obří studentský trh), ISO 690 (CZ/SK/PL), GOST (UA/KZ), s ASO na ‚normas ABNT‘, ‚citace ISO 690‘. Předplatné nahradit levným ročním/lifetime."
+    },
+    {
+      "id": "news-06",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 3,
+        "monetization": 5,
+        "build_ease": 4,
+        "offline_fit": 5,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Ověřeno: Readle (CEFR-graded zprávy v 6 jazycích), Level Read (CEFR L1–3 denní zprávy) a 3 AI ‚simplify text‘ appky — niche je obsazená z obou stran.",
+        "Sherlock: Apple Intelligence Writing Tools (Rewrite s vlastním popisem) a ChatGPT udělají ‚přepiš na B1‘ zdarma v Safari.",
+        "Foundation Models běží jen na iPhone 15 Pro+ a v neanglických jazycích píše slabě. Přepisy tak mohou obsahovat faktické chyby, které se student naučí.",
+        "Přepis celého cizího článku a jeho uložení je šedá zóna copyrightu (odvozené dílo)."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Readle: Learn Languages Faster",
+          "url": "https://apps.apple.com/ng/app/readle-learn-languages-faster/id1574889455",
+          "note": "CEFR-graded zprávy, 6 jazyků, silná značka"
+        },
+        {
+          "name": "Level Read, Daily English News",
+          "url": "https://apps.apple.com/us/app/level-read-daily-english-news/id6739826323",
+          "note": "denní anglické zprávy ve 3 CEFR úrovních"
+        },
+        {
+          "name": "Plainify - Simplify Language",
+          "url": "https://apps.apple.com/au/app/plainify-simplify-language/id6756869043",
+          "note": "AI zjednoduší libovolný článek/dokument"
+        }
+      ],
+      "revenue_czk_realistic": 2500,
+      "reviewer_note": "Trh jazyků platí, ale tady je zjednodušení textu commodity (Writing Tools/ChatGPT) a kurátorované CEFR zprávy už existují. Zbývající rozdíl je jen ‚libovolný článek on-device‘, na kterém se nedá postavit byznys.",
+      "web_checked": true
+    },
+    {
+      "id": "news-07",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 4,
+        "monetization": 2,
+        "build_ease": 7,
+        "offline_fit": 5,
+        "safety": 8
+      },
+      "extra_risks": [
+        "Výzkumníci arXiv sledují zdarma: e-mail digest, alphaXiv, Scholar Inbox (personalizovaná doporučení) a indie klienty typu arXiv eXplorer. Na mobilu za to neplatí.",
+        "Hledání ‚arxiv‘ v App Store je mizivé (lidé jdou na web). Většina objemu navíc padne na zavedené klienty.",
+        "Denní listing je velký (stovky abstraktů), takže on-device souhrny na starším HW rychle vybijí baterii a spustit je lze jen ve foregroundu."
+      ],
+      "missed_competitors": [
+        {
+          "name": "arXiv eXplorer",
+          "url": "",
+          "note": "existující indie iOS klient arXiv (odhad, bez URL)"
+        },
+        {
+          "name": "Scholar Inbox",
+          "url": "",
+          "note": "bezplatné personalizované doporučení preprintů (web)"
+        }
+      ],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Pěkná utilita pro pár tisíc lidí, kteří za ni neplatí. Revenue ani v ideálu nedosáhne 10k Kč bez institucionálního prodeje."
+    },
+    {
+      "id": "news-08",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 3,
+        "monetization": 3,
+        "build_ease": 6,
+        "offline_fit": 5,
+        "safety": 4
+      },
+      "extra_risks": [
+        "Read by QxMD, BrowZine (přes knihovny zdarma) a OpenEvidence (AI zdarma pro lékaře) pokrývají potřebu bez placení. Autor sám uvádí jako killer risk bezplatnou konkurenci.",
+        "AI souhrny abstraktů pro kliniky = riziko 1.4.1. Chybné shrnutí výsledku studie může ovlivnit léčbu.",
+        "Lékaři objevují nástroje přes kolegy a instituce, ne přes App Store hledání ‚journal club‘."
+      ],
+      "missed_competitors": [
+        {
+          "name": "OpenEvidence",
+          "url": "",
+          "note": "bezplatná AI literatura pro ověřené zdravotníky, rychle roste (bez URL)"
+        }
+      ],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Profese s kupní silou, ale kategorie je zdarma dotovaná vydavateli a institucemi. ASO-only studio sem neprorazí."
+    },
+    {
+      "id": "news-09",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 5,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Kurátorovaný katalog RSS feedů desítek regulátorů se neustále rozbíjí (změny URL, zrušené feedy). Údržba stojí víc než výnos, stejně jako u news-10.",
+        "Compliance profesionálové pracují na desktopu a v enterprise nástrojích. Mobilní appka od neznámého studia nemá důvěryhodnost.",
+        "Autor sám přiznává, že by appka žila z LinkedInu, ne z ASO. To je v rozporu s modelem Lapnito."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Bez ASO poptávky je to pro studio mrtvé. Feedly/Inoreader s klíčovými slovy řeší 80 % a lidé je už mají."
+    },
+    {
+      "id": "news-10",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 5,
+        "monetization": 3,
+        "build_ease": 3,
+        "offline_fit": 5,
+        "safety": 4
+      },
+      "extra_risks": [
+        "Každý parlament má jiné API a jinou strukturu. Podpora 10+ zemí jsou měsíce práce a trvalá údržba.",
+        "Konkurence zdarma: oficiální appky (Deutscher Bundestag), abgeordnetenwatch.de, TheyWorkForYou. NGO nástroje nic nestojí.",
+        "Politické téma: jakékoli ‚zvýrazňování‘ nebo shrnutí zákona přes AI přitahuje stížnosti na zaujatost."
+      ],
+      "missed_competitors": [
+        {
+          "name": "abgeordnetenwatch.de",
+          "url": "",
+          "note": "bezplatná DE platforma sledování poslanců a hlasování (bez URL)"
+        }
+      ],
+      "revenue_czk_realistic": 700,
+      "reviewer_note": "Nízká poptávka v App Store, vysoká fragmentace dat a konkurence zdarma. US model (LegiScan) žije z B2B API, ne z appky."
+    },
+    {
+      "id": "news-11",
+      "verdict": "GO",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 6,
+        "safety": 6
+      },
+      "extra_risks": [
+        "TED API (v3) je veřejné a bez klíče, ale obsahuje jen nadlimitní zakázky. Malé firmy chtějí hlavně podlimitní národní, jejichž portály se liší a některé nemají API.",
+        "Objem ASO je malý, takže každý jazyk potřebuje vlastní lokální keyword (Ausschreibungen, przetargi, appels d'offres, veřejné zakázky) a jeho ověření.",
+        "Národní agregátory (placené webové služby) mohou mít vlastní appky. Po lokálních keywordech je třeba hledat před vývojem."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 4500,
+      "reviewer_note": "Jeden z mála News nápadů, kde serverless nevadí: tendry mají lhůty týdny, denní BG fetch stačí a B2B cena ~$80/rok dává smysl. Začít TED + 2 země s dobrým open-data API (CZ NEN/ISVZ, PL) a CPV filtrem; ideál 36k je přehnaný, realisticky nízké jednotky tisíc."
+    },
+    {
+      "id": "news-12",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 3,
+        "build_ease": 6,
+        "offline_fit": 7,
+        "safety": 3
+      },
+      "extra_risks": [
+        "Označování konkrétních článků jako ‚manipulativní/clickbait‘ AI modelem generuje falešné pozitivy. Vydavatelé si mohou stěžovat (spory o pověst, 5.2 / 1.1).",
+        "Apple Foundation Models nejsou kalibrované pro detekci manipulace. Nevysvětlitelné skóre podkopává důvěru i hodnocení.",
+        "‚Fake news detector‘ je plný slibujících AI appek a Ground News vlastní ‚media bias‘ s obří značkou i obsahem."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 1200,
+      "reviewer_note": "Politicky citlivé a technicky nespolehlivé. Pokud chybně označí článek, dostaneme stížnosti vydavatelů a nálepku ‚zaujatá appka‘. Riziko převyšuje malý výnos."
+    },
+    {
+      "id": "news-13",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 6,
+        "monetization": 2,
+        "build_ease": 3,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Kvalitní cvičení v 50 jazycích vyžadují lokální příklady manipulace (politika, kultura). Strojový překlad je zničí a dělat je ručně je nereálné.",
+        "Konkurence zdarma a s autoritou: Bad News, Harmony Square (Cambridge), Checkology, Google Interland. Rodiče nemají důvod platit.",
+        "Autor přiznává nízkou aktivní poptávku. Lidé nehledají ‚media literacy‘ v App Store."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Harmony Square",
+          "url": "",
+          "note": "bezplatná hra o dezinformacích (Cambridge/DROG), bez URL"
+        }
+      ],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Obsahově drahé (8 týdnů je optimismus), poptávka v App Store minimální a konkurence jsou bezplatné granty. Pro ASO studio nulový byznys."
+    },
+    {
+      "id": "news-14",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 2,
+        "monetization": 3,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Ověřeno: dedikovaná appka ‚Police 10-Codes & Radio Codes‘ má 11 500+ kódů z 239 agentur ve všech 50 státech. To je přesně náš pitch, jen hotový.",
+        "Scanner appky (Police Scanner Radio: Fire&EMS, 5-0 Radio Pro, Crime Radar) mají 10-kódy podle státu jako bezplatný bonus.",
+        "Čistá referenční appka se statickými daty je jasný kandidát na 4.2/4.3 (minimal functionality), zvlášť když jich studio vydává víc."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Police 10-Codes & Radio Codes",
+          "url": "https://apps.apple.com/us/app/police-10-codes-radio-codes/id6773244206",
+          "note": "11 500+ kódů, 239 agentur, 50 států — niche vlastní"
+        },
+        {
+          "name": "Police Scanner Radio: Fire&EMS",
+          "url": "https://apps.apple.com/us/app/police-scanner-radio-fire-ems/id6760916551",
+          "note": "scanner s vestavěnou referencí 10-kódů podle státu"
+        }
+      ],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Niche už má dedikovaného vítěze s větší databází a parent appky to dávají zdarma. Nestavět.",
+      "web_checked": true
+    },
+    {
+      "id": "news-15",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 6,
+        "monetization": 2,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "extra_risks": [
+        "Scanner hobby je malé a stárne. Seriózní posluchači používají RadioReference (databáze frekvencí) a software k Uniden (Sentinel, ProScan) na PC.",
+        "Logbook bez importu z přijímače znamená ruční zadávání, takže retence bude nízká.",
+        "Klíčové slovo ‚sdr‘ obsluhují SDR klienti a ‚radio log‘ ham logy. Náš listing nebude relevantní ani pro jedno."
+      ],
+      "missed_competitors": [
+        {
+          "name": "RadioReference",
+          "url": "",
+          "note": "appka s databází frekvencí a talkgroup od hlavní komunity (bez URL)"
+        }
+      ],
+      "revenue_czk_realistic": 600,
+      "reviewer_note": "Příliš malá a neplatící niche. I autor má ideál jen na hraně 10k."
+    },
+    {
+      "id": "news-16",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 2,
+        "build_ease": 4,
+        "offline_fit": 4,
+        "safety": 4
+      },
+      "extra_risks": [
+        "Velká část lokálních webů v CZ/PL nemá RSS nebo ho má zakázaný v podmínkách. Kurátorování adresáře feedů pro tisíce měst je nekonečná ruční práce.",
+        "Google News má sekci ‚Místní‘ zdarma a lokální deníky mají vlastní appky. Ochota platit $15/rok za agregaci je minimální (monetizace 3 od autora).",
+        "Zobrazování obsahu vydavatelů v agregátoru bez licence může vést ke stížnostem (5.2.2)."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Google News",
+          "url": "",
+          "note": "sekce Místní zprávy zdarma, lokalizovaná (bez URL)"
+        }
+      ],
+      "revenue_czk_realistic": 600,
+      "reviewer_note": "NewsBreak vydělává na reklamě a lokální síti, ne na RSS. Serverless verze nemá data ani monetizaci."
+    },
+    {
+      "id": "news-17",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 5,
+        "monetization": 3,
+        "build_ease": 7,
+        "offline_fit": 5,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Oficiální appky ministerstev a pojišťoven jsou zdarma, takže platit se dá jen za notifikace změny úrovně. Ty ale bez serveru chodí se zpožděním.",
+        "Licence dat: US State Dept a UK FCDO (OGL) jsou volné, u dalších zemí (AU Smartraveller, CA) je třeba ověřit reuse podmínky.",
+        "Poptávka je nárazová (krize, válka) a sezónní."
+      ],
+      "missed_competitors": [
+        {
+          "name": "GeoSure",
+          "url": "",
+          "note": "bezpečnostní skóre destinací pro cestovatele (bez URL)"
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Užitečné, ale platit za to lidé nebudou. Prodávat jen jako levnou jednorázovou appku ($2.99) pro digitální nomády a firemní travel managery, s důrazem na srovnání US/UK/DE/CZ v rodném jazyce. Na 10k to nedosáhne."
+    },
+    {
+      "id": "news-18",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 2,
+        "monetization": 3,
+        "build_ease": 5,
+        "offline_fit": 3,
+        "safety": 2
+      },
+      "extra_risks": [
+        "Bez serveru nelze doručit rychlý push o zemětřesení. BGAppRefresh proběhne za desítky minut až hodiny, zatímco LastQuake (EMSC) a Earthquake Network jsou okamžité a zdarma.",
+        "Safety: appka, která se tváří jako ‚výstraha‘, a přijde pozdě, je reputační i právní riziko. Na Meteoalarm navíc platí licenční podmínky (EUMETNET).",
+        "NERV je JP fenomén díky vládní JMA infrastruktuře. V Evropě podobné oficiální datové pushe nejsou."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Earthquake Network",
+          "url": "",
+          "note": "bezplatné okamžité alerty, crowdsourcing detekce (bez URL)"
+        }
+      ],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Hlavní hodnota je rychlost a tu serverless architektura nedokáže. Zabíjí to i autorova vlastní poznámka."
+    },
+    {
+      "id": "news-19",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 5,
+        "safety": 7
+      },
+      "extra_risks": [
+        "NVD API bez klíče má přísné rate limity a NVD má od 2024 backlog v obohacování CPE. Párování ‚můj stack → CVE‘ tak bude často minout.",
+        "Sysadmini mají CVE alerty zdarma přes GitHub Dependabot, vendor advisories a Feedly/Mastodon. Mobilní appka je pro ně až druhý kanál.",
+        "Objem App Store hledání ‚cve‘ je malý."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Použít jen CISA KEV (malý, kvalitní feed, CC0) a ruční seznam vendorů místo CPE párování. Levná jednorázová appka pro freelancery a malé IT, ne předplatné $40/rok."
+    },
+    {
+      "id": "news-20",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 6,
+        "monetization": 2,
+        "build_ease": 8,
+        "offline_fit": 5,
+        "safety": 8
+      },
+      "extra_risks": [
+        "Vývojáři to vyřeší zdarma: GitHub ‚Watch → Releases only‘, NewReleases.io, RSS čtečka s Atom feedy. Ochota platit je minimální.",
+        "Neautentizované GitHub API má limit 60 požadavků za hodinu. S 50+ repozitáři to rychle narazí a bez tokenu to nepůjde.",
+        "Hledání v App Store je prakticky nulové."
+      ],
+      "missed_competitors": [
+        {
+          "name": "NewReleases.io",
+          "url": "",
+          "note": "bezplatná webová služba sledování releasů (bez URL)"
+        }
+      ],
+      "revenue_czk_realistic": 300,
+      "reviewer_note": "Nulový trh pro placenou appku."
+    },
+    {
+      "id": "news-21",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 4,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Rychlost je jediná hodnota a bez serveru ji nemáme. Downdetector ukáže výpadek dřív a zdarma.",
+        "Statuspage feedy se liší (Atlassian, Instatus, vlastní), takže každá služba potřebuje údržbu adapteru.",
+        "IT support chce týmové alerty (Slack, PagerDuty). Osobní mobilní widget je slabý use case."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Jen jako widget ‚stav mých 5 služeb‘ s ručním refresh a lokalizací. Nesmí slibovat okamžité notifikace. Levná jednorázová cena, doplněk portfolia, na 10k nedosáhne."
+    },
+    {
+      "id": "news-22",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 1,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 3,
+        "safety": 4
+      },
+      "extra_risks": [
+        "Ověřeno: 7 dedikovaných Form 4 trackerů (Undula, InsiderSignal, Insider Trades ×2, StockInsider, Whalex, Insight), 6 z nich spuštěno 2024–26, všechny s real-time pushem.",
+        "EDGAR vyžaduje User-Agent s kontaktem a má rate limit 10 req/s. Parsování XML Form 4 na zařízení pro watchlist funguje, ale bez serveru chodí alerty pozdě, zatímco konkurence doručí hned.",
+        "Finanční obsah: 3.1.x / nabídky ‚signálů‘ a regulace investičního doporučování v EU."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Undula: Insider Trading",
+          "url": "https://apps.apple.com/us/app/undula-insider-trading/id6744305133",
+          "note": "real-time Form 4 alerty"
+        },
+        {
+          "name": "Insider Trades: Stock Tracker",
+          "url": "https://apps.apple.com/ca/app/insider-trades-stock-tracker/id6752782016",
+          "note": "Form 4 přímo z SEC, instant alerty"
+        },
+        {
+          "name": "Whalex: Insider & 13F Tracker",
+          "url": "https://apps.apple.com/nz/app/whalex-insider-13f-tracker/id6770400771",
+          "note": "Form 4 + 13F + Kongres"
+        },
+        {
+          "name": "StockInsider: Stock Tracker",
+          "url": "https://apps.apple.com/us/app/stockinsider-stock-tracker/id6737145743",
+          "note": "insider buying v reálném čase"
+        }
+      ],
+      "revenue_czk_realistic": 700,
+      "reviewer_note": "Saturováno 2024–26 vlnou insider trackerů se servery. Lokalizace nestačí jako diferenciace.",
+      "web_checked": true
+    },
+    {
+      "id": "news-23",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 4,
+        "monetization": 2,
+        "build_ease": 9,
+        "offline_fit": 5,
+        "safety": 7
+      },
+      "extra_risks": [
+        "iOS widget timeline obnovuje obsah ~40–70× denně, rotace titulků je proto omezená a na Apple Watch ještě víc.",
+        "Většina RSS čteček (Reeder, Unread, Tapestry, Feeeed) má widgety zdarma v ceně.",
+        "Minimální funkcionalita (4.2) je riziko u appky, jejíž hlavní UI je jen widget."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Tapestry",
+          "url": "",
+          "note": "Iconfactory 2025, unifikovaná timeline s widgety (bez URL)"
+        }
+      ],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Postavit jen jako 2týdenní doplněk portfolia s jednorázovou cenou. Není to byznys na 10k, ale je levný. Aplikace musí mít smysluplné vlastní UI kvůli 4.2."
+    },
+    {
+      "id": "news-24",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 2,
+        "monetization": 3,
+        "build_ease": 7,
+        "offline_fit": 7,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Sherlock: Safari ‚Listen to Page‘ (iOS 17+) čte článek zdarma se stejnými systémovými hlasy, včetně ovládání Now Playing.",
+        "Ověřeno: PaperSpan už kombinuje read-later + TTS offline a read-later trh je saturovaný (8 no-account appek).",
+        "Systémové hlasy jsou výrazně horší než ElevenReader, který má štědrý free tier, takže ‚levnější Speechify‘ neobstojí na kvalitě."
+      ],
+      "missed_competitors": [
+        {
+          "name": "PaperSpan: Save Web for Later",
+          "url": "https://apps.apple.com/us/app/paperspan-save-web-for-later/id1167530069",
+          "note": "read-later s offline TTS"
+        },
+        {
+          "name": "Safari Listen to Page",
+          "url": "",
+          "note": "vestavěná funkce iOS zdarma"
+        }
+      ],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Apple dělá jádro zdarma a zbytek pokrývají read-later appky s TTS.",
+      "web_checked": true
+    },
+    {
+      "id": "news-25",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 6,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Autor přiznává, že koncept nemá hledané keyword. ‚news digest‘ je obsazený AI digest appkami a ‚slow news‘ nikdo nepíše.",
+        "Reuters data o vyhýbání se zprávám znamenají, že ti lidé zprávy neotevírají. Nejsou to kupci news appky.",
+        "Tapestry, Reeder (nový) a Particle nabízejí klidnější feed. Diferenciace ‚jednou denně‘ je jedno nastavení."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Tapestry",
+          "url": "",
+          "note": "klidná chronologická timeline z RSS a sociálních sítí (bez URL)"
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Serverless tu paradoxně sedí (denní BG fetch je feature). Chce to ale ASO úhel přes wellbeing keywordy (‚news detox‘, ‚doomscrolling‘), ne přes news. Otestovat keywordy dřív, než se začne stavět."
+    },
+    {
+      "id": "news-26",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 5,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Placené newslettery v RSS chybí nebo jsou useknuté. Nejaktivnější čtenáři (předplatitelé) proto dostanou horší zážitek než v e-mailu.",
+        "Substack appka sama je čtečka zdarma a Readwise Reader i Feedly čtou newsletterové feedy. Klíčové slovo ‚substack‘ nesmíme použít (ochranná známka).",
+        "Je to v podstatě RSS čtečka s filtrem, a tedy riziko 4.3 vůči dalším RSS nápadům v portfoliu (23, 25)."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Readwise Reader",
+          "url": "https://apps.apple.com/gb/app/readwise-reader/id1567599761",
+          "note": "čte newslettery i RSS, silná značka mezi power-usery"
+        }
+      ],
+      "revenue_czk_realistic": 1200,
+      "reviewer_note": "Sloučit s news-25 nebo news-23 do jedné kvalitní RSS appky, ne tři reskiny. Samostatně na 10k nedosáhne."
+    },
+    {
+      "id": "news-27",
+      "verdict": "GO",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Sherlock částečně: Fotky už indexují text v obrázcích (fulltextové hledání). Notes skener a Live Text pokrývají základ, takže prodávat se musí metadata (titul novin, datum) a export.",
+        "Vícesloupcové a vybledlé výstřižky dělají OCR chyby. iOS 26 RecognizeDocumentsRequest pomáhá, ale kvalita musí být vidět hned při prvním skenu.",
+        "V News kategorii ji nikdo hledat nebude. Publikovat do Productivity/Lifestyle a ASO cílit na genealogii (‚obituary scanner‘, ‚newspaper clippings‘)."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 3500,
+      "reviewer_note": "Nejčistší nápad kategorie: plně offline, jasný jobs-to-be-done, genealogický trh platí (Ancestry/Photomyne). Úhel: rodinný archiv + nekrology + export pro Ancestry/FamilySearch, lifetime nákup. Realistický výnos je ale nízký — keyword ověřit apple_fetch.py."
+    },
+    {
+      "id": "news-28",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 5,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 9,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Sherlock: ChatGPT, Apple Writing Tools a Gemini napíší tiskovou zprávu zdarma za 10 s. Šablona není hodnota, za kterou se platí.",
+        "Uživatel potřebuje tiskovou zprávu 1–2× ročně, takže jednorázová platba $9.99 má mizivou konverzi.",
+        "Seznam novinářských kontaktů je hodnota Muck Rack a Cision, a ta stojí na licencovaných datech, která nemáme."
+      ],
+      "missed_competitors": [
+        {
+          "name": "ChatGPT",
+          "url": "",
+          "note": "generuje tiskové zprávy zdarma (bez URL)"
+        }
+      ],
+      "revenue_czk_realistic": 400,
+      "reviewer_note": "Vzácná potřeba, kterou AI zdarma pokryje. Nestavět."
+    },
+    {
+      "id": "news-29",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 3,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Sherlock: Hlasové poznámky přepisují na zařízení od iOS 18 a iOS 26 SpeechAnalyzer zpřístupní totéž všem, takže konkurence levných přepisovačů exploduje.",
+        "‚offline transcription‘ je obsazené (Aiko zdarma, Whisper appky, Just Press Record). Keyword ‚journalist‘ má malý objem.",
+        "Novinářů je málo. Redakce navíc často platí Otter/Trint licenčně, takže individuální předplatné $40/rok je těžké."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Apple Voice Memos",
+          "url": "",
+          "note": "vestavěný on-device přepis zdarma"
+        }
+      ],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Vyhrát jde jen na novinářském workflow, ne na přepisu: evidence souhlasu (on/off record), timestampované citace do článku, export pro redakční systém, lokalizovaný GDPR text. Lepší jednorázová Pro cena. Bez toho je to další přepisovač."
+    },
+    {
+      "id": "news-30",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 5,
+        "monetization": 3,
+        "build_ease": 7,
+        "offline_fit": 5,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Next Spaceflight a Space Launch Now jsou zdarma a výborné. Plánování ‚kam jet‘ lidé hledají na Googlu (Florida Today, launch viewing guides), ne v App Store.",
+        "Viditelnost trajektorie a databáze míst se mění (uzavírky, nové rampy Starship v Texasu). Offline data potřebují aktualizace.",
+        "Turista to použije jednou. Jednorázová $3.99 a velmi úzká geografie (3 lokality) dávají strop hluboko pod 10k."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Space Launch Schedule",
+          "url": "",
+          "note": "existující iOS appka s rozpisem startů (odhad, bez URL)"
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Hezký nápad, ale bez velké poptávky. Stavět jen jako rozšíření launch appky pro turisty s ASO na ‚rocket launch viewing Florida‘ / ‚Cape Canaveral launch‘ a s regionálními keywordy. Předem ověřit hledanost."
+    }
+  ]
+}

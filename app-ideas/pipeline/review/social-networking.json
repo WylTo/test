@@ -1,0 +1,848 @@
+{
+  "category_slug": "social-networking",
+  "summary": "Social Networking je pro offline/serverless studio strukturálně slabá kategorie: skutečná sociální hodnota vyžaduje server, takže nápady sklouzávají k osobním trackerům a generátorům, které Sherlockuje iOS nebo samotné platformy. Web check (6 hledání) vyvrátil autorovy odhady saturace u 5 z 6 ověřených nik (Secret Santa offline, otázky pro prarodiče, jména a tváře, gift tracker, jmeniny – všude 6–9 dedikovaných appek); jen JGA hry ukázaly tenkou nišu. Nejlepší sázky: Hen Party Games (DE/CZ first), Video Guestbook Kiosk a levný Name Day Reminder – ale realistický medián ani u nich nepřekročí ~4 000 Kč/měs. Společná vada: AI popisky/bio 'on-device v češtině' jsou technicky nemožné (Foundation Models CZ/PL/HU nepodporují) a 'US gap' tvrzení jsou většinou nepravdivá.",
+  "reviews": [
+    {
+      "id": "social-networking-01",
+      "verdict": "GO",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Nika NENÍ prázdná: web check našel 6 dedikovaných appek se synchronizací kontaktů (Imieniny, Meniny, Name-days se 17 zeměmi a 18 tis. jmény a odesíláním přání, iDays, Name day - calendar, nový Meniny - Slovak Calendar z 2025 s widgety) – autorův klíčový diferenciátor 'víc zemí + kontakty + přání' už existuje.",
+        "Zdarma dostupné ICS kalendáře jmenin (CZ/SK/PL/HU) se dají odebírat přímo v iOS Kalendáři – bezplatná náhrada základní funkce.",
+        "Podíl iOS v PL/HU/SK je jen ~20–30 %, takže lokální keywordy mají na App Storu výrazně menší objem, než odpovídá kulturnímu významu jmenin.",
+        "Jmeniny jsou vnímané jako 'zdarma' informace; jednorázových 99 Kč zaplatí jednotky procent, předplatné téměř nikdo."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Name-days",
+          "url": "https://apps.apple.com/us/app/name-days/id289170101",
+          "note": "17 zemí, 18 252 jmen, přání přes zprávu – přímo autorův koncept, stará appka"
+        },
+        {
+          "name": "Imieniny",
+          "url": "https://apps.apple.com/us/app/imieniny/id1296335324",
+          "note": "PL, sync kontaktů + notifikace"
+        },
+        {
+          "name": "Meniny - Slovak Calendar",
+          "url": "https://apps.apple.com/us/app/meniny-slovak-calendar/id6754215341",
+          "note": "nový SK konkurent s widgety (2025)"
+        },
+        {
+          "name": "iDays - Namedays & Birthdays",
+          "url": "https://apps.apple.com/us/app/idays-namedays-birthdays/id991307193",
+          "note": "jmeniny + narozeniny v jedné appce"
+        }
+      ],
+      "revenue_czk_realistic": 3000,
+      "reviewer_note": "Přežívá jen proto, že je levný (2–3 týdny), bezpečný a Lapnito zná CZ/SK trh; konkurenti jsou většinou zastaralí jednozemní kalendáře. Realisticky 2–4 tis. Kč/měs., ne 11 tis. – stavět jako moderní widget + kontakty + lokální přání a prodávat jednorázově, bez předplatného.",
+      "web_checked": true
+    },
+    {
+      "id": "social-networking-02",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 1,
+        "monetization": 2,
+        "build_ease": 8,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Přesně autorův úhel (offline, bez registrace, telefon koluje, lokalizované Wichteln/Amigo secreto/Amigo invisible) už mají nejméně 4 appky – Wichteln: Secret Santa má dokonce lokalizované tituly per země.",
+        "O Amigo Secreto je 100 % zdarma bez reklam a s offline režimem – cena na nule.",
+        "Extrémní sezónnost (listopad–prosinec; v BR i jinak jednorázová akce) → 10 měsíců nulových příjmů a propad v rankingu.",
+        "Losování je 30sekundová jednorázová akce – žádný důvod platit."
+      ],
+      "missed_competitors": [
+        {
+          "name": "O Amigo Secreto",
+          "url": "https://apps.apple.com/us/app/o-amigo-secreto/id6756224422",
+          "note": "zdarma, bez reklam, offline + sync"
+        },
+        {
+          "name": "Wichteln: Secret Santa",
+          "url": "https://apps.apple.com/de/app/wichteln-secret-santa/id1592116160",
+          "note": "DE titul, 'offline ohne Registrierung', stejné ID lokalizované jako Amigo secreto / Kris Kringle"
+        },
+        {
+          "name": "Wichtel App - Secret Santa",
+          "url": "https://apps.apple.com/at/app/wichtel-app-secret-santa/id6443517541",
+          "note": "offline i online režim"
+        },
+        {
+          "name": "Amigo Invisible - Secret Santa",
+          "url": "https://apps.apple.com/pa/app/amigo-invisible-secret-santa/id1442673273",
+          "note": "offline režim přímo na obrazovce"
+        }
+      ],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Autorův 'US gap' neexistuje – lokalizované offline losovače už obsazují přesně Wichteln/amigo secreto. Sezónní, zdarma, zabít.",
+      "web_checked": true
+    },
+    {
+      "id": "social-networking-03",
+      "verdict": "GO",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Audio guestbook boom: v _partial/entertainment_verify je 5 nových appek (2024–26), včetně iPad kiosku za 1,99 USD – kategorie 'digitální kniha hostů' se rychle plní a video je jen jeden krok od nich.",
+        "Nákup je jednorázový a načasovaný (týdny před svatbou) – ASO musí chytit uživatele v úzkém okně, žádná retence.",
+        "Video z kiosku na iPadu = GB dat, riziko ztráty záznamu při plném úložišti nebo pádu = 1★ recenze od nevěsty, která už nemá druhou šanci.",
+        "Photobooth appky (Simple Booth, Snappic) mohou přidat 'video message' mód rychle."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Audio Guestbook - Wedding app",
+          "url": "https://apps.apple.com/us/app/audio-guestbook-wedding-app/id6717612763",
+          "note": "iPad kiosk za 1,99 USD – nejbližší analog"
+        },
+        {
+          "name": "Guestbook Go: wedding fun",
+          "url": "https://apps.apple.com/us/app/guestbook-go/id1450808655",
+          "note": "svatební guestbook appka"
+        },
+        {
+          "name": "Dial Moments: Audio Guestbook",
+          "url": "https://apps.apple.com/us/app/dial-moments-audio-guestbook/id6760517005",
+          "note": "QR/odkaz, free+IAP"
+        },
+        {
+          "name": "Audio Guestbook",
+          "url": "https://apps.apple.com/ie/app/audio-guestbook/id6748583010",
+          "note": "QR varianta, 2025"
+        }
+      ],
+      "revenue_czk_realistic": 4000,
+      "reviewer_note": "Jediný nápad v kategorii s přirozenou vyšší cenou za akci (event pass 9,99 USD) a skutečně offline povahou. Diferencovat videem + audio + robustním ukládáním a exportem 'filmu'; počítat s 3–5 tis. Kč/měs. a sezónou květen–září."
+    },
+    {
+      "id": "social-networking-04",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 2,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Web check: nejméně 8 dedikovaných appek (Capsle Stories, Memoir: AI Life Story s on-device přepisem a 59 USD/rok, Family Legacy, Tell Me Your Story, Questions for Grandma se 120 otázkami a PDF exportem, LifeKept, StoryCorps, STORYTAP) – většina z 2025–26. EN niche je nasycená.",
+        "Autorův předpoklad 'incumbenti žijí v angličtině' je slabý – přidat lokalizaci otázek je pro ně týden práce.",
+        "On-device přepis řeči (Speech framework) má u češtiny/polštiny a starší výslovnosti horší přesnost – přepis babičky bude plný chyb.",
+        "Aktivační propast: stažení z emoce, rozhovor se neuskuteční, nikdo nezaplatí."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Questions for Grandma",
+          "url": "https://apps.apple.com/in/app/questions-for-grandma/id6760905882",
+          "note": "120 promptů, PDF export – přesně MVP autora"
+        },
+        {
+          "name": "Memoir: AI Life Story",
+          "url": "https://apps.apple.com/ma/app/memoir-ai-life-story/id6767071322",
+          "note": "on-device přepis, Pro 59 USD/rok"
+        },
+        {
+          "name": "Capsle Stories: Family Legacy",
+          "url": "https://apps.apple.com/us/app/capsle-stories-family-legacy/id1554817576",
+          "note": "guided conversations s prarodiči"
+        },
+        {
+          "name": "LifeKept",
+          "url": "https://apps.apple.com/us/app/lifekept/id6771614657",
+          "note": "37 otázek v 5 kapitolách"
+        }
+      ],
+      "revenue_czk_realistic": 2500,
+      "reviewer_note": "Rodičovský trh je reálný (StoryWorth), ale EN keyword je přeplněný. Jediný smysl: lokální fráze ('otázky pro babičku', 'Fragen an Oma', 'pytania do babci') a dárková jednorázová cena; ověřit hinty před stavbou.",
+      "web_checked": true
+    },
+    {
+      "id": "social-networking-05",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 5,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Zvyk posílat papírová přání je silný hlavně v USA/UK a klesá; v CZ/PL/DE se přání posílají zprávou – 50jazyčná lokalizace nic nepřinese.",
+        "Poptávka je 3 týdny v roce; appka mezi tím spí a ztrácí ranking i recenze.",
+        "Tisk štítků adres (AirPrint + Avery formáty) je křehký a generuje stížnosti; bez něj je to jen seznam v Poznámkách/Numbers.",
+        "Existují staré US appky 'Christmas Card List' a Numbers šablona 'Holiday card list' zdarma."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Christmas card list appky (různé, US)",
+          "url": "",
+          "note": "několik starších appek na přesný keyword; bez ověřené URL"
+        }
+      ],
+      "revenue_czk_realistic": 1000,
+      "reviewer_note": "Ubývající, sezónní, anglosaský zvyk s nulovou ochotou platit; 'US gap' je obráceně – mimo USA tahle potřeba prakticky není."
+    },
+    {
+      "id": "social-networking-06",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 1,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "Web check: 9 dedikovaných gift trackerů (Gift Recorder, The Giver, Gift Track, WrapSheet, GivWrap, Gift Logger, GiftPlanner, Everyone, Christmas Gift List Tracker) – většina z 2025–26. Nika je nasycená.",
+        "Diferenciace proti Poznámkám/Připomínkám je minimální; Apple Intelligence umí vyhledat 'co jsem dal mámě' v poznámkách.",
+        "Sezónní špička před Vánocemi, jinak nízké používání → slabá retence a předplatné nefunguje."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Gift Recorder: Log & Ideas",
+          "url": "https://apps.apple.com/cd/app/gift-recorder-log-ideas/id1514423614",
+          "note": "dané/přijaté/plánované dárky s fotkou a cenou"
+        },
+        {
+          "name": "GivWrap: Gift Planner & Budget",
+          "url": "https://apps.apple.com/us/app/givwrap-gift-planner-budget/id6761728473",
+          "note": "nápady per osoba + rozpočet + historie"
+        },
+        {
+          "name": "The Giver Gift Tracker",
+          "url": "https://apps.apple.com/us/app/the-giver-gift-tracker/id6758078745",
+          "note": "historie dárků per osoba"
+        },
+        {
+          "name": "Gift Track",
+          "url": "https://apps.apple.com/us/app/gift-track-planner-reminder-and-list-maker/id314810819",
+          "note": "veterán kategorie"
+        }
+      ],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Autor odhadl saturaci 2–5, realita je 9 přímých konkurentů. Zabít.",
+      "web_checked": true
+    },
+    {
+      "id": "social-networking-07",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 5,
+        "monetization": 2,
+        "build_ease": 6,
+        "offline_fit": 8,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Sherlock z více stran: iOS VoiceOver popisuje obrázky on-device, Instagram/Facebook generují automatický alt text, Mastodon klienti (Ice Cubes) mají generování alt textu tlačítkem.",
+        "Autoři příspěvků, kteří alt text píšou, jsou zlomek promile a hledají ho uvnitř sociální appky, ne v App Storu.",
+        "Apple Foundation Models nepodporují češtinu/polštinu/maďarštinu a nemají vision vstup ve všech jazycích – 'v tvém jazyce, on-device' není realizovatelné pro klíčové trhy.",
+        "Chybný popis (zejména u lidí) je reputační riziko pro přístupnostní appku."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Ice Cubes (Mastodon klient)",
+          "url": "",
+          "note": "generování alt textu přímo při psaní příspěvku; bez ověřené URL"
+        },
+        {
+          "name": "VoiceOver Image Descriptions (iOS vestavěné)",
+          "url": "",
+          "note": "systémové popisy obrázků zdarma"
+        }
+      ],
+      "revenue_czk_realistic": 300,
+      "reviewer_note": "Ušlechtilé, ale bez poptávky v App Storu a s platformním Sherlockem. Zabít."
+    },
+    {
+      "id": "social-networking-08",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 2,
+        "monetization": 2,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "extra_risks": [
+        "WrapSheet (svatby, baby showers, AI poděkování) a Gift Logger ('who to thank') dělají přesně tento use-case – web check.",
+        "The Knot, Zola a Babylist to mají zdarma uvnitř registru, který pár už používá.",
+        "Jednorázové použití po jedné akci → žádná retence, cena max 2,99 USD.",
+        "Thank-you notes kultura je US; v CZ/DE je to okrajový zvyk – US gap nefunguje."
+      ],
+      "missed_competitors": [
+        {
+          "name": "WrapSheet - Gift Tracker",
+          "url": "https://apps.apple.com/us/app/wrapsheet-gift-tracker/id6760680674",
+          "note": "svatby/baby shower + generované poděkování – přímý konkurent"
+        },
+        {
+          "name": "Gift Logger",
+          "url": "https://apps.apple.com/us/app/gift-logger/id6761291763",
+          "note": "dané/přijaté dárky + komu poděkovat"
+        }
+      ],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Obsazeno novými appkami i registry zdarma; zvyk mimo USA slabý. Zabít.",
+      "web_checked": true
+    },
+    {
+      "id": "social-networking-09",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 3,
+        "monetization": 4,
+        "build_ease": 4,
+        "offline_fit": 8,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Quizado (host + herní obrazovka + buzzer + scoreboard) a Buzzer Blitz už v _partial/entertainment_verify pokrývají hostitelský use-case.",
+        "MultipeerConnectivity s 8–15 zařízeními je nespolehlivé (odpojování, latence rozhoduje o tom, kdo byl první) – spor o 'kdo zmáčkl první' je přesně chyba, kterou hráči neodpustí.",
+        "Každý host musí mít iPhone a appku stáhnout – v rodině s Androidy nefunguje vůbec.",
+        "Kahoot/Jackbox model (web join) je server – offline varianta se nedá rozšířit na Android bez serveru."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Quizado: Bar Trivia & Pub Quiz",
+          "url": "https://apps.apple.com/us/app/quizado-bar-trivia-pub-quiz/id1610106151",
+          "note": "host control + buzzer + scoreboard"
+        },
+        {
+          "name": "Buzzer Blitz: Trivia Scoring",
+          "url": "https://apps.apple.com/us/app/buzzer-blitz-trivia-scoring/id1522809359",
+          "note": "scoring pro trivia hostitele"
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Jen pokud hlavní hodnota bude v jednom zařízení (host + scoreboard + hotové lokalizované sady otázek), buzzery jako volitelný bonus. V podobě 'telefony hostů jako bzučáky' zabije síťové tření."
+    },
+    {
+      "id": "social-networking-10",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 1,
+        "monetization": 3,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Web check: 9 dedikovaných appek (NameVault, What Student?, Name Shark, NameMemory on-device bez fotek, Remember Names, Name Skillz, FaceTag, NameMe, Namester) – 5 z nich 2024–26. Autor odhadoval saturaci 2–3.",
+        "Fotky žáků/farníků bez souhlasu = GDPR problém; školy zakazují.",
+        "iOS Kontakty s fotkou + poznámkou zdarma pokryjí většinu potřeby."
+      ],
+      "missed_competitors": [
+        {
+          "name": "NameVault: Remember Face & Name",
+          "url": "https://apps.apple.com/us/app/namevault-remember-face-name/id1525602410",
+          "note": "obecná paměť jmen a tváří"
+        },
+        {
+          "name": "What Student? Name & Face Quiz",
+          "url": "https://apps.apple.com/us/app/what-student-name-face-quiz/id6755244840",
+          "note": "přesně pro učitele, import třídy"
+        },
+        {
+          "name": "NameMemory",
+          "url": "https://apps.apple.com/us/app/namememory/id6756201292",
+          "note": "on-device, bez fotek – soukromí"
+        },
+        {
+          "name": "FaceTag: Memory Trainer",
+          "url": "https://apps.apple.com/us/app/facetag-memory-trainer/id6756509803",
+          "note": "profesní prostředí"
+        }
+      ],
+      "revenue_czk_realistic": 700,
+      "reviewer_note": "Nasyceno včetně privacy úhlu. Zabít.",
+      "web_checked": true
+    },
+    {
+      "id": "social-networking-11",
+      "verdict": "GO",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "DE niche není prázdná: JGA-Spiel: Foto-Challenges je dedikovaná appka a Melo / Wahrheit oder Pflicht: Abend mají JGA balíčky – web check.",
+        "Jednorázové použití (1 party na organizátora) → nulová retence, závislost na neustálém přílivu z ASO.",
+        "Lechtivé úkoly = věkový rating 17+ a riziko zamítnutí dle 1.1.4, pokud obsah sklouzne do explicitního.",
+        "Obsah musí napsat rodilý mluvčí pro každý trh (JGA ≠ hen do ≠ despedida) – strojový překlad zabije humor."
+      ],
+      "missed_competitors": [
+        {
+          "name": "JGA-Spiel: Foto-Challenges",
+          "url": "https://apps.apple.com/de/app/jga-spiel-foto-challenges/id6457205267",
+          "note": "jediná dedikovaná JGA appka – foto výzvy, telefon koluje"
+        },
+        {
+          "name": "Melo: Partyspiel für Freunde",
+          "url": "https://apps.apple.com/de/app/melo-partyspiel-f%C3%BCr-freunde/id6451415571",
+          "note": "party appka s JGA balíčkem"
+        },
+        {
+          "name": "Wahrheit oder Pflicht: Abend",
+          "url": "https://apps.apple.com/ch/app/wahrheit-oder-pflicht-abend/id6761100608",
+          "note": "truth or dare zmiňuje JGA"
+        }
+      ],
+      "revenue_czk_realistic": 4000,
+      "reviewer_note": "Nejlépe ověřená mezera v kategorii: v DE jedna tenká dedikovaná appka, organizátorky ochotně platí za party pass. Začít DE+CZ ('rozlučka se svobodou hry'), obsah psát ručně, EN 'bachelorette' až potom; realisticky 3–5 tis. Kč/měs. v sezóně.",
+      "web_checked": true
+    },
+    {
+      "id": "social-networking-12",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 4,
+        "monetization": 3,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Expati nehledají 'keep in touch app' – nemá keyword; 'keep in touch' drží Garden, UpHabit, Dex, Clay a nové AI personal CRM.",
+        "Časová pásma kontaktů řeší World Clock a widgety zdarma; WhatsApp ukazuje místní čas kontaktu v chatu.",
+        "Retence připomínkových appek je notoricky nízká – notifikace se po 2 týdnech ignorují."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Chybí vyhledávací fráze i unikátní hodnota; kombinace dvou bezplatných funkcí. Zabít."
+    },
+    {
+      "id": "social-networking-13",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 1,
+        "monetization": 3,
+        "build_ease": 5,
+        "offline_fit": 9,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Preview, UNUM, Planoly, Plann mají zdarma grid planner i splitter a vodoznaky řeší desítky appek.",
+        "'feed planner for artists' nemá prokázanou poptávku – umělci hledají 'grid planner' a tam je SATURATED.",
+        "Instagram od 2025 posunul grid na formát 4:5/3:4 – nástroje na čtvercové rozřezání zastarávají a každá změna rozbije appku.",
+        "Použití 'Instagram' v metadatech = trademark riziko (5.2)."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Plann",
+          "url": "",
+          "note": "grid planner + scheduling s free tierem; bez ověřené URL"
+        }
+      ],
+      "revenue_czk_realistic": 800,
+      "reviewer_note": "Není blue ocean, jen jiná cílovka v nasyceném head termu. Zabít."
+    },
+    {
+      "id": "social-networking-14",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 1,
+        "monetization": 2,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Sherlock: iOS NameDrop a 'Sdílet kontakt' + QR v Kameře/Zkratkách pokrývají offline výměnu zdarma.",
+        "Blinq, HiHello, Popl mají zdarma tier s QR a offline zobrazením; generátorů vCard QR jsou desítky.",
+        "Poznámka 'kde jsme se potkali' je pole Poznámky v Kontaktech."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Popl Digital Business Card",
+          "url": "",
+          "note": "free tier QR vizitky; bez ověřené URL"
+        }
+      ],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Komodita + Sherlock. Zabít."
+    },
+    {
+      "id": "social-networking-15",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 4,
+        "monetization": 2,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Threads má 500 znaků + přílohy textu, X Premium dlouhé posty, Bluesky/Mastodon mají vlákna nativně v editoru – potřeba mizí.",
+        "Nativní editory vláken jsou přímo v appkách sítí (Threads, Bluesky, Ivory, Ice Cubes), kde uživatel stejně píše.",
+        "Poptávka po 'thread maker' v App Storu je minimální; Chirr App je webový hráč z éry Twitteru."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 300,
+      "reviewer_note": "Řeší problém, který platformy už vyřešily. Zabít."
+    },
+    {
+      "id": "social-networking-16",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "extra_risks": [
+        "Sherlock: iOS Nahrazování textu (Text Replacement) zdarma, synchronizované přes iCloud – pro 10–20 frází stačí.",
+        "Vlastní klávesnice = nutnost přepínat klávesnice + důvěra ('full access' varování) – prodejci je nechtějí.",
+        "WhatsApp Business, Instagram (saved replies) a Facebook Marketplace mají quick replies nativně v inboxu.",
+        "Social selling v CZ probíhá hlavně na Facebook Marketplace/Vinted s vlastními šablonami."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Text Replacement (iOS vestavěné)",
+          "url": "",
+          "note": "systémové zkratky textu zdarma"
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Jen s úhlem, který systém neumí: proměnné (jméno, cena, číslo účtu, QR platba), šablony per platforma a vložení bez vlastní klávesnice přes Share/kopii. Jinak Sherlock."
+    },
+    {
+      "id": "social-networking-17",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 5,
+        "monetization": 2,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Neexistuje keyword, který by rodiče psali do App Storu; 'playdate' vrací matchmaking sociální sítě.",
+        "iOS Kontakty mají od iOS 16 seznamy (Lists) a poznámky – 'Kamarádi Ellie' je skupina zdarma.",
+        "Ukládání alergií a údajů cizích dětí = citlivá data třetích osob (5.1.1/GDPR)."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 300,
+      "reviewer_note": "Užitečné, ale nenajde se přes ASO a konkuruje zdarma Kontaktům. Zabít."
+    },
+    {
+      "id": "social-networking-18",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 2,
+        "monetization": 2,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Desítky appek s otázkami (Table Topics, WNRS, Icebreaker Questions, konverzační balíčky) + weby zdarma.",
+        "Sherlock: ChatGPT a Apple Intelligence vygenerují 20 icebreakerů za 5 s zdarma.",
+        "Firemní facilitátoři platí za Mentimeter/Kahoot, ne za kartičkovou appku; 4.2/4.3 riziko pro 'seznam otázek'."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 400,
+      "reviewer_note": "Obsahová komodita bez ochoty platit. Zabít."
+    },
+    {
+      "id": "social-networking-19",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 2,
+        "blue_ocean": 5,
+        "monetization": 2,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Úspěch zabíjí retenci (autor to přiznává) a navíc cílovka ukládá do Poznámek.",
+        "Ukládání osobních údajů o třetích osobách (jména, fotky, 'red flags') je citlivé i v offline appce a může narazit na review (5.1.1).",
+        "'date tracker' vrací ovulační kalendáře – keyword má jinou intenci."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 300,
+      "reviewer_note": "Poptávka nepodložená, monetizace mizivá. Zabít."
+    },
+    {
+      "id": "social-networking-20",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 2,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 5
+      },
+      "extra_risks": [
+        "'carousel maker' zaplavily AI carousel appky (2024–26) a Canva/Adobe Express mají šablony i Magic Design zdarma.",
+        "On-device generování textu pro CZ/PL nefunguje (Foundation Models nepodporují tyto jazyky) – bez AI je to jen šablonový editor.",
+        "LinkedIn změnil podporu PDF karuselů – formát je volatilní."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Shffl: Social Story Maker",
+          "url": "https://apps.apple.com/us/app/shffl-social-story-maker/id1564783713",
+          "note": "už uveden autorem; šablonový konkurent"
+        }
+      ],
+      "revenue_czk_realistic": 1500,
+      "reviewer_note": "Jen jako úzce specializovaný 'poznámka → typografický karusel' pro koučy s exportem PDF/PNG a lokální typografií; bez AI slibů. Realisticky pod 2 tis. Kč."
+    },
+    {
+      "id": "social-networking-21",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "extra_risks": [
+        "iOS dovolí jen MFMessageComposeViewController – každou zprávu musí uživatel ručně odeslat; při 80 příjemcích to je 80 tapů a část uživatelů to vnímá jako podvod ('nefunguje automaticky').",
+        "Hit 'em Up a mail-merge SMS appky už existují; US 'group text' keyword je obsazený.",
+        "Review riziko: hromadné rozesílání = spam dojem (5.1.1/4.x), zvlášť při čtení celých Kontaktů.",
+        "Novoroční přání se v CZ/PL posílají přes WhatsApp/Messenger, kam iOS nedovolí posílat hromadně vůbec."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Hit 'em Up",
+          "url": "",
+          "note": "autorův parent; personalizované hromadné texty"
+        }
+      ],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Má sezónní reálnou potřebu (Vánoce, Nový rok, Velikonoce, jmeniny). Stavět jako doplněk k nápadu 01 (přání + kontakty) a poctivě komunikovat 'odešleš jedním tapem na zprávu'."
+    },
+    {
+      "id": "social-networking-22",
+      "verdict": "MAYBE",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Keyword 'before after' drží obecné koláže; beauty-specifické fráze ('lash before after') nemají prokázanou poptávku.",
+        "Beauty profíci žijí v Canvě, CapCutu a v šablonách Instagram Edits – switching cost vysoký.",
+        "Booking platformy (Fresha, Booksy, Vagaro) mohou přidat portfolio/before-after export během sprintu."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 2000,
+      "reviewer_note": "Platící cílovka je reálná, ale ASO cesta nejistá. Úhel: portfolio + souhlas klientky s publikací (GDPR podpis) + konzistentní světlo/zarovnání fotek – to Canva neumí."
+    },
+    {
+      "id": "social-networking-23",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 1,
+        "monetization": 2,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Autor sám uvádí saturaci 5–6 na hlavních keywordech; kaomoji mají i velké fonts klávesnice zdarma.",
+        "Publikum teenagerů neplatí; příjem jen z reklam, které v klávesnici nelze (guideline 4.4.1 zakazuje reklamy v keyboard extension).",
+        "Klávesnice s 'full access' mají nízkou důvěru a iOS emoji/Genmoji tlačí kaomoji do okraje."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 300,
+      "reviewer_note": "Nasycené, nemonetizovatelné. Zabít."
+    },
+    {
+      "id": "social-networking-24",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 1,
+        "monetization": 3,
+        "build_ease": 5,
+        "offline_fit": 5,
+        "safety": 3
+      },
+      "extra_risks": [
+        "Apple Foundation Models nepodporují češtinu, polštinu ani maďarštinu – 'on-device, lokalizovaně' je pro cílové trhy technicky nesplnitelné bez cloudu.",
+        "Hinge (Prompt Feedback) a Tinder mají AI pomoc s profilem zdarma přímo v appce.",
+        "Keyword 'dating profile/bio' drží desítky AI appek (YourMove, Rizz, Keys AI) s velkými rozpočty."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 500,
+      "reviewer_note": "Saturované, Sherlocknuté seznamkami a offline nerealizovatelné. Zabít."
+    },
+    {
+      "id": "social-networking-25",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 1,
+        "monetization": 3,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "Later, Buffer, Planoly, Plann, Canva Content Planner – head termy nasycené, autor dává saturaci 6–7.",
+        "Databáze lokálních svátků a 'nápadů' pro 50 zemí je obsah, který se musí každý rok aktualizovat.",
+        "Malé kavárny/salony hledají 'jak na Instagram' na YouTube, ne kalendář v App Storu; churn vysoký."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 600,
+      "reviewer_note": "Nasycený trh, diferenciace (lokální svátky) se snadno zkopíruje. Zabít."
+    },
+    {
+      "id": "social-networking-26",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 1,
+        "monetization": 2,
+        "build_ease": 6,
+        "offline_fit": 3,
+        "safety": 3
+      },
+      "extra_risks": [
+        "Nerealizovatelné offline: Apple Foundation Models ani Writing Tools nepodporují češtinu, polštinu a maďarštinu – přesně jazyky, na kterých pitch stojí.",
+        "Instagram (Meta AI) a iOS Writing Tools navrhují popisky zdarma; 'caption generator' je SATURATED (autor sám 9/10).",
+        "Bundlovaný vlastní LLM pro CZ/PL = stovky MB a slabá kvalita."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 300,
+      "reviewer_note": "Fatální rozpor mezi pitch ('lokální jazyky on-device') a realitou modelů. Zabít."
+    },
+    {
+      "id": "social-networking-27",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 2,
+        "monetization": 3,
+        "build_ease": 3,
+        "offline_fit": 7,
+        "safety": 2
+      },
+      "extra_risks": [
+        "MultipeerConnectivity/Bluetooth má dosah desítek metrů – na sjezdovce nebo festivalu nepoužitelné; iOS navíc omezuje běh na pozadí → přerušení.",
+        "Offline walkie appky mají historicky 1–2★ recenze právě kvůli dosahu; Apple Watch Walkie-Talkie a Zello s daty jsou zdarma.",
+        "Mesh sítě (Bridgefy) už existují a stejně narážejí na limity; 8 týdnů vývoje pro solo dev je podhodnoceno."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Bridgefy",
+          "url": "",
+          "note": "offline mesh messaging přes Bluetooth; bez ověřené URL"
+        }
+      ],
+      "revenue_czk_realistic": 300,
+      "reviewer_note": "Fyzika a iOS pozadí zaručí špatné recenze. Zabít."
+    },
+    {
+      "id": "social-networking-28",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 4,
+        "monetization": 2,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "extra_risks": [
+        "Trendový výraz TikToku – vyprchá; cílovka (teenageři, mladí introverti) neplatí.",
+        "How We Feel (zdarma) a Daylio umožní sledovat energii vlastním tagem; iOS Health má State of Mind zdarma.",
+        "Hranice s wellness/mental health tvrzeními (1.4.1) při jakémkoli 'doporučení'."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 300,
+      "reviewer_note": "Hezký widget, ne byznys. Zabít."
+    },
+    {
+      "id": "social-networking-29",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 2,
+        "monetization": 3,
+        "build_ease": 5,
+        "offline_fit": 9,
+        "safety": 4
+      },
+      "extra_risks": [
+        "Sherlock: Tinder Photo Selector (on-device výběr nejlepších fotek) a Hinge doporučení fotek zdarma přímo v seznamce.",
+        "Hodnocení 'atraktivity' fotek on-device je nepřesné a eticky/recenzně riskantní (hodnocení vzhledu).",
+        "Photofeeler a ROAST mají crowd/AI hodnocení, kterému lidé věří víc než lokálnímu modelu."
+      ],
+      "missed_competitors": [
+        {
+          "name": "Tinder Photo Selector",
+          "url": "",
+          "note": "vestavěná funkce Tinderu – výběr fotek z galerie"
+        }
+      ],
+      "revenue_czk_realistic": 400,
+      "reviewer_note": "Seznamky tuto funkci nabízejí zdarma. Zabít."
+    },
+    {
+      "id": "social-networking-30",
+      "verdict": "KILL",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 2,
+        "monetization": 2,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "extra_risks": [
+        "iOS Fotky (Vzpomínky, Apple Intelligence 'vytvořit vzpomínku') a Instagram šablony photo dumpů dělají výběr zdarma.",
+        "Vlna 'photo dump' appek 2024–25 (autor sám uvádí) – keyword obsazený a trend slábne.",
+        "Kvalitní estetický výběr (pestrost, pořadí) je těžký ML problém – 4 týdny nestačí na výsledek lepší než systém."
+      ],
+      "missed_competitors": [],
+      "revenue_czk_realistic": 300,
+      "reviewer_note": "Sherlock + trend na ústupu. Zabít."
+    }
+  ]
+}
