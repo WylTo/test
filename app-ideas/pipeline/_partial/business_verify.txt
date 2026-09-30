@@ -65,3 +65,17 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
     - AED Scanner (TrackMyAED)            https://apps.apple.com/us/app/aed-scanner/id1478924731
     - NSC First Aid (training)            https://apps.apple.com/us/app/nsc-first-aid/id1604319243
 
+[6] query: site:apps.apple.com horse boarding stable invoice billing  (idea business-16 Barn Billing)
+    saturation (barn/stable apps with boarding billing): 5 (BarnOps with "boarding billing", BarnHub PDF invoices, Stable Secretary, HorseLinc, Barncat) + BarnManager parent -> CONTESTED; several new 2026 entrants (ids 6760xxxx)
+    - StableTrack Equine (vet clinic billing) https://apps.apple.com/by/app/stabletrack-equine/id6760788541?platform=watch
+    - Stable Secretary                    https://apps.apple.com/us/app/stable-secretary/id590391442
+    - BarnOps: Barn Management            https://apps.apple.com/us/app/barnops-barn-management/id6760660047
+    - The Farriers App                    https://apps.apple.com/us/app/the-farriers-app/id1587307883
+    - Between Rides                       https://apps.apple.com/es/app/between-rides/id6762119892?l=en-GB
+    - BarnHub (contracts + invoices PDF)  https://apps.apple.com/us/app/barnhub/id6760518680
+    - HorseLinc: Equine Management        https://apps.apple.com/us/app/horselinc-equine-management/id1347325341
+    - HorseKeeper - Equine Manager        https://apps.apple.com/us/app/horsekeeper-equine-manager/id6767037803
+    - Barncat: Horse Management           https://apps.apple.com/us/app/barncat-horse-management/id6446892437
+    - Stable Secretary (no slug)          https://apps.apple.com/app/id590391442
+
+WebSearch budget used: 6/6 — stopped.
