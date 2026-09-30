@@ -23,3 +23,29 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results. None construc
     - Product Recall Alerts - Safe  https://apps.apple.com/us/app/product-recall-alerts-safe/id6779204311
     - Baby Recall & Safety - Safe (barcode scan car seat vs CPSC)  https://apps.apple.com/us/app/baby-recall-safety-safe/id6779204311
     - SaferCar (official NHTSA)  https://apps.apple.com/us/app/safercar/id1526869558
+
+[3] query: site:apps.apple.com news in easy language graded reader simplify articles  (idea news-06)
+    saturation (CEFR-graded news readers + AI text simplifiers): 6 relevant (Readle x2 listings — CEFR-graded news in 6 languages; Level Read — daily CEFR-leveled English news; Plainify, SimpliSpeak, Text Simplifier — AI "simplify any text") + Readwise Reader (Ghostreader AI) -> CONTESTED/SATURATED; "simplify any article to my level" is also a one-line prompt in Apple Intelligence Writing Tools / ChatGPT
+    - Plainify - Simplify Language  https://apps.apple.com/au/app/plainify-simplify-language/id6756869043
+    - ForeignLanguage Graded Readers  https://apps.apple.com/us/app/foreignlanguage-graded-readers/id1422731589
+    - SimpliSpeak AI Text Simplifier  https://apps.apple.com/ca/app/simplispeak-ai-text-simplifier/id6752793354
+    - Learn Spanish: News by Readle  https://apps.apple.com/us/app/learn-spanish-news-by-readle/id6450673737
+    - Japanese Graded Readers  https://apps.apple.com/au/app/japanese-graded-readers/id1223472704
+    - Level Read, Daily English News (CEFR L1-3)  https://apps.apple.com/us/app/level-read-daily-english-news/id6739826323
+    - Readle: Learn Languages Faster (CEFR-graded news, 6 langs)  https://apps.apple.com/ng/app/readle-learn-languages-faster/id1574889455
+    - Text Simplifier  https://apps.apple.com/us/app/text-simplifier/id6462491720
+    - Literate Chinese: Reading  https://apps.apple.com/us/app/literate-chinese-reading/id6741540532
+    - Readwise Reader  https://apps.apple.com/gb/app/readwise-reader/id1567599761
+
+[4] query: site:apps.apple.com police 10 codes scanner codes reference  (idea news-14)
+    saturation (dedicated code-reference apps): 1 strong new dedicated (Police 10-Codes & Radio Codes — 11,500+ codes, 239 agencies, all 50 states = exactly the pitch) + 4 scanner apps bundling a per-state 10-codes reference (Police Scanner Radio: Fire&EMS, Crime Radar, 5-0 Radio Pro, Police Scanner: Fire Radio) -> niche already OWNED; feature is a free bundled extra in parent apps
+    - Police 10-Codes & Radio Codes (11,500+ codes, 239 agencies)  https://apps.apple.com/us/app/police-10-codes-radio-codes/id6773244206
+    - Police Scanner: Crime Radar (10-codes ref)  https://apps.apple.com/us/app/police-scanner-crime-radar/id1075599309
+    - Police Scanner Radio: Fire&EMS (10-codes by state)  https://apps.apple.com/us/app/police-scanner-radio-fire-ems/id6760916551
+    - Iowa Police Field Reference  https://apps.apple.com/us/app/iowa-police-field-reference/id511050429
+    - Police Scanner Radio 2025  https://apps.apple.com/us/app/police-scanner-radio-2025/id6444494652
+    - iPolice  https://apps.apple.com/us/app/ipolice/id334342279
+    - Police Scanner: Fire Radio (codes reference)  https://apps.apple.com/ca/app/police-scanner-fire-radio/id1477440076
+    - 5-0 Radio Pro Police Scanner (ten-codes list)  https://apps.apple.com/us/app/5-0-radio-pro-police-scanner/id341776037
+    - 10-21 Police Phone (noise)  https://apps.apple.com/us/app/10-21-police-phone/id1034040333
+    - Pocket Sergeant - Police Guide (UK officer reference)  https://apps.apple.com/gb/app/pocket-sergeant-police-guide/id902491237

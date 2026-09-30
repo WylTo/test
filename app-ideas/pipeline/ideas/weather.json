@@ -1,0 +1,2815 @@
+{
+  "category": "Weather",
+  "category_slug": "weather",
+  "search_notes": "Offline běh: žádná volání Apple API, WebSearch ani WebFetch. Pro kategorii Weather neexistuje soubor _partial/weather_evidence.txt – jediný nápad s web evidencí je Moon & Frost Garden Calendar (URL a saturace převzaty z _partial/lifestyle_evidence.txt, dotaz „moon gardening calendar biodynamic“, sat 3). Všechny ostatní nápady mají evidence=knowledge: saturace klíčových slov jsou odhady z vlastní znalosti trhu (2025–26), blue_ocean max 7, konkurenti bez URL (stránka vygeneruje vyhledávací odkaz podle jména). Vědomě vyřazeno jako přeplněné/ne-blue-ocean: obecný barometr, altimetr, rain radar, aurora alerts, pollen, sunset forecast, UV index, surf forecast, powder/ski, hunting wind (ScoutLook/HuntWise). Duplicitám v portfoliu jsem se vyhnul: pressure headache je už medical-05 (proto zde není), solární orientace je navigation-11 (zde jen předpověď výroby), mushroom spot diary je navigation-06 (zde jen index růstu). Offline: WeatherKit hodnocen jako „mostly“, Open-Meteo/NOAA jako „partial“ (pozor: Open-Meteo je zdarma jen pro nekomerční použití – komerční plán ~29 USD/měs). Před vývojem nutné ověřit top 10 přes apple_fetch.py check.",
+  "ideas": [
+    {
+      "id": "weather-01",
+      "name": "Drying Day: Laundry Forecast",
+      "tagline": "Kdy pověsit prádlo ven? Japonský „index sušení prádla“ pro celý svět.",
+      "pitch": "V Japonsku je „洗濯指数“ (index sušení prádla) standardní součástí každé předpovědi a lidé ho denně kontrolují. Ve zbytku světa si lidé sušení venku (UK, IE, DE, CZ, PL, IT, AU) počítají odhadem z teploty a mraků – a pak sundávají mokré prádlo v dešti. Aplikace spočítá z WeatherKit (teplota, vlhkost, vítr, déšť, oblačnost) skóre sušení po hodinách, řekne „pověs do 10:00, sundej do 16:00“ a pošle ranní notifikaci. Je to jednoduchý, emocionálně jasný produkt s širokým publikem, který generické počasí neřeší.",
+      "niche": "Sušení prádla venku jako samostatný „job-to-be-done“. Západní počasí (Apple Weather, CARROT, AccuWeather) index sušení nemá; japonské aplikace (tenki.jp, Yahoo!天気) ho mají, ale jsou jen japonsky a pro Japonsko.",
+      "parent_market": "Obecné počasí – CARROT Weather, AccuWeather, The Weather Channel (stovky tisíc USD/měs z předplatného); v JP tenki.jp a Yahoo!天気 s indexem sušení jako oblíbenou funkcí.",
+      "target_user": "Domácnosti se šňůrou na zahradě nebo balkoně v UK, Irsku, střední Evropě, Itálii, Austrálii a NZ; rodiny s dětmi, lidé šetřící energii za sušičku.",
+      "features": [
+        "Hodinové skóre sušení 0–100 z teploty, vlhkosti, větru a srážkové pravděpodobnosti",
+        "Doporučení „pověs v / sundej do“ + riziko přeháňky",
+        "Ranní notifikace v nastavený čas jen za dobrých dní",
+        "Režim peřiny/ručníky/vlna (různá doba schnutí)",
+        "Widget na zamčenou obrazovku a Live Activity „prádlo venku“"
+      ],
+      "offline": "mostly",
+      "offline_note": "Předpověď z Apple WeatherKit (Apple-hosted, 500 000 volání/měs v rámci Developer Programu zdarma); výpočty indexů, pravidla a historie běží na zařízení, poslední stažená předpověď se cachuje pro offline. Žádný vlastní server.",
+      "monetization": "Freemium: dnešní skóre zdarma; Pro (5denní výhled, notifikace, widget, režimy textilií) 1,99 USD/měs nebo 9,99 USD/rok (≈ 230 Kč), lifetime 19,99 USD (≈ 460 Kč).",
+      "revenue_math": "Ideál: 3 000 stažení/měs (laundry forecast / drying weather / washing line v 10+ jazycích) × 3,5 % konverze = 105 platících × ~9,99 USD × 0,85 × 23 ≈ 20 500 Kč/měs (roční předplatné + lifetime mix). Konzervativně 1 200 × 3 % × 9,99 × 19,55 ≈ 7 000 Kč – pod hranicí, proto je nutný UK/DE/JP-EN mix.",
+      "revenue_czk_ideal": 20500,
+      "keywords": [
+        {
+          "kw": "laundry forecast",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad: v EN nevím o dedikované aplikaci s tímto názvem; poptávka předpoklad"
+        },
+        {
+          "kw": "drying weather",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; UK fráze „good drying day“ je běžná v řeči i v předpovědích BBC"
+        },
+        {
+          "kw": "washing line weather",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad; britský long-tail"
+        },
+        {
+          "kw": "wäsche trocknen wetter",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; DE lokalizace"
+        },
+        {
+          "kw": "clothes drying",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; kolize s aplikacemi pro sušárny a prádelny"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple (offline běh). Z vlastní znalosti: index sušení prádla je stálá funkce japonských předpovědí (tenki.jp, Yahoo!天気), fráze „drying day“ je běžná v UK předpovědích. Objemy vyhledávání v App Store jsou předpoklad.",
+      "competitors": [
+        {
+          "name": "tenki.jp",
+          "url": "",
+          "role": "us-only",
+          "note": "JP aplikace Japan Weather Association s indexem sušení prádla – model prokázaný v Japonsku, jen JP."
+        },
+        {
+          "name": "Yahoo!天気",
+          "url": "",
+          "role": "us-only",
+          "note": "Japonská výchozí aplikace s „洗濯指数“."
+        },
+        {
+          "name": "CARROT Weather",
+          "url": "",
+          "role": "parent",
+          "note": "Placené počasí s předplatným; index sušení nemá."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Reverse gap: model prokázaný v Japonsku (index sušení v každé předpovědi), mimo JP téměř neexistuje. Lokalizace do 50 jazyků, priorita UK/IE/DE/CZ/PL/IT/AU.",
+      "devils_advocate": [
+        "Apple Weather nebo CARROT může index přidat jako jednu kartu – data už mají (Sherlock).",
+        "Uživatel se podívá na ikonu slunce/deště a má „dost dobrou“ odpověď zdarma – ochota platit za jeden index je nízká.",
+        "Silná sezónnost: v zimě v UK/CZ se venku téměř nesuší, retence padá.",
+        "Náklady WeatherKit nad 500k volání/měs, pokud aplikace zlidoví u neplatících."
+      ],
+      "killer_risk": "Nízká ochota platit – lidé stáhnou, ale předplatné za „jen prádlo“ neberou.",
+      "mitigation": "Levný lifetime nákup, widget a notifikace jen v Pro; rozšířit na „venkovní domácí práce“ (větrání peřin, mytí oken) bez rozmělnění názvu.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 7,
+        "safety": 7
+      }
+    },
+    {
+      "id": "weather-02",
+      "name": "Paint Window: Exterior Paint Weather",
+      "tagline": "Natírat dnes fasádu, nebo ne? Teplota, rosný bod a déšť pro každý nátěr.",
+      "pitch": "Venkovní nátěry a lazury selžou, když se natírá pod rosným bodem, v přímém slunci, za mrazu nebo před deštěm – a reklamace stojí malíře tisíce. V USA to řeší PaintCast od Sherwin-Williams, ale je jen pro USA, jen anglicky a vázaný na jejich produkty. Aplikace spojí předpověď s pravidly podle typu nátěru (akryl, olej, lazura na dřevo, barva na beton, nátěr střech) a ukáže zelená/červená okna na 7 dní. Cílí na malíře, stavebníky a kutily v Evropě a zbytku světa.",
+      "niche": "Počasí pro venkovní nátěry – velké počasí to ignoruje, výrobci barev mají lokální značkové nástroje, obvykle jen pro jeden trh a jazyk.",
+      "parent_market": "Profesionální řemeslnické nástroje a počasí pro práci (PaintCast Sherwin-Williams, Handoff/Joist pro rozpočty malířů); obecné počasí jako rodičovský trh.",
+      "target_user": "Malíři a natěrači, stavební firmy, majitelé domů natírající plot, fasádu nebo terasu; kutilové v DE/CZ/PL/NL/UK/FR/AU.",
+      "features": [
+        "7denní okna vhodná k nátěru podle typu nátěru (min./max. teplota, vlhkost, rosný bod + 3 °C, déšť v X hodinách po nátěru)",
+        "Pravidla výrobců jako šablony (upravitelné)",
+        "Upozornění „zítra 9–15 h vhodné“ pro uložené zakázky",
+        "Deník zakázek s fotkami a podmínkami v den nátěru (důkaz pro reklamaci)",
+        "Offline kalkulačka spotřeby barvy"
+      ],
+      "offline": "mostly",
+      "offline_note": "Předpověď z Apple WeatherKit (Apple-hosted, 500 000 volání/měs v rámci Developer Programu zdarma); výpočty indexů, pravidla a historie běží na zařízení, poslední stažená předpověď se cachuje pro offline. Žádný vlastní server. Deník zakázek, pravidla a kalkulačka jsou plně offline.",
+      "monetization": "Předplatné pro profíky 4,99 USD/měs nebo 34,99 USD/rok (≈ 805 Kč); kutilská varianta lifetime 9,99 USD.",
+      "revenue_math": "Ideál: 1 500 stažení/měs (paint weather, painting forecast, staining weather, Streichwetter) × 4 % = 60 platících; mix 30 ročních × 34,99 + 30 lifetime × 9,99 ≈ 1 350 USD × 19,55 ≈ 26 400 Kč/měs. Konzervativně 700 × 3 % ≈ 21 × ~22 USD × 19,55 ≈ 9 000 Kč.",
+      "revenue_czk_ideal": 26400,
+      "keywords": [
+        {
+          "kw": "paint weather",
+          "saturation": 2,
+          "competitor": "PaintCast (Sherwin-Williams)",
+          "note": "odhad; PaintCast je jediný známý dedikovaný nástroj"
+        },
+        {
+          "kw": "painting forecast",
+          "saturation": 1,
+          "competitor": "PaintCast",
+          "note": "odhad"
+        },
+        {
+          "kw": "deck staining weather",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad; US long-tail"
+        },
+        {
+          "kw": "dew point painting",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; profi fráze"
+        },
+        {
+          "kw": "streichwetter",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad; DE lokalizace"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Existence PaintCast (Sherwin-Williams) dokazuje, že velký výrobce barev považuje tuto potřebu za dost silnou pro vlastní aplikaci; objemy hledání jsou předpoklad.",
+      "competitors": [
+        {
+          "name": "PaintCast by Sherwin-Williams",
+          "url": "",
+          "role": "us-only",
+          "note": "Značkový nástroj pro USA, anglicky, vázaný na produkty SW."
+        },
+        {
+          "name": "Joist",
+          "url": "",
+          "role": "parent",
+          "note": "Rozpočty a faktury pro řemeslníky – prokazuje, že malíři platí za aplikace."
+        },
+        {
+          "name": "CARROT Weather",
+          "url": "",
+          "role": "parent",
+          "note": "Obecné počasí bez pravidel pro nátěry."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "PaintCast je US-only a jen anglicky; malíři v EU/AU/LatAm nemají ekvivalent. Značkově neutrální, lokalizovaná verze s metrickými jednotkami.",
+      "devils_advocate": [
+        "Výrobce barev (Dulux, Sherwin, Caparol) vydá vlastní lokální aplikaci zdarma.",
+        "Profíci se řídí zkušeností a obecnou předpovědí, placený nástroj jim přijde zbytečný.",
+        "Pravidla výrobců se liší a mohou se měnit – riziko, že doporučení způsobí vadný nátěr a naštvaného uživatele.",
+        "Sezónnost – v zimě v Evropě se venku skoro nenatírá."
+      ],
+      "killer_risk": "Kutilové stáhnou jednou za rok na jeden víkend – nízké LTV, a profíků je málo.",
+      "mitigation": "Postavit hodnotu na deníku zakázek (důkaz podmínek pro reklamaci) pro profíky; kutilům lifetime; jasný disclaimer „řiďte se technickým listem“.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 7,
+        "safety": 6
+      }
+    },
+    {
+      "id": "weather-03",
+      "name": "Heat Stress Meter: WBGT at Work",
+      "tagline": "WBGT a pracovní režim práce/odpočinek pro stavbu, sport i školu – ve tvém jazyce.",
+      "pitch": "Tepelný stres zabíjí dělníky a sportovce a WBGT (wet-bulb globe temperature) je standard pro rozhodování o přestávkách. V USA existuje státní aplikace OSHA-NIOSH Heat Safety Tool, jen EN/ES a s US pravidly; v Japonsku je „暑さ指数“ (WBGT) povinnou součástí vysílání a škol. Zbytek světa – stavby v Evropě, Blízký východ, Indie, LatAm, sportovní trenéři mládeže – nic lokalizovaného nemá. Aplikace odhadne WBGT z předpovědi (Liljegrenův model offline), ukáže doporučený režim práce/odpočinku a pitný režim a hlídá hodinové změny.",
+      "niche": "Pracovní a sportovní tepelný stres jako rozhodovací nástroj, ne jen „pocitová teplota“ v běžném počasí. Velké aplikace WBGT neukazují, US vládní app nepokrývá jiné jazyky a normy.",
+      "parent_market": "BOZP a pracovní bezpečnost (SafetyCulture – velký SaaS), sportovní medicína; Kestrel prodává WBGT měřiče za stovky USD.",
+      "target_user": "Mistři na stavbách, BOZP technici, trenéři mládeže, pořadatelé běžeckých závodů, zemědělci, armáda/hasiči na cvičeních – EU, Blízký východ, JP, LatAm.",
+      "features": [
+        "Odhad WBGT po hodinách z teploty, vlhkosti, větru a oblačnosti (výpočet na zařízení)",
+        "Režim práce/odpočinek a pitný režim podle úrovně zátěže (lehká–velmi těžká práce)",
+        "Upozornění na přechod do vyšší rizikové úrovně",
+        "Ruční zadání z WBGT měřiče nebo teploty a vlhkosti (plně offline)",
+        "PDF záznam o provedených opatřeních pro BOZP"
+      ],
+      "offline": "mostly",
+      "offline_note": "Předpověď z Apple WeatherKit (Apple-hosted, 500 000 volání/měs v rámci Developer Programu zdarma); výpočty indexů, pravidla a historie běží na zařízení, poslední stažená předpověď se cachuje pro offline. Žádný vlastní server. Ruční režim (zadání teploty/vlhkosti) a veškeré výpočty jsou plně offline.",
+      "monetization": "Individuální Pro 19,99 USD/rok (≈ 460 Kč); týmová licence přes Volume Purchase/Family Sharing; lifetime 29,99 USD.",
+      "revenue_math": "Ideál: 2 000 stažení/měs (heat stress, wbgt, heat index work, 暑さ指数, estrés térmico) × 3 % = 60 × ~19,99 USD × 19,55 ≈ 23 400 Kč/měs v letní sezóně; roční průměr nižší (~15 000 Kč) kvůli sezónnosti na severní polokouli, částečně kompenzováno Blízkým východem/Austrálií.",
+      "revenue_czk_ideal": 23400,
+      "keywords": [
+        {
+          "kw": "wbgt",
+          "saturation": 3,
+          "competitor": "OSHA-NIOSH Heat Safety Tool",
+          "note": "odhad; několik kalkulaček + Kestrel companion aplikace"
+        },
+        {
+          "kw": "heat stress",
+          "saturation": 3,
+          "competitor": "OSHA-NIOSH Heat Safety Tool",
+          "note": "odhad"
+        },
+        {
+          "kw": "heat index work",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "暑さ指数",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad; JP má více lokálních aplikací"
+        },
+        {
+          "kw": "estrés térmico",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; ES lokalizace"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: OSHA-NIOSH Heat Safety Tool je vládní aplikace v EN/ES; v JP je WBGT součást zákonných doporučení (Ministerstvo životního prostředí). Tlak regulací (EU směrnice o horku, rostoucí vlny veder) je předpoklad růstu poptávky.",
+      "competitors": [
+        {
+          "name": "OSHA-NIOSH Heat Safety Tool",
+          "url": "",
+          "role": "us-only",
+          "note": "Vládní aplikace USA, EN/ES, zdarma, US pravidla."
+        },
+        {
+          "name": "Kestrel LiNK",
+          "url": "",
+          "role": "niche",
+          "note": "Companion aplikace k hardwarovým měřičům WBGT."
+        },
+        {
+          "name": "SafetyCulture",
+          "url": "",
+          "role": "parent",
+          "note": "BOZP inspekce – prokazuje platby za bezpečnostní nástroje."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "US vládní aplikace je jen EN/ES; Evropa, arabský svět, Indie a Brazílie nemají lokalizovaný WBGT nástroj pro práci a sport.",
+      "devils_advocate": [
+        "WBGT odhadnutý z předpovědi není měření – profíci s povinností BOZP budou chtít kalibrovaný měřič; riziko odpovědnosti při úpalu.",
+        "Bezplatná vládní aplikace nastaví očekávání „má to být zdarma“.",
+        "Apple Weather může přidat WBGT jako další kartu (Sherlock).",
+        "Silná sezónnost na severní polokouli."
+      ],
+      "killer_risk": "Právní odpovědnost a důvěryhodnost – doporučení režimu práce/odpočinku, které selže.",
+      "mitigation": "Formulace „odhad, orientační“, citace ISO 7243/ACGIH, režim ručního zadání z měřiče, nulové zdravotní claimy; marketing na trenéry mládeže a malé firmy, ne na korporace.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 7,
+        "safety": 5
+      }
+    },
+    {
+      "id": "weather-04",
+      "name": "Sun Surplus: Balcony Solar Forecast",
+      "tagline": "Kdy zapnout pračku, aby jela zadarmo z tvého balkonového panelu.",
+      "pitch": "Jen v Německu jsou přes milion balkonových elektráren (Balkonkraftwerk) a boom se šíří do CZ, AT, NL, PL. Majitelé nemají baterii, takže chtějí vědět, kdy bude přebytek, aby pustili pračku, myčku nebo nabíjení. Aplikace spočítá offline model jasné oblohy pro jejich panel (azimut, sklon, Wp), vynásobí ho oblačností z WeatherKit a ukáže „nejlepší 2 hodiny dnes“ plus notifikaci. Monitorovací aplikace invertorů ukazují minulost, ne budoucnost.",
+      "niche": "Předpověď výroby pro malé FVE bez baterie a plánování spotřebičů. Velké FVE aplikace (SENEC, Fronius, Tibber) cílí na velké instalace a nutí k hardwaru; weby jako Forecast.Solar nejsou mobilní aplikace pro laiky.",
+      "parent_market": "Aplikace pro domácí energii a FVE – Tibber, Octopus, Fronius Solar.web, SENEC (miliony uživatelů), a DE boom Balkonkraftwerk.",
+      "target_user": "Majitelé balkonových elektráren a malých FVE bez baterie v DE, AT, CZ, NL, PL, CH; nájemníci, kteří chtějí vidět návratnost.",
+      "features": [
+        "Profil panelu: výkon Wp, azimut (kompas), sklon (akcelerometr)",
+        "Hodinová předpověď výroby na 3 dny (model jasné oblohy offline × oblačnost)",
+        "„Nejlepší okno pro pračku/myčku“ + notifikace",
+        "Ruční záznam denní výroby z invertoru a kalibrace modelu",
+        "Kalkulačka návratnosti a ušetřených korun"
+      ],
+      "offline": "mostly",
+      "offline_note": "Poloha slunce a model jasné oblohy se počítají na zařízení; oblačnost z Apple WeatherKit (cache pro offline). Žádný vlastní server ani napojení na cloud invertoru.",
+      "monetization": "Freemium: dnešní předpověď zdarma; Pro (3 dny, notifikace, více panelů, kalibrace) 1,99 USD/měs nebo 12,99 USD/rok (≈ 300 Kč), lifetime 24,99 USD.",
+      "revenue_math": "Ideál: 2 500 stažení/měs (balkonkraftwerk, solar forecast, pv prognose, balkonová elektrárna) × 4 % = 100 × ~14 USD (mix) × 19,55 ≈ 27 400 Kč/měs. Konzervativně 1 000 × 3 % × 14 × 19,55 ≈ 8 200 Kč.",
+      "revenue_czk_ideal": 27400,
+      "keywords": [
+        {
+          "kw": "balkonkraftwerk",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad; DE má několik aplikací, většinou monitorovací/ kalkulačky"
+        },
+        {
+          "kw": "solar forecast",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "pv prognose",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; DE"
+        },
+        {
+          "kw": "solar panel forecast",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "balkonová elektrárna",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad; CZ lokalizace"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: Balkonkraftwerk je v DE masový trend (registrace v Marktstammdatenregister, zjednodušení 800 W od 2024). Poptávka po „kdy zapnout pračku“ je předpoklad z komunitních fór. Pozn.: doplňuje navigation-11 Balcony Solar Aligner – ideálně jedna značka, dvě funkce, ne dvě podobné aplikace.",
+      "competitors": [
+        {
+          "name": "Fronius Solar.web",
+          "url": "",
+          "role": "parent",
+          "note": "Monitoring invertorů – minulost, ne plánování spotřeby."
+        },
+        {
+          "name": "Tibber",
+          "url": "",
+          "role": "parent",
+          "note": "Chytrá energie/dynamické tarify, DE/NO/SE/NL."
+        },
+        {
+          "name": "Forecast.Solar",
+          "url": "",
+          "role": "niche",
+          "note": "Web/API předpovědi FVE – ne mobilní aplikace pro laiky."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Reverse gap: balkonové FVE jsou fenomén DE/AT/NL/CZ, v USA prakticky neexistují, takže US vývojáři to neřeší. Lokalizace do jazyků EU.",
+      "devils_advocate": [
+        "Výrobci invertorů (EcoFlow, Anker SOLIX, Zendure) přidají předpověď do svých aplikací zdarma.",
+        "Přesnost: stín od sousedního domu a znečištění panelu model neumí – zklamání uživatelů.",
+        "Úspora na jednom praní je v korunách – uživatel nemusí vidět hodnotu v předplatném.",
+        "Náklady WeatherKit při velké bezplatné základně."
+      ],
+      "killer_risk": "Hardwarové značky (Anker, EcoFlow) zabudují předpověď do svých bezplatných aplikací.",
+      "mitigation": "Být značkově neutrální, podporovat jakýkoliv panel; kalibrace z ručních odečtů a stínová maska (horizont z kamery) jako diferenciátor.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 7,
+        "safety": 6
+      }
+    },
+    {
+      "id": "weather-05",
+      "name": "Barograph: Storm Pressure Alarm",
+      "tagline": "Lodní barograf v kapse: alarm při rychlém poklesu tlaku, i bez signálu.",
+      "pitch": "Jachtaři a kotvící posádky tradičně sledují barograf: pokles o 3+ hPa za 3 hodiny je varování před bouří. iPhone má přesný barometr, ale aplikace „barometr“ obvykle jen ukazují číslo nebo stahují data z internetu. Aplikace bude na pozadí logovat tlak ze senzoru, kreslit 24–72h barograf, spouštět alarm podle námořních pravidel a fungovat daleko od pobřeží bez dat. Plně offline, levný vývoj, jasná hodnota pro bezpečnost.",
+      "niche": "Offline barograf s alarmem trendu pro jachtaře, obytné vozy a horaly. Obecné barometr aplikace se soutěží o termín „barometer“, ale málokterá je skutečný záznamový barograf se správnými námořními prahy.",
+      "parent_market": "Námořní počasí a navigace – PredictWind, Windy, Navionics (předplatné desítky USD/rok); obecné barometr aplikace s reklamami.",
+      "target_user": "Jachtaři na kotvě a na přeplavbách, charterové posádky, majitelé obytných vozů, horolezci a vodáci bez signálu.",
+      "features": [
+        "Záznam tlaku ze senzoru na pozadí (s kompenzací nadmořské výšky z GPS)",
+        "Barograf 24/48/72 h + tendence a klasifikace podle WMO (rychlý pokles)",
+        "Alarm: X hPa za 3 h (nastavitelné), i v režimu Letadlo",
+        "Poznámky do lodního deníku (vítr, stav moře)",
+        "Apple Watch komplikace s tendencí"
+      ],
+      "offline": "full",
+      "offline_note": "Vše z barometru iPhonu/Watch, bez sítě. Záznam na pozadí přes periodické úlohy a CMAltimeter; iCloud sync volitelný.",
+      "monetization": "Jednorázově 7,99 USD (≈ 185 Kč) nebo freemium s Pro 14,99 USD/rok; námořníci jsou zvyklí platit za nástroje.",
+      "revenue_math": "Ideál: 1 200 stažení/měs (barograph, pressure alarm, marine barometer, storm alarm) × 8 % konverze placené verze = 96 × 7,99 USD × 19,55 ≈ 15 000 Kč/měs. Konzervativně 600 × 6 % × 7,99 × 19,55 ≈ 5 600 Kč.",
+      "revenue_czk_ideal": 15000,
+      "keywords": [
+        {
+          "kw": "barograph",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad; několik malých barograf aplikací, často staré"
+        },
+        {
+          "kw": "marine barometer",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "pressure alarm",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "barometer",
+          "saturation": 8,
+          "competitor": "—",
+          "note": "odhad; obecný termín je saturovaný – jen rodičovský trh"
+        },
+        {
+          "kw": "storm alarm",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Předpoklad: termín „barometer“ je saturovaný mnoha utilitami (vlastní znalost), „barograph“ má málo titulů. Poptávka jachtařů po barografu je doložena tradicí (fyzické barografy se stále prodávají), ne App Store daty.",
+      "competitors": [
+        {
+          "name": "PredictWind",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr námořních předpovědí s předplatným."
+        },
+        {
+          "name": "Windy.com",
+          "url": "",
+          "role": "parent",
+          "note": "Oblíbené počasí jachtařů, freemium."
+        },
+        {
+          "name": "Barometer Plus",
+          "url": "",
+          "role": "niche",
+          "note": "Obecná barometr utilita – bez námořních alarmů (neověřeno)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "iOS omezuje běh na pozadí – souvislý záznam tlaku může mít díry a alarm přijít pozdě.",
+        "Hodinky Garmin/Apple Watch Ultra už mají barometrické bouřkové upozornění (Sherlock/hardware).",
+        "Trh jachtařů je malý a sezónní.",
+        "Termín „barometer“ je přeplněný; bez něj je objem hledání malý."
+      ],
+      "killer_risk": "Technická spolehlivost záznamu na pozadí v iOS – pokud alarm selže, recenze aplikaci zabijí.",
+      "mitigation": "Watch app se záznamem přes workout session, jasná komunikace o limitech, hybrid: když je signál, doplnit trend z WeatherKit.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "weather-06",
+      "name": "Spray Window: Delta T & Drift",
+      "tagline": "Můžu dnes stříkat? Delta T, vítr, inverze a déšť v jednom semaforu.",
+      "pitch": "Postřik mimo správné podmínky znamená drift na souseda, ztrátu účinnosti a pokuty. Australští farmáři pracují s Delta T (rozdíl suchého a vlhkého teploměru), Evropané s rychlostí větru a rizikem inverze – a vše si počítají z několika aplikací. Aplikace dá hodinový semafor postřiku na 3 dny s Delta T, nárazy větru, rizikem inverze za soumraku, deštěm v dalších hodinách a mrazem. K tomu evidence postřiků, kterou farmáři v EU stejně musí vést.",
+      "niche": "Okna pro postřik a evidence aplikací pro malé a střední farmy, vinaře a sadaře. Agro platformy (xarvio, FieldView) jsou komplexní systémy pro velké farmy; obecné počasí Delta T neumí.",
+      "parent_market": "Precizní zemědělství a agro počasí – Climate FieldView, xarvio (BASF), DTN; farmáři platí stovky USD/rok za agro software.",
+      "target_user": "Malí a střední farmáři, vinaři, sadaři, správci golfových hřišť a obecní údržba zeleně v AU, EU, JAR, LatAm.",
+      "features": [
+        "Hodinový semafor postřiku s Delta T, vítr/nárazy, inverzní riziko, déšť do X h",
+        "Profily přípravků (min. doba bez deště, teplotní limity) – uživatelské",
+        "Evidence postřiků (pole, přípravek, dávka, podmínky automaticky) + export CSV/PDF",
+        "Upozornění na vhodné okno ráno/večer",
+        "Offline kalkulačka Delta T z ručního měření"
+      ],
+      "offline": "mostly",
+      "offline_note": "Předpověď z Apple WeatherKit (Apple-hosted, 500 000 volání/měs v rámci Developer Programu zdarma); výpočty indexů, pravidla a historie běží na zařízení, poslední stažená předpověď se cachuje pro offline. Žádný vlastní server. Evidence postřiků a kalkulačky plně offline; iCloud sync.",
+      "monetization": "Předplatné 5,99 USD/měs nebo 49,99 USD/rok (≈ 1 150 Kč) – farmáři platí za nástroje, které šetří přípravky.",
+      "revenue_math": "Ideál: 800 stažení/měs (spray window, delta t, spray forecast, Spritzwetter) × 5 % = 40 × 49,99 USD × 19,55 ≈ 39 100 Kč/měs. Konzervativně 400 × 3 % × 49,99 × 19,55 ≈ 11 700 Kč.",
+      "revenue_czk_ideal": 39100,
+      "keywords": [
+        {
+          "kw": "spray forecast",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad; několik agro aplikací od výrobců přípravků"
+        },
+        {
+          "kw": "delta t",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; AU pojem"
+        },
+        {
+          "kw": "spray window",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "spray drift",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "spritzwetter",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; DE lokalizace"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: agrochemické firmy vydávají bezplatné aplikace pro spray timing (to dokazuje potřebu, ale i konkurenci zdarma). Evidence postřiků je v EU povinná – předpoklad placené hodnoty.",
+      "competitors": [
+        {
+          "name": "xarvio FIELD MANAGER",
+          "url": "",
+          "role": "parent",
+          "note": "BASF agro platforma s doporučením postřiků – komplexní, pro větší farmy."
+        },
+        {
+          "name": "Climate FieldView",
+          "url": "",
+          "role": "parent",
+          "note": "Precizní zemědělství, předplatné."
+        },
+        {
+          "name": "DTN Ag Weather",
+          "url": "",
+          "role": "niche",
+          "note": "Agro počasí, hlavně US."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Výrobci přípravků (Syngenta, Bayer, BASF) dávají podobné nástroje zdarma jako marketing.",
+        "Farmáři jsou konzervativní a malé farmy se přesouvají pod větší platformy.",
+        "Chybné doporučení → drift a škoda na sousední plodině → odpovědnost.",
+        "Jednotky, předpisy a pojmy se liší mezi zeměmi (AU Delta T vs. EU)."
+      ],
+      "killer_risk": "Bezplatné nástroje agrochemických firem srazí ochotu platit.",
+      "mitigation": "Neutralita (bez prodeje přípravků), evidence postřiků jako hlavní placená hodnota, silná lokalizace do jazyků, které firmy neobsluhují.",
+      "build_weeks": 5,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 8,
+        "build_ease": 5,
+        "offline_fit": 7,
+        "safety": 5
+      }
+    },
+    {
+      "id": "weather-07",
+      "name": "Pour Day: Concrete Weather",
+      "tagline": "Betonovat dnes? Rychlost odpařování, mráz a déšť pro každou betonáž.",
+      "pitch": "Betonáž v horku a větru vede k plastickým trhlinám, v mrazu k degradaci – a stavbyvedoucí to dnes odhaduje z běžné předpovědi. Standardní nomogram ACI 305 pro rychlost odpařování zná každý technolog, ale v terénu ho nikdo nepočítá. Aplikace spočítá odpařování po hodinách z předpovědi (teplota vzduchu, betonu, vlhkost, vítr), upozorní na mráz v prvních 72 h a zaznamená podmínky každé betonáže do deníku jako podklad pro stavební deník a reklamace.",
+      "niche": "Počasí a technologická pravidla pro betonáž. Stavební software (Procore, PlanGrid) počasí jen loguje; senzorové systémy (Giatec) vyžadují drahý hardware.",
+      "parent_market": "Stavební software a měření (Procore, Fieldwire, Giatec SmartRock) – firmy platí stovky až tisíce USD.",
+      "target_user": "Stavbyvedoucí, betonáři, malé stavební firmy, kutilové lijící základy; EU, US, AU, Blízký východ.",
+      "features": [
+        "Hodinová rychlost odpařování (ACI 305/Menzel) s prahem 0,5 / 1,0 kg/m²/h",
+        "Riziko mrazu v 24/72 h po betonáži, doporučení ošetřování",
+        "Deník betonáží: místo, třída, objem, podmínky automaticky, fotky → PDF",
+        "Offline kalkulačka z ručně zadaných hodnot",
+        "Kalkulačka objemu betonu a počtu pytlů"
+      ],
+      "offline": "mostly",
+      "offline_note": "Předpověď z Apple WeatherKit (Apple-hosted, 500 000 volání/měs v rámci Developer Programu zdarma); výpočty indexů, pravidla a historie běží na zařízení, poslední stažená předpověď se cachuje pro offline. Žádný vlastní server. Kalkulačky a deník plně offline.",
+      "monetization": "Pro 6,99 USD/měs nebo 49,99 USD/rok (≈ 1 150 Kč); jednorázová kutilská verze 4,99 USD.",
+      "revenue_math": "Ideál: 1 000 stažení/měs (concrete weather, evaporation rate, concrete calculator long-tail) × 4 % = 40; 20 ročních × 49,99 + 20 × 4,99 ≈ 1 100 USD × 19,55 ≈ 21 500 Kč/měs. Konzervativně 500 × 3 % ≈ 15 × ~27 USD × 19,55 ≈ 7 900 Kč.",
+      "revenue_czk_ideal": 21500,
+      "keywords": [
+        {
+          "kw": "concrete weather",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "evaporation rate",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; kalkulačky ACI existují spíš na webu"
+        },
+        {
+          "kw": "concrete curing",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad; aplikace výrobců senzorů"
+        },
+        {
+          "kw": "cold weather concreting",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "concrete calculator",
+          "saturation": 8,
+          "competitor": "—",
+          "note": "odhad; saturovaný rodičovský termín, jen pro doplnění"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: ACI 305R a národní normy požadují opatření při rychlém odpařování; betonářské kalkulačky jsou v App Store populární (rodičovská poptávka). Poptávka po počasí pro betonáž je předpoklad.",
+      "competitors": [
+        {
+          "name": "Giatec 360",
+          "url": "",
+          "role": "niche",
+          "note": "Aplikace k senzorům zrání betonu – vyžaduje hardware."
+        },
+        {
+          "name": "Procore",
+          "url": "",
+          "role": "parent",
+          "note": "Stavební management – počasí jen jako záznam."
+        },
+        {
+          "name": "Concrete Calculator (různé)",
+          "url": "",
+          "role": "parent",
+          "note": "Kalkulačky objemu – přeplněný termín, bez počasí."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Malý trh profíků, kteří si nástroje vybírají přes firmu, ne v App Store.",
+        "Odhad teploty betonu bez měření je nepřesný – riziko sporu.",
+        "Stavební software přidá modul počasí jedním updatem.",
+        "Kutil betonuje dvakrát za život – nulová retence."
+      ],
+      "killer_risk": "Profíci nehledají v App Store a kutilové nemají retenci.",
+      "mitigation": "Postavit na kalkulačkách (ASO přes „concrete calculator“ long-tail) a počasí dát jako prémiovou vrstvu; PDF deník pro firmy.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 7,
+        "safety": 6
+      }
+    },
+    {
+      "id": "weather-08",
+      "name": "Hive Weather: Beekeeping Inspection Days",
+      "tagline": "Je dnes den na prohlídku úlů? Teplota, vítr, déšť a snůška pro včelaře.",
+      "pitch": "Včelař otevírá úl jen za tepla (nad ~15 °C), bez deště a silného větru, ideálně v době letu – jinak včely stresuje a riskuje podchlazení plodu. Dnes to odhaduje z běžného počasí. Aplikace dá každý den skóre vhodnosti prohlídky, upozorní na nejbližší vhodné okno, sleduje teplotní sumu pro jarní rozvoj a snůšku a spojí to s jednoduchým záznamem prohlídky. Včelařství je masové v CZ, SK, PL, SI, DE, AT, UA a TR – a včelaři jsou věrní a platí.",
+      "niche": "Počasí pro včelaře. Včelařské deníky (Apiary Book, HiveTracks, BeePlus) řeší záznamy, ale počasí mají maximálně jako ikonu; počasí nemá včelařská pravidla.",
+      "parent_market": "Včelařské aplikace (Apiary Book, HiveTracks, BeeKeepPal – předplatné) a obecné počasí.",
+      "target_user": "Hobby a malí profesionální včelaři (5–100 včelstev) ve střední a východní Evropě, UK, US; začínající včelaři z kurzů.",
+      "features": [
+        "Denní skóre „vhodné k prohlídce“ + nejbližší okno v 7 dnech",
+        "Upozornění na mráz po zahájení jarního rozvoje, období rojení",
+        "Teplotní suma a fenologie (kvetení řepky, akátu – ruční značky)",
+        "Rychlý záznam prohlídky pro stanoviště/úl s podmínkami automaticky",
+        "Připomínky léčení varroázy podle teplot (bez medicínských claimů)"
+      ],
+      "offline": "mostly",
+      "offline_note": "Předpověď z Apple WeatherKit (Apple-hosted, 500 000 volání/měs v rámci Developer Programu zdarma); výpočty indexů, pravidla a historie běží na zařízení, poslední stažená předpověď se cachuje pro offline. Žádný vlastní server. Záznamy prohlídek plně offline, iCloud sync.",
+      "monetization": "Freemium: skóre dnes zdarma; Pro 2,99 USD/měs nebo 14,99 USD/rok (≈ 345 Kč), lifetime 29,99 USD.",
+      "revenue_math": "Ideál: 1 200 stažení/měs (beekeeping weather, včelařský kalendář, Imker Wetter, pszczelarz pogoda) × 5 % = 60 × ~16 USD × 19,55 ≈ 18 800 Kč/měs. Konzervativně 500 × 4 % × 16 × 19,55 ≈ 6 300 Kč.",
+      "revenue_czk_ideal": 18800,
+      "keywords": [
+        {
+          "kw": "beekeeping weather",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "bee weather",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "imker wetter",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad; DE lokalizace"
+        },
+        {
+          "kw": "beekeeping app",
+          "saturation": 6,
+          "competitor": "Apiary Book",
+          "note": "odhad; rodičovský termín obsazený deníky"
+        },
+        {
+          "kw": "hive inspection",
+          "saturation": 3,
+          "competitor": "HiveTracks",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: včelařské deníky mají stabilní placenou základnu; CZ má ~60 000 včelařů, DE ~150 000, PL ~90 000. Že včelaři hledají „počasí pro včelaře“ je předpoklad.",
+      "competitors": [
+        {
+          "name": "Apiary Book",
+          "url": "",
+          "role": "parent",
+          "note": "Vícejazyčný včelařský deník – silný konkurent, může přidat počasí."
+        },
+        {
+          "name": "HiveTracks",
+          "url": "",
+          "role": "parent",
+          "note": "US včelařský deník s předplatným."
+        },
+        {
+          "name": "BeePlus",
+          "url": "",
+          "role": "niche",
+          "note": "Deník úlů (neověřeno, zda řeší počasí)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Apiary Book přidá skóre počasí a má už uživatelskou základnu.",
+        "Zkušený včelař počasí „cítí“ a aplikaci nepotřebuje.",
+        "Malý trh a starší uživatelé s nižší ochotou platit předplatné.",
+        "Sezóna březen–září, v zimě retence nulová."
+      ],
+      "killer_risk": "Včelařské deníky přidají funkci počasí – zůstaneme u úzké funkce.",
+      "mitigation": "Postavit se jako „kalendář včelaře“ (počasí + fenologie + roční plán prací) s lokálním obsahem CZ/PL/DE; lifetime cena pro starší publikum.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 7,
+        "safety": 7
+      }
+    },
+    {
+      "id": "weather-09",
+      "name": "Kite Spot Check",
+      "tagline": "Fouká na tvém spotu správným směrem? Onshore, offshore a nárazy na jeden pohled.",
+      "pitch": "Kiter nepotřebuje jen sílu větru – potřebuje vědět, jestli fouká bezpečným směrem vůči pobřeží konkrétního spotu (offshore = odnese na moře) a jak nárazový je. Windy a Windfinder ukazují mapy a čísla, ale neřeknou „jdi/nechoď“ pro tvůj spot, velikost kite a tvou váhu. Aplikace uloží spoty s orientací pobřeží, spočítá bezpečnostní sektor a doporučí velikost kite podle váhy, a pošle notifikaci, když se otevře okno.",
+      "niche": "Rozhodnutí jít/nejít pro kitesurfing, wingfoil a windsurf na vlastních spotech. Velcí hráči (Windy, Windfinder, Windguru) dávají data, ne rozhodnutí; spotové databáze jsou komunitní a serverové.",
+      "parent_market": "Větrné předpovědi pro vodní sporty – Windy, Windfinder (Pro předplatné), Windguru, Surfline (miliony uživatelů).",
+      "target_user": "Kiteři, wingfoileři a windsurfaři, kteří jezdí na 2–5 oblíbených spotů; kempy a školy.",
+      "features": [
+        "Vlastní spoty s orientací pobřeží a bezpečným sektorem směru větru",
+        "Semafor jdi/nechoď podle průměru, nárazů, směru a srážek",
+        "Doporučená velikost kite/křídla podle váhy a úrovně",
+        "Notifikace při otevření okna na oblíbeném spotu",
+        "Deník session (spot, vítr, kite, pocit)"
+      ],
+      "offline": "mostly",
+      "offline_note": "Předpověď z Apple WeatherKit (Apple-hosted, 500 000 volání/měs v rámci Developer Programu zdarma); výpočty indexů, pravidla a historie běží na zařízení, poslední stažená předpověď se cachuje pro offline. Žádný vlastní server. Spoty, sektor a doporučení velikosti se počítají lokálně; deník offline.",
+      "monetization": "Freemium: 1 spot zdarma; Pro 3,99 USD/měs nebo 19,99 USD/rok (≈ 460 Kč).",
+      "revenue_math": "Ideál: 1 500 stažení/měs (kitesurf forecast, kite size, wingfoil wind, windsurf spot) × 4 % = 60 × 19,99 USD × 19,55 ≈ 23 400 Kč/měs. Konzervativně 600 × 3 % × 19,99 × 19,55 ≈ 7 000 Kč.",
+      "revenue_czk_ideal": 23400,
+      "keywords": [
+        {
+          "kw": "kite size calculator",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; několik malých kalkulaček"
+        },
+        {
+          "kw": "kitesurf forecast",
+          "saturation": 5,
+          "competitor": "Windfinder",
+          "note": "odhad; obsazené velkými hráči"
+        },
+        {
+          "kw": "wingfoil wind",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; rostoucí sport"
+        },
+        {
+          "kw": "wind direction spot",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "kiteboarding wind",
+          "saturation": 4,
+          "competitor": "Windguru",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: Windfinder a Windy mají miliony uživatelů a placené verze (rodičovská poptávka ověřena trhem); wingfoil je nejrychleji rostoucí vodní sport 2022–26. Poptávka po „go/no-go“ je předpoklad.",
+      "competitors": [
+        {
+          "name": "Windy.com",
+          "url": "",
+          "role": "parent",
+          "note": "Mapy a modely, freemium."
+        },
+        {
+          "name": "Windfinder",
+          "url": "",
+          "role": "parent",
+          "note": "Spotové předpovědi, Pro předplatné."
+        },
+        {
+          "name": "Windguru",
+          "url": "",
+          "role": "niche",
+          "note": "Tabulky pro kitery, silná komunita."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Windfinder přidá „kite verdict“ pro spoty a má databázi spotů.",
+        "WeatherKit nemá lokální efekty (termiky, zrychlení mezi ostrovy) – předpověď bude horší než Windguru s lokálními modely.",
+        "Kiteři jsou datoví nerdi a věří „svým“ modelům, ne semaforu.",
+        "Chyba v bezpečnosti (offshore) → nebezpečí → reputační riziko."
+      ],
+      "killer_risk": "Horší kvalita předpovědi než specializované modely – kiteři to rychle poznají.",
+      "mitigation": "Nabídnout volitelný zdroj Open-Meteo (více modelů) jako přepínač, silná hodnota v bezpečnostním sektoru a doporučení velikosti, ne v samotném modelu.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 7,
+        "safety": 6
+      }
+    },
+    {
+      "id": "weather-10",
+      "name": "Mushroom Weather: Foraging Index",
+      "tagline": "Rostou už houby? Index ze srážek a teplot za poslední dva týdny.",
+      "pitch": "Houbaření je národní sport v Česku, na Slovensku, v Polsku, Rusku, Ukrajině, pobaltských zemích a Itálii. Každý houbař řeší stejnou otázku: pršelo dost a je dost teplo, aby houby rostly? Weby jako houbareni.cz nebo mapy výskytu stojí na komunitě a serverech; aplikace spočítá index růstu z historie srážek a teplot za 14–21 dní (WeatherKit denní historie) pro uložená místa a pošle upozornění „za 3–5 dní začnou růst“.",
+      "niche": "Předpověď růstu hub z počasí. Aplikace pro určování hub (Picture Mushroom) řeší druhy, mapy výskytu jsou komunitní; nikdo nedělá čistou, offline-first předpověď bez serveru.",
+      "parent_market": "Houbařské a přírodovědné aplikace – Picture Mushroom, iNaturalist, Picture This (velké předplatné); v CZ/PL velká komunitní sledovanost.",
+      "target_user": "Rekreační houbaři 30–70 let v CZ, SK, PL, UA, LT, LV, IT, DE, RU/BY diaspora.",
+      "features": [
+        "Index růstu hub 0–100 pro uložená místa (srážky 14–21 dní, teplota, vlhkost půdy odhadem)",
+        "Upozornění „vlna růstu za X dní“",
+        "Sezónní kalendář druhů (bez určování a bez claimů o jedlosti)",
+        "Deník úlovků s místem (soukromý, offline)",
+        "Porovnání s předchozími sezónami"
+      ],
+      "offline": "mostly",
+      "offline_note": "Předpověď z Apple WeatherKit (Apple-hosted, 500 000 volání/měs v rámci Developer Programu zdarma); výpočty indexů, pravidla a historie běží na zařízení, poslední stažená předpověď se cachuje pro offline. Žádný vlastní server. Včetně denní historie (WeatherKit dailyHistory). Index a deník na zařízení.",
+      "monetization": "Freemium: 1 místo zdarma; Pro 9,99 USD/rok (≈ 230 Kč) nebo lifetime 14,99 USD – levně, aby koupili i starší houbaři.",
+      "revenue_math": "Ideál v sezóně: 4 000 stažení/měs (houby, grzyby prognoza, pilzwetter, mushroom forecast) × 3 % = 120 × ~11 USD × 19,55 ≈ 25 800 Kč/měs v srpnu–říjnu; celoroční průměr ~12 000 Kč.",
+      "revenue_czk_ideal": 25800,
+      "keywords": [
+        {
+          "kw": "mushroom forecast",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "pilzwetter",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; DE"
+        },
+        {
+          "kw": "grzyby prognoza",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; PL"
+        },
+        {
+          "kw": "houbaření",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; CZ, spíše weby"
+        },
+        {
+          "kw": "mushroom hunting",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad; spíše mapy a deníky"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: houbaření je v CZ/PL masové (odhady miliony lidí ročně), CZ weby s „houbařskými předpověďmi“ mají vysokou sezónní návštěvnost. Pozn.: doplňuje navigation-06 Mushroom Spot Diary – zvážit jednu aplikaci se dvěma funkcemi.",
+      "competitors": [
+        {
+          "name": "Picture Mushroom",
+          "url": "",
+          "role": "parent",
+          "note": "Určování hub přes AI – předplatné, silný rodič."
+        },
+        {
+          "name": "iNaturalist",
+          "url": "",
+          "role": "parent",
+          "note": "Komunitní pozorování – bez předpovědi."
+        },
+        {
+          "name": "houbareni.cz (web)",
+          "url": "",
+          "role": "niche",
+          "note": "CZ komunitní web s mapou výskytu – server a komunita, ne aplikace."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Reverse gap: model silný ve střední a východní Evropě (weby a komunity), v US skoro neexistuje, takže anglofonní vývojáři ho neřeší.",
+      "devils_advocate": [
+        "Index je jen hrubý model – houbaři mají „zkušenost“ a budou ho testovat proti realitě; přesnost je problém.",
+        "Silná sezónnost (srpen–říjen), v zimě nulové příjmy.",
+        "Starší publikum s nízkou ochotou platit za aplikaci.",
+        "Určování hub je nebezpečné – aplikace nesmí nic říkat o jedlosti (odpovědnost)."
+      ],
+      "killer_risk": "Nepřesnost indexu – pár špatných víkendů a hodnocení spadnou.",
+      "mitigation": "Kalibrace indexu z vlastních záznamů uživatele, jasné sdělení „pravděpodobnost“, žádné určování druhů.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 7,
+        "safety": 6
+      }
+    },
+    {
+      "id": "weather-11",
+      "name": "Lightning Delay Timer: 30-30 Rule",
+      "tagline": "Blesk, hrom, stopky: vzdálenost bouřky a odpočet 30 minut pro zápasy a koupaliště.",
+      "pitch": "Sportovní svazy a plavčíci mají pravidlo: po posledním hromu se čeká 30 minut, než se hra obnoví. Rozhodčí a trenéři to dnes počítají v hlavě nebo na stopkách a při každém dalším hromu začínají znovu. Aplikace změří vzdálenost blesku (blesk–hrom), vede oficiální odpočet s automatickým resetem jedním tapnutím, zaznamená přerušení do zápisu a funguje offline na hřišti bez signálu. Volitelně ukáže riziko bouřek z WeatherKit.",
+      "niche": "Bleskový protokol pro organizátory venkovních akcí. Placené B2B systémy (Perry Weather) jsou drahé senzory pro školy v US; bleskové mapy potřebují signál a neřeší pravidlo 30 minut.",
+      "parent_market": "Bleskové detekce a varování – WeatherBug (Spark), My Lightning Tracker, Perry Weather (B2B tisíce USD/rok pro školy).",
+      "target_user": "Rozhodčí a trenéři mládeže (fotbal, baseball, golf, atletika), plavčíci, pořadatelé festivalů a závodů, skautští vedoucí.",
+      "features": [
+        "Měření vzdálenosti blesk–hrom (stopky → km/míle)",
+        "Odpočet 30 min (nastavitelný dle svazu) s resetem jedním tapnutím a notifikací",
+        "Záznam přerušení do PDF zápisu utkání",
+        "Watch aplikace s haptickým odpočtem",
+        "Volitelně: pravděpodobnost bouřky z WeatherKit"
+      ],
+      "offline": "full",
+      "offline_note": "Stopky, odpočet a záznam plně offline; předpověď bouřek volitelně z Apple WeatherKit.",
+      "monetization": "Jednorázově 4,99 USD (≈ 115 Kč); týmová licence přes Family Sharing.",
+      "revenue_math": "Ideál: 2 500 stažení/měs (lightning timer, lightning distance, 30 30 rule, thunder distance) × 5 % = 125 × 4,99 USD × 19,55 ≈ 12 200 Kč/měs. Konzervativně 1 000 × 4 % × 4,99 × 19,55 ≈ 3 900 Kč.",
+      "revenue_czk_ideal": 12200,
+      "keywords": [
+        {
+          "kw": "lightning distance",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad; několik malých kalkulaček blesk–hrom"
+        },
+        {
+          "kw": "lightning timer",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "30 30 rule",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "thunder distance",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "lightning delay",
+          "saturation": 1,
+          "competitor": "Perry Weather",
+          "note": "odhad; B2B"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: NFHS, NCAA a golfové svazy mají bleskové protokoly s pravidlem 30 minut; existence Perry Weather jako B2B produktu dokazuje, že školy za to platí. Objemy hledání předpoklad.",
+      "competitors": [
+        {
+          "name": "WeatherBug",
+          "url": "",
+          "role": "parent",
+          "note": "Spark bleskové upozornění – zdarma s reklamami."
+        },
+        {
+          "name": "Perry Weather",
+          "url": "",
+          "role": "niche",
+          "note": "B2B bleskový systém pro školy a sportoviště v US."
+        },
+        {
+          "name": "My Lightning Tracker",
+          "url": "",
+          "role": "niche",
+          "note": "Bleskové mapy – vyžadují síť."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Jednoduchá funkce, kterou lze nahradit stopkami – ochota platit malá.",
+        "Bezpečnostní odpovědnost: aplikace „povolila“ obnovit hru a pak udeřil blesk.",
+        "Konkurence bezplatných bleskových map s radarem.",
+        "Nízká cena = potřeba vysokého objemu."
+      ],
+      "killer_risk": "Příliš jednoduché na placenou aplikaci; uživatelé zůstanou u stopek.",
+      "mitigation": "Watch app a zápis přerušení pro svazy, lokalizované protokoly svazů (FIFA, golf, plavání), jasný disclaimer.",
+      "build_weeks": 1.5,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 9,
+        "offline_fit": 9,
+        "safety": 6
+      }
+    },
+    {
+      "id": "weather-12",
+      "name": "Frizz Forecast: Curly Hair Weather",
+      "tagline": "Rosný bod řekne, jak se dnes budou chovat tvoje kudrny – a jaký styling použít.",
+      "pitch": "Komunita kudrnatých vlasů (Curly Girl Method) ví, že klíčem k „frizzu“ není vlhkost, ale rosný bod: pod 4 °C vlasy vysychají, nad 15 °C se nafukují. Lidé si to dnes hledají v počasí a přepočítávají podle tabulek z blogů. Aplikace ukáže denní „hair day“ skóre z rosného bodu, doporučí typ produktů (humektanty ano/ne, gel s pevnou fixací) a propojí to s deníkem vlasových rutin. Velké, platící publikum, zvyklé na beauty předplatné.",
+      "niche": "Počasí pro péči o kudrnaté vlasy. Počasí rosný bod ukazuje jako číslo bez interpretace; vlasové aplikace (rutiny, deníky) počasí ignorují.",
+      "parent_market": "Beauty a hair care aplikace s předplatným (deníky rutin, skin care trackery) a obecné počasí.",
+      "target_user": "Ženy a muži s vlnitými a kudrnatými vlasy (typy 2A–4C), 16–45 let, US, UK, BR, FR, DE, ES, MX.",
+      "features": [
+        "Denní a hodinové „frizz skóre“ z rosného bodu a vlhkosti",
+        "Doporučení: humektanty, gel, sušení, ochranný účes",
+        "Deník wash day (produkty, metoda, výsledek + foto)",
+        "Ranní notifikace s dnešním skóre",
+        "Widget na zamčenou obrazovku"
+      ],
+      "offline": "mostly",
+      "offline_note": "Předpověď z Apple WeatherKit (Apple-hosted, 500 000 volání/měs v rámci Developer Programu zdarma); výpočty indexů, pravidla a historie běží na zařízení, poslední stažená předpověď se cachuje pro offline. Žádný vlastní server. Deník a doporučení plně offline.",
+      "monetization": "Freemium: skóre dnes zdarma; Pro 2,99 USD/měs nebo 14,99 USD/rok (≈ 345 Kč).",
+      "revenue_math": "Ideál: 3 000 stažení/měs (frizz forecast, curly hair, hair humidity, cacheadas clima) × 3 % = 90 × 14,99 USD × 19,55 ≈ 26 400 Kč/měs. Konzervativně 1 000 × 2,5 % × 14,99 × 19,55 ≈ 7 300 Kč.",
+      "revenue_czk_ideal": 26400,
+      "keywords": [
+        {
+          "kw": "frizz forecast",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; žádná známá dedikovaná aplikace"
+        },
+        {
+          "kw": "curly hair",
+          "saturation": 6,
+          "competitor": "—",
+          "note": "odhad; rodičovský termín obsazený deníky rutin"
+        },
+        {
+          "kw": "hair humidity",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "dew point hair",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "cabelo cacheado",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad; BR lokalizace"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: komunitní obsah (blogy NaturallyCurly, r/curlyhair) opakovaně vysvětluje rosný bod a vlasy; Pantene v minulosti dělal kampaň „hair forecast“. Že lidé platí za skóre, je předpoklad.",
+      "competitors": [
+        {
+          "name": "CARROT Weather",
+          "url": "",
+          "role": "parent",
+          "note": "Počasí s rosným bodem, bez interpretace pro vlasy."
+        },
+        {
+          "name": "Weather Underground",
+          "url": "",
+          "role": "parent",
+          "note": "Rosný bod a vlhkost – data bez doporučení."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Jediná metrika – uživatelka ji pochopí za týden a aplikaci smaže (retence).",
+        "Beauty značky mohou udělat podobnou funkci zdarma jako marketing.",
+        "Tvrzení o produktech se liší podle typu vlasů – riziko, že rady nesedí.",
+        "Konkurence obecných počasí, kde rosný bod už je."
+      ],
+      "killer_risk": "Nízká retence po prvotním „aha“.",
+      "mitigation": "Deník wash day a osobní kalibrace („jak vlasy dopadly“) jako důvod se vracet, widget na zamčené obrazovce.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 7,
+        "safety": 7
+      }
+    },
+    {
+      "id": "weather-13",
+      "name": "Moon & Frost Garden Calendar",
+      "tagline": "Lunární dny pro setí plus místní data mrazíků – kalendář zahrádkáře offline.",
+      "pitch": "Lunární zahradničení (dny kořene, listu, květu, plodu) je populární v DE, AT, CZ, PL, FR a IT a v EN roste díky biodynamice. Existující aplikace buď licencují data (Floris/Thun), nebo jen ukazují fáze Měsíce. My spojíme vlastní výpočet polohy Měsíce (offline astronomie) s tím, co zahrádkáři skutečně řeší: poslední jarní a první podzimní mráz pro jejich polohu a plán výsevu. Vše offline, bez licence, s lokalizací do 50 jazyků.",
+      "niche": "Lunární kalendář s praktickými daty mrazíků a plánem výsevu. Silný hráč Floris je jen v EN a licenční; nové aplikace neřeší mrazy a lokální klima.",
+      "parent_market": "Zahradnické aplikace a lunární kalendáře – Moon Calendar Moony, Biodynamic Gardening Calendar (Floris), Gardenize, Planta (velké předplatné).",
+      "target_user": "Zahrádkáři 35–75 let v DE/AT/CZ/PL/FR/IT/HU a biodynamičtí pěstitelé v UK/US.",
+      "features": [
+        "Dny kořene/listu/květu/plodu a vzestupný/sestupný Měsíc (výpočet offline)",
+        "Odhad posledního jarního a prvního podzimního mrazu (bundlovaná klimatická normála nebo ruční zadání)",
+        "Plán výsevu podle plodiny a Měsíce",
+        "Upozornění „zítra den plodu“ a „noční mráz“ (volitelně WeatherKit)",
+        "Widget s dnešním typem dne"
+      ],
+      "offline": "full",
+      "offline_note": "Poloha Měsíce z Meeusových algoritmů na zařízení, bez licencovaných dat; klimatické normály mrazů bundlované; varování před mrazem volitelně z Apple WeatherKit.",
+      "monetization": "Freemium: dnešek zdarma; Pro 1,99 USD/měs nebo 9,99 USD/rok (≈ 230 Kč), lifetime 19,99 USD.",
+      "revenue_math": "Ideál: 2 500 stažení/měs (moon gardening, Mondkalender Garten, lunární kalendář, calendrier lunaire jardin) × 4 % = 100 × ~12 USD × 19,55 ≈ 23 500 Kč/měs na jaře; roční průměr ~14 000 Kč.",
+      "revenue_czk_ideal": 23500,
+      "keywords": [
+        {
+          "kw": "moon gardening calendar",
+          "saturation": 3,
+          "competitor": "Biodynamic Gardening Calendar",
+          "note": "web evidence (lifestyle): sat 3, moderate; Floris silná značka"
+        },
+        {
+          "kw": "mondkalender garten",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; DE reverse gap, neověřeno"
+        },
+        {
+          "kw": "biodynamic calendar",
+          "saturation": 3,
+          "competitor": "Biodynamic Gardening Calendar",
+          "note": "web evidence (lifestyle), odvozeno"
+        },
+        {
+          "kw": "frost dates",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "calendrier lunaire jardin",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; FR"
+        }
+      ],
+      "demand_evidence": "Ověřeno (web evidence z lifestyle): „moon gardening calendar biodynamic“ má saturaci 3 (moderate), konkurenti Floris Biodynamic Gardening Calendar (licencovaná data Thun), nová Moon Gardening Calendar: Sow, Moony, Moon & Garden. Předpoklad: DE/CZ/FR lokální poptávka a hodnota dat mrazíků neověřeny přes Apple autocomplete.",
+      "competitors": [
+        {
+          "name": "Biodynamic Gardening Calendar",
+          "url": "https://apps.apple.com/us/app/biodynamic-gardening-calendar/id1467356605",
+          "role": "niche",
+          "note": "Floris Books, silná značka, licencovaná data Thun, EN."
+        },
+        {
+          "name": "Moon Gardening Calendar: Sow",
+          "url": "https://apps.apple.com/ng/app/moon-gardening-calendar-sow/id6800734938",
+          "role": "niche",
+          "note": "Nová, dny kořene/listu/květu/plodu."
+        },
+        {
+          "name": "Moon & Garden",
+          "url": "https://apps.apple.com/ar/app/moon-garden/id1038475934?l=en",
+          "role": "niche",
+          "note": "Starší lunární zahradní kalendář."
+        },
+        {
+          "name": "Moon Calendar - Moony",
+          "url": "https://apps.apple.com/us/app/moon-calendar-moony/id1441214285",
+          "role": "parent",
+          "note": "Lunární kalendář s širokou základnou."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Reverse gap: lunární zahradničení je masové v DE/AT/CZ/PL (tištěné Mondkalender se prodávají ve statisících), EN aplikace ho pokrývají jen částečně a lokalizované moderní aplikace chybí.",
+      "devils_advocate": [
+        "Pseudověda: část recenzentů a potenciálně Apple review může zpochybnit tvrzení – nutné formulovat jako tradici, ne vědu.",
+        "Floris/Thun mají autoritu a značku „Maria Thun“, kterou nesmíme použít (ochranná známka).",
+        "Sezónnost – jaro dominuje.",
+        "Lifestyle kategorie možná bude mít podobný nápad (moon hair calendar) – riziko 4.3 duplicitní šablony v portfoliu."
+      ],
+      "killer_risk": "Odlišit se od Floris a desítek lunárních kalendářů jinak než lokalizací.",
+      "mitigation": "Data mrazíků a plán výsevu jako unikátní hodnota; žádná jména „Thun“; v portfoliu držet jen jednu lunární aplikaci.",
+      "build_weeks": 4,
+      "evidence": "web",
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "weather-14",
+      "name": "Solunar Times: Fishing & Hunting Worldwide",
+      "tagline": "Hlavní a vedlejší periody aktivity ryb a zvěře – v tvém jazyce a bez signálu.",
+      "pitch": "Solunární tabulky (Knightova teorie) používají rybáři a lovci po desetiletí; v US jsou součástí každé rybářské aplikace, ale samostatné solunární aplikace jsou téměř všechny anglicky a s US jednotkami. V Brazílii, Španělsku, Francii, Itálii, Polsku a Japonsku rybáři hledají „tábua solunar“ nebo „calendario solunare“ a dostávají reklamní weby. Aplikace spočítá periody offline z polohy Slunce a Měsíce, přidá fáze Měsíce, východy/západy a tlakový trend a nabídne widget na týden.",
+      "niche": "Lokalizované solunární tabulky pro neanglické trhy. Fishbrain a Fishing Points mají solunar jako funkci v EN; lokální trhy mají hlavně webové tabulky.",
+      "parent_market": "Rybářské aplikace – Fishbrain (miliony uživatelů, předplatné), Fishing Points, BassForecast.",
+      "target_user": "Rekreační rybáři a lovci v BR, ES, PT, FR, IT, PL, CZ, JP, MX; kaprové a přívlačové komunity.",
+      "features": [
+        "Hlavní/vedlejší periody na 30 dní (offline výpočet)",
+        "Fáze Měsíce, východ/západ Slunce a Měsíce, skóre dne",
+        "Tlakový trend z barometru iPhonu",
+        "Widget a Watch komplikace „nejlepší čas dnes“",
+        "Deník úlovků se solunárním kontextem"
+      ],
+      "offline": "full",
+      "offline_note": "Astronomické výpočty (Meeus) a barometr na zařízení, plně offline.",
+      "monetization": "Freemium s reklamou-free Pro 1,99 USD/měs nebo 9,99 USD/rok (≈ 230 Kč), lifetime 14,99 USD.",
+      "revenue_math": "Ideál: 3 000 stažení/měs (tábua solunar, calendario solunar, solunar tables, solunar pesca) × 3 % = 90 × ~11 USD × 19,55 ≈ 19 400 Kč/měs. Konzervativně 1 200 × 2,5 % × 11 × 19,55 ≈ 6 400 Kč.",
+      "revenue_czk_ideal": 19400,
+      "keywords": [
+        {
+          "kw": "solunar tables",
+          "saturation": 6,
+          "competitor": "—",
+          "note": "odhad; v EN obsazené mnoha aplikacemi – jen rodičovský důkaz"
+        },
+        {
+          "kw": "tábua solunar",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; BR/PT"
+        },
+        {
+          "kw": "calendario solunar",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; ES"
+        },
+        {
+          "kw": "solunar pesca",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "fishing times",
+          "saturation": 5,
+          "competitor": "Fishing Points",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: solunární funkce jsou v každé velké rybářské aplikaci (rodičovská poptávka), v EN existuje mnoho samostatných solunárních aplikací (proto EN není blue ocean). Lokální poptávka BR/ES/IT je předpoklad.",
+      "competitors": [
+        {
+          "name": "Fishbrain",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr rybářských aplikací, solunar v předplatném."
+        },
+        {
+          "name": "Fishing Points",
+          "url": "",
+          "role": "parent",
+          "note": "Rybářské mapy + solunar, EN/multi."
+        },
+        {
+          "name": "Solunar Best Fishing Times",
+          "url": "",
+          "role": "niche",
+          "note": "Typická EN solunární aplikace (název neověřen přes Apple)."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "US model (samostatné solunární tabulky) je v neanglických storech jen v EN s US jednotkami; vydáme lokalizovaně v 50 jazycích s metrickými jednotkami.",
+      "devils_advocate": [
+        "Vědecky sporné – skeptičtí rybáři to považují za horoskop.",
+        "Snadno kopírovatelné: desítky solunárních aplikací mohou přidat lokalizaci za týden.",
+        "Fishbrain a Fishing Points mají solunar zdarma v rámci širší aplikace.",
+        "Nízká cena a konkurence reklamních webů."
+      ],
+      "killer_risk": "EN konkurenti se lokalizují automatickým překladem a smažou výhodu.",
+      "mitigation": "Kvalitní lokalizace s místními jmény ryb a zvyklostmi, widget, rychlost; propojení s portfoliem rybářských aplikací (carp, bass).",
+      "build_weeks": 2,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "weather-15",
+      "name": "Totality 2027: Eclipse Guide",
+      "tagline": "Úplné zatmění 2. 8. 2027 přes Španělsko, Maroko a Egypt: přesné časy offline.",
+      "pitch": "Zatmění Slunce 2. srpna 2027 bude nejdelší úplné zatmění nad pevninou do roku 2114 (až 6 min 23 s u Luxoru) a přes Gibraltar, Maroko, Alžírsko, Tunisko, Libyi, Egypt a Saúdskou Arábii přitáhne miliony turistů. Aplikace pro zatmění 2024 (Totality, Solar Eclipse Timer) byly silně US/EN. Aplikace spočítá kontakty z Besselových elementů offline pro přesnou polohu (i bez signálu v poušti), povede hlasovým odpočtem a ukáže oblačnou klimatologii. Pak navazující zatmění 2028 (Austrálie/NZ).",
+      "niche": "Lokalizovaný, offline průvodce konkrétním zatměním pro ES/AR/FR/IT/DE turisty. EN aplikace ve 2024 měly obrovskou poptávku v US; pro 2027 zatím lokalizovaný lídr chybí.",
+      "parent_market": "Astronomické a fotografické plánovače – Solar Eclipse Timer, Totality (Big Kid Science), PhotoPills, SkySafari; stovky tisíc stažení kolem zatmění 2024.",
+      "target_user": "Evropští a arabští turisté, astronomičtí nadšenci, fotografové, školy ve Španělsku, Maroku a Egyptě.",
+      "features": [
+        "Kontakty C1–C4 a délka totality pro aktuální polohu (Besselovy elementy, offline)",
+        "Mapa pásu totality (bundlovaná vektorová data)",
+        "Hlasový odpočet a připomínky pro filtry a fotografii",
+        "Klimatologie oblačnosti podle lokality (bundlovaná statická data)",
+        "Bezpečnost pozorování (brýle ISO 12312-2) bez medicínských claimů"
+      ],
+      "offline": "full",
+      "offline_note": "Besselovy elementy (veřejná data NASA/Espenak) a výpočty na zařízení; mapa a klimatologie bundlované.",
+      "monetization": "Jednorázově 4,99 USD (≈ 115 Kč), nebo zdarma + Pro 3,99 USD; nulové provozní náklady.",
+      "revenue_math": "Ideál v měsících před zatměním (duben–srpen 2027): 10 000 stažení/měs × 5 % × 4,99 USD × 19,55 ≈ 48 800 Kč/měs; mimo tuto špičku téměř nula. Průměr za 12 měsíců ~15 000 Kč/měs.",
+      "revenue_czk_ideal": 48800,
+      "keywords": [
+        {
+          "kw": "eclipse 2027",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; aplikace pro 2027 zatím řídké"
+        },
+        {
+          "kw": "solar eclipse",
+          "saturation": 7,
+          "competitor": "Solar Eclipse Timer",
+          "note": "odhad; obecný termín obsazený"
+        },
+        {
+          "kw": "eclipse timer",
+          "saturation": 3,
+          "competitor": "Solar Eclipse Timer",
+          "note": "odhad"
+        },
+        {
+          "kw": "eclipse spain",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "eclipse egypt",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: kolem zatmění 8. 4. 2024 aplikace pro zatmění vystřelily v US žebříčcích; datum a pás 2. 8. 2027 jsou astronomický fakt. Objemy mimo US a lokální poptávka jsou předpoklad.",
+      "competitors": [
+        {
+          "name": "Solar Eclipse Timer",
+          "url": "",
+          "role": "niche",
+          "note": "Hlasový odpočet, silné hodnocení, EN/US zaměření."
+        },
+        {
+          "name": "Totality by Big Kid Science",
+          "url": "",
+          "role": "niche",
+          "note": "Vzdělávací aplikace pro 2024, US."
+        },
+        {
+          "name": "PhotoPills",
+          "url": "",
+          "role": "parent",
+          "note": "Plánovač fotografie vč. zatmění, placený."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Aplikace pro zatmění 2024 byly US/EN; zatmění 2027 je nad ES/MA/EG – lokalizace do španělštiny, arabštiny, francouzštiny a italštiny je klíč.",
+      "devils_advocate": [
+        "Extrémní jednorázovost – příjem se soustředí do několika měsíců, pak nula.",
+        "Solar Eclipse Timer a PhotoPills se na 2027 aktualizují a mají reputaci.",
+        "Chyba ve výpočtu kontaktů = veřejná ostuda; nutné pečlivé testování proti NASA.",
+        "Kategorie Weather nemusí být ideální pro ASO – spíš Education/Reference."
+      ],
+      "killer_risk": "Krátké okno a zavedení EN konkurenti, kteří aktualizují na 2027.",
+      "mitigation": "Vydat nejpozději v lednu 2027, vícejazyčné ASO, pak rozšířit na 2028 (AU/NZ) a 2030 jako evergreen „Eclipse Planner“.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      }
+    },
+    {
+      "id": "weather-16",
+      "name": "Degree Days: Pest & Harvest Timing",
+      "tagline": "Růstové stupňodny pro sad, vinici a zahradu: kdy přijde obaleč, kdy sklizeň.",
+      "pitch": "Sadaři, vinaři a pokročilí zahrádkáři časují ochranu proti škůdcům (obaleč jablečný, vrtule třešňová) a sklizeň podle růstových stupňodnů (GDD) – teplotní sumy od biofixu. Dnes to dělají v Excelu nebo z univerzitních webů, které pokrývají jen určité státy. Aplikace sečte GDD z denní historie a předpovědi WeatherKit pro pole uživatele, s předvolbami škůdců a plodin a notifikacemi „za 3 dny 250 DD – začátek líhnutí“.",
+      "niche": "GDD pro malé pěstitele bez agro platformy. Univerzitní nástroje jsou regionální weby (US), agro platformy drahé; mobilní, globální, lokalizovaná aplikace chybí.",
+      "parent_market": "Agro počasí a IPM – Climate FieldView, xarvio, univerzitní IPM systémy (NEWA, UC IPM); vinařské aplikace.",
+      "target_user": "Malí sadaři, vinaři, bio pěstitelé, poradci IPM, pokročilí zahrádkáři v EU, US, AU, NZ, CL, ZA.",
+      "features": [
+        "Teplotní suma od biofixu (single sine / average, prahové teploty)",
+        "Knihovna modelů (obaleč, vrtule, kukuřice, vinná réva) – editovatelná",
+        "Předpověď dosažení prahů + notifikace",
+        "Více stanovišť, ruční teploty z vlastního teploměru",
+        "Export CSV"
+      ],
+      "offline": "mostly",
+      "offline_note": "Předpověď z Apple WeatherKit (Apple-hosted, 500 000 volání/měs v rámci Developer Programu zdarma); výpočty indexů, pravidla a historie běží na zařízení, poslední stažená předpověď se cachuje pro offline. Žádný vlastní server. Výpočty GDD a modely na zařízení; ruční zadání teplot plně offline.",
+      "monetization": "Pro 4,99 USD/měs nebo 29,99 USD/rok (≈ 690 Kč).",
+      "revenue_math": "Ideál: 700 stažení/měs (growing degree days, gdd, pest degree days, codling moth) × 5 % = 35 × 29,99 USD × 19,55 ≈ 20 500 Kč/měs. Konzervativně 350 × 3 % × 29,99 × 19,55 ≈ 6 200 Kč.",
+      "revenue_czk_ideal": 20500,
+      "keywords": [
+        {
+          "kw": "growing degree days",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad; několik malých kalkulaček"
+        },
+        {
+          "kw": "gdd",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad; kolize s jinými významy"
+        },
+        {
+          "kw": "degree days",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad; kolize s energetickými HDD"
+        },
+        {
+          "kw": "codling moth",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "temperatursumme",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad; DE"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: GDD modely jsou standard IPM (univerzitní rozšíření v US, EPPO v EU); existence placených agro platforem dokazuje platby, poptávka malých pěstitelů v App Store je předpoklad.",
+      "competitors": [
+        {
+          "name": "Climate FieldView",
+          "url": "",
+          "role": "parent",
+          "note": "Precizní zemědělství pro velké farmy."
+        },
+        {
+          "name": "xarvio FIELD MANAGER",
+          "url": "",
+          "role": "parent",
+          "note": "BASF, modely chorob a škůdců."
+        },
+        {
+          "name": "NEWA (web)",
+          "url": "",
+          "role": "niche",
+          "note": "Univerzitní IPM síť v US – regionální web."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Malý trh odborníků, kteří často mají nástroj od poradce zdarma.",
+        "Přesnost modelů závisí na lokální kalibraci – chybné načasování postřiku = škoda.",
+        "Odborná terminologie ztěžuje lokalizaci a ASO.",
+        "Agro platformy přidají GDD zdarma."
+      ],
+      "killer_risk": "Příliš úzký odborný trh s malým objemem hledání.",
+      "mitigation": "Zjednodušit pro zahrádkáře (kdy sklidit kukuřici, kdy obaleč) a modely brát z veřejných zdrojů s citací.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 7,
+        "safety": 6
+      }
+    },
+    {
+      "id": "weather-17",
+      "name": "Fog Hunter: Mist & Inversion Forecast",
+      "tagline": "Ráno nad mořem mlhy? Předpověď inverze a mlhy pro fotografy krajiny.",
+      "pitch": "Fotografové krajiny vstávají ve 4 ráno kvůli mlze v údolí nebo „moři mlhy“ pod vrcholem – a často zbytečně. Aplikace pro západy slunce (Alpenglow, Skyfire) předpovídají barvy oblohy, ne mlhu. Aplikace spočítá pravděpodobnost radiační mlhy z rozdílu teploty a rosného bodu, větru, nízké oblačnosti a nočního vyzařování, a pro uložené vyhlídky s nadmořskou výškou odhadne, zda budou nad nebo pod vrstvou. K tomu offline časy modré a zlaté hodiny.",
+      "niche": "Předpověď mlhy a inverze pro fotografy. Sunset forecast aplikace tuto věc nepokrývají; meteorologické mapy nejsou čitelné pro laiky.",
+      "parent_market": "Fotografické plánovače – PhotoPills (placená, silná), Alpenglow a Skyfire (sunset forecast, předplatné).",
+      "target_user": "Krajináři a dronaři, fotografové v CZ (České středohoří), DE, AT, CH, IT, UK Lake District, US Pacific Northwest.",
+      "features": [
+        "Skóre mlhy/inverze na ráno pro uložené vyhlídky (s nadmořskou výškou)",
+        "Časy modré/zlaté hodiny offline",
+        "Upozornění večer: „zítra ráno vysoká šance“",
+        "Deník výsledků s fotkou pro kalibraci modelu",
+        "Widget s nejbližší nadějnou šancí"
+      ],
+      "offline": "mostly",
+      "offline_note": "Předpověď z Apple WeatherKit (Apple-hosted, 500 000 volání/měs v rámci Developer Programu zdarma); výpočty indexů, pravidla a historie běží na zařízení, poslední stažená předpověď se cachuje pro offline. Žádný vlastní server. Časy Slunce a model mlhy na zařízení.",
+      "monetization": "Pro 2,99 USD/měs nebo 19,99 USD/rok (≈ 460 Kč).",
+      "revenue_math": "Ideál: 1 000 stažení/měs (fog forecast, inversion forecast, Nebelmeer, mist photography) × 4 % = 40 × 19,99 USD × 19,55 ≈ 15 600 Kč/měs. Konzervativně 500 × 3 % × 19,99 × 19,55 ≈ 5 900 Kč.",
+      "revenue_czk_ideal": 15600,
+      "keywords": [
+        {
+          "kw": "fog forecast",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "inversion forecast",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "nebelmeer",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; DE/CH"
+        },
+        {
+          "kw": "sunset forecast",
+          "saturation": 4,
+          "competitor": "Alpenglow",
+          "note": "odhad; rodičovský termín"
+        },
+        {
+          "kw": "landscape photography weather",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: Alpenglow a Skyfire dokazují, že fotografové platí za předpovědi světla; mlha/inverze jsou častá témata ve fotografických komunitách. Přesnost modelu mlhy z WeatherKit je nevyzkoušený předpoklad.",
+      "competitors": [
+        {
+          "name": "PhotoPills",
+          "url": "",
+          "role": "parent",
+          "note": "Plánovač foto, jednorázová cena, obrovská základna."
+        },
+        {
+          "name": "Alpenglow",
+          "url": "",
+          "role": "niche",
+          "note": "Předpověď barev západu/východu – bez mlhy."
+        },
+        {
+          "name": "Skyfire",
+          "url": "",
+          "role": "niche",
+          "note": "Sunset forecast s předplatným."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Radiační mlhu je těžké předpovědět i pro meteorology – WeatherKit data nemusí stačit.",
+        "Malá cílovka, která už platí za PhotoPills a Alpenglow.",
+        "Alpenglow přidá mlhu jako další vrstvu.",
+        "Nespolehlivost → 1hvězdičkové recenze po zbytečném budíčku ve 4 ráno."
+      ],
+      "killer_risk": "Přesnost předpovědi mlhy.",
+      "mitigation": "Komunikovat pravděpodobnost, učit se z deníku uživatele, případně volitelný Open-Meteo s více modely.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 7,
+        "safety": 5
+      }
+    },
+    {
+      "id": "weather-18",
+      "name": "Launch Check: Paragliding Sites",
+      "tagline": "Je startovačka létatelná? Vítr ve směru startu, báze a termika na jeden pohled.",
+      "pitch": "Paraglidista potřebuje vědět, zda na konkrétní startovačce bude vítr ve správném sektoru a síle, jak vysoko bude báze a jestli nehrozí přehřátí a bouřky. Meteo-parapente a XC Skies jsou výborné, ale složité a jen pro pokročilé, a Burnair pokrývá hlavně Alpy. Aplikace uloží startovačky s letovým sektorem a podá jednoduchý semafor „létatelné/hraniční/ne“ na 3 dny, s výškovým větrem a odhadem báze z Open-Meteo.",
+      "niche": "Jednoduchý go/no-go pro rekreační piloty na jejich domácích startovačkách. Pokročilé nástroje jsou komplexní; obecné počasí nemá výškový vítr.",
+      "parent_market": "Počasí pro létání – Meteo-parapente, XC Skies, Burnair, Windy (Premium); paraglidisté platí za předplatné.",
+      "target_user": "Rekreační paraglidisté, závěsní piloti, piloti paramotorů; kluby a školy v EU, BR, CO, TR, NP.",
+      "features": [
+        "Startovačky s letovým sektorem a výškou (import z vlastní databáze uživatele)",
+        "Semafor 3 dny: vítr ve sektoru, nárazy, výškový vítr 850 hPa",
+        "Odhad báze kumulů a rizika přehřátí/bouřek",
+        "Upozornění na létatelný den",
+        "Deník letů (ruční)"
+      ],
+      "offline": "partial",
+      "offline_note": "Výškový vítr a báze z bezplatného Open-Meteo API (WeatherKit nemá tlakové hladiny); poslední data cachovaná pro offline; startovačky, sektory a deník na zařízení.",
+      "monetization": "Pro 3,99 USD/měs nebo 24,99 USD/rok (≈ 575 Kč).",
+      "revenue_math": "Ideál: 800 stažení/měs (paragliding weather, paragliding forecast, flyable, gleitschirm wetter) × 5 % = 40 × 24,99 USD × 19,55 ≈ 19 500 Kč/měs. Konzervativně 400 × 3 % × 24,99 × 19,55 ≈ 5 900 Kč.",
+      "revenue_czk_ideal": 19500,
+      "keywords": [
+        {
+          "kw": "paragliding weather",
+          "saturation": 4,
+          "competitor": "Meteo-parapente",
+          "note": "odhad"
+        },
+        {
+          "kw": "paragliding forecast",
+          "saturation": 4,
+          "competitor": "XC Skies",
+          "note": "odhad"
+        },
+        {
+          "kw": "flyable",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "gleitschirm wetter",
+          "saturation": 2,
+          "competitor": "Burnair",
+          "note": "odhad; DE/CH"
+        },
+        {
+          "kw": "launch site wind",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: Meteo-parapente, XC Skies a Burnair mají platící uživatele, komunita je malá, ale velmi ochotná platit. Poptávka po zjednodušeném nástroji je předpoklad.",
+      "competitors": [
+        {
+          "name": "Meteo-parapente",
+          "url": "",
+          "role": "parent",
+          "note": "FR specializované počasí pro paragliding, předplatné."
+        },
+        {
+          "name": "XC Skies",
+          "url": "",
+          "role": "niche",
+          "note": "Pokročilé předpovědi termiky."
+        },
+        {
+          "name": "Burnair",
+          "url": "",
+          "role": "niche",
+          "note": "Švýcarské nástroje pro piloty, Alpy."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Bezpečnostní odpovědnost: pilot se řídí semaforem a havaruje.",
+        "Závislost na Open-Meteo (partial) – změna podmínek API nebo výpadek.",
+        "Malý trh a zkušení piloti chtějí surová data, ne semafor.",
+        "Silní specializovaní konkurenti."
+      ],
+      "killer_risk": "Bezpečnost a důvěryhodnost – ve vzduchu se chyby neodpouštějí.",
+      "mitigation": "Formulace „pomůcka, rozhodnutí je na pilotovi“, zobrazit i surová data, cílit na začínající piloty a školy.",
+      "build_weeks": 5,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 4,
+        "safety": 4
+      }
+    },
+    {
+      "id": "weather-19",
+      "name": "Minus Tide: Clam & Tidepool Finder",
+      "tagline": "Nejnižší odlivy měsíce pro sběr škeblí a tide pooling – offline, i bez signálu na pláži.",
+      "pitch": "Sběrači škeblí v Pacifickém severozápadě, Maine a Kalifornii, a rodiny chodící na tide pooling hledají „minus tides“ – vzácné extrémně nízké odlivy. Běžné tide aplikace ukazují graf dne; nevypíšou „nejlepší 3 ranní odlivy pod −1 ft tento měsíc“. Aplikace využije harmonické konstanty NOAA (public domain) a spočítá předpovědi offline, vyfiltruje minus tides podle denní doby a ukáže je v kalendáři s upozorněním.",
+      "niche": "Filtrování extrémních odlivů pro sběr a tide pooling. Tide Charts a Tides Near Me soutěží o obecný termín „tides“ a optimalizují graf dne, ne plánování.",
+      "parent_market": "Aplikace přílivu a odlivu – Tide Charts, Tides Near Me, Tide Guide (předplatné, miliony stažení).",
+      "target_user": "Sběrači škeblí (razor clams, geoducks), tide pooleři, rodiny s dětmi, přírodovědní učitelé, fotografové na pobřeží US.",
+      "features": [
+        "Offline předpovědi z harmonických konstant NOAA pro US stanice",
+        "Filtr: odlivy pod X ft, v denním světle, v měsíci",
+        "Kalendář a upozornění den předem",
+        "Časy východu/západu Slunce u odlivu",
+        "Poznámky ke sběru (bez výkladu předpisů o licencích)"
+      ],
+      "offline": "full",
+      "offline_note": "Harmonické konstanty NOAA (veřejné, public domain) bundlované, výpočet na zařízení; žádné API.",
+      "monetization": "Jednorázově 4,99 USD (≈ 115 Kč) nebo freemium s Pro 9,99 USD/rok.",
+      "revenue_math": "Ideál: 1 500 stažení/měs (minus tide, clam tides, tide pooling, razor clam) × 6 % = 90 × ~6 USD × 19,55 ≈ 10 600 Kč/měs. Konzervativně 700 × 5 % × 6 × 19,55 ≈ 4 100 Kč.",
+      "revenue_czk_ideal": 10600,
+      "keywords": [
+        {
+          "kw": "minus tide",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "tide pooling",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "clam tides",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "tides",
+          "saturation": 9,
+          "competitor": "Tide Charts",
+          "note": "odhad; obecný termín saturovaný"
+        },
+        {
+          "kw": "razor clam",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; spíš státní průvodci"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: tide aplikace jsou velký trh; WDFW (Washington) vyhlašuje razor clam digs podle minus tides a sezóny přitahují desetitisíce lidí. Objem hledání „minus tide“ je předpoklad.",
+      "competitors": [
+        {
+          "name": "Tide Charts - Tides Near Me",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr tide aplikací s předplatným."
+        },
+        {
+          "name": "Tide Guide",
+          "url": "",
+          "role": "parent",
+          "note": "Oblíbená tide aplikace s widgety."
+        },
+        {
+          "name": "Tides Near Me",
+          "url": "",
+          "role": "niche",
+          "note": "Obecné předpovědi – bez filtru minus tides."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Omezeno na US (NOAA konstanty); pro UK/EU jsou tide data licencovaná (UKHO) – nelze snadno rozšířit.",
+        "Tide aplikace mohou přidat filtr minus tides jedním updatem.",
+        "Malý, sezónní trh (jaro/léto odlivy).",
+        "Harmonická předpověď bez meteorologické korekce se může lišit o desítky cm."
+      ],
+      "killer_risk": "Malý adresovatelný trh omezený na US pobřeží.",
+      "mitigation": "Rozšířit na Kanadu (CHS data – ověřit licenci) a na „low tide photography“; nízké náklady vývoje.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "weather-20",
+      "name": "Soil Temp: Lawn Timing",
+      "tagline": "Kdy aplikovat pre-emergent a kdy dosévat trávník? Teplota půdy a 5denní průměr.",
+      "pitch": "Američtí trávníkoví nadšenci (r/lawncare má přes milion členů) časují pre-emergent proti crabgrass na jaře podle teploty půdy 55 °F a dosévání na podzim podle 50–65 °F. Hledají to na webu (GreenCast, univerzitní mapy) a Sunday/Scotts aplikace to nenabízí přehledně pro konkrétní zahradu. Aplikace ukáže teplotu půdy ve 2 hloubkách, 5denní průměr, a upozorní na správné okno pro pre-emergent, hnojení, dosev a první sekání.",
+      "niche": "Teplota půdy pro DIY péči o trávník. Profesionální turf nástroje (GreenCast) jsou pro greenkeepery; spotřebitelské lawn aplikace prodávají produkty.",
+      "parent_market": "Lawn care aplikace a služby – Sunday, Scotts My Lawn, GreenCast (Syngenta); US DIY trávník je trh v miliardách USD.",
+      "target_user": "US majitelé domů s trávníkem, DIY lawn nadšenci; sekundárně UK/AU/CA.",
+      "features": [
+        "Teplota půdy 0–7 cm a 5denní klouzavý průměr",
+        "Okna pro pre-emergent, hnojení, dosev, vertikutaci",
+        "Notifikace při dosažení prahů",
+        "Deník aplikací (produkt, dávka, datum)",
+        "Plán podle typu trávy (cool/warm season)"
+      ],
+      "offline": "partial",
+      "offline_note": "Teplota půdy z bezplatného Open-Meteo API (WeatherKit ji neposkytuje), cachovaná; plán a deník na zařízení.",
+      "monetization": "Freemium: dnešní teplota zdarma; Pro 2,99 USD/měs nebo 14,99 USD/rok (≈ 345 Kč).",
+      "revenue_math": "Ideál: 3 000 stažení/měs na jaře (soil temperature, pre emergent, crabgrass, lawn care calendar) × 3 % = 90 × 14,99 USD × 19,55 ≈ 26 400 Kč/měs v sezóně; roční průměr ~13 000 Kč.",
+      "revenue_czk_ideal": 26400,
+      "keywords": [
+        {
+          "kw": "soil temperature",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad; několik aplikací a senzorových companion aplikací"
+        },
+        {
+          "kw": "pre emergent",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "crabgrass",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "lawn care calendar",
+          "saturation": 5,
+          "competitor": "Scotts My Lawn",
+          "note": "odhad; obsazeno značkami"
+        },
+        {
+          "kw": "overseeding",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: r/lawncare má >1 mil. členů a otázka teploty půdy pro pre-emergent je opakovaná; GreenCast mapy jsou populární. Objemy v App Store předpoklad.",
+      "competitors": [
+        {
+          "name": "Sunday Lawn Care",
+          "url": "",
+          "role": "parent",
+          "note": "D2C lawn služba s aplikací."
+        },
+        {
+          "name": "Scotts My Lawn",
+          "url": "",
+          "role": "parent",
+          "note": "Značková lawn aplikace (produkty Scotts)."
+        },
+        {
+          "name": "GreenCast",
+          "url": "",
+          "role": "niche",
+          "note": "Syngenta turf nástroje pro profesionály."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Závislost na Open-Meteo (partial) – API může zavést limity/platby pro komerční použití.",
+        "Modelová teplota půdy se liší od reality (stín, mulč) – DIY nerdi mají teploměry.",
+        "Silná sezónnost (jaro, podzim).",
+        "Scotts nebo Sunday přidá soil temp zdarma."
+      ],
+      "killer_risk": "Komerční licence Open-Meteo (zdarma jen pro nekomerční použití) – nutné zaplatit API plán.",
+      "mitigation": "Počítat s placeným plánem Open-Meteo (~29 USD/měs) nebo kalibrovat z WeatherKit teploty vzduchu modelem; ruční zadání z teploměru.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 4,
+        "safety": 5
+      }
+    },
+    {
+      "id": "weather-21",
+      "name": "Hay Window: Dry Days for Haymaking",
+      "tagline": "Tři suché dny v kuse: kdy sekat, obracet a lisovat seno.",
+      "pitch": "Senoseč potřebuje 3–4 dny bez deště s nízkou vlhkostí a větrem – jeden déšť na posečenou trávu znehodnotí krmivo za tisíce. Malí farmáři, chovatelé koní a hobby farmy to odhadují z obecné předpovědi. Aplikace najde „okna“ po sobě jdoucích schnoucích dnů, spočítá index schnutí sena (odpar), upozorní na nejlepší den k sečení a vede evidenci sklizní po pozemcích.",
+      "niche": "Rozhodování o senoseči pro malé farmy a chovatele koní. Agro platformy cílí na orné plodiny, obecné počasí neumí najít souvislé okno.",
+      "parent_market": "Agro počasí – DTN, Climate FieldView, farmářská počasí (Farmers Weather); chovatelé koní jsou platící trh.",
+      "target_user": "Malí farmáři, chovatelé koní a ovcí, hobby farmy v UK, IE, DE, AT, CZ, PL, FR, US Midwest, NZ.",
+      "features": [
+        "Vyhledání oken 2–5 souvislých schnoucích dní",
+        "Index schnutí (evapotranspirace) po dnech",
+        "Upozornění na okno pro sečení",
+        "Evidence sklizní (pozemek, seč, balíky)",
+        "Offline kalkulačka vlhkosti a výnosu"
+      ],
+      "offline": "mostly",
+      "offline_note": "Předpověď z Apple WeatherKit (Apple-hosted, 500 000 volání/měs v rámci Developer Programu zdarma); výpočty indexů, pravidla a historie běží na zařízení, poslední stažená předpověď se cachuje pro offline. Žádný vlastní server. Hledání oken a evidence na zařízení.",
+      "monetization": "Pro 2,99 USD/měs nebo 19,99 USD/rok (≈ 460 Kč).",
+      "revenue_math": "Ideál: 800 stažení/měs v sezóně (hay weather, haymaking forecast, silage weather, Heuwetter) × 5 % = 40 × 19,99 USD × 19,55 ≈ 15 600 Kč/měs; mimo sezónu méně.",
+      "revenue_czk_ideal": 15600,
+      "keywords": [
+        {
+          "kw": "hay weather",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "haymaking",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "heuwetter",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; DE/AT"
+        },
+        {
+          "kw": "silage weather",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "farm weather",
+          "saturation": 6,
+          "competitor": "—",
+          "note": "odhad; obecný termín obsazený"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: farmářská počasí mají platící základnu; v DE/AT existují webové „Heuwetter“ předpovědi. Poptávka v App Store je předpoklad.",
+      "competitors": [
+        {
+          "name": "DTN Ag Weather",
+          "url": "",
+          "role": "parent",
+          "note": "Agro počasí, hlavně US orné plodiny."
+        },
+        {
+          "name": "Climate FieldView",
+          "url": "",
+          "role": "parent",
+          "note": "Precizní zemědělství – ne senoseč."
+        },
+        {
+          "name": "Farmers Weather",
+          "url": "",
+          "role": "niche",
+          "note": "Farmářské počasí (název neověřen přes Apple)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Farmáři se dívají na počasí „od rána“ a mají zkušenost – aplikace nepřidá dost.",
+        "Malá sezónní cílovka (květen–srpen).",
+        "Přesnost předpovědi 4+ dny dopředu je omezená – okna se mění.",
+        "Sdílí rodičovský trh se Spray Window a Degree Days – riziko 4.3, pokud vypadají stejně."
+      ],
+      "killer_risk": "Nízká přidaná hodnota nad obecnou předpovědí.",
+      "mitigation": "Spojit se Spray Window pod jednu farmářskou značku s moduly, místo tří podobných aplikací.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 7,
+        "safety": 5
+      }
+    },
+    {
+      "id": "weather-22",
+      "name": "Air Out: Mold-Safe Ventilation",
+      "tagline": "Větrat teď, nebo nechat zavřeno? Absolutní vlhkost venku vs. doma proti plísni.",
+      "pitch": "V Německu je „richtig lüften“ národní téma – nájemníci a pronajímatelé se soudí o plísně a sklepy se větráním v létě paradoxně zavlhčují. Rozhoduje absolutní vlhkost (g/m³) venku vs. uvnitř, ne relativní. Aplikace vezme venkovní hodnoty z WeatherKit, vnitřní z ručního zadání nebo z HomeKit vlhkoměru a řekne pro každou místnost „teď větrej / nevětrej“ plus nejlepší okna dne. Jednoduchá fyzika, jasná hodnota.",
+      "niche": "Větrání proti plísni podle absolutní vlhkosti pro byty a sklepy. Smart home aplikace (Netatmo, tado) měří, ale neradí; počasí neví nic o vnitřku.",
+      "parent_market": "Chytrá domácnost a klima – Netatmo, tado°, Airthings (hardware + aplikace, předplatné); DE trh s vlhkoměry a odvlhčovači.",
+      "target_user": "Nájemníci a majitelé bytů v DE, AT, CH, CZ, PL, NL, UK (plísně), majitelé sklepů a chat.",
+      "features": [
+        "Porovnání absolutní vlhkosti venku/uvnitř po místnostech",
+        "Semafor „větrej teď“ + nejlepší okna dne",
+        "Režim sklep: kondenzace a rosný bod stěn",
+        "Čtení vlhkoměrů přes HomeKit (volitelně) nebo ruční zadání",
+        "Deník vlhkosti jako podklad ve sporu s pronajímatelem"
+      ],
+      "offline": "mostly",
+      "offline_note": "Předpověď z Apple WeatherKit (Apple-hosted, 500 000 volání/měs v rámci Developer Programu zdarma); výpočty indexů, pravidla a historie běží na zařízení, poslední stažená předpověď se cachuje pro offline. Žádný vlastní server. Výpočty absolutní vlhkosti a rosného bodu na zařízení; HomeKit lokálně.",
+      "monetization": "Jednorázově 3,99 USD (≈ 90 Kč), Pro s HomeKit a deníkem 9,99 USD/rok.",
+      "revenue_math": "Ideál: 2 000 stažení/měs (richtig lüften, lüften app, Kellerlüftung, ventilation humidity) × 5 % = 100 × ~6 USD × 19,55 ≈ 11 700 Kč/měs. Konzervativně 800 × 4 % × 6 × 19,55 ≈ 3 800 Kč.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "lüften",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad; DE má několik malých „Lüftungsrechner“ aplikací"
+        },
+        {
+          "kw": "richtig lüften",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "kellerlüftung",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "ventilation humidity",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "mold prevention",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: v DE jsou „Lüftungsrechner“ weby a malé aplikace, téma plísní je v nájemním právu časté. Objem hledání je předpoklad.",
+      "competitors": [
+        {
+          "name": "Netatmo Home + Security",
+          "url": "",
+          "role": "parent",
+          "note": "Měření vnitřního klimatu – bez rady k větrání podle venku."
+        },
+        {
+          "name": "tado°",
+          "url": "",
+          "role": "parent",
+          "note": "Chytré topení s detekcí otevřeného okna."
+        },
+        {
+          "name": "Airthings",
+          "url": "",
+          "role": "parent",
+          "note": "Kvalita vzduchu, hardware."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Reverse gap: „Lüften“ je silné téma v DE/AT/CH (kultura Stoßlüften, spory o plísně), v US prakticky neexistuje; lokalizace do EU jazyků.",
+      "devils_advocate": [
+        "Jednoduchý výpočet – desítky webových kalkulaček zdarma.",
+        "Bez vnitřního senzoru uživatel zadává ručně a přestane.",
+        "tado nebo Netatmo přidají radu jedním updatem.",
+        "Nízká cena a nízký objem."
+      ],
+      "killer_risk": "Nízká ochota platit za jednoduchý výpočet.",
+      "mitigation": "HomeKit automatizace (upozornění „větrej“ podle reálného senzoru) jako placená hodnota; ASO v němčině jako hlavní trh.",
+      "build_weeks": 2,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 7,
+        "safety": 7
+      }
+    },
+    {
+      "id": "weather-23",
+      "name": "Ice Growth: Lake Ice Estimator",
+      "tagline": "Kolik ledu přibylo? Odhad tloušťky z mrazových stupňodnů – a vlastní měření.",
+      "pitch": "Rybáři na ledu, bruslaři na rybnících a běžkaři ve Skandinávii, Kanadě, Minnesotě, Česku a Polsku potřebují vědět, jestli led unese. Tloušťku ledu lze odhadnout Stefanovou rovnicí z mrazových stupňodnů; komunity ji počítají ručně. Aplikace sečte mrazové stupňodny od zamrznutí pro uložená jezera, odhadne růst ledu, zaznamená vlastní měření vrtákem a ukáže tabulku nosnosti (pěšky, skútr, auto) z veřejných doporučení.",
+      "niche": "Odhad růstu ledu pro rekreaci na zamrzlých vodách. Rybářské aplikace (Fishbrain) led neřeší, úřední varování jsou obecná.",
+      "parent_market": "Rybářské aplikace a zimní outdoor – Fishbrain, Navionics; ice fishing je v US/CA/Nordics velký trh s vybavením.",
+      "target_user": "Rybáři na ledu (US Midwest, CA, SE, FI, NO, PL, CZ), bruslaři na přírodním ledu (NL, SE „långfärdsskridsko“), běžkaři.",
+      "features": [
+        "Mrazové stupňodny od data zamrznutí (WeatherKit historie)",
+        "Odhad tloušťky ledu (Stefanova rovnice s koeficientem pro sníh)",
+        "Deník měření vrtákem a kalibrace koeficientu",
+        "Tabulka nosnosti z veřejných doporučení",
+        "Varování při oblevě"
+      ],
+      "offline": "mostly",
+      "offline_note": "Předpověď z Apple WeatherKit (Apple-hosted, 500 000 volání/měs v rámci Developer Programu zdarma); výpočty indexů, pravidla a historie běží na zařízení, poslední stažená předpověď se cachuje pro offline. Žádný vlastní server. Výpočty a deník offline, tabulky bundlované.",
+      "monetization": "Jednorázově 5,99 USD (≈ 140 Kč) nebo Pro 9,99 USD/rok.",
+      "revenue_math": "Ideál v zimě: 1 500 stažení/měs (ice thickness, ice fishing, ice safety, istjocklek) × 6 % = 90 × ~7 USD × 19,55 ≈ 12 300 Kč/měs v prosinci–březnu; celoroční průměr ~5 000 Kč.",
+      "revenue_czk_ideal": 12300,
+      "keywords": [
+        {
+          "kw": "ice thickness",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "ice fishing",
+          "saturation": 6,
+          "competitor": "—",
+          "note": "odhad; rodičovský termín obsazený"
+        },
+        {
+          "kw": "ice safety",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "istjocklek",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad; SE"
+        },
+        {
+          "kw": "lake ice",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: ice fishing je v US Midwest a Kanadě velký trh; tabulky nosnosti ledu publikují úřady (MN DNR). Poptávka po odhadu v App Store je předpoklad.",
+      "competitors": [
+        {
+          "name": "Fishbrain",
+          "url": "",
+          "role": "parent",
+          "note": "Rybářská sociální síť, bez ledového modelu."
+        },
+        {
+          "name": "Navionics Boating",
+          "url": "",
+          "role": "parent",
+          "note": "Mapy jezer včetně zimního rybaření."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Obrovská odpovědnost: uživatel propadne ledem po odhadu z aplikace – právní a etické riziko, Apple review může mít výhrady.",
+        "Led se liší v místě (proudy, prameny) – model nemůže zaručit bezpečnost.",
+        "Silná sezónnost a klimatická změna zkracuje sezónu.",
+        "Malý trh v kategorii Weather."
+      ],
+      "killer_risk": "Nehoda spojená s aplikací – reputačně i právně fatální.",
+      "mitigation": "Aplikaci postavit primárně jako deník měření s výrazným „vždy měř vrtákem“, odhad jen jako trend; žádné „bezpečné“ zelené semafory.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 7,
+        "safety": 2
+      }
+    },
+    {
+      "id": "weather-24",
+      "name": "Rain Log: Personal Rain Gauge Diary",
+      "tagline": "Tvůj srážkoměr, tvoje statistiky: denní úhrny, měsíční součty a srovnání let.",
+      "pitch": "Farmáři v Austrálii a US, zahrádkáři a dobrovolní pozorovatelé si zapisují úhrn ze srážkoměru každé ráno – do sešitu nebo tabulky. Obecné počasí ukazuje modelové srážky, ne to, co spadlo na jejich pole. Aplikace je rychlý deník srážkoměru pro více stanovišť s měsíčními a ročními součty, srovnáním s minulými lety a exportem, volitelně s modelovým odhadem z WeatherKit pro dny, kdy nebyli doma.",
+      "niche": "Ruční srážkoměr jako deník. Rain gauge aplikace jsou často staré nebo vázané na hardwarové stanice; dobrovolnické aplikace (CoCoRaHS) jsou pro jejich síť.",
+      "parent_market": "Osobní meteostanice a srážkoměry – Weather Underground, Netatmo, Ambient Weather; farmářský software.",
+      "target_user": "Farmáři (AU, US, NZ, ZA, IN), zahrádkáři, dobrovolní pozorovatelé, chalupáři.",
+      "features": [
+        "Záznam úhrnu jedním tapnutím pro více srážkoměrů",
+        "Měsíční/roční součty a srovnání let (grafy)",
+        "Widget „dnes spadlo“ a připomínka ranního odečtu",
+        "Volitelný modelový odhad z WeatherKit pro chybějící dny",
+        "Export CSV/PDF"
+      ],
+      "offline": "full",
+      "offline_note": "Deník a statistiky plně offline s iCloud sync; modelový odhad z WeatherKit je volitelný doplněk.",
+      "monetization": "Jednorázově 4,99 USD (≈ 115 Kč) za neomezená stanoviště a export.",
+      "revenue_math": "Ideál: 2 000 stažení/měs (rain gauge, rainfall log, rain diary, Niederschlag) × 6 % = 120 × 4,99 USD × 19,55 ≈ 11 700 Kč/měs. Konzervativně 800 × 5 % × 4,99 × 19,55 ≈ 3 900 Kč.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "rain gauge",
+          "saturation": 5,
+          "competitor": "—",
+          "note": "odhad; řada malých aplikací a companion aplikací stanic"
+        },
+        {
+          "kw": "rainfall log",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "rain diary",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "rainfall tracker",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "niederschlag messen",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; DE"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: ruční srážkoměry jsou běžné na farmách (AU/US) a dobrovolnické sítě (CoCoRaHS) mají desetitisíce pozorovatelů. Objem hledání „rain gauge“ je předpoklad.",
+      "competitors": [
+        {
+          "name": "CoCoRaHS Observer",
+          "url": "",
+          "role": "niche",
+          "note": "Aplikace dobrovolnické sítě US – jen pro jejich síť."
+        },
+        {
+          "name": "Weather Underground",
+          "url": "",
+          "role": "parent",
+          "note": "Osobní meteostanice, komunita."
+        },
+        {
+          "name": "Netatmo Weather",
+          "url": "",
+          "role": "parent",
+          "note": "Hardware stanice se srážkoměrem."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Tabulka v Numbers/Excelu je zdarma a stačí.",
+        "Staré existující rain gauge aplikace mohou být „dost dobré“.",
+        "Nízká cena a jednorázová platba = potřeba objemu.",
+        "Hardwarové stanice automatizují měření."
+      ],
+      "killer_risk": "Uživatelé zůstanou u sešitu/tabulky.",
+      "mitigation": "Nejrychlejší možný záznam (widget, Siri, Watch), pěkné roční srovnání a sdílení – emoce „letos je sucho“.",
+      "build_weeks": 2,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 8
+      }
+    },
+    {
+      "id": "weather-25",
+      "name": "Paw Safe: Dog Walk Weather",
+      "tagline": "Není asfalt moc horký pro tlapky? Nejlepší čas na venčení podle počasí a plemene.",
+      "pitch": "Každé léto sociální sítě sdílejí test „7 sekund dlaní na asfaltu“ a veterináři varují před úpaly psů. Majitelé brachycefalických plemen (buldoci, mopsi), štěňat a seniorů potřebují vědět, kdy je venku bezpečně. Aplikace odhadne teplotu povrchu asfaltu z teploty vzduchu a slunečního záření, přidá riziko přehřátí podle plemene a hmotnosti a v zimě chlad a sůl – a ukáže nejlepší okna pro procházku.",
+      "niche": "Počasí pro venčení psů s ohledem na plemeno. Pet aplikace (Tractive, 11pets) řeší GPS a zdravotní záznamy; počasí nezná plemena.",
+      "parent_market": "Aplikace pro majitele psů – Tractive (GPS předplatné), 11pets, Rover; pet trh je obří a platící.",
+      "target_user": "Majitelé psů v horkých oblastech (US South, AU, ES, IT, GR) a majitelé brachycefalických plemen všude.",
+      "features": [
+        "Odhad teploty asfaltu/písku po hodinách",
+        "Riziko přehřátí podle plemene, věku a hmotnosti",
+        "Nejlepší okna na procházku + ranní notifikace",
+        "Zimní režim (mráz, sůl, krátkosrstá plemena)",
+        "Více psů v domácnosti"
+      ],
+      "offline": "mostly",
+      "offline_note": "Předpověď z Apple WeatherKit (Apple-hosted, 500 000 volání/měs v rámci Developer Programu zdarma); výpočty indexů, pravidla a historie běží na zařízení, poslední stažená předpověď se cachuje pro offline. Žádný vlastní server. Modely povrchu a plemen na zařízení.",
+      "monetization": "Freemium: dnes zdarma; Pro 1,99 USD/měs nebo 9,99 USD/rok (≈ 230 Kč).",
+      "revenue_math": "Ideál v létě: 3 000 stažení/měs (dog walk weather, pavement temperature, hot pavement dog, too hot for dog) × 3 % = 90 × 9,99 USD × 19,55 ≈ 17 600 Kč/měs; roční průměr nižší.",
+      "revenue_czk_ideal": 17600,
+      "keywords": [
+        {
+          "kw": "dog walk weather",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; několik malých aplikací"
+        },
+        {
+          "kw": "pavement temperature",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "too hot for dog",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "dog heat",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "dog walking",
+          "saturation": 7,
+          "competitor": "Rover",
+          "note": "odhad; obsazeno službami venčení"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: kampaně o horkém asfaltu (RSPCA, veterinární kliniky) jsou každoroční virál; existuje několik malých „is it too hot“ aplikací. Ochota platit je předpoklad.",
+      "competitors": [
+        {
+          "name": "Tractive GPS",
+          "url": "",
+          "role": "parent",
+          "note": "GPS pro psy s předplatným – bez rady k počasí."
+        },
+        {
+          "name": "11pets",
+          "url": "",
+          "role": "parent",
+          "note": "Pet management aplikace."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Veterinární tvrzení – riziko 1.4.1, pokud aplikace „určuje“ bezpečnost.",
+        "Majitelé použijí test dlaní zdarma.",
+        "Sezónnost v mírném pásmu.",
+        "Pet aplikace přidají funkci jako marketing."
+      ],
+      "killer_risk": "Nízká ochota platit – vnímáno jako „zajímavost“.",
+      "mitigation": "Widget a notifikace jen v Pro; profil psa s plemennými riziky jako emocionální háček; žádné medicínské claimy.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 7,
+        "safety": 6
+      }
+    },
+    {
+      "id": "weather-26",
+      "name": "Cold Dip: Cold Water Swim Log",
+      "tagline": "Teplota vody, vzduchu a vítr k plavání v otužování – deník každého ponoru.",
+      "pitch": "Otužování a „wild swimming“ je v UK, Irsku, Skandinávii, Nizozemsku, Česku a Polsku masový trend po roce 2020 – komunity se scházejí každé ráno. Otužilci si zapisují teplotu vody, čas ve vodě a pocit, a zajímá je, jak se ochlazuje sezóna. Aplikace vede deník ponorů (ruční teplota vody z teploměru), přidá vzduch, vítr a „pocitový chlad“ z WeatherKit, ukáže sezónní křivku a osobní rekordy – a z Apple Watch načte tep a čas.",
+      "niche": "Deník otužování s počasím. Plavecké aplikace (MySwimPro) řeší bazén a trénink; wild swim aplikace jsou mapy míst s komunitou (server).",
+      "parent_market": "Plavecké a wellness aplikace – MySwimPro, Wim Hof Method (předplatné), otužovací výzvy; open-water swim komunita.",
+      "target_user": "Otužilci a zimní plavci 30–65 let v UK, IE, NL, DK, SE, NO, FI, CZ, PL, DE.",
+      "features": [
+        "Záznam ponoru: teplota vody (ručně), čas, pocit, místo",
+        "Počasí automaticky (vzduch, vítr, pocitová teplota)",
+        "Sezónní graf teploty vody a osobní rekordy",
+        "Apple Watch: tep a čas ve vodě (HealthKit)",
+        "Sdílecí karta pro komunitu (obrázek, bez serveru)"
+      ],
+      "offline": "mostly",
+      "offline_note": "Předpověď z Apple WeatherKit (Apple-hosted, 500 000 volání/měs v rámci Developer Programu zdarma); výpočty indexů, pravidla a historie běží na zařízení, poslední stažená předpověď se cachuje pro offline. Žádný vlastní server. Deník, statistiky a HealthKit plně offline.",
+      "monetization": "Freemium: základní deník zdarma; Pro 2,99 USD/měs nebo 14,99 USD/rok (≈ 345 Kč).",
+      "revenue_math": "Ideál v sezóně: 2 000 stažení/měs (cold water swim, wild swimming log, ice bath, otužování) × 4 % = 80 × 14,99 USD × 19,55 ≈ 23 400 Kč/měs.",
+      "revenue_czk_ideal": 23400,
+      "keywords": [
+        {
+          "kw": "cold water swim",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "wild swimming",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad; hlavně mapové aplikace"
+        },
+        {
+          "kw": "cold plunge",
+          "saturation": 6,
+          "competitor": "—",
+          "note": "odhad; obsazeno timery a značkami van"
+        },
+        {
+          "kw": "winter swimming",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "otužování",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; CZ"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: otužování je silný trend (UK Outdoor Swimming Society, CZ otužilecké spolky); cold plunge aplikace se v EN množí (proto tento termín není blue ocean). Poptávka po deníku s počasím je předpoklad.",
+      "competitors": [
+        {
+          "name": "MySwimPro",
+          "url": "",
+          "role": "parent",
+          "note": "Plavecký trénink s předplatným."
+        },
+        {
+          "name": "Wim Hof Method",
+          "url": "",
+          "role": "parent",
+          "note": "Dech a chlad, předplatné."
+        },
+        {
+          "name": "Cold plunge timery (různé)",
+          "url": "",
+          "role": "niche",
+          "note": "Stopky pro ledové vany – bez počasí a deníku sezóny."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Cold plunge trh je v EN přeplněný (timery, značky van) – rozlišení je těžké.",
+        "Zdravotní tvrzení o otužování – 1.4.1, nesmíme radit „jak dlouho je bezpečné“.",
+        "Bez automatické teploty vody (ruční zadání) uživatelé zapisování přestanou.",
+        "Sezónní vlna zájmu může opadnout."
+      ],
+      "killer_risk": "Zapadne mezi desítkami cold plunge aplikací.",
+      "mitigation": "ASO na „wild/winter swimming“ a lokální jazyky, ne na „cold plunge“; komunitní sdílecí karty.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 7,
+        "safety": 6
+      }
+    },
+    {
+      "id": "weather-27",
+      "name": "Dark Hours: Astro Night Planner",
+      "tagline": "Kolik hodin skutečné tmy bez Měsíce a bez mraků – dnes a tento měsíc.",
+      "pitch": "Astrofotograf potřebuje tři věci najednou: astronomickou noc, Měsíc pod obzorem a jasnou oblohu. Clear Outside a Astrospheric ukazují mraky, ale plánování „nejlepších nocí měsíce“ pro konkrétní cíl (Mléčná dráha, galaxie) je rozházené mezi několik aplikací. Aplikace spočítá offline okna tmy bez Měsíce na celý měsíc, přidá oblačnost z WeatherKit na 10 dní, viditelnost jádra Mléčné dráhy a Bortleho třídu uložených míst.",
+      "niche": "Plánování temných oken pro astrofotografy začátečníky a pokročilé. Specializované aplikace (Clear Outside) jsou zdarma a dobré na mraky, ale plánování tmy a Měsíce je jinde.",
+      "parent_market": "Astronomické aplikace – SkySafari, Stellarium, PhotoPills; předpovědi Clear Outside, Astrospheric (Pro předplatné).",
+      "target_user": "Astrofotografové a vizuální pozorovatelé, fotografové Mléčné dráhy, astroturisté.",
+      "features": [
+        "Kalendář temných oken bez Měsíce (offline výpočet) na 12 měsíců",
+        "Oblačnost na 10 dní z WeatherKit překrytá s okny",
+        "Viditelnost jádra Mléčné dráhy a výška nad obzorem",
+        "Uložená místa s ručně zadanou Bortle třídou",
+        "Upozornění na nejbližší jasnou temnou noc"
+      ],
+      "offline": "mostly",
+      "offline_note": "Astronomické výpočty (Slunce, Měsíc, Mléčná dráha) plně offline; oblačnost z Apple WeatherKit s cache.",
+      "monetization": "Jednorázově 6,99 USD (≈ 160 Kč) nebo Pro 14,99 USD/rok.",
+      "revenue_math": "Ideál: 1 500 stažení/měs (dark sky, astrophotography planner, milky way planner, new moon) × 5 % = 75 × ~9 USD × 19,55 ≈ 13 200 Kč/měs.",
+      "revenue_czk_ideal": 13200,
+      "keywords": [
+        {
+          "kw": "astrophotography planner",
+          "saturation": 4,
+          "competitor": "PhotoPills",
+          "note": "odhad"
+        },
+        {
+          "kw": "milky way planner",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad; několik aplikací"
+        },
+        {
+          "kw": "dark sky",
+          "saturation": 5,
+          "competitor": "Clear Outside",
+          "note": "odhad"
+        },
+        {
+          "kw": "astronomy weather",
+          "saturation": 5,
+          "competitor": "Astrospheric",
+          "note": "odhad"
+        },
+        {
+          "kw": "new moon calendar",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: Clear Outside, Astrospheric a Scope Nights mají velké základny, PhotoPills vydělává na plánování Mléčné dráhy – rodičovská poptávka jasná, ale konkurence silná.",
+      "competitors": [
+        {
+          "name": "Clear Outside",
+          "url": "",
+          "role": "parent",
+          "note": "Bezplatná astro předpověď od First Light Optics – silná."
+        },
+        {
+          "name": "Astrospheric",
+          "url": "",
+          "role": "niche",
+          "note": "Astro počasí s Pro verzí."
+        },
+        {
+          "name": "PhotoPills",
+          "url": "",
+          "role": "parent",
+          "note": "Plánovač Mléčné dráhy."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Clear Outside je zdarma a velmi oblíbený – těžké konkurovat.",
+        "PhotoPills už plánuje Mléčnou dráhu a Měsíc.",
+        "WeatherKit neřeší seeing/transparenci – astro komunita je náročná.",
+        "Malá niche s mnoha kvalitními nástroji."
+      ],
+      "killer_risk": "Nedostatečná diferenciace vůči bezplatným astro předpovědím.",
+      "mitigation": "Soustředit se na roční plánování (kalendář temných víkendů) a jednoduchost pro začátečníky.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 3,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 8,
+        "safety": 7
+      }
+    },
+    {
+      "id": "weather-28",
+      "name": "Drone Day: EU Flight Check",
+      "tagline": "Létat dnes dronem? Vítr ve výšce, nárazy, Kp index a déšť pro tvůj model.",
+      "pitch": "Rekreační piloti dronů (DJI Mini, Air) potřebují vědět, jestli vítr ve 100 m nepřekročí limit jejich modelu a jestli déšť nebo nízká teplota nevybije baterii. UAV Forecast je silný a zdarma, ale anglicky a s US zaměřením. Aplikace dá semafor podle konkrétního modelu dronu (limity větru a teploty z tabulky výrobců), přidá Kp index pro GPS a v EU jednoduchou připomínku kategorií A1/A3 v lokálním jazyce.",
+      "niche": "Lokalizovaný drone go/no-go podle modelu. Jde o obsazený trh (UAV Forecast), otevřené je jen lokalizované a modelové zaměření.",
+      "parent_market": "Drone aplikace – DJI Fly, UAV Forecast, Aloft (US B2B), Drone Assist; miliony rekreačních pilotů.",
+      "target_user": "Rekreační piloti DJI Mini/Air v EU, LatAm, JP; začínající piloti po EU zkoušce A1/A3.",
+      "features": [
+        "Limity větru/teploty podle modelu dronu",
+        "Vítr v 10/80/120 m a nárazy po hodinách",
+        "Kp index a riziko GPS",
+        "Semafor + nejlepší okno dne",
+        "Kontrolní seznam před letem (lokalizovaný)"
+      ],
+      "offline": "partial",
+      "offline_note": "Vítr ve výškách z bezplatného Open-Meteo, Kp z NOAA SWPC (veřejné); cache pro offline. Tabulky modelů a checklist na zařízení.",
+      "monetization": "Freemium: Pro 2,99 USD/měs nebo 14,99 USD/rok (≈ 345 Kč).",
+      "revenue_math": "Ideál: 2 000 stažení/měs (drone weather, uav forecast lokalizovaně, drohnen wetter) × 3 % = 60 × 14,99 USD × 19,55 ≈ 17 600 Kč/měs. Konzervativně 800 × 2 % × 14,99 × 19,55 ≈ 4 700 Kč.",
+      "revenue_czk_ideal": 17600,
+      "keywords": [
+        {
+          "kw": "drone weather",
+          "saturation": 6,
+          "competitor": "UAV Forecast",
+          "note": "odhad; obsazené"
+        },
+        {
+          "kw": "uav forecast",
+          "saturation": 5,
+          "competitor": "UAV Forecast",
+          "note": "odhad; značkový termín"
+        },
+        {
+          "kw": "drohnen wetter",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; DE"
+        },
+        {
+          "kw": "drone wind",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "kp index drone",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: UAV Forecast má velkou základnu (poptávka ověřená trhem) – EN termín je obsazený, otevřená může být jen lokalizace.",
+      "competitors": [
+        {
+          "name": "UAV Forecast",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr, zdarma, EN."
+        },
+        {
+          "name": "DJI Fly",
+          "url": "",
+          "role": "parent",
+          "note": "Oficiální aplikace DJI – může přidat počasí."
+        },
+        {
+          "name": "Aloft",
+          "url": "",
+          "role": "niche",
+          "note": "US B2B drone platforma (LAANC)."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Lídr UAV Forecast je silně EN/US; lokalizovaná verze s EU pravidly A1/A3 v jazycích EU a JP pravidly.",
+      "devils_advocate": [
+        "UAV Forecast je zdarma a dobrý – kopírujeme lídra.",
+        "DJI přidá počasí do DJI Fly (Sherlock hardwarového výrobce).",
+        "Závislost na Open-Meteo a NOAA (partial).",
+        "Regulatorní text se mění – riziko zastaralých informací."
+      ],
+      "killer_risk": "Nulová diferenciace vůči bezplatnému lídrovi.",
+      "mitigation": "Pouze pokud lokalizace ukáže volný prostor v DE/FR/JP; modelové limity jako hlavní hodnota.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 3,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 4,
+        "safety": 5
+      }
+    },
+    {
+      "id": "weather-29",
+      "name": "Run Layers: What to Wear Running",
+      "tagline": "Krátké, nebo dlouhé? Co si vzít na běh podle počasí a tvého pocitu chladu.",
+      "pitch": "Běžec stojí ráno u skříně a hádá: bunda, rukavice, čelenka? Pravidlo „oblékni se jako na +10 °C“ zná každý, ale pocit chladu je individuální. Aplikace podle teploty, větru, vlhkosti, slunce a typu tréninku doporučí vrstvy, a po běhu se zeptá „bylo ti zima/teplo?“ a učí se. Jednoduchý, každodenní produkt s widgetem, který se opakovaně používá.",
+      "niche": "Doporučení oblečení na běh s osobní kalibrací. Běžecké aplikace (Strava, Nike Run Club) oblečení neřeší; weby typu „dress my run“ nejsou personalizované.",
+      "parent_market": "Běžecké aplikace – Strava, Nike Run Club, Runna (velké předplatné); běžecká výbava je obří trh.",
+      "target_user": "Rekreační běžci a cyklisté v mírném a chladném klimatu (US North, UK, DE, NL, CZ, Nordics, JP).",
+      "features": [
+        "Doporučení vrstev podle počasí a typu tréninku (lehký, tempo, dlouhý)",
+        "Osobní kalibrace po běhu („zima/tak akorát/teplo“)",
+        "Šatník: vlastní kusy oblečení",
+        "Widget na ráno a notifikace před plánovaným během",
+        "Režim cyklistika"
+      ],
+      "offline": "mostly",
+      "offline_note": "Předpověď z Apple WeatherKit (Apple-hosted, 500 000 volání/měs v rámci Developer Programu zdarma); výpočty indexů, pravidla a historie běží na zařízení, poslední stažená předpověď se cachuje pro offline. Žádný vlastní server. Model doporučení a kalibrace na zařízení; volitelně HealthKit pro detekci tréninku.",
+      "monetization": "Freemium: Pro 1,99 USD/měs nebo 9,99 USD/rok (≈ 230 Kč).",
+      "revenue_math": "Ideál: 3 000 stažení/měs (what to wear running, running weather, run outfit) × 3 % = 90 × 9,99 USD × 19,55 ≈ 17 600 Kč/měs. Konzervativně 1 000 × 2,5 % × 9,99 × 19,55 ≈ 4 900 Kč.",
+      "revenue_czk_ideal": 17600,
+      "keywords": [
+        {
+          "kw": "what to wear running",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad; několik malých aplikací"
+        },
+        {
+          "kw": "running weather",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "run outfit",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "running clothes weather",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "cycling clothing weather",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: web dressmyrun.com a podobné kalkulačky jsou oblíbené, v App Store existuje několik malých aplikací. Konkrétní saturace je odhad.",
+      "competitors": [
+        {
+          "name": "Strava",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr běžeckých aplikací, bez doporučení oblečení."
+        },
+        {
+          "name": "Nike Run Club",
+          "url": "",
+          "role": "parent",
+          "note": "Běžecká aplikace, zdarma."
+        },
+        {
+          "name": "Dress My Run (web)",
+          "url": "",
+          "role": "niche",
+          "note": "Webová kalkulačka oblečení na běh (existence aplikace neověřena)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Strava, Garmin nebo Runna přidají doporučení oblečení (Sherlock velkého hráče).",
+        "Po pár týdnech běžec ví, co si vzít – retence klesá.",
+        "Nízká ochota platit za „radu“.",
+        "Existující malé aplikace a web zdarma."
+      ],
+      "killer_risk": "Retence – personalizace se „naučí“ a uživatel aplikaci nepotřebuje.",
+      "mitigation": "Widget a Watch komplikace jako denní návyk, sezónní přechody (jaro/podzim) jako hlavní hodnota.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 7,
+        "safety": 6
+      }
+    },
+    {
+      "id": "weather-30",
+      "name": "Golden Hour Offline: Session Planner",
+      "tagline": "Zlatá a modrá hodina pro focení s klienty – plán, sdílená karta a offline časy.",
+      "pitch": "Portrétní a svatební fotografové plánují focení s klienty na zlatou hodinu na konkrétní místo a datum a posílají jim čas. Existující aplikace (PhotoPills, Golden Hour One, Sun Seeker) jsou skvělé pro fotografa, ale nemají „session“ workflow: uložit focení, poslat klientovi hezkou kartu s časem a místem a připomenout den předem s předpovědí. Vše časové se počítá offline; počasí volitelně.",
+      "niche": "Zlatá hodina jako workflow pro plánování focení s klienty. Head term „golden hour“ je obsazený – vstup jen přes úzký job-to-be-done.",
+      "parent_market": "Fotografické plánovače – PhotoPills (jednorázově ~11 USD, velká základna), Sun Seeker, Golden Hour One; fotografové platí za CRM (HoneyBook, Dubsado).",
+      "target_user": "Portrétní, svatební a rodinní fotografové, fotografové nemovitostí, influenceři.",
+      "features": [
+        "Offline časy zlaté/modré hodiny a azimut Slunce pro místo a datum",
+        "Seznam naplánovaných focení s klienty",
+        "Sdílecí karta pro klienta (obrázek/PDF)",
+        "Připomínka den předem s oblačností z WeatherKit",
+        "Widget s dnešní zlatou hodinou"
+      ],
+      "offline": "full",
+      "offline_note": "Poloha Slunce a časy plně offline; oblačnost volitelně z Apple WeatherKit.",
+      "monetization": "Jednorázově 5,99 USD (≈ 140 Kč) nebo Pro 12,99 USD/rok.",
+      "revenue_math": "Ideál: 2 000 stažení/měs (golden hour, photo session planner, blue hour) × 4 % = 80 × ~7 USD × 19,55 ≈ 10 900 Kč/měs. Konzervativně 800 × 3 % × 7 × 19,55 ≈ 3 300 Kč.",
+      "revenue_czk_ideal": 10900,
+      "keywords": [
+        {
+          "kw": "golden hour",
+          "saturation": 8,
+          "competitor": "Golden Hour One",
+          "note": "odhad; head term saturovaný"
+        },
+        {
+          "kw": "blue hour",
+          "saturation": 5,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "photo session planner",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "photoshoot planner",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad"
+        },
+        {
+          "kw": "sun position",
+          "saturation": 6,
+          "competitor": "Sun Seeker",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno daty z Apple. Z vlastní znalosti: „golden hour“ má obrovskou poptávku a mnoho aplikací (saturované); PhotoPills dokazuje platby fotografů. Poptávka po „session planner“ je předpoklad.",
+      "competitors": [
+        {
+          "name": "PhotoPills",
+          "url": "",
+          "role": "parent",
+          "note": "Kompletní plánovač, jednorázová platba."
+        },
+        {
+          "name": "Golden Hour One",
+          "url": "",
+          "role": "niche",
+          "note": "Specializovaná aplikace na zlatou hodinu."
+        },
+        {
+          "name": "Sun Seeker",
+          "url": "",
+          "role": "niche",
+          "note": "AR poloha Slunce, placená."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Head term je saturovaný – bez něj nízký objem hledání.",
+        "Apple Weather ukazuje východ/západ Slunce zdarma a fotografové znají svou lokalitu.",
+        "PhotoPills může přidat sdílení s klientem.",
+        "Nízká cena, malý trh."
+      ],
+      "killer_risk": "Nelze se prosadit v saturovaném „golden hour“ a „session planner“ je příliš úzký.",
+      "mitigation": "Brát jako doplněk portfolia s minimálním vývojem; ASO na klientské workflow a lokalizace.",
+      "build_weeks": 2,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 3,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 8
+      }
+    }
+  ]
+}

@@ -1,0 +1,840 @@
+{
+ "category_slug": "finance",
+ "summary": "Finance je nejpřeplněnější kategorie a autorův seznam to potvrzuje: prvních ~10 nápadů (doložených webem) je rozumných, druhá polovina (jen 'knowledge') má buď přehlédnutou konkurenci (card show – 4 vendor appky, booth rent – Booth Ledger, irregular income – Able/Yearn, debt snowball – 7 appek), nebo nulovou ochotu platit (kalkulačky, výzvy, wishlist). Nejlepší sázky: Handmade Price Calculator, lokalizovaná obálková metoda (sloučit se sinking funds) a DE/EU tracker výpovědních lhůt. Společná vada: revenue_math počítá s 3–5% konverzí na placené a 1–3k staženími, realisticky vychází 1–7 tis. Kč, tedy většinou pod cílem 10 tis.; a několik nápadů sdílí stejný rodičovský trh (rozpočty, prodej na stánku), což zvyšuje riziko 4.3 pro celé portfolio.",
+ "reviews": [
+  {
+   "id": "finance-01",
+   "verdict": "GO",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 7,
+    "monetization": 6,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Tvůrci často počítají cenu v tabulce nebo podle vzorce 'materiál × 2–3' zdarma z blogů – appka musí být výrazně pohodlnější než Google Sheets šablona.",
+    "Craftory a CraftTok jsou z roku 2026 a mohou rychle zesílit; niche je malá, stačí jeden aktivní konkurent s lepším ASO."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Quail for Vendors",
+     "url": "https://apps.apple.com/us/app/quail-for-vendors/id1494924515",
+     "note": "vendor nástroj ze stejného hledání, částečný překryv (prodej, ne kalkulace)"
+    }
+   ],
+   "revenue_czk_realistic": 6000,
+   "reviewer_note": "Nejčistší nápad kategorie: jasná bolest, slabá a stará konkurence, jednorázová platba dává smysl. Realisticky ale 5–7 tis. Kč, ne 17 tis.; strop je malý počet hledání 'craft pricing'. Stavět jako první, s receptury pro svíčky/mýdla jako ASO háčky."
+  },
+  {
+   "id": "finance-02",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 6,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 9,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Většina trhů (ID, PH, PK, MX, ZA, NG) je silně androidová – na iOS je zlomek poptávky.",
+    "Lokální titul per storefront pod jedním app ID = riziko 2.3.7 (keyword stuffing) a zmatení recenzentů, pokud appka v tom trhu nemá lokální obsah.",
+    "Organizátor často vede kroužek ve WhatsAppu/Excelu zdarma; ochota platit v nízkopříjmových trzích je minimální."
+   ],
+   "missed_competitors": [
+    {
+     "name": "CitizenWealth",
+     "url": "https://apps.apple.com/in/app/citizenwealth/id6759051012",
+     "note": "multi-termínový ROSCA organizér (stokvel/chama/tanda/esusu/tontine) – přesně 'jedna appka pro všechny termíny', autor ho neuvedl"
+    },
+    {
+     "name": "SUSU Circles",
+     "url": "https://apps.apple.com/sa/app/susu-circles/id6757117294",
+     "note": "další ROSCA appka z evidence"
+    }
+   ],
+   "revenue_czk_realistic": 3000,
+   "reviewer_note": "Poptávka je skutečná, ale peníze ne: nízké ARPU a Android. Stavět jen jako levný vedlejší projekt s cílem US hispánská 'tanda' + diaspora (UK/US) a bez nadějí na 10 tis. Kč; CitizenWealth už multi-termínový přístup dělá."
+  },
+  {
+   "id": "finance-03",
+   "verdict": "GO",
+   "scores": {
+    "demand": 7,
+    "blue_ocean": 6,
+    "monetization": 6,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Velké lokalizované rozpočtovky (Money Manager, Spendee, Wallet, Finanzguru v DE) mají kategorie/rozpočty, které uživatel může nazvat 'obálky' – hranice mezi obálkovou metodou a běžným rozpočtem je tenká.",
+    "Trend cash stuffing je sociálně řízený a vyhasíná (vrchol 2023–24); v DE 'Umschlagmethode' je hlavně TikTok/papírový trend – uživatelé chtějí fyzické obálky, ne appku.",
+    "Překrývá se s finance-04 a finance-07 (stejný rodičovský trh) – riziko 4.3, pokud vydáte víc podobných rozpočtovek."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Budget Bestie",
+     "url": "https://apps.apple.com/us/app/budget-bestie/id6460258044",
+     "note": "další envelope/cash stuffing appka z evidence"
+    },
+    {
+     "name": "Money Tracker: Savely Budget",
+     "url": "https://apps.apple.com/ie/app/savely-cash-stuffing-budget/id6760823221",
+     "note": "cash stuffing appka v IE storefrontu"
+    }
+   ],
+   "revenue_czk_realistic": 7000,
+   "reviewer_note": "Lokalizační mezera je doložená (CashBinder jen en-GB v Chile) a obálková metoda je prokázaný platící trh. Realisticky 5–9 tis. Kč. Sloučit s finance-04 (sinking funds jako typ obálky) do jedné silnější appky místo dvou."
+  },
+  {
+   "id": "finance-04",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 5,
+    "monetization": 5,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Sinking funds jsou funkce, ne produkt: YNAB, Goodbudget i každá envelope appka je umí; nová appka musí vysvětlit, proč samostatně.",
+    "Tři nové appky 2025–26 (SetAside, Tuck, SinkFund) míří na stejný EN výraz a trh se dál plní.",
+    "Téměř duplicita s finance-03 – dvě appky na stejnou metodiku zvýší riziko 4.3 pro celé portfolio."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 3500,
+   "reviewer_note": "Samostatně slabé; jako modul/sekundární ASO výraz uvnitř finance-03 dává smysl. Samostatně jen pokud se 03 nestaví."
+  },
+  {
+   "id": "finance-05",
+   "verdict": "GO",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 6,
+    "monetization": 6,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "V DE je silný Finanzguru (bankovní sync, detekce smluv a výpovědí) a banky (Sparkasse, N26) mají 'Vertragsmanager' – ruční zadávání je horší UX, výhodou je jen soukromí bez bankovního loginu.",
+    "Nutné hlídat právní změny: od 2022 (Gesetz für faire Verbraucherverträge) lze nové smlouvy v DE po min. době vypovědět měsíčně – bolest u nových smluv klesá.",
+    "Uživatelé hledají spíš 'Kündigung' / 'Verträge verwalten' než 'Kündigungsfrist' – nutné ověřit Apple hinty."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Finanzguru",
+     "url": "",
+     "note": "DE bankovní agregátor s detekcí smluv a výpovědí – hlavní reálný konkurent v DACH, autor ho nezmínil"
+    },
+    {
+     "name": "Volders",
+     "url": "",
+     "note": "autor zmiňuje; generování výpovědí je serverová služba, ale appka existuje v App Store"
+    }
+   ],
+   "revenue_czk_realistic": 5000,
+   "reviewer_note": "Dobrý obrácený gap a plně offline; hlavní hrozba je Finanzguru a bankovní vertragsmanagery. Pozicovat jako 'bez bankovního přístupu, soukromé' a rozšířit na pojistky/energie/posilovny ve všech EU jazycích. Realisticky 4–7 tis. Kč."
+  },
+  {
+   "id": "finance-06",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 5,
+    "monetization": 5,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Square/SumUp/Shopify POS jsou zdarma a mají reporty podle akcí a zásob – většina stánkařů už platí kartou přes ně a data mají.",
+    "Třetí nápad ve stejném rodičovském trhu (s 01 a 15) – buď jedna suite, nebo riziko 4.3.",
+    "Silná sezónnost (jarmarky jaro–Vánoce), churn mimo sezónu."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Work Order & Sales Tracker",
+     "url": "https://apps.apple.com/us/app/work-order-sales-tracker/id6758559928",
+     "note": "vendor/sales tracker ze stejného hledání"
+    },
+    {
+     "name": "VendorPOS",
+     "url": "https://apps.apple.com/tt/app/vendorpos/id6760127529",
+     "note": "POS pro stánkaře, zmiňuje card shows"
+    }
+   ],
+   "revenue_czk_realistic": 3500,
+   "reviewer_note": "Niche už mají 3–4 nové appky z 2026 a POS systémy zdarma. Smysl má jen jako rozšíření finance-01 (kalkulace ceny + vyhodnocení akce) v jedné appce."
+  },
+  {
+   "id": "finance-07",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 4,
+    "monetization": 2,
+    "build_ease": 9,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Spořicí výzvy se dělají na papíře/printables zdarma; appka je typická 'try once' s nulovou retencí po 2 týdnech.",
+    "Japonský 500円玉貯金 a 52týdenní výzvy mají desítky free appek a lokálních šablon; tvrzení o mezeře je neověřené.",
+    "Minimální funkčnost – riziko 4.2 / 4.3 (šablona tabulky)."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Ochota platit je u spořicích výzev téměř nulová a appka je triviální. Nejvýš jako zdarma lákadlo uvnitř finance-03."
+  },
+  {
+   "id": "finance-08",
+   "verdict": "GO",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 5,
+    "monetization": 4,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Bankovní dětské účty (Revolut <18, Greenlight, v DE Taschengeld-karty bank, v JP PayPay pro rodiny) přesouvají kapesné do digitálu, kde je přehled zdarma.",
+    "Japonský お小遣い帳 trh má mnoho free appek s reklamami od etablovaných vývojářů; freemium 'Pro' se tam prodává těžko.",
+    "Děti potřebují vlastní zařízení/sdílení – bez vlastního serveru jen přes iCloud sdílení, což je u rodičovského Apple ID a dětského účtu komplikované."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 4000,
+   "reviewer_note": "Poptávka je reálná a platí rodiče, ale EN je přeplněná a JP má free alternativy. GO jen s lokalizovaným úhlem 'kapesné + úroky od rodičů' pro DE/PL/CZ/FR, kde dedikovaná konkurence chybí; realisticky 3–5 tis. Kč."
+  },
+  {
+   "id": "finance-09",
+   "verdict": "GO",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 7,
+    "monetization": 7,
+    "build_ease": 6,
+    "offline_fit": 9,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Manažeři UK hospod hledají řešení v payroll systému (Fourth, Harri, Sage) a u troncmasterů, ne v App Store – ASO poptávka může být téměř nulová.",
+    "Právní riziko: appka, která 'počítá podle zákona', může být brána jako poradenství; chybný výpočet NI/tronc = odpovědnost.",
+    "Trh je jen UK (a IE s jiným zákonem) – po nasycení nemá kam růst."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Tip Out: Tip Pool Calculator",
+     "url": "https://apps.apple.com/ph/app/tip-out-staff-tip-calculator/id6759682320",
+     "note": "autor uvádí; generický tip pool – do UK zákona má blízko"
+    }
+   ],
+   "revenue_czk_realistic": 4000,
+   "reviewer_note": "Jediný B2B nápad s legislativním tahem (Employment (Allocation of Tips) Act 2023, účinný od 10/2024) a vyšší ochotou platit. Malý, ale platící trh; realisticky 3–6 tis. Kč. Nutný disclaimer 'nejde o právní/daňovou radu' a exporty pro účetní."
+  },
+  {
+   "id": "finance-10",
+   "verdict": "GO",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 8,
+    "monetization": 5,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 7
+   },
+   "extra_risks": [
+    "Sbory s ChMS (Planning Center, Breeze, Tithe.ly) mají modul pro zadání hotovostních darů – tam tým počítá rovnou; appka musí exportovat do jejich CSV.",
+    "Rozhodnutí o nákupu dělá pokladník/rada, ne dobrovolník – pomalé, a sbory chtějí zdarma.",
+    "Hotovost ve sbírkách dlouhodobě klesá (online dárcovství)."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Money Counter - Coin Organizer",
+     "url": "https://apps.apple.com/us/app/money-counter-coin-organizer/id6744825993",
+     "note": "generický counter, v popisu zmiňuje 'counting donations'"
+    }
+   ],
+   "revenue_czk_realistic": 4000,
+   "reviewer_note": "Téměř prázdná niche s jasnou procesní bolestí (dvojí kontrola, podpisy, denominace). Levné na stavbu; realisticky 3–5 tis. Kč, s plánem 'per church' ročně 29–49 USD a CSV exportem do ChMS."
+  },
+  {
+   "id": "finance-11",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 6,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 3
+   },
+   "extra_risks": [
+    "V BR ukazují 'parcelas' přímo Nubank/Itaú appky a free rozpočtovky (Mobills, Organizze) – offline ruční tracker je krok zpět.",
+    "Trademarky Afterpay/Klarna/Affirm v metadatech = 2.3.7 / 5.2 riziko; bez nich chybí ASO výrazy.",
+    "Nulová saturace 'bnpl tracker' může znamenat nulovou poptávku, ne volný oceán."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Uživatelé BNPL jsou cenově nejcitlivější segment a data mají ve svých bankovních appkách. Nevidím zaplacení."
+  },
+  {
+   "id": "finance-12",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 4,
+    "monetization": 5,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Přímý klon už existuje: Booth Ledger (booth renters: příjmy, spropitné, výdaje, nájem křesla, jednorázové Pro).",
+    "Recordly cílí přímo na kadeřnice a nehtařky; booking platformy (StyleSeat, Vagaro, Fresha) dávají stylistům přehled výdělků zdarma.",
+    "Mimo US/UK je 'booth rent' pojem neznámý – lokalizace potřebuje jiné výrazy (Stuhlmiete, pronájem křesla) s neověřenou poptávkou."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Booth Ledger",
+     "url": "https://apps.apple.com/in/app/booth-ledger/id6765623047?l=hi",
+     "note": "dedikovaná appka pro booth rentery – přesně tento nápad"
+    },
+    {
+     "name": "Recordly: Gig Income Tracker",
+     "url": "https://apps.apple.com/us/app/recordly-gig-income-tracker/id6749276198",
+     "note": "earnings tracker pro kadeřnice a nehtaře"
+    },
+    {
+     "name": "StyleSeat - Salon Appointments",
+     "url": "https://apps.apple.com/us/app/styleseat-salon-appointments/id414313281",
+     "note": "booking platforma s přehledem výdělků"
+    }
+   ],
+   "revenue_czk_realistic": 2500,
+   "reviewer_note": "Autor tvrdil, že niche je prázdná – není. Smysl má jen jako lokalizovaná verze (DE Stuhlmiete, CZ/PL) tam, kde Booth Ledger není; v EN nevstupovat.",
+   "web_checked": true
+  },
+  {
+   "id": "finance-13",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 4,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "EN výraz 'debt snowball' je saturovaný: 4 appky s ním v titulu + Debt Payoff Pro (featured by Apple) a Debt Payoff Planner.",
+    "Metoda je kulturně vázaná na Dave Ramsey/US spotřebitelské úvěry; v DE/CZ/ES lidé 'schulden abbauen' řeší přes dluhové poradny, ne appky.",
+    "Debt Payoff Planner a spol. jsou už lokalizované do více jazyků (neověřeno per jazyk) a v lokální měně funguje jakákoli kalkulačka."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Debt Snowball - Payoff Tracker",
+     "url": "https://apps.apple.com/au/app/debt-snowball-payoff-tracker/id1478622759",
+     "note": "dedikovaná snowball appka"
+    },
+    {
+     "name": "Debt Payoff Pro",
+     "url": "https://apps.apple.com/us/app/debt-payoff-pro/id429095280",
+     "note": "featured by Apple, snowball metoda"
+    },
+    {
+     "name": "Debt Payoff Planner & Tracker",
+     "url": "https://apps.apple.com/us/app/debt-payoff-planner-tracker/id1009323715",
+     "note": "tržní lídr, více strategií"
+    },
+    {
+     "name": "ClearDebt: Snowball Planner",
+     "url": "https://apps.apple.com/us/app/cleardebt-snowball-planner/id6753349222",
+     "note": "nový konkurent 2025-26"
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "EN je rudý oceán a mimoamerická poptávka po 'sněhové kouli' je předpoklad bez dat. Zadlužení lidé navíc platí nejméně ochotně.",
+   "web_checked": true
+  },
+  {
+   "id": "finance-14",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 5,
+    "build_ease": 5,
+    "offline_fit": 8,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Autor přehlédl 4 dedikované vendor appky pro card show: DeckTradr, CardOps (Show Mode Sell/Buy/Trade), CardCalc ('#1 tool for card show vendors'), Deal IQ.",
+    "Všichni konkurenti mají živé ceny (TCGPlayer) a skenování – bez licencovaných cenových dat je offline appka nekonkurenceschopná.",
+    "Cenová data TCG/sports cards jsou licencovaná (TCGPlayer, 130point) – nelze bez serveru/API."
+   ],
+   "missed_competitors": [
+    {
+     "name": "CardOps: TCG Vendor Tracker",
+     "url": "https://apps.apple.com/gb/app/cardops-tcg-vendor-tracker/id6790439848",
+     "note": "Show Mode: sell/buy/trade – přesně tento nápad"
+    },
+    {
+     "name": "DeckTradr",
+     "url": "https://apps.apple.com/us/app/decktradr/id6748241256",
+     "note": "POS pro TCG vendory, P/L, eventy"
+    },
+    {
+     "name": "CardCalc - TCG Calculator",
+     "url": "https://apps.apple.com/us/app/cardcalc-tcg-calculator/id6752672423",
+     "note": "trade kalkulačka pro card show vendory"
+    },
+    {
+     "name": "Deal IQ: Card Deal Manager",
+     "url": "https://apps.apple.com/il/app/deal-iq-card-deal-manager/id6761696554",
+     "note": "show dealers, profit tracking"
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Niche, kterou autor označil za volnou, je v 2025–26 obsazená čtyřmi appkami s živými cenami. Offline verze bez cen prohraje.",
+   "web_checked": true
+  },
+  {
+   "id": "finance-15",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 6,
+    "monetization": 4,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Antique malls jsou americký fenomén – lokalizace nemá kam; US niche je velmi malá a starší publikum nehledá appky.",
+    "VendStats už výslovně cílí na booth owners; antique mally mají vlastní POS a měsíční výpisy prodejů pro vendory.",
+    "Třetí nápad ze stejného parent trhu (01, 06) – 4.3 riziko."
+   ],
+   "missed_competitors": [
+    {
+     "name": "VendStats: Sales Tracker",
+     "url": "https://apps.apple.com/us/app/vendstats-sales-tracker/id6759027702",
+     "note": "autor uvádí; výslovně flea market/booth owners"
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Příliš malé a US-only; jako samostatná appka nedává smysl. Maximálně režim 'booth' uvnitř finance-06."
+  },
+  {
+   "id": "finance-16",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 3,
+    "monetization": 5,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Hledání odhalilo 6+ rozpočtovek, které 'irregular income' mají v popisu, a 2 nové appky 2026 (Yearn, Able: Inconsistent Income) přímo pro tuto pozici.",
+    "Rodičovský trh (rozpočty) je nejpřeplněnější ve Finance; 'nepravidelný příjem' je vlastnost, kterou YNAB/EveryDollar/Goodbudget pokrývají.",
+    "Offline bez bankovního syncu je v rozpočtovkách vnímáno jako nevýhoda."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Able: Inconsistent Income",
+     "url": "https://apps.apple.com/us/app/able-inconsistent-income/id6769551407",
+     "note": "nová appka přesně pro nepravidelný příjem"
+    },
+    {
+     "name": "Yearn: Paycheck Budget Planner",
+     "url": "https://apps.apple.com/us/app/yearn-paycheck-budget-planner/id6797014022",
+     "note": "variable income, envelope, gig/tipped"
+    },
+    {
+     "name": "SpendLists: Income Tracker",
+     "url": "https://apps.apple.com/tt/app/spendlists-income-tracker/id1495276397",
+     "note": "freelanceři s nepravidelným příjmem"
+    },
+    {
+     "name": "BudgetBear - Bill Organizer",
+     "url": "https://apps.apple.com/us/app/budgetbear-bill-organizer/id6738929063",
+     "note": "freelanceři, irregular income"
+    }
+   ],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Pozice není volná a rodičovský trh je rudý. Bez jasného odlišení (např. jen 'income smoothing' kalkulačka) nevstupovat.",
+   "web_checked": true
+  },
+  {
+   "id": "finance-17",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 3,
+    "monetization": 6,
+    "build_ease": 5,
+    "offline_fit": 5,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Bez živých spot cen appka nemá smysl; zdroje spot cen (Kitco, metals-api) jsou licencované/placené – 'mostly offline' je ve skutečnosti 'partial' s licenčním rizikem.",
+    "Niche je obsazená řadou stack trackerů (Stacker, Coinstack-typu appky, dealerské appky s portfoliem zdarma) – autor neuvedl žádné niche URL.",
+    "Silver/gold hallmark a bullion niche je podle jiných kategorií už 'getting crowded'."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Datová závislost (spot ceny) a nulová doložená konkurence v datech autora. Stackeři platí, ale za appku, která má ceny – to vyžaduje placené API."
+  },
+  {
+   "id": "finance-18",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 6,
+    "blue_ocean": 3,
+    "monetization": 6,
+    "build_ease": 4,
+    "offline_fit": 10,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Landlord Studio, Rent Easy Ledger, Stessa (zdarma) a desítky rent trackerů – EN je rudý oceán.",
+    "DE Nebenkostenabrechnung je právně složitá (Betriebskostenverordnung, rozúčtování, HeizkostenV) – chybný výpočet = spor s nájemníkem; build 10+ týdnů, ne 6.",
+    "Každý stát má jiné daňové a nájemní právo – lokalizace do 50 jazyků je fikce, reálně 2–3 trhy."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Landlord Studio",
+     "url": "https://apps.apple.com/us/app/landlord-studio/id1109898840",
+     "note": "tržní lídr, autor bez URL"
+    },
+    {
+     "name": "Rent Easy Ledger",
+     "url": "https://apps.apple.com/us/app/rent-easy-ledger/id6747598989",
+     "note": "rent ledger – přímý konkurent pro mikro-pronajímatele"
+    }
+   ],
+   "revenue_czk_realistic": 4000,
+   "reviewer_note": "Peníze v niche jsou (pronajímatelé platí), ale jen s úzkým úhlem: jediný trh (DE nebo CZ vyúčtování záloh na služby) a hotové šablony. Obecný 'rent tracker' nestavět."
+  },
+  {
+   "id": "finance-19",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 3,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Titul 'petty cash' už mají 4 appky (jeden JP vývojář, korporátní styl, 6,99 USD/měs) – slabé, ale obsazují výsledky.",
+    "DE 'Kassenbuch' pro podnikatele musí splňovat GoBD (neměnnost záznamů, archivace 10 let) – bez toho je to právní past; použití pro firmy vyžaduje disclaimer.",
+    "Spolky/třídní fondy mají nulový rozpočet – ochota platit velmi nízká."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Petty Cash Book (Petty-T)",
+     "url": "https://apps.apple.com/gh/app/petty-cash-book-petty-t/id1661456630",
+     "note": "dedikovaná petty cash appka, 6,99 USD/měs"
+    },
+    {
+     "name": "Petty cash general",
+     "url": "https://apps.apple.com/us/app/petty-cash-general/id1665362086",
+     "note": "stejný vývojář"
+    },
+    {
+     "name": "Petty cash accounting（Petty-A）",
+     "url": "https://apps.apple.com/us/app/petty-cash-accounting-petty-a/id1636248725",
+     "note": "stejný vývojář, pro sociální organizace"
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Konkurence je slabá, ale platí se tu málo. Cílit na 'class fund / club treasurer' (spolky, třídní fondy, sportovní kluby) s PDF výkazem pro výbor, ne na firemní Kassenbuch.",
+   "web_checked": true
+  },
+  {
+   "id": "finance-20",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 4,
+    "build_ease": 5,
+    "offline_fit": 7,
+    "safety": 5
+   },
+   "extra_risks": [
+    "Gig driver trackery jsou přeplněné (Gridwise, Stride, Gig Driver: Income Tracker, GigLedger, Gig Mileage Tracker) a v BR jsou populární free appky pro motoristy (StopClub apod.).",
+    "Kilometrový tracking s GPS na pozadí = baterie + přísná App Review kontrola lokace; bez něj ruční zadávání, které řidiči nedělají.",
+    "Řidiči v BR/PL jsou extrémně cenově citliví a převážně na Androidu."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Gig Driver: Income Tracker",
+     "url": "https://apps.apple.com/us/app/gig-driver-income-tracker/id6747325420",
+     "note": "dedikovaný tracker výdělků řidiče"
+    },
+    {
+     "name": "Gridwise: Gig Driver Assistant",
+     "url": "https://apps.apple.com/us/app/gridwise-gig-driver-assistant/id1215991382",
+     "note": "parent lídr"
+    },
+    {
+     "name": "GigLedger Mileage Tax Tracker",
+     "url": "https://apps.apple.com/us/app/gigledger-mileage-tax-tracker/id6759967979",
+     "note": "mileage + výdělky"
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Přeplněný trh s androidovým publikem, které neplatí. Km místo mil není dost silná odlišnost."
+  },
+  {
+   "id": "finance-21",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 6,
+    "monetization": 4,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "ArtManager už pokrývá klienty, faktury a commissions; umělci běžně používají Trello/Notion/VGen zdarma.",
+    "Digitální umělci jsou převážně mladí a s nízkými příjmy – předplatné neprodáte, jen levný lifetime.",
+    "Výraz 'commission' v App Store přitahuje sales-commission appky (Controlla) – ASO šum."
+   ],
+   "missed_competitors": [
+    {
+     "name": "ArtManager",
+     "url": "https://apps.apple.com/us/app/artmanager/id6504045401",
+     "note": "business appka pro umělce vč. commissions a faktur"
+    },
+    {
+     "name": "Controlla: Commission Tracker",
+     "url": "https://apps.apple.com/us/app/controlla-commission-tracker/id6477843072",
+     "note": "obsazuje výraz 'commission tracker' (sales)"
+    },
+    {
+     "name": "Artwork Tracker",
+     "url": "https://apps.apple.com/us/app/artwork-tracker/id408819940",
+     "note": "starší placená appka pro umělce"
+    }
+   ],
+   "revenue_czk_realistic": 2500,
+   "reviewer_note": "Žádná appka nemá v titulu 'commission queue', takže ASO okno existuje, ale peníze jsou malé. Stavět jen jako levný 2–3týdenní lifetime produkt s 'queue' kartami a zálohami.",
+   "web_checked": true
+  },
+  {
+   "id": "finance-22",
+   "verdict": "MAYBE",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 6,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 9,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Věcné dary odečítají jen ti, kdo itemizují (cca 10 % US domácností po TCJA); nový US odpočet pro neitemizující od 2026 se týká jen hotovostních darů – ne věcných.",
+    "Extrémní sezónnost (leden–duben) a US-only; hodnotící tabulky (Salvation Army/Goodwill guide) nelze přebírat bez rizika autorských práv.",
+    "Daňové tvrzení = odpovědnost; nutné výrazné disclaimery."
+   ],
+   "missed_competitors": [
+    {
+     "name": "ItsDeductible (Intuit)",
+     "url": "",
+     "note": "ukončená 2025 (podle znalosti autora, neověřeno) – osiřelí uživatelé jsou jediný tah"
+    }
+   ],
+   "revenue_czk_realistic": 2000,
+   "reviewer_note": "Konec ItsDeductible je reálná příležitost, ale publikum je malé a sezónní. Stavět jen s vlastní (ne převzatou) tabulkou hodnot a jako levný lifetime; neočekávat 10 tis."
+  },
+  {
+   "id": "finance-23",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 5,
+    "monetization": 3,
+    "build_ease": 4,
+    "offline_fit": 8,
+    "safety": 3
+   },
+   "extra_risks": [
+    "EOB formáty se liší pojišťovnu od pojišťovny – offline OCR párování je velmi nespolehlivé; build spíš 10+ týdnů.",
+    "Zdravotní data a pojišťovací dokumenty = 5.1.1/5.1.3 citlivost a pacienti často nevědí, co je EOB; appka de facto radí ohledně sporů s pojišťovnou.",
+    "Nemocniční účty řeší Price transparency nástroje a advokační služby (placené lidmi, ne appkou); US-only trh."
+   ],
+   "missed_competitors": [
+    {
+     "name": "HSA Tracker Pro",
+     "url": "https://apps.apple.com/us/app/hsa-tracker-pro/id6759116912",
+     "note": "další z 8+ HSA/receipt appek v okolí"
+    },
+    {
+     "name": "SnapHSA: Tracker & Eligibility",
+     "url": "https://apps.apple.com/us/app/snaphsa-tracker-eligibility/id6762067177",
+     "note": "HSA appka, sousední niche"
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Technicky těžké, US-only, právně citlivé a sousední HSA niche je přeplněná. Nestavět."
+  },
+  {
+   "id": "finance-24",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 2,
+    "monetization": 3,
+    "build_ease": 7,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "'warranty tracker' a 'receipt organizer' jsou saturované (6–7 titulů), plus nové AI receipt appky.",
+    "Sherlock-ish: Apple Wallet order tracking, e-shopy (Amazon, Alza) ukazují lhůty a záruky v účtu; iOS Notes/Files skenují účtenky.",
+    "Uživatelé si záruku vzpomenou až když věc praskne – retence a ochota platit mizivé."
+   ],
+   "missed_competitors": [
+    {
+     "name": "Receipt Savior - Save Receipts",
+     "url": "https://apps.apple.com/us/app/trackhsa/id6761667994",
+     "note": "autor uvádí; receipt niche je přeplněná"
+    }
+   ],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Rudý oceán s nízkou ochotou platit. EU lhůty na vrácení nejsou dost silná odlišnost."
+  },
+  {
+   "id": "finance-25",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 3,
+    "monetization": 4,
+    "build_ease": 3,
+    "offline_fit": 10,
+    "safety": 2
+   },
+   "extra_risks": [
+    "Daňové sazby a odvody se každý rok mění v každé zemi – 'plně offline' = každoroční ruční aktualizace dat pro 50 jazyků.",
+    "Chybný výpočet daní = odpovědnost a špatné recenze; ČR paušální daň, DE Vorauszahlungen, UK Payment on Account – každá země je samostatný produkt.",
+    "Banky (Revolut, Kontist, Holvi, Fakturoid v ČR) nabízejí 'tax pots' zdarma."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1500,
+   "reviewer_note": "Neudržitelná datová zátěž a právní riziko na produkt, který banky dávají zdarma."
+  },
+  {
+   "id": "finance-26",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 1,
+    "monetization": 2,
+    "build_ease": 9,
+    "offline_fit": 10,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Hypoteční kalkulačky jsou jedna z nejpřeplněnějších utility niche v celém App Store, a každá banka ji má na webu zdarma.",
+    "Jednorázové použití – nikdo neplatí za kalkulačku, kterou použije dvakrát.",
+    "Minimální funkčnost – 4.2 / 4.3 riziko."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Klasický rudý oceán bez monetizace. Nestavět."
+  },
+  {
+   "id": "finance-27",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 4,
+    "blue_ocean": 4,
+    "monetization": 2,
+    "build_ease": 8,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "KR má řadu zavedených 경조사/축의금 ledgerů (free s reklamou) a JP ご祝儀 ledgery; autor žádnou URL nedoložil.",
+    "Kulturně citlivý obsah (pohřby, 부의금) vyžaduje nativní lokalizaci, ne strojový překlad.",
+    "Záznam dělají lidé 1–3× ročně – předplatné nemožné, lifetime za 1–3 USD."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 800,
+   "reviewer_note": "Kulturně zajímavé, ale finančně prázdné; lokální free appky už existují."
+  },
+  {
+   "id": "finance-28",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 4,
+    "monetization": 2,
+    "build_ease": 9,
+    "offline_fit": 10,
+    "safety": 4
+   },
+   "extra_risks": [
+    "Apple Family Sharing a Apple Cash / Splitwise recurring expenses už řeší opakované dělení; Splitwise má recurring expenses zdarma.",
+    "Bez serveru nemohou ostatní členové potvrdit platbu – appka je jen připomínkový seznam (Apple Reminders dělá totéž).",
+    "Vymáhání drobných částek od rodiny neplatí nikdo."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Sherlocked Připomínkami a Splitwise; nulová ochota platit."
+  },
+  {
+   "id": "finance-29",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 3,
+    "blue_ocean": 3,
+    "monetization": 2,
+    "build_ease": 9,
+    "offline_fit": 9,
+    "safety": 6
+   },
+   "extra_risks": [
+    "Pravidlo 30 dní zvládnou Připomínky/Poznámky zdarma; iOS 26 Apple Intelligence umí připomínky navrhovat.",
+    "Lidé s problémem s impulzivními nákupy si appku stáhnou a za týden ji zapomenou – retence nulová.",
+    "4.2 minimální funkčnost."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 500,
+   "reviewer_note": "Hezký koncept, ale nikdo za něj nezaplatí. Nestavět."
+  },
+  {
+   "id": "finance-30",
+   "verdict": "KILL",
+   "scores": {
+    "demand": 5,
+    "blue_ocean": 1,
+    "monetization": 4,
+    "build_ease": 6,
+    "offline_fit": 10,
+    "safety": 5
+   },
+   "extra_risks": [
+    "'fire calculator' je saturovaný a komunita FIRE používá webové nástroje (ProjectionLab, cFIREsim) a tabulky zdarma.",
+    "Lokální důchodové systémy a daně × 50 zemí = neudržitelná datová zátěž a riziko chybných projekcí.",
+    "Evropská FIRE komunita je malá a technicky zdatná – preferuje spreadsheet."
+   ],
+   "missed_competitors": [],
+   "revenue_czk_realistic": 1000,
+   "reviewer_note": "Autor sám dal blue_ocean 2; potvrzuji – rudý oceán bez odlišení, které by šlo udržet offline."
+  }
+ ]
+}

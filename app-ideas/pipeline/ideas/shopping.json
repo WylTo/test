@@ -22,8 +22,8 @@
       "offline": "full",
       "offline_note": "OCR (Vision), úložiště i pravidla záruk jsou lokálně; sync jen přes iCloud uživatele. Žádný server.",
       "monetization": "Freemium: 10 položek zdarma, Pro 1,99 USD/měsíc (≈ 46 Kč) nebo 12,99 USD/rok (≈ 299 Kč), doživotně 14,99 USD (≈ 345 Kč).",
-      "revenue_math": "Ideál v ustáleném stavu: 2500 stažení/měsíc × 4 % převod na předplatné při měsíčním odchodu 6 % → cca 1667 aktivních předplatitelů × 1,99 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 64 854 Kč čistého měsíčně. Alternativa: doživotní odemčení 14,99 USD.",
-      "revenue_czk_ideal": 64854,
+      "revenue_math": "Ideál v ustáleném stavu: 2500 stažení/měsíc × 2,5 % převod na předplatné při měsíčním odchodu 10 % → cca 625 aktivních předplatitelů × 1,99 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 24 315 Kč čistého měsíčně. Alternativa: doživotní odemčení 14,99 USD.",
+      "revenue_czk_ideal": 24315,
       "keywords": [
         {
           "kw": "warranty tracker",
@@ -115,7 +115,7 @@
       "features": [
         "Sken kódu fotoaparátem (Vision) nebo ruční zadání, 20+ formátů",
         "Rodinné sdílení přes CloudKit Sharing, bez registrace",
-        "Export karty do Apple Wallet (lokálně generovaný pass není možný bez podpisu – místo toho widget a Live Activity)",
+        "Widget a Live Activity s kartou u pokladny (Apple Wallet pass by vyžadoval podpisový server)",
         "Widget a Siri: „ukaž kartu Lidl“",
         "Jas displeje na max při zobrazení kódu"
       ],
@@ -222,8 +222,8 @@
       "offline": "full",
       "offline_note": "Vše lokálně (SwiftData), iCloud sync. Žádné API platforem – poplatky zadává uživatel.",
       "monetization": "Freemium: 25 kusů zdarma, Pro 2,99 USD/měsíc (≈ 69 Kč) nebo 19,99 USD/rok (≈ 460 Kč).",
-      "revenue_math": "Ideál v ustáleném stavu: 2000 stažení/měsíc × 4 % převod na předplatné při měsíčním odchodu 7 % → cca 1143 aktivních předplatitelů × 2,99 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 66 813 Kč čistého měsíčně.",
-      "revenue_czk_ideal": 66813,
+      "revenue_math": "Ideál v ustáleném stavu: 2000 stažení/měsíc × 2,5 % převod na předplatné při měsíčním odchodu 10 % → cca 500 aktivních předplatitelů × 2,99 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 29 227 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 29227,
       "keywords": [
         {
           "kw": "reseller tracker",
@@ -322,8 +322,8 @@
       "offline": "full",
       "offline_note": "Žádné sledování zásilek přes API; vše zadává uživatel, OCR a připomínky lokálně.",
       "monetization": "Zdarma 5 aktivních objednávek, odemčení 3,99 USD (≈ 92 Kč) jednorázově.",
-      "revenue_math": "Ideál: 3000 stažení/měsíc × 4 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 9 361 Kč čistého měsíčně.",
-      "revenue_czk_ideal": 9361,
+      "revenue_math": "Ideál: 3000 stažení/měsíc × 5 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 11 701 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 11701,
       "keywords": [
         {
           "kw": "return tracker",
@@ -592,8 +592,8 @@
       "offline": "full",
       "offline_note": "OCR i slovník synonym jsou v zařízení; žádná databáze produktů, žádný server.",
       "monetization": "Zdarma 1 alergen a 1 jazyk, Pro 2,99 USD/měsíc (≈ 69 Kč) nebo 19,99 USD/rok (≈ 460 Kč).",
-      "revenue_math": "Ideál v ustáleném stavu: 2500 stažení/měsíc × 3 % převod na předplatné při měsíčním odchodu 6 % → cca 1250 aktivních předplatitelů × 2,99 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 73 068 Kč čistého měsíčně.",
-      "revenue_czk_ideal": 73068,
+      "revenue_math": "Ideál v ustáleném stavu: 2500 stažení/měsíc × 2 % převod na předplatné při měsíčním odchodu 10 % → cca 500 aktivních předplatitelů × 2,99 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 29 227 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 29227,
       "keywords": [
         {
           "kw": "allergen scanner",
@@ -774,8 +774,8 @@
       "offline": "full",
       "offline_note": "OCR a analýza v zařízení; ceny jsou jen od uživatele. Žádná externí data.",
       "monetization": "Zdarma 5 účtenek měsíčně, Pro 2,49 USD/měsíc (≈ 57 Kč) nebo 17,99 USD/rok (≈ 414 Kč).",
-      "revenue_math": "Ideál v ustáleném stavu: 2000 stažení/měsíc × 3,5 % převod na předplatné při měsíčním odchodu 6 % → cca 1167 aktivních předplatitelů × 2,49 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 56 809 Kč čistého měsíčně.",
-      "revenue_czk_ideal": 56809,
+      "revenue_math": "Ideál v ustáleném stavu: 2000 stažení/měsíc × 2 % převod na předplatné při měsíčním odchodu 10 % → cca 400 aktivních předplatitelů × 2,49 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 19 472 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 19472,
       "keywords": [
         {
           "kw": "price book",
@@ -861,9 +861,9 @@
       ],
       "offline": "full",
       "offline_note": "OCR i výpočty v zařízení.",
-      "monetization": "Zdarma ruční režim, OCR a akce odemčení 2,99 USD (≈ 69 Kč) jednorázově.",
-      "revenue_math": "Široké publikum, nízká cena: Ideál: 3500 stažení/měsíc × 3,5 % konverze × 2,99 USD × 0,85 (provize Apple) × 23 Kč = cca 7 161 Kč čistého měsíčně.",
-      "revenue_czk_ideal": 7161,
+      "monetization": "Zdarma ruční režim, OCR a akce odemčení 3,99 USD (≈ 92 Kč) jednorázově.",
+      "revenue_math": "Široké publikum, nízká cena: Ideál: 3500 stažení/měsíc × 4 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 10 921 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 10921,
       "keywords": [
         {
           "kw": "unit price",
@@ -1050,8 +1050,8 @@
       "offline": "full",
       "offline_note": "OCR a seznamy v zařízení; žádná databáze produktů ani server.",
       "monetization": "Zdarma 3 kontroly denně, Pro 2,99 USD/měsíc (≈ 69 Kč) nebo 14,99 USD/rok (≈ 345 Kč).",
-      "revenue_math": "Ideál v ustáleném stavu: 2000 stažení/měsíc × 3 % převod na předplatné při měsíčním odchodu 6 % → cca 1000 aktivních předplatitelů × 2,99 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 58 454 Kč čistého měsíčně.",
-      "revenue_czk_ideal": 58454,
+      "revenue_math": "Ideál v ustáleném stavu: 2000 stažení/měsíc × 2 % převod na předplatné při měsíčním odchodu 10 % → cca 400 aktivních předplatitelů × 2,99 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 23 382 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 23382,
       "keywords": [
         {
           "kw": "fungal acne",
@@ -1137,9 +1137,9 @@
       ],
       "offline": "full",
       "offline_note": "Vše lokálně; zůstatek zadává uživatel (žádné ověřování přes API vydavatelů).",
-      "monetization": "Zdarma 5 karet, odemčení 3,99 USD (≈ 92 Kč) jednorázově.",
-      "revenue_math": "Ideál: 2500 stažení/měsíc × 5 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 9 751 Kč čistého měsíčně.",
-      "revenue_czk_ideal": 9751,
+      "monetization": "Zdarma 5 karet, odemčení 4,99 USD (≈ 115 Kč) jednorázově.",
+      "revenue_math": "Ideál: 2500 stažení/měsíc × 5 % konverze × 4,99 USD × 0,85 (provize Apple) × 23 Kč = cca 12 194 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 12194,
       "keywords": [
         {
           "kw": "gift card wallet",
@@ -1226,8 +1226,8 @@
       "offline": "full",
       "offline_note": "Bez cenových API (licencovaná data) – hodnoty zadává dealer; vše lokálně.",
       "monetization": "Pro 3,99 USD/měsíc (≈ 92 Kč) nebo 29,99 USD/rok (≈ 690 Kč); zdarma 1 show.",
-      "revenue_math": "Ideál v ustáleném stavu: 1200 stažení/měsíc × 5 % převod na předplatné při měsíčním odchodu 6 % → cca 1000 aktivních předplatitelů × 3,99 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 78 004 Kč čistého měsíčně.",
-      "revenue_czk_ideal": 78004,
+      "revenue_math": "Ideál v ustáleném stavu: 1200 stažení/měsíc × 3 % převod na předplatné při měsíčním odchodu 10 % → cca 360 aktivních předplatitelů × 3,99 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 28 082 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 28082,
       "keywords": [
         {
           "kw": "card show",
@@ -1314,8 +1314,8 @@
       "offline": "full",
       "offline_note": "Vše lokálně; odkaz se ukládá jako text, žádné stahování cen.",
       "monetization": "Zdarma 5 položek, odemčení 3,99 USD (≈ 92 Kč) jednorázově.",
-      "revenue_math": "Ideál: 2500 stažení/měsíc × 5 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 9 751 Kč čistého měsíčně.",
-      "revenue_czk_ideal": 9751,
+      "revenue_math": "Ideál: 3000 stažení/měsíc × 5 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 11 701 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 11701,
       "keywords": [
         {
           "kw": "30 day rule",
@@ -1408,8 +1408,8 @@
       "offline": "full",
       "offline_note": "OCR a výpočty v zařízení, bez nutriční databáze.",
       "monetization": "Zdarma 5 produktů, odemčení 3,99 USD (≈ 92 Kč) jednorázově.",
-      "revenue_math": "Ideál: 2500 stažení/měsíc × 5 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 9 751 Kč čistého měsíčně.",
-      "revenue_czk_ideal": 9751,
+      "revenue_math": "Ideál: 3000 stažení/měsíc × 5 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 11 701 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 11701,
       "keywords": [
         {
           "kw": "protein per dollar",
@@ -1496,8 +1496,8 @@
       "offline": "full",
       "offline_note": "Statické převodní tabulky v balíčku, data lokálně + iCloud.",
       "monetization": "Zdarma 2 osoby, odemčení 3,99 USD (≈ 92 Kč) jednorázově.",
-      "revenue_math": "Ideál: 2500 stažení/měsíc × 5 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 9 751 Kč čistého měsíčně.",
-      "revenue_czk_ideal": 9751,
+      "revenue_math": "Ideál: 3000 stažení/měsíc × 5 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 11 701 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 11701,
       "keywords": [
         {
           "kw": "size converter",
@@ -1671,9 +1671,9 @@
       ],
       "offline": "full",
       "offline_note": "Losování, výjimky i historie lokálně; žádné e-maily ani účty.",
-      "monetization": "Zdarma do 6 účastníků, odemčení 2,99 USD (≈ 69 Kč) jednorázově.",
-      "revenue_math": "Sezónní (listopad–prosinec), průměr roku: Ideál: 4000 stažení/měsíc × 3 % konverze × 2,99 USD × 0,85 (provize Apple) × 23 Kč = cca 7 015 Kč čistého měsíčně.",
-      "revenue_czk_ideal": 7015,
+      "monetization": "Zdarma do 6 účastníků, odemčení 3,99 USD (≈ 92 Kč) jednorázově.",
+      "revenue_math": "Sezónní (listopad–prosinec), průměr roku: Ideál: 4000 stažení/měsíc × 4 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 12 481 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 12481,
       "keywords": [
         {
           "kw": "secret santa",
@@ -1854,8 +1854,8 @@
       "offline": "full",
       "offline_note": "Vše lokálně, bez katalogů; iCloud sync.",
       "monetization": "Freemium, Pro 2,99 USD/měsíc (≈ 69 Kč) nebo 19,99 USD/rok (≈ 460 Kč), doživotně 29,99 USD.",
-      "revenue_math": "Ideál v ustáleném stavu: 1200 stažení/měsíc × 5 % převod na předplatné při měsíčním odchodu 6 % → cca 1000 aktivních předplatitelů × 2,99 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 58 454 Kč čistého měsíčně.",
-      "revenue_czk_ideal": 58454,
+      "revenue_math": "Ideál v ustáleném stavu: 1200 stažení/měsíc × 2,5 % převod na předplatné při měsíčním odchodu 10 % → cca 300 aktivních předplatitelů × 2,99 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 17 536 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 17536,
       "keywords": [
         {
           "kw": "preorder tracker",
@@ -1942,8 +1942,8 @@
       "offline": "full",
       "offline_note": "Vše lokálně.",
       "monetization": "Zdarma 1 kategorie, odemčení 3,99 USD (≈ 92 Kč) jednorázově.",
-      "revenue_math": "Leden = vrchol (novoroční předsevzetí), průměr roku: Ideál: 3000 stažení/měsíc × 4 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 9 361 Kč čistého měsíčně.",
-      "revenue_czk_ideal": 9361,
+      "revenue_math": "Leden = vrchol (novoroční předsevzetí), průměr roku: Ideál: 3000 stažení/měsíc × 5 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 11 701 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 11701,
       "keywords": [
         {
           "kw": "no buy year",
@@ -1985,10 +1985,10 @@
           "note": "Rozpočet, drahé předplatné"
         },
         {
-          "name": "Cool Off (náš) jako doplněk",
+          "name": "Copilot Money",
           "url": "",
-          "role": "niche",
-          "note": "Pozor na kanibalizaci / 4.3"
+          "role": "parent",
+          "note": "Rozpočtová appka, sleduje útratu, ne pravidla"
         }
       ],
       "us_gap": true,
@@ -2030,8 +2030,8 @@
       "offline": "full",
       "offline_note": "Vše lokálně, notifikace lokální.",
       "monetization": "Zdarma 5 položek, odemčení 3,99 USD (≈ 92 Kč) jednorázově.",
-      "revenue_math": "Ideál: 2500 stažení/měsíc × 5 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 9 751 Kč čistého měsíčně.",
-      "revenue_czk_ideal": 9751,
+      "revenue_math": "Ideál: 3000 stažení/měsíc × 5 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 11 701 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 11701,
       "keywords": [
         {
           "kw": "restock reminder",
@@ -2107,7 +2107,7 @@
       "pitch": "Turisté mimo EU (a Britové po Brexitu, Američané, Asiaté) mají nárok na vrácení DPH při nákupech v EU, Japonsku či Koreji – ale každá země má jinou minimální útratu, lhůty a pravidla razítek. Spousta refundací propadne, protože formulář zůstane v kufru. Tax Free Tracker naskenuje účtenku a formulář, ukáže, jestli jste nad limitem obchodu, spočítá očekávanou refundaci a připomene razítko na letišti a lhůtu pro odeslání. Offline v cizině bez dat.",
       "niche": "Tax-free operátoři (Global Blue, Planet) mají appky jen pro svou síť a s účtem; nezávislý offline přehled napříč operátory a zeměmi neexistuje.",
       "parent_market": "Tax-free shopping – Global Blue, Planet Tax Free, cestovní a nákupní appky; luxusní nákupní turistika v EU a JP.",
-      "target_user": "Turisté mimo EU nakupující v Evropě (US, UK, CN, GCC), EU turisté nakupující v JP/KR/UK? (UK zrušilo tax-free), nákupní cestovatelé.",
+      "target_user": "Turisté z USA, UK, Číny a Perského zálivu nakupující v EU; Evropané nakupující v Japonsku a Koreji; nákupní cestovatelé.",
       "features": [
         "Statická tabulka minimálních částek a sazeb DPH po zemích (roční aktualizace)",
         "Sken účtenky a formuláře (Vision)",
@@ -2206,8 +2206,8 @@
       "offline": "full",
       "offline_note": "OCR a výpočty v zařízení.",
       "monetization": "Zdarma základ, odemčení OCR a více košíků 3,99 USD (≈ 92 Kč) jednorázově.",
-      "revenue_math": "Ideál: 3000 stažení/měsíc × 4 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 9 361 Kč čistého měsíčně.",
-      "revenue_czk_ideal": 9361,
+      "revenue_math": "Ideál: 3000 stažení/měsíc × 5 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 11 701 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 11701,
       "keywords": [
         {
           "kw": "grocery calculator",
@@ -2300,8 +2300,8 @@
       "offline": "full",
       "offline_note": "Vše lokálně, iCloud sync; šablony zásob v balíčku.",
       "monetization": "Zdarma 30 položek, Pro 2,49 USD/měsíc (≈ 57 Kč) nebo 17,99 USD/rok (≈ 414 Kč).",
-      "revenue_math": "Ideál v ustáleném stavu: 1500 stažení/měsíc × 4 % převod na předplatné při měsíčním odchodu 6 % → cca 1000 aktivních předplatitelů × 2,49 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 48 680 Kč čistého měsíčně.",
-      "revenue_czk_ideal": 48680,
+      "revenue_math": "Ideál v ustáleném stavu: 1500 stažení/měsíc × 2 % převod na předplatné při měsíčním odchodu 10 % → cca 300 aktivních předplatitelů × 2,49 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 14 604 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 14604,
       "keywords": [
         {
           "kw": "stockpile tracker",
@@ -2519,10 +2519,10 @@
           "note": "AI šatník, serverový"
         },
         {
-          "name": "SizeBook (náš)",
+          "name": "Cladwell",
           "url": "",
-          "role": "niche",
-          "note": "Doplněk – pozor na 4.3"
+          "role": "parent",
+          "note": "Kapslový šatník pro dospělé"
         }
       ],
       "us_gap": false,
@@ -2651,9 +2651,9 @@
       ],
       "offline": "full",
       "offline_note": "Detekce a výpočet na zařízení; fotky se neukládají, pokud uživatel nechce.",
-      "monetization": "Zdarma 1 měření, odemčení 3,99 USD (≈ 92 Kč) jednorázově.",
-      "revenue_math": "Ideál: 2000 stažení/měsíc × 5 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 7 800 Kč čistého měsíčně.",
-      "revenue_czk_ideal": 7800,
+      "monetization": "Zdarma 1 měření, odemčení 4,99 USD (≈ 115 Kč) jednorázově.",
+      "revenue_math": "Ideál: 2500 stažení/měsíc × 5 % konverze × 4,99 USD × 0,85 (provize Apple) × 23 Kč = cca 12 194 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 12194,
       "keywords": [
         {
           "kw": "kids shoe size",
@@ -2689,10 +2689,10 @@
           "note": "Měření na displeji / AR, různé kvality"
         },
         {
-          "name": "SizeBook (náš)",
+          "name": "Size Converter (generické)",
           "url": "",
-          "role": "niche",
-          "note": "Doplněk – pozor na 4.3"
+          "role": "parent",
+          "note": "Tabulky převodů bez měření"
         },
         {
           "name": "Zalando",

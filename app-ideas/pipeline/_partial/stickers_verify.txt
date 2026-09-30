@@ -1,0 +1,40 @@
+STICKERS — REVIEWER VERIFY LOG (devil's advocate run)
+Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
+
+[1] query: site:apps.apple.com digital planner stickers goodnotes  (idea stickers-01)
+    saturation (dedicated planner/sticker libraries for Goodnotes + planners bundling stickers): 3-4 (Plany: 1800+ stickers / 70+ collections with one-click copy-paste to planning app = exact concept; Goodnotes native sticker/washi support; Day+ 1000+ stickers; Penjo) -> CONTESTED, author's "nobody but Etsy" is false
+    - Planners for Goodnotes - Plany     https://apps.apple.com/sa/app/planners-for-goodnotes-plany/id1596714661
+    - Digital Planners - Plany (same id) https://apps.apple.com/gy/app/planners-for-goodnotes-plany/id1596714661
+    - Goodnotes: AI Notes, Docs, PDF     https://apps.apple.com/us/app/goodnotes-ai-notes-docs-pdf/id1444383602
+    - Goodnotes 6 (same id)              https://apps.apple.com/ai/app/goodnotes-6/id1444383602
+    - Goodnotes (same id)                https://apps.apple.com/fm/app/goodnotes-6/id1444383602
+    - Goodnotes 6 (same id)              https://apps.apple.com/se/app/goodnotes-6/id1444383602?l=en-GB
+    - Goodnotes (same id)                https://apps.apple.com/td/app/goodnotes-ai-notes-docs-pdf/id1444383602
+    - Penjo: Pencil Journal, Planner     https://apps.apple.com/us/app/penjo-pencil-journal-planner/id6446053076?see-all=reviews
+    - Planner for iPad                   https://apps.apple.com/us/app/planner-for-ipad/id1246635949
+    - Digital Planner for iPad Day+      https://apps.apple.com/us/app/digital-planner-for-ipad-day/id6751719751
+
+[2] query: site:apps.apple.com sticker sheet maker print cut cricut  (idea stickers-06)
+    saturation (dedicated sticker-sheet / print-then-cut / cutline apps): 4 exact (GridSticker: grid sheets up to 10x10, white-bordered PNG for Cricut Print-then-Cut; StickerCut Editor: cutlines + SVG for Cricut/Silhouette; Likcut: Print-Then-Cut; Cutout Sticker Maker) + 4 Cricut "design studio" template apps -> CONTESTED/CROWDED with many new 2025-26 entrants
+    - GridSticker - Sticker Maker          https://apps.apple.com/us/app/gridsticker-sticker-maker/id6766268733
+    - Design Shop for Cricut Maker         https://apps.apple.com/us/app/design-shop-for-cricut-maker/id1628295690?mt=12
+    - Design Maker - DIY Stickers          https://apps.apple.com/us/app/design-maker-diy-stickers/id1639841746?mt=12
+    - StickerCut Editor                    https://apps.apple.com/us/app/stickercut-editor/id6756942901
+    - Design Studio: DIY with Cricut       https://apps.apple.com/us/app/design-studio-diy-with-cricut/id6755304605
+    - Design Studio for: Craft Space-Crixy https://apps.apple.com/us/app/design-studio-for-craft-space/id6745786251?mt=12
+    - Likcut                               https://apps.apple.com/us/app/likcut/id6475379184
+    - Cutout Sticker Maker                 https://apps.apple.com/us/app/cutout-sticker-maker/id6779048107
+    - Design Maker for Circut Space!       https://apps.apple.com/ca/app/design-maker-for-circut-space/id6753081886
+
+[3] query: site:apps.apple.com sticker chart habit tracker adults  (idea stickers-02)
+    saturation (dedicated adult sticker-chart habit trackers): 2 exact new 2026 entrants (Collected: Sticker Chart = "sticker chart redesigned for adults", 100+ collectible stickers; Cozy - Cute Habit Tracker = 290+ cat stickers) + Reward Chart & Goals Tracker + very strong generic habit trackers (HabitKit etc.) -> exact concept already shipped; CONTESTED
+    - Collected: Sticker Chart             https://apps.apple.com/sg/app/collected-sticker-chart/id6758865974
+    - The Habit Factor Lite                https://apps.apple.com/us/app/the-habit-factor-lite-habits-2-goals-tracker/id324002311
+    - Awesome Habits: Habit Tracker        https://apps.apple.com/us/app/awesome-habits-habit-tracker/id1514915737
+    - Habit Tracker. App                   https://apps.apple.com/us/app/habit-tracker/id6661028276
+    - Habit Tracker - HabitKit             https://apps.apple.com/us/app/habit-tracker-habitkit/id6443918070
+    - Habit Tracker - Daily Goals          https://apps.apple.com/us/app/habit-tracker-daily-goals/id6480042457
+    - Cozy - Cute Habit Tracker            https://apps.apple.com/us/app/cozy-cute-habit-tracker/id6758965230
+    - Reward Chart & Goals Tracker         https://apps.apple.com/us/app/reward-chart-goals-tracker/id1494461554
+    - (noise) (Not Boring) Camera          https://apps.apple.com/us/app/not-boring-camera/id6737783441
+

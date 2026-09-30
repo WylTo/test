@@ -10,3 +10,38 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
     - BLESerial HM-10                     https://apps.apple.com/us/app/bleserial-hm-10/id1602239700
     - BLE serial terminal V2              https://apps.apple.com/qa/app/ble-serial-terminal-v2/id6449844797?l=ar
 
+[2] query: site:apps.apple.com sqlite viewer editor  (idea developer-tools-02)
+    saturation (dedicated SQLite viewer/editor apps, iOS+Mac): 9 (SQLite Editor & DB Viewer [2026, iPhone/iPad], Tablewright, SQLite - Editor & Browser, SQLite Editor. [Mac], CoreData Studio [Mac], SQLite - Browse Editor Manager, SQLiteFlow [Mac+iOS], SQLite-Pro, Base [Mac]) -> SATURATED
+    - SQLite Editor & DB Viewer           https://apps.apple.com/us/app/sqlite-editor-db-viewer/id6791691399
+    - Tablewright: SQLite Editor          https://apps.apple.com/us/app/tablewright-sqlite-editor/id6759238277
+    - SQLite - Editor & Browser           https://apps.apple.com/us/app/sqlite-editor-browser/id1441303445
+    - SQLite Editor. (Mac)                https://apps.apple.com/us/app/sqlite-editor/id6748647479?mt=12
+    - CoreData Studio: SQLite Editor      https://apps.apple.com/us/app/coredata-studio-sqlite-editor/id6670322925?mt=12
+    - SQLite - Browse Editor Manager      https://apps.apple.com/us/app/sqlite-browse-editor-manager/id583323069
+    - SQLiteFlow - SQLite Editor          https://apps.apple.com/us/app/sqliteflow-sqlite-editor/id1378587993
+    - SQLite-Pro                          https://apps.apple.com/gh/app/sqlite-pro/id1454059700
+    - Base - SQLite Editor (Mac)          https://apps.apple.com/us/app/base-sqlite-editor/id6744867438?mt=12
+
+[3] query: site:apps.apple.com ESP32 Arduino pinout  (idea developer-tools-03)
+    saturation (dedicated pinout reference apps in results): 1 direct (Electronics Reference — new 2026 app covering Pi 5/4, Pico, Uno/Nano, ESP32 GPIO tables) + adjacent controller/learning apps -> CONTESTABLE, but a fresh direct competitor exists
+    - Electronics Reference               https://apps.apple.com/ph/app/electronics-reference/id6768106743
+    - ESP32 Kit                           https://apps.apple.com/us/app/esp32-kit/id1498601142
+    - ESP32-Cam                           https://apps.apple.com/us/app/esp32-cam/id6754187049
+    - Arduino Programming Pro             https://apps.apple.com/us/app/arduino-programming-pro/id6447102673
+    - Arduino Manager                     https://apps.apple.com/us/app/arduino-manager/id497240094
+    - BLE Controller (Arduino ESP32)      https://apps.apple.com/us/app/ble-controller-arduino-esp32/id6754522781
+    - Dabble - Bluetooth Controller       https://apps.apple.com/th/app/dabble-bluetooth-controller/id1472734455
+    - Remotable ESP32                     https://apps.apple.com/sn/app/remotable-esp32/id6596812122
+
+[4] query: site:apps.apple.com modbus tcp scanner  (idea developer-tools-04)
+    saturation (dedicated Modbus TCP client/tester apps): 9 (TCP ModBus, Modbus TCP Client [Mac], Modbus TCP Pro [2025/26], Modbus Connect [2026], Modbus TCP Station [2026], Modbus Viewer [2025], Modbus Poll [2026, Mac], ModbusClient [Mac], ModTest Pro) -> SATURATED, and 4+ launched in the last ~12 months (others found the same gap)
+    - TCP ModBus                          https://apps.apple.com/us/app/tcp-modbus/id1167945569
+    - Modbus TCP Client (Mac)             https://apps.apple.com/vn/app/modbus-tcp-client/id1635888824?mt=12
+    - Modbus TCP Pro                      https://apps.apple.com/us/app/modbus-tcp-pro/id6756293575
+    - Modbus Connect                      https://apps.apple.com/us/app/modbus-connect/id6767015416
+    - Modbus TCP Station                  https://apps.apple.com/bn/app/modbus-tcp-station/id6757790321
+    - Modbus Viewer                       https://apps.apple.com/au/app/modbus-viewer/id6748247211
+    - Modbus Poll (Mac)                   https://apps.apple.com/kz/app/modbus-poll/id6769449716?mt=12
+    - ModbusClient (Mac)                  https://apps.apple.com/us/app/modbusclient/id645867613?mt=12
+    - ModTest Pro                         https://apps.apple.com/us/app/modtest-pro/id1552784932
+
