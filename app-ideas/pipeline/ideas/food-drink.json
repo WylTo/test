@@ -1,0 +1,2749 @@
+{
+  "category": "Food & Drink",
+  "category_slug": "food-drink",
+  "search_notes": "Offline běh: žádná volání Apple ani WebSearch. Jádro (25 nápadů s evidence='web') stojí na _partial/food-drink_evidence.txt (12 web dotazů) a doplňkově na business a medical evidenci (HACCP, gout, histamin/MCAS). Saturace u klíčových slov, která nebyla přímo hledána, jsou odhady a jsou tak označené v poznámce. 5 nápadů (Creami Lab, Freeze Dry Log, Grandma's Cards, Sous Vide Chart, Trail Meal Planner) jsou čistě ze znalosti trhu a mají blue_ocean max. 7 a prázdné URL. Lokální storu (DE/JP/BR/PL) nebyly nikde ověřeny – všechny US-gap nápady předpokládají absenci lokálních konkurentů. Před stavbou doporučuji ověřit apple_fetch.py check hlavně u #01, #02, #03, #04, #11.",
+  "ideas": [
+    {
+      "id": "food-drink-01",
+      "name": "Jar Timer: Canning & Einkochen",
+      "tagline": "Zavařování bez tabulek a bez strachu: čas, teplota a nadmořská výška na jednom místě, ve vašem jazyce.",
+      "pitch": "Domácí zavařování zažívá od covidu druhou vlnu a v DE/AT (Einkochen), CZ (zavařování) i PL (przetwory) je to masová sezónní činnost. Oba existující iOS nástroje (Canning timer & checklist z roku ~2017 a nový Jarred) jsou jen anglicky a počítají s USDA recepty a stopami nadmořské výšky. My dáme lokální metody (hrnec/Einkochautomat, trouba, tlakový hrnec), metrické jednotky, přepočet na nadmořskou výšku a časovač pro více várek najednou. Na klíčová slova v DE/CZ/PL nikdo necílí, takže můžeme obsadit top-3 čistě přes ASO.",
+      "niche": "Lokalizované zavařování mimo USA. Americké aplikace řeší USDA a pressure canning, evropské zvyklosti (Weck sklenice, Einkochautomat, sterilace v troubě) ignorují, protože jejich autoři v tom trhu nejsou.",
+      "parent_market": "Domácí konzervace a zásoby potravin (pantry/preserving). Lídři v USA: Canning timer & checklist, Jarred; nepřímo Ball/USDA průvodci. Poptávku potvrzují i desítky EN aplikací pro fermentaci a zásoby.",
+      "target_user": "Zahrádkáři a domácí zavařovači 35–70 let v DE/AT/CZ/PL/SK/HU, kteří každé léto zavařují ovoce, okurky a lečo a chtějí jistotu času a teploty.",
+      "features": [
+        "Databáze ~80 potravin s časem a teplotou pro hrnec, Einkochautomat, troubu a tlakový hrnec",
+        "Automatická úprava času podle nadmořské výšky (ručně nebo z polohy offline)",
+        "Víc paralelních časovačů s Live Activity a notifikací",
+        "Deník várek: datum, počet sklenic, štítek k tisku, připomínka spotřeby",
+        "Kontrolní seznam bezpečnosti (víčka, vakuum, skladování)"
+      ],
+      "offline": "full",
+      "offline_note": "Vše je statická data v balíčku + lokální časovače. Nadmořská výška z GPS/barometru bez sítě. Záloha deníku přes iCloud.",
+      "monetization": "Freemium: základní tabulka zdarma, Pro jednorázově 5,99 USD (≈ 140 Kč) nebo 2,99 USD/rok (≈ 70 Kč). Sezónní promo v červenci–září.",
+      "keywords": [
+        {
+          "kw": "canning timer",
+          "saturation": 2,
+          "competitor": "Canning timer & checklist (~2017, zastaralé)",
+          "note": "Evidence: sat 2 (web). EN trh otevřený, ale malý."
+        },
+        {
+          "kw": "einkochen",
+          "saturation": 2,
+          "competitor": "žádná dedikovaná iOS aplikace nalezena",
+          "note": "odhad; DE store neověřen, v EN výsledcích nic."
+        },
+        {
+          "kw": "einkochzeiten",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; přirozená DE fráze, žádný konkurent v evidenci."
+        },
+        {
+          "kw": "zavařování",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad; CZ/SK trh pro Lapnito domácí, nikdo necílí."
+        },
+        {
+          "kw": "canning altitude",
+          "saturation": 2,
+          "competitor": "Canning & Pantry Log - Jarred",
+          "note": "Evidence: jen 2 aplikace s altitude úpravou."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): v EN storu jen 2 aplikace na canning timer s nadmořskou výškou, obě jen anglicky a USDA-centrické. Předpoklad: poptávka v DE/CZ/PL je velká (Einkochen je masová tradice), ale lokální obchody nebyly zkontrolovány.",
+      "competitors": [
+        {
+          "name": "Canning timer & checklist",
+          "url": "https://apps.apple.com/us/app/canning-timer-checklist/id1204971136",
+          "role": "us-only",
+          "note": "40 potravin, nadmořská výška, stará aplikace, jen EN."
+        },
+        {
+          "name": "Canning & Pantry Log - Jarred",
+          "url": "https://apps.apple.com/us/app/canning-pantry-log-jarred/id6760012445",
+          "role": "niche",
+          "note": "2026, USDA časy + evidence zásob, jen EN."
+        },
+        {
+          "name": "Brewfather",
+          "url": "https://apps.apple.com/us/app/brewfather/id1488585822",
+          "role": "parent",
+          "note": "Ukazuje, že hobby-kalkulačky s deníkem se předplácí."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obě ověřené aplikace jsou jen anglické s USDA pravidly. Lokalizace do 50 jazyků s metrikou a evropskými metodami (Weck, Einkochautomat, trouba) je čistá US-gap hra.",
+      "devils_advocate": [
+        "Bezpečnost potravin: chybný čas u nízkokyselých potravin = riziko botulismu a potenciální odpovědnost i negativní recenze.",
+        "Silná sezónnost: 70 % stažení v VII–IX, zbytek roku mrtvo, takže předplatné bude odcházet.",
+        "Evropské zdroje časů se liší (babiččiny recepty vs. USDA); uživatelé budou hádat, že 'u nás se to dělá jinak'.",
+        "Starší cílovka hůře platí za aplikace a méně hledá ve storu."
+      ],
+      "killer_risk": "Otrava (botulismus) po použití časů z aplikace a následný mediální/recenzní skandál.",
+      "mitigation": "Nízkokyselé potraviny jen s tlakovým hrncem a jasným varováním, citace zdrojů (USDA, BfR), žádné vlastní 'rychlé' časy; monetizace přes jednorázový Pro, aby sezónnost nevadila.",
+      "build_weeks": 4,
+      "evidence": "web",
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 8,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "revenue_math": "Ideál: 2500 stažení/měs z niche klíčových slov; 6.0 % × 5.99 USD (lifetime Pro) = 898 USD; 2.0 % × 2.99 USD (roční) = 150 USD. Celkem 1048 USD hrubě → po 15 % provizi Apple 891 USD → × 23 = 20488 Kč čistého/měs. Pozor: je to ideální sezónní měsíc (VII–IX), mimo sezónu realisticky třetina.",
+      "revenue_czk_ideal": 20488
+    },
+    {
+      "id": "food-drink-02",
+      "name": "Mead Calc: Honey Wine Lab",
+      "tagline": "Medovina přesně: med, kvasinky, živiny TOSNA a dosladění spočítané za vás.",
+      "pitch": "Medovina je nejrychleji rostoucí podobor domácího kvašení a má silné komunity v PL (miód pitny), CZ (medovina), DE (Met) i USA (r/mead). Na 'mead calculator' cílí jen 2 malé aplikace, obě jen anglicky. Nabídneme výpočet medu na cílové OG/ABV, rozvrh živin TOSNA, stabilizaci a dosladění a deník várek s měřením hustoty. Univerzální pivovarské aplikace (Brewfather) medovinu řeší jen okrajově.",
+      "niche": "Medovinoví výrobci, pro které jsou pivovarské aplikace příliš složité a pivně zaměřené. Velcí hráči niche ignorují, protože je o řád menší než pivo.",
+      "parent_market": "Domácí vaření piva (homebrew): Brewfather, Brewer's Friend – oba prokazatelně monetizují předplatným.",
+      "target_user": "Domácí medovináři a včelaři v PL/CZ/DE/US, kteří dělají 1–10 várek ročně.",
+      "features": [
+        "Kalkulačka medu → OG, potenciální ABV, objem",
+        "Plán živin TOSNA 2.0/3.0 s připomínkami podle 1/3 zlomu cukru",
+        "Kalkulačka dosladění a stabilizace (sorbát/metabisulfit)",
+        "Deník várek s měřeními SG, grafem a fotkami",
+        "Lokální styly: półtorak, dwójniak, trójniak, czwórniak"
+      ],
+      "offline": "full",
+      "offline_note": "Čisté výpočty a lokální databáze stylů/kvasinek. Deník v SwiftData + iCloud sync.",
+      "monetization": "Freemium: kalkulačky zdarma, deník a TOSNA plán v Pro za 4,99 USD jednorázově (≈ 115 Kč) nebo 9,99 USD/rok (≈ 230 Kč).",
+      "keywords": [
+        {
+          "kw": "mead calculator",
+          "saturation": 2,
+          "competitor": "Mead Maker: Honey Wine Tracker",
+          "note": "Evidence: sat 2 (web), obě konkurenční aplikace nové a bez hodnocení."
+        },
+        {
+          "kw": "mead making",
+          "saturation": 2,
+          "competitor": "Mead Corner",
+          "note": "odhad; jen stejné 2 aplikace."
+        },
+        {
+          "kw": "honey wine",
+          "saturation": 1,
+          "competitor": "Mead Maker: Honey Wine Tracker",
+          "note": "odhad."
+        },
+        {
+          "kw": "miód pitny",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad; PL tradice, nikdo necílí."
+        },
+        {
+          "kw": "tosna calculator",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad; fráze z komunity r/mead."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): 'mead calculator' sat 2 (Mead Maker, Mead Corner) + obecné ABV kalkulačky. Předpoklad: komunita r/mead je velká (stovky tisíc členů) a PL/CZ tradice silná; objem hledání v storu neověřen.",
+      "competitors": [
+        {
+          "name": "Mead Maker: Honey Wine Tracker",
+          "url": "https://apps.apple.com/us/app/mead-maker-honey-wine-tracker/id6757456516",
+          "role": "niche",
+          "note": "TOSNA-like živiny, gravity; jen EN."
+        },
+        {
+          "name": "Mead Corner",
+          "url": "https://apps.apple.com/us/app/mead-corner/id6747457886",
+          "role": "niche",
+          "note": "Nová, malá."
+        },
+        {
+          "name": "Brewfather",
+          "url": "https://apps.apple.com/us/app/brewfather/id1488585822",
+          "role": "parent",
+          "note": "Lídr homebrew, předplatné, medovina okrajově."
+        },
+        {
+          "name": "ABV Calculator - Minimalistic",
+          "url": "https://apps.apple.com/us/app/abv-calculator-minimalistic/id6754205227",
+          "role": "niche",
+          "note": "Obecná ABV kalkulačka pro pivo/cider/medovinu."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obě nalezené medovinové aplikace jsou jen EN; tradiční trhy (PL, CZ, SK, DE, Skandinávie) nemají nic ve svém jazyce a s lokálními styly (półtorak…).",
+      "devils_advocate": [
+        "Niche je malá: celosvětově možná jen pár tisíc hledání měsíčně, strop příjmu nízký.",
+        "Homebreweři milují zdarma webové kalkulačky (Got Mead, Meadmaking calc) a nechtějí platit.",
+        "Guideline 1.4.3 / alkohol: aplikace o výrobě alkoholu musí mít věkový rating 17+, což snižuje objevitelnost.",
+        "Brewfather může přidat medovinový mód během pár týdnů."
+      ],
+      "killer_risk": "Nízká ochota platit za kalkulačku, kterou lze zdarma najít na webu.",
+      "mitigation": "Hodnota v deníku a připomínkách (TOSNA timing), ne v samotném výpočtu; nízká jednorázová cena a lokální styly, které webové kalkulačky nemají.",
+      "build_weeks": 3,
+      "evidence": "web",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 8,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "revenue_math": "Ideál: 1500 stažení/měs z niche klíčových slov; 5.0 % × 4.99 USD (lifetime) = 374 USD; 4.0 % × 9.99 USD (roční) = 599 USD. Celkem 974 USD hrubě → po 15 % provizi Apple 828 USD → × 23 = 19035 Kč čistého/měs.",
+      "revenue_czk_ideal": 19035
+    },
+    {
+      "id": "food-drink-03",
+      "name": "Cure Lab: Salumi & Biltong",
+      "tagline": "Rovnovážné solení, úbytek váhy a zrání salámů bez sešitu a kalkulačky.",
+      "pitch": "Domácí charcuterie (pancetta, bresaola, lonzo, biltong, klobásy) je rostoucí hobby, které přirozeně navazuje na BBQ boom. Jediná dedikovaná aplikace 'Cure Calculator' dělá jen výpočet soli; nikdo neřeší sledování úbytku váhy (cíl 30–35 %), vlhkost komory a rozvrh zrání. Spojíme přesnou kalkulačku rovnovážného solení (sůl, cukr, Prague Powder #1/#2 v mezích) s deníkem zrání. Je to typický 'hobby deník s kalkulačkou', za který lidé platí.",
+      "niche": "Domácí zrání masa. BBQ aplikace řeší grilování a teploměry, fermentační aplikace zeleninu; zrání a úbytek váhy nikdo.",
+      "parent_market": "BBQ a zpracování masa (TempPro, PitMaster Log, Meater) a fermentační deníky (Fermentation Journal: Fermento zmiňuje charcuterie).",
+      "target_user": "Kutilové s komorou na zrání (přestavěná lednice), lovci a BBQ nadšenci v US, DE, IT, CZ, ZA (biltong).",
+      "features": [
+        "Kalkulačka rovnovážného solení s limity dusitanů (EU/US)",
+        "Sledování úbytku váhy s cílem a predikcí data hotovosti",
+        "Log teploty/vlhkosti komory (ručně nebo z HomeKit senzoru)",
+        "Šablony: pancetta, bresaola, coppa, lonzino, biltong, droëwors",
+        "Fotodeník plísně/zrání a připomínky vážení"
+      ],
+      "offline": "full",
+      "offline_note": "Výpočty a deník lokálně; HomeKit senzory čteny lokálně; iCloud sync.",
+      "monetization": "Freemium: kalkulačka zdarma, deník neomezených šarží za 6,99 USD jednorázově (≈ 160 Kč) nebo 12,99 USD/rok.",
+      "keywords": [
+        {
+          "kw": "cure calculator",
+          "saturation": 1,
+          "competitor": "Cure Calculator",
+          "note": "Evidence: jediná dedikovaná aplikace (web)."
+        },
+        {
+          "kw": "charcuterie",
+          "saturation": 3,
+          "competitor": "Fermentation Journal: Fermento",
+          "note": "odhad; slovo koliduje s 'charcuterie board' aplikacemi."
+        },
+        {
+          "kw": "biltong",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; ZA/UK/AU komunita, v evidenci nic."
+        },
+        {
+          "kw": "dry curing",
+          "saturation": 1,
+          "competitor": "Cure Calculator",
+          "note": "odhad."
+        },
+        {
+          "kw": "salami",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; hlavně receptové aplikace."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): 'cure calculator' = 1 dedikovaná aplikace; fermentační deníky zmiňují charcuterie jen okrajově. Předpoklad: poptávka z BBQ komunit (r/Charcuterie, fóra) – objem hledání v App Store neověřen.",
+      "competitors": [
+        {
+          "name": "Cure Calculator",
+          "url": "https://apps.apple.com/us/app/cure-calculator/id1594377749",
+          "role": "niche",
+          "note": "Jen výpočet solení, bez deníku."
+        },
+        {
+          "name": "Fermentation Journal: Fermento",
+          "url": "https://apps.apple.com/us/app/fermentation-journal-fermento/id6470132496",
+          "role": "niche",
+          "note": "Obecný fermentační deník s charcuterie kategorií."
+        },
+        {
+          "name": "TempPro BBQ",
+          "url": "https://apps.apple.com/us/app/temppro-bbq/id1490517668",
+          "role": "parent",
+          "note": "BBQ hardware app – ukazuje velikost masové hobby komunity."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Bezpečnost: dusitany a botulismus/listerie – chybný výpočet může někoho otrávit.",
+        "Malá niche: jen zlomek BBQ fanoušků opravdu zraje maso doma.",
+        "Hobbyisté používají Excel z fóra a nechtějí měnit návyk.",
+        "Obchod může zhodnotit 'maso + nitráty' jako rizikový obsah a žádat disclaimery."
+      ],
+      "killer_risk": "Otrava po chybném výpočtu nebo špatném návodu a odpovědnostní problém.",
+      "mitigation": "Tvrdé limity dusitanů podle EU/USDA, varování při překročení, odkazy na zdroje; žádné rady typu 'stačí'; výpočty ověřit podle Marianski/USDA tabulek.",
+      "build_weeks": 3,
+      "evidence": "web",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 8,
+        "monetization": 7,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "revenue_math": "Ideál: 1400 stažení/měs z niche klíčových slov; 6.0 % × 6.99 USD (lifetime) = 587 USD; 3.0 % × 12.99 USD (roční) = 546 USD. Celkem 1133 USD hrubě → po 15 % provizi Apple 963 USD → × 23 = 22145 Kč čistého/měs.",
+      "revenue_czk_ideal": 22145
+    },
+    {
+      "id": "food-drink-04",
+      "name": "Pour Cost: Bar Margin Calculator",
+      "tagline": "Kolik vás stojí jeden drink a za kolik ho prodat – za 10 sekund, i na akci bez Wi-Fi.",
+      "pitch": "Každý malý bar, kavárna s alkoholem, catering nebo mobilní bar na svatbách potřebuje znát pour cost (náklad nápoje / cena). Profesionální systémy (BevSpot, Partender) jsou drahé SaaS pro velké podniky; malí provozovatelé počítají v Excelu. My dáme rychlou kalkulačku: cena láhve, objem, dávka, receptura koktejlu → náklad, marže, doporučená cena podle cílového %. Tahle klíčová slova v evidenci nikdo neobsadil.",
+      "niche": "Malé bary, eventové bary a baristé-majitelé bez rozpočtu na SaaS. Velcí dodavatelé cílí na řetězce s inventurou a POS integrací.",
+      "parent_market": "Restaurant/bar management a náklady receptur (BevSpot, Partender, Cookara Recipe Cost Calculator) – ověřeně placený B2B trh.",
+      "target_user": "Majitelé malých barů, mobilní bartendři, event cateringy, kavárny s koktejlovou nabídkou.",
+      "features": [
+        "Cena láhve → cena za ml/oz/cl a za dávku (4 cl, 2 cl, 1,5 oz)",
+        "Receptura koktejlu → náklad, pour cost %, doporučená cena",
+        "Ceník celé nabídky + export PDF/CSV",
+        "Scénáře 'co když zdraží dodavatel'",
+        "Měny a DPH pro 50 zemí"
+      ],
+      "offline": "full",
+      "offline_note": "Čistě lokální kalkulace a seznam produktů; iCloud sync mezi iPhonem a iPadem.",
+      "monetization": "Předplatné 4,99 USD/měs (≈ 115 Kč) nebo 29,99 USD/rok (≈ 690 Kč); B2B uživatelé platí ochotně.",
+      "keywords": [
+        {
+          "kw": "pour cost",
+          "saturation": 1,
+          "competitor": "OZ Price Calculator (nejasné zaměření)",
+          "note": "odhad; přímo nehledáno, v evidenci žádný titul s 'pour cost'."
+        },
+        {
+          "kw": "pour cost calculator",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "drink cost",
+          "saturation": 2,
+          "competitor": "Cocktail Calculator Pro",
+          "note": "odhad."
+        },
+        {
+          "kw": "bar pricing",
+          "saturation": 2,
+          "competitor": "Recipe Sync - Cocktail Prep",
+          "note": "odhad."
+        },
+        {
+          "kw": "cocktail cost",
+          "saturation": 2,
+          "competitor": "MixMath - Cocktail Calculator",
+          "note": "odhad."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): v okolí 'batch cocktail' je 5 aplikací, žádná necílí na pour cost/marži; recipe-cost aplikace pro jídlo existují (Cookara), což dokládá placený parent trh. Předpoklad: 'pour cost' je běžný oborový pojem, objem hledání neověřen.",
+      "competitors": [
+        {
+          "name": "Cookara Recipe Cost Calculator",
+          "url": "https://apps.apple.com/us/app/cookara-recipe-cost-calculator/id6756547169",
+          "role": "parent",
+          "note": "Náklady receptur pro jídlo, ne pro bar."
+        },
+        {
+          "name": "OZ Price Calculator",
+          "url": "https://apps.apple.com/us/app/oz-price-calculator/id6449945515",
+          "role": "niche",
+          "note": "Nejasné, zda pour cost nebo cena za unci při nákupu."
+        },
+        {
+          "name": "Recipe Sync - Cocktail Prep",
+          "url": "https://apps.apple.com/ie/app/recipe-sync-cocktail-prep/id6759985124",
+          "role": "niche",
+          "note": "Profi bar prep, ne marže."
+        },
+        {
+          "name": "Cocktail Calculator Pro",
+          "url": "https://apps.apple.com/us/app/cocktail-calculator-pro/id6751190590",
+          "role": "niche",
+          "note": "Batching, jednorázový nákup."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "B2B uživatelé často chtějí inventuru a POS napojení, na což offline appka nestačí.",
+        "Pour cost je jednoduchý vzorec – Excel nebo Numbers šablona to udělá zdarma.",
+        "Malý počet provozovatelů barů hledá v App Store; objevují nástroje přes dodavatele a Facebook skupiny.",
+        "Stock/lahve se liší podle země – vyžaduje dobrou lokalizaci jednotek a měn."
+      ],
+      "killer_risk": "Příliš malý objem hledání – profesionálové si nástroje nehledají v App Store.",
+      "mitigation": "Rozšířit na klíčová slova 'cocktail menu pricing', 'drink cost', 'bar inventory lite'; nabídnout jednoduchou inventuru láhví (počet/váha) jako Pro funkci.",
+      "build_weeks": 3,
+      "evidence": "web",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 7,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "revenue_math": "Ideál: 1000 stažení/měs z niche klíčových slov; 3.0 % × 29.99 USD (roční) = 900 USD; 2.0 % × 4.99 USD (měsíční) = 100 USD. Celkem 1000 USD hrubě → po 15 % provizi Apple 850 USD → × 23 = 19540 Kč čistého/měs.",
+      "revenue_czk_ideal": 19540
+    },
+    {
+      "id": "food-drink-05",
+      "name": "Scoby: Kombucha & Ginger Bug Log",
+      "tagline": "F1, F2, continuous brew i ginger bug – víte přesně, kdy lahvovat a kdy ochutnat.",
+      "pitch": "Kombucha a 'wild soda' (ginger bug, tepache, kvas) jsou trvalý TikTok trend s obrovskou komunitou, ale jediná kombucha-specifická aplikace (KombuchApp) je z roku 2019. Obecné fermentační deníky kombuchu mají jen jako jednu z předvoleb. Postavíme nástroj přímo pro kombuchu: F1/F2 časovače, poměry čaje/cukru, příchutě, continuous brew, a k tomu ginger bug a tepache. Titulní klíčové slovo 'kombucha' je v evidenci prakticky volné.",
+      "niche": "Domácí kombucha a divoké limonády. Obecné fermentační aplikace je mají jako vedlejší předvolbu; velcí hráči (výrobci) nemají zájem dělat nástroj.",
+      "parent_market": "Domácí fermentace a homebrew (Brewfather, Fermento, Fermy) – ověřeně placený hobby trh.",
+      "target_user": "Domácí fermentátoři 20–45 let, zdravý životní styl, TikTok/Instagram publikum; US, DE, UK, CZ, AU.",
+      "features": [
+        "Várky F1/F2 s časovači a notifikacemi 'ochutnej' / 'lahvuj'",
+        "Kalkulačka čaj/cukr/starter pro libovolný objem",
+        "Continuous brew režim (odběr/doplnění)",
+        "Ginger bug a tepache: denní krmení a streak",
+        "Receptář příchutí a hodnocení šarží"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně; notifikace lokální; iCloud sync.",
+      "monetization": "Freemium: 1 aktivní várka zdarma, neomezeně za 3,99 USD jednorázově (≈ 90 Kč) nebo 7,99 USD/rok.",
+      "keywords": [
+        {
+          "kw": "kombucha",
+          "saturation": 1,
+          "competitor": "KombuchApp (2019)",
+          "note": "Evidence: jen 1 kombucha titul (web)."
+        },
+        {
+          "kw": "kombucha tracker",
+          "saturation": 1,
+          "competitor": "KombuchApp",
+          "note": "Evidence."
+        },
+        {
+          "kw": "ginger bug",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad; FermentMe/Fermento mají předvolby, titul nikdo."
+        },
+        {
+          "kw": "second fermentation",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "fermentation tracker",
+          "saturation": 5,
+          "competitor": "Ferment: Fermentation Tracker",
+          "note": "Evidence: sat ~4–5, jen jako sekundární KW."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): 'kombucha' v titulu má jen KombuchApp (2019); obecné fermentační trackery ~4–5. Předpoklad: kombucha je stabilně populární (spotřebitelský trh s nápoji roste), ale objem hledání v App Store neověřen.",
+      "competitors": [
+        {
+          "name": "KombuchApp",
+          "url": "https://apps.apple.com/us/app/kombuchapp-kombucha-tracker/id1449532435",
+          "role": "niche",
+          "note": "F1/F2 připomínky, stará."
+        },
+        {
+          "name": "Fermento - Brewing & Culturing",
+          "url": "https://apps.apple.com/sg/app/fermento-brewing-culturing/id6757434490",
+          "role": "niche",
+          "note": "Předvolby kombucha/kimchi/tepache."
+        },
+        {
+          "name": "Fermy",
+          "url": "https://apps.apple.com/us/app/fermy/id6757861750",
+          "role": "niche",
+          "note": "Obecný fermentační deník."
+        },
+        {
+          "name": "Brewfather",
+          "url": "https://apps.apple.com/us/app/brewfather/id1488585822",
+          "role": "parent",
+          "note": "Homebrew lídr."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Kombucha je jednoduchá – mnoho lidí stačí připomínka v Kalendáři.",
+        "Trend může odeznít; TikTok publikum je vrtkavé a platí málo.",
+        "Obecné fermentační aplikace mohou přidat kombucha mód během týdne.",
+        "Nízká retence: po 2–3 várkách uživatel rutinu zná a aplikaci smaže."
+      ],
+      "killer_risk": "Nízká ochota platit – kombucha je rutina, ne složitý výpočet.",
+      "mitigation": "Jednorázová nízká cena, widgety a Live Activity jako hlavní hodnota; rozšíření o wild sodas zvyšuje důvod zůstat.",
+      "build_weeks": 2.5,
+      "evidence": "web",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "revenue_math": "Ideál: 2500 stažení/měs z niche klíčových slov; 5.0 % × 3.99 USD (lifetime) = 499 USD; 2.0 % × 7.99 USD (roční) = 400 USD. Celkem 898 USD hrubě → po 15 % provizi Apple 764 USD → × 23 = 17561 Kč čistého/měs.",
+      "revenue_czk_ideal": 17561
+    },
+    {
+      "id": "food-drink-06",
+      "name": "Cottage Label: Allergen & Ingredient Labels",
+      "tagline": "Z receptu na legální etiketu se složením a alergeny za minutu – pro domácí pekaře a farmářské trhy.",
+      "pitch": "V USA 'cottage food' zákony (všechny státy) povolují prodej domácího pečiva, ale vyžadují etiketu se složením v sestupném pořadí a alergeny. V EU podobně farmářské trhy vyžadují 14 alergenů zvýrazněných. Aplikace pro cenotvorbu dortů (CakeCost, BakersPro) etikety neřeší. Uděláme: recept → automaticky seřazené složení podle hmotnosti, zvýraznění alergenů, tisk na AirPrint štítky.",
+      "niche": "Etikety pro domácí výrobce. Aplikace pro pekaře řeší ceny a objednávky, etiketovací software je desktopový a drahý.",
+      "parent_market": "Business nástroje pro domácí pekaře (CakeCost, BakersPro, Bake Local) – evidence ukazuje 7–8 aplikací, tj. ověřenou platící komunitu.",
+      "target_user": "Domácí pekaři a výrobci marmelád/sušenek prodávající na trzích a online (US cottage food, EU, UK).",
+      "features": [
+        "Recept → složení v sestupném pořadí podle hmotnosti",
+        "Automatické zvýraznění alergenů (US Big 9 / EU 14)",
+        "Šablony štítků pro běžné archy (Avery) a tisk přes AirPrint",
+        "Povinný text cottage food podle státu (statická tabulka)",
+        "Knihovna ingrediencí s alergeny a vlastní složky"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně včetně generování PDF; tabulka pravidel statická v balíčku, aktualizace s updatem aplikace.",
+      "monetization": "Freemium: 3 etikety zdarma, Pro 5,99 USD/měs (≈ 140 Kč) nebo 39,99 USD/rok (≈ 920 Kč).",
+      "keywords": [
+        {
+          "kw": "cottage food label",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad; v evidenci žádná aplikace nezmiňuje etikety."
+        },
+        {
+          "kw": "food label maker",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad; obecné 'label maker' aplikace existují."
+        },
+        {
+          "kw": "allergen label",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "bakery labels",
+          "saturation": 1,
+          "competitor": "BakersPro: Cake & Pastry Biz",
+          "note": "odhad."
+        },
+        {
+          "kw": "ingredient label",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): 'cake pricing' je crowded (7–8 aplikací) → aktivní placená komunita domácích pekařů; žádný snippet nezmiňuje etikety ani alergeny. Předpoklad: poptávka po etiketách je reálná (zákonná povinnost), ale objem hledání v App Store neověřen.",
+      "competitors": [
+        {
+          "name": "CakeCost",
+          "url": "https://apps.apple.com/us/app/cakecost/id1555897547",
+          "role": "parent",
+          "note": "Cenotvorba dortů, bez etiket."
+        },
+        {
+          "name": "BakersPro: Cake & Pastry Biz",
+          "url": "https://apps.apple.com/us/app/bakerspro-cake-pastry-biz/id6761960519",
+          "role": "niche",
+          "note": "Objednávky a faktury."
+        },
+        {
+          "name": "Bake Local for Bakers",
+          "url": "https://apps.apple.com/us/app/bake-local-for-bakers/id6759575937",
+          "role": "niche",
+          "note": "Byznys nástroj pro pekaře."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Právní riziko: chybná etiketa (zapomenutý alergen) může vést k alergické reakci a žalobě – aplikace bude obviňována.",
+        "Pravidla se liší stát od státu a mění se – statická data zastarají.",
+        "Canva a Word šablony zdarma jsou pro mnoho pekařů 'dost dobré'.",
+        "Tisk štítků z iPhonu je bolestivý (rozměry, tiskárny) – support náročný."
+      ],
+      "killer_risk": "Chybějící alergen na etiketě vytištěné aplikací a následná reakce zákazníka.",
+      "mitigation": "Alergeny vždy potvrzuje uživatel, výrazný disclaimer, knihovna ingrediencí s konzervativními defaulty; pravidla odkazují na oficiální zdroj s datem.",
+      "build_weeks": 5,
+      "evidence": "web",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 7,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "revenue_math": "Ideál: 900 stažení/měs z niche klíčových slov; 3.0 % × 39.99 USD (roční) = 1080 USD; 2.0 % × 5.99 USD (měsíční) = 108 USD. Celkem 1188 USD hrubě → po 15 % provizi Apple 1009 USD → × 23 = 23217 Kč čistého/měs.",
+      "revenue_czk_ideal": 23217
+    },
+    {
+      "id": "food-drink-07",
+      "name": "Smoke Day: BBQ Cook Planner",
+      "tagline": "Řekněte, kdy se jí – aplikace spočítá, kdy zapálit udírnu, kolik masa koupit a kdy zabalit.",
+      "pitch": "BBQ deníků je v EN storu hodně (sat 6), ale plánovač 'pozpátku od času servírování' má jen jediná nová aplikace (Smokeplan). Nejhorší stres na BBQ je načasování: brisket 12–16 h, stall, odpočinek. Aplikace spočítá časovou osu od času jídla, množství masa na hosta a naplánuje notifikace. Lokalizujeme do DE/NL/Nordics/CZ, kde je 'Smoker' a 'Pulled Pork' boom, ale nic ve vlastním jazyce.",
+      "niche": "Plánování BBQ akce (časová osa + nákup), ne deník. Deníky a teploměrové aplikace neřeší 'kdy začít'.",
+      "parent_market": "BBQ aplikace a chytré teploměry (Meater, ThermoPro TempPro, PitMaster Log) – velký trh s hardware i předplatným.",
+      "target_user": "Víkendoví pitmasteři s udírnou/pellet grilem v US, DE, NL, SE, CZ, AU.",
+      "features": [
+        "Časová osa zpět od servírování (odpočinek, zabalení, stall buffer)",
+        "Kalkulačka masa na hosta (syrová vs. hotová váha)",
+        "Více kusů masa na jedné ose (brisket + žebra + klobásy)",
+        "Lokální notifikace a Live Activity",
+        "Po akci uložit skutečné časy pro příští plánování"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně včetně notifikací a Live Activity; Bluetooth teploměry nejsou v MVP (možná pozdější integrace bez serveru).",
+      "monetization": "Freemium: 1 kus masa zdarma, víc kusů + historie za 4,99 USD jednorázově (≈ 115 Kč) nebo 9,99 USD/rok.",
+      "keywords": [
+        {
+          "kw": "bbq planner",
+          "saturation": 1,
+          "competitor": "Smokeplan - BBQ Cook Planner",
+          "note": "Evidence: 'cook planner/backward timeline' sat 1 (web)."
+        },
+        {
+          "kw": "smoker timer",
+          "saturation": 3,
+          "competitor": "PelletSmoker Pro",
+          "note": "odhad."
+        },
+        {
+          "kw": "brisket calculator",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "meat per person",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "bbq log",
+          "saturation": 6,
+          "competitor": "PitMaster Log: BBQ Journal",
+          "note": "Evidence: crowded (web), jen parent důkaz."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): BBQ log sat 6 (silná poptávka a mnoho nových aplikací), backward planner sat 1 (Smokeplan). Předpoklad: DE/NL/CZ trh bez lokální aplikace – lokální storu neověřeny.",
+      "competitors": [
+        {
+          "name": "Smokeplan - BBQ Cook Planner",
+          "url": "https://apps.apple.com/in/app/smokeplan-bbq-cook-planner/id6789017609",
+          "role": "niche",
+          "note": "Jediný backward planner, nový, EN."
+        },
+        {
+          "name": "PitMaster Log: BBQ Journal",
+          "url": "https://apps.apple.com/gb/app/pitmaster-log-bbq-journal/id6772543671",
+          "role": "niche",
+          "note": "Deník, 1,25 USD/měs."
+        },
+        {
+          "name": "TempPro BBQ",
+          "url": "https://apps.apple.com/us/app/temppro-bbq/id1490517668",
+          "role": "parent",
+          "note": "Hardware app ThermoPro."
+        },
+        {
+          "name": "PitLog: BBQ Log & Recipe Book",
+          "url": "https://apps.apple.com/us/app/pitlog-bbq-log-recipe-book/id6502717712",
+          "role": "niche",
+          "note": "Deník + recepty."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Všechny nalezené BBQ plánovače/deníky jsou EN s librami a °F; DE/NL/Nordics/CZ mají silnou BBQ scénu (Grillsportverein, BBQ fóra) bez lokalizované aplikace.",
+      "devils_advocate": [
+        "Časy BBQ jsou nepředvídatelné (stall) – když plán nevyjde, uživatel obviní aplikaci.",
+        "Meater/ThermoPro aplikace mohou přidat plánovač zdarma k hardwaru.",
+        "Sezónnost a nízká frekvence použití (pár akcí ročně) = nízké předplatné.",
+        "Smokeplan může rychle lokalizovat."
+      ],
+      "killer_risk": "Hardwaroví výrobci (Meater) přidají plánování zdarma a uživatelé nemají důvod platit.",
+      "mitigation": "Jednorázová cena, rozšíření na nákupní seznam a víc kusů masa; lokalizace a metrika jako hlavní diferenciace.",
+      "build_weeks": 3.5,
+      "evidence": "web",
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "revenue_math": "Ideál: 2200 stažení/měs z niche klíčových slov; 5.0 % × 4.99 USD (lifetime) = 549 USD; 2.0 % × 9.99 USD (roční) = 440 USD. Celkem 988 USD hrubě → po 15 % provizi Apple 840 USD → × 23 = 19324 Kč čistého/měs. Sezónní peak květen–září.",
+      "revenue_czk_ideal": 19324
+    },
+    {
+      "id": "food-drink-08",
+      "name": "Gongfu: Tea Steep Timer",
+      "tagline": "Každý nálev přesně – gongfu časovač, který si pamatuje vaše čaje.",
+      "pitch": "Čajová kultura (gongfu cha, sencha, puerh) má nadšenou komunitu, která pije vícenásobné nálevy s rostoucími časy – a tužkou si píše, kolikátý nálev je. V evidenci byl jen jeden nový čajový časovač (Steep). Gongfu časovač s profily čajů, vícenálevovým plánem, teplotou a deníkem ochutnávek je jednoduchý, krásný a ideální pro widget a Apple Watch.",
+      "niche": "Vícenálevové pití čaje (gongfu/kyusu). Obecné časovače a velké čajové e-shopové aplikace to ignorují.",
+      "parent_market": "Kávové a čajové deníky (Beanconqueror, Steep, řada espresso aplikací) – ukazuje, že nápojoví nadšenci platí za deníky.",
+      "target_user": "Čajoví nadšenci 20–50 let, zákazníci specializovaných čajoven v US, DE, CZ, PL, RU, TW.",
+      "features": [
+        "Profily čajů s plánem nálevů (např. 10 s +5 s)",
+        "Časovač s haptikou, Apple Watch a Live Activity",
+        "Teplota a poměr g/ml podle nádoby",
+        "Deník ochutnávek a zásob čaje",
+        "Předvolby pro gaiwan, kyusu, western"
+      ],
+      "offline": "full",
+      "offline_note": "Plně lokální; iCloud sync; watchOS komplikace.",
+      "monetization": "Freemium: 3 profily zdarma, Pro 3,99 USD jednorázově (≈ 90 Kč) + dobrovolný tip jar 2,99 USD (≈ 70 Kč).",
+      "keywords": [
+        {
+          "kw": "tea timer",
+          "saturation": 3,
+          "competitor": "Steep: Tea Timer & Brew Guide",
+          "note": "odhad; evidence zachytila jen Steep jako vedlejší nález."
+        },
+        {
+          "kw": "gongfu",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "gaiwan",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "tea steeping",
+          "saturation": 2,
+          "competitor": "Steep",
+          "note": "odhad."
+        },
+        {
+          "kw": "tea journal",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): Steep: Tea Timer & Brew Guide zachycen jako vedlejší nález; saturace 'tea timer' přímo neověřena. Předpoklad: 'tea timer' je starý kontestovaný termín (odhad 3–5 aplikací), gongfu/gaiwan volné, ale s malým objemem.",
+      "competitors": [
+        {
+          "name": "Steep: Tea Timer & Brew Guide",
+          "url": "https://apps.apple.com/us/app/steep-tea-timer-brew-guide/id6751850664",
+          "role": "niche",
+          "note": "Nový čajový časovač."
+        },
+        {
+          "name": "Espresso.log",
+          "url": "https://apps.apple.com/us/app/espresso-log/id6753608360",
+          "role": "parent",
+          "note": "Analogie: deníky nápojů se prodávají."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Apple Clock/Siri časovač stačí většině lidí – Sherlock riziko.",
+        "'tea timer' může být obsazenější, než odhaduji (neověřeno).",
+        "Nízká cena a malá cílovka – strop příjmu blízko 10k Kč.",
+        "Guideline 4.2 minimum functionality – čistý časovač může být odmítnut."
+      ],
+      "killer_risk": "Nedostatek objemu hledání pro gongfu/gaiwan a konkurence v 'tea timer'.",
+      "mitigation": "Hodnota v profilech, deníku a Watch; ASO kombinace 'tea timer' + 'gongfu' + 'loose leaf'; lokalizace do DE/CZ/PL/RU/TW.",
+      "build_weeks": 2,
+      "evidence": "web",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "revenue_math": "Ideál: 3000 stažení/měs z niche klíčových slov; 4.5 % × 3.99 USD (lifetime) = 539 USD; 1.0 % × 2.99 USD (tip jar) = 90 USD. Celkem 628 USD hrubě → po 15 % provizi Apple 534 USD → × 23 = 12284 Kč čistého/měs.",
+      "revenue_czk_ideal": 12284
+    },
+    {
+      "id": "food-drink-09",
+      "name": "Levain: Sourdough in Your Language",
+      "tagline": "Kvásek, Sauerteig, zakwas, levain – krmení, rozvrh pečení a baker's % ve vašem jazyce.",
+      "pitch": "Sourdough tracker je v EN storu extrémně crowded (9–10 nových aplikací 2025–26), což je nejsilnější důkaz poptávky v celé kategorii. Žádná z nich však nevykazuje lokalizaci. Evropa (DE Sauerteig, CZ kvásek, PL zakwas, FR levain, IT lievito madre) peče kváskový chléb víc než USA. Lokalizovaná aplikace se starter logem, plánovačem pečení pozpátku a baker's % kalkulačkou může v neanglických storech obsadit top-3.",
+      "niche": "Neanglicky mluvící pekaři kváskového chleba. EN indie aplikace necílí na lokalizaci, protože jejich autoři jsou US solo vývojáři.",
+      "parent_market": "Sourdough trackery (Sourdough Starter Tracker, Loaflo, Crumbly …) a baker's percentage kalkulačky – crowded v EN = prokázaná poptávka.",
+      "target_user": "Domácí pekaři kváskového chleba v DE, CZ, PL, FR, IT, NL, Skandinávii, JP.",
+      "features": [
+        "Deník krmení kvásku s připomínkami a peak predikcí podle teploty",
+        "Plánovač pečení pozpátku od času vytažení z trouby",
+        "Baker's % kalkulačka se škálováním receptu",
+        "Lokální recepty (Roggenbrot, žitný chléb, pain de campagne)",
+        "Fotodeník bochníků a průřezů"
+      ],
+      "offline": "full",
+      "offline_note": "Plně lokální; teplota místnosti ručně; iCloud sync.",
+      "monetization": "Freemium + předplatné 1,99 USD/měs (≈ 46 Kč) nebo 14,99 USD/rok (≈ 345 Kč), lifetime 29,99 USD.",
+      "keywords": [
+        {
+          "kw": "sourdough tracker",
+          "saturation": 10,
+          "competitor": "Sourdough Starter Tracker",
+          "note": "Evidence: sat 9–10 v EN (web) – jen jako důkaz poptávky."
+        },
+        {
+          "kw": "sauerteig",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; DE store neověřen."
+        },
+        {
+          "kw": "kvásek",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "zakwas",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "levain",
+          "saturation": 2,
+          "competitor": "Leaven: Baker's Percentage",
+          "note": "odhad; FR výraz koliduje s EN 'leaven'."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): 9–10 EN aplikací v titulu 'sourdough' (všechny 2025–26) = silná poptávka. Předpoklad: neanglické storu nemají lokalizované ekvivalenty – přímo neověřeno.",
+      "competitors": [
+        {
+          "name": "Sourdough Starter Tracker",
+          "url": "https://apps.apple.com/us/app/sourdough-starter-tracker/id6755709217",
+          "role": "us-only",
+          "note": "Jeden z 9 EN trackerů."
+        },
+        {
+          "name": "Loaflo: Sourdough Starter",
+          "url": "https://apps.apple.com/us/app/loaflo-sourdough-starter/id6736766728",
+          "role": "us-only",
+          "note": "AI, EN."
+        },
+        {
+          "name": "Crumbly: Sourdough Starter",
+          "url": "https://apps.apple.com/us/app/crumbly-sourdough-starter/id6760153512",
+          "role": "us-only",
+          "note": "EN."
+        },
+        {
+          "name": "Leaven: Baker's Percentage",
+          "url": "https://apps.apple.com/us/app/leaven-bakers-percentage/id6742335028",
+          "role": "parent",
+          "note": "Baker's % kalkulačka."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "9 EN sourdough aplikací bez známek lokalizace; Evropa je historicky kváskový kontinent – lokalizace do 50 jazyků je hlavní vstupní úhel.",
+      "devils_advocate": [
+        "Kterákoli z 9 EN aplikací může zapnout auto-lokalizaci během týdne (AI překlady).",
+        "V DE mohou existovat lokální aplikace (Plötzblog, pekařské weby), které evidence nezachytila.",
+        "4.3 riziko: kategorie je zaplavena podobnými aplikacemi, review může být přísnější.",
+        "Pekaři používají sešit a papír – retence po zaběhnutí rutiny nízká."
+      ],
+      "killer_risk": "EN konkurenti se lokalizují a zabijí náš jediný rozdíl.",
+      "mitigation": "Hluboká lokalizace (lokální mouky, typy chleba, jednotky, recepty), ne jen překlad UI; rychlé spuštění dřív, než to udělají ostatní.",
+      "build_weeks": 4,
+      "evidence": "web",
+      "scores": {
+        "demand": 8,
+        "blue_ocean": 4,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "revenue_math": "Ideál: 2500 stažení/měs z niche klíčových slov; 3.0 % × 14.99 USD (roční) = 1124 USD; 1.0 % × 29.99 USD (lifetime) = 750 USD. Celkem 1874 USD hrubě → po 15 % provizi Apple 1593 USD → × 23 = 36637 Kč čistého/měs. Jen z neanglických storů (DE/FR/PL/CZ/IT/NL).",
+      "revenue_czk_ideal": 36637
+    },
+    {
+      "id": "food-drink-10",
+      "name": "Allergen Matrix: EU 14 for Cafés",
+      "tagline": "Alergenová tabulka pro celé menu za 15 minut – vytisknout, pověsit, hotovo.",
+      "pitch": "Každá kavárna, bistro a food truck v EU musí zákazníkům sdělit 14 alergenů (UK navíc Natasha's Law). HACCP aplikace jsou crowded (8 titulů), ale řeší teploty; alergenová matice pro menu jako samostatný nástroj v evidenci nikde nebyla. Majitel zadá jídla a suroviny, aplikace vytvoří matici, tiskovou tabulku a QR na offline PDF. Jednoduché, povinné, placené.",
+      "niche": "Malé provozovny bez HACCP softwaru. Velcí dodavatelé (restaurační SaaS) cílí na řetězce s servery a účty.",
+      "parent_market": "Food safety / HACCP aplikace (Kitchen HACCP Logs, Food Safety App, BackResto) – crowded = placený B2B trh.",
+      "target_user": "Majitelé kaváren, bister, food trucků, cukráren a školních jídelen v EU a UK.",
+      "features": [
+        "Jídla → suroviny → automatická matice 14 alergenů",
+        "Tisk A4/A3 a PDF export pro zákazníky",
+        "Knihovna surovin s předvyplněnými alergeny",
+        "Změnový log (kdo a kdy upravil recepturu)",
+        "Vícejazyčný výstup pro turistické oblasti"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, PDF generováno na zařízení; iCloud sync pro tým (sdílená CloudKit zóna).",
+      "monetization": "Předplatné 6,99 USD/měs (≈ 160 Kč) nebo 49,99 USD/rok (≈ 1 150 Kč).",
+      "keywords": [
+        {
+          "kw": "allergen matrix",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; v business evidenci uveden jako nevyzkoušená sub-niche."
+        },
+        {
+          "kw": "allergen chart",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "14 allergens",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "natasha's law",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad; UK zákon, pozor na použití jména."
+        },
+        {
+          "kw": "haccp",
+          "saturation": 8,
+          "competitor": "Kitchen HACCP Logs",
+          "note": "Evidence (business): crowded, jen jako parent."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web, business evidence): HACCP/temperature log crowded (8 titulů), alergenová matice uvedena jako neotestovaná sub-niche. Předpoklad: zákonná povinnost v EU/UK vytváří poptávku, objem hledání neověřen.",
+      "competitors": [
+        {
+          "name": "Kitchen HACCP Logs",
+          "url": "https://apps.apple.com/gb/app/kitchen-haccp-logs/id6756550638",
+          "role": "parent",
+          "note": "UK, teploty, dodávky, audit."
+        },
+        {
+          "name": "Food Safety App",
+          "url": "https://apps.apple.com/us/app/food-safety-app-haccp/id6772256894",
+          "role": "parent",
+          "note": "Teploty vaření/chlazení."
+        },
+        {
+          "name": "BackResto - HACCP",
+          "url": "https://apps.apple.com/qa/app/backresto-haccp/id1634053106?platform=tv",
+          "role": "niche",
+          "note": "Tiskne štítky, offline."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Chyba v matici = zákazník s anafylaxí → právní odpovědnost provozovatele i reputace aplikace.",
+        "Mnoho provozoven používá šablony od hygieny/asociací zdarma.",
+        "Majitelé malých kaváren hledají nástroje v Googlu, ne v App Store.",
+        "HACCP aplikace mohou přidat alergenový modul."
+      ],
+      "killer_risk": "Nízký objem hledání v App Store – B2B objevování probíhá mimo store.",
+      "mitigation": "Lokalizované názvy ('Allergenkennzeichnung', 'tabulka alergenů'), ASO na povinnost; disclaimer, že odpovědnost je na provozovateli.",
+      "build_weeks": 4,
+      "evidence": "web",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 7,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "revenue_math": "Ideál: 700 stažení/měs z niche klíčových slov; 3.0 % × 49.99 USD (roční) = 1050 USD; 2.0 % × 6.99 USD (měsíční) = 98 USD. Celkem 1148 USD hrubě → po 15 % provizi Apple 976 USD → × 23 = 22437 Kč čistého/měs.",
+      "revenue_czk_ideal": 22437
+    },
+    {
+      "id": "food-drink-11",
+      "name": "Creami Lab: Ice Cream Base Balancer",
+      "tagline": "Zmrzlina, která nekrystalizuje: vyvážíte cukr, tuk a sušinu pro domácí zmrzlinovač i CREAMi.",
+      "pitch": "Ninja CREAMi je od 2022 jeden z nejprodávanějších kuchyňských spotřebičů a proteinové 'creami' recepty jsou virální. Domácí zmrzlináři řeší stejný problém jako profesionálové: vyvážení cukru (POD), sladivosti a nemrznoucí síly (PAC), tuku a sušiny. Profesionální balancery jsou desktop/Excel. Mobilní kalkulačka s databází surovin a proteinovými presety může obsadit klíčová slova 'ice cream calculator' a 'protein ice cream'.",
+      "niche": "Domácí gelato a proteinová zmrzlina. Receptové aplikace dávají recepty, ne výpočet; profi balancery jsou pro gelaterie.",
+      "parent_market": "Receptové a kuchyňské aplikace ke spotřebičům (Ninja, Thermomix Cookidoo) a fitness recepty – obrovský placený trh.",
+      "target_user": "Majitelé CREAMi a zmrzlinovačů, fitness nadšenci (proteinová zmrzlina), domácí gelato hobbyisté.",
+      "features": [
+        "Databáze surovin s PAC/POD, tukem a sušinou",
+        "Vyvážení receptu na cílovou teplotu servírování",
+        "Proteinové a low-sugar presety (erythritol, allulose)",
+        "Škálování na objem nádoby",
+        "Makra na porci (bez HealthKit nároků)"
+      ],
+      "offline": "full",
+      "offline_note": "Statická databáze surovin + výpočty lokálně.",
+      "monetization": "Freemium: 5 receptů zdarma, Pro 4,99 USD jednorázově (≈ 115 Kč) nebo 9,99 USD/rok.",
+      "keywords": [
+        {
+          "kw": "ice cream calculator",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad (knowledge), neověřeno."
+        },
+        {
+          "kw": "gelato calculator",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "protein ice cream",
+          "saturation": 4,
+          "competitor": "různé receptové aplikace",
+          "note": "odhad; pravděpodobně receptové aplikace."
+        },
+        {
+          "kw": "creami recipes",
+          "saturation": 5,
+          "competitor": "Ninja CREAMi recipe apps",
+          "note": "odhad; neoficiální receptové aplikace pravděpodobně existují – ochranná známka."
+        }
+      ],
+      "demand_evidence": "Neověřeno (jen znalost trhu): CREAMi je bestseller a proteinová zmrzlina je virální; v evidenci chybí vyhledání ('gelato/ice cream calculator' selhalo kvůli rozpočtu). Saturace je odhad.",
+      "competitors": [
+        {
+          "name": "Ninja CREAMi recipe apps",
+          "url": "",
+          "role": "niche",
+          "note": "Neoficiální receptové aplikace, bez výpočtu; bez URL."
+        },
+        {
+          "name": "Cookidoo (Thermomix)",
+          "url": "",
+          "role": "parent",
+          "note": "Ukazuje ochotu platit za obsah ke spotřebiči; bez URL."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Ochranná známka 'Ninja'/'CREAMi' – nesmí být v názvu ani klíčových slovech (2.3.7, 5.2).",
+        "Většina uživatelů chce recept, ne kalkulačku – výpočet PAC/POD je pro geeky.",
+        "Trend CREAMi může opadnout jako u air fryeru.",
+        "Saturace neověřena – může tam už být několik AI receptových aplikací."
+      ],
+      "killer_risk": "Trademark problém při cílení na CREAMi a bez něj slabé ASO.",
+      "mitigation": "Generický název ('ice cream base', 'gelato calculator'), CREAMi zmínit jen v popisu jako kompatibilitu; přidat hotové vyvážené recepty pro běžné uživatele.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "revenue_math": "Ideál: 2500 stažení/měs z niche klíčových slov; 5.0 % × 4.99 USD (lifetime) = 624 USD; 2.0 % × 9.99 USD (roční) = 500 USD. Celkem 1123 USD hrubě → po 15 % provizi Apple 955 USD → × 23 = 21960 Kč čistého/měs.",
+      "revenue_czk_ideal": 21960
+    },
+    {
+      "id": "food-drink-12",
+      "name": "Party Bar Planner",
+      "tagline": "Kolik lahví vína, piva a ginu na svatbu pro 80 lidí? Odpověď i nákupní seznam za minutu.",
+      "pitch": "Každý, kdo pořádá svatbu, oslavu nebo firemní večírek, googlí 'how much alcohol for wedding'. Batch cocktail kalkulačky (5 v evidenci) řeší škálování jednoho receptu, ne celou akci. Aplikace spočítá nápoje podle počtu hostů, délky akce, mixu vína/piva/koktejlů a nealka, včetně ledu a kelímků, a vytvoří nákupní seznam s rozpočtem.",
+      "niche": "Plánování nápojů pro jednorázové akce. Koktejlové aplikace cílí na bartendery a recepty.",
+      "parent_market": "Koktejlové a bar aplikace (Batchr, MixMath, Jarra) + event/svatební plánovače (The Knot, Zola) – velký placený trh.",
+      "target_user": "Snoubenci, hostitelé oslav, organizátoři firemních akcí; celosvětově.",
+      "features": [
+        "Kalkulačka nápojů podle hostů, hodin a mixu",
+        "Led, kelímky, nealko a mixery",
+        "Nákupní seznam s cenami a rozpočtem v lokální měně",
+        "Lokální velikosti balení (lahve, sudy, plechovky)",
+        "Sdílení seznamu přes iMessage/PDF"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně; sdílení přes systémový share sheet.",
+      "monetization": "Jednorázově 2,99 USD (≈ 70 Kč) za odemčení akcí nad 30 hostů; žádné předplatné (jednorázová potřeba).",
+      "keywords": [
+        {
+          "kw": "party drink calculator",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; v evidenci 'party bar planning' nebylo vidět."
+        },
+        {
+          "kw": "wedding alcohol calculator",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "how much alcohol",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "batch cocktail",
+          "saturation": 5,
+          "competitor": "Batchr: Cocktail Batching",
+          "note": "Evidence: crowded-ish (web)."
+        },
+        {
+          "kw": "drink calculator",
+          "saturation": 3,
+          "competitor": "MixMath - Cocktail Calculator",
+          "note": "odhad."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): batch cocktail sat 5, party bar planning neviděno. Předpoklad: 'wedding alcohol calculator' má vysoké hledání na Googlu (webové kalkulačky), v App Store objem neověřen.",
+      "competitors": [
+        {
+          "name": "Batchr: Cocktail Batching",
+          "url": "https://apps.apple.com/us/app/batchr-cocktail-batching/id6744668021",
+          "role": "niche",
+          "note": "Batching + ředění."
+        },
+        {
+          "name": "MixMath - Cocktail Calculator",
+          "url": "https://apps.apple.com/us/app/mixmath-cocktail-calculator/id6751429902",
+          "role": "niche",
+          "note": "Koktejlová kalkulačka."
+        },
+        {
+          "name": "Jarra: Batch Cocktails & ABV",
+          "url": "https://apps.apple.com/ca/app/jarra-batch-cocktails-abv/id6746388349?platform=ipad",
+          "role": "niche",
+          "note": "Batch + ABV."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Jednorázové použití – každý uživatel zaplatí nejvýš jednou, žádná retence.",
+        "Webové kalkulačky zdarma dominují Googlu; lidé nehledají aplikaci.",
+        "4.2 minimum functionality – jedna kalkulačka může být odmítnuta.",
+        "Alkohol → věkový rating 17+ a omezení v některých zemích."
+      ],
+      "killer_risk": "Lidé tohle řeší jednou za život přes Google, ne přes App Store.",
+      "mitigation": "Rozšířit na celé 'event food & drink' (jídlo na hosta, BBQ, dort) a cílit ASO na svatební klíčová slova v mnoha jazycích.",
+      "build_weeks": 2,
+      "evidence": "web",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "revenue_math": "Ideál: 4000 stažení/měs z niche klíčových slov; 5.0 % × 2.99 USD (jednorázově) = 598 USD. Celkem 598 USD hrubě → po 15 % provizi Apple 508 USD → × 23 = 11691 Kč čistého/měs.",
+      "revenue_czk_ideal": 11691
+    },
+    {
+      "id": "food-drink-13",
+      "name": "Histamine Guide: Low-Histamine Foods",
+      "tagline": "Seznam potravin s histaminem, deník reakcí a skener etiket – offline, i v obchodě bez signálu.",
+      "pitch": "Histaminová intolerance je v DACH regionu masové téma ('Histaminintoleranz'), v USA roste s MCAS komunitou. V evidenci je jen stará multi-intolerance aplikace (Food Intolerances, 2011) a obecné alergie deníky; dedikovaný histaminový průvodce chybí. Nabídneme vlastní (nelicencovaný) seznam potravin se semaforem, deník symptomů a on-device OCR etiket pro rizikové přísady.",
+      "niche": "Lidé s histaminovou intolerancí/MCAS. FODMAP a alergické aplikace je okrajově pokrývají, protože diagnóza je sporná a trh menší.",
+      "parent_market": "Diet/intolerance aplikace (Monash FODMAP, Fig, Food Intolerances) – prokazatelně placené (Monash 7,99 USD).",
+      "target_user": "Převážně ženy 25–55 let s histaminovou intolerancí/MCAS v DE, AT, CH, US, UK, NL, CZ.",
+      "features": [
+        "Vlastní seznam ~800 potravin se semaforem a poznámkou o čerstvosti",
+        "OCR skener etiket (Vision) – zvýraznění rizikových přísad",
+        "Deník jídla a symptomů s korelačním přehledem",
+        "Nákupní seznam 'bezpečných' potravin",
+        "Export PDF pro lékaře/nutričního terapeuta"
+      ],
+      "offline": "full",
+      "offline_note": "Seznam v balíčku, OCR přes Vision on-device, deník lokálně (bez HealthKit), iCloud sync.",
+      "monetization": "Freemium: seznam zdarma, skener + deník v Pro 3,99 USD/měs (≈ 90 Kč) nebo 24,99 USD/rok (≈ 575 Kč).",
+      "keywords": [
+        {
+          "kw": "histamine",
+          "saturation": 2,
+          "competitor": "Food Intolerances (2011)",
+          "note": "Evidence (web+medical): jen stará multi-intolerance aplikace + MCAS Tracker."
+        },
+        {
+          "kw": "low histamine",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "histamine intolerance",
+          "saturation": 1,
+          "competitor": "MCAS Tracker",
+          "note": "odhad; medical evidence uvádí jako open-ish."
+        },
+        {
+          "kw": "histaminintoleranz",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; DACH reverse gap."
+        },
+        {
+          "kw": "mcas",
+          "saturation": 2,
+          "competitor": "MCAS Tracker",
+          "note": "Evidence (medical)."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): food evidence zmiňuje jen Food Intolerances (2011) s histaminovým profilem; medical evidence označuje histamin/MCAS diář za open-ish a upozorňuje, že SIGHI seznam je chráněný. Předpoklad: silná DACH poptávka – neověřeno v DE storu.",
+      "competitors": [
+        {
+          "name": "Food Intolerances",
+          "url": "https://apps.apple.com/us/app/food-intolerances/id419098758?platform=ipad",
+          "role": "niche",
+          "note": "Od 2011, profily vč. histaminu."
+        },
+        {
+          "name": "MCAS Tracker",
+          "url": "https://apps.apple.com/is/app/mcas-tracker/id6754931863",
+          "role": "niche",
+          "note": "Deník MCAS."
+        },
+        {
+          "name": "Low FODMAP diet A to Z",
+          "url": "https://apps.apple.com/fi/app/low-fodmap-diet-a-to-z/id1356683228",
+          "role": "parent",
+          "note": "Diet food list model."
+        },
+        {
+          "name": "Allergy Diary: Symptom Tracker",
+          "url": "https://apps.apple.com/ca/app/allergy-diary-symptom-tracker/id6780486739",
+          "role": "niche",
+          "note": "Obecný deník intolerancí."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "Spíš reverse gap: téma je nejsilnější v DACH, ne v USA.",
+      "devils_advocate": [
+        "1.4.1 zdravotní tvrzení: histaminová intolerance je medicínsky sporná, Apple může žádat zdroje.",
+        "Obsah seznamu: nesmíme použít SIGHI seznam (copyright) – vlastní seznam je pracný a může být zpochybňován.",
+        "Hodnoty histaminu se liší podle čerstvosti – nepřesnost vede ke špatným recenzím.",
+        "Uživatelé s chronickou nemocí jsou nároční na support."
+      ],
+      "killer_risk": "Odmítnutí nebo stížnosti kvůli zdravotním tvrzením a nepřesnému seznamu.",
+      "mitigation": "Formulace 'informační průvodce', citace odborné literatury, žádné diagnózy; vlastní seznam od nutričního terapeuta (jednorázová zakázka).",
+      "build_weeks": 6,
+      "evidence": "web",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "revenue_math": "Ideál: 1500 stažení/měs z niche klíčových slov; 3.0 % × 24.99 USD (roční) = 1125 USD; 1.5 % × 3.99 USD (měsíční) = 90 USD. Celkem 1214 USD hrubě → po 15 % provizi Apple 1032 USD → × 23 = 23740 Kč čistého/měs.",
+      "revenue_czk_ideal": 23740
+    },
+    {
+      "id": "food-drink-14",
+      "name": "Hot Sauce Lab",
+      "tagline": "Fermentovaná pálivá omáčka: sůl, pH, dny kvašení a pálivost ve Scovilleho stupních.",
+      "pitch": "Domácí fermentované pálivé omáčky jsou velká hobby komunita (r/hotsauce, YouTube). Obecné fermentační aplikace mají solnou kalkulačku (sat ~5), ale 'hot sauce' titul v evidenci neměl nikdo. Aplikace spojí kalkulaci solanky/mash, časovou osu fermentace, pH log (bezpečnost pod 4,6), kalkulačku odhadované pálivosti ze směsi chilli a štítek na lahev.",
+      "niche": "Tvůrci pálivých omáček. Fermentační aplikace jsou obecné, chilli pěstitelské aplikace řeší zahradu.",
+      "parent_market": "Domácí fermentace (Ferment, Fermenty, Crock) – ověřeně aktivní a placená.",
+      "target_user": "Chilli nadšenci a pěstitelé 20–50 let, US, UK, DE, CZ, AU.",
+      "features": [
+        "Kalkulačka mash vs. solanka (% soli)",
+        "Databáze ~60 odrůd chilli s rozsahem SHU a odhad pálivosti směsi",
+        "Deník fermentace s pH logem a varováním",
+        "Receptury blendování (ocet, ovoce) a výtěžnost lahví",
+        "Štítek na lahev s datem a pálivostí"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně.",
+      "monetization": "Freemium, Pro 4,99 USD jednorázově (≈ 115 Kč).",
+      "keywords": [
+        {
+          "kw": "hot sauce",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "Evidence: v dotazu na brine calc 'hot sauce' titul 0 (web); saturace odhad 1 (receptové aplikace)."
+        },
+        {
+          "kw": "hot sauce recipes",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "scoville",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad; Scoville chart aplikace existují."
+        },
+        {
+          "kw": "brine calculator",
+          "saturation": 5,
+          "competitor": "Fermenty",
+          "note": "Evidence: sat ~5 (web)."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): obecné fermentační aplikace se solnou kalkulačkou sat ~5, titul 'hot sauce' nebyl viděn. Předpoklad: silná komunita (r/hotsauce ~ velké stovky tisíc členů), objem hledání v App Store neověřen.",
+      "competitors": [
+        {
+          "name": "Ferment: Fermentation Tracker",
+          "url": "https://apps.apple.com/us/app/ferment-fermentation-tracker/id6761690636",
+          "role": "parent",
+          "note": "Solná kalkulačka."
+        },
+        {
+          "name": "Fermenty",
+          "url": "https://apps.apple.com/us/app/fermenty/id6759230036",
+          "role": "niche",
+          "note": "Brine calculator."
+        },
+        {
+          "name": "Ferment Tracker - Crock",
+          "url": "https://apps.apple.com/dk/app/ferment-tracker-crock/id6765965148",
+          "role": "niche",
+          "note": "Fermentační deník."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Fermentační aplikace přidají 'hot sauce' předvolbu během týdne.",
+        "Kalkulačka soli je triviální – hodnota je v datech chilli, která se dají snadno zkopírovat.",
+        "Sezónní (sklizeň chilli srpen–říjen).",
+        "pH měření vyžaduje pH metr, který většina nemá."
+      ],
+      "killer_risk": "Fermentační konkurenti přidají pálivou předvolbu a vezmou klíčové slovo.",
+      "mitigation": "Titul a ikona jasně 'Hot Sauce'; hodnota ve SHU kalkulátoru a štítcích, které obecné aplikace nemají.",
+      "build_weeks": 2.5,
+      "evidence": "web",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "revenue_math": "Ideál: 2200 stažení/měs z niche klíčových slov; 6.5 % × 4.99 USD (lifetime) = 714 USD. Celkem 714 USD hrubě → po 15 % provizi Apple 607 USD → × 23 = 13950 Kč čistého/měs.",
+      "revenue_czk_ideal": 13950
+    },
+    {
+      "id": "food-drink-15",
+      "name": "Freeze Dry Log",
+      "tagline": "Deník mrazového sušení: várky, časy, úbytek váhy a sklad potravin na roky dopředu.",
+      "pitch": "Domácí lyofilizátory (Harvest Right a noví konkurenti za 2–4 tisíce USD) vytvořily komunitu, která obsesivně sleduje várky (čas, váha, zbytková vlhkost) a sklad. Majitel drahého přístroje má vysokou ochotu platit. Deník várek s výpočtem úbytku vody, šablonami potravin a evidencí skladu (datum, sáček/sklenice, absorbér kyslíku) je jednoduchý produkt pro bohatou niche.",
+      "niche": "Majitelé domácích freeze dryerů. Aplikace výrobce řeší ovládání přístroje, ne deník a sklad; pantry aplikace neznají lyofilizaci.",
+      "parent_market": "Prepper/pantry a zásoby potravin (Jarred, pantry apps) + spotřebiče s aplikacemi.",
+      "target_user": "Majitelé freeze dryerů v US (homesteading), postupně CA, AU, UK, DE.",
+      "features": [
+        "Deník várek: polotovar, váha před/po, čas cyklu, poznámky",
+        "Výpočet % odstraněné vody a kontrola 'hotovo'",
+        "Sklad: balení, datum, odhad trvanlivosti, připomínky",
+        "Šablony potravin a jejich typické časy",
+        "Statistiky úspory vs. nákup hotových potravin"
+      ],
+      "offline": "full",
+      "offline_note": "Plně lokální; iCloud sync.",
+      "monetization": "Freemium, Pro 2,99 USD/měs (≈ 70 Kč) nebo 19,99 USD/rok (≈ 460 Kč).",
+      "keywords": [
+        {
+          "kw": "freeze dryer",
+          "saturation": 4,
+          "competitor": "Harvest Right (aplikace výrobce)",
+          "note": "odhad; dotaz na 'freeze dryer log' selhal (rozpočet)."
+        },
+        {
+          "kw": "freeze drying log",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "freeze dried food",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "food storage inventory",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno: evidence plánovala 'freeze dryer log' jako prioritu, ale rozpočet došel. Opírám se o znalost trhu (velké FB skupiny majitelů Harvest Right). Saturace odhad.",
+      "competitors": [
+        {
+          "name": "Harvest Right",
+          "url": "",
+          "role": "parent",
+          "note": "Aplikace výrobce pro nové přístroje; bez URL."
+        },
+        {
+          "name": "Canning & Pantry Log - Jarred",
+          "url": "https://apps.apple.com/us/app/canning-pantry-log-jarred/id6760012445",
+          "role": "niche",
+          "note": "Pantry log, bez lyofilizace."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Výrobce (Harvest Right) může přidat deník do své aplikace zdarma.",
+        "Malý trh mimo USA – přístroje jsou drahé a ve EU vzácné.",
+        "Uživatelé už používají Excel/Google Sheets šablony z FB skupin.",
+        "Tvrzení o trvanlivosti '25 let' – riziko odpovědnosti."
+      ],
+      "killer_risk": "Výrobce přidá deník do oficiální aplikace a trh zmizí.",
+      "mitigation": "Podpora všech značek (Harvest Right, Blue Alpine, StayFresh), rychlý launch, konzervativní trvanlivost s odkazy.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "revenue_math": "Ideál: 1200 stažení/měs z niche klíčových slov; 4.0 % × 19.99 USD (roční) = 960 USD; 1.5 % × 2.99 USD (měsíční) = 54 USD. Celkem 1013 USD hrubě → po 15 % provizi Apple 861 USD → × 23 = 19811 Kč čistého/měs.",
+      "revenue_czk_ideal": 19811
+    },
+    {
+      "id": "food-drink-16",
+      "name": "Bolo: Cake Pricing Localized",
+      "tagline": "Kolik si říct za dort? Náklady, práce a marže – v reais, pesos, złotých i korunách.",
+      "pitch": "Cenotvorba dortů pro domácí cukrářky je v EN crowded (7–8 aplikací), což dokazuje placenou poptávku. Jenže největší komunita domácích cukrářek je v Brazílii ('precificação de bolos'), Mexiku, Polsku a Turecku, kde se prodávají dorty z domu masově. Nalezená aplikace Cake Pricing: Home Bakery se i v JP storu ukazuje jen v angličtině. Lokalizovaná kalkulačka s lokálními jednotkami, měnami a typickými náklady může v těch zemích vyhrát.",
+      "niche": "Domácí cukrářky mimo anglosféru. EN vývojáři nelokalizují.",
+      "parent_market": "Business nástroje pro pekaře (CakeCost, Bakers Pricing Calculator, My Cake Calculator) – crowded = prokázaný trh.",
+      "target_user": "Domácí cukrářky a pekařky v BR, MX, AR, PL, TR, CZ, ID.",
+      "features": [
+        "Náklady surovin z receptu s cenami balení",
+        "Hodinová sazba, energie, obal a doprava",
+        "Doporučená cena podle marže a porcí",
+        "Nabídka pro zákazníka jako PDF/obrázek na WhatsApp",
+        "Lokální měny a jednotky"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, sdílení přes share sheet.",
+      "monetization": "Předplatné 1,99 USD/měs (≈ 46 Kč) nebo 12,99 USD/rok (≈ 300 Kč) – regionální ceny pro BR/MX.",
+      "keywords": [
+        {
+          "kw": "cake pricing",
+          "saturation": 8,
+          "competitor": "Cake Pricing: Home Bakery",
+          "note": "Evidence: sat 7–8 v EN (web) – jen parent."
+        },
+        {
+          "kw": "precificação de bolos",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad; BR lokální konkurence NEOVĚŘENA (evidence upozorňuje)."
+        },
+        {
+          "kw": "precio de pasteles",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "kalkulator tortów",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): EN cake pricing sat 7–8; Cake Pricing: Home Bakery se v JP storu zobrazuje jen EN. Neověřeno: lokální brazilská konkurence (evidence výslovně uvádí, že BR nebyl testován) – mohou existovat lokální aplikace.",
+      "competitors": [
+        {
+          "name": "Cake Pricing: Home Bakery",
+          "url": "https://apps.apple.com/jp/app/cake-pricing-home-bakery/id1578785708?l=en-US",
+          "role": "us-only",
+          "note": "Jen EN i v JP storu."
+        },
+        {
+          "name": "CakeCost",
+          "url": "https://apps.apple.com/us/app/cakecost/id1555897547",
+          "role": "parent",
+          "note": "EN."
+        },
+        {
+          "name": "Bakers Pricing Calculator",
+          "url": "https://apps.apple.com/jo/app/bakers-pricing-calculator/id1588565115",
+          "role": "niche",
+          "note": "EN."
+        },
+        {
+          "name": "My Cake Calculator",
+          "url": "https://apps.apple.com/us/app/my-cake-calculator/id1439685088",
+          "role": "niche",
+          "note": "Od 2018."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "EN cake pricing aplikace nejsou lokalizované; BR/MX/PL/TR mají velké komunity domácích cukrářek. Riziko: lokální BR aplikace existovat mohou (neověřeno).",
+      "devils_advocate": [
+        "BR trh může mít silné lokální aplikace a Android dominanci (iOS podíl v BR ~15 %).",
+        "Nízká kupní síla a zvyk používat Excel/Instagram šablony.",
+        "Crowded kategorie → Guideline 4.3 riziko pro 'další kalkulačku'.",
+        "Kulturní rozdíly v cenotvorbě (za kg vs. za porci)."
+      ],
+      "killer_risk": "Nízký iOS podíl a kupní síla v cílových zemích.",
+      "mitigation": "Zaměřit také PL/TR/CZ (vyšší iOS podíl), regionální ceny, ceny za kg i porci.",
+      "build_weeks": 3,
+      "evidence": "web",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "revenue_math": "Ideál: 3000 stažení/měs z niche klíčových slov; 2.5 % × 12.99 USD (roční) = 974 USD; 2.0 % × 1.99 USD (měsíční) = 119 USD. Celkem 1094 USD hrubě → po 15 % provizi Apple 930 USD → × 23 = 21381 Kč čistého/měs. Nižší kupní síla v BR/MX je zohledněna nízkou cenou.",
+      "revenue_czk_ideal": 21381
+    },
+    {
+      "id": "food-drink-17",
+      "name": "Dough Clock: Pizza Dough Calculator",
+      "tagline": "Neapolská, římská, detroitská – těsto na hodinu přesně podle teploty a času kynutí.",
+      "pitch": "Domácí pizza pece (Ooni, Gozney) jsou masový hit a pizzaioli-amatéři řeší množství droždí podle teploty a délky kynutí, poolish/biga a hydrataci. Baker's percentage aplikace (sat 7) jsou obecné pro chléb. Pizza kalkulačka s modelem droždí dle teploty/času, plánovačem a styly pizzy cílí na nadšence s drahou pecí.",
+      "niche": "Pizza nadšenci s domácí pecí. Obecné baker's % aplikace neumí model droždí vs. teplota a pizza styly.",
+      "parent_market": "Baker's percentage kalkulačky (Baker's Percentage, Leaven, Baker Math) + hardware Ooni/Gozney.",
+      "target_user": "Majitelé domácích pizza pecí 25–55 let, US, UK, DE, IT, NL, CZ, AU.",
+      "features": [
+        "Kalkulačka těsta: počet koulí, váha, hydratace, sůl",
+        "Množství droždí (čerstvé/sušené/kvásek) podle teploty a hodin",
+        "Poolish/biga předtěsta",
+        "Plánovač 'jíme v sobotu v 19:00'",
+        "Styly: neapolská, NY, římská, detroitská, sicilská"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně.",
+      "monetization": "Freemium, Pro 3,99 USD jednorázově (≈ 90 Kč).",
+      "keywords": [
+        {
+          "kw": "pizza dough calculator",
+          "saturation": 5,
+          "competitor": "—",
+          "note": "odhad; evidence výslovně: saturace pizza NEOVĚŘENA, pravděpodobně vyšší."
+        },
+        {
+          "kw": "pizza dough",
+          "saturation": 6,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "baker's percentage",
+          "saturation": 7,
+          "competitor": "Baker's Percentage",
+          "note": "Evidence: crowded (web)."
+        },
+        {
+          "kw": "poolish",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "biga calculator",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): baker's % sat 7 (všechny slabé nové indie) – poptávka existuje; žádný snippet nezmiňoval pizzu. Neověřeno: pizza-specifická saturace (evidence ji odhaduje jako vyšší).",
+      "competitors": [
+        {
+          "name": "Baker's Percentage",
+          "url": "https://apps.apple.com/us/app/bakers-percentage/id6753281246",
+          "role": "parent",
+          "note": "1,99 USD."
+        },
+        {
+          "name": "Leaven: Baker's Percentage",
+          "url": "https://apps.apple.com/us/app/leaven-bakers-percentage/id6742335028",
+          "role": "niche",
+          "note": "Obecná."
+        },
+        {
+          "name": "Baker Math",
+          "url": "https://apps.apple.com/us/app/baker-math/id6742730811",
+          "role": "niche",
+          "note": "Obecná."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Pizza kalkulaček je pravděpodobně už hodně (a webové zdarma, např. oblíbené komunitní kalkulačky).",
+        "Ooni/Gozney mohou mít kalkulačku ve vlastní aplikaci zdarma.",
+        "Nízká cena a jednorázový nákup – strop příjmu.",
+        "Guideline 4.3 – další kalkulačka v přeplněném prostoru."
+      ],
+      "killer_risk": "Neověřená, pravděpodobně vysoká saturace 'pizza dough calculator'.",
+      "mitigation": "ASO na long-tail (poolish, biga, detroit style) a lokalizace (Pizzateig, ciasto na pizzę); kvalitní model droždí jako diferenciace.",
+      "build_weeks": 2,
+      "evidence": "web",
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "revenue_math": "Ideál: 3500 stažení/měs z niche klíčových slov; 4.5 % × 3.99 USD (lifetime) = 628 USD. Celkem 628 USD hrubě → po 15 % provizi Apple 534 USD → × 23 = 12286 Kč čistého/měs.",
+      "revenue_czk_ideal": 12286
+    },
+    {
+      "id": "food-drink-18",
+      "name": "Shot Log: Espresso Localized",
+      "tagline": "Dial-in espressa v němčině, japonštině, italštině a korejštině – s tabulkou mlýnků.",
+      "pitch": "Espresso dial-in deníků je v EN extrémně mnoho (7+ nových aplikací), což dokazuje poptávku. Ale domácí espresso kultura je obrovská v DE, IT, JP a KR, kde EN indie aplikace nejsou lokalizované. Deník shotů (dávka, výtěžnost, čas, mletí) s převodní tabulkou nastavení mlýnků a doporučením 'jemněji/hruběji' ve vlastním jazyce je jasná lokalizační hra.",
+      "niche": "Neanglicky mluvící domácí baristé. EN aplikace necílí mimo US.",
+      "parent_market": "Espresso a kávové deníky (Dial In Coffee, Espresso.log, Beanconqueror) – crowded = ověřená poptávka.",
+      "target_user": "Domácí baristé s pákovým kávovarem a mlýnkem v DE, IT, JP, KR, NL, PL, CZ.",
+      "features": [
+        "Log shotů s poměrem a časem, Live Activity stopky",
+        "Doporučení úpravy mletí (pravidla, ne AI)",
+        "Databáze mlýnků a jejich rozsahů",
+        "Evidence zrn a dnů po pražení",
+        "Widgety a Apple Watch"
+      ],
+      "offline": "full",
+      "offline_note": "Plně lokální.",
+      "monetization": "Freemium, Pro 4,99 USD jednorázově (≈ 115 Kč) nebo 1,49 USD/měs.",
+      "keywords": [
+        {
+          "kw": "espresso dial in",
+          "saturation": 7,
+          "competitor": "Dial In Coffee: Espresso",
+          "note": "Evidence: sat 7+ v EN (web)."
+        },
+        {
+          "kw": "espresso tracker",
+          "saturation": 6,
+          "competitor": "Dialed In - Espresso Tracker",
+          "note": "Evidence."
+        },
+        {
+          "kw": "espresso einstellen",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; DE."
+        },
+        {
+          "kw": "エスプレッソ 記録",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; JP."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): 7+ EN dial-in aplikací; Beanconqueror (zdarma, lokalizovaný) je hrozba (bez URL). Neověřeno: stav v DE/JP/KR storech.",
+      "competitors": [
+        {
+          "name": "Dial In Coffee: Espresso",
+          "url": "https://apps.apple.com/us/app/dial-in-coffee-espresso/id6746680844",
+          "role": "us-only",
+          "note": "AI coach, EN."
+        },
+        {
+          "name": "Espresso.log",
+          "url": "https://apps.apple.com/us/app/espresso-log/id6753608360",
+          "role": "us-only",
+          "note": "EN."
+        },
+        {
+          "name": "Dialed In - Espresso Tracker",
+          "url": "https://apps.apple.com/us/app/dialed-in-espresso-tracker/id6759168523",
+          "role": "us-only",
+          "note": "EN."
+        },
+        {
+          "name": "Beanconqueror",
+          "url": "",
+          "role": "parent",
+          "note": "Zdarma, open-source, lokalizovaný – hlavní hrozba; bez URL."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "7+ EN aplikací bez lokalizace; DE/IT/JP/KR mají silnou domácí espresso kulturu. Beanconqueror je ale zdarma a lokalizovaný.",
+      "devils_advocate": [
+        "Beanconqueror je zdarma a lokalizovaný – těžko konkurovat ceně nula.",
+        "EN aplikace se mohou lokalizovat přes AI překlad během dne.",
+        "Guideline 4.3: extrémně přeplněná niche podobných aplikací.",
+        "Baristé často nejsou ochotni platit za 'log', mají tužku."
+      ],
+      "killer_risk": "Beanconqueror zdarma + lokalizace EN konkurentů.",
+      "mitigation": "Jednodušší UX než Beanconqueror (ten je komplexní), silná databáze mlýnků, rychlý launch.",
+      "build_weeks": 4,
+      "evidence": "web",
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "revenue_math": "Ideál: 2500 stažení/měs z niche klíčových slov; 5.0 % × 4.99 USD (lifetime) = 624 USD; 1.5 % × 1.49 USD (měsíční) = 56 USD. Celkem 680 USD hrubě → po 15 % provizi Apple 578 USD → × 23 = 13287 Kč čistého/měs.",
+      "revenue_czk_ideal": 13287
+    },
+    {
+      "id": "food-drink-19",
+      "name": "Purine Guide: Gout Food Lists",
+      "tagline": "Puriny v jídle, které opravdu jíte: japonské, německé, korejské a české tabulky potravin.",
+      "pitch": "Gout trackerů je v EN 6 (crowded), všechny jen anglicky. Dna je přitom masová v Japonsku (痛風/尿酸値 je hlavní 'salaryman' téma), Německu (Gicht), Koreji a střední Evropě. Uděláme průvodce purinů s lokálními potravinami (sushi, pivo, uzeniny, kimchi), jednoduchý denní purinový rozpočet a deník záchvatů – v lokálních jazycích.",
+      "niche": "Neanglicky mluvící lidé s dnou a vysokou kyselinou močovou. EN aplikace mají americké potraviny a jazyk.",
+      "parent_market": "Gout/uric acid aplikace (Gout Log, GoutSnap AI, Urica, OxiPur) – crowded v EN = poptávka.",
+      "target_user": "Muži 35–70 let s dnou nebo hyperurikémií v JP, DE, KR, CZ, PL, TW.",
+      "features": [
+        "Tabulka purinů pro ~1 000 potravin včetně lokálních",
+        "Denní purinový rozpočet a semafor jídel",
+        "Deník záchvatů, hydratace a alkoholu",
+        "Log hodnot kyseliny močové z krevních testů (ručně)",
+        "PDF export pro lékaře"
+      ],
+      "offline": "full",
+      "offline_note": "Data v balíčku; deník lokálně; volitelně HealthKit jen pro vodu.",
+      "monetization": "Freemium, Pro 2,99 USD/měs (≈ 70 Kč) nebo 19,99 USD/rok (≈ 460 Kč); v JP silná ochota platit.",
+      "keywords": [
+        {
+          "kw": "gout tracker",
+          "saturation": 6,
+          "competitor": "Gout Log",
+          "note": "Evidence (medical): crowded v EN (web)."
+        },
+        {
+          "kw": "purine",
+          "saturation": 3,
+          "competitor": "OxiPur: Gout & Kidney Stones",
+          "note": "odhad; evidence zmiňuje OxiPur."
+        },
+        {
+          "kw": "痛風",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad; JP store neověřen, JP může mít lokální aplikace."
+        },
+        {
+          "kw": "gicht",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; DE."
+        },
+        {
+          "kw": "uric acid",
+          "saturation": 4,
+          "competitor": "GoutSnap AI",
+          "note": "odhad."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web, medical evidence): 6 EN gout aplikací, všechny EN-only (i Urica ve FR storu s EN listingem). Neověřeno: JP/DE/KR lokální storu – JP může mít domácí konkurenty.",
+      "competitors": [
+        {
+          "name": "Gout Log",
+          "url": "https://apps.apple.com/us/app/gout-log/id6759033822",
+          "role": "us-only",
+          "note": "EN."
+        },
+        {
+          "name": "GoutSnap AI: Stop Gout Flares",
+          "url": "https://apps.apple.com/us/app/goutsnap-ai-stop-gout-flares/id6746496269",
+          "role": "us-only",
+          "note": "A/B testuje názvy, EN."
+        },
+        {
+          "name": "Urica: Gout Flare Diet Tracker",
+          "url": "https://apps.apple.com/il/app/gout-flare-diet-tracker-urica/id6757678060",
+          "role": "us-only",
+          "note": "EN i ve FR storu."
+        },
+        {
+          "name": "OxiPur: Gout & Kidney Stones",
+          "url": "https://apps.apple.com/us/app/oxipur-gout-kidney-stones/id1136215457",
+          "role": "parent",
+          "note": "Puriny + oxaláty, ~1 000 potravin."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Všechny gout aplikace z evidence jsou EN-only; JP/DE/KR s vysokou prevalencí dny nemají lokalizovaný ekvivalent (neověřeno v lokálních storech).",
+      "devils_advocate": [
+        "1.4.1 medicínská tvrzení – kategorie Medical/Food s dietními radami je citlivá.",
+        "Purinová data z literatury se liší; lokální tabulky (JP) mohou být chráněné.",
+        "JP trh může mít silné lokální aplikace (zdravotní pojišťovny, Asken).",
+        "Uživatelé po odeznění záchvatu přestávají aplikaci používat."
+      ],
+      "killer_risk": "Lokální JP/DE konkurence, kterou evidence nezachytila.",
+      "mitigation": "Nejdřív ověřit JP/DE store, začít v DE/CZ/PL kde je konkurence pravděpodobně nižší; informační formulace bez léčebných tvrzení.",
+      "build_weeks": 5,
+      "evidence": "web",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "revenue_math": "Ideál: 1800 stažení/měs z niche klíčových slov; 3.0 % × 19.99 USD (roční) = 1079 USD; 1.5 % × 2.99 USD (měsíční) = 81 USD. Celkem 1160 USD hrubě → po 15 % provizi Apple 986 USD → × 23 = 22682 Kč čistého/měs.",
+      "revenue_czk_ideal": 22682
+    },
+    {
+      "id": "food-drink-20",
+      "name": "Cider Press: Cider & Fruit Wine",
+      "tagline": "Z jablek, rybízu i švestek: cukr, kvasinky, alkohol a stáčení v jednom deníku.",
+      "pitch": "Domácí cider a ovocná vína jsou tradicí v UK, FR (cidre), DE (Most/Apfelwein), CZ (ovocné víno) a Skandinávii. Pivovarské aplikace je řeší jen okrajově a obecné ABV kalkulačky neumí přidávání cukru, kyselinu a stáčení. Aplikace s kalkulací cukru na cílové ABV, kyselinou, taníny, deníkem hustoty a připomínkami stáčení je malá, ale snadná niche.",
+      "niche": "Moštáři a ovocní vinaři. Homebrew aplikace jsou pivní, vinařské aplikace jsou pro hrozny/profi.",
+      "parent_market": "Homebrew (Brewer's Friend, Brewfather, Fermolog).",
+      "target_user": "Zahrádkáři s ovocem a domácí vinaři v UK, FR, DE, CZ, PL, Skandinávii, US.",
+      "features": [
+        "Kalkulace cukru na cílové ABV podle hustoty moštu",
+        "Úprava kyselosti a tanínů (tabulky ovoce)",
+        "Deník SG a připomínky stáčení/lahvování",
+        "Kalkulace nasycení v lahvi (priming)",
+        "Lokální ovocné recepty"
+      ],
+      "offline": "full",
+      "offline_note": "Plně lokální.",
+      "monetization": "Freemium, Pro 3,99 USD jednorázově (≈ 90 Kč).",
+      "keywords": [
+        {
+          "kw": "cider making",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "fruit wine",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "abv calculator",
+          "saturation": 4,
+          "competitor": "ABV Calculator - Minimalistic",
+          "note": "odhad; evidence zmiňuje minimalistickou ABV kalkulačku."
+        },
+        {
+          "kw": "apfelwein",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad; DE."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): v dotazu na medovinu byla vidět obecná ABV kalkulačka pro cider; dedikovaná cider aplikace ne. Předpoklad: sezónní poptávka, objem neověřen.",
+      "competitors": [
+        {
+          "name": "ABV Calculator - Minimalistic",
+          "url": "https://apps.apple.com/us/app/abv-calculator-minimalistic/id6754205227",
+          "role": "niche",
+          "note": "Pivo/cider/medovina."
+        },
+        {
+          "name": "Brewer's Friend",
+          "url": "https://apps.apple.com/us/app/brewers-friend/id1580297037",
+          "role": "parent",
+          "note": "Homebrew lídr."
+        },
+        {
+          "name": "Fermolog: Home Brewing App",
+          "url": "https://apps.apple.com/us/app/fermolog-home-brewing-app/id6745624694",
+          "role": "niche",
+          "note": "Homebrew deník."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Silná sezónnost (podzim) – jeden měsíc prodeje ročně.",
+        "Tradiční moštáři jsou starší a nekupují aplikace.",
+        "Homebrew aplikace pokrývají cider dostatečně pro většinu.",
+        "Alkohol → rating 17+ a nižší viditelnost."
+      ],
+      "killer_risk": "Příliš malá a sezónní poptávka.",
+      "mitigation": "Spojit s medovinou do společného 'Mead & Cider' nebo cross-promo s Mead Calc; lokalizace do tradičních zemí.",
+      "build_weeks": 2.5,
+      "evidence": "web",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "revenue_math": "Ideál: 2000 stažení/měs z niche klíčových slov; 7.0 % × 3.99 USD (lifetime) = 559 USD. Celkem 559 USD hrubě → po 15 % provizi Apple 475 USD → × 23 = 10921 Kč čistého/měs. Sezónní peak září–listopad.",
+      "revenue_czk_ideal": 10921
+    },
+    {
+      "id": "food-drink-21",
+      "name": "Grandma's Cards: Handwritten Recipe Scanner",
+      "tagline": "Babiččiny ručně psané recepty převedené do telefonu – včetně jejího rukopisu.",
+      "pitch": "Recipe manager je obrovský trh (Paprika, Mela, Crouton), ale digitalizace ručně psaných receptových kartiček je emocionální niche, kterou velcí jen okrajově řeší. On-device Vision umí rukopis rozpoznat a Apple Foundation Models umí text strukturovat na suroviny a postup – bez serveru. Uložíme i fotku originálu a umožníme vytisknout rodinnou kuchařku jako PDF dárek.",
+      "niche": "Rodinné rukopisné recepty. Recipe managery cílí na importy z webu, ne na rukopis.",
+      "parent_market": "Recipe managery (Paprika Recipe Manager 3, Mela, Crouton) – prokazatelně placené (Paprika 4,99 USD).",
+      "target_user": "Lidé 30–65 let digitalizující rodinné recepty, zejména po úmrtí prarodiče; dárkový motiv.",
+      "features": [
+        "Sken kartičky s rozpoznáním rukopisu (Vision) a strukturováním (Foundation Models)",
+        "Uložení originální fotky vedle přepisu",
+        "Rodinná kuchařka jako PDF/tisk",
+        "Sdílení s rodinou přes iCloud sdílení",
+        "Poznámky a příběhy k receptu"
+      ],
+      "offline": "full",
+      "offline_note": "Vision OCR a Foundation Models on-device (iOS 26+); iCloud sdílení je Apple-hosted.",
+      "monetization": "Freemium: 10 receptů zdarma, Pro 9,99 USD jednorázově (≈ 230 Kč) nebo 14,99 USD/rok.",
+      "keywords": [
+        {
+          "kw": "handwritten recipe",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad (knowledge)."
+        },
+        {
+          "kw": "recipe card scanner",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "family cookbook",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad; existují cookbook makery (často serverové)."
+        },
+        {
+          "kw": "recipe scanner",
+          "saturation": 5,
+          "competitor": "Paprika / různé",
+          "note": "odhad; obecné OCR skenery receptů existují."
+        }
+      ],
+      "demand_evidence": "Neověřeno (knowledge): recipe managery jsou prokázaný placený trh; ruční recepty jsou známá emoční potřeba (weby na tisk rodinných kuchařek). Saturace klíčových slov je odhad.",
+      "competitors": [
+        {
+          "name": "Paprika Recipe Manager 3",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr recipe managerů; bez URL."
+        },
+        {
+          "name": "Mela – Recipe Manager",
+          "url": "",
+          "role": "niche",
+          "note": "Moderní recipe manager se skenováním; bez URL."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Paprika/Mela mohou přidat rozpoznání rukopisu (Apple Live Text už umí rukopis) – Sherlock.",
+        "Rukopis starých lidí je těžko čitelný – OCR selhání = frustrace.",
+        "Jednorázové použití: po naskenování 30 receptů není důvod platit dál.",
+        "Foundation Models jen na novějších iPhonech (Apple Intelligence)."
+      ],
+      "killer_risk": "Live Text + Notes/Paprika dělají 80 % zdarma.",
+      "mitigation": "Důraz na emoci (originál + příběh + tisk kuchařky jako dárek), jednorázová cena, fallback bez AI pro starší zařízení.",
+      "build_weeks": 5,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "revenue_math": "Ideál: 1500 stažení/měs z niche klíčových slov; 4.0 % × 9.99 USD (lifetime) = 599 USD; 2.0 % × 14.99 USD (roční) = 450 USD. Celkem 1049 USD hrubě → po 15 % provizi Apple 892 USD → × 23 = 20510 Kč čistého/měs. Peak kolem Vánoc a Dne matek.",
+      "revenue_czk_ideal": 20510
+    },
+    {
+      "id": "food-drink-22",
+      "name": "Curd: Cheesemaking Make Sheet",
+      "tagline": "Domácí sýr krok za krokem: kultura, syřidlo, pH, řezání sýřeniny a kalendář zrání.",
+      "pitch": "Domácí sýrařství je hobby s vysokou ochotou platit (drahé kultury, lisy, komory). Fermentační deníky ho mají jen jako kategorii. Aplikace vede make sheet krok za krokem s časovači (zahřátí, kultura, syřidlo, zkouška čistého zlomu), loguje pH/teplotu a plánuje otáčení a mazání během zrání. Malý MVP pro velmi věrnou komunitu.",
+      "niche": "Domácí sýraři. Fermentační aplikace jsou obecné, profi sýrárny používají papír/PLC.",
+      "parent_market": "Domácí fermentace (Fermentation Journal: Fermento, FermentMe).",
+      "target_user": "Domácí sýraři a malí farmáři (kozí/ovčí mléko) v US, UK, FR, DE, CZ, AU.",
+      "features": [
+        "Make sheet šablony (čedar, gouda, camembert, feta) s časovači",
+        "Kalkulace syřidla/kultury/soli podle objemu mléka",
+        "Log pH a teploty",
+        "Kalendář zrání: otáčení, mazání, voskování",
+        "Fotodeník a hodnocení"
+      ],
+      "offline": "full",
+      "offline_note": "Plně lokální.",
+      "monetization": "Freemium, Pro 5,99 USD jednorázově (≈ 140 Kč).",
+      "keywords": [
+        {
+          "kw": "cheese making",
+          "saturation": 2,
+          "competitor": "Fermentation Journal: Fermento",
+          "note": "odhad; evidence zmiňuje sýry jen jako kategorii fermentační aplikace."
+        },
+        {
+          "kw": "cheesemaking",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "cheese recipes",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "cheese aging",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): Fermentation Journal: Fermento má sýry a charcuterie jako kategorie – dedikovaná sýrařská aplikace nebyla vidět. Předpoklad: malá, ale platící komunita.",
+      "competitors": [
+        {
+          "name": "Fermentation Journal: Fermento",
+          "url": "https://apps.apple.com/us/app/fermentation-journal-fermento/id6470132496",
+          "role": "niche",
+          "note": "Obecný deník vč. sýrů."
+        },
+        {
+          "name": "FermentMe - Recipes & tracker",
+          "url": "https://apps.apple.com/rs/app/fermentme-recipes-tracker/id6761524491",
+          "role": "parent",
+          "note": "Fermentační recepty."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Velmi malá niche – možná stovky hledání měsíčně celosvětově.",
+        "Sýraři používají receptové knihy a make sheety z e-shopů s kulturami.",
+        "Bezpečnost syrového mléka – riziko rad (listerie).",
+        "Obsah receptů musí být vlastní (knihy jsou chráněné)."
+      ],
+      "killer_risk": "Příliš malý objem hledání pro 10k Kč/měs.",
+      "mitigation": "Lokalizace (domácí sýr, Käse selber machen) rozšíří trh; spojení s charcuterie/Cure Lab cross-promo.",
+      "build_weeks": 3,
+      "evidence": "web",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "revenue_math": "Ideál: 1200 stažení/měs z niche klíčových slov; 7.0 % × 5.99 USD (lifetime) = 503 USD; 1.0 % × 9.99 USD (roční) = 120 USD. Celkem 623 USD hrubě → po 15 % provizi Apple 530 USD → × 23 = 12180 Kč čistého/měs.",
+      "revenue_czk_ideal": 12180
+    },
+    {
+      "id": "food-drink-23",
+      "name": "Roast Day: Holiday Roast Planner",
+      "tagline": "Krocan, husa nebo kachna: rozmrazování, nálev a pečení načasované na minutu.",
+      "pitch": "Každý Den díkůvzdání, Vánoce a svatý Martin miliony lidí googlí 'how long to thaw turkey' a 'turkey cooking time'. Brine! (nálev) a Smokeplan (plánování) řeší jen kousky. Aplikace spočítá rozmrazení podle váhy, nálev, pečení a odpočinek a sestaví časovou osu od času večeře – pro krocana (US), husu (DE/CZ/PL), kachnu i jehněčí (UK, Velikonoce).",
+      "niche": "Jednorázové sváteční pečení. Receptové aplikace dávají recept, ne osu od rozmrazení.",
+      "parent_market": "Kuchyňské časovače a BBQ plánovače (Smokeplan, Brine!) + masivní sezónní vyhledávání receptů.",
+      "target_user": "Hostitelé svátečních večeří: US (Thanksgiving), DE/CZ/PL (Martinská husa, Vánoce), UK (Christmas roast).",
+      "features": [
+        "Rozmrazení v lednici/vodě podle váhy s připomínkami",
+        "Nálev (suchý/mokrý) kalkulačka",
+        "Časová osa od času večeře včetně příloh v troubě",
+        "Lokální svátky a pečeně",
+        "Live Activity v den D"
+      ],
+      "offline": "full",
+      "offline_note": "Plně lokální.",
+      "monetization": "Jednorázově 2,99 USD (≈ 70 Kč).",
+      "keywords": [
+        {
+          "kw": "turkey timer",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "turkey thaw",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "brine calculator",
+          "saturation": 5,
+          "competitor": "Brine!",
+          "note": "Evidence: Brine! jediný dedikovaný (web)."
+        },
+        {
+          "kw": "roast timer",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "gänsebraten",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): Brine! (od ~2020) a Smokeplan existují; sváteční plánovač nebyl vidět. Předpoklad: extrémní sezónní špička hledání (Google Trends 'turkey' – obecně známé).",
+      "competitors": [
+        {
+          "name": "Brine!",
+          "url": "https://apps.apple.com/il/app/brine/id1519784056",
+          "role": "niche",
+          "note": "Brining kalkulačka."
+        },
+        {
+          "name": "Smokeplan - BBQ Cook Planner",
+          "url": "https://apps.apple.com/in/app/smokeplan-bbq-cook-planner/id6789017609",
+          "role": "parent",
+          "note": "Backward timeline pro BBQ."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Extrémní sezónnost: 2 měsíce z 12, zbytek roku nula.",
+        "Butterball a potravinové řetězce mají zdarma průvodce a hotline.",
+        "Lidé to vygooglí za 10 sekund, aplikace je 'overkill'.",
+        "Bezpečnost potravin (nedopečená drůbež) – odpovědnost."
+      ],
+      "killer_risk": "Sezónnost + bezplatné webové odpovědi → roční příjem hluboko pod cílem.",
+      "mitigation": "Pokrýt víc svátků napříč kulturami (Velikonoce, Martin, Vánoce, Díkůvzdání), aby byl rok rozprostřen; nebo jako modul Smoke Day.",
+      "build_weeks": 2,
+      "evidence": "web",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 3
+      },
+      "revenue_math": "Ideál: 5000 stažení/měs z niche klíčových slov; 4.0 % × 2.99 USD (jednorázově) = 598 USD. Celkem 598 USD hrubě → po 15 % provizi Apple 508 USD → × 23 = 11691 Kč čistého/měs. Jen v listopadu a prosinci; roční průměr výrazně nižší.",
+      "revenue_czk_ideal": 11691
+    },
+    {
+      "id": "food-drink-24",
+      "name": "Pan Swap: Cake Pan & Tier Calculator",
+      "tagline": "Recept na formu 26 cm, ale máte 20 cm? Přepočet těsta, doby pečení a porcí patrových dortů.",
+      "pitch": "Domácí pekaři neustále přepočítávají recepty mezi velikostmi forem (kulaté, hranaté, bábovky) a u patrových dortů počítají porce. Existující aplikace (My Cake Calculator, Bake Master) jsou americké s palci a US formami. Evropské formy (26/24/20 cm, plechy 30×40) a lokální porcování (svatební porce vs. party porce) nabízí prostor pro lokalizovanou jednoduchou kalkulačku.",
+      "niche": "Evropské a metrické formy + porce patrových dortů. US aplikace používají palce.",
+      "parent_market": "Pekařské kalkulačky (Bake Master, My Cake Calculator, BakersScale).",
+      "target_user": "Domácí pekaři a hobby cukráři v EU, LatAm, JP.",
+      "features": [
+        "Přepočet receptu mezi tvary a velikostmi forem",
+        "Úprava doby pečení podle výšky těsta",
+        "Porce patrových dortů (svatební/party)",
+        "Evropské i US formy, vlastní forma",
+        "Škálování ingrediencí do gramů"
+      ],
+      "offline": "full",
+      "offline_note": "Plně lokální.",
+      "monetization": "Jednorázově 2,99 USD (≈ 70 Kč), free tier se základními formami.",
+      "keywords": [
+        {
+          "kw": "cake pan converter",
+          "saturation": 3,
+          "competitor": "Bake Master: Baking Calculator",
+          "note": "odhad; Bake Master má pan conversions (web)."
+        },
+        {
+          "kw": "cake servings",
+          "saturation": 3,
+          "competitor": "My Cake Calculator",
+          "note": "odhad."
+        },
+        {
+          "kw": "baking pan size",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "backform umrechnen",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad; DE."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): Bake Master (pan conversions) a My Cake Calculator (od 2018) existují, oba EN. Předpoklad: 'Backform umrechnen' je častý DE dotaz na Googlu; App Store objem neověřen.",
+      "competitors": [
+        {
+          "name": "Bake Master: Baking Calculator",
+          "url": "https://apps.apple.com/us/app/bake-master-baking-calculator/id6757283848",
+          "role": "parent",
+          "note": "0,99 USD, pan conversions."
+        },
+        {
+          "name": "My Cake Calculator",
+          "url": "https://apps.apple.com/us/app/my-cake-calculator/id1439685088",
+          "role": "us-only",
+          "note": "Od 2018, palce."
+        },
+        {
+          "name": "BakersScale",
+          "url": "https://apps.apple.com/qa/app/bakersscale/id1571735214",
+          "role": "niche",
+          "note": "Škálování."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "US kalkulačky forem pracují v palcích a s US formami; EU/JP/LatAm uživatelé potřebují metrické formy a lokální porcování – bez lokalizované alternativy v evidenci.",
+      "devils_advocate": [
+        "Sherlock: Siri/ChatGPT to spočítá ve vteřině.",
+        "Nízká cena, jednorázové – strop příjmu.",
+        "4.2 minimum functionality – jednoduchá kalkulačka.",
+        "Webové kalkulačky na pekařských blozích zdarma dominují Googlu."
+      ],
+      "killer_risk": "AI asistenti a webové kalkulačky nahradí potřebu aplikace.",
+      "mitigation": "Vizuální UX (nakreslené formy), porce a doba pečení, které AI dělá špatně; ASO v lokálních jazycích.",
+      "build_weeks": 1.5,
+      "evidence": "web",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "revenue_math": "Ideál: 3500 stažení/měs z niche klíčových slov; 5.5 % × 2.99 USD (jednorázově) = 576 USD. Celkem 576 USD hrubě → po 15 % provizi Apple 489 USD → × 23 = 11252 Kč čistého/měs.",
+      "revenue_czk_ideal": 11252
+    },
+    {
+      "id": "food-drink-25",
+      "name": "OxaList: Low Oxalate Foods",
+      "tagline": "Ledvinové kameny? Oxaláty v potravinách, denní limit a hydratace – ve vašem jazyce.",
+      "pitch": "Low oxalate je v EN středně obsazené (sat 3–4, dvě nové aplikace v 2025) – tedy prokazatelná a rostoucí poptávka. Všechny nalezené aplikace jsou anglické a pracují s americkými potravinami. Ledvinové kameny postihují ~10 % populace všude na světě. Lokalizovaný průvodce s lokálními potravinami, denním limitem oxalátů a připomínkami pití cílí na neanglické storu.",
+      "niche": "Lidé s oxalátovými kameny mimo anglosféru.",
+      "parent_market": "Diet food lists (Oxalator, Low Ox Life, OxiPur, Low FODMAP A to Z).",
+      "target_user": "Pacienti po ledvinové kolice 30–70 let v DE, FR, ES, IT, CZ, PL, BR, JP.",
+      "features": [
+        "Databáze oxalátů ~1 000 potravin (vlastní, z publikovaných studií)",
+        "Denní limit a semafor jídel",
+        "Hydratační cíl a připomínky (volitelně HealthKit voda)",
+        "Lokální potraviny a jídla",
+        "Export pro urologa"
+      ],
+      "offline": "full",
+      "offline_note": "Data v balíčku, deník lokálně.",
+      "monetization": "Freemium, Pro 2,99 USD/měs (≈ 70 Kč) nebo 17,99 USD/rok (≈ 415 Kč).",
+      "keywords": [
+        {
+          "kw": "low oxalate",
+          "saturation": 4,
+          "competitor": "Oxalator - Low Oxalate diet",
+          "note": "Evidence: sat 3–4 v EN (web)."
+        },
+        {
+          "kw": "oxalate",
+          "saturation": 4,
+          "competitor": "Low Ox Life",
+          "note": "Evidence."
+        },
+        {
+          "kw": "kidney stone diet",
+          "saturation": 2,
+          "competitor": "OxiPur",
+          "note": "odhad."
+        },
+        {
+          "kw": "oxalatarm",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad; DE."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): 4 EN aplikace (Oxalator od 2015, Low Ox Life, Oxal AI, OxiPur), 2 nové v 2025 = rostoucí trh. Neověřeno: lokální storu.",
+      "competitors": [
+        {
+          "name": "Oxalator - Low Oxalate diet",
+          "url": "https://apps.apple.com/us/app/oxalator-low-oxalate-diet-its-easy/id1035176284",
+          "role": "us-only",
+          "note": "Od 2015, 1 500 potravin, EN."
+        },
+        {
+          "name": "Low Ox Life",
+          "url": "https://apps.apple.com/us/app/low-ox-life/id6748654148?see-all=reviews&platform=iphone",
+          "role": "us-only",
+          "note": "Harvard list zdarma."
+        },
+        {
+          "name": "Oxal AI",
+          "url": "https://apps.apple.com/ie/app/oxal-ai/id6755481914",
+          "role": "niche",
+          "note": "AI, nová."
+        },
+        {
+          "name": "OxiPur: Gout & Kidney Stones",
+          "url": "https://apps.apple.com/us/app/oxipur-gout-kidney-stones/id1136215457",
+          "role": "parent",
+          "note": "Puriny + oxaláty."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Všechny oxalátové aplikace z evidence jsou EN s US potravinami; lokalizace s lokálními jídly je US-gap hra.",
+      "devils_advocate": [
+        "1.4.1 zdravotní tvrzení – dieta u ledvinových kamenů je medicínská rada.",
+        "Hodnoty oxalátů se v literatuře velmi liší – nejistá data.",
+        "Překryv s Purine Guide (stejný parent) – 4.3 riziko, pokud vypadají podobně.",
+        "Pacienti po kolice rychle ztratí motivaci."
+      ],
+      "killer_risk": "Nepřesná data a zdravotní tvrzení vedou k odmítnutí nebo špatným recenzím.",
+      "mitigation": "Citovat zdroje u každé hodnoty, informační formulace; odlišný design od Purine Guide nebo sloučit oba do jedné 'kidney & gout' aplikace.",
+      "build_weeks": 5,
+      "evidence": "web",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "revenue_math": "Ideál: 1800 stažení/měs z niche klíčových slov; 3.0 % × 17.99 USD (roční) = 971 USD; 1.5 % × 2.99 USD (měsíční) = 81 USD. Celkem 1052 USD hrubě → po 15 % provizi Apple 894 USD → × 23 = 20570 Kč čistého/měs.",
+      "revenue_czk_ideal": 20570
+    },
+    {
+      "id": "food-drink-26",
+      "name": "Bean Vault: Coffee Freezer Inventory",
+      "tagline": "Kolik kávy máte v mrazáku, kdy je nejlepší a co otevřít dál.",
+      "pitch": "Specialty coffee nadšenci kupují zrna z mnoha pražíren, mrazí je v dávkách a řeší 'rest days' (odpočinek po pražení). Inventory/vault aplikace existují jen ~3. Aplikace sleduje balíčky, dny od pražení, optimální okno, porce v mrazáku a náklady na šálek – jednoduché a s widgety.",
+      "niche": "Evidence kávových zrn, ne dial-in (ten je crowded).",
+      "parent_market": "Kávové deníky (Espresso.log, Beanconqueror, CafeConnections).",
+      "target_user": "Specialty coffee nadšenci s předplatným pražíren, US, UK, DE, KR, JP.",
+      "features": [
+        "Evidence balíčků: pražírna, datum pražení, váha",
+        "Okno optimální konzumace a upozornění",
+        "Mražené dávky (single-dose) a jejich stav",
+        "Cena za šálek a útrata za měsíc",
+        "Widget 'co otevřít dnes'"
+      ],
+      "offline": "full",
+      "offline_note": "Plně lokální; sken štítku přes Vision OCR on-device.",
+      "monetization": "Freemium, Pro 2,99 USD jednorázově (≈ 70 Kč) nebo 0,99 USD/měs.",
+      "keywords": [
+        {
+          "kw": "coffee bean tracker",
+          "saturation": 3,
+          "competitor": "Coffee Bean Tracker - Vault",
+          "note": "Evidence: ~3 aplikace (web)."
+        },
+        {
+          "kw": "coffee inventory",
+          "saturation": 2,
+          "competitor": "Bean Tracker",
+          "note": "odhad."
+        },
+        {
+          "kw": "coffee freezer",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "rest days coffee",
+          "saturation": 0,
+          "competitor": "—",
+          "note": "odhad."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): ~3 bean inventory aplikace (Coffee Bean Tracker - Vault, Bean Tracker, CafeConnections). Předpoklad: malá niche uvnitř velkého kávového hobby.",
+      "competitors": [
+        {
+          "name": "Coffee Bean Tracker - Vault",
+          "url": "https://apps.apple.com/us/app/coffee-bean-tracker-vault/id6476065390",
+          "role": "niche",
+          "note": "Přímý konkurent."
+        },
+        {
+          "name": "Bean Tracker",
+          "url": "https://apps.apple.com/us/app/bean-tracker/id1503960955",
+          "role": "niche",
+          "note": "Starší."
+        },
+        {
+          "name": "CafeConnections: Coffee Diary",
+          "url": "https://apps.apple.com/us/app/cafeconnections-coffee-diary/id6756827606",
+          "role": "parent",
+          "note": "Kávový deník."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Velmi malá niche i uvnitř specialty kávy.",
+        "Beanconqueror to umí zdarma.",
+        "Nízká ochota platit za 'inventář' – Poznámky stačí.",
+        "Espresso deníky přidají inventář snadno."
+      ],
+      "killer_risk": "Beanconqueror zdarma pokrývá stejnou funkci.",
+      "mitigation": "Extrémně jednoduché UX a widgety, cross-promo se Shot Log; nízká jednorázová cena.",
+      "build_weeks": 2,
+      "evidence": "web",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "revenue_math": "Ideál: 3000 stažení/měs z niche klíčových slov; 5.5 % × 2.99 USD (lifetime) = 493 USD; 1.0 % × 0.99 USD (měsíční) = 30 USD. Celkem 523 USD hrubě → po 15 % provizi Apple 445 USD → × 23 = 10226 Kč čistého/měs.",
+      "revenue_czk_ideal": 10226
+    },
+    {
+      "id": "food-drink-27",
+      "name": "Zero Proof: Mocktail Bar",
+      "tagline": "Nealko koktejly, které chutnají jako skutečné – z toho, co máte doma.",
+      "pitch": "Sober-curious hnutí, Dry January a Sober October jsou každoroční vlny; nealko destiláty (Seedlip, Lyre's) jsou nejrychleji rostoucí segment nápojů. Koktejlové aplikace (Topa!, Bevnap) nealko řeší okrajově. Aplikace s ~200 vlastními recepty mocktailů, filtrem 'co mám doma' a funkcí low-sugar může chytit sezónní vlny a 'mocktail' klíčová slova (saturace neověřena).",
+      "niche": "Nealko koktejly pro domácnost. Koktejlové aplikace jsou alkoholové a bartenderské.",
+      "parent_market": "Koktejlové aplikace (Topa!, Bevnap, Mixel, Highball) – placené recepty.",
+      "target_user": "Lidé omezující alkohol, těhotné, řidiči, Dry January účastníci; 25–45 let, US, UK, DE, AU, NL.",
+      "features": [
+        "~200 vlastních receptů mocktailů s fotkami",
+        "Filtr podle ingrediencí doma",
+        "Low-sugar a bez-kofeinové filtry",
+        "Škálování na párty",
+        "Výzva Dry January s tipy"
+      ],
+      "offline": "full",
+      "offline_note": "Recepty a fotky v balíčku.",
+      "monetization": "Freemium: 30 receptů zdarma, vše za 4,99 USD jednorázově (≈ 115 Kč) nebo 9,99 USD/rok.",
+      "keywords": [
+        {
+          "kw": "mocktail",
+          "saturation": 4,
+          "competitor": "Topa! Cocktails & Home Bar",
+          "note": "odhad; evidence výslovně 'mocktail saturation unverified'."
+        },
+        {
+          "kw": "mocktail recipes",
+          "saturation": 4,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "non alcoholic drinks",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "dry january",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad; spíš sobriety trackery."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): koktejlové aplikace Topa!, Bevnap existují; 'mocktail' saturace neověřena. Předpoklad: silný trend (růst nealko segmentu), ale ASO konkurence pravděpodobně střední.",
+      "competitors": [
+        {
+          "name": "Topa! Cocktails & Home Bar",
+          "url": "https://apps.apple.com/us/app/topa-cocktails-home-bar/id6761927635",
+          "role": "parent",
+          "note": "Domácí bar."
+        },
+        {
+          "name": "Bevnap: Cocktail Recipes",
+          "url": "https://apps.apple.com/il/app/bevnap-cocktail-recipes/id6744274650",
+          "role": "niche",
+          "note": "Recepty."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Receptů mocktailů je zdarma na webu a Pinterestu nekonečně.",
+        "Tvorba 200 kvalitních receptů s fotkami je obsahově drahá.",
+        "Silná sezónnost (leden).",
+        "'mocktail' může být obsazený víc, než odhaduji."
+      ],
+      "killer_risk": "Uživatelé nepřijmou placené recepty, když Pinterest je zdarma.",
+      "mitigation": "Hodnota ve filtru 'co mám doma' a v kvalitě; lokalizace receptů a ASO v jazycích mimo EN.",
+      "build_weeks": 4,
+      "evidence": "web",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "revenue_math": "Ideál: 2500 stažení/měs z niche klíčových slov; 5.0 % × 4.99 USD (lifetime) = 624 USD; 2.0 % × 9.99 USD (roční) = 500 USD. Celkem 1123 USD hrubě → po 15 % provizi Apple 955 USD → × 23 = 21960 Kč čistého/měs. Peak v lednu a říjnu.",
+      "revenue_czk_ideal": 21960
+    },
+    {
+      "id": "food-drink-28",
+      "name": "Sous Vide Chart",
+      "tagline": "Čas a teplota pro každý kus masa, ryby i vejce – offline, u hrnce, s časovačem.",
+      "pitch": "Sous vide cirkulátory (Anova, Breville Joule) se prodaly v milionech kusů, ale Joule aplikace přešla na nové a Anova tlačí předplatné. Mnoho levných no-name cirkulátorů nemá aplikaci vůbec. Nezávislá tabulka časů/teplot podle tloušťky a pasterizace, s časovačem a oblíbenými, je jednoduchý produkt pro majitele levných přístrojů.",
+      "niche": "Majitelé levných sous vide cirkulátorů bez vlastní aplikace.",
+      "parent_market": "Aplikace ke spotřebičům (Anova Culinary, Breville+) – placené předplatné.",
+      "target_user": "Domácí kuchaři s levným cirkulátorem, US, DE, UK, CZ, PL.",
+      "features": [
+        "Tabulka ~200 potravin: čas, teplota, tloušťka",
+        "Pasterizační tabulky pro drůbež/ryby",
+        "Časovač s Live Activity, více kusů",
+        "Oblíbené a vlastní poznámky",
+        "Dokončení: pánev/gril tipy"
+      ],
+      "offline": "full",
+      "offline_note": "Plně lokální.",
+      "monetization": "Jednorázově 3,99 USD (≈ 90 Kč), free tier s 30 potravinami.",
+      "keywords": [
+        {
+          "kw": "sous vide",
+          "saturation": 6,
+          "competitor": "Anova Culinary",
+          "note": "odhad (knowledge); pravděpodobně obsazené."
+        },
+        {
+          "kw": "sous vide timer",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "sous vide chart",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "sous vide times",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad."
+        }
+      ],
+      "demand_evidence": "Neověřeno (knowledge): sous vide je masový spotřebič; saturace odhad. Evidence uvádí sous vide jen jako neotestovaného kandidáta.",
+      "competitors": [
+        {
+          "name": "Anova Culinary",
+          "url": "",
+          "role": "parent",
+          "note": "Oficiální aplikace s předplatným; bez URL."
+        },
+        {
+          "name": "Breville+ (Joule)",
+          "url": "",
+          "role": "parent",
+          "note": "Oficiální aplikace; bez URL."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "'sous vide' je pravděpodobně dost obsazené receptovými a spotřebičovými aplikacemi.",
+        "Tabulky zdarma na webu (Serious Eats, Douglas Baldwin).",
+        "Bezpečnost potravin (pasterizace) – odpovědnost.",
+        "Sous vide hype opadl po 2020."
+      ],
+      "killer_risk": "Saturovaná klíčová slova a webové tabulky zdarma.",
+      "mitigation": "Long-tail ASO ('sous vide chart', lokální jazyky) a důraz na offline použití u sporáku.",
+      "build_weeks": 2,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "revenue_math": "Ideál: 3000 stažení/měs z niche klíčových slov; 5.0 % × 3.99 USD (lifetime) = 598 USD. Celkem 598 USD hrubě → po 15 % provizi Apple 509 USD → × 23 = 11701 Kč čistého/měs.",
+      "revenue_czk_ideal": 11701
+    },
+    {
+      "id": "food-drink-29",
+      "name": "Brew Water: Water Chemistry Calculator",
+      "tagline": "Voda z vašeho kohoutku → profil pro pilsner nebo IPA, gramy solí na várku.",
+      "pitch": "Chemie vody je pro pokročilé domácí pivovarníky 'další level' a webové kalkulačky (Bru'n Water, spreadsheet) jsou nepohodlné na telefonu. Brewfather ji má, ale v rámci předplatného celé platformy. Samostatná kalkulačka: zadám rozbor vody (nebo vyberu město z lokální tabulky), cílový styl → gramy solí a kyseliny, odhad pH rmutu.",
+      "niche": "Pokročilí homebreweři, kteří nechtějí celý Brewfather.",
+      "parent_market": "Homebrew (Brewfather, Brewer's Friend, BrewCraft, Brew Meister).",
+      "target_user": "Pokročilí domácí pivovarníci v US, DE, UK, CZ, PL.",
+      "features": [
+        "Vstupní profil vody (ručně / uložené)",
+        "Cílové profily stylů (Plzeň, Burton, NEIPA)",
+        "Výpočet solí (sádra, CaCl₂, epsom) a kyseliny",
+        "Odhad pH rmutu podle sypání",
+        "Uložení per recept"
+      ],
+      "offline": "full",
+      "offline_note": "Plně lokální.",
+      "monetization": "Jednorázově 5,99 USD (≈ 140 Kč).",
+      "keywords": [
+        {
+          "kw": "brewing water",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "water chemistry",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad; koliduje s bazénovými aplikacemi."
+        },
+        {
+          "kw": "mash ph",
+          "saturation": 1,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "homebrew calculator",
+          "saturation": 5,
+          "competitor": "Brewer's Friend",
+          "note": "odhad."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): homebrew parent trh (Brewfather, Brewer's Friend, BrewCraft, Brew Meister) existuje; water chemistry přímo nehledáno. Předpoklad: malý, technický segment.",
+      "competitors": [
+        {
+          "name": "Brewfather",
+          "url": "https://apps.apple.com/us/app/brewfather/id1488585822",
+          "role": "parent",
+          "note": "Water chemistry v předplatném."
+        },
+        {
+          "name": "Brewer's Friend",
+          "url": "https://apps.apple.com/us/app/brewers-friend/id1580297037",
+          "role": "parent",
+          "note": "Kalkulačky."
+        },
+        {
+          "name": "BrewCraft Home Brewing",
+          "url": "https://apps.apple.com/us/app/brewcraft-home-brewing/id6765493647",
+          "role": "niche",
+          "note": "Nová."
+        },
+        {
+          "name": "Brew Meister: Measure & Manage",
+          "url": "https://apps.apple.com/at/app/brew-meister-measure-manage/id1521627812?l=en-GB",
+          "role": "niche",
+          "note": "Pivo/kombucha/seltzer."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Brewfather to má a kdo řeší vodu, obvykle má i Brewfather.",
+        "Přesnost modelu pH je sporná – geeky cílovka bude kritizovat.",
+        "Velmi malá niche.",
+        "Rozbory vody se musí zadávat ručně – bariéra."
+      ],
+      "killer_risk": "Cílovka už platí Brewfather, který to umí.",
+      "mitigation": "Cílit na ty, co používají Brewer's Friend zdarma nebo papír; lokální tabulky vodáren (Praha, Plzeň, Mnichov) jako USP.",
+      "build_weeks": 3,
+      "evidence": "web",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "revenue_math": "Ideál: 1100 stažení/měs z niche klíčových slov; 12.0 % × 5.99 USD (lifetime) = 791 USD. Celkem 791 USD hrubě → po 15 % provizi Apple 672 USD → × 23 = 15458 Kč čistého/měs. Vysoká konverze předpokládá úzkou, velmi motivovanou cílovku.",
+      "revenue_czk_ideal": 15458
+    },
+    {
+      "id": "food-drink-30",
+      "name": "Trail Meal Planner",
+      "tagline": "Jídlo na trek: kalorie na gram, váha batohu a nákupní seznam pro 7 dní na horách.",
+      "pitch": "Dálkoví turisté (PCT, AT, GR 20, Camino) plánují jídlo podle kalorické hustoty (kcal/g) a váhy. Existují webové nástroje a tabulky, ale mobilní offline plánovač s databází trekového jídla a lokálních potravin (ne jen US) chybí. Aplikace funguje offline i na stezce pro plánování dalšího doplnění.",
+      "niche": "Plánování jídla pro vícedenní treky. Kalorické aplikace řeší dietu, ne váhu batohu.",
+      "parent_market": "Nutrition/calorie aplikace (MyFitnessPal, Cronometer) a outdoor plánovače (FarOut, LighterPack web).",
+      "target_user": "Dálkoví turisté a bikepackeři 20–50 let, US, DE, FR, UK, CZ, ES.",
+      "features": [
+        "Databáze trekového jídla s kcal/g a váhou",
+        "Plán dní s cílovým kcal/den a váhou",
+        "Plánování doplnění (resupply) mezi úseky",
+        "Nákupní seznam a checklist balení",
+        "Offline použití na stezce"
+      ],
+      "offline": "full",
+      "offline_note": "Databáze v balíčku; plně offline.",
+      "monetization": "Freemium, Pro 4,99 USD jednorázově (≈ 115 Kč).",
+      "keywords": [
+        {
+          "kw": "backpacking food",
+          "saturation": 3,
+          "competitor": "—",
+          "note": "odhad (knowledge)."
+        },
+        {
+          "kw": "hiking meal planner",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "trail food",
+          "saturation": 2,
+          "competitor": "—",
+          "note": "odhad."
+        },
+        {
+          "kw": "thru hike",
+          "saturation": 4,
+          "competitor": "FarOut (navigace)",
+          "note": "odhad; obsazené navigací."
+        }
+      ],
+      "demand_evidence": "Neověřeno (knowledge): komunity r/Ultralight a r/PacificCrestTrail řeší plánování jídla; evidence uvádí jen jako neotestovaného kandidáta. Saturace odhad.",
+      "competitors": [
+        {
+          "name": "MyFitnessPal",
+          "url": "",
+          "role": "parent",
+          "note": "Kalorie, ne trek; bez URL."
+        },
+        {
+          "name": "FarOut",
+          "url": "",
+          "role": "niche",
+          "note": "Trekové navigace; bez URL."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Malá niche a sezónní.",
+        "Ultralight komunita preferuje spreadsheety a LighterPack web.",
+        "Databáze potravin se liší podle země – pracné lokalizovat.",
+        "Nízká opakovaná potřeba – jeden trek ročně."
+      ],
+      "killer_risk": "Nedostatečný objem hledání pro 10k Kč měsíčně.",
+      "mitigation": "Rozšířit na bikepacking a vodáky, lokalizovat na evropské stezky (GR, Camino).",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "revenue_math": "Ideál: 2000 stažení/měs z niche klíčových slov; 6.5 % × 4.99 USD (lifetime) = 649 USD. Celkem 649 USD hrubě → po 15 % provizi Apple 551 USD → × 23 = 12682 Kč čistého/měs. Sezóna březen–srpen.",
+      "revenue_czk_ideal": 12682
+    }
+  ]
+}

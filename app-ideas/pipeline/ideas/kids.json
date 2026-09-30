@@ -1335,7 +1335,7 @@
           "name": "GoLexic for Dyslexia & Reading",
           "url": "https://apps.apple.com/mt/app/golexic-for-dyslexia-reading/id1511002428",
           "role": "parent",
-          "note": "7–14 let, několik jazyků?"
+          "note": "Program pro 7–14 let; lokalizaci do DE/PL/CZ jsme neověřili"
         },
         {
           "name": "Poppins Dyslexia Read Rhythm",
@@ -2048,7 +2048,7 @@
     {
       "id": "kids-24",
       "name": "Brave Visit",
-      "tagline": "Připrava dítěte na lékaře, zubaře, očkování nebo magnetickou rezonanci – krok za krokem, s vlastními fotkami.",
+      "tagline": "Příprava dítěte na lékaře, zubaře, očkování nebo magnetickou rezonanci – krok za krokem, s vlastními fotkami.",
       "pitch": "Dětští psychologové a „child life specialists“ v nemocnicích připravují děti obrázkovými příběhy na zákroky. Rodiče doma nemají nic kromě her „Doctor games“. Brave Visit dá 30 hotových příprav (odběr krve, zubař, MRI, sádra, operace mandlí), zvuky přístrojů a dýchací cvičení.",
       "niche": "Příprava na zdravotní zákroky; obecné sociální příběhy to mají jen okrajově a hry „doctor“ jsou zábava, ne příprava.",
       "parent_market": "Social story a autism appky (Social Story Creator), dětské „doctor“ hry (Toca Boca).",
