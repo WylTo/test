@@ -11,3 +11,15 @@ https://apps.apple.com/us/app/metservice/id525900888   (MetService NZ: includes 
 https://apps.apple.com/us/app/dreich-scottish-weather/id6770678937   (Dreich: day ratings for drying a line)
 https://apps.apple.com/pg/app/washingbuddy/id6745972907   (WashingBuddy: 10-day drying forecast per laundry type)
 
+## 2) query: site:apps.apple.com exterior painting weather forecast  (2026-09-30) → OPEN-ish, sat ~0 dedicated paint-weather apps in results (only paint visualizers + generic weather); PaintCast (Sherwin-Williams) did NOT surface — author's main competitor may be discontinued/web-only. Demand for the phrase itself unproven.
+https://apps.apple.com/us/app/exterior-paint-visualizer/id6748565649   (color visualizer, not weather)
+https://apps.apple.com/us/app/paint-my-house-exterior-color/id6743083264   (visualizer)
+https://apps.apple.com/us/app/weather/id1069513131   (Apple Weather)
+https://apps.apple.com/us/app/weather-weather-forecast-pro/id1439422081
+https://apps.apple.com/us/app/weatherext/id6811691141
+https://apps.apple.com/us/app/paint-color-visualizer/id6745439575
+https://apps.apple.com/us/app/living-weather-wallpapers-hd/id903372984?mt=12
+https://apps.apple.com/us/app/paint-my-house-ai-visualizer/id6743083264
+https://apps.apple.com/us/app/awesome-weather-yowindow/id799653744
+https://apps.apple.com/us/app/glidden/id1492393963   (Glidden paint brand app)
+

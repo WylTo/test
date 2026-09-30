@@ -38,7 +38,7 @@ DUPES = [
     ["sports-02", "navigation-01"], ["health-fitness-03", "travel-03"],
     ["education-26", "kids-14"], ["entertainment-02", "social-networking-03"],
     ["shopping-19", "social-networking-02"], ["navigation-11", "utilities-04", "weather-04"],
-    ["navigation-06", "weather-10"],
+    ["navigation-06", "weather-10"], ["productivity-02", "utilities-05"],
 ]
 VERDICT_ADJ = {"GO": 3.0, "MAYBE": 0.0, "KILL": -15.0, None: -4.0}
 
