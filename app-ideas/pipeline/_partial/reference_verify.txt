@@ -20,3 +20,29 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
     - (noise) Preschoolers ABC Playground (Sütterlin/Kurrent tracing fonts) https://apps.apple.com/ca/app/preschoolers-abc-playground/id574794981
     - (noise) Writey Cursive Handwriting  https://apps.apple.com/us/app/writey-cursive-handwriting/id1512640380
     - (noise) Writey Calligraphy (same id) https://apps.apple.com/ai/app/writey-calligraphy-handwriting/id1512640380
+
+[3] query: site:apps.apple.com crochet abbreviations terms US UK converter  (idea reference-08)
+    saturation: no app titled "crochet terms/translator", but 5+ crochet/knit companion apps ship US<->UK term switch + abbreviation glossary as a FEATURE (Hooked does whole-pattern US/UK conversion) -> CONTESTED (feature-level)
+    - Hooked - Crochet & Knitting (US/UK one-tap pattern conversion, glossary) https://apps.apple.com/us/app/hooked-crochet-knitting/id6757484781
+    - Loopsy - Crochet & Knitting (abbreviations, hook size converter) https://apps.apple.com/us/app/loopsy-crochet-knitting/id6745416564
+    - Knitting Buddy (abbreviations, size converter) https://apps.apple.com/us/app/knitting-buddy/id958827195
+    - Knitting Buddy 2                    https://apps.apple.com/ca/app/knitting-buddy-2/id1510616471
+    - Crochet Pal for Beginner            https://apps.apple.com/us/app/crochet-pal-for-beginner/id6771014727
+    - Skein Knit Crochet                  https://apps.apple.com/in/app/skein-knit-crochet/id6771436211
+    - Crochet World (magazine)            https://apps.apple.com/us/app/crochet-world/id506298883
+    - Crochet Patterns AI                 https://apps.apple.com/us/app/crochet-patterns-ai/id6770431527
+    - My Row Counter, Knit & Crochet      https://apps.apple.com/us/app/my-row-counter-knit-crochet/id1342608792
+    - Crochet AI Identifier Patterns      https://apps.apple.com/us/app/crochet-ai-identifier-patterns/id6754254934
+
+[4] query: site:apps.apple.com ADR dangerous goods UN number  (idea reference-16)
+    saturation (dedicated ADR/UN-number apps): 6 distinct apps, several offline + multilingual + yearly ADR editions -> SATURATED (US-gap claim false)
+    - UN Numbers Dangerous Goods ADR (free) https://apps.apple.com/us/app/un-numbers-dangerous-goods-adr/id1668677326
+    - UN Numbers Dangerous Goods ADR (gr)  https://apps.apple.com/gr/app/un-numbers-dangerous-goods-adr/id1668677326
+    - Dangerous Goods ADR 2025 (full ADR 2025 + ERI cards) https://apps.apple.com/us/app/dangerous-goods-adr-2025/id1588378944
+    - Dangerous Goods (offline, 2939 entries) https://apps.apple.com/us/app/dangerous-goods/id1323804036
+    - Dangerous Goods (hn)                https://apps.apple.com/hn/app/dangerous-goods/id1323804036?l=en
+    - ADR Tool 2025 Dangerous Goods (multilingual Table A) https://apps.apple.com/us/app/adr-tool-2025-dangerous-goods/id6746951636?uo=2
+    - ADR Tool 2023 Dangerous Goods       https://apps.apple.com/us/app/adr-tool-2023-dangerous-goods/id6450241603
+    - ADR Tool 2023 Dangerous Goods (cz)  https://apps.apple.com/cz/app/adr-tool-2023-dangerous-goods/id6450241603
+    - MYDG2SAVE — ADR Emergency (offline, orange plate) https://apps.apple.com/us/app/mydg2save-adr-emergency/id6795130673
+    - UN Numbers Dangerous Goods ADR (no cc) https://apps.apple.com/app/id1668677326

@@ -36,3 +36,40 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
     - UNIRA                            https://apps.apple.com/al/app/unira/id1573054600  (surgeon-owned case logging)
     - Logitbox: Medical Logbook        https://apps.apple.com/au/app/logitbox-medical-logbook/id1413535606  (UK ARCP-ready)
     - Urology Operation Register       https://apps.apple.com/us/app/urology-operation-register/id6751779812
+
+[4] query: site:apps.apple.com allergy translation card restaurant  (idea medical-25)
+    saturation (dedicated allergy card/translation apps): 9 -> SATURATED (Food Allergy Card = offline + translate + QR)
+    - Equal Eats                       https://apps.apple.com/us/app/equal-eats/id1574293110  (also https://apps.apple.com/gb/app/equal-eats/id1574293110)
+    - Allergy Advisor                  https://apps.apple.com/us/app/allergy-advisor/id6751273886  (free card, translate, read-aloud)
+    - Food Allergy Card                https://apps.apple.com/us/app/food-allergy-card/id6448350429  (translate + play OFFLINE, QR share)
+    - Food Allergy Travel Card         https://apps.apple.com/us/app/food-allergy-travel-card/id6738883232
+    - Allerly                          https://apps.apple.com/us/app/allerly/id6746579529  (cards, EpiPen, multi-language)
+    - Food Allergy Options             https://apps.apple.com/us/app/food-allergy-options/id6762036188  (12 languages)
+    - Allergy Card Japan               https://apps.apple.com/au/app/allergy-card-japan/id6758872779
+    - Food Allergy Scanner Allerwise   https://apps.apple.com/us/app/food-allergy-scanner-allerwise/id6757766319
+    - AllerGuide Food Allergy Travel   https://apps.apple.com/us/app/allerguide-food-allergy-travel/id6759512120
+
+[5] query: site:apps.apple.com cluster headache tracker  (idea medical-11)
+    saturation (dedicated cluster-headache apps): 2 (ClusterUck, MyClusters) + 7 generic headache diaries that name cluster -> CONTESTABLE, small
+    - ClusterUck                       https://apps.apple.com/us/app/clusteruck/id1072769448  (cluster-specific, PDF/CSV export, weather)
+    - MyClusters                       https://apps.apple.com/np/app/myclusters/id6745556184  (cluster-specific, 2025, trace logs)
+    - Migraine Tracker, Headache Log   https://apps.apple.com/us/app/migraine-tracker-headache-log/id6795666523
+    - My Simple Headache Tracker       https://apps.apple.com/us/app/my-simple-headache-tracker/id1573997713
+    - HeadEase: Migraine Tracker       https://apps.apple.com/us/app/headease-migraine-tracker/id6781348749  (mentions cluster attacks)
+    - Headache Companion               https://apps.apple.com/mv/app/headache-companion/id6446802809
+    - Headache & Migraine Diary        https://apps.apple.com/jm/app/headache-migraine-diary/id6759279921  (mentions cluster)
+    - Migraine Log                     https://apps.apple.com/us/app/migraine-log/id1636946550
+    - Pain & Migraine Tracker          https://apps.apple.com/us/app/pain-migraine-tracker/id6757682143
+
+[6] query: site:apps.apple.com ostomy output tracker stoma  (idea medical-13)
+    saturation (dedicated ostomy tracker apps): 8 -> SATURATED (incl. free manufacturer apps)
+    - Stoma.AI                         https://apps.apple.com/us/app/stoma-ai/id6758678626  (free; output, bag changes, diet)
+    - OstoBuddy Ostomy Companion       https://apps.apple.com/us/app/ostobuddy-ostomy-companion/id1397020822  (output + consistency)
+    - MyOstomy                         https://apps.apple.com/ca/app/myostomy/id1571924678  (also au/in storefronts)
+    - My Ostomy Journey                https://apps.apple.com/us/app/my-ostomy-journey/id1592668934
+    - Customa Journal                  https://apps.apple.com/co/app/customa-journal/id6761512477?l=en-GB  (output, stoma colour, appliance)
+    - Heylo (Ostomy Care)              https://apps.apple.com/gb/app/heylo-ostomy-care/id1578650712
+    - Ozzi Ostomy                      https://apps.apple.com/us/app/ozzi-ostomy/id1535899024  (outputs, urine, hydration)
+    - Ostomy University                https://apps.apple.com/us/app/ostomy-university/id6760669588  (changes, supplies)
+
+Budget: 6/6 searches used. No further searches.

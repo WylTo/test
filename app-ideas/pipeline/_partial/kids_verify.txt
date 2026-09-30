@@ -49,3 +49,27 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
     - Lesen lernen nach IntraActPlus      https://apps.apple.com/at/app/lesen-lernen-nach-intraactplus/id1145332061
     - ANTON - Lernen - Schule (free giant) https://apps.apple.com/at/app/anton-lernen-schule/id1180554775?platform=ipad
 
+[5] query: site:apps.apple.com mots outils CP lecture  (idea kids-08)
+    saturation ("mots outils" dedicated in title): 2 (+ several CP reading apps) -> CONTESTABLE in FR; local sight-word equivalents already exist, apps are old/small
+    - Lecture CP                          https://apps.apple.com/fr/app/lecture-cp/id979114983
+    - Lecture CP (Mac)                    https://apps.apple.com/us/app/lecture-cp/id981455084?mt=12
+    - Lecture - fluence CP                https://apps.apple.com/fr/app/lecture-fluence-cp/id6673912466
+    - 1000 Mots CP-CE1                    https://apps.apple.com/fr/app/1000-mots-cp-ce1/id1302256878
+    - Mots outils pour CP et CE1          https://apps.apple.com/fr/app/mots-outils-pour-cp-et-ce1/id1468752177
+    - Orthographe - Les Mots-Outils       https://apps.apple.com/ne/app/orthographe-les-mots-outils/id1208142283
+    - La magie des mots (éd. école)       https://apps.apple.com/fr/app/la-magie-des-mots-alphabet/id466780737
+    - Jeux d'apprentissage pour CP        https://apps.apple.com/fr/app/jeux-dapprentissage-pour-cp/id530703273
+    - Lecture - fluence CP (us)           https://apps.apple.com/us/app/lecture-fluence-cp/id6673912466?uo=4
+
+[6] query: site:apps.apple.com token board ABA reward  (idea kids-18)
+    saturation ("token board" in title, distinct apps): 6 (most launched 2025-26) -> SATURATED; author's sat 3 was wrong
+    - Token Board ABA                     https://apps.apple.com/us/app/token-board-aba/id6748097587
+    - Token Board (AppsForParents)        https://apps.apple.com/au/app/token-board/id6752328327
+    - ABA Token Board (same id)           https://apps.apple.com/us/app/aba-token-board/id6752328327
+    - Tokenat                             https://apps.apple.com/us/app/tokenat/id1415610717
+    - My Token Board                      https://apps.apple.com/us/app/my-token-board/id1033833898
+    - Token Board Pro                     https://apps.apple.com/us/app/token-board-pro-aba-therapy/id6749283487
+    - ELS Autism                          https://apps.apple.com/us/app/els-autism-aba-therapy/id6502673666
+    - Custom Token Board                  https://apps.apple.com/us/app/custom-token-board/id6760485991
+    - TokenResponse+                      https://apps.apple.com/us/app/tokenresponse/id6504258453
+Search budget used: 6/6. No further searches.

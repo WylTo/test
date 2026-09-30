@@ -1,0 +1,14 @@
+TRAVEL — REVIEWER VERIFY LOG (devil's advocate run)
+Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
+
+[1] query: site:apps.apple.com ILR absence calculator days outside UK citizenship  (idea travel-04)
+    saturation (dedicated UK ILR/citizenship absence apps): 7 (ILR Tracker, Borderline, DayBank UK, UK Visa Day Tracker, Leave UK Calculator, Immio, Citizenship Tracker US/Canada) -> SATURATED, not blue ocean
+    - ILR Tracker                         https://apps.apple.com/it/app/ilr-tracker/id6757963377
+    - Borderline - UK ILR Tracker         https://apps.apple.com/us/app/borderline-uk-ilr-tracker/id6740153418
+    - Country Days Tracker                https://apps.apple.com/md/app/country-days-tracker/id1635268679
+    - Country Days Tracker: Immio (gb)    https://apps.apple.com/gb/app/country-days-tracker-immio/id6747927306
+    - DayBank UK                          https://apps.apple.com/dk/app/daybank-uk/id6761231455
+    - Country Days Tracker: Immio (us)    https://apps.apple.com/us/app/country-days-tracker-immio/id6747927306
+    - UK Visa Day Tracker                 https://apps.apple.com/us/app/uk-visa-day-tracker/id6776378288
+    - Leave UK Calculator                 https://apps.apple.com/us/app/leave-uk-calculator/id6743054593
+    - Citizenship Tracker US, Canada      https://apps.apple.com/us/app/citizenship-tracker-us-canada/id6444369099

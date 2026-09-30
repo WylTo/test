@@ -1,0 +1,2689 @@
+{
+  "category": "Business",
+  "category_slug": "business",
+  "search_notes": "Offline běh: žádná volání apple_fetch.py ani WebSearch. Základ tvoří _partial/business_evidence.txt (12 WebSearch dotazů, URL zkopírované doslova) a doplňkově finance/productivity evidence. Saturace u nápadů 'web' pochází z evidence (počet titulů mezi ~10 výsledky, ne plný sken Store); u nápadů 'knowledge' jde o odhad a blue_ocean je max. 7. Nikde nebyl ověřen Apple autocomplete (hint) ani objem hledání, hodnocení a počty recenzí konkurentů nebyly k dispozici. Přeplněné niky z evidence (painting estimate, HACCP, move-in inspection, cash counter, tip pool, fire inspection) jsou použity jen jako parent nebo s lokalizačním/metrickým úhlem. Konkurenti bez evidence URL mají prázdné url.",
+  "ideas": [
+    {
+      "id": "business-01",
+      "name": "Offering Count: Church Tally",
+      "tagline": "Nedělní sbírka sečtená za pět minut: dva pokladníci, jeden podpis, žádný papír.",
+      "pitch": "Každou neděli sedí v tisících sborů dva dobrovolníci nad hromadou bankovek, obálek a šeků a ručně vyplňují papírový 'offering count sheet'. Aplikace je provede sčítáním po nominálech, obálkách s účelem (desátek, misie, stavba) a šecích, vynutí kontrolu dvou osob s podpisem a na konci vytvoří PDF depozitního listu. Velké církevní platformy vydělávají na procentech z online darů, takže hotovost v kostele nechávají na papíře. Podle evidence nemá frázi 'offering count' v názvu žádná aplikace, takže top 3 je dosažitelné hned po vydání.",
+      "niche": "Hotovostní sbírka v malých a středních sborech. Tithe.ly, Pushpay a Planning Center vydělávají na poplatcích z online darů, hotovost je pro ně bez marže; obecná počítadla peněz zase neznají obálky, fondy ani pravidlo dvou osob.",
+      "parent_market": "Church giving & church management (Tithe.ly, Pushpay, Planning Center Giving) — ověřený trh s tisíci platících sborů; vedle toho počítadla hotovosti (Money Counter, Tilly Tally).",
+      "target_user": "Pokladník nebo finanční dobrovolník sboru o 50–2 000 členech v US, Brazílii, na Filipínách, v Nigérii či Koreji, kde hotovost tvoří velkou část sbírky.",
+      "features": [
+        "Sčítání po nominálech bankovek a mincí, 40+ měn (USD, BRL, PHP, KRW, EUR, CZK)",
+        "Obálky se jménem dárce a fondem (desátek, misie, stavba) + evidence šeků",
+        "Pravidlo dvou osob: dva sčítající, podpis prstem, uzamčení záznamu",
+        "PDF 'count sheet' a depozitní souhrn, CSV export pro účetní",
+        "Historie a srovnání s minulými nedělemi, sync dvou iPadů přes iCloud"
+      ],
+      "offline": "full",
+      "offline_note": "Vše běží lokálně včetně generování PDF; volitelná synchronizace přes iCloud/CloudKit (Apple), žádný vlastní server.",
+      "monetization": "Freemium: 4 sčítání zdarma, pak $19.99/rok (≈ 460 Kč) za sbor nebo $39.99 doživotně (≈ 920 Kč). Platí rozpočet sboru, ne dobrovolník — nízká cenová citlivost.",
+      "revenue_math": "800 stažení/měs × 5.0 % konverze = 40 platících × $25 (vážený průměr roční/doživotní/měsíční) = $1 000 hrubě → ×0,85 = $850 → ×23 = 19 600 Kč čistého/měs v ideálu. Ideál = 'offering count' + 'church treasurer' + 'tithe envelope' v US a lokalizace pt-BR, es, tl, ko (sbory s vysokým podílem hotovosti). Poptávka po frázi není ověřená, proto konzervativní objem.",
+      "revenue_czk_ideal": 19600,
+      "keywords": [
+        {
+          "kw": "offering count",
+          "saturation": 0,
+          "competitor": "žádná (Church Metrics řeší jen docházku a dary)",
+          "note": "evidence: 0 titulů s 'offering count' mezi výsledky; hint neověřen (offline běh)"
+        },
+        {
+          "kw": "church treasurer",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad; fráze přirozená pro cílovku, saturace neověřena"
+        },
+        {
+          "kw": "tithe envelope",
+          "saturation": 1,
+          "competitor": "Church App - Tithe.ly (online dary, ne hotovost)",
+          "note": "odhad; lídři cílí na online giving"
+        },
+        {
+          "kw": "church cash count",
+          "saturation": 0,
+          "competitor": "Money Counter - Coin Organizer (zmiňuje počítání darů)",
+          "note": "odhad; obecná počítadla jen okrajově"
+        }
+      ],
+      "demand_evidence": "Ověřeno (evidence, WebSearch): žádná aplikace nemá 'offering count' v názvu; trh církevních darů je prokázaný (Tithe.ly uvádí 5 000+ sborů). Předpoklad: že pokladníci frázi v App Store opravdu hledají — autocomplete ani fóra nebyla v tomto běhu ověřena.",
+      "competitors": [
+        {
+          "name": "Church App - Tithe.ly",
+          "url": "https://apps.apple.com/us/app/church-app-tithe-ly/id565301194",
+          "role": "parent",
+          "note": "lídr církevních darů, hotovostní sčítání neřeší"
+        },
+        {
+          "name": "Church Metrics",
+          "url": "https://apps.apple.com/us/app/church-metrics/id792901164",
+          "role": "niche",
+          "note": "zdarma, docházka a souhrny darů, ne sčítání po nominálech"
+        },
+        {
+          "name": "Money Counter - Coin Organizer",
+          "url": "https://apps.apple.com/us/app/money-counter-coin-organizer/id6744825993",
+          "role": "niche",
+          "note": "obecné počítadlo, v popisu zmiňuje počítání darů"
+        },
+        {
+          "name": "Church Attendance Tracker",
+          "url": "https://apps.apple.com/us/app/church-attendance-tracker/id6757945112",
+          "role": "niche",
+          "note": "jediná dedikovaná docházková appka, jiný job"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Poptávka je neověřená — pokladníci možná dál používají papírový formulář nebo Excel, který 'vždycky fungoval', a v App Store nic nehledají.",
+        "Tithe.ly nebo Planning Center může přidat modul 'cash count' zdarma do platformy, kterou sbor už platí, a nás okamžitě obejde.",
+        "O placeném nástroji rozhoduje rada sboru, dobrovolníci se střídají — i $20 ročně má dlouhý schvalovací cyklus a vysoký churn při předání funkce.",
+        "Používá se jednou týdně na sdíleném iPadu — málo recenzí, slabé signály pro ASO a snadné zapomenutí předplatného."
+      ],
+      "killer_risk": "Příliš malá hledanost: 'offering count' může mít jen desítky hledání měsíčně.",
+      "mitigation": "Cílit širší cluster (church treasurer, tithe, cash count), lokalizovat pt-BR/es/ko/tl, dát hodnotu hned v první neděli (PDF zdarma) a držet náklady stavby na 3 týdnech.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 9,
+        "monetization": 6,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "business-02",
+      "name": "Balloon Decor Pro: Garland Calc",
+      "tagline": "Kolik balónků na 3 metry girlandy a za kolik to prodat — spočítané v metrech i ve vaší měně.",
+      "pitch": "Balónková výzdoba je obrovský mikro-byznys na Instagramu a TikToku, od Mexika po Dubaj. Jediná pořádně hodnocená kalkulačka (Balloon Calculator, 5,0 hvězd) počítá 'balloons per foot' a mluví jen anglicky. My dodáme metrický výpočet girland, oblouků a sloupů podle mixu velikostí, spotřebu helia a hlavně cenovou nabídku v PDF s materiálem a prací. Tím se z hračky stává nástroj, za který dekoratérka zaplatí, protože jí vydělává na zakázce.",
+      "niche": "Metrická, lokalizovaná kalkulace + nabídka pro balónkové dekoratérky mimo US. Tři existující appky jsou malé, anglické a imperiální; velcí hráči (Canva, faktury) balónky neřeší.",
+      "parent_market": "Event decor & party business tools (Balloon Calculator, Balloon Brain, BalloonTools) plus obecné nabídkové a fakturační appky pro malé podnikatele.",
+      "target_user": "Domácí dekoratérka/dekoratér balónkové výzdoby (1–3 lidé), LatAm, Evropa, Blízký východ, Turecko; prodává přes Instagram.",
+      "features": [
+        "Girlanda, oblouk, sloup, organic: počet balónků podle délky v m/ft a mixu 5\"/11\"/18\"",
+        "Barevná paleta a rozpis kusů po barvách pro nákup",
+        "Spotřeba helia a čas stavby",
+        "Nabídka/cenovka v PDF: materiál + práce + marže, lokální měna a DPH",
+        "Knihovna vlastních šablon a cen dodavatele"
+      ],
+      "offline": "full",
+      "offline_note": "Čistě výpočty a PDF na zařízení; žádná síť.",
+      "monetization": "Freemium: kalkulačka zdarma, PDF nabídky a šablony v Pro — $3.99/měs (≈ 92 Kč), $24.99/rok (≈ 575 Kč), $39.99 doživotně (≈ 920 Kč).",
+      "revenue_math": "1200 stažení/měs × 4.0 % konverze = 48 platících × $22 (vážený průměr roční/doživotní/měsíční) = $1 056 hrubě → ×0,85 = $898 → ×23 = 20 600 Kč čistého/měs v ideálu. Ideál = metrické klíčové slovo 'balloon garland calculator' v 20+ lokalizacích (es-MX, pt-BR, ar, fr, de, tr) — balónková výzdoba je v LatAm a na Blízkém východě masový mikro-byznys.",
+      "revenue_czk_ideal": 20600,
+      "keywords": [
+        {
+          "kw": "balloon garland calculator",
+          "saturation": 3,
+          "competitor": "Balloon Calculator ($0.99, 5,0★, imperiální)",
+          "note": "evidence: 3 tituly (Balloon Calculator, Balloon Brain, BalloonTools) — SPARSE"
+        },
+        {
+          "kw": "balloon arch calculator",
+          "saturation": 2,
+          "competitor": "Balloon Brain",
+          "note": "odhad; Balloon Brain řeší oblouky, jinak řídké"
+        },
+        {
+          "kw": "balloon decor business",
+          "saturation": 1,
+          "competitor": "Creador (Party Designer)",
+          "note": "odhad; business nástroje pro dekoratérky chybí"
+        },
+        {
+          "kw": "balloon garland",
+          "saturation": 3,
+          "competitor": "Balloon Calculator",
+          "note": "odhad; část výsledků budou návody/designéry"
+        }
+      ],
+      "demand_evidence": "Ověřeno (evidence): jen 3 dedikované appky, lídr má 5,0 hvězd a cenu $0.99 a počítá 'balloons per foot' → trh existuje a je imperiální. Předpoklad: objem hledání v es/pt/ar storefrontech a ochota platit za nabídky v PDF — neověřeno.",
+      "competitors": [
+        {
+          "name": "Balloon Calculator",
+          "url": "https://apps.apple.com/us/app/balloon-calculator/id6747648037",
+          "role": "us-only",
+          "note": "$0.99, 5,0★, balloons per foot, Watch app"
+        },
+        {
+          "name": "Balloon Brain",
+          "url": "https://apps.apple.com/us/app/balloon-brain/id6764686900",
+          "role": "niche",
+          "note": "oblouky, organické girlandy, sloupy, helium"
+        },
+        {
+          "name": "BalloonTools",
+          "url": "https://apps.apple.com/es/app/balloontools/id1406906441?l=en-GB",
+          "role": "niche",
+          "note": "starší nástroj, en-GB"
+        },
+        {
+          "name": "Creador (Party Designer)",
+          "url": "https://apps.apple.com/gr/app/creador-party-designer/id6469189292",
+          "role": "niche",
+          "note": "návrhy výzdoby, ne kalkulace nákladů"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Lídr (Balloon Calculator) je postavený na stopách a angličtině; metrická verze v 50 jazycích s cenovou nabídkou v lokální měně v evidenci neexistuje.",
+      "devils_advocate": [
+        "Trh je navyklý na $0.99 jednorázově — předplatné bude narážet a konverze může být pod 2 %.",
+        "Autor Balloon Calculator může přidat metry a lokalizaci za víkend a má náskok v hodnoceních.",
+        "Dekoratérky se učí poměry z TikToku a po pár zakázkách počítají 'od oka' — retence kalkulačky je nízká.",
+        "Sezónnost (promoce, svatby, Vánoce) a lokální slang (globos, balões) — anglická klíčová slova nemusí v cílových storefrontech fungovat."
+      ],
+      "killer_risk": "Nízká ochota platit — kalkulačka je vnímaná jako drobnost za dolar.",
+      "mitigation": "Prodávat nabídku v PDF a ceník (to, co vydělává peníze), ne kalkulačku; lokalizovat názvy (globos/balões) a cenově kotvit doživotní licencí.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "business-03",
+      "name": "Till Count: Cash Drawer & Float",
+      "tagline": "Uzávěrka pokladny v jakékoli měně: spočítej, nech float, odvez zbytek, ukaž manko.",
+      "pitch": "Každý obchod, kavárna i stánek končí den počítáním pokladny: kolik nechat jako float na zítra, kolik odvézt do banky a jestli sedí se Z-reportem. Anglické počítadla jsou postavená na dolarech (Money Counter výslovně 'US dollar denominations'). My dodáme přesně tuto uzávěrku v 50 jazycích s nominály eura, koruny, zlotého, forintu, jenu, rupie či realu a s návrhem, které bankovky vyndat, aby zůstal přesný float. Předávka směny se dvěma podpisy a PDF z ní dělá malý kontrolní nástroj, ne hračku.",
+      "niche": "Uzávěrka pokladny s floatem a mankem mimo USD. Velké POS (Square, SumUp) to umí jen uvnitř svého ekosystému; anglické počítadla řeší jen součet.",
+      "parent_market": "Počítadla hotovosti a uzávěrky pokladny (Money Counter, Tilly Tally, Cash Drawer Keeper) — přeplněný anglický trh, prokazuje poptávku.",
+      "target_user": "Majitel/vedoucí malé prodejny, kavárny, trafiky, stánku; pokladní při předávce směny; mimo US.",
+      "features": [
+        "Nominály 40+ měn včetně mincí, rychlé zadání počtem kusů",
+        "Cílový float: aplikace navrhne, které bankovky vyndat do trezoru",
+        "Porovnání se Z-reportem/POS → manko/přebytek s poznámkou",
+        "Předávka směny: dva podpisy, časové razítko, PDF/CSV",
+        "Více pokladen a historie dnů"
+      ],
+      "offline": "full",
+      "offline_note": "Kompletně lokální, iCloud záloha volitelná.",
+      "monetization": "Freemium (1 pokladna, bez PDF) → Pro $2.99/měs (≈ 69 Kč), $14.99/rok (≈ 345 Kč), $29.99 doživotně (≈ 690 Kč).",
+      "revenue_math": "2500 stažení/měs × 3.0 % konverze = 75 platících × $15 (vážený průměr roční/doživotní/měsíční) = $1 125 hrubě → ×0,85 = $956 → ×23 = 22 000 Kč čistého/měs v ideálu. Ideál = long-tail 'cash drawer count', 'till count', 'cash float' ve 30 lokalizacích s místními měnami; hlavní fráze 'cash counter' je přeplněná a slouží jen jako parent.",
+      "revenue_czk_ideal": 22000,
+      "keywords": [
+        {
+          "kw": "cash counter",
+          "saturation": 6,
+          "competitor": "Tilly Tally (Cash Counter)",
+          "note": "evidence: 6 titulů 'cash counter' (finance: 7) — SATURATED, jen parent"
+        },
+        {
+          "kw": "cash drawer count",
+          "saturation": 2,
+          "competitor": "Cash Drawer Keeper",
+          "note": "evidence: 'cash drawer' ve 2 titulech"
+        },
+        {
+          "kw": "till count",
+          "saturation": 1,
+          "competitor": "Cash Drawer Keeper (UK)",
+          "note": "odhad; britský výraz, v evidenci bez titulu"
+        },
+        {
+          "kw": "cash float",
+          "saturation": 0,
+          "competitor": "neověřeno",
+          "note": "odhad; float jako funkce u konkurence nezmíněn"
+        }
+      ],
+      "demand_evidence": "Ověřeno (evidence business i finance): 6–7 aplikací cílí na 'cash counter', Money Counter: Cash & Coins je jen na USD, Tilly Tally umí více měn. Předpoklad: že lokalizovaná long-tail slova mají v EU/LatAm/Asii hledanost; lokální konkurence ve storefrontech neověřena.",
+      "competitors": [
+        {
+          "name": "Money Counter",
+          "url": "https://apps.apple.com/us/app/money-counter/id522348381",
+          "role": "parent",
+          "note": "starý lídr, 34 měn"
+        },
+        {
+          "name": "Tilly Tally (Cash Counter)",
+          "url": "https://apps.apple.com/us/app/tilly-tally-cash-counter/id1454465678",
+          "role": "niche",
+          "note": "iPad, více měn a pokladen — nejsilnější přímý rival"
+        },
+        {
+          "name": "Money Counter: Cash & Coins",
+          "url": "https://apps.apple.com/us/app/money-counter-cash-coins/id6757389042",
+          "role": "us-only",
+          "note": "jen USD, zmiňuje tip jar a petty cash"
+        },
+        {
+          "name": "Cash Drawer Keeper",
+          "url": "https://apps.apple.com/gb/app/cash-drawer-keeper/id6451430691",
+          "role": "niche",
+          "note": "počítání, doplnění a odvod (UK)"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Anglické appky jsou postavené na USD (Money Counter: Cash & Coins výslovně); lokalizovaná uzávěrka s místními nominály a jazykem ve většině storefrontů chybí. Tilly Tally ale více měn umí — gap je hlavně jazykový.",
+      "devils_advocate": [
+        "Hlavní fráze 'cash counter' je přeplněná a lokální ekvivalenty mají malý objem — reálně jen long-tail.",
+        "POS systémy (SumUp, Square, Dotykačka) mají uzávěrku zabudovanou; kdo je má, appku nepotřebuje (Sherlock ze strany POS).",
+        "Tilly Tally už umí více měn a může snadno přidat lokalizaci.",
+        "Nízké ceny v kategorii — uživatelé čekají zdarma, 3 % konverze je optimistická."
+      ],
+      "killer_risk": "Long-tail slova v lokálních storefrontech mají příliš malý objem a hlavní slovo nevyhrajeme.",
+      "mitigation": "Lokalizovat názvy (Kassensturz, uzávěrka pokladny, fecho de caixa) přes lokalizovaná metadata, zdůraznit float/manko, které konkurence nemá.",
+      "build_weeks": 2.5,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "business-04",
+      "name": "InkSafe: Tattoo Consent & Ink Log",
+      "tagline": "Souhlas klienta, zdravotní dotazník a šarže barev — podle vaší země, v jednom PDF.",
+      "pitch": "Každé tetování začíná papírovým souhlasem a zdravotním dotazníkem, které studio musí archivovat. Existující appky jsou postavené na formulářích pro 50 amerických států. My přinášíme lokalizované šablony pro Evropu, UK, Austrálii a Latinskou Ameriku a navíc evidenci šarží barev a jehel — v EU po omezení tetovacích barev v REACH (2022) jde o reálnou dohledatelnost. Vše offline a šifrovaně v iPadu na recepci, bez cloudu třetí strany.",
+      "niche": "Souhlasy a dohledatelnost šarží pro studia mimo US. Americké appky řeší státní formuláře; booking platformy mají obecné formuláře bez šarží a bez lokálních textů.",
+      "parent_market": "Software pro tetovací studia (Tattoogenda, Tattoospot, STUDIO Artist) a booking platformy (Fresha, Booksy) s intake formuláři.",
+      "target_user": "Tatér nebo majitel malého studia/piercer v EU, UK, AU, LatAm; 1–5 umělců, iPad na recepci.",
+      "features": [
+        "Lokalizované šablony souhlasu a zdravotního dotazníku (editovatelné)",
+        "Foto dokladu totožnosti a podpis prstem, PDF do archivu",
+        "Evidence šarže barev, jehel a expirace na každé sezení (REACH)",
+        "Aftercare list v jazyce klienta",
+        "Historie klienta, šifrování a Face ID"
+      ],
+      "offline": "full",
+      "offline_note": "Formuláře, podpisy a PDF vznikají na zařízení; záloha přes iCloud (Apple) volitelná — žádný náš server, což pomáhá s GDPR.",
+      "monetization": "Předplatné na umělce: $7.99/měs (≈ 184 Kč) nebo $59.99/rok (≈ 1 380 Kč); 7 dní zkušebně.",
+      "revenue_math": "500 stažení/měs × 5.0 % konverze = 25 platících × $45 (vážený průměr roční/doživotní/měsíční) = $1 125 hrubě → ×0,85 = $956 → ×23 = 22 000 Kč čistého/měs v ideálu. Ideál = 'tattoo consent form' + 'piercing consent' lokalizovaně v EU (de, fr, es, it, pl), UK, AU a LatAm; tatéři platí za nástroje, cena na umělce.",
+      "revenue_czk_ideal": 22000,
+      "keywords": [
+        {
+          "kw": "tattoo consent form",
+          "saturation": 2,
+          "competitor": "Tattoo Consent Forms: InkForm",
+          "note": "evidence: 2 tituly cílí na 'consent form(s)'; 5 dalších studio appek formuláře obsahuje"
+        },
+        {
+          "kw": "piercing consent",
+          "saturation": 1,
+          "competitor": "Piercing and Tattoo Forms (50 US států)",
+          "note": "evidence: 1 titul"
+        },
+        {
+          "kw": "tattoo client",
+          "saturation": 3,
+          "competitor": "Inkarte: Tattoo Client Manager",
+          "note": "odhad; klientské manažery existují, jsou malé"
+        },
+        {
+          "kw": "tattoo ink batch",
+          "saturation": 0,
+          "competitor": "žádná",
+          "note": "odhad; šarže barev nikdo v názvu necílí"
+        }
+      ],
+      "demand_evidence": "Ověřeno (evidence): jen 2 appky cílí na 'consent form' v názvu a Piercing and Tattoo Forms je postavená na US státech → US-centrický model. Předpoklad: hledanost v evropských storefrontech a zájem o log šarží dle REACH — neověřeno.",
+      "competitors": [
+        {
+          "name": "Tattoo Consent Forms: InkForm",
+          "url": "https://apps.apple.com/ly/app/tattoo-consent-forms-inkform/id6795292581",
+          "role": "niche",
+          "note": "intake, zdravotní dotazník, foto ID, e-podpis"
+        },
+        {
+          "name": "Piercing and Tattoo Forms",
+          "url": "https://apps.apple.com/us/app/piercing-and-tattoo-forms/id6751235239",
+          "role": "us-only",
+          "note": "formuláře pro 50 US států"
+        },
+        {
+          "name": "Inkarte: Tattoo Client Manager",
+          "url": "https://apps.apple.com/be/app/inkarte-tattoo-client-manager/id6792252166",
+          "role": "niche",
+          "note": "'plně offline' klienti, booking a souhlasy (BE storefront)"
+        },
+        {
+          "name": "Tattoospot",
+          "url": "https://apps.apple.com/ca/app/tattoospot/id1493266569",
+          "role": "parent",
+          "note": "studio management"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Model 'consent forms app' je prokázaný v US (formuláře pro státy); lokalizované právní šablony pro EU/UK/LatAm a log šarží podle REACH v evidenci chybí.",
+      "devils_advocate": [
+        "Právní texty se liší stát od státu — špatná šablona = odpovědnost; potřebujeme právníka nebo jasný disclaimer 'šablona k úpravě'.",
+        "Zdravotní údaje jsou zvláštní kategorie GDPR; i při lokálním úložišti musí studio řešit zpracování a my 5.1.1 v App Review.",
+        "Studia už platí Fresha/Booksy/Tattoogenda, kde jsou formuláře v ceně — další předplatné je těžký prodej.",
+        "Inkarte (už offline, EU) nebo InkForm mohou lokalizovat rychleji, než získáme hodnocení."
+      ],
+      "killer_risk": "Studia nechtějí platit za další nástroj, když booking systém formuláře nabízí.",
+      "mitigation": "Prodávat to, co booking systémy nemají (šarže REACH, lokální právní šablony, offline archiv), a nabídnout export do jejich workflow.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 7,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 5
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "business-05",
+      "name": "Cooling Log: 2-Stage Food Cooling",
+      "tagline": "Hlídač chlazení vařeného jídla: 2 hodiny, 6 hodin, upozornění a záznam pro inspektora.",
+      "pitch": "Chlazení uvařeného jídla je podle inspektorů jedna z nejčastějších příčin otrav — FDA Food Code vyžaduje dostat jídlo z 57 °C na 21 °C do 2 hodin a na 5 °C celkem do 6 hodin. Kuchaři to dnes hlídají na papíře a zapomínají. Aplikace pro každou várku spustí dvoufázový odpočet s Live Activity na zamčené obrazovce, připomene měření, u nesplnění navrhne nápravné opatření a na konci vytvoří PDF log. V evidenci nemá 'cooling log' v názvu žádná z 10 HACCP appek.",
+      "niche": "Jediný log, který vyžaduje časovač a připomínky, ne jen tabulku. HACCP suity ho mají jako jednu z mnoha obrazovek bez chytrého odpočtu; senzorové systémy (ComplianceMate) jsou drahé pro malé provozy.",
+      "parent_market": "HACCP a teplotní logy (TempLog Pro, Food Safety App, Kitchen HACCP Logs, Jolt, ComplianceMate) — přeplněný, ale prokazatelně placený trh.",
+      "target_user": "Šéfkuchař/majitel malé restaurace, food trucku, catering, školní jídelny; US, UK, IE, AU.",
+      "features": [
+        "Dvoufázový odpočet na várku (FDA: 2 h + 4 h; volitelně UK 90 min), Live Activity",
+        "Připomínky měření a záznam teplot s časovým razítkem",
+        "Nápravné opatření při nesplnění (ohřev/likvidace) s poznámkou",
+        "Štítek várky a PDF log pro inspekci",
+        "Více várek současně, šablony pokrmů"
+      ],
+      "offline": "full",
+      "offline_note": "Časovače, notifikace i PDF jsou lokální; iCloud sync mezi iPadem v kuchyni a telefonem volitelně.",
+      "monetization": "$4.99/měs (≈ 115 Kč) nebo $39.99/rok (≈ 920 Kč) za provozovnu; 14 dní zdarma.",
+      "revenue_math": "700 stažení/měs × 4.0 % konverze = 28 platících × $35 (vážený průměr roční/doživotní/měsíční) = $980 hrubě → ×0,85 = $833 → ×23 = 19 200 Kč čistého/měs v ideálu. Ideál = 'cooling log' + 'food cooling' v US (FDA Food Code) a UK/IE/AU; cena za provozovnu.",
+      "revenue_czk_ideal": 19200,
+      "keywords": [
+        {
+          "kw": "cooling log",
+          "saturation": 0,
+          "competitor": "Food Safety App (cooling jako jedna z funkcí)",
+          "note": "evidence: 0 titulů s 'cooling log' mezi 10 HACCP výsledky"
+        },
+        {
+          "kw": "food cooling",
+          "saturation": 1,
+          "competitor": "Food Safety App",
+          "note": "odhad"
+        },
+        {
+          "kw": "haccp",
+          "saturation": 5,
+          "competitor": "HACCP App / TempLog Pro",
+          "note": "evidence: 5 titulů s 'HACCP' — parent, přeplněné"
+        },
+        {
+          "kw": "temperature log",
+          "saturation": 4,
+          "competitor": "Temperature Log",
+          "note": "evidence: 4 tituly — parent"
+        }
+      ],
+      "demand_evidence": "Ověřeno (evidence): HACCP/teplotní logy jsou přeplněné (8 appek) → poptávka po digitálních kuchyňských lozích existuje; 'cooling log' v titulu nemá nikdo. Předpoklad: že kuchaři hledají konkrétně 'cooling log' — hint/objem neověřen.",
+      "competitors": [
+        {
+          "name": "Food Safety App",
+          "url": "https://apps.apple.com/us/app/food-safety-app-haccp/id6772256894",
+          "role": "niche",
+          "note": "vaření, chlazení, ohřev, držení teplot — nejbližší rival"
+        },
+        {
+          "name": "TempLog Pro",
+          "url": "https://apps.apple.com/us/app/templog-pro-haccp-logs/id6757482808",
+          "role": "parent",
+          "note": "restaurace a food trucky, náhrada papíru"
+        },
+        {
+          "name": "Kitchen HACCP Logs",
+          "url": "https://apps.apple.com/gb/app/kitchen-haccp-logs/id6756550638",
+          "role": "niche",
+          "note": "UK, teploty, dodávky, úklid, audit"
+        },
+        {
+          "name": "Temperature Log",
+          "url": "https://apps.apple.com/us/app/temperature-log/id1579256016",
+          "role": "niche",
+          "note": "obecný teplotní log"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Food Safety App už chlazení pokrývá — stačí jí přidat chytrý časovač a náš diferenciátor zmizí.",
+        "Kuchaři mají v provozu mokré ruce a zakázané telefony; papír na lednici je rychlejší.",
+        "Restaurace kupují kompletní HACCP suitu, ne jednoúčelový log — jsme jen 1 z 10 potřebných záznamů.",
+        "Objem hledání 'cooling log' může být jednotky až desítky měsíčně."
+      ],
+      "killer_risk": "Příliš úzký job — provozovny chtějí jednu appku na všechny logy.",
+      "mitigation": "Začít cooling logem jako ostrou vstupní branou do vyhledávání a postupně přidat reheating/hot-holding jako moduly (bez rozpadu na klony kvůli 4.3).",
+      "build_weeks": 2.5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 8,
+        "monetization": 6,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "business-06",
+      "name": "Farrier Book: Shoeing Records",
+      "tagline": "Kovářský diář v kapse: koně, cykly kování, fotky kopyt a faktura v jazyce zákazníka.",
+      "pitch": "Podkovář obsluhuje desítky až stovky koní v šesti- až osmitýdenních cyklech a eviduje je v sešitě nebo WhatsAppu. Existující appky (The Farriers App, Farrier Fleet) jsou anglické a americké; v Německu, Francii či Skandinávii, kde je jezdectví masové, lokalizovaný nástroj chybí. Nabízíme evidenci koní a majitelů, připomínky dalšího kování, fotky kopyt před/po a fakturu v PDF s místním DPH. Je to malá nika, ale se slabou konkurencí a vysokou ochotou platit za čas.",
+      "niche": "Podkováři a barefoot trimmeři mimo US. Konkurence je v evidenci jen 3 appky s 'farrier' v názvu, Mustad (EQUINET) je značková a zdarma, ale nesoustředí se na fakturaci a lokalizaci.",
+      "parent_market": "Equine management (BarnManager, Horsekeeping, HorseKeeper) a obecné field-service/fakturační nástroje.",
+      "target_user": "Samostatný podkovář nebo trimmer (EU, UK, AU, CA) s 50–400 koňmi v péči.",
+      "features": [
+        "Koně a majitelé, stáje jako lokace",
+        "Cyklus kování/trimu s připomínkou a denním plánem",
+        "Fotky kopyt před/po s porovnáním",
+        "Faktura PDF s místní měnou a DPH, stav úhrad",
+        "Zásoby podkov a hřebíků"
+      ],
+      "offline": "mostly",
+      "offline_note": "Data a faktury lokálně; navigace ke stáji předává adresu do Apple Maps (síť jen tehdy). iCloud záloha.",
+      "monetization": "$6.99/měs (≈ 161 Kč) nebo $49.99/rok (≈ 1 150 Kč); 1 měsíc zdarma.",
+      "revenue_math": "400 stažení/měs × 6.0 % konverze = 24 platících × $45 (vážený průměr roční/doživotní/měsíční) = $1 080 hrubě → ×0,85 = $918 → ×23 = 21 100 Kč čistého/měs v ideálu. Ideál = 'farrier' + 'hoof trimming' anglicky a lokalizace de/fr/nl/sv/pl, kde je velká jezdecká populace; kovář platí rád, appka šetří administrativu.",
+      "revenue_czk_ideal": 21100,
+      "keywords": [
+        {
+          "kw": "farrier",
+          "saturation": 3,
+          "competitor": "The Farriers App",
+          "note": "evidence: 3 tituly cílí na 'farrier' — SPARSE-MEDIUM"
+        },
+        {
+          "kw": "horse shoeing",
+          "saturation": 1,
+          "competitor": "The Shoeing Lab",
+          "note": "evidence: 1 titul na 'shoeing'"
+        },
+        {
+          "kw": "hoof trimming",
+          "saturation": 1,
+          "competitor": "Farrier Fleet",
+          "note": "odhad; barefoot trimmeři jsou obsloužení minimálně"
+        },
+        {
+          "kw": "farrier invoice",
+          "saturation": 1,
+          "competitor": "The Farriers App",
+          "note": "odhad; fakturaci má jen The Farriers App"
+        }
+      ],
+      "demand_evidence": "Ověřeno (evidence): 3 dedikované appky, jedna značková (Mustad), několik nových v 2025–26 → trh žije, ale je řídký. Předpoklad: objem hledání v lokalizovaných storefrontech a počet kovářů s iPhonem — neověřeno; nika je malá.",
+      "competitors": [
+        {
+          "name": "The Farriers App",
+          "url": "https://apps.apple.com/us/app/the-farriers-app/id1587307883",
+          "role": "us-only",
+          "note": "kováři a trimmeři, faktury, SMS připomínky (anglicky)"
+        },
+        {
+          "name": "Farrier Fleet",
+          "url": "https://apps.apple.com/us/app/farrier-fleet/id6757606700",
+          "role": "niche",
+          "note": "nová, záznamy koní, termíny, fotky kopyt"
+        },
+        {
+          "name": "EQUINET - Mustad Farrier App",
+          "url": "https://apps.apple.com/us/app/equinet-mustad-farrier-app/id1459492568",
+          "role": "niche",
+          "note": "značková appka Mustad"
+        },
+        {
+          "name": "BarnManager",
+          "url": "https://apps.apple.com/us/app/barnmanager/id1261521499",
+          "role": "parent",
+          "note": "lídr equine managementu"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Lídři jsou anglické US appky; v DE/FR/NL/SE (velké jezdecké trhy) lokalizovaný kovářský diář s fakturou podle místního DPH v evidenci chybí.",
+      "devils_advocate": [
+        "Nika je malá — v celé Evropě jsou jednotky tisíc kovářů a část z nich používá Android nebo sešit.",
+        "Mustad (EQUINET) může lokalizovat zdarma a má distribuci přes dodavatele podkov.",
+        "Místní fakturační pravidla (DE Rechnung, FR TVA) se liší; chyba ve fakturách podkope důvěru.",
+        "Kováři jsou konzervativní a v terénu mají špinavé ruce — adopce pomalá."
+      ],
+      "killer_risk": "Nika je příliš malá na 10 000 Kč i v ideálu.",
+      "mitigation": "Stavět levně (3–4 týdny), cílit i na barefoot trimmery a equine dentisty jako druhotné publikum a držet vysokou cenu.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 7,
+        "build_ease": 7,
+        "offline_fit": 8,
+        "safety": 7
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "business-07",
+      "name": "Handover: Move-In Inventory Report",
+      "tagline": "Předávací protokol bytu podle místních zvyklostí: fotky, měřáky, klíče, dva podpisy.",
+      "pitch": "Při každém stěhování vzniká spor o kauci — a v Evropě se k tomu používá formální předávací protokol (Übergabeprotokoll, état des lieux, předávací protokol). Anglický trh je přeplněný inspekčními appkami (RentCheck, Keyturn, MoveSnap), které mluví americky a neznají místní náležitosti. Nabídneme protokol místnost po místnosti podle lokální šablony, fotky s časovým razítkem, stavy měřáků, počet klíčů, podpis obou stran a PDF v jazyce země. Nájemník si ho koupí jednorázově, pronajímatel předplatí.",
+      "niche": "Lokalizovaný předávací protokol v neanglických storefrontech. Anglické appky jsou postavené na US inspekcích; místní realitní software je desktopový a pro profesionály.",
+      "parent_market": "Rental inspection apps (RentCheck, Keyturn, Tenant Inspect, MoveSnap) — přeplněný, prokázaný trh v angličtině.",
+      "target_user": "Nájemník při stěhování a malý soukromý pronajímatel (1–10 bytů) v DE, FR, ES, IT, PL, CZ, NL.",
+      "features": [
+        "Šablony dle země (DE/FR/CZ/ES…) s lokálními pojmy a povinnými poli",
+        "Fotky místnost po místnosti s časovým razítkem a poznámkou",
+        "Stavy měřáků (voda, plyn, elektřina) a počet klíčů",
+        "Podpis obou stran na jednom zařízení, PDF v jazyce země",
+        "Srovnání nástup vs. výstup"
+      ],
+      "offline": "full",
+      "offline_note": "Vše na zařízení; PDF sdílené přes share sheet. Bez účtů.",
+      "monetization": "Nájemník: $6.99 jednorázově za protokol (≈ 161 Kč); pronajímatel: $4.99/měs (≈ 115 Kč) nebo $29.99/rok (≈ 690 Kč).",
+      "revenue_math": "2500 stažení/měs × 4.0 % konverze = 100 platících × $8 (vážený průměr roční/doživotní/měsíční) = $800 hrubě → ×0,85 = $680 → ×23 = 15 600 Kč čistého/měs v ideálu. Ideál = lokální právní termíny (Übergabeprotokoll, état des lieux, předávací protokol, acta de entrega) v 10 evropských storefrontech; spotřební nákup na jedno předání.",
+      "revenue_czk_ideal": 15600,
+      "keywords": [
+        {
+          "kw": "move in inspection",
+          "saturation": 8,
+          "competitor": "RentCheck",
+          "note": "evidence: 8 dedikovaných appek — SATURATED v EN, jen parent"
+        },
+        {
+          "kw": "rental inspection",
+          "saturation": 7,
+          "competitor": "Rental Inspector",
+          "note": "evidence (productivity): 7+ titulů — SATURATED"
+        },
+        {
+          "kw": "apartment handover",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad; anglický ekvivalent lokálních termínů"
+        },
+        {
+          "kw": "inventory report rental",
+          "saturation": 2,
+          "competitor": "MoveSnap (UK)",
+          "note": "odhad; UK 'inventory' terminologie"
+        }
+      ],
+      "demand_evidence": "Ověřeno (evidence business + productivity): 7–8 anglických appek, několik s AI → silná poptávka po inspekcích. Předpoklad: lokální konkurence v DE/FR/CZ storefrontech nebyla ověřena (ve Francii existují profesionální 'état des lieux' nástroje — odhad).",
+      "competitors": [
+        {
+          "name": "RentCheck",
+          "url": "https://apps.apple.com/us/app/rentcheck/id1134017691",
+          "role": "parent",
+          "note": "lídr, inspekce vedené nájemníkem"
+        },
+        {
+          "name": "Tenant Inspect (Rental Report)",
+          "url": "https://apps.apple.com/us/app/tenant-inspect-rental-report/id6450515110",
+          "role": "us-only",
+          "note": "nájemnická strana, fotky s časem"
+        },
+        {
+          "name": "MoveSnap",
+          "url": "https://apps.apple.com/gb/app/movesnap/id6788945488",
+          "role": "niche",
+          "note": "UK, nájemníci, pronajímatelé, správci"
+        },
+        {
+          "name": "Rental Inspection & Check Log",
+          "url": "https://apps.apple.com/gb/app/rental-inspection-check-log/id6758512299",
+          "role": "niche",
+          "note": "UK"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Model je silně prokázaný v US/UK angličtině; protokol pod lokálními právními názvy v 50 jazycích je pravděpodobně mezera (lokální storefronty neověřeny).",
+      "devils_advocate": [
+        "Jednorázové použití (1 stěhování za roky) → nulová retence, závislost na neustálém ASO přílivu.",
+        "Nájemnické spolky a realitky dávají PDF šablony zdarma; mnoho lidí stačí fotky v galerii.",
+        "Každá země má jiné náležitosti (FR décret 2016) — chyba v šabloně = reklamace a špatné recenze.",
+        "Francouzské a německé lokální appky mohou existovat a být silné — v tomto běhu neověřeno."
+      ],
+      "killer_risk": "Transakční produkt s mizernou retencí a lokální konkurencí, kterou jsme neviděli.",
+      "mitigation": "Před stavbou ověřit 3 storefronty (DE/FR/CZ); nabídnout pronajímatelům předplatné pro opakované použití a export do e-mailu obou stran.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "business-08",
+      "name": "Vending Route: Machine Profit Tracker",
+      "tagline": "Kolik ti který automat opravdu vydělá po provizi, zboží a benzínu.",
+      "pitch": "Vending je jeden z nejpopulárnějších 'side hustle' na TikToku a YouTube; tisíce lidí mají 1–30 automatů a netuší, který z nich je ztrátový. VendSoft cílí na profesionální firmy s flotilou; malý operátor potřebuje jednoduchý přehled: plnění, výběr hotovosti, náklady zboží, provize majiteli lokace a zisk na automat. Vše offline na trase, kde v suterénech není signál.",
+      "niche": "Malý operátor (1–30 automatů). Profesionální software (VendSoft, telemetrie Cantaloupe/Nayax) je drahý a přehnaný; spotřebitelské 'vending tracker' appky jsou lokátory, ne nástroje.",
+      "parent_market": "Vending management software (VendSoft, VendingMetrics, telemetrické platformy Cantaloupe/Nayax).",
+      "target_user": "Vedlejší podnikatel ve vendingu v US/CA/UK/AU s 1–30 automaty (snack, nápoje, claw, massage chair).",
+      "features": [
+        "Automaty a lokace s provizí majitele (%/fix)",
+        "Plnění po produktech, náklad zboží, expirace",
+        "Výběr hotovosti s počítáním nominálů",
+        "Zisk na automat/lokaci a měsíční přehled",
+        "Offline checklist trasy a najeté míle"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně; iCloud sync pro 2 zařízení.",
+      "monetization": "$7.99/měs (≈ 184 Kč), $59.99/rok (≈ 1 380 Kč); free tier do 3 automatů.",
+      "revenue_math": "600 stažení/měs × 5.0 % konverze = 30 platících × $45 (vážený průměr roční/doživotní/měsíční) = $1 350 hrubě → ×0,85 = $1 148 → ×23 = 26 400 Kč čistého/měs v ideálu. Ideál = 'vending machine business' + 'vending route' v US/CA/UK/AU; operátoři s 1–30 automaty vydělávají a platí za přehled.",
+      "revenue_czk_ideal": 26400,
+      "keywords": [
+        {
+          "kw": "vending machine business",
+          "saturation": 3,
+          "competitor": "VendSoft: Vending Management",
+          "note": "odhad; 'vending' je v 7 titulech, operátorských appek ~4 (evidence)"
+        },
+        {
+          "kw": "vending route",
+          "saturation": 2,
+          "competitor": "VendSoft (offline route mode)",
+          "note": "evidence: operátorských appek ~4; odhad pro frázi"
+        },
+        {
+          "kw": "vending tracker",
+          "saturation": 4,
+          "competitor": "Vending Tracker (spotřebitelský lokátor)",
+          "note": "evidence: část výsledků nejsou operátorské nástroje"
+        },
+        {
+          "kw": "vending profit",
+          "saturation": 1,
+          "competitor": "Vending Village",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Ověřeno (evidence): 'vending' v 7 titulech, ~4 operátorské appky, VendSoft silný; výskyt nových appek (Vending Village, Smart Mart Leads) potvrzuje živý trend. Předpoklad: segment 1–30 automatů je podobsloužený — nepotvrzeno.",
+      "competitors": [
+        {
+          "name": "VendSoft: Vending Management",
+          "url": "https://apps.apple.com/us/app/vendsoft-vending-management/id1020242222",
+          "role": "parent",
+          "note": "silný lídr, offline trasa, hotovost, fotky"
+        },
+        {
+          "name": "Vend-IT",
+          "url": "https://apps.apple.com/us/app/vend-it/id1150199513",
+          "role": "niche",
+          "note": "stav zásob a balení"
+        },
+        {
+          "name": "Vending Village",
+          "url": "https://apps.apple.com/us/app/vending-village/id6779238696",
+          "role": "niche",
+          "note": "nová appka pro komunitu operátorů"
+        },
+        {
+          "name": "VendingOps",
+          "url": "https://apps.apple.com/mx/app/vendingops/id6468369042?l=en-GB",
+          "role": "niche",
+          "note": "operátorský nástroj"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "VendSoft už umí offline trasu a může nabídnout levný tarif pro malé operátory.",
+        "Side-hustle vlna je trend z TikToku — za 1–2 roky může opadnout a s ní hledanost.",
+        "Moderní automaty s kartovou telemetrií (Nayax) dávají data automaticky a ruční zadávání je zbytečné.",
+        "Malí operátoři často jedou na Excelu/šablonách z Etsy a platit nechtějí, dokud nemají 10+ automatů."
+      ],
+      "killer_risk": "Trend opadne a VendSoft zlevní — zůstaneme mezi dvěma židlemi.",
+      "mitigation": "Zaměřit se na zisk na automat (to, co VendSoft nezdůrazňuje), rychlé zadání a nízkou cenu; lokalizovat do UK/AU/DE.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 7,
+        "build_ease": 7,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "business-09",
+      "name": "Fire Log Book: Premises Safety",
+      "tagline": "Požární kniha malé provozovny v telefonu: týdenní test hlásičů, nouzová světla, cvičení.",
+      "pitch": "Ve Velké Británii musí každá provozovna, pronajímaný dům (HMO) i holiday let vést požární knihu: týdenní test tlačítek, měsíční test nouzového osvětlení, cvičné evakuace a kontroly hasicích přístrojů. Profesionální appky jsou pro revizní techniky (NFPA 10, čárové kódy); majitel kavárny nebo pronajímatel potřebuje jen připomínku, zaškrtnutí a PDF pro inspektora. My mu dáme přesně to, s rotací hlásičů a upozorněním, co zapomněl.",
+      "niche": "Owner-level požární deník pro malé provozovny. Revizní appky cílí na techniky; owner-level existuje jen pro hasicí přístroje (Fire Extinguisher Check Log).",
+      "parent_market": "Fire inspection software (Fire Inspection App, InspectNTrack, Extinguisher360) — prokázaný B2B trh.",
+      "target_user": "Odpovědná osoba (responsible person) malé provozovny, pronajímatel HMO/holiday let, správce kostela či klubu v UK/IE.",
+      "features": [
+        "Týdenní test hlásičů s rotací tlačítek (zóny)",
+        "Nouzové osvětlení: měsíční a roční 3h test",
+        "Cvičné evakuace, požární dveře, hasicí přístroje",
+        "Připomínky a přehled, co je po termínu",
+        "PDF požární knihy pro inspekci/pojišťovnu, více objektů"
+      ],
+      "offline": "full",
+      "offline_note": "Lokální data a notifikace, PDF na zařízení.",
+      "monetization": "$4.99/měs (≈ 115 Kč) nebo $39.99/rok (≈ 920 Kč); 1 objekt zdarma bez PDF.",
+      "revenue_math": "700 stažení/měs × 4.0 % konverze = 28 platících × $38 (vážený průměr roční/doživotní/měsíční) = $1 064 hrubě → ×0,85 = $904 → ×23 = 20 800 Kč čistého/měs v ideálu. Ideál = 'fire log book', 'fire alarm test', 'emergency lighting test' v UK/IE (+ AU/NZ podobné povinnosti); malé provozovny, HMO, holiday lets.",
+      "revenue_czk_ideal": 20800,
+      "keywords": [
+        {
+          "kw": "fire log book",
+          "saturation": 1,
+          "competitor": "Fire Inspection App (UK)",
+          "note": "odhad; evidence označuje tuto nika jako neotestovanou"
+        },
+        {
+          "kw": "fire alarm test",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "emergency lighting test",
+          "saturation": 1,
+          "competitor": "FireTag: Safety Inspections",
+          "note": "odhad"
+        },
+        {
+          "kw": "fire inspection",
+          "saturation": 4,
+          "competitor": "InspectNTrack: Fire Inspection",
+          "note": "evidence: 'fire inspection' ve 4 titulech — parent"
+        }
+      ],
+      "demand_evidence": "Ověřeno (evidence): fire inspection je přeplněná pro profesionály, owner-level log existuje jen pro hasicí přístroje. Předpoklad: britské právní povinnosti (Regulatory Reform (Fire Safety) Order 2005) vedou k hledání 'fire log book' — objem neověřen.",
+      "competitors": [
+        {
+          "name": "Fire Inspection App",
+          "url": "https://apps.apple.com/gb/app/fire-inspection-app/id860747212",
+          "role": "parent",
+          "note": "UK, profesionální inspekce"
+        },
+        {
+          "name": "Fire Extinguisher Check Log",
+          "url": "https://apps.apple.com/us/app/fire-extinguisher-check-log/id6760390952",
+          "role": "niche",
+          "note": "jednoduchý owner-level log jen pro hasicí přístroje"
+        },
+        {
+          "name": "FireTag: Safety Inspections",
+          "url": "https://apps.apple.com/za/app/firetag-safety-inspections/id6762494298",
+          "role": "niche",
+          "note": "hasicí přístroje a 'další bezpečnostní vybavení'"
+        },
+        {
+          "name": "Fire Inspection Pro",
+          "url": "https://apps.apple.com/ie/app/fire-inspection-pro-safety/id6761208778",
+          "role": "niche",
+          "note": "IE, profesionální"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Papírová požární kniha stojí £10 a revizní firma ji často dodá v rámci servisu.",
+        "UK je jeden trh; lokalizace mimo UK/IE naráží na jiné předpisy a jinou terminologii.",
+        "Odpovědnost: když majitel zapomene test a dojde k požáru, bude hledat viníka i v appce.",
+        "Revizní firmy mohou dát klientům vlastní appku zdarma."
+      ],
+      "killer_risk": "Malý objem hledání a levná papírová alternativa.",
+      "mitigation": "Důraz na připomínky a PDF pro pojišťovnu, cílit pronajímatele HMO/holiday let (silná motivace po kontrolách), rozšířit na AU/NZ.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "business-10",
+      "name": "Tronc Book: UK Tips Allocation",
+      "tagline": "Spravedlivé dělení spropitného podle zákona z roku 2023 — s politikou, záznamy a výpisy pro zaměstnance.",
+      "pitch": "Od října 2024 musí britské podniky podle Employment (Allocation of Tips) Act předat zaměstnancům 100 % spropitného, mít písemnou politiku, vést záznamy 3 roky a na žádost je ukázat. Americké tip-pool kalkulačky (5+ appek) řeší jen matematiku večera. My přidáme to, co britský zákon chce: generátor politiky, dělení podle bodů/hodin/role, archiv období a PDF výpis pro každého zaměstnance. Pro nezávislé hospody a kavárny, na které tronc firmy a velké payrolly necílí.",
+      "niche": "Malé nezávislé UK/IE provozovny bez tronc správce. Velké řetězce řeší tronc přes payroll/účetní; US appky neznají britské povinnosti.",
+      "parent_market": "Tip pool kalkulačky (Simple Tip Pool, Tip Out, Tipout Divider) — přeplněný US trh prokazující poptávku.",
+      "target_user": "Manažer nebo majitel nezávislé restaurace, hospody, kavárny, hotelu v UK/IE (5–40 zaměstnanců).",
+      "features": [
+        "Generátor písemné tips policy (šablona k úpravě)",
+        "Dělení podle bodů, hodin, role; hotovost vs. karta",
+        "Archiv období 3+ roky, uzamčené záznamy",
+        "PDF/CSV výpis pro zaměstnance a export pro payroll",
+        "Přehled 'kdo dostal kolik' za rok"
+      ],
+      "offline": "full",
+      "offline_note": "Vše na zařízení; export sdílením. iCloud záloha kvůli povinné archivaci.",
+      "monetization": "$9.99/měs (≈ 230 Kč) nebo $79.99/rok (≈ 1 840 Kč) za provozovnu.",
+      "revenue_math": "400 stažení/měs × 5.0 % konverze = 20 platících × $70 (vážený průměr roční/doživotní/měsíční) = $1 400 hrubě → ×0,85 = $1 190 → ×23 = 27 400 Kč čistého/měs v ideálu. Ideál = 'tronc', 'tips allocation', 'tip pool' v UK/IE storefrontu; cena za provozovnu, restaurace platí za soulad se zákonem.",
+      "revenue_czk_ideal": 27400,
+      "keywords": [
+        {
+          "kw": "tronc",
+          "saturation": 0,
+          "competitor": "žádná",
+          "note": "odhad; evidence označuje tronc jako neotestovaný úhel"
+        },
+        {
+          "kw": "tip pool calculator",
+          "saturation": 5,
+          "competitor": "Simple Tip Pool",
+          "note": "evidence: 5 titulů — CROWDED, parent"
+        },
+        {
+          "kw": "tips allocation",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "tip out",
+          "saturation": 5,
+          "competitor": "Tip Out: Tip Pool Calculator",
+          "note": "evidence"
+        }
+      ],
+      "demand_evidence": "Ověřeno (evidence): tip-pool kalkulačky jsou přeplněné (5 titulů) → poptávka po dělení tipů existuje; zákon UK 2023 je v účinnosti od 10/2024 (fakt z evidence). Předpoklad: britští manažeři hledají řešení v App Store — neověřeno.",
+      "competitors": [
+        {
+          "name": "Simple Tip Pool",
+          "url": "https://apps.apple.com/us/app/simple-tip-pool/id1434776478",
+          "role": "us-only",
+          "note": "hodiny, body, % pro barbacky — US"
+        },
+        {
+          "name": "Tip Out: Tip Pool Calculator",
+          "url": "https://apps.apple.com/ph/app/tip-out-staff-tip-calculator/id6759682320",
+          "role": "parent",
+          "note": "populární kalkulačka dělení"
+        },
+        {
+          "name": "Tipout Divider",
+          "url": "https://apps.apple.com/us/app/tipout-divider/id6479544605",
+          "role": "niche",
+          "note": "dělení tipů"
+        },
+        {
+          "name": "TipOut - Staff Tip Calculator",
+          "url": "https://apps.apple.com/us/app/tipout-staff-tip-calculator/id6760897005",
+          "role": "niche",
+          "note": "nová 2026"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Model tip-pool kalkulačky je prokázaný v US; britský zákon z roku 2023 vytvořil novou povinnost (politika + záznamy), kterou US appky neřeší — obrácená/lokální mezera.",
+      "devils_advocate": [
+        "Tronc má daňové a NI dopady; když appka vypadá jako poradce, vystavujeme se odpovědnosti.",
+        "Payroll systémy (Fourth, Access, Sage) přidávají tronc moduly a provozovny je už platí.",
+        "UK+IE je malý trh a 'tronc' hledají spíš na Googlu než v App Store.",
+        "Americké kalkulačky mohou přidat UK režim a přebrat klíčová slova."
+      ],
+      "killer_risk": "Manažeři řeší tronc přes účetní/payroll a appku nehledají.",
+      "mitigation": "Obsahový marketing mimo App Store (šablona tips policy), jasný disclaimer 'nejsme daňový poradce', export pro účetní.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 7,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 5
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "business-11",
+      "name": "Paint Estimate: Metric Quote",
+      "tagline": "Nabídka malíře v m² a litrech za 5 minut — s LiDAR skenem místnosti a PDF v jazyce zákazníka.",
+      "pitch": "Americké malířské appky (PaintPro, BrushQuote, Painting Contractor Estimates) počítají ve stopách a galonech a mluví anglicky, přitom malířů je v Evropě a Latinské Americe mnohonásobně víc. Nabídneme změření místnosti přes RoomPlan (LiDAR, on-device), výpočet ploch bez oken a dveří, litry na počet vrstev, cenu práce za m² a PDF nabídku s DPH v jazyce zákazníka. Pro živnostníka, který dnes píše nabídky na koleni.",
+      "niche": "Metrický, lokalizovaný malířský rozpočet. Anglický trh je přeplněný (9 appek), ale imperiální; evropští malíři používají Excel nebo obecné fakturační appky.",
+      "parent_market": "Painting estimate apps (Paintbox, PaintPro, Painting Contractor Estimates) a obecné nabídkové appky (Joist, Invoice Simple).",
+      "target_user": "Malíř-živnostník nebo malá firma (1–5 lidí) v EU/LatAm; i kutil plánující vymalování.",
+      "features": [
+        "RoomPlan sken místnosti (LiDAR) nebo ruční rozměry v m",
+        "Plochy bez oken/dveří, stropy, lišty; litry dle vydatnosti a vrstev",
+        "Sazby práce/m² a materiálu, marže, DPH",
+        "PDF nabídka v jazyce zákazníka s logem",
+        "Historie zakázek a převod na fakturu"
+      ],
+      "offline": "full",
+      "offline_note": "RoomPlan i výpočty běží na zařízení, PDF lokálně.",
+      "monetization": "$6.99/měs (≈ 161 Kč), $49.99/rok (≈ 1 150 Kč); kalkulačka litrů zdarma, PDF nabídky v Pro.",
+      "revenue_math": "800 stažení/měs × 3.5 % konverze = 28 platících × $45 (vážený průměr roční/doživotní/měsíční) = $1 260 hrubě → ×0,85 = $1 071 → ×23 = 24 600 Kč čistého/měs v ideálu. Ideál = 'paint calculator' + 'painter quote' ve 20 metrických lokalizacích (de, fr, es, it, pl, pt-BR, cs).",
+      "revenue_czk_ideal": 24600,
+      "keywords": [
+        {
+          "kw": "painting estimate",
+          "saturation": 6,
+          "competitor": "PaintPro - Painting Estimates",
+          "note": "evidence: 6 titulů + 3 malířské appky — CROWDED, parent"
+        },
+        {
+          "kw": "paint calculator",
+          "saturation": 5,
+          "competitor": "Paint Estimator Pro",
+          "note": "odhad; kalkulaček barvy je hodně (DIY)"
+        },
+        {
+          "kw": "painter quote",
+          "saturation": 2,
+          "competitor": "BrushQuote: Paint Estimates",
+          "note": "odhad"
+        },
+        {
+          "kw": "wall paint calculator",
+          "saturation": 3,
+          "competitor": "neověřeno",
+          "note": "odhad; v metrických storefrontech pravděpodobně méně"
+        }
+      ],
+      "demand_evidence": "Ověřeno (evidence): 9 malířských appek v US, mnohé nové s AI → silná poptávka; všechny zjištěné jsou anglické/imperiální. Předpoklad: metrické storefronty nemají silný lokální ekvivalent — neověřeno.",
+      "competitors": [
+        {
+          "name": "Paintbox App for Painters",
+          "url": "https://apps.apple.com/us/app/paintbox-app-for-painters/id1526501121",
+          "role": "parent",
+          "note": "all-in-one pro malířské firmy"
+        },
+        {
+          "name": "PaintPro - Painting Estimates",
+          "url": "https://apps.apple.com/us/app/paintpro-painting-estimates/id6757255183",
+          "role": "us-only",
+          "note": "rozměry → cena, práce/materiál/marže"
+        },
+        {
+          "name": "Painting Contractor Estimates",
+          "url": "https://apps.apple.com/gb/app/painting-contractor-estimates/id897185714",
+          "role": "niche",
+          "note": "starší, materiál a práce z rozměrů (i UK)"
+        },
+        {
+          "name": "BrushQuote: Paint Estimates",
+          "url": "https://apps.apple.com/us/app/brushquote-paint-estimates/id6762495897",
+          "role": "niche",
+          "note": "AI návrh z fotek a hlasu"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Všechny nalezené malířské appky jsou imperiální a anglické; metrická verze v 50 jazycích s lokálním DPH je mezera (lokální storefronty neověřeny).",
+      "devils_advocate": [
+        "Malíři už používají obecné fakturační appky a nabídku v m² si spočítají v hlavě.",
+        "AI nováčci (BrushQuote) přidají metrický režim a lokalizaci během týdnů.",
+        "RoomPlan funguje jen na iPhonech Pro s LiDARem — hlavní 'wow' feature má omezený dosah.",
+        "Pokud budeme stavět další 'estimate' appky pro jiná řemesla, riskujeme 4.3 spam."
+      ],
+      "killer_risk": "Rychlá reakce anglických konkurentů s lepším hodnocením.",
+      "mitigation": "Lokalizovat do hloubky (terminologie, DPH, formáty), jednou appkou — ne sérií klonů pro řemesla.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 7
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "business-12",
+      "name": "Brow & PMU Consent: Patch Test Log",
+      "tagline": "Souhlas, patch test a šarže pigmentu pro permanentní make-up — s připomínkou na korekci.",
+      "pitch": "Permanentní make-up, microblading, lash lift a barvení obočí vyžadují souhlas klienta a u barev patch test 48 hodin předem — a salony to dnes evidují na papíře. Aplikace vede souhlas a zdravotní dotazník, patch test s fotkou a připomínkou, šarži pigmentu, before/after fotky se stejným rámem a automaticky připomene korekci po 6–8 týdnech. Tetovací appky PMU neřeší a booking systémy nemají patch-test log.",
+      "niche": "PMU a brow/lash technici — procedury s patch testem a korekcemi, které tetovací i booking software opomíjí.",
+      "parent_market": "Software pro beauty salony a tetovací studia (Fresha, Booksy, Vagaro; InkForm, STUDIO Artist).",
+      "target_user": "PMU artistka, brow/lash technička (samostatná nebo malé studio) v EU, UK, LatAm, Blízkém východě.",
+      "features": [
+        "Šablony souhlasu a dotazníku pro PMU, microblading, lash lift, tint",
+        "Patch test log s fotkou, časem a připomínkou 48 h",
+        "Šarže a značka pigmentu na sezení",
+        "Before/after fotky s překryvnou šablonou pro stejný úhel",
+        "Připomínka korekce a historie klientky"
+      ],
+      "offline": "full",
+      "offline_note": "Vše na zařízení, iCloud záloha volitelná.",
+      "monetization": "$5.99/měs (≈ 138 Kč), $44.99/rok (≈ 1 035 Kč).",
+      "revenue_math": "600 stažení/měs × 4.0 % konverze = 24 platících × $40 (vážený průměr roční/doživotní/měsíční) = $960 hrubě → ×0,85 = $816 → ×23 = 18 800 Kč čistého/měs v ideálu. Ideál = 'microblading consent', 'pmu consent', 'patch test' v EN + lokalizace (PMU je velký byznys v EU, Rusku, LatAm, na Blízkém východě).",
+      "revenue_czk_ideal": 18800,
+      "keywords": [
+        {
+          "kw": "microblading consent",
+          "saturation": 1,
+          "competitor": "Tattoo Consent Forms: InkForm",
+          "note": "odhad; PMU v evidenci nehledáno, jen sousední tattoo consent"
+        },
+        {
+          "kw": "pmu consent form",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "patch test",
+          "saturation": 2,
+          "competitor": "neověřeno",
+          "note": "odhad; kolize s lékařskými výsledky"
+        },
+        {
+          "kw": "client consultation form",
+          "saturation": 4,
+          "competitor": "booking/intake appky",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Ověřeno jen nepřímo (evidence): tattoo consent je MEDIUM (2 přímé tituly) a PMU consent je v evidenci jmenován jako neotestovaná sousední nika. Předpoklad: poptávka a slabá konkurence v PMU — z vlastní znalosti trhu.",
+      "competitors": [
+        {
+          "name": "Tattoo Consent Forms: InkForm",
+          "url": "https://apps.apple.com/ly/app/tattoo-consent-forms-inkform/id6795292581",
+          "role": "niche",
+          "note": "tattoo intake a souhlasy, PMU okrajově"
+        },
+        {
+          "name": "STUDIO Artist: Calendar Tattoo",
+          "url": "https://apps.apple.com/us/app/studio-artist-calendar-tattoo/id6751468838",
+          "role": "niche",
+          "note": "PDF informované souhlasy"
+        },
+        {
+          "name": "tattoogenda",
+          "url": "https://apps.apple.com/us/app/tattoogenda/id6461407749",
+          "role": "niche",
+          "note": "studio management"
+        },
+        {
+          "name": "Fresha",
+          "url": "",
+          "role": "parent",
+          "note": "booking platforma s intake formuláři (bez evidence URL)"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Fresha/Booksy mají intake formuláře zdarma a salony je už používají.",
+        "Zdravotní údaje (alergie) = GDPR zvláštní kategorie a pozornost App Review (5.1.1).",
+        "Sdílený kód s InkSafe (#04) může App Review vyhodnotit jako 4.3 duplikát.",
+        "Beauty technici jsou cenově citliví a hodně jich je na Androidu (EU východ, LatAm)."
+      ],
+      "killer_risk": "Booking platformy pokrývají formuláře zdarma a patch-test log nestačí jako důvod platit.",
+      "mitigation": "Odlišit UI i funkce od #04 (before/after rámeček, korekce), cílit na PMU akademie jako distribuční kanál.",
+      "build_weeks": 3.5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 9,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "business-13",
+      "name": "Notary Journal: Private Offline Log",
+      "tagline": "Notářský deník, který nikdy neopustí váš telefon — sekvenční, neměnný, s poplatky a mílemi.",
+      "pitch": "V mnoha státech USA musí notář vést deník úkonů a mobilní notáři a loan signing agenti k tomu řeší poplatky, míle a scanbacky. Lídři (NotaryAct) jsou cloudové — a notáři citlivá data klientů do cizího cloudu posílat nechtějí. Nabídneme sekvenční, neměnný deník (append-only s hash řetězcem), foto průkazu a podpisu, pole podle státu, Face ID a export PDF, plus evidenci poplatků a najetých mil pro daně.",
+      "niche": "Soukromý offline deník + finance loan signing agenta. Cloudoví lídři monetizují přes účty; offline varianta s důrazem na soukromí je v evidenci slabě zastoupená.",
+      "parent_market": "Notary software (NotaryAct, Notary eJournal, NotaryGadget, NotaryAssist) — prokázaný US trh.",
+      "target_user": "Mobilní notář a loan signing agent v US (hlavně státy s povinným deníkem).",
+      "features": [
+        "Sekvenční, neměnné záznamy (append-only, hash řetězec)",
+        "Pole dle státu: typ úkonu, ID, poplatek, podpis, (volitelně) foto otisku",
+        "Poplatky, míle, scanbacky → roční přehled pro daně",
+        "Face ID, šifrování, PDF export deníku",
+        "iCloud záloha pro povinnou archivaci"
+      ],
+      "offline": "full",
+      "offline_note": "Data zůstávají na zařízení, šifrovaná záloha v iCloudu (Apple). Žádné účty.",
+      "monetization": "$4.99/měs (≈ 115 Kč), $39.99/rok (≈ 920 Kč), $79.99 doživotně (≈ 1 840 Kč).",
+      "revenue_math": "700 stažení/měs × 5.0 % konverze = 35 platících × $40 (vážený průměr roční/doživotní/měsíční) = $1 400 hrubě → ×0,85 = $1 190 → ×23 = 27 400 Kč čistého/měs v ideálu. Ideál = 'notary journal' + 'loan signing agent' v US; notáři (~4 mil. v US) mají zákonnou povinnost vést deník v řadě států.",
+      "revenue_czk_ideal": 27400,
+      "keywords": [
+        {
+          "kw": "notary journal",
+          "saturation": 2,
+          "competitor": "NotaryAct - Electronic Journal",
+          "note": "evidence: 'journal' ve 2 titulech — MEDIUM"
+        },
+        {
+          "kw": "notary",
+          "saturation": 6,
+          "competitor": "NotaryGadget",
+          "note": "evidence: 'notary' v 6 titulech — parent"
+        },
+        {
+          "kw": "loan signing agent",
+          "saturation": 2,
+          "competitor": "NotaryGadget",
+          "note": "odhad; evidence označuje jako neotestované"
+        },
+        {
+          "kw": "notary log",
+          "saturation": 1,
+          "competitor": "Notary eJournal",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Ověřeno (evidence): 6 appek s 'notary', 2 s 'journal', lídr je cloudový → poptávka existuje, offline úhel je volný. Předpoklad: notáři preferují soukromí před cloudem — neověřeno; počet notářů v US z vlastní znalosti.",
+      "competitors": [
+        {
+          "name": "NotaryAct - Electronic Journal",
+          "url": "https://apps.apple.com/in/app/notaryact-electronic-journal/id577611054",
+          "role": "parent",
+          "note": "cloudový, sekvenční nemodifikovatelné záznamy"
+        },
+        {
+          "name": "Notary eJournal",
+          "url": "https://apps.apple.com/us/app/notary-ejournal/id1517094829",
+          "role": "niche",
+          "note": "kalifornská, používaná ve 45+ státech"
+        },
+        {
+          "name": "NotaryGadget",
+          "url": "https://apps.apple.com/us/app/notarygadget/id1633651969",
+          "role": "niche",
+          "note": "účetnictví, deník a provoz mobilních notářů"
+        },
+        {
+          "name": "NotaryAssist",
+          "url": "https://apps.apple.com/us/app/notaryassist/id1552293025",
+          "role": "niche",
+          "note": ""
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Státní požadavky na elektronický deník se liší a mění (CA, TX, FL…) — nesoulad může notáře ohrozit a nás žalovat.",
+        "Ztráta telefonu = ztráta zákonem povinného deníku; bez spolehlivé zálohy velké riziko.",
+        "NNA a platformy RON (BlueNotary) dávají deník v rámci služeb zdarma.",
+        "US-only trh — žádná lokalizační páka, kterou jinde využíváme."
+      ],
+      "killer_risk": "Právní nesoulad se státními pravidly a odpovědnost.",
+      "mitigation": "Vydat nejdřív pro státy s jasnými pravidly, disclaimer + povinná iCloud záloha, konzultace s notářskou komunitou před launch.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 7,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 4
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "business-14",
+      "name": "Prep Labels: Food Date Labels",
+      "tagline": "Štítky 'připraveno/spotřebujte do' z telefonu na levnou tiskárnu — s alergeny a FIFO.",
+      "pitch": "Každá profesionální kuchyně lepí na nádoby štítky s datem přípravy a spotřeby; buď ručně fixou, nebo přes drahé systémy s vlastní tiskárnou (DateCodeGenie). Aplikace má seznam produktů s trvanlivostí, jedním ťuknutím spočítá datum a vytiskne štítek na AirPrint nebo Bluetooth tiskárnu štítků, s ikonami alergenů a kódem šarže. Z HACCP appek tiskne štítky jen BackResto; zbytek trhu je hardware.",
+      "niche": "Malé kuchyně bez rozpočtu na labeling systém. Velcí hráči prodávají hardware+předplatné; HACCP appky štítky netisknou.",
+      "parent_market": "Food labeling systémy (DateCodeGenie, Ecolab, NCCO) a HACCP appky (BackResto, HACCP App).",
+      "target_user": "Kuchař/šéfkuchař malé restaurace, kavárny, food trucku, kantýny; US, UK, EU, AU.",
+      "features": [
+        "Seznam produktů s trvanlivostí (dny/hodiny), kategorie",
+        "Tisk štítků: AirPrint + Bluetooth tiskárny štítků (Brother/Zebra)",
+        "Ikony alergenů a kód šarže/přípravy na štítku",
+        "Denní FIFO kontrola: co dnes expiruje",
+        "Lokalizované formáty data"
+      ],
+      "offline": "full",
+      "offline_note": "Tisk přes lokální síť/Bluetooth bez cloudu; data na zařízení.",
+      "monetization": "$7.99/měs (≈ 184 Kč), $59.99/rok (≈ 1 380 Kč) za provozovnu.",
+      "revenue_math": "500 stažení/měs × 4.0 % konverze = 20 platících × $55 (vážený průměr roční/doživotní/měsíční) = $1 100 hrubě → ×0,85 = $935 → ×23 = 21 500 Kč čistého/měs v ideálu. Ideál = 'food labels', 'prep labels', 'day dots' v US/UK/AU; provozovny platí za tisk štítků (alternativa jsou drahé hardware bundly).",
+      "revenue_czk_ideal": 21500,
+      "keywords": [
+        {
+          "kw": "food labels",
+          "saturation": 5,
+          "competitor": "neověřeno (label makery)",
+          "note": "odhad; obecné label appky"
+        },
+        {
+          "kw": "prep labels",
+          "saturation": 2,
+          "competitor": "BackResto - HACCP",
+          "note": "odhad; BackResto tiskne štítky (evidence)"
+        },
+        {
+          "kw": "day dots",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "food rotation labels",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Ověřeno (evidence): BackResto zmiňuje tisk štítků a offline; 'food day-dot labels' je v evidenci neotestovaná sousední nika. Předpoklad: poptávka a saturace štítkových klíčových slov — z vlastní znalosti trhu.",
+      "competitors": [
+        {
+          "name": "BackResto - HACCP",
+          "url": "https://apps.apple.com/qa/app/backresto-haccp/id1634053106?platform=tv",
+          "role": "niche",
+          "note": "teploty lednic, tiskne štítky, offline"
+        },
+        {
+          "name": "HACCP App",
+          "url": "https://apps.apple.com/us/app/haccp-app/id1201774065",
+          "role": "parent",
+          "note": "HACCP suita"
+        },
+        {
+          "name": "Kitchen HACCP Logs",
+          "url": "https://apps.apple.com/gb/app/kitchen-haccp-logs/id6756550638",
+          "role": "niche",
+          "note": "UK HACCP logy"
+        },
+        {
+          "name": "DateCodeGenie",
+          "url": "",
+          "role": "parent",
+          "note": "hardware + software labeling (bez evidence URL)"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Podpora tiskáren štítků je noční můra — různé SDK, formáty a firmware = support a špatné recenze.",
+        "Kuchyně mají předtištěné day-dot samolepky za haléře a fixu.",
+        "Hardware dodavatelé nabízejí bundly s pronájmem tiskárny a servisem.",
+        "Offline Bluetooth SDK výrobců se mění a mohou vyžadovat licenci."
+      ],
+      "killer_risk": "Nestabilní tisk na různých tiskárnách zabije hodnocení.",
+      "mitigation": "Oficiálně podporovat 2–3 modely tiskáren + AirPrint, zbytek jako 'beta'; nabídnout i PDF archy štítků na A4.",
+      "build_weeks": 8,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 7,
+        "build_ease": 4,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "business-15",
+      "name": "Allergen Matrix: 14 Allergens Menu",
+      "tagline": "Ze surovin do receptů, z receptů na matici 14 alergenů — a PDF tabulka na pult.",
+      "pitch": "V EU a UK musí každá provozovna umět říct, který pokrm obsahuje kterých 14 alergenů, a v UK platí pro balené potraviny Natasha's Law. Malé podniky to vedou v Excelu, který se po změně receptu rozejde s realitou. Aplikace hlídá alergeny od suroviny přes recept až k pokrmu: změna dodavatele se propíše všude, výsledkem je PDF matice na pult a štítek PPDS. Velké recepturní systémy (Nutritics, Kafoodle) jsou desktopové a drahé.",
+      "niche": "Malé EU/UK provozovny, pekárny, kavárny a stánky. Recepturní SaaS je pro řetězce; US appky pracují s 9 americkými alergeny.",
+      "parent_market": "Recipe & allergen management (Nutritics, Kafoodle, Menutech) a HACCP appky.",
+      "target_user": "Majitel malé kavárny, pekárny, food trucku, B&B v UK/IE/EU; výrobce balených potravin 'prepacked for direct sale'.",
+      "features": [
+        "Suroviny s alergeny (EU 14, volitelně US 9)",
+        "Recepty a pokrmy dědí alergeny automaticky",
+        "PDF matice alergenů pro personál a hosty",
+        "PPDS štítek s ingrediencemi a zvýrazněnými alergeny",
+        "Historie změn receptur"
+      ],
+      "offline": "full",
+      "offline_note": "Databáze je jen uživatelská, žádná licencovaná data; vše lokálně.",
+      "monetization": "$5.99/měs (≈ 138 Kč), $44.99/rok (≈ 1 035 Kč).",
+      "revenue_math": "700 stažení/měs × 4.0 % konverze = 28 platících × $40 (vážený průměr roční/doživotní/měsíční) = $1 120 hrubě → ×0,85 = $952 → ×23 = 21 900 Kč čistého/měs v ideálu. Ideál = 'allergen chart', '14 allergens', 'allergen matrix' v UK/IE/EU; provozovny musí informace o alergenech mít.",
+      "revenue_czk_ideal": 21900,
+      "keywords": [
+        {
+          "kw": "allergen chart",
+          "saturation": 2,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "14 allergens",
+          "saturation": 2,
+          "competitor": "neověřeno",
+          "note": "odhad; UK/EU specifické"
+        },
+        {
+          "kw": "allergen matrix",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "natasha's law",
+          "saturation": 0,
+          "competitor": "neověřeno",
+          "note": "odhad; právní termín, trademark riziko nízké"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem: allergen matrix je v evidenci jen jako neotestovaný kandidát. Povinnost (EU 1169/2011, UK Natasha's Law 2021) je známý fakt; poptávka v App Store je předpoklad z vlastní znalosti.",
+      "competitors": [
+        {
+          "name": "Kitchen HACCP Logs",
+          "url": "https://apps.apple.com/gb/app/kitchen-haccp-logs/id6756550638",
+          "role": "niche",
+          "note": "UK kuchyňské logy, alergeny okrajově"
+        },
+        {
+          "name": "Pro Food Safe System",
+          "url": "https://apps.apple.com/us/app/pro-food-safe-system/id1529676695",
+          "role": "niche",
+          "note": "food safety systém"
+        },
+        {
+          "name": "Nutritics",
+          "url": "",
+          "role": "parent",
+          "note": "recepturní a alergenový SaaS (bez evidence URL)"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "Obrácená logika: EU/UK regulace, US appky s 9 alergeny ji neřeší.",
+      "devils_advocate": [
+        "Odpovědnost: chybná matice → anafylaxe → soud; appka bude cílem obviňování.",
+        "FSA/úřady nabízejí šablony zdarma a Excel stačí mnoha podnikům.",
+        "Zadávání receptur je pracné; bez importu uživatelé odpadnou v onboardingu.",
+        "UK recepturní SaaS (Nutritics, Kafoodle) mají mobilní appky a vztahy s dodavateli."
+      ],
+      "killer_risk": "Právní odpovědnost a pracný onboarding.",
+      "mitigation": "Výrazný disclaimer, uživatel potvrzuje každou surovinu, rychlé šablony typických surovin a import CSV.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "business-16",
+      "name": "Barn Billing: Boarding Stable Invoices",
+      "tagline": "Měsíční faktury ustájení na jedno ťuknutí — i s dekami, výběhem a doplňky.",
+      "pitch": "Majitelé ustájovacích stájí každý měsíc skládají faktury z pevného ustájení a desítek drobných příplatků: deky, výběh, doplňky krmiva, předání kováři či veterináři. BarnManager je silný, ale komplexní a webový; malá stáj s 10–40 koňmi potřebuje jen seznam ustájených, šablonu příplatků a PDF faktury pro všechny naráz. Vše offline ve stáji, kde signál často není.",
+      "niche": "Malé ustájovací stáje, které nepotřebují plný barn management. Lídr cílí na profesionální jezdecké areály.",
+      "parent_market": "Equine / barn management (BarnManager, Horsekeeping, HorseKeeper).",
+      "target_user": "Majitel/ka malé ustájovací stáje (10–40 koní) v US, UK, IE, AU, DE.",
+      "features": [
+        "Ustájení a koně, cenové tarify",
+        "Rychlé příplatky z ustájení (deky, výběh, krmivo)",
+        "Průchozí náklady kováře/veterináře",
+        "Měsíční PDF faktury všem naráz, stav úhrad",
+        "Mapa boxů a připomínky"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, iCloud sync pro 2 zařízení.",
+      "monetization": "$9.99/měs (≈ 230 Kč), $79.99/rok (≈ 1 840 Kč).",
+      "revenue_math": "300 stažení/měs × 6.0 % konverze = 18 platících × $70 (vážený průměr roční/doživotní/měsíční) = $1 260 hrubě → ×0,85 = $1 071 → ×23 = 24 600 Kč čistého/měs v ideálu. Ideál = 'horse boarding', 'stable management' v US/UK/AU/DE; majitel stáje fakturuje tisíce měsíčně a čas je drahý.",
+      "revenue_czk_ideal": 24600,
+      "keywords": [
+        {
+          "kw": "horse boarding",
+          "saturation": 2,
+          "competitor": "BarnManager",
+          "note": "odhad; evidence nika jmenuje jako neotestovanou"
+        },
+        {
+          "kw": "barn management",
+          "saturation": 4,
+          "competitor": "BarnManager",
+          "note": "odhad"
+        },
+        {
+          "kw": "stable management",
+          "saturation": 3,
+          "competitor": "HorseKeeper - Equine Manager",
+          "note": "odhad"
+        },
+        {
+          "kw": "boarding invoice",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Ověřeno jen nepřímo (evidence): BarnManager a několik equine appek existují, stájová fakturace je jmenovaná jako neotestovaná sousední nika. Předpoklad: poptávka po jednoduché fakturaci — z vlastní znalosti.",
+      "competitors": [
+        {
+          "name": "BarnManager",
+          "url": "https://apps.apple.com/us/app/barnmanager/id1261521499",
+          "role": "parent",
+          "note": "lídr barn managementu včetně fakturace"
+        },
+        {
+          "name": "Horsekeeping",
+          "url": "https://apps.apple.com/us/app/horsekeeping/id1378029847",
+          "role": "niche",
+          "note": "péče o koně"
+        },
+        {
+          "name": "HorseKeeper - Equine Manager",
+          "url": "https://apps.apple.com/us/app/horsekeeper-equine-manager/id6767037803",
+          "role": "niche",
+          "note": "nová equine appka"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "BarnManager už fakturaci má a může přidat levný tarif.",
+        "Malých stájí s iPhonem je málo a mnoho majitelů fakturuje přes QuickBooks/Excel.",
+        "Fakturační náležitosti se liší dle země (DPH) — lokalizace pracná.",
+        "Sdílí publikum s Farrier Book (#06) — riziko kanibalizace klíčových slov."
+      ],
+      "killer_risk": "Příliš malá nika s dominantním lídrem.",
+      "mitigation": "Vysoká cena, jednoduchost jako USP, cross-promo s #06.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 7,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "business-17",
+      "name": "Kids Check-In: Church & Club",
+      "tagline": "Bezpečný příchod a odchod dětí s tištěnými štítky a kódem — bez internetu a bez ChMS předplatného.",
+      "pitch": "Sbory, letní tábory (VBS) a kluby potřebují bezpečně zapsat dítě a vydat ho jen tomu, kdo má shodný kód. Planning Center a další ChMS to řeší jako součást drahé platformy a potřebují stabilní Wi-Fi. Nabídneme kiosk na iPadu, rodinnou databázi, štítky s kódem a alergiemi na AirPrint/Bluetooth tiskárnu a přehled docházky — zcela offline. Pro malé sbory a jednorázové akce, pro které je ChMS zbytečný.",
+      "niche": "Malé sbory a akce (VBS, tábory), které nemají ChMS. Velké platformy prodávají check-in v balíku.",
+      "parent_market": "Church management software s check-in moduly (Planning Center Check-Ins, Breeze, Tithe.ly ChMS).",
+      "target_user": "Koordinátor dětské služby v malém sboru, organizátor VBS/tábora, sportovní klub pro děti.",
+      "features": [
+        "Kiosk režim na iPadu, vyhledání rodiny",
+        "Štítky dítě+rodič se shodným kódem, alergie na štítku",
+        "Tisk přes AirPrint a Bluetooth tiskárny štítků",
+        "Docházka a přehledy",
+        "Sync 2 kiosků přes iCloud"
+      ],
+      "offline": "mostly",
+      "offline_note": "Kiosk a tisk běží offline; synchronizace více kiosků přes CloudKit vyžaduje připojení (Apple, ne náš server).",
+      "monetization": "$9.99/měs (≈ 230 Kč), $79.99/rok (≈ 1 840 Kč); VBS týdenní licence $14.99.",
+      "revenue_math": "400 stažení/měs × 5.0 % konverze = 20 platících × $70 (vážený průměr roční/doživotní/měsíční) = $1 400 hrubě → ×0,85 = $1 190 → ×23 = 27 400 Kč čistého/měs v ideálu. Ideál = 'church check in', 'kids check in', 'vbs check in' v US + lokalizace (BR, KR, PH); cena za sbor.",
+      "revenue_czk_ideal": 27400,
+      "keywords": [
+        {
+          "kw": "church check in",
+          "saturation": 3,
+          "competitor": "neověřeno (ChMS appky)",
+          "note": "odhad; evidence uvádí jako neotestovanou nika"
+        },
+        {
+          "kw": "kids check in",
+          "saturation": 3,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "vbs check in",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "child check in label",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Ověřeno (evidence): církevní trh je prokázaný (Tithe.ly, Church Metrics), 'offline kids check-in with label printing' je jmenovaný jako neotestovaný úhel. Saturace a poptávka jsou odhad z vlastní znalosti.",
+      "competitors": [
+        {
+          "name": "Church App - Tithe.ly",
+          "url": "https://apps.apple.com/us/app/church-app-tithe-ly/id565301194",
+          "role": "parent",
+          "note": "církevní platforma (ChMS/dary)"
+        },
+        {
+          "name": "Church Metrics",
+          "url": "https://apps.apple.com/us/app/church-metrics/id792901164",
+          "role": "niche",
+          "note": "zdarma docházka"
+        },
+        {
+          "name": "Planning Center Check-Ins",
+          "url": "",
+          "role": "parent",
+          "note": "lídr church check-in (bez evidence URL)"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Planning Center Check-Ins je pro malé sbory levný/zdarma a má silný brand.",
+        "Bezpečnost dětí = vysoká odpovědnost; chyba při výdeji dítěte by byla katastrofa pro reputaci.",
+        "Sync více kiosků bez vlastního serveru (CloudKit latence) může selhat v nedělní špičce.",
+        "Tisk štítků na různých tiskárnách = support zátěž (viz #14)."
+      ],
+      "killer_risk": "Planning Center je zdarma pro malé sbory a nahradí nás.",
+      "mitigation": "Cílit na jednorázové akce (VBS, tábory) a sbory bez ChMS, jednoduchý onboarding za 10 minut.",
+      "build_weeks": 8,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 7,
+        "build_ease": 4,
+        "offline_fit": 7,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "business-18",
+      "name": "Fiado: Customer Credit Book",
+      "tagline": "Sešit dluhů zákazníků pro malý obchod — kdo kolik dluží, připomínka jedním ťuknutím.",
+      "pitch": "V Indii ovládl trh 'khata' sešit Khatabook se desítkami milionů uživatelů; v Latinské Americe má každá tiendita 'libreta de fiados' a v Brazílii 'caderneta'. Nabídneme stejný model offline a bez účtu: zákazníci, dluh/splátka, zůstatek, připomínka přes sdílení zprávy a PDF výpis. Lokálně pojmenované, v lokální měně, na iPhonu, který v LatAm používá bohatší část malých podnikatelů.",
+      "niche": "Malý obchodník v LatAm/Africe na iPhonu. Khatabook/OkCredit jsou indické, Treinta (CO) je cloudový s účty.",
+      "parent_market": "Digitální sešity dluhů (Khatabook, OkCredit, Treinta) — desítky milionů uživatelů v Indii a LatAm.",
+      "target_user": "Majitel tienditas, trafiky, kadeřnictví, řemeslník, který 'píše na dluh' — MX, CO, AR, BR, PE, frankofonní Afrika.",
+      "features": [
+        "Zákazníci, dluh a splátka jedním ťuknutím",
+        "Zůstatky a stáří dluhu",
+        "Připomínka přes share sheet (WhatsApp/SMS text)",
+        "PDF výpis pro zákazníka",
+        "Lokální měna, Face ID, iCloud záloha"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně; sdílení zprávy jen předává text systému.",
+      "monetization": "Freemium do 20 zákazníků; Pro $1.99/měs (≈ 46 Kč), $12.99/rok (≈ 299 Kč).",
+      "revenue_math": "4000 stažení/měs × 2.0 % konverze = 80 platících × $12 (vážený průměr roční/doživotní/měsíční) = $960 hrubě → ×0,85 = $816 → ×23 = 18 800 Kč čistého/měs v ideálu. Ideál = 'credit book', 'debt book', 'customer ledger' v es-MX/CO/AR, pt-BR, fr-Afrika; nízká cena, velký objem.",
+      "revenue_czk_ideal": 18800,
+      "keywords": [
+        {
+          "kw": "credit book",
+          "saturation": 3,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "debt book",
+          "saturation": 4,
+          "competitor": "neověřeno",
+          "note": "odhad; osobní 'dluhy přátel' appky"
+        },
+        {
+          "kw": "customer ledger",
+          "saturation": 2,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "ledger book",
+          "saturation": 5,
+          "competitor": "Khatabook",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem. Z vlastní znalosti: Khatabook/OkCredit mají desítky milionů uživatelů v Indii (Android), Treinta v LatAm. Poptávka na iOS v LatAm je předpoklad.",
+      "competitors": [
+        {
+          "name": "Khatabook",
+          "url": "",
+          "role": "parent",
+          "note": "indický lídr khata sešitu (bez evidence URL)"
+        },
+        {
+          "name": "OkCredit",
+          "url": "",
+          "role": "parent",
+          "note": "indický konkurent (bez evidence URL)"
+        },
+        {
+          "name": "Treinta",
+          "url": "",
+          "role": "niche",
+          "note": "LatAm bookkeeping s fiados, cloud (bez evidence URL)"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Obrácená mezera: model velký v Indii (Khatabook) a LatAm (Treinta), s lokálními názvy (fiado, caderneta) na iOS pravděpodobně slabě zastoupený.",
+      "devils_advocate": [
+        "Cílovka je na Androidu; iOS podíl v MX ~25 %, BR ~15 % a mezi tiendas ještě menší.",
+        "Konkurenti jsou VC financovaní a zdarma — předplatné $1.99 je těžké.",
+        "Bez cloudu hrozí ztráta dat při ztrátě telefonu — u dluhů fatální.",
+        "Lokální terminologie a kultura placení se liší; anglická klíčová slova nemusí fungovat."
+      ],
+      "killer_risk": "Nízká ochota platit v cílových trzích a malá iOS základna.",
+      "mitigation": "Lokalizovaná metadata (fiado, caderneta), jednorázová doživotní licence, povinná iCloud záloha.",
+      "build_weeks": 2.5,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 3,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "business-19",
+      "name": "Turnover Checklist: STR Cleaning Proof",
+      "tagline": "Úklid po hostech s fotodůkazem pro každou místnost — a spor o 'špinavý byt' je vyhraný.",
+      "pitch": "Uklízeči krátkodobých pronájmů žijí z recenzí hostitelů a hádek o chybějící ručník či rozbitou sklenici. Platformy (Turno, Breezeway) platí hostitel a uklízeč musí používat ten jeho systém. My dáváme nezávislému uklízeči vlastní nástroj: šablony podle nemovitosti, povinné fotky po místnostech, počty prádla a zásob, hlášení škod s časem a PDF report pro hostitele. Plus stopky a faktura.",
+      "niche": "Nezávislý uklízeč s 3–15 nemovitostmi. Existující platformy jsou host-centrické.",
+      "parent_market": "Short-term rental operations (Turno, Breezeway, Properly) a rental inspection appky.",
+      "target_user": "Nezávislý uklízeč/úklidová firma 1–5 lidí pro Airbnb/Booking/Vrbo hostitele; US, UK, EU.",
+      "features": [
+        "Šablony checklistů podle nemovitosti a místnosti",
+        "Povinné fotky s časovým razítkem",
+        "Prádlo a spotřební zásoby: počty a doobjednání",
+        "Hlášení škod s fotkou",
+        "PDF report hostiteli, stopky a faktura"
+      ],
+      "offline": "full",
+      "offline_note": "Checklisty a fotky lokálně, report se sdílí share sheetem.",
+      "monetization": "$5.99/měs (≈ 138 Kč), $44.99/rok (≈ 1 035 Kč).",
+      "revenue_math": "1000 stažení/měs × 3.0 % konverze = 30 platících × $40 (vážený průměr roční/doživotní/měsíční) = $1 200 hrubě → ×0,85 = $1 020 → ×23 = 23 500 Kč čistého/měs v ideálu. Ideál = 'cleaning checklist', 'turnover cleaning', 'vacation rental cleaning' v US/UK/EU; uklízeči krátkodobých pronájmů.",
+      "revenue_czk_ideal": 23500,
+      "keywords": [
+        {
+          "kw": "turnover cleaning",
+          "saturation": 2,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "cleaning checklist",
+          "saturation": 6,
+          "competitor": "obecné úklidové checklisty",
+          "note": "odhad — přeplněné domácími appkami"
+        },
+        {
+          "kw": "vacation rental cleaning",
+          "saturation": 2,
+          "competitor": "Turno",
+          "note": "odhad"
+        },
+        {
+          "kw": "str cleaning",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad; bez trademarku Airbnb v metadatech"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem: evidence tuto nika uvádí jako neotestovanou. Z vlastní znalosti: Turno má velkou komunitu uklízečů → poptávka existuje, ale host platí.",
+      "competitors": [
+        {
+          "name": "Turno",
+          "url": "",
+          "role": "parent",
+          "note": "marketplace a nástroj úklidů STR (bez evidence URL)"
+        },
+        {
+          "name": "Keyturn - Rental inspection",
+          "url": "https://apps.apple.com/us/app/keyturn-rental-inspection/id6451185509",
+          "role": "niche",
+          "note": "inspekce pronájmů, sousední job"
+        },
+        {
+          "name": "Breezeway",
+          "url": "",
+          "role": "parent",
+          "note": "operations platforma pro správce (bez evidence URL)"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Hostitel diktuje nástroj — uklízeč musí používat Turno/Breezeway a naši appku nepotřebuje.",
+        "'Airbnb' v klíčových slovech = riziko trademark/2.3.7; bez něj ztrácíme hlavní hledání.",
+        "Obecné checklist appky jsou zdarma.",
+        "Nezávislí uklízeči mají nízké marže a nechtějí předplatné."
+      ],
+      "killer_risk": "Uklízeč nemá rozhodovací moc nad nástrojem.",
+      "mitigation": "Pozicovat jako 'ochrana uklízeče' (důkazy pro spory), export PDF kompatibilní s jakýmkoli hostitelem.",
+      "build_weeks": 3.5,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 8,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "business-20",
+      "name": "Snow Log: Plow Proof of Service",
+      "tagline": "Každý odhrnutý parking s časem, fotkou a solí — důkaz, když přijde žaloba za uklouznutí.",
+      "pitch": "Firmy odklízející sníh čelí žalobám za uklouznutí ('slip and fall') a jediná obrana je důkaz, kdy a jak zasáhly. Malí odklízeči to dnes zapisují na papír nebo neřeší vůbec. Aplikace u každé lokace uloží čas příjezdu/odjezdu, GPS, fotky, výšku sněhu a množství soli a na konci bouře vytvoří PDF pro klienta a pojišťovnu, plus fakturu po zásazích. Velké field-service platformy mají sněhové moduly, ale jsou drahé a složité.",
+      "niche": "Samostatný odklízeč s pickupem a 10–60 lokacemi. Jobber/Service Autopilot jsou pro větší firmy.",
+      "parent_market": "Field service management (Jobber, Service Autopilot, Housecall Pro) — prokázaný velký trh.",
+      "target_user": "Samostatný odklízeč sněhu / landscaper v zimě (US North, CA, Skandinávie).",
+      "features": [
+        "Lokace a trasa bouře",
+        "Záznam zásahu: čas, GPS, fotky, výška sněhu, sůl",
+        "PDF report bouře pro klienta/pojišťovnu",
+        "Faktura po zásazích nebo sezónní paušál",
+        "Volitelně počasí přes WeatherKit"
+      ],
+      "offline": "mostly",
+      "offline_note": "Záznamy, GPS a fotky offline; WeatherKit (Apple) volitelně pro údaje o počasí.",
+      "monetization": "$7.99/měs (≈ 184 Kč) nebo $49.99/sezóna-rok (≈ 1 150 Kč).",
+      "revenue_math": "600 stažení/měs × 5.0 % konverze = 30 platících × $45 (vážený průměr roční/doživotní/měsíční) = $1 350 hrubě → ×0,85 = $1 148 → ×23 = 26 400 Kč čistého/měs v ideálu. Ideál = sezónní měsíc (prosinec–únor) v US/CA; 'snow removal', 'snow plow log'. Průměr přes rok výrazně nižší.",
+      "revenue_czk_ideal": 26400,
+      "keywords": [
+        {
+          "kw": "snow removal",
+          "saturation": 4,
+          "competitor": "neověřeno (field service appky)",
+          "note": "odhad"
+        },
+        {
+          "kw": "snow plow log",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "snow removal invoice",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "proof of service",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem; nika je jen v brainstormu (business i productivity evidence). Z vlastní znalosti: slip-and-fall žaloby jsou hlavní obchodní riziko odklízečů.",
+      "competitors": [
+        {
+          "name": "Jobber",
+          "url": "",
+          "role": "parent",
+          "note": "field service lídr se sněhovými funkcemi (bez evidence URL)"
+        },
+        {
+          "name": "Service Autopilot",
+          "url": "",
+          "role": "parent",
+          "note": "landscaping + snow (bez evidence URL)"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Extrémní sezónnost: 4 měsíce příjmů, předplatné se ruší na jaře.",
+        "Teplé zimy = méně zásahů = nižší poptávka rok od roku.",
+        "Časové razítko ve fotkách lze u soudu zpochybnit; bez nezávislého serveru slabší důkaz.",
+        "Jobber a spol. mohou udělat 'snow lite' tarif."
+      ],
+      "killer_risk": "Sezónnost a churn na jaře.",
+      "mitigation": "Sezónní cena, v létě přepnout appku na landscaping proof-of-service (sekání), aby předplatné dávalo smysl celý rok.",
+      "build_weeks": 3.5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 8,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "business-21",
+      "name": "Booth Ledger: Antique Mall Vendor",
+      "tagline": "Vydělává tvůj stánek v antik mallu po nájmu a provizi? Konečně odpověď.",
+      "pitch": "V US jsou tisíce antique mallů a flea-market center, kde si prodejci pronajímají stánek a mall jim týdně posílá výpis prodaných položek. Prodejce ale neví, co ho stála která věc, co leží neprodané 6 měsíců a jestli stánek po nájmu a provizi vůbec vydělává. Aplikace spojí nákupní cenu, cenovku, lokaci ve stánku, zadání prodejů z výpisu a spočítá zisk i 'staré zboží ke zlevnění'.",
+      "niche": "Prodejci v antique mallech a konsignaci. Reseller appky (Vendoo, List Perfectly) řeší online marketplace, craft-fair trackery události.",
+      "parent_market": "Reseller a vendor nástroje (VendStats, myBooth, Vendoo, List Perfectly).",
+      "target_user": "Prodejce se stánkem v antique mallu, konsignačním obchodě nebo flea-market centru (US, UK, AU).",
+      "features": [
+        "Inventář: nákupní cena, cenovka, foto, pozice ve stánku",
+        "Zadání prodejů z týdenního výpisu mallu",
+        "Zisk po nájmu a provizi, po měsících",
+        "Staré zboží → návrh zlevnění",
+        "Evidence nákupů (garážové prodeje, aukce)"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně.",
+      "monetization": "$4.99/měs (≈ 115 Kč), $34.99/rok (≈ 805 Kč).",
+      "revenue_math": "700 stažení/měs × 4.0 % konverze = 28 platících × $32 (vážený průměr roční/doživotní/měsíční) = $896 hrubě → ×0,85 = $762 → ×23 = 17 500 Kč čistého/měs v ideálu. Ideál = 'antique booth', 'consignment tracker', 'booth rent' v US/CA/UK/AU.",
+      "revenue_czk_ideal": 17500,
+      "keywords": [
+        {
+          "kw": "antique booth",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad; finance evidence nika označuje jako otevřenou, nehledanou"
+        },
+        {
+          "kw": "consignment tracker",
+          "saturation": 2,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "booth rent tracker",
+          "saturation": 1,
+          "competitor": "myBooth: Inventory & Events",
+          "note": "odhad"
+        },
+        {
+          "kw": "reseller inventory",
+          "saturation": 5,
+          "competitor": "VendStats: Sales Tracker",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Ověřeno jen nepřímo (finance evidence): vendor/craft-fair trackery jsou 3–4 slabé nové appky, 'antique-mall booth/consignment tracker' jmenován jako otevřený, nehledaný. Poptávka je předpoklad.",
+      "competitors": [
+        {
+          "name": "VendStats: Sales Tracker",
+          "url": "https://apps.apple.com/us/app/vendstats-sales-tracker/id6759027702",
+          "role": "niche",
+          "note": "garážové prodeje, flea market, majitelé stánků"
+        },
+        {
+          "name": "myBooth: Inventory & Events",
+          "url": "https://apps.apple.com/us/app/mybooth-inventory-events/id6763803666",
+          "role": "niche",
+          "note": "inventář a akce"
+        },
+        {
+          "name": "Vendoo",
+          "url": "",
+          "role": "parent",
+          "note": "reseller crosslisting (bez evidence URL)"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Malls mají vlastní POS a online portál s výpisy — ruční zadávání je otrava.",
+        "Prodejci antik jsou starší generace a často vedou sešit.",
+        "VendStats může přidat nájem a provizi za týden.",
+        "Malá cenová tolerance hobby prodejců."
+      ],
+      "killer_risk": "Ruční zadávání prodejů je příliš pracné a uživatelé odpadnou.",
+      "mitigation": "Import CSV/PDF výpisu (on-device parsing) a rychlé zadání přes čárový kód/tag.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "business-22",
+      "name": "Laser Quote: Engraving Job Pricing",
+      "tagline": "Kolik si říct za gravírování 50 prkének? Čas stroje, materiál, marže — za 30 sekund.",
+      "pitch": "Domácí lasery xTool, Glowforge a další vytvořily obrovskou vlnu mikro-podnikatelů prodávajících gravírované dárky na Etsy a trzích. Téměř všichni podhodnocují cenu, protože nepočítají čas stroje, odpad materiálu a opotřebení trubice. Aplikace má profily strojů s hodinovou sazbou, knihovnu materiálů za arch, odhad času z plochy a rychlosti, množstevní slevy a PDF nabídku. Obecná craft-pricing kalkulačka je v evidenci jediná a z roku 2013.",
+      "niche": "Tvůrci s laserem (a volitelně UV tiskem/sublimací). Značkové appky řídí stroj, ne ceny; craft kalkulačky neznají strojní čas.",
+      "parent_market": "Handmade/craft pricing a cost tracking (Craft Pricing Calculator, CraftTok, Craftory).",
+      "target_user": "Majitel domácího laseru, který prodává na Etsy/trzích/firmám (US, EU, AU).",
+      "features": [
+        "Profily strojů: výkon, hodinová sazba, opotřebení",
+        "Knihovna materiálů za arch/kus, odpad %",
+        "Odhad času z plochy a rychlosti, množstevní slevy",
+        "PDF nabídka a jednoduchá evidence zakázek",
+        "Porovnání ceny s cílovou marží"
+      ],
+      "offline": "full",
+      "offline_note": "Čistě výpočty a PDF lokálně.",
+      "monetization": "$3.99/měs (≈ 92 Kč), $29.99/rok (≈ 690 Kč), $49.99 doživotně (≈ 1 150 Kč).",
+      "revenue_math": "1000 stažení/měs × 4.0 % konverze = 40 platících × $30 (vážený průměr roční/doživotní/měsíční) = $1 200 hrubě → ×0,85 = $1 020 → ×23 = 23 500 Kč čistého/měs v ideálu. Ideál = 'laser engraving' + 'engraving price' cluster v US/EU; boom domácích laserů (xTool, Glowforge) vytvořil statisíce mikro-podnikatelů.",
+      "revenue_czk_ideal": 23500,
+      "keywords": [
+        {
+          "kw": "laser engraving",
+          "saturation": 5,
+          "competitor": "značkové appky strojů",
+          "note": "odhad; zahlcené appkami výrobců a designérů"
+        },
+        {
+          "kw": "laser pricing calculator",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "engraving price",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "craft pricing calculator",
+          "saturation": 1,
+          "competitor": "Craft Pricing Calculator (2013)",
+          "note": "finance evidence: jediná dedikovaná, sat 1–3"
+        }
+      ],
+      "demand_evidence": "Ověřeno nepřímo (finance evidence): craft pricing má jen starou appku a 2 slabé nové → otevřené. Laser-specific pricing je odhad z vlastní znalosti (boom domácích laserů 2023–26).",
+      "competitors": [
+        {
+          "name": "Craft Pricing Calculator",
+          "url": "https://apps.apple.com/us/app/craft-pricing-calculator/id725600238",
+          "role": "parent",
+          "note": "z roku 2013, jediná dedikovaná craft kalkulačka"
+        },
+        {
+          "name": "CraftTok - Craft Cost Tracker",
+          "url": "https://apps.apple.com/us/app/crafttok-craft-cost-tracker/id6761536181",
+          "role": "niche",
+          "note": "nákladová evidence řemeslníků"
+        },
+        {
+          "name": "xTool Creative Space",
+          "url": "",
+          "role": "parent",
+          "note": "značkový software stroje (bez evidence URL)"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "xTool/LightBurn mohou přidat odhad ceny přímo do softwaru stroje.",
+        "Hobbisté cenu 'střílí' podle Etsy a za kalkulačku platit nechtějí.",
+        "Značky strojů nelze použít v klíčových slovech (trademark) — ztrácíme nejsilnější hledání.",
+        "Odhad času bez dat z konkrétního stroje bývá nepřesný a vede ke kritice."
+      ],
+      "killer_risk": "Výrobci strojů zabudují kalkulaci ceny zdarma.",
+      "mitigation": "Kalibrace času z reálné zakázky uživatele, podpora víc technologií (laser, UV, sublimace) v jedné appce.",
+      "build_weeks": 2.5,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "business-23",
+      "name": "Bloom Recipe: Florist Pricing",
+      "tagline": "Recept kytice ve stoncích, cena s přirážkou a objednávka k velkoobchodu — pro svatební floristy.",
+      "pitch": "Svatební florista skládá nabídku z desítek 'receptů' (kytice, korsáže, centrpíece) a každý obsahuje stonky s nákupní cenou a přirážkou 3–3,5×. Pak musí sečíst, kolik stonků kterého druhu objednat ve velkoobchodě. Webové SaaS (Details, Curate) jsou pro větší studia a drahé; malá floristka to dělá v Excelu. Aplikace dělá recepty, cenu s přirážkou, PDF návrh s fotkami a souhrnnou objednávku stonků.",
+      "niche": "Malé svatební a eventové floristky. Lídři jsou webové CRM pro studia.",
+      "parent_market": "Florist software (Details Flowers, Curate, Stemcounter) — placený SaaS trh.",
+      "target_user": "Samostatná florista/malé květinářství se svatbami a eventy (US, UK, AU, EU).",
+      "features": [
+        "Ceník stonků a doplňků",
+        "Recepty (kytice, centrpíece…) se stonky a přirážkou",
+        "PDF návrh pro nevěstu s fotkami a cenou",
+        "Souhrnná objednávka stonků pro velkoobchod + odpad %",
+        "Historie zakázek a marže"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, ceny zadává uživatel (žádná licencovaná data).",
+      "monetization": "$9.99/měs (≈ 230 Kč), $79.99/rok (≈ 1 840 Kč).",
+      "revenue_math": "400 stažení/měs × 5.0 % konverze = 20 platících × $70 (vážený průměr roční/doživotní/měsíční) = $1 400 hrubě → ×0,85 = $1 190 → ×23 = 27 400 Kč čistého/měs v ideálu. Ideál = 'florist', 'wedding florist', 'flower recipe' v US/UK/AU/EU; svatební floristika má vysoké zakázky.",
+      "revenue_czk_ideal": 27400,
+      "keywords": [
+        {
+          "kw": "florist",
+          "saturation": 5,
+          "competitor": "neověřeno",
+          "note": "odhad; obecné květinářské appky a e-shopy"
+        },
+        {
+          "kw": "wedding florist",
+          "saturation": 2,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "flower recipe",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "floral pricing",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem (v evidenci jen 'florist recipe pricing' v brainstormu). Z vlastní znalosti: Details/Curate/Stemcounter prokazují placenou poptávku, ale jsou webové.",
+      "competitors": [
+        {
+          "name": "Details Flowers Software",
+          "url": "",
+          "role": "parent",
+          "note": "webové CRM pro floristy (bez evidence URL)"
+        },
+        {
+          "name": "Curate",
+          "url": "",
+          "role": "parent",
+          "note": "svatební návrhy pro floristy (bez evidence URL)"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Floristky dělají návrhy na počítači; mobilní appka je pro ně sekundární.",
+        "Details/Curate mají komunitu a vzdělávání, mobilní appku mohou dodat.",
+        "Ceny stonků se mění týdně — ruční aktualizace je otrava.",
+        "Sezónní (svatební sezóna) a malá nika."
+      ],
+      "killer_risk": "Cílovka pracuje na desktopu a appku v App Store nehledá.",
+      "mitigation": "iPad-first s PDF návrhy a Mac Catalyst verze v ceně.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 7,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "business-24",
+      "name": "Guard Log: Daily Activity Report",
+      "tagline": "Denní hlášení strážného s obchůzkami přes NFC, incidenty s fotkou a PDF pro klienta.",
+      "pitch": "Strážní a malé bezpečnostní agentury musí klientovi odevzdávat denní hlášení (DAR) a incident reporty. Velké platformy (TrackTik, Silvertrac) jsou pro agentury se stovkami strážných a stojí desítky dolarů za uživatele. Nabídneme obchůzky přes NFC štítky čtené iPhonem offline, časové záznamy, šablony incidentů s fotkou a PDF DAR na konci směny. Pro samostatné strážné a agentury do 10 lidí.",
+      "niche": "Samostatní strážní a mini-agentury. Lídři jsou enterprise SaaS se serverem.",
+      "parent_market": "Security guard management software (TrackTik, Silvertrac, GuardTek).",
+      "target_user": "Samostatný strážný/noční hlídač, malá bezpečnostní agentura (US, UK, AU, ZA).",
+      "features": [
+        "Začátek/konec směny, časové záznamy",
+        "Obchůzky přes NFC štítky (offline)",
+        "Šablony incidentů s fotkou a podpisem",
+        "PDF DAR a incident report pro klienta",
+        "Předávka směny"
+      ],
+      "offline": "full",
+      "offline_note": "NFC, fotky a PDF na zařízení; bez serveru.",
+      "monetization": "$4.99/měs (≈ 115 Kč), $39.99/rok (≈ 920 Kč) na strážného.",
+      "revenue_math": "800 stažení/měs × 4.0 % konverze = 32 platících × $40 (vážený průměr roční/doživotní/měsíční) = $1 280 hrubě → ×0,85 = $1 088 → ×23 = 25 000 Kč čistého/měs v ideálu. Ideál = 'security guard', 'daily activity report', 'incident report' v US/UK/AU/ZA.",
+      "revenue_czk_ideal": 25000,
+      "keywords": [
+        {
+          "kw": "security guard",
+          "saturation": 5,
+          "competitor": "neověřeno",
+          "note": "odhad; výcvikové i enterprise appky"
+        },
+        {
+          "kw": "daily activity report",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "incident report",
+          "saturation": 5,
+          "competitor": "neověřeno",
+          "note": "odhad; mnoho obecných formulářů"
+        },
+        {
+          "kw": "guard tour",
+          "saturation": 3,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem (security guard DAR je v evidenci jen v brainstormu). Z vlastní znalosti: enterprise platformy prokazují placenou poptávku.",
+      "competitors": [
+        {
+          "name": "TrackTik",
+          "url": "",
+          "role": "parent",
+          "note": "enterprise guard management (bez evidence URL)"
+        },
+        {
+          "name": "Silvertrac",
+          "url": "",
+          "role": "parent",
+          "note": "guard tour a reporty (bez evidence URL)"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Agentury nařizují vlastní platformu — strážný si nástroj nevybírá.",
+        "Někteří klienti zakazují osobní telefony na směně.",
+        "NFC štítky je třeba koupit a rozmístit — tření v onboardingu.",
+        "Strážní mají nízké mzdy a nízkou ochotu platit."
+      ],
+      "killer_risk": "Rozhoduje agentura, ne jednotlivec.",
+      "mitigation": "Cílit na mini-agentury (majitel = uživatel), balíček 'kup si NFC štítky' s návodem.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "business-25",
+      "name": "Booth Leads: Trade Show Scanner",
+      "tagline": "Vizitka nebo badge → kvalifikovaný lead za 5 sekund, i když na veletrhu nejde Wi-Fi.",
+      "pitch": "Na veletrzích nefunguje Wi-Fi a oficiální lead-retrieval appky pořadatelů stojí stovky dolarů za zařízení. Malí vystavovatelé sbírají vizitky do krabice a polovinu po akci ztratí. Aplikace naskenuje vizitku (Vision OCR na zařízení) nebo QR na badge, nechá lead ohodnotit (hot/warm/cold, zájem, poznámka hlasem přepsaná offline) a po akci vyexportuje CSV/vCard do CRM. Bez účtu, bez sítě.",
+      "niche": "Malý vystavovatel (1–3 lidé na stánku). Oficiální lead appky jsou drahé a vázané na akci; business card scannery nemají kvalifikaci leadů a jsou cloudové.",
+      "parent_market": "Business card scanners (CamCard, HubSpot scanner) a event lead retrieval (Cvent, Swapcard).",
+      "target_user": "Obchodník/majitel malé firmy vystavující na veletrzích a konferencích (globálně).",
+      "features": [
+        "Sken vizitky (Vision OCR on-device) a QR/vCard badge",
+        "Kvalifikace: teplota, zájem o produkt, další krok",
+        "Hlasová poznámka s přepisem na zařízení",
+        "Seznam per akce, export CSV/vCard",
+        "Připomínky follow-upu"
+      ],
+      "offline": "full",
+      "offline_note": "OCR, přepis řeči i data na zařízení; export přes share sheet.",
+      "monetization": "$14.99 za akci (IAP) nebo $9.99/měs (≈ 230 Kč), $59.99/rok (≈ 1 380 Kč).",
+      "revenue_math": "1000 stažení/měs × 5.0 % konverze = 50 platících × $18 (vážený průměr roční/doživotní/měsíční) = $900 hrubě → ×0,85 = $765 → ×23 = 17 600 Kč čistého/měs v ideálu. Ideál = 'lead capture', 'trade show', 'badge scanner' globálně; platba za akci (jednorázové IAP) nebo měsíc.",
+      "revenue_czk_ideal": 17600,
+      "keywords": [
+        {
+          "kw": "business card scanner",
+          "saturation": 8,
+          "competitor": "CamCard",
+          "note": "odhad — SATURATED, jen parent"
+        },
+        {
+          "kw": "lead capture",
+          "saturation": 3,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "trade show",
+          "saturation": 3,
+          "competitor": "neověřeno",
+          "note": "odhad; appky veletrhů"
+        },
+        {
+          "kw": "badge scanner",
+          "saturation": 3,
+          "competitor": "neověřeno",
+          "note": "odhad; pořadatelské appky"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem. CaptureBoard (productivity evidence) potvrzuje existenci starých 'scan business cards' appek. Poptávka po offline kvalifikaci leadů je odhad z vlastní znalosti.",
+      "competitors": [
+        {
+          "name": "CaptureBoard",
+          "url": "https://apps.apple.com/us/app/captureboard-scan-whiteboard-business-cards-receipts/id542229387",
+          "role": "niche",
+          "note": "starší skener tabulí, vizitek a účtenek"
+        },
+        {
+          "name": "CamCard",
+          "url": "",
+          "role": "parent",
+          "note": "lídr skenování vizitek (bez evidence URL)"
+        },
+        {
+          "name": "HubSpot",
+          "url": "",
+          "role": "parent",
+          "note": "CRM se skenerem vizitek zdarma (bez evidence URL)"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Vizitky mizí — QR na LinkedIn a digitální vizitky je nahrazují.",
+        "HubSpot a další CRM mají skener zdarma.",
+        "Použití několikrát ročně → předplatné se ruší, IAP za akci má malý objem.",
+        "Badge QR formáty pořadatelů jsou často šifrované/proprietární."
+      ],
+      "killer_risk": "Nízká frekvence použití a bezplatné CRM skenery.",
+      "mitigation": "Model platby za akci, silný offline a hlasový přepis jako USP, cílit na B2B vystavovatele v lokalizacích (DE veletrhy).",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 9,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "business-26",
+      "name": "Pest Log: Application Records",
+      "tagline": "Záznam aplikace přípravku, kontrola nástrah a protokol pro zákazníka — jak to chce zákon.",
+      "pitch": "Deratizátoři a pest-control technici musí u každého zásahu zaznamenat přípravek, registrační číslo, ředění, množství a místo — a v potravinářských provozech i kontroly každé nástrahy. Velké systémy (PestPac, FieldRoutes) jsou pro firmy s dispečinkem. Samostatný technik potřebuje servisní protokol s podpisem, mapu nástrah s počty požerů a archiv záznamů pro inspekci — offline v suterénu.",
+      "niche": "Samostatný technik a malá firma. Lídři jsou serverové dispečerské systémy.",
+      "parent_market": "Pest control software (PestPac, GorillaDesk, FieldRoutes).",
+      "target_user": "Samostatný deratizátor/pest-control technik (US, UK, AU, EU).",
+      "features": [
+        "Protokol zásahu: škůdce, přípravek, reg. číslo, ředění, množství, plocha",
+        "Mapa a číslování nástrah, kontrola a požery",
+        "Podpis zákazníka a PDF protokol",
+        "Knihovna přípravků vytvářená uživatelem",
+        "Archiv záznamů pro audit"
+      ],
+      "offline": "full",
+      "offline_note": "Vše na zařízení; žádná licencovaná databáze přípravků.",
+      "monetization": "$9.99/měs (≈ 230 Kč), $79.99/rok (≈ 1 840 Kč).",
+      "revenue_math": "400 stažení/měs × 5.0 % konverze = 20 platících × $70 (vážený průměr roční/doživotní/měsíční) = $1 400 hrubě → ×0,85 = $1 190 → ×23 = 27 400 Kč čistého/měs v ideálu. Ideál = 'pest control' + 'bait station' + 'pesticide log' v US/UK/AU; operátoři s licencí musí vést záznamy aplikací.",
+      "revenue_czk_ideal": 27400,
+      "keywords": [
+        {
+          "kw": "pest control",
+          "saturation": 5,
+          "competitor": "neověřeno",
+          "note": "odhad; spotřebitelské i firemní appky"
+        },
+        {
+          "kw": "pest control app",
+          "saturation": 4,
+          "competitor": "GorillaDesk",
+          "note": "odhad"
+        },
+        {
+          "kw": "bait station",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "pesticide log",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem (pest control report je v evidenci jen v brainstormu). Z vlastní znalosti: povinnost vést záznamy aplikací v mnoha jurisdikcích a placený trh PestPac/GorillaDesk.",
+      "competitors": [
+        {
+          "name": "GorillaDesk",
+          "url": "",
+          "role": "parent",
+          "note": "field service pro pest control (bez evidence URL)"
+        },
+        {
+          "name": "PestPac",
+          "url": "",
+          "role": "parent",
+          "note": "enterprise (bez evidence URL)"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Požadavky na záznamy se liší dle státu/země — nesoulad = odpovědnost.",
+        "GorillaDesk je levný a má mobilní appku.",
+        "Samostatných techniků s iPhonem je omezený počet.",
+        "Potravinářské audity (BRC) vyžadují formáty, které appka nemusí splnit."
+      ],
+      "killer_risk": "Regulatorní nesoulad a levná konkurence.",
+      "mitigation": "Konfigurovatelná pole místo pevných formátů, zaměření na nástrahy (jasná hodnota) a PDF.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 7,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "business-27",
+      "name": "Pool Route: Service Chemical Log",
+      "tagline": "Měření, dávkování a fotka čistého bazénu — report zákazníkovi, než odjedeš.",
+      "pitch": "Bazénový technik objede denně 10–20 bazénů, měří chlor, pH, alkalitu a CYA, dávkuje chemii a zákazník chce důkaz. Skimmer je silný, ale je to cloudová platforma s cenou za bazén. Aplikace nabídne zákazníky s objemem bazénu, rychlé zadání měření, výpočet dávek (LSI), checklist, fotku a PDF/e-mail report — offline na zahradách, kde signál kolísá.",
+      "niche": "Samostatný technik, zejména mimo US (ES, FR, AU, ZA), kde Skimmer není lokalizovaný.",
+      "parent_market": "Pool service software (Skimmer, Pool Brain, PoolTrac) a chemické kalkulačky (Pool Math).",
+      "target_user": "Samostatný bazénový technik s 20–80 bazény (US Sunbelt, AU, ES, FR, ZA).",
+      "features": [
+        "Zákazníci a bazény (objem, typ povrchu)",
+        "Rychlé zadání FC/pH/TA/CYA/CH, výpočet dávek a LSI",
+        "Checklist a fotka jako důkaz",
+        "PDF report zákazníkovi",
+        "Pořadí trasy a historie"
+      ],
+      "offline": "full",
+      "offline_note": "Výpočty a data lokálně; report se sdílí share sheetem.",
+      "monetization": "$7.99/měs (≈ 184 Kč), $59.99/rok (≈ 1 380 Kč).",
+      "revenue_math": "500 stažení/měs × 5.0 % konverze = 25 platících × $50 (vážený průměr roční/doživotní/měsíční) = $1 250 hrubě → ×0,85 = $1 062 → ×23 = 24 400 Kč čistého/měs v ideálu. Ideál = 'pool service', 'pool route' v US Sunbelt, AU, ES/FR; technik s 30–80 bazény.",
+      "revenue_czk_ideal": 24400,
+      "keywords": [
+        {
+          "kw": "pool service",
+          "saturation": 4,
+          "competitor": "Skimmer",
+          "note": "odhad"
+        },
+        {
+          "kw": "pool route",
+          "saturation": 2,
+          "competitor": "Skimmer",
+          "note": "odhad"
+        },
+        {
+          "kw": "pool chemical calculator",
+          "saturation": 5,
+          "competitor": "Pool Math",
+          "note": "odhad — přeplněné spotřebitelskými kalkulačkami"
+        },
+        {
+          "kw": "pool service report",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem (pool service je v evidenci jen v brainstormu). Z vlastní znalosti: Skimmer a Pool Brain prokazují placenou poptávku v US.",
+      "competitors": [
+        {
+          "name": "Skimmer",
+          "url": "",
+          "role": "parent",
+          "note": "lídr pool service (bez evidence URL)"
+        },
+        {
+          "name": "Pool Math by TFP",
+          "url": "",
+          "role": "niche",
+          "note": "bezplatná chemická kalkulačka (bez evidence URL)"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Skimmer je levný za bazén a má fakturaci, trasy a portál zákazníka — plná náhrada nás.",
+        "Chemické kalkulačky jsou zdarma (Pool Math).",
+        "Mimo Sunbelt sezónní.",
+        "Technici chtějí fakturaci a platby online — bez serveru slabší."
+      ],
+      "killer_risk": "Skimmer dominuje US a my nemáme fakturaci online.",
+      "mitigation": "Cílit lokalizované trhy (ES, FR, AU), kde Skimmer slabší, a 'report bez registrace' jako USP.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "business-28",
+      "name": "Color Formula Book for Stylists",
+      "tagline": "Receptury barvení každé klientky na jednom místě: odstín, oxidant, gramy, čas a fotka.",
+      "pitch": "Kadeřnice si receptury barvení píše do sešitu, na kartičky nebo do Poznámek — a když klientka přijde po třech měsících, hledá. Salonní systémy mají pole pro poznámku, ale ne strukturovanou recepturu. Aplikace uloží odstíny libovolné značky, oxidant, poměr, gramy, čas působení a fotku před/po, a jedním ťuknutím 'zopakuj minule'. Pro samostatné kadeřnice a booth rentery, kteří salonní software nemají.",
+      "niche": "Samostatné kadeřnice a nájemkyně křesel. Salonní suity cílí na majitele salonů; SalonScale je vázaný na váhu a US.",
+      "parent_market": "Salon software (Vagaro, Fresha, Phorest, SalonScale).",
+      "target_user": "Kadeřnice/koloristka na volné noze nebo v pronajatém křesle, globálně.",
+      "features": [
+        "Karta klientky s historií barvení",
+        "Strukturovaná receptura: odstíny, oxidant, poměr, gramy, čas",
+        "Fotky před/po",
+        "'Zopakuj minule' a úprava",
+        "Časovač působení po sekcích"
+      ],
+      "offline": "full",
+      "offline_note": "Vše na zařízení, iCloud záloha.",
+      "monetization": "$4.99/měs (≈ 115 Kč), $34.99/rok (≈ 805 Kč).",
+      "revenue_math": "1200 stažení/měs × 3.0 % konverze = 36 platících × $32 (vážený průměr roční/doživotní/měsíční) = $1 152 hrubě → ×0,85 = $979 → ×23 = 22 500 Kč čistého/měs v ideálu. Ideál = 'hair color formula', 'color formula', 'stylist client' globálně; kadeřníků jsou miliony.",
+      "revenue_czk_ideal": 22500,
+      "keywords": [
+        {
+          "kw": "hair color formula",
+          "saturation": 3,
+          "competitor": "SalonScale",
+          "note": "odhad"
+        },
+        {
+          "kw": "color formula",
+          "saturation": 3,
+          "competitor": "neověřeno",
+          "note": "odhad; kolize s barevnými paletami"
+        },
+        {
+          "kw": "stylist client book",
+          "saturation": 2,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "salon client cards",
+          "saturation": 2,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem ('hair colour formula record' je v evidenci jen v brainstormu). Z vlastní znalosti: několik malých appek a SalonScale existuje, poptávka mezi koloristkami je zřejmá.",
+      "competitors": [
+        {
+          "name": "SalonScale",
+          "url": "",
+          "role": "niche",
+          "note": "receptury s chytrou váhou, US (bez evidence URL)"
+        },
+        {
+          "name": "Vagaro",
+          "url": "",
+          "role": "parent",
+          "note": "salonní suita (bez evidence URL)"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Poznámky v telefonu jsou zdarma a 'stačí'.",
+        "Salonní suity (Fresha zdarma) mají poznámky a karty klientů.",
+        "Značky barev (Wella, L'Oréal) nelze použít v klíčových slovech a jejich appky nabízejí receptury.",
+        "Sdílí šablonu s Lash Map (#29) — riziko 4.3."
+      ],
+      "killer_risk": "Bezplatné alternativy (Poznámky, Fresha).",
+      "mitigation": "Rychlost ('zopakuj minule' za 3 s) a lokalizace; odlišný design od #29.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "business-29",
+      "name": "Lash Map: Lash Tech Client Cards",
+      "tagline": "Nakresli lash mapu jednou, použij ji u každé klientky — s historií doplňování.",
+      "pitch": "Lash technička pro každou klientku volí délky, zatočení a tloušťky po zónách oka — tzv. lash mapu — a zapisuje ji na papír nebo si ji fotí. Aplikace nabízí vizuální editor lash map jako znovupoužitelné styly, kartu klientky s historií map a retence při doplnění, patch test a aftercare, a PDF/obrázek pro Instagram. Booking systémy tohle nemají, dostupné jsou jen tisknutelné šablony.",
+      "niche": "Lash technici. Booking platformy nemají vizuální lash mapy; existující lash appky jsou kurzy nebo e-shopy.",
+      "parent_market": "Beauty booking a salon software (Fresha, Booksy, Vagaro).",
+      "target_user": "Lash technička (samostatná/domácí studio), globálně.",
+      "features": [
+        "Vizuální editor lash mapy (zóny, délky, curl, tloušťka)",
+        "Knihovna stylů (cat eye, doll…) k opakování",
+        "Karta klientky: historie map, retence při fillu",
+        "Patch test a aftercare",
+        "Export obrázku/PDF"
+      ],
+      "offline": "full",
+      "offline_note": "Vše na zařízení.",
+      "monetization": "$4.99/měs (≈ 115 Kč), $29.99/rok (≈ 690 Kč).",
+      "revenue_math": "1500 stažení/měs × 3.0 % konverze = 45 platících × $28 (vážený průměr roční/doživotní/měsíční) = $1 260 hrubě → ×0,85 = $1 071 → ×23 = 24 600 Kč čistého/měs v ideálu. Ideál = 'lash map', 'lash tech', 'lash mapping' globálně; lash technik je jedna z nejrychleji rostoucích beauty profesí.",
+      "revenue_czk_ideal": 24600,
+      "keywords": [
+        {
+          "kw": "lash map",
+          "saturation": 3,
+          "competitor": "neověřeno",
+          "note": "odhad; graphics-design evidence zmiňuje 'lash map designer' jako neotestovaný"
+        },
+        {
+          "kw": "lash tech",
+          "saturation": 4,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "lash mapping",
+          "saturation": 2,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "lash extension",
+          "saturation": 5,
+          "competitor": "neověřeno",
+          "note": "odhad; try-on a kurzy"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem; lash map je jen v brainstormu (business, graphics-design evidence). Z vlastní znalosti: lash map šablony jsou populární na Pinterestu/Etsy.",
+      "competitors": [
+        {
+          "name": "Booksy",
+          "url": "",
+          "role": "parent",
+          "note": "booking pro beauty (bez evidence URL)"
+        },
+        {
+          "name": "Fresha",
+          "url": "",
+          "role": "parent",
+          "note": "booking zdarma pro salony (bez evidence URL)"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Tisknutelné lash mapy jsou zdarma a technici je znají.",
+        "Nízké ceny a hodně konkurence mezi lash technikami → cenová citlivost.",
+        "Riziko 4.3 s #28 (karty klientů) — musí být jiná appka, ne reskin.",
+        "Vizuální editor je náročnější, než se zdá (ergonomie na telefonu)."
+      ],
+      "killer_risk": "Nízká ochota platit za něco, co existuje zdarma na papíře.",
+      "mitigation": "Hodnota v historii a retenci (co papír neumí), sdílení na Instagram jako virální smyčka.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "business-30",
+      "name": "AED & First Aid Kit Check",
+      "tagline": "Defibrilátor a lékárničky vždy připravené: měsíční kontrola, expirace elektrod a doplnění.",
+      "pitch": "Firmy, školy, sportovní kluby a fitka mají defibrilátor a lékárničky, ale kontrolu indikátoru, expiraci elektrod a baterie a doplnění lékárniček hlídá málokdo. Aplikace eviduje AED a lékárničky, připomíná měsíční kontrolu, hlídá data expirace, generuje seznam k doplnění podle zvolené normy a dělá PDF auditu. QR štítek na lékárničce otevře její záznam.",
+      "niche": "Owner-level kontrola AED a lékárniček. Výrobci AED mají programy pro velké organizace; hasicí appky řeší přístroje.",
+      "parent_market": "Safety equipment inspection (FireTag, Fire Extinguisher Check Log) a AED program management (ZOLL PlusTrac, Philips).",
+      "target_user": "Office/facility manager, BOZP referent, trenér klubu, majitel fitka (UK, EU, US).",
+      "features": [
+        "Evidence AED a lékárniček s místem",
+        "Měsíční checklist a připomínky",
+        "Expirace elektrod, baterií a položek",
+        "Seznam k doplnění (uživatelské šablony dle normy)",
+        "PDF audit a QR štítky"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně; QR štítky se generují na zařízení.",
+      "monetization": "$3.99/měs (≈ 92 Kč), $29.99/rok (≈ 690 Kč).",
+      "revenue_math": "800 stažení/měs × 4.0 % konverze = 32 platících × $28 (vážený průměr roční/doživotní/měsíční) = $896 hrubě → ×0,85 = $762 → ×23 = 17 500 Kč čistého/měs v ideálu. Ideál = 'first aid kit checklist', 'aed check' v UK/EU/US; firmy, školy, kluby, fitka.",
+      "revenue_czk_ideal": 17500,
+      "keywords": [
+        {
+          "kw": "first aid kit",
+          "saturation": 4,
+          "competitor": "neověřeno",
+          "note": "odhad; spotřebitelské první pomoc appky"
+        },
+        {
+          "kw": "aed check",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        },
+        {
+          "kw": "aed inspection",
+          "saturation": 1,
+          "competitor": "FireTag: Safety Inspections",
+          "note": "odhad"
+        },
+        {
+          "kw": "first aid kit checklist",
+          "saturation": 1,
+          "competitor": "neověřeno",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem; AED/first-aid check log je v evidenci jmenován jako neotestovaný úhel. Z vlastní znalosti: povinnost kontrol (BOZP) a programy výrobců AED.",
+      "competitors": [
+        {
+          "name": "FireTag: Safety Inspections",
+          "url": "https://apps.apple.com/za/app/firetag-safety-inspections/id6762494298",
+          "role": "niche",
+          "note": "hasicí přístroje a 'další bezpečnostní vybavení'"
+        },
+        {
+          "name": "Fire Extinguisher Check Log",
+          "url": "https://apps.apple.com/us/app/fire-extinguisher-check-log/id6760390952",
+          "role": "niche",
+          "note": "owner-level log, sousední job"
+        },
+        {
+          "name": "ZOLL PlusTrac",
+          "url": "",
+          "role": "parent",
+          "note": "AED program management výrobce (bez evidence URL)"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Výrobci AED nabízejí správu programu zdarma při koupi.",
+        "Dodavatelé lékárniček nabízejí servis doplňování a kontrolu.",
+        "Nízká naléhavost — kontrola je 'nice to have' až do problému.",
+        "Obsah norem (BS 8599, DIN 13157) je chráněný — seznamy musí sestavit uživatel."
+      ],
+      "killer_risk": "Nízká naléhavost a malá hledanost.",
+      "mitigation": "Spojit s Fire Log Book (#09) jako rozšíření nebo cross-promo, cílit na BOZP referenty.",
+      "build_weeks": 2.5,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    }
+  ]
+}

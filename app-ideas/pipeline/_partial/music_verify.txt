@@ -12,3 +12,28 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results (none construc
     - EPC Ewe Hymnal                     https://apps.apple.com/us/app/e-p-c-ewe-hymnal/id1467545778
     - Baptist Hymnal Free                https://apps.apple.com/us/app/baptist-hymnal-free/id465294957
     - Hymnals (iPad, Catholic hymnals)   https://apps.apple.com/us/app/id523183662
+
+[2] query: site:apps.apple.com stage plot input list  (idea music-03)
+    saturation ("stage plot"/"stage plan"/rider in title, distinct apps): 6 -> CROWDED; author assumed 2. Three new entrants 2025-26 (Plotly id679..., Stage Plan Master id675..., StageRider id675...), Stage Plot Maker (2014) is established.
+    - Stage Plot Maker (iOS)             https://apps.apple.com/us/app/stage-plot-maker/id903691661
+    - Stage Plot Maker (gb)              https://apps.apple.com/gb/app/stage-plot-maker/id903691661
+    - Stage Plot Maker (ch)              https://apps.apple.com/ch/app/stage-plot-maker/id903691661
+    - Plotly: Stage Plot Maker (2026)    https://apps.apple.com/us/app/plotly-stage-plot-maker/id6792488544
+    - Stage Plot Maker (reviews)         https://apps.apple.com/ca/app/stage-plot-maker/id903691661?see-all=reviews&platform=iphone
+    - Stage Plot Maker X (Mac)           https://apps.apple.com/ba/app/stage-plot-maker-x/id1506457515?mt=12
+    - Stage Viewer (input list columns, patching) https://apps.apple.com/us/app/stage-viewer/id1608708752
+    - Stage Plot Guru for iPad           https://apps.apple.com/ng/app/stage-plot-guru-for-ipad/id843432883
+    - Stage Plan Master–Band Setup       https://apps.apple.com/us/app/stage-plan-master-band-setup/id6752884695
+    - StageRider (de, auto channel list) https://apps.apple.com/de/app/stageridermobile/id6759008299
+
+[3] query: site:apps.apple.com band merch sales tracker  (idea music-15)
+    saturation (dedicated merch apps in title): 4 (MerchVault, MerchMaster, Merch Cat, QuiVend) + 3 band/setlist apps with merch POS (BANDSYNC, Setlister, TSF Band) -> CROWDED; MerchMaster already does venue merch-cut settlement, Merch Cat integrates Square + Luminate.
+    - BANDSYNC: Band Organizer           https://apps.apple.com/us/app/bandsync-band-organizer/id6557050547
+    - MerchVault                         https://apps.apple.com/ca/app/merchvault/id6740039483
+    - MerchMaster (sales, inventory, venue cuts) https://apps.apple.com/kw/app/merchmaster/id6446234737
+    - Setlister (merch POS mode)         https://apps.apple.com/gb/app/setlister/id6757764995
+    - Merch Cat–Music Merch Manager      https://apps.apple.com/us/app/merch-cat-music-merch-manager/id994196941
+    - TSF Band                           https://apps.apple.com/us/app/tsf-band/id6759731667
+    - (noise) Alerts for Merch           https://apps.apple.com/us/app/alerts-for-merch/id6705116224
+    - Bandcamp for Artists & Labels      https://apps.apple.com/us/app/bandcamp-for-artists-labels/id1185670538?ls=1
+    - QuiVend: Vendor Companion (2026)   https://apps.apple.com/us/app/quivend-vendor-companion/id6773267361

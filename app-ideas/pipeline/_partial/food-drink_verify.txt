@@ -25,3 +25,41 @@ Saturation: 4 dedicated (Ice Cream Calculator, CreamiLab, Creami Ice Cream Maker
 - FrostList: Freezer Inventory https://apps.apple.com/us/app/frostlist-freezer-inventory/id6789963620
 Saturation: 2 dedicated freeze-dry batch logs (Freeze-Dry Buddy, Freeze Dry Tracker) + DryLINK hardware app; freezer inventory apps are a separate crowded space (4+).
 
+3) query: "site:apps.apple.com handwritten recipe card scanner"  date: 2026-09-30  (idea food-drink-21 Grandma's Cards)
+- Trivet: Recipe Box Scanner (handwritten index cards, no account, no cloud, works in Airplane Mode) https://apps.apple.com/sa/app/trivet-recipe-box-scanner/id6790121828
+- My Cookbook: Recipe Scanner (reads cursive, faded ink, old family cards) https://apps.apple.com/us/app/my-cookbook-recipe-scanner/id6759684127
+- CookBook - Recipe Keeper (AI scanner for handwritten cards) https://apps.apple.com/us/app/cookbook-recipe-keeper/id1073341917
+- ReciScan / ReciScan - Cookbook Maker (scan handwritten cards) https://apps.apple.com/us/app/reciscan/id6478405196
+- ReciScan - Cookbook Maker https://apps.apple.com/us/app/reciscan-cookbook-maker/id6478405196
+- Recipe saver & Pantry tracker https://apps.apple.com/us/app/recipe-saver-pantry-tracker/id6450905900
+- RecipEase: AI Recipe Scanner https://apps.apple.com/us/app/recipease-ai-recipe-scanner/id6748662065
+- Scraps: Snap and Cook https://apps.apple.com/us/app/scraps-snap-and-cook/id6759112667
+- Recipe Organizer: AI Cookbook https://apps.apple.com/us/app/recipe-organizer-ai-cookbook/id6757131597
+- Scan Deck https://apps.apple.com/us/app/scan-deck/id6756247025
+Saturation: 8+ apps explicitly pitch handwritten-card scanning; Trivet is already the exact offline/no-cloud positioning. SATURATED.
+
+4) query: "site:apps.apple.com sous vide cooking times chart"  date: 2026-09-30  (idea food-drink-28 Sous Vide Chart)
+- Sous Chef Pro: Timers & Tools ("#1 sous vide cooking app", since ~2012) https://apps.apple.com/us/app/sous-chef-pro-timers-tools/id496424051
+- Suvy - Sous Vide Voice Calc (BONIQ heating chart) https://apps.apple.com/pl/app/suvy-sous-vide-voice-calc/id6751402051
+- Sous Vide °Celsius (time/temp for meat, fish, egg, veg; since ~2011) https://apps.apple.com/us/app/sous-vide-celsius/id419217101
+- Sous Vide Timing Ruler https://apps.apple.com/au/app/sous-vide-timing-ruler/id1480101459
+- Kelvin Sous Vide (time/temp calculator) https://apps.apple.com/dk/app/kelvin-sous-vide/id6764517692
+- Sous Vide Cooker https://apps.apple.com/us/app/sous-vide-cooker/id1380050777
+- Joule: Sous Vide by ChefSteps https://apps.apple.com/au/app/joule-sous-vide-by-chefsteps/id970115018
+- Tastelab: Cooking Knowledge (includes sous vide times) https://apps.apple.com/lb/app/tastelab-cooking-knowledge/id1486246303
+- Anova Culinary App https://apps.apple.com/us/app/anova-culinary/id959638683
+- SouVD for Low Temperature Cook (thickness-based times) https://apps.apple.com/us/app/souvd-for-low-temperature-cook/id6444523365
+Saturation: 6-7 dedicated sous vide time/temp calculators + 2 hardware apps. SATURATED; author's "sat 2-3" estimate was wrong.
+
+5) query: "site:apps.apple.com pour cost calculator bar"  date: 2026-09-30  (idea food-drink-04 Pour Cost)
+- Pour Cost (Joshua Duncan; exact-match title, sliders cost/pour/margin, 4.9 stars / 223 ratings, since ~2017) https://apps.apple.com/us/app/pour-cost/id1195122501
+- OZ Price Calculator https://apps.apple.com/us/app/oz-price-calculator/id6449945515
+- AICostBar (Mac) https://apps.apple.com/us/app/aicostbar/id6743988254?mt=12
+- Material Cost Calculator (by-catch) https://apps.apple.com/us/app/material-cost-calculator/id6760621603
+- Soap Calculator: Lye & Recipe (by-catch) https://apps.apple.com/ca/app/soap-calculator-lye-recipe/id6770798190
+- EV Calculator: Charging Cost (by-catch) https://apps.apple.com/us/app/ev-calculator-charging-cost/id6757408193
+- Concrete Calculator, Estimator (by-catch) https://apps.apple.com/us/app/concrete-calculator-estimator/id1462889355
+- Cost Per Ounce Calculator https://apps.apple.com/us/app/cost-per-ounce-calculator/id542158727
+- Energy Cost Calculator (by-catch) https://apps.apple.com/us/app/energy-cost-calculator/id531132387
+Saturation: 1-2 ("Pour Cost" owns the exact head phrase with 223 ratings; AICostBar on Mac). Not empty as the author claimed (sat 1 assumed no one) — the exact-match incumbent is well-rated.
+

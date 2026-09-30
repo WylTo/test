@@ -52,3 +52,29 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
     - Hockey +/- (Plus Minus)             https://apps.apple.com/us/app/hockey-plus-minus/id6756597490
     - Hockey Lineup Manager               https://apps.apple.com/us/app/hockey-lineup-manager/id6756636286
 
+[5] query: site:apps.apple.com badminton club night rotation courts  (idea sports-07)
+    saturation (dedicated club-night rotation apps incl. badminton): 5 (Badminton Peg System, Qcourt, Court-Buddy, Pickleball Mixer multi-sport, CourtMate) + Pickleball Rotator -> CROWDED (all 2025-26 indie builds)
+    - Court-Buddy                         https://apps.apple.com/us/app/court-buddy/id6756144108
+    - Badminton Peg System                https://apps.apple.com/us/app/badminton-peg-system/id6752628366
+    - Qcourt                              https://apps.apple.com/ph/app/qcourt/id6757377299
+    - Pickleball Rotator                  https://apps.apple.com/us/app/pickleball-rotator/id6756629250
+    - Kotofit                             https://apps.apple.com/us/app/kotofit/id6760775193
+    - CourtReserve                        https://apps.apple.com/us/app/courtreserve/id1392556575?ls=1
+    - MATCHi                              https://apps.apple.com/ae/app/matchi/id720782039
+    - Pickleball Mixer: Court Sports      https://apps.apple.com/ca/app/pickleball-mixer-court-sports/id6748310977
+    - All Sports Score Keeper             https://apps.apple.com/au/app/all-sports-score-keeper/id1254911810
+    - CourtMate                           https://apps.apple.com/us/app/courtmate/id6746804635
+
+[6] query: site:apps.apple.com racquet stringing log stringer  (idea sports-09)
+    saturation (stringing log / stringer job apps): 6 (RacquetTune - strong, old; mystrings; stringster 2.0 - customer mgmt for stringers; String GOAT; RacquetTuner; STRUNG - jobs/customers for stringers) -> CROWDED, stringer-business angle directly taken by STRUNG + stringster
+    - RacquetTune - String Tension        https://apps.apple.com/us/app/racquettune-string-tension/id365729342
+    - String Tension AI                   https://apps.apple.com/pe/app/string-tension-ai/id6763697805?l=en-GB
+    - mystrings - Tennis                  https://apps.apple.com/at/app/mystrings-tennis/id6670494565
+    - stringster for Tennis 2.0           https://apps.apple.com/us/app/stringster-for-tennis-2-0/id6446997820
+    - Racquet Tracker                     https://apps.apple.com/us/app/racquet-tracker/id6477823481
+    - String GOAT - for tennis            https://apps.apple.com/gm/app/string-goat-for-tennis/id6444395925
+    - RacquetTuner                        https://apps.apple.com/us/app/racquettuner/id6755720177
+    - STRUNG App                          https://apps.apple.com/us/app/strung-app/id6757720720
+    - stringster - for tennis             https://apps.apple.com/ml/app/stringster-for-tennis/id1569326700
+
+Search budget (6) exhausted. Remaining ideas reviewed from knowledge + sports_evidence.txt.

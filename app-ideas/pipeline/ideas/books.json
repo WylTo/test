@@ -1,0 +1,2690 @@
+{
+  "category": "Books",
+  "category_slug": "books",
+  "search_notes": "Offline běh: apple_fetch.py ani WebSearch nebyly použity (Apple domény blokované, rozpočet vyčerpán). Jádro (1000 knih, submission tracker, ORF, audiokniha log, knihovní výpůjčky, třídní knihovna, dyslexie čtečka, picture book dummy, psací sprinty) stojí na _partial/books_evidence.txt z 16 webových vyhledávání – saturace odtud, nikoli z Apple autocomplete (hint_found neověřen u žádného keywordu). Ostatní nápady jsou z vlastní znalosti trhu (evidence „knowledge“), saturace je odhad a blue_ocean max. 7. Záměrně vyřazeno: manga collection tracker (sat 9+), generický dětský reading log (sat ~6), generický plánovač románu (sat 6), samostatný lending tracker (jen modul č. 06). Před stavbou doporučuji u top 10 znovu pustit apple_fetch.py check a avail pro US-gap nápady.",
+  "ideas": [
+    {
+      "id": "books-01",
+      "name": "Read-Aloud Counter: Toddler Book Log",
+      "tagline": "Počítadlo předčítaných knížek od narození do školy – s cílem 1000 knih a oslavou každé stovky.",
+      "pitch": "Knihovny v USA, Kanadě a Austrálii vedou rodiče k cíli přečíst dítěti 1000 knih před nástupem do školy a odborná doporučení k hlasitému předčítání existují v každé zemi. Oficiální aplikace programu je z roku 2013, anglická a zaměřená na iPad; nová indie konkurence je jen jedna. My uděláme nejrychlejší zápis na světě (jedno ťuknutí = další přečtená knížka, opakované čtení oblíbené knihy se počítá), sourozenecké profily, milníkové odznaky a tisknutelný certifikát – a to v 50 jazycích. Evropští, latinskoameričtí a asijští rodiče takový nástroj v rodném jazyce dnes nemají.",
+      "niche": "Záznam hlasitého předčítání malým dětem (0–6 let) s cílem 1000 knih. Velké čtenářské trackery (Goodreads, Bookly) řeší čtení dospělých, dětské čtenářské deníky řeší školní minuty – batolecí předčítání s opakováním stejné knihy nikdo pořádně neřeší a mimo anglosvět vůbec.",
+      "parent_market": "Trh čtenářských trackerů a rodičovských aplikací pro gramotnost: Goodreads, Bookly, Beanstack (knihovní výzvy), Reading Log aplikace pro rodiče; knihovní programy 1000 Books Before Kindergarten jsou rozšířené po tisících knihoven v USA.",
+      "target_user": "Rodiče a prarodiče dětí 0–6 let, zejména prvorodiče, kteří chtějí budovat čtenářský návyk; učitelky MŠ a knihovnice dětských oddělení.",
+      "features": [
+        "Zápis knihy jedním ťuknutím, opakované čtení = +1 bez nového hledání",
+        "Profily sourozenců a cíl 100/500/1000 knih s animovanými milníky",
+        "Fotka obálky z kamery a on-device rozpoznání názvu (Live Text), bez internetu",
+        "Tisknutelný PDF certifikát a koláž obálek „naše první stovka“",
+        "Widget a Live Activity „dnešní večerní čtení“",
+        "iCloud synchronizace mezi rodiči (CloudKit)"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně: seznam knih, fotky obálek, OCR názvu přes Vision, certifikát jako PDF. Synchronizace mezi rodiči přes iCloud/CloudKit (Apple), žádný náš server ani ISBN API.",
+      "monetization": "Freemium: zdarma do 100 knih, pak jednorázově 6,99 USD (≈ 159 CZK) za odemčení 1000 knih, sourozenců a certifikátů. Volitelně tip jar 1,99 USD.",
+      "revenue_math": "Ideál: 3 000 stažení/měsíc z klastru „read aloud tracker / 1000 books / toddler book log“ napříč 50 lokalizacemi × 4 % konverze = 120 nákupů × 6,99 USD × 0,85 × 23 ≈ 16 400 CZK čistého. Realisticky první rok spíš 1 000–1 500 stažení → 5–8 tis. CZK; 10 tis. CZK vyžaduje top-3 alespoň v US + 4–5 velkých lokalizacích.",
+      "revenue_czk_ideal": 16400,
+      "keywords": [
+        {
+          "kw": "1000 books before kindergarten",
+          "saturation": 2,
+          "competitor": "1000 Books Before Kindergarten (oficiální, 2013, iPad)",
+          "note": "Web: jen 2 aplikace s frází v názvu, oficiální je stará. Apple hint neověřen (offline běh, apple_fetch nedostupný); saturace z webového průzkumu v evidence souboru. Pozor: název programu nedávat do titulu (možná ochranná známka), jen do keywords/popisu."
+        },
+        {
+          "kw": "read aloud tracker",
+          "saturation": 2,
+          "competitor": "1k Books Before Kindergarten (nový indie)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); fráze přirozená, v názvech se skoro nevyskytuje."
+        },
+        {
+          "kw": "toddler book log",
+          "saturation": 1,
+          "competitor": "Reading Log: Parents & School",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); slovo toddler v titulech čtenářských deníků nevídáno."
+        },
+        {
+          "kw": "books read to baby",
+          "saturation": 1,
+          "competitor": "ReadingTime - Family Tracker",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); dlouhý chvost, spíš podpůrné."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): existence oficiální aplikace programu z roku 2013 i nové indie aplikace z 2025 = program má živou uživatelskou základnu; aplikace jsou jen anglicky a listované v US/JP/NZ/AU. Obecný trh dětských čtenářských deníků je přeplněný (sat ~6), což dokazuje poptávku rodičů. Předpoklad (neověřeno): že lokální ekvivalenty (Celé Česko čte dětem, Bookstart UK/JP, Lesestart DE) vytvoří hledanost v místních jazycích.",
+      "competitors": [
+        {
+          "name": "1000 Books Before Kindergarten",
+          "url": "https://apps.apple.com/us/app/1000-books-before-kindergarten/id779280401",
+          "role": "niche",
+          "note": "Oficiální app nadace, 2013, zaměřená na iPad, zdarma, jen anglicky."
+        },
+        {
+          "name": "1k Books Before Kindergarten",
+          "url": "https://apps.apple.com/us/app/1k-books-before-kindergarten/id6749195393",
+          "role": "niche",
+          "note": "Nový indie konkurent (bez reklam, bez loginu) – hlavní přímý soupeř v US."
+        },
+        {
+          "name": "Reading Log: Parents & School",
+          "url": "https://apps.apple.com/us/app/reading-log-parents-school/id6757205089",
+          "role": "parent",
+          "note": "Rodinný čtenářský deník (večerníčky, školní minuty) – širší záběr, ne 1000-cíl."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Program 1000 Books Before Kindergarten je US/CA/AU knihovní fenomén s anglickými aplikacemi. Mimo anglosvět neexistuje lokalizovaný tracker; lokalizujeme do 50 jazyků a napojíme na místní kampaně (CZ „Celé Česko čte dětem“, DE „Vorlesen“, JP „ehon“) bez použití cizí značky.",
+      "devils_advocate": [
+        "Ochranná známka: název programu nesmíme použít v titulu ani ikoně, a bez něj je hlavní klíčové slovo slabší.",
+        "Rodiče po 2–3 měsících přestanou zapisovat (zápis 3× denně je únavný) → retence a doporučení padají, platit za 1000 knih se nemusí dočkat.",
+        "Knihovny rozdávají papírové záznamníky a Beanstack zdarma – ochota platit za něco, co knihovna dává gratis, je nízká.",
+        "Mimo US je pojem „1000 knih“ neznámý; v místních jazycích musíme hledanost teprve vytvořit, ASO nemá co sklízet."
+      ],
+      "killer_risk": "Nízká ochota platit – rodiče vezmou free verzi (100 knih) a dál nejdou, nebo použijí papírový záznamník z knihovny.",
+      "mitigation": "Paywall až po první stovce (emoční moment), certifikát a fotokoláž jako placená odměna; widget a připomínka „večerní čtení“ pro retenci; lokalizované ASO na místní fráze („předčítání dětem“, „Vorlesen Kinder“) místo cizí značky.",
+      "build_weeks": 3,
+      "evidence": "web",
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 8,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "books-02",
+      "name": "SubTrack: Writing Submissions",
+      "tagline": "Kam jsem poslal povídku, kdy mi odpoví a kolik mám odmítnutí – přehledně a bez předplatného Duotrope.",
+      "pitch": "Spisovatelé povídek, básní a esejů rozesílají texty desítkám literárních časopisů a soutěží a ztrácejí přehled o souběžných podáních, lhůtách a odpovědích. Na App Store jsou jen dvě stařičké aplikace (2009 a 2014) a jedna nová s AI; Duotrope si za webový tracker účtuje 50 USD ročně, takže ochota platit je prokázaná. Postavíme čistý offline tracker: časopisy si uživatel zadá sám, aplikace hlídá simultánní podání, připomene odpovědi po průměrné lhůtě a ukáže statistiky přijetí. Lokalizace otevírá španělské, německé, francouzské a brazilské literární soutěže, kde žádný nástroj není.",
+      "niche": "Evidence podání literárních textů (časopisy, soutěže, agenti). Velké psací aplikace (Scrivener, Ulysses) řeší psaní, ne distribuci; Duotrope a Submittable jsou web a US-centrické; na iOS niku nikdo neaktualizoval deset let.",
+      "parent_market": "Trh nástrojů pro spisovatele: Scrivener, Ulysses, Duotrope (50 USD/rok), Submittable, QueryTracker (web). Placení literární nástrojů je prokázané předplatným Duotrope.",
+      "target_user": "Autoři povídek, básníci, esejisté a začínající romanopisci rozesílající dotazy agentům; studenti tvůrčího psaní (MFA).",
+      "features": [
+        "Databáze vlastních textů a trhů (časopis, soutěž, agent) se stavem podání",
+        "Hlídání simultánních podání a výhradních lhůt, připomínka „ozvěte se“ po nastaveném čase",
+        "Statistiky: míra přijetí, průměrná doba odpovědi na trh, odmítnutí s komentářem vs. šablona",
+        "Rozpočet poplatků za soutěže a honoráře",
+        "Export CSV/PDF a iCloud sync"
+      ],
+      "offline": "full",
+      "offline_note": "Kompletně lokální databáze (SwiftData) + iCloud sync; žádná online databáze časopisů (tu si uživatel buduje sám, případně import CSV).",
+      "monetization": "Zdarma do 10 aktivních podání; Pro 24,99 USD/rok (≈ 575 CZK) nebo 59,99 USD lifetime (≈ 1 380 CZK).",
+      "revenue_math": "Ideál: 1 200 stažení/měsíc („submission tracker“, „literary magazine“, „query tracker“ + lokalizace ES/DE/FR/PT) × 4 % = 48 ročních předplatných × 24,99 × 0,85 × 23 ≈ 23 400 CZK čistého měsíčně (bez obnov). Konzervativně 600 stažení → 11 700 CZK.",
+      "revenue_czk_ideal": 23400,
+      "keywords": [
+        {
+          "kw": "submission tracker",
+          "saturation": 2,
+          "competitor": "WriteTrack - Track Submissions (2014)",
+          "note": "Web: jen Story Tracker (2009) a WriteTrack (2014) cílí frázi v titulu – obě zastaralé. Apple hint neověřen (offline běh, apple_fetch nedostupný); saturace z webového průzkumu v evidence souboru"
+        },
+        {
+          "kw": "writing submissions",
+          "saturation": 2,
+          "competitor": "Story Tracker (2009-era)",
+          "note": "Web: stejné dvě staré aplikace; nový Literary Agent Toolkit míchá AI analýzu rukopisu."
+        },
+        {
+          "kw": "literary magazine submissions",
+          "saturation": 1,
+          "competitor": "Poets & Writers Magazine",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); P&W je obsahová aplikace časopisu, ne tracker."
+        },
+        {
+          "kw": "query tracker",
+          "saturation": 3,
+          "competitor": "Literary Agent Toolkit (2026)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); QueryTracker je webová značka – slovo nepoužívat v titulu (ochranná známka)."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): v nice jen 2 staré aplikace + 1 nová AI; Duotrope zpoplatnil tracker (cca 50 USD/rok) a živí se tím – willingness to pay existuje. Předpoklad: objem hledání na iOS je malý (stovky až nízké tisíce měsíčně), neověřeno Apple hinty.",
+      "competitors": [
+        {
+          "name": "WriteTrack - Track Submissions",
+          "url": "https://apps.apple.com/us/app/writetrack-track-submissions/id914818552",
+          "role": "niche",
+          "note": "Z roku 2014, dlouho neaktualizovaný – slabý soupeř."
+        },
+        {
+          "name": "Story Tracker",
+          "url": "https://apps.apple.com/in/app/story-tracker/id326115341",
+          "role": "niche",
+          "note": "Aplikace z éry 2009 (id326115341), prakticky mrtvá."
+        },
+        {
+          "name": "Literary Agent Toolkit",
+          "url": "https://apps.apple.com/no/app/literary-agent-toolkit/id6759154606",
+          "role": "niche",
+          "note": "Nová (2026) – analýza rukopisu + sledování podání, závislá na AI/serveru."
+        },
+        {
+          "name": "Duotrope",
+          "url": "",
+          "role": "us-only",
+          "note": "Webový US-centrický tracker s databází trhů, cca 50 USD/rok – důkaz platby, bez nativní iOS aplikace."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Model Duotrope/Submittable je anglofonní a US-centrický. Literární soutěže a časopisy existují ve všech jazycích (ES „concursos literarios“, DE „Literaturwettbewerb“, FR „appel à textes“), ale lokalizovaný tracker neexistuje.",
+      "devils_advocate": [
+        "Niche je malá: aktivních rozesílajících autorů jsou desetitisíce globálně a většina si vede tabulku v Excelu/Google Sheets zdarma.",
+        "Bez databáze trhů (kterou nemůžeme mít offline a aktuální) je hodnota proti Duotrope nižší – uživatel musí zadávat vše ručně.",
+        "Retence je nárazová: autor podává v dávkách, pak měsíce nic → roční předplatné se špatně obnovuje.",
+        "Mimo US nejsou literární soutěže tak systematické, lokalizovaná poptávka může být jen teoretická."
+      ],
+      "killer_risk": "Příliš malý objem hledání – i top-1 pozice přinese jen stovky stažení měsíčně.",
+      "mitigation": "Doplnit segment „query letter agentům“ (romanopisci) a soutěže/granty; import z Duotrope CSV; lifetime cena pro tabulkové skeptiky; ASO v 5 velkých jazycích s místními výrazy.",
+      "build_weeks": 3,
+      "evidence": "web",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 8,
+        "monetization": 7,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 8
+      }
+    },
+    {
+      "id": "books-03",
+      "name": "Fluency Check: Reading Speed Test",
+      "tagline": "Minutová zkouška plynulosti čtení pro učitele a rodiče – slova za minutu, chyby a graf pokroku v češtině, polštině i němčině.",
+      "pitch": "Měření rychlosti a plynulosti hlasitého čtení (WCPM) je v amerických školách standard a v Česku, Polsku či Německu učitelky a logopedky měří „rychlost čtení“ se stopkami a papírem. Na App Store existuje jediná indie aplikace (Reader Meter) a institucionální nástroje vázané na licenci školy – vše anglicky. My dáme učiteli, tutorovi i rodiči jednoduchý nástroj: vlož libovolný text nebo vyfoť stránku, spusť minutu, ťukej na chybná slova, aplikace spočítá slova za minutu a přesnost a vykreslí pokrok. V jazycích, kde je stopky-a-papír běžnou praxí, nemá konkurenci.",
+      "niche": "Rychlé ORF měření s libovolným textem pro jednotlivce (tutor, logoped, rodič), a hlavně neanglické jazyky. Institucionální nástroje (MAP, DIBELS) jsou vázané na licenci okresu a anglické normy; AI tutorové čtení vedou, ale neměří.",
+      "parent_market": "Trh hodnocení čtenářské gramotnosti a AI tutorů čtení: NWEA MAP Reading Fluency, DIBELS/Amplify, Readability, Bookbot; ve školách placené licence za desítky USD na žáka.",
+      "target_user": "Učitelky 1.–5. třídy, speciální pedagogové, logopedi, doučovatelé a rodiče dětí se čtenářskými obtížemi.",
+      "features": [
+        "Text z fotky stránky (Live Text) nebo vložený, automatické počítání slov",
+        "Minutový test: ťuknutí = chyba, dlouhý stisk = sebeopravení; výpočet WCPM a přesnosti",
+        "Volitelná on-device transkripce (Speech) pro kontrolu tam, kde jazyk podporuje offline rozpoznání",
+        "Profily žáků, graf pokroku a export PDF pro rodiče/poradnu",
+        "Nahrávka čtení k pozdějšímu poslechu (lokálně)"
+      ],
+      "offline": "full",
+      "offline_note": "OCR (Vision), časovač, výpočty a nahrávky běží lokálně; on-device rozpoznání řeči jen pro jazyky, které ho Apple podporuje, jinak ruční značení. Data žáků nikdy neopouští zařízení (jen volitelný iCloud).",
+      "monetization": "Zdarma 1 žák; Pro 29,99 USD/rok (≈ 690 CZK) nebo 4,99 USD/měsíc pro učitele a tutory s neomezenými žáky.",
+      "revenue_math": "Ideál: 1 000 stažení/měsíc („reading fluency“, „words per minute reading“, „rychlost čtení“, „Lesegeschwindigkeit“) × 3 % = 30 ročních předplatných × 29,99 × 0,85 × 23 ≈ 17 600 CZK čistého. Silná sezóna září–říjen a leden (pololetní testy).",
+      "revenue_czk_ideal": 17600,
+      "keywords": [
+        {
+          "kw": "reading fluency",
+          "saturation": 2,
+          "competitor": "Reader Meter (indie 2025)",
+          "note": "Web: dedikované ORF aplikace jen 2 (Reader Meter, First Steps to Reading Fluency). Apple hint neověřen (offline běh, apple_fetch nedostupný); saturace z webového průzkumu v evidence souboru"
+        },
+        {
+          "kw": "oral reading fluency",
+          "saturation": 2,
+          "competitor": "MAP Reading Fluency Testing (NWEA, institucionální)",
+          "note": "Web: institucionální, vázané na licenci – ne konkurent pro jednotlivce."
+        },
+        {
+          "kw": "words per minute reading",
+          "saturation": 3,
+          "competitor": "Reading Speed/Fluency Builder",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); kolize se speed-reading aplikacemi pro dospělé."
+        },
+        {
+          "kw": "rychlost čtení",
+          "saturation": 0,
+          "competitor": "(nic lokalizovaného nenalezeno)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); lokalizovaný keyword pro CZ/SK, obdobně PL „tempo czytania“, DE „Lesegeschwindigkeit“ – reverse gap."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): nika sat 2, Reader Meter vznikl 2025 (někdo v tom vidí trh), TARA v Indii, NWEA institucionálně = měření plynulosti je zavedená praxe. Předpoklad: v CZ/PL/DE učitelé hledají v App Store v rodném jazyce – neověřeno hinty.",
+      "competitors": [
+        {
+          "name": "Reader Meter",
+          "url": "https://apps.apple.com/us/app/reader-meter/id6745434060",
+          "role": "niche",
+          "note": "Indie 2025, ORF s libovolným textem, auto WCPM – nejbližší soupeř, jen anglicky."
+        },
+        {
+          "name": "MAP Reading Fluency Testing",
+          "url": "https://apps.apple.com/us/app/map-reading-fluency-testing/id1326709796",
+          "role": "parent",
+          "note": "NWEA, institucionální licence okresu – dokazuje trh, jednotlivci ho nekoupí."
+        },
+        {
+          "name": "TARA: Reading Assessment App",
+          "url": "https://apps.apple.com/in/app/tara-reading-assessment-app/id6737688769",
+          "role": "niche",
+          "note": "Indický AI nástroj pro hodnocení čtení – server, jiný trh."
+        },
+        {
+          "name": "Readability - Learn to Read",
+          "url": "https://apps.apple.com/us/app/readability-learn-to-read/id1477213383?see-all=reviews",
+          "role": "parent",
+          "note": "AI tutor čtení s předplatným – dokazuje ochotu rodičů platit."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Reverse gap: americký model ORF/WCPM je jen anglicky; v CZ/SK/PL/DE je měření rychlosti čtení běžná školní praxe bez aplikace. Lokalizujeme a přidáme místní normy jen tam, kde jsou veřejné.",
+      "devils_advocate": [
+        "Normy (percentily WCPM dle ročníku) jsou často chráněné (Hasbrouck-Tindal, DIBELS) – bez nich je výsledek jen číslo bez kontextu.",
+        "Školy v USA mají povinné nástroje (DIBELS/MAP) – učitel nepotřebuje další; mimo USA učitelky neplatí za aplikace z vlastní kapsy.",
+        "Data dětí (nahrávky hlasu) = citlivá oblast (COPPA/GDPR, Kids kategorie) – jedna stížnost rodiče a problém.",
+        "On-device rozpoznání řeči pro češtinu/polštinu nemusí být dostupné → automatika jen v angličtině, zbytek ruční."
+      ],
+      "killer_risk": "Nízká ochota učitelů mimo USA platit z vlastních peněz a absence veřejných norem pro lokální jazyky.",
+      "mitigation": "Cílit na doučovatele a logopedy (platí rádi, je to jejich nástroj), pro rodiče jednorázový nákup; normy nahradit osobním trendem („+12 slov za měsíc“); vše lokálně bez cloudu jako prodejní argument.",
+      "build_weeks": 4,
+      "evidence": "web",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 5
+      }
+    },
+    {
+      "id": "books-04",
+      "name": "Earshot: Audiobook Log",
+      "tagline": "Deník poslechu audioknih: skutečně odposlouchané hodiny, rychlost přehrávání, oblíbení interpreti.",
+      "pitch": "Audioknihy rostou dvouciferně a posluchači chtějí vidět, kolik toho „přečetli“ – jenže čtenářské trackery počítají stránky, ne hodiny a rychlost 1,5×. V App Store nemá žádná aplikace „audiobook tracker/log“ v názvu; obecné trackery audioknihy jen tolerují. Postavíme deník pro posluchače: hodiny reálné i nominální, interpreti (narrators) jako hlavní entita, knihovny a platformy (Audible, Storytel, Libby, BookBeat), roční výzva v hodinách. Pro Storytel/BookBeat země v Evropě (SE, DE, PL, CZ) nic podobného není.",
+      "niche": "Tracker výhradně pro audioknihy s interprety a rychlostí přehrávání. Goodreads/StoryGraph jsou stránkově orientované, Audible ukazuje statistiky jen pro svůj obsah a uživatelé kombinují více platforem.",
+      "parent_market": "Čtenářské trackery (Goodreads, StoryGraph, Bookly – Bookly s předplatným patří k nejvýdělečnějším) a audioknižní platformy (Audible, Storytel, Libby).",
+      "target_user": "Vášniví posluchači audioknih (10+ knih ročně), dojíždějící, lidé s ADHD/dyslexií, kteří „čtou ušima“, a fanoušci konkrétních interpretů.",
+      "features": [
+        "Zápis knihy: délka, rychlost, platforma, interpret; výpočet skutečně strávených hodin",
+        "Statistiky: hodiny za rok, oblíbení interpreti, žánry, platformy",
+        "Roční cíl v hodinách a streak widget",
+        "Seznam „chci slyšet“ podle interpreta",
+        "Import z CSV (Goodreads export) a iCloud sync"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně; metadata knih zadává uživatel ručně nebo z fotky obálky (Vision OCR). Žádné online katalogy (volitelně by šlo Open Library = partial, v MVP ne).",
+      "monetization": "Freemium; Pro 2,99 USD/měsíc, 19,99 USD/rok (≈ 460 CZK), 39,99 USD lifetime.",
+      "revenue_math": "Ideál: 2 000 stažení/měsíc („audiobook tracker“, „audiobook log“, „listening log“ + lokalizace „Hörbuch“, „audiokniha“) × 2,5 % = 50 ročních předplatných × 19,99 × 0,85 × 23 ≈ 19 500 CZK čistého.",
+      "revenue_czk_ideal": 19500,
+      "keywords": [
+        {
+          "kw": "audiobook tracker",
+          "saturation": 1,
+          "competitor": "Book Progress: Reading Tracker (loguje audioknihy v hodinách)",
+          "note": "Web: 2 vyhledávání, žádná app nemá „audiobook tracker“ v titulu. Apple hint neověřen (offline běh, apple_fetch nedostupný); saturace z webového průzkumu v evidence souboru"
+        },
+        {
+          "kw": "audiobook log",
+          "saturation": 0,
+          "competitor": "Bookshelf: Reading Tracker",
+          "note": "Web: fráze v titulech nenalezena; obecné trackery mají audio jen jako funkci."
+        },
+        {
+          "kw": "listening log",
+          "saturation": 1,
+          "competitor": "ListenBook: audiobook player (statistiky poslechu)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); kolize s hudebními/podcastovými logy."
+        },
+        {
+          "kw": "narrator",
+          "saturation": 2,
+          "competitor": "Audible (parent)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); hledání podle interpretů je reálné chování fanoušků audioknih."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): sat 0–1 na „audiobook tracker/log“, přitom několik trackerů (Book Progress, ReadTracker, Bookshelf) přidalo audio funkce – signál poptávky. Předpoklad: hledanost frází v Apple autocomplete neověřena.",
+      "competitors": [
+        {
+          "name": "Bookly",
+          "url": "https://apps.apple.com/us/app/bookly-book-tracker-manager/id1085047737",
+          "role": "parent",
+          "note": "Lídr trackerů s předplatným; audio je vedlejší funkce."
+        },
+        {
+          "name": "Book Progress: Reading Tracker",
+          "url": "https://apps.apple.com/tr/app/book-progress-reading-tracker/id6504213962",
+          "role": "niche",
+          "note": "Loguje audioknihy v hodinách – nejbližší funkčně, ale obecný tracker."
+        },
+        {
+          "name": "Bookshelf: Reading Tracker",
+          "url": "https://apps.apple.com/us/app/bookshelf-reading-tracker/id6654913138",
+          "role": "niche",
+          "note": "Poslechové relace po kapitolách/minutách, výpůjčky."
+        },
+        {
+          "name": "Audible",
+          "url": "https://apps.apple.com/in/app/audible-audiobooks-podcasts/id379693831",
+          "role": "parent",
+          "note": "Statistiky poslechu jen pro vlastní obsah."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Bookly nebo StoryGraph mohou přidat „audio mode“ za týden – evidence říká přesně to.",
+        "Audible a Storytel už statistiky poslechu ukazují zdarma; uživatel s jednou platformou nemá důvod logovat ručně.",
+        "Ruční zápis bez online katalogu je tření – lidé chtějí naskenovat ISBN, audioknihy ale ISBN na obálce nemají.",
+        "Trackerů je v Books kategorii obrovské množství, riziko, že Apple vnímá další tracker jako 4.3 spam, není nulové."
+      ],
+      "killer_risk": "Velký tracker přidá audio statistiky a naše diferenciace zmizí.",
+      "mitigation": "Být „the“ aplikací pro posluchače: interpreti jako fandom (sledování nových nahrávek ručně, žebříčky), multiplatformní přehled a lokalizace pro Storytel/BookBeat trhy, kde anglické trackery nejsou.",
+      "build_weeks": 3,
+      "evidence": "web",
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "books-05",
+      "name": "Reading Diary for School",
+      "tagline": "Čtenářský deník, který dítě opravdu dopíše: postavy, děj, hodnocení a hotové PDF pro paní učitelku.",
+      "pitch": "V Česku, na Slovensku, v Polsku a Německu musí školáci povinně vést čtenářský deník (Lesetagebuch, dzienniczek lektur) – každý rok miliony dětí a rodičů řeší, jak ho vyplnit. Americké reading logy počítají minuty, ale strukturu evropského deníku (autor, hlavní postavy, děj, ukázka, vlastní názor, ilustrace) nemají. Naše aplikace dítě provede otázkami, uloží fotku obálky a kresbu a vygeneruje úhledné PDF k vytištění nebo odeslání učiteli. Jde o reverse US gap: model, který v USA neexistuje, ale v střední Evropě je povinný.",
+      "niche": "Školní čtenářský deník podle středoevropských osnov. Globální trackery jsou pro dospělé, US reading logy pro minuty – nikdo nestaví na lokální struktuře, protože je jazykově a kulturně specifická.",
+      "parent_market": "Rodičovské a školní čtenářské deníky (Reading Log: Parents & School, Beanstack, RIF Reading Log) a vzdělávací aplikace pro rodiče; lokálně prodávané papírové čtenářské deníky (knihkupectví, nakladatelé).",
+      "target_user": "Žáci 2.–9. třídy v CZ/SK/PL/DE/AT a jejich rodiče; učitelé češtiny/literatury.",
+      "features": [
+        "Průvodce zápisem: autor, žánr, postavy, místo a čas děje, stručný obsah, hodnocení",
+        "Fotka obálky a vlastní kresba (PencilKit) k zápisu",
+        "Export PDF deníku (šablony podle zvyklostí jednotlivých zemí)",
+        "Seznam povinné četby jako vlastní checklist a připomínka čtení",
+        "Pojistka proti opisování: aplikace neshrnuje knihy za dítě, jen klade otázky"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně (text, fotky, kresby, PDF). Žádné stahované výtahy z knih ani online katalog.",
+      "monetization": "Jednorázově 3,99 USD (≈ 92 CZK) za rodinu (Family Sharing), free verze 3 zápisy.",
+      "revenue_math": "Ideál (září–říjen, leden): 4 000 stažení/měsíc v CZ+SK+PL+DE+AT („čtenářský deník“, „Lesetagebuch“, „dzienniczek lektur“) × 5 % = 200 nákupů × 3,99 × 0,85 × 23 ≈ 15 600 CZK čistého. Mimo sezónu 3–5 tis. CZK.",
+      "revenue_czk_ideal": 15600,
+      "keywords": [
+        {
+          "kw": "čtenářský deník",
+          "saturation": 2,
+          "competitor": "(odhad: pár drobných lokálních aplikací)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); v CZ App Store očekáváme 1–3 malé aplikace, spíše slabé."
+        },
+        {
+          "kw": "Lesetagebuch",
+          "saturation": 2,
+          "competitor": "(odhad: DE lokální aplikace neznámé)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); DE školní pojem, přirozená fráze."
+        },
+        {
+          "kw": "reading diary",
+          "saturation": 3,
+          "competitor": "Reading Log: Parents & School",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); anglická fráze pro UK („reading record“) a mezinárodní školy."
+        },
+        {
+          "kw": "book report",
+          "saturation": 4,
+          "competitor": "(odhad: AI generátory referátů)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); kolize s AI „book report writer“ aplikacemi – jen podpůrně."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): trh dětských reading logů je přeplněný v angličtině (sat ~6), tj. rodiče taková řešení stahují. Předpoklad (neověřeno): povinný čtenářský deník v CZ/SK/PL/DE generuje hledání v rodném jazyce; lokální konkurence odhadnuta, ne změřena.",
+      "competitors": [
+        {
+          "name": "Reading Log: Parents & School",
+          "url": "https://apps.apple.com/us/app/reading-log-parents-school/id6757205089",
+          "role": "parent",
+          "note": "US deník večerníčků a školních minut – jiná struktura než evropský deník."
+        },
+        {
+          "name": "RIF Reading Log",
+          "url": "https://apps.apple.com/us/app/rif-reading-log/id1365076654?l=fr",
+          "role": "parent",
+          "note": "Neziskový US reading log zdarma."
+        },
+        {
+          "name": "Kids Read Now",
+          "url": "https://apps.apple.com/us/app/kids-read-now/id1403195954",
+          "role": "parent",
+          "note": "US program letního čtení."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Reverse gap: struktura čtenářského deníku (CZ/SK/PL/DE) v US modelu neexistuje, US aplikace jsou jen anglicky a počítají minuty. Postavíme pro střední Evropu a rozšíříme do dalších zemí se školní povinností (HU „olvasónapló“, HR „lektira“).",
+      "devils_advocate": [
+        "Malé trhy: CZ+SK jsou kupně slabé, DE a PL musí nést tržby, a tam neznáme lokální konkurenci.",
+        "Silná sezónnost (září, leden) – 8 měsíců v roce skoro nula.",
+        "Učitelé často vyžadují ručně psaný sešit – tištěné PDF nemusí akceptovat.",
+        "Děti chtějí „výtah“, ne otázky; bez AI shrnutí může aplikace působit jako zbytečná práce navíc (a s AI je to opisování a riziko reputace)."
+      ],
+      "killer_risk": "Učitelé nepřijmou digitální deník a rodiče neuvidí důvod platit.",
+      "mitigation": "Režim „tisk do sešitu“ (šablona k přepsání/vlepení), stránka pro učitele s vysvětlením; jednorázová nízká cena; lokalizovat pro HU/HR/SI/RO se stejnou školní tradicí.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "books-06",
+      "name": "Library Bag: Family Loans",
+      "tagline": "Všechny knihovní průkazy celé rodiny a všechny výpůjčky na jednom místě – s upozorněním dřív, než přijde pokuta.",
+      "pitch": "Rodiny chodí do dvou tří knihoven (městská, školní, pobočka u babičky) a každé dítě má vlastní průkaz; aplikace knihoven ukazují jen svou knihovnu a v Evropě se za pozdní vrácení stále platí. Vyfotíte výpůjční lístek, aplikace přes on-device OCR vytáhne tituly a data vrácení, přiřadí je dítěti a upozorní týden předem. Karty průkazů se uloží jako čárové kódy, takže se u pultu stačí ukázat telefonem. Dedikovaná aplikace pro rodinné výpůjčky z více knihoven je v App Store jen jedna, úplně nová.",
+      "niche": "Multiknihovní rodinná správa výpůjček a průkazů. Knihovní systémy (Bibliotheca/cloudLibrary, BiblioCommons) dělají aplikace pro jednu instituci; peněženky čárových kódů neřeší výpůjčky.",
+      "parent_market": "Knihovní aplikace (Libby, cloudLibrary, BiblioCommons) s miliony uživatelů a peněženky věrnostních karet (Stocard, Barcode Wallet).",
+      "target_user": "Rodiče s dětmi 4–14 let, kteří pravidelně chodí do více knihoven; senioři s větším množstvím výpůjček; studenti s univerzitní + městskou knihovnou.",
+      "features": [
+        "Rodinné profily a knihovní průkazy jako čárové kódy (Code128/Codabar) k ukázání u pultu",
+        "Fotka výpůjčního lístku → OCR titulů a data vrácení (Vision)",
+        "Připomínky 7 a 1 den před termínem, seskupené podle knihovny",
+        "Přehled „co je doma a čí to je“, značka prodlouženo",
+        "Historie přečtených knihovních knih dítěte"
+      ],
+      "offline": "full",
+      "offline_note": "OCR, čárové kódy, notifikace i data lokálně; iCloud sync mezi rodiči. Žádné napojení na knihovní systémy (to by vyžadovalo licence/API).",
+      "monetization": "Zdarma 1 průkaz; rodinná verze jednorázově 4,99 USD (≈ 115 CZK) nebo 1,99 USD/rok.",
+      "revenue_math": "Ideál: 3 500 stažení/měsíc („library due date reminder“, „library card wallet“, „library books tracker“ + lokalizace DE „Bibliothek Ausleihe“, CZ „výpůjčky knihovna“) × 4 % = 140 × 4,99 × 0,85 × 23 ≈ 13 700 CZK čistého.",
+      "revenue_czk_ideal": 13700,
+      "keywords": [
+        {
+          "kw": "library due date reminder",
+          "saturation": 1,
+          "competitor": "Library Loan Reminder2026 (nový indie)",
+          "note": "Web: jediná dedikovaná aplikace, nová a offline. Apple hint neověřen (offline běh, apple_fetch nedostupný); saturace z webového průzkumu v evidence souboru"
+        },
+        {
+          "kw": "library card wallet",
+          "saturation": 1,
+          "competitor": "Barcode Wallet (obecná peněženka)",
+          "note": "Web: jen obecné barcode peněženky zmiňují knihovní karty."
+        },
+        {
+          "kw": "library books tracker",
+          "saturation": 3,
+          "competitor": "MyLibrary - Book Manager",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); kolize s katalogy domácích knihoven."
+        },
+        {
+          "kw": "library loans",
+          "saturation": 2,
+          "competitor": "CloudLibrary (parent, jen vlastní systém)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); knihovní značkové aplikace (SCLD, Darien…) pokrývají jen svou knihovnu."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): sat 1 dedikovaných aplikací; desítky značkových aplikací jednotlivých knihoven a obecné peněženky zmiňující knihovní průkazy = lidé řeší problém provizorně. Předpoklad: v USA pokuty mizí (fine-free), bolest je silnější v CZ/DE – neověřeno hledaností.",
+      "competitors": [
+        {
+          "name": "Library Loan Reminder2026",
+          "url": "https://apps.apple.com/ro/app/library-loan-reminder2026/id6780073076",
+          "role": "niche",
+          "note": "Nová indie aplikace, offline lokální evidence výpůjček – jediný přímý soupeř."
+        },
+        {
+          "name": "CloudLibrary",
+          "url": "https://apps.apple.com/us/app/cloudlibrary/id466446054",
+          "role": "parent",
+          "note": "Více průkazů, ale jen e-výpůjčky v jejich systému."
+        },
+        {
+          "name": "Barcode Wallet",
+          "url": "https://apps.apple.com/us/app/barcode-wallet/id6746732896",
+          "role": "niche",
+          "note": "Obecná peněženka čárových kódů, bez výpůjček."
+        },
+        {
+          "name": "MyLibrary - Book Manager",
+          "url": "https://apps.apple.com/us/app/mylibrary-book-manager/id6755722070",
+          "role": "niche",
+          "note": "Katalog domácí knihovny s půjčováním a upozorněním – jiný problém."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Americké knihovny ruší pokuty (fine-free) – v nejbohatším trhu bolest slábne.",
+        "Knihovny posílají e-mailové upomínky zdarma; motivace instalovat další aplikaci je slabá.",
+        "OCR výpůjčních lístků: každý knihovní systém tiskne jiný formát, bez fotky lístku (e-mail) zbývá ruční zápis.",
+        "Apple Wallet: průkazy se dají dostat do Wallet jinými aplikacemi; iOS by mohl přidat obecné karty."
+      ],
+      "killer_risk": "Bolest není dost silná – e-mailové upomínky a fine-free knihovny ji řeší zdarma.",
+      "mitigation": "Cílit na rodiny a trhy s pokutami (DE, CZ, AT, PL, JP), zdůraznit „přehled co je čí“ a průkazy; importovat výpůjčky z e-mailu přes Share Sheet (text), nejen z fotky.",
+      "build_weeks": 4,
+      "evidence": "web",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 7
+      }
+    },
+    {
+      "id": "books-07",
+      "name": "ClassShelf: Classroom Library",
+      "tagline": "Třídní knihovnička na iPhonu učitele: naskenuj, půjč, vrať – a víš, kdo má kterou knihu.",
+      "pitch": "Učitelé na prvním stupni mají stovky vlastních knih ve třídě a ztrácejí je, protože výpůjčky evidují na papír. Follett nabízí správce knihovničky jen v rámci svého ekosystému a nový ReadOtter je anglický. My postavíme jednoduchou aplikaci: skenování ISBN kamerou, třída jako seznam jmen, výpůjčka dvěma ťuknutími, přehled po termínu a štítky k vytištění. Lokalizace do 50 jazyků otevírá evropské a latinskoamerické učitele, kteří nic takového v rodném jazyce nemají.",
+      "niche": "Evidence výpůjček třídní knihovničky (ne školní knihovny). Knihovní systémy škol jsou drahé a centralizované; domácí katalogy (BookBuddy) nemají pojem „žák a třída“.",
+      "parent_market": "Katalogy knih a knihovní software: BookBuddy, Libib, Follett Destiny/Classroom Library Manager; placené učitelské aplikace (TeachersPayTeachers kultura).",
+      "target_user": "Učitelé 1.–5. třídy a anglického jazyka, vychovatelky družin, lektoři jazykových škol s půjčovnou knih.",
+      "features": [
+        "Skenování ISBN kamerou, doplnění názvu a obálky (volitelně Open Library), jinak ruční zápis",
+        "Třídy a žáci (jen křestní jméno/přezdívka), výpůjčka a vrácení dvěma ťuknutími",
+        "Přehled po termínu, statistiky nejpůjčovanějších knih",
+        "Tisk štítků s QR kódem pro rychlé skenování",
+        "Export CSV a přenos na nový rok"
+      ],
+      "offline": "partial",
+      "offline_note": "Evidence, výpůjčky i QR štítky běží offline; doplnění metadat podle ISBN vyžaduje veřejné API (Open Library) – bez něj ruční zápis. Data žáků zůstávají v zařízení.",
+      "monetization": "Zdarma do 50 knih; Pro 19,99 USD/rok (≈ 460 CZK) nebo 39,99 USD lifetime.",
+      "revenue_math": "Ideál (srpen–září): 1 500 stažení/měsíc („classroom library“, „class library app“, „book checkout“ + lokalizace „Klassenbibliothek“, „biblioteca de aula“) × 4 % = 60 × 19,99 × 0,85 × 23 ≈ 23 400 CZK v sezóně; celoroční průměr kolem 10–12 tis. CZK.",
+      "revenue_czk_ideal": 12000,
+      "keywords": [
+        {
+          "kw": "classroom library",
+          "saturation": 3,
+          "competitor": "Classroom Library Manager (Follett)",
+          "note": "Web: sat 3 (ReadOtter, Follett, Bookshelf Scanner). Apple hint neověřen (offline běh, apple_fetch nedostupný); saturace z webového průzkumu v evidence souboru"
+        },
+        {
+          "kw": "classroom library checkout",
+          "saturation": 3,
+          "competitor": "ReadOtter: Classroom Library (nový 2025)",
+          "note": "Web: moderate; všechny anglicky."
+        },
+        {
+          "kw": "book checkout",
+          "saturation": 3,
+          "competitor": "Library CheckOut (obecná)",
+          "note": "Web: obecné ISBN výpůjčky s notifikacemi."
+        },
+        {
+          "kw": "Klassenbibliothek",
+          "saturation": 0,
+          "competitor": "(nic lokalizovaného)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); lokalizovaný keyword DE/ES/FR/PT – předpoklad nulové konkurence."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): sat 3, nový konkurent 2025, Follett investoval do samostatné aplikace = poptávka učitelů v USA. Učitelé používají i BookBuddy. Předpoklad: poptávka mimo USA menší (méně třídních knihoven), neověřeno.",
+      "competitors": [
+        {
+          "name": "ReadOtter: Classroom Library",
+          "url": "https://apps.apple.com/us/app/readotter-classroom-library/id6745129261",
+          "role": "niche",
+          "note": "Nový (2025), katalog + výpůjčky + záznamy žáků, anglicky."
+        },
+        {
+          "name": "Classroom Library Manager",
+          "url": "https://apps.apple.com/us/app/classroom-library-manager/id1479701901",
+          "role": "niche",
+          "note": "Follett – silná značka, ale vázané na ekosystém."
+        },
+        {
+          "name": "Bookshelf Scanner",
+          "url": "https://apps.apple.com/us/app/bookshelf-scanner/id1435647681",
+          "role": "niche",
+          "note": "Učitelské čárové výpůjčky."
+        },
+        {
+          "name": "BookBuddy",
+          "url": "https://apps.apple.com/us/app/bookbuddy-my-library-manager/id395150347",
+          "role": "parent",
+          "note": "Lídr domácích katalogů, učitelé ho používají provizorně."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Všichni konkurenti jsou anglicky a US-centričtí; třídní knihovničky existují i v DE (Klassenbücherei), ES/LatAm (biblioteca de aula) a v mezinárodních školách. Lokalizace je hlavní úhel.",
+      "devils_advocate": [
+        "Silná sezónnost: stahování v srpnu–září, zbytek roku minimum.",
+        "Mimo USA je kultura třídní knihovničky slabší a učitelé neplatí z vlastní kapsy.",
+        "ISBN metadata z veřejného API mají díry pro neanglické knihy – ruční zápis odrazuje.",
+        "Data žáků (jména) → GDPR a školní směrnice mohou používání zakázat."
+      ],
+      "killer_risk": "Malý neanglický trh + sezónnost = tržba pod 10 tis. CZK většinu roku.",
+      "mitigation": "Rozšířit na jazykové školy, družiny a firemní knihovničky (stejná mechanika), přezdívky místo jmen (GDPR), import seznamu přes CSV.",
+      "build_weeks": 5,
+      "evidence": "web",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 7,
+        "safety": 6
+      }
+    },
+    {
+      "id": "books-08",
+      "name": "Syllabe: Dyslexia Reader",
+      "tagline": "Čtečka ePub a PDF pro dyslektiky: barevné slabiky v každém jazyce, čtecí pravítko a hlas, který sleduje text.",
+      "pitch": "Dyslexie se týká 5–10 % lidí a pomůcky jako barevné slabiky nebo čtecí okénko fungují – ale existující aplikace umí hlavně změnit font na OpenDyslexic a jen v angličtině. Postavíme čtečku, která otevře vlastní ePub/PDF, obarví slabiky podle pravidel konkrétního jazyka (čeština, němčina, španělština, polština…), přidá čtecí pravítko, zvýrazňování při předčítání a dětské profily. Dedikovaná nika má 2–3 aplikace a jen jedna je z roku 2026.",
+      "niche": "Asistivní čtečka pro dyslektiky s jazykově specifickým dělením slabik. Velcí hráči (Speechify, Voice Dream) jsou TTS-first a anglocentričtí; slabikové barvení je evropská logopedická metoda, kterou US vývojáři neznají.",
+      "parent_market": "Asistivní čtení a TTS: Speechify (velké předplatné), Voice Dream Reader, Natural Reader; dyslektické AI tutory (Lexy, GoLexic) s předplatným.",
+      "target_user": "Děti 8–15 let s dyslexií a jejich rodiče, dospělí dyslektici, speciální pedagogové a logopedi v neanglických zemích.",
+      "features": [
+        "Import ePub (bez DRM) a PDF, přeformátování textu",
+        "Barvení slabik podle jazyka (pravidla dělení pro 10+ jazyků), volba fontu a rozestupů",
+        "Čtecí pravítko/okénko a režim „jeden řádek“",
+        "Předčítání on-device hlasy se zvýrazněním slov",
+        "Dětské profily s nastavením od logopeda"
+      ],
+      "offline": "full",
+      "offline_note": "Parsování ePub/PDF, dělení slabik (bundlovaná pravidla/hyphenation slovníky), TTS (AVSpeechSynthesizer) – vše na zařízení.",
+      "monetization": "Předplatné 3,99 USD/měsíc nebo 19,99 USD/rok (≈ 460 CZK); rodinná lifetime 49,99 USD.",
+      "revenue_math": "Ideál: 2 000 stažení/měsíc („dyslexia reader“, „dyslexia font“, „syllable reading“ + lokalizace „Legasthenie“, „dyslexie čtení“) × 2,5 % = 50 ročních × 19,99 × 0,85 × 23 ≈ 19 500 CZK čistého.",
+      "revenue_czk_ideal": 19500,
+      "keywords": [
+        {
+          "kw": "dyslexia reader",
+          "saturation": 3,
+          "competitor": "ClearRead - Dyslexia Reader (nový 2026)",
+          "note": "Web: sat 2–3, ClearRead importuje ePub/PDF s Lexend/OpenDyslexic. Apple hint neověřen (offline běh, apple_fetch nedostupný); saturace z webového průzkumu v evidence souboru"
+        },
+        {
+          "kw": "dyslexia font",
+          "saturation": 3,
+          "competitor": "Dyslexia Font: OpenDyslexic",
+          "note": "Web: jeden vývojář s mnoha lokalizovanými tituly – silný v tomto slově."
+        },
+        {
+          "kw": "syllable reading",
+          "saturation": 2,
+          "competitor": "(odhad: dětské slabikáře)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); kolize s dětskými aplikacemi na čtení po slabikách (kids evidence: syllabic reading otevřené)."
+        },
+        {
+          "kw": "reading ruler",
+          "saturation": 3,
+          "competitor": "(odhad: pár nástrojů na čtecí pravítko)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): sat 2–3 v nice čteček; kids evidence ukazuje přeplněné AI dyslektické tutory = silná ochota rodičů platit. Předpoklad: poptávka po slabikovém barvení v neanglických jazycích (logopedická praxe) – neověřeno hledaností.",
+      "competitors": [
+        {
+          "name": "ClearRead - Dyslexia Reader",
+          "url": "https://apps.apple.com/gb/app/clearread-dyslexia-reader/id6760895785",
+          "role": "niche",
+          "note": "Nová 2026, import ePub/PDF, Lexend/OpenDyslexic – přímý soupeř bez slabik."
+        },
+        {
+          "name": "Dyslexia Font: OpenDyslexic",
+          "url": "https://apps.apple.com/us/app/dyslexia-font-opendyslexic/id1510565499",
+          "role": "niche",
+          "note": "Jeden vývojář, mnoho lokalizovaných titulů, import PDF."
+        },
+        {
+          "name": "Bookbot Phonics Books for Kids",
+          "url": "https://apps.apple.com/us/app/bookbot-phonics-books-for-kids/id1325919626",
+          "role": "parent",
+          "note": "AI tutor čtení s předplatným – dokládá platby rodičů."
+        },
+        {
+          "name": "Speechify",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr TTS čtení s drahým předplatným, anglocentrický."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Sherlock: iOS 26 přidal Accessibility Reader – základní přeformátování a předčítání má každý zdarma.",
+        "Slabikování je jazykově složité; chyby v dělení slabik v jedné zemi = 1hvězdičkové recenze od logopedů.",
+        "Děti nečtou ePub z vlastního importu – školní texty jsou na papíře nebo v učebnicích s DRM.",
+        "Tvrzení o „léčbě“ dyslexie by narazilo na 1.4.1; musíme mluvit o pomůcce, ne terapii."
+      ],
+      "killer_risk": "Apple Accessibility Reader + Speechify pokryjí 80 % potřeby zdarma nebo lépe.",
+      "mitigation": "Diferencovat tím, co Apple neudělá: slabiky v lokálních jazycích, fotka stránky z papírové učebnice → přeformátovaný text (Live Text), profily od logopeda; úzká komunikace s logopedickými komunitami v DE/CZ/PL/ES.",
+      "build_weeks": 6,
+      "evidence": "web",
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 4
+      }
+    },
+    {
+      "id": "books-09",
+      "name": "Commonplace: Book Quote Keeper",
+      "tagline": "Vyfoť stránku, označ větu prstem – citát je uložen s knihou, stránkou a tvou poznámkou. Bez cloudu.",
+      "pitch": "Čtenáři papírových knih si podtrhávají, fotí stránky a pak je nikdy nenajdou. Readwise za to účtuje 10 USD měsíčně a stojí na cloudu a e-knihách. Commonplace je soukromá „kniha citátů“: fotka stránky, Live Text výběr věty, automatické přiřazení ke knize, štítky a denní připomenutí náhodného citátu jako widget. Pro BookTok generaci a klasické „commonplace book“ nadšence přináší papírovou knihu do digitálu bez předplatného cloudu.",
+      "niche": "Citáty a podtržení z papírových knih zpracované on-device. Readwise/Glasp řeší hlavně Kindle a web, Goodreads citáty jsou veřejné a nahodilé.",
+      "parent_market": "Trh highlightů a znalostního managementu: Readwise (desítky tisíc platících, ~10 USD/měsíc), Glasp, Notion šablony čtenářských deníků; čtenářské trackery s citáty (Bookly).",
+      "target_user": "Vášniví čtenáři papírových knih, studenti humanitních oborů, spisovatelé sbírající inspiraci, BookTok/Bookstagram tvůrci.",
+      "features": [
+        "Fotka stránky → Live Text výběr citátu, uložení s knihou a stránkou",
+        "Štítky, oblíbené, fulltext hledání",
+        "Widget „citát dne“ a jemné opakování (spaced review)",
+        "Sdílitelné citátové karty s typografií (obrázek)",
+        "Export Markdown/CSV do Obsidian/Notes"
+      ],
+      "offline": "full",
+      "offline_note": "OCR (Vision/Live Text), databáze, widgety i generování obrázků lokálně; iCloud sync volitelný.",
+      "monetization": "Freemium; Pro 2,99 USD/měsíc, 19,99 USD/rok (≈ 460 CZK), 34,99 USD lifetime.",
+      "revenue_math": "Ideál: 1 800 stažení/měsíc („book quotes“, „quote scanner“, „commonplace book“, „book highlights“) × 3 % = 54 ročních × 19,99 × 0,85 × 23 ≈ 21 100 CZK čistého.",
+      "revenue_czk_ideal": 21100,
+      "keywords": [
+        {
+          "kw": "book quotes",
+          "saturation": 5,
+          "competitor": "(odhad: kolekce citátů a trackery s citáty)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); hlavní fráze je spíš obsazená quote-feed aplikacemi."
+        },
+        {
+          "kw": "commonplace book",
+          "saturation": 2,
+          "competitor": "(odhad: 1–2 aplikace)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); přirozená fráze v komunitě čtenářů."
+        },
+        {
+          "kw": "quote scanner",
+          "saturation": 3,
+          "competitor": "(odhad: OCR skenery citátů)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "book highlights",
+          "saturation": 4,
+          "competitor": "Readwise",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); Readwise dominuje, ale cílí na Kindle a web."
+        }
+      ],
+      "demand_evidence": "Neověřeno webem pro tuto niku (productivity evidence ji uvádí jen jako neprověřený kandidát „book highlights scanner“). Opírám se o znalost trhu: Readwise má prokázané předplatné, BookTok trend annotací. Předpoklad: hledanost frází a saturace jsou odhad.",
+      "competitors": [
+        {
+          "name": "Readwise",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr highlightů s předplatným ~10 USD/měsíc, cloud a Kindle-first."
+        },
+        {
+          "name": "Bookly",
+          "url": "https://apps.apple.com/us/app/bookly-book-tracker-manager/id1085047737",
+          "role": "parent",
+          "note": "Tracker s citáty jako vedlejší funkcí."
+        },
+        {
+          "name": "Glasp",
+          "url": "",
+          "role": "niche",
+          "note": "Sociální highlighty z webu – jiný use-case."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Apple Notes + Live Text už umí vyfotit a zkopírovat text zdarma – pro mnoho lidí stačí.",
+        "Readwise má OCR papírových knih také (přes aplikaci) – pro heavy usery nejsme nutní.",
+        "Citátové aplikace jsou v App Store často spam-kategorie (quote feeds) – ASO kolize a riziko 4.3 dojmu.",
+        "Sdílení citátových karet z knih: citace je fair use, ale masové sdílení celé stránky ne – nutno omezit délku."
+      ],
+      "killer_risk": "Uživatelé zůstanou u Apple Notes/fotek, protože „dost dobré“ je zdarma.",
+      "mitigation": "Vsadit na rituál a estetiku (widget, citátové karty, roční „kniha citátů“ PDF), knihu jako kontejner a export pro Obsidian komunitu.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "books-10",
+      "name": "Clueboard: Mystery Plot Planner",
+      "tagline": "Plánovač detektivky: podezřelí, stopy, alibi a falešné stopy na časové ose – aby rozuzlení sedělo.",
+      "pitch": "Generické plánovače románů jsou přeplněné (Story Planner, Plot Flow, desítky AI), ale nikdo nestaví nástroj pro nejprodávanější žánr – detektivky a thrillery. Autor potřebuje hlídat, kdo co věděl kdy, kde byla která stopa zasazena a jestli má každý podezřelý motiv a alibi. Clueboard dává „nástěnku vyšetřovatele“: karty podezřelých, stopy s kapitolou zasazení a odhalení, časovou osu vraždy a kontrolu fair-play. Je to přesně ten druh úzké, pálivé potřeby, kterou velké plánovače ignorují.",
+      "niche": "Plánování žánrové detektivky/thrilleru (stopy, alibi, red herrings). Obecné plánovače řeší strukturu příběhu, ne logiku záhady.",
+      "parent_market": "Plánovače pro spisovatele: Story Planner for Writers, Plottr (desktop, placený), Scrivener, Campfire; detektivky a thrillery jsou jeden z nejprodávanějších žánrů.",
+      "target_user": "Autoři detektivek, thrillerů a cozy mystery (často self-publisheři na KDP), tvůrci murder-mystery her pro večírky.",
+      "features": [
+        "Karty podezřelých: motiv, prostředek, příležitost, alibi",
+        "Stopy a falešné stopy: kapitola zasazení vs. odhalení, kontrola fair-play",
+        "Časová osa „co se skutečně stalo“ vs. „co ví čtenář“",
+        "Nástěnka s propojením (vyšetřovatelská mapa) – PencilKit/vektor",
+        "Export osnovy do Markdown/PDF"
+      ],
+      "offline": "full",
+      "offline_note": "Kompletně lokální (SwiftData, iCloud sync). Volitelně Apple Foundation Models pro kontrolní otázky nad vlastní osnovou, bez serveru.",
+      "monetization": "Jednorázově 14,99 USD (≈ 345 CZK) nebo 2,99 USD/měsíc; free = 1 příběh.",
+      "revenue_math": "Ideál: 1 000 stažení/měsíc („mystery plot planner“, „mystery writing“, „plot outline“, „clue tracker“) × 5 % = 50 × 14,99 × 0,85 × 23 ≈ 14 700 CZK čistého.",
+      "revenue_czk_ideal": 14700,
+      "keywords": [
+        {
+          "kw": "mystery writing",
+          "saturation": 3,
+          "competitor": "(odhad: obecné psací aplikace)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); web evidence: žádný žánrově specifický plánovač mezi výsledky „novel planner“."
+        },
+        {
+          "kw": "plot outline",
+          "saturation": 6,
+          "competitor": "Story Planner for Writers",
+          "note": "Web: generické plánovače sat 6 – slovo jen jako parent/doplněk. Apple hint neověřen (offline běh, apple_fetch nedostupný); saturace z webového průzkumu v evidence souboru"
+        },
+        {
+          "kw": "murder mystery planner",
+          "saturation": 2,
+          "competitor": "(odhad: party game aplikace)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); kolize s murder-mystery party hrami – dvojí publikum."
+        },
+        {
+          "kw": "clue tracker",
+          "saturation": 1,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); malá, ale přesná fráze."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): generické plánovače románů sat 6 = silná poptávka spisovatelů; mezi výsledky žádný žánrový. Neověřeno: hledanost žánrových frází („mystery plot“) – odhad.",
+      "competitors": [
+        {
+          "name": "Story Planner for Writers",
+          "url": "https://apps.apple.com/us/app/story-planner-for-writers/id860024390",
+          "role": "parent",
+          "note": "Lídr generických plánovačů, bez logiky záhady."
+        },
+        {
+          "name": "Story Plotter",
+          "url": "https://apps.apple.com/us/app/story-plotter-idea-to-plot/id1491980862",
+          "role": "parent",
+          "note": "Obecný plotter od nápadu k zápletce."
+        },
+        {
+          "name": "Plottr",
+          "url": "",
+          "role": "parent",
+          "note": "Placený desktop/iPad plánovač s timeline – žánrové šablony, ne nástroje stop."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Nika autorů detektivek s iPadem/iPhonem je malá; většina plánuje ve Scrivener/Plottr na desktopu.",
+        "Plottr nebo Campfire přidají „mystery šablonu“ a pro jejich uživatele to stačí.",
+        "Autorům často stačí tabulka nebo papírová nástěnka – aplikace musí být výrazně lepší, ne jen digitální.",
+        "iPhone je pro nástěnkový nástroj malý – bez dobrého iPadu a Macu (Catalyst) nízká hodnota."
+      ],
+      "killer_risk": "Příliš malá cílovka mobilních plánovačů detektivek.",
+      "mitigation": "Univerzální aplikace iPad + Mac (Catalyst) od začátku, druhé publikum murder-mystery party hostitelů, lokalizace do DE/FR/ES/JP (silná detektivní tradice).",
+      "build_weeks": 5,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "books-11",
+      "name": "Book Bingo: Reading Challenges",
+      "tagline": "Vytvoř si čtenářské bingo nebo výzvu, vyfoť obálku do políčka a sdílej hotovou kartu.",
+      "pitch": "Každý rok v lednu a v létě tisíce čtenářů hledají „reading challenge“ – knihovny tisknou letní bingo, komunita r/Fantasy má svou Book Bingo, BookTok dělá vlastní výzvy. Trackery (StoryGraph, Goodreads) umí výzvy jen jako počet knih. My dáme editor karet 3×3 až 5×5 s vlastními kategoriemi, fotku obálky do políčka, automatickou kontrolu linií a sdílitelný obrázek hotové karty. Je to vizuální, virální a hotové za pár týdnů.",
+      "niche": "Vizuální bingo a tematické čtenářské výzvy. Trackery nabízejí číselné cíle, ne hravé karty s kategoriemi; knihovny používají papír.",
+      "parent_market": "Čtenářské trackery (Goodreads Reading Challenge, StoryGraph, Bookly, Fable) a komunitní výzvy (r/Fantasy Bingo, knihovní letní čtení Beanstack).",
+      "target_user": "BookTok a Bookstagram čtenáři, členové čtenářských komunit, knihovnice a učitelky organizující letní čtení.",
+      "features": [
+        "Editor karet 3×3–5×5 s vlastními i předpřipravenými kategoriemi",
+        "Fotka obálky do políčka, kontrola řádků/diagonál/blackout",
+        "Sdílitelný obrázek karty (story formát)",
+        "Import/export karty přes QR kód nebo soubor pro přátele/třídu",
+        "Roční archiv karet"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, sdílení karet přes soubor/QR/share sheet – žádný server.",
+      "monetization": "Zdarma 1 karta; jednorázově 4,99 USD (≈ 115 CZK) za neomezené karty a šablony; balíčky témat 1,99 USD.",
+      "revenue_math": "Ideál (leden, červen–červenec): 4 000 stažení/měsíc („reading challenge“, „book bingo“, „reading bingo“, „summer reading challenge“) × 3 % = 120 × 4,99 × 0,85 × 23 ≈ 11 700 CZK čistého.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "reading challenge",
+          "saturation": 6,
+          "competitor": "Goodreads (Reading Challenge)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); obsazené trackery – jen parent."
+        },
+        {
+          "kw": "book bingo",
+          "saturation": 2,
+          "competitor": "(odhad: 1–2 aplikace)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); přirozená komunitní fráze."
+        },
+        {
+          "kw": "reading bingo",
+          "saturation": 2,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "summer reading challenge",
+          "saturation": 3,
+          "competitor": "(odhad: knihovní Beanstack/READsquared)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); sezónní, knihovní programy."
+        }
+      ],
+      "demand_evidence": "Neověřeno webem (v evidenci jen jako kandidát). Opírám se o znalost komunit (r/Fantasy Bingo každoročně, knihovní bingo karty) a o TBR Book Jar z evidence (hravé mechaniky v trackerech se objevují). Saturace odhad.",
+      "competitors": [
+        {
+          "name": "Goodreads",
+          "url": "https://apps.apple.com/us/app/goodreads-book-reviews/id355833469",
+          "role": "parent",
+          "note": "Reading Challenge jako počet knih – bez binga."
+        },
+        {
+          "name": "TBR Book Jar: Reading Tracker",
+          "url": "https://apps.apple.com/us/app/tbr-book-jar-reading-tracker/id6761447804",
+          "role": "niche",
+          "note": "Hravý výběr další knihy (jar picker) – podobná „fun“ mechanika."
+        },
+        {
+          "name": "The StoryGraph",
+          "url": "",
+          "role": "parent",
+          "note": "Tematické výzvy komunity, bez vizuální karty."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Nízká ochota platit – bingo lze nakreslit v Canvě nebo použít šablonu z Pinterestu zdarma.",
+        "Silná sezónnost (leden, léto) a jednorázové použití – retence minimální.",
+        "StoryGraph/Fable mohou přidat bingo za týden, mají komunitu a síťový efekt.",
+        "Bez sociální vrstvy (servery) chybí komunitní tah, který výzvy dělá zábavnými."
+      ],
+      "killer_risk": "Uživatelé nezaplatí za něco, co lze zdarma udělat v Canvě.",
+      "mitigation": "Nízká cena, virální sdílení karty jako marketing, školní/knihovní režim (učitelka pošle kartu přes QR celé třídě), lokalizované šablony pro místní svátky a knihovní akce.",
+      "build_weeks": 2,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "books-12",
+      "name": "Homeschool Book Log",
+      "tagline": "Čtenářské portfolio pro domácí vzdělávání: seznam knih, hodiny a PDF pro přezkoušení či inspekci.",
+      "pitch": "Domácí vzdělávání má v USA miliony dětí a mnoho států (např. Pensylvánie, New York) vyžaduje portfolio včetně seznamu přečtených knih; v UK, Austrálii či Česku (individuální vzdělávání s přezkoušením) je potřeba podobná. Plánovače homeschoolingu jsou široké a anglické; čtenářská část je v nich vedlejší. Naše aplikace vede knihy po dětech a předmětech, loguje hodiny, ukládá fotky výstupů a vygeneruje profesionální PDF portfolio. Rodiče, kteří dávají stovky dolarů za kurikula, za to rádi zaplatí.",
+      "niche": "Čtenářská část homeschool portfolia pro přezkoušení. Homeschool plánovače (Homeschool Planet, Homeschool Panda) jsou komplexní a US; čtenářské deníky neznají předměty a formální export.",
+      "parent_market": "Homeschool plánovače a kurikula (Homeschool Planet, Homeschool Panda, Sonlight), dětské čtenářské deníky (Reading Log: Parents & School).",
+      "target_user": "Rodiny v domácím vzdělávání v USA, UK, AU, CA, CZ/SK (individuální vzdělávání), Brazílii a JAR.",
+      "features": [
+        "Knihy po dětech a předmětech (literatura, přírodověda, dějepis), povinné vs. volné čtení",
+        "Log hodin a stránek, fotka výstupů (kresba, referát)",
+        "PDF portfolio za pololetí/rok s titulní stranou",
+        "Šablony požadavků podle státu/země (uživatel si upraví)",
+        "iCloud sdílení mezi rodiči"
+      ],
+      "offline": "full",
+      "offline_note": "Lokální databáze, fotky a generování PDF; iCloud sync. Žádná online databáze knih.",
+      "monetization": "Předplatné 19,99 USD/rok (≈ 460 CZK) za rodinu, lifetime 44,99 USD; free 1 dítě / 20 knih.",
+      "revenue_math": "Ideál: 1 000 stažení/měsíc („homeschool reading log“, „homeschool portfolio“, „homeschool book list“) × 5 % = 50 × 19,99 × 0,85 × 23 ≈ 19 500 CZK čistého.",
+      "revenue_czk_ideal": 19500,
+      "keywords": [
+        {
+          "kw": "homeschool reading log",
+          "saturation": 2,
+          "competitor": "Reading Log: Parents & School (zmiňuje homeschool záznamy)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); evidence uvádí homeschool záznamy u Reading Log: Parents & School."
+        },
+        {
+          "kw": "homeschool portfolio",
+          "saturation": 3,
+          "competitor": "(odhad: homeschool plánovače)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "homeschool book list",
+          "saturation": 2,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "individuální vzdělávání",
+          "saturation": 0,
+          "competitor": "(nic lokalizovaného)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); CZ lokalizovaný keyword, malý objem."
+        }
+      ],
+      "demand_evidence": "Částečně ověřeno (web): Reading Log: Parents & School inzeruje homeschool záznamy = poptávka existuje. Počty homeschoolerů v USA a státní požadavky na portfolio jsou obecně známé; hledanost frází na App Store neověřena.",
+      "competitors": [
+        {
+          "name": "Reading Log: Parents & School",
+          "url": "https://apps.apple.com/us/app/reading-log-parents-school/id6757205089",
+          "role": "niche",
+          "note": "Zmiňuje homeschool records – jediný viditelný přesah."
+        },
+        {
+          "name": "Homeschool Planet",
+          "url": "",
+          "role": "parent",
+          "note": "Velký webový plánovač s předplatným, US."
+        },
+        {
+          "name": "Homeschool Panda",
+          "url": "",
+          "role": "parent",
+          "note": "Homeschool plánovač s komunitou, server."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Homeschool nástroje jsou US-centrické a anglické. Lokalizací obsloužíme UK (EHE), AU, CA-FR, BR, CZ/SK individuální vzdělávání, kde požadavky na doložení čtení existují a nástroj v rodném jazyce chybí. Pozor: v DE homeschooling nelegální – nelokalizovat marketing tam.",
+      "devils_advocate": [
+        "Mimo USA je homeschooling malý (v CZ tisíce dětí) – lokalizace přinese málo.",
+        "Homeschooleři už mají plánovač, který čtení pokrývá „dost dobře“; další aplikace = fragmentace.",
+        "Požadavky portfolia se liší stát od státu; špatná šablona = nedůvěra.",
+        "Riziko, že aplikace působí jako reskin čtenářského deníku (4.3) vedle našich dalších dětských čtenářských aplikací."
+      ],
+      "killer_risk": "Rodiny zůstanou u komplexního homeschool plánovače a čtenářský modul nebudou kupovat zvlášť.",
+      "mitigation": "Být nejlepší ve formálním výstupu (PDF portfolio, které vypadá profesionálně), import z plánovačů přes CSV, odlišný design a kód od aplikací 01 a 05 (jiný trh, jiná funkčnost).",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 9,
+        "safety": 6
+      }
+    },
+    {
+      "id": "books-13",
+      "name": "Chronicle: Story Timeline",
+      "tagline": "Časová osa příběhu s vlastním kalendářem: fantasy měsíce, dva měsíce na obloze, věky postav automaticky.",
+      "pitch": "Autoři fantasy a sci-fi bojují s chronologií: kdo byl kolik starý v bitvě, kolik dní trvala cesta, a to ve světě s vlastním kalendářem. Worldbuilding aplikace jsou buď generické wiki, nebo AI generátory; Aeon Timeline je drahý a desktopový. Chronicle dělá jednu věc: definuj kalendář (měsíce, týdny, éry), zadej události a postavy a aplikace spočítá věky, trvání a konflikty. Úzký, ale velmi věrný segment – fantasy spisovatelé a Dungeon Masteři.",
+      "niche": "Časová osa s vlastními (fiktivními) kalendáři pro fikci a hry. Worldbuilding aplikace to buď nemají, nebo jen gregoriánsky.",
+      "parent_market": "Worldbuilding a spisovatelské nástroje: World Anvil, Campfire, Aeon Timeline, Scrivener; na iOS TomeWorlds, Craft World Builder.",
+      "target_user": "Autoři fantasy/sci-fi (včetně fanfiction), Dungeon Masteři a tvůrci TTRPG kampaní.",
+      "features": [
+        "Editor vlastního kalendáře (délky měsíců, týdny, éry, více měsíců/sluncí)",
+        "Události a postavy na ose, výpočet věků a trvání",
+        "Kontrola konfliktů (postava na dvou místech naráz)",
+        "Více os (paralelní dějové linie) a filtry",
+        "Export do obrázku/PDF a Markdown"
+      ],
+      "offline": "full",
+      "offline_note": "Kompletně lokální výpočty i data; iCloud sync.",
+      "monetization": "Jednorázově 19,99 USD (≈ 460 CZK); free = 1 osa a 30 událostí.",
+      "revenue_math": "Ideál: 1 200 stažení/měsíc („story timeline“, „fantasy calendar“, „worldbuilding timeline“) × 4 % = 48 × 19,99 × 0,85 × 23 ≈ 18 800 CZK čistého.",
+      "revenue_czk_ideal": 18800,
+      "keywords": [
+        {
+          "kw": "story timeline",
+          "saturation": 3,
+          "competitor": "(odhad: obecné timeline makery)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); web evidence: sub-nika timeline s vlastním kalendářem ve výsledcích „worldbuilding“ nenalezena."
+        },
+        {
+          "kw": "fantasy calendar",
+          "saturation": 2,
+          "competitor": "(odhad: pár DM nástrojů)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "worldbuilding",
+          "saturation": 5,
+          "competitor": "TomeWorlds",
+          "note": "Web: generický worldbuilding sat 5, několik AI/server aplikací – jen parent. Apple hint neověřen (offline běh, apple_fetch nedostupný); saturace z webového průzkumu v evidence souboru"
+        },
+        {
+          "kw": "timeline maker",
+          "saturation": 5,
+          "competitor": "(odhad: obecné timeline aplikace)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); obsazené obecně, jen doplněk."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): generický worldbuilding sat 5 = živý trh, sub-nika vlastních kalendářů ve výsledcích chyběla. Neověřeno: hledanost „fantasy calendar“ na App Store; opírám se o komunitu (r/worldbuilding, DM nástroje typu Fantasy Calendar na webu).",
+      "competitors": [
+        {
+          "name": "TomeWorlds",
+          "url": "https://apps.apple.com/us/app/tomeworlds-world-building/id6756503629",
+          "role": "parent",
+          "note": "Worldbuilding aplikace – wiki přístup."
+        },
+        {
+          "name": "Craft World Builder",
+          "url": "https://apps.apple.com/us/app/craft-world-builder/id6469102709",
+          "role": "parent",
+          "note": "Worldbuilding s mapami/postavami."
+        },
+        {
+          "name": "Genesis - World Building",
+          "url": "https://apps.apple.com/us/app/genesis-world-building/id997559721",
+          "role": "niche",
+          "note": "Starší worldbuilding aplikace."
+        },
+        {
+          "name": "Aeon Timeline",
+          "url": "",
+          "role": "parent",
+          "note": "Drahý profesionální timeline pro spisovatele, gregoriánsky orientovaný."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Úzká cílovka: fantasy autoři s komplexní chronologií jsou tisíce, ne statisíce.",
+        "World Anvil/Campfire už kalendáře mají v rámci svého ekosystému a komunita je věrná.",
+        "Editor vlastního kalendáře je UX-složitý; špatně pochopitelný onboarding zabije konverzi.",
+        "Vazba na desktop – autoři píší na počítači, mobilní timeline je pro ně vedlejší."
+      ],
+      "killer_risk": "Malý objem hledání a silná věrnost existujícím ekosystémům.",
+      "mitigation": "Šablony známých stylů kalendářů (13 měsíců, lunární), Mac Catalyst verze, cílit i na DM a TTRPG komunitu; lifetime cena bez předplatného jako argument proti World Anvil.",
+      "build_weeks": 5,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "books-14",
+      "name": "Flashread: RSVP for ePub",
+      "tagline": "Rychločtení slovo po slově pro tvé vlastní ePub knihy – bez cloudu, s ORP zvýrazněním a plynulým tempem.",
+      "pitch": "Rychločtení (RSVP – slova blikají na jednom místě) je stabilní trh s předplatným a dlouhými aplikacemi typu Outread; většina ale čte jen web/clipboard nebo vlastní knihovnu obsahu. Mnoho čtenářů má DRM-free ePub (Humble Bundle, Standard Ebooks, Project Gutenberg) a chce je „prolétnout“. Flashread otevře ePub, pamatuje pozici, plynule zrychluje, zastaví na interpunkci a umí přepnout do normálního čtení v místě, kde jste skončili. Kvalitní offline implementace pro vlastní knihy je v obsazeném trhu stále vzácná.",
+      "niche": "RSVP čtení vlastních ePub/PDF knih offline. Speed reading aplikace se zaměřují na cvičení a články; e-čtečky RSVP nemají.",
+      "parent_market": "Speed reading aplikace (Outread, Spreeder, Speed Reading Trainer) s předplatným a e-čtečky (Apple Books, KyBook).",
+      "target_user": "Studenti, profesionálové s dlouhými texty, lidé chtějící „přečíst víc“ – a čtenáři s ADHD, kterým pomáhá jedno slovo na středu.",
+      "features": [
+        "Import ePub (bez DRM), PDF, TXT; pamatování pozice",
+        "RSVP s ORP zvýrazněním, pauza na interpunkci, plynulé zrychlování",
+        "Přepnutí na klasický text v aktuálním místě a zpět",
+        "Statistiky WPM a odhad času do konce kapitoly",
+        "Režim Apple Watch/Widget pro krátké dávky"
+      ],
+      "offline": "full",
+      "offline_note": "Parsování ePub a RSVP engine lokálně, žádné účty ani cloud.",
+      "monetization": "Jednorázově 14,99 USD (≈ 345 CZK) nebo 2,99 USD/měsíc; free = 3 kapitoly/den.",
+      "revenue_math": "Ideál: 2 500 stažení/měsíc („speed reading“ long-tail, „rsvp reader“, „speed reader epub“) × 2,5 % = 62 × 14,99 × 0,85 × 23 ≈ 18 200 CZK čistého.",
+      "revenue_czk_ideal": 18200,
+      "keywords": [
+        {
+          "kw": "speed reading",
+          "saturation": 7,
+          "competitor": "Reading Speed/Fluency Builder",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); head term obsazený – jen parent."
+        },
+        {
+          "kw": "rsvp reader",
+          "saturation": 3,
+          "competitor": "(odhad: několik indie RSVP)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "speed reader epub",
+          "saturation": 2,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); long-tail s jasným záměrem."
+        },
+        {
+          "kw": "read faster",
+          "saturation": 5,
+          "competitor": "(odhad: speed reading tréninky)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        }
+      ],
+      "demand_evidence": "Ověřeno (web) jen nepřímo: Reading Speed/Fluency Builder se objevil v evidenci jako speed-reading konkurent. Poptávka po speed readingu je obecně známá (Outread, Spreeder), saturace klíčových slov je můj odhad.",
+      "competitors": [
+        {
+          "name": "Reading Speed/Fluency Builder",
+          "url": "https://apps.apple.com/us/app/reading-speed-fluency-builder/id1080258925",
+          "role": "niche",
+          "note": "Speed/fluency trénink, ne čtečka vlastních ePub."
+        },
+        {
+          "name": "Outread",
+          "url": "",
+          "role": "parent",
+          "note": "Známá speed-reading aplikace s předplatným."
+        },
+        {
+          "name": "Spreeder",
+          "url": "",
+          "role": "parent",
+          "note": "RSVP trenažér/čtečka s cloudovou knihovnou."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Head term je saturovaný a long-tail („rsvp epub“) má malou hledanost.",
+        "Vědecká evidence o porozumění při RSVP je slabá – recenze „nic si nepamatuji“ a vysoký churn.",
+        "Většina lidí má knihy v Kindle/Apple Books s DRM – import ePub je pro menšinu.",
+        "Outread nebo jiný lídr může přidat ePub import během jednoho sprintu."
+      ],
+      "killer_risk": "Malý segment uživatelů s DRM-free knihami v obsazeném trhu.",
+      "mitigation": "Cílit ADHD a studijní segment (PDF skripta), bundlovat návod na Standard Ebooks/Gutenberg, poctivé marketingové tvrzení (bez slibů 3× rychlejšího čtení).",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "books-15",
+      "name": "TileTales: Kids Audio Player",
+      "tagline": "Starý iPhone nebo iPad jako dětský audio přehrávač: velké dlaždice, NFC samolepky místo drahých karet, žádné reklamy.",
+      "pitch": "Yoto a Toniebox prodaly miliony přehrávačů, protože rodiče chtějí, aby si dítě pouštělo pohádky samo, bez YouTube. Karty i krabičky jsou ale drahé a vlastní nahrávky se nahrávají přes cloud. TileTales promění starý iPhone/iPad v zamčený dětský přehrávač: rodič naimportuje vlastní MP3/M4B nebo audioknihy z veřejné domény, dítě vidí jen velké obrázkové dlaždice, a volitelně přiloží levnou NFC samolepku na hračku či kartu, která konkrétní příběh spustí. Kombinace „Yoto zdarma pro starý telefon“ je silný příběh pro rodiče.",
+      "niche": "Dětský offline přehrávač vlastních audio souborů s jednoduchým ovládáním a NFC kartami. Hardwarové hráče neřeší lidi bez peněz na box, audiobook přehrávače nejsou pro děti.",
+      "parent_market": "Dětské audio (Yoto, Toniebox – stovky milionů USD obratu), audioknihy pro děti (Audible Kids, Storytel Kids), audiobook přehrávače (BookPlayer).",
+      "target_user": "Rodiče dětí 2–8 let, zejména ti s nevyužitým starým iPhonem/iPadem; prarodiče nahrávající pohádky.",
+      "features": [
+        "Import MP3/M4B/nahrávky z Files, dlaždice s fotkou/obrázkem",
+        "Dětský režim s Guided Access návodem, velká tlačítka, bez textu",
+        "NFC samolepka/karta → spuštění konkrétního příběhu (Core NFC)",
+        "Časovač usínání, noční světlo, limit hlasitosti",
+        "Bundlované ukázky z veřejné domény (LibriVox) pro start"
+      ],
+      "offline": "full",
+      "offline_note": "Přehrávání, knihovna a NFC čtení lokálně; žádné streamování. Obsah si rodič dodá sám.",
+      "monetization": "Jednorázově 6,99 USD (≈ 160 CZK), free = 5 dlaždic.",
+      "revenue_math": "Ideál: 3 000 stažení/měsíc („kids audiobook player“, „audio player for kids“, „toddler music player“, „nfc story cards“) × 4 % = 120 × 6,99 × 0,85 × 23 ≈ 16 400 CZK čistého.",
+      "revenue_czk_ideal": 16400,
+      "keywords": [
+        {
+          "kw": "kids audiobook player",
+          "saturation": 3,
+          "competitor": "MP3 Audiobook Player",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); obecné přehrávače audioknih, ne dětské."
+        },
+        {
+          "kw": "audio player for kids",
+          "saturation": 3,
+          "competitor": "(odhad: pár dětských hudebních přehrávačů)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "toddler music player",
+          "saturation": 2,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "nfc story cards",
+          "saturation": 1,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); malá, ale přesná fráze od rodičů Yoto/Tonie."
+        }
+      ],
+      "demand_evidence": "Neověřeno webem pro niku (v evidenci jen jako kandidát „Yoto-like tile player“). Parent trh Yoto/Tonies je veřejně velký; přehrávače audioknih (MP3 Audiobook Player, AudioBookIt) z evidence ukazují, že lidé hledají přehrávání vlastních souborů.",
+      "competitors": [
+        {
+          "name": "MP3 Audiobook Player",
+          "url": "https://apps.apple.com/us/app/mp3-audiobook-player-free-listen-any-audiobooks/id891797540",
+          "role": "niche",
+          "note": "Přehrávač vlastních audioknih – pro dospělé."
+        },
+        {
+          "name": "Little Stories: Bedtime Books",
+          "url": "https://apps.apple.com/us/app/little-stories-bedtime-books/id977016099",
+          "role": "parent",
+          "note": "Obsahová dětská aplikace s předplatným."
+        },
+        {
+          "name": "Yoto",
+          "url": "",
+          "role": "parent",
+          "note": "Hardwarový dětský přehrávač s kartami a aplikací (cloud)."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Kids kategorie má přísná pravidla (1.3, žádné reklamy, parental gate) a pomalejší review.",
+        "Rodiče nemají vlastní audio soubory – obsah je hlavní hodnota Yoto, ne přehrávač.",
+        "Guided Access je pro běžné rodiče složitý; dítě aplikaci opustí a skončí na YouTube.",
+        "Ochranné známky: nesmíme zmiňovat Yoto/Tonie v metadatech (2.3.7)."
+      ],
+      "killer_risk": "Bez vlastního obsahu nemá aplikace pro většinu rodičů hodnotu.",
+      "mitigation": "Bundlovat kurátorovaný balík veřejně dostupných pohádek/audioknih v místních jazycích, nahrávání vlastního hlasu rodiče a návod „starý iPhone jako přehrávač“ jako hlavní marketing.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      }
+    },
+    {
+      "id": "books-16",
+      "name": "Clippings Keeper",
+      "tagline": "Tvé zvýrazněné pasáže z e-čtečky konečně přehledně: import souboru My Clippings, třídění podle knih, opakování.",
+      "pitch": "Majitelé e-čteček mají stovky podtržení uvězněných v jednom dlouhém textovém souboru „My Clippings.txt“ nebo v exportech poznámek. Readwise to řeší za 10 USD měsíčně přes cloud, bezplatné webové nástroje jsou těžkopádné. Clippings Keeper naimportuje soubor nebo HTML export poznámek, rozdělí highlighty podle knih, odstraní duplicity, nabídne denní opakování a export do Markdown. Jednorázová cena a nula cloudu je pro soukromí dbalé čtenáře silný argument.",
+      "niche": "Offline organizace exportovaných zvýraznění z e-čteček. Readwise je cloudové předplatné, konkurenci tvoří hlavně webové nástroje.",
+      "parent_market": "Highlight managementu: Readwise, Clippings.io, Glasp; e-čtečky jako Kindle a Kobo s miliony uživatelů.",
+      "target_user": "Vášniví čtenáři e-knih, studenti a znalostní pracovníci používající Obsidian/Notion.",
+      "features": [
+        "Import My Clippings.txt a HTML exportu poznámek (Files/Share Sheet)",
+        "Rozdělení podle knih, deduplikace upravených zvýraznění",
+        "Denní opakování náhodných pasáží a widget",
+        "Štítky, hledání, export Markdown/CSV",
+        "Průvodce, jak soubor z e-čtečky dostat do iPhonu"
+      ],
+      "offline": "full",
+      "offline_note": "Parsování a databáze lokálně; žádné přihlášení do účtů e-knih ani scraping.",
+      "monetization": "Jednorázově 9,99 USD (≈ 230 CZK); free = 2 knihy.",
+      "revenue_math": "Ideál: 1 500 stažení/měsíc („my clippings“, „book highlights export“, „highlights to notes“) × 5 % = 75 × 9,99 × 0,85 × 23 ≈ 14 600 CZK čistého.",
+      "revenue_czk_ideal": 14600,
+      "keywords": [
+        {
+          "kw": "my clippings",
+          "saturation": 1,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); přesná fráze souboru, nízký objem ale vysoký záměr."
+        },
+        {
+          "kw": "book highlights export",
+          "saturation": 2,
+          "competitor": "Readwise",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "highlights to notes",
+          "saturation": 3,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "ebook highlights",
+          "saturation": 3,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); slovo Kindle nepoužívat v titulu (ochranná známka), jen popisně v textu."
+        }
+      ],
+      "demand_evidence": "Neověřeno webem (v evidenci jen jako kandidát s poznámkou o tření importu přes MTP). Opírám se o známou existenci Readwise a Clippings.io – lidé za to platí. Saturace je odhad.",
+      "competitors": [
+        {
+          "name": "Readwise",
+          "url": "",
+          "role": "parent",
+          "note": "Cloudové předplatné pro highlighty, lídr."
+        },
+        {
+          "name": "Clippings.io",
+          "url": "",
+          "role": "niche",
+          "note": "Webový organizér clippings s předplatným."
+        },
+        {
+          "name": "Goodreads",
+          "url": "https://apps.apple.com/us/app/goodreads-book-reviews/id355833469",
+          "role": "parent",
+          "note": "Vlastník ekosystému, synchronizuje část zvýraznění."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Tření importu: novější Kindly používají MTP, které iPhone neumí; soubor se musí dostat přes počítač nebo e-mail.",
+        "Ochranná známka Kindle – nelze ji použít v názvu ani podtitulu, hlavní hledaný výraz je tak z velké části mimo dosah (2.3.7).",
+        "Amazon může změnit formát exportu nebo zlepšit vlastní notebook a zlomit parser.",
+        "Readwise má síťový efekt integrací; heavy useři nepřejdou."
+      ],
+      "killer_risk": "Import je pro běžného uživatele příliš složitý a hlavní keyword nesmíme použít.",
+      "mitigation": "Podpora více zdrojů (Kobo, Apple Books export, PocketBook) a jednoduchý import přes e-mail/Share Sheet; ASO na obecné fráze „ebook highlights“, „book notes“.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 4
+      }
+    },
+    {
+      "id": "books-17",
+      "name": "Recite: Poem Memorizer",
+      "tagline": "Nauč se básničku nazpaměť za večer: postupné mizení slov, první písmena a kontrola tvým hlasem.",
+      "pitch": "Učení básní nazpaměť je povinné ve školách v Česku, na Slovensku, v Polsku, Rusku, Francii („récitation“) i Německu – a rodiče s dětmi to každý týden trápí u kuchyňského stolu. Americké aplikace na memorování textu jsou hlavně biblické (verše) nebo pro herce. Recite vezme text z fotky učebnice, postupně skrývá slova, nabízí režim prvních písmen, nahrávání a porovnání s textem pomocí on-device rozpoznání řeči. Reverse US gap: silná evropská školní tradice bez nástroje v rodném jazyce.",
+      "niche": "Memorování básní a krátkých textů pro školáky. Existující memorizační aplikace jsou biblické nebo divadelní, anglické.",
+      "parent_market": "Memorizační aplikace (Remember Me – Bible memory, Scripture Typer, LineLearner pro herce) a vzdělávací aplikace pro rodiče.",
+      "target_user": "Žáci 1.–9. třídy a jejich rodiče v CZ/SK/PL/RU/UA/FR/DE/IT; studenti připravující přednes; herci a řečníci jako sekundární segment.",
+      "features": [
+        "Text z fotky učebnice (Live Text) nebo vložený",
+        "Postupné mizení slov a režim prvních písmen",
+        "Nahrávání přednesu a on-device porovnání s textem (kde je podporováno)",
+        "Rozdělení na sloky, opakování po slokách, připomínka",
+        "Knihovna naučených básní"
+      ],
+      "offline": "full",
+      "offline_note": "OCR, skrývání, nahrávání a rozpoznání řeči on-device (jazyky dle podpory Apple, jinak ruční kontrola).",
+      "monetization": "Jednorázově 3,99 USD (≈ 92 CZK), free = 2 básně.",
+      "revenue_math": "Ideál: 5 000 stažení/měsíc v součtu CZ/SK/PL/FR/DE/IT/UA („básnička nazpaměť“, „poésie par cœur“, „Gedicht auswendig lernen“, „memorize poem“) × 3 % = 150 × 3,99 × 0,85 × 23 ≈ 11 700 CZK čistého.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "memorize poem",
+          "saturation": 2,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "memorize text",
+          "saturation": 4,
+          "competitor": "(odhad: memorizační aplikace pro herce/řečníky)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "poésie par cœur",
+          "saturation": 1,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); FR lokalizovaný keyword, silná školní tradice récitation."
+        },
+        {
+          "kw": "Gedicht auswendig lernen",
+          "saturation": 1,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); DE lokalizovaný keyword."
+        }
+      ],
+      "demand_evidence": "Neověřeno webem. Školní povinnost memorování básní v CZ/PL/RU/FR je obecně známá; existence biblických memorizačních aplikací s platícími uživateli dokazuje, že mechanika funguje. Hledanost a saturace odhad.",
+      "competitors": [
+        {
+          "name": "Remember Me (Bible memory)",
+          "url": "",
+          "role": "parent",
+          "note": "Biblické memorování, anglicky, prokázaná mechanika."
+        },
+        {
+          "name": "LineLearner",
+          "url": "",
+          "role": "parent",
+          "note": "Učení rolí pro herce."
+        },
+        {
+          "name": "Read Along Books For Kids: RR",
+          "url": "https://apps.apple.com/us/app/read-along-books-for-kids-rr/id6478014301",
+          "role": "niche",
+          "note": "Dětské čtení s hlasem – blízká cílovka, jiná funkce."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Reverse gap: v USA se básně nazpaměť téměř neučí, proto tam nástroj nevznikl; ve střední/východní Evropě a Francii je to týdenní školní úkol. Lokalizujeme a stavíme na místních frázích.",
+      "devils_advocate": [
+        "Nízké ceny a nízká ochota platit v CZ/PL/UA; bohaté trhy (FR/DE) mají menší zátěž memorováním.",
+        "On-device rozpoznání řeči nemusí podporovat češtinu/polštinu → klíčová funkce jen částečná.",
+        "Děti aplikaci použijí jen v noci před zkoušením – retence nulová mezi úkoly.",
+        "Bez veřejných textů básní (autorská práva) musí uživatel text vyfotit – drobné tření."
+      ],
+      "killer_risk": "Tržby v chudších jazykových trzích nepokryjí 10 tis. CZK ani v ideálu.",
+      "mitigation": "Rozšířit na řečníky, herce a studenty (prezentace nazpaměť), FR/IT/DE jako hlavní trhy, bundlovat klasické básně z veřejné domény v každém jazyce pro rychlý start.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 9,
+        "safety": 7
+      }
+    },
+    {
+      "id": "books-18",
+      "name": "First Edition Ledger",
+      "tagline": "Katalog pro sběratele vzácných knih: stav, vydání, znaky prvotisku, provenience a hodnota pro pojištění.",
+      "pitch": "Sběratelé prvních vydání a antikvariátních knih utrácejí stovky až tisíce dolarů za kus, ale evidují je v Excelu nebo v obecných katalozích typu BookBuddy, které neznají stav obálky, tisk (printing), znaky prvního vydání ani proveniencí. First Edition Ledger je profesionální deník sbírky: standardní stupnice stavu, fotky detailů, nákupní cena a odhad hodnoty, provenience a PDF inventář pro pojišťovnu. Malá, ale bohatá cílovka, kterou masové katalogy ignorují.",
+      "niche": "Evidence sbírky vzácných a podepsaných knih. Masové katalogy řeší množství (ISBN), ne jednotlivé exempláře s hodnotou; staré knihy ISBN nemají.",
+      "parent_market": "Katalogy domácích knihoven (BookBuddy, Libib, MyLibrary) a sběratelské katalogy (CLZ Books, Collectibles apps) – sběratelé platí za předplatné CLZ.",
+      "target_user": "Sběratelé prvních vydání, podepsaných výtisků, antikvárních knih a dětských klasik; drobní antikváři.",
+      "features": [
+        "Záznam exempláře: vydání/tisk, stav knihy a obálky (standardní stupnice), vady",
+        "Fotogalerie detailů (tiráž, podpis, obálka), poznámky ke znakům prvotisku",
+        "Nákupní cena, místo nákupu, odhad hodnoty, celková hodnota sbírky",
+        "Provenience (předchozí majitelé, ex libris)",
+        "PDF inventář pro pojištění a CSV export"
+      ],
+      "offline": "full",
+      "offline_note": "Lokální databáze a fotky, iCloud sync; žádné online ceníky (hodnotu zadává uživatel).",
+      "monetization": "Freemium do 25 knih; Pro 19,99 USD/rok (≈ 460 CZK) nebo 49,99 USD lifetime.",
+      "revenue_math": "Ideál: 800 stažení/měsíc („book collector“, „rare books“, „first edition“, „book collection inventory“) × 6 % = 48 × 19,99 × 0,85 × 23 ≈ 18 800 CZK čistého.",
+      "revenue_czk_ideal": 18800,
+      "keywords": [
+        {
+          "kw": "book collector",
+          "saturation": 4,
+          "competitor": "BookBuddy",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); obecné katalogy používají slovo collector v popisu."
+        },
+        {
+          "kw": "rare books",
+          "saturation": 2,
+          "competitor": "(odhad: aukční/antikvářské aplikace)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "first edition",
+          "saturation": 1,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); malý objem, vysoký záměr."
+        },
+        {
+          "kw": "book collection inventory",
+          "saturation": 3,
+          "competitor": "MyLibrary - Book Manager",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem pro tuto sub-niku. Parent trh katalogů je ověřený (BookBuddy, MyLibrary v evidenci). Existence placeného CLZ a aukčního trhu vzácných knih je obecně známá; objem hledání odhad (nízký).",
+      "competitors": [
+        {
+          "name": "BookBuddy",
+          "url": "https://apps.apple.com/us/app/bookbuddy-my-library-manager/id395150347",
+          "role": "parent",
+          "note": "Lídr katalogů, ISBN-orientovaný, bez sběratelských polí."
+        },
+        {
+          "name": "MyLibrary - Book Manager",
+          "url": "https://apps.apple.com/us/app/mylibrary-book-manager/id6755722070",
+          "role": "niche",
+          "note": "Katalog s půjčováním – obecný."
+        },
+        {
+          "name": "CLZ Books",
+          "url": "",
+          "role": "parent",
+          "note": "Sběratelský katalog s předplatným a cloudem."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Velmi malá cílovka; sběratelé jsou starší a méně hledají v App Store.",
+        "Bez online ceníků (AbeBooks data jsou licencovaná) je „hodnota sbírky“ jen ruční odhad.",
+        "BookBuddy/CLZ mohou přidat pole stavu a proveniencí snadno.",
+        "Staré knihy nemají ISBN → ruční zápis každé knihy je pracný, ale to je i naše výhoda."
+      ],
+      "killer_risk": "Příliš malý objem hledání pro 10 tis. CZK i v ideálu.",
+      "mitigation": "Rozšířit na komiksy/podepsané knihy a drobné antikváře (inventář), lokalizovat DE/FR/IT/UK s tradicí antikvariátů, vyšší cena odpovídající hodnotě sbírek.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 7
+      }
+    },
+    {
+      "id": "books-19",
+      "name": "Shadow Reader: Audiobook Loop",
+      "tagline": "Audiokniha jako učebnice jazyka: opakování věty, zpomalení, shadowing a přepis přímo na telefonu.",
+      "pitch": "Studenti jazyků poslouchají audioknihy a podcasty v cílovém jazyce, ale běžné přehrávače neumí přeskočit o jednu větu zpět nebo ji opakovat pětkrát. Shadowing (opakování po rodilém mluvčím) je populární metoda s vlastními komunitami. Shadow Reader naimportuje DRM-free audioknihu, on-device rozdělí nahrávku na věty, zobrazí přepis, dovolí smyčku A-B, zpomalení bez změny výšky a nahrávání vlastního opakování pro porovnání. Unikátní spojení audioknižního přehrávače a jazykového trenažéru.",
+      "niche": "Věta po větě přehrávání vlastních audioknih pro jazykové studenty. Audioknižní přehrávače nejsou jazykové, jazykové aplikace (LingQ) jsou cloudové s vlastním obsahem.",
+      "parent_market": "Audioknižní přehrávače (BookPlayer, ListenBook) a jazykové aplikace (LingQ, Language Reactor, Speechling).",
+      "target_user": "Středně pokročilí studenti jazyků (B1+), shadowing komunita (JP/EN/KR), expati.",
+      "features": [
+        "Import MP3/M4B, on-device segmentace na věty (detekce ticha + rozpoznání řeči)",
+        "Přepis pod nahrávkou (kde je jazyk podporován on-device)",
+        "A-B smyčka, opakování věty N×, zpomalení s pitch korekcí",
+        "Nahrávání vlastního opakování a přehrání střídavě",
+        "Uložení vět do seznamu k procvičení"
+      ],
+      "offline": "full",
+      "offline_note": "Segmentace, přepis (Speech on-device), time-stretch a nahrávání lokálně; obsah dodává uživatel.",
+      "monetization": "Předplatné 19,99 USD/rok (≈ 460 CZK) nebo 39,99 USD lifetime; free = 10 minut/den.",
+      "revenue_math": "Ideál: 2 000 stažení/měsíc („shadowing“, „audio loop player“, „sentence repeat player“, „language audiobook player“) × 3 % = 60 × 19,99 × 0,85 × 23 ≈ 23 400 CZK čistého.",
+      "revenue_czk_ideal": 23400,
+      "keywords": [
+        {
+          "kw": "shadowing",
+          "saturation": 4,
+          "competitor": "(odhad: několik shadowing aplikací, hlavně JP/EN)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "audio loop player",
+          "saturation": 4,
+          "competitor": "(odhad: A-B repeat přehrávače pro hudebníky)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); kolize s hudebními tréninkovými aplikacemi."
+        },
+        {
+          "kw": "sentence repeat player",
+          "saturation": 2,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "language audiobook player",
+          "saturation": 2,
+          "competitor": "ListenBook: audiobook player",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem (kandidát v evidenci). Audioknižní přehrávače (ListenBook, AudioBookIt) v evidenci dokládají poptávku po přehrávání vlastních souborů; shadowing je známá metoda s komunitami. Saturace odhad.",
+      "competitors": [
+        {
+          "name": "ListenBook: audiobook player",
+          "url": "https://apps.apple.com/us/app/listenbook-audiobook-player/id1621926254",
+          "role": "parent",
+          "note": "Přehrávač audioknih se statistikami, bez jazykových funkcí."
+        },
+        {
+          "name": "AudioBookIt: Audiobook Player",
+          "url": "https://apps.apple.com/us/app/audiobookit-audiobook-player/id6751476148",
+          "role": "parent",
+          "note": "Přehrávač vlastních audioknih."
+        },
+        {
+          "name": "LingQ",
+          "url": "",
+          "role": "parent",
+          "note": "Jazyková platforma s obsahem a cloudem, předplatné."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "On-device přepis funguje dobře jen pro některé jazyky; bez přepisu je hodnota poloviční.",
+        "Uživatelé nemají DRM-free audioknihy v cílovém jazyce – Audible/Storytel soubory nelze importovat.",
+        "LingQ/Language Reactor mají obsah i komunitu; my jen nástroj.",
+        "Segmentace vět detekcí ticha selhává u rychlých vypravěčů → frustrující UX."
+      ],
+      "killer_risk": "Nedostatek importovatelného obsahu – uživatelé nemají kde vzít DRM-free audio.",
+      "mitigation": "Podporovat i podcasty (RSS/soubory), vlastní nahrávky učitele a veřejně dostupné audioknihy (LibriVox ve více jazycích); cílit na učitele jazyků, kteří rozdávají MP3.",
+      "build_weeks": 6,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "books-20",
+      "name": "Margin Words: Vocab from Books",
+      "tagline": "Neznámé slovo v papírové knize? Ťukni na něj ve fotce, uvidíš význam a zítra ti ho aplikace připomene.",
+      "pitch": "Čtenáři v cizím jazyce i rodilí mluvčí narážejí v papírových knihách na neznámá slova a pak na ně zapomenou. E-čtečky mají slovník a Vocabulary Builder, papírové knihy nic. Margin Words vyfotí stránku, Live Text umožní ťuknout na slovo, zobrazí se definice z vestavěných systémových slovníků iOS a slovo se uloží ke knize s větou jako kontextem. Spaced repetition kartičky pak slovo zafixují. Čte se papír a učí se digitálně – bez cloudu.",
+      "niche": "Slovní zásoba z papírových knih s kontextem věty. Flashcard aplikace (Anki) nemají čtenářský workflow, e-čtečky nepokrývají papír.",
+      "parent_market": "Aplikace na slovní zásobu a flashcards (Vocabulary – Learn words daily, Anki, Word of the Day s velkým předplatným) a čtenářské trackery.",
+      "target_user": "Studenti cizích jazyků čtoucí papírové knihy (B1+), rodilí čtenáři rozšiřující slovník, studenti připravující se na zkoušky (GRE, SAT, Cambridge).",
+      "features": [
+        "Fotka stránky → ťuknutí na slovo (Live Text), definice ze systémového slovníku",
+        "Uložení slova s větou, knihou a stránkou",
+        "Spaced repetition kartičky s kontextem",
+        "Statistiky slov podle knih, widget „slovo dne z tvé knihy“",
+        "Export do CSV/Anki"
+      ],
+      "offline": "full",
+      "offline_note": "OCR a vyhledání ve vestavěných slovnících iOS (UIReferenceLibraryViewController) lokálně; bez online API.",
+      "monetization": "Freemium; Pro 14,99 USD/rok (≈ 345 CZK) nebo 24,99 USD lifetime.",
+      "revenue_math": "Ideál: 2 000 stažení/měsíc („vocabulary from books“, „word collector“, „vocabulary builder reading“, „unknown words“) × 3 % = 60 × 14,99 × 0,85 × 23 ≈ 17 600 CZK čistého.",
+      "revenue_czk_ideal": 17600,
+      "keywords": [
+        {
+          "kw": "vocabulary builder",
+          "saturation": 7,
+          "competitor": "(odhad: Vocabulary – Learn words daily)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); head term obsazený, jen parent."
+        },
+        {
+          "kw": "vocabulary from books",
+          "saturation": 2,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "word collector",
+          "saturation": 2,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "book vocabulary",
+          "saturation": 3,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem (kandidát v evidenci „word collector from paper books“). Parent trh slovní zásoby je obecně velký (Vocabulary app s předplatným). Sub-nika a saturace jsou odhad.",
+      "competitors": [
+        {
+          "name": "Vocabulary - Learn words daily",
+          "url": "",
+          "role": "parent",
+          "note": "Velký hráč se slovem dne a předplatným, bez vlastních knih."
+        },
+        {
+          "name": "Anki",
+          "url": "",
+          "role": "parent",
+          "note": "Flashcards pro pokročilé, bez čtenářského workflow."
+        },
+        {
+          "name": "Bookly",
+          "url": "https://apps.apple.com/us/app/bookly-book-tracker-manager/id1085047737",
+          "role": "parent",
+          "note": "Čtenářský tracker bez slovní zásoby."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Sherlock: iOS už umí Look Up na Live Text zdarma; chybí jen ukládání – Apple to může přidat.",
+        "Vestavěné slovníky iOS nejsou dostupné pro všechny jazykové páry a API dává omezenou kontrolu.",
+        "Retence flashcard aplikací je obecně nízká.",
+        "Head term „vocabulary“ je přeplněný, long-tail má malý objem."
+      ],
+      "killer_risk": "Apple přidá „uložit slovo“ do Look Up a naše hodnota zmizí.",
+      "mitigation": "Stavět kolem knihy (kontext, statistiky, přehled po přečtení), export do Anki, cílit na přípravu ke zkouškám a studenty angličtiny v 50 lokalizacích.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 9,
+        "safety": 6
+      }
+    },
+    {
+      "id": "books-21",
+      "name": "Dummy Book: Picture Book Planner",
+      "tagline": "Rozvrhni obrázkovou knížku na 32 stran: dvojstrany, otáčení stránek, text a skici v jednom náhledu.",
+      "pitch": "Autoři a ilustrátoři obrázkových knih pracují s „dummy“ – maketou 32stránkové knihy, kde se plánuje, co je na které dvojstraně a kde čtenář otočí stránku. Dnes to dělají z papíru a nůžek nebo v InDesignu. Dummy Book dá na iPadu šablonu standardních rozsahů, přetahování textu po dvojstranách, počítání slov na stranu, skici přes Apple Pencil a export PDF makety pro nakladatele či agenta. V App Store žádná aplikace pro picture book dummy není; AI generátory knih cílí na jiný segment.",
+      "niche": "Plánování makety obrázkové knihy pro profesionály a aspirující autory. Nástroje na tvorbu knih cílí na děti a AI generování, ne na průmyslový standard maket.",
+      "parent_market": "Tvorba knih a storyboardů (Book Creator, PicaBook, Storyboard aplikace), SCBWI komunita autorů dětských knih, Procreate jako hlavní nástroj ilustrátorů.",
+      "target_user": "Autoři a ilustrátoři obrázkových knih (SCBWI členové), self-publisheři dětských knih na KDP, studenti ilustrace.",
+      "features": [
+        "Šablony 24/32/40 stran, self-ends vs. separate ends",
+        "Text po dvojstranách, počítadlo slov, značka „page turn“",
+        "Skici přes Apple Pencil (PencilKit) nebo import obrázků",
+        "Náhled listování knihou",
+        "Export PDF makety a thumbnail přehledu"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, PencilKit, PDF export; bez AI serverů.",
+      "monetization": "Jednorázově 14,99 USD (≈ 345 CZK); free = 1 kniha bez exportu.",
+      "revenue_math": "Ideál: 500 stažení/měsíc („picture book dummy“, „picture book layout“, „storyboard picture book“) × 8 % = 40 × 14,99 × 0,85 × 23 ≈ 11 700 CZK čistého. Velmi úzká nika – ideál je na hraně.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "picture book dummy",
+          "saturation": 0,
+          "competitor": "PicaBook (tvůrce knih, ne dummy)",
+          "note": "Web: sat 0 pro dummy planner. Apple hint neověřen (offline běh, apple_fetch nedostupný); saturace z webového průzkumu v evidence souboru"
+        },
+        {
+          "kw": "picture book layout",
+          "saturation": 1,
+          "competitor": "PicaBook: Picture Book Creator",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "storyboard",
+          "saturation": 5,
+          "competitor": "Scene Creator: Storyboard App",
+          "note": "Web: storyboardy obsazené (včetně AI) – jen parent."
+        },
+        {
+          "kw": "picture book maker",
+          "saturation": 4,
+          "competitor": "Storybird",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); kolize s dětskými tvůrci knih a AI."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): sat 0 pro picture book dummy, blízké aplikace jsou tvůrci knih pro děti a AI storyboardy. Evidence výslovně uvádí, že nika je malá. Hledanost na App Store neověřena.",
+      "competitors": [
+        {
+          "name": "PicaBook",
+          "url": "https://apps.apple.com/us/app/picabook-picture-book-creator/id1643338958",
+          "role": "parent",
+          "note": "Tvorba obrázkových knih, spotřebitelská."
+        },
+        {
+          "name": "Scene Creator: Storyboard App",
+          "url": "https://apps.apple.com/us/app/scene-creator-storyboard-app/id1507901763",
+          "role": "parent",
+          "note": "Storyboardy pro film, jiný formát."
+        },
+        {
+          "name": "Write a Book: New Writer Guide",
+          "url": "https://apps.apple.com/us/app/write-a-book-new-writer-guide/id1511381305",
+          "role": "niche",
+          "note": "Průvodce psaním knihy pro začátečníky."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Nika je malá – profesionálních autorů obrázkových knih jsou tisíce.",
+        "Ilustrátoři pracují v Procreate a InDesignu; další aplikace = přepínání.",
+        "Hledanost „picture book dummy“ na App Store je pravděpodobně minimální – nikdo nehledá nástroj, o kterém neví, že existuje.",
+        "Lidé chtějí AI generované knihy, ne profesionální maketu – kolize očekávání."
+      ],
+      "killer_risk": "Příliš malý objem hledání – 10 tis. CZK jen v absolutním ideálu.",
+      "mitigation": "Rozšířit na komiksové/zine makety a KDP self-publishery (rozsahy, bleed), spolupráce se SCBWI komunitou a ilustračními kurzy, Procreate export workflow.",
+      "build_weeks": 4,
+      "evidence": "web",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 9,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "books-22",
+      "name": "Deep Read: Phone-Free Reading",
+      "tagline": "Zamkni rozptylující aplikace, dokud nedočteš 30 minut papírové knihy – a sleduj, kolik jsi tak přečetl.",
+      "pitch": "Lidé čtou méně, protože telefon vyhrává. Aplikace na blokování (Opal, one sec) mají velké předplatné, ale nejsou postavené kolem čtení; čtenářské trackery s časovačem nic neblokují. Deep Read spojí obojí: spusť čtecí relaci, vybrané aplikace se přes Screen Time API zablokují, po relaci zapíšeš stránky a vidíš, kolik hodin jsi „vzal telefonu“. Motivace čtenářů, kteří chtějí zpět ke knihám, je silná a platí se za ni.",
+      "niche": "Blokování aplikací speciálně pro čtecí relace. Focus aplikace jsou obecné, čtenářské trackery neblokují.",
+      "parent_market": "Digital wellbeing a blokování (Opal, one sec, Forest – vysoké předplatné) a čtenářské trackery s časovači.",
+      "target_user": "Dospělí, kteří „chtějí zase číst“, studenti, rodiče nastavující čtecí čas dětem (Family Sharing).",
+      "features": [
+        "Čtecí relace s blokací vybraných aplikací (FamilyControls/ManagedSettings)",
+        "Zápis stránek po relaci, streaky a widget",
+        "Statistiky „hodiny zpět od telefonu“",
+        "Rodinný režim: čtení dítěte odemyká hry (screen time za čtení)",
+        "Plánované čtecí okno (např. 21:00–21:30)"
+      ],
+      "offline": "full",
+      "offline_note": "Screen Time API, časovače a data lokálně; žádný server.",
+      "monetization": "Předplatné 3,99 USD/měsíc nebo 24,99 USD/rok (≈ 575 CZK).",
+      "revenue_math": "Ideál: 2 000 stažení/měsíc („reading timer“, „phone free reading“, „read more books“, „focus reading“) × 2 % = 40 × 24,99 × 0,85 × 23 ≈ 19 500 CZK čistého.",
+      "revenue_czk_ideal": 19500,
+      "keywords": [
+        {
+          "kw": "reading timer",
+          "saturation": 4,
+          "competitor": "Book Tracker & Reading Log (timer)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); trackery s časovačem."
+        },
+        {
+          "kw": "read more books",
+          "saturation": 3,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "phone free reading",
+          "saturation": 1,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "focus reading",
+          "saturation": 3,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem (kandidát v evidenci). Parent trhy blokování (Opal) a čtenářských trackerů s časovačem (Book Tracker & Reading Log v evidenci) jsou prokázané; kombinace a saturace odhad.",
+      "competitors": [
+        {
+          "name": "Book Tracker & Reading Log",
+          "url": "https://apps.apple.com/us/app/book-tracker-reading-log/id1621520850",
+          "role": "niche",
+          "note": "Tracker s časovačem, bez blokování."
+        },
+        {
+          "name": "Opal",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr blokování aplikací s předplatným."
+        },
+        {
+          "name": "Forest",
+          "url": "",
+          "role": "parent",
+          "note": "Gamifikovaný focus timer."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "FamilyControls entitlement vyžaduje schválení Apple a Screen Time API je známé bugy (nespolehlivé odblokování).",
+        "Opal může přidat „reading mode“ za týden a má marketingový rozpočet.",
+        "iOS Focus režimy už umí skrýt aplikace zdarma – pro mnohé stačí.",
+        "Předplatné za blokování při čtení je pro část uživatelů těžko obhajitelné."
+      ],
+      "killer_risk": "Technická nespolehlivost Screen Time API a závislost na schválení entitlementu.",
+      "mitigation": "Včas požádat o entitlement, fallback režim bez blokace (jen Focus + časovač), rodinný režim „čtení odemyká hry“ jako unikátní hook pro rodiče.",
+      "build_weeks": 5,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 5,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 9,
+        "safety": 4
+      }
+    },
+    {
+      "id": "books-23",
+      "name": "Sprint Circle: Group Writing",
+      "tagline": "Psací sprinty s přáteli přes FaceTime/SharePlay: společný odpočet, žebříček slov a listopadová výzva.",
+      "pitch": "Po zániku organizace NaNoWriMo (2025) zůstaly statisíce autorů bez centrální listopadové výzvy, a psací sprinty s přáteli jsou jejím srdcem. Trackery slov (Word Keeper, Write/Sprint) jsou individuální. Sprint Circle využívá SharePlay – společný sprint přes FaceTime nebo Zprávy bez našeho serveru – s odpočtem, zápisem slov a skupinovým žebříčkem, plus vlastní 30denní výzvou s cílem slov. Jde o nejslabší z psacích sprintových frází, ale s jasným sociálním úhlem.",
+      "niche": "Skupinové sprinty a měsíční výzva bez serveru. Stávající aplikace jsou solitérní; Discord boty nejsou na iOS nativní.",
+      "parent_market": "Trackery psaní a slov (Word Keeper, Prolific, Write/Sprint), komunita NaNoWriMo (statisíce účastníků ročně do 2024).",
+      "target_user": "Amatérští a začínající romanopisci, účastníci listopadových psacích výzev, psací skupiny a kurzy tvůrčího psaní.",
+      "features": [
+        "SharePlay sprint: společný odpočet a zápis slov, žebříček",
+        "Vlastní měsíční výzva (cíl slov, denní kvóta, graf)",
+        "Solo sprinty s historií a statistikami",
+        "Widget a Live Activity s odpočtem",
+        "Export statistik a certifikát výzvy"
+      ],
+      "offline": "mostly",
+      "offline_note": "Solo režim a statistiky offline; skupinové sprinty přes SharePlay (Apple infrastruktura, žádný náš server).",
+      "monetization": "Jednorázově 9,99 USD (≈ 230 CZK); free = solo sprinty.",
+      "revenue_math": "Ideál (měsíc mimo listopad): 1 200 stažení × 5 % = 60 × 9,99 × 0,85 × 23 ≈ 11 700 CZK čistého; v říjnu–listopadu až 2 000+ stažení ≈ 19 500 CZK, v létě pod 5 tis. CZK.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "writing sprint",
+          "saturation": 5,
+          "competitor": "Write/Sprint",
+          "note": "Web: sat 4–5 (Word Keeper, Write/Sprint, Prolific, Word Tracker). Apple hint neověřen (offline běh, apple_fetch nedostupný); saturace z webového průzkumu v evidence souboru"
+        },
+        {
+          "kw": "word count tracker",
+          "saturation": 5,
+          "competitor": "Word Keeper (od 2014, 70+ statistik)",
+          "note": "Web: moderate-crowded."
+        },
+        {
+          "kw": "writing challenge",
+          "saturation": 3,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); slovo NaNoWriMo je ochranná známka – nepoužít."
+        },
+        {
+          "kw": "november writing",
+          "saturation": 1,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); sezónní long-tail."
+        }
+      ],
+      "demand_evidence": "Ověřeno (web): sat 4–5 na sprint/word-count frázích, NaNoWriMo organizace zanikla 2025 (poptávka po alternativě). Neověřeno: zda SharePlay úhel lidé hledají – spíš konverzní argument než keyword.",
+      "competitors": [
+        {
+          "name": "Write/Sprint",
+          "url": "https://apps.apple.com/us/app/write-sprint/id1558353979",
+          "role": "niche",
+          "note": "Solo sprinty, přímý konkurent na keyword."
+        },
+        {
+          "name": "Word Keeper",
+          "url": "https://apps.apple.com/us/app/word-keeper-writing-tracker/id928955389",
+          "role": "niche",
+          "note": "Starý silný tracker slov (od 2014)."
+        },
+        {
+          "name": "Prolific: Track Your Writing",
+          "url": "https://apps.apple.com/us/app/prolific-track-your-writing/id6476241657",
+          "role": "niche",
+          "note": "Tracker psaní."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Keyword prostor je středně obsazený (sat 4–5) – top-3 není jisté.",
+        "SharePlay vyžaduje, aby všichni měli iPhone a aplikaci – skupiny autorů jsou multiplatformní (Discord).",
+        "Extrémní sezónnost kolem listopadu.",
+        "Ochranná známka NaNoWriMo – nesmíme ji použít, a tím ztrácíme hlavní hledaný výraz."
+      ],
+      "killer_risk": "Uživatelé zůstanou na Discordu, kde jsou jejich skupiny; SharePlay nebude mít síťový efekt.",
+      "mitigation": "Silný solo režim jako základ, pozvánky přes Zprávy s App Clip, lokalizované výzvy (DE „Schreibmonat“, ES/BR komunity), cena bez předplatného.",
+      "build_weeks": 4,
+      "evidence": "web",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 8,
+        "safety": 5
+      }
+    },
+    {
+      "id": "books-24",
+      "name": "Narrator Prep: Audiobook Scripts",
+      "tagline": "Příprava na natáčení audioknihy: postavy a jejich hlasy, výslovnosti, pickupy a výpočet výdělku za hodinu.",
+      "pitch": "Audioknižní trh roste a tisíce nezávislých interpretů nahrávají pro ACX a další platformy za honorář za hotovou hodinu. Před natáčením musí projít rukopis, sepsat postavy s popisem hlasu, dohledat výslovnost jmen a pak evidovat opravy (pickups). Dnes to dělají ve Wordu a tabulkách. Narrator Prep je jejich pracovní deník: import PDF/DOCX, seznam postav s nahranou referenční ukázkou hlasu, výslovnostní slovník s nahrávkami, seznam pickupů s časovými značkami a kalkulačka PFH. Nika, kterou nikdo neobsluhuje.",
+      "niche": "Předprodukce audioknih pro nezávislé interprety. Nahrávací aplikace (Twisted Wave, Ferrite) řeší zvuk, ne přípravu scénáře.",
+      "parent_market": "Audioknižní produkce a voice-over (ACX/Audible, Findaway Voices; nahrávací aplikace Ferrite, TwistedWave; teleprompter aplikace).",
+      "target_user": "Nezávislí audioknižní interpreti a voice-over herci, autoři nahrávající vlastní knihy.",
+      "features": [
+        "Import rukopisu (PDF/DOCX/TXT), značky postav v textu",
+        "Karty postav s popisem a nahranou referenční ukázkou hlasu",
+        "Výslovnostní slovník s nahrávkami",
+        "Seznam pickupů/oprav s kapitolou a časem",
+        "Kalkulačka PFH/royalty share a evidence projektů"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně (text, nahrávky, výpočty), iCloud sync.",
+      "monetization": "Předplatné 29,99 USD/rok (≈ 690 CZK) nebo 59,99 USD lifetime; free = 1 projekt.",
+      "revenue_math": "Ideál: 500 stažení/měsíc („audiobook narrator“, „voice actor script“, „pronunciation guide“) × 6 % = 30 × 29,99 × 0,85 × 23 ≈ 17 600 CZK čistého.",
+      "revenue_czk_ideal": 17600,
+      "keywords": [
+        {
+          "kw": "audiobook narrator",
+          "saturation": 1,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); nika bez dedikované aplikace podle mé znalosti."
+        },
+        {
+          "kw": "voice actor script",
+          "saturation": 3,
+          "competitor": "(odhad: teleprompter/script aplikace)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "pronunciation guide",
+          "saturation": 4,
+          "competitor": "(odhad: slovníkové aplikace)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); kolize se slovníky výslovnosti."
+        },
+        {
+          "kw": "narration",
+          "saturation": 3,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem. Opírám se o známý růst audioknih a platformy ACX/Findaway s tisíci interpretů; parent Audible v evidenci. Hledanost na App Store pravděpodobně nízká – odhad.",
+      "competitors": [
+        {
+          "name": "Audible",
+          "url": "https://apps.apple.com/in/app/audible-audiobooks-podcasts/id379693831",
+          "role": "parent",
+          "note": "Audioknižní ekosystém, ACX je produkční strana."
+        },
+        {
+          "name": "Ferrite Recording Studio",
+          "url": "",
+          "role": "parent",
+          "note": "Nahrávání a střih na iOS – řeší zvuk, ne přípravu."
+        },
+        {
+          "name": "Teleprompter Premium",
+          "url": "",
+          "role": "niche",
+          "note": "Scénáře pro video, ne audioknihy."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Velmi malá cílovka a nízká hledanost – interpreti hledají v komunitách, ne v App Store.",
+        "Práce probíhá na počítači s DAW; mobilní aplikace je pro ně sekundární.",
+        "AI hlasy (ElevenLabs, Audible Virtual Voice) snižují poptávku po lidských interpretech.",
+        "Import DOCX/PDF s formátováním je technicky pracný."
+      ],
+      "killer_risk": "AI narace zmenšuje trh nezávislých interpretů dříve, než získáme uživatele.",
+      "mitigation": "iPad + Mac Catalyst verze, marketing v komunitách (ACX fórum, voice-over Facebook skupiny), rozšíření na podcastery a dabing.",
+      "build_weeks": 5,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "books-25",
+      "name": "Lexicon Forge: Conlang Builder",
+      "tagline": "Vytvoř si vlastní jazyk pro svůj fantasy svět: hlásky, generátor slov, gramatika a slovník v kapse.",
+      "pitch": "Tolkien, Dothraki, Na'vi – vymyšlené jazyky mají silnou komunitu (r/conlangs má statisíce členů) a autoři fantasy je potřebují pro jména a kulturu svých světů. Nástroje existují hlavně na webu a desktopu; na iOS je tento prostor téměř prázdný. Lexicon Forge nabídne inventář hlásek s IPA klávesnicí, generátor slov podle pravidel slabik, zvukové změny, slovník s překladem a gramatické poznámky. Jde o nadšenou, ochotnou platit, ale malou komunitu.",
+      "niche": "Tvorba umělých jazyků (conlang) na iOS. Worldbuilding aplikace jazyk řeší jen jako wiki stránku; specializované nástroje jsou webové.",
+      "parent_market": "Worldbuilding a spisovatelské nástroje (World Anvil, Campfire – mají language moduly), webové conlang nástroje (Vulgar, Lexiconga).",
+      "target_user": "Conlang nadšenci, fantasy autoři, Dungeon Masteři, studenti lingvistiky.",
+      "features": [
+        "Inventář hlásek s IPA klávesnicí a výslovností (TTS)",
+        "Generátor slov podle slabičných šablon a pravděpodobností",
+        "Zvukové změny (sound changes) mezi fázemi jazyka",
+        "Slovník s překladem, slovními druhy a příklady",
+        "Gramatické poznámky a export PDF/CSV"
+      ],
+      "offline": "full",
+      "offline_note": "Generátor, pravidla i slovník lokálně; bez serveru.",
+      "monetization": "Jednorázově 9,99 USD (≈ 230 CZK); Pro rozšíření (sound changes, více jazyků) 9,99 USD.",
+      "revenue_math": "Ideál: 1 000 stažení/měsíc („conlang“, „constructed language“, „language creator“, „fantasy language generator“) × 6 % = 60 × 9,99 × 0,85 × 23 ≈ 11 700 CZK čistého.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "conlang",
+          "saturation": 2,
+          "competitor": "(odhad: 1–2 malé aplikace)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); web evidence: conlang builder mezi výsledky worldbuilding nenalezen."
+        },
+        {
+          "kw": "constructed language",
+          "saturation": 1,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "fantasy language generator",
+          "saturation": 3,
+          "competitor": "(odhad: generátory jmen)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); kolize s generátory fantasy jmen."
+        },
+        {
+          "kw": "worldbuilding",
+          "saturation": 5,
+          "competitor": "Craft World Builder",
+          "note": "Web: sat 5 – jen parent. Apple hint neověřen (offline běh, apple_fetch nedostupný); saturace z webového průzkumu v evidence souboru"
+        }
+      ],
+      "demand_evidence": "Částečně ověřeno (web): worldbuilding sat 5 a conlang sub-nika ve výsledcích chyběla. Velikost komunity r/conlangs je obecně známá; hledanost na App Store odhad.",
+      "competitors": [
+        {
+          "name": "Craft World Builder",
+          "url": "https://apps.apple.com/us/app/craft-world-builder/id6469102709",
+          "role": "parent",
+          "note": "Worldbuilding aplikace, jazyk jen jako poznámka."
+        },
+        {
+          "name": "TomeWorlds",
+          "url": "https://apps.apple.com/us/app/tomeworlds-world-building/id6756503629",
+          "role": "parent",
+          "note": "Worldbuilding wiki."
+        },
+        {
+          "name": "Vulgar",
+          "url": "",
+          "role": "niche",
+          "note": "Webový generátor conlangů, placený – bez nativní iOS aplikace."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Komunita je nadšená, ale malá; top-1 v „conlang“ může přinést jen stovky stažení.",
+        "Vážní conlangeři pracují na počítači a v tabulkách; mobil je doplněk.",
+        "Složitost domény (sound changes, IPA) → dlouhý vývoj a náročná UX.",
+        "World Anvil/Campfire mají language moduly a svou komunitu."
+      ],
+      "killer_risk": "Nízký objem hledání a dlouhý vývoj → návratnost pod hranicí.",
+      "mitigation": "MVP bez sound changes (jen hlásky + generátor + slovník), Mac verze, komunitní marketing na r/conlangs; generátor jmen jako vstupní brána pro širší fantasy publikum.",
+      "build_weeks": 7,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 4,
+        "offline_fit": 10,
+        "safety": 7
+      }
+    },
+    {
+      "id": "books-26",
+      "name": "Book Club Host",
+      "tagline": "Kniha na příští měsíc, kdo hostí, co se probírá: čtenářský klub zorganizovaný bez skupinového chatu.",
+      "pitch": "Čtenářské kluby jsou na vzestupu (celebrity kluby, BookTok, knihovní kluby), ale organizace se odehrává v chaotických skupinových chatech. Sociální platformy (Fable, Bookclubs) chtějí, aby všichni měli účet na jejich serveru. Book Club Host je nástroj pro organizátora: kalendář setkání, rotace hostitelů, hlasování o další knize, poznámky k diskusi a návrh otázek on-device z vlastních poznámek. Sdílení mezi členy přes iCloud sdílení, bez našeho serveru.",
+      "niche": "Organizace malého soukromého klubu pro hostitele. Sociální čtenářské aplikace řeší komunitu a obsah, ne logistiku malé skupiny.",
+      "parent_market": "Sociální čtení a čtenářské kluby (Fable, Bookclubs, Goodreads skupiny) a skupinové plánovače.",
+      "target_user": "Organizátoři domácích a pracovních čtenářských klubů (často ženy 30–60), knihovnice vedoucí kluby.",
+      "features": [
+        "Kalendář setkání a rotace hostitelů",
+        "Hlasování o další knize (sdílený záznam CloudKit)",
+        "Poznámky ke kapitolám a návrh diskusních otázek (Apple Foundation Models, on-device)",
+        "Historie přečtených knih klubu a hodnocení",
+        "Pozvánky do kalendáře a připomínky"
+      ],
+      "offline": "mostly",
+      "offline_note": "Data lokálně, sdílení mezi členy přes CloudKit sdílený záznam (Apple). Generování otázek on-device z poznámek uživatele.",
+      "monetization": "Hostitel platí jednorázově 6,99 USD (≈ 160 CZK), členové zdarma.",
+      "revenue_math": "Ideál: 3 000 stažení/měsíc („book club“, „book club app“, „book club organizer“) × 3 % = 90 × 6,99 × 0,85 × 23 ≈ 12 300 CZK čistého.",
+      "revenue_czk_ideal": 12300,
+      "keywords": [
+        {
+          "kw": "book club",
+          "saturation": 6,
+          "competitor": "(odhad: Fable, Bookclubs)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); head term obsazený sociálními platformami."
+        },
+        {
+          "kw": "book club organizer",
+          "saturation": 2,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "book club questions",
+          "saturation": 3,
+          "competitor": "(odhad: obsahové aplikace s otázkami)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "book club app",
+          "saturation": 5,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem (kandidát v evidenci). Parent trh (Fable, Bookclubs, Goodreads skupiny) obecně známý; organizátorská nika a saturace odhad.",
+      "competitors": [
+        {
+          "name": "Goodreads",
+          "url": "https://apps.apple.com/us/app/goodreads-book-reviews/id355833469",
+          "role": "parent",
+          "note": "Skupiny a diskuze, zastaralé UX."
+        },
+        {
+          "name": "Fable",
+          "url": "",
+          "role": "parent",
+          "note": "Sociální čtení a kluby, server a účty."
+        },
+        {
+          "name": "Bookclubs",
+          "url": "",
+          "role": "parent",
+          "note": "Organizace klubů přes web a účty."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Síťový efekt: členové nechtějí instalovat další aplikaci, WhatsApp skupina stačí.",
+        "CloudKit sdílení je složité pro neiPhone členy – kluby jsou smíšené (Android).",
+        "Bookclubs je zdarma a má webovou verzi pro všechny.",
+        "Diskusní otázky generované AI mohou být mělké; bez znalosti knihy (nepoužíváme text knihy) omezené."
+      ],
+      "killer_risk": "Členové klubu mají Android nebo nechtějí aplikaci – hostitel pak nástroj opustí.",
+      "mitigation": "Hostitel-first: vše funguje i bez aplikace u členů (sdílení přes odkaz s .ics a textovým shrnutím), jednorázová cena, lokalizace pro evropské knihovní kluby.",
+      "build_weeks": 5,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 8,
+        "safety": 6
+      }
+    },
+    {
+      "id": "books-27",
+      "name": "Shelf Rotation: Kids Books",
+      "tagline": "Montessori rotace dětských knih: aplikace vybere, co dát tento týden na poličku, a pamatuje oblíbené.",
+      "pitch": "Montessori a „toy rotation“ jsou mezi rodiči populární: méně věcí na očích = víc pozornosti. U knih to znamená týdně měnit 5–8 knih na čelní poličce. Rodiče mají doma desítky až stovky dětských knih a ztrácejí přehled. Shelf Rotation vyfotí obálky, označí témata a roční období, navrhne týdenní výběr s ohledem na oblíbenost a svátky a připomene výměnu. Jednoduchá, esteticky hezká aplikace pro Instagramovou rodičovskou komunitu.",
+      "niche": "Rotace dětských knih doma. Katalogy knih neřeší výběr, toy rotation aplikace neřeší knihy s tématy.",
+      "parent_market": "Katalogy dětských knih a rodičovské aplikace (ParentsPick Kids Book Scanner, BookBuddy), Montessori obsahové aplikace a toy rotation plánovače.",
+      "target_user": "Rodiče dětí 1–7 let inspirovaní Montessori, homeschooleři, učitelky MŠ se třídní knihovničkou.",
+      "features": [
+        "Katalog dětských knih z fotek obálek (Live Text název)",
+        "Témata a sezóny (Vánoce, jaro, dinosauři)",
+        "Týdenní návrh rotace 5–8 knih, připomínka výměny",
+        "Značka oblíbenosti dítěte a historie rotací",
+        "Tisknutelný seznam „kde je která krabice“"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně; fotky a OCR na zařízení, iCloud sync.",
+      "monetization": "Jednorázově 4,99 USD (≈ 115 CZK), free do 30 knih.",
+      "revenue_math": "Ideál: 2 500 stažení/měsíc („book rotation“, „montessori bookshelf“, „kids book collection“, „toy rotation“) × 4,5 % = 112 × 4,99 × 0,85 × 23 ≈ 10 900 CZK čistého.",
+      "revenue_czk_ideal": 10900,
+      "keywords": [
+        {
+          "kw": "book rotation",
+          "saturation": 1,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "montessori bookshelf",
+          "saturation": 1,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); slovo Montessori je obecné, ale některé spojení jsou chráněné – opatrně."
+        },
+        {
+          "kw": "toy rotation",
+          "saturation": 3,
+          "competitor": "(odhad: pár toy rotation plánovačů)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "kids book collection",
+          "saturation": 3,
+          "competitor": "ParentsPick Kids Book Scanner",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem (kandidát v evidenci). ParentsPick Kids Book Scanner v evidenci ukazuje, že rodiče katalogizují dětské knihy; Montessori a toy rotation trend je znám ze sociálních sítí. Hledanost odhad, pravděpodobně nízká.",
+      "competitors": [
+        {
+          "name": "ParentsPick Kids Book Scanner",
+          "url": "https://apps.apple.com/us/app/parentspick-kids-book-scanner/id6743800562",
+          "role": "niche",
+          "note": "Rodiče skenují dětské knihy – katalog, ne rotace."
+        },
+        {
+          "name": "BookBuddy",
+          "url": "https://apps.apple.com/us/app/bookbuddy-my-library-manager/id395150347",
+          "role": "parent",
+          "note": "Obecný katalog knihovny."
+        },
+        {
+          "name": "Little Reading For Kids",
+          "url": "https://apps.apple.com/us/app/little-reading-for-kids/id6756633105",
+          "role": "niche",
+          "note": "Dětské čtení s vodítkem – jiný use-case, stejná cílovka."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Nízká ochota platit – rotaci lze dělat bez aplikace podle citu.",
+        "Katalogizace desítek knih je pracná a rodiče ji po týdnu vzdají.",
+        "Malá hledanost – trend žije na Instagramu, ne v App Store vyhledávání.",
+        "Riziko dojmu reskinu vůči našim dalším dětským čtenářským aplikacím (4.3)."
+      ],
+      "killer_risk": "Tření s katalogizací převáží drobný přínos rotace.",
+      "mitigation": "Rychlé nafocení poličky najednou (více obálek v jedné fotce), rozšíření na hračky (toy rotation) jako druhá kategorie, odlišný design a funkce.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      }
+    },
+    {
+      "id": "books-28",
+      "name": "Proof Listen: Manuscript Reader",
+      "tagline": "Nech si svůj rukopis přečíst nahlas a ťukni, kde to drhne – chyby, které očima přehlédneš, uslyšíš.",
+      "pitch": "Poslech vlastního textu je jedna z nejúčinnějších korektorských technik: ucho zachytí zdvojená slova, chybějící členy a kostrbaté věty, které oko přeskočí. Autoři to dělají přes obecné TTS čtečky (Speechify, Voice Dream), které ale neumí označit místo a vrátit seznam oprav. Proof Listen importuje DOCX/Markdown, čte kvalitními on-device hlasy se zvýrazněním, jedním ťuknutím označí problém a na konci vydá seznam oprav s čísly odstavců; navíc upozorní na opakovaná slova a „výplňová“ slova. Offline, soukromé – rukopis nikam neodchází.",
+      "niche": "TTS korektura rukopisu pro autory. TTS aplikace jsou konzumní čtečky, gramatické nástroje (Grammarly, ProWritingAid) jsou cloudové a nečtou nahlas s workflow oprav.",
+      "parent_market": "TTS čtečky (Speechify, Voice Dream Reader, NaturalReader) a nástroje pro autory (ProWritingAid, Grammarly, Scrivener).",
+      "target_user": "Romanopisci a self-publisheři, copywriteři, studenti píšící práce, novináři.",
+      "features": [
+        "Import DOCX, Markdown, TXT, RTF; rozpoznání kapitol",
+        "Čtení on-device hlasy se zvýrazněním, rychlost a skok po větách",
+        "Ťuknutí = značka opravy s poznámkou (hlasovou nebo textovou)",
+        "Seznam oprav s číslem odstavce a export",
+        "Detekce opakovaných a výplňových slov"
+      ],
+      "offline": "full",
+      "offline_note": "AVSpeechSynthesizer (včetně prémiových systémových hlasů), parsování dokumentů a analýza textu lokálně.",
+      "monetization": "Jednorázově 9,99 USD (≈ 230 CZK); free = 5 000 slov.",
+      "revenue_math": "Ideál: 1 500 stažení/měsíc („proofread aloud“, „read my writing aloud“, „manuscript reader“, „text to speech proofreading“) × 5 % = 75 × 9,99 × 0,85 × 23 ≈ 14 600 CZK čistého.",
+      "revenue_czk_ideal": 14600,
+      "keywords": [
+        {
+          "kw": "proofread aloud",
+          "saturation": 1,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "read my writing aloud",
+          "saturation": 2,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "text to speech",
+          "saturation": 8,
+          "competitor": "(odhad: Speechify, Voice Dream)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); head term saturovaný – jen parent."
+        },
+        {
+          "kw": "manuscript reader",
+          "saturation": 2,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        }
+      ],
+      "demand_evidence": "Neověřeno webem. Technika „read aloud to proofread“ je obecně doporučovaná v psacích komunitách; parent TTS trh je velký a placený. Saturace niky odhad.",
+      "competitors": [
+        {
+          "name": "Speechify",
+          "url": "",
+          "role": "parent",
+          "note": "Lídr TTS s drahým předplatným, bez korektorského workflow."
+        },
+        {
+          "name": "Voice Dream Reader",
+          "url": "",
+          "role": "parent",
+          "note": "Oblíbená TTS čtečka, přešla na předplatné."
+        },
+        {
+          "name": "Word Keeper",
+          "url": "https://apps.apple.com/us/app/word-keeper-writing-tracker/id928955389",
+          "role": "niche",
+          "note": "Tracker psaní – stejná cílovka autorů, jiná funkce."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Sherlock: Word, Pages a iOS Speak Screen už čtou text nahlas zdarma.",
+        "Autoři píší na počítači; korektura na iPhonu je pro menšinu.",
+        "Kvalita on-device hlasů v menších jazycích je slabá – lokalizace hodnotu nepřenese.",
+        "Head term TTS je nedobytný a long-tail má malou hledanost."
+      ],
+      "killer_risk": "Vestavěné čtení v Pages/Word stačí většině autorů.",
+      "mitigation": "Workflow oprav (značky → seznam) jako jasný rozdíl, Mac Catalyst verze, marketing přes komunity self-publisherů a kurzy psaní.",
+      "build_weeks": 3,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 5
+      }
+    },
+    {
+      "id": "books-29",
+      "name": "Page Level: Book Leveler",
+      "tagline": "Vyfoť stránku a zjisti, pro jaký věk je kniha čtivá – v češtině, němčině, španělštině i angličtině.",
+      "pitch": "Učitelé a rodiče řeší, jestli je kniha pro dítě „akorát“ – ani moc lehká, ani moc těžká. V USA existují proprietární leveling systémy s databázemi titulů, ale jen pro anglické knihy, a mimo angličtinu nic. Page Level vyfotí 1–3 stránky, přes on-device OCR spočítá čitelnostní indexy vhodné pro daný jazyk (Flesch, LIX, Fernández-Huerta, Wiener Sachtextformel), odhadne věkové pásmo a uloží výsledek ke knize. Volitelně vygeneruje on-device otázky na porozumění. Reverse gap pro neanglické jazyky.",
+      "niche": "Odhad čtenářské obtížnosti libovolné knihy z fotky stránky, pro neanglické jazyky. Leveling systémy jsou licencované a anglické.",
+      "parent_market": "Hodnocení gramotnosti a leveling (Scholastic Book Wizard, Lexile/MetaMetrics, Fountas & Pinnell – licencované), třídní knihovny.",
+      "target_user": "Učitelé 1. stupně, knihovnice dětských oddělení, rodiče dětí 6–12 let, učitelé cizích jazyků vybírající četbu.",
+      "features": [
+        "Fotka stránek → OCR a výpočet čitelnostních indexů dle jazyka",
+        "Odhad věkového pásma a obtížnosti slovní zásoby",
+        "Uložení k titulu, seznam „vhodné pro mé dítě“",
+        "Volitelně otázky na porozumění (Apple Foundation Models on-device)",
+        "Export seznamu pro třídu"
+      ],
+      "offline": "full",
+      "offline_note": "OCR (Vision), indexy a Foundation Models běží lokálně; žádná databáze titulů.",
+      "monetization": "Jednorázově 6,99 USD (≈ 160 CZK); free = 5 měření.",
+      "revenue_math": "Ideál: 2 500 stažení/měsíc („reading level“, „book level“, „readability“, „Lesbarkeit“) × 3,5 % = 87 × 6,99 × 0,85 × 23 ≈ 11 900 CZK čistého.",
+      "revenue_czk_ideal": 11900,
+      "keywords": [
+        {
+          "kw": "reading level",
+          "saturation": 4,
+          "competitor": "Classroom Library Manager (leveling)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); slova Lexile a Guided Reading Level jsou ochranné známky – nepoužít."
+        },
+        {
+          "kw": "book level",
+          "saturation": 3,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "readability",
+          "saturation": 3,
+          "competitor": "Readability - Learn to Read (AI tutor, jiný produkt)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); kolize názvu s AI tutorem."
+        },
+        {
+          "kw": "Lesbarkeit",
+          "saturation": 1,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); DE lokalizovaný keyword."
+        }
+      ],
+      "demand_evidence": "Neověřeno webem (kandidát „Page Check“ v evidenci). Existence licencovaných leveling systémů a toho, že Classroom Library Manager nabízí leveling, ukazuje poptávku v USA; mimo angličtinu je poptávka předpoklad.",
+      "competitors": [
+        {
+          "name": "Classroom Library Manager",
+          "url": "https://apps.apple.com/us/app/classroom-library-manager/id1479701901",
+          "role": "parent",
+          "note": "Follett – třídní knihovna s levelingem anglických titulů."
+        },
+        {
+          "name": "Readability - Learn to Read",
+          "url": "https://apps.apple.com/us/app/readability-learn-to-read/id1477213383?see-all=reviews",
+          "role": "niche",
+          "note": "AI tutor čtení – kolize názvu, jiný produkt."
+        },
+        {
+          "name": "Scholastic Book Wizard",
+          "url": "",
+          "role": "parent",
+          "note": "Webový leveling anglických knih."
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Reverse: US leveling systémy jsou licencované a jen anglické. Pro DE/CZ/ES/FR/Scandinávii (LIX je skandinávský standard) nabídneme leveling z fotky stránky v rodném jazyce.",
+      "devils_advocate": [
+        "Čitelnostní vzorce jsou hrubé a na dětských knihách nespolehlivé – učitelé to vědí a nebudou jim věřit.",
+        "Ochranné známky (Lexile, F&P) – nelze je použít ani jako mapování, bez nich chybí hlavní hledané pojmy.",
+        "Nízký objem hledání mimo USA; rodiče se ptají knihkupce nebo nakladatele (věkové doporučení na obálce).",
+        "Fotit knihy v knihkupectví a posuzovat je – sporadické použití, nízká retence."
+      ],
+      "killer_risk": "Nízká důvěryhodnost výsledků a věkové doporučení na obálce už existuje zdarma.",
+      "mitigation": "Prezentovat jako orientační srovnání mezi knihami (relativní), kalibrovat na známých dětských knihách v každém jazyce, cílit na učitele cizích jazyků (graded reading).",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 6,
+        "offline_fit": 9,
+        "safety": 5
+      }
+    },
+    {
+      "id": "books-30",
+      "name": "Grandma Reads: Story Recorder",
+      "tagline": "Babička nahraje večerníček s vlastní knížkou – vnouče si ho pustí, i když je babička na druhém konci světa.",
+      "pitch": "Prarodiče žijící daleko chtějí vnoučatům číst a děti milují hlas konkrétního člověka. Obsahové aplikace nabízejí cizí vypravěče, videohovory vyžadují stejný čas. Grandma Reads nechá prarodiče vyfotit každou stránku vlastní papírové knížky a nahrát k ní svůj hlas; dítě pak listuje fotkami a slyší babičku. Sdílení probíhá rodinně přes iCloud. Emocionálně silný produkt s darovým potenciálem (Vánoce, narozeniny).",
+      "niche": "Rodinné nahrávky předčítání z vlastních knih. Tonies Creative-Tonie a Readeo/Caribu řeší podobné přes hardware nebo servery a licencovaný obsah.",
+      "parent_market": "Rodinné čtení na dálku a dětské audio (Caribu, Readeo, Tonies Creative-Tonie, Yoto Make Your Own) a obsahové pohádkové aplikace (Little Stories).",
+      "target_user": "Prarodiče a rodiče pracující na směny/cestující, rodiny rozdělené emigrací.",
+      "features": [
+        "Fotka stránky + nahrávka hlasu po stránkách",
+        "Dětský přehrávač s listováním a automatickým posunem",
+        "Rodinné sdílení přes iCloud sdílenou knihovnu (CloudKit)",
+        "Sbírka „babiččiných knížek“ a věnování",
+        "Režim jen pro soukromé rodinné použití (bez veřejného sdílení)"
+      ],
+      "offline": "mostly",
+      "offline_note": "Nahrávání a přehrávání offline; doručení nahrávek mezi zařízeními přes iCloud/CloudKit sdílení (Apple), žádný náš server.",
+      "monetization": "Jednorázově 4,99 USD (≈ 115 CZK) pro nahrávajícího; přehrávání u dítěte zdarma.",
+      "revenue_math": "Ideál (prosinec, dárková sezóna): 3 000 stažení/měsíc („record bedtime story“, „read aloud recorder“, „grandparent story“) × 4 % = 120 × 4,99 × 0,85 × 23 ≈ 11 700 CZK čistého; mimo sezónu méně.",
+      "revenue_czk_ideal": 11700,
+      "keywords": [
+        {
+          "kw": "record bedtime story",
+          "saturation": 2,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "read aloud recorder",
+          "saturation": 2,
+          "competitor": "(odhad)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "grandparent story",
+          "saturation": 2,
+          "competitor": "(odhad: Caribu, Readeo)",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh)"
+        },
+        {
+          "kw": "bedtime stories",
+          "saturation": 8,
+          "competitor": "Little Stories: Bedtime Books",
+          "note": "odhad z vlastní znalosti trhu, neověřeno (offline běh); head term saturovaný obsahovými aplikacemi – jen parent."
+        }
+      ],
+      "demand_evidence": "Neověřeno webem (kandidát v evidenci s upozorněním na riziko 5.2). Parent obsahové aplikace (Little Stories, Storybird) jsou v evidenci; existence Tonies Creative-Tonie a Yoto Make Your Own dokládá chuť rodin nahrávat vlastní hlas. Saturace odhad.",
+      "competitors": [
+        {
+          "name": "Little Stories: Bedtime Books",
+          "url": "https://apps.apple.com/us/app/little-stories-bedtime-books/id977016099",
+          "role": "parent",
+          "note": "Obsahové pohádky s předplatným."
+        },
+        {
+          "name": "Storybird",
+          "url": "https://apps.apple.com/us/app/storybird/id1461691231?ls=1",
+          "role": "parent",
+          "note": "Tvorba a čtení příběhů."
+        },
+        {
+          "name": "Caribu",
+          "url": "",
+          "role": "parent",
+          "note": "Videohovory s knihami, licencovaný obsah, server."
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Autorská práva (5.2): fotografování a nahrávání celých cizích knih je i pro rodinné použití šedá zóna; Apple review může odmítnout.",
+        "Prarodiče jsou technicky nejslabší cílovka – nahrát 32 stránek s fotkami je pro ně náročné.",
+        "WhatsApp hlasová zpráva + fotka stačí zdarma.",
+        "Kids kategorie a sdílení mezi zařízeními vyžadují parental gate a pečlivé soukromí."
+      ],
+      "killer_risk": "Odmítnutí v review nebo pozdější stažení kvůli autorským právům na nafocené knihy.",
+      "mitigation": "Nahrávání bez nutnosti fotit text (jen obálka + ilustrace volitelně), režim vlastních vymyšlených pohádek, jasné rodinné-soukromé omezení bez veřejného sdílení; dárkový marketing přes rodiče.",
+      "build_weeks": 4,
+      "evidence": "knowledge",
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 8,
+        "safety": 3
+      }
+    }
+  ]
+}
