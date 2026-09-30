@@ -1,0 +1,2726 @@
+{
+  "category": "Shopping",
+  "category_slug": "shopping",
+  "search_notes": "Offline běh: žádná volání Apple, WebSearch ani WebFetch. Pro kategorii Shopping neexistuje evidence soubor. URL konkurentů jsou převzaté doslovně z jiných _partial souborů: books (barcode/loyalty peněženky), finance (VendStats, VendorPOS, myBooth – stánkaři a flippeři; ReceiptCam a Receipt Savior – přeplněné HSA účtenky), food-drink (OZ Price Calculator, Food Intolerances), lifestyle (ChronoQueue, Puzzle Tracker, Lug2Lug). Jen CardShare má niku podloženou webem (evidence: web); ostatní nápady stojí na vlastní znalosti trhu – saturace je odhad (v poznámce „odhad“) a blue_ocean max. 7. Vyřazeno: e-shopy a tržiště (server), sledování cen a balíků (API), cenové databáze karet (licence). Pozor na portfolio a Guideline 4.3: dvojice Warranty Vault / Return By, CardShare / Voucher Vault, Cool Off / No-Buy a SizeBook / Hand-Me-Down / Foot Sizer se nesmějí podobat – případně je sloučit. Před vývojem ověřit klíčová slova přes apple_fetch.py check.",
+  "ideas": [
+    {
+      "id": "shopping-01",
+      "name": "Warranty Vault: Receipts & Guarantee",
+      "tagline": "Každá účtenka, záruka a návod na jednom místě – appka vám připomene, než záruka vyprší.",
+      "pitch": "Lidé vyhazují peníze, protože ve chvíli, kdy se pračka pokazí, nenajdou účtenku ani nevědí, jestli jsou ještě v záruce. Warranty Vault naskenuje účtenku (VisionKit), přes on-device OCR vytáhne obchod, datum a cenu a sám dopočítá konec záruky – včetně zákonné 2leté záruky v EU, 3 let ve Velké Británii (Consumer Rights Act) a vlastních prodloužených záruk výrobce. Termální účtenky blednou, fotka ne. Obecné skenery účtenek cílí na výdaje a daně, ne na záruky – tady můžeme vyhrát jasnou frází „warranty tracker“ v 50 jazycích (Garantie, záruka, garanzia).",
+      "niche": "Velcí hráči řeší účtenky pro účetnictví (Expensify, Dext) nebo HSA v USA; záruky jsou pro ně okrajová funkce. Pojišťovací inventáře (Encircle, Sortly) cílí na firmy. Lokální právní pravidla záruk (EU 2 roky, reklamace, obrácené důkazní břemeno) nikdo nemá zabudovaná.",
+      "parent_market": "Skenery účtenek a domácí inventáře – Expensify, Dext, Sortly, Encircle; v USA přeplněné HSA účtenky (evidence finance: 8 appek), což dokazuje ochotu platit za „uschovej mi účtenku“.",
+      "target_user": "Domácnosti v EU/UK, které kupují elektroniku a spotřebiče; lidé po stěhování/rekonstrukci; senioři, kterým děti nastaví appku.",
+      "features": [
+        "Sken účtenky (VisionKit) + on-device OCR data, obchodu a ceny",
+        "Automatický konec záruky podle země (EU 2 roky, UK, vlastní prodloužení)",
+        "Připomínky 60/30/7 dní před koncem záruky",
+        "Přílohy: návod v PDF, sériové číslo, foto štítku",
+        "iCloud sync a sdílení s partnerem (CloudKit)",
+        "Export PDF balíčku pro reklamaci"
+      ],
+      "offline": "full",
+      "offline_note": "OCR (Vision), úložiště i pravidla záruk jsou lokálně; sync jen přes iCloud uživatele. Žádný server.",
+      "monetization": "Freemium: 10 položek zdarma, Pro 1,99 USD/měsíc (≈ 46 Kč) nebo 12,99 USD/rok (≈ 299 Kč), doživotně 14,99 USD (≈ 345 Kč).",
+      "revenue_math": "Ideál v ustáleném stavu: 2500 stažení/měsíc × 4 % převod na předplatné při měsíčním odchodu 6 % → cca 1667 aktivních předplatitelů × 1,99 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 64 854 Kč čistého měsíčně. Alternativa: doživotní odemčení 14,99 USD.",
+      "revenue_czk_ideal": 64854,
+      "keywords": [
+        {
+          "kw": "warranty tracker",
+          "saturation": 4,
+          "competitor": "generické 'Warranty Tracker' appky",
+          "note": "odhad; fráze se objevuje v názvech několika malých appek, žádná silná značka"
+        },
+        {
+          "kw": "receipt keeper",
+          "saturation": 4,
+          "competitor": "ReceiptCam: AI Receipt Tracker",
+          "note": "odhad; soused HSA účtenek, které jsou dle evidence finance přeplněné (sat 8)"
+        },
+        {
+          "kw": "warranty reminder",
+          "saturation": 2,
+          "competitor": "generické appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "garantie app",
+          "saturation": 2,
+          "competitor": "lokální DE appky",
+          "note": "odhad; německý trh – reverzní mezera"
+        },
+        {
+          "kw": "reklamace záruka",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad; CZ/SK trh, prakticky neobsazeno"
+        }
+      ],
+      "demand_evidence": "Evidence finance uvádí „warranty/return-deadline vault“ jako OTEVŘENÉ, ale neověřené. Ověřeno je jen to, že sousední HSA účtenky jsou v USA přeplněné (8 appek, 2025–26), tedy placená poptávka po úschově účtenek existuje. Objem hledání „warranty tracker“ je předpoklad.",
+      "competitors": [
+        {
+          "name": "ReceiptCam: AI Receipt Tracker",
+          "url": "https://apps.apple.com/us/app/receiptcam-ai-receipt-tracker/id6746401835",
+          "role": "niche",
+          "note": "Obecný AI sken účtenek (HSA fokus), záruky neřeší"
+        },
+        {
+          "name": "Receipt Savior - Save Receipts",
+          "url": "https://apps.apple.com/us/app/trackhsa/id6761667994",
+          "role": "niche",
+          "note": "Úschova účtenek pro HSA, US-centrické"
+        },
+        {
+          "name": "Sortly",
+          "url": "",
+          "role": "parent",
+          "note": "Inventář s cloudem, cílí na firmy"
+        },
+        {
+          "name": "Encircle",
+          "url": "",
+          "role": "parent",
+          "note": "Domácí inventář pro pojištění, serverový"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Apple Wallet/Peněženka nebo Notes mohou přidat „uložit účtenku s připomínkou“ – Sherlock riziko je reálné.",
+        "Retence: uživatel naskenuje 5 věcí po nákupu a pak na appku zapomene; předplatné na „pasivní trezor“ lidé rušívají.",
+        "Pravidla záruk se liší po zemích a mění se (EU směrnice 2019/771, právo na opravu 2026) – chybná informace = špatné recenze.",
+        "Obchody posílají e-účtenky e-mailem, takže papírový problém mizí."
+      ],
+      "killer_risk": "Nízká ochota platit předplatné za něco, co uživatel otevře dvakrát ročně.",
+      "mitigation": "Doživotní nákup jako hlavní cenová kotva, sdílení e-mailových PDF přes Share Sheet, widget „brzy končící záruky“ a upozornění, které dokazují hodnotu.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-02",
+      "name": "CardShare: Family Loyalty Cards",
+      "tagline": "Věrnostní karty celé rodiny v jedné peněžence – sdílené přes iCloud, bez účtu a bez sledování.",
+      "pitch": "Po konci Stocardu (převzatého Klarnou) zůstaly miliony Evropanů bez jednoduché appky na věrnostní karty – a náhrady buď chtějí účet, nebo zobrazují reklamy. CardShare ukládá čárové a QR kódy všech karet, ale hlavně je sdílí v rodině přes iCloud: manžel u pokladny ukáže kartu, kterou má na sebe manželka. Přidáme export do Apple Wallet, widget „karta podle obchodu, kde stojím“ a nulové sledování. Soupeři jsou generické „barcode wallet“ appky bez rodinného úhlu.",
+      "niche": "Generické barcode peněženky (Barcode Wallet, Barc, Anycode) řeší jednu osobu; rodinné sdílení bez účtu nemá nikdo v názvu. Velcí (Klarna) chtějí z karet udělat nákupní platformu s účtem.",
+      "parent_market": "Peněženky věrnostních karet – dříve Stocard (desítky milionů uživatelů v EU), FidMe (FR), Pass2U, Klarna; dokazují masovou poptávku.",
+      "target_user": "Páry a rodiny v EU (DE, CZ, PL, FR, NL), kde je karet v každém řetězci desítky; lidé, kteří odmítli přejít do Klarna appky.",
+      "features": [
+        "Sken kódu fotoaparátem (Vision) nebo ruční zadání, 20+ formátů",
+        "Rodinné sdílení přes CloudKit Sharing, bez registrace",
+        "Export karty do Apple Wallet (lokálně generovaný pass není možný bez podpisu – místo toho widget a Live Activity)",
+        "Widget a Siri: „ukaž kartu Lidl“",
+        "Jas displeje na max při zobrazení kódu"
+      ],
+      "offline": "full",
+      "offline_note": "Kódy se generují lokálně (Core Image), sync přes iCloud uživatele. Apple Wallet pass by vyžadoval podpisový server – proto ho vědomě nenabízíme.",
+      "monetization": "Zdarma do 5 karet, odemčení neomezených karet + rodinného sdílení 4,99 USD (≈ 115 Kč) jednorázově.",
+      "revenue_math": "Stocard zmizel a jeho uživatelé hledají náhradu – Ideál: 3500 stažení/měsíc × 3,5 % konverze × 4,99 USD × 0,85 (provize Apple) × 23 Kč = cca 11 950 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 11950,
+      "keywords": [
+        {
+          "kw": "loyalty card wallet",
+          "saturation": 6,
+          "competitor": "Barcodes: Loyalty Card Wallet",
+          "note": "web (books evidence): při hledání peněženek na karty knihoven vyšlo 5 generických barcode peněženek – hlava je obsazená"
+        },
+        {
+          "kw": "family loyalty cards",
+          "saturation": 1,
+          "competitor": "žádná dedikovaná",
+          "note": "odhad; rodinný úhel v názvech nenalezen"
+        },
+        {
+          "kw": "shared loyalty cards",
+          "saturation": 1,
+          "competitor": "žádná dedikovaná",
+          "note": "odhad"
+        },
+        {
+          "kw": "stocard alternative",
+          "saturation": 3,
+          "competitor": "Barcode Wallet",
+          "note": "odhad; značkové slovo nepoužít v názvu (ochranná známka), jen v popisu opatrně"
+        },
+        {
+          "kw": "kundenkarten app",
+          "saturation": 4,
+          "competitor": "lokální DE appky",
+          "note": "odhad; německý trh, velká poptávka po Stocardu"
+        }
+      ],
+      "demand_evidence": "Web (books evidence): App Store má minimálně 5 generických barcode/loyalty peněženek (Barcode Wallet, Barc, Loyalty Card Wallet, Anycode, Wallet Creator) – kategorie je živá. Z vlastní znalosti: Stocard byl ukončen a sloučen s Klarnou (2024), což uvolnilo publikum. Poptávka po rodinném sdílení je předpoklad.",
+      "competitors": [
+        {
+          "name": "Barcodes: Loyalty Card Wallet",
+          "url": "https://apps.apple.com/us/app/reward-card-wallet-barcodes/id1610894014",
+          "role": "niche",
+          "note": "Generická peněženka, bez rodinného sdílení (dle evidence)"
+        },
+        {
+          "name": "Barcode Wallet",
+          "url": "https://apps.apple.com/us/app/barcode-wallet/id6746732896",
+          "role": "niche",
+          "note": "Nová generická peněženka 2025"
+        },
+        {
+          "name": "Barcodes Wallet: Barc",
+          "url": "https://apps.apple.com/us/app/barcodes-wallet-barc/id6642707689",
+          "role": "niche",
+          "note": "Generická peněženka"
+        },
+        {
+          "name": "Klarna (ex-Stocard)",
+          "url": "",
+          "role": "parent",
+          "note": "Karty uvnitř nákupní appky s účtem"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Apple Wallet může přidat skenování libovolného čárového kódu (Sherlock) – v iOS se o tom mluví roky.",
+        "Hlava „loyalty card“ je přeplněná, a fráze „family loyalty cards“ nemusí mít skutečný objem hledání.",
+        "Řetězce tlačí vlastní appky s digitální kartou a kupóny (Lidl Plus, Kaufland Card) – fyzické karty ubývají.",
+        "Jednorázová cena 4,99 USD vyžaduje velký objem; bezplatné alternativy existují."
+      ],
+      "killer_risk": "Obchodní řetězce přesunou karty do vlastních appek a samostatná peněženka ztratí smysl.",
+      "mitigation": "Zaměřit se na menší obchody, knihovny, posilovny, lékárny (karty bez appky) a na rodinné sdílení, které vlastní appky řetězců nenabízejí.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 8,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "web"
+    },
+    {
+      "id": "shopping-03",
+      "name": "Resell Ledger: Second-Hand Profit",
+      "tagline": "Kolik vám reálně vydělává prodej na Vinted a bazarech – po poplatcích, poštovném a nákupní ceně.",
+      "pitch": "Evropa prodává oblečení z druhé ruky přes Vinted a podobné bazary a tisíce lidí z toho dělají vedlejšák – ale netuší, jestli po poštovném, obalech a nákupní ceně na tom opravdu vydělávají. Americké reseller appky (Vendoo, List Perfectly) jsou cloudové crosslistery pro eBay/Poshmark, v angličtině a za 20+ USD měsíčně. Resell Ledger je offline sešit: kus → nákupní cena → prodej → poplatky, které si uživatel sám zadá → čistý zisk a hodinová mzda. Lokalizace do FR/DE/PL/CZ/ES/IT je přesně tam, kde je Vinted největší.",
+      "niche": "US nástroje cílí na profesionální flippery v USA a potřebují server (crosslisting). Evropští příležitostní prodejci (studenti, maminky) nemají jednoduchý offline zisk-tracker ve svém jazyce – reverzní mezera EU→US.",
+      "parent_market": "Reseller nástroje v USA – Vendoo, List Perfectly, Flipwise; evidence finance ukazuje nové vendor/flipper trackery (VendStats zmiňuje garage-sale flippery).",
+      "target_user": "Příležitostní i poloprofesionální prodejci second-hand oblečení v EU (Vinted, Vestiaire, lokální bazary), 18–45 let.",
+      "features": [
+        "Evidence kusů s fotkou, nákupní cenou a zdrojem (sekáč, výprodej, vlastní šatník)",
+        "Uživatelem zadané šablony poplatků a poštovného (bez napojení na platformy)",
+        "Čistý zisk, marže, doba do prodeje, hodinová mzda",
+        "Přehled za měsíc/rok pro daňové přiznání (DAC7 limit 30 prodejů / 2 000 EUR hlídač)",
+        "Export CSV"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně (SwiftData), iCloud sync. Žádné API platforem – poplatky zadává uživatel.",
+      "monetization": "Freemium: 25 kusů zdarma, Pro 2,99 USD/měsíc (≈ 69 Kč) nebo 19,99 USD/rok (≈ 460 Kč).",
+      "revenue_math": "Ideál v ustáleném stavu: 2000 stažení/měsíc × 4 % převod na předplatné při měsíčním odchodu 7 % → cca 1143 aktivních předplatitelů × 2,99 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 66 813 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 66813,
+      "keywords": [
+        {
+          "kw": "reseller tracker",
+          "saturation": 5,
+          "competitor": "Flipwise",
+          "note": "odhad; v USA existuje několik reseller inventory appek"
+        },
+        {
+          "kw": "resale profit calculator",
+          "saturation": 3,
+          "competitor": "generické 'Profit Calculator' appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "second hand seller",
+          "saturation": 2,
+          "competitor": "žádná dedikovaná",
+          "note": "odhad"
+        },
+        {
+          "kw": "dac7 tracker",
+          "saturation": 0,
+          "competitor": "žádná",
+          "note": "odhad; nová EU povinnost platforem hlásit prodejce – reálné téma v EU médiích"
+        },
+        {
+          "kw": "vinted seller tools",
+          "saturation": 2,
+          "competitor": "neoficiální pomocníci",
+          "note": "odhad; značku Vinted nepoužít v názvu ani klíčových slovech (ochranná známka, 2.3.7)"
+        }
+      ],
+      "demand_evidence": "Ověřeno (web, finance evidence): v 2026 vznikají nové vendor/flipper trackery (VendStats zmiňuje garage-sale flippery, flea market), tedy poptávka existuje v USA. Předpoklad: evropští prodejci hledají v rodném jazyce a DAC7 hlášení (od 2024) zvyšuje zájem o evidenci.",
+      "competitors": [
+        {
+          "name": "VendStats: Sales Tracker",
+          "url": "https://apps.apple.com/us/app/vendstats-sales-tracker/id6759027702",
+          "role": "niche",
+          "note": "Nový 2026 tracker prodejů pro stánkaře a flippery, anglicky"
+        },
+        {
+          "name": "Vendoo",
+          "url": "",
+          "role": "parent",
+          "note": "Cloudový crosslister USA, drahé předplatné"
+        },
+        {
+          "name": "List Perfectly",
+          "url": "",
+          "role": "parent",
+          "note": "Cloudový crosslister, US-centrický"
+        },
+        {
+          "name": "Flipwise",
+          "url": "",
+          "role": "us-only",
+          "note": "Reseller inventory tracker, anglicky"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Reverzní mezera: model reseller trackerů je ověřený v USA (eBay/Poshmark), ale evropský Vinted trh (FR, DE, PL, CZ, ES, IT) nemá lokalizovaný offline nástroj. Lokalizace do 50 jazyků + EU daňový kontext (DAC7).",
+      "devils_advocate": [
+        "Vinted může do své appky přidat statistiky zisku – mají data o prodejích, my ne.",
+        "Ruční zadávání každého kusu je otravné; prodejci s 200+ kusy odpadnou.",
+        "Příležitostní prodejci nechtějí platit předplatné za něco, co vydělává pár stovek měsíčně.",
+        "Riziko 2.3.7 a ochranných známek, pokud se v metadatech objeví jména platforem."
+      ],
+      "killer_risk": "Ruční zadávání zabije retenci dřív, než uživatel uvidí hodnotu.",
+      "mitigation": "Rychlé přidání kusu z fotky (Vision: typ oděvu, značka z OCR štítku), hromadný import nákupu ze sekáče a okamžitý „zisk tohoto měsíce“ na domovské obrazovce.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-04",
+      "name": "Return By: Orders & Refunds",
+      "tagline": "Víte, do kdy můžete vrátit ten e-shop balík – a jestli vám už vrátili peníze?",
+      "pitch": "Online nákupy mají 14denní lhůtu na odstoupení v EU, 30–90denní okna v USA a každý obchod jiná pravidla. Lidé propásnou lhůtu, nebo vrátí zboží a pak zapomenou zkontrolovat, že refundace dorazila. Return By si zaznamená objednávku (sdílením e-mailu nebo screenshotu s OCR), dopočítá konec lhůty a hlídá refundaci po vrácení. Je to jasná bolest s penězi na stole a jednoduchá ASO fráze „return tracker“.",
+      "niche": "Balíkové trackery (Parcel, 17TRACK, Deliveries) sledují doručení přes API, ne lhůty na vrácení a refundace. Nikdo nekombinuje zákonnou lhůtu země + politiku obchodu + stav refundace.",
+      "parent_market": "Sledování balíků a nákupů – Parcel, Deliveries, 17TRACK, Route; masové stahování, ale serverové.",
+      "target_user": "Časté nakupující online (móda, elektronika), rodiny s mnoha objednávkami, lidé, kteří objednávají více velikostí a vracejí.",
+      "features": [
+        "Přidání objednávky ze screenshotu/Share Sheet (on-device OCR)",
+        "Lhůta podle země (EU 14 dní) + vlastní politika obchodu",
+        "Připomínky před koncem lhůty",
+        "Stav vrácení: odesláno → přijato → refundace (s připomínkou po X dnech)",
+        "Přehled peněz „na cestě zpět“"
+      ],
+      "offline": "full",
+      "offline_note": "Žádné sledování zásilek přes API; vše zadává uživatel, OCR a připomínky lokálně.",
+      "monetization": "Zdarma 5 aktivních objednávek, odemčení 3,99 USD (≈ 92 Kč) jednorázově.",
+      "revenue_math": "Ideál: 3000 stažení/měsíc × 4 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 9 361 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 9361,
+      "keywords": [
+        {
+          "kw": "return tracker",
+          "saturation": 3,
+          "competitor": "generické appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "refund tracker",
+          "saturation": 2,
+          "competitor": "generické appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "return reminder",
+          "saturation": 2,
+          "competitor": "žádná silná",
+          "note": "odhad"
+        },
+        {
+          "kw": "return deadline",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad; evidence finance zmiňuje return-deadline vault jako otevřený, neověřeno"
+        }
+      ],
+      "demand_evidence": "Evidence finance označuje „warranty/return-deadline vault“ za otevřený, ale neověřený. Objem hledání je předpoklad z vlastní znalosti (fóra o propadlých lhůtách, články „how to track returns“).",
+      "competitors": [
+        {
+          "name": "Parcel - Delivery Tracking",
+          "url": "",
+          "role": "parent",
+          "note": "Sledování balíků přes API, ne lhůt"
+        },
+        {
+          "name": "Deliveries: a package tracker",
+          "url": "",
+          "role": "parent",
+          "note": "Sledování doručení, serverové"
+        },
+        {
+          "name": "ReceiptCam: AI Receipt Tracker",
+          "url": "https://apps.apple.com/us/app/receiptcam-ai-receipt-tracker/id6746401835",
+          "role": "niche",
+          "note": "Účtenky, ne lhůty vrácení"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Amazon a velké e-shopy zobrazují lhůtu vrácení přímo v objednávce – nejbolestivější případ je vyřešen.",
+        "Ruční přidání každé objednávky je tření; bez přístupu do e-mailu (server) to nejde automatizovat.",
+        "Nízká cena a nízká opakovaná hodnota – jedna ušetřená vratka, pak appka upadne v zapomnění.",
+        "Příbuznost s Warranty Vault (stejný vývojář) – riziko 4.3, pokud budou appky vypadat stejně."
+      ],
+      "killer_risk": "Tření ručního zadávání vs. malá hodnota jedné připomínky.",
+      "mitigation": "Share Extension z e-mailu a screenshotu s OCR na 2 ťuknutí; odlišný design i datový model než Warranty Vault, případně spojit obě do jedné appky, pokud 4.3 hrozí.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 9,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-05",
+      "name": "Buy or Pass: Flip Calculator",
+      "tagline": "Stojíte v sekáči s kouskem v ruce – za 3 sekundy víte, jestli se ho vyplatí koupit na přeprodej.",
+      "pitch": "Flipper v bazaru, na garážovém výprodeji nebo ve výprodeji v obchodě potřebuje jediné číslo: maximální nákupní cenu, aby po poplatcích platformy, poštovném a cílové marži vydělal. Dnes to počítá na kalkulačce nebo v Google Sheets. Buy or Pass má uložené profily prodejních kanálů s poplatky, které si zadá sám, a na jedno ťuknutí vrátí verdikt KUP/NECH s očekávaným ziskem. Offline je klíčové – sekáče a bazary mají často mizerný signál.",
+      "niche": "Reseller appky řeší inventář a crosslisting po nákupu; okamžité rozhodnutí u regálu je vedlejší funkce. Specializovaná „sourcing“ kalkulačka nemá silného hráče.",
+      "parent_market": "Reseller nástroje – Vendoo, List Perfectly, Flipwise, eBay appka; komunita r/Flipping a YouTube resellerů s miliony sledujících.",
+      "target_user": "Flippeři v USA/UK a evropští prodejci second-hand zboží, kteří nakupují v sekáčích, garage sales a výprodejích.",
+      "features": [
+        "Profily kanálů s vlastními poplatky (procento + fixní), poštovné, obaly",
+        "Max nákupní cena pro cílovou marži nebo cílový zisk",
+        "Verdikt KUP/NECH velkým písmem, jedno ruční ovládání",
+        "Rychlý zápis „koupeno“ do jednoduchého logu",
+        "Widget a Apple Watch komplikace"
+      ],
+      "offline": "full",
+      "offline_note": "Čistá kalkulačka + lokální log; žádné ceny z internetu (ceny zadává uživatel podle zkušenosti).",
+      "monetization": "Jednorázově 5,99 USD (≈ 138 Kč) po 3 dnech zkoušení; bez předplatného (výhoda proti US konkurenci).",
+      "revenue_math": "Ideál: 2500 stažení/měsíc × 5 % konverze × 5,99 USD × 0,85 (provize Apple) × 23 Kč = cca 14 638 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 14638,
+      "keywords": [
+        {
+          "kw": "flip calculator",
+          "saturation": 3,
+          "competitor": "generické reseller kalkulačky",
+          "note": "odhad"
+        },
+        {
+          "kw": "reseller calculator",
+          "saturation": 4,
+          "competitor": "Profit Calculator for resellers",
+          "note": "odhad"
+        },
+        {
+          "kw": "thrift flip",
+          "saturation": 2,
+          "competitor": "žádná dedikovaná",
+          "note": "odhad"
+        },
+        {
+          "kw": "sourcing calculator",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Web (finance evidence): nové vendor trackery 2026 (VendStats) explicitně zmiňují garage-sale flippery a flea markets – publikum existuje. Samotná fráze „flip calculator“ nebyla ověřena; ochota zaplatit 5,99 USD je předpoklad (reselleři běžně platí za nástroje).",
+      "competitors": [
+        {
+          "name": "VendStats: Sales Tracker",
+          "url": "https://apps.apple.com/us/app/vendstats-sales-tracker/id6759027702",
+          "role": "niche",
+          "note": "Tracker prodejů pro flippery/stánkaře, ne nákupní rozhodnutí"
+        },
+        {
+          "name": "Flipwise",
+          "url": "",
+          "role": "us-only",
+          "note": "Reseller inventory, anglicky"
+        },
+        {
+          "name": "Vendoo",
+          "url": "",
+          "role": "parent",
+          "note": "Cloudový crosslister"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Model „flipping“ je silně americký (r/Flipping, YouTube); v EU (DE Flohmarkt, FR vide-grenier, CZ bazary) lokalizovaný nástroj chybí. Launch v 50 jazycích s lokálními měnami.",
+      "devils_advocate": [
+        "Jde o kalkulačku – snadno kopírovatelná, riziko, že konkurence udělá totéž zdarma.",
+        "Bez znalosti prodejní ceny je výsledek jen tak dobrý jako odhad uživatele; zkušení flippeři kalkulačku nepotřebují.",
+        "Příliš blízko k Resell Ledger (stejný parent) – musí být jasně odlišené, jinak 4.3.",
+        "Malý trh ochotný platit jednorázově; žádný opakovaný příjem."
+      ],
+      "killer_risk": "Zkušení flippeři počítají z hlavy a začátečníci neplatí – mezi nimi je úzký segment.",
+      "mitigation": "Učit začátečníky (vestavěné šablony „cílová marže 3×“), napojit na Resell Ledger přes export a prodávat jako balíček; cenou pod 6 USD bez předplatného.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-06",
+      "name": "GiftLedger: Big Family Gifts",
+      "tagline": "Dárky pro 25 lidí, rozpočet na osobu, co je koupené, zabalené a kde je schované.",
+      "pitch": "Velké rodiny, kmotři a prarodiče kupují na Vánoce, narozeniny a svátky desítky dárků a ztrácejí přehled: co už Tomáš dostal loni, kolik jsme utratili za švagrovou a kam jsme schovali lego. Obecné vánoční seznamy jsou jednoduché to-do listy. GiftLedger vede historii dárků po letech (žádné opakování), rozpočet na osobu i skupinu, stavy koupeno/zabaleno/schováno a nápady, které lidé během roku zmíní. Celoroční nápady dávají důvod otevírat appku mimo prosinec.",
+      "niche": "Vánoční appky jsou sezónní a jednoduché; wishlist platformy (Giftster, Elfster) jsou serverové a zaměřené na seznamy přání. Historie po letech + úkryty + velké rodiny nikdo nemá.",
+      "parent_market": "Dárkové a vánoční plánovače – Santa's Bag, Christmas Gift List appky, Giftster, Elfster; každoroční vrchol v App Store žebříčcích v listopadu–prosinci.",
+      "target_user": "Rodiče ve velkých rodinách, prarodiče s mnoha vnoučaty, lidé s rozsáhlou rodinou (kmotři, tety).",
+      "features": [
+        "Lidé a skupiny (rodina, práce), rozpočet na osobu i celek",
+        "Stavy dárku: nápad → koupeno → zabaleno → schováno (místo úkrytu)",
+        "Historie dárků po letech a varování před opakováním",
+        "Rychlé zapsání nápadu během roku (Siri, widget)",
+        "Příležitosti: Vánoce, narozeniny, svátky, jmeniny (CZ/SK/PL)"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, iCloud sync a sdílení s partnerem přes CloudKit.",
+      "monetization": "Zdarma do 8 osob, odemčení 4,99 USD (≈ 115 Kč) jednorázově; volitelná „rodinná“ tip-jar.",
+      "revenue_math": "Sezónní (říjen–prosinec 3× víc), průměr roku: Ideál: 3000 stažení/měsíc × 5 % konverze × 4,99 USD × 0,85 (provize Apple) × 23 Kč = cca 14 633 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 14633,
+      "keywords": [
+        {
+          "kw": "christmas gift list",
+          "saturation": 7,
+          "competitor": "Santa's Bag",
+          "note": "odhad; hlava je obsazená, použít jen jako parent"
+        },
+        {
+          "kw": "gift tracker",
+          "saturation": 4,
+          "competitor": "generické appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "gift planner",
+          "saturation": 4,
+          "competitor": "generické appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "gift budget",
+          "saturation": 2,
+          "competitor": "žádná silná",
+          "note": "odhad"
+        },
+        {
+          "kw": "gift history",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Z vlastní znalosti: vánoční seznamy dárků každoročně stoupají v žebříčcích Shopping/Lifestyle; Santa's Bag má dlouhou historii. Fráze „gift tracker“ a „gift history“ nejsou ověřené v Apple datech – předpoklad.",
+      "competitors": [
+        {
+          "name": "Santa's Bag",
+          "url": "",
+          "role": "parent",
+          "note": "Dlouholetý vánoční seznam dárků"
+        },
+        {
+          "name": "Giftster",
+          "url": "",
+          "role": "parent",
+          "note": "Serverový rodinný wishlist"
+        },
+        {
+          "name": "Elfster",
+          "url": "",
+          "role": "parent",
+          "note": "Secret Santa a wishlisty se serverem"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Extrémní sezónnost – 60 % příjmů za 8 týdnů, zbytek roku minimum.",
+        "Apple Notes/Reminders se sdíleným seznamem pokrývají 80 % potřeby zdarma.",
+        "Hlava „christmas gift list“ je přeplněná a niche fráze mohou mít malý objem.",
+        "Uživatelé v prosinci stahují, v lednu mažou – slabá retence."
+      ],
+      "killer_risk": "Sezónnost a náhrada zdarma (sdílené Poznámky).",
+      "mitigation": "Celoroční příležitosti (narozeniny, jmeniny) s připomínkami, In-App Events v listopadu, historie po letech jako důvod appku nemazat.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 5,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-07",
+      "name": "Label Guard: Allergen Scanner",
+      "tagline": "Namiřte na složení v jakémkoli jazyce – appka zvýrazní vaše alergeny. Offline, i v cizině.",
+      "pitch": "Alergik v zahraničí stojí v supermarketu nad etiketou v polštině nebo japonštině a neví, jestli tam je ořech. Databázové scannery (Yuka, Fig) potřebují internet, čárový kód v databázi a často neznají lokální produkty. Label Guard čte přímo text složení přes on-device OCR a porovnává ho s uživatelovým seznamem (14 EU alergenů + vlastní položky) včetně synonym v desítkách jazyků, která přibalíme. Funguje offline, bez databáze produktů – a proto i na trhu u stánku.",
+      "niche": "Velcí hráči stavějí na databázi čárových kódů a serveru; čtení libovolné etikety v cizím jazyce proti osobnímu seznamu je pro ně okrajové. Cestovatelé s alergiemi jsou ignorované publikum.",
+      "parent_market": "Potravinové scannery – Yuka (desítky milionů uživatelů), Fig, Spokin, Food Intolerances (evidence food-drink); ochota platit předplatné je ověřená.",
+      "target_user": "Lidé s potravinovými alergiemi a celiakií, rodiče alergických dětí, cestovatelé a expati.",
+      "features": [
+        "Live OCR etikety (Vision) a zvýraznění nalezených alergenů",
+        "Osobní seznam: 14 EU alergenů + vlastní ingredience",
+        "Offline slovník synonym alergenů ve 30+ jazycích",
+        "Profil pro více členů rodiny",
+        "Upozornění „může obsahovat stopy“ zvlášť"
+      ],
+      "offline": "full",
+      "offline_note": "OCR i slovník synonym jsou v zařízení; žádná databáze produktů, žádný server.",
+      "monetization": "Zdarma 1 alergen a 1 jazyk, Pro 2,99 USD/měsíc (≈ 69 Kč) nebo 19,99 USD/rok (≈ 460 Kč).",
+      "revenue_math": "Ideál v ustáleném stavu: 2500 stažení/měsíc × 3 % převod na předplatné při měsíčním odchodu 6 % → cca 1250 aktivních předplatitelů × 2,99 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 73 068 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 73068,
+      "keywords": [
+        {
+          "kw": "allergen scanner",
+          "saturation": 5,
+          "competitor": "Yuka / Fig",
+          "note": "odhad; hlava středně obsazená databázovými appkami"
+        },
+        {
+          "kw": "allergy label scanner",
+          "saturation": 3,
+          "competitor": "generické appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "ingredient scanner offline",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad"
+        },
+        {
+          "kw": "allergy travel",
+          "saturation": 3,
+          "competitor": "překladové karty alergií",
+          "note": "odhad; travel evidence zmiňuje allergy cards jako neověřené"
+        },
+        {
+          "kw": "gluten label reader",
+          "saturation": 2,
+          "competitor": "celiakální appky",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Web (food-drink evidence): Food Intolerances a Low FODMAP appky existují dlouho a nabízejí profily intolerancí – trh je placený. Food-drink evidence navrhuje „on-device OCR label scan“ jako neověřený nápad. Objem hledání „allergy label scanner“ je předpoklad.",
+      "competitors": [
+        {
+          "name": "Food Intolerances",
+          "url": "https://apps.apple.com/us/app/food-intolerances/id419098758?platform=ipad",
+          "role": "parent",
+          "note": "Databáze intolerancí od 2011, bez OCR etiket"
+        },
+        {
+          "name": "Yuka",
+          "url": "",
+          "role": "parent",
+          "note": "Databázový scanner čárových kódů, serverový"
+        },
+        {
+          "name": "Fig: Food Scanner & Discovery",
+          "url": "",
+          "role": "parent",
+          "note": "Databáze + účet, US-centrický"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Guideline 1.4.1 / odpovědnost: pokud OCR mine alergen a dítě má reakci, důsledky jsou vážné – nutné silné disclaimery.",
+        "Apple Visual Intelligence / Live Text + Apple Intelligence umí „najdi ořechy v tomto textu“ – Sherlock.",
+        "OCR na zakřivených a lesklých obalech selhává; špatná přesnost = 1hvězdičkové recenze.",
+        "Yuka nebo Fig přidá offline OCR režim za týden."
+      ],
+      "killer_risk": "Chybné (falešně negativní) vyhodnocení a z toho plynoucí právní/reputační riziko.",
+      "mitigation": "Formulovat jako „pomocník pro čtení“, nikdy „bezpečné“; zobrazit vždy přečtený text, nízká jistota OCR = varování „nečitelné“, výrazné disclaimery a žádná zdravotní tvrzení.",
+      "build_weeks": 5,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 6,
+        "monetization": 7,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 4
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-08",
+      "name": "Yard Sale Kit: Prices & Split",
+      "tagline": "Cenovky, pokladna a férové vyúčtování pro společný garážový výprodej více rodin.",
+      "pitch": "Na garážovém výprodeji nebo sousedském bleším trhu prodává často 3–5 rodin z jednoho stolu – a na konci dne se hádají, čí byla ta lampa. Yard Sale Kit přiřadí každé rodině barvu/kód, pokladník na jedno ťuknutí zapisuje prodeje a appka večer spočítá, kolik komu patří, včetně sdílených nákladů (inzerát, stoly). Přidáme tisk cenovek a doporučené ceny podle kategorie. Offline, protože se prodává na dvoře.",
+      "niche": "Evidence finance označuje „multi-family garage-sale split“ za otevřený; stánkařské appky (VendStats, myBooth) cílí na řemeslné trhy a jednoho prodejce, ne na dělení mezi rodiny.",
+      "parent_market": "Prodejní trackery pro stánkaře a flea markets – VendStats, myBooth, Square POS; v USA tradice garage sales, v DE Flohmarkt, FR vide-grenier, NL vrijmarkt.",
+      "target_user": "Rodiny a sousedé pořádající společný výprodej; organizátoři komunitních bleších trhů; spolky a školy (bazárek).",
+      "features": [
+        "Prodávající s barevným kódem a rychlé zapsání prodeje",
+        "Vyúčtování na konci dne vč. sdílených nákladů",
+        "Tisk/sdílení cenovek s kódem prodávajícího",
+        "Režim více pokladen přes AirDrop/Multipeer (bez serveru)",
+        "Průvodce cenami podle kategorie (statický)"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně; synchronizace pokladen přes Multipeer Connectivity bez internetu.",
+      "monetization": "Zdarma pro 1 prodávajícího, víc rodin 4,99 USD (≈ 115 Kč) jednorázově nebo 1,99 USD za jednu akci.",
+      "revenue_math": "Sezónní (jaro–léto), průměr roku: Ideál: 2000 stažení/měsíc × 6 % konverze × 4,99 USD × 0,85 (provize Apple) × 23 Kč = cca 11 707 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 11707,
+      "keywords": [
+        {
+          "kw": "yard sale",
+          "saturation": 4,
+          "competitor": "generické appky pro hledání výprodejů",
+          "note": "odhad; hlava obsahuje i mapy výprodejů (serverové)"
+        },
+        {
+          "kw": "garage sale tracker",
+          "saturation": 2,
+          "competitor": "VendStats",
+          "note": "odhad; VendStats zmiňuje garage-sale flippery (web evidence)"
+        },
+        {
+          "kw": "flohmarkt app",
+          "saturation": 3,
+          "competitor": "tržiště/mapy",
+          "note": "odhad"
+        },
+        {
+          "kw": "yard sale pricing",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Web (finance evidence, SEARCH 7): „craft fair/vendor sales“ má sat 3–4 a všechny appky jsou z 2026 a slabé; VendStats zmiňuje garage sale a flea market. Samotné dělení mezi rodiny je uvedené jako „open, not searched“ – předpoklad.",
+      "competitors": [
+        {
+          "name": "VendStats: Sales Tracker",
+          "url": "https://apps.apple.com/us/app/vendstats-sales-tracker/id6759027702",
+          "role": "niche",
+          "note": "Stánkařský tracker, jeden prodejce"
+        },
+        {
+          "name": "myBooth: Inventory & Events",
+          "url": "https://apps.apple.com/us/app/mybooth-inventory-events/id6763803666",
+          "role": "niche",
+          "note": "Inventář a akce pro stánkaře"
+        },
+        {
+          "name": "Square Point of Sale",
+          "url": "",
+          "role": "parent",
+          "note": "POS s účtem a platbami"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Garage-sale model je americký a appky jsou anglické; lokalizace pro Flohmarkt (DE/AT), vide-grenier (FR), rommelmarkt (NL/BE), bazar (CZ/PL) – kulturně velmi silné tradice v EU.",
+      "devils_advocate": [
+        "Výprodej je 1–2× ročně; appka se použije jednou a nemá opakovanou hodnotu.",
+        "Většina lidí si vystačí s papírem a obálkami pro každou rodinu.",
+        "Sezónní a počasím závislé stahování.",
+        "Slabá monetizace – nízká ochota platit za jednorázovou akci."
+      ],
+      "killer_risk": "Jednorázové použití → nízké tržby a žádné recenze.",
+      "mitigation": "Cena „za akci“ a cílit také na opakované organizátory (školní bazárky, spolky, komunitní trhy), kteří akce dělají pravidelně.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-09",
+      "name": "Price Book: My Grocery Prices",
+      "tagline": "Vaše vlastní cenová kniha: naskenujte účtenku a uvidíte, kde je mléko nejlevnější a o kolik vám zdražili.",
+      "pitch": "Couponeři a úsporné rodiny vedou „price book“ – sešit s cenami oblíbených produktů v různých obchodech, aby poznali opravdovou slevu. Po vlně inflace chce spousta lidí vědět svou osobní inflaci, ne oficiální číslo. Price Book naskenuje účtenku, přes on-device OCR rozpozná položky a ceny, přiřadí je k produktům a ukáže historii, nejlevnější obchod a osobní index zdražení. Žádná cenová databáze ze serveru – data jsou vaše.",
+      "niche": "Srovnávače cen potřebují licencovaná data a server; nákupní seznamy (AnyList, Bring!) ceny jen okrajově. Osobní cenová kniha z vlastních účtenek je mezera, kterou velcí ignorují, protože nejde monetizovat reklamou.",
+      "parent_market": "Nákupní seznamy a úsporné appky – AnyList, Bring!, Listonic, Flipp; komunita couponingu a frugal living.",
+      "target_user": "Úsporné rodiny, couponeři v USA, lidé sledující inflaci v EU, důchodci s pevným rozpočtem.",
+      "features": [
+        "Sken účtenky a OCR položek (Vision), párování na produkty",
+        "Historie ceny produktu napříč obchody, graf",
+        "Osobní inflační index (můj košík vs. před rokem)",
+        "Upozornění „tohle je nejnižší cena, kterou jste viděli“",
+        "Ruční záznam ceny z regálu"
+      ],
+      "offline": "full",
+      "offline_note": "OCR a analýza v zařízení; ceny jsou jen od uživatele. Žádná externí data.",
+      "monetization": "Zdarma 5 účtenek měsíčně, Pro 2,49 USD/měsíc (≈ 57 Kč) nebo 17,99 USD/rok (≈ 414 Kč).",
+      "revenue_math": "Ideál v ustáleném stavu: 2000 stažení/měsíc × 3,5 % převod na předplatné při měsíčním odchodu 6 % → cca 1167 aktivních předplatitelů × 2,49 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 56 809 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 56809,
+      "keywords": [
+        {
+          "kw": "price book",
+          "saturation": 3,
+          "competitor": "generické 'Price Book' appky",
+          "note": "odhad; frugal komunita termín používá"
+        },
+        {
+          "kw": "grocery price tracker",
+          "saturation": 4,
+          "competitor": "generické appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "personal inflation",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad"
+        },
+        {
+          "kw": "receipt scanner grocery",
+          "saturation": 4,
+          "competitor": "ReceiptCam",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad z vlastní znalosti: „price book“ je zavedený pojem frugal/couponing komunity, po 2022–24 roste zájem o osobní inflaci. Ověřeno je jen, že OCR skenery účtenek se v 2025–26 masově objevují (finance evidence, ReceiptCam).",
+      "competitors": [
+        {
+          "name": "ReceiptCam: AI Receipt Tracker",
+          "url": "https://apps.apple.com/us/app/receiptcam-ai-receipt-tracker/id6746401835",
+          "role": "niche",
+          "note": "AI sken účtenek, výdajový fokus"
+        },
+        {
+          "name": "AnyList",
+          "url": "",
+          "role": "parent",
+          "note": "Nákupní seznamy s cenami jako vedlejší funkcí"
+        },
+        {
+          "name": "Flipp",
+          "url": "",
+          "role": "parent",
+          "note": "Letáky a ceny, serverové, US/CA"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "OCR účtenek je nekonzistentní (zkratky položek typu „MLK POLOTUC 1,5“) – párování na produkty bude frustrovat.",
+        "Ruční práce s každou účtenkou – retence padá po 2 týdnech.",
+        "Řetězce a státní srovnávače (DE, FR, CZ zákony o cenách) mohou nabídnout veřejná cenová data zdarma.",
+        "Apple Intelligence/Wallet může začít kategorizovat účtenky."
+      ],
+      "killer_risk": "Špatné párování OCR položek zničí zážitek.",
+      "mitigation": "Učící se slovník zkratek per obchod (lokálně), ruční potvrzení prvních skenů a sledování jen „oblíbených 30 produktů“ místo celé účtenky.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 6,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-10",
+      "name": "TagSnap: Unit Price Compare",
+      "tagline": "Vyfoťte dvě cenovky – appka okamžitě řekne, které balení je levnější na kilo, litr nebo kus.",
+      "pitch": "„Rodinné balení“ často není levnější a akce „3 za 2“ mate. V USA nejsou jednotkové ceny na regálech jednotné a v EU je často schovaná drobným písmem. Kalkulačky jednotkové ceny existují, ale nutí vás ručně psát čtyři čísla u regálu. TagSnap vyfotí cenovku nebo obal, přes on-device OCR vytáhne cenu a gramáž a porovná až 4 varianty včetně akcí typu 2+1. Rychlost je produkt.",
+      "niche": "Obecné unit-price kalkulačky jsou ruční; OCR cenovek s multi-buy akcemi v názvu nikdo nemá. Velcí (nákupní seznamy) to neřeší vůbec.",
+      "parent_market": "Unit price kalkulačky a nákupní pomocníci – desítky malých appek; evidence food-drink zachytila OZ Price Calculator. Parent: AnyList/Bring! uživatelé.",
+      "target_user": "Úsporní nakupující, studenti, rodiny s velkými nákupy, lidé ve velkoobchodech (Costco, Makro).",
+      "features": [
+        "OCR ceny a gramáže z cenovky/obalu (Vision)",
+        "Porovnání 2–4 variant na kg/l/kus",
+        "Akce: 2+1, 3 za 2, druhý za polovic",
+        "Převody jednotek (oz, lb, fl oz ↔ g, ml)",
+        "Widget pro rychlé spuštění u regálu"
+      ],
+      "offline": "full",
+      "offline_note": "OCR i výpočty v zařízení.",
+      "monetization": "Zdarma ruční režim, OCR a akce odemčení 2,99 USD (≈ 69 Kč) jednorázově.",
+      "revenue_math": "Široké publikum, nízká cena: Ideál: 3500 stažení/měsíc × 3,5 % konverze × 2,99 USD × 0,85 (provize Apple) × 23 Kč = cca 7 161 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 7161,
+      "keywords": [
+        {
+          "kw": "unit price",
+          "saturation": 6,
+          "competitor": "Unit Price Calculator appky",
+          "note": "odhad; hlava obsazená mnoha kalkulačkami"
+        },
+        {
+          "kw": "unit price scanner",
+          "saturation": 2,
+          "competitor": "žádná silná",
+          "note": "odhad"
+        },
+        {
+          "kw": "price per ounce",
+          "saturation": 3,
+          "competitor": "OZ Price Calculator",
+          "note": "web (food-drink evidence): OZ Price Calculator existuje, účel nejasný"
+        },
+        {
+          "kw": "which is cheaper",
+          "saturation": 3,
+          "competitor": "generické appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "price per kg",
+          "saturation": 2,
+          "competitor": "generické appky",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Web: OZ Price Calculator se objevil ve food-drink rešerši (nejasné, zda jde o nákup). Z vlastní znalosti: „unit price calculator“ má v App Store mnoho malých appek = poptávka, ale obsazená hlava. OCR úhel je neověřený předpoklad.",
+      "competitors": [
+        {
+          "name": "OZ Price Calculator",
+          "url": "https://apps.apple.com/us/app/oz-price-calculator/id6449945515",
+          "role": "niche",
+          "note": "Cena za unci – nejasné zaměření (evidence)"
+        },
+        {
+          "name": "Unit Price Calculator (generické)",
+          "url": "",
+          "role": "niche",
+          "note": "Ruční kalkulačky, mnoho titulů"
+        },
+        {
+          "name": "AnyList",
+          "url": "",
+          "role": "parent",
+          "note": "Nákupní seznam, bez porovnání"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "V EU je jednotková cena ze zákona na cenovce – potřeba je tam menší.",
+        "Kalkulačka je triviálně kopírovatelná a hlava je přeplněná.",
+        "Apple Visual Intelligence může porovnat dvě ceny z fotky zdarma.",
+        "Nízká cena → potřeba vysokého objemu stažení."
+      ],
+      "killer_risk": "Nízká diferenciace v přeplněné hlavě a zákonné jednotkové ceny v EU.",
+      "mitigation": "Zaměřit ASO na USA/UK a velkoobchody, těžit z OCR a multi-buy akcí, které ruční kalkulačky neumí.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 7,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-11",
+      "name": "Gift Received: Thank-You Tracker",
+      "tagline": "Kdo co dal na svatbu, křtiny či narozeniny – a komu ještě chybí poděkování nebo dárek na oplátku.",
+      "pitch": "Po svatbě nebo narození dítěte přijde desítky dárků a novomanželé/rodiče musí napsat poděkování (US/UK etiketa) nebo – v Japonsku – poslat „uchiiwai“, dárek na oplátku v hodnotě třetiny až poloviny. Dnes to dělají v Excelu. Gift Received zapíše dárek s fotkou, od koho a hodnotu, hlídá stav poděkování a u japonského/korejského režimu dopočítá doporučenou hodnotu protidárku. Svatební portály to mají jen pro registry na svém serveru.",
+      "niche": "Svatební platformy (Zola, The Knot) sledují dárky jen z vlastních registrů a online. Samostatný offline tracker přijatých dárků a poděkování – a lokální zvyky (uchiiwai, korejské 축의금, čínské hongbao) – nikdo nepokrývá.",
+      "parent_market": "Svatební plánovače a registry – Zola, The Knot, WeddingWire; v JP svatební průvodci (Zexy). Masivní placený trh.",
+      "target_user": "Novomanželé, noví rodiče (baby shower), oslavenci kulatin; v JP/KR páry s tradicí protidárků.",
+      "features": [
+        "Zápis dárku: od koho, co, hodnota, fotka (i hotovost)",
+        "Stav: poděkováno / protidárek odeslán",
+        "JP/KR režim: doporučená hodnota protidárku (1/3–1/2)",
+        "Šablony poděkování a export seznamu adres",
+        "Import hostů ze Kontaktů"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, sdílení s partnerem přes iCloud.",
+      "monetization": "Zdarma do 15 dárků, odemčení 4,99 USD (≈ 115 Kč) jednorázově.",
+      "revenue_math": "Ideál: 2000 stažení/měsíc × 6 % konverze × 4,99 USD × 0,85 (provize Apple) × 23 Kč = cca 11 707 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 11707,
+      "keywords": [
+        {
+          "kw": "thank you card tracker",
+          "saturation": 2,
+          "competitor": "generické appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "gift received tracker",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad"
+        },
+        {
+          "kw": "wedding gift tracker",
+          "saturation": 3,
+          "competitor": "svatební plánovače",
+          "note": "odhad"
+        },
+        {
+          "kw": "baby shower gift list",
+          "saturation": 3,
+          "competitor": "generické appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "uchiiwai",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad; japonský termín, finance evidence zmiňuje wedding gift ledger jako nejslabší důkaz"
+        }
+      ],
+      "demand_evidence": "Finance evidence uvádí „wedding/red-envelope cash gift ledger“ jako reverzní mezeru s NEJSLABŠÍM důkazem. Zbytek je vlastní znalost (etiketa poděkování v US/UK, japonský uchiiwai). Objem hledání neověřen.",
+      "competitors": [
+        {
+          "name": "Zola Wedding Planner & Registry",
+          "url": "",
+          "role": "parent",
+          "note": "Registry a sledování dárků jen pro vlastní registr"
+        },
+        {
+          "name": "The Knot Wedding Planner",
+          "url": "",
+          "role": "parent",
+          "note": "Svatební plánovač, serverový"
+        },
+        {
+          "name": "Thank You Note trackery (generické)",
+          "url": "",
+          "role": "niche",
+          "note": "Malé anglické appky"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Etiketa thank-you notes je model US/UK, zatímco protidárky (uchiiwai JP, KR) jsou reverzní trh; spojení v jedné lokalizované appce – US model + asijské zvyky.",
+      "devils_advocate": [
+        "Použití je jednorázové (svatba) – žádná retence ani opakovaný příjem.",
+        "Svatební plánovače přidají offline sledování dárků snadno.",
+        "Kulturní nuance protidárků (JP) je snadné pokazit – potřeba rodilého mluvčího.",
+        "Malý objem hledání pro niche fráze."
+      ],
+      "killer_risk": "Jednorázový případ užití s malým objemem hledání.",
+      "mitigation": "Pokrýt všechny životní události (svatba, dítě, pohřeb – kondolenční dary v JP, kulatiny) a ASO v JP/KR, kde je zvyk povinný.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-12",
+      "name": "Fungal Safe: Skincare Ingredient Check",
+      "tagline": "Vyfoťte složení krému – appka označí ingredience, které nechcete (fungal acne, parfemace, vaše vlastní).",
+      "pitch": "Komunita kolem „fungal acne“ (Malassezia folliculitis) a citlivé pleti ručně kontroluje INCI složení kosmetiky přes weby jako Sezia nebo Folliculitis Scout – kopírováním textu. Appky jako INCI Beauty nebo Think Dirty potřebují databázi čárových kódů a server. Fungal Safe přečte složení z obalu přes on-device OCR a porovná ho s přibaleným seznamem ingrediencí (mastné kyseliny, estery, polysorbáty) i s osobním „vyhýbám se“ seznamem (26 EU parfémových alergenů, alkohol). Rychlé, offline a zaměřené.",
+      "niche": "Databázové kosmetické scannery neznají niche seznamy (fungal-acne triggers) a nemají OCR libovolného obalu. Komunita dnes používá weby, ne appky.",
+      "parent_market": "Kosmetické scannery – Yuka, INCI Beauty (FR), Think Dirty, SkinSort; skincare je jedna z nejlépe monetizovaných kategorií.",
+      "target_user": "Lidé s fungal acne/citlivou pletí, alergici na parfémy, skincare nadšenci (r/SkincareAddiction, r/FungalAcne).",
+      "features": [
+        "OCR INCI seznamu z obalu (Vision), tolerantní k překlepům",
+        "Přibalené seznamy: fungal-acne triggery, 26 EU parfémových alergenů",
+        "Vlastní seznam „vyhýbám se“",
+        "Historie zkontrolovaných produktů a „moje bezpečné“",
+        "Srovnání dvou produktů"
+      ],
+      "offline": "full",
+      "offline_note": "OCR a seznamy v zařízení; žádná databáze produktů ani server.",
+      "monetization": "Zdarma 3 kontroly denně, Pro 2,99 USD/měsíc (≈ 69 Kč) nebo 14,99 USD/rok (≈ 345 Kč).",
+      "revenue_math": "Ideál v ustáleném stavu: 2000 stažení/měsíc × 3 % převod na předplatné při měsíčním odchodu 6 % → cca 1000 aktivních předplatitelů × 2,99 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 58 454 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 58454,
+      "keywords": [
+        {
+          "kw": "fungal acne",
+          "saturation": 2,
+          "competitor": "žádná silná appka",
+          "note": "odhad; komunita používá weby (Sezia, Folliculitis Scout)"
+        },
+        {
+          "kw": "ingredient checker skincare",
+          "saturation": 5,
+          "competitor": "INCI Beauty / SkinSort",
+          "note": "odhad"
+        },
+        {
+          "kw": "fungal acne safe",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad"
+        },
+        {
+          "kw": "fragrance allergen checker",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad z vlastní znalosti: subreddit r/FungalAcne (desítky tisíc členů) a weby Sezia/Folliculitis Scout dokazují zájem; skincare scannery (Yuka, INCI Beauty) dokazují placený trh. V Apple datech neověřeno.",
+      "competitors": [
+        {
+          "name": "INCI Beauty",
+          "url": "",
+          "role": "parent",
+          "note": "FR databázový scanner kosmetiky"
+        },
+        {
+          "name": "Yuka",
+          "url": "",
+          "role": "parent",
+          "note": "Scanner potravin a kosmetiky, serverový"
+        },
+        {
+          "name": "SkinSort",
+          "url": "",
+          "role": "niche",
+          "note": "Web/app s kontrolou ingrediencí, online"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "1.4.1: „fungal acne safe“ může působit jako zdravotní tvrzení – recenzent může chtít důkazy.",
+        "Seznamy triggerů jsou komunitní, ne vědecky konsenzuální; spory v recenzích.",
+        "OCR drobného písma na zakřivených tubách je obtížné.",
+        "SkinSort nebo INCI Beauty mohou přidat filtr fungal acne za týden."
+      ],
+      "killer_risk": "Odmítnutí nebo reputační riziko kvůli zdánlivě zdravotním tvrzením.",
+      "mitigation": "Formulace „obsahuje ingredience z vašeho seznamu“, citace zdrojů seznamů, žádné slovo „léčí/bezpečné“; hlavní pozici stavět na osobních seznamech.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-13",
+      "name": "Voucher Vault: Gift Cards & Coupons",
+      "tagline": "Dárkové karty, poukázky a papírové kupóny se zůstatkem a expirací – nic už nepropadne.",
+      "pitch": "Každý má v šuplíku dárkovou kartu s neznámým zůstatkem a poukaz na masáž, který propadl před měsícem. V USA zůstávají nevyčerpané dárkové karty za miliardy dolarů ročně. Voucher Vault naskenuje kartu nebo poukaz, zapamatuje si kód, zůstatek (ručně po každém nákupu) a expiraci a včas připomene. Widget ukáže „kolik mám u obchodu X“, když tam stojíte. Offline, bez účtu, bez prodeje dat.",
+      "niche": "Gift-card appky jsou většinou tržiště na nákup/prodej karet (server, podvody). Čistá osobní evidence zůstatků a expirací poukazů je mezera.",
+      "parent_market": "Peněženky věrnostních a dárkových karet – Stocard (ukončen), Klarna, Gyft, Raise (tržiště), Barcode Wallet (evidence).",
+      "target_user": "Rodiny, které dostávají dárkové karty k Vánocům/narozeninám, sběrači slevových kupónů, firemní benefity (stravenky/poukazy).",
+      "features": [
+        "Sken kódu a čísla karty (Vision), PIN skrytý za Face ID",
+        "Ruční zůstatek s historií čerpání",
+        "Expirace a připomínky",
+        "Papírové poukazy s fotkou",
+        "Widget s celkovou hodnotou nevyčerpaných karet"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně; zůstatek zadává uživatel (žádné ověřování přes API vydavatelů).",
+      "monetization": "Zdarma 5 karet, odemčení 3,99 USD (≈ 92 Kč) jednorázově.",
+      "revenue_math": "Ideál: 2500 stažení/měsíc × 5 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 9 751 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 9751,
+      "keywords": [
+        {
+          "kw": "gift card wallet",
+          "saturation": 5,
+          "competitor": "generické peněženky",
+          "note": "odhad"
+        },
+        {
+          "kw": "gift card balance tracker",
+          "saturation": 3,
+          "competitor": "generické appky",
+          "note": "odhad; nezaměnit s tržišti karet"
+        },
+        {
+          "kw": "voucher tracker",
+          "saturation": 2,
+          "competitor": "žádná silná",
+          "note": "odhad"
+        },
+        {
+          "kw": "coupon expiry",
+          "saturation": 2,
+          "competitor": "žádná silná",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Web (books evidence): generické barcode peněženky existují (Barcode Wallet, Loyalty Card Wallet), ale zůstatky/expirace nemají. Zbytek je vlastní znalost (nevyčerpané karty v USA – známý problém). Objem frází neověřen.",
+      "competitors": [
+        {
+          "name": "Barcode Wallet",
+          "url": "https://apps.apple.com/us/app/barcode-wallet/id6746732896",
+          "role": "niche",
+          "note": "Generická peněženka kódů, bez zůstatků"
+        },
+        {
+          "name": "Anycode Wallet",
+          "url": "https://apps.apple.com/us/app/anycode-wallet/id1538232377",
+          "role": "niche",
+          "note": "Generická peněženka kódů"
+        },
+        {
+          "name": "Gyft",
+          "url": "",
+          "role": "parent",
+          "note": "Tržiště dárkových karet, serverové"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Apple Wallet podporuje některé dárkové karty přímo (Sherlock).",
+        "Ruční aktualizace zůstatku – lidé na to zapomenou.",
+        "Podobnost s CardShare (stejný vývojář, peněženka) – riziko 4.3 a kanibalizace.",
+        "Citlivé údaje (PIN) → nároky na bezpečnost a důvěru."
+      ],
+      "killer_risk": "Překryv s CardShare a Apple Wallet – těžko obhájit samostatnou appku.",
+      "mitigation": "Odlišit zaměřením na hodnotu a expiraci (finanční pohled, graf „propadne“), nebo sloučit jako Pro modul CardShare, pokud 4.3 hrozí.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-14",
+      "name": "Card Show Ledger: Buy Sell Trade",
+      "tagline": "Nákupy, prodeje a výměny sběratelských karet na burze – s ziskem za každý kus i za celý den.",
+      "pitch": "Dealeři sportovních a Pokémon karet na burzách a card shows dělají desítky obchodů za den, často výměny karta za kartu plus hotovost, a pak nevědí, jestli den byl ziskový. Cenové appky (Collectr, Card Ladder) řeší hodnotu sbírky přes server, ne účetnictví obchodů. Card Show Ledger zapíše nákup/prodej/výměnu s procentem z ceny, které si dealer sám nastaví, a spočítá zisk za show, za kartu i cestovní náklady stolu. Offline v sálech bez signálu.",
+      "niche": "Evidence finance uvádí „card-show dealer buy/sell/trade log“ jako otevřený, neověřený; VendorPOS zmiňuje card shows, ale je to POS. Výměny (trade s rozdílem) nikdo neúčtuje.",
+      "parent_market": "Sběratelské karty – Collectr, Card Ladder, TCGplayer, Ludex; trh sportovních karet a Pokémon TCG v miliardách USD.",
+      "target_user": "Dealeři a vážní sběratelé karet na card shows (USA, UK, DE, JP), obchodníci s Pokémon TCG.",
+      "features": [
+        "Rychlý zápis: nákup/prodej/trade (karty in + karty out + hotovost)",
+        "Procento z tržní ceny, které dealer zadá (např. buy 70 %)",
+        "Zisk za show vč. poplatku za stůl a cesty",
+        "Inventář s fotkou karty a nákupní cenou",
+        "Export pro daně"
+      ],
+      "offline": "full",
+      "offline_note": "Bez cenových API (licencovaná data) – hodnoty zadává dealer; vše lokálně.",
+      "monetization": "Pro 3,99 USD/měsíc (≈ 92 Kč) nebo 29,99 USD/rok (≈ 690 Kč); zdarma 1 show.",
+      "revenue_math": "Ideál v ustáleném stavu: 1200 stažení/měsíc × 5 % převod na předplatné při měsíčním odchodu 6 % → cca 1000 aktivních předplatitelů × 3,99 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 78 004 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 78004,
+      "keywords": [
+        {
+          "kw": "card show",
+          "saturation": 3,
+          "competitor": "VendorPOS",
+          "note": "odhad; web evidence ukazuje, že VendorPOS zmiňuje card shows"
+        },
+        {
+          "kw": "card dealer tracker",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad"
+        },
+        {
+          "kw": "trade tracker cards",
+          "saturation": 2,
+          "competitor": "sběratelské appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "sports card inventory",
+          "saturation": 5,
+          "competitor": "Collectr / Ludex",
+          "note": "odhad; obsazené cenovými appkami"
+        }
+      ],
+      "demand_evidence": "Web (finance evidence): VendorPOS (mentions card shows) existuje – dealeři hledají nástroje; niche log označen jako otevřený, ale neověřený. Velikost trhu sportovních karet je vlastní znalost.",
+      "competitors": [
+        {
+          "name": "VendorPOS",
+          "url": "https://apps.apple.com/tt/app/vendorpos/id6760127529",
+          "role": "niche",
+          "note": "POS pro prodejce, zmiňuje card shows"
+        },
+        {
+          "name": "Collectr",
+          "url": "",
+          "role": "parent",
+          "note": "Hodnota sbírky TCG, serverové ceny"
+        },
+        {
+          "name": "Card Ladder",
+          "url": "",
+          "role": "parent",
+          "note": "Cenová data sportovních karet, předplatné"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Card show kultura je americká, ale Pokémon/One Piece TCG boom je globální (DE, FR, JP, BR); lokalizovaný offline log pro dealery mimo USA chybí.",
+      "devils_advocate": [
+        "Dealeři chtějí automatické ceny – bez licencovaných dat je appka „jen sešit“.",
+        "Úzký segment (dealeři, ne sběratelé) – malý objem hledání.",
+        "Collectr nebo Card Ladder přidají „show mode“ a mají cenová data.",
+        "Pokémon a sportovní ligy jsou ochranné známky – pozor na názvy a obrázky."
+      ],
+      "killer_risk": "Chybějící automatické ceny učiní appku méně atraktivní než cenové platformy.",
+      "mitigation": "Soustředit se na účetnictví obchodů a výměn (co cenové appky nedělají), rychlost zápisu a daně; ceny nechat ručně.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 7,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-15",
+      "name": "Cool Off: 30-Day Wishlist",
+      "tagline": "Chcete to? Dejte tomu 30 dní. Pokud to pořád chcete, kupte – jinak jste ušetřili.",
+      "pitch": "Pravidlo 30 dní (nebo 72 hodin) je nejznámější trik proti impulzivním nákupům, ale lidé ho dodržují jen v hlavě. Cool Off je wishlist s časovačem: přidáte věc (sdílením z e-shopu nebo fotkou), appka ji „zamkne“ na zvolenou dobu, pak se zeptá, jestli ji pořád chcete, a sčítá ušetřené peníze. Wishlisty jsou buď dárkové (serverové), nebo obecné; žádný není postavený kolem psychologie odkladu.",
+      "niche": "Evidence finance zmiňuje „impulse-buy cooling-off wishlist“ jako neověřený nápad. Wishlist appky řeší dárky nebo sledování cen (server), ne behaviorální odklad.",
+      "parent_market": "Wishlisty a úsporné/no-spend appky – Giftster, generické Wishlist appky, rozpočtové appky (YNAB, Copilot) a trend „underconsumption core“/no-buy.",
+      "target_user": "Lidé bojující s impulzivními nákupy (Temu/Shein/TikTok Shop), mladí dospělí, lidé s ADHD.",
+      "features": [
+        "Přidání věci ze Share Sheet (název, cena, odkaz – bez stahování dat)",
+        "Čekací doba 72 h / 7 / 30 dní",
+        "Rozhodnutí po uplynutí: koupit / nechat → ušetřeno",
+        "Počítadlo ušetřených peněz a streaky",
+        "Widget „co čeká“"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně; odkaz se ukládá jako text, žádné stahování cen.",
+      "monetization": "Zdarma 5 položek, odemčení 3,99 USD (≈ 92 Kč) jednorázově.",
+      "revenue_math": "Ideál: 2500 stažení/měsíc × 5 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 9 751 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 9751,
+      "keywords": [
+        {
+          "kw": "30 day rule",
+          "saturation": 2,
+          "competitor": "žádná silná",
+          "note": "odhad"
+        },
+        {
+          "kw": "impulse buying",
+          "saturation": 2,
+          "competitor": "generické appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "wishlist",
+          "saturation": 7,
+          "competitor": "generické Wishlist appky",
+          "note": "odhad; hlava přeplněná, použít jen jako parent"
+        },
+        {
+          "kw": "stop impulse buying",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad"
+        },
+        {
+          "kw": "no buy",
+          "saturation": 3,
+          "competitor": "no-spend challenge appky",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Finance evidence uvádí „impulse-buy cooling-off wishlist“ a „no-spend challenge“ jako neověřené kandidáty. Z vlastní znalosti: trend #nobuy2025 a „underconsumption“ na TikToku. Objem hledání neověřen.",
+      "competitors": [
+        {
+          "name": "ChronoQueue - Watch Wishlists",
+          "url": "https://apps.apple.com/us/app/chronoqueue-watch-wishlists/id6751517365",
+          "role": "niche",
+          "note": "Wishlist se zaměřením na hodinky (web evidence) – ukazuje ochotu mít specializované wishlisty"
+        },
+        {
+          "name": "Giftster",
+          "url": "",
+          "role": "parent",
+          "note": "Dárkový wishlist, serverový"
+        },
+        {
+          "name": "No Spend Challenge appky",
+          "url": "",
+          "role": "niche",
+          "note": "Výzvy, bez wishlistu"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Koncept „30-day rule“ a no-buy je silně anglofonní (US/UK influenceři); lokalizované verze v DE/FR/ES/JP chybí.",
+      "devils_advocate": [
+        "Lidé s problémem impulzivních nákupů appku stáhnou impulzivně a pak ji ignorují.",
+        "Nízká monetizace – kdo chce šetřit, neplatí.",
+        "Poznámky/Reminders nahradí 80 % funkce.",
+        "Trend „no buy“ může rychle vyhasnout."
+      ],
+      "killer_risk": "Nízká ochota platit u publika, které se snaží utrácet méně.",
+      "mitigation": "Ukázat ušetřené peníze jako hlavní metriku (appka se „zaplatí“ první položkou), nízká jednorázová cena, sdílitelné karty „ušetřil jsem X“.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-16",
+      "name": "Protein Per Dollar",
+      "tagline": "Který jogurt, tvaroh nebo prášek vám dá nejvíc bílkovin za korunu? Vyfoťte etiketu.",
+      "pitch": "Gym komunita neustále řeší „protein per dollar“ – tabulky na Redditu srovnávají tvaroh, kuře a prášky. Na App Store to řeší obecné kalkulačky, kde musíte ručně opsat cenu, gramáž a nutriční hodnoty. Protein Per Dollar vyfotí nutriční tabulku a cenovku, přes on-device OCR vytáhne bílkoviny na 100 g i cenu a seřadí produkty podle ceny za 100 g bílkovin (a kalorií na gram bílkoviny). Jasné publikum, jasná fráze.",
+      "niche": "Kalorické appky (MyFitnessPal) ceny neřeší, unit-price kalkulačky neřeší makra. Průnik „makra × cena“ nikdo nevlastní.",
+      "parent_market": "Fitness nutrice a úsporné nakupování – MyFitnessPal, MacroFactor, Cronometer; unit-price kalkulačky.",
+      "target_user": "Posilující na rozpočtu, studenti, lidé na redukci s vysokým příjmem bílkovin.",
+      "features": [
+        "OCR nutriční tabulky a ceny (Vision)",
+        "Cena za 100 g bílkovin a poměr kcal/protein",
+        "Žebříček uložených produktů podle obchodu",
+        "Porcování: kolik stojí 30 g bílkovin",
+        "Sdílení žebříčku jako obrázek"
+      ],
+      "offline": "full",
+      "offline_note": "OCR a výpočty v zařízení, bez nutriční databáze.",
+      "monetization": "Zdarma 5 produktů, odemčení 3,99 USD (≈ 92 Kč) jednorázově.",
+      "revenue_math": "Ideál: 2500 stažení/měsíc × 5 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 9 751 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 9751,
+      "keywords": [
+        {
+          "kw": "protein per dollar",
+          "saturation": 1,
+          "competitor": "žádná silná",
+          "note": "odhad; výraz běžný na r/fitness a r/EatCheapAndHealthy"
+        },
+        {
+          "kw": "protein calculator",
+          "saturation": 5,
+          "competitor": "makro kalkulačky",
+          "note": "odhad; hlava obsazená kalkulačkami denního příjmu"
+        },
+        {
+          "kw": "cheap protein",
+          "saturation": 2,
+          "competitor": "žádná",
+          "note": "odhad"
+        },
+        {
+          "kw": "protein price compare",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad z vlastní znalosti: opakované „protein per dollar“ tabulky a vlákna na Redditu, weby jako proteinperdollar kalkulačky. Není ověřeno v Apple datech.",
+      "competitors": [
+        {
+          "name": "MyFitnessPal",
+          "url": "",
+          "role": "parent",
+          "note": "Kalorie a makra, bez cen"
+        },
+        {
+          "name": "OZ Price Calculator",
+          "url": "https://apps.apple.com/us/app/oz-price-calculator/id6449945515",
+          "role": "niche",
+          "note": "Cena za jednotku, bez maker"
+        },
+        {
+          "name": "Protein kalkulačky (generické)",
+          "url": "",
+          "role": "niche",
+          "note": "Denní potřeba bílkovin, ne cena"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "„Protein per dollar“ je US gym kultura; lokalizace „protein per euro/koruna/yen“ s metrickými jednotkami na trzích DE, PL, CZ, BR.",
+      "devils_advocate": [
+        "Fráze může mít malý objem v App Store – lidé to hledají na Googlu/Redditu.",
+        "OCR nutričních tabulek (různé formáty zemí) je chybové.",
+        "MacroFactor nebo MyFitnessPal přidá cenu k potravinám.",
+        "Uživatel porovná 10 produktů jednou a appku už nepotřebuje."
+      ],
+      "killer_risk": "Jednorázové použití – uživatel si žebříček udělá jednou.",
+      "mitigation": "Sledovat ceny v čase a akce (upozornění „tvaroh je teď nejlevnější zdroj“), sdílení s komunitou, nízká cena.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-17",
+      "name": "SizeBook: Family Sizes",
+      "tagline": "Velikosti celé rodiny na jednom místě – oblečení, boty, prsteny, a převod mezi EU, US, UK a JP.",
+      "pitch": "Babička chce koupit vnoučeti bundu, manžel chce koupit manželce boty a nikdo neví, jestli je to EU 38 nebo US 7,5 – a u dětí se to mění každé půl roku. SizeBook ukládá velikosti a míry každého člena rodiny (oblečení, boty, prsten, podprsenka, rukavice), s historií u dětí a převodníkem mezi systémy. Sdílí se přes iCloud s prarodiči. Obecné převodníky velikostí existují, ale nikdo nevlastní „rodinný sešit velikostí“.",
+      "niche": "Převodníky velikostí jsou bezstavové tabulky; rodinná evidence měr s historií a sdílením není. Značkové tabulky velikostí jsou pro velké hráče datovou noční můrou, proto je nechávají být.",
+      "parent_market": "Převodníky velikostí a módní appky – generické Size Converter appky, Zalando/ASOS (vlastní průvodci velikostí).",
+      "target_user": "Rodiče, prarodiče, partneři kupující dárky; lidé nakupující online v cizích zemích.",
+      "features": [
+        "Profil na člena: oblečení, boty, prsten, míry v cm",
+        "Historie růstu u dětí + odhad další velikosti",
+        "Převod EU/US/UK/JP/CN pro oblečení a boty",
+        "Poznámky ke značkám („u značky X o číslo menší“)",
+        "Sdílení s rodinou přes iCloud"
+      ],
+      "offline": "full",
+      "offline_note": "Statické převodní tabulky v balíčku, data lokálně + iCloud.",
+      "monetization": "Zdarma 2 osoby, odemčení 3,99 USD (≈ 92 Kč) jednorázově.",
+      "revenue_math": "Ideál: 2500 stažení/měsíc × 5 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 9 751 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 9751,
+      "keywords": [
+        {
+          "kw": "size converter",
+          "saturation": 6,
+          "competitor": "generické Size Converter appky",
+          "note": "odhad; hlava obsazená"
+        },
+        {
+          "kw": "family sizes",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad"
+        },
+        {
+          "kw": "clothing sizes kids",
+          "saturation": 3,
+          "competitor": "generické appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "shoe size chart",
+          "saturation": 5,
+          "competitor": "generické převodníky",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad z vlastní znalosti: převodníky velikostí mají stálou poptávku (mnoho titulů). Rodinný úhel neověřen.",
+      "competitors": [
+        {
+          "name": "Size Converter (generické)",
+          "url": "",
+          "role": "parent",
+          "note": "Bezstavové tabulky převodů"
+        },
+        {
+          "name": "Zalando",
+          "url": "",
+          "role": "parent",
+          "note": "Průvodce velikostí jen pro vlastní sortiment"
+        },
+        {
+          "name": "Lug2Lug: Watch Collection",
+          "url": "https://apps.apple.com/us/app/lug2lug-watch-collection/id6778995390",
+          "role": "niche",
+          "note": "Nepřímý analog: evidence osobní sbírky (web evidence); ukazuje ochotu platit za osobní katalogy"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Převodní tabulky mezi značkami se liší – „převod“ může být zavádějící a vést k vráceným nákupům.",
+        "Apple Notes/Kontakty (pole „poznámka“) nahradí jednoduchou verzi.",
+        "Nízká frekvence použití – pár nákupů ročně.",
+        "Hlava „size converter“ je obsazená."
+      ],
+      "killer_risk": "Nízká frekvence použití a snadná náhrada poznámkami.",
+      "mitigation": "Připomínky „dítě pravděpodobně vyrostlo z bot“ podle historie, sdílení s prarodiči a widget; ASO na „family sizes“ a „kids size“.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-18",
+      "name": "School Supply List Checker",
+      "tagline": "Vyfoťte seznam pomůcek od učitele – appka z něj udělá odškrtávací nákupní seznam pro každé dítě.",
+      "pitch": "Každý srpen dostanou rodiče papírový nebo PDF seznam 40 položek („2× sešit 524, 1× pastelky 12 barev“) a pro tři děti to je chaos. School Supply List Checker naskenuje seznam, přes on-device OCR a Apple Foundation Models ho rozdělí na položky s počty, sloučí seznamy sourozenců, označí, co už doma je z loňska, a vytvoří nákupní seznam po obchodech s rozpočtem. V USA jde o masovou sezónní potřebu, v DE/CZ/PL stejně.",
+      "niche": "Nákupní seznamy (AnyList, Bring!) neumí parsovat školní seznamy; retaileři (Target, Walmart) mají seznamy jen pro svůj e-shop a svůj trh.",
+      "parent_market": "Nákupní seznamy – AnyList, Bring!, Listonic, OurGroceries; back-to-school je v USA druhá největší nákupní sezóna roku.",
+      "target_user": "Rodiče školáků (zejména s více dětmi), v USA, DE, CZ, PL, FR.",
+      "features": [
+        "Sken seznamu (VisionKit) a rozpad na položky (Foundation Models, on-device)",
+        "Více dětí, sloučení stejných položek",
+        "„Máme doma“ – inventář z loňska",
+        "Rozpočet a odškrtávání v obchodě",
+        "Sdílení s partnerem přes iCloud"
+      ],
+      "offline": "full",
+      "offline_note": "OCR i parsování na zařízení (Vision + Apple Foundation Models na podporovaných zařízeních, jinak pravidlový parser).",
+      "monetization": "Zdarma 1 dítě, odemčení 3,99 USD (≈ 92 Kč) jednorázově.",
+      "revenue_math": "Sezónní (červenec–září), průměr roku: Ideál: 3000 stažení/měsíc × 5 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 11 701 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 11701,
+      "keywords": [
+        {
+          "kw": "school supply list",
+          "saturation": 3,
+          "competitor": "retailerské appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "back to school list",
+          "saturation": 3,
+          "competitor": "generické appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "school supplies checklist",
+          "saturation": 2,
+          "competitor": "generické appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "schulsachen liste",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad; DE lokalizace"
+        }
+      ],
+      "demand_evidence": "Předpoklad z vlastní znalosti: back-to-school je obrovská nákupní sezóna v USA, retaileři publikují seznamy škol. Konkurence v App Store neověřena.",
+      "competitors": [
+        {
+          "name": "AnyList",
+          "url": "",
+          "role": "parent",
+          "note": "Nákupní seznam bez parsování školních seznamů"
+        },
+        {
+          "name": "Target",
+          "url": "",
+          "role": "parent",
+          "note": "Školní seznamy jen pro vlastní e-shop"
+        },
+        {
+          "name": "Bring! Shopping List",
+          "url": "",
+          "role": "parent",
+          "note": "Sdílené seznamy, EU lídr"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Model „school supply list“ je americký; seznamy pomůcek existují ale i v DE (Materialliste), CZ, PL, FR (liste de fournitures) bez lokalizované appky.",
+      "devils_advocate": [
+        "Silná sezónnost – 80 % stažení za 6 týdnů.",
+        "Apple Notes + Live Text dokáže seznam přepsat zdarma.",
+        "Parsování ručně psaných/fotokopírovaných seznamů může selhat.",
+        "Použití 1× ročně, žádná retence."
+      ],
+      "killer_risk": "Sezónnost s jednorázovým použitím.",
+      "mitigation": "Rozšířit na celoroční „školní nákupy“ (kroužky, tábory, výbava na výlety) a In-App Events v srpnu; nízká jednorázová cena.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-19",
+      "name": "Secret Draw: Offline Secret Santa",
+      "tagline": "Losování Secret Santa / Amigo Oculto / Wichteln bez registrace – telefon koluje kolem stolu.",
+      "pitch": "Secret Santa appky (Elfster, DrawNames) vyžadují e-maily a účty všech účastníků – u rodinného stolu to nikdo nechce. Secret Draw losuje offline: telefon koluje, každý si skrytě zobrazí svého obdarovaného, s výjimkami (páry se nelosují) a limitem ceny. Brazílie má obrovskou tradici „Amigo Oculto/Secreto“, Německo „Wichteln“, Skandinávie „Julklapp“. Lokalizované názvy v ASO jsou přesně ta mezera.",
+      "niche": "Velcí hráči jsou serverové platformy s účty a e-maily; offline pass-the-phone losování s lokálními názvy tradic (BR, DE, SE, PL) nikdo nevlastní.",
+      "parent_market": "Secret Santa appky – Elfster, DrawNames, Secret Santa generátory; každoroční sezónní špička.",
+      "target_user": "Rodiny, přátelé, třídy a kanceláře, zejména v BR, DE, PL, SE, US.",
+      "features": [
+        "Pass-the-phone losování se skrytým odhalením",
+        "Výjimky (páry, loňský obdarovaný)",
+        "Cenový limit a téma",
+        "Opakovatelné skupiny a historie let",
+        "Tisk/sdílení lístečků jako záloha"
+      ],
+      "offline": "full",
+      "offline_note": "Losování, výjimky i historie lokálně; žádné e-maily ani účty.",
+      "monetization": "Zdarma do 6 účastníků, odemčení 2,99 USD (≈ 69 Kč) jednorázově.",
+      "revenue_math": "Sezónní (listopad–prosinec), průměr roku: Ideál: 4000 stažení/měsíc × 3 % konverze × 2,99 USD × 0,85 (provize Apple) × 23 Kč = cca 7 015 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 7015,
+      "keywords": [
+        {
+          "kw": "secret santa",
+          "saturation": 7,
+          "competitor": "Elfster / DrawNames",
+          "note": "odhad; hlava obsazená"
+        },
+        {
+          "kw": "amigo secreto",
+          "saturation": 5,
+          "competitor": "brazilské appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "wichteln",
+          "saturation": 3,
+          "competitor": "DE appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "secret santa offline",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad"
+        },
+        {
+          "kw": "name draw",
+          "saturation": 3,
+          "competitor": "generátory",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad z vlastní znalosti: Secret Santa appky každoročně vystřelí v žebříčcích; „Amigo Secreto“ je v BR masová tradice. Konkrétní saturace neověřena.",
+      "competitors": [
+        {
+          "name": "Elfster",
+          "url": "",
+          "role": "parent",
+          "note": "Serverová Secret Santa platforma s účty"
+        },
+        {
+          "name": "DrawNames",
+          "url": "",
+          "role": "parent",
+          "note": "Losování přes e-mail"
+        },
+        {
+          "name": "Amigo Secreto appky",
+          "url": "",
+          "role": "niche",
+          "note": "BR appky, většinou s účty"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Reverzní i přímá mezera: US model Secret Santa + silné lokální tradice (BR Amigo Oculto, DE Wichteln, SE Julklapp, PL Mikołajki) – lokalizované ASO názvy.",
+      "devils_advocate": [
+        "Extrémní sezónnost (4–6 týdnů).",
+        "Hlava „secret santa“ je obsazená a lokální fráze mají mnoho malých konkurentů.",
+        "Pass-the-phone je trochu nepraktické pro velké kancelářské skupiny.",
+        "Nízká cena a jednorázový nákup."
+      ],
+      "killer_risk": "Krátké sezónní okno a přeplněná hlava.",
+      "mitigation": "Doplnit celoroční losovačky (úklidové služby, kdo řídí, týmy) a ASO na lokální výrazy, kde je konkurence menší.",
+      "build_weeks": 1.5,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 3,
+        "build_ease": 10,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-20",
+      "name": "Refill Notebook: Home Parts",
+      "tagline": "Jaký filtr do digestoře, jakou žárovku do lustru a jakou baterii do ovladače? Vše na jednom místě.",
+      "pitch": "Když doma dojde filtr do čističky, žárovka nebo náplň do tiskárny, člověk leze po žebříku, fotí starou součástku a hledá typové označení. Refill Notebook je katalog opakovaných nákupů domácnosti: fotka štítku, přes OCR vytažené typové číslo, místo v bytě, interval výměny a připomínka. V obchodě jednoduše ukážete fotku nebo číslo. Nikdo tuhle úzkou, ale univerzální potřebu nevlastní.",
+      "niche": "Domácí inventáře (Sortly, HomeZada) řeší pojištění a majetek; manuály spotřebičů (Centriq) jsou serverové. „Co přesně koupit znovu“ je opomenutý úkol.",
+      "parent_market": "Domácí inventáře a údržba – Sortly, HomeZada, Centriq; nákupní seznamy (AnyList) jako místo, kde se to končí.",
+      "target_user": "Majitelé domů a bytů, pronajímatelé s více byty, lidé s mnoha spotřebiči.",
+      "features": [
+        "Fotka štítku + OCR typového čísla (Vision)",
+        "Kategorie: filtry, žárovky, baterie, náplně, vysavačové sáčky",
+        "Umístění (místnost/spotřebič)",
+        "Interval výměny a připomínky",
+        "Přidat do nákupního seznamu (Reminders)"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, iCloud sync, export do Připomínek.",
+      "monetization": "Zdarma 10 položek, odemčení 4,99 USD (≈ 115 Kč) jednorázově.",
+      "revenue_math": "Ideál: 2000 stažení/měsíc × 6 % konverze × 4,99 USD × 0,85 (provize Apple) × 23 Kč = cca 11 707 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 11707,
+      "keywords": [
+        {
+          "kw": "home maintenance",
+          "saturation": 6,
+          "competitor": "HomeZada a další",
+          "note": "odhad; hlava obsazená"
+        },
+        {
+          "kw": "filter replacement reminder",
+          "saturation": 2,
+          "competitor": "generické appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "light bulb finder",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad"
+        },
+        {
+          "kw": "replacement parts",
+          "saturation": 2,
+          "competitor": "žádná silná",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad z vlastní znalosti; productivity evidence uvádí příbuzné neověřené kandidáty (home inventory for insurance, warranty tracker).",
+      "competitors": [
+        {
+          "name": "HomeZada",
+          "url": "",
+          "role": "parent",
+          "note": "Domácí inventář/údržba se serverem"
+        },
+        {
+          "name": "Sortly",
+          "url": "",
+          "role": "parent",
+          "note": "Inventář s cloudem"
+        },
+        {
+          "name": "Centriq",
+          "url": "",
+          "role": "parent",
+          "note": "Manuály spotřebičů, serverové"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Lidé si prostě vyfotí štítek do Fotek a Visual Intelligence ho najde.",
+        "Úsilí na začátku (nafotit vše) je vysoké, hodnota přichází po měsících.",
+        "Nejasné ASO fráze – lidé nehledají „refill notebook“.",
+        "Nízká frekvence použití."
+      ],
+      "killer_risk": "Nejasná vyhledávací fráze – těžko se najde přes ASO.",
+      "mitigation": "ASO na konkrétní úlohy (filter reminder, water filter, furnace filter), průvodce „nafoť dům za 10 minut“ a připomínky výměn jako opakovaná hodnota.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-21",
+      "name": "Preorder Pile: Collectors' Orders",
+      "tagline": "Předobjednávky figurek, her a limitek z pěti obchodů – zálohy, doplatky a data vydání v jednom přehledu.",
+      "pitch": "Sběratelé figurek, modelů, her a limitovaných edic mají předobjednávky u mnoha obchodů, platí zálohy a doplatky a vydání se posouvá o měsíce. Pak je překvapí, že za měsíc musí doplatit 400 USD. Preorder Pile eviduje každou předobjednávku, zálohu, zbývající platbu a odhadované datum, a ukáže cash-flow „co mě čeká“. Nic takového na App Store dedikovaně není.",
+      "niche": "Sběratelské databáze (MyFigureCollection, hobbyDB) jsou serverové katalogy; předobjednávkové cash-flow nikdo neřeší.",
+      "parent_market": "Sběratelské a wishlist appky – MyFigureCollection, hobbyDB, Puzzle Tracker (evidence), ChronoQueue (wishlisty hodinek).",
+      "target_user": "Sběratelé anime figurek, modelářství, deskových her (Kickstarter), limitovaných edic her a vinylů.",
+      "features": [
+        "Předobjednávka: obchod, záloha, doplatek, měna, datum",
+        "Kalendář cash-flow a měsíční součet",
+        "Připomínky doplatku a posunu data",
+        "Stav: předobjednáno → odesláno → doma",
+        "Fotky a odkaz jako text"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, bez katalogů; iCloud sync.",
+      "monetization": "Freemium, Pro 2,99 USD/měsíc (≈ 69 Kč) nebo 19,99 USD/rok (≈ 460 Kč), doživotně 29,99 USD.",
+      "revenue_math": "Ideál v ustáleném stavu: 1200 stažení/měsíc × 5 % převod na předplatné při měsíčním odchodu 6 % → cca 1000 aktivních předplatitelů × 2,99 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 58 454 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 58454,
+      "keywords": [
+        {
+          "kw": "preorder tracker",
+          "saturation": 1,
+          "competitor": "žádná silná",
+          "note": "odhad"
+        },
+        {
+          "kw": "figure collection",
+          "saturation": 4,
+          "competitor": "katalogové appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "collection wishlist",
+          "saturation": 3,
+          "competitor": "Puzzle Tracker / ChronoQueue",
+          "note": "odhad; web evidence ukazuje specializované wishlisty"
+        },
+        {
+          "kw": "kickstarter tracker",
+          "saturation": 2,
+          "competitor": "žádná",
+          "note": "odhad; značku nepoužít v názvu"
+        }
+      ],
+      "demand_evidence": "Web (lifestyle evidence): specializované sběratelské wishlisty existují (ChronoQueue pro hodinky, Puzzle Tracker) – sběratelé používají dedikované appky. Předobjednávkový úhel je neověřený předpoklad.",
+      "competitors": [
+        {
+          "name": "ChronoQueue - Watch Wishlists",
+          "url": "https://apps.apple.com/us/app/chronoqueue-watch-wishlists/id6751517365",
+          "role": "niche",
+          "note": "Wishlist hodinek, bez předobjednávek"
+        },
+        {
+          "name": "Puzzle Tracker",
+          "url": "https://apps.apple.com/us/app/puzzle-tracker/id1561473799",
+          "role": "niche",
+          "note": "Wishlist puzzlí"
+        },
+        {
+          "name": "MyFigureCollection",
+          "url": "",
+          "role": "parent",
+          "note": "Katalog figurek, serverový"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Malá niche – fráze „preorder tracker“ může mít minimální objem.",
+        "Sběratelé používají Excel/Notion.",
+        "Katalogové appky přidají stav předobjednávky.",
+        "Předplatné pro „sešit“ je těžké obhájit."
+      ],
+      "killer_risk": "Malý objem hledání.",
+      "mitigation": "Rozšířit na „collectors budget“ (předobjednávky + wishlist + rozpočet), ASO na více sběratelských komunit, doživotní cena.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 6,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-22",
+      "name": "No-Buy Year Tracker",
+      "tagline": "Váš rok bez zbytečných nákupů: vlastní pravidla, výjimky a počítadlo ušetřených peněz.",
+      "pitch": "Trend „no-buy year“ a „low-buy year“ má na YouTube a TikToku miliony zhlédnutí: lidé si stanoví pravidla (žádné oblečení, jen náhrady spotřebovaných věcí) a veřejně je dodržují. Dnes to dělají v bullet journalu. No-Buy Year Tracker nabízí vlastní pravidla po kategoriích, schválené výjimky, streaky, zápis pokušení („chtěl jsem, nekoupil“) a ušetřené peníze. Rozpočtové appky tohle neumí – sledují útratu, ne pravidla.",
+      "niche": "No-spend challenge appky jsou krátkodobé výzvy; „no-buy rok“ s pravidly po kategoriích nikdo nevlastní.",
+      "parent_market": "Rozpočtové a úsporné appky – YNAB, Copilot, no-spend challenge appky (finance evidence uvádí jako neověřené); trend underconsumption.",
+      "target_user": "Mladí dospělí (hlavně ženy 20–40), minimalisté, lidé splácející dluh.",
+      "features": [
+        "Pravidla po kategoriích (zakázáno / povoleno / výjimka)",
+        "Zápis pokušení a ušetřené částky",
+        "Streaky a měsíční přehled",
+        "Seznam povolených náhrad (dojde-li)",
+        "Sdílitelné měsíční karty"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně.",
+      "monetization": "Zdarma 1 kategorie, odemčení 3,99 USD (≈ 92 Kč) jednorázově.",
+      "revenue_math": "Leden = vrchol (novoroční předsevzetí), průměr roku: Ideál: 3000 stažení/měsíc × 4 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 9 361 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 9361,
+      "keywords": [
+        {
+          "kw": "no buy year",
+          "saturation": 2,
+          "competitor": "žádná silná",
+          "note": "odhad"
+        },
+        {
+          "kw": "no spend challenge",
+          "saturation": 5,
+          "competitor": "No Spend appky",
+          "note": "odhad; finance evidence uvádí jako neověřené"
+        },
+        {
+          "kw": "low buy",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad"
+        },
+        {
+          "kw": "spending challenge",
+          "saturation": 4,
+          "competitor": "savings challenge appky",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad z vlastní znalosti: hashtagy #nobuy2025/#nobuyyear, články v mainstreamových médiích. Finance evidence uvádí no-spend challenge mezi neověřenými kandidáty. Saturace neověřena.",
+      "competitors": [
+        {
+          "name": "No Spend Challenge appky",
+          "url": "",
+          "role": "niche",
+          "note": "Krátkodobé výzvy"
+        },
+        {
+          "name": "YNAB",
+          "url": "",
+          "role": "parent",
+          "note": "Rozpočet, drahé předplatné"
+        },
+        {
+          "name": "Cool Off (náš) jako doplněk",
+          "url": "",
+          "role": "niche",
+          "note": "Pozor na kanibalizaci / 4.3"
+        }
+      ],
+      "us_gap": true,
+      "us_gap_note": "Trend je anglofonní (US/UK/AU); lokalizované verze („Kaufverzicht Jahr“, „année sans achat“) chybí.",
+      "devils_advocate": [
+        "Trend může do roka vyhasnout.",
+        "Překryv s Cool Off (stejný parent „úspory“) – riziko 4.3, musí se výrazně lišit.",
+        "Uživatelé platit nechtějí (šetří).",
+        "Silná lednová sezónnost."
+      ],
+      "killer_risk": "Vyhasnutí trendu a překryv s Cool Off.",
+      "mitigation": "Sloučit Cool Off jako modul, pokud se ukáže slabší; oba produkty stavět na odlišném hlavním úkolu (pravidla vs. odklad).",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 3,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-23",
+      "name": "Restock: Smart Reorder Reminders",
+      "tagline": "Appka se naučí, jak často kupujete prací prášek, kávu a krmivo – a připomene to dřív, než dojde.",
+      "pitch": "Nákupní seznamy čekají, až si vzpomenete, že něco dochází. Restock si zapamatuje, kdy jste co koupili, spočítá průměrný interval spotřeby a připomene nákup pár dní předem – krmivo pro psa, čočky, kávu, pleny. Předplatné e-shopů (Subscribe & Save) to řeší jen pro jeden obchod a tlačí fixní intervaly. Restock je offline a nezávislý na obchodu.",
+      "niche": "Nákupní seznamy reagují, ne předvídají; Amazon Subscribe & Save je vázaný na obchod. Predikce spotřeby z vlastní historie je opomenutá.",
+      "parent_market": "Nákupní seznamy – AnyList, Bring!, OurGroceries, Out of Milk; Amazon Subscribe & Save jako důkaz poptávky po automatizaci.",
+      "target_user": "Rodiny s dětmi a zvířaty, lidé s pravidelnou spotřebou (čočky, léky bez předpisu, káva).",
+      "features": [
+        "Jednoťukové „koupil jsem“ (widget, Siri)",
+        "Průměrný interval a predikce dojití",
+        "Připomínky X dní předem",
+        "Export do nákupního seznamu v Připomínkách",
+        "Náklady na položku za měsíc"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, notifikace lokální.",
+      "monetization": "Zdarma 5 položek, odemčení 3,99 USD (≈ 92 Kč) jednorázově.",
+      "revenue_math": "Ideál: 2500 stažení/měsíc × 5 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 9 751 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 9751,
+      "keywords": [
+        {
+          "kw": "restock reminder",
+          "saturation": 2,
+          "competitor": "generické appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "reorder reminder",
+          "saturation": 2,
+          "competitor": "generické appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "running low",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad"
+        },
+        {
+          "kw": "household supplies tracker",
+          "saturation": 3,
+          "competitor": "pantry appky",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad z vlastní znalosti (popularita Subscribe & Save, pantry appky). Neověřeno v Apple datech.",
+      "competitors": [
+        {
+          "name": "AnyList",
+          "url": "",
+          "role": "parent",
+          "note": "Nákupní seznam bez predikce"
+        },
+        {
+          "name": "Bring! Shopping List",
+          "url": "",
+          "role": "parent",
+          "note": "Sdílené seznamy, EU lídr"
+        },
+        {
+          "name": "Pantry Check",
+          "url": "",
+          "role": "niche",
+          "note": "Inventář spíže s čárovými kódy"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Vyžaduje disciplínu ťuknout „koupil jsem“ – jinak predikce nefunguje.",
+        "Apple Reminders mohou přidat opakování s učením (Apple Intelligence).",
+        "AnyList/Bring! přidají funkci snadno.",
+        "Slabá diferenciace v ASO."
+      ],
+      "killer_risk": "Uživatelé nebudou zapisovat nákupy konzistentně.",
+      "mitigation": "Zápis z widgetu a ze sken účtenky, výchozí intervaly pro běžné položky (pleny, krmivo) bez nutnosti historie.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-24",
+      "name": "Tax Free Tracker: VAT Refunds",
+      "tagline": "Nakupujete v cizině? Appka hlídá minimální částku, formuláře a lhůty, abyste DPH dostali zpět.",
+      "pitch": "Turisté mimo EU (a Britové po Brexitu, Američané, Asiaté) mají nárok na vrácení DPH při nákupech v EU, Japonsku či Koreji – ale každá země má jinou minimální útratu, lhůty a pravidla razítek. Spousta refundací propadne, protože formulář zůstane v kufru. Tax Free Tracker naskenuje účtenku a formulář, ukáže, jestli jste nad limitem obchodu, spočítá očekávanou refundaci a připomene razítko na letišti a lhůtu pro odeslání. Offline v cizině bez dat.",
+      "niche": "Tax-free operátoři (Global Blue, Planet) mají appky jen pro svou síť a s účtem; nezávislý offline přehled napříč operátory a zeměmi neexistuje.",
+      "parent_market": "Tax-free shopping – Global Blue, Planet Tax Free, cestovní a nákupní appky; luxusní nákupní turistika v EU a JP.",
+      "target_user": "Turisté mimo EU nakupující v Evropě (US, UK, CN, GCC), EU turisté nakupující v JP/KR/UK? (UK zrušilo tax-free), nákupní cestovatelé.",
+      "features": [
+        "Statická tabulka minimálních částek a sazeb DPH po zemích (roční aktualizace)",
+        "Sken účtenky a formuláře (Vision)",
+        "Očekávaná refundace po poplatcích operátora (zadané uživatelem)",
+        "Připomínka razítka na hranici a lhůty",
+        "Přehled podle cesty"
+      ],
+      "offline": "full",
+      "offline_note": "Tabulky pravidel jsou v balíčku a aktualizují se s verzí appky; žádná API.",
+      "monetization": "Jednorázově 4,99 USD (≈ 115 Kč), případně 1,99 USD „na jednu cestu“.",
+      "revenue_math": "Ideál: 2000 stažení/měsíc × 6 % konverze × 4,99 USD × 0,85 (provize Apple) × 23 Kč = cca 11 707 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 11707,
+      "keywords": [
+        {
+          "kw": "vat refund",
+          "saturation": 3,
+          "competitor": "Global Blue / Planet",
+          "note": "odhad"
+        },
+        {
+          "kw": "tax free shopping",
+          "saturation": 4,
+          "competitor": "operátorské appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "tax refund calculator travel",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad"
+        },
+        {
+          "kw": "détaxe",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad; FR termín"
+        }
+      ],
+      "demand_evidence": "Předpoklad z vlastní znalosti (rozsah tax-free trhu, stížnosti na propadlé refundace). Neověřeno v Apple datech.",
+      "competitors": [
+        {
+          "name": "Global Blue",
+          "url": "",
+          "role": "parent",
+          "note": "Operátor tax-free, appka jen pro vlastní síť"
+        },
+        {
+          "name": "Planet Tax Free",
+          "url": "",
+          "role": "parent",
+          "note": "Operátor tax-free, serverová appka"
+        },
+        {
+          "name": "ReceiptCam: AI Receipt Tracker",
+          "url": "https://apps.apple.com/us/app/receiptcam-ai-receipt-tracker/id6746401835",
+          "role": "niche",
+          "note": "Sken účtenek, bez tax-free logiky"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Pravidla (limity, digitální validace) se mění – data je nutné aktualizovat každý rok, chyba = špatné recenze.",
+        "Operátoři digitalizují proces (e-validace, automatické refundace), čímž bolest mizí.",
+        "Použití jen při cestách, nízká retence.",
+        "Ochranné známky operátorů v metadatech."
+      ],
+      "killer_risk": "Zastarání pravidel a digitalizace refundací operátory.",
+      "mitigation": "Uvádět zdroj a datum pravidel, ruční přepis limitů uživatelem, zaměřit se na víceoperátorový přehled a připomínky.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 7,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 9,
+        "safety": 5
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-25",
+      "name": "Cart Total: Budget While Shopping",
+      "tagline": "Víte přesně, kolik máte v košíku, ještě než dojdete k pokladně – včetně daně a slev.",
+      "pitch": "Rodiny s pevným rozpočtem (a v USA lidé na SNAP/EBT) sčítají nákup v hlavě nebo v kalkulačce, protože nechtějí u pokladny vracet zboží. Cart Total je běžící součet košíku: vyfotíte cenovku (OCR), zadáte počet, appka přičte daň (US sales tax podle státu, zadaná uživatelem), odečte kupóny a hlídá limit rozpočtu s barevným upozorněním. Rychlé, velké, jednou rukou.",
+      "niche": "Nákupní seznamy ceny sčítají jen okrajově a bez daní; kalkulačky nákupů jsou ruční. Jednoduchý „budget cart“ s OCR cenovek nikdo nevlastní.",
+      "parent_market": "Nákupní kalkulačky a seznamy – generické Grocery/Shopping Calculator appky, AnyList, Instacart (online).",
+      "target_user": "Rodiny s omezeným rozpočtem, studenti, senioři, US domácnosti s EBT.",
+      "features": [
+        "OCR ceny z cenovky, počet kusů",
+        "Daň podle státu/země (zadaná), kupóny a slevy",
+        "Limit rozpočtu s upozorněním",
+        "Více košíků (EBT vs. ostatní)",
+        "Porovnání se skutečnou účtenkou"
+      ],
+      "offline": "full",
+      "offline_note": "OCR a výpočty v zařízení.",
+      "monetization": "Zdarma základ, odemčení OCR a více košíků 3,99 USD (≈ 92 Kč) jednorázově.",
+      "revenue_math": "Ideál: 3000 stažení/měsíc × 4 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 9 361 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 9361,
+      "keywords": [
+        {
+          "kw": "grocery calculator",
+          "saturation": 5,
+          "competitor": "generické kalkulačky",
+          "note": "odhad"
+        },
+        {
+          "kw": "shopping calculator",
+          "saturation": 5,
+          "competitor": "generické kalkulačky",
+          "note": "odhad"
+        },
+        {
+          "kw": "grocery budget",
+          "saturation": 4,
+          "competitor": "rozpočtové appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "cart total",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad"
+        },
+        {
+          "kw": "ebt calculator",
+          "saturation": 2,
+          "competitor": "EBT appky (Propel)",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad z vlastní znalosti: kategorie „grocery calculator“ má mnoho malých appek = poptávka, ale obsazenost. Neověřeno.",
+      "competitors": [
+        {
+          "name": "Grocery Calculator (generické)",
+          "url": "",
+          "role": "niche",
+          "note": "Ruční kalkulačky nákupu"
+        },
+        {
+          "name": "Propel (EBT)",
+          "url": "",
+          "role": "parent",
+          "note": "EBT zůstatek, serverová"
+        },
+        {
+          "name": "AnyList",
+          "url": "",
+          "role": "parent",
+          "note": "Seznam s cenami bez daní"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Obsazená hlava a nízká diferenciace.",
+        "Samoobslužné skenery v obchodech (Scan & Go) ukazují součet přímo.",
+        "Zadávání každé položky zpomaluje nákup.",
+        "Nízká ochota platit u rozpočtově omezeného publika."
+      ],
+      "killer_risk": "Scan & Go technologie obchodů a ruční tření.",
+      "mitigation": "Maximální rychlost (OCR + velká tlačítka), zaměření na obchody bez Scan & Go a na trhy mimo USA; nízká cena.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 6,
+        "blue_ocean": 4,
+        "monetization": 4,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-26",
+      "name": "Stockpile: Pantry Rotation",
+      "tagline": "Zásoby pro velkou rodinu nebo krizi: cílové množství, spotřeba podle data (FIFO) a co dokoupit.",
+      "pitch": "Couponeři, preppeři a velké rodiny drží zásoby na měsíce – a pak vyhazují prošlé konzervy, protože nerotují. Pantry appky řeší „co je v lednici“; nikdo neřeší „mám cílově 24 konzerv, 6 jich projde v březnu, dokup 8“. Stockpile eviduje zásoby s cílovým stavem, dávkami s různými daty spotřeby, rotací FIFO a nákupním seznamem na doplnění. Státní doporučení (DE „Notvorrat“, CZ, CH) dávají lokalizovanou šablonu.",
+      "niche": "Pantry appky (Pantry Check, NoWaste) cílí na lednici a plýtvání; „stockpile“ s cílovými množstvími a nouzovými zásobami je opomenutý.",
+      "parent_market": "Inventář potravin a nákupní seznamy – Pantry Check, NoWaste, KitchenPal, AnyList.",
+      "target_user": "Preppeři, couponeři (US), velké rodiny, lidé řídící se doporučením státu na nouzové zásoby (DE, CH, SE, CZ).",
+      "features": [
+        "Položky s cílovým stavem a dávkami podle data spotřeby",
+        "FIFO: co spotřebovat nejdřív",
+        "Seznam na doplnění do cíle",
+        "Šablony nouzových zásob podle zemí (statické)",
+        "Sken čárového kódu jen jako lokální identifikátor"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, iCloud sync; šablony zásob v balíčku.",
+      "monetization": "Zdarma 30 položek, Pro 2,49 USD/měsíc (≈ 57 Kč) nebo 17,99 USD/rok (≈ 414 Kč).",
+      "revenue_math": "Ideál v ustáleném stavu: 1500 stažení/měsíc × 4 % převod na předplatné při měsíčním odchodu 6 % → cca 1000 aktivních předplatitelů × 2,49 USD/měsíc (ekvivalent ročního plánu) × 0,85 × 23 Kč = cca 48 680 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 48680,
+      "keywords": [
+        {
+          "kw": "stockpile tracker",
+          "saturation": 2,
+          "competitor": "žádná silná",
+          "note": "odhad"
+        },
+        {
+          "kw": "pantry inventory",
+          "saturation": 6,
+          "competitor": "Pantry Check a další",
+          "note": "odhad; hlava obsazená"
+        },
+        {
+          "kw": "emergency food supply",
+          "saturation": 2,
+          "competitor": "prepper appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "notvorrat",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad; DE termín"
+        }
+      ],
+      "demand_evidence": "Předpoklad z vlastní znalosti (couponing, prepping, státní kampaně na nouzové zásoby v DE/SE). Utilities evidence zmiňuje „stockpile volume“ jen jako neověřený (jiný význam).",
+      "competitors": [
+        {
+          "name": "Pantry Check",
+          "url": "",
+          "role": "parent",
+          "note": "Inventář spíže"
+        },
+        {
+          "name": "NoWaste",
+          "url": "",
+          "role": "parent",
+          "note": "Proti plýtvání, lednice"
+        },
+        {
+          "name": "KitchenPal",
+          "url": "",
+          "role": "parent",
+          "note": "Spíž + recepty"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Zadání velké zásoby je náročné (stovky položek).",
+        "Pantry appky přidají cílové stavy snadno.",
+        "Prepper publikum je citlivé na „vládní“ doporučení – kulturní nuance.",
+        "Hlava „pantry“ je obsazená."
+      ],
+      "killer_risk": "Náročné prvotní zadání zásob.",
+      "mitigation": "Šablony podle země a velikosti domácnosti, hromadné přidání po kategoriích, zadání dávky jedním skenem.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 6,
+        "monetization": 5,
+        "build_ease": 7,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-27",
+      "name": "Hunt List: Flea Market Wants",
+      "tagline": "Kapesní seznam toho, co sbíráte – s maximální cenou, stavem a tím, co už máte. Funguje i ve sklepě bez signálu.",
+      "pitch": "Sběratelé na blešácích, burzách a v antikvariátech (desky, knihy, hračky, porcelán) potřebují rychle vědět: mám to už? hledám to? kolik maximálně dát? Obecné katalogy jsou pro jednu komoditu a online. Hunt List je víceoborový „want list“ s maximální cenou, požadovaným stavem a přehledem vlastněného, s okamžitým hledáním a offline provozem. Cílí na burzy, kde je signál mizerný.",
+      "niche": "Discogs, Goodreads a sběratelské katalogy jsou jednooborové a online; víceoborový offline want list pro lovce na blešácích nikdo nevlastní.",
+      "parent_market": "Sběratelské katalogy a wishlisty – Discogs, Collectr, CLZ appky, ChronoQueue (web evidence), Puzzle Tracker (web evidence).",
+      "target_user": "Sběratelé vinylů, knih, hraček, porcelánu; návštěvníci blešáků a burz.",
+      "features": [
+        "Seznam „hledám“ s max. cenou, stavem, variantou",
+        "Seznam „mám“ s rychlou kontrolou duplicit",
+        "Okamžité hledání offline",
+        "Fotka a poznámky, vlastní obory",
+        "Zápis úlovku s cenou a místem"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně; žádné katalogy (data zadává uživatel nebo importuje CSV).",
+      "monetization": "Zdarma 30 položek, odemčení 4,99 USD (≈ 115 Kč) jednorázově.",
+      "revenue_math": "Ideál: 1500 stažení/měsíc × 7 % konverze × 4,99 USD × 0,85 (provize Apple) × 23 Kč = cca 10 243 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 10243,
+      "keywords": [
+        {
+          "kw": "want list",
+          "saturation": 2,
+          "competitor": "žádná silná",
+          "note": "odhad"
+        },
+        {
+          "kw": "collection wishlist",
+          "saturation": 3,
+          "competitor": "ChronoQueue / Puzzle Tracker",
+          "note": "odhad; web evidence ukazuje specializované wishlisty"
+        },
+        {
+          "kw": "flea market",
+          "saturation": 3,
+          "competitor": "tržiště/mapy",
+          "note": "odhad"
+        },
+        {
+          "kw": "collectors wishlist",
+          "saturation": 2,
+          "competitor": "žádná silná",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Web (lifestyle evidence): specializované sběratelské wishlisty existují (ChronoQueue – hodinky, Puzzle Tracker). Víceoborový úhel je neověřený předpoklad.",
+      "competitors": [
+        {
+          "name": "ChronoQueue - Watch Wishlists",
+          "url": "https://apps.apple.com/us/app/chronoqueue-watch-wishlists/id6751517365",
+          "role": "niche",
+          "note": "Wishlist jednoho oboru"
+        },
+        {
+          "name": "Puzzle Tracker",
+          "url": "https://apps.apple.com/us/app/puzzle-tracker/id1561473799",
+          "role": "niche",
+          "note": "Wishlist/sbírka puzzlí, jediná dedikovaná appka"
+        },
+        {
+          "name": "Discogs",
+          "url": "",
+          "role": "parent",
+          "note": "Katalog vinylů s wantlistem, online"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Discogs má offline režim a wantlist pro vinyly – nejsilnější obor je obsazen.",
+        "Víceoborovost znamená nejasné ASO.",
+        "Malý objem hledání.",
+        "Sběratelé bez katalogových dat nebudou chtít vše psát ručně."
+      ],
+      "killer_risk": "Nejasné ASO a obsazení hlavních oborů specializovanými katalogy.",
+      "mitigation": "Cílit na obory bez dominantní appky (porcelán, knihy z druhé ruky, retro hračky) a importy CSV.",
+      "build_weeks": 2,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 6,
+        "monetization": 4,
+        "build_ease": 9,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-28",
+      "name": "Hand-Me-Down Closet",
+      "tagline": "Oblečení po starších sourozencích podle velikostí a sezón – víte, co máte v krabici, než koupíte nové.",
+      "pitch": "Rodiny s více dětmi skladují krabice oblečení po starších sourozencích a pak stejně koupí novou bundu, protože nevědí, co v krabici je. Hand-Me-Down Closet eviduje oblečení podle velikosti, sezóny a krabice, upozorní, že mladší dítě brzy doroste do velikosti 110 a že v krabici č. 3 jsou dvě zimní bundy. Nákupní seznam na sezónu pak obsahuje jen to, co opravdu chybí.",
+      "niche": "Šatníkové appky (Stylebook, Acloset) jsou pro dospělé a jejich styling; dětské oblečení podle velikostí a krabic je ignorované.",
+      "parent_market": "Šatníkové a organizační appky – Stylebook, Acloset, Cladwell; rodinné organizéry.",
+      "target_user": "Rodiče 2+ dětí, pěstouni, rodiny, které si oblečení půjčují mezi sebou.",
+      "features": [
+        "Kusy podle velikosti, sezóny, krabice (fotka)",
+        "Děti s aktuální velikostí a odhadem růstu",
+        "Upozornění „brzy potřebná velikost“ + co je v zásobě",
+        "Nákupní seznam chybějícího na sezónu",
+        "Označení k prodeji/darování"
+      ],
+      "offline": "full",
+      "offline_note": "Vše lokálně, iCloud sdílení s partnerem.",
+      "monetization": "Zdarma 40 kusů, odemčení 4,99 USD (≈ 115 Kč) jednorázově.",
+      "revenue_math": "Ideál: 1500 stažení/měsíc × 7 % konverze × 4,99 USD × 0,85 (provize Apple) × 23 Kč = cca 10 243 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 10243,
+      "keywords": [
+        {
+          "kw": "hand me down",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad"
+        },
+        {
+          "kw": "kids clothes organizer",
+          "saturation": 2,
+          "competitor": "generické appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "kids wardrobe",
+          "saturation": 3,
+          "competitor": "šatníkové appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "clothes inventory",
+          "saturation": 4,
+          "competitor": "šatníkové appky",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad z vlastní znalosti (rodičovská fóra, Pinterest organizace krabic). Neověřeno v Apple datech.",
+      "competitors": [
+        {
+          "name": "Stylebook",
+          "url": "",
+          "role": "parent",
+          "note": "Šatník dospělých, placený"
+        },
+        {
+          "name": "Acloset",
+          "url": "",
+          "role": "parent",
+          "note": "AI šatník, serverový"
+        },
+        {
+          "name": "SizeBook (náš)",
+          "url": "",
+          "role": "niche",
+          "note": "Doplněk – pozor na 4.3"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Nafocení desítek kusů dětského oblečení je obrovská práce.",
+        "Malý objem hledání.",
+        "Překryv se SizeBook – kanibalizace.",
+        "Nízká ochota platit."
+      ],
+      "killer_risk": "Úsilí zadání vs. hodnota.",
+      "mitigation": "Evidovat po krabicích/počtech (ne po kusech), rychlé fotky celé krabice; zvážit sloučení se SizeBook.",
+      "build_weeks": 3,
+      "scores": {
+        "demand": 3,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 8,
+        "offline_fit": 10,
+        "safety": 8
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-29",
+      "name": "Grocery Abroad: Expat Shopping List",
+      "tagline": "Nákupní seznam ve vašem jazyce, v obchodě v jazyce země – s fotkami, jak produkt v dané zemi vypadá.",
+      "pitch": "Expat v Německu hledá jedlou sodu, podmáslí nebo tvaroh a neví, jak se to jmenuje ani v jakém regálu to je. Překladač přeloží slovo, ale ne „v DE koupíte Natron, je vedle droždí“. Grocery Abroad je dvojjazyčný nákupní seznam s přibaleným slovníkem 1 500 potravin a drogerie pro 30 zemí, lokálními ekvivalenty (co tam místo toho koupit) a režimem „ukaž prodavači“. Expatů jsou desítky milionů a nikdo jim nákupní seznam nestaví.",
+      "niche": "Nákupní seznamy (Bring!, AnyList) jsou jednojazyčné; překladače neznají lokální ekvivalenty produktů. Expat komunity řeší otázky ve Facebook skupinách.",
+      "parent_market": "Nákupní seznamy – Bring! (silný v DACH), AnyList, Listonic; překladače Google Translate, DeepL.",
+      "target_user": "Expati, zahraniční studenti, digitální nomádi, nově přistěhovalé rodiny.",
+      "features": [
+        "Seznam ve vlastním jazyce, zobrazení v jazyce země",
+        "Offline slovník potravin s lokálními ekvivalenty",
+        "Režim „ukaž prodavači“ velkým písmem",
+        "Typické oddělení v obchodě",
+        "Vlastní položky a poznámky"
+      ],
+      "offline": "full",
+      "offline_note": "Slovník a ekvivalenty v balíčku; žádný překladový server.",
+      "monetization": "Zdarma 1 země, odemčení všech 5,99 USD (≈ 138 Kč) jednorázově.",
+      "revenue_math": "Ideál: 1500 stažení/měsíc × 6 % konverze × 5,99 USD × 0,85 (provize Apple) × 23 Kč = cca 10 539 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 10539,
+      "keywords": [
+        {
+          "kw": "expat shopping list",
+          "saturation": 1,
+          "competitor": "žádná",
+          "note": "odhad"
+        },
+        {
+          "kw": "grocery translator",
+          "saturation": 2,
+          "competitor": "žádná silná",
+          "note": "odhad"
+        },
+        {
+          "kw": "food translator",
+          "saturation": 4,
+          "competitor": "překladové appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "shopping list translate",
+          "saturation": 2,
+          "competitor": "žádná silná",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad z vlastní znalosti (dotazy v expat skupinách „where to buy X in Germany“). Neověřeno v Apple datech.",
+      "competitors": [
+        {
+          "name": "Bring! Shopping List",
+          "url": "",
+          "role": "parent",
+          "note": "Sdílené seznamy, jednojazyčné"
+        },
+        {
+          "name": "Google Translate",
+          "url": "",
+          "role": "parent",
+          "note": "Obecný překlad, ne ekvivalenty"
+        },
+        {
+          "name": "DeepL",
+          "url": "",
+          "role": "parent",
+          "note": "Obecný překlad"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Google Lens + Translate řeší 70 % případů zdarma (Sherlock).",
+        "Tvorba a údržba kvalitního slovníku ekvivalentů pro 30 zemí je obrovská práce.",
+        "Expati se po 3 měsících naučí a appku smažou – krátký životní cyklus.",
+        "Malý objem hledání."
+      ],
+      "killer_risk": "Kvalita dat ekvivalentů – bez ní je to jen horší překladač.",
+      "mitigation": "Začít 5 zeměmi s největším počtem expatů (DE, NL, ES, JP, CH) a kvalitními daty, pak rozšiřovat; lokalizovaný ASO „expat“ výraz.",
+      "build_weeks": 6,
+      "scores": {
+        "demand": 4,
+        "blue_ocean": 7,
+        "monetization": 4,
+        "build_ease": 5,
+        "offline_fit": 10,
+        "safety": 7
+      },
+      "evidence": "knowledge"
+    },
+    {
+      "id": "shopping-30",
+      "name": "Foot Sizer: Kids Shoe Size",
+      "tagline": "Změřte dětskou nožku doma pomocí papíru A4 a foťáku – a kupte online správnou velikost.",
+      "pitch": "Rodiče kupují dětské boty online a každá druhá se vrací, protože děti rostou a velikosti se mezi značkami liší. Obkreslování nohy a měření pravítkem je nepřesné. Foot Sizer vyfotí chodidlo na listu A4 (známý rozměr = měřítko), přes Vision spočítá délku a šířku, přidá doporučenou rezervu na růst a převede na EU/US/UK velikosti. Vše offline, bez nahrávání fotek dětí na server.",
+      "niche": "AR měřicí startupy nahrávají fotky na server a cílí na B2B e-shopy; offline rodičovský nástroj s ochranou soukromí dětí chybí.",
+      "parent_market": "Převodníky velikostí bot a měřicí appky – generické Shoe Size appky, B2B AR měření (pro e-shopy).",
+      "target_user": "Rodiče malých dětí nakupující online boty, prarodiče.",
+      "features": [
+        "Měření na listu A4 (Vision detekce obdélníku a chodidla)",
+        "Délka, šířka, rezerva na růst",
+        "Převod EU/US/UK/JP",
+        "Historie měření a připomínka přeměření za 3 měsíce",
+        "Žádný upload fotek"
+      ],
+      "offline": "full",
+      "offline_note": "Detekce a výpočet na zařízení; fotky se neukládají, pokud uživatel nechce.",
+      "monetization": "Zdarma 1 měření, odemčení 3,99 USD (≈ 92 Kč) jednorázově.",
+      "revenue_math": "Ideál: 2000 stažení/měsíc × 5 % konverze × 3,99 USD × 0,85 (provize Apple) × 23 Kč = cca 7 800 Kč čistého měsíčně.",
+      "revenue_czk_ideal": 7800,
+      "keywords": [
+        {
+          "kw": "kids shoe size",
+          "saturation": 3,
+          "competitor": "generické appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "foot measure",
+          "saturation": 4,
+          "competitor": "měřicí appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "shoe size measure",
+          "saturation": 4,
+          "competitor": "generické appky",
+          "note": "odhad"
+        },
+        {
+          "kw": "measure foot size",
+          "saturation": 4,
+          "competitor": "generické appky",
+          "note": "odhad"
+        }
+      ],
+      "demand_evidence": "Předpoklad z vlastní znalosti (vysoká vratnost dětských bot, existence měřicích appek). Neověřeno v Apple datech.",
+      "competitors": [
+        {
+          "name": "Shoe Size (generické měřiče)",
+          "url": "",
+          "role": "niche",
+          "note": "Měření na displeji / AR, různé kvality"
+        },
+        {
+          "name": "SizeBook (náš)",
+          "url": "",
+          "role": "niche",
+          "note": "Doplněk – pozor na 4.3"
+        },
+        {
+          "name": "Zalando",
+          "url": "",
+          "role": "parent",
+          "note": "Průvodce velikostí pro vlastní sortiment"
+        }
+      ],
+      "us_gap": false,
+      "us_gap_note": "",
+      "devils_advocate": [
+        "Přesnost měření z fotky (perspektiva, ponožky) – chyba 5 mm = špatná velikost a naštvaní rodiče.",
+        "Velcí e-shopy mají vlastní měřiče zdarma.",
+        "Rozdíly mezi značkami převod zkreslí.",
+        "Kids & data dětí – citlivé na soukromí (5.1.1) i u fotek nohou."
+      ],
+      "killer_risk": "Nepřesnost měření vedoucí k negativním recenzím.",
+      "mitigation": "Zobrazovat rozsah, ne jedno číslo, návod na správné focení, kontrolu kvality snímku; vše offline pro soukromí.",
+      "build_weeks": 4,
+      "scores": {
+        "demand": 5,
+        "blue_ocean": 5,
+        "monetization": 4,
+        "build_ease": 6,
+        "offline_fit": 10,
+        "safety": 6
+      },
+      "evidence": "knowledge"
+    }
+  ]
+}

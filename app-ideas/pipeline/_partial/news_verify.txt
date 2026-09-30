@@ -1,0 +1,12 @@
+NEWS — REVIEWER VERIFY LOG (devil's advocate run)
+Date: 2026-09-30. All URLs copied verbatim from WebSearch results. None constructed.
+
+[1] query: site:apps.apple.com pet food recall alert  (ideas news-01, news-03, news-02)
+    saturation (dedicated recall-alert apps incl. pet food): 7 distinct (Food Recalls & Alerts, Recall Radar, Recalls 365, USA Recalls, Safe Pet Treats [pet-specific, barcode + FDA push], Recall Watch, Woozy) -> SATURATED for "food recall"/"recall alerts"; pet-specific: Safe Pet Treats already does barcode + push; 4 of them launched 2025
+    - Food Recalls & Alerts (includes pet food)   https://apps.apple.com/us/app/food-recalls-alerts/id1508680654
+    - Recall Radar: Food Alerts (food, pet food, drug)  https://apps.apple.com/us/app/recall-radar-food-alerts/id6741593814
+    - Recalls 365: Food Recalls (food, allergen, vehicle, consumer, drug, pet)  https://apps.apple.com/us/app/recalls-365-food-recalls/id6741032452
+    - USA Recalls: Food, Drug Alerts  https://apps.apple.com/us/app/usa-recalls-food-drug-alerts/id6742926499
+    - Safe Pet Treats (pet food barcode scan, recall push)  https://apps.apple.com/us/app/safe-pet-treats/id1023344412
+    - Recall Watch: Product Alerts  https://apps.apple.com/us/app/recall-watch-product-alerts/id6753550502
+    - Woozy: Recall & Safety Alerts (food, auto, pet, baby, pharma)  https://apps.apple.com/mn/app/woozy-recall-safety-alerts/id969894256
