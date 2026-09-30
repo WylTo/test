@@ -1,0 +1,14 @@
+# Photo & Video — reviewer verification searches (WebSearch), 2026-09-30
+
+1) query: "site:apps.apple.com kids art artwork keeper" (2026-09-30) — idea photo-video-03 ArtBox
+   - Kids Art & Memory Saver - Arti https://apps.apple.com/us/app/kids-art-memory-saver-arti/id6753904837
+   - KidArt - Save Your Kids' Art https://apps.apple.com/us/app/kidart-save-your-kids-art/id1575315019
+   - Keepbox - Save Your Kids Art https://apps.apple.com/tz/app/keepbox-save-your-kids-art/id6742782490
+   - Keepbox - Save Your Kids Art https://apps.apple.com/us/app/keepbox-save-your-kids-art/id6742782490
+   - Keepbox https://apps.apple.com/app/id6742782490
+   - KidsAI Art https://apps.apple.com/us/app/kidsai-art/id6784254113 (different intent)
+   - LittlePicasso - Kid's art wall https://apps.apple.com/us/app/littlepicasso-kids-art-wall/id1581923484
+   - Twinkle Art: Save Kids Artwork https://apps.apple.com/kw/app/twinkle-art-save-kids-artwork/id6472695471
+   - Keepy - Artwork & Schoolwork https://apps.apple.com/se/app/keepy-artwork-schoolwork/id647088205?l=en-GB (available in SE store -> not US-only)
+   saturation: 7 dedicated kids-art keeper apps (Arti, KidArt, Keepbox, LittlePicasso, Twinkle Art, Keepy, + Artkive known) -> SATURATED; Keepy is in SE store, so the US-gap claim is weak.
+

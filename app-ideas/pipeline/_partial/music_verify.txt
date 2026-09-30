@@ -37,3 +37,14 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results (none construc
     - (noise) Alerts for Merch           https://apps.apple.com/us/app/alerts-for-merch/id6705116224
     - Bandcamp for Artists & Labels      https://apps.apple.com/us/app/bandcamp-for-artists-labels/id1185670538?ls=1
     - QuiVend: Vendor Companion (2026)   https://apps.apple.com/us/app/quivend-vendor-companion/id6773267361
+
+[4] query: site:apps.apple.com feedback finder ring out  (idea music-14)
+    saturation: 0 relevant — search returned only noise (Oura ring finders, ring sizers). No evidence either way from this query; the phrase "ring out" is ambiguous in search (jewelry/Oura), which also hurts ASO for the exact keyword.
+    - (noise) Find My Ring               https://apps.apple.com/us/app/find-my-ring/id1641303377?see-all=reviews&platform=iphone
+    - (noise) Ring Sizer                 https://apps.apple.com/us/app/ring-sizer-size-measurement/id6467196564
+    - (noise) Our Ring Finder            https://apps.apple.com/us/app/our-ring-finder/id6444858466
+    - (noise) Ring Sizer & Tape Measure  https://apps.apple.com/us/app/ring-sizer-ruler-measure/id1644578569
+    - (noise) Eclipse O-Ring Finder      https://apps.apple.com/us/app/eclipse-o-ring-finder/id1491496693
+    - (noise) Ring Sizer by Jason Withers https://apps.apple.com/us/app/ring-sizer-by-jason-withers/id795721582
+    - (noise) Jewelry Identifier: Jewelio https://apps.apple.com/us/app/jewelry-identifier-jewelio/id6740074022
+    - (noise) Feedback.sa                https://apps.apple.com/us/app/-/id1594004785

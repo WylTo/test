@@ -46,3 +46,15 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results.
     - ADR Tool 2023 Dangerous Goods (cz)  https://apps.apple.com/cz/app/adr-tool-2023-dangerous-goods/id6450241603
     - MYDG2SAVE — ADR Emergency (offline, orange plate) https://apps.apple.com/us/app/mydg2save-adr-emergency/id6795130673
     - UN Numbers Dangerous Goods ADR (no cc) https://apps.apple.com/app/id1668677326
+
+[5] query: site:apps.apple.com fancy serial number star note checker  (idea reference-14)
+    saturation (star note / fancy serial / serial collector in title or core feature): 5 (RareBill on-device OCR, MyCurrencyCollection, LuckyNote, Serial Collector, DollarScan) -> CONTESTED/HARD; RareBill also on br storefront
+    - RareBill: Star Note Lookup (on-device OCR, fancy types) https://apps.apple.com/us/app/rarebill-star-note-lookup/id6801428016
+    - RareBill (br storefront)            https://apps.apple.com/br/app/rarebill-star-note-lookup/id6801428016?l=en-GB
+    - MyCurrencyCollection                https://apps.apple.com/us/app/mycurrencycollection/id6746132029
+    - LuckyNote: Banknote Collecting      https://apps.apple.com/us/app/luckynote-banknote-collecting/id6754352197
+    - Serial Collector                    https://apps.apple.com/us/app/serial-collector/id6761130114
+    - Dollar bill scanner DollarScan      https://apps.apple.com/us/app/dollar-bill-scanner-dollarscan/id6502190178
+    - Banknote scanner: DollarScan (gr)   https://apps.apple.com/gr/app/banknote-scanner-dollarscan/id6502190178
+    - NoteSnap: Banknote Identifier (parent) https://apps.apple.com/us/app/notesnap-banknote-identifier/id6448227169
+    - (noise) Night Sky Star Finder       https://apps.apple.com/us/app/night-sky-star-finder/id1627298548
