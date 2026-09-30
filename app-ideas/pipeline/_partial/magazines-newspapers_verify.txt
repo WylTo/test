@@ -35,3 +35,40 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results. None construc
     - Invitation Card Creator (RSVP)   https://apps.apple.com/us/app/invitation-card-creator-rsvp/id1585509187
     - Invitation Card Maker, RSVP      https://apps.apple.com/us/app/invitation-maker-rsvp-cards/id1320828574
 
+[4] query: site:apps.apple.com arrowword schwedenrätsel  (idea magazines-newspapers-04)
+    saturation (dedicated arrowword / Schwedenrätsel apps): 7+ (Crossword Puzzle arrow words, Schweizer Kreuzworträtsel [Swedish grid], Tägliche Kreuzworträtsel DE [slug krydsord-dk = same publisher localizes DK/DE], Kreuzworträtsel Pro, Kreuzworträtsel mit Lösungen, Kreuzworträtsel Mobile, Crossword: Arrowword x2 EN) -> SATURATED in DE/EN; multi-language localization already practiced by publishers
+    - Crossword Puzzle (arrow words, DE store)   https://apps.apple.com/de/app/crossword-puzzle/id445328274
+    - Schweizer Kreuzworträtsel                  https://apps.apple.com/ch/app/schweizer-kreuzwortr%C3%A4tsel/id953010888
+    - Tägliche Kreuzworträtsel DE (krydsord-dk)  https://apps.apple.com/de/app/krydsord-dk/id688120018?l=de
+    - Kreuzworträtsel Pro: Wortsuche             https://apps.apple.com/de/app/kreuzwortr%C3%A4tsel-pro-wortsuche/id6502603211
+    - Kreuzworträtsel mit Lösungen               https://apps.apple.com/de/app/kreuzwortr%C3%A4tsel-mit-l%C3%B6sungen/id6541756083
+    - Kreuzworträtsel Mobile                     https://apps.apple.com/de/app/kreuzwortr%C3%A4tsel-mobile/id550982960
+    - Crossword: Arrowword                       https://apps.apple.com/zm/app/crossword-arrowword/id1485345280
+    - Crossword: Arrowword puzzles               https://apps.apple.com/ie/app/crossword-arrowword-puzzles/id1538410421
+    - Wortspiele                                 https://apps.apple.com/ch/app/wortspiele/id1488780023?l=de-DE
+
+[5] query: site:apps.apple.com church bulletin maker  (idea magazines-newspapers-05)
+    saturation (dedicated bulletin apps): 3 (Sunday Church Bulletin [web-linked creator, free], churchScribe + BulletinPlus [Pixelark online bulletin readers]) + church-platform apps bundling digital bulletins (Unify, WorshipOne, Custom Church App, ChurchPoint) -> CONTESTABLE; trend is DIGITAL bulletins inside church platforms, not printed booklets; no offline print-first maker found
+    - Sunday Church Bulletin (kz)      https://apps.apple.com/kz/app/sunday-church-bulletin/id1638633463
+    - Sunday Church Bulletin           https://apps.apple.com/us/app/sunday-church-bulletin/id1638633463
+    - churchScribe                     https://apps.apple.com/ug/app/churchscribe/id1292016298
+    - BulletinPlus                     https://apps.apple.com/us/app/bulletinplus/id624251301
+    - Unify - Church App               https://apps.apple.com/us/app/unify-church-app/id1632826226
+    - WorshipOne                       https://apps.apple.com/us/app/worshipone/id6755939039
+    - The Custom Church App            https://apps.apple.com/ca/app/the-custom-church-app/id880244157
+    - ChurchPoint                      https://apps.apple.com/us/app/churchpoint/id1581809224
+    - Arcade Church App (noise)        https://apps.apple.com/us/app/arcade-church-app/id599082642
+    - The Shoreline Church App (noise) https://apps.apple.com/us/app/the-shoreline-church-app/id726534490
+
+[6] query: site:apps.apple.com large print word search seniors  (ideas magazines-newspapers-06, -23)
+    saturation (dedicated senior/large-print word search): 4 (Vita Word Search for Seniors [Vita Studio: whole senior game suite, offline, big letters, 2023], SDC Word Search [AU seniors], Word Search - English [senior-adapted], Word Spells: Game for Seniors) -> CROWDED; Vita = well-funded senior-game studio owning exactly this positioning
+    - Vita Word Search for Seniors (reviews)  https://apps.apple.com/us/app/vita-word-search-for-seniors/id6451130237?see-all=reviews&platform=ipad
+    - SDC Word Search                         https://apps.apple.com/nz/app/sdc-word-search/id6476234515
+    - Vita Word Search for Seniors            https://apps.apple.com/us/app/vita-word-search-for-seniors/id6451130237
+    - Vita Jigsaw for Seniors                 https://apps.apple.com/us/app/vita-jigsaw-for-seniors/id6451403685
+    - Vita Solitaire for Seniors              https://apps.apple.com/us/app/vita-solitaire-for-seniors/id6446669987
+    - The Senior Resource Guide (noise)       https://apps.apple.com/us/app/the-senior-resource-guide/id6756389995
+    - Word Spells: Game for Seniors           https://apps.apple.com/us/app/word-spells-game-for-seniors/id1542930270
+    - Vita Crossword - Word Games             https://apps.apple.com/us/app/vita-crossword-word-games/id6463851493
+    - Word Search - English                   https://apps.apple.com/us/app/word-search-english/id1397368562
+Search budget used: 6/6. Remaining ideas reviewed from knowledge + other _partial files (news_verify [5] read-later saturation reused for idea -09/-21; lifestyle_verify moon calendar for -16; games_evidence kakuro for -22; education_evidence Teeline for -18).

@@ -57,3 +57,15 @@ https://apps.apple.com/pl/app/haircast-flat-iron-weather/id6762104305   (HairCas
 https://apps.apple.com/mw/app/weather-fit-forecast-widget/id1194408342   (Weather Fit outfit planner)
 https://apps.apple.com/us/app/babeweather/id6747877445
 
+## 6) query: site:apps.apple.com balkonkraftwerk solar prognose  (2026-09-30) → CROWDED, sat ~5 dedicated PV forecast apps explicitly for balcony PV in DE (Solar PV Prognose & Warnungen, PV Überschuss Prognose, clever-PV free forecast, Solev, PV Solar Forecast) — author estimated 2–4 with no named competitor
+https://apps.apple.com/de/app/solar-pv-prognose-warnungen/id6479313475   (Solar PV Prognose & Warnungen: roof + balcony, peak times)
+https://apps.apple.com/de/app/pv-%C3%BCberschuss-prognose/id6476922330   (PV Überschuss Prognose: 10-day yield, consumption and surplus forecast — almost identical to weather-04)
+https://apps.apple.com/de/app/pv-wizard/id6762192446
+https://apps.apple.com/de/app/solartelligent-pv-planer/id6470352546
+https://apps.apple.com/de/app/solarertrag/id6448853706
+https://apps.apple.com/de/app/clever-pv/id6448946545   (clever-PV: free AI PV forecast, balcony PV)
+https://apps.apple.com/de/app/solar-pv-vorhersage-solev/id6745899738   (Solev)
+https://apps.apple.com/ch/app/solar-rechner/id6446852474
+https://apps.apple.com/de/app/pv-solar-forecast/id1496274910   (PV Solar Forecast)
+https://apps.apple.com/de/app/pv-optimizer-solar-compass/id971828374
+# search budget exhausted (6/6). All other ideas reviewed from knowledge + _partial evidence files.
