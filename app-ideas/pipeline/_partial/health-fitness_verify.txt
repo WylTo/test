@@ -36,3 +36,15 @@ Date: 2026-09-30. All URLs copied verbatim from WebSearch results. No Apple API 
     - The Pilates Class                               https://apps.apple.com/us/app/the-pilates-class/id1530081615
     - Pilatelise                                      https://apps.apple.com/ml/app/pilatelise/id6463171504
     - (untitled result)                               https://apps.apple.com/us/app/id6741896689
+
+[4] query: site:apps.apple.com nordic walking  (idea health-fitness-12)  date: 2026-09-30
+    saturation (distinct apps with "nordic walking" in title): 5 (XWalk, Nordic Walking (Hanno Welsch, paid), Nordic Walking Lite, JNFA NW, Nordic Walking Park SINW). All GPS trackers / club apps, mostly old (2013-2014) and weak; XWalk 2020 also pitches Camino prep. None focused on technique/interval coaching with Watch. CONTESTABLE (many titles, weak apps).
+    - XWalk: Nordic Walking Tracker (it)          https://apps.apple.com/it/app/xwalk-camminata-nordica/id1531591856
+    - XWalk: Nordic Walking Tracker (am)          https://apps.apple.com/am/app/xwalk-nordic-walking-tracker/id1531591856
+    - Nordic Walking (Hanno Welsch, EUR 5.99)     https://apps.apple.com/it/app/nordic-walking/id895759943
+    - Nordic Walking (au)                         https://apps.apple.com/au/app/nordic-walking/id895759943
+    - JNFA NW (Nordic walking, Japan assoc.)      https://apps.apple.com/us/app/jnfa-nw-nordic-walking/id774480211
+    - JNFA NW (br)                                https://apps.apple.com/br/app/jnfa-nw-nordic-walking/id774480211
+    - Nordic Walking Park - SINW (Italy)          https://apps.apple.com/it/app/nordic-walking-park-sinw/id6444206157
+    - Nordic Walking Lite (ch)                    https://apps.apple.com/ch/app/nordic-walking-lite/id896186299
+    - Nordic Walking Lite (pl)                    https://apps.apple.com/pl/app/nordic-walking-lite/id896186299?l=pl

@@ -1,0 +1,14 @@
+FINANCE — REVIEWER VERIFY LOG (devil's advocate run)
+Date: 2026-09-30. All URLs copied verbatim from WebSearch results. "sat" = distinct apps with the niche phrase in the title.
+
+[1] query: site:apps.apple.com debt snowball  (idea finance-13)
+    sat(debt snowball in title): 4 (Debt Snowball - Payoff Tracker, Debt Snowball Calculator, Debt Payoff Box: Snowball Plan, ClearDebt: Snowball Planner) + 3 strong generic debt payoff apps -> SATURATED in EN
+    - Debt Snowball - Payoff Tracker      https://apps.apple.com/au/app/debt-snowball-payoff-tracker/id1478622759
+    - Debt Snowball Calculator            https://apps.apple.com/us/app/debt-snowball-calculator/id1445755571
+    - Debts ($2.99, snowball)             https://apps.apple.com/us/app/debts/id363447040
+    - Debt Payoff Box: Snowball Plan App  https://apps.apple.com/us/app/debt-free-box-snowball-payoff/id1240710873
+    - ClearDebt: Snowball Planner (new)   https://apps.apple.com/us/app/cleardebt-snowball-planner/id6753349222
+    - Debt Payoff Pro (featured by Apple) https://apps.apple.com/us/app/debt-payoff-pro/id429095280
+    - Debt Payoff Planner & Tracker       https://apps.apple.com/us/app/debt-payoff-planner-tracker/id1009323715
+    - (dup) https://apps.apple.com/app/debts/id363447040
+    - (dup) https://apps.apple.com/app/id363447040

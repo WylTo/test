@@ -1,0 +1,15 @@
+# Productivity review — verify searches (devil's advocate), 2026-09-30
+
+1) query: "site:apps.apple.com bcba fieldwork hours tracker"  date: 2026-09-30  (idea productivity-01 Supervised Hours Log)
+- ABA Mastery (BCBA exam prep + built-in fieldwork tracker checking every BACB requirement) https://apps.apple.com/us/app/aba-mastery/id6786924174
+- WorkTime: Hours Tracker Log https://apps.apple.com/ca/app/worktime-hours-tracker-log/id1495678551
+- Work Hours Tracker: WorkClock https://apps.apple.com/us/app/work-hours-tracker-workclock/id6504451291
+- Timesheet: Work Hours Tracker https://apps.apple.com/us/app/timesheet-work-hours-tracker/id1518938275
+- Hours Tracker: Time Tracking https://apps.apple.com/us/app/hours-tracker-time-tracking/id336456412
+- Hours Calculator: Time Tracker https://apps.apple.com/us/app/hours-calculator-time-tracker/id6743769611
+- Timesheet & Time Card Tracker https://apps.apple.com/us/app/timesheet-time-card-tracker/id6755894990
+- ABA Wizard BCBA Exam Prep 2026 https://apps.apple.com/us/app/aba-wizard-bcba-exam-prep-2026/id6740186588
+- ABA Wizard https://apps.apple.com/us/app/aba-wizard/id1326943979
+- WorkBC https://apps.apple.com/ca/app/workbc/id1581502913
+Saturation: 1 dedicated BCBA fieldwork tracker in results (ABA Mastery, bundled with exam prep, new 2026); rest generic hour trackers. Niche thin but not empty; a funded exam-prep app already bundles the exact feature.
+
